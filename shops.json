@@ -2719,8 +2719,8 @@
     "lng": 139.67487930304625,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/nishidai/",
-      "tabelog": "https://tabelog.com/tokyo/A1322/A132205/13112690/",
-      "rdb": "https://ramendb.supleks.jp/s/113862.html"
+      "rdb": "https://ramendb.supleks.jp/s/113862.html",
+      "tabelog": "https://tabelog.com/tokyo/A1322/A132205/13112690/"
     },
     "x": "jiro_nishidai",
     "ticketTiming": "",
@@ -2731,6 +2731,16 @@
         "startDate": "2026-08-12",
         "endDate": "2026-08-12",
         "hours": []
+      },
+      {
+        "startDate": "2026-08-31",
+        "endDate": "2026-08-31",
+        "hours": [
+          [
+            10.25,
+            13.5
+          ]
+        ]
       }
     ],
     "shiftsByDay": {
