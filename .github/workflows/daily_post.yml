@@ -7,17 +7,20 @@ on:
   workflow_dispatch:
     inputs:
       environment:
-        description: 'Execution Environment (prod or dev)'
+        description: 'Execution Environment (prod, dev, or preview)'
         required: true
-        default: 'dev'
+        default: 'preview'
         type: choice
         options:
+          - preview
           - dev
           - prod
 
 jobs:
   tweet:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -41,8 +44,20 @@ jobs:
       - name: Run script
         env:
           TZ: 'Asia/Tokyo'
+          PREVIEW_ONLY: ${{ github.event.inputs.environment == 'preview' && 'true' || 'false' }}
           TWITTER_API_KEY: ${{ github.event.inputs.environment == 'prod' && secrets.TWITTER_API_KEY || secrets.TWITTER_API_KEY_DEV }}
           TWITTER_API_SECRET: ${{ github.event.inputs.environment == 'prod' && secrets.TWITTER_API_SECRET || secrets.TWITTER_API_SECRET_DEV }}
           TWITTER_ACCESS_TOKEN: ${{ github.event.inputs.environment == 'prod' && secrets.TWITTER_ACCESS_TOKEN || secrets.TWITTER_ACCESS_TOKEN_DEV }}
           TWITTER_ACCESS_SECRET: ${{ github.event.inputs.environment == 'prod' && secrets.TWITTER_ACCESS_SECRET || secrets.TWITTER_ACCESS_SECRET_DEV }}
         run: node bot.js
+
+      - name: Commit preview image
+        if: github.event.inputs.environment == 'preview'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          mkdir -p assets
+          cp sheet.png assets/preview.png
+          git add assets/preview.png
+          git commit -m "Update preview image [skip ci]" || exit 0
+          git push
