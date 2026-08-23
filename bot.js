@@ -40,6 +40,10 @@ async function run() {
             sortBy: 'opened'
         }のラーメン二郎営業情報】\n\n詳しい情報はジロリアンマップで↓\n🔗https://app.jirolianmap.com\n \n※営業時間の白文字は通常、オレンジ色文字は臨時営業・休業\n\n#ラーメン二郎 #二郎 #営業情報 #ジロリアンマップ`,
             captureElement: '#sidebar-container',
+            listMode: 'today',
+            sortBy: 'opened'
+        }のラーメン二郎営業情報】\n\n詳しい情報はジロリアンマップで↓\n🔗https://app.jirolianmap.com\n \n※営業時間の白文字は通常、オレンジ色文字は臨時営業・休業\n\n#ラーメン二郎 #二郎 #営業情報 #ジロリアンマップ`,
+            captureElement: '#sidebar-container',
             listMode: 'minimal',
             sortBy: 'opened'
         }のラーメン二郎営業情報】\n\n詳しい情報はジロリアンマップで↓\n🔗https://app.jirolianmap.com\n \n※営業時間の白文字は通常、オレンジ色文字は臨時営業・休業\n\n#ラーメン二郎 #二郎 #営業情報 #ジロリアンマップ`,
