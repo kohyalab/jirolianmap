@@ -5,6 +5,15 @@ on:
     # JST 07:00 (UTC 22:00)
     - cron: '0 22 * * *'
   workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Execution Environment (prod or dev)'
+        required: true
+        default: 'dev'
+        type: choice
+        options:
+          - dev
+          - prod
 
 jobs:
   tweet:
@@ -32,8 +41,8 @@ jobs:
       - name: Run script
         env:
           TZ: 'Asia/Tokyo'
-          TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
-          TWITTER_API_SECRET: ${{ secrets.TWITTER_API_SECRET }}
-          TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
-          TWITTER_ACCESS_SECRET: ${{ secrets.TWITTER_ACCESS_SECRET }}
+          TWITTER_API_KEY: ${{ github.event.inputs.environment == 'prod' && secrets.TWITTER_API_KEY || secrets.TWITTER_API_KEY_DEV }}
+          TWITTER_API_SECRET: ${{ github.event.inputs.environment == 'prod' && secrets.TWITTER_API_SECRET || secrets.TWITTER_API_SECRET_DEV }}
+          TWITTER_ACCESS_TOKEN: ${{ github.event.inputs.environment == 'prod' && secrets.TWITTER_ACCESS_TOKEN || secrets.TWITTER_ACCESS_TOKEN_DEV }}
+          TWITTER_ACCESS_SECRET: ${{ github.event.inputs.environment == 'prod' && secrets.TWITTER_ACCESS_SECRET || secrets.TWITTER_ACCESS_SECRET_DEV }}
         run: node bot.js
