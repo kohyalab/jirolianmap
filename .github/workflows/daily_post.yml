@@ -49,7 +49,9 @@ jobs:
           TWITTER_API_SECRET: ${{ github.event.inputs.environment == 'prod' && secrets.TWITTER_API_SECRET || secrets.TWITTER_API_SECRET_DEV }}
           TWITTER_ACCESS_TOKEN: ${{ github.event.inputs.environment == 'prod' && secrets.TWITTER_ACCESS_TOKEN || secrets.TWITTER_ACCESS_TOKEN_DEV }}
           TWITTER_ACCESS_SECRET: ${{ github.event.inputs.environment == 'prod' && secrets.TWITTER_ACCESS_SECRET || secrets.TWITTER_ACCESS_SECRET_DEV }}
-        run: node bot.js - name: Commit preview image
+        run: node bot.js
+
+      - name: Commit preview image
         if: github.event.inputs.environment == 'preview'
         run: |
           git config --local user.email "action@github.com"
