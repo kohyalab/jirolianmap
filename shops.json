@@ -3113,8 +3113,8 @@
     "lng": 139.66041560003418,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/shndaita/",
-      "tabelog": "https://tabelog.com/tokyo/A1318/A131803/13010833/",
-      "rdb": "https://ramendb.supleks.jp/s/75362.html"
+      "rdb": "https://ramendb.supleks.jp/s/75362.html",
+      "tabelog": "https://tabelog.com/tokyo/A1318/A131803/13010833/"
     },
     "x": "26shinshindaita",
     "ticketTiming": "",
@@ -3130,6 +3130,16 @@
         "startDate": "2026-08-14",
         "endDate": "2026-08-14",
         "hours": []
+      },
+      {
+        "startDate": "2026-08-28",
+        "endDate": "2026-08-28",
+        "hours": [
+          [
+            11,
+            15
+          ]
+        ]
       }
     ],
     "shiftsByDay": {
