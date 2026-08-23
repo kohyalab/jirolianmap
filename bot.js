@@ -141,7 +141,14 @@ async function run() {
 
         const mediaId = await client.v1.uploadMedia('sheet.png');
 
-        const tweetText = `【本日${getTodayText()}のラーメン二郎営業情報】\n\n詳しい情報はジロリアンマップで↓\n🔗https://app.jirolianmap.com\n \n※営業時間の白文字は通常、オレンジ色文字は臨時営業・休業\n\n#ラーメン二郎 #二郎 #営業情報 #ジロリアンマップ`;
+        // --- TWEET TEMPLATES START ---
+        const templates = {
+            default: `【本日\${getTodayText()}のラーメン二郎営業情報】\n\n詳しい情報はジロリアンマップで↓\n🔗https://app.jirolianmap.com\n \n※営業時間の白文字は通常、オレンジ色文字は臨時営業・休業\n\n#ラーメン二郎 #二郎 #営業情報 #ジロリアンマップ`
+        };
+        // --- TWEET TEMPLATES END ---
+
+        const templateKey = process.argv[2] || 'default';
+        const tweetText = templates[templateKey] || templates.default;
 
         await client.v2.tweet({
             text: tweetText,
