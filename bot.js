@@ -21,6 +21,20 @@ function getFormattedDateYMD() {
 }
 
 async function run() {
+    // --- TWEET TEMPLATES START ---
+    const templates = {
+        default: {
+            text: `【本日\${getTodayText()}のラーメン二郎営業情報】\n\n詳しい情報はジロリアンマップで↓\n🔗https://app.jirolianmap.com\n \n※営業時間の白文字は通常、オレンジ色文字は臨時営業・休業\n\n#ラーメン二郎 #二郎 #営業情報 #ジロリアンマップ`,
+            captureElement: '#sidebar-container',
+            listMode: 'today',
+            sortBy: 'opened'
+        }
+    };
+    // --- TWEET TEMPLATES END ---
+
+    const templateKey = process.argv[2] || 'default';
+    const config = templates[templateKey] || templates.default;
+
     const browser = await chromium.launch({ headless: true });
     const page = await browser.newPage({
         viewport: { width: 1280, height: 1600 },
@@ -30,18 +44,18 @@ async function run() {
     await page.goto('https://app.jirolianmap.com/', { waitUntil: 'networkidle' });
 
     // 画面初期設定 & 縦長用スタイル・日本語フォント注入
-    await page.evaluate((ymdDate) => {
+    await page.evaluate(({ ymdDate, listMode, sortBy }) => {
         // 1. Google Fonts（Noto Sans JP）の動的読み込み
         const fontLink = document.createElement('link');
         fontLink.rel = 'stylesheet';
         fontLink.href = 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap';
         document.head.appendChild(fontLink);
 
-        // 2. 日別モード & 開店日順ソート
-        if (typeof setListSubMode === 'function') setListSubMode('today');
+        // 2. 表示モード & ソート
+        if (typeof setListSubMode === 'function') setListSubMode(listMode);
         const sortSelect = document.getElementById('sort-select');
         if (sortSelect) {
-            sortSelect.value = 'opened';
+            sortSelect.value = sortBy;
             if (typeof onSortChange === 'function') onSortChange();
         }
 
@@ -61,7 +75,7 @@ async function run() {
       `;
         }
 
-        // 4. 縦長・4列・フォント指定CSSの適用
+        // 4. 縦長・フォント指定CSSの適用
         const style = document.createElement('style');
         style.id = 'bot-capture-style';
         style.innerHTML = `
@@ -106,19 +120,38 @@ async function run() {
         gap: 6px !important;
         width: 100% !important;
       }
+      .shop-grid.view-mode-minimal {
+        grid-template-columns: repeat(5, 98px) !important;
+        gap: 6px !important;
+        width: 100% !important;
+      }
     `;
         document.head.appendChild(style);
-    }, getFormattedDateYMD());
+    }, {
+        ymdDate: getFormattedDateYMD(),
+        listMode: config.listMode || 'today',
+        sortBy: config.sortBy || 'opened'
+    });
 
     // フォント読み込み・レンダリング完了待機
     await page.waitForTimeout(1500);
 
-    // 縦長画像として全体をキャプチャ
-    const sidebar = await page.$('#sidebar-container');
-    await sidebar.screenshot({ path: 'sheet.png' });
+    // 要素をキャプチャ
+    const captureSelector = config.captureElement || '#sidebar-container';
+    const targetElement = await page.$(captureSelector);
+    if (targetElement) {
+        await targetElement.screenshot({ path: 'sheet.png' });
+    } else {
+        await page.screenshot({ path: 'sheet.png', fullPage: true });
+    }
 
     await browser.close();
     console.log('画像生成(sheet.png)が完了しました。');
+
+    if (process.env.PREVIEW_ONLY === 'true') {
+        console.log('プレビューモードのため、Xへの投稿はスキップします。');
+        return;
+    }
 
     const hasTwitterCreds = process.env.TWITTER_API_KEY && 
                             process.env.TWITTER_API_SECRET && 
@@ -141,23 +174,14 @@ async function run() {
 
         const mediaId = await client.v1.uploadMedia('sheet.png');
 
-        // --- TWEET TEMPLATES START ---
-        const templates = {
-            default: `【本日\${getTodayText()}のラーメン二郎営業情報】\n\n詳しい情報はジロリアンマップで↓\n🔗https://app.jirolianmap.com\n \n※営業時間の白文字は通常、オレンジ色文字は臨時営業・休業\n\n#ラーメン二郎 #二郎 #営業情報 #ジロリアンマップ`
-        };
-        // --- TWEET TEMPLATES END ---
-
-        const templateKey = process.argv[2] || 'default';
-        const tweetText = templates[templateKey] || templates.default;
-
         await client.v2.tweet({
-            text: tweetText,
+            text: config.text || config,
             media: {
                 media_ids: [mediaId]
             }
         });
 
-        console.log('縦長画像の自動投稿が完了しました。');
+        console.log('画像の自動投稿が完了しました。');
     } catch (twitterErr) {
         console.error('X (Twitter) への投稿中にエラーが発生しましたが、画像生成は成功しています:', twitterErr.message);
     }
