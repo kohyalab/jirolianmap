@@ -4885,14 +4885,24 @@
     "lng": 127.68975521492895,
     "urls": {
       "pc": "",
-      "tabelog": "https://tabelog.com/okinawa/A4701/A470101/47034759/",
-      "rdb": "https://ramendb.supleks.jp/s/173581.html"
+      "rdb": "https://ramendb.supleks.jp/s/173581.html",
+      "tabelog": "https://tabelog.com/okinawa/A4701/A470101/47034759/"
     },
     "x": "okinawa_jiro",
     "ticketTiming": "",
     "openedAt": "2026-06-21",
     "closedAt": null,
     "temporary": [
+      {
+        "startDate": "2026-08-25",
+        "endDate": "2026-08-25",
+        "hours": [
+          [
+            11,
+            14
+          ]
+        ]
+      },
       {
         "startDate": "2026-08-27",
         "endDate": "2026-08-27",
