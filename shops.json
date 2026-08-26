@@ -9,8 +9,8 @@
     "lng": 139.7416323715387,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/mita/",
-      "tabelog": "https://tabelog.com/tokyo/A1314/A131402/13006051/",
-      "rdb": "https://ramendb.supleks.jp/s/1419.html"
+      "rdb": "https://ramendb.supleks.jp/s/1419.html",
+      "tabelog": "https://tabelog.com/tokyo/A1314/A131402/13006051/"
     },
     "x": "",
     "ticketTiming": "",
@@ -21,6 +21,16 @@
         "startDate": "2026-08-09",
         "endDate": "2026-08-16",
         "hours": []
+      },
+      {
+        "startDate": "2026-08-26",
+        "endDate": "2026-08-26",
+        "hours": [
+          [
+            8,
+            14
+          ]
+        ]
       }
     ],
     "shiftsByDay": {
@@ -2091,8 +2101,8 @@
     "lng": 139.54356216412995,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/hibarigaoka/",
-      "tabelog": "https://tabelog.com/tokyo/A1328/A132801/13024745/",
-      "rdb": "https://ramendb.supleks.jp/s/4738.html"
+      "rdb": "https://ramendb.supleks.jp/s/4738.html",
+      "tabelog": "https://tabelog.com/tokyo/A1328/A132801/13024745/"
     },
     "x": "Aarf0xvdBXkWd7o",
     "ticketTiming": "",
@@ -2108,6 +2118,16 @@
             21
           ]
         ]
+      },
+      {
+        "startDate": "2026-08-29",
+        "endDate": "2026-08-29",
+        "hours": []
+      },
+      {
+        "startDate": "2026-08-31",
+        "endDate": "2026-09-01",
+        "hours": []
       }
     ],
     "shiftsByDay": {
@@ -3147,7 +3167,7 @@
         "hours": [
           [
             11,
-            16
+            15
           ]
         ]
       },
@@ -3571,8 +3591,8 @@
     "lng": 139.4766711798268,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/kawagoe/",
-      "tabelog": "https://tabelog.com/saitama/A1103/A110303/11043900/",
-      "rdb": "https://ramendb.supleks.jp/s/97949.html"
+      "rdb": "https://ramendb.supleks.jp/s/97949.html",
+      "tabelog": "https://tabelog.com/saitama/A1103/A110303/11043900/"
     },
     "x": "kwge26",
     "ticketTiming": "",
@@ -3582,6 +3602,11 @@
       {
         "startDate": "2026-08-11",
         "endDate": "2026-08-11",
+        "hours": []
+      },
+      {
+        "startDate": "2026-08-27",
+        "endDate": "2026-08-27",
         "hours": []
       }
     ],
@@ -4450,8 +4475,8 @@
     "lng": 139.95919870462066,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/kashiwa/",
-      "tabelog": "https://tabelog.com/chiba/A1203/A120301/12056350/",
-      "rdb": "https://ramendb.supleks.jp/s/146037.html"
+      "rdb": "https://ramendb.supleks.jp/s/146037.html",
+      "tabelog": "https://tabelog.com/chiba/A1203/A120301/12056350/"
     },
     "x": "genkimoriya",
     "ticketTiming": "",
@@ -4461,6 +4486,11 @@
       {
         "startDate": "2026-08-20",
         "endDate": "2026-08-20",
+        "hours": []
+      },
+      {
+        "startDate": "2026-08-27",
+        "endDate": "2026-08-27",
         "hours": []
       }
     ],
