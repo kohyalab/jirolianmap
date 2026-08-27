@@ -2232,14 +2232,25 @@
     "lng": 139.7948995742357,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/tochigikaido/",
-      "tabelog": "https://tabelog.com/tochigi/A0902/A090201/9002641/",
-      "rdb": "https://ramendb.supleks.jp/s/12524.html"
+      "rdb": "https://ramendb.supleks.jp/s/12524.html",
+      "tabelog": "https://tabelog.com/tochigi/A0902/A090201/9002641/"
     },
     "x": "Tochigikaidoten",
     "ticketTiming": "",
     "openedAt": "2007-11-25",
     "closedAt": null,
-    "temporary": [],
+    "temporary": [
+      {
+        "startDate": "2026-08-27",
+        "endDate": "2026-08-27",
+        "hours": []
+      },
+      {
+        "startDate": "2026-08-29",
+        "endDate": "2026-08-29",
+        "hours": []
+      }
+    ],
     "shiftsByDay": {
       "0": [
         [
@@ -3067,6 +3078,11 @@
             14
           ]
         ]
+      },
+      {
+        "startDate": "2026-08-28",
+        "endDate": "2026-08-28",
+        "hours": []
       }
     ],
     "shiftsByDay": {
