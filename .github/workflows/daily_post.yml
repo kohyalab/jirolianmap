@@ -41,7 +41,7 @@ jobs:
           npm install playwright twitter-api-v2
           npx playwright install --with-deps chromium
 
-            - name: Run script
+      - name: Run script
         env:
           TZ: 'Asia/Tokyo'
           # schedule時はfalse(本番投稿)、手動実行時は選択値に従う
