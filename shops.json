@@ -2562,8 +2562,8 @@
     "lng": 139.4328542944921,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/sagamiohno/",
-      "tabelog": "https://tabelog.com/kanagawa/A1407/A140701/14000839/",
-      "rdb": "https://ramendb.supleks.jp/s/2420.html"
+      "rdb": "https://ramendb.supleks.jp/s/2420.html",
+      "tabelog": "https://tabelog.com/kanagawa/A1407/A140701/14000839/"
     },
     "x": "sumo_jiro",
     "ticketTiming": "",
@@ -2598,6 +2598,21 @@
       {
         "startDate": "2026-08-22",
         "endDate": "2026-08-23",
+        "hours": [
+          [
+            10,
+            15
+          ]
+        ]
+      },
+      {
+        "startDate": "2026-09-19",
+        "endDate": "2026-09-20",
+        "hours": []
+      },
+      {
+        "startDate": "2026-09-21",
+        "endDate": "2026-09-23",
         "hours": [
           [
             10,
