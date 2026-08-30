@@ -757,14 +757,16 @@
             width: 100%;
         }
 
-        .shop-grid.view-mode-minimal {
+        .shop-grid.view-mode-minimal,
+        .shop-grid.view-mode-today {
             grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
         }
 
-        .shop-grid.view-mode-minimal .shop-item {
+        .shop-grid.view-mode-minimal .shop-item,
+        .shop-grid.view-mode-today .shop-item {
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: flex-start;
             align-items: center;
             text-align: center;
             padding: 4px 6px;
@@ -778,7 +780,8 @@
             overflow: hidden;
         }
 
-        .shop-grid.view-mode-minimal .shop-item:hover {
+        .shop-grid.view-mode-minimal .shop-item:hover,
+        .shop-grid.view-mode-today .shop-item:hover {
             border-color: var(--jiro-yellow);
         }
 
@@ -820,30 +823,6 @@
             min-width: 340px;
         }
 
-        .shop-grid.view-mode-today {
-            grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
-        }
-
-        .shop-grid.view-mode-today .shop-item {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-            text-align: center;
-            padding: 4px 6px;
-            min-height: 75px;
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 6px;
-            cursor: pointer;
-            position: relative;
-            transition: border-color 0.2s, background-color 0.2s;
-            overflow: hidden;
-        }
-
-        .shop-grid.view-mode-today .shop-item:hover {
-            border-color: var(--jiro-yellow);
-        }
 
         .shop-grid.view-mode-today .shop-item.today-open,
         .shop-grid.view-mode-minimal .shop-item.today-open {
@@ -876,35 +855,31 @@
         }
 
         .today-summary-name {
-            font-size: 0.7rem;
-            font-weight: bold;
+            font-size: 0.86rem;
+            font-weight: normal;
             color: var(--jiro-yellow);
-            word-break: break-word;
-            text-wrap: balance;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            text-align: center;
+            white-space: nowrap;
             overflow: hidden;
+            text-overflow: ellipsis;
+            text-align: center;
             width: 100%;
-            height: 2.4em;
             line-height: 1.2;
-            flex: 0 0 2.4em;
             align-content: center;
+            letter-spacing: -0.2px;
         }
 
         .today-hours-text {
             font-size: 0.62rem;
-            line-height: 1.35;
+            line-height: 1.2;
             font-weight: normal;
-            white-space: pre-line;
-            word-break: break-word;
             text-align: center;
             width: 100%;
             flex: 1 1 auto;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
+            gap: 1px;
             min-width: 0;
             min-height: 0;
         }
@@ -1994,6 +1969,17 @@
             if (!shop.openedAt) return false;
             const normalizedOpenDate = parseNormalizedDateStr(shop.openedAt);
             return normalizedOpenDate > getLocalDateKey(targetDate);
+        }
+
+        function formatShiftTimeText(timeStr) {
+            if (!timeStr || timeStr === '休業') return '休業';
+            return timeStr.split('-').map(t => {
+                const parts = t.trim().split(':');
+                if (parts.length === 2) {
+                    return `<span style="font-size:0.86rem; font-weight:normal; font-family:sans-serif; letter-spacing:-0.4px;">${parts[0]}</span><span style="font-size:0.52rem; opacity:0.85; letter-spacing:-0.2px;">:${parts[1]}</span>`;
+                }
+                return t;
+            }).join(`<span style="font-size:0.54rem; opacity:0.7; margin:0 1px;">-</span>`);
         }
 
         function isClosedShopExpired(shop, targetDate = new Date()) {
@@ -3231,6 +3217,8 @@
                 const item = document.createElement('div');
                 const isTodayOpen = ['open', 'closing-soon', 'scheduled'].includes(status.type);
 
+                const displayName = (shop.shortName && shop.shortName.trim()) ? shop.shortName.trim() : shop.name;
+
                 if (listSubMode === 'minimal') {
                     item.onclick = (e) => {
                         if (e.target.tagName !== 'BUTTON') handleShopSelect(shop.id);
@@ -3244,10 +3232,10 @@
                     const nextOpenText = tempDiv.textContent || tempDiv.innerText || '';
 
                     item.innerHTML = `
-                <div class="today-summary-card" style="display:flex; flex-direction:column; justify-content:space-between; align-items:center; height:100%; width:100%;">
-                    <div style="display:flex; align-items:center; justify-content:space-between; width:100%; flex:0 0 auto; min-height:2.4em; padding: 0 2px;">
-                        <div class="today-summary-name" style="text-align: left; -webkit-line-clamp: 2; flex: 1; margin-right: 4px; height:auto; line-height:1.2; font-size:0.68rem; display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; align-content: center;" title="${shop.name}">${shop.name}</div>
-                        <button type="button" class="visit-toggle-btn-minimal ${isVisited ? 'is-visited' : ''}" onclick="toggleVisit('${shop.id}', false, event)" aria-label="${shop.name}の制覇状態を切り替え" style="background:none; border:none; color: ${isVisited ? 'var(--jiro-yellow)' : '#555'}; font-size: 0.95rem; padding: 0; cursor: pointer; line-height: 1; outline: none; flex-shrink: 0;">
+                <div class="today-summary-card">
+                    <div class="today-summary-name" title="${shop.name}">${displayName}</div>
+                    <div style="display:flex; align-items:center; justify-content:center; width:100%; margin: 1px 0;">
+                        <button type="button" class="visit-toggle-btn-minimal ${isVisited ? 'is-visited' : ''}" onclick="toggleVisit('${shop.id}', false, event)" aria-label="${shop.name}の制覇状態を切り替え" style="background:none; border:none; color: ${isVisited ? 'var(--jiro-yellow)' : '#555'}; font-size: 1.05rem; padding: 0; cursor: pointer; line-height: 1; outline: none; flex-shrink: 0;">
                             ${isVisited ? '✔' : '☐'}
                         </button>
                     </div>
@@ -3263,18 +3251,22 @@
                     item.className = `shop-item ${isVisited ? 'visited' : ''} ${isTodayOpen ? 'today-open' : 'today-closed'}`;
 
                     const tempStatus = getTemporaryStatus(shop, activeDate);
-                    const todayHours = (() => {
+                    const todayHoursData = (() => {
                         const shifts = getTodayShifts(shop, activeDate);
-                        if (!shifts || shifts.length === 0) return '休業';
-                        return shifts.map(([start, end]) => `${formatTime(start)}-${formatTime(end)}`).join('<br>');
+                        if (!shifts || shifts.length === 0) return { html: '休業', text: '休業' };
+                        const plainText = shifts.map(([start, end]) => `${formatTime(start)}-${formatTime(end)}`).join(' / ');
+                        const htmlContent = shifts.map(([start, end]) => {
+                            return `<div style="white-space:nowrap; line-height:1.2;">${formatShiftTimeText(`${formatTime(start)}-${formatTime(end)}`)}</div>`;
+                        }).join('');
+                        return { html: htmlContent, text: plainText };
                     })();
 
                     const textClass = tempStatus ? 'is-temp' : (isTodayOpen ? 'is-open' : 'is-closed');
 
                     item.innerHTML = `
                 <div class="today-summary-card">
-                    <div class="today-summary-name">${shop.name}</div>
-                    <div class="today-hours-text ${textClass}">${todayHours}</div>
+                    <div class="today-summary-name" title="${shop.name}">${displayName}</div>
+                    <div class="today-hours-text ${textClass}" title="${todayHoursData.text}">${todayHoursData.html}</div>
                 </div>
             `;
                 } else {
