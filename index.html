@@ -639,7 +639,38 @@
             height: 100%;
             overflow: hidden;
             flex-shrink: 0;
-            min-width: 160px;
+            min-width: 370px;
+        }
+
+        /* Leaflet ポップアップ幅とスタイル調整 */
+        .leaflet-popup {
+            width: 390px !important;
+            max-width: 90vw !important;
+        }
+
+        .leaflet-popup-content-wrapper {
+            background-color: var(--card-bg) !important;
+            color: var(--text-color) !important;
+            border-radius: 8px !important;
+            border: 1px solid var(--border-color) !important;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.7) !important;
+            overflow: hidden !important;
+            padding: 0 !important;
+            width: 100% !important;
+            box-sizing: border-box !important;
+        }
+
+        .leaflet-popup-content {
+            width: 100% !important;
+            min-width: 0 !important;
+            max-width: 100% !important;
+            margin: 0 !important;
+            padding: 10px 12px !important;
+            box-sizing: border-box !important;
+        }
+
+        .leaflet-popup-tip {
+            background-color: var(--card-bg) !important;
         }
 
         .list-header-controls {
@@ -780,9 +811,13 @@
         }
 
         .shop-grid.view-mode-compact,
-        .shop-grid.view-mode-detailed,
-        .shop-grid.view-mode-today {
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        .shop-grid.view-mode-detailed {
+            grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+        }
+
+        .shop-grid.view-mode-compact .shop-item,
+        .shop-grid.view-mode-detailed .shop-item {
+            min-width: 340px;
         }
 
         .shop-grid.view-mode-today {
@@ -894,6 +929,7 @@
             cursor: pointer;
             transition: border-color 0.2s, background-color 0.2s;
             width: 100%;
+            box-sizing: border-box;
             overflow: hidden;
             display: flex;
             flex-direction: column;
@@ -2346,7 +2382,7 @@
             return ranges.join(',');
         }
 
-        function renderBusinessHoursTable(shop, targetDate = new Date()) {
+        function renderBusinessHoursTable(shop, targetDate = new Date(), hasFeatures = false) {
             if (!shop.shiftsByDay && (!Array.isArray(shop.specialShifts) || shop.specialShifts.length === 0)) return '情報なし';
 
             const baseDayNames = ["月", "火", "水", "木", "金", "土", "日"];
@@ -2497,10 +2533,65 @@
                 }
 
                 const todayClass = group.isToday ? 'class="today-highlight"' : '';
-                rowsHtml += `<tr ${todayClass}><th>${labelDisplay}</th><td>${group.text}</td></tr>`;
+                const tdStyle = hasFeatures
+                    ? 'style="width: 142px; min-width: 142px; max-width: 142px; word-break: break-word; white-space: normal;"'
+                    : 'style="width: 100%;"';
+                rowsHtml += `<tr ${todayClass}><th>${labelDisplay}</th><td ${tdStyle}>${group.text}</td></tr>`;
             });
 
-            return `<table class="hours-table"><tbody>${rowsHtml}</tbody></table>`;
+            const tableStyle = hasFeatures ? 'style="width: auto;"' : 'style="width: 100%;"';
+            return `<table class="hours-table" ${tableStyle}><tbody>${rowsHtml}</tbody></table>`;
+        }
+
+        function renderBusinessHoursAndFeatures(shop, selectedDate) {
+            const hasFeatures = !!(shop.ticketTiming || shop.soupType || shop.renge || shop.takeout);
+            const tableHtml = renderBusinessHoursTable(shop, selectedDate, hasFeatures);
+            const openedDateStr = formatOpenedDateText(shop.openedAt);
+            
+            const hoursHeaderHtml = `
+                <div class="hours-title" style="display: flex; justify-content: space-between; align-items: baseline; width: 100%; margin-bottom: 2px;">
+                    <span style="font-weight: bold; color: var(--jiro-yellow); font-size: 0.82rem;">営業時間</span>
+                    ${openedDateStr ? `<span class="open-date-text" style="font-size: 0.68rem; color: #aaa; text-align: right; margin-left: 8px;">${openedDateStr}</span>` : ''}
+                </div>
+            `;
+
+            if (!hasFeatures) {
+                return `
+                    <div style="display: flex; flex-direction: column; width: 100%;">
+                        ${hoursHeaderHtml}
+                        ${tableHtml}
+                    </div>
+                `;
+            }
+
+            const rengeSvgIcon = `<svg title="レンゲ" width="18" height="15" viewBox="0 0 32 24" fill="none" style="display:inline-block; vertical-align:middle; opacity:0.95; margin-right:4px; flex-shrink:0;"><path d="M 3 12 C 3 18 8 20 16 20 C 21 20 25 16 28 8.5 C 28.5 7.2 27.2 6.2 26 7 C 23.5 8.5 19.5 11.5 14.5 11.5 C 8.5 11.5 3 12 3 12 Z" fill="#ffffff"/><path d="M 4.5 12.2 C 9.5 14 15.5 14 20.8 11.6 C 23.8 10.2 26.5 7.8 26.5 7.8" stroke="#121212" stroke-width="1.3" stroke-linecap="round"/></svg>`;
+            const soupSvgIcon = `<svg title="スープ" width="18" height="15" viewBox="0 0 32 24" fill="none" style="display:inline-block; vertical-align:middle; opacity:0.95; margin-right:4px; flex-shrink:0;"><path d="M 4 8 C 4 17 9 20 16 20 C 23 20 28 17 28 8 Z" fill="#ffffff"/><path d="M 11 20 L 12 22 L 20 22 L 21 20 Z" fill="#ffffff"/><path d="M 4 8.5 C 9.5 10.2 22.5 10.2 28 8.5" stroke="#121212" stroke-width="1.3"/></svg>`;
+            const takeoutSvgIcon = `<svg title="テイクアウト" width="18" height="15" viewBox="0 0 32 24" fill="none" style="display:inline-block; vertical-align:middle; opacity:0.95; margin-right:4px; flex-shrink:0;"><path d="M 13 4 L 16 1 L 19 4 M 16 1 L 16 5" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round"/><path d="M 12 5 C 6 6 2 10 2 16 C 2 22 7 23 16 23 C 25 23 30 22 30 16 C 30 10 26 6 20 5 Z" stroke="#ffffff" stroke-width="1.4" stroke-dasharray="3,1" fill="rgba(255,255,255,0.1)"/><path d="M 6 11 C 10 8 10 15 15 11 C 19 8 21 15 26 11" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round"/><path d="M 5 15 C 9 12 10 19 15 15 C 19 12 22 19 27 15" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round"/><path d="M 8 19 C 11 16 13 22 17 19 C 20 16 23 22 25 19" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round"/><path d="M 9 8 C 8 12 12 16 11 20" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/><path d="M 22 8 C 23 12 19 16 21 20" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/></svg>`;
+
+            const featuresHeaderHtml = `
+                <div class="features-title" style="display: flex; align-items: baseline; width: 100%; margin-bottom: 2px;">
+                    <span style="font-weight: bold; color: var(--jiro-yellow); font-size: 0.82rem;">特徴</span>
+                </div>
+            `;
+
+            let featuresHtml = '';
+            if (shop.ticketTiming) featuresHtml += `<div style="white-space: normal; word-break: break-word; line-height: 1.35; font-weight: 400; font-size: 0.72rem; display: flex; align-items: flex-start;" title="食券"><span title="食券" style="filter: grayscale(100%) brightness(1.6); opacity: 0.95; margin-right: 4px; display: inline-block; flex-shrink: 0; margin-top: 1px;">🎟️</span><span style="font-weight: 400;">${shop.ticketTiming}</span></div>`;
+            if (shop.soupType) featuresHtml += `<div style="white-space: normal; word-break: break-word; line-height: 1.35; font-weight: 400; font-size: 0.72rem; display: flex; align-items: flex-start;" title="スープ">${soupSvgIcon}<span style="font-weight: 400;">${shop.soupType}</span></div>`;
+            if (shop.renge) featuresHtml += `<div style="white-space: normal; word-break: break-word; line-height: 1.35; font-weight: 400; font-size: 0.72rem; display: flex; align-items: flex-start;" title="レンゲ">${rengeSvgIcon}<span style="font-weight: 400;">${shop.renge}</span></div>`;
+            if (shop.takeout) featuresHtml += `<div style="white-space: normal; word-break: break-word; line-height: 1.35; font-weight: 400; font-size: 0.72rem; display: flex; align-items: flex-start;" title="テイクアウト">${takeoutSvgIcon}<span style="font-weight: 400;">${shop.takeout}</span></div>`;
+
+            return `
+                <div style="display: flex; gap: 12px; align-items: flex-start; flex-wrap: nowrap; width: 100%;">
+                    <div style="display: flex; flex-direction: column; flex: 0 0 auto;">
+                        ${hoursHeaderHtml}
+                        ${tableHtml}
+                    </div>
+                    <div style="flex: 1; min-width: 140px; font-size: 0.72rem; color: #d0d0d0; font-weight: 400; display: flex; flex-direction: column; gap: 3px; box-sizing: border-box; overflow: visible;">
+                        ${featuresHeaderHtml}
+                        ${featuresHtml}
+                    </div>
+                </div>
+            `;
         }
 
         function generateCardContentHTML(shop, isVisited, fromPopup = false) {
@@ -2538,7 +2629,7 @@
     ` : '';
 
             const remarksText = shop.remarks || shop.notes || '';
-            const openedDateStr = formatOpenedDateText(shop.openedAt);
+            const hasFeatures = !!(shop.ticketTiming || shop.soupType || shop.renge || shop.takeout);
 
             return `
         <div class="shop-info" data-shop-id="${shop.id}">
@@ -2558,18 +2649,14 @@
             <div class="detailed-content">
                 <div class="meta-text-outside">
                     <div><a href="${gmapUrl}" target="_blank" rel="noopener noreferrer" class="gmap-link">📍 ${fullAddress || '住所不明'} ↗</a></div>
-                    ${shop.ticketTiming ? `<div>🎟️ ${shop.ticketTiming}</div>` : ''}
+                    ${(!hasFeatures && shop.ticketTiming) ? `<div>🎟️ ${shop.ticketTiming}</div>` : ''}
                 </div>
                 <div class="hours-box">
-                    <div class="hours-title">
-                        <span>営業時間</span>
-                        ${openedDateStr ? `<span class="open-date-text">${openedDateStr}</span>` : ''}
-                    </div>
-                    ${renderBusinessHoursTable(shop, selectedDate)}
+                    ${renderBusinessHoursAndFeatures(shop, selectedDate)}
                     ${shop.hoursNotes ? `<div style="font-size:0.75rem; color:#ccc; margin-top:4px;"><strong>補足:</strong> ${shop.hoursNotes}</div>` : ''}
                     ${tempWeeklyHtml}
                 </div>
-                ${remarksText ? `<div class="meta-text-outside"><div><strong>備考:</strong> ${remarksText}</div></div>` : ''}
+                ${remarksText ? `<div class="meta-text-outside"><div>${remarksText}</div></div>` : ''}
                 <div class="links-group">${linksHtml}</div>
             </div>
         </div>
@@ -3469,7 +3556,11 @@
                 if (shop.lat && shop.lng) {
                     const isVisited = !!visitedState[shop.id];
                     const marker = L.marker([shop.lat, shop.lng], { icon: createIcon(shop, isVisited) }).addTo(map);
-                    marker.bindPopup(generateCardContentHTML(shop, isVisited, true));
+                    marker.bindPopup(generateCardContentHTML(shop, isVisited, true), {
+                        minWidth: 360,
+                        maxWidth: 440,
+                        autoPan: true
+                    });
                     markers[shop.id] = marker;
 
                     if (shop.name.includes("三田本店")) {
