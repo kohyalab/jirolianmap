@@ -3148,6 +3148,11 @@
         "startDate": "2026-08-28",
         "endDate": "2026-08-28",
         "hours": []
+      },
+      {
+        "startDate": "2026-09-01",
+        "endDate": "2026-09-02",
+        "hours": []
       }
     ],
     "shiftsByDay": {
@@ -3213,7 +3218,10 @@
     "remarks": "",
     "hoursNotes": "",
     "instagram": "",
-    "shortName": "札幌"
+    "shortName": "札幌",
+    "soupType": "",
+    "renge": "",
+    "takeout": ""
   },
   {
     "id": "shndaita",
