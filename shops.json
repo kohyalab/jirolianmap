@@ -76,7 +76,10 @@
     "remarks": "",
     "hoursNotes": "",
     "instagram": "",
-    "shortName": "三田本店"
+    "shortName": "三田",
+    "soupType": "",
+    "renge": "",
+    "takeout": ""
   },
   {
     "id": "kichijoji",
@@ -5007,8 +5010,8 @@
     "lng": 136.94194176117125,
     "urls": {
       "pc": "",
-      "tabelog": "https://tabelog.com/aichi/A2301/A230110/23094216/",
-      "rdb": "https://ramendb.supleks.jp/s/168898.html"
+      "rdb": "https://ramendb.supleks.jp/s/168898.html",
+      "tabelog": "https://tabelog.com/aichi/A2301/A230110/23094216/"
     },
     "x": "jiro_NGY",
     "ticketTiming": "",
@@ -5119,7 +5122,10 @@
     "remarks": "",
     "hoursNotes": "",
     "instagram": "",
-    "shortName": "大曽根"
+    "shortName": "名古屋",
+    "soupType": "",
+    "renge": "",
+    "takeout": ""
   },
   {
     "id": "okinawa",
