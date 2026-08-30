@@ -846,10 +846,11 @@
         .today-summary-card {
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
             gap: 1px;
             width: 100%;
+            height: 100%;
             min-width: 0;
             flex: 1;
         }
@@ -1972,7 +1973,7 @@
         }
 
         function formatShiftTimeText(timeStr) {
-            if (!timeStr || timeStr === '休業') return '休業';
+            if (!timeStr || timeStr === '休業') return '<span style="font-size:0.86rem; font-weight:normal; letter-spacing:1px;">休業</span>';
             return timeStr.split('-').map(t => {
                 const parts = t.trim().split(':');
                 if (parts.length === 2) {
@@ -3232,14 +3233,14 @@
                     const nextOpenText = tempDiv.textContent || tempDiv.innerText || '';
 
                     item.innerHTML = `
-                <div class="today-summary-card">
+                <div class="today-summary-card" style="display:flex; flex-direction:column; justify-content:space-between; align-items:center; height:100%; width:100%;">
                     <div class="today-summary-name" title="${shop.name}">${displayName}</div>
-                    <div style="display:flex; align-items:center; justify-content:center; width:100%; margin: 1px 0;">
+                    <div style="font-size: 0.62rem; color: #ddd; margin: 2px 0; text-align:center; width:100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="${nextOpenText}">${nextOpenHtml}</div>
+                    <div style="display:flex; align-items:center; justify-content:center; width:100%; margin-top: auto;">
                         <button type="button" class="visit-toggle-btn-minimal ${isVisited ? 'is-visited' : ''}" onclick="toggleVisit('${shop.id}', false, event)" aria-label="${shop.name}の制覇状態を切り替え" style="background:none; border:none; color: ${isVisited ? 'var(--jiro-yellow)' : '#555'}; font-size: 1.05rem; padding: 0; cursor: pointer; line-height: 1; outline: none; flex-shrink: 0;">
                             ${isVisited ? '✔' : '☐'}
                         </button>
                     </div>
-                    <div style="font-size: 0.58rem; color: #ccc; margin: 1px 0; text-align:center; width:100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="${nextOpenText}">${nextOpenHtml}</div>
                 </div>
             `;
                 } else if (listSubMode === 'today') {
@@ -3253,7 +3254,7 @@
                     const tempStatus = getTemporaryStatus(shop, activeDate);
                     const todayHoursData = (() => {
                         const shifts = getTodayShifts(shop, activeDate);
-                        if (!shifts || shifts.length === 0) return { html: '休業', text: '休業' };
+                        if (!shifts || shifts.length === 0) return { html: '<span style="font-size:0.86rem; font-weight:normal; letter-spacing:1px;">休業</span>', text: '休業' };
                         const plainText = shifts.map(([start, end]) => `${formatTime(start)}-${formatTime(end)}`).join(' / ');
                         const htmlContent = shifts.map(([start, end]) => {
                             return `<div style="white-space:nowrap; line-height:1.2;">${formatShiftTimeText(`${formatTime(start)}-${formatTime(end)}`)}</div>`;
