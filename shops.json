@@ -75,7 +75,8 @@
     "holidayShifts": [],
     "remarks": "",
     "hoursNotes": "",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "三田本店"
   },
   {
     "id": "kichijoji",
@@ -107,7 +108,8 @@
     "holidayShifts": null,
     "remarks": "",
     "hoursNotes": "",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "吉祥寺"
   },
   {
     "id": "akabane1",
@@ -139,7 +141,8 @@
     "holidayShifts": null,
     "remarks": "",
     "hoursNotes": "",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "赤羽"
   },
   {
     "id": "meguro",
@@ -240,7 +243,8 @@
     "holidayShifts": null,
     "remarks": "",
     "hoursNotes": "",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "目黒"
   },
   {
     "id": "sengawa",
@@ -308,7 +312,8 @@
     "holidayShifts": [],
     "remarks": "",
     "hoursNotes": "",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "仙川"
   },
   {
     "id": "tsurumi",
@@ -340,7 +345,8 @@
     "holidayShifts": null,
     "remarks": "JR西口蒲田店へ移転",
     "hoursNotes": "",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "鶴見"
   },
   {
     "id": "musashikosugi",
@@ -372,7 +378,8 @@
     "holidayShifts": null,
     "remarks": "",
     "hoursNotes": "",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "武蔵小杉"
   },
   {
     "id": "toranomon",
@@ -404,7 +411,8 @@
     "holidayShifts": null,
     "remarks": "",
     "hoursNotes": "",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "虎ノ門"
   },
   {
     "id": "shinbashi1",
@@ -436,7 +444,8 @@
     "holidayShifts": null,
     "remarks": "",
     "hoursNotes": "",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "新橋(初)"
   },
   {
     "id": "kabukicho",
@@ -468,7 +477,8 @@
     "holidayShifts": null,
     "remarks": "新宿歌舞伎町店に移転",
     "hoursNotes": "",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "旧歌舞伎町"
   },
   {
     "id": "shinagawa",
@@ -540,7 +550,8 @@
     "holidayShifts": [],
     "remarks": "",
     "hoursNotes": "",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "品川"
   },
   {
     "id": "kamata",
@@ -572,7 +583,8 @@
     "holidayShifts": null,
     "remarks": "",
     "hoursNotes": "",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "蒲田"
   },
   {
     "id": "kanda",
@@ -604,7 +616,8 @@
     "holidayShifts": null,
     "remarks": "",
     "hoursNotes": "",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "神田"
   },
   {
     "id": "horikiri",
@@ -636,7 +649,8 @@
     "holidayShifts": null,
     "remarks": "",
     "hoursNotes": "",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "堀切"
   },
   {
     "id": "yoyogi",
@@ -668,7 +682,8 @@
     "holidayShifts": null,
     "remarks": "",
     "hoursNotes": "",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "代々木"
   },
   {
     "id": "kotakibashi",
@@ -740,7 +755,8 @@
     ],
     "remarks": "",
     "hoursNotes": "",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "小滝橋通り"
   },
   {
     "id": "machida",
@@ -772,7 +788,8 @@
     "holidayShifts": null,
     "remarks": "",
     "hoursNotes": "",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "町田"
   },
   {
     "id": "kannanashindaita",
@@ -804,7 +821,8 @@
     "holidayShifts": null,
     "remarks": "環七新新代田店に店名変更",
     "hoursNotes": "",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "環七新代田"
   },
   {
     "id": "hachiojiyaenkaido",
@@ -836,7 +854,8 @@
     "holidayShifts": null,
     "remarks": "八王子野猿街道店2に移転",
     "hoursNotes": "",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "野猿街道"
   },
   {
     "id": "ikebukuro",
@@ -920,7 +939,8 @@
         "targetOffset": 1,
         "hours": []
       }
-    ]
+    ],
+    "shortName": "池袋東口"
   },
   {
     "id": "shinkoganei",
@@ -952,7 +972,8 @@
     "holidayShifts": null,
     "remarks": "",
     "hoursNotes": "",
-    "instagram": "koganeijiro"
+    "instagram": "koganeijiro",
+    "shortName": "小金井街道"
   },
   {
     "id": "kameido",
@@ -1088,7 +1109,8 @@
     "holidayShifts": null,
     "remarks": "",
     "hoursNotes": "",
-    "instagram": "jiro_kame"
+    "instagram": "jiro_kame",
+    "shortName": "亀戸"
   },
   {
     "id": "keikyukawasaki",
@@ -1186,7 +1208,8 @@
     "holidayShifts": [],
     "remarks": "",
     "hoursNotes": "",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "京急川崎"
   },
   {
     "id": "fuchu",
@@ -1249,7 +1272,8 @@
     "holidayShifts": [],
     "remarks": "",
     "hoursNotes": "",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "府中"
   },
   {
     "id": "takadanobaba",
@@ -1281,7 +1305,8 @@
     "holidayShifts": null,
     "remarks": "",
     "hoursNotes": "",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "高田馬場"
   },
   {
     "id": "matsudo",
@@ -1364,7 +1389,8 @@
     "holidayShifts": null,
     "remarks": "",
     "hoursNotes": "祝日不定休",
-    "instagram": "mtdjiro"
+    "instagram": "mtdjiro",
+    "shortName": "松戸駅前"
   },
   {
     "id": "mejirohosei",
@@ -1396,7 +1422,8 @@
     "holidayShifts": null,
     "remarks": "めじろ台店に移転",
     "hoursNotes": "",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "法政大学前"
   },
   {
     "id": "ogikubo",
@@ -1488,7 +1515,8 @@
     "holidayShifts": null,
     "remarks": "",
     "hoursNotes": "",
-    "instagram": "ogkbjiro"
+    "instagram": "ogkbjiro",
+    "shortName": "荻窪"
   },
   {
     "id": "kaminoge",
@@ -1576,7 +1604,8 @@
     "holidayShifts": null,
     "remarks": "",
     "hoursNotes": "",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "上野毛"
   },
   {
     "id": "keiseiookubo",
@@ -1644,7 +1673,8 @@
     "holidayShifts": [],
     "remarks": "",
     "hoursNotes": "",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "京成大久保"
   },
   {
     "id": "ichinoe",
@@ -1723,7 +1753,8 @@
     ],
     "remarks": "",
     "hoursNotes": "",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "環七一之江"
   },
   {
     "id": "sagamionoekimae",
@@ -1755,7 +1786,8 @@
     "holidayShifts": null,
     "remarks": "相模大野店に移転",
     "hoursNotes": "",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "相模大野駅"
   },
   {
     "id": "kannai",
@@ -1847,7 +1879,8 @@
     "holidayShifts": null,
     "remarks": "",
     "hoursNotes": "",
-    "instagram": "kannaijiro"
+    "instagram": "kannaijiro",
+    "shortName": "横浜関内"
   },
   {
     "id": "jimbocho",
@@ -1920,7 +1953,8 @@
     "holidayShifts": [],
     "remarks": "",
     "hoursNotes": "",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "神田神保町"
   },
   {
     "id": "koiwa",
@@ -1988,7 +2022,8 @@
     "holidayShifts": [],
     "remarks": "",
     "hoursNotes": "麺切れ次第終了",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "小岩"
   },
   {
     "id": "yaen2",
@@ -2089,7 +2124,8 @@
         "targetOffset": 0,
         "hours": []
       }
-    ]
+    ],
+    "shortName": "野猿街道2"
   },
   {
     "id": "hibarigaoka",
@@ -2188,7 +2224,8 @@
     "holidayShifts": null,
     "remarks": "",
     "hoursNotes": "祝日不定休",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "ひばり駅前"
   },
   {
     "id": "sakuradai",
@@ -2220,7 +2257,8 @@
     "holidayShifts": null,
     "remarks": "",
     "hoursNotes": "",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "桜台駅前"
   },
   {
     "id": "tochigikaido",
@@ -2313,7 +2351,8 @@
     "holidayShifts": null,
     "remarks": "",
     "hoursNotes": "祝日不定休",
-    "instagram": "tochigikaidoten2007"
+    "instagram": "tochigikaidoten2007",
+    "shortName": "栃木街道"
   },
   {
     "id": "tachikawa",
@@ -2428,7 +2467,8 @@
     "holidayShifts": null,
     "remarks": "",
     "hoursNotes": "祝日不定休",
-    "instagram": "tachikawajiro"
+    "instagram": "tachikawajiro",
+    "shortName": "立川"
   },
   {
     "id": "omiya",
@@ -2460,7 +2500,8 @@
     "holidayShifts": null,
     "remarks": "",
     "hoursNotes": "",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "大宮"
   },
   {
     "id": "senjuohashi",
@@ -2518,7 +2559,8 @@
     "holidayShifts": null,
     "remarks": "",
     "hoursNotes": "土曜、祝日不定休",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "千住大橋"
   },
   {
     "id": "ibarakimoriya",
@@ -2550,7 +2592,8 @@
     "holidayShifts": null,
     "remarks": "柏店に移転",
     "hoursNotes": "",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "茨城守谷"
   },
   {
     "id": "sagamiohno",
@@ -2667,7 +2710,8 @@
     "holidayShifts": null,
     "remarks": "",
     "hoursNotes": "",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "相模大野"
   },
   {
     "id": "fujisawa",
@@ -2753,7 +2797,8 @@
     "holidayShifts": null,
     "remarks": "",
     "hoursNotes": "",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "湘南藤沢"
   },
   {
     "id": "nishidai",
@@ -2852,7 +2897,8 @@
     ],
     "remarks": "",
     "hoursNotes": "",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "西台駅前"
   },
   {
     "id": "nakayamaekimae",
@@ -2944,7 +2990,8 @@
     "holidayShifts": null,
     "remarks": "",
     "hoursNotes": "",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "中山駅前"
   },
   {
     "id": "shimbashi2",
@@ -2976,7 +3023,8 @@
     "holidayShifts": null,
     "remarks": "",
     "hoursNotes": "",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "新橋(2)"
   },
   {
     "id": "sendai",
@@ -3008,7 +3056,8 @@
     "holidayShifts": null,
     "remarks": "",
     "hoursNotes": "",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "仙台"
   },
   {
     "id": "akabane2",
@@ -3040,7 +3089,8 @@
     "holidayShifts": null,
     "remarks": "",
     "hoursNotes": "",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "赤羽(2)"
   },
   {
     "id": "sapporo",
@@ -3162,7 +3212,8 @@
     "holidayShifts": null,
     "remarks": "",
     "hoursNotes": "",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "札幌"
   },
   {
     "id": "shndaita",
@@ -3255,7 +3306,8 @@
     "holidayShifts": null,
     "remarks": "",
     "hoursNotes": "",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "新新代田"
   },
   {
     "id": "aizuwakamatsu",
@@ -3388,7 +3440,8 @@
         "day": 0,
         "hours": []
       }
-    ]
+    ],
+    "shortName": "会津若松"
   },
   {
     "id": "jrnishiguchikamata",
@@ -3420,7 +3473,8 @@
     "holidayShifts": null,
     "remarks": "",
     "hoursNotes": "",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "西口蒲田"
   },
   {
     "id": "nigata",
@@ -3553,7 +3607,8 @@
     "holidayShifts": null,
     "remarks": "",
     "hoursNotes": "",
-    "instagram": "jiro.niigata"
+    "instagram": "jiro.niigata",
+    "shortName": "新潟"
   },
   {
     "id": "kabuki",
@@ -3620,7 +3675,8 @@
     ],
     "remarks": "",
     "hoursNotes": "",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "歌舞伎町"
   },
   {
     "id": "kawagoe",
@@ -3693,7 +3749,8 @@
     "holidayShifts": null,
     "remarks": "",
     "hoursNotes": "",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "川越"
   },
   {
     "id": "kyoto",
@@ -3789,7 +3846,8 @@
     "holidayShifts": null,
     "remarks": "",
     "hoursNotes": "",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "京都"
   },
   {
     "id": "mejirodai",
@@ -3902,7 +3960,8 @@
     "holidayShifts": null,
     "remarks": "",
     "hoursNotes": "祝日不定休",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "めじろ台"
   },
   {
     "id": "koshigaya",
@@ -4020,7 +4079,8 @@
     "holidayShifts": null,
     "remarks": "",
     "hoursNotes": "",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "越谷"
   },
   {
     "id": "maebashichiyoda",
@@ -4104,7 +4164,8 @@
     "holidayShifts": null,
     "remarks": "",
     "hoursNotes": "",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "前橋千代田"
   },
   {
     "id": "chiba",
@@ -4206,7 +4267,8 @@
     "holidayShifts": null,
     "remarks": "",
     "hoursNotes": "祝日不定休",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "千葉"
   },
   {
     "id": "omiyakoenekimae",
@@ -4299,7 +4361,8 @@
     ],
     "remarks": "",
     "hoursNotes": "",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "大宮公園"
   },
   {
     "id": "hitachinaka",
@@ -4412,7 +4475,8 @@
     ],
     "remarks": "",
     "hoursNotes": "",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "ひたちなか"
   },
   {
     "id": "hitotsubashi",
@@ -4529,7 +4593,8 @@
     ],
     "remarks": "",
     "hoursNotes": "祝日不定休",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "一橋学園"
   },
   {
     "id": "kashiwa",
@@ -4602,7 +4667,8 @@
     "holidayShifts": null,
     "remarks": "",
     "hoursNotes": "",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "柏"
   },
   {
     "id": "ikuta",
@@ -4699,7 +4765,8 @@
     "holidayShifts": null,
     "remarks": "",
     "hoursNotes": "",
-    "instagram": "ikuta_jiro"
+    "instagram": "ikuta_jiro",
+    "shortName": "生田駅前"
   },
   {
     "id": "asakurakaido",
@@ -4798,7 +4865,8 @@
     "holidayShifts": null,
     "remarks": "",
     "hoursNotes": "祝日不定休",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "朝倉街道"
   },
   {
     "id": "sendai2",
@@ -4896,7 +4964,8 @@
     ],
     "remarks": "",
     "hoursNotes": "",
-    "instagram": "jiro_sendai"
+    "instagram": "jiro_sendai",
+    "shortName": "仙台2"
   },
   {
     "id": "nagoyaosone",
@@ -5019,7 +5088,8 @@
     ],
     "remarks": "",
     "hoursNotes": "",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "大曽根"
   },
   {
     "id": "okinawa",
@@ -5128,6 +5198,7 @@
     ],
     "remarks": "",
     "hoursNotes": "",
-    "instagram": ""
+    "instagram": "",
+    "shortName": "沖縄"
   }
 ]
