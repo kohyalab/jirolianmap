@@ -1760,7 +1760,17 @@
     "remarks": "",
     "hoursNotes": "",
     "instagram": "",
-    "shortName": "環七一之江"
+    "shortName": "環七一之江",
+    "soupType": "",
+    "renge": "",
+    "takeout": "",
+    "holidaySpecialShifts": [
+      {
+        "triggerDay": 3,
+        "targetOffset": 0,
+        "hours": []
+      }
+    ]
   },
   {
     "id": "sagamionoekimae",
