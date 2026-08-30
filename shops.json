@@ -695,8 +695,8 @@
     "lng": 139.69831539088952,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/kotakibashi/",
-      "tabelog": "https://tabelog.com/tokyo/A1304/A130401/13001044/",
-      "rdb": "https://ramendb.supleks.jp/s/3710.html"
+      "rdb": "https://ramendb.supleks.jp/s/3710.html",
+      "tabelog": "https://tabelog.com/tokyo/A1304/A130401/13001044/"
     },
     "x": "jiro_otakibasi",
     "ticketTiming": "",
@@ -756,7 +756,10 @@
     "remarks": "",
     "hoursNotes": "",
     "instagram": "",
-    "shortName": "小滝橋通り"
+    "shortName": "新宿小滝橋",
+    "soupType": "",
+    "renge": "",
+    "takeout": ""
   },
   {
     "id": "machida",
@@ -3631,8 +3634,8 @@
     "lng": 139.70195240044566,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/kabuki/",
-      "tabelog": "https://tabelog.com/tokyo/A1304/A130401/13200815/",
-      "rdb": "https://ramendb.supleks.jp/s/95249.html"
+      "rdb": "https://ramendb.supleks.jp/s/95249.html",
+      "tabelog": "https://tabelog.com/tokyo/A1304/A130401/13200815/"
     },
     "x": "kabujiikeji",
     "ticketTiming": "",
@@ -3687,7 +3690,10 @@
     "remarks": "",
     "hoursNotes": "",
     "instagram": "",
-    "shortName": "歌舞伎町"
+    "shortName": "歌舞伎町",
+    "soupType": "",
+    "renge": "",
+    "takeout": ""
   },
   {
     "id": "kawagoe",
