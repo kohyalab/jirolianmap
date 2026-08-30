@@ -478,7 +478,7 @@
     "remarks": "新宿歌舞伎町店に移転",
     "hoursNotes": "",
     "instagram": "",
-    "shortName": "旧歌舞伎町"
+    "shortName": "歌舞伎町"
   },
   {
     "id": "shinagawa",
@@ -1321,8 +1321,8 @@
     "lng": 139.89934609999588,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/matsudo/",
-      "tabelog": "https://tabelog.com/chiba/A1203/A120302/12000236/",
-      "rdb": "https://ramendb.supleks.jp/s/286.html"
+      "rdb": "https://ramendb.supleks.jp/s/286.html",
+      "tabelog": "https://tabelog.com/chiba/A1203/A120302/12000236/"
     },
     "x": "matsudojiro3",
     "ticketTiming": "",
@@ -1393,7 +1393,10 @@
     "remarks": "",
     "hoursNotes": "祝日不定休",
     "instagram": "mtdjiro",
-    "shortName": "松戸駅前"
+    "shortName": "松戸",
+    "soupType": "",
+    "renge": "",
+    "takeout": ""
   },
   {
     "id": "mejirohosei",
@@ -1426,7 +1429,7 @@
     "remarks": "めじろ台店に移転",
     "hoursNotes": "",
     "instagram": "",
-    "shortName": "法政大学前"
+    "shortName": "法政大学"
   },
   {
     "id": "ogikubo",
@@ -1790,7 +1793,7 @@
     "remarks": "相模大野店に移転",
     "hoursNotes": "",
     "instagram": "",
-    "shortName": "相模大野駅"
+    "shortName": "相模大野"
   },
   {
     "id": "kannai",
@@ -2264,7 +2267,7 @@
     "remarks": "",
     "hoursNotes": "",
     "instagram": "",
-    "shortName": "桜台駅前"
+    "shortName": "桜台"
   },
   {
     "id": "tochigikaido",
@@ -2904,7 +2907,7 @@
     "remarks": "",
     "hoursNotes": "",
     "instagram": "",
-    "shortName": "西台駅前"
+    "shortName": "西台"
   },
   {
     "id": "nakayamaekimae",
@@ -2997,7 +3000,7 @@
     "remarks": "",
     "hoursNotes": "",
     "instagram": "",
-    "shortName": "中山駅前"
+    "shortName": "中山"
   },
   {
     "id": "shimbashi2",
@@ -3690,7 +3693,7 @@
     "remarks": "",
     "hoursNotes": "",
     "instagram": "",
-    "shortName": "歌舞伎町",
+    "shortName": "新宿歌舞伎",
     "soupType": "",
     "renge": "",
     "takeout": ""
@@ -4783,7 +4786,7 @@
     "remarks": "",
     "hoursNotes": "",
     "instagram": "ikuta_jiro",
-    "shortName": "生田駅前"
+    "shortName": "生田"
   },
   {
     "id": "asakurakaido",
