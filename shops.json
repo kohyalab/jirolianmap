@@ -1351,6 +1351,11 @@
         "startDate": "2026-08-24",
         "endDate": "2026-08-24",
         "hours": []
+      },
+      {
+        "startDate": "2026-08-31",
+        "endDate": "2026-08-31",
+        "hours": []
       }
     ],
     "shiftsByDay": {
@@ -1818,8 +1823,8 @@
     "lng": 139.63076517117022,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/kannai/",
-      "tabelog": "https://tabelog.com/kanagawa/A1401/A140104/14001518/",
-      "rdb": "https://ramendb.supleks.jp/s/2532.html"
+      "rdb": "https://ramendb.supleks.jp/s/2532.html",
+      "tabelog": "https://tabelog.com/kanagawa/A1401/A140104/14001518/"
     },
     "x": "kannaijiro",
     "ticketTiming": "",
@@ -1830,6 +1835,16 @@
         "startDate": "2026-08-17",
         "endDate": "2026-08-21",
         "hours": []
+      },
+      {
+        "startDate": "2026-09-01",
+        "endDate": "2026-09-01",
+        "hours": [
+          [
+            11,
+            14.5
+          ]
+        ]
       }
     ],
     "shiftsByDay": {
@@ -1899,7 +1914,10 @@
     "remarks": "",
     "hoursNotes": "",
     "instagram": "kannaijiro",
-    "shortName": "横浜関内"
+    "shortName": "横浜関内",
+    "soupType": "",
+    "renge": "",
+    "takeout": ""
   },
   {
     "id": "jimbocho",
@@ -1985,8 +2003,8 @@
     "lng": 139.8800502417785,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/koiwa/",
-      "tabelog": "https://tabelog.com/tokyo/A1312/A131204/13021952/",
-      "rdb": "https://ramendb.supleks.jp/s/3387.html"
+      "rdb": "https://ramendb.supleks.jp/s/3387.html",
+      "tabelog": "https://tabelog.com/tokyo/A1312/A131204/13021952/"
     },
     "x": "koiwajiro",
     "ticketTiming": "",
@@ -2001,6 +2019,11 @@
       {
         "startDate": "2026-08-22",
         "endDate": "2026-08-22",
+        "hours": []
+      },
+      {
+        "startDate": "2026-09-01",
+        "endDate": "2026-09-01",
         "hours": []
       }
     ],
@@ -2042,7 +2065,10 @@
     "remarks": "",
     "hoursNotes": "麺切れ次第終了",
     "instagram": "",
-    "shortName": "小岩"
+    "shortName": "小岩",
+    "soupType": "",
+    "renge": "",
+    "takeout": ""
   },
   {
     "id": "yaen2",
@@ -2729,11 +2755,19 @@
         ]
       ]
     },
-    "holidayShifts": null,
+    "holidayShifts": [
+      [
+        10,
+        15
+      ]
+    ],
     "remarks": "",
     "hoursNotes": "",
     "instagram": "",
-    "shortName": "相模大野"
+    "shortName": "相模大野",
+    "soupType": "",
+    "renge": "",
+    "takeout": ""
   },
   {
     "id": "fujisawa",
@@ -2920,7 +2954,10 @@
     "remarks": "",
     "hoursNotes": "",
     "instagram": "",
-    "shortName": "西台"
+    "shortName": "西台",
+    "soupType": "",
+    "renge": "",
+    "takeout": ""
   },
   {
     "id": "nakayamaekimae",
@@ -4210,8 +4247,8 @@
     "lng": 140.12360292943615,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/chiba/",
-      "tabelog": "https://tabelog.com/chiba/A1201/A120101/12049275/",
-      "rdb": "https://ramendb.supleks.jp/s/124574.html"
+      "rdb": "https://ramendb.supleks.jp/s/124574.html",
+      "tabelog": "https://tabelog.com/chiba/A1201/A120101/12049275/"
     },
     "x": "jiro_chiba",
     "ticketTiming": "",
@@ -4231,6 +4268,21 @@
       {
         "startDate": "2026-08-17",
         "endDate": "2026-08-17",
+        "hours": []
+      },
+      {
+        "startDate": "2026-09-21",
+        "endDate": "2026-09-22",
+        "hours": [
+          [
+            11,
+            15
+          ]
+        ]
+      },
+      {
+        "startDate": "2026-09-23",
+        "endDate": "2026-09-23",
         "hours": []
       }
     ],
@@ -4301,7 +4353,10 @@
     "remarks": "",
     "hoursNotes": "祝日不定休",
     "instagram": "",
-    "shortName": "千葉"
+    "shortName": "千葉",
+    "soupType": "",
+    "renge": "",
+    "takeout": ""
   },
   {
     "id": "omiyakoenekimae",
@@ -4313,8 +4368,8 @@
     "lng": 139.63200873447423,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/omiya/",
-      "tabelog": "https://tabelog.com/saitama/A1101/A110101/11005758/",
-      "rdb": "https://ramendb.supleks.jp/s/125117.html"
+      "rdb": "https://ramendb.supleks.jp/s/125117.html",
+      "tabelog": "https://tabelog.com/saitama/A1101/A110101/11005758/"
     },
     "x": "omiyapark26",
     "ticketTiming": "",
@@ -4324,6 +4379,11 @@
       {
         "startDate": "2026-08-13",
         "endDate": "2026-08-15",
+        "hours": []
+      },
+      {
+        "startDate": "2026-08-31",
+        "endDate": "2026-08-31",
         "hours": []
       }
     ],
@@ -4395,7 +4455,10 @@
     "remarks": "",
     "hoursNotes": "",
     "instagram": "",
-    "shortName": "大宮公園"
+    "shortName": "大宮公園",
+    "soupType": "",
+    "renge": "",
+    "takeout": ""
   },
   {
     "id": "hitachinaka",
