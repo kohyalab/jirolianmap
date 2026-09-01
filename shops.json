@@ -259,8 +259,8 @@
     "lng": 139.5838900256975,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/sengawa/",
-      "tabelog": "https://tabelog.com/tokyo/A1326/A132601/13000699/",
-      "rdb": "https://ramendb.supleks.jp/s/2748.html"
+      "rdb": "https://ramendb.supleks.jp/s/2748.html",
+      "tabelog": "https://tabelog.com/tokyo/A1326/A132601/13000699/"
     },
     "x": "senjiro26",
     "ticketTiming": "",
@@ -316,7 +316,10 @@
     "remarks": "",
     "hoursNotes": "",
     "instagram": "",
-    "shortName": "仙川"
+    "shortName": "仙川",
+    "soupType": "",
+    "renge": "",
+    "takeout": ""
   },
   {
     "id": "tsurumi",
@@ -1542,8 +1545,8 @@
     "lng": 139.63897097116592,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/kaminoge/",
-      "tabelog": "https://tabelog.com/tokyo/A1317/A131715/13010417/",
-      "rdb": "https://ramendb.supleks.jp/s/3281.html"
+      "rdb": "https://ramendb.supleks.jp/s/3281.html",
+      "tabelog": "https://tabelog.com/tokyo/A1317/A131715/13010417/"
     },
     "x": "kaminogeJiro",
     "ticketTiming": "",
@@ -1553,6 +1556,11 @@
       {
         "startDate": "2026-08-09",
         "endDate": "2026-08-16",
+        "hours": []
+      },
+      {
+        "startDate": "2026-09-09",
+        "endDate": "2026-09-09",
         "hours": []
       }
     ],
@@ -1619,7 +1627,10 @@
     "remarks": "",
     "hoursNotes": "",
     "instagram": "",
-    "shortName": "上野毛"
+    "shortName": "上野毛",
+    "soupType": "",
+    "renge": "",
+    "takeout": ""
   },
   {
     "id": "keiseiookubo",
@@ -1929,8 +1940,8 @@
     "lng": 139.76081571812165,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/jimbocho/",
-      "tabelog": "https://tabelog.com/tokyo/A1310/A131003/13216512/",
-      "rdb": "https://ramendb.supleks.jp/s/105637.html"
+      "rdb": "https://ramendb.supleks.jp/s/105637.html",
+      "tabelog": "https://tabelog.com/tokyo/A1310/A131003/13216512/"
     },
     "x": "jbc_ramen_jiro",
     "ticketTiming": "",
@@ -1945,6 +1956,11 @@
       {
         "startDate": "2026-08-22",
         "endDate": "2026-08-22",
+        "hours": []
+      },
+      {
+        "startDate": "2026-09-02",
+        "endDate": "2026-09-02",
         "hours": []
       }
     ],
@@ -1991,7 +2007,10 @@
     "remarks": "",
     "hoursNotes": "",
     "instagram": "",
-    "shortName": "神田神保町"
+    "shortName": "神田神保町",
+    "soupType": "",
+    "renge": "",
+    "takeout": ""
   },
   {
     "id": "koiwa",
@@ -3329,6 +3348,31 @@
             15
           ]
         ]
+      },
+      {
+        "startDate": "2026-09-03",
+        "endDate": "2026-09-03",
+        "hours": []
+      },
+      {
+        "startDate": "2026-09-04",
+        "endDate": "2026-09-04",
+        "hours": [
+          [
+            11,
+            15
+          ]
+        ]
+      },
+      {
+        "startDate": "2026-09-06",
+        "endDate": "2026-09-06",
+        "hours": [
+          [
+            11,
+            15
+          ]
+        ]
       }
     ],
     "shiftsByDay": {
@@ -3374,7 +3418,10 @@
     "remarks": "",
     "hoursNotes": "",
     "instagram": "",
-    "shortName": "新新代田"
+    "shortName": "新新代田",
+    "soupType": "",
+    "renge": "",
+    "takeout": ""
   },
   {
     "id": "aizuwakamatsu",
@@ -3820,7 +3867,10 @@
     "remarks": "",
     "hoursNotes": "",
     "instagram": "",
-    "shortName": "川越"
+    "shortName": "川越",
+    "soupType": "",
+    "renge": "",
+    "takeout": ""
   },
   {
     "id": "kyoto",
@@ -3966,6 +4016,16 @@
             14.5
           ]
         ]
+      },
+      {
+        "startDate": "2026-09-09",
+        "endDate": "2026-09-09",
+        "hours": []
+      },
+      {
+        "startDate": "2026-09-30",
+        "endDate": "2026-09-30",
+        "hours": []
       }
     ],
     "shiftsByDay": {
@@ -4031,7 +4091,10 @@
     "remarks": "",
     "hoursNotes": "祝日不定休",
     "instagram": "",
-    "shortName": "めじろ台"
+    "shortName": "めじろ台",
+    "soupType": "",
+    "renge": "",
+    "takeout": ""
   },
   {
     "id": "koshigaya",
@@ -4292,6 +4355,16 @@
         "startDate": "2026-08-17",
         "endDate": "2026-08-17",
         "hours": []
+      },
+      {
+        "startDate": "2026-09-02",
+        "endDate": "2026-09-02",
+        "hours": [
+          [
+            11,
+            14.5
+          ]
+        ]
       },
       {
         "startDate": "2026-09-21",
@@ -4742,6 +4815,11 @@
         "startDate": "2026-08-27",
         "endDate": "2026-08-27",
         "hours": []
+      },
+      {
+        "startDate": "2026-09-03",
+        "endDate": "2026-09-03",
+        "hours": []
       }
     ],
     "shiftsByDay": {
@@ -4787,7 +4865,10 @@
     "remarks": "",
     "hoursNotes": "",
     "instagram": "",
-    "shortName": "柏"
+    "shortName": "柏",
+    "soupType": "",
+    "renge": "",
+    "takeout": ""
   },
   {
     "id": "ikuta",
@@ -4799,8 +4880,8 @@
     "lng": 139.54543979904597,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/ikuta/",
-      "tabelog": "https://tabelog.com/kanagawa/A1405/A140506/14091118/",
-      "rdb": "https://ramendb.supleks.jp/s/149549.html"
+      "rdb": "https://ramendb.supleks.jp/s/149549.html",
+      "tabelog": "https://tabelog.com/kanagawa/A1405/A140506/14091118/"
     },
     "x": "ikuta_jiro",
     "ticketTiming": "",
@@ -4815,6 +4896,26 @@
       {
         "startDate": "2026-08-22",
         "endDate": "2026-08-22",
+        "hours": []
+      },
+      {
+        "startDate": "2026-09-05",
+        "endDate": "2026-09-05",
+        "hours": [
+          [
+            11,
+            15
+          ]
+        ]
+      },
+      {
+        "startDate": "2026-09-06",
+        "endDate": "2026-09-12",
+        "hours": []
+      },
+      {
+        "startDate": "2026-09-24",
+        "endDate": "2026-09-24",
         "hours": []
       }
     ],
@@ -4885,7 +4986,10 @@
     "remarks": "",
     "hoursNotes": "",
     "instagram": "ikuta_jiro",
-    "shortName": "生田"
+    "shortName": "生田",
+    "soupType": "",
+    "renge": "",
+    "takeout": ""
   },
   {
     "id": "asakurakaido",
