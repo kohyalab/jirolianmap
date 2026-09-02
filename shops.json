@@ -1452,8 +1452,8 @@
     "lng": 139.62629727116703,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/ogikubo/",
-      "tabelog": "https://tabelog.com/tokyo/A1319/A131906/13006060/",
-      "rdb": "https://ramendb.supleks.jp/s/2638.html"
+      "rdb": "https://ramendb.supleks.jp/s/2638.html",
+      "tabelog": "https://tabelog.com/tokyo/A1319/A131906/13006060/"
     },
     "x": "ogkb_jiro",
     "ticketTiming": "",
@@ -1463,6 +1463,11 @@
       {
         "startDate": "2026-08-15",
         "endDate": "2026-08-15",
+        "hours": []
+      },
+      {
+        "startDate": "2026-09-07",
+        "endDate": "2026-09-07",
         "hours": []
       }
     ],
@@ -1533,7 +1538,10 @@
     "remarks": "",
     "hoursNotes": "",
     "instagram": "ogkbjiro",
-    "shortName": "荻窪"
+    "shortName": "荻窪",
+    "soupType": "",
+    "renge": "",
+    "takeout": ""
   },
   {
     "id": "kaminoge",
