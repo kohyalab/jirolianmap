@@ -1131,8 +1131,8 @@
     "lng": 139.70525707116533,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/keikyukawasaki/",
-      "tabelog": "https://tabelog.com/kanagawa/A1405/A140501/14000765/",
-      "rdb": "https://ramendb.supleks.jp/s/3231.html"
+      "rdb": "https://ramendb.supleks.jp/s/3231.html",
+      "tabelog": "https://tabelog.com/kanagawa/A1405/A140501/14000765/"
     },
     "x": "",
     "ticketTiming": "",
@@ -1152,6 +1152,11 @@
       {
         "startDate": "2026-08-09",
         "endDate": "2026-08-23",
+        "hours": []
+      },
+      {
+        "startDate": "2026-09-10",
+        "endDate": "2026-09-10",
         "hours": []
       }
     ],
@@ -1218,7 +1223,10 @@
     "remarks": "",
     "hoursNotes": "",
     "instagram": "",
-    "shortName": "京急川崎"
+    "shortName": "京急川崎",
+    "soupType": "",
+    "renge": "",
+    "takeout": ""
   },
   {
     "id": "fuchu",
