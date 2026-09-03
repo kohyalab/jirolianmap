@@ -4653,6 +4653,20 @@
         ]
       },
       {
+        "startDate": "2026-09-03",
+        "endDate": "2026-09-03",
+        "hours": [
+          [
+            11,
+            13.5
+          ],
+          [
+            17.5,
+            21
+          ]
+        ]
+      },
+      {
         "startDate": "2026-09-19",
         "endDate": "2026-09-20",
         "hours": [
@@ -4736,7 +4750,10 @@
     "remarks": "",
     "hoursNotes": "",
     "instagram": "",
-    "shortName": "ひたちなか"
+    "shortName": "ひたちなか",
+    "soupType": "",
+    "renge": "",
+    "takeout": ""
   },
   {
     "id": "hitotsubashi",
