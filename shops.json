@@ -949,7 +949,10 @@
         "hours": []
       }
     ],
-    "shortName": "池袋東口"
+    "shortName": "池袋東口",
+    "soupType": "",
+    "renge": "",
+    "takeout": ""
   },
   {
     "id": "shinkoganei",
@@ -4316,8 +4319,8 @@
     "lng": 139.07095892943883,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/maebashichiyoda/",
-      "tabelog": "https://tabelog.com/gunma/A1001/A100101/10020992/",
-      "rdb": "https://ramendb.supleks.jp/s/120613.html"
+      "rdb": "https://ramendb.supleks.jp/s/120613.html",
+      "tabelog": "https://tabelog.com/gunma/A1001/A100101/10020992/"
     },
     "x": "SnBZt6eRCdz7lQw",
     "ticketTiming": "",
@@ -4327,6 +4330,11 @@
       {
         "startDate": "2026-08-19",
         "endDate": "2026-08-20",
+        "hours": []
+      },
+      {
+        "startDate": "2026-09-06",
+        "endDate": "2026-09-06",
         "hours": []
       }
     ],
@@ -4389,7 +4397,10 @@
     "remarks": "",
     "hoursNotes": "",
     "instagram": "",
-    "shortName": "前橋千代田"
+    "shortName": "前橋千代田",
+    "soupType": "",
+    "renge": "",
+    "takeout": ""
   },
   {
     "id": "chiba",
@@ -5194,8 +5205,8 @@
     "lng": 140.8720881025786,
     "urls": {
       "pc": "",
-      "tabelog": "https://tabelog.com/miyagi/A0401/A040101/4028874/",
-      "rdb": "https://ramendb.supleks.jp/s/164808.html"
+      "rdb": "https://ramendb.supleks.jp/s/164808.html",
+      "tabelog": "https://tabelog.com/miyagi/A0401/A040101/4028874/"
     },
     "x": "jiro_sendai1023",
     "ticketTiming": "",
@@ -5206,6 +5217,20 @@
         "startDate": "2026-08-11",
         "endDate": "2026-08-18",
         "hours": []
+      },
+      {
+        "startDate": "2026-09-04",
+        "endDate": "2026-09-04",
+        "hours": [
+          [
+            12,
+            14.5
+          ],
+          [
+            17,
+            21
+          ]
+        ]
       }
     ],
     "shiftsByDay": {
@@ -5281,7 +5306,10 @@
     "remarks": "",
     "hoursNotes": "",
     "instagram": "jiro_sendai",
-    "shortName": "仙台2"
+    "shortName": "仙台2",
+    "soupType": "",
+    "renge": "",
+    "takeout": ""
   },
   {
     "id": "nagoyaosone",
@@ -5341,8 +5369,8 @@
         "hours": []
       },
       {
-        "startDate": "2026-09-03",
-        "endDate": "2026-09-03",
+        "startDate": "2026-09-04",
+        "endDate": "2026-09-04",
         "hours": []
       }
     ],
