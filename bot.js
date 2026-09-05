@@ -41,7 +41,8 @@ async function run() {
         deviceScaleFactor: 2 // 高解像度（Retina）
     });
 
-    await page.goto('https://app.jirolianmap.com/', { waitUntil: 'networkidle' });
+    await page.goto('https://app.jirolianmap.com/', { waitUntil: 'domcontentloaded', timeout: 60000 });
+    await page.waitForSelector('#sidebar-container', { timeout: 30000 });
 
     // 画面初期設定 & 縦長用スタイル・日本語フォント注入
     await page.evaluate(({ ymdDate, listMode, sortBy }) => {
