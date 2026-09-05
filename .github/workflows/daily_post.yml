@@ -46,14 +46,14 @@ jobs:
       - name: Run script
         env:
           TZ: 'Asia/Tokyo'
-          # workflow_dispatchまたはrepository_dispatchでdev/previewが選ばれたか判定
-          EXEC_ENV: ${{ github.event.inputs.environment || github.event.client_payload.environment || 'prod' }}
-          PREVIEW_ONLY: ${{ ((github.event.inputs.environment || github.event.client_payload.environment) == 'preview') && 'true' || 'false' }}
-          # devの時はDEV用Secretsを使用し、それ以外は本番用Secretsを使用
-          TWITTER_API_KEY: ${{ (github.event.inputs.environment || github.event.client_payload.environment) == 'dev' && secrets.TWITTER_API_KEY_DEV || secrets.TWITTER_API_KEY }}
-          TWITTER_API_SECRET: ${{ (github.event.inputs.environment || github.event.client_payload.environment) == 'dev' && secrets.TWITTER_API_SECRET_DEV || secrets.TWITTER_API_SECRET }}
-          TWITTER_ACCESS_TOKEN: ${{ (github.event.inputs.environment || github.event.client_payload.environment) == 'dev' && secrets.TWITTER_ACCESS_TOKEN_DEV || secrets.TWITTER_ACCESS_TOKEN }}
-          TWITTER_ACCESS_SECRET: ${{ (github.event.inputs.environment || github.event.client_payload.environment) == 'dev' && secrets.TWITTER_ACCESS_SECRET_DEV || secrets.TWITTER_ACCESS_SECRET }}
+          # workflow_dispatch (inputs) または repository_dispatch (client_payload) の値を取得
+          EXEC_ENV: ${{ inputs.environment || github.event.inputs.environment || github.event.client_payload.environment || 'prod' }}
+          PREVIEW_ONLY: ${{ (inputs.environment == 'preview' || github.event.inputs.environment == 'preview' || github.event.client_payload.environment == 'preview') && 'true' || 'false' }}
+          # dev環境の時のみDEV用Secretsを使用。previewの時はAPIキーを空にして誤投稿を防ぎ、prodのみ本番Secretsを使用
+          TWITTER_API_KEY: ${{ (inputs.environment == 'dev' || github.event.inputs.environment == 'dev' || github.event.client_payload.environment == 'dev') && secrets.TWITTER_API_KEY_DEV || ((inputs.environment == 'prod' || github.event.inputs.environment == 'prod' || github.event.client_payload.environment == 'prod') && secrets.TWITTER_API_KEY || '') }}
+          TWITTER_API_SECRET: ${{ (inputs.environment == 'dev' || github.event.inputs.environment == 'dev' || github.event.client_payload.environment == 'dev') && secrets.TWITTER_API_SECRET_DEV || ((inputs.environment == 'prod' || github.event.inputs.environment == 'prod' || github.event.client_payload.environment == 'prod') && secrets.TWITTER_API_SECRET || '') }}
+          TWITTER_ACCESS_TOKEN: ${{ (inputs.environment == 'dev' || github.event.inputs.environment == 'dev' || github.event.client_payload.environment == 'dev') && secrets.TWITTER_ACCESS_TOKEN_DEV || ((inputs.environment == 'prod' || github.event.inputs.environment == 'prod' || github.event.client_payload.environment == 'prod') && secrets.TWITTER_ACCESS_TOKEN || '') }}
+          TWITTER_ACCESS_SECRET: ${{ (inputs.environment == 'dev' || github.event.inputs.environment == 'dev' || github.event.client_payload.environment == 'dev') && secrets.TWITTER_ACCESS_SECRET_DEV || ((inputs.environment == 'prod' || github.event.inputs.environment == 'prod' || github.event.client_payload.environment == 'prod') && secrets.TWITTER_ACCESS_SECRET || '') }}
         run: node bot.js
 
 
