@@ -1,0 +1,2180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>shops.jsonエディター</title>
+    <!-- Flatpickr (臨時設定用のカレンダーライブラリ) のCDN読込 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/themes/dark.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ja.js"></script>
+
+    <style>
+        :root {
+            --bg-color: #121212;
+            --panel-bg: #1e1e1e;
+            --accent-color: #ffcc00;
+            --text-color: #e0e0e0;
+            --border-color: #333;
+            --danger-color: #e53935;
+            --success-color: #4caf50;
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 8px;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border-color);
+            flex-shrink: 0;
+        }
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            gap: 12px;
+        }
+        h1 { margin: 0; font-size: 1.1rem; color: var(--accent-color); white-space: nowrap; }
+        .file-controls {
+            display: flex;
+            gap: 6px;
+            align-items: center;
+            width: 100%;
+            justify-content: flex-start;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            padding-bottom: 4px;
+        }
+        
+        .btn {
+            background-color: #2a2a2a;
+            color: var(--text-color);
+            border: 1px solid var(--border-color);
+            padding: 6px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            white-space: nowrap;
+            min-height: 32px;
+        }
+        .btn:hover { background-color: #3a3a3a; border-color: var(--accent-color); }
+        .btn-primary { background-color: var(--accent-color); color: #000; border: none; }
+        .btn-primary:hover { background-color: #e6b800; }
+        .btn-success { background-color: var(--success-color); color: #fff; border: none; }
+        .btn-success:hover { background-color: #388e3c; }
+        .btn-danger { background-color: var(--danger-color); color: #fff; border: none; }
+        .btn-danger:hover { background-color: #c62828; }
+        .btn-sm { padding: 4px 8px; font-size: 0.78rem; min-height: 28px; }
+
+        .mode-tabs {
+            display: flex;
+            gap: 2px;
+            background-color: var(--panel-bg);
+            padding: 2px;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+            width: 140px;
+            flex-shrink: 0;
+        }
+        .tab-btn {
+            flex: 1;
+            background: none;
+            border: none;
+            color: #888;
+            padding: 6px 2px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 4px;
+            text-align: center;
+            white-space: nowrap;
+        }
+        .tab-btn.active {
+            background-color: #333;
+            color: var(--accent-color);
+        }
+
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            gap: 8px;
+            margin-top: 8px;
+            min-height: 0;
+        }
+
+        .sidebar-details {
+            background-color: var(--panel-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            width: 100%;
+        }
+        .sidebar-summary {
+            padding: 8px 12px;
+            font-weight: bold;
+            color: var(--accent-color);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.9rem;
+            user-select: none;
+        }
+        
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            background-color: var(--panel-bg);
+        }
+        .search-box { padding: 6px; border-bottom: 1px solid var(--border-color); }
+        .search-box input {
+            width: 100%;
+            padding: 6px 8px;
+            background-color: #121212;
+            border: 1px solid var(--border-color);
+            color: #fff;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+        .filter-box {
+            padding: 6px 8px;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            font-size: 0.8rem;
+            background-color: #161616;
+        }
+        .shop-count-header {
+            padding: 4px 8px;
+            font-size: 0.75rem;
+            color: var(--accent-color);
+            border-bottom: 1px solid var(--border-color);
+            background-color: #161616;
+            font-weight: bold;
+        }
+        .shop-list {
+            max-height: 250px;
+            overflow-y: auto;
+            padding: 4px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        .shop-item {
+            padding: 8px;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            cursor: pointer;
+            background-color: #252525;
+            font-size: 0.85rem;
+        }
+        .shop-item:hover { border-color: #555; }
+        .shop-item.active {
+            border-color: var(--accent-color);
+            background-color: #2c2a1a;
+            font-weight: bold;
+        }
+        .shop-item-title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 4px;
+        }
+        .shop-item-sub { font-size: 0.75rem; color: #888; margin-top: 2px; }
+
+        .status-badge {
+            font-size: 0.65rem;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-weight: bold;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        .status-badge.before-open { background-color: #0288d1; color: #ffffff; }
+        .status-badge.closed { background-color: #d32f2f; color: #ffffff; }
+
+        .editor-panel {
+            flex: 1;
+            background-color: var(--panel-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 10px 10px;
+            position: relative;
+        }
+
+        .sticky-editor-actions {
+            position: sticky;
+            top: -10px;
+            z-index: 100;
+            background-color: var(--panel-bg);
+            padding: 8px 0;
+            margin: -10px -10px 10px -10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+        .form-group { display: flex; flex-direction: column; gap: 4px; }
+        .col-1 { grid-column: span 1; }
+        .col-2 { grid-column: span 2; }
+        .col-3 { grid-column: span 2; }
+        .col-4 { grid-column: span 2; }
+
+        label { font-size: 0.78rem; font-weight: bold; color: #aaa; }
+        input[type="text"], input[type="number"], input[type="password"], select, textarea {
+            padding: 6px 8px;
+            background-color: #121212;
+            border: 1px solid var(--border-color);
+            color: #fff;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            transition: border-color 0.2s;
+            width: 100%;
+        }
+        input:focus, select:focus, textarea:focus { border-color: var(--accent-color); outline: none; }
+        input.error { border-color: var(--danger-color) !important; background-color: #3b1c1c; }
+        
+        .section-title {
+            grid-column: span 2;
+            font-size: 0.88rem;
+            color: var(--accent-color);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 4px;
+            margin-top: 10px;
+        }
+        .shifts-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+            grid-column: span 2;
+            background-color: #161616;
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid var(--border-color);
+        }
+        .shift-item { display: flex; flex-direction: column; gap: 2px; }
+        .shift-item label { font-size: 0.75rem; }
+        .shift-item input { font-family: monospace; font-size: 0.85rem; padding: 5px; }
+        
+        .holiday-shift-container {
+            grid-column: span 2;
+            background-color: #161616;
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .holiday-shift-container label.title { color: #ff8a80; font-weight: bold; font-size: 0.8rem; }
+        .holiday-input-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 8px;
+        }
+        .holiday-input-row input[type="text"] {
+            flex: 1;
+            min-width: 140px;
+            font-family: monospace;
+            font-size: 0.85rem;
+            padding: 5px;
+        }
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 0.8rem;
+            color: #ccc;
+            cursor: pointer;
+            font-weight: normal;
+            white-space: nowrap;
+        }
+
+        .hint { font-size: 0.72rem; color: #777; grid-column: span 2; margin-top: -2px; line-height: 1.3; }
+
+        .list-container {
+            grid-column: span 2;
+            background-color: #161616;
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .list-row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+        .list-row input.date-input { width: 110px; font-size: 0.82rem; }
+        .list-row input[type="text"].hours-input { flex: 1; min-width: 140px; font-family: monospace; font-size: 0.82rem; }
+
+        .bulk-container {
+            display: none;
+            flex: 1;
+            background-color: var(--panel-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 8px;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        .bulk-header {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 8px;
+        }
+        .bulk-table-wrapper {
+            flex: 1;
+            overflow-x: auto;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        .bulk-table { width: 100%; border-collapse: collapse; min-width: 500px; }
+        .bulk-table th {
+            text-align: left;
+            padding: 6px 8px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--accent-color);
+            font-size: 0.78rem;
+            position: sticky;
+            top: 0;
+            background-color: var(--panel-bg);
+            z-index: 10;
+        }
+        .bulk-table td {
+            padding: 6px 8px;
+            border-bottom: 1px solid #2a2a2a;
+            font-size: 0.8rem;
+            vertical-align: middle;
+        }
+        .shop-name-col { width: 140px; font-weight: bold; }
+        .shop-name-row-flex { display: flex; flex-direction: column; gap: 2px; }
+        .shop-id-badge { font-size: 0.68rem; color: #777; display: block; font-weight: normal; }
+        
+        .bulk-row-flex { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+        .bulk-field-wrap { display: flex; flex-direction: column; flex: 1; min-width: 120px; }
+
+        .bulk-shifts-wrapper { display: flex; flex-direction: column; gap: 6px; }
+        .bulk-shift-item { display: flex; align-items: center; gap: 6px; background: #161616; padding: 4px 6px; border-radius: 4px; border: 1px solid #2a2a2a; font-size: 0.8rem; }
+        .bulk-shift-item label { color: var(--accent-color); font-weight: bold; width: 24px; margin: 0; flex-shrink: 0; }
+        .bulk-shift-item input { font-family: monospace; flex: 1; }
+        
+        .link-input-group { display: flex; gap: 4px; align-items: center; }
+        .link-input-group input { flex: 1; }
+
+        /* モーダルダイアログ (GitHub連携設定用) */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-color: rgba(0,0,0,0.7);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+        .modal-overlay.active { display: flex; }
+        .modal-content {
+            background-color: var(--panel-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 16px;
+            width: 100%;
+            max-width: 480px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+        }
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+        .modal-header h2 { margin: 0; font-size: 1rem; color: var(--accent-color); }
+
+        @media (min-width: 768px) {
+            body { padding: 12px; }
+            header { flex-direction: row; justify-content: space-between; align-items: center; }
+            .header-top { width: auto; gap: 16px; }
+            .file-controls { width: auto; justify-content: flex-end; }
+            .mode-tabs { width: 160px; }
+            .tab-btn { padding: 8px 4px; font-size: 0.8rem; }
+            .main-container { flex-direction: row; }
+            .sidebar-details { width: 270px; border: none; background: transparent; }
+            .sidebar-summary { display: none; }
+            .sidebar-details[open] .sidebar, .sidebar {
+                display: flex;
+                border: 1px solid var(--border-color);
+                border-radius: 6px;
+                height: 100%;
+            }
+            .shop-list { max-height: none; flex: 1; }
+            .form-grid { grid-template-columns: repeat(4, 1fr); gap: 6px 10px; }
+            .col-1 { grid-column: span 1; }
+            .col-2 { grid-column: span 2; }
+            .col-3 { grid-column: span 3; }
+            .col-4 { grid-column: span 4; }
+            .section-title { grid-column: span 4; }
+            .hint { grid-column: span 4; }
+            .shifts-grid { grid-template-columns: repeat(4, 1fr); grid-column: span 4; }
+            .shift-item { flex-direction: row; align-items: center; }
+            .shift-item label { width: 32px; flex-shrink: 0; }
+            .holiday-shift-container { grid-column: span 4; flex-direction: row; align-items: center; }
+            .list-container { grid-column: span 4; }
+            .bulk-header { flex-direction: row; align-items: center; justify-content: space-between; }
+            .bulk-shifts-wrapper { flex-direction: row; flex-wrap: wrap; }
+            .bulk-shift-item input { width: 160px !important; flex: none; }
+            .shop-name-col { width: 200px; }
+            .shop-name-row-flex { flex-direction: row; justify-content: space-between; align-items: center; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-top">
+        <h1>shops.jsonエディター</h1>
+        <div class="mode-tabs">
+            <button class="tab-btn active" id="tab-single">店舗別</button>
+            <button class="tab-btn" id="tab-bulk">一括</button>
+        </div>
+    </div>
+
+    <div class="file-controls">
+        <button class="btn btn-success" id="btn-github-pull">🐙 GitHub取得</button>
+        <button class="btn btn-primary" id="btn-github-push">🚀 GitHub送信</button>
+        <input type="file" id="file-input" accept=".json" style="display: none;">
+        <button class="btn" onclick="document.getElementById('file-input').click()">📁 ローカル開く</button>
+        <button class="btn" id="btn-export">📥 DL</button>
+        <button class="btn" id="btn-github-config">⚙️ 設定</button>
+    </div>
+</header>
+
+<div class="main-container" id="view-single">
+    <details class="sidebar-details" id="sidebar-details" open>
+        <summary class="sidebar-summary">
+            <span>店舗一覧・検索</span>
+            <span id="summary-shop-count" style="font-size:0.75rem; color:#aaa;">0件</span>
+        </summary>
+        <div class="sidebar">
+            <div class="filter-box">
+                <label class="checkbox-label"><input type="checkbox" id="filter-open" checked onchange="app.renderList()"> 営業</label>
+                <label class="checkbox-label"><input type="checkbox" id="filter-preopen" checked onchange="app.renderList()"> 開店前</label>
+                <label class="checkbox-label"><input type="checkbox" id="filter-closed" onchange="app.renderList()"> 閉店</label>
+            </div>
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="店舗名・IDで検索...">
+            </div>
+            <div class="shop-count-header" id="shop-count-header">全 0 件</div>
+            <div class="shop-list" id="shop-list"></div>
+            <div style="padding: 6px; border-top: 1px solid var(--border-color);">
+                <button class="btn" id="btn-add" style="width: 100%;">+ 新規店舗を追加</button>
+            </div>
+        </div>
+    </details>
+
+    <div class="editor-panel">
+        <div id="no-selection" style="text-align: center; color: #666; margin: 40px 0;">
+            リストから店舗を選択するか、新規作成してください。
+        </div>
+
+        <form id="shop-form" style="display: none;">
+            <div class="sticky-editor-actions">
+                <div style="display: flex; align-items: center; gap: 6px; flex: 1; min-width: 0; margin-right: 8px;">
+                    <span style="font-size: 0.75rem; color: #888; white-space: nowrap;">編集中:</span>
+                    <span id="editing-shop-title" style="font-weight: bold; color: var(--accent-color); font-size: 1.05rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"></span>
+                </div>
+                <button type="button" class="btn btn-danger btn-sm" id="btn-delete">削除</button>
+                <div style="display: flex; gap: 6px;">
+                    <button type="button" class="btn btn-sm" id="btn-duplicate">複製</button>
+                    <button type="button" class="btn btn-primary btn-sm" id="btn-save">保存</button>
+                </div>
+            </div>
+
+            <div class="form-grid">
+                <!-- 1. 営業時間シフト設定 (優先度：低 - 基本) -->
+                <div class="section-title">営業時間シフト設定 (`shiftsByDay`, `holidayShifts`)</div>
+                <div class="hint">
+                    ※ 入力形式: `11:00-14:30, 17:00-21:00`（定休日は空欄）。
+                </div>
+
+                <div class="shifts-grid">
+                    <div class="shift-item"><label>月曜</label><input type="text" id="shift-0" onblur="app.handleShiftBlur(this)"></div>
+                    <div class="shift-item"><label>火曜</label><input type="text" id="shift-1" onblur="app.handleShiftBlur(this)"></div>
+                    <div class="shift-item"><label>水曜</label><input type="text" id="shift-2" onblur="app.handleShiftBlur(this)"></div>
+                    <div class="shift-item"><label>木曜</label><input type="text" id="shift-3" onblur="app.handleShiftBlur(this)"></div>
+                    <div class="shift-item"><label>金曜</label><input type="text" id="shift-4" onblur="app.handleShiftBlur(this)"></div>
+                    <div class="shift-item"><label>土曜</label><input type="text" id="shift-5" onblur="app.handleShiftBlur(this)"></div>
+                    <div class="shift-item"><label>日曜</label><input type="text" id="shift-6" onblur="app.handleShiftBlur(this)"></div>
+                    
+                    <div class="holiday-shift-container">
+                        <label class="title">祝日シフト</label>
+                        <div class="holiday-input-row">
+                            <input type="text" id="shift-hol" placeholder="例: 11:00-14:30" onblur="app.handleShiftBlur(this)">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="chk-follow-weekday"> 平日に準ずる (`null`)
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="holiday-shift-container" style="border-color: #666; margin-top: 4px;">
+                        <label class="title" style="color: #ccc;">営業時間補足 (`hoursNotes`)</label>
+                        <div class="holiday-input-row">
+                            <input type="text" id="field-hoursNotes" placeholder="例: 早仕舞いあり、売り切れ終了など">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. 特定週のシフト設定 (優先度：中) -->
+                <div class="section-title">特定週・曜日の設定 (`specialShifts`)</div>
+                <div class="hint">例: 第1・第3月曜休業など。時間の空欄で休業扱い。</div>
+                <div class="list-container" id="special-shifts-container"></div>
+                <div class="col-4">
+                    <button type="button" class="btn btn-sm" id="btn-add-special">+ 特定週設定を追加</button>
+                </div>
+
+                <!-- 3. 祝日特別シフト設定 (優先度：中高) -->
+                <div class="section-title">祝日特別シフト (`holidaySpecialShifts`)</div>
+                <div class="hint">例: 「月曜日が祝日の場合、当日は11:00-14:00」「月曜日が祝日の場合、翌日は定休(空欄)」など。</div>
+                <div class="list-container" id="holiday-special-shifts-container"></div>
+                <div class="col-4">
+                    <button type="button" class="btn btn-sm" id="btn-add-holiday-special-shift">+ 祝日特別シフトを追加</button>
+                </div>
+
+                <!-- 4. 臨時設定 (優先度：高 - 最優先) -->
+                <div class="section-title">臨時営業・休業設定 (`temporary`)</div>
+                <div class="hint">開始日・終了日を選択。「終了日未定」チェックで終了日無効。</div>
+                <div class="list-container" id="temporary-list-container"></div>
+                <div class="col-4" style="margin-bottom: 10px;">
+                    <button type="button" class="btn btn-sm" id="btn-add-temp">+ 臨時設定を追加</button>
+                </div>
+
+                <!-- 店舗基本情報・詳細項目 (デフォルトでは折りたたんで非表示) -->
+                <details class="col-4" id="shop-info-details" style="margin-top: 10px; border: 1px solid var(--border-color); border-radius: 6px; padding: 8px; background-color: #161616;">
+                    <summary style="font-weight: bold; color: var(--accent-color); cursor: pointer; padding: 4px; user-select: none;">
+                        店舗情報 (ID・基本情報・特徴・SNS・備考) ▼
+                    </summary>
+                    <div class="form-grid" style="margin-top: 10px;">
+                        <!-- 基本情報 -->
+                        <div class="form-group col-1">
+                            <label>ID (`id`)</label>
+                            <input type="text" id="field-id" required placeholder="mita" oninput="app.toHalfWidth(this); app.updateEditingTitleFromInputs();">
+                        </div>
+                        <div class="form-group col-1">
+                            <label>都道府県</label>
+                            <select id="field-prefecture" onchange="app.updateSingleGMapSearchLink()">
+                                <option value="">選択</option>
+                                <option value="北海道">北海道</option><option value="青森県">青森県</option><option value="岩手県">岩手県</option><option value="宮城県">宮城県</option><option value="秋田県">秋田県</option><option value="山形県">山形県</option><option value="福島県">福島県</option>
+                                <option value="茨城県">茨城県</option><option value="栃木県">栃木県</option><option value="群馬県">群馬県</option><option value="埼玉県">埼玉県</option><option value="千葉県">千葉県</option><option value="東京都">東京都</option><option value="神奈川県">神奈川県</option>
+                                <option value="新潟県">新潟県</option><option value="富山県">富山県</option><option value="石川県">石川県</option><option value="福井県">福井県</option><option value="山梨県">山梨県</option><option value="長野県">長野県</option><option value="岐阜県">岐阜県</option><option value="静岡県">静岡県</option><option value="愛知県">愛知県</option>
+                                <option value="三重県">三重県</option><option value="滋賀県">滋賀県</option><option value="京都府">京都府</option><option value="大阪府">大阪府</option><option value="兵庫県">兵庫県</option><option value="奈良県">奈良県</option><option value="和歌山県">和歌山県</option>
+                                <option value="鳥取県">鳥取県</option><option value="島根県">島根県</option><option value="岡山県">岡山県</option><option value="広島県">広島県</option><option value="山口県">山口県</option>
+                                <option value="徳島県">徳島県</option><option value="香川県">香川県</option><option value="愛媛県">愛媛県</option><option value="高知県">高知県</option>
+                                <option value="福岡県">福岡県</option><option value="佐賀県">佐賀県</option><option value="長崎県">長崎県</option><option value="熊本県">熊本県</option><option value="大分県">大分県</option><option value="宮崎県">宮崎県</option><option value="鹿児島県">鹿児島県</option><option value="沖縄県">沖縄県</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-1">
+                            <label>店舗名 (`name`)</label>
+                            <input type="text" id="field-name" required placeholder="三田本店" oninput="app.updateSingleGMapSearchLink(); app.updateEditingTitleFromInputs();">
+                        </div>
+                        <div class="form-group col-1">
+                            <label>フリガナ (`kana`)</label>
+                            <input type="text" id="field-kana" placeholder="ミタホンテン">
+                        </div>
+                        <div class="form-group col-1">
+                            <label>店舗名略称 (`shortName`・全角5文字まで)</label>
+                            <input type="text" id="field-shortName" maxlength="5" placeholder="三田">
+                        </div>
+
+                        <!-- 住所・位置情報 -->
+                        <div class="form-group col-2">
+                            <label>住所 (`addressText`)</label>
+                            <div class="link-input-group">
+                                <input type="text" id="field-addressText" placeholder="港区三田2-16-4" onblur="app.handleAddressBlur(this)" oninput="app.updateSingleGMapSearchLink()">
+                                <a href="#" id="single-gmap-search-link" target="_blank" class="btn btn-sm" style="display:none;">🗺️</a>
+                            </div>
+                        </div>
+                        <div class="form-group col-1">
+                            <label>緯度 (`lat`)</label>
+                            <input type="text" id="field-lat" placeholder="35.xxxx" oninput="app.toHalfWidth(this)">
+                        </div>
+                        <div class="form-group col-1">
+                            <label>経度 (`lng`)</label>
+                            <div class="link-input-group">
+                                <input type="text" id="field-lng" placeholder="139.xxxx" oninput="app.toHalfWidth(this)">
+                                <a href="#" id="single-map-link" target="_blank" class="btn btn-sm" style="display:none;">📍</a>
+                            </div>
+                        </div>
+
+                        <!-- リンク・詳細情報 -->
+                        <div class="form-group col-1">
+                            <label>𝕏 ID (`x`)</label>
+                            <div class="link-input-group">
+                                <input type="text" id="field-x" placeholder="jiro_mita" oninput="app.toHalfWidth(this); app.updateSingleXLink()">
+                                <a href="#" id="single-x-link" target="_blank" class="btn btn-sm" style="display:none;">🔗</a>
+                            </div>
+                        </div>
+                        <div class="form-group col-1">
+                            <label>Instagram ID (`instagram`)</label>
+                            <div class="link-input-group">
+                                <input type="text" id="field-instagram" placeholder="jiro_mita" oninput="app.toHalfWidth(this); app.updateSingleInstaLink()">
+                                <a href="#" id="single-insta-link" target="_blank" class="btn btn-sm" style="display:none;">🔗</a>
+                            </div>
+                        </div>
+                        <div class="form-group col-1">
+                            <label>RDB URL</label>
+                            <div class="link-input-group">
+                                <input type="text" id="field-url-rdb" placeholder="https://ramendb.supleks.jp/..." oninput="app.toHalfWidth(this); app.updateSingleUrlLink('rdb')">
+                                <a href="#" id="single-rdb-link" target="_blank" class="btn btn-sm" style="display:none;">🔗</a>
+                            </div>
+                        </div>
+                        <div class="form-group col-1">
+                            <label>PC店 URL</label>
+                            <div class="link-input-group">
+                                <input type="text" id="field-url-pc" placeholder="https://..." oninput="app.toHalfWidth(this); app.updateSingleUrlLink('pc')">
+                                <a href="#" id="single-pc-link" target="_blank" class="btn btn-sm" style="display:none;">🔗</a>
+                            </div>
+                        </div>
+                        <div class="form-group col-1">
+                            <label>食べログ URL</label>
+                            <div class="link-input-group">
+                                <input type="text" id="field-url-tabelog" placeholder="https://tabelog.com/..." oninput="app.toHalfWidth(this); app.updateSingleUrlLink('tabelog')">
+                                <a href="#" id="single-tabelog-link" target="_blank" class="btn btn-sm" style="display:none;">🔗</a>
+                            </div>
+                        </div>
+
+                        <!-- 開閉店日 -->
+                        <div class="form-group col-1">
+                            <label>開店日 (`openedAt`)</label>
+                            <input type="text" id="field-openedAt" placeholder="例: 1968, 2026-06-06" oninput="app.toHalfWidth(this)">
+                        </div>
+                        <div class="form-group col-1">
+                            <label>閉店日 (`closedAt`)</label>
+                            <input type="text" id="field-closedAt" placeholder="未閉店なら空欄" oninput="app.toHalfWidth(this)">
+                        </div>
+
+                        <!-- 店舗特徴 -->
+                        <div class="form-group col-2">
+                            <label>食券 (`ticketTiming`)</label>
+                            <input type="text" id="field-ticketTiming" placeholder="例: 先客に続いて購入">
+                        </div>
+                        <div class="form-group col-2">
+                            <label>スープ (`soupType`)</label>
+                            <input type="text" id="field-soupType" placeholder="例: 非乳化, 微乳化, 乳化, ど乳化">
+                        </div>
+                        <div class="form-group col-2">
+                            <label>レンゲ (`renge`)</label>
+                            <div style="display:flex; gap:4px;">
+                                <select onchange="if(this.value) document.getElementById('field-renge').value=this.value;" style="width:90px; flex-shrink:0;">
+                                    <option value="">選択</option>
+                                    <option value="あり">あり</option>
+                                    <option value="なし">なし</option>
+                                </select>
+                                <input type="text" id="field-renge" placeholder="例: あり, なし, あり(給水器横)">
+                            </div>
+                        </div>
+                        <div class="form-group col-2">
+                            <label>テイクアウト (`takeout`)</label>
+                            <div style="display:flex; gap:4px;">
+                                <select onchange="if(this.value) document.getElementById('field-takeout').value=this.value;" style="width:90px; flex-shrink:0;">
+                                    <option value="">選択</option>
+                                    <option value="可">可</option>
+                                    <option value="不可">不可</option>
+                                </select>
+                                <input type="text" id="field-takeout" placeholder="例: 可, 不可, 鍋二郎のみ">
+                            </div>
+                        </div>
+
+                        <!-- 補足メモ -->
+                        <div class="form-group col-4">
+                            <label>備考 (`remarks`)</label>
+                            <textarea id="field-remarks" rows="2" placeholder="ローカルルール等"></textarea>
+                        </div>
+                    </div>
+                </details>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="bulk-container" id="view-bulk">
+    <div class="bulk-header">
+        <div class="form-group" style="width: 100%;">
+            <label>編集・比較する項目を選択</label>
+            <select id="bulk-target-field">
+                <option value="id">ID (id)</option>
+                <option value="id_pc">ID / PC店 URL</option>
+                <option value="name_kana_short">店舗名 / フリガナ / 店舗名略称</option>
+                <option value="pref_address">都道府県 / 住所</option>
+                <option value="lat_lng">緯度 / 経度</option>
+                <option value="x_instagram">𝕏 / Instagram ID</option>
+                <option value="features">店舗特徴 (食券/スープ/レンゲ/テイクアウト)</option>
+                <option value="urls.pc">PC店 URL (urls.pc)</option>
+                <option value="urls.rdb">RDB URL (urls.rdb)</option>
+                <option value="urls.tabelog">食べログ URL (urls.tabelog)</option>
+                <option value="dates">開店日 / 閉店日</option>
+                <option value="notes">営業時間補足 / 備考</option>
+                <option value="shifts_all">シフト（全曜日・祝日）</option>
+            </select>
+        </div>
+        <div>
+            <button class="btn btn-primary btn-sm" id="btn-bulk-save" style="width: 100%;">一括編集内容を保存</button>
+        </div>
+    </div>
+
+    <div class="bulk-table-wrapper">
+        <table class="bulk-table">
+            <thead>
+                <tr>
+                    <th class="shop-name-col">店舗名 / ID</th>
+                    <th id="bulk-field-header">設定値</th>
+                </tr>
+            </thead>
+            <tbody id="bulk-table-body"></tbody>
+        </table>
+    </div>
+</div>
+
+<!-- GitHub連携設定モーダル -->
+<div class="modal-overlay" id="github-modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>⚙️ GitHub連携設定</h2>
+            <button class="btn btn-sm" onclick="app.closeGithubModal()">✕</button>
+        </div>
+        <div class="form-group">
+            <label>GitHub Personal Access Token (PAT)</label>
+            <input type="password" id="gh-token" placeholder="github_pat_xxx または ghp_xxx">
+            <div class="hint">権限: `repo` または `public_repo` のスコープが必要です。</div>
+        </div>
+        <div class="form-group">
+            <label>リポジトリ所有者名 (Owner / Username)</label>
+            <input type="text" id="gh-owner" placeholder="例: octocat">
+        </div>
+        <div class="form-group">
+            <label>リポジトリ名 (Repo Name)</label>
+            <input type="text" id="gh-repo" placeholder="例: my-ramen-app">
+        </div>
+        <div class="form-group">
+            <label>ブランチ名 (Branch)</label>
+            <input type="text" id="gh-branch" placeholder="main">
+        </div>
+        <div class="form-group">
+            <label>ファイルパス (File Path)</label>
+            <input type="text" id="gh-path" placeholder="public/shops.json または shops.json">
+        </div>
+        <div style="display:flex; justify-content:flex-end; gap:8px; margin-top:8px;">
+            <button class="btn" onclick="app.closeGithubModal()">キャンセル</button>
+            <button class="btn btn-primary" onclick="app.saveGithubConfig()">設定を保存</button>
+        </div>
+    </div>
+</div>
+
+<script>
+class EditorApp {
+    constructor() {
+        this.shops = [];
+        this.selectedId = null;
+        this.currentMode = 'single';
+        this.currentTemporary = [];
+        this.currentHolidaySpecialShifts = [];
+        this.currentSpecialShifts = [];
+        this.githubFileSha = null; // GitHub API更新用に取得したSHAを保持
+
+        this.el = {
+            fileInput: document.getElementById('file-input'),
+            exportBtn: document.getElementById('btn-export'),
+            searchInput: document.getElementById('search-input'),
+            shopCountHeader: document.getElementById('shop-count-header'),
+            summaryShopCount: document.getElementById('summary-shop-count'),
+            shopList: document.getElementById('shop-list'),
+            addBtn: document.getElementById('btn-add'),
+            noSelection: document.getElementById('no-selection'),
+            form: document.getElementById('shop-form'),
+            saveBtn: document.getElementById('btn-save'),
+            deleteBtn: document.getElementById('btn-delete'),
+            duplicateBtn: document.getElementById('btn-duplicate'),
+            kanaInput: document.getElementById('field-kana'),
+            xInput: document.getElementById('field-x'),
+            instaInput: document.getElementById('field-instagram'),
+            addressInput: document.getElementById('field-addressText'),
+            latInput: document.getElementById('field-lat'),
+            lngInput: document.getElementById('field-lng'),
+            singleMapLink: document.getElementById('single-map-link'),
+            singleGMapSearchLink: document.getElementById('single-gmap-search-link'),
+            singleXLink: document.getElementById('single-x-link'),
+            singleInstaLink: document.getElementById('single-insta-link'),
+            singlePcLink: document.getElementById('single-pc-link'),
+            singleRdbLink: document.getElementById('single-rdb-link'),
+            singleTabelogLink: document.getElementById('single-tabelog-link'),
+            tabSingle: document.getElementById('tab-single'),
+            tabBulk: document.getElementById('tab-bulk'),
+            viewSingle: document.getElementById('view-single'),
+            viewBulk: document.getElementById('view-bulk'),
+            bulkTargetField: document.getElementById('bulk-target-field'),
+            bulkTableBody: document.getElementById('bulk-table-body'),
+            bulkFieldHeader: document.getElementById('bulk-field-header'),
+            bulkSaveBtn: document.getElementById('btn-bulk-save'),
+            tempContainer: document.getElementById('temporary-list-container'),
+            addTempBtn: document.getElementById('btn-add-temp'),
+            holidaySpecialContainer: document.getElementById('holiday-special-shifts-container'),
+            addHolidaySpecialBtn: document.getElementById('btn-add-holiday-special-shift'),
+            specialContainer: document.getElementById('special-shifts-container'),
+            addSpecialBtn: document.getElementById('btn-add-special'),
+            chkFollowWeekday: document.getElementById('chk-follow-weekday'),
+            shiftHolInput: document.getElementById('shift-hol'),
+            openedAtInput: document.getElementById('field-openedAt'),
+            closedAtInput: document.getElementById('field-closedAt'),
+            sidebarDetails: document.getElementById('sidebar-details'),
+            githubModal: document.getElementById('github-modal'),
+            btnGithubPull: document.getElementById('btn-github-pull'),
+            btnGithubPush: document.getElementById('btn-github-push'),
+            btnGithubConfig: document.getElementById('btn-github-config')
+        };
+
+        this.bindEvents();
+        this.loadGithubConfigUI();
+    }
+
+    toHalfWidth(input) {
+        let val = input.value;
+        val = val.replace(/[Ａ-Ｚａ-ｚ０-９]/g, s => String.fromCharCode(s.charCodeAt(0) - 0xFEE0));
+        input.value = val;
+    }
+
+    handleAddressBlur(input) {
+        let val = this.cleanAddress(input.value);
+        const prefPattern = /^(北海道|青森県|岩手県|宮城県|秋田県|山形県|福島県|茨城県|栃木県|群馬県|埼玉県|千葉県|東京都|神奈川県|新潟県|富山県|石川県|福井県|山梨県|長野県|岐阜県|静岡県|愛知県|三重県|滋賀県|京都府|大阪府|兵庫県|奈良県|和歌山県|鳥取県|島根県|岡山県|広島県|山口県|徳島県|香川県|愛媛県|高知県|福岡県|佐賀県|長崎県|熊本県|大分県|宮崎県|鹿児島県|沖縄県)/;
+        const match = val.match(prefPattern);
+        if (match) {
+            document.getElementById('field-prefecture').value = match[1];
+            val = val.replace(prefPattern, '').trim();
+        }
+        input.value = val;
+        this.updateSingleGMapSearchLink();
+    }
+
+    generateMapUrl(pref, addressText, name) {
+        const queryParts = ['ラーメン二郎'];
+        if (name && name.trim() !== '') queryParts.push(name.trim());
+        if (addressText && addressText.trim() !== '') queryParts.push(addressText.trim());
+        else if (pref && pref.trim() !== '') queryParts.push(pref.trim());
+        return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(queryParts.join(' '))}`;
+    }
+
+    sortTemporaryDates(tempArray) {
+        if (!Array.isArray(tempArray)) return [];
+        return tempArray.sort((a, b) => {
+            const dateA = a.startDate || a.date || '';
+            const dateB = b.startDate || b.date || '';
+            return dateA.localeCompare(dateB);
+        });
+    }
+
+    sortShopsByOpenedAt() {
+        this.shops.sort((a, b) => {
+            if (!a.openedAt && !b.openedAt) return 0;
+            if (!a.openedAt) return 1;
+            if (!b.openedAt) return -1;
+            return a.openedAt.localeCompare(b.openedAt);
+        });
+    }
+
+    normalizeFurigana(str) {
+        if (!str) return '';
+        let kata = str.replace(/[\u3041-\u3096]/g, ch => String.fromCharCode(ch.charCodeAt(0) + 0x60));
+        const kanaMap = {
+            'ｱ':'ア','ｲ':'イ','ｳ':'ウ','ｴ':'エ','ｵ':'オ','ｶ':'カ','ｷ':'キ','ｸ':'ク','ｹ':'ケ','ｺ':'コ',
+            'ｻ':'サ','ｼ':'シ','ｽ':'ス','ｾ':'セ','ｿ':'ソ','ﾀ':'タ','ﾁ':'チ','ﾂ':'ツ','ﾃ':'テ','ﾄ':'ト',
+            'ﾅ':'ナ','ﾆ':'ニ','ﾇ':'ヌ','ﾈ':'ネ','ﾉ':'ノ','ﾊ':'ハ','ﾋ':'ヒ','ﾌ':'フ','ﾍ':'ヘ','ﾎ':'ホ',
+            'ﾏ':'マ','ﾐ':'ミ','ﾑ':'ム','ﾒ':'メ','ﾓ':'モ','ﾔ':'ヤ','ﾕ':'ユ','ﾖ':'ヨ','ﾗ':'ラ','ﾘ':'リ',
+            'ﾙ':'ル','ﾚ':'レ','ﾛ':'ロ','ﾜ':'ワ','ｦ':'ヲ','ﾝ':'ン','ｧ':'ァ','ｨ':'ィ','ｩ':'ゥ','ｪ':'ェ',
+            'ｫ':'ォ','ｬ':'ャ','ｭ':'ュ','ｮ':'ョ','ｯ':'ッ','ｰ':'ー','ﾞ':'゛','ﾟ':'ﾟ'
+        };
+        return kata.split('').map(c => kanaMap[c] || c).join('');
+    }
+
+    cleanAddress(str) {
+        if (!str) return '';
+        let cleaned = str
+            .replace(/[Ａ-Ｚａ-ｚ０-９]/g, s => String.fromCharCode(s.charCodeAt(0) - 0xFEE0))
+            .replace(/[―−ー－]/g, '-')
+            .replace(/[ {}]/g, ' ')
+            .trim();
+        cleaned = cleaned.replace(/^(日本|Japan)[,\s]*/i, '');
+        cleaned = cleaned.replace(/^(〒?\s*\d{3}-?\d{4})[,\s]*/, '');
+        return cleaned.replace(/\s+/g, '').trim();
+    }
+
+    normalizeAccountID(str) {
+        if (!str) return '';
+        let cleaned = str.trim();
+        const urlMatch = cleaned.match(/(?:https?:\/\/)?(?:x\.com|twitter\.com|instagram\.com)\/([A-Za-z0-9_.]+)/i);
+        if (urlMatch) cleaned = urlMatch[1];
+        return cleaned.replace(/^@/, '').replace(/[^A-Za-z0-9_.]/g, '');
+    }
+
+    normalizeBusinessHours(str, inputElem = null) {
+        if (!str || !str.trim()) {
+            if (inputElem) { inputElem.classList.remove('error'); inputElem.title = ''; }
+            return '';
+        }
+        
+        let normalized = str
+            .replace(/[ \u3000]/g, '')
+            .replace(/[０-９：]/g, s => String.fromCharCode(s.charCodeAt(0) - 0xFEE0))
+            .replace(/[、/／]/g, ',')
+            .replace(/[~～〜ー－]/g, '-');
+
+        normalized = normalized
+            .replace(/(\d{1,2})時半/g, '$1:30')
+            .replace(/(\d{1,2})時(\d{1,2})分?/g, (m, h, min) => `${h}:${min.padStart(2, '0')}`)
+            .replace(/(\d{1,2})時/g, '$1:00');
+
+        normalized = normalized.replace(/\b(\d{2})(\d{2})-(\d{2})(\d{2})\b/g, '$1:$2-$3:$4');
+        
+        normalized = normalized.replace(/[^\d:\-,\s]/g, '').trim();
+
+        if (inputElem) {
+            const isValid = /^(\d{1,2}:\d{2}-\d{1,2}:\d{2})(,\s*\d{1,2}:\d{2}-\d{1,2}:\d{2})*$/.test(normalized);
+            if (!isValid && normalized !== '') {
+                inputElem.classList.add('error');
+                inputElem.title = 'フォーマット違反: 時間表記ルール (HH:MM-HH:MM) に従っていません。';
+            } else {
+                inputElem.classList.remove('error');
+                inputElem.title = '';
+            }
+        }
+        return normalized;
+    }
+
+    handleShiftBlur(input) {
+        input.value = this.normalizeBusinessHours(input.value, input);
+    }
+
+    normalizeDate(str) {
+        if (!str) return null;
+        let val = str.trim()
+            .replace(/[０-９]/g, s => String.fromCharCode(s.charCodeAt(0) - 0xFEE0))
+            .replace(/[/.\s]/g, '-');
+        if (val === '') return null;
+        const parts = val.split('-');
+        if (parts.length >= 1 && parts[0].length > 0) {
+            const year = parts[0];
+            if (parts.length === 2) return `${year}-${parts[1].padStart(2, '0')}`;
+            if (parts.length >= 3) return `${year}-${parts[1].padStart(2, '0')}-${parts[2].padStart(2, '0')}`;
+            return year;
+        }
+        return val;
+    }
+
+    getShopStatus(shop) {
+        const now = new Date();
+        const todayStr = now.toISOString().slice(0, 10);
+
+        if (shop.openedAt) {
+            let openCompareStr = shop.openedAt;
+            if (openCompareStr.length === 4) openCompareStr += '-01-01';
+            else if (openCompareStr.length === 7) openCompareStr += '-01';
+            if (openCompareStr > todayStr) return 'BEFORE_OPEN';
+        }
+
+        if (shop.closedAt) {
+            let closeCompareStr = shop.closedAt;
+            if (closeCompareStr.length === 4) closeCompareStr += '-12-31';
+            else if (closeCompareStr.length === 7) {
+                const [y, m] = closeCompareStr.split('-').map(Number);
+                const lastDay = new Date(y, m, 0).getDate();
+                closeCompareStr += `-${String(lastDay).padStart(2, '0')}`;
+            }
+            if (closeCompareStr <= todayStr) return 'CLOSED';
+        }
+
+        return 'OPEN';
+    }
+
+    handleLatLngInput(latTarget, lngTarget) {
+        const val = latTarget.value.trim();
+        if (val.includes(',') || val.includes(' ') || val.includes(' ')) {
+            const parts = val.split(/[,,\s\u3000]+/).map(s => s.trim()).filter(Boolean);
+            if (parts.length >= 2) {
+                latTarget.value = parts[0];
+                lngTarget.value = parts[1];
+            }
+        }
+    }
+
+    updateSingleMapLink() {
+        const lat = this.el.latInput.value.trim();
+        const lng = this.el.lngInput.value.trim();
+        if (lat && lng && !isNaN(lat) && !isNaN(lng)) {
+            this.el.singleMapLink.href = `https://www.google.com/maps?q=${lat},${lng}`;
+            this.el.singleMapLink.style.display = 'inline-flex';
+        } else {
+            this.el.singleMapLink.style.display = 'none';
+        }
+    }
+
+    updateSingleGMapSearchLink() {
+        const pref = document.getElementById('field-prefecture').value;
+        const address = document.getElementById('field-addressText').value;
+        const name = document.getElementById('field-name').value;
+        if (pref || address || name) {
+            this.el.singleGMapSearchLink.href = this.generateMapUrl(pref, address, name);
+            this.el.singleGMapSearchLink.style.display = 'inline-flex';
+        } else {
+            this.el.singleGMapSearchLink.style.display = 'none';
+        }
+    }
+
+    updateSingleXLink() {
+        const val = this.normalizeAccountID(this.el.xInput.value);
+        if (val) {
+            this.el.singleXLink.href = `https://x.com/${val}`;
+            this.el.singleXLink.style.display = 'inline-flex';
+        } else {
+            this.el.singleXLink.style.display = 'none';
+        }
+    }
+
+    updateSingleInstaLink() {
+        const val = this.normalizeAccountID(this.el.instaInput.value);
+        if (val) {
+            this.el.singleInstaLink.href = `https://instagram.com/${val}`;
+            this.el.singleInstaLink.style.display = 'inline-flex';
+        } else {
+            this.el.singleInstaLink.style.display = 'none';
+        }
+    }
+
+    updateSingleUrlLink(type) {
+        const input = document.getElementById(`field-url-${type}`);
+        const linkBtn = document.getElementById(`single-${type}-link`);
+        if (!input || !linkBtn) return;
+        const val = input.value.trim();
+        if (val) {
+            linkBtn.href = val.startsWith('http') ? val : `https://${val}`;
+            linkBtn.style.display = 'inline-flex';
+        } else {
+            linkBtn.style.display = 'none';
+        }
+    }
+
+    bindEvents() {
+        this.el.fileInput.addEventListener('change', (e) => this.loadFile(e));
+        this.el.exportBtn.addEventListener('click', () => this.exportJSON());
+        this.el.searchInput.addEventListener('input', () => this.renderList());
+        this.el.addBtn.addEventListener('click', () => this.addNewShop());
+        this.el.saveBtn.addEventListener('click', () => {
+            this.saveCurrentShop();
+            alert('変更を反映しました。');
+        });
+        this.el.deleteBtn.addEventListener('click', () => this.deleteCurrentShop());
+        this.el.duplicateBtn.addEventListener('click', () => this.duplicateCurrentShop());
+        
+        this.el.addTempBtn.addEventListener('click', () => {
+            this.gatherTemporaryFromDOM();
+            const today = new Date().toISOString().split('T')[0];
+            this.currentTemporary.push({ startDate: today, endDate: today, hours: [] });
+            this.renderTemporaryList();
+        });
+
+        this.el.addHolidaySpecialBtn.addEventListener('click', () => {
+            this.gatherHolidaySpecialFromDOM();
+            this.currentHolidaySpecialShifts.push({ triggerDay: 1, targetOffset: 0, hours: [] });
+            this.renderHolidaySpecialList();
+        });
+
+        this.el.addSpecialBtn.addEventListener('click', () => {
+            this.gatherSpecialFromDOM();
+            this.currentSpecialShifts.push({ week: 1, day: 1, hours: [] });
+            this.renderSpecialList();
+        });
+        
+        this.el.tabSingle.addEventListener('click', () => this.switchMode('single'));
+        this.el.tabBulk.addEventListener('click', () => this.switchMode('bulk'));
+        this.el.bulkTargetField.addEventListener('change', () => this.renderBulkTable());
+        this.el.bulkSaveBtn.addEventListener('click', () => this.saveBulkData());
+
+        this.el.btnGithubConfig.addEventListener('click', () => this.openGithubModal());
+        this.el.btnGithubPull.addEventListener('click', () => this.pullFromGithub());
+        this.el.btnGithubPush.addEventListener('click', () => this.pushToGithub());
+
+        const onLatChange = () => { this.handleLatLngInput(this.el.latInput, this.el.lngInput); this.updateSingleMapLink(); };
+        const onLngChange = () => { this.handleLatLngInput(this.el.lngInput, this.el.latInput); this.updateSingleMapLink(); };
+        this.el.latInput.addEventListener('input', onLatChange);
+        this.el.latInput.addEventListener('paste', () => setTimeout(onLatChange, 10));
+        this.el.lngInput.addEventListener('input', onLngChange);
+        this.el.lngInput.addEventListener('paste', () => setTimeout(onLngChange, 10));
+
+        this.el.chkFollowWeekday.addEventListener('change', () => {
+            if (this.el.chkFollowWeekday.checked) {
+                this.el.shiftHolInput.value = '';
+                this.el.shiftHolInput.disabled = true;
+                this.el.shiftHolInput.style.opacity = '0.4';
+                this.el.shiftHolInput.classList.remove('error');
+            } else {
+                this.el.shiftHolInput.disabled = false;
+                this.el.shiftHolInput.style.opacity = '1';
+            }
+        });
+
+        this.el.kanaInput.addEventListener('blur', () => { this.el.kanaInput.value = this.normalizeFurigana(this.el.kanaInput.value); });
+        this.el.xInput.addEventListener('blur', () => { this.el.xInput.value = this.normalizeAccountID(this.el.xInput.value); this.updateSingleXLink(); });
+        this.el.instaInput.addEventListener('blur', () => { this.el.instaInput.value = this.normalizeAccountID(this.el.instaInput.value); this.updateSingleInstaLink(); });
+        this.el.openedAtInput.addEventListener('blur', () => { this.el.openedAtInput.value = this.normalizeDate(this.el.openedAtInput.value) || ''; });
+        this.el.closedAtInput.addEventListener('blur', () => { this.el.closedAtInput.value = this.normalizeDate(this.el.closedAtInput.value) || ''; });
+    }
+
+    // --- GitHub API 連携機能 ---
+    getGithubConfig() {
+        return {
+            token: localStorage.getItem('gh_token') || '',
+            owner: localStorage.getItem('gh_owner') || '',
+            repo: localStorage.getItem('gh_repo') || '',
+            branch: localStorage.getItem('gh_branch') || 'main',
+            path: localStorage.getItem('gh_path') || 'shops.json'
+        };
+    }
+
+    loadGithubConfigUI() {
+        const config = this.getGithubConfig();
+        document.getElementById('gh-token').value = config.token;
+        document.getElementById('gh-owner').value = config.owner;
+        document.getElementById('gh-repo').value = config.repo;
+        document.getElementById('gh-branch').value = config.branch;
+        document.getElementById('gh-path').value = config.path;
+    }
+
+    openGithubModal() {
+        this.loadGithubConfigUI();
+        this.el.githubModal.classList.add('active');
+    }
+
+    closeGithubModal() {
+        this.el.githubModal.classList.remove('active');
+    }
+
+    saveGithubConfig() {
+        localStorage.setItem('gh_token', document.getElementById('gh-token').value.trim());
+        localStorage.setItem('gh_owner', document.getElementById('gh-owner').value.trim());
+        localStorage.setItem('gh_repo', document.getElementById('gh-repo').value.trim());
+        localStorage.setItem('gh_branch', document.getElementById('gh-branch').value.trim() || 'main');
+        localStorage.setItem('gh_path', document.getElementById('gh-path').value.trim() || 'shops.json');
+        this.closeGithubModal();
+        alert('GitHub設定を保存しました。');
+    }
+
+    async pullFromGithub() {
+        const cfg = this.getGithubConfig();
+        if (!cfg.token || !cfg.owner || !cfg.repo || !cfg.path) {
+            alert('GitHub連携設定が不足しています。「設定」ボタンから入力してください。');
+            this.openGithubModal();
+            return;
+        }
+
+        const url = `https://api.github.com/repos/${cfg.owner}/${cfg.repo}/contents/${cfg.path}?ref=${cfg.branch}`;
+        
+        try {
+            this.el.btnGithubPull.disabled = true;
+            this.el.btnGithubPull.textContent = '取得中...';
+
+            const res = await fetch(url, {
+                headers: {
+                    'Authorization': `Bearer ${cfg.token}`,
+                    'Accept': 'application/vnd.github.v3+json'
+                }
+            });
+
+            if (!res.ok) {
+                throw new Error(`GitHub APIエラー: ${res.status} ${res.statusText}`);
+            }
+
+            const data = await res.json();
+            this.githubFileSha = data.sha; // 返却されたファイルのSHAを保存（Push時に必須）
+
+            // Base64デコード（日本語等ユニコードに対応）
+            const jsonText = decodeURIComponent(escape(atob(data.content.replace(/\n/g, ''))));
+            this.shops = JSON.parse(jsonText);
+
+            this.shops.forEach(shop => {
+                if (shop.temporary) shop.temporary = this.sortTemporaryDates(shop.temporary);
+                if (shop.notes !== undefined && shop.remarks === undefined) {
+                    shop.remarks = shop.notes;
+                    delete shop.notes;
+                }
+            });
+            this.sortShopsByOpenedAt();
+            this.renderList();
+            if (this.currentMode === 'bulk') this.renderBulkTable();
+
+            alert(`GitHubから ${this.shops.length}件 のデータを正常に取得しました。`);
+        } catch (err) {
+            alert(`GitHubからの取得に失敗しました:\n${err.message}`);
+        } finally {
+            this.el.btnGithubPull.disabled = false;
+            this.el.btnGithubPull.textContent = '🐙 GitHubから取得';
+        }
+    }
+
+    async pushToGithub() {
+        if (this.currentMode === 'single' && this.selectedId) this.saveCurrentShop();
+        else if (this.currentMode === 'bulk') this.saveBulkData(true);
+
+        const cfg = this.getGithubConfig();
+        if (!cfg.token || !cfg.owner || !cfg.repo || !cfg.path) {
+            alert('GitHub連携設定が不足しています。「設定」ボタンから入力してください。');
+            this.openGithubModal();
+            return;
+        }
+
+        const commitMessage = prompt('コミットメッセージを入力してください:', '臨時営業反映');
+        if (commitMessage === null) return; // キャンセル
+
+        this.shops.forEach(shop => { if (shop.temporary) shop.temporary = this.sortTemporaryDates(shop.temporary); });
+        this.sortShopsByOpenedAt();
+
+        const jsonString = JSON.stringify(this.shops, null, 2);
+        // Base64エンコード（日本語等ユニコード対応）
+        const utf8Bytes = new TextEncoder().encode(jsonString);
+        let binaryStr = '';
+        for (let i = 0; i < utf8Bytes.length; i++) {
+            binaryStr += String.fromCharCode(utf8Bytes[i]);
+        }
+        const base64Content = btoa(binaryStr);
+
+        const url = `https://api.github.com/repos/${cfg.owner}/${cfg.repo}/contents/${cfg.path}`;
+
+        try {
+            this.el.btnGithubPush.disabled = true;
+            this.el.btnGithubPush.textContent = '送信中...';
+
+            // SHAが未取得の場合は最新情報を一度問い合せてSHAを取得
+            if (!this.githubFileSha) {
+                const getRes = await fetch(`${url}?ref=${cfg.branch}`, {
+                    headers: { 'Authorization': `Bearer ${cfg.token}`, 'Accept': 'application/vnd.github.v3+json' }
+                });
+                if (getRes.ok) {
+                    const getData = await getRes.json();
+                    this.githubFileSha = getData.sha;
+                }
+            }
+
+            const payload = {
+                message: commitMessage || 'Update shops.json',
+                content: base64Content,
+                branch: cfg.branch
+            };
+            if (this.githubFileSha) {
+                payload.sha = this.githubFileSha;
+            }
+
+            const res = await fetch(url, {
+                method: 'PUT',
+                headers: {
+                    'Authorization': `Bearer ${cfg.token}`,
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/vnd.github.v3+json'
+                },
+                body: JSON.stringify(payload)
+            });
+
+            if (!res.ok) {
+                const errData = await res.json().catch(() => ({}));
+                throw new Error(`GitHub APIエラー (${res.status}): ${errData.message || res.statusText}`);
+            }
+
+            const resData = await res.json();
+            this.githubFileSha = resData.content.sha; // 最新SHAを更新
+
+            alert('GitHubに正常にコミット・反映しました！');
+        } catch (err) {
+            alert(`GitHubへの反映に失敗しました:\n${err.message}`);
+        } finally {
+            this.el.btnGithubPush.disabled = false;
+            this.el.btnGithubPush.textContent = '🚀 GitHubへ送信';
+        }
+    }
+
+    switchMode(mode) {
+        if (this.currentMode === 'single' && this.selectedId) this.saveCurrentShop();
+        else if (this.currentMode === 'bulk') this.saveBulkData(true);
+
+        this.currentMode = mode;
+        if (mode === 'single') {
+            this.el.tabSingle.classList.add('active');
+            this.el.tabBulk.classList.remove('active');
+            this.el.viewSingle.style.display = 'flex';
+            this.el.viewBulk.style.display = 'none';
+            if (this.selectedId) this.selectShop(this.selectedId, true);
+        } else {
+            this.el.tabBulk.classList.add('active');
+            this.el.tabSingle.classList.remove('active');
+            this.el.viewSingle.style.display = 'none';
+            this.el.viewBulk.style.display = 'flex';
+            this.renderBulkTable();
+        }
+    }
+
+    loadFile(e) {
+        const file = e.target.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = (evt) => {
+            try {
+                this.shops = JSON.parse(evt.target.result);
+                this.shops.forEach(shop => {
+                    if (shop.temporary) shop.temporary = this.sortTemporaryDates(shop.temporary);
+                    if (shop.notes !== undefined && shop.remarks === undefined) {
+                        shop.remarks = shop.notes;
+                        delete shop.notes;
+                    }
+                });
+                this.sortShopsByOpenedAt();
+                this.renderList();
+                if (this.currentMode === 'bulk') this.renderBulkTable();
+                alert(`${this.shops.length}件のデータを読み込みました。`);
+            } catch (err) {
+                alert('JSONの解析に失敗しました。');
+            }
+        };
+        reader.readAsText(file);
+    }
+
+    parseShiftString(str) {
+        const normalized = this.normalizeBusinessHours(str);
+        if (!normalized) return [];
+        const ranges = normalized.split(',');
+        const result = [];
+        for (let range of ranges) {
+            const parts = range.trim().split('-');
+            if (parts.length === 2) {
+                const start = this.timeToFloat(parts[0]);
+                const end = this.timeToFloat(parts[1]);
+                if (start !== null && end !== null) result.push([start, end]);
+            }
+        }
+        return result;
+    }
+
+    formatShiftArray(arr) {
+        if (!arr || !Array.isArray(arr) || arr.length === 0) return '';
+        return arr.map(([s, e]) => `${this.floatToTime(s)}-${this.floatToTime(e)}`).join(', ');
+    }
+
+    timeToFloat(timeStr) {
+        const [h, m] = timeStr.trim().split(':').map(Number);
+        if (isNaN(h)) return null;
+        return h + ((m || 0) / 60);
+    }
+
+    floatToTime(val) {
+        const h = Math.floor(val);
+        const m = Math.round((val - h) * 60);
+        return `${h}:${m < 10 ? '0' : ''}${m}`;
+    }
+
+    renderTemporaryList() {
+        this.el.tempContainer.innerHTML = '';
+        if (this.currentTemporary.length === 0) {
+            this.el.tempContainer.innerHTML = `<div style="color: #666; font-size: 0.75rem; text-align: center; padding: 2px;">設定はありません</div>`;
+            return;
+        }
+
+        this.currentTemporary.forEach((item, index) => {
+            const row = document.createElement('div');
+            row.className = 'list-row';
+            const hoursStr = this.formatShiftArray(item.hours);
+            const sDate = item.startDate || item.date || '';
+            const eDate = item.endDate || '';
+            const isNoEndDate = !item.endDate;
+
+            row.innerHTML = `
+                <div class="date-input-wrapper" style="position: relative; display: inline-block;">
+                    <input type="text" class="date-pick s-date date-input" value="${sDate}" placeholder="開始日" data-idx="${index}" style="padding-right: 24px;">
+                    <span class="cal-icon" style="position: absolute; right: 6px; top: 50%; transform: translateY(-50%); pointer-events: none; opacity: 0.5; display: inline-flex; align-items: center; justify-content: center;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg></span>
+                </div>
+                <span style="color:#666;">～</span>
+                <div class="date-input-wrapper" style="position: relative; display: inline-block; ${isNoEndDate ? 'opacity: 0.4;' : ''}">
+                    <input type="text" class="date-pick e-date date-input" value="${eDate}" placeholder="終了日" data-idx="${index}" ${isNoEndDate ? 'disabled' : ''} style="padding-right: 24px;">
+                    <span class="cal-icon" style="position: absolute; right: 6px; top: 50%; transform: translateY(-50%); pointer-events: none; opacity: 0.5; display: inline-flex; align-items: center; justify-content: center;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg></span>
+                </div>
+                <label class="checkbox-label" style="margin: 0 4px;">
+                    <input type="checkbox" ${isNoEndDate ? 'checked' : ''} onchange="app.toggleTempNoEndDate(${index}, this)"> 未定
+                </label>
+                <input type="text" class="hours-input" value="${hoursStr}" placeholder="例: 11:00-14:30 (休業は空欄)" data-temp-hours="${index}" onblur="app.handleShiftBlur(this)">
+                <button type="button" class="btn btn-danger btn-sm" onclick="app.removeTemporary(${index})">削除</button>
+            `;
+            this.el.tempContainer.appendChild(row);
+        });
+
+        const rows = this.el.tempContainer.querySelectorAll('.list-row');
+        rows.forEach((row, idx) => {
+            const sInput = row.querySelector('.s-date');
+            const eInput = row.querySelector('.e-date');
+            const chkNoEnd = row.querySelector('input[type="checkbox"]');
+
+            let ePick = flatpickr(eInput, {
+                locale: "ja", dateFormat: "Y-m-d", allowInput: true, disableMobile: true
+            });
+
+            flatpickr(sInput, {
+                locale: "ja",
+                dateFormat: "Y-m-d",
+                allowInput: true,
+                disableMobile: true,
+                onChange: (selectedDates, dateStr) => {
+                    const currentEndVal = eInput.value.trim();
+                    if (!chkNoEnd.checked && currentEndVal && currentEndVal < dateStr) {
+                        eInput.value = dateStr;
+                        ePick.setDate(dateStr);
+                        this.currentTemporary[idx].endDate = dateStr;
+                    }
+                    this.currentTemporary[idx].startDate = dateStr;
+                }
+            });
+        });
+    }
+
+    toggleTempNoEndDate(index, checkbox) {
+        this.gatherTemporaryFromDOM();
+        const row = checkbox.closest('.list-row');
+        const endInput = row.querySelector('.e-date');
+        const wrapper = endInput ? endInput.closest('.date-input-wrapper') : null;
+        if (checkbox.checked) {
+            endInput.value = '';
+            endInput.disabled = true;
+            if (wrapper) wrapper.style.opacity = '0.4';
+            else endInput.style.opacity = '0.4';
+            this.currentTemporary[index].endDate = null;
+        } else {
+            endInput.disabled = false;
+            if (wrapper) wrapper.style.opacity = '1';
+            else endInput.style.opacity = '1';
+        }
+    }
+
+    removeTemporary(index) {
+        this.gatherTemporaryFromDOM();
+        this.currentTemporary.splice(index, 1);
+        this.renderTemporaryList();
+    }
+
+    gatherTemporaryFromDOM() {
+        const rows = this.el.tempContainer.querySelectorAll('.list-row');
+        const updated = [];
+        rows.forEach((row) => {
+            const sInput = row.querySelector('.s-date');
+            const eInput = row.querySelector('.e-date');
+            const hInput = row.querySelector('input[data-temp-hours]');
+            const chkNoEnd = row.querySelector('input[type="checkbox"]');
+            
+            if (sInput && sInput.value) {
+                const sDate = sInput.value;
+                const eDate = chkNoEnd.checked ? null : (eInput.value || null);
+                updated.push({
+                    startDate: sDate,
+                    endDate: eDate,
+                    hours: this.parseShiftString(hInput ? hInput.value : '')
+                });
+            }
+        });
+        this.currentTemporary = updated;
+    }
+
+    renderSpecialList() {
+        this.el.specialContainer.innerHTML = '';
+        if (this.currentSpecialShifts.length === 0) {
+            this.el.specialContainer.innerHTML = `<div style="color: #666; font-size: 0.75rem; text-align: center; padding: 2px;">設定はありません</div>`;
+            return;
+        }
+
+        const weeks = [{v:1, l:'第1'}, {v:2, l:'第2'}, {v:3, l:'第3'}, {v:4, l:'第4'}, {v:5, l:'第5'}, {v:-1, l:'最終'}];
+        const days = [{v:1, l:'月'}, {v:2, l:'火'}, {v:3, l:'水'}, {v:4, l:'木'}, {v:5, l:'金'}, {v:6, l:'土'}, {v:0, l:'日'}];
+
+        this.currentSpecialShifts.forEach((item, index) => {
+            const row = document.createElement('div');
+            row.className = 'list-row';
+            const hoursStr = this.formatShiftArray(item.hours);
+            
+            let weekOpts = weeks.map(w => `<option value="${w.v}" ${item.week === w.v ? 'selected' : ''}>${w.l}</option>`).join('');
+            let dayOpts = days.map(d => `<option value="${d.v}" ${item.day === d.v ? 'selected' : ''}>${d.l}曜</option>`).join('');
+
+            row.innerHTML = `
+                <select class="spec-week" style="width:70px;">${weekOpts}</select>
+                <select class="spec-day" style="width:70px;">${dayOpts}</select>
+                <input type="text" class="hours-input spec-hours" value="${hoursStr}" placeholder="例: 11:00-14:30 (休業は空欄)" onblur="app.handleShiftBlur(this)">
+                <button type="button" class="btn btn-danger btn-sm" onclick="app.removeSpecial(${index})">削除</button>
+            `;
+            this.el.specialContainer.appendChild(row);
+        });
+    }
+
+    removeSpecial(index) {
+        this.gatherSpecialFromDOM();
+        this.currentSpecialShifts.splice(index, 1);
+        this.renderSpecialList();
+    }
+
+    gatherSpecialFromDOM() {
+        const rows = this.el.specialContainer.querySelectorAll('.list-row');
+        const updated = [];
+        rows.forEach(row => {
+            const wVal = parseInt(row.querySelector('.spec-week').value, 10);
+            const dVal = parseInt(row.querySelector('.spec-day').value, 10);
+            const hVal = row.querySelector('.spec-hours').value;
+            updated.push({ week: wVal, day: dVal, hours: this.parseShiftString(hVal) });
+        });
+        this.currentSpecialShifts = updated;
+    }
+
+    renderHolidaySpecialList() {
+        this.el.holidaySpecialContainer.innerHTML = '';
+        if (this.currentHolidaySpecialShifts.length === 0) {
+            this.el.holidaySpecialContainer.innerHTML = `<div style="color: #666; font-size: 0.75rem; text-align: center; padding: 2px;">設定はありません</div>`;
+            return;
+        }
+
+        const days = [{v:1, l:'月'}, {v:2, l:'火'}, {v:3, l:'水'}, {v:4, l:'木'}, {v:5, l:'金'}, {v:6, l:'土'}, {v:0, l:'日'}];
+        const offsets = [{v:0, l:'当日(0日後)'}, {v:1, l:'翌日(1日後)'}];
+
+        this.currentHolidaySpecialShifts.forEach((item, index) => {
+            const row = document.createElement('div');
+            row.className = 'list-row';
+            const hoursStr = this.formatShiftArray(item.hours);
+            
+            let dayOpts = days.map(d => `<option value="${d.v}" ${item.triggerDay === d.v ? 'selected' : ''}>${d.l}曜</option>`).join('');
+            let offsetOpts = offsets.map(o => `<option value="${o.v}" ${item.targetOffset === o.v ? 'selected' : ''}>${o.l}</option>`).join('');
+
+            row.innerHTML = `
+                <select class="transfer-trigger" style="width:70px;">${dayOpts}</select>
+                <span style="font-size:0.8rem; color:#aaa;">が祝日の場合、</span>
+                <select class="transfer-offset" style="width:110px;">${offsetOpts}</select>
+                <span style="font-size:0.8rem; color:#aaa;">の営業時間を</span>
+                <input type="text" class="hours-input transfer-hours" value="${hoursStr}" placeholder="例: 11:00-14:00 (空欄で定休)" onblur="app.handleShiftBlur(this)">
+                <button type="button" class="btn btn-danger btn-sm" onclick="app.removeHolidaySpecial(${index})">削除</button>
+            `;
+            this.el.holidaySpecialContainer.appendChild(row);
+        });
+    }
+
+    removeHolidaySpecial(index) {
+        this.gatherHolidaySpecialFromDOM();
+        this.currentHolidaySpecialShifts.splice(index, 1);
+        this.renderHolidaySpecialList();
+    }
+
+    gatherHolidaySpecialFromDOM() {
+        const rows = this.el.holidaySpecialContainer.querySelectorAll('.list-row');
+        const updated = [];
+        rows.forEach(row => {
+            const triggerEl = row.querySelector('.transfer-trigger');
+            const offsetEl = row.querySelector('.transfer-offset');
+            const hoursEl = row.querySelector('.transfer-hours');
+            if (triggerEl && offsetEl) {
+                const tVal = parseInt(triggerEl.value, 10);
+                const oVal = parseInt(offsetEl.value, 10);
+                const hVal = hoursEl ? hoursEl.value : '';
+                updated.push({
+                    triggerDay: tVal,
+                    targetOffset: oVal,
+                    hours: this.parseShiftString(hVal)
+                });
+            }
+        });
+        this.currentHolidaySpecialShifts = updated;
+    }
+
+    hiraganaToKatakana(str) {
+        if (!str) return '';
+        return str.replace(/[\u3041-\u3096]/g, function(match) {
+            return String.fromCharCode(match.charCodeAt(0) + 0x60);
+        });
+    }
+
+    renderList() {
+        const query = this.el.searchInput.value.toLowerCase().trim();
+        const katakanaQuery = this.hiraganaToKatakana(query);
+        const showOpen = document.getElementById('filter-open').checked;
+        const showPreOpen = document.getElementById('filter-preopen').checked;
+        const showClosed = document.getElementById('filter-closed').checked;
+        
+        this.el.shopList.innerHTML = '';
+        let count = 0;
+
+        this.shops.forEach(shop => {
+            if (query) {
+                const name = (shop.name || '').toLowerCase();
+                const id = (shop.id || '').toLowerCase();
+                const fullAddress = `${shop.prefecture || ''}${shop.addressText || ''}`.toLowerCase();
+                const kana = (shop.kana || '').toLowerCase();
+
+                const matches = name.includes(query) ||
+                                id.includes(query) ||
+                                fullAddress.includes(query) ||
+                                kana.includes(katakanaQuery) ||
+                                kana.includes(query);
+                if (!matches) return;
+            }
+            
+            const status = this.getShopStatus(shop);
+            if (status === 'OPEN' && !showOpen) return;
+            if (status === 'BEFORE_OPEN' && !showPreOpen) return;
+            if (status === 'CLOSED' && !showClosed) return;
+
+            count++;
+            let badgeHtml = '';
+            if (status === 'BEFORE_OPEN') badgeHtml = `<span class="status-badge before-open">オープン前</span>`;
+            else if (status === 'CLOSED') badgeHtml = `<span class="status-badge closed">閉店</span>`;
+
+            const item = document.createElement('div');
+            item.className = `shop-item ${shop.id === this.selectedId ? 'active' : ''}`;
+            item.innerHTML = `
+                <div class="shop-item-title"><span>${shop.name || '(名称未設定)'}</span>${badgeHtml}</div>
+                <div class="shop-item-sub">${shop.id} | ${shop.prefecture || ''}</div>
+            `;
+            item.onclick = () => this.selectShop(shop.id);
+            this.el.shopList.appendChild(item);
+        });
+
+        const countText = query ? `表示中 ${count} 件 (検索ヒット)` : `表示中 ${count} 件`;
+        this.el.shopCountHeader.textContent = countText;
+        this.el.summaryShopCount.textContent = countText;
+    }
+
+    updateEditingTitle(shop) {
+        const titleEl = document.getElementById('editing-shop-title');
+        if (!titleEl) return;
+        const name = shop ? (shop.name || '(名称未設定)') : '';
+        const id = shop ? (shop.id || '') : '';
+        titleEl.textContent = shop ? `${name} [ID: ${id}]` : '';
+    }
+
+    updateEditingTitleFromInputs() {
+        const titleEl = document.getElementById('editing-shop-title');
+        if (!titleEl) return;
+        const name = document.getElementById('field-name')?.value?.trim() || '(名称未設定)';
+        const id = document.getElementById('field-id')?.value?.trim() || '';
+        titleEl.textContent = `${name} [ID: ${id}]`;
+    }
+
+    selectShop(id, skipSave = false) {
+        if (!skipSave && this.selectedId && this.selectedId !== id) this.saveCurrentShop();
+
+        this.selectedId = id;
+        this.renderList();
+
+        const shop = this.shops.find(s => s.id === id);
+        if (!shop) return;
+
+        if (window.innerWidth < 768) {
+            this.el.sidebarDetails.removeAttribute('open');
+        }
+
+        this.el.noSelection.style.display = 'none';
+        this.el.form.style.display = 'block';
+
+        this.updateEditingTitle(shop);
+
+        document.getElementById('field-id').value = shop.id || '';
+        document.getElementById('field-name').value = shop.name || '';
+        document.getElementById('field-kana').value = this.normalizeFurigana(shop.kana || '');
+        document.getElementById('field-shortName').value = shop.shortName || '';
+        document.getElementById('field-prefecture').value = shop.prefecture || '';
+        document.getElementById('field-addressText').value = this.cleanAddress(shop.addressText || '');
+        document.getElementById('field-lat').value = shop.lat ?? '';
+        document.getElementById('field-lng').value = shop.lng ?? '';
+        
+        this.updateSingleMapLink();
+        this.updateSingleGMapSearchLink();
+        
+        document.getElementById('field-openedAt').value = shop.openedAt || '';
+        document.getElementById('field-closedAt').value = shop.closedAt || '';
+        
+        if (shop.urls) {
+            document.getElementById('field-url-pc').value = shop.urls.pc || '';
+            document.getElementById('field-url-rdb').value = shop.urls.rdb || '';
+            document.getElementById('field-url-tabelog').value = shop.urls.tabelog || '';
+        } else {
+            document.getElementById('field-url-pc').value = '';
+            document.getElementById('field-url-rdb').value = '';
+            document.getElementById('field-url-tabelog').value = '';
+        }
+        this.updateSingleUrlLink('pc');
+        this.updateSingleUrlLink('rdb');
+        this.updateSingleUrlLink('tabelog');
+
+        document.getElementById('field-x').value = this.normalizeAccountID(shop.x || '');
+        document.getElementById('field-instagram').value = this.normalizeAccountID(shop.instagram || '');
+        this.updateSingleXLink();
+        this.updateSingleInstaLink();
+
+        document.getElementById('field-ticketTiming').value = shop.ticketTiming || '';
+        document.getElementById('field-soupType').value = shop.soupType || '';
+        document.getElementById('field-renge').value = shop.renge || '';
+        document.getElementById('field-takeout').value = shop.takeout || '';
+        document.getElementById('field-hoursNotes').value = shop.hoursNotes || '';
+        document.getElementById('field-remarks').value = shop.remarks || shop.notes || '';
+        
+        this.currentTemporary = shop.temporary ? JSON.parse(JSON.stringify(shop.temporary)) : [];
+        this.renderTemporaryList();
+
+        this.currentSpecialShifts = shop.specialShifts ? JSON.parse(JSON.stringify(shop.specialShifts)) : [];
+        this.renderSpecialList();
+
+        this.currentHolidaySpecialShifts = shop.holidaySpecialShifts ? JSON.parse(JSON.stringify(shop.holidaySpecialShifts)) : [];
+        this.renderHolidaySpecialList();
+
+        const shifts = shop.shiftsByDay || {};
+        for (let i = 0; i <= 6; i++) {
+            const input = document.getElementById(`shift-${i}`);
+            input.value = this.formatShiftArray(shifts[i]);
+            input.classList.remove('error');
+        }
+
+        if (shop.holidayShifts === null) {
+            this.el.chkFollowWeekday.checked = true;
+            this.el.shiftHolInput.value = '';
+            this.el.shiftHolInput.disabled = true;
+            this.el.shiftHolInput.style.opacity = '0.4';
+            this.el.shiftHolInput.classList.remove('error');
+        } else {
+            this.el.chkFollowWeekday.checked = false;
+            this.el.shiftHolInput.disabled = false;
+            this.el.shiftHolInput.style.opacity = '1';
+            this.el.shiftHolInput.value = this.formatShiftArray(shop.holidayShifts);
+            this.el.shiftHolInput.classList.remove('error');
+        }
+    }
+
+    saveCurrentShop() {
+        if (!this.selectedId) return;
+        const idInput = document.getElementById('field-id');
+        if (!idInput) return;
+        const id = idInput.value.trim();
+        if (!id) return;
+
+        let shop = this.shops.find(s => s.id === this.selectedId);
+        if (!shop) { shop = { id }; this.shops.push(shop); }
+
+        shop.id = id;
+        shop.name = document.getElementById('field-name').value;
+        shop.kana = this.normalizeFurigana(document.getElementById('field-kana').value);
+        shop.shortName = document.getElementById('field-shortName').value.trim();
+        shop.prefecture = document.getElementById('field-prefecture').value;
+        shop.addressText = this.cleanAddress(document.getElementById('field-addressText').value);
+        shop.lat = parseFloat(document.getElementById('field-lat').value) || 0;
+        shop.lng = parseFloat(document.getElementById('field-lng').value) || 0;
+        shop.openedAt = this.normalizeDate(document.getElementById('field-openedAt').value);
+        shop.closedAt = this.normalizeDate(document.getElementById('field-closedAt').value);
+        
+        shop.urls = {
+            pc: document.getElementById('field-url-pc').value.trim(),
+            rdb: document.getElementById('field-url-rdb').value.trim(),
+            tabelog: document.getElementById('field-url-tabelog').value.trim()
+        };
+
+        shop.x = this.normalizeAccountID(document.getElementById('field-x').value);
+        shop.instagram = this.normalizeAccountID(document.getElementById('field-instagram').value);
+        shop.ticketTiming = document.getElementById('field-ticketTiming').value;
+        shop.soupType = document.getElementById('field-soupType').value.trim();
+        shop.renge = document.getElementById('field-renge').value.trim();
+        shop.takeout = document.getElementById('field-takeout').value.trim();
+        shop.hoursNotes = document.getElementById('field-hoursNotes').value;
+        shop.remarks = document.getElementById('field-remarks').value;
+
+        this.gatherTemporaryFromDOM();
+        shop.temporary = this.sortTemporaryDates(this.currentTemporary);
+
+        this.gatherSpecialFromDOM();
+        shop.specialShifts = this.currentSpecialShifts.length > 0 ? this.currentSpecialShifts : undefined;
+
+        this.gatherHolidaySpecialFromDOM();
+        shop.holidaySpecialShifts = this.currentHolidaySpecialShifts.length > 0 ? this.currentHolidaySpecialShifts : undefined;
+
+        shop.shiftsByDay = {};
+        for (let i = 0; i <= 6; i++) {
+            shop.shiftsByDay[i] = this.parseShiftString(document.getElementById(`shift-${i}`).value);
+        }
+        
+        shop.holidayShifts = this.el.chkFollowWeekday.checked ? null : this.parseShiftString(this.el.shiftHolInput.value);
+
+        this.selectedId = id;
+        this.sortShopsByOpenedAt();
+        this.renderList();
+    }
+
+    renderBulkTable() {
+        const fieldKey = this.el.bulkTargetField.value;
+        const selectedOptionText = this.el.bulkTargetField.options[this.el.bulkTargetField.selectedIndex].text;
+        
+        if (fieldKey === 'id_pc') {
+            this.el.bulkFieldHeader.innerHTML = `<div style="display:flex; gap:8px;"><span style="width:120px;">ID (id)</span><span style="flex:1;">PC URL</span></div>`;
+        } else if (fieldKey === 'name_kana_short' || fieldKey === 'name_kana') {
+            this.el.bulkFieldHeader.innerHTML = `<div style="display:flex; gap:8px;"><span style="flex:1;">店舗名</span><span style="flex:1;">フリガナ</span><span style="width:100px;">略称(5字)</span></div>`;
+        } else if (fieldKey === 'pref_address') {
+            this.el.bulkFieldHeader.innerHTML = `<div style="display:flex; gap:8px;"><span style="width:100px;">都道府県</span><span style="flex:1;">住所</span></div>`;
+        } else if (fieldKey === 'lat_lng') {
+            this.el.bulkFieldHeader.innerHTML = `<div style="display:flex; gap:8px;"><span style="flex:1;">緯度</span><span style="flex:1;">経度</span></div>`;
+        } else if (fieldKey === 'dates') {
+            this.el.bulkFieldHeader.innerHTML = `<div style="display:flex; gap:8px;"><span style="flex:1;">開店日</span><span style="flex:1;">閉店日</span></div>`;
+        } else if (fieldKey === 'x_instagram') {
+            this.el.bulkFieldHeader.innerHTML = `<div style="display:flex; gap:8px;"><span style="flex:1;">𝕏 ID</span><span style="flex:1;">Instagram ID</span></div>`;
+        } else if (fieldKey === 'features') {
+            this.el.bulkFieldHeader.innerHTML = `<div style="display:flex; gap:6px;"><span style="flex:1;">食券</span><span style="flex:1;">スープ</span><span style="flex:1;">レンゲ</span><span style="flex:1;">テイクアウト</span></div>`;
+        } else if (fieldKey === 'notes') {
+            this.el.bulkFieldHeader.innerHTML = `<div style="display:flex; gap:8px;"><span style="flex:1;">営業時間補足</span><span style="flex:1;">備考</span></div>`;
+        } else {
+            this.el.bulkFieldHeader.innerHTML = `<span>${selectedOptionText}</span>`;
+        }
+
+        this.el.bulkTableBody.innerHTML = '';
+        if (this.shops.length === 0) return;
+
+        const prefs = ["北海道","青森県","岩手県","宮城県","秋田県","山形県","福島県","茨城県","栃木県","群馬県","埼玉県","千葉県","東京都","神奈川県","新潟県","富山県","石川県","福井県","山梨県","長野県","岐阜県","静岡県","愛知県","三重県","滋賀県","京都府","大阪府","兵庫県","奈良県","和歌山県","鳥取県","島根県","岡山県","広島県","山口県","徳島県","香川県","愛媛県","高知県","福岡県","佐賀県","長崎県","熊本県","大分県","宮崎県","鹿児島県","沖縄県"];
+
+        this.shops.forEach((shop) => {
+            const tr = document.createElement('tr');
+            let inputHtml = '';
+            const status = this.getShopStatus(shop);
+            let badgeHtml = status === 'BEFORE_OPEN' ? `<span class="status-badge before-open">オープン前</span>` : (status === 'CLOSED' ? `<span class="status-badge closed">閉店</span>` : '');
+
+            if (fieldKey === 'id_pc') {
+                const pcVal = shop.urls?.pc || '';
+                const linkUrl = pcVal ? (pcVal.startsWith('http') ? pcVal : `https://${pcVal}`) : '#';
+                inputHtml = `
+                    <div class="bulk-row-flex">
+                        <div class="bulk-field-wrap" style="width:120px; flex:none;">
+                            <input type="text" data-shop-id="${shop.id}" data-bulk-sub="id" value="${shop.id || ''}" oninput="app.toHalfWidth(this)">
+                        </div>
+                        <div class="bulk-field-wrap" style="flex:1;">
+                            <input type="text" data-shop-id="${shop.id}" data-bulk-sub="urls.pc" value="${pcVal}" oninput="app.toHalfWidth(this); app.updateBulkLink(this, 'urls.pc')">
+                        </div>
+                        <a href="${linkUrl}" target="_blank" class="btn btn-sm" data-bulk-link-btn="${shop.id}" style="${pcVal?'':'display:none;'}">🔗</a>
+                    </div>`;
+            } else if (fieldKey === 'name_kana_short' || fieldKey === 'name_kana') {
+                const gmapUrl = this.generateMapUrl(shop.prefecture, shop.addressText, shop.name);
+                inputHtml = `
+                    <div class="bulk-row-flex">
+                        <div class="bulk-field-wrap" style="flex:1;"><input type="text" data-shop-id="${shop.id}" data-bulk-sub="name" value="${shop.name || ''}" placeholder="店舗名" oninput="app.updateBulkGMapLink(this)"></div>
+                        <div class="bulk-field-wrap" style="flex:1;"><input type="text" data-shop-id="${shop.id}" data-bulk-sub="kana" value="${shop.kana || ''}" placeholder="フリガナ" onblur="this.value=app.normalizeFurigana(this.value)"></div>
+                        <div class="bulk-field-wrap" style="width:100px; flex:none;"><input type="text" data-shop-id="${shop.id}" data-bulk-sub="shortName" maxlength="5" value="${shop.shortName || ''}" placeholder="略称(5字)"></div>
+                        <a href="${gmapUrl}" target="_blank" class="btn btn-sm" data-bulk-gmap-btn="${shop.id}">🗺️</a>
+                    </div>`;
+            } else if (fieldKey === 'pref_address') {
+                let prefOpts = prefs.map(p => `<option value="${p}" ${shop.prefecture === p ? 'selected' : ''}>${p}</option>`).join('');
+                const gmapUrl = this.generateMapUrl(shop.prefecture, shop.addressText, shop.name);
+                inputHtml = `
+                    <div class="bulk-row-flex">
+                        <div class="bulk-field-wrap" style="width:100px; flex:none;"><select data-shop-id="${shop.id}" data-bulk-sub="prefecture" onchange="app.updateBulkGMapLink(this)"><option value="">選択</option>${prefOpts}</select></div>
+                        <div class="bulk-field-wrap" style="flex:1;"><input type="text" data-shop-id="${shop.id}" data-bulk-sub="addressText" value="${shop.addressText || ''}" onblur="app.handleAddressBlur(this); app.updateBulkGMapLink(this);"></div>
+                        <a href="${gmapUrl}" target="_blank" class="btn btn-sm" data-bulk-gmap-btn="${shop.id}">🗺️</a>
+                    </div>`;
+            } else if (fieldKey === 'lat_lng') {
+                const latVal = shop.lat ?? 0, lngVal = shop.lng ?? 0;
+                inputHtml = `
+                    <div class="bulk-row-flex">
+                        <div class="bulk-field-wrap" style="flex:1;"><input type="text" data-shop-id="${shop.id}" data-bulk-sub="lat" value="${latVal}" oninput="app.toHalfWidth(this); app.updateBulkMapLink(this)"></div>
+                        <div class="bulk-field-wrap" style="flex:1;"><input type="text" data-shop-id="${shop.id}" data-bulk-sub="lng" value="${lngVal}" oninput="app.toHalfWidth(this); app.updateBulkMapLink(this)"></div>
+                        <a href="https://www.google.com/maps?q=${latVal},${lngVal}" target="_blank" class="btn btn-sm" data-bulk-map-btn="${shop.id}">📍</a>
+                    </div>`;
+            } else if (fieldKey === 'dates') {
+                inputHtml = `
+                    <div class="bulk-row-flex">
+                        <div class="bulk-field-wrap"><input type="text" data-shop-id="${shop.id}" data-bulk-sub="openedAt" value="${shop.openedAt || ''}" oninput="app.toHalfWidth(this)" onblur="this.value=app.normalizeDate(this.value)||''"></div>
+                        <div class="bulk-field-wrap"><input type="text" data-shop-id="${shop.id}" data-bulk-sub="closedAt" value="${shop.closedAt || ''}" oninput="app.toHalfWidth(this)" onblur="this.value=app.normalizeDate(this.value)||''"></div>
+                    </div>`;
+            } else if (fieldKey === 'x_instagram') {
+                const xVal = shop.x || '', iVal = shop.instagram || '';
+                const xLink = xVal ? `https://x.com/${xVal}` : '#';
+                const iLink = iVal ? `https://instagram.com/${iVal}` : '#';
+                inputHtml = `
+                    <div class="bulk-row-flex">
+                        <div class="bulk-field-wrap" style="flex:1; flex-direction:row; gap:4px; align-items:center;">
+                            <input type="text" data-shop-id="${shop.id}" data-bulk-sub="x" value="${xVal}" placeholder="𝕏 ID" oninput="app.toHalfWidth(this); app.updateBulkLinkDual(this, 'x')">
+                            <a href="${xLink}" target="_blank" class="btn btn-sm" data-bulk-link-x="${shop.id}" style="${xVal?'':'display:none;'}">🔗</a>
+                        </div>
+                        <div class="bulk-field-wrap" style="flex:1; flex-direction:row; gap:4px; align-items:center;">
+                            <input type="text" data-shop-id="${shop.id}" data-bulk-sub="instagram" value="${iVal}" placeholder="Instagram ID" oninput="app.toHalfWidth(this); app.updateBulkLinkDual(this, 'insta')">
+                            <a href="${iLink}" target="_blank" class="btn btn-sm" data-bulk-link-insta="${shop.id}" style="${iVal?'':'display:none;'}">🔗</a>
+                        </div>
+                    </div>`;
+            } else if (fieldKey === 'features') {
+                inputHtml = `
+                    <div class="bulk-row-flex">
+                        <div class="bulk-field-wrap" style="flex:1;"><input type="text" data-shop-id="${shop.id}" data-bulk-sub="ticketTiming" value="${shop.ticketTiming || ''}" placeholder="食券"></div>
+                        <div class="bulk-field-wrap" style="flex:1; flex-direction:row; gap:2px;">
+                            <select onchange="if(this.value){ const inp=this.nextElementSibling; inp.value=this.value; }" style="width:58px; flex:none; padding:2px; font-size:0.75rem;">
+                                <option value="">選択</option>
+                                <option value="非乳化">非乳化</option>
+                                <option value="微乳化">微乳化</option>
+                                <option value="乳化">乳化</option>
+                                <option value="ど乳化">ど乳化</option>
+                            </select>
+                            <input type="text" data-shop-id="${shop.id}" data-bulk-sub="soupType" value="${shop.soupType || ''}" placeholder="スープ" style="flex:1;">
+                        </div>
+                        <div class="bulk-field-wrap" style="flex:1; flex-direction:row; gap:2px;">
+                            <select onchange="if(this.value){ const inp=this.nextElementSibling; inp.value=this.value; }" style="width:50px; flex:none; padding:2px; font-size:0.75rem;">
+                                <option value="">選択</option>
+                                <option value="あり">あり</option>
+                                <option value="なし">なし</option>
+                            </select>
+                            <input type="text" data-shop-id="${shop.id}" data-bulk-sub="renge" value="${shop.renge || ''}" placeholder="レンゲ" style="flex:1;">
+                        </div>
+                        <div class="bulk-field-wrap" style="flex:1; flex-direction:row; gap:2px;">
+                            <select onchange="if(this.value){ const inp=this.nextElementSibling; inp.value=this.value; }" style="width:50px; flex:none; padding:2px; font-size:0.75rem;">
+                                <option value="">選択</option>
+                                <option value="可">可</option>
+                                <option value="不可">不可</option>
+                            </select>
+                            <input type="text" data-shop-id="${shop.id}" data-bulk-sub="takeout" value="${shop.takeout || ''}" placeholder="テイクアウト" style="flex:1;">
+                        </div>
+                    </div>`;
+            } else if (fieldKey === 'notes') {
+                inputHtml = `
+                    <div class="bulk-row-flex">
+                        <div class="bulk-field-wrap"><textarea data-shop-id="${shop.id}" data-bulk-sub="hoursNotes" rows="1">${shop.hoursNotes || ''}</textarea></div>
+                        <div class="bulk-field-wrap"><textarea data-shop-id="${shop.id}" data-bulk-sub="remarks" rows="1">${shop.remarks || shop.notes || ''}</textarea></div>
+                    </div>`;
+            } else if (fieldKey === 'shifts_all') {
+                const days = [{id:'1', l:'月'}, {id:'2', l:'火'}, {id:'3', l:'水'}, {id:'4', l:'木'}, {id:'5', l:'金'}, {id:'6', l:'土'}, {id:'0', l:'日'}];
+                let itemsHtml = '';
+                days.forEach(d => {
+                    const val = this.formatShiftArray(shop.shiftsByDay ? shop.shiftsByDay[d.id] : []);
+                    itemsHtml += `<div class="bulk-shift-item"><label>${d.l}</label><input type="text" data-shop-id="${shop.id}" data-bulk-shift-day="${d.id}" value="${val}" onblur="app.handleShiftBlur(this)"></div>`;
+                });
+                const isNull = shop.holidayShifts === null;
+                const holVal = isNull ? '' : this.formatShiftArray(shop.holidayShifts);
+                itemsHtml += `
+                    <div class="bulk-shift-item" style="border-color:#ff8a80; background:#201616;">
+                        <label style="color:#ff8a80;">祝</label>
+                        <input type="text" data-shop-id="${shop.id}" data-bulk-shift-hol value="${holVal}" ${isNull ? 'disabled style="opacity:0.4;"' : ''} onblur="app.handleShiftBlur(this)">
+                        <label class="checkbox-label" style="font-size:0.7rem; margin-left:2px;"><input type="checkbox" data-shop-id="${shop.id}" data-bulk-shift-hol-chk ${isNull?'checked':''} onchange="app.toggleBulkShiftHolCheckbox(this)"> 平日準拠</label>
+                    </div>
+                    <div class="bulk-shift-item" style="flex:1; min-width:100%; border-color:#666; background:#161616; display:flex; flex-direction:row; align-items:center; gap:8px; box-sizing:border-box;">
+                        <label style="color:#ccc; width:auto; white-space:nowrap; margin:0;">補足</label>
+                        <input type="text" data-shop-id="${shop.id}" data-bulk-shift-hours-notes value="${shop.hoursNotes || ''}" placeholder="例: 早仕舞いあり 等" style="flex:1;">
+                    </div>`;
+                inputHtml = `<div class="bulk-shifts-wrapper">${itemsHtml}</div>`;
+            } else {
+                let currentVal = '';
+                if (fieldKey === 'urls.pc') currentVal = shop.urls?.pc || '';
+                else if (fieldKey === 'urls.rdb') currentVal = shop.urls?.rdb || '';
+                else if (fieldKey === 'urls.tabelog') currentVal = shop.urls?.tabelog || '';
+
+                let linkUrl = currentVal ? (currentVal.startsWith('http') ? currentVal : `https://${currentVal}`) : '#';
+                inputHtml = `
+                    <div class="bulk-row-flex">
+                        <div class="bulk-field-wrap" style="flex: 1;"><input type="text" data-shop-id="${shop.id}" data-bulk-single-field="${fieldKey}" value="${currentVal}" oninput="app.toHalfWidth(this); app.updateBulkLink(this, '${fieldKey}')"></div>
+                        <a href="${linkUrl}" target="_blank" class="btn btn-sm" data-bulk-link-btn="${shop.id}" style="${currentVal ? '' : 'display:none;'}">🔗</a>
+                    </div>`;
+            }
+
+            tr.innerHTML = `<td class="shop-name-col"><div class="shop-name-row-flex"><span>${shop.name || '(未設定)'}</span>${badgeHtml}</div><span class="shop-id-badge">${shop.id}</span></td><td>${inputHtml}</td>`;
+            this.el.bulkTableBody.appendChild(tr);
+        });
+    }
+
+    updateBulkMapLink(input) {
+        const row = input.closest('tr');
+        const latInput = row.querySelector('[data-bulk-sub="lat"]');
+        const lngInput = row.querySelector('[data-bulk-sub="lng"]');
+        const mapBtn = row.querySelector('[data-bulk-map-btn]');
+        if (latInput && lngInput) {
+            this.handleLatLngInput(latInput, lngInput);
+            if (mapBtn) {
+                const lat = latInput.value.trim(), lng = lngInput.value.trim();
+                if (lat && lng && !isNaN(lat) && !isNaN(lng)) mapBtn.href = `https://www.google.com/maps?q=${lat},${lng}`;
+            }
+        }
+    }
+
+    updateBulkGMapLink(element) {
+        const row = element.closest('tr');
+        const shop = this.shops.find(s => s.id === row.querySelector('[data-shop-id]').getAttribute('data-shop-id'));
+        const prefInput = row.querySelector('[data-bulk-sub="prefecture"]');
+        const addressInput = row.querySelector('[data-bulk-sub="addressText"]');
+        const nameInput = row.querySelector('[data-bulk-sub="name"]');
+        const gmapBtn = row.querySelector('[data-bulk-gmap-btn]');
+        if (gmapBtn) {
+            const pref = prefInput ? prefInput.value : (shop ? shop.prefecture : '');
+            const address = addressInput ? addressInput.value : (shop ? shop.addressText : '');
+            const name = nameInput ? nameInput.value : (shop ? shop.name : '');
+            gmapBtn.href = this.generateMapUrl(pref, address, name);
+        }
+    }
+
+    updateBulkLink(input, fieldKey) {
+        const row = input.closest('tr');
+        const linkBtn = row.querySelector('[data-bulk-link-btn]');
+        if (!linkBtn) return;
+        const val = input.value.trim();
+        if (val) {
+            linkBtn.href = val.startsWith('http') ? val : `https://${val}`;
+            linkBtn.style.display = 'inline-flex';
+        } else { linkBtn.style.display = 'none'; }
+    }
+
+    updateBulkLinkDual(input, type) {
+        const row = input.closest('tr');
+        const btn = row.querySelector(`[data-bulk-link-${type}]`);
+        const val = this.normalizeAccountID(input.value);
+        if (val) {
+            btn.href = `https://${type === 'x' ? 'x.com' : 'instagram.com'}/${val}`;
+            btn.style.display = 'inline-flex';
+        } else { btn.style.display = 'none'; }
+    }
+
+    toggleBulkShiftHolCheckbox(chk) {
+        const wrap = chk.closest('.bulk-shift-item');
+        const input = wrap.querySelector('[data-bulk-shift-hol]');
+        if (chk.checked) {
+            input.value = ''; input.disabled = true; input.style.opacity = '0.4'; input.classList.remove('error');
+        } else {
+            input.disabled = false; input.style.opacity = '1';
+        }
+    }
+
+    saveBulkData(silent = false) {
+        const fieldKey = this.el.bulkTargetField.value;
+
+        if (['id_pc', 'name_kana_short', 'name_kana', 'pref_address', 'lat_lng', 'dates', 'x_instagram', 'features', 'notes'].includes(fieldKey)) {
+            const rows = this.el.bulkTableBody.querySelectorAll('tr');
+            rows.forEach(row => {
+                const shopIdCheck = row.querySelector('[data-shop-id]');
+                if (!shopIdCheck) return;
+                const shop = this.shops.find(s => s.id === shopIdCheck.getAttribute('data-shop-id'));
+                if (!shop) return;
+
+                row.querySelectorAll('[data-bulk-sub]').forEach(input => {
+                    const subKey = input.getAttribute('data-bulk-sub');
+                    let val = input.value.trim();
+                    if (subKey === 'id' && val && val !== shop.id) { shop.id = val; shopIdCheck.setAttribute('data-shop-id', val); }
+                    else if (subKey === 'kana') shop.kana = this.normalizeFurigana(val);
+                    else if (subKey === 'addressText') shop.addressText = this.cleanAddress(val);
+                    else if (subKey === 'urls.pc') { if(!shop.urls) shop.urls={}; shop.urls.pc = val; }
+                    else if (subKey === 'lat' || subKey === 'lng') shop[subKey] = val === '' ? 0 : parseFloat(val);
+                    else if (subKey === 'openedAt' || subKey === 'closedAt') shop[subKey] = this.normalizeDate(val);
+                    else if (subKey === 'x' || subKey === 'instagram') shop[subKey] = this.normalizeAccountID(val);
+                    else shop[subKey] = val;
+                });
+            });
+        } else if (fieldKey === 'shifts_all') {
+            this.el.bulkTableBody.querySelectorAll('tr').forEach(row => {
+                const shop = this.shops.find(s => s.id === row.querySelector('[data-shop-id]').getAttribute('data-shop-id'));
+                if (!shop) return;
+                if (!shop.shiftsByDay) shop.shiftsByDay = {};
+                row.querySelectorAll('[data-bulk-shift-day]').forEach(inp => shop.shiftsByDay[inp.getAttribute('data-bulk-shift-day')] = this.parseShiftString(inp.value));
+                const holChk = row.querySelector('[data-bulk-shift-hol-chk]');
+                const holInput = row.querySelector('[data-bulk-shift-hol]');
+                shop.holidayShifts = (holChk && holChk.checked) ? null : this.parseShiftString(holInput.value);
+                const notesInput = row.querySelector('[data-bulk-shift-hours-notes]');
+                if (notesInput) shop.hoursNotes = notesInput.value.trim();
+            });
+        } else {
+            this.el.bulkTableBody.querySelectorAll('[data-bulk-single-field]').forEach(input => {
+                const shop = this.shops.find(s => s.id === input.getAttribute('data-shop-id'));
+                if (!shop) return;
+                let val = input.value.trim();
+                if (fieldKey === 'urls.pc') { if (!shop.urls) shop.urls = {}; shop.urls.pc = val; }
+                else if (fieldKey === 'urls.rdb') { if (!shop.urls) shop.urls = {}; shop.urls.rdb = val; }
+                else if (fieldKey === 'urls.tabelog') { if (!shop.urls) shop.urls = {}; shop.urls.tabelog = val; }
+            });
+        }
+        this.sortShopsByOpenedAt();
+        this.renderList();
+        if (this.currentMode === 'bulk') this.renderBulkTable();
+        if (!silent) alert('一括編集した内容を保存しました。');
+    }
+
+    addNewShop() {
+        if (this.currentMode === 'single' && this.selectedId) this.saveCurrentShop();
+        const newId = 'shop_' + Date.now().toString().slice(-4);
+        const newShop = {
+            id: newId, name: '新店舗名', kana: '', shortName: '', prefecture: '', addressText: '', lat: 35.681237, lng: 139.767125,
+            urls: { pc: '', rdb: '', tabelog: '' }, x: '', instagram: '', ticketTiming: '', soupType: '', renge: '', takeout: '', hoursNotes: '', remarks: '',
+            openedAt: null, closedAt: null, temporary: [], specialShifts: [], holidaySpecialShifts: [],
+            shiftsByDay: { "0": [], "1": [], "2": [], "3": [], "4": [], "5": [], "6": [] }, holidayShifts: null
+        };
+        this.shops.push(newShop);
+        this.sortShopsByOpenedAt();
+        this.selectShop(newId, true);
+    }
+
+    duplicateCurrentShop() {
+        if (!this.selectedId) return;
+        this.saveCurrentShop();
+        const current = this.shops.find(s => s.id === this.selectedId);
+        const copy = JSON.parse(JSON.stringify(current));
+        copy.id = current.id + '_copy'; copy.name = current.name + ' (コピー)';
+        this.shops.push(copy);
+        this.sortShopsByOpenedAt();
+        this.selectShop(copy.id, true);
+    }
+
+    deleteCurrentShop() {
+        if (!this.selectedId) return;
+        if (!confirm('この店舗を削除してもよろしいですか？')) return;
+        this.shops = this.shops.filter(s => s.id !== this.selectedId);
+        this.selectedId = null;
+        this.el.form.style.display = 'none';
+        this.el.noSelection.style.display = 'block';
+        this.renderList();
+    }
+
+    exportJSON() {
+        if (this.currentMode === 'single' && this.selectedId) this.saveCurrentShop();
+        else if (this.currentMode === 'bulk') this.saveBulkData(true);
+        this.shops.forEach(shop => { if (shop.temporary) shop.temporary = this.sortTemporaryDates(shop.temporary); });
+        this.sortShopsByOpenedAt();
+        const blob = new Blob([JSON.stringify(this.shops, null, 2)], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url; a.download = 'shops.json'; a.click();
+        URL.revokeObjectURL(url);
+    }
+}
+
+let app;
+window.addEventListener('DOMContentLoaded', () => {
+    app = new EditorApp();
+    app.renderList();
+});
+</script>
+</body>
+</html>
+
