@@ -43,6 +43,13 @@ jobs:
           npm install playwright twitter-api-v2
           npx playwright install --with-deps chromium
 
+      - name: Debug Event Inputs
+        run: |
+          echo "github.event_name: ${{ github.event_name }}"
+          echo "inputs.environment: ${{ inputs.environment }}"
+          echo "github.event.inputs.environment: ${{ github.event.inputs.environment }}"
+          echo "github.event.client_payload.environment: ${{ github.event.client_payload.environment }}"
+
       - name: Run script
         env:
           TZ: 'Asia/Tokyo'
