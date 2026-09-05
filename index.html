@@ -744,7 +744,7 @@
         .container {
             flex: 1;
             overflow-y: auto;
-            overflow-x: hidden;
+            overflow-x: auto;
             padding: 10px;
             width: 100%;
             -webkit-overflow-scrolling: touch;
@@ -824,9 +824,17 @@
             grid-template-columns: repeat(auto-fill, minmax(650px, 1fr));
         }
 
+        @media (max-width: 680px) {
+            .shop-grid.view-mode-calendar {
+                grid-template-columns: 1fr;
+            }
+        }
+
         .shop-grid.view-mode-calendar > .shop-item {
             background-color: var(--card-bg) !important;
             border-color: var(--border-color) !important;
+            overflow-x: auto !important;
+            -webkit-overflow-scrolling: touch;
         }
 
         .shop-grid.view-mode-calendar > .shop-item .shop-name {
