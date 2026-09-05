@@ -2653,9 +2653,11 @@
 
                     const shifts = getTodayShifts(shop, d);
                     let hoursHtml = '';
+                    let plainText = '休業';
                     if (!shifts || shifts.length === 0) {
                         hoursHtml = `<div style="white-space: nowrap; line-height: 1.2;">${formatShiftTimeText('休業')}</div>`;
                     } else {
+                        plainText = shifts.map(([s, e]) => `${formatTime(s)}-${formatTime(e)}`).join(' / ');
                         hoursHtml = shifts.map(([s, e]) => `<div style="white-space: nowrap; line-height: 1.2;">${formatShiftTimeText(`${formatTime(s)}-${formatTime(e)}`)}</div>`).join('');
                     }
 
@@ -2667,7 +2669,7 @@
                             <div class="calendar-cell ${bgBorderClass}" style="padding: 4px 6px; min-height: 75px; height: 100%; box-sizing: border-box; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; text-align: center;">
                                 <div class="today-summary-card">
                                     <div class="today-summary-name" style="font-size: 0.86rem; line-height: 1.2;">${dateLabel}</div>
-                                    <div class="today-hours-text ${textClass}">${hoursHtml}</div>
+                                    <div class="today-hours-text ${textClass}" title="${plainText}">${hoursHtml}</div>
                                 </div>
                             </div>
                         </td>
