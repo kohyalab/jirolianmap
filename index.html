@@ -815,6 +815,11 @@
             display: none !important;
         }
 
+        .shop-grid.view-mode-compact,
+        .shop-grid.view-mode-detailed {
+            grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+        }
+
         .shop-grid.view-mode-calendar {
             grid-template-columns: repeat(auto-fill, minmax(650px, 1fr));
         }
@@ -839,6 +844,10 @@
         .calendar-cell.today-open {
             background-color: rgba(46, 125, 50, 0.18);
             border-color: rgba(76, 175, 80, 0.8);
+        }
+
+        .calendar-cell.today-open .today-summary-name {
+            color: var(--jiro-yellow);
         }
 
         .shop-grid.view-mode-today .shop-item.today-closed,
