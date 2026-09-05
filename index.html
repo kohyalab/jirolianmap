@@ -1753,6 +1753,7 @@
     </dialog>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="lg_codes.js"></script>
     <script>
         function getOrCreateUserId() {
             let userId = localStorage.getItem('jiro_user_id');
@@ -2583,7 +2584,7 @@
 
         function generateCardContentHTML(shop, isVisited, fromPopup = false) {
             const isProcessing = processingShops.has(shop.id);
-            const fullAddress = `${shop.prefecture || ''}${shop.addressText || ''}`.trim();
+            const fullAddress = (typeof LG_CODES !== 'undefined' ? LG_CODES.getShopFullAddress(shop) : `${shop.addressText || ''}`).trim();
             const gmapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('ラーメン二郎 ' + shop.name + ' ' + fullAddress)}`;
             const selectedDate = (fromPopup || listSubMode !== 'today') ? new Date() : getEffectiveDisplayDate();
 
@@ -3046,7 +3047,7 @@
                 let statusKey = status.type === 'preopen' ? 'closed' : status.type;
                 if (!selectedOpen.includes(statusKey)) return false;
 
-                const fullAddress = `${shop.prefecture || ''}${shop.addressText || ''}`.toLowerCase();
+                const fullAddress = (typeof LG_CODES !== 'undefined' ? LG_CODES.getShopFullAddress(shop) : `${shop.addressText || ''}`).toLowerCase();
                 const shopKana = shop.kana || '';
 
                 return shop.name.toLowerCase().includes(rawSearchQuery) ||
@@ -3198,7 +3199,7 @@
                     }
                 }
 
-                const fullAddress = `${shop.prefecture || ''}${shop.addressText || ''}`.toLowerCase();
+                const fullAddress = (typeof LG_CODES !== 'undefined' ? LG_CODES.getShopFullAddress(shop) : `${shop.addressText || ''}`).toLowerCase();
                 const shopKana = shop.kana || '';
 
                 if (rawSearchQuery) {
@@ -3513,6 +3514,9 @@
             }
 
             try {
+                if (typeof LG_CODES !== 'undefined' && LG_CODES.fetchExternalData) {
+                    await LG_CODES.fetchExternalData();
+                }
                 const isLocalEnv = window.location.protocol === 'file:' || 
                                    window.location.hostname === 'localhost' || 
                                    window.location.hostname === '127.0.0.1';

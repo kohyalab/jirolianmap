@@ -7,6 +7,7 @@
     <!-- Flatpickr (臨時設定用のカレンダーライブラリ) のCDN読込 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/themes/dark.css">
+    <script src="lg_codes.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ja.js"></script>
 
@@ -602,16 +603,15 @@
                             <input type="text" id="field-id" required placeholder="mita" oninput="app.toHalfWidth(this); app.updateEditingTitleFromInputs();">
                         </div>
                         <div class="form-group col-1">
-                            <label>都道府県</label>
-                            <select id="field-prefecture" onchange="app.updateSingleGMapSearchLink()">
+                            <label>都道府県 (`prefCode`)</label>
+                            <select id="field-prefCode" onchange="app.handlePrefSelectChange()">
                                 <option value="">選択</option>
-                                <option value="北海道">北海道</option><option value="青森県">青森県</option><option value="岩手県">岩手県</option><option value="宮城県">宮城県</option><option value="秋田県">秋田県</option><option value="山形県">山形県</option><option value="福島県">福島県</option>
-                                <option value="茨城県">茨城県</option><option value="栃木県">栃木県</option><option value="群馬県">群馬県</option><option value="埼玉県">埼玉県</option><option value="千葉県">千葉県</option><option value="東京都">東京都</option><option value="神奈川県">神奈川県</option>
-                                <option value="新潟県">新潟県</option><option value="富山県">富山県</option><option value="石川県">石川県</option><option value="福井県">福井県</option><option value="山梨県">山梨県</option><option value="長野県">長野県</option><option value="岐阜県">岐阜県</option><option value="静岡県">静岡県</option><option value="愛知県">愛知県</option>
-                                <option value="三重県">三重県</option><option value="滋賀県">滋賀県</option><option value="京都府">京都府</option><option value="大阪府">大阪府</option><option value="兵庫県">兵庫県</option><option value="奈良県">奈良県</option><option value="和歌山県">和歌山県</option>
-                                <option value="鳥取県">鳥取県</option><option value="島根県">島根県</option><option value="岡山県">岡山県</option><option value="広島県">広島県</option><option value="山口県">山口県</option>
-                                <option value="徳島県">徳島県</option><option value="香川県">香川県</option><option value="愛媛県">愛媛県</option><option value="高知県">高知県</option>
-                                <option value="福岡県">福岡県</option><option value="佐賀県">佐賀県</option><option value="長崎県">長崎県</option><option value="熊本県">熊本県</option><option value="大分県">大分県</option><option value="宮崎県">宮崎県</option><option value="鹿児島県">鹿児島県</option><option value="沖縄県">沖縄県</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-1">
+                            <label>市区町村 (`cityCode`)</label>
+                            <select id="field-cityCode" onchange="app.updateSingleGMapSearchLink()">
+                                <option value="">選択</option>
                             </select>
                         </div>
                         <div class="form-group col-1">
@@ -629,9 +629,9 @@
 
                         <!-- 住所・位置情報 -->
                         <div class="form-group col-2">
-                            <label>住所 (`addressText`)</label>
+                            <label>町名・番地等 (`addressText`)</label>
                             <div class="link-input-group">
-                                <input type="text" id="field-addressText" placeholder="港区三田2-16-4" onblur="app.handleAddressBlur(this)" oninput="app.updateSingleGMapSearchLink()">
+                                <input type="text" id="field-addressText" placeholder="三田2-16-4" onblur="app.handleAddressBlur(this)" oninput="app.updateSingleGMapSearchLink()">
                                 <a href="#" id="single-gmap-search-link" target="_blank" class="btn btn-sm" style="display:none;">🗺️</a>
                             </div>
                         </div>
@@ -746,7 +746,7 @@
                 <option value="id">ID (id)</option>
                 <option value="id_pc">ID / PC店 URL</option>
                 <option value="name_kana_short">店舗名 / フリガナ / 店舗名略称</option>
-                <option value="pref_address">都道府県 / 住所</option>
+                <option value="pref_city_address">都道府県 / 市区町村 / 町名番地</option>
                 <option value="lat_lng">緯度 / 経度</option>
                 <option value="x_instagram">𝕏 / Instagram ID</option>
                 <option value="features">店舗特徴 (食券/スープ/レンゲ/テイクアウト)</option>
@@ -854,6 +854,8 @@ class EditorApp {
             deleteBtn: document.getElementById('btn-delete'),
             duplicateBtn: document.getElementById('btn-duplicate'),
             kanaInput: document.getElementById('field-kana'),
+            prefCodeInput: document.getElementById('field-prefCode'),
+            cityCodeInput: document.getElementById('field-cityCode'),
             xInput: document.getElementById('field-x'),
             instaInput: document.getElementById('field-instagram'),
             addressInput: document.getElementById('field-addressText'),
@@ -893,8 +895,53 @@ class EditorApp {
             diffModalBody: document.getElementById('diff-modal-body')
         };
 
+        this.initPrefOptions();
         this.bindEvents();
         this.loadGithubConfigUI();
+        if (typeof LG_CODES !== 'undefined' && LG_CODES.fetchExternalData) {
+            LG_CODES.fetchExternalData().then(() => {
+                this.initPrefOptions();
+                if (this.selectedId) {
+                    const shop = this.shops.find(s => s.id === this.selectedId);
+                    if (shop) {
+                        const prefCode = typeof LG_CODES !== 'undefined' ? LG_CODES.getPrefCodeByCityCode(shop.cityCode) : '';
+                        if (this.el.prefCodeInput) this.el.prefCodeInput.value = prefCode;
+                        this.updateCityOptions(prefCode, shop.cityCode || '');
+                    }
+                }
+                if (this.currentMode === 'bulk') this.renderBulkTable();
+            });
+        }
+    }
+
+    initPrefOptions() {
+        if (!this.el.prefCodeInput || typeof LG_CODES === 'undefined') return;
+        const currentPref = this.el.prefCodeInput.value;
+        let html = '<option value="">選択</option>';
+        for (const code in LG_CODES.prefs) {
+            html += `<option value="${code}">${LG_CODES.prefs[code]}</option>`;
+        }
+        this.el.prefCodeInput.innerHTML = html;
+        if (currentPref) this.el.prefCodeInput.value = currentPref;
+    }
+
+    handlePrefSelectChange() {
+        const prefCode = this.el.prefCodeInput.value;
+        this.updateCityOptions(prefCode, '');
+        this.updateSingleGMapSearchLink();
+    }
+
+    updateCityOptions(prefCode, selectedCityCode = '') {
+        if (!this.el.cityCodeInput || typeof LG_CODES === 'undefined') return;
+        let html = '<option value="">選択</option>';
+        if (prefCode) {
+            const cities = LG_CODES.getCitiesByPref(prefCode);
+            for (const cCode in cities) {
+                html += `<option value="${cCode}">${cities[cCode]}</option>`;
+            }
+        }
+        this.el.cityCodeInput.innerHTML = html;
+        this.el.cityCodeInput.value = selectedCityCode || '';
     }
 
     openDiffModal() {
@@ -1247,21 +1294,46 @@ class EditorApp {
 
     handleAddressBlur(input) {
         let val = this.cleanAddress(input.value);
-        const prefPattern = /^(北海道|青森県|岩手県|宮城県|秋田県|山形県|福島県|茨城県|栃木県|群馬県|埼玉県|千葉県|東京都|神奈川県|新潟県|富山県|石川県|福井県|山梨県|長野県|岐阜県|静岡県|愛知県|三重県|滋賀県|京都府|大阪府|兵庫県|奈良県|和歌山県|鳥取県|島根県|岡山県|広島県|山口県|徳島県|香川県|愛媛県|高知県|福岡県|佐賀県|長崎県|熊本県|大分県|宮崎県|鹿児島県|沖縄県)/;
-        const match = val.match(prefPattern);
-        if (match) {
-            document.getElementById('field-prefecture').value = match[1];
-            val = val.replace(prefPattern, '').trim();
+        if (typeof LG_CODES !== 'undefined') {
+            // 都道府県の判定
+            for (const pCode in LG_CODES.prefs) {
+                const pName = LG_CODES.prefs[pCode];
+                if (val.startsWith(pName)) {
+                    if (this.el.prefCodeInput) {
+                        this.el.prefCodeInput.value = pCode;
+                        this.updateCityOptions(pCode, '');
+                    }
+                    val = val.substring(pName.length).trim();
+                    break;
+                }
+            }
+            // 市区町村の判定
+            const currentPrefCode = this.el.prefCodeInput ? this.el.prefCodeInput.value : '';
+            if (currentPrefCode) {
+                const cities = LG_CODES.getCitiesByPref(currentPrefCode);
+                const cityEntries = Object.entries(cities).sort((a, b) => b[1].length - a[1].length);
+                for (const [cCode, cName] of cityEntries) {
+                    if (val.startsWith(cName)) {
+                        if (this.el.cityCodeInput) {
+                            this.el.cityCodeInput.value = cCode;
+                        }
+                        val = val.substring(cName.length).trim();
+                        break;
+                    }
+                }
+            }
         }
         input.value = val;
         this.updateSingleGMapSearchLink();
     }
 
-    generateMapUrl(pref, addressText, name) {
+    generateMapUrl(prefCode, cityCode, addressText, name) {
         const queryParts = ['ラーメン二郎'];
         if (name && name.trim() !== '') queryParts.push(name.trim());
-        if (addressText && addressText.trim() !== '') queryParts.push(addressText.trim());
-        else if (pref && pref.trim() !== '') queryParts.push(pref.trim());
+        const fullAddr = typeof LG_CODES !== 'undefined'
+            ? LG_CODES.getShopFullAddress({ prefCode, cityCode, addressText })
+            : `${prefCode||''}${cityCode||''}${addressText||''}`;
+        if (fullAddr && fullAddr.trim() !== '') queryParts.push(fullAddr.trim());
         return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(queryParts.join(' '))}`;
     }
 
@@ -1426,11 +1498,12 @@ class EditorApp {
     }
 
     updateSingleGMapSearchLink() {
-        const pref = document.getElementById('field-prefecture').value;
+        const prefCode = this.el.prefCodeInput ? this.el.prefCodeInput.value : '';
+        const cityCode = this.el.cityCodeInput ? this.el.cityCodeInput.value : '';
         const address = document.getElementById('field-addressText').value;
         const name = document.getElementById('field-name').value;
-        if (pref || address || name) {
-            this.el.singleGMapSearchLink.href = this.generateMapUrl(pref, address, name);
+        if (prefCode || cityCode || address || name) {
+            this.el.singleGMapSearchLink.href = this.generateMapUrl(prefCode, cityCode, address, name);
             this.el.singleGMapSearchLink.style.display = 'inline-flex';
         } else {
             this.el.singleGMapSearchLink.style.display = 'none';
@@ -2009,7 +2082,7 @@ class EditorApp {
             if (query) {
                 const name = (shop.name || '').toLowerCase();
                 const id = (shop.id || '').toLowerCase();
-                const fullAddress = `${shop.prefecture || ''}${shop.addressText || ''}`.toLowerCase();
+                const fullAddress = (typeof LG_CODES !== 'undefined' ? LG_CODES.getShopFullAddress(shop) : `${shop.addressText || ''}`).toLowerCase();
                 const kana = (shop.kana || '').toLowerCase();
 
                 const matches = name.includes(query) ||
@@ -2030,11 +2103,12 @@ class EditorApp {
             if (status === 'BEFORE_OPEN') badgeHtml = `<span class="status-badge before-open">オープン前</span>`;
             else if (status === 'CLOSED') badgeHtml = `<span class="status-badge closed">閉店</span>`;
 
+            const prefCity = typeof LG_CODES !== 'undefined' ? LG_CODES.getPrefAndCityName(shop.prefCode, shop.cityCode) : '';
             const item = document.createElement('div');
             item.className = `shop-item ${shop.id === this.selectedId ? 'active' : ''}`;
             item.innerHTML = `
                 <div class="shop-item-title"><span>${shop.name || '(名称未設定)'}</span>${badgeHtml}</div>
-                <div class="shop-item-sub">${shop.id} | ${shop.prefecture || ''}</div>
+                <div class="shop-item-sub">${shop.id} | ${prefCity || ''}</div>
             `;
             item.onclick = () => this.selectShop(shop.id);
             this.el.shopList.appendChild(item);
@@ -2081,7 +2155,9 @@ class EditorApp {
         document.getElementById('field-name').value = shop.name || '';
         document.getElementById('field-kana').value = this.normalizeFurigana(shop.kana || '');
         document.getElementById('field-shortName').value = shop.shortName || '';
-        document.getElementById('field-prefecture').value = shop.prefecture || '';
+        const prefCode = typeof LG_CODES !== 'undefined' ? LG_CODES.getPrefCodeByCityCode(shop.cityCode) : '';
+        if (this.el.prefCodeInput) this.el.prefCodeInput.value = prefCode;
+        this.updateCityOptions(prefCode, shop.cityCode || '');
         document.getElementById('field-addressText').value = this.cleanAddress(shop.addressText || '');
         document.getElementById('field-lat').value = shop.lat ?? '';
         document.getElementById('field-lng').value = shop.lng ?? '';
@@ -2169,7 +2245,8 @@ class EditorApp {
             name: document.getElementById('field-name').value,
             kana: this.normalizeFurigana(document.getElementById('field-kana').value),
             shortName: document.getElementById('field-shortName').value.trim(),
-            prefecture: document.getElementById('field-prefecture').value,
+            prefCode: this.el.prefCodeInput ? this.el.prefCodeInput.value : '',
+            cityCode: this.el.cityCodeInput ? this.el.cityCodeInput.value : '',
             addressText: this.cleanAddress(document.getElementById('field-addressText').value),
             lat: parseFloat(document.getElementById('field-lat').value) || 0,
             lng: parseFloat(document.getElementById('field-lng').value) || 0,
@@ -2240,8 +2317,8 @@ class EditorApp {
             this.el.bulkFieldHeader.innerHTML = `<div style="display:flex; gap:8px;"><span style="width:120px;">ID (id)</span><span style="flex:1;">PC URL</span></div>`;
         } else if (fieldKey === 'name_kana_short' || fieldKey === 'name_kana') {
             this.el.bulkFieldHeader.innerHTML = `<div style="display:flex; gap:8px;"><span style="flex:1;">店舗名</span><span style="flex:1;">フリガナ</span><span style="width:100px;">略称(5字)</span></div>`;
-        } else if (fieldKey === 'pref_address') {
-            this.el.bulkFieldHeader.innerHTML = `<div style="display:flex; gap:8px;"><span style="width:100px;">都道府県</span><span style="flex:1;">住所</span></div>`;
+        } else if (fieldKey === 'pref_city_address' || fieldKey === 'pref_address') {
+            this.el.bulkFieldHeader.innerHTML = `<div style="display:flex; gap:8px;"><span style="width:90px;">都道府県</span><span style="width:120px;">市区町村</span><span style="flex:1;">町名・番地等</span></div>`;
         } else if (fieldKey === 'lat_lng') {
             this.el.bulkFieldHeader.innerHTML = `<div style="display:flex; gap:8px;"><span style="flex:1;">緯度</span><span style="flex:1;">経度</span></div>`;
         } else if (fieldKey === 'dates') {
@@ -2281,7 +2358,7 @@ class EditorApp {
                         <a href="${linkUrl}" target="_blank" class="btn btn-sm" data-bulk-link-btn="${shop.id}" style="${pcVal?'':'display:none;'}">🔗</a>
                     </div>`;
             } else if (fieldKey === 'name_kana_short' || fieldKey === 'name_kana') {
-                const gmapUrl = this.generateMapUrl(shop.prefecture, shop.addressText, shop.name);
+                const gmapUrl = this.generateMapUrl(shop.prefCode, shop.cityCode, shop.addressText, shop.name);
                 inputHtml = `
                     <div class="bulk-row-flex">
                         <div class="bulk-field-wrap" style="flex:1;"><input type="text" data-shop-id="${shop.id}" data-bulk-sub="name" value="${shop.name || ''}" placeholder="店舗名" oninput="app.updateBulkGMapLink(this)"></div>
@@ -2289,12 +2366,26 @@ class EditorApp {
                         <div class="bulk-field-wrap" style="width:100px; flex:none;"><input type="text" data-shop-id="${shop.id}" data-bulk-sub="shortName" maxlength="5" value="${shop.shortName || ''}" placeholder="略称(5字)"></div>
                         <a href="${gmapUrl}" target="_blank" class="btn btn-sm" data-bulk-gmap-btn="${shop.id}">🗺️</a>
                     </div>`;
-            } else if (fieldKey === 'pref_address') {
-                let prefOpts = prefs.map(p => `<option value="${p}" ${shop.prefecture === p ? 'selected' : ''}>${p}</option>`).join('');
-                const gmapUrl = this.generateMapUrl(shop.prefecture, shop.addressText, shop.name);
+            } else if (fieldKey === 'pref_city_address' || fieldKey === 'pref_address') {
+                const prefCode = typeof LG_CODES !== 'undefined' ? LG_CODES.getPrefCodeByCityCode(shop.cityCode) : '';
+                let prefOpts = '<option value="">選択</option>';
+                if (typeof LG_CODES !== 'undefined') {
+                    for (const pCode in LG_CODES.prefs) {
+                        prefOpts += `<option value="${pCode}" ${prefCode === pCode ? 'selected' : ''}>${LG_CODES.prefs[pCode]}</option>`;
+                    }
+                }
+                let cityOpts = '<option value="">選択</option>';
+                if (typeof LG_CODES !== 'undefined' && prefCode) {
+                    const cities = LG_CODES.getCitiesByPref(prefCode);
+                    for (const cCode in cities) {
+                        cityOpts += `<option value="${cCode}" ${shop.cityCode === cCode ? 'selected' : ''}>${cities[cCode]}</option>`;
+                    }
+                }
+                const gmapUrl = this.generateMapUrl(prefCode, shop.cityCode, shop.addressText, shop.name);
                 inputHtml = `
                     <div class="bulk-row-flex">
-                        <div class="bulk-field-wrap" style="width:100px; flex:none;"><select data-shop-id="${shop.id}" data-bulk-sub="prefecture" onchange="app.updateBulkGMapLink(this)"><option value="">選択</option>${prefOpts}</select></div>
+                        <div class="bulk-field-wrap" style="width:90px; flex:none;"><select data-shop-id="${shop.id}" data-bulk-sub="prefCode" onchange="app.handleBulkPrefChange(this)"><option value="">選択</option>${prefOpts}</select></div>
+                        <div class="bulk-field-wrap" style="width:120px; flex:none;"><select data-shop-id="${shop.id}" data-bulk-sub="cityCode" onchange="app.updateBulkGMapLink(this)"><option value="">選択</option>${cityOpts}</select></div>
                         <div class="bulk-field-wrap" style="flex:1;"><input type="text" data-shop-id="${shop.id}" data-bulk-sub="addressText" value="${shop.addressText || ''}" onblur="app.handleAddressBlur(this); app.updateBulkGMapLink(this);"></div>
                         <a href="${gmapUrl}" target="_blank" class="btn btn-sm" data-bulk-gmap-btn="${shop.id}">🗺️</a>
                     </div>`;
@@ -2417,18 +2508,38 @@ class EditorApp {
         }
     }
 
+    handleBulkPrefChange(prefSelect) {
+        const row = prefSelect.closest('tr');
+        const citySelect = row.querySelector('[data-bulk-sub="cityCode"]');
+        const prefCode = prefSelect.value;
+        if (citySelect && typeof LG_CODES !== 'undefined') {
+            let html = '<option value="">選択</option>';
+            if (prefCode) {
+                const cities = LG_CODES.getCitiesByPref(prefCode);
+                for (const cCode in cities) {
+                    html += `<option value="${cCode}">${cities[cCode]}</option>`;
+                }
+            }
+            citySelect.innerHTML = html;
+        }
+        this.updateBulkGMapLink(prefSelect);
+    }
+
     updateBulkGMapLink(element) {
         const row = element.closest('tr');
-        const shop = this.shops.find(s => s.id === row.querySelector('[data-shop-id]').getAttribute('data-shop-id'));
-        const prefInput = row.querySelector('[data-bulk-sub="prefecture"]');
+        const shopIdNode = row.querySelector('[data-shop-id]');
+        const shop = shopIdNode ? this.shops.find(s => s.id === shopIdNode.getAttribute('data-shop-id')) : null;
+        const prefInput = row.querySelector('[data-bulk-sub="prefCode"]');
+        const cityInput = row.querySelector('[data-bulk-sub="cityCode"]');
         const addressInput = row.querySelector('[data-bulk-sub="addressText"]');
         const nameInput = row.querySelector('[data-bulk-sub="name"]');
         const gmapBtn = row.querySelector('[data-bulk-gmap-btn]');
         if (gmapBtn) {
-            const pref = prefInput ? prefInput.value : (shop ? shop.prefecture : '');
+            const cityCode = cityInput ? cityInput.value : (shop ? shop.cityCode : '');
+            const prefCode = prefInput ? prefInput.value : (typeof LG_CODES !== 'undefined' ? LG_CODES.getPrefCodeByCityCode(cityCode) : '');
             const address = addressInput ? addressInput.value : (shop ? shop.addressText : '');
             const name = nameInput ? nameInput.value : (shop ? shop.name : '');
-            gmapBtn.href = this.generateMapUrl(pref, address, name);
+            gmapBtn.href = this.generateMapUrl(prefCode, cityCode, address, name);
         }
     }
 
@@ -2466,7 +2577,7 @@ class EditorApp {
     saveBulkData(silent = false) {
         const fieldKey = this.el.bulkTargetField.value;
 
-        if (['id_pc', 'name_kana_short', 'name_kana', 'pref_address', 'lat_lng', 'dates', 'x_instagram', 'features', 'notes'].includes(fieldKey)) {
+        if (['id_pc', 'name_kana_short', 'name_kana', 'pref_city_address', 'pref_address', 'lat_lng', 'dates', 'x_instagram', 'features', 'notes'].includes(fieldKey)) {
             const rows = this.el.bulkTableBody.querySelectorAll('tr');
             rows.forEach(row => {
                 const shopIdCheck = row.querySelector('[data-shop-id]');
@@ -2518,7 +2629,7 @@ class EditorApp {
     addNewShop() {
         const newId = 'shop_' + Date.now().toString().slice(-4);
         const newShop = {
-            id: newId, name: '新店舗名', kana: '', shortName: '', prefecture: '', addressText: '', lat: 35.681237, lng: 139.767125,
+            id: newId, name: '新店舗名', kana: '', shortName: '', cityCode: '13103', addressText: '', lat: 35.681237, lng: 139.767125,
             urls: { pc: '', rdb: '', tabelog: '' }, x: '', instagram: '', ticketTiming: '', soupType: '', renge: '', takeout: '', hoursNotes: '', remarks: '',
             openedAt: null, closedAt: null, temporary: [], specialShifts: [], holidaySpecialShifts: [],
             shiftsByDay: { "0": [], "1": [], "2": [], "3": [], "4": [], "5": [], "6": [] }, holidayShifts: null
