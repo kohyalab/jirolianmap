@@ -1984,15 +1984,19 @@
             return normalizedOpenDate > getLocalDateKey(targetDate);
         }
 
-        function formatShiftTimeText(timeStr) {
-            if (!timeStr || timeStr === '休業') return '<span style="font-size:0.86rem; font-weight:normal; letter-spacing:1px;">休業</span>';
+        function formatShiftTimeText(timeStr, isCompact = false) {
+            const hourSize = isCompact ? '0.74rem' : '0.86rem';
+            const minuteSize = isCompact ? '0.46rem' : '0.52rem';
+            const dashSize = isCompact ? '0.48rem' : '0.54rem';
+
+            if (!timeStr || timeStr === '休業') return `<span style="font-size:${hourSize}; font-weight:normal; letter-spacing:0.5px;">休業</span>`;
             return timeStr.split('-').map(t => {
                 const parts = t.trim().split(':');
                 if (parts.length === 2) {
-                    return `<span style="font-size:0.86rem; font-weight:normal; font-family:sans-serif; letter-spacing:-0.4px;">${parts[0]}</span><span style="font-size:0.52rem; opacity:0.85; letter-spacing:-0.2px;">:${parts[1]}</span>`;
+                    return `<span style="font-size:${hourSize}; font-weight:normal; font-family:sans-serif; letter-spacing:-0.5px;">${parts[0]}</span><span style="font-size:${minuteSize}; opacity:0.85; letter-spacing:-0.2px;">:${parts[1]}</span>`;
                 }
                 return t;
-            }).join(`<span style="font-size:0.54rem; opacity:0.7; margin:0 1px;">-</span>`);
+            }).join(`<span style="font-size:${dashSize}; opacity:0.7; margin:0 0.5px;">-</span>`);
         }
 
         function isClosedShopExpired(shop, targetDate = new Date()) {
@@ -2609,9 +2613,9 @@
                     const shifts = getTodayShifts(shop, d);
                     let hoursHtml = '';
                     if (!shifts || shifts.length === 0) {
-                        hoursHtml = formatShiftTimeText('休業');
+                        hoursHtml = `<div style="white-space: nowrap; line-height: 1.2;">${formatShiftTimeText('休業', true)}</div>`;
                     } else {
-                        hoursHtml = shifts.map(([s, e]) => formatShiftTimeText(`${formatTime(s)}-${formatTime(e)}`)).join('<br>');
+                        hoursHtml = shifts.map(([s, e]) => `<div style="white-space: nowrap; line-height: 1.2;">${formatShiftTimeText(`${formatTime(s)}-${formatTime(e)}`, true)}</div>`).join('');
                     }
 
                     const textClass = tempStatus ? 'is-temp' : (isTodayOpen ? 'is-open' : 'is-closed');
@@ -2619,10 +2623,10 @@
 
                     rowCellsHtml += `
                         <td style="padding: 2px; vertical-align: top; width: 14.28%;">
-                            <div class="shop-item ${bgBorderClass}" style="padding: 4px 2px; min-height: 54px; height: 100%; box-sizing: border-box;">
-                                <div class="today-summary-card">
-                                    <div class="today-summary-name">${dateLabel}</div>
-                                    <div class="today-hours-text ${textClass}">${hoursHtml}</div>
+                            <div class="shop-item ${bgBorderClass}" style="padding: 5px 2px; min-height: 60px; height: 100%; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center;">
+                                <div class="today-summary-card" style="display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 2px; height: 100%;">
+                                    <div class="today-summary-name" style="font-size: 0.8rem; line-height: 1.1;">${dateLabel}</div>
+                                    <div class="today-hours-text ${textClass}" style="width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; flex: 1;">${hoursHtml}</div>
                                 </div>
                             </div>
                         </td>
