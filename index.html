@@ -1601,6 +1601,7 @@
                         <select id="sort-select" class="sort-select" onchange="onSortChange()">
                             <option value="distance_user" disabled">距離順（現在地）</option>
                             <option value="distance_center">距離順（地図中心）</option>
+                            <option value="pref">都道府県順</option>
                             <option value="opened">開店日順</option>
                             <option value="hours">営業時間順</option>
                             <option value="name">50音順</option>
@@ -3139,6 +3140,20 @@
                 });
             } else if (sortType === 'distance_center') {
                 displayShops.sort((a, b) => a.centerDistance - b.centerDistance);
+            } else if (sortType === 'pref') {
+                displayShops.sort((a, b) => {
+                    const codeA = a.cityCode || '';
+                    const codeB = b.cityCode || '';
+                    if (codeA !== codeB) {
+                        return codeA.localeCompare(codeB);
+                    }
+                    const dateA = parseNormalizedDateStr(a.openedAt);
+                    const dateB = parseNormalizedDateStr(b.openedAt);
+                    if (dateA && dateB && dateA !== dateB) {
+                        return dateA.localeCompare(dateB);
+                    }
+                    return (a.kana || a.name).localeCompare(b.kana || b.name, 'ja');
+                });
             } else if (sortType === 'opened') {
                 displayShops.sort((a, b) => {
                     const dateA = parseNormalizedDateStr(a.openedAt);
