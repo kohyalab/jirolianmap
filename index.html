@@ -814,7 +814,16 @@
         }
 
         .shop-grid.view-mode-calendar {
-            grid-template-columns: 1fr;
+            grid-template-columns: repeat(auto-fill, minmax(650px, 1fr));
+        }
+
+        .shop-grid.view-mode-calendar .shop-item {
+            background-color: var(--card-bg) !important;
+            border-color: var(--border-color) !important;
+        }
+
+        .shop-grid.view-mode-calendar .shop-item .shop-name {
+            color: var(--jiro-yellow) !important;
         }
 
         .shop-grid.view-mode-compact .shop-item,
@@ -824,22 +833,19 @@
 
 
         .shop-grid.view-mode-today .shop-item.today-open,
-        .shop-grid.view-mode-minimal .shop-item.today-open,
-        .shop-item.today-open {
+        .shop-grid.view-mode-minimal .shop-item.today-open {
             background-color: rgba(46, 125, 50, 0.18);
             border-color: rgba(76, 175, 80, 0.8);
         }
 
         .shop-grid.view-mode-today .shop-item.today-closed,
-        .shop-grid.view-mode-minimal .shop-item.today-closed,
-        .shop-item.today-closed {
+        .shop-grid.view-mode-minimal .shop-item.today-closed {
             background-color: rgba(97, 97, 97, 0.18);
             border-color: rgba(158, 158, 158, 0.8);
         }
 
         .shop-grid.view-mode-today .shop-item.today-closed .today-summary-name,
         .shop-grid.view-mode-minimal .shop-item.today-closed .today-summary-name,
-        .shop-item.today-closed .today-summary-name,
         .shop-grid .shop-item.current-closed .shop-name,
         .shop-grid .shop-item.current-closed .today-summary-name {
             color: #888;
@@ -2640,13 +2646,14 @@
                     }
 
                     const textClass = tempStatus ? 'is-temp' : (isTodayOpen ? 'is-open' : 'is-closed');
+                    const dateColorStyle = isTodayOpen ? 'color: var(--jiro-yellow);' : 'color: #888;';
                     const bgBorderClass = isTodayOpen ? 'today-open' : 'today-closed';
 
                     rowCellsHtml += `
                         <td style="padding: 2px; vertical-align: top; width: 14.28%;">
                             <div class="shop-item ${bgBorderClass}" onclick="selectCalendarDate('${dStr}', '${shop.id}')" style="padding: 4px 6px; min-height: 75px; height: 100%; box-sizing: border-box; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; text-align: center; cursor: pointer;">
                                 <div class="today-summary-card">
-                                    <div class="today-summary-name" style="font-size: 0.86rem; line-height: 1.2;">${dateLabel}</div>
+                                    <div class="today-summary-name" style="font-size: 0.86rem; line-height: 1.2; ${dateColorStyle}">${dateLabel}</div>
                                     <div class="today-hours-text ${textClass}">${hoursHtml}</div>
                                 </div>
                             </div>
