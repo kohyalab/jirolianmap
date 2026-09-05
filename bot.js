@@ -168,8 +168,12 @@ async function run() {
     await browser.close();
     console.log('画像生成(sheet.png)が完了しました。');
 
-    if (process.env.PREVIEW_ONLY === 'true') {
-        console.log('プレビューモードのため、Xへの投稿はスキップします。');
+    const execEnv = (process.env.EXEC_ENV || '').toLowerCase();
+    const previewOnly = (process.env.PREVIEW_ONLY || '').toLowerCase();
+    console.log(`[BOT LOG] EXEC_ENV: "${process.env.EXEC_ENV}", PREVIEW_ONLY: "${process.env.PREVIEW_ONLY}"`);
+
+    if (execEnv === 'preview' || previewOnly === 'true' || previewOnly === '1') {
+        console.log('プレビューモード（preview）のため、Xへの投稿はスキップします。');
         return;
     }
 
