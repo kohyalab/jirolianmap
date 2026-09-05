@@ -2483,7 +2483,7 @@
                             const hrsStr = (!rule.hours || rule.hours.length === 0) ? "定休日" : formatShiftList(rule.hours);
                             if (hrsStr !== holidayStr) {
                                 const triggerDayName = dayNamesShort[rule.triggerDay];
-                                specRulesForHolidayRow.push(`${triggerDayName}曜祝日: ${hrsStr}`);
+                                specRulesForHolidayRow.push(`${triggerDayName}: ${hrsStr}`);
                             }
                         }
                     });
