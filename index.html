@@ -860,8 +860,8 @@
         .shop-grid.view-mode-today .shop-item.today-closed .today-summary-name,
         .shop-grid.view-mode-minimal .shop-item.today-closed .today-summary-name,
         .calendar-cell.today-closed .today-summary-name,
-        .shop-grid .shop-item.current-closed .shop-name,
-        .shop-grid .shop-item.current-closed .today-summary-name {
+        .shop-grid:not(.view-mode-calendar) .shop-item.current-closed .shop-name,
+        .shop-grid:not(.view-mode-calendar) .shop-item.current-closed .today-summary-name {
             color: #888;
         }
 
@@ -2664,7 +2664,7 @@
 
                     rowCellsHtml += `
                         <td style="padding: 2px; vertical-align: top; width: 14.28%;">
-                            <div class="calendar-cell ${bgBorderClass}" onclick="selectCalendarDate('${dStr}', '${shop.id}')" style="padding: 4px 6px; min-height: 75px; height: 100%; box-sizing: border-box; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; text-align: center; cursor: pointer;">
+                            <div class="calendar-cell ${bgBorderClass}" style="padding: 4px 6px; min-height: 75px; height: 100%; box-sizing: border-box; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; text-align: center;">
                                 <div class="today-summary-card">
                                     <div class="today-summary-name" style="font-size: 0.86rem; line-height: 1.2;">${dateLabel}</div>
                                     <div class="today-hours-text ${textClass}">${hoursHtml}</div>
