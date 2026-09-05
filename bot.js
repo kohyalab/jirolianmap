@@ -60,27 +60,36 @@ async function run() {
             if (typeof onSortChange === 'function') onSortChange();
         }
 
-        // 3. 日付表示を「yyyy/mm/dd」に固定置換 ＆ 「の営業状況」の右側に「橙文字: 臨時営業/休業」を表示
+        // 3. 日付表示を「yyyy/mm/dd」に固定置換 ＆ 「橙文字: 臨時営業/休業」の注釈を表示
         const dateInput = document.getElementById('date-selector');
         if (dateInput && dateInput.parentElement) {
             dateInput.parentElement.style.width = '100%';
             dateInput.parentElement.style.display = 'flex';
             dateInput.parentElement.style.alignItems = 'center';
-            dateInput.parentElement.style.justifyContent = 'flex-start';
-            dateInput.parentElement.style.gap = '8px';
+            dateInput.parentElement.style.justifyContent = 'space-between';
             dateInput.parentElement.innerHTML = `
-        <div style="display:inline-flex; align-items:center; gap:8px; background:#141414; border:1px solid #333; border-radius:4px; padding:4px 10px; color:#fff; font-size:0.85rem; font-weight:bold; font-family:'Noto Sans JP', sans-serif;">
-          <span>${ymdDate}</span>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-            <line x1="16" y1="2" x2="16" y2="6"></line>
-            <line x1="8" y1="2" x2="8" y2="6"></line>
-            <line x1="3" y1="10" x2="21" y2="10"></line>
-          </svg>
+        <div style="display:inline-flex; align-items:center; gap:8px;">
+          <div style="display:inline-flex; align-items:center; gap:8px; background:#141414; border:1px solid #333; border-radius:4px; padding:4px 10px; color:#fff; font-size:0.85rem; font-weight:bold; font-family:'Noto Sans JP', sans-serif;">
+            <span>${ymdDate}</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+          </div>
+          <span style="font-size:0.75rem; font-weight:bold; color:#ff9f43; font-family:'Noto Sans JP', sans-serif;">橙文字: 臨時営業/休業</span>
         </div>
-        <span style="font-size:0.75rem; color:#aaa; font-weight:500; white-space:nowrap; font-family:'Noto Sans JP', sans-serif;">の営業状況</span>
-        <span style="font-size:0.75rem; font-weight:bold; color:#ff9f43; font-family:'Noto Sans JP', sans-serif; margin-left: auto;">橙文字: 臨時営業/休業</span>
       `;
+        }
+
+        // 4. サイドバー最下部に注意書きを追記
+        const sidebar = document.getElementById('sidebar-container');
+        if (sidebar) {
+            const footerNote = document.createElement('div');
+            footerNote.style.cssText = 'padding: 8px 12px; margin-top: 4px; border-top: 1px solid #333; color: #aaa; font-size: 0.72rem; text-align: center; width: 100%; box-sizing: border-box; font-family: "Noto Sans JP", sans-serif;';
+            footerNote.textContent = '※記載内容は変更となる場合がありますので、ご自身でもご確認ください';
+            sidebar.appendChild(footerNote);
         }
 
         // 4. 縦長・フォント指定CSSの適用
