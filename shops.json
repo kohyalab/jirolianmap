@@ -991,19 +991,26 @@
     "id": "kameido",
     "name": "亀戸店",
     "kana": "カメイドテン",
+    "shortName": "亀戸",
     "prefecture": "東京都",
     "addressText": "江東区亀戸4丁目35-17",
     "lat": 35.70188461874897,
     "lng": 139.82666669999045,
-    "urls": {
-      "pc": "https://ramen-jiro-pc3.com/kameido/",
-      "tabelog": "https://tabelog.com/tokyo/A1312/A131202/13008000/",
-      "rdb": "https://ramendb.supleks.jp/s/1302.html"
-    },
-    "x": "jiro_kame",
-    "ticketTiming": "",
     "openedAt": "2001-04-17",
     "closedAt": null,
+    "urls": {
+      "pc": "https://ramen-jiro-pc3.com/kameido/",
+      "rdb": "https://ramendb.supleks.jp/s/1302.html",
+      "tabelog": "https://tabelog.com/tokyo/A1312/A131202/13008000/"
+    },
+    "x": "jiro_kame",
+    "instagram": "jiro_kame",
+    "ticketTiming": "",
+    "soupType": "",
+    "renge": "",
+    "takeout": "",
+    "hoursNotes": "",
+    "remarks": "",
     "temporary": [
       {
         "startDate": "2026-08-17",
@@ -1038,6 +1045,16 @@
       {
         "startDate": "2026-08-23",
         "endDate": "2026-08-23",
+        "hours": [
+          [
+            11,
+            14.5
+          ]
+        ]
+      },
+      {
+        "startDate": "2026-09-06",
+        "endDate": "2026-09-06",
         "hours": [
           [
             11,
@@ -1118,11 +1135,7 @@
         ]
       ]
     },
-    "holidayShifts": null,
-    "remarks": "",
-    "hoursNotes": "",
-    "instagram": "jiro_kame",
-    "shortName": "亀戸"
+    "holidayShifts": null
   },
   {
     "id": "keikyukawasaki",
@@ -5465,19 +5478,26 @@
     "id": "okinawa",
     "name": "沖縄店",
     "kana": "オキナワテン",
+    "shortName": "沖縄",
     "prefecture": "沖縄県",
     "addressText": "那覇市壺屋1丁目6-16",
     "lat": 26.212940143747357,
     "lng": 127.68975521492895,
+    "openedAt": "2026-06-21",
+    "closedAt": null,
     "urls": {
       "pc": "",
       "rdb": "https://ramendb.supleks.jp/s/173581.html",
       "tabelog": "https://tabelog.com/okinawa/A4701/A470101/47034759/"
     },
     "x": "okinawa_jiro",
+    "instagram": "",
     "ticketTiming": "",
-    "openedAt": "2026-06-21",
-    "closedAt": null,
+    "soupType": "",
+    "renge": "",
+    "takeout": "",
+    "hoursNotes": "",
+    "remarks": "",
     "temporary": [
       {
         "startDate": "2026-08-25",
@@ -5508,6 +5528,16 @@
         "startDate": "2026-09-05",
         "endDate": "2026-09-05",
         "hours": []
+      },
+      {
+        "startDate": "2026-09-06",
+        "endDate": "2026-09-06",
+        "hours": [
+          [
+            11,
+            14
+          ]
+        ]
       },
       {
         "startDate": "2026-09-21",
@@ -5580,13 +5610,6 @@
         11,
         15
       ]
-    ],
-    "remarks": "",
-    "hoursNotes": "",
-    "instagram": "",
-    "shortName": "沖縄",
-    "soupType": "",
-    "renge": "",
-    "takeout": ""
+    ]
   }
 ]
