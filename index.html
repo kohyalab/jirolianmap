@@ -2580,7 +2580,7 @@
             const dayNames = ["日", "月", "火", "水", "木", "金", "土"];
             const todayStr = getLocalDateKey(new Date());
 
-            // 上部の曜日ヘッダー行（最初の7日間から曜日を取得）
+            // 上部の曜日ヘッダー行
             let headerCellsHtml = '';
             for (let i = 0; i < 7; i++) {
                 const d = new Date(startDate);
@@ -2593,48 +2593,48 @@
             // 7日ずつ4行（計28日）を生成
             let bodyRowsHtml = '';
             for (let row = 0; row < 4; row++) {
-                let dateCellsHtml = '';
-                let hoursCellsHtml = '';
+                let rowCellsHtml = '';
 
                 for (let col = 0; col < 7; col++) {
                     const offset = row * 7 + col;
                     const d = new Date(startDate);
                     d.setDate(startDate.getDate() + offset);
                     const dStr = getLocalDateKey(d);
-                    const isToday = dStr === todayStr;
 
                     const dateLabel = `${d.getMonth() + 1}/${d.getDate()}`;
+                    const status = getBusinessStatus(shop, d);
+                    const isTodayOpen = ['open', 'closing-soon', 'scheduled'].includes(status.type);
+                    const tempStatus = getTemporaryStatus(shop, d);
 
-                    const tempEntry = findTemporaryEntry(shop, d);
-                    const isTemp = !!tempEntry;
                     const shifts = getTodayShifts(shop, d);
-
-                    let textColor = '#f1f1f1';
-                    if (isTemp) {
-                        textColor = '#ff9f43'; // 臨時営業/臨休は橙色
-                    } else if (!shifts || shifts.length === 0) {
-                        textColor = '#888';
-                    }
-
-                    let hoursContent = '';
+                    let hoursHtml = '';
                     if (!shifts || shifts.length === 0) {
-                        hoursContent = formatShiftTimeText('休業');
+                        hoursHtml = formatShiftTimeText('休業');
                     } else {
-                        hoursContent = shifts.map(([s, e]) => formatShiftTimeText(`${formatTime(s)}-${formatTime(e)}`)).join('<br>');
+                        hoursHtml = shifts.map(([s, e]) => formatShiftTimeText(`${formatTime(s)}-${formatTime(e)}`)).join('<br>');
                     }
 
-                    const todayClass = isToday ? 'class="today-highlight"' : '';
+                    const textClass = tempStatus ? 'is-temp' : (isTodayOpen ? 'is-open' : 'is-closed');
+                    const bgBorderClass = isTodayOpen ? 'today-open' : 'today-closed';
 
-                    dateCellsHtml += `<td ${todayClass} style="text-align: center; padding: 2px 2px 0 2px; font-size: 0.65rem; font-weight: bold; border-left: 1px solid #333; border-right: 1px solid #333; border-top: 1px solid #333;">${dateLabel}</td>`;
-                    hoursCellsHtml += `<td ${todayClass} style="text-align: center; padding: 1px 2px 4px 2px; vertical-align: top; border-left: 1px solid #333; border-right: 1px solid #333; border-bottom: 1px solid #333; color: ${textColor}; line-height: 1.25;">${hoursContent}</td>`;
+                    rowCellsHtml += `
+                        <td style="padding: 2px; vertical-align: top; width: 14.28%;">
+                            <div class="shop-item ${bgBorderClass}" style="padding: 4px 2px; min-height: 54px; height: 100%; box-sizing: border-box;">
+                                <div class="today-summary-card">
+                                    <div class="today-summary-name">${dateLabel}</div>
+                                    <div class="today-hours-text ${textClass}">${hoursHtml}</div>
+                                </div>
+                            </div>
+                        </td>
+                    `;
                 }
 
-                bodyRowsHtml += `<tr>${dateCellsHtml}</tr><tr>${hoursCellsHtml}</tr>`;
+                bodyRowsHtml += `<tr>${rowCellsHtml}</tr>`;
             }
 
             return `
                 <div style="width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch;">
-                    <table class="hours-table calendar-28days-table" style="width: 100%; min-width: 320px; border-collapse: collapse; border: 1px solid #333;">
+                    <table class="hours-table calendar-28days-table" style="width: 100%; min-width: 320px; border-collapse: separate; border-spacing: 2px; border: none;">
                         <thead>
                             ${headerRowHtml}
                         </thead>
