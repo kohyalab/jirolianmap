@@ -3289,6 +3289,11 @@
         "startDate": "2026-09-01",
         "endDate": "2026-09-02",
         "hours": []
+      },
+      {
+        "startDate": "2026-09-05",
+        "endDate": "2026-09-05",
+        "hours": []
       }
     ],
     "shiftsByDay": {
@@ -3953,8 +3958,8 @@
     "lng": 135.78751407009239,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/kyoto/",
-      "tabelog": "https://tabelog.com/kyoto/A2601/A260303/26028749/",
-      "rdb": "https://ramendb.supleks.jp/s/97876.html"
+      "rdb": "https://ramendb.supleks.jp/s/97876.html",
+      "tabelog": "https://tabelog.com/kyoto/A2601/A260303/26028749/"
     },
     "x": "jiro_kyoto",
     "ticketTiming": "",
@@ -3985,6 +3990,16 @@
         "startDate": "2026-08-17",
         "endDate": "2026-08-19",
         "hours": []
+      },
+      {
+        "startDate": "2026-09-05",
+        "endDate": "2026-09-06",
+        "hours": [
+          [
+            11,
+            14.5
+          ]
+        ]
       }
     ],
     "shiftsByDay": {
@@ -4038,7 +4053,10 @@
     "remarks": "",
     "hoursNotes": "",
     "instagram": "",
-    "shortName": "京都"
+    "shortName": "京都",
+    "soupType": "",
+    "renge": "",
+    "takeout": ""
   },
   {
     "id": "mejirodai",
