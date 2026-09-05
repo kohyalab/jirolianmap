@@ -60,13 +60,14 @@ async function run() {
             if (typeof onSortChange === 'function') onSortChange();
         }
 
-        // 3. 日付表示を「yyyy/mm/dd」に固定置換 ＆ 右上に「橙文字: 臨時営業/休業」の注釈を表示
+        // 3. 日付表示を「yyyy/mm/dd」に固定置換 ＆ 「の営業状況」の右側に「橙文字: 臨時営業/休業」を表示
         const dateInput = document.getElementById('date-selector');
         if (dateInput && dateInput.parentElement) {
             dateInput.parentElement.style.width = '100%';
             dateInput.parentElement.style.display = 'flex';
-            dateInput.parentElement.style.justifyContent = 'space-between';
             dateInput.parentElement.style.alignItems = 'center';
+            dateInput.parentElement.style.justifyContent = 'flex-start';
+            dateInput.parentElement.style.gap = '8px';
             dateInput.parentElement.innerHTML = `
         <div style="display:inline-flex; align-items:center; gap:8px; background:#141414; border:1px solid #333; border-radius:4px; padding:4px 10px; color:#fff; font-size:0.85rem; font-weight:bold; font-family:'Noto Sans JP', sans-serif;">
           <span>${ymdDate}</span>
@@ -77,9 +78,8 @@ async function run() {
             <line x1="3" y1="10" x2="21" y2="10"></line>
           </svg>
         </div>
-        <div style="font-size:0.75rem; font-weight:bold; color:#ff9f43; font-family:'Noto Sans JP', sans-serif;">
-          橙文字: 臨時営業/休業
-        </div>
+        <span style="font-size:0.75rem; color:#aaa; font-weight:500; white-space:nowrap; font-family:'Noto Sans JP', sans-serif;">の営業状況</span>
+        <span style="font-size:0.75rem; font-weight:bold; color:#ff9f43; font-family:'Noto Sans JP', sans-serif; margin-left: auto;">橙文字: 臨時営業/休業</span>
       `;
         }
 

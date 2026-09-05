@@ -58,7 +58,7 @@ jobs:
 
 
       - name: Commit preview image
-        if: github.event.inputs.environment == 'preview'
+        if: (github.event.inputs.environment || github.event.client_payload.environment) == 'preview'
         run: |
           git config "action@github.com"
           git config --local user.name "GitHub Action"
