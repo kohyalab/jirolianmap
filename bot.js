@@ -61,13 +61,13 @@ async function run() {
         }
 
         // 3. 日付表示を「yyyy/mm/dd」に固定置換 ＆ 右側に「の営業状況」「橙文字: 臨時営業/休業」の注釈を表示
-        const dateInput = document.getElementById('date-selector');
-        if (dateInput && dateInput.parentElement) {
-            dateInput.parentElement.style.width = '100%';
-            dateInput.parentElement.style.display = 'flex';
-            dateInput.parentElement.style.alignItems = 'center';
-            dateInput.parentElement.style.justifyContent = 'space-between';
-            dateInput.parentElement.innerHTML = `
+        const dateArea = document.getElementById('date-selector-area');
+        if (dateArea) {
+            dateArea.style.width = '100%';
+            dateArea.style.display = 'flex';
+            dateArea.style.alignItems = 'center';
+            dateArea.style.justifyContent = 'space-between';
+            dateArea.innerHTML = `
         <div style="display:inline-flex; align-items:center; gap:6px;">
           <div style="display:inline-flex; align-items:center; gap:6px; background:#141414; border:1px solid #333; border-radius:4px; padding:4px 8px; color:#fff; font-size:0.85rem; font-weight:bold; font-family:'Noto Sans JP', sans-serif;">
             <span>${ymdDate}</span>
