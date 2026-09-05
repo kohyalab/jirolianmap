@@ -60,7 +60,7 @@ async function run() {
             if (typeof onSortChange === 'function') onSortChange();
         }
 
-        // 3. 日付表示を「yyyy/mm/dd」に固定置換 ＆ 「橙文字: 臨時営業/休業」の注釈を表示
+        // 3. 日付表示を「yyyy/mm/dd」に固定置換 ＆ 右側に「の営業状況」「橙文字: 臨時営業/休業」の注釈を表示
         const dateInput = document.getElementById('date-selector');
         if (dateInput && dateInput.parentElement) {
             dateInput.parentElement.style.width = '100%';
@@ -68,8 +68,8 @@ async function run() {
             dateInput.parentElement.style.alignItems = 'center';
             dateInput.parentElement.style.justifyContent = 'space-between';
             dateInput.parentElement.innerHTML = `
-        <div style="display:inline-flex; align-items:center; gap:8px;">
-          <div style="display:inline-flex; align-items:center; gap:8px; background:#141414; border:1px solid #333; border-radius:4px; padding:4px 10px; color:#fff; font-size:0.85rem; font-weight:bold; font-family:'Noto Sans JP', sans-serif;">
+        <div style="display:inline-flex; align-items:center; gap:6px;">
+          <div style="display:inline-flex; align-items:center; gap:6px; background:#141414; border:1px solid #333; border-radius:4px; padding:4px 8px; color:#fff; font-size:0.85rem; font-weight:bold; font-family:'Noto Sans JP', sans-serif;">
             <span>${ymdDate}</span>
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
               <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
@@ -78,7 +78,10 @@ async function run() {
               <line x1="3" y1="10" x2="21" y2="10"></line>
             </svg>
           </div>
-          <span style="font-size:0.75rem; font-weight:bold; color:#ff9f43; font-family:'Noto Sans JP', sans-serif;">橙文字: 臨時営業/休業</span>
+          <span style="font-size:0.75rem; color:#aaa; font-weight:500; font-family:'Noto Sans JP', sans-serif; white-space:nowrap;">の営業状況</span>
+        </div>
+        <div style="font-size:0.75rem; font-weight:bold; color:#ff9f43; font-family:'Noto Sans JP', sans-serif; white-space:nowrap;">
+          橙文字: 臨時営業/休業
         </div>
       `;
         }
