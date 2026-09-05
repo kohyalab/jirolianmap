@@ -67,7 +67,7 @@ jobs:
       - name: Commit preview image
         if: (github.event.inputs.environment || github.event.client_payload.environment) == 'preview'
         run: |
-          git config "action@github.com"
+          git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           mkdir -p assets
           cp sheet.png assets/preview.png
