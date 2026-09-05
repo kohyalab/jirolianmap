@@ -426,6 +426,13 @@
         }
         .modal-header h2 { margin: 0; font-size: 1rem; color: var(--accent-color); }
 
+        /* 変更点モーダル用スタイル */
+        .diff-list { display: flex; flex-direction: column; gap: 10px; font-size: 0.85rem; }
+        .diff-shop-item { background: #161616; border: 1px solid var(--border-color); border-radius: 4px; padding: 8px 10px; }
+        .diff-shop-title { font-weight: bold; color: var(--accent-color); margin-bottom: 4px; }
+        .diff-field-item { margin-top: 2px; line-height: 1.4; color: var(--text-color); }
+        .diff-field-item.diff-non-temp { color: #ff5252; font-weight: bold; }
+
         @media (min-width: 768px) {
             body { padding: 12px; }
             header { flex-direction: row; justify-content: space-between; align-items: center; }
@@ -804,6 +811,23 @@
     </div>
 </div>
 
+<!-- 変更内容確認モーダル -->
+<div class="modal-overlay" id="diff-modal">
+    <div class="modal-content" style="max-width: 600px;">
+        <div class="modal-header">
+            <h2>📝 保存内容・変更箇所</h2>
+            <button class="btn btn-sm" onclick="app.closeDiffModal()">✕</button>
+        </div>
+        <div id="diff-modal-body" style="max-height: 420px; overflow-y: auto;">
+        </div>
+        <div style="display:flex; justify-content:flex-end; gap:8px; margin-top:12px; flex-wrap:wrap;">
+            <button class="btn btn-success" onclick="app.confirmSave()">🚀 保存する</button>
+            <button class="btn btn-danger" onclick="app.revertChanges()">↩️ 編集前に戻す</button>
+            <button class="btn" onclick="app.closeDiffModal()">キャンセル</button>
+        </div>
+    </div>
+</div>
+
 <script>
 class EditorApp {
     constructor() {
@@ -814,6 +838,7 @@ class EditorApp {
         this.currentHolidaySpecialShifts = [];
         this.currentSpecialShifts = [];
         this.githubFileSha = null; // GitHub API更新用に取得したSHAを保持
+        this.pendingSaveContext = null; // 保存確認ダイアログでの保留データ
 
         this.el = {
             fileInput: document.getElementById('file-input'),
@@ -863,11 +888,355 @@ class EditorApp {
             githubModal: document.getElementById('github-modal'),
             btnGithubPull: document.getElementById('btn-github-pull'),
             btnGithubPush: document.getElementById('btn-github-push'),
-            btnGithubConfig: document.getElementById('btn-github-config')
+            btnGithubConfig: document.getElementById('btn-github-config'),
+            diffModal: document.getElementById('diff-modal'),
+            diffModalBody: document.getElementById('diff-modal-body')
         };
 
         this.bindEvents();
         this.loadGithubConfigUI();
+    }
+
+    openDiffModal() {
+        if (this.el.diffModal) this.el.diffModal.classList.add('active');
+    }
+
+    closeDiffModal() {
+        if (this.el.diffModal) this.el.diffModal.classList.remove('active');
+    }
+
+    confirmSave() {
+        if (this.pendingSaveContext) {
+            if (this.pendingSaveContext.mode === 'single' && this.pendingSaveContext.draftShop) {
+                const draft = JSON.parse(JSON.stringify(this.pendingSaveContext.draftShop));
+                const targetId = this.pendingSaveContext.targetId;
+
+                let shopIndex = this.shops.findIndex(s => s.id === targetId || s.id === draft.id);
+                if (shopIndex >= 0) {
+                    this.shops[shopIndex] = draft;
+                } else {
+                    this.shops.push(draft);
+                }
+                this.selectedId = draft.id;
+                this.sortShopsByOpenedAt();
+                this.renderList();
+                this.selectShop(draft.id);
+                alert('変更内容を保存しました。');
+            } else if (this.pendingSaveContext.mode === 'bulk' && this.pendingSaveContext.draftShops) {
+                this.shops = JSON.parse(JSON.stringify(this.pendingSaveContext.draftShops));
+                this.sortShopsByOpenedAt();
+                this.renderList();
+                if (this.currentMode === 'bulk') this.renderBulkTable();
+                alert('一括編集した内容を保存しました。');
+            }
+            this.pendingSaveContext = null;
+        }
+        this.closeDiffModal();
+    }
+
+    revertChanges() {
+        if (this.pendingSaveContext) {
+            if (this.pendingSaveContext.targetId && this.currentMode === 'single') {
+                this.selectShop(this.pendingSaveContext.targetId);
+            } else if (this.currentMode === 'bulk') {
+                this.renderBulkTable();
+            }
+            this.pendingSaveContext = null;
+            alert('編集内容を破棄し、保存前の状態に戻しました。');
+        }
+        this.closeDiffModal();
+    }
+
+    escapeHtml(str) {
+        if (str === null || str === undefined) return '';
+        return String(str)
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#039;');
+    }
+
+    formatDiffValue(key, val) {
+        if (val === null || val === undefined || val === '') return '(なし)';
+        if (key === 'temporary') {
+            if (Array.isArray(val) && val.length > 0) {
+                return val.map(t => {
+                    const s = t.startDate || t.date || '';
+                    const e = t.endDate ? `～ ${t.endDate}` : '～ 未定';
+                    const h = this.formatShiftArray(t.hours) || '休業';
+                    return `${s} ${e} [${h}]`;
+                }).join(' / ');
+            }
+            return '(なし)';
+        }
+        if (key === 'shiftsByDay') {
+            if (!val) return '(設定なし)';
+            const dayNames = ['日', '月', '火', '水', '木', '金', '土'];
+            const parts = [];
+            for (let i = 0; i <= 6; i++) {
+                const s = this.formatShiftArray(val[i]);
+                if (s) parts.push(`${dayNames[i]}:${s}`);
+            }
+            return parts.length > 0 ? parts.join(', ') : '(全日定休/未設定)';
+        }
+        if (key === 'holidayShifts') {
+            if (val === null) return '平日準拠';
+            return this.formatShiftArray(val) || '(定休)';
+        }
+        if (key === 'specialShifts') {
+            if (Array.isArray(val) && val.length > 0) {
+                const weeks = {1:'第1', 2:'第2', 3:'第3', 4:'第4', 5:'第5', '-1':'最終'};
+                const days = {1:'月', 2:'火', 3:'水', 4:'木', 5:'金', 6:'土', 0:'日'};
+                return val.map(s => `${weeks[s.week]||''}${days[s.day]||''}曜:${this.formatShiftArray(s.hours)||'休業'}`).join(' / ');
+            }
+            return '(なし)';
+        }
+        if (key === 'holidaySpecialShifts') {
+            if (Array.isArray(val) && val.length > 0) {
+                const days = {1:'月', 2:'火', 3:'水', 4:'木', 5:'金', 6:'土', 0:'日'};
+                return val.map(s => `${days[s.triggerDay]||''}曜祝日(${s.targetOffset===0?'当日':'翌日'}):${this.formatShiftArray(s.hours)||'定休'}`).join(' / ');
+            }
+            return '(なし)';
+        }
+        if (typeof val === 'object') {
+            return JSON.stringify(val);
+        }
+        return String(val);
+    }
+
+    normalizeValueForDiff(key, val) {
+        if (val === null || val === undefined || val === '') return '';
+        if (Array.isArray(val)) {
+            if (val.length === 0) return '';
+            return JSON.stringify(val);
+        }
+        if (key === 'shiftsByDay' && typeof val === 'object') {
+            let hasVal = false;
+            for (let k in val) {
+                if (Array.isArray(val[k]) && val[k].length > 0) hasVal = true;
+            }
+            if (!hasVal) return '';
+            return JSON.stringify(val);
+        }
+        if (typeof val === 'object') {
+            return JSON.stringify(val);
+        }
+        return String(val).trim();
+    }
+
+    getTemporaryDiffText(oldTemp, newTemp) {
+        const oldArr = Array.isArray(oldTemp) ? oldTemp : [];
+        const newArr = Array.isArray(newTemp) ? newTemp : [];
+
+        const formatTempItem = (t) => {
+            const s = t.startDate || t.date || '';
+            const e = t.endDate ? `～ ${t.endDate}` : (t.startDate ? '～ 未定' : '');
+            const h = this.formatShiftArray(t.hours) || '休業';
+            return `${s} ${e} [${h}]`.trim();
+        };
+
+        const oldMap = new Map();
+        oldArr.forEach(t => {
+            const key = (t.startDate || t.date || '') + '_' + (t.endDate || '');
+            oldMap.set(key, t);
+        });
+
+        const newMap = new Map();
+        newArr.forEach(t => {
+            const key = (t.startDate || t.date || '') + '_' + (t.endDate || '');
+            newMap.set(key, t);
+        });
+
+        const diffStrings = [];
+
+        newArr.forEach(t => {
+            const key = (t.startDate || t.date || '') + '_' + (t.endDate || '');
+            const oldItem = oldMap.get(key);
+            if (!oldItem) {
+                diffStrings.push(`追加 ${formatTempItem(t)}`);
+            } else if (JSON.stringify(oldItem) !== JSON.stringify(t)) {
+                diffStrings.push(`変更 ${formatTempItem(t)}`);
+            }
+        });
+
+        oldArr.forEach(t => {
+            const key = (t.startDate || t.date || '') + '_' + (t.endDate || '');
+            if (!newMap.has(key)) {
+                const s = t.startDate || t.date || '';
+                const e = t.endDate ? `～ ${t.endDate}` : (t.startDate ? '～ 未定' : '');
+                diffStrings.push(`削除 ${s} ${e}`.trim());
+            }
+        });
+
+        if (diffStrings.length === 0) return '(差分なし)';
+        return diffStrings.join(' / ');
+    }
+
+    getShopsDiffList(beforeShops, afterShops) {
+        const beforeMap = new Map(beforeShops.map(s => [s.id, s]));
+        const afterMap = new Map(afterShops.map(s => [s.id, s]));
+        const allIds = new Set([...beforeMap.keys(), ...afterMap.keys()]);
+
+        const result = [];
+        const fieldLabels = {
+            name: '店舗名',
+            id: 'ID',
+            kana: 'フリガナ',
+            shortName: '店舗名略称',
+            prefecture: '都道府県',
+            addressText: '住所',
+            lat: '緯度',
+            lng: '経度',
+            openedAt: '開店日',
+            closedAt: '閉店日',
+            'urls.pc': 'PC店 URL',
+            'urls.rdb': 'RDB URL',
+            'urls.tabelog': '食べログ URL',
+            x: '𝕏 ID',
+            instagram: 'Instagram ID',
+            ticketTiming: '食券 Timing',
+            soupType: 'スープ',
+            renge: 'レンゲ',
+            takeout: 'テイクアウト',
+            hoursNotes: '営業時間補足',
+            remarks: '備考',
+            temporary: '臨時営業・休業設定',
+            shiftsByDay: '営業時間シフト設定',
+            holidayShifts: '祝日シフト',
+            specialShifts: '特定週・曜日の設定',
+            holidaySpecialShifts: '祝日特別シフト'
+        };
+
+        allIds.forEach(id => {
+            const oldShop = beforeMap.get(id);
+            const newShop = afterMap.get(id);
+
+            if (!oldShop && newShop) {
+                result.push({
+                    shopId: id,
+                    shopName: newShop.name || id,
+                    changes: [{
+                        field: 'shop',
+                        label: '新規店舗追加',
+                        isTemp: false,
+                        oldValStr: '(なし)',
+                        newValStr: '追加されました'
+                    }]
+                });
+                return;
+            }
+
+            if (oldShop && !newShop) {
+                result.push({
+                    shopId: id,
+                    shopName: oldShop.name || id,
+                    changes: [{
+                        field: 'shop',
+                        label: '店舗削除',
+                        isTemp: false,
+                        oldValStr: '削除前',
+                        newValStr: '(削除されました)'
+                    }]
+                });
+                return;
+            }
+
+            const changes = [];
+            const checkKeys = [
+                'id', 'name', 'kana', 'shortName', 'prefecture', 'addressText', 'lat', 'lng',
+                'openedAt', 'closedAt', 'x', 'instagram', 'ticketTiming', 'soupType',
+                'renge', 'takeout', 'hoursNotes', 'remarks', 'temporary', 'shiftsByDay',
+                'holidayShifts', 'specialShifts', 'holidaySpecialShifts'
+            ];
+
+            checkKeys.forEach(key => {
+                const oldVal = oldShop[key];
+                const newVal = newShop[key];
+                const normOld = this.normalizeValueForDiff(key, oldVal);
+                const normNew = this.normalizeValueForDiff(key, newVal);
+                if (normOld !== normNew) {
+                    const newValStr = key === 'temporary'
+                        ? this.getTemporaryDiffText(oldVal, newVal)
+                        : this.formatDiffValue(key, newVal);
+                    changes.push({
+                        field: key,
+                        label: fieldLabels[key] || key,
+                        isTemp: key === 'temporary',
+                        oldValStr: this.formatDiffValue(key, oldVal),
+                        newValStr: newValStr
+                    });
+                }
+            });
+
+            const oldUrls = oldShop.urls || {};
+            const newUrls = newShop.urls || {};
+            ['pc', 'rdb', 'tabelog'].forEach(subKey => {
+                const oldVal = oldUrls[subKey];
+                const newVal = newUrls[subKey];
+                const normOld = this.normalizeValueForDiff(`urls.${subKey}`, oldVal);
+                const normNew = this.normalizeValueForDiff(`urls.${subKey}`, newVal);
+                if (normOld !== normNew) {
+                    const fullKey = `urls.${subKey}`;
+                    changes.push({
+                        field: fullKey,
+                        label: fieldLabels[fullKey] || fullKey,
+                        isTemp: false,
+                        oldValStr: this.formatDiffValue(fullKey, oldVal),
+                        newValStr: this.formatDiffValue(fullKey, newVal)
+                    });
+                }
+            });
+
+            if (changes.length > 0) {
+                result.push({
+                    shopId: id,
+                    shopName: newShop.name || oldShop.name || id,
+                    changes
+                });
+            }
+        });
+
+        return result;
+    }
+
+    showSaveDiffModal(beforeShops, afterShops, targetId = null) {
+        let diffs = this.getShopsDiffList(beforeShops, afterShops);
+        if (targetId) {
+            diffs = diffs.filter(d => d.shopId === targetId);
+        }
+        if (diffs.length === 0) {
+            alert('変更箇所はありません。');
+            return;
+        }
+
+        let hasNonTempChange = false;
+        let html = '<div class="diff-list">';
+
+        diffs.forEach(shopDiff => {
+            html += `<div class="diff-shop-item">`;
+            html += `<div class="diff-shop-title">${this.escapeHtml(shopDiff.shopName)} [ID: ${this.escapeHtml(shopDiff.shopId)}]</div>`;
+            html += `<ul style="margin: 4px 0 0 18px; padding: 0;">`;
+
+            shopDiff.changes.forEach(change => {
+                if (!change.isTemp) {
+                    hasNonTempChange = true;
+                }
+                const itemClass = change.isTemp ? 'diff-field-item' : 'diff-field-item diff-non-temp';
+                html += `<li class="${itemClass}">${this.escapeHtml(change.label)}: ${this.escapeHtml(change.newValStr)}</li>`;
+            });
+
+            html += `</ul></div>`;
+        });
+
+        html += '</div>';
+
+        if (hasNonTempChange) {
+            html = `<div style="color: #ff5252; font-weight: bold; margin-bottom: 8px; padding: 6px; background: rgba(229,57,53,0.15); border-radius: 4px; border: 1px solid var(--danger-color);">⚠️ 臨時営業・休業設定以外の項目に変更が含まれています。</div>` + html;
+        }
+
+        this.el.diffModalBody.innerHTML = html;
+        this.openDiffModal();
     }
 
     toHalfWidth(input) {
@@ -1002,9 +1371,16 @@ class EditorApp {
         return val;
     }
 
+    getJSTDateString(date = new Date()) {
+        const jstDate = new Date(date.getTime() + (9 * 60 + date.getTimezoneOffset()) * 60 * 1000);
+        const yyyy = jstDate.getFullYear();
+        const mm = String(jstDate.getMonth() + 1).padStart(2, '0');
+        const dd = String(jstDate.getDate()).padStart(2, '0');
+        return `${yyyy}-${mm}-${dd}`;
+    }
+
     getShopStatus(shop) {
-        const now = new Date();
-        const todayStr = now.toISOString().slice(0, 10);
+        const todayStr = this.getJSTDateString();
 
         if (shop.openedAt) {
             let openCompareStr = shop.openedAt;
@@ -1101,14 +1477,13 @@ class EditorApp {
         this.el.addBtn.addEventListener('click', () => this.addNewShop());
         this.el.saveBtn.addEventListener('click', () => {
             this.saveCurrentShop();
-            alert('変更を反映しました。');
         });
         this.el.deleteBtn.addEventListener('click', () => this.deleteCurrentShop());
         this.el.duplicateBtn.addEventListener('click', () => this.duplicateCurrentShop());
         
         this.el.addTempBtn.addEventListener('click', () => {
             this.gatherTemporaryFromDOM();
-            const today = new Date().toISOString().split('T')[0];
+            const today = this.getJSTDateString();
             this.currentTemporary.push({ startDate: today, endDate: today, hours: [] });
             this.renderTemporaryList();
         });
@@ -1252,9 +1627,6 @@ class EditorApp {
     }
 
     async pushToGithub() {
-        if (this.currentMode === 'single' && this.selectedId) this.saveCurrentShop();
-        else if (this.currentMode === 'bulk') this.saveBulkData(true);
-
         const cfg = this.getGithubConfig();
         if (!cfg.token || !cfg.owner || !cfg.repo || !cfg.path) {
             alert('GitHub連携設定が不足しています。「設定」ボタンから入力してください。');
@@ -1331,9 +1703,6 @@ class EditorApp {
     }
 
     switchMode(mode) {
-        if (this.currentMode === 'single' && this.selectedId) this.saveCurrentShop();
-        else if (this.currentMode === 'bulk') this.saveBulkData(true);
-
         this.currentMode = mode;
         if (mode === 'single') {
             this.el.tabSingle.classList.add('active');
@@ -1693,8 +2062,6 @@ class EditorApp {
     }
 
     selectShop(id, skipSave = false) {
-        if (!skipSave && this.selectedId && this.selectedId !== id) this.saveCurrentShop();
-
         this.selectedId = id;
         this.renderList();
 
@@ -1781,61 +2148,88 @@ class EditorApp {
         }
     }
 
-    saveCurrentShop() {
-        if (!this.selectedId) return;
+    gatherFormShopData() {
+        if (!this.selectedId) return null;
         const idInput = document.getElementById('field-id');
-        if (!idInput) return;
+        if (!idInput) return null;
         const id = idInput.value.trim();
-        if (!id) return;
-
-        let shop = this.shops.find(s => s.id === this.selectedId);
-        if (!shop) { shop = { id }; this.shops.push(shop); }
-
-        shop.id = id;
-        shop.name = document.getElementById('field-name').value;
-        shop.kana = this.normalizeFurigana(document.getElementById('field-kana').value);
-        shop.shortName = document.getElementById('field-shortName').value.trim();
-        shop.prefecture = document.getElementById('field-prefecture').value;
-        shop.addressText = this.cleanAddress(document.getElementById('field-addressText').value);
-        shop.lat = parseFloat(document.getElementById('field-lat').value) || 0;
-        shop.lng = parseFloat(document.getElementById('field-lng').value) || 0;
-        shop.openedAt = this.normalizeDate(document.getElementById('field-openedAt').value);
-        shop.closedAt = this.normalizeDate(document.getElementById('field-closedAt').value);
-        
-        shop.urls = {
-            pc: document.getElementById('field-url-pc').value.trim(),
-            rdb: document.getElementById('field-url-rdb').value.trim(),
-            tabelog: document.getElementById('field-url-tabelog').value.trim()
-        };
-
-        shop.x = this.normalizeAccountID(document.getElementById('field-x').value);
-        shop.instagram = this.normalizeAccountID(document.getElementById('field-instagram').value);
-        shop.ticketTiming = document.getElementById('field-ticketTiming').value;
-        shop.soupType = document.getElementById('field-soupType').value.trim();
-        shop.renge = document.getElementById('field-renge').value.trim();
-        shop.takeout = document.getElementById('field-takeout').value.trim();
-        shop.hoursNotes = document.getElementById('field-hoursNotes').value;
-        shop.remarks = document.getElementById('field-remarks').value;
+        if (!id) return null;
 
         this.gatherTemporaryFromDOM();
-        shop.temporary = this.sortTemporaryDates(this.currentTemporary);
-
         this.gatherSpecialFromDOM();
-        shop.specialShifts = this.currentSpecialShifts.length > 0 ? this.currentSpecialShifts : undefined;
-
         this.gatherHolidaySpecialFromDOM();
-        shop.holidaySpecialShifts = this.currentHolidaySpecialShifts.length > 0 ? this.currentHolidaySpecialShifts : undefined;
 
-        shop.shiftsByDay = {};
+        const shiftsByDay = {};
         for (let i = 0; i <= 6; i++) {
-            shop.shiftsByDay[i] = this.parseShiftString(document.getElementById(`shift-${i}`).value);
+            shiftsByDay[i] = this.parseShiftString(document.getElementById(`shift-${i}`).value);
         }
-        
-        shop.holidayShifts = this.el.chkFollowWeekday.checked ? null : this.parseShiftString(this.el.shiftHolInput.value);
 
-        this.selectedId = id;
-        this.sortShopsByOpenedAt();
-        this.renderList();
+        return {
+            id: id,
+            name: document.getElementById('field-name').value,
+            kana: this.normalizeFurigana(document.getElementById('field-kana').value),
+            shortName: document.getElementById('field-shortName').value.trim(),
+            prefecture: document.getElementById('field-prefecture').value,
+            addressText: this.cleanAddress(document.getElementById('field-addressText').value),
+            lat: parseFloat(document.getElementById('field-lat').value) || 0,
+            lng: parseFloat(document.getElementById('field-lng').value) || 0,
+            openedAt: this.normalizeDate(document.getElementById('field-openedAt').value),
+            closedAt: this.normalizeDate(document.getElementById('field-closedAt').value),
+            urls: {
+                pc: document.getElementById('field-url-pc').value.trim(),
+                rdb: document.getElementById('field-url-rdb').value.trim(),
+                tabelog: document.getElementById('field-url-tabelog').value.trim()
+            },
+            x: this.normalizeAccountID(document.getElementById('field-x').value),
+            instagram: this.normalizeAccountID(document.getElementById('field-instagram').value),
+            ticketTiming: document.getElementById('field-ticketTiming').value,
+            soupType: document.getElementById('field-soupType').value.trim(),
+            renge: document.getElementById('field-renge').value.trim(),
+            takeout: document.getElementById('field-takeout').value.trim(),
+            hoursNotes: document.getElementById('field-hoursNotes').value,
+            remarks: document.getElementById('field-remarks').value,
+            temporary: JSON.parse(JSON.stringify(this.sortTemporaryDates(this.currentTemporary))),
+            specialShifts: this.currentSpecialShifts.length > 0 ? JSON.parse(JSON.stringify(this.currentSpecialShifts)) : undefined,
+            holidaySpecialShifts: this.currentHolidaySpecialShifts.length > 0 ? JSON.parse(JSON.stringify(this.currentHolidaySpecialShifts)) : undefined,
+            shiftsByDay: shiftsByDay,
+            holidayShifts: this.el.chkFollowWeekday.checked ? null : this.parseShiftString(this.el.shiftHolInput.value)
+        };
+    }
+
+    saveCurrentShop() {
+        try {
+            const draftShop = this.gatherFormShopData();
+            if (!draftShop) return;
+
+            const beforeShops = JSON.parse(JSON.stringify(this.shops));
+            const afterShops = JSON.parse(JSON.stringify(this.shops));
+
+            let idx = afterShops.findIndex(s => s.id === this.selectedId);
+            if (idx >= 0) {
+                afterShops[idx] = draftShop;
+            } else {
+                afterShops.push(draftShop);
+            }
+
+            const diffs = this.getShopsDiffList(beforeShops, afterShops);
+            const targetDiffs = diffs.filter(d => d.shopId === draftShop.id);
+
+            if (targetDiffs.length === 0) {
+                alert('変更箇所はありません。');
+                return;
+            }
+
+            this.pendingSaveContext = {
+                mode: 'single',
+                targetId: this.selectedId,
+                draftShop: draftShop
+            };
+
+            this.showSaveDiffModal(beforeShops, afterShops, draftShop.id);
+        } catch (err) {
+            console.error('saveCurrentShop Error:', err);
+            alert('保存処理中にエラーが発生しました:\n' + err.message);
+        }
     }
 
     renderBulkTable() {
@@ -2122,7 +2516,6 @@ class EditorApp {
     }
 
     addNewShop() {
-        if (this.currentMode === 'single' && this.selectedId) this.saveCurrentShop();
         const newId = 'shop_' + Date.now().toString().slice(-4);
         const newShop = {
             id: newId, name: '新店舗名', kana: '', shortName: '', prefecture: '', addressText: '', lat: 35.681237, lng: 139.767125,
@@ -2137,7 +2530,6 @@ class EditorApp {
 
     duplicateCurrentShop() {
         if (!this.selectedId) return;
-        this.saveCurrentShop();
         const current = this.shops.find(s => s.id === this.selectedId);
         const copy = JSON.parse(JSON.stringify(current));
         copy.id = current.id + '_copy'; copy.name = current.name + ' (コピー)';
@@ -2157,8 +2549,6 @@ class EditorApp {
     }
 
     exportJSON() {
-        if (this.currentMode === 'single' && this.selectedId) this.saveCurrentShop();
-        else if (this.currentMode === 'bulk') this.saveBulkData(true);
         this.shops.forEach(shop => { if (shop.temporary) shop.temporary = this.sortTemporaryDates(shop.temporary); });
         this.sortShopsByOpenedAt();
         const blob = new Blob([JSON.stringify(this.shops, null, 2)], { type: 'application/json' });
