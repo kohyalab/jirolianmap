@@ -818,8 +818,13 @@
             grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
         }
 
+        .shop-grid.view-mode-calendar {
+            grid-template-columns: 1fr;
+        }
+
         .shop-grid.view-mode-compact .shop-item,
-        .shop-grid.view-mode-detailed .shop-item {
+        .shop-grid.view-mode-detailed .shop-item,
+        .shop-grid.view-mode-calendar .shop-item {
             min-width: 340px;
         }
 
@@ -1594,6 +1599,8 @@
                             onclick="setListSubMode('detailed')">詳細</button>
                         <button type="button" class="mode-switch-option" id="opt-today"
                             onclick="setListSubMode('today')">日別</button>
+                        <button type="button" class="mode-switch-option" id="opt-calendar"
+                            onclick="setListSubMode('calendar')">カレンダー</button>
                     </div>
                     <div id="sort-control-wrapper"
                         style="display: flex; align-items: center; gap: 6px; margin-left: auto;">
@@ -2951,6 +2958,7 @@
             document.getElementById('opt-compact').classList.toggle('active', mode === 'compact');
             document.getElementById('opt-detailed').classList.toggle('active', mode === 'detailed');
             document.getElementById('opt-today').classList.toggle('active', mode === 'today');
+            document.getElementById('opt-calendar').classList.toggle('active', mode === 'calendar');
             const dateArea = document.getElementById('date-selector-area');
             if (dateArea) {
                 dateArea.classList.toggle('is-visible', mode === 'today');
@@ -2966,6 +2974,11 @@
                     const checkboxes = document.querySelectorAll('input[name="today-open-filter"]');
                     checkboxes.forEach(cb => cb.checked = true);
                 }
+            }
+
+            const grid = document.getElementById('shop-list-grid');
+            if (grid) {
+                grid.classList.toggle('view-mode-calendar', mode === 'calendar');
             }
 
             const sidebar = document.getElementById('sidebar-container');
@@ -3236,6 +3249,8 @@
                 grid.classList.add('view-mode-detailed');
             } else if (listSubMode === 'today') {
                 grid.classList.add('view-mode-today');
+            } else if (listSubMode === 'calendar') {
+                grid.classList.add('view-mode-calendar');
             }
 
             const rawSearchQuery = document.getElementById('search-input').value.toLowerCase().trim();
@@ -3434,6 +3449,36 @@
                     <div class="today-hours-text ${textClass}" title="${todayHoursData.text}">${todayHoursData.html}</div>
                 </div>
             `;
+                } else if (listSubMode === 'calendar') {
+                    item.onclick = (e) => {
+                        if (e.target.tagName !== 'BUTTON' && e.target.tagName !== 'A') {
+                            handleShopSelect(shop.id);
+                        }
+                    };
+                    item.dataset.shopId = shop.id;
+                    const currentStatus = getBusinessStatus(shop, new Date());
+                    item.className = `shop-item ${isVisited ? 'visited' : ''} current-${currentStatus.type}`;
+                    
+                    const calendarHtml = render28DaysCalendarTable(shop, new Date());
+                    const statusTag = `<span class="status-badge ${currentStatus.bgClass}">${currentStatus.label}</span>`;
+                    const isProcessing = processingShops.has(shop.id);
+
+                    item.innerHTML = `
+                        <div class="shop-info" data-shop-id="${shop.id}">
+                            <div class="shop-header-row">
+                                <div class="shop-title-wrapper">
+                                    <span class="shop-name">${shop.name}</span>
+                                    ${statusTag}
+                                </div>
+                                <button type="button" class="visit-toggle-btn ${isVisited ? 'is-visited' : ''}" ${isProcessing ? 'disabled' : ''} onclick="toggleVisit('${shop.id}', false, event)" aria-label="${shop.name}の制覇状態を切り替え">
+                                    ${isVisited ? '制覇済' : '未制覇'}
+                                </button>
+                            </div>
+                            <div style="margin-top: 6px;">
+                                ${calendarHtml}
+                            </div>
+                        </div>
+                    `;
                 } else {
                     item.onclick = (e) => {
                         if (e.target.tagName !== 'BUTTON' && e.target.tagName !== 'A') {
