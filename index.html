@@ -3556,7 +3556,7 @@
                     });
                     markers[shop.id] = marker;
 
-                    if (shop.name.includes("三田本店")) {
+                    if (shop.id === 'mita' || shop.name.includes("三田本店")) {
                         mitaShopId = shop.id;
                     }
                 }
