@@ -2418,15 +2418,17 @@
                     ? shop.specialShifts.filter(spec => spec.day === jsDayOfWeek)
                     : [];
 
-                // 祝日特別シフトによる注釈を取得
+                // 祝日特別シフトによる注釈を取得（該当曜日欄）
                 const specRulesForThisDay = [];
                 if (Array.isArray(shop.holidaySpecialShifts)) {
                     shop.holidaySpecialShifts.forEach(rule => {
                         const targetDayOfWeek = (rule.triggerDay + rule.targetOffset) % 7;
                         if (targetDayOfWeek === jsDayOfWeek) {
-                            const label = rule.targetOffset === 0 ? "祝" : "翌祝";
                             const hrsStr = (!rule.hours || rule.hours.length === 0) ? "定休日" : formatShiftList(rule.hours);
-                            specRulesForThisDay.push(`${label}: ${hrsStr}`);
+                            if (hrsStr !== normalStr) {
+                                const label = rule.targetOffset === 0 ? "祝" : "翌祝";
+                                specRulesForThisDay.push(`${label}: ${hrsStr}`);
+                            }
                         }
                     });
                 }
@@ -2472,7 +2474,23 @@
             }
 
             if (hasHolidayShift) {
-                const holidayStr = formatShiftList(shop.holidayShifts);
+                let holidayStr = formatShiftList(shop.holidayShifts);
+                const specRulesForHolidayRow = [];
+                if (Array.isArray(shop.holidaySpecialShifts)) {
+                    const dayNamesShort = ["日", "月", "火", "水", "木", "金", "土"];
+                    shop.holidaySpecialShifts.forEach(rule => {
+                        if (rule.targetOffset === 0) {
+                            const hrsStr = (!rule.hours || rule.hours.length === 0) ? "定休日" : formatShiftList(rule.hours);
+                            if (hrsStr !== holidayStr) {
+                                const triggerDayName = dayNamesShort[rule.triggerDay];
+                                specRulesForHolidayRow.push(`${triggerDayName}曜祝日: ${hrsStr}`);
+                            }
+                        }
+                    });
+                }
+                if (specRulesForHolidayRow.length > 0) {
+                    holidayStr += `（${specRulesForHolidayRow.join('、')}）`;
+                }
                 // 祝日の場合かつ臨時営業がない場合「祝」を強調
                 const isTodayRow = !hasTodayTemp && targetIsHoliday;
                 rawEntries.push({ dayLabel: '祝', text: holidayStr, isHoliday: true, isToday: isTodayRow });
