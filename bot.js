@@ -81,7 +81,7 @@ async function run() {
           <span style="font-size:0.75rem; color:#aaa; font-weight:500; font-family:'Noto Sans JP', sans-serif; white-space:nowrap;">の営業状況</span>
         </div>
         <div style="font-size:0.75rem; font-weight:bold; color:#ff9f43; font-family:'Noto Sans JP', sans-serif; white-space:nowrap;">
-          橙文字: 臨時営業/休業
+          臨時営業/休業
         </div>
       `;
         }
