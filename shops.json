@@ -4218,18 +4218,27 @@
     "id": "koshigaya",
     "name": "越谷店",
     "kana": "コシガヤテン",
+    "shortName": "越谷",
+    "prefCode": "11",
+    "cityCode": "11208",
     "addressText": "越ヶ谷2丁目3-7",
     "lat": 35.89014368107456,
     "lng": 139.78763955950427,
+    "openedAt": "2019-03-10",
+    "closedAt": null,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/koshigaya/",
       "rdb": "https://ramendb.supleks.jp/s/115782.html",
       "tabelog": "https://tabelog.com/saitama/A1102/A110203/11049349/"
     },
     "x": "ksgy26",
+    "instagram": "",
     "ticketTiming": "",
-    "openedAt": "2019-03-10",
-    "closedAt": null,
+    "soupType": "",
+    "renge": "",
+    "takeout": "",
+    "hoursNotes": "",
+    "remarks": "",
     "temporary": [
       {
         "startDate": "2026-08-11",
@@ -4284,6 +4293,16 @@
       {
         "startDate": "2026-09-05",
         "endDate": "2026-09-05",
+        "hours": [
+          [
+            10,
+            14
+          ]
+        ]
+      },
+      {
+        "startDate": "2026-09-13",
+        "endDate": "2026-09-13",
         "hours": [
           [
             10,
@@ -4346,15 +4365,7 @@
       "5": [],
       "6": []
     },
-    "holidayShifts": null,
-    "remarks": "",
-    "hoursNotes": "",
-    "instagram": "",
-    "shortName": "越谷",
-    "soupType": "",
-    "renge": "",
-    "takeout": "",
-    "cityCode": "11208"
+    "holidayShifts": null
   },
   {
     "id": "maebashichiyoda",
