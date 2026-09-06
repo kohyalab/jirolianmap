@@ -3381,18 +3381,27 @@
     "id": "shndaita",
     "name": "環七新新代田店",
     "kana": "カンナナシンシンダイタテン",
+    "shortName": "新新代田",
+    "prefCode": "13",
+    "cityCode": "13112",
     "addressText": "代田5丁目29-5櫻井ビル",
     "lat": 35.66190266560612,
     "lng": 139.66041560003418,
+    "openedAt": "2014-05-18",
+    "closedAt": null,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/shndaita/",
       "rdb": "https://ramendb.supleks.jp/s/75362.html",
       "tabelog": "https://tabelog.com/tokyo/A1318/A131803/13010833/"
     },
     "x": "26shinshindaita",
+    "instagram": "",
     "ticketTiming": "",
-    "openedAt": "2014-05-18",
-    "closedAt": null,
+    "soupType": "",
+    "renge": "",
+    "takeout": "",
+    "hoursNotes": "",
+    "remarks": "",
     "temporary": [
       {
         "startDate": "2026-08-12",
@@ -3448,6 +3457,21 @@
             15
           ]
         ]
+      },
+      {
+        "startDate": "2026-09-08",
+        "endDate": "2026-09-08",
+        "hours": []
+      },
+      {
+        "startDate": "2026-09-11",
+        "endDate": "2026-09-11",
+        "hours": [
+          [
+            11,
+            15
+          ]
+        ]
       }
     ],
     "shiftsByDay": {
@@ -3489,15 +3513,7 @@
         ]
       ]
     },
-    "holidayShifts": null,
-    "remarks": "",
-    "hoursNotes": "",
-    "instagram": "",
-    "shortName": "新新代田",
-    "soupType": "",
-    "renge": "",
-    "takeout": "",
-    "cityCode": "13112"
+    "holidayShifts": null
   },
   {
     "id": "aizuwakamatsu",
@@ -5230,18 +5246,27 @@
     "id": "sendai2",
     "name": "仙台店2",
     "kana": "センダイテンツー",
+    "shortName": "仙台2",
+    "prefCode": "04",
+    "cityCode": "04101",
     "addressText": "一番町2丁目5-32第一観光ビル1階",
     "lat": 38.25938729229677,
     "lng": 140.8720881025786,
+    "openedAt": "2025-04-20",
+    "closedAt": null,
     "urls": {
       "pc": "",
       "rdb": "https://ramendb.supleks.jp/s/164808.html",
       "tabelog": "https://tabelog.com/miyagi/A0401/A040101/4028874/"
     },
     "x": "jiro_sendai1023",
+    "instagram": "jiro_sendai",
     "ticketTiming": "",
-    "openedAt": "2025-04-20",
-    "closedAt": null,
+    "soupType": "",
+    "renge": "",
+    "takeout": "",
+    "hoursNotes": "",
+    "remarks": "",
     "temporary": [
       {
         "startDate": "2026-08-11",
@@ -5256,6 +5281,16 @@
             12,
             14.5
           ],
+          [
+            17,
+            21
+          ]
+        ]
+      },
+      {
+        "startDate": "2026-09-07",
+        "endDate": "2026-09-07",
+        "hours": [
           [
             17,
             21
@@ -5332,15 +5367,7 @@
         11,
         21
       ]
-    ],
-    "remarks": "",
-    "hoursNotes": "",
-    "instagram": "jiro_sendai",
-    "shortName": "仙台2",
-    "soupType": "",
-    "renge": "",
-    "takeout": "",
-    "cityCode": "04101"
+    ]
   },
   {
     "id": "nagoyaosone",
