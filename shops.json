@@ -4686,18 +4686,27 @@
     "id": "hitachinaka",
     "name": "ひたちなか店",
     "kana": "ヒタチナカテン",
+    "shortName": "ひたちなか",
+    "prefCode": "08",
+    "cityCode": "08220",
     "addressText": "田彦1648-4",
     "lat": 36.4091862437859,
     "lng": 140.5153049294101,
+    "openedAt": "2021-12-12",
+    "closedAt": null,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/hitachinaka/",
       "rdb": "https://ramendb.supleks.jp/s/135329.html",
       "tabelog": "https://tabelog.com/ibaraki/A0801/A080102/8025680/"
     },
     "x": "26_hitachinaka",
+    "instagram": "",
     "ticketTiming": "",
-    "openedAt": "2021-12-12",
-    "closedAt": null,
+    "soupType": "",
+    "renge": "",
+    "takeout": "",
+    "hoursNotes": "",
+    "remarks": "",
     "temporary": [
       {
         "startDate": "2026-08-21",
@@ -4722,6 +4731,11 @@
             21
           ]
         ]
+      },
+      {
+        "startDate": "2026-09-07",
+        "endDate": "2026-09-07",
+        "hours": []
       },
       {
         "startDate": "2026-09-19",
@@ -4803,15 +4817,7 @@
         10,
         16
       ]
-    ],
-    "remarks": "",
-    "hoursNotes": "",
-    "instagram": "",
-    "shortName": "ひたちなか",
-    "soupType": "",
-    "renge": "",
-    "takeout": "",
-    "cityCode": "08220"
+    ]
   },
   {
     "id": "hitotsubashi",
