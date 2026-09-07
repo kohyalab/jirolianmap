@@ -3245,18 +3245,27 @@
     "id": "sapporo",
     "name": "札幌店",
     "kana": "サッポロテン",
+    "shortName": "札幌",
+    "prefCode": "01",
+    "cityCode": "01102",
     "addressText": "北6条西8丁目8-11",
     "lat": 43.06740114931745,
     "lng": 141.34387806056674,
+    "openedAt": "2013-03-31",
+    "closedAt": null,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/sapporo/",
       "rdb": "https://ramendb.supleks.jp/s/65267.html",
       "tabelog": "https://tabelog.com/hokkaido/A0101/A010201/1041731/"
     },
     "x": "jiro_sapporo_",
+    "instagram": "",
     "ticketTiming": "",
-    "openedAt": "2013-03-31",
-    "closedAt": null,
+    "soupType": "",
+    "renge": "",
+    "takeout": "",
+    "hoursNotes": "",
+    "remarks": "",
     "temporary": [
       {
         "startDate": "2026-08-10",
@@ -3305,6 +3314,16 @@
       {
         "startDate": "2026-09-05",
         "endDate": "2026-09-05",
+        "hours": []
+      },
+      {
+        "startDate": "2026-09-09",
+        "endDate": "2026-09-09",
+        "hours": []
+      },
+      {
+        "startDate": "2026-09-16",
+        "endDate": "2026-09-16",
         "hours": []
       }
     ],
@@ -3367,15 +3386,7 @@
       ],
       "6": []
     },
-    "holidayShifts": null,
-    "remarks": "",
-    "hoursNotes": "",
-    "instagram": "",
-    "shortName": "札幌",
-    "soupType": "",
-    "renge": "",
-    "takeout": "",
-    "cityCode": "01102"
+    "holidayShifts": null
   },
   {
     "id": "shndaita",
