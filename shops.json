@@ -1470,18 +1470,27 @@
     "id": "ogikubo",
     "name": "荻窪店",
     "kana": "オギクボテン",
+    "shortName": "荻窪",
+    "prefCode": "13",
+    "cityCode": "13115",
     "addressText": "荻窪4丁目33-1荻窪白馬ビル",
     "lat": 35.70361131922144,
     "lng": 139.62629727116703,
+    "openedAt": "2002-10-14",
+    "closedAt": null,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/ogikubo/",
       "rdb": "https://ramendb.supleks.jp/s/2638.html",
       "tabelog": "https://tabelog.com/tokyo/A1319/A131906/13006060/"
     },
     "x": "ogkb_jiro",
+    "instagram": "ogkbjiro",
     "ticketTiming": "",
-    "openedAt": "2002-10-14",
-    "closedAt": null,
+    "soupType": "",
+    "renge": "",
+    "takeout": "",
+    "hoursNotes": "",
+    "remarks": "",
     "temporary": [
       {
         "startDate": "2026-08-15",
@@ -1498,74 +1507,66 @@
       "0": [
         [
           11.5,
-          14.25
+          14
         ],
         [
           18,
-          21.5
+          21
         ]
       ],
       "1": [
         [
           11.5,
-          14.25
+          14
         ],
         [
           18,
-          21.5
+          21
         ]
       ],
       "2": [
         [
           11.5,
-          14.25
+          14
         ],
         [
           18,
-          21.5
+          21
         ]
       ],
       "3": [
         [
           11.5,
-          14.25
+          14
         ],
         [
           18,
-          21.5
+          21
         ]
       ],
       "4": [
         [
           11.5,
-          14.25
+          14
         ],
         [
           18,
-          21.5
+          21
         ]
       ],
       "5": [
         [
           11.5,
-          14.25
+          14
         ],
         [
           18,
-          21.5
+          21
         ]
       ],
       "6": []
     },
-    "holidayShifts": null,
-    "remarks": "",
-    "hoursNotes": "",
-    "instagram": "ogkbjiro",
-    "shortName": "荻窪",
-    "soupType": "",
-    "renge": "",
-    "takeout": "",
-    "cityCode": "13115"
+    "holidayShifts": null
   },
   {
     "id": "kaminoge",
@@ -2054,18 +2055,27 @@
     "id": "koiwa",
     "name": "小岩店",
     "kana": "コイワテン",
+    "shortName": "小岩",
+    "prefCode": "13",
+    "cityCode": "13123",
     "addressText": "西小岩3丁目31-14",
     "lat": 35.734931995326,
     "lng": 139.8800502417785,
+    "openedAt": "2005-11-06",
+    "closedAt": null,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/koiwa/",
       "rdb": "https://ramendb.supleks.jp/s/3387.html",
       "tabelog": "https://tabelog.com/tokyo/A1312/A131204/13021952/"
     },
     "x": "koiwajiro",
+    "instagram": "",
     "ticketTiming": "",
-    "openedAt": "2005-11-06",
-    "closedAt": null,
+    "soupType": "",
+    "renge": "",
+    "takeout": "",
+    "hoursNotes": "麺切れ次第終了",
+    "remarks": "",
     "temporary": [
       {
         "startDate": "2026-08-13",
@@ -2080,6 +2090,11 @@
       {
         "startDate": "2026-09-01",
         "endDate": "2026-09-01",
+        "hours": []
+      },
+      {
+        "startDate": "2026-09-09",
+        "endDate": "2026-09-09",
         "hours": []
       }
     ],
@@ -2117,15 +2132,7 @@
       ],
       "6": []
     },
-    "holidayShifts": [],
-    "remarks": "",
-    "hoursNotes": "麺切れ次第終了",
-    "instagram": "",
-    "shortName": "小岩",
-    "soupType": "",
-    "renge": "",
-    "takeout": "",
-    "cityCode": "13123"
+    "holidayShifts": []
   },
   {
     "id": "yaen2",
@@ -5002,18 +5009,27 @@
     "id": "kashiwa",
     "name": "柏店",
     "kana": "カシワテン",
+    "shortName": "柏",
+    "prefCode": "12",
+    "cityCode": "12217",
     "addressText": "十余二249-5",
     "lat": 35.88220345823652,
     "lng": 139.95919870462066,
+    "openedAt": "2023-01-09",
+    "closedAt": null,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/kashiwa/",
       "rdb": "https://ramendb.supleks.jp/s/146037.html",
       "tabelog": "https://tabelog.com/chiba/A1203/A120301/12056350/"
     },
     "x": "genkimoriya",
+    "instagram": "",
     "ticketTiming": "",
-    "openedAt": "2023-01-09",
-    "closedAt": null,
+    "soupType": "",
+    "renge": "",
+    "takeout": "",
+    "hoursNotes": "",
+    "remarks": "",
     "temporary": [
       {
         "startDate": "2026-08-20",
@@ -5028,6 +5044,11 @@
       {
         "startDate": "2026-09-03",
         "endDate": "2026-09-03",
+        "hours": []
+      },
+      {
+        "startDate": "2026-09-10",
+        "endDate": "2026-09-10",
         "hours": []
       }
     ],
@@ -5070,15 +5091,7 @@
       ],
       "6": []
     },
-    "holidayShifts": null,
-    "remarks": "",
-    "hoursNotes": "",
-    "instagram": "",
-    "shortName": "柏",
-    "soupType": "",
-    "renge": "",
-    "takeout": "",
-    "cityCode": "12217"
+    "holidayShifts": null
   },
   {
     "id": "ikuta",
@@ -5432,18 +5445,27 @@
     "id": "nagoyaosone",
     "name": "名古屋大曽根店",
     "kana": "ナゴヤオオソネテン",
+    "shortName": "名古屋",
+    "prefCode": "23",
+    "cityCode": "23102",
     "addressText": "矢田4丁目3-7",
     "lat": 35.193886594257584,
     "lng": 136.94194176117125,
+    "openedAt": "2025-11-30",
+    "closedAt": null,
     "urls": {
       "pc": "",
       "rdb": "https://ramendb.supleks.jp/s/168898.html",
       "tabelog": "https://tabelog.com/aichi/A2301/A230110/23094216/"
     },
     "x": "jiro_NGY",
+    "instagram": "",
     "ticketTiming": "",
-    "openedAt": "2025-11-30",
-    "closedAt": null,
+    "soupType": "",
+    "renge": "",
+    "takeout": "",
+    "hoursNotes": "",
+    "remarks": "",
     "temporary": [
       {
         "startDate": "2026-08-10",
@@ -5487,6 +5509,11 @@
       {
         "startDate": "2026-09-04",
         "endDate": "2026-09-04",
+        "hours": []
+      },
+      {
+        "startDate": "2026-09-09",
+        "endDate": "2026-09-09",
         "hours": []
       }
     ],
@@ -5550,15 +5577,7 @@
         10,
         14
       ]
-    ],
-    "remarks": "",
-    "hoursNotes": "",
-    "instagram": "",
-    "shortName": "名古屋",
-    "soupType": "",
-    "renge": "",
-    "takeout": "",
-    "cityCode": "23102"
+    ]
   },
   {
     "id": "okinawa",
