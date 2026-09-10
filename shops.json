@@ -992,6 +992,8 @@
     "name": "亀戸店",
     "kana": "カメイドテン",
     "shortName": "亀戸",
+    "prefCode": "13",
+    "cityCode": "13108",
     "addressText": "亀戸4丁目35-17",
     "lat": 35.70188461874897,
     "lng": 139.82666669999045,
@@ -1054,6 +1056,16 @@
       {
         "startDate": "2026-09-06",
         "endDate": "2026-09-06",
+        "hours": [
+          [
+            11,
+            14.5
+          ]
+        ]
+      },
+      {
+        "startDate": "2026-09-10",
+        "endDate": "2026-09-10",
         "hours": [
           [
             11,
@@ -1134,8 +1146,7 @@
         ]
       ]
     },
-    "holidayShifts": null,
-    "cityCode": "13108"
+    "holidayShifts": null
   },
   {
     "id": "keikyukawasaki",
@@ -3485,6 +3496,11 @@
       {
         "startDate": "2026-09-08",
         "endDate": "2026-09-08",
+        "hours": []
+      },
+      {
+        "startDate": "2026-09-10",
+        "endDate": "2026-09-10",
         "hours": []
       },
       {
