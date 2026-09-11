@@ -3559,18 +3559,27 @@
     "id": "aizuwakamatsu",
     "name": "会津若松駅前店",
     "kana": "アイヅワカマツエキマエテン",
+    "shortName": "会津若松",
+    "prefCode": "07",
+    "cityCode": "07202",
     "addressText": "駅前町6-31",
     "lat": 37.50667828274643,
     "lng": 139.93144378100283,
+    "openedAt": "2014-09-21",
+    "closedAt": null,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/aizuwakamatsu/",
       "rdb": "https://ramendb.supleks.jp/s/77820.html",
       "tabelog": "https://tabelog.com/fukushima/A0705/A070501/7011865/"
     },
     "x": "aizu_jiro",
+    "instagram": "aizu_jiro26",
     "ticketTiming": "",
-    "openedAt": "2014-09-21",
-    "closedAt": null,
+    "soupType": "",
+    "renge": "",
+    "takeout": "",
+    "hoursNotes": "祝日不定休",
+    "remarks": "",
     "temporary": [
       {
         "startDate": "2026-08-16",
@@ -3601,6 +3610,28 @@
             15
           ]
         ]
+      },
+      {
+        "startDate": "2026-09-21",
+        "endDate": "2026-09-21",
+        "hours": []
+      }
+    ],
+    "specialShifts": [
+      {
+        "week": 1,
+        "day": 0,
+        "hours": []
+      },
+      {
+        "week": 3,
+        "day": 0,
+        "hours": []
+      },
+      {
+        "week": 5,
+        "day": 0,
+        "hours": []
       }
     ],
     "shiftsByDay": {
@@ -3675,32 +3706,7 @@
         17,
         20
       ]
-    ],
-    "remarks": "",
-    "hoursNotes": "祝日不定休",
-    "instagram": "aizu_jiro26",
-    "specialShifts": [
-      {
-        "week": 1,
-        "day": 0,
-        "hours": []
-      },
-      {
-        "week": 3,
-        "day": 0,
-        "hours": []
-      },
-      {
-        "week": 5,
-        "day": 0,
-        "hours": []
-      }
-    ],
-    "shortName": "会津若松",
-    "soupType": "",
-    "renge": "",
-    "takeout": "",
-    "cityCode": "07202"
+    ]
   },
   {
     "id": "jrnishiguchikamata",
