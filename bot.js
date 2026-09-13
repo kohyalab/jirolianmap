@@ -30,9 +30,33 @@ async function run() {
 
     // 日別レイアウトの共有処理（shareFullGridImage）を実行し、画像データと共有テキストを取得
     const shareResult = await page.evaluate(async ({ listMode, sortBy }) => {
-        // 1. フォント読み込み待機
+        // 1. Google Fonts（Noto Sans JP）の読み込みと日本語フォント優先スタイルの適用
+        if (!document.querySelector('link[href*="Noto+Sans+JP"]')) {
+            const fontLink = document.createElement('link');
+            fontLink.rel = 'stylesheet';
+            fontLink.href = 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap';
+            document.head.appendChild(fontLink);
+        }
+
+        if (!document.getElementById('bot-jp-font-style')) {
+            const fontStyle = document.createElement('style');
+            fontStyle.id = 'bot-jp-font-style';
+            fontStyle.innerHTML = `
+                * {
+                    font-family: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif !important;
+                }
+            `;
+            document.head.appendChild(fontStyle);
+        }
+
         if (document.fonts) {
-            await document.fonts.ready;
+            try {
+                await document.fonts.load('14px "Noto Sans JP"');
+                await document.fonts.load('bold 14px "Noto Sans JP"');
+                await document.fonts.ready;
+            } catch (e) {
+                console.warn('Font load warning:', e);
+            }
         }
 
         // 2. 表示モード & ソート設定
