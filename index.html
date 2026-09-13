@@ -17,7 +17,7 @@
     <meta name="keywords" content="ラーメン二郎,二郎,ジロリアン,ジロリアンマップ,二郎マップ,営業時間,臨時休業,臨休,定休日,地図">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://app.jirolianmap.com/">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ジロリアンマップ</title>
     <meta property="og:title" content="ジロリアンマップ【二郎営業情報・マップ】">
     <meta property="og:type" content="website">
@@ -4077,10 +4077,10 @@
                 displayShops.sort((a, b) => a.centerDistance - b.centerDistance);
             } else if (sortType === 'pref') {
                 displayShops.sort((a, b) => {
-                    const codeA = a.cityCode || '';
-                    const codeB = b.cityCode || '';
-                    if (codeA !== codeB) {
-                        return codeA.localeCompare(codeB);
+                    const prefA = (a.cityCode || '').substring(0, 2);
+                    const prefB = (b.cityCode || '').substring(0, 2);
+                    if (prefA !== prefB) {
+                        return prefA.localeCompare(prefB);
                     }
                     const dateA = parseNormalizedDateStr(a.openedAt);
                     const dateB = parseNormalizedDateStr(b.openedAt);
