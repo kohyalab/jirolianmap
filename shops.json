@@ -1356,18 +1356,27 @@
     "id": "matsudo",
     "name": "松戸駅前店",
     "kana": "マツドエキマエテン",
+    "shortName": "松戸",
+    "prefCode": "12",
+    "cityCode": "12207",
     "addressText": "本町17-9",
     "lat": 35.785961048340255,
     "lng": 139.89934609999588,
+    "openedAt": "2002-05-13",
+    "closedAt": null,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/matsudo/",
       "rdb": "https://ramendb.supleks.jp/s/286.html",
       "tabelog": "https://tabelog.com/chiba/A1203/A120302/12000236/"
     },
     "x": "matsudojiro3",
+    "instagram": "mtdjiro",
     "ticketTiming": "",
-    "openedAt": "2002-05-13",
-    "closedAt": null,
+    "soupType": "",
+    "renge": "",
+    "takeout": "",
+    "hoursNotes": "祝日不定休",
+    "remarks": "",
     "temporary": [
       {
         "startDate": "2026-08-11",
@@ -1392,6 +1401,11 @@
       {
         "startDate": "2026-08-31",
         "endDate": "2026-08-31",
+        "hours": []
+      },
+      {
+        "startDate": "2026-09-19",
+        "endDate": "2026-09-19",
         "hours": []
       }
     ],
@@ -1434,15 +1448,7 @@
       ],
       "6": []
     },
-    "holidayShifts": null,
-    "remarks": "",
-    "hoursNotes": "祝日不定休",
-    "instagram": "mtdjiro",
-    "shortName": "松戸",
-    "soupType": "",
-    "renge": "",
-    "takeout": "",
-    "cityCode": "12207"
+    "holidayShifts": null
   },
   {
     "id": "mejirohosei",
@@ -3512,6 +3518,21 @@
             15
           ]
         ]
+      },
+      {
+        "startDate": "2026-09-16",
+        "endDate": "2026-09-16",
+        "hours": []
+      },
+      {
+        "startDate": "2026-09-18",
+        "endDate": "2026-09-18",
+        "hours": [
+          [
+            11,
+            15
+          ]
+        ]
       }
     ],
     "shiftsByDay": {
@@ -4100,6 +4121,16 @@
           [
             17.5,
             21.5
+          ]
+        ]
+      },
+      {
+        "startDate": "2026-09-23",
+        "endDate": "2026-09-23",
+        "hours": [
+          [
+            11,
+            14.5
           ]
         ]
       }
@@ -4818,6 +4849,16 @@
         "startDate": "2026-09-07",
         "endDate": "2026-09-07",
         "hours": []
+      },
+      {
+        "startDate": "2026-09-17",
+        "endDate": "2026-09-18",
+        "hours": [
+          [
+            11,
+            14.5
+          ]
+        ]
       },
       {
         "startDate": "2026-09-19",
@@ -5713,6 +5754,16 @@
           [
             11,
             14
+          ]
+        ]
+      },
+      {
+        "startDate": "2026-09-13",
+        "endDate": "2026-09-13",
+        "hours": [
+          [
+            10.5,
+            14.5
           ]
         ]
       },
