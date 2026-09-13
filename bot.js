@@ -1,3 +1,5 @@
+process.env.TZ = 'Asia/Tokyo';
+
 const fs = require('fs');
 const { chromium } = require('playwright');
 const { TwitterApi } = require('twitter-api-v2');
@@ -18,7 +20,9 @@ async function run() {
     const browser = await chromium.launch({ headless: true });
     const page = await browser.newPage({
         viewport: { width: 1280, height: 1600 },
-        deviceScaleFactor: 2 // 高解像度（Retina）
+        deviceScaleFactor: 2, // 高解像度（Retina）
+        locale: 'ja-JP',
+        timezoneId: 'Asia/Tokyo'
     });
 
     await page.goto('https://app.jirolianmap.com/', { waitUntil: 'domcontentloaded', timeout: 60000 });
