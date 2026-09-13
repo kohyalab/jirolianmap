@@ -1658,6 +1658,7 @@
                     </div>
                     <div id="sort-control-wrapper"
                         style="display: flex; align-items: center; gap: 6px; margin-left: auto;">
+                        <button type="button" class="sns-share-btn" id="full-grid-share-btn" onclick="shareFullGridImage(event)" aria-label="全店舗の営業状況を共有" title="全店舗の営業状況を共有" style="display:none; padding: 3px 6px; border: 1px solid var(--border-color); border-radius: 4px; background: #141414;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg></button>
                         <select id="sort-select" class="sort-select" onchange="onSortChange()">
                             <option value="distance_user" disabled">距離順（現在地）</option>
                             <option value="distance_center">距離順（地図中心）</option>
@@ -1666,7 +1667,6 @@
                             <option value="hours">営業時間順</option>
                             <option value="name">50音順</option>
                         </select>
-                        <button type="button" class="sns-share-btn" id="full-grid-share-btn" onclick="shareFullGridImage(event)" aria-label="全店舗の営業状況を共有" title="全店舗の営業状況を共有" style="display:none; padding: 3px 6px; border: 1px solid var(--border-color); border-radius: 4px; background: #141414;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg></button>
                     </div>
                 </div>
                 <div class="date-selector-area" id="date-selector-area" style="position: relative;">
@@ -1843,6 +1843,9 @@
                     <input type="checkbox" id="share-opt-conquest" checked style="width: 16px; height: 16px; accent-color: var(--jiro-yellow);">
                     <span>画像に制覇状態を表示する</span>
                 </label>
+                <div id="share-opt-username-wrap" style="margin-top: 8px; margin-left: 24px;">
+                    <input type="text" id="share-opt-username" placeholder="ユーザー名（任意、例: ジロリアン）" style="background: #141414; color: #fff; border: 1px solid #444; border-radius: 4px; padding: 4px 8px; font-size: 0.8rem; width: 100%; box-sizing: border-box;">
+                </div>
             </div>
 
             <div id="share-opt-status-section" style="border-top: 1px solid #333; padding-top: 12px;">
@@ -3042,15 +3045,27 @@
             const metaSection = document.getElementById('share-opt-meta-section');
 
             if (conquestSection) conquestSection.style.display = (layoutType === 'calendar') ? 'none' : 'block';
-            if (statusSection) statusSection.style.display = (layoutType === 'popup_detail') ? 'block' : 'none';
+            if (statusSection) statusSection.style.display = (layoutType === 'popup_detail' || layoutType === 'minimal') ? 'block' : 'none';
             if (metaSection) {
                 metaSection.style.display = (layoutType === 'minimal') ? 'none' : 'block';
                 metaSection.style.borderTop = (layoutType === 'calendar') ? 'none' : '1px solid #333';
                 metaSection.style.paddingTop = (layoutType === 'calendar') ? '0' : '12px';
             }
 
+            const isMinimal = (layoutType === 'minimal');
             const conquestCb = document.getElementById('share-opt-conquest');
             if (conquestCb) conquestCb.checked = true;
+
+            const usernameWrap = document.getElementById('share-opt-username-wrap');
+            if (usernameWrap) {
+                const updateUsernameDisplay = () => {
+                    usernameWrap.style.display = (isMinimal && conquestCb && conquestCb.checked) ? 'block' : 'none';
+                };
+                updateUsernameDisplay();
+                if (conquestCb) {
+                    conquestCb.onchange = updateUsernameDisplay;
+                }
+            }
 
             const statusCb = document.getElementById('share-opt-status');
             if (statusCb) statusCb.checked = true;
@@ -3129,6 +3144,7 @@
             await new Promise(resolve => setTimeout(resolve, 50));
 
             const { container, shop, layoutType, fileName, shareText, btnElement } = currentShareTarget;
+            let finalShareText = shareText;
 
             if (!container) {
                 if (confirmBtn) {
@@ -3140,7 +3156,7 @@
             }
 
             const showConquest = (layoutType === 'calendar') ? true : (document.getElementById('share-opt-conquest')?.checked ?? true);
-            const showStatus = (layoutType === 'popup_detail') ? (document.getElementById('share-opt-status')?.checked ?? true) : true;
+            const showStatus = (layoutType === 'popup_detail' || layoutType === 'minimal') ? (document.getElementById('share-opt-status')?.checked ?? true) : true;
             const selectedMeta = document.querySelector('input[name="share-opt-meta"]:checked')?.value || 'none';
 
             const modifiedElements = [];
@@ -3168,6 +3184,73 @@
                     container.style.margin = '0 auto';
                 }
 
+                // 最小レイアウトにおけるステータス非表示時の表示調整（次回営業情報非表示 ＆ 枠線・背景色・文字色の書式解除）
+                if (layoutType === 'minimal') {
+                    const minimalCards = container.querySelectorAll('.shop-item');
+                    minimalCards.forEach(card => {
+                        modifiedElements.push({
+                            el: card,
+                            origDisplay: card.style.display,
+                            origFlexDir: card.style.flexDirection,
+                            origJustify: card.style.justifyContent,
+                            origAlignItems: card.style.alignItems,
+                            origPadding: card.style.padding,
+                            origMinHeight: card.style.minHeight
+                        });
+                        card.style.display = 'flex';
+                        card.style.flexDirection = 'column';
+                        card.style.justifyContent = 'center';
+                        card.style.alignItems = 'center';
+                        card.style.padding = '4px 2px';
+                        card.style.minHeight = '54px';
+
+                        if (!showStatus) {
+                            modifiedElements.push({
+                                el: card,
+                                origBg: card.style.backgroundColor,
+                                origBorderColor: card.style.borderColor,
+                                origClass: card.className
+                            });
+                            card.style.backgroundColor = 'var(--card-bg)';
+                            card.style.borderColor = 'var(--border-color)';
+                            card.classList.remove('current-open', 'current-closed', 'current-closing-soon', 'current-scheduled', 'current-preopen', 'today-open', 'today-closed');
+
+                            const nameEl = card.querySelector('.today-summary-name');
+                            if (nameEl) {
+                                modifiedElements.push({ el: nameEl, origColor: nameEl.style.color });
+                                nameEl.style.color = 'var(--jiro-yellow)';
+                            }
+                        }
+
+                        const summaryCard = card.querySelector('.today-summary-card');
+                        if (summaryCard) {
+                            modifiedElements.push({
+                                el: summaryCard,
+                                origDisplay: summaryCard.style.display,
+                                origFlexDir: summaryCard.style.flexDirection,
+                                origJustify: summaryCard.style.justifyContent,
+                                origAlignItems: summaryCard.style.alignItems,
+                                origGap: summaryCard.style.gap,
+                                origPadding: summaryCard.style.padding
+                            });
+                            summaryCard.style.display = 'flex';
+                            summaryCard.style.flexDirection = 'column';
+                            summaryCard.style.justifyContent = 'center';
+                            summaryCard.style.alignItems = 'center';
+                            summaryCard.style.gap = (showConquest && showStatus) ? '2px' : '4px';
+                            summaryCard.style.padding = '0';
+                        }
+                    });
+
+                    if (!showStatus) {
+                        const hoursEls = container.querySelectorAll('.today-hours-text');
+                        hoursEls.forEach(el => {
+                            modifiedElements.push({ el, origDisplay: el.style.display });
+                            el.style.display = 'none';
+                        });
+                    }
+                }
+
                 // 2. 制覇状態の表示制御
                 if (!showConquest) {
                     const conquestEls = container.querySelectorAll('.visit-toggle-btn, .visit-toggle-btn-minimal, .visit-border-sample, .conquest-badge');
@@ -3175,20 +3258,6 @@
                         modifiedElements.push({ el, origDisplay: el.style.display });
                         el.style.display = 'none';
                     });
-
-                    if (layoutType === 'minimal') {
-                        const minimalCards = container.children;
-                        for (let i = 0; i < minimalCards.length; i++) {
-                            const card = minimalCards[i];
-                            if (card.classList && card.classList.contains('capture-header-legend')) continue;
-                            modifiedElements.push({ el: card, origDisplay: card.style.display, origFlexDir: card.style.flexDirection, origJustify: card.style.justifyContent, origGap: card.style.gap });
-                            card.style.display = 'flex';
-                            card.style.flexDirection = 'column';
-                            card.style.justifyContent = 'center';
-                            card.style.alignItems = 'center';
-                            card.style.gap = '4px';
-                        }
-                    }
                 }
 
                 // 3. メタ情報および凡例ヘッダーの制御
@@ -3260,14 +3329,14 @@
                             modifiedElements.push({ el, origDisplay: el.style.display });
                             el.style.display = 'none';
                         });
-                    }
 
-                    // 本日の該当箇所を表す網掛け(today-highlight)をキャプチャ時削除
-                    const todayHighlights = container.querySelectorAll('.hours-table .today-highlight');
-                    todayHighlights.forEach(el => {
-                        modifiedElements.push({ el, origClass: el.className });
-                        el.classList.remove('today-highlight');
-                    });
+                        // 「現在の営業状況の表示」を非表示とした場合に、営業時間表の網掛け(today-highlight)を解除
+                        const todayHighlights = container.querySelectorAll('.hours-table .today-highlight');
+                        todayHighlights.forEach(el => {
+                            modifiedElements.push({ el, origClass: el.className });
+                            el.classList.remove('today-highlight');
+                        });
+                    }
 
                     const distTag = container.querySelector('.distance-tag');
                     if (distTag) {
@@ -3334,24 +3403,79 @@
                     headerBlock.style.cssText = 'background: #141414; border: 1px solid #333; border-radius: 6px; padding: 8px 10px; margin-bottom: 8px; width: 100%; box-sizing: border-box; grid-column: 1 / -1; display: flex; flex-direction: column; gap: 6px; font-size: 0.72rem; color: #ddd;';
 
                     if (layoutType === 'minimal') {
-                        const dateStr = `${yyyy}/${mm}/${dd} ${hh}:${mi} 現在`;
-                        headerBlock.innerHTML = `
-                            <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid #2a2a2a; padding-bottom:4px;">
-                                <span style="font-weight:bold; color:var(--jiro-yellow);">ラーメン二郎 全店舗の営業状況</span>
-                                <span style="color:#aaa;">${dateStr}</span>
-                            </div>
-                            <div style="display:flex; flex-wrap:wrap; gap:10px; align-items:center;">
-                                <span style="display:inline-flex; align-items:center; gap:4px;"><span class="color-dot bg-open"></span> 営業中</span>
-                                <span style="display:inline-flex; align-items:center; gap:4px;"><span class="color-dot bg-closing-soon"></span> まもなく終了</span>
-                                <span style="display:inline-flex; align-items:center; gap:4px;"><span class="color-dot bg-scheduled"></span> 営業開始前</span>
-                                <span style="display:inline-flex; align-items:center; gap:4px;"><span class="color-dot bg-closed"></span> 営業時間外</span>
-                                ${hasTempSchedule ? '<span style="color:#ff9f43; font-weight:normal; margin-left:auto; text-align:right;">臨時営業/休業</span>' : ''}
-                            </div>
-                        `;
+                        const usernameInput = document.getElementById('share-opt-username');
+                        const rawUsername = usernameInput ? usernameInput.value.trim() : '';
+                        const userPrefix = rawUsername ? `${rawUsername}の` : '';
+                        const timeStr = `（${now.getFullYear()}/${now.getMonth() + 1}/${now.getDate()} ${now.getHours()}:${mi} 現在）`;
+
+                        let titleText = '';
+                        let commentTitle = '';
+                        if (showConquest && showStatus) {
+                            titleText = `${userPrefix}ラーメン二郎制覇状況/営業状況${timeStr}`;
+                            commentTitle = `${userPrefix}ラーメン二郎制覇状況/営業状況`;
+                        } else if (showConquest) {
+                            titleText = `${userPrefix}ラーメン二郎制覇状況`;
+                            commentTitle = `${userPrefix}ラーメン二郎制覇状況`;
+                        } else if (showStatus) {
+                            titleText = `ラーメン二郎 営業状況${timeStr}`;
+                            commentTitle = `ラーメン二郎 営業状況`;
+                        } else {
+                            titleText = `ラーメン二郎店舗一覧`;
+                            commentTitle = `ラーメン二郎店舗一覧`;
+                        }
+
+                        finalShareText = `【${commentTitle}】\nhttps://app.jirolianmap.com/\n#ラーメン二郎 #二郎 #営業情報 #ジロリアンマップ`;
+
+                        let conquestHtml = '';
+                        if (showConquest) {
+                            const totalCount = shops.length;
+                            const visitedCount = shops.filter(s => visitedState[s.id]).length;
+                            const percent = totalCount > 0 ? Math.round((visitedCount / totalCount) * 100) : 0;
+                            conquestHtml = `
+                                <div style="display:inline-flex; align-items:center; justify-content:flex-end; gap:8px; background:#1a1a1a; border:1px solid #333; border-radius:4px; padding:4px 8px; font-size:0.75rem; color:#ddd; width:fit-content; margin-left:auto; box-sizing:border-box; flex-shrink:0;">
+                                    <div>制覇: <span style="color:#fff;">${visitedCount}</span> / ${totalCount} 店舗</div>
+                                    <div style="background:#333; width:50px; height:7px; border-radius:4px; overflow:hidden; flex-shrink:0;">
+                                        <div style="width:${percent}%; background:var(--jiro-yellow); height:100%;"></div>
+                                    </div>
+                                    <span style="color:var(--jiro-yellow); flex-shrink:0;">${percent}%</span>
+                                </div>
+                            `;
+                        }
+
+                        let statusHtml = '';
+                        if (showStatus) {
+                            statusHtml = `
+                                <div style="display:flex; flex-wrap:wrap; gap:10px; align-items:center;">
+                                    <span style="display:inline-flex; align-items:center; gap:4px;"><span class="color-dot bg-open"></span> 営業中</span>
+                                    <span style="display:inline-flex; align-items:center; gap:4px;"><span class="color-dot bg-closing-soon"></span> まもなく終了</span>
+                                    <span style="display:inline-flex; align-items:center; gap:4px;"><span class="color-dot bg-scheduled"></span> 営業開始前</span>
+                                    <span style="display:inline-flex; align-items:center; gap:4px;"><span class="color-dot bg-closed"></span> 営業時間外</span>
+                                    ${hasTempSchedule ? '<span style="color:#ff9f43; font-weight:normal; margin-left:auto; text-align:right;">臨時営業/休業</span>' : ''}
+                                </div>
+                            `;
+                        }
+
+                        if (showConquest && !showStatus) {
+                            headerBlock.innerHTML = `
+                                <div style="display:flex; justify-content:space-between; align-items:center; gap:8px; width:100%;">
+                                    <span style="font-weight:bold; color:var(--jiro-yellow);">${titleText}</span>
+                                    ${conquestHtml}
+                                </div>
+                            `;
+                        } else {
+                            const hasBorder = showConquest || showStatus;
+                            headerBlock.innerHTML = `
+                                <div style="display:flex; justify-content:space-between; align-items:center; ${hasBorder ? 'border-bottom:1px solid #2a2a2a; padding-bottom:4px;' : ''}">
+                                    <span style="font-weight:bold; color:var(--jiro-yellow);">${titleText}</span>
+                                </div>
+                                ${statusHtml}
+                                ${conquestHtml}
+                            `;
+                        }
                     } else if (layoutType === 'today') {
                         headerBlock.innerHTML = `
                             <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid #2a2a2a; padding-bottom:4px;">
-                                <span style="font-weight:bold; color:var(--jiro-yellow);">ラーメン二郎 全店舗の営業状況（${dateFormatted}）</span>
+                                <span style="font-weight:bold; color:var(--jiro-yellow);">ラーメン二郎 営業状況（${dateFormatted}）</span>
                             </div>
                             <div style="display:flex; flex-wrap:wrap; gap:10px; align-items:center;">
                                 <span style="display:inline-flex; align-items:center; gap:4px;"><span style="width:10px; height:10px; border-radius:2px; background:rgba(46,125,50,0.8); border:1px solid #4caf50;"></span> 営業日</span>
@@ -3395,6 +3519,9 @@
                         if (item.origClass !== undefined) item.el.className = item.origClass;
                         if (item.origMarginLeft !== undefined) item.el.style.marginLeft = item.origMarginLeft;
                         if (item.origTextAlign !== undefined) item.el.style.textAlign = item.origTextAlign;
+                        if (item.origBg !== undefined) item.el.style.backgroundColor = item.origBg;
+                        if (item.origBorderColor !== undefined) item.el.style.borderColor = item.origBorderColor;
+                        if (item.origColor !== undefined) item.el.style.color = item.origColor;
                     }
                 });
 
@@ -3410,18 +3537,18 @@
                     }
                     const fullName = `${fileName}.png`;
                     const file = new File([blob], fullName, { type: 'image/png' });
-                    const shareData = { files: [file], title: fileName, text: shareText };
+                    const shareData = { files: [file], title: fileName, text: finalShareText };
 
                     if (navigator.canShare && navigator.canShare({ files: [file] })) {
                         try {
                             await navigator.share(shareData);
                         } catch (shareErr) {
                             if (shareErr.name !== 'AbortError') {
-                                fallbackShareImage(blob, fileName, shareText);
+                                fallbackShareImage(blob, fileName, finalShareText);
                             }
                         }
                     } else {
-                        fallbackShareImage(blob, fileName, shareText);
+                        fallbackShareImage(blob, fileName, finalShareText);
                     }
                 }, 'image/png');
 
@@ -3452,6 +3579,9 @@
                         if (item.origClass !== undefined) item.el.className = item.origClass;
                         if (item.origMarginLeft !== undefined) item.el.style.marginLeft = item.origMarginLeft;
                         if (item.origTextAlign !== undefined) item.el.style.textAlign = item.origTextAlign;
+                        if (item.origBg !== undefined) item.el.style.backgroundColor = item.origBg;
+                        if (item.origBorderColor !== undefined) item.el.style.borderColor = item.origBorderColor;
+                        if (item.origColor !== undefined) item.el.style.color = item.origColor;
                     }
                 });
             } finally {
@@ -4077,10 +4207,10 @@
                 displayShops.sort((a, b) => a.centerDistance - b.centerDistance);
             } else if (sortType === 'pref') {
                 displayShops.sort((a, b) => {
-                    const prefA = (a.cityCode || '').substring(0, 2);
-                    const prefB = (b.cityCode || '').substring(0, 2);
-                    if (prefA !== prefB) {
-                        return prefA.localeCompare(prefB);
+                    const cityA = a.cityCode || '';
+                    const cityB = b.cityCode || '';
+                    if (cityA !== cityB) {
+                        return cityA.localeCompare(cityB);
                     }
                     const dateA = parseNormalizedDateStr(a.openedAt);
                     const dateB = parseNormalizedDateStr(b.openedAt);
