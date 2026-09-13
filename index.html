@@ -639,7 +639,7 @@
             height: 100%;
             overflow: hidden;
             flex-shrink: 0;
-            min-width: 370px;
+            min-width: 390px;
         }
 
         /* Leaflet ポップアップ幅とスタイル調整 */
@@ -759,7 +759,9 @@
 
         .shop-grid.view-mode-minimal,
         .shop-grid.view-mode-today {
-            grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(82px, 1fr));
+            gap: 3px;
+            align-items: start;
         }
 
         .shop-grid.view-mode-minimal .shop-item,
@@ -767,11 +769,11 @@
         .calendar-cell {
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
+            justify-content: center;
             align-items: center;
             text-align: center;
-            padding: 4px 6px;
-            min-height: 75px;
+            padding: 4px 1px;
+            min-height: 54px;
             background-color: var(--card-bg);
             border: 1px solid var(--border-color);
             border-radius: 6px;
@@ -785,6 +787,28 @@
         .shop-grid.view-mode-today .shop-item:hover,
         .calendar-cell:hover {
             border-color: var(--jiro-yellow);
+        }
+
+        .sns-share-btn {
+            background: transparent;
+            color: #ccc;
+            border: none;
+            padding: 2px 4px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+            white-space: nowrap;
+            flex-shrink: 0;
+            opacity: 0.85;
+            transition: color 0.2s, opacity 0.2s, transform 0.1s;
+        }
+        .sns-share-btn:hover {
+            color: var(--jiro-yellow);
+            opacity: 1;
+            transform: scale(1.1);
         }
 
 
@@ -892,7 +916,7 @@
         }
 
         .today-summary-name {
-            font-size: 0.86rem;
+            font-size: 0.72rem;
             font-weight: normal;
             color: var(--jiro-yellow);
             white-space: nowrap;
@@ -1030,6 +1054,7 @@
             font-weight: bold;
             white-space: nowrap;
             flex-shrink: 0;
+            margin-left: auto;
         }
 
         .next-schedule {
@@ -1170,9 +1195,6 @@
             flex-wrap: nowrap;
             gap: 8px;
             font-size: 0.72rem;
-            margin-top: auto;
-            padding-top: 6px;
-            border-top: 1px dashed #333;
             white-space: nowrap;
             overflow: hidden;
         }
@@ -1640,6 +1662,7 @@
                             <option value="hours">営業時間順</option>
                             <option value="name">50音順</option>
                         </select>
+                        <button type="button" class="sns-share-btn" id="full-grid-share-btn" onclick="shareFullGridImage(event)" aria-label="全店舗の営業状況を共有" title="全店舗の営業状況を共有" style="display:none; padding: 3px 6px; border: 1px solid var(--border-color); border-radius: 4px; background: #141414;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg></button>
                     </div>
                 </div>
                 <div class="date-selector-area" id="date-selector-area" style="position: relative;">
@@ -1788,8 +1811,11 @@
     </dialog>
 
     <dialog class="app-modal" id="calendar-modal" style="max-width: 600px; width: 95%;">
-        <div class="modal-header">
-            <span id="calendar-modal-title">営業時間カレンダー</span>
+        <div class="modal-header" style="display: flex; align-items: center; justify-content: space-between;">
+            <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <span id="calendar-modal-title">営業時間カレンダー</span>
+                <button type="button" class="sns-share-btn" onclick="shareCalendarModalImage(event)" aria-label="SNSに画像付きでシェア" title="SNSに画像付きでシェア"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg></button>
+            </div>
             <button type="button" class="modal-close-btn" style="padding: 2px 8px;"
                 onclick="document.getElementById('calendar-modal').close()" aria-label="閉じる">✕</button>
         </div>
@@ -1801,7 +1827,62 @@
         </div>
     </dialog>
 
+    <dialog class="app-modal" id="share-options-modal" style="max-width: 440px; width: 92%; border-radius: 8px; background: #222; color: #fff; border: 1px solid #444; padding: 0;">
+        <div class="modal-header" style="display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; border-bottom: 1px solid #333;">
+            <span style="font-weight: bold; font-size: 1rem; color: var(--jiro-yellow);">📷 共有画像の設定</span>
+            <button type="button" class="modal-close-btn" style="padding: 2px 8px; background: none; border: none; color: #ccc; font-size: 1.2rem; cursor: pointer;" onclick="closeShareOptionsModal()" aria-label="閉じる">✕</button>
+        </div>
+        <div class="modal-body" style="padding: 16px; font-size: 0.88rem; display: flex; flex-direction: column; gap: 16px;">
+            <div id="share-opt-conquest-section">
+                <div style="font-weight: bold; margin-bottom: 8px; color: #ddd; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.5px;">制覇状況の表示</div>
+                <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; user-select: none; color: #eee;">
+                    <input type="checkbox" id="share-opt-conquest" checked style="width: 16px; height: 16px; accent-color: var(--jiro-yellow);">
+                    <span>画像に制覇状態を表示する</span>
+                </label>
+            </div>
+
+            <div id="share-opt-status-section" style="border-top: 1px solid #333; padding-top: 12px;">
+                <div style="font-weight: bold; margin-bottom: 8px; color: #ddd; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.5px;">現在の営業状況の表示</div>
+                <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; user-select: none; color: #eee;">
+                    <input type="checkbox" id="share-opt-status" checked style="width: 16px; height: 16px; accent-color: var(--jiro-yellow);">
+                    <span>画像に現在の営業状況を表示する</span>
+                </label>
+            </div>
+
+            <div id="share-opt-meta-section" style="border-top: 1px solid #333; padding-top: 12px;">
+                <div style="font-weight: bold; margin-bottom: 8px; color: #ddd; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.5px;">メタ情報の表示</div>
+                <div style="display: flex; flex-direction: column; gap: 8px; color: #eee;">
+                    <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; user-select: none;">
+                        <input type="radio" name="share-opt-meta" value="distance_user" style="accent-color: var(--jiro-yellow);">
+                        <span>現在地からの距離</span>
+                    </label>
+                    <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; user-select: none;">
+                        <input type="radio" name="share-opt-meta" value="distance_center" style="accent-color: var(--jiro-yellow);">
+                        <span>地図中心からの距離</span>
+                    </label>
+                    <label id="share-opt-meta-address-wrap" style="display: flex; align-items: center; gap: 8px; cursor: pointer; user-select: none;">
+                        <input type="radio" name="share-opt-meta" id="share-opt-meta-address" value="address" style="accent-color: var(--jiro-yellow);">
+                        <span>店舗住所</span>
+                    </label>
+                    <label id="share-opt-meta-opened-wrap" style="display: flex; align-items: center; gap: 8px; cursor: pointer; user-select: none;">
+                        <input type="radio" name="share-opt-meta" id="share-opt-meta-opened" value="opened" style="accent-color: var(--jiro-yellow);">
+                        <span>開店日</span>
+                    </label>
+                    <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; user-select: none;">
+                        <input type="radio" name="share-opt-meta" value="none" checked style="accent-color: var(--jiro-yellow);">
+                        <span>表示しない</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer" style="display: flex; justify-content: flex-end; gap: 8px; padding: 12px 16px; border-top: 1px solid #333; background: #1a1a1a;">
+            <button type="button" class="modal-close-btn" style="padding: 6px 14px; background: #333; border: 1px solid #555; color: #ccc; border-radius: 4px; cursor: pointer;" onclick="closeShareOptionsModal()">キャンセル</button>
+            <button type="button" id="share-confirm-btn" style="padding: 6px 18px; background: var(--jiro-yellow); border: none; color: #000; font-weight: bold; border-radius: 4px; cursor: pointer;" onclick="executeImageShare()">画像を共有する</button>
+        </div>
+    </dialog>
+
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <script src="lg_codes.js"></script>
     <script>
         function getOrCreateUserId() {
@@ -2030,13 +2111,17 @@
                 hourSize = '0.64rem';
                 minuteSize = '0.42rem';
                 dashSize = '0.44rem';
+            } else if (mode === 'today') {
+                hourSize = '0.74rem';
+                minuteSize = '0.54rem';
+                dashSize = '0.56rem';
             } else if (mode === 'compact' || mode === true) {
                 hourSize = '0.74rem';
                 minuteSize = '0.46rem';
                 dashSize = '0.48rem';
             }
 
-            if (!timeStr || timeStr === '休業') return `<span style="font-size:${hourSize}; font-weight:normal; letter-spacing:0.2px;">休業</span>`;
+            if (!timeStr || timeStr === '休業') return `<span style="font-size:${mode === 'today' ? '0.72rem' : hourSize}; font-weight:normal; letter-spacing:0.2px;">休業</span>`;
             return timeStr.split('-').map(t => {
                 const parts = t.trim().split(':');
                 if (parts.length === 2) {
@@ -2285,33 +2370,43 @@
             let extraClass = '';
 
             if (status.type === 'open' || status.type === 'closing-soon') {
-                text = `${formatTime(status.endTime)} まで`;
+                text = `-${formatTime(status.endTime)}`;
                 extraClass = status.type === 'closing-soon' ? 'is-closing-soon' : 'is-open';
             } else if (status.type === 'scheduled') {
-                text = `本日 ${formatTime(status.startTime)} から`;
+                text = `${formatTime(status.startTime)}-`;
                 extraClass = 'is-scheduled';
             } else {
                 const todayShifts = getTodayShifts(shop, now);
                 const currentHour = now.getHours() + (now.getMinutes() / 60);
                 if (todayShifts?.some(([start]) => currentHour < start)) {
                     const nextStart = todayShifts.find(([start]) => currentHour < start)[0];
-                    text = `本日 ${formatTime(nextStart)} から`;
+                    text = `${formatTime(nextStart)}-`;
                 } else {
-                    const dayNames = ["月", "火", "水", "木", "金", "土", "日"];
+                    const dayNames = ["日", "月", "火", "水", "木", "金", "土"];
                     let found = false;
                     for (let offset = 1; offset <= 30; offset++) {
-                        const checkDate = new Date();
+                        const checkDate = new Date(now);
                         checkDate.setDate(now.getDate() + offset);
                         const checkShifts = getTodayShifts(shop, checkDate);
                         if (checkShifts?.length) {
-                            const dayPrefix = offset === 1 ? "明日" : offset === 2 ? "明後日" : `${checkDate.getMonth() + 1}/${checkDate.getDate()}(${dayNames[(checkDate.getDay() + 6) % 7]})`;
-                            text = `${dayPrefix} ${formatTime(checkShifts[0][0])} から`;
+                            let dayPrefix = '';
+                            if (offset === 1) {
+                                dayPrefix = "明日";
+                            } else if (offset === 2) {
+                                dayPrefix = "明後日";
+                            } else {
+                                const m = checkDate.getMonth() + 1;
+                                const d = checkDate.getDate();
+                                const w = dayNames[checkDate.getDay()];
+                                dayPrefix = `${m}/${d}(${w})`;
+                            }
+                            text = `${dayPrefix}${formatTime(checkShifts[0][0])}-`;
                             found = true;
                             break;
                         }
                     }
                     if (!found) {
-                        text = `30日後以降 から`;
+                        text = `30日後以降-`;
                     }
                 }
             }
@@ -2611,9 +2706,12 @@
             return `<table class="hours-table" ${tableStyle}><tbody>${rowsHtml}</tbody></table>`;
         }
 
+        let currentCalendarModalShop = null;
+
         function openCalendarModal(shopId) {
             const shop = shops.find(s => s.id === shopId);
             if (!shop) return;
+            currentCalendarModalShop = shop;
 
             const modalTitleEl = document.getElementById('calendar-modal-title');
             const modalBodyEl = document.getElementById('calendar-modal-body');
@@ -2648,13 +2746,13 @@
             const dayNames = ["日", "月", "火", "水", "木", "金", "土"];
             const todayStr = getLocalDateKey(new Date());
 
-            // 上部の曜日ヘッダー行（枠・背景なし、日別店舗名と同じ文字サイズ 0.86rem）
+            // 上部の曜日ヘッダー行（枠・背景なし、日付と同じ文字サイズ 0.72rem）
             let headerCellsHtml = '';
             for (let i = 0; i < 7; i++) {
                 const d = new Date(startDate);
                 d.setDate(startDate.getDate() + i);
                 const dayLabel = dayNames[d.getDay()];
-                headerCellsHtml += `<th style="text-align: center; padding: 4px 2px; font-size: 0.86rem; font-weight: normal; color: var(--jiro-yellow); border: none; background: transparent; width: 14.28%;">${dayLabel}</th>`;
+                headerCellsHtml += `<th style="text-align: center; padding: 2px; font-size: 0.72rem; font-weight: normal; color: var(--jiro-yellow); border: none; background: transparent; width: 14.28%;">${dayLabel}</th>`;
             }
             const headerRowHtml = `<tr>${headerCellsHtml}</tr>`;
 
@@ -2676,7 +2774,7 @@
                 }
                 
                 // 昼夜2部営業（2行）の標準高さを基準に、シフト数に応じたセル高さを動的計算
-                // 1~2部営業: 約 44px, 3部営業: 約 56px
+                // 1~2部営業: 44px, 3部営業: 約 57px
                 const cellMinHeight = 18 + (maxShiftsInRow * 13);
 
                 for (let col = 0; col < 7; col++) {
@@ -2686,11 +2784,9 @@
                     const dStr = getLocalDateKey(d);
 
                     const dateLabel = `${d.getMonth() + 1}/${d.getDate()}`;
-                    const status = getBusinessStatus(shop, d);
-                    const isTodayOpen = ['open', 'closing-soon', 'scheduled'].includes(status.type);
                     const tempStatus = getTemporaryStatus(shop, d);
-
                     const shifts = getTodayShifts(shop, d);
+                    const isTodayOpen = !!(shifts && shifts.length > 0 && !isPreOpen(shop, d));
                     let hoursHtml = '';
                     let plainText = '休業';
                     if (!shifts || shifts.length === 0) {
@@ -2704,7 +2800,7 @@
                     const bgBorderClass = isTodayOpen ? 'today-open' : 'today-closed';
 
                     rowCellsHtml += `
-                        <td style="padding: 1px; vertical-align: top; width: 14.28%;">
+                        <td style="padding: 0; vertical-align: top; width: 14.28%;">
                             <div class="calendar-cell ${bgBorderClass}" style="padding: 2px 1px; height: ${cellMinHeight}px; min-height: ${cellMinHeight}px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
                                 <div class="today-summary-card">
                                     <div class="today-summary-name" style="font-size: 0.72rem; line-height: 1.1;">${dateLabel}</div>
@@ -2720,7 +2816,7 @@
 
             return `
                 <div style="width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch;">
-                    <table style="width: 100%; min-width: 320px; border-collapse: separate; border-spacing: 2px; border: none; table-layout: fixed;">
+                    <table style="width: 100%; min-width: 320px; border-collapse: separate; border-spacing: 3px; border: none; table-layout: fixed;">
                         <thead>
                             ${headerRowHtml}
                         </thead>
@@ -2781,6 +2877,625 @@
                     </div>
                 </div>
             `;
+        }
+
+        function getTimestampStr(date = new Date()) {
+            const yyyy = date.getFullYear();
+            const mm = String(date.getMonth() + 1).padStart(2, '0');
+            const dd = String(date.getDate()).padStart(2, '0');
+            const hh = String(date.getHours()).padStart(2, '0');
+            const mi = String(date.getMinutes()).padStart(2, '0');
+            const ss = String(date.getSeconds()).padStart(2, '0');
+            return `${yyyy}${mm}${dd}${hh}${mi}${ss}`;
+        }
+
+        async function captureElementWithPadding(targetElement, padding = 16) {
+            const hideElements = targetElement.querySelectorAll('.sns-share-btn, .export-img-btn, .modal-close-btn');
+            hideElements.forEach(el => el.style.visibility = 'hidden');
+
+            try {
+                const origCanvas = await html2canvas(targetElement, {
+                    backgroundColor: '#1e1e1e',
+                    scale: 2,
+                    useCORS: true,
+                    logging: false
+                });
+
+                hideElements.forEach(el => el.style.visibility = '');
+
+                const paddedCanvas = document.createElement('canvas');
+                const p = padding * 2;
+                paddedCanvas.width = origCanvas.width + (p * 2);
+                paddedCanvas.height = origCanvas.height + (p * 3);
+
+                const ctx = paddedCanvas.getContext('2d');
+                ctx.fillStyle = '#1e1e1e';
+                ctx.fillRect(0, 0, paddedCanvas.width, paddedCanvas.height);
+                ctx.drawImage(origCanvas, p, p);
+
+                // フッター注記テキスト追加（上部余白とバランスよく調整）
+                const noticeText = '※記載内容は変更となる場合がありますので、ご自身でもご確認ください';
+                let fontSize = 20;
+                ctx.font = `${fontSize}px sans-serif`;
+                const textWidth = ctx.measureText(noticeText).width;
+                const maxAvailableWidth = paddedCanvas.width - 24;
+                if (textWidth > maxAvailableWidth) {
+                    fontSize = Math.floor(fontSize * (maxAvailableWidth / textWidth));
+                    ctx.font = `${fontSize}px sans-serif`;
+                }
+                ctx.fillStyle = '#999999';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle';
+                ctx.fillText(noticeText, paddedCanvas.width / 2, origCanvas.height + (p * 2));
+
+                return paddedCanvas;
+            } catch (err) {
+                hideElements.forEach(el => el.style.visibility = '');
+                throw err;
+            }
+        }
+
+        async function shareCanvasAsImage(targetElement, defaultFileName, shareText, btnElement = null) {
+            if (!targetElement) return;
+            if (typeof html2canvas === 'undefined') {
+                alert('共有機能の初期化中です。少々お待ちください。');
+                return;
+            }
+
+            let origText = '';
+            if (btnElement) {
+                origText = btnElement.innerHTML;
+                btnElement.innerHTML = '⏳';
+                btnElement.style.pointerEvents = 'none';
+            }
+
+            try {
+                const paddedCanvas = await captureElementWithPadding(targetElement, 16);
+
+                paddedCanvas.toBlob(async (blob) => {
+                    if (!blob) {
+                        alert('画像の生成に失敗しました。');
+                        if (btnElement) {
+                            btnElement.innerHTML = origText;
+                            btnElement.style.pointerEvents = '';
+                        }
+                        return;
+                    }
+
+                    const fileName = `${defaultFileName}.png`;
+                    const file = new File([blob], fileName, { type: 'image/png' });
+
+                    const shareData = {
+                        files: [file],
+                        title: defaultFileName,
+                        text: shareText
+                    };
+
+                    if (navigator.canShare && navigator.canShare({ files: [file] })) {
+                        try {
+                            await navigator.share(shareData);
+                        } catch (shareErr) {
+                            if (shareErr.name !== 'AbortError') {
+                                fallbackShareImage(blob, defaultFileName, shareText);
+                            }
+                        }
+                    } else {
+                        fallbackShareImage(blob, defaultFileName, shareText);
+                    }
+
+                    if (btnElement) {
+                        btnElement.innerHTML = origText;
+                        btnElement.style.pointerEvents = '';
+                    }
+                }, 'image/png');
+            } catch (err) {
+                console.error('Share error:', err);
+                alert('画像の生成に失敗しました。');
+                if (btnElement) {
+                    btnElement.innerHTML = origText;
+                    btnElement.style.pointerEvents = '';
+                }
+            }
+        }
+
+        function fallbackShareImage(blob, fileName, text) {
+            try {
+                if (navigator.clipboard && window.ClipboardItem) {
+                    const item = new ClipboardItem({ 'image/png': blob });
+                    navigator.clipboard.write([item]);
+                }
+            } catch (e) {}
+
+            const link = document.createElement('a');
+            link.download = `${fileName}.png`;
+            link.href = URL.createObjectURL(blob);
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+
+            const tweetText = encodeURIComponent(`${text}\n(※画像を保存しました。貼り付けて投稿できます)`);
+            const tweetUrl = `https://x.com/intent/post?text=${tweetText}`;
+            window.open(tweetUrl, '_blank', 'noopener,noreferrer');
+        }
+
+        let currentShareTarget = {
+            container: null,
+            shop: null,
+            layoutType: 'calendar',
+            fileName: '',
+            shareText: '',
+            btnElement: null
+        };
+
+        function openShareOptionsModal(container, shop, layoutType, fileName, shareText, btnElement = null) {
+            currentShareTarget = { container, shop, layoutType, fileName, shareText, btnElement };
+
+            const modal = document.getElementById('share-options-modal');
+            if (!modal) return;
+
+            const conquestSection = document.getElementById('share-opt-conquest-section');
+            const statusSection = document.getElementById('share-opt-status-section');
+            const metaSection = document.getElementById('share-opt-meta-section');
+
+            if (conquestSection) conquestSection.style.display = (layoutType === 'calendar') ? 'none' : 'block';
+            if (statusSection) statusSection.style.display = (layoutType === 'popup_detail') ? 'block' : 'none';
+            if (metaSection) {
+                metaSection.style.display = (layoutType === 'minimal') ? 'none' : 'block';
+                metaSection.style.borderTop = (layoutType === 'calendar') ? 'none' : '1px solid #333';
+                metaSection.style.paddingTop = (layoutType === 'calendar') ? '0' : '12px';
+            }
+
+            const conquestCb = document.getElementById('share-opt-conquest');
+            if (conquestCb) conquestCb.checked = true;
+
+            const statusCb = document.getElementById('share-opt-status');
+            if (statusCb) statusCb.checked = true;
+
+            const addressRadio = document.getElementById('share-opt-meta-address');
+            const openedRadio = document.getElementById('share-opt-meta-opened');
+            const addressWrap = document.getElementById('share-opt-meta-address-wrap');
+            const openedWrap = document.getElementById('share-opt-meta-opened-wrap');
+
+            const isCalendar = (layoutType === 'calendar');
+            if (addressRadio) addressRadio.disabled = !isCalendar;
+            if (openedRadio) openedRadio.disabled = !isCalendar;
+            if (addressWrap) addressWrap.style.display = isCalendar ? 'flex' : 'none';
+            if (openedWrap) openedWrap.style.display = isCalendar ? 'flex' : 'none';
+
+            // デフォルトのメタ情報選択肢は「表示しない」
+            const radios = document.querySelectorAll('input[name="share-opt-meta"]');
+            radios.forEach(r => {
+                r.checked = (r.value === 'none');
+            });
+
+            if (typeof modal.showModal === 'function') {
+                modal.showModal();
+            } else {
+                modal.style.display = 'block';
+            }
+        }
+
+        function closeShareOptionsModal() {
+            const modal = document.getElementById('share-options-modal');
+            if (!modal) return;
+            if (typeof modal.close === 'function') {
+                modal.close();
+            } else {
+                modal.style.display = 'none';
+            }
+        }
+
+        function shareFullGridImage(event) {
+            if (event) event.stopPropagation();
+            const grid = document.getElementById('shop-grid');
+            if (!grid) return;
+
+            let fileName = '';
+            let shareText = '';
+            const activeDate = getEffectiveDisplayDate();
+            const dayNames = ['日', '月', '火', '水', '木', '金', '土'];
+            const dateFormatted = `${activeDate.getMonth() + 1}/${activeDate.getDate()}(${dayNames[activeDate.getDay()]})`;
+
+            const yyyy = activeDate.getFullYear();
+            const mm = String(activeDate.getMonth() + 1).padStart(2, '0');
+            const dd = String(activeDate.getDate()).padStart(2, '0');
+            const dateYmd = `${yyyy}${mm}${dd}`;
+
+            if (listSubMode === 'minimal') {
+                fileName = `現在の営業状況_${getTimestampStr()}`;
+                shareText = `【現在のラーメン二郎営業状況】\nhttps://app.jirolianmap.com/\n#ラーメン二郎 #二郎 #営業情報 #ジロリアンマップ`;
+                openShareOptionsModal(grid, null, listSubMode, fileName, shareText, event ? event.currentTarget : null);
+            } else if (listSubMode === 'today') {
+                fileName = `営業状況（${dateYmd}）_${getTimestampStr()}`;
+                shareText = `【${dateFormatted}のラーメン二郎営業情報】\nhttps://app.jirolianmap.com/\n#ラーメン二郎 #二郎 #営業情報 #ジロリアンマップ`;
+                currentShareTarget = { container: grid, shop: null, layoutType: 'today', fileName, shareText, btnElement: event ? event.currentTarget : null };
+                executeImageShare();
+            }
+        }
+
+        async function executeImageShare() {
+            const confirmBtn = document.getElementById('share-confirm-btn');
+            const originalBtnText = confirmBtn ? confirmBtn.innerHTML : '画像を共有する';
+
+            if (confirmBtn) {
+                confirmBtn.innerHTML = '⏳ 画像を生成中...';
+                confirmBtn.disabled = true;
+            }
+
+            await new Promise(resolve => setTimeout(resolve, 50));
+
+            const { container, shop, layoutType, fileName, shareText, btnElement } = currentShareTarget;
+
+            if (!container) {
+                if (confirmBtn) {
+                    confirmBtn.innerHTML = originalBtnText;
+                    confirmBtn.disabled = false;
+                }
+                closeShareOptionsModal();
+                return;
+            }
+
+            const showConquest = (layoutType === 'calendar') ? true : (document.getElementById('share-opt-conquest')?.checked ?? true);
+            const showStatus = (layoutType === 'popup_detail') ? (document.getElementById('share-opt-status')?.checked ?? true) : true;
+            const selectedMeta = document.querySelector('input[name="share-opt-meta"]:checked')?.value || 'none';
+
+            const modifiedElements = [];
+            const origContainerStyle = {
+                width: container.style.width,
+                maxWidth: container.style.maxWidth,
+                minWidth: container.style.minWidth,
+                boxSizing: container.style.boxSizing,
+                gridTemplateColumns: container.style.gridTemplateColumns,
+                justifyContent: container.style.justifyContent,
+                margin: container.style.margin
+            };
+
+            try {
+                // 1. 標準幅およびレイアウト位置の調整
+                if (layoutType === 'popup_detail' || (layoutType === 'calendar' && shop)) {
+                    container.style.width = '380px';
+                    container.style.boxSizing = 'border-box';
+                } else if (layoutType === 'minimal' || layoutType === 'today') {
+                    // 横6列ピッタリ収まる標準幅 (527px) と中央配置
+                    container.style.width = '527px';
+                    container.style.boxSizing = 'border-box';
+                    container.style.gridTemplateColumns = 'repeat(6, 82px)';
+                    container.style.justifyContent = 'center';
+                    container.style.margin = '0 auto';
+                }
+
+                // 2. 制覇状態の表示制御
+                if (!showConquest) {
+                    const conquestEls = container.querySelectorAll('.visit-toggle-btn, .visit-toggle-btn-minimal, .visit-border-sample, .conquest-badge');
+                    conquestEls.forEach(el => {
+                        modifiedElements.push({ el, origDisplay: el.style.display });
+                        el.style.display = 'none';
+                    });
+
+                    if (layoutType === 'minimal') {
+                        const minimalCards = container.children;
+                        for (let i = 0; i < minimalCards.length; i++) {
+                            const card = minimalCards[i];
+                            if (card.classList && card.classList.contains('capture-header-legend')) continue;
+                            modifiedElements.push({ el: card, origDisplay: card.style.display, origFlexDir: card.style.flexDirection, origJustify: card.style.justifyContent, origGap: card.style.gap });
+                            card.style.display = 'flex';
+                            card.style.flexDirection = 'column';
+                            card.style.justifyContent = 'center';
+                            card.style.alignItems = 'center';
+                            card.style.gap = '4px';
+                        }
+                    }
+                }
+
+                // 3. メタ情報および凡例ヘッダーの制御
+                if (layoutType === 'calendar') {
+                    const headerWrapper = container.querySelector('.shop-header-row .shop-title-wrapper') || container.querySelector('.shop-header-row') || container;
+                    if (headerWrapper) {
+                        let newMetaHtml = '';
+                        if (selectedMeta === 'distance_user') {
+                            const userDist = (shop && shop.userDistance !== undefined) ? shop.userDistance : (userCoords && shop ? calculateDistance(userCoords.lat, userCoords.lng, shop.lat, shop.lng) : null);
+                            const distStr = userDist !== null ? `📍 現在地から ${formatDistance(userDist)}` : '📍 現在地から -';
+                            newMetaHtml = `<span class="distance-tag" style="font-size:0.75rem; white-space:nowrap; text-align:right; margin-left:auto;" title="${distStr}">${distStr}</span>`;
+                        } else if (selectedMeta === 'distance_center') {
+                            const centerDist = (shop && shop.centerDistance !== undefined) ? shop.centerDistance : (map && shop ? calculateDistance(map.getCenter().lat, map.getCenter().lng, shop.lat, shop.lng) : null);
+                            const distStr = centerDist !== null ? `📍 中心から ${formatDistance(centerDist)}` : '📍 中心から -';
+                            newMetaHtml = `<span class="distance-tag" style="font-size:0.75rem; white-space:nowrap; text-align:right; margin-left:auto;" title="${distStr}">${distStr}</span>`;
+                        } else if (selectedMeta === 'address' && shop) {
+                            const fullAddress = (typeof LG_CODES !== 'undefined' ? LG_CODES.getShopFullAddress(shop) : `${shop.addressText || ''}`).trim();
+                            const gmapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('ラーメン二郎 ' + shop.name + ' ' + fullAddress)}`;
+                            newMetaHtml = `<a href="${gmapUrl}" target="_blank" rel="noopener noreferrer" class="gmap-link" style="font-size:0.75rem; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; min-width:0; flex:1 1 auto; text-align:right; margin-left:auto; font-weight:normal;" title="📍 ${fullAddress || '住所不明'} ↗">📍 ${fullAddress || '住所不明'} ↗</a>`;
+                        } else if (selectedMeta === 'opened' && shop) {
+                            const openedStr = formatOpenedDateText(shop.openedAt);
+                            if (openedStr) {
+                                newMetaHtml = `<span style="font-size:0.75rem; color:#aaa; white-space:nowrap; flex-shrink:0; text-align:right; margin-left:auto;" title="${openedStr}">${openedStr}</span>`;
+                            }
+                        } else if (selectedMeta === 'none') {
+                            newMetaHtml = '';
+                        }
+
+                        const existingMeta = headerWrapper.querySelector('.distance-tag, .gmap-link, span[style*="text-align:right"]');
+                        if (existingMeta) {
+                            modifiedElements.push({ el: existingMeta, origDisplay: existingMeta.style.display });
+                            if (selectedMeta === 'none') {
+                                existingMeta.style.display = 'none';
+                            } else {
+                                const tempWrapper = document.createElement('div');
+                                tempWrapper.innerHTML = newMetaHtml;
+                                const newEl = tempWrapper.firstElementChild;
+                                if (newEl) {
+                                    existingMeta.replaceWith(newEl);
+                                    modifiedElements.push({ el: newEl, isNew: true, oldEl: existingMeta });
+                                }
+                            }
+                        } else if (selectedMeta !== 'none' && newMetaHtml) {
+                            const tempWrapper = document.createElement('div');
+                            tempWrapper.innerHTML = newMetaHtml;
+                            const newEl = tempWrapper.firstElementChild;
+                            if (newEl) {
+                                headerWrapper.appendChild(newEl);
+                                modifiedElements.push({ el: newEl, isNew: true, appended: true });
+                            }
+                        }
+                    }
+
+                    // カレンダー下部への臨時営業/休業凡例追加（対象店舗に臨時営業/休業がある場合のみ）
+                    if (shop) {
+                        const tempInfo = getWeeklyTemporaryText(shop, new Date());
+                        if (tempInfo && tempInfo.text) {
+                            const tempLegend = document.createElement('div');
+                            tempLegend.style.cssText = 'font-size: 0.72rem; color: #ff9f43; font-weight: normal; margin-top: 4px; text-align: right; width: 100%;';
+                            tempLegend.textContent = '臨時営業/休業';
+                            container.appendChild(tempLegend);
+                            modifiedElements.push({ el: tempLegend, isNew: true, appended: true });
+                        }
+                    }
+                } else if (layoutType === 'popup_detail') {
+                    if (!showStatus) {
+                        const statusEls = container.querySelectorAll('.status-badge, .next-schedule');
+                        statusEls.forEach(el => {
+                            modifiedElements.push({ el, origDisplay: el.style.display });
+                            el.style.display = 'none';
+                        });
+                    }
+
+                    // 本日の該当箇所を表す網掛け(today-highlight)をキャプチャ時削除
+                    const todayHighlights = container.querySelectorAll('.hours-table .today-highlight');
+                    todayHighlights.forEach(el => {
+                        modifiedElements.push({ el, origClass: el.className });
+                        el.classList.remove('today-highlight');
+                    });
+
+                    const distTag = container.querySelector('.distance-tag');
+                    if (distTag) {
+                        modifiedElements.push({ el: distTag, origDisplay: distTag.style.display, origHtml: distTag.innerHTML, origMarginLeft: distTag.style.marginLeft, origTextAlign: distTag.style.textAlign });
+                        distTag.style.marginLeft = 'auto';
+                        distTag.style.textAlign = 'right';
+                        if (selectedMeta === 'none') {
+                            distTag.style.display = 'none';
+                        } else if (selectedMeta === 'distance_user') {
+                            const userDist = (shop && shop.userDistance !== undefined) ? shop.userDistance : (userCoords && shop ? calculateDistance(userCoords.lat, userCoords.lng, shop.lat, shop.lng) : null);
+                            const distStr = userDist !== null ? `📍 現在地から ${formatDistance(userDist)}` : '📍 現在地から -';
+                            distTag.innerHTML = distStr;
+                            distTag.style.display = '';
+                        } else if (selectedMeta === 'distance_center') {
+                            const centerDist = (shop && shop.centerDistance !== undefined) ? shop.centerDistance : (map && shop ? calculateDistance(map.getCenter().lat, map.getCenter().lng, shop.lat, shop.lng) : null);
+                            const distStr = centerDist !== null ? `📍 中心から ${formatDistance(centerDist)}` : '📍 中心から -';
+                            distTag.innerHTML = distStr;
+                            distTag.style.display = '';
+                        }
+                    } else if (selectedMeta !== 'none') {
+                        const subRow = container.querySelector('.shop-sub-row');
+                        if (subRow) {
+                            let distStr = '';
+                            if (selectedMeta === 'distance_user') {
+                                const userDist = (shop && shop.userDistance !== undefined) ? shop.userDistance : (userCoords && shop ? calculateDistance(userCoords.lat, userCoords.lng, shop.lat, shop.lng) : null);
+                                distStr = userDist !== null ? `📍 現在地から ${formatDistance(userDist)}` : '📍 現在地から -';
+                            } else if (selectedMeta === 'distance_center') {
+                                const centerDist = (shop && shop.centerDistance !== undefined) ? shop.centerDistance : (map && shop ? calculateDistance(map.getCenter().lat, map.getCenter().lng, shop.lat, shop.lng) : null);
+                                distStr = centerDist !== null ? `📍 中心から ${formatDistance(centerDist)}` : '📍 中心から -';
+                            }
+                            if (distStr) {
+                                const tempSpan = document.createElement('span');
+                                tempSpan.className = 'distance-tag';
+                                tempSpan.style.marginLeft = 'auto';
+                                tempSpan.style.textAlign = 'right';
+                                tempSpan.innerHTML = distStr;
+                                subRow.appendChild(tempSpan);
+                                modifiedElements.push({ el: tempSpan, isNew: true, appended: true });
+                            }
+                        }
+                    }
+                } else if (layoutType === 'minimal' || layoutType === 'today') {
+                    // 全店舗共有時のヘッダー凡例ブロック（先頭に追加）
+                    const activeDate = getEffectiveDisplayDate();
+                    const dayNames = ['日', '月', '火', '水', '木', '金', '土'];
+                    const dateFormatted = `${activeDate.getMonth() + 1}/${activeDate.getDate()}(${dayNames[activeDate.getDay()]})`;
+
+                    const now = new Date();
+                    const yyyy = now.getFullYear();
+                    const mm = String(now.getMonth() + 1).padStart(2, '0');
+                    const dd = String(now.getDate()).padStart(2, '0');
+                    const hh = String(now.getHours()).padStart(2, '0');
+                    const mi = String(now.getMinutes()).padStart(2, '0');
+
+                    // 表示対象店舗の中に臨時営業/休業が存在するかチェック
+                    let hasTempSchedule = false;
+                    shops.forEach(s => {
+                        const tInfo = getWeeklyTemporaryText(s, activeDate);
+                        if (tInfo && tInfo.text) hasTempSchedule = true;
+                    });
+
+                    const headerBlock = document.createElement('div');
+                    headerBlock.className = 'capture-header-legend';
+                    headerBlock.style.cssText = 'background: #141414; border: 1px solid #333; border-radius: 6px; padding: 8px 10px; margin-bottom: 8px; width: 100%; box-sizing: border-box; grid-column: 1 / -1; display: flex; flex-direction: column; gap: 6px; font-size: 0.72rem; color: #ddd;';
+
+                    if (layoutType === 'minimal') {
+                        const dateStr = `${yyyy}/${mm}/${dd} ${hh}:${mi} 現在`;
+                        headerBlock.innerHTML = `
+                            <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid #2a2a2a; padding-bottom:4px;">
+                                <span style="font-weight:bold; color:var(--jiro-yellow);">ラーメン二郎 全店舗の営業状況</span>
+                                <span style="color:#aaa;">${dateStr}</span>
+                            </div>
+                            <div style="display:flex; flex-wrap:wrap; gap:10px; align-items:center;">
+                                <span style="display:inline-flex; align-items:center; gap:4px;"><span class="color-dot bg-open"></span> 営業中</span>
+                                <span style="display:inline-flex; align-items:center; gap:4px;"><span class="color-dot bg-closing-soon"></span> まもなく終了</span>
+                                <span style="display:inline-flex; align-items:center; gap:4px;"><span class="color-dot bg-scheduled"></span> 営業開始前</span>
+                                <span style="display:inline-flex; align-items:center; gap:4px;"><span class="color-dot bg-closed"></span> 営業時間外</span>
+                                ${hasTempSchedule ? '<span style="color:#ff9f43; font-weight:normal; margin-left:auto; text-align:right;">臨時営業/休業</span>' : ''}
+                            </div>
+                        `;
+                    } else if (layoutType === 'today') {
+                        headerBlock.innerHTML = `
+                            <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid #2a2a2a; padding-bottom:4px;">
+                                <span style="font-weight:bold; color:var(--jiro-yellow);">ラーメン二郎 全店舗の営業状況（${dateFormatted}）</span>
+                            </div>
+                            <div style="display:flex; flex-wrap:wrap; gap:10px; align-items:center;">
+                                <span style="display:inline-flex; align-items:center; gap:4px;"><span style="width:10px; height:10px; border-radius:2px; background:rgba(46,125,50,0.8); border:1px solid #4caf50;"></span> 営業日</span>
+                                <span style="display:inline-flex; align-items:center; gap:4px;"><span style="width:10px; height:10px; border-radius:2px; background:rgba(97,97,97,0.8); border:1px solid #9e9e9e;"></span> 休業日</span>
+                                ${hasTempSchedule ? '<span style="color:#ff9f43; font-weight:normal; margin-left:auto; text-align:right;">臨時営業/休業</span>' : ''}
+                            </div>
+                        `;
+                    }
+
+                    container.prepend(headerBlock);
+                    modifiedElements.push({ el: headerBlock, isNew: true, appended: false });
+                }
+
+                closeShareOptionsModal();
+
+                const paddedCanvas = await captureElementWithPadding(container, 16);
+
+                // 復元処理
+                container.style.width = origContainerStyle.width;
+                container.style.maxWidth = origContainerStyle.maxWidth;
+                container.style.minWidth = origContainerStyle.minWidth;
+                container.style.boxSizing = origContainerStyle.boxSizing;
+                container.style.gridTemplateColumns = origContainerStyle.gridTemplateColumns;
+                container.style.justifyContent = origContainerStyle.justifyContent;
+                container.style.margin = origContainerStyle.margin;
+
+                modifiedElements.forEach(item => {
+                    if (item.isNew && item.oldEl) {
+                        item.el.replaceWith(item.oldEl);
+                        item.oldEl.style.display = item.origDisplay || '';
+                    } else if (item.isNew && item.appended === false) {
+                        item.el.remove();
+                    } else if (item.isNew && item.appended) {
+                        item.el.remove();
+                    } else if (item.el) {
+                        if (item.origDisplay !== undefined) item.el.style.display = item.origDisplay;
+                        if (item.origHtml !== undefined) item.el.innerHTML = item.origHtml;
+                        if (item.origFlexDir !== undefined) item.el.style.flexDirection = item.origFlexDir;
+                        if (item.origJustify !== undefined) item.el.style.justifyContent = item.origJustify;
+                        if (item.origGap !== undefined) item.el.style.gap = item.origGap;
+                        if (item.origClass !== undefined) item.el.className = item.origClass;
+                        if (item.origMarginLeft !== undefined) item.el.style.marginLeft = item.origMarginLeft;
+                        if (item.origTextAlign !== undefined) item.el.style.textAlign = item.origTextAlign;
+                    }
+                });
+
+                if (!paddedCanvas) {
+                    alert('画像の生成に失敗しました。');
+                    return;
+                }
+
+                paddedCanvas.toBlob(async (blob) => {
+                    if (!blob) {
+                        alert('画像の生成に失敗しました。');
+                        return;
+                    }
+                    const fullName = `${fileName}.png`;
+                    const file = new File([blob], fullName, { type: 'image/png' });
+                    const shareData = { files: [file], title: fileName, text: shareText };
+
+                    if (navigator.canShare && navigator.canShare({ files: [file] })) {
+                        try {
+                            await navigator.share(shareData);
+                        } catch (shareErr) {
+                            if (shareErr.name !== 'AbortError') {
+                                fallbackShareImage(blob, fileName, shareText);
+                            }
+                        }
+                    } else {
+                        fallbackShareImage(blob, fileName, shareText);
+                    }
+                }, 'image/png');
+
+            } catch (err) {
+                console.error('Image share execution error:', err);
+                alert('画像の生成に失敗しました。');
+                container.style.width = origContainerStyle.width;
+                container.style.maxWidth = origContainerStyle.maxWidth;
+                container.style.minWidth = origContainerStyle.minWidth;
+                container.style.boxSizing = origContainerStyle.boxSizing;
+                container.style.gridTemplateColumns = origContainerStyle.gridTemplateColumns;
+                container.style.justifyContent = origContainerStyle.justifyContent;
+                container.style.margin = origContainerStyle.margin;
+
+                modifiedElements.forEach(item => {
+                    if (item.isNew && item.oldEl) {
+                        item.el.replaceWith(item.oldEl);
+                    } else if (item.isNew && item.appended === false) {
+                        item.el.remove();
+                    } else if (item.isNew && item.appended) {
+                        item.el.remove();
+                    } else if (item.el) {
+                        if (item.origDisplay !== undefined) item.el.style.display = item.origDisplay;
+                        if (item.origHtml !== undefined) item.el.innerHTML = item.origHtml;
+                        if (item.origFlexDir !== undefined) item.el.style.flexDirection = item.origFlexDir;
+                        if (item.origJustify !== undefined) item.el.style.justifyContent = item.origJustify;
+                        if (item.origGap !== undefined) item.el.style.gap = item.origGap;
+                        if (item.origClass !== undefined) item.el.className = item.origClass;
+                        if (item.origMarginLeft !== undefined) item.el.style.marginLeft = item.origMarginLeft;
+                        if (item.origTextAlign !== undefined) item.el.style.textAlign = item.origTextAlign;
+                    }
+                });
+            } finally {
+                if (confirmBtn) {
+                    confirmBtn.innerHTML = originalBtnText;
+                    confirmBtn.disabled = false;
+                }
+            }
+        }
+
+        function shareShopCardImage(shopId, event) {
+            if (event) event.stopPropagation();
+            const shop = shops.find(s => s.id === shopId);
+            const shopName = shop ? shop.name : '店舗';
+            const container = (event && event.target)
+                ? (event.target.closest('.shop-info') || event.target.closest('.leaflet-popup-content'))
+                : document.querySelector(`.shop-grid:not(.view-mode-calendar) .shop-info[data-shop-id="${shopId}"]`);
+            if (container) {
+                const fileName = `営業情報_${shopName}_${getTimestampStr()}`;
+                const shareText = `【ラーメン二郎 ${shopName}の営業情報】\nhttps://app.jirolianmap.com/\n#ラーメン二郎 #二郎 #営業情報 #ジロリアンマップ`;
+                openShareOptionsModal(container, shop, 'popup_detail', fileName, shareText, event ? event.currentTarget : null);
+            }
+        }
+
+        function shareCalendarCardImage(shopId, event) {
+            if (event) event.stopPropagation();
+            const shop = shops.find(s => s.id === shopId);
+            const shopName = shop ? shop.name : '店舗';
+            const container = (event && event.target)
+                ? (event.target.closest('.shop-item') || event.target.closest('.shop-info'))
+                : document.querySelector(`.view-mode-calendar .shop-info[data-shop-id="${shopId}"]`);
+            if (container) {
+                const fileName = `営業カレンダー_${shopName}_${getTimestampStr()}`;
+                const shareText = `【ラーメン二郎 ${shopName}の営業カレンダー】\nhttps://app.jirolianmap.com/\n#ラーメン二郎 #二郎 #営業情報 #ジロリアンマップ`;
+                openShareOptionsModal(container, shop, 'calendar', fileName, shareText, event ? event.currentTarget : null);
+            }
+        }
+
+        function shareCalendarModalImage(event) {
+            if (event) event.stopPropagation();
+            const modalTitle = document.getElementById('calendar-modal-title');
+            const shopName = modalTitle ? modalTitle.textContent.trim() : '店舗';
+            const container = document.getElementById('calendar-modal-body') || document.getElementById('calendar-modal');
+            if (container) {
+                const fileName = `営業カレンダー_${shopName}_${getTimestampStr()}`;
+                const shareText = `【ラーメン二郎 ${shopName}の営業カレンダー】\nhttps://app.jirolianmap.com/\n#ラーメン二郎 #二郎 #営業情報 #ジロリアンマップ`;
+                openShareOptionsModal(container, currentCalendarModalShop, 'calendar', fileName, shareText, event ? event.currentTarget : null);
+            }
         }
 
         function generateCardContentHTML(shop, isVisited, fromPopup = false) {
@@ -2846,7 +3561,10 @@
                     ${tempWeeklyHtml}
                 </div>
                 ${remarksText ? `<div class="meta-text-outside"><div>${remarksText}</div></div>` : ''}
-                <div class="links-group">${linksHtml}</div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-top:0;">
+                    <div class="links-group">${linksHtml}</div>
+                    <button type="button" class="sns-share-btn" onclick="shareShopCardImage('${shop.id}', event)" aria-label="SNSに画像付きでシェア" title="SNSに画像付きでシェア"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg></button>
+                </div>
             </div>
         </div>
     `;
@@ -3029,7 +3747,7 @@
 
             const sidebar = document.getElementById('sidebar-container');
             if (sidebar) {
-                sidebar.style.minWidth = (mode === 'minimal') ? '160px' : '340px';
+                sidebar.style.minWidth = (mode === 'minimal') ? '280px' : '390px';
             }
 
             render();
@@ -3042,7 +3760,7 @@
             const resizer = document.getElementById('drag-resizer');
             const container = document.getElementById('layout-switch-group');
 
-            sidebar.style.minWidth = (listSubMode === 'minimal') ? '160px' : '340px';
+            sidebar.style.minWidth = (listSubMode === 'minimal') ? '280px' : '390px';
 
             if (isWide) {
                 resizer.style.display = (isShowMap && isShowList) ? 'block' : 'none';
@@ -3299,6 +4017,11 @@
                 grid.classList.add('view-mode-calendar');
             }
 
+            const fullGridShareBtn = document.getElementById('full-grid-share-btn');
+            if (fullGridShareBtn) {
+                fullGridShareBtn.style.display = (listSubMode === 'minimal' || listSubMode === 'today') ? 'inline-flex' : 'none';
+            }
+
             const rawSearchQuery = document.getElementById('search-input').value.toLowerCase().trim();
             const katakanaQuery = hiraganaToKatakana(rawSearchQuery);
 
@@ -3457,11 +4180,11 @@
                     const nextOpenText = tempDiv.textContent || tempDiv.innerText || '';
 
                     item.innerHTML = `
-                <div class="today-summary-card" style="display:flex; flex-direction:column; justify-content:space-between; align-items:center; height:100%; width:100%;">
+                <div class="today-summary-card">
                     <div class="today-summary-name" title="${shop.name}">${displayName}</div>
-                    <div style="font-size: 0.62rem; color: #ddd; margin: 2px 0; text-align:center; width:100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="${nextOpenText}">${nextOpenHtml}</div>
-                    <div style="display:flex; align-items:center; justify-content:center; width:100%; margin-top: auto;">
-                        <button type="button" class="visit-toggle-btn-minimal ${isVisited ? 'is-visited' : ''}" onclick="toggleVisit('${shop.id}', false, event)" aria-label="${shop.name}の制覇状態を切り替え" style="background:none; border:none; color: ${isVisited ? 'var(--jiro-yellow)' : '#555'}; font-size: 1.05rem; padding: 0; cursor: pointer; line-height: 1; outline: none; flex-shrink: 0;">
+                    <div class="today-hours-text" style="color: #ddd;" title="${nextOpenText}">${nextOpenHtml}</div>
+                    <div style="display:flex; align-items:center; justify-content:center; width:100%;">
+                        <button type="button" class="visit-toggle-btn-minimal ${isVisited ? 'is-visited' : ''}" onclick="toggleVisit('${shop.id}', false, event)" aria-label="${shop.name}の制覇状態を切り替え" style="background:none; border:none; color: ${isVisited ? 'var(--jiro-yellow)' : '#555'}; font-size: 0.9rem; padding: 0; cursor: pointer; line-height: 1; outline: none; flex-shrink: 0;">
                             ${isVisited ? '✔' : '☐'}
                         </button>
                     </div>
@@ -3479,10 +4202,10 @@
                     const tempStatus = getTemporaryStatus(shop, activeDate);
                     const todayHoursData = (() => {
                         const shifts = getTodayShifts(shop, activeDate);
-                        if (!shifts || shifts.length === 0) return { html: '<span style="font-size:0.86rem; font-weight:normal; letter-spacing:1px;">休業</span>', text: '休業' };
+                        if (!shifts || shifts.length === 0) return { html: `<div style="white-space:nowrap; line-height:1.1;">${formatShiftTimeText('休業', 'today')}</div>`, text: '休業' };
                         const plainText = shifts.map(([start, end]) => `${formatTime(start)}-${formatTime(end)}`).join(' / ');
                         const htmlContent = shifts.map(([start, end]) => {
-                            return `<div style="white-space:nowrap; line-height:1.2;">${formatShiftTimeText(`${formatTime(start)}-${formatTime(end)}`)}</div>`;
+                            return `<div style="white-space:nowrap; line-height:1.1;">${formatShiftTimeText(`${formatTime(start)}-${formatTime(end)}`, 'today')}</div>`;
                         }).join('');
                         return { html: htmlContent, text: plainText };
                     })();
@@ -3514,25 +4237,25 @@
 
                     if (sortVal === 'distance_user' && shop.userDistance !== undefined) {
                         const distStr = `📍 現在地から ${formatDistance(shop.userDistance)}`;
-                        sortMetaHtml = `<span class="distance-tag" style="font-size:0.75rem;" title="${distStr}">${distStr}</span>`;
+                        sortMetaHtml = `<span class="distance-tag" style="font-size:0.75rem; white-space:nowrap; text-align:right; margin-left:auto;" title="${distStr}">${distStr}</span>`;
                     } else if (sortVal === 'distance_center' && shop.centerDistance !== undefined) {
                         const distStr = `📍 中心から ${formatDistance(shop.centerDistance)}`;
-                        sortMetaHtml = `<span class="distance-tag" style="font-size:0.75rem;" title="${distStr}">${distStr}</span>`;
+                        sortMetaHtml = `<span class="distance-tag" style="font-size:0.75rem; white-space:nowrap; text-align:right; margin-left:auto;" title="${distStr}">${distStr}</span>`;
                     } else if (sortVal === 'pref') {
                         const fullAddress = (typeof LG_CODES !== 'undefined' ? LG_CODES.getShopFullAddress(shop) : `${shop.addressText || ''}`).trim();
                         const gmapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('ラーメン二郎 ' + shop.name + ' ' + fullAddress)}`;
-                        sortMetaHtml = `<a href="${gmapUrl}" target="_blank" rel="noopener noreferrer" class="gmap-link" onclick="event.stopPropagation();" style="font-size:0.75rem; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; min-width:0; flex:1 1 auto; text-align:right; font-weight:normal;" title="📍 ${fullAddress || '住所不明'} ↗">📍 ${fullAddress || '住所不明'} ↗</a>`;
+                        sortMetaHtml = `<a href="${gmapUrl}" target="_blank" rel="noopener noreferrer" class="gmap-link" onclick="event.stopPropagation();" style="font-size:0.75rem; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; min-width:0; flex:1 1 auto; text-align:right; margin-left:auto; font-weight:normal;" title="📍 ${fullAddress || '住所不明'} ↗">📍 ${fullAddress || '住所不明'} ↗</a>`;
                     } else if (sortVal === 'opened') {
                         const openedStr = formatOpenedDateText(shop.openedAt);
                         if (openedStr) {
-                            sortMetaHtml = `<span style="font-size:0.75rem; color:#aaa; white-space:nowrap; flex-shrink:0;" title="${openedStr}">${openedStr}</span>`;
+                            sortMetaHtml = `<span style="font-size:0.75rem; color:#aaa; white-space:nowrap; flex-shrink:0; text-align:right; margin-left:auto;" title="${openedStr}">${openedStr}</span>`;
                         }
                     } else if (sortVal === 'hours') {
                         const nextScheduleHtml = getNextOpenScheduleText(shop, new Date());
                         const tempDiv = document.createElement('div');
                         tempDiv.innerHTML = nextScheduleHtml;
                         const nextScheduleText = tempDiv.textContent || tempDiv.innerText || '';
-                        sortMetaHtml = `<span style="font-size:0.75rem; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; min-width:0; flex:1 1 auto; text-align:right;" title="${nextScheduleText}">${nextScheduleHtml}</span>`;
+                        sortMetaHtml = `<span style="font-size:0.75rem; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; min-width:0; flex:1 1 auto; text-align:right; margin-left:auto;" title="${nextScheduleText}">${nextScheduleHtml}</span>`;
                     } else if (sortVal === 'name') {
                         sortMetaHtml = '';
                     }
@@ -3540,8 +4263,11 @@
                     item.innerHTML = `
                         <div class="shop-info" data-shop-id="${shop.id}">
                             <div class="shop-header-row" style="margin-bottom: 2px; display:flex; align-items:center; justify-content:space-between; gap:8px;">
-                                <div class="shop-title-wrapper" style="display:flex; align-items:center; gap:8px; flex:1; min-width:0; overflow:hidden; justify-content:space-between;">
-                                    <span class="shop-name" style="flex-shrink:0; white-space:nowrap;">${shop.name}</span>
+                                <div class="shop-title-wrapper" style="display:flex; align-items:center; gap:6px; flex:1; min-width:0; overflow:hidden; justify-content:space-between;">
+                                    <div style="display:flex; align-items:center; gap:6px; flex-shrink:0;">
+                                        <span class="shop-name" style="white-space:nowrap;">${shop.name}</span>
+                                        <button type="button" class="sns-share-btn" onclick="shareCalendarCardImage('${shop.id}', event)" aria-label="SNSに画像付きでシェア" title="SNSに画像付きでシェア"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg></button>
+                                    </div>
                                     ${sortMetaHtml}
                                 </div>
                             </div>
