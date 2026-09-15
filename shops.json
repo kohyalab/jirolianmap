@@ -2118,6 +2118,11 @@
         "startDate": "2026-09-09",
         "endDate": "2026-09-09",
         "hours": []
+      },
+      {
+        "startDate": "2026-09-19",
+        "endDate": "2026-09-23",
+        "hours": []
       }
     ],
     "shiftsByDay": {
@@ -2898,19 +2903,34 @@
     "id": "fujisawa",
     "name": "湘南藤沢店",
     "kana": "ショウナンフジサワテン",
+    "shortName": "湘南藤沢",
+    "prefCode": "14",
+    "cityCode": "14204",
     "addressText": "本町1丁目10-14",
     "lat": 35.34309672578693,
     "lng": 139.4822246411482,
-    "urls": {
-      "pc": "https://ramen-jiro-pc3.com/fujisawa/",
-      "tabelog": "https://tabelog.com/kanagawa/A1404/A140404/14035072/",
-      "rdb": "https://ramendb.supleks.jp/s/25545.html"
-    },
-    "x": "fujirow26",
-    "ticketTiming": "",
     "openedAt": "2010-03-14",
     "closedAt": null,
-    "temporary": [],
+    "urls": {
+      "pc": "https://ramen-jiro-pc3.com/fujisawa/",
+      "rdb": "https://ramendb.supleks.jp/s/25545.html",
+      "tabelog": "https://tabelog.com/kanagawa/A1404/A140404/14035072/"
+    },
+    "x": "fujirow26",
+    "instagram": "",
+    "ticketTiming": "",
+    "soupType": "",
+    "renge": "",
+    "takeout": "",
+    "hoursNotes": "",
+    "remarks": "",
+    "temporary": [
+      {
+        "startDate": "2026-09-28",
+        "endDate": "2026-09-30",
+        "hours": []
+      }
+    ],
     "shiftsByDay": {
       "0": [
         [
@@ -2974,12 +2994,7 @@
         ]
       ]
     },
-    "holidayShifts": null,
-    "remarks": "",
-    "hoursNotes": "",
-    "instagram": "",
-    "shortName": "湘南藤沢",
-    "cityCode": "14204"
+    "holidayShifts": null
   },
   {
     "id": "nishidai",
@@ -3360,6 +3375,40 @@
         "startDate": "2026-09-16",
         "endDate": "2026-09-16",
         "hours": []
+      },
+      {
+        "startDate": "2026-09-21",
+        "endDate": "2026-09-22",
+        "hours": [
+          [
+            10.5,
+            14
+          ],
+          [
+            17,
+            20
+          ]
+        ]
+      },
+      {
+        "startDate": "2026-09-23",
+        "endDate": "2026-09-23",
+        "hours": [
+          [
+            10.5,
+            14.5
+          ]
+        ]
+      },
+      {
+        "startDate": "2026-09-24",
+        "endDate": "2026-09-24",
+        "hours": [
+          [
+            11,
+            14
+          ]
+        ]
       }
     ],
     "shiftsByDay": {
@@ -5166,6 +5215,11 @@
       {
         "startDate": "2026-09-10",
         "endDate": "2026-09-10",
+        "hours": []
+      },
+      {
+        "startDate": "2026-09-17",
+        "endDate": "2026-09-17",
         "hours": []
       }
     ],
