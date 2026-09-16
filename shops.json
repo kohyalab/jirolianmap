@@ -1072,6 +1072,16 @@
             14.5
           ]
         ]
+      },
+      {
+        "startDate": "2026-09-16",
+        "endDate": "2026-09-16",
+        "hours": [
+          [
+            17,
+            21
+          ]
+        ]
       }
     ],
     "shiftsByDay": {
@@ -2275,18 +2285,27 @@
     "id": "hibarigaoka",
     "name": "ひばりヶ丘駅前店",
     "kana": "ヒバリガオカエキマエテン",
+    "shortName": "ひばりヶ丘",
+    "prefCode": "13",
+    "cityCode": "13229",
     "addressText": "谷戸町3丁目27-24ひばりが丘プラザ1F",
     "lat": 35.74995363025448,
     "lng": 139.54356216412995,
+    "openedAt": "2006-06-11",
+    "closedAt": null,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/hibarigaoka/",
       "rdb": "https://ramendb.supleks.jp/s/4738.html",
       "tabelog": "https://tabelog.com/tokyo/A1328/A132801/13024745/"
     },
     "x": "Aarf0xvdBXkWd7o",
+    "instagram": "",
     "ticketTiming": "",
-    "openedAt": "2006-06-11",
-    "closedAt": null,
+    "soupType": "",
+    "renge": "",
+    "takeout": "",
+    "hoursNotes": "祝日不定休",
+    "remarks": "",
     "temporary": [
       {
         "startDate": "2026-08-12",
@@ -2306,6 +2325,11 @@
       {
         "startDate": "2026-08-31",
         "endDate": "2026-09-01",
+        "hours": []
+      },
+      {
+        "startDate": "2026-09-23",
+        "endDate": "2026-09-23",
         "hours": []
       }
     ],
@@ -2364,15 +2388,7 @@
       ],
       "6": []
     },
-    "holidayShifts": null,
-    "remarks": "",
-    "hoursNotes": "祝日不定休",
-    "instagram": "",
-    "shortName": "ひばりヶ丘",
-    "soupType": "",
-    "renge": "",
-    "takeout": "",
-    "cityCode": "13229"
+    "holidayShifts": null
   },
   {
     "id": "sakuradai",
@@ -4256,18 +4272,27 @@
     "id": "mejirodai",
     "name": "めじろ台店",
     "kana": "メジロダイテン",
+    "shortName": "めじろ台",
+    "prefCode": "13",
+    "cityCode": "13201",
     "addressText": "椚田町513-9",
     "lat": 35.638983690568764,
     "lng": 139.31218725012081,
+    "openedAt": "2017-05-28",
+    "closedAt": null,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/mejirodai/",
       "rdb": "https://ramendb.supleks.jp/s/99697.html",
       "tabelog": "https://tabelog.com/tokyo/A1329/A132904/13209016/"
     },
     "x": "mejirodai_jiro",
+    "instagram": "",
     "ticketTiming": "",
-    "openedAt": "2017-05-28",
-    "closedAt": null,
+    "soupType": "",
+    "renge": "",
+    "takeout": "",
+    "hoursNotes": "祝日不定休",
+    "remarks": "",
     "temporary": [
       {
         "startDate": "2026-08-21",
@@ -4303,6 +4328,16 @@
         "startDate": "2026-09-09",
         "endDate": "2026-09-09",
         "hours": []
+      },
+      {
+        "startDate": "2026-09-16",
+        "endDate": "2026-09-16",
+        "hours": [
+          [
+            11,
+            14.5
+          ]
+        ]
       },
       {
         "startDate": "2026-09-30",
@@ -4369,15 +4404,7 @@
         ]
       ]
     },
-    "holidayShifts": null,
-    "remarks": "",
-    "hoursNotes": "祝日不定休",
-    "instagram": "",
-    "shortName": "めじろ台",
-    "soupType": "",
-    "renge": "",
-    "takeout": "",
-    "cityCode": "13201"
+    "holidayShifts": null
   },
   {
     "id": "koshigaya",
@@ -4551,18 +4578,27 @@
     "id": "maebashichiyoda",
     "name": "前橋千代田町店",
     "kana": "マエバシチヨダマチテン",
+    "shortName": "前橋千代田",
+    "prefCode": "10",
+    "cityCode": "10201",
     "addressText": "千代田町4丁目12-3",
     "lat": 36.39238042043918,
     "lng": 139.07095892943883,
+    "openedAt": "2019-10-27",
+    "closedAt": null,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/maebashichiyoda/",
       "rdb": "https://ramendb.supleks.jp/s/120613.html",
       "tabelog": "https://tabelog.com/gunma/A1001/A100101/10020992/"
     },
     "x": "SnBZt6eRCdz7lQw",
+    "instagram": "",
     "ticketTiming": "",
-    "openedAt": "2019-10-27",
-    "closedAt": null,
+    "soupType": "",
+    "renge": "",
+    "takeout": "",
+    "hoursNotes": "",
+    "remarks": "",
     "temporary": [
       {
         "startDate": "2026-08-19",
@@ -4572,6 +4608,11 @@
       {
         "startDate": "2026-09-06",
         "endDate": "2026-09-06",
+        "hours": []
+      },
+      {
+        "startDate": "2026-09-18",
+        "endDate": "2026-09-18",
         "hours": []
       }
     ],
@@ -4630,15 +4671,7 @@
         ]
       ]
     },
-    "holidayShifts": null,
-    "remarks": "",
-    "hoursNotes": "",
-    "instagram": "",
-    "shortName": "前橋千代田",
-    "soupType": "",
-    "renge": "",
-    "takeout": "",
-    "cityCode": "10201"
+    "holidayShifts": null
   },
   {
     "id": "chiba",
