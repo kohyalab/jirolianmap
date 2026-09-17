@@ -4055,18 +4055,27 @@
     "id": "kawagoe",
     "name": "川越店",
     "kana": "カワゴエテン",
+    "shortName": "川越",
+    "prefCode": "11",
+    "cityCode": "11201",
     "addressText": "旭町1丁目4-15",
     "lat": 35.90268076534428,
     "lng": 139.4766711798268,
+    "openedAt": "2017-03-19",
+    "closedAt": null,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/kawagoe/",
       "rdb": "https://ramendb.supleks.jp/s/97949.html",
       "tabelog": "https://tabelog.com/saitama/A1103/A110303/11043900/"
     },
     "x": "kwge26",
+    "instagram": "",
     "ticketTiming": "",
-    "openedAt": "2017-03-19",
-    "closedAt": null,
+    "soupType": "",
+    "renge": "",
+    "takeout": "",
+    "hoursNotes": "",
+    "remarks": "",
     "temporary": [
       {
         "startDate": "2026-08-11",
@@ -4076,6 +4085,11 @@
       {
         "startDate": "2026-08-27",
         "endDate": "2026-08-27",
+        "hours": []
+      },
+      {
+        "startDate": "2026-09-20",
+        "endDate": "2026-09-20",
         "hours": []
       }
     ],
@@ -4118,15 +4132,7 @@
         ]
       ]
     },
-    "holidayShifts": null,
-    "remarks": "",
-    "hoursNotes": "",
-    "instagram": "",
-    "shortName": "川越",
-    "soupType": "",
-    "renge": "",
-    "takeout": "",
-    "cityCode": "11201"
+    "holidayShifts": null
   },
   {
     "id": "kyoto",
