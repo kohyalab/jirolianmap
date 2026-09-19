@@ -3,18 +3,27 @@
     "id": "mita",
     "name": "三田本店",
     "kana": "ミタホンテン",
+    "shortName": "三田",
+    "prefCode": "13",
+    "cityCode": "13103",
     "addressText": "三田2丁目16-4",
     "lat": 35.648058753285405,
     "lng": 139.7416323715387,
+    "openedAt": "1968",
+    "closedAt": null,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/mita/",
       "rdb": "https://ramendb.supleks.jp/s/1419.html",
       "tabelog": "https://tabelog.com/tokyo/A1314/A131402/13006051/"
     },
     "x": "",
+    "instagram": "",
     "ticketTiming": "",
-    "openedAt": "1968",
-    "closedAt": null,
+    "soupType": "",
+    "renge": "",
+    "takeout": "",
+    "hoursNotes": "",
+    "remarks": "",
     "temporary": [
       {
         "startDate": "2026-08-09",
@@ -28,6 +37,16 @@
           [
             8,
             14
+          ]
+        ]
+      },
+      {
+        "startDate": "2026-09-19",
+        "endDate": "2026-09-19",
+        "hours": [
+          [
+            8,
+            17
           ]
         ]
       }
@@ -71,15 +90,7 @@
       ],
       "6": []
     },
-    "holidayShifts": [],
-    "remarks": "",
-    "hoursNotes": "",
-    "instagram": "",
-    "shortName": "三田",
-    "soupType": "",
-    "renge": "",
-    "takeout": "",
-    "cityCode": "13103"
+    "holidayShifts": []
   },
   {
     "id": "kichijoji",
@@ -1293,22 +1304,36 @@
     "id": "fuchu",
     "name": "府中店",
     "kana": "フチュウテン",
+    "shortName": "府中",
+    "prefCode": "13",
+    "cityCode": "13206",
     "addressText": "宮西町1丁目15-5関野屋ビル1F",
     "lat": 35.672042610593266,
     "lng": 139.47728667116294,
-    "urls": {
-      "pc": "https://ramen-jiro-pc3.com/fuchu/",
-      "tabelog": "https://tabelog.com/tokyo/A1326/A132602/13022272/",
-      "rdb": "https://ramendb.supleks.jp/s/1370.html"
-    },
-    "x": "jiro_fuchu",
-    "ticketTiming": "",
     "openedAt": "2001-05-01",
     "closedAt": null,
+    "urls": {
+      "pc": "https://ramen-jiro-pc3.com/fuchu/",
+      "rdb": "https://ramendb.supleks.jp/s/1370.html",
+      "tabelog": "https://tabelog.com/tokyo/A1326/A132602/13022272/"
+    },
+    "x": "jiro_fuchu",
+    "instagram": "",
+    "ticketTiming": "",
+    "soupType": "",
+    "renge": "",
+    "takeout": "",
+    "hoursNotes": "",
+    "remarks": "",
     "temporary": [
       {
         "startDate": "2026-08-08",
         "endDate": "2026-08-16",
+        "hours": []
+      },
+      {
+        "startDate": "2026-10-03",
+        "endDate": "2026-10-12",
         "hours": []
       }
     ],
@@ -1346,12 +1371,7 @@
       "5": [],
       "6": []
     },
-    "holidayShifts": [],
-    "remarks": "",
-    "hoursNotes": "",
-    "instagram": "",
-    "shortName": "府中",
-    "cityCode": "13206"
+    "holidayShifts": []
   },
   {
     "id": "takadanobaba",
@@ -3040,18 +3060,27 @@
     "id": "nishidai",
     "name": "西台駅前店",
     "kana": "ニシダイエキマエテン",
+    "shortName": "西台",
+    "prefCode": "13",
+    "cityCode": "13119",
     "addressText": "蓮根3丁目9-7",
     "lat": 35.78680795396085,
     "lng": 139.67487930304625,
+    "openedAt": "2010-06-27",
+    "closedAt": null,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/nishidai/",
       "rdb": "https://ramendb.supleks.jp/s/113862.html",
       "tabelog": "https://tabelog.com/tokyo/A1322/A132205/13112690/"
     },
     "x": "jiro_nishidai",
+    "instagram": "",
     "ticketTiming": "",
-    "openedAt": "2010-06-27",
-    "closedAt": null,
+    "soupType": "",
+    "renge": "",
+    "takeout": "",
+    "hoursNotes": "",
+    "remarks": "",
     "temporary": [
       {
         "startDate": "2026-08-12",
@@ -3061,6 +3090,16 @@
       {
         "startDate": "2026-08-31",
         "endDate": "2026-08-31",
+        "hours": [
+          [
+            10.25,
+            13.5
+          ]
+        ]
+      },
+      {
+        "startDate": "2026-10-05",
+        "endDate": "2026-10-05",
         "hours": [
           [
             10.25,
@@ -3129,15 +3168,7 @@
         10.25,
         13.5
       ]
-    ],
-    "remarks": "",
-    "hoursNotes": "",
-    "instagram": "",
-    "shortName": "西台",
-    "soupType": "",
-    "renge": "",
-    "takeout": "",
-    "cityCode": "13119"
+    ]
   },
   {
     "id": "nakayamaekimae",
@@ -3621,6 +3652,16 @@
       {
         "startDate": "2026-09-18",
         "endDate": "2026-09-18",
+        "hours": [
+          [
+            11,
+            15
+          ]
+        ]
+      },
+      {
+        "startDate": "2026-09-19",
+        "endDate": "2026-09-19",
         "hours": [
           [
             11,
