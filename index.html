@@ -1154,6 +1154,14 @@
             flex: 1;
         }
 
+        .detailed-card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto;
+            padding-top: 4px;
+        }
+
         .meta-text-outside {
             font-size: 0.8rem;
             color: #ddd;
@@ -1551,13 +1559,65 @@
             margin-bottom: 0 !important;
         }
 
-        .leaflet-control-attribution {
-            margin: 0 !important;
+        /* 全画面ローディングオーバーレイ */
+        #app-loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: var(--jiro-dark, #121212);
+            z-index: 99999;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            color: var(--text-color, #f5f5f5);
+            transition: opacity 0.35s ease, visibility 0.35s ease;
+        }
+
+        #app-loading-overlay.is-hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+
+        .app-spinner {
+            width: 44px;
+            height: 44px;
+            border: 4px solid rgba(255, 204, 0, 0.15);
+            border-top: 4px solid var(--jiro-yellow, #ffcc00);
+            border-radius: 50%;
+            animation: app-spin 0.8s linear infinite;
+        }
+
+        @keyframes app-spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .app-loading-text {
+            font-size: 0.95rem;
+            font-weight: bold;
+            color: #e0e0e0;
+            letter-spacing: 0.5px;
+            text-align: center;
+            white-space: pre-line;
         }
     </style>
 </head>
 
 <body>
+
+    <!-- 全画面ローディングオーバーレイ -->
+    <div id="app-loading-overlay" aria-label="読み込み中">
+        <div class="app-spinner" id="app-loading-spinner"></div>
+        <div class="app-loading-text" id="app-loading-text">店舗情報を読み込み中...</div>
+        <div id="app-loading-error-action" style="display: none; margin-top: 8px;">
+            <button type="button" onclick="initApp()" style="padding: 8px 20px; background-color: var(--jiro-yellow); color: #000; border: none; border-radius: 4px; font-weight: bold; cursor: pointer; font-size: 0.85rem; outline: none;">再読み込み</button>
+        </div>
+    </div>
 
     <header>
         <div class="header-left">
@@ -3202,6 +3262,23 @@
                 if (layoutType === 'popup_detail' || (layoutType === 'calendar' && shop)) {
                     container.style.width = '380px';
                     container.style.boxSizing = 'border-box';
+
+                    // 詳細レイアウト画像出力時、他セルの高さに合わせて伸びている場合は最適な高さ（auto）に調整
+                    if (layoutType === 'popup_detail') {
+                        const targetCard = container.closest('.shop-item') || container;
+                        const cardEls = [targetCard, container, targetCard.querySelector('.detailed-content')].filter((el, idx, arr) => el && arr.indexOf(el) === idx);
+                        cardEls.forEach(el => {
+                            modifiedElements.push({
+                                el: el,
+                                origHeight: el.style.height,
+                                origMinHeight: el.style.minHeight,
+                                origAlignSelf: el.style.alignSelf
+                            });
+                            el.style.height = 'auto';
+                            el.style.minHeight = 'auto';
+                            el.style.alignSelf = 'flex-start';
+                        });
+                    }
                 } else if (layoutType === 'minimal' || layoutType === 'today') {
                     // 横6列ピッタリ収まる標準幅 (527px) と中央配置
                     container.style.width = '527px';
@@ -3549,6 +3626,9 @@
                         if (item.origBg !== undefined) item.el.style.backgroundColor = item.origBg;
                         if (item.origBorderColor !== undefined) item.el.style.borderColor = item.origBorderColor;
                         if (item.origColor !== undefined) item.el.style.color = item.origColor;
+                        if (item.origHeight !== undefined) item.el.style.height = item.origHeight;
+                        if (item.origMinHeight !== undefined) item.el.style.minHeight = item.origMinHeight;
+                        if (item.origAlignSelf !== undefined) item.el.style.alignSelf = item.origAlignSelf;
                     }
                 });
 
@@ -3609,6 +3689,9 @@
                         if (item.origBg !== undefined) item.el.style.backgroundColor = item.origBg;
                         if (item.origBorderColor !== undefined) item.el.style.borderColor = item.origBorderColor;
                         if (item.origColor !== undefined) item.el.style.color = item.origColor;
+                        if (item.origHeight !== undefined) item.el.style.height = item.origHeight;
+                        if (item.origMinHeight !== undefined) item.el.style.minHeight = item.origMinHeight;
+                        if (item.origAlignSelf !== undefined) item.el.style.alignSelf = item.origAlignSelf;
                     }
                 });
             } finally {
@@ -3722,7 +3805,7 @@
                     ${tempWeeklyHtml}
                 </div>
                 ${remarksText ? `<div class="meta-text-outside"><div>${remarksText}</div></div>` : ''}
-                <div style="display:flex; justify-content:space-between; align-items:center; margin-top:0;">
+                <div class="detailed-card-footer">
                     <div class="links-group">${linksHtml}</div>
                     <button type="button" class="sns-share-btn" onclick="shareShopCardImage('${shop.id}', event)" aria-label="SNSに画像付きでシェア" title="SNSに画像付きでシェア"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg></button>
                 </div>
@@ -4672,7 +4755,46 @@
             dateInput.addEventListener('input', handler);
         }
 
+        function showLoadingOverlay() {
+            const overlay = document.getElementById('app-loading-overlay');
+            const spinner = document.getElementById('app-loading-spinner');
+            const text = document.getElementById('app-loading-text');
+            const errorAction = document.getElementById('app-loading-error-action');
+            if (overlay) {
+                overlay.classList.remove('is-hidden');
+            }
+            if (spinner) spinner.style.display = 'block';
+            if (text) {
+                text.textContent = '店舗情報を読み込み中...';
+                text.style.color = '#e0e0e0';
+            }
+            if (errorAction) errorAction.style.display = 'none';
+        }
+
+        function hideLoadingOverlay() {
+            const overlay = document.getElementById('app-loading-overlay');
+            if (overlay) {
+                overlay.classList.add('is-hidden');
+            }
+        }
+
+        function showLoadingError(msg) {
+            const overlay = document.getElementById('app-loading-overlay');
+            const spinner = document.getElementById('app-loading-spinner');
+            const text = document.getElementById('app-loading-text');
+            const errorAction = document.getElementById('app-loading-error-action');
+            if (overlay) overlay.classList.remove('is-hidden');
+            if (spinner) spinner.style.display = 'none';
+            if (text) {
+                text.textContent = msg || '店舗情報の読み込みに失敗しました。';
+                text.style.color = 'var(--jiro-red)';
+            }
+            if (errorAction) errorAction.style.display = 'block';
+        }
+
         async function initApp() {
+            showLoadingOverlay();
+
             if (!isAppInitialized) {
                 map.addControl(new GlobalViewControl());
                 map.addControl(new LocationControl());
@@ -4703,6 +4825,7 @@
                         </div>
                     `;
                 }
+                showLoadingError('店舗情報の読み込みに失敗しました。\n通信環境を確認の上、再試行してください。');
                 return;
             }
 
@@ -4749,7 +4872,10 @@
             }
 
             isAppInitialized = true;
-            setTimeout(() => map.invalidateSize(), 100);
+            setTimeout(() => {
+                map.invalidateSize();
+                hideLoadingOverlay();
+            }, 100);
         }
 
         window.addEventListener('resize', () => {
