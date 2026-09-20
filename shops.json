@@ -2481,18 +2481,27 @@
     "id": "tochigikaido",
     "name": "栃木街道店",
     "kana": "トチギカイドウテン",
+    "shortName": "栃木街道",
+    "prefCode": "09",
+    "cityCode": "09361",
     "addressText": "本丸2丁目15-67",
     "lat": 36.42293478003119,
     "lng": 139.7948995742357,
+    "openedAt": "2007-11-25",
+    "closedAt": null,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/tochigikaido/",
       "rdb": "https://ramendb.supleks.jp/s/12524.html",
       "tabelog": "https://tabelog.com/tochigi/A0902/A090201/9002641/"
     },
     "x": "Tochigikaidoten",
+    "instagram": "tochigikaidoten2007",
     "ticketTiming": "",
-    "openedAt": "2007-11-25",
-    "closedAt": null,
+    "soupType": "",
+    "renge": "",
+    "takeout": "",
+    "hoursNotes": "祝日不定休",
+    "remarks": "",
     "temporary": [
       {
         "startDate": "2026-08-27",
@@ -2502,6 +2511,11 @@
       {
         "startDate": "2026-08-29",
         "endDate": "2026-08-29",
+        "hours": []
+      },
+      {
+        "startDate": "2026-09-21",
+        "endDate": "2026-09-21",
         "hours": []
       }
     ],
@@ -2564,12 +2578,7 @@
       ],
       "6": []
     },
-    "holidayShifts": null,
-    "remarks": "",
-    "hoursNotes": "祝日不定休",
-    "instagram": "tochigikaidoten2007",
-    "shortName": "栃木街道",
-    "cityCode": "09361"
+    "holidayShifts": null
   },
   {
     "id": "tachikawa",
