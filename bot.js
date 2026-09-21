@@ -1,8 +1,39 @@
 process.env.TZ = 'Asia/Tokyo';
 
 const fs = require('fs');
+const path = require('path');
+const http = require('http');
 const { chromium } = require('playwright');
 const { TwitterApi } = require('twitter-api-v2');
+
+function startLocalServer(port = 3000) {
+    const mimeTypes = {
+        '.html': 'text/html; charset=utf-8',
+        '.js': 'application/javascript; charset=utf-8',
+        '.css': 'text/css; charset=utf-8',
+        '.json': 'application/json; charset=utf-8',
+        '.png': 'image/png',
+        '.jpg': 'image/jpeg',
+        '.svg': 'image/svg+xml'
+    };
+    const server = http.createServer((req, res) => {
+        let reqPath = req.url.split('?')[0];
+        if (reqPath === '/' || reqPath === '') reqPath = '/index.html';
+        const filePath = path.join(__dirname, reqPath);
+        if (fs.existsSync(filePath) && fs.statSync(filePath).isFile()) {
+            const ext = path.extname(filePath).toLowerCase();
+            res.writeHead(200, { 'Content-Type': mimeTypes[ext] || 'application/octet-stream' });
+            res.end(fs.readFileSync(filePath));
+        } else {
+            res.writeHead(404);
+            res.end('Not Found');
+        }
+    });
+    return new Promise((resolve, reject) => {
+        server.listen(port, () => resolve(server));
+        server.on('error', reject);
+    });
+}
 
 async function run() {
     // --- TWEET TEMPLATES START ---
@@ -17,6 +48,17 @@ async function run() {
     const templateKey = process.argv[2] || 'default';
     const config = templates[templateKey] || templates.default;
 
+    let localServer = null;
+    let targetUrl = 'https://app.jirolianmap.com/';
+    try {
+        const port = 3000 + Math.floor(Math.random() * 1000);
+        localServer = await startLocalServer(port);
+        targetUrl = `http://localhost:${port}/`;
+        console.log(`[BOT] Local HTTP server started at ${targetUrl}`);
+    } catch (e) {
+        console.warn(`[BOT] Could not start local server, fallback to remote:`, e.message);
+    }
+
     const browser = await chromium.launch({ headless: true });
     const page = await browser.newPage({
         viewport: { width: 1280, height: 1600 },
@@ -25,7 +67,12 @@ async function run() {
         timezoneId: 'Asia/Tokyo'
     });
 
-    await page.goto('https://app.jirolianmap.com/', { waitUntil: 'domcontentloaded', timeout: 60000 });
+    // ブラウザ内のログとエラーを捕捉
+    page.on('console', msg => console.log(`[PAGE ${msg.type()}]:`, msg.text()));
+    page.on('pageerror', err => console.error('[PAGE ERROR]:', err));
+
+    console.log(`[BOT] Navigating to ${targetUrl}...`);
+    await page.goto(targetUrl, { waitUntil: 'domcontentloaded', timeout: 60000 });
     await page.waitForSelector('#shop-grid', { timeout: 30000 });
 
     // アプリの初期化完了および店舗データ読み込み待機
@@ -152,6 +199,7 @@ async function run() {
     if (!shareResult || !shareResult.dataUrl) {
         console.error('日別レイアウト共有画像の生成に失敗しました。');
         await browser.close();
+        if (localServer) localServer.close();
         process.exit(1);
     }
 
@@ -160,6 +208,7 @@ async function run() {
     fs.writeFileSync('sheet.png', Buffer.from(base64Data, 'base64'));
 
     await browser.close();
+    if (localServer) localServer.close();
     console.log('画像生成(sheet.png)が完了しました。');
 
     const activeDate = new Date();

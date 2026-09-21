@@ -1885,6 +1885,7 @@
                 const response = await fetch(url, fetchOptions);
                 if (!response.ok) throw new Error('読み込み失敗');
                 shops = (await response.json()).filter(shop => !isClosedShopExpired(shop));
+                window.shops = shops;
             } catch (error) {
                 console.error(error);
                 const grid = document.getElementById('shop-grid');
@@ -1957,6 +1958,8 @@
 
             isAppInitialized = true;
             window.isAppInitialized = true;
+            window.shops = shops;
+            window.renderMatrixScheduleTable = renderMatrixScheduleTable;
             setTimeout(() => {
                 map.invalidateSize();
                 hideLoadingOverlay();

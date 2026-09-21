@@ -497,10 +497,11 @@
             const dailyList = [];
             let hasTodayTemp = false;
 
+            const self = (this && this.findTemporaryEntry) ? this : JiroBusinessHours;
             for (let i = 0; i < 30; i++) {
                 const d = new Date();
                 d.setDate(now.getDate() + i);
-                const tempEntry = this.findTemporaryEntry(shop, d);
+                const tempEntry = self.findTemporaryEntry(shop, d);
                 if (tempEntry) {
                     if (getLocKey(d) === todayKey) {
                         hasTodayTemp = true;

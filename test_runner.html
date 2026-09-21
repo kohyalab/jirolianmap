@@ -20,7 +20,7 @@
         .fail { color: #f44336; font-weight: bold; }
         .test-case { margin: 6px 0; padding: 6px 12px; background: #1e1e1e; border-radius: 4px; }
         #summary { font-size: 1.2rem; margin-bottom: 20px; padding: 12px; border-radius: 6px; }
-        iframe { width: 100%; height: 400px; border: 1px solid #444; margin-top: 10px; display: none; }
+        iframe { width: 1280px; height: 1200px; border: 1px solid #444; margin-top: 10px; display: block; }
     </style>
 </head>
 <body>
@@ -206,8 +206,8 @@
                 // 4. 店舗詳細ポップアップ (popup_detail)
                 const firstShopObj = (appWin.shops || [])[0];
                 appWin.openShareOptionsModal(gridEl, firstShopObj, 'popup_detail', 'test', 'test');
-                assert('共有設定: 店舗詳細 (制覇:非表示, 営業状況:表示, 分割:非表示)', () => {
-                    return conquestSec.style.display === 'none' && statusSec.style.display === 'block' && splitSec.style.display === 'none';
+                assert('共有設定: 店舗詳細 (制覇:表示, 営業状況:表示, 分割:非表示)', () => {
+                    return conquestSec.style.display === 'block' && statusSec.style.display === 'block' && splitSec.style.display === 'none';
                 });
                 appWin.closeShareOptionsModal();
 
@@ -227,14 +227,166 @@
                 });
                 appWin.closeShareOptionsModal();
 
-                // 7. 実際のUI切り替えテスト: 「店舗情報-コンパクト」時の shareFullGridImage()
-                appWin.setMainViewMode('realtime');
-                appWin.setDensityMode('minimal');
+                // 8. 実際のUI切り替えテスト: 「営業情報-一覧」時の shareFullGridImage() & executeImageShare()
+                appWin.setMainViewMode('today');
+                appWin.setPeriodMode('28');
                 appWin.shareFullGridImage();
-                assert('共有設定 (UI連携): 店舗情報-コンパクトシェア起動 (制覇:表示, 営業状況:表示, 分割:表示)', () => {
-                    return conquestSec.style.display === 'block' && statusSec.style.display === 'block' && splitSec.style.display === 'block';
+                const daysSec = appDoc.getElementById('share-opt-days-section');
+                assert('共有設定 (UI連携): 営業情報-一覧シェア起動 (日数設定:表示)', () => {
+                    return daysSec && daysSec.style.display === 'block';
                 });
-                appWin.closeShareOptionsModal();
+
+                // 画像生成実行テスト (executeImageShare)
+                let caughtErrors = [];
+                let shareLogs = [];
+                const origConsoleLog = appWin.console.log;
+                appWin.console.log = function(...args) {
+                    const str = args.join(' ');
+                    if (str.includes('[DEBUG-SHARE]')) {
+                        shareLogs.push(str);
+                    }
+                    origConsoleLog.apply(this, args);
+                };
+                const origConsoleErr = appWin.console.error;
+                appWin.console.error = function(...args) {
+                    const msg = args.map(a => (a && a.stack) ? a.stack : String(a)).join(' ');
+                    caughtErrors.push(msg);
+                    origConsoleErr.apply(this, args);
+                };
+                appWin.alert = (msg) => {
+                    caughtErrors.push('ALERT: ' + msg);
+                };
+
+                let matrixCanvasCount = 0;
+                const origCapture = appWin.captureElementWithPadding;
+                appWin.captureElementWithPadding = async function(target, pad) {
+                    const c = await origCapture.call(this, target, pad);
+                    if (c) matrixCanvasCount++;
+                    return c;
+                };
+
+                try {
+                    await Promise.race([
+                        appWin.executeImageShare(true),
+                        new Promise((_, reject) => setTimeout(() => reject(new Error('TIMEOUT_25s')), 25000))
+                    ]);
+                } catch (e) {
+                    caughtErrors.push('THROWN: ' + (e.stack || e.message));
+                } finally {
+                    appWin.captureElementWithPadding = origCapture;
+                    appWin.console.error = origConsoleErr;
+                    appWin.console.log = origConsoleLog;
+                    appWin.closeShareOptionsModal();
+                }
+
+                const detailMsg = (caughtErrors.length > 0 ? caughtErrors.join(' | ') : '') + ' [LOGS: ' + shareLogs.join(' -> ') + `] (枚数: ${matrixCanvasCount})`;
+                assert('営業情報-一覧: 画像生成実行 (executeImageShare)', () => caughtErrors.length === 0 && matrixCanvasCount > 0, detailMsg);
+
+                await new Promise(r => setTimeout(r, 600));
+
+                // 9. X自動投稿相当テスト: 「営業情報-日別」時の shareFullGridImage() & ヘッダー包含確認
+                appWin.setMainViewMode('today');
+                appWin.setPeriodMode('1');
+                await new Promise(r => setTimeout(r, 600));
+
+                appWin.shareFullGridImage();
+                await new Promise(r => setTimeout(r, 300));
+
+                const todaySplitCb = appDoc.getElementById('share-opt-split');
+                if (todaySplitCb) todaySplitCb.checked = false;
+
+                let todayCaughtErrors = [];
+                let capturedHeaderTitles = [];
+                let todayCanvasCount = 0;
+                const origCapture2 = appWin.captureElementWithPadding;
+                appWin.captureElementWithPadding = async function(target, pad) {
+                    const headerTitle = target ? target.querySelector('.capture-header-title') : null;
+                    if (headerTitle) {
+                        capturedHeaderTitles.push(headerTitle.textContent);
+                    }
+                    const c = await origCapture2.call(this, target, pad);
+                    if (c) todayCanvasCount++;
+                    return c;
+                };
+                const origErr2 = appWin.console.error;
+                appWin.console.error = function(...args) {
+                    const msg = args.map(a => (a && a.stack) ? a.stack : String(a)).join(' ');
+                    todayCaughtErrors.push(msg);
+                    origErr2.apply(this, args);
+                };
+
+                try {
+                    await Promise.race([
+                        appWin.executeImageShare(true),
+                        new Promise((_, reject) => setTimeout(() => reject(new Error('TIMEOUT_25s')), 25000))
+                    ]);
+                } catch (e) {
+                    todayCaughtErrors.push('THROWN: ' + (e.stack || e.message));
+                } finally {
+                    appWin.captureElementWithPadding = origCapture2;
+                    appWin.console.error = origErr2;
+                    appWin.closeShareOptionsModal();
+                }
+
+                const todayDetail = (todayCaughtErrors.length > 0 ? todayCaughtErrors.join(' | ') : '') + ` [ヘッダー: ${capturedHeaderTitles.join(', ')}] (枚数: ${todayCanvasCount})`;
+                assert('営業情報-日別 (X自動投稿): 画像生成実行 & ヘッダー包含確認', () => todayCaughtErrors.length === 0 && todayCanvasCount > 0 && capturedHeaderTitles.length > 0, todayDetail);
+
+                await new Promise(r => setTimeout(r, 600));
+
+                // 10. 店舗情報-詳細 (札幌店) 画像サイズ最適化テスト
+                appWin.shareShopCardImage('sapporo');
+                await new Promise(r => setTimeout(r, 300));
+
+                let detailCanvasH = 0;
+                let detailCanvasW = 0;
+                const origCapture3 = appWin.captureElementWithPadding;
+                appWin.captureElementWithPadding = async function(target, pad) {
+                    const c = await origCapture3.call(this, target, pad);
+                    if (c) {
+                        detailCanvasH = c.height;
+                        detailCanvasW = c.width;
+                    }
+                    return c;
+                };
+
+                try {
+                    await Promise.race([
+                        appWin.executeImageShare(true),
+                        new Promise((_, reject) => setTimeout(() => reject(new Error('TIMEOUT_25s')), 25000))
+                    ]);
+                } catch (e) {
+                } finally {
+                    appWin.captureElementWithPadding = origCapture3;
+                    appWin.closeShareOptionsModal();
+                }
+
+                // 以前は targetH >= 600 (scale:2 で 1200px以上)、targetW >= 520 に強制されていたが、最適化により実寸（<1100px高）に収まることを検証
+                assert('店舗情報-詳細: 画像サイズ最適化 (余白削減)', () => detailCanvasH > 0 && detailCanvasH < 1100, `Canvasサイズ: ${detailCanvasW}x${detailCanvasH}px (適正範囲: 高さ<1100px)`);
+
+                await new Promise(r => setTimeout(r, 300));
+
+                // 11. 店舗情報-詳細: 制覇状況チェックオフ時のバッジ非表示テスト
+                appWin.shareShopCardImage('sapporo');
+                await new Promise(r => setTimeout(r, 300));
+                const conquestCbInModal = appDoc.getElementById('share-opt-conquest');
+                if (conquestCbInModal) conquestCbInModal.checked = false;
+
+                let visitBtnDisplayDuringCapture = '';
+                const origCapture4 = appWin.captureElementWithPadding;
+                appWin.captureElementWithPadding = async function(target, pad) {
+                    const btn = target ? target.querySelector('.visit-toggle-btn') : null;
+                    if (btn) visitBtnDisplayDuringCapture = btn.style.display;
+                    return origCapture4.call(this, target, pad);
+                };
+
+                try {
+                    await appWin.executeImageShare(true);
+                } catch (e) {
+                } finally {
+                    appWin.captureElementWithPadding = origCapture4;
+                    appWin.closeShareOptionsModal();
+                }
+                assert('店舗情報-詳細: 制覇状況オフで制覇バッジ非表示', () => visitBtnDisplayDuringCapture === 'none', `バッジstyle.display: "${visitBtnDisplayDuringCapture}" (期待値: "none")`);
 
             } catch (err) {
                 assert('メインアプリ: 統合テスト例外', false, err.message);

@@ -24,16 +24,35 @@
         return `${yyyy}${mm}${dd}${hh}${mi}${ss}`;
     }
 
+    function getGlobalShops() {
+        if (Array.isArray(global.shops) && global.shops.length > 0) return global.shops;
+        if (typeof window !== 'undefined' && Array.isArray(window.shops) && window.shops.length > 0) return window.shops;
+        if (typeof shops !== 'undefined' && Array.isArray(shops) && shops.length > 0) return shops;
+        return [];
+    }
+
     async function captureElementWithPadding(targetElement, padding = 16) {
         const hideElements = targetElement.querySelectorAll('.sns-share-btn, .export-img-btn, .modal-close-btn');
         hideElements.forEach(el => el.style.visibility = 'hidden');
 
         try {
+            const rect = targetElement.getBoundingClientRect();
+            const targetW = Math.ceil(targetElement.offsetWidth || rect.width || targetElement.scrollWidth || 360);
+            const targetH = Math.ceil(targetElement.offsetHeight || rect.height || targetElement.scrollHeight || 100);
+            // 横幅が1200pxを超える巨大テーブル（一覧スケジュール等）はメモリ負荷とタイムアウト軽減のため scale: 1.5
+            const renderScale = targetW > 1200 ? 1.5 : 2;
+
             const origCanvas = await html2canvas(targetElement, {
                 backgroundColor: '#141414',
-                scale: 2,
+                scale: renderScale,
                 useCORS: true,
                 logging: false,
+                scrollX: 0,
+                scrollY: 0,
+                width: targetW,
+                height: targetH,
+                windowWidth: Math.max(targetW + 60, 600),
+                windowHeight: Math.max(targetH + 60, 600),
                 onclone: (clonedDoc) => {
                     const clonedBody = clonedDoc.body;
                     if (clonedBody) {
@@ -43,21 +62,51 @@
                         clonedBody.style.setProperty('--card-bg', '#1e1e1e');
                         clonedBody.style.setProperty('--text-color', '#f5f5f5');
                         clonedBody.style.setProperty('--border-color', '#333333');
+                        clonedBody.style.width = (targetW + 40) + 'px';
+                        clonedBody.style.overflow = 'visible';
+                    }
+
+                    // クローンされた対象要素とその親要素の幅・overflow制約を解除
+                    const clonedTarget = (targetElement.id ? clonedDoc.getElementById(targetElement.id) : null) || clonedDoc.querySelector(`.${targetElement.className.split(' ')[0]}`);
+                    if (clonedTarget) {
+                        if (targetElement.style.width && targetElement.style.width !== '100%') {
+                            clonedTarget.style.width = targetElement.style.width;
+                        } else {
+                            clonedTarget.style.width = 'max-content';
+                        }
+                        clonedTarget.style.maxWidth = 'none';
+                        clonedTarget.style.overflow = 'visible';
+                        clonedTarget.style.height = 'auto';
+                        clonedTarget.style.minHeight = 'auto';
+
+                        let parent = clonedTarget.parentElement;
+                        while (parent && parent !== clonedDoc.body) {
+                            parent.style.width = 'max-content';
+                            parent.style.maxWidth = 'none';
+                            parent.style.overflow = 'visible';
+                            parent = parent.parentElement;
+                        }
                     }
                 }
             });
 
             hideElements.forEach(el => el.style.visibility = '');
 
+            if (!origCanvas || origCanvas.width === 0 || origCanvas.height === 0) {
+                console.error('[CAPTURE] html2canvas returned zero-size canvas');
+                return null;
+            }
+
             const paddedCanvas = document.createElement('canvas');
             const p = padding * 2;
+            const pTop = Math.round(padding * 2.5); // 上部余白を少しゆったり確保
             paddedCanvas.width = origCanvas.width + (p * 2);
-            paddedCanvas.height = origCanvas.height + (p * 3);
+            paddedCanvas.height = origCanvas.height + pTop + (p * 2);
 
             const ctx = paddedCanvas.getContext('2d');
             ctx.fillStyle = '#1e1e1e';
             ctx.fillRect(0, 0, paddedCanvas.width, paddedCanvas.height);
-            ctx.drawImage(origCanvas, p, p);
+            ctx.drawImage(origCanvas, p, pTop);
 
             // フッター注記テキスト追加（上部余白とバランスよく調整）
             const noticeText = '※記載内容は変更となる場合がありますので、ご自身でもご確認ください';
@@ -72,7 +121,7 @@
             ctx.fillStyle = '#999999';
             ctx.textAlign = 'center';
             ctx.textBaseline = 'middle';
-            ctx.fillText(noticeText, paddedCanvas.width / 2, origCanvas.height + (p * 2));
+            ctx.fillText(noticeText, paddedCanvas.width / 2, origCanvas.height + pTop + p);
 
             return paddedCanvas;
         } catch (err) {
@@ -131,8 +180,9 @@
         const splitSection = document.getElementById('share-opt-split-section');
 
         if (daysSection) daysSection.style.display = (layoutType === 'matrix') ? 'block' : 'none';
-        // 制覇状態が表示されるレイアウト（店舗情報-コンパクト: minimal）のみ「制覇状況の表示」を表示
-        if (conquestSection) conquestSection.style.display = (layoutType === 'minimal') ? 'block' : 'none';
+        // 制覇状態が表示されるレイアウト（店舗情報-コンパクト: minimal、店舗情報-詳細: popup_detail）で「制覇状況の表示」を表示
+        const isConquestApplicable = (layoutType === 'minimal' || layoutType === 'popup_detail');
+        if (conquestSection) conquestSection.style.display = isConquestApplicable ? 'block' : 'none';
         // 現在の営業状況（リアルタイム判定）が表示されるレイアウト（店舗情報-コンパクト: minimal、店舗詳細: popup_detail）のみ表示
         const isStatusApplicable = (layoutType === 'minimal') || (layoutType === 'popup_detail' && (!shop || !shop.closedAt));
         if (statusSection) statusSection.style.display = isStatusApplicable ? 'block' : 'none';
@@ -407,6 +457,8 @@
             minWidth: container.style.minWidth,
             boxSizing: container.style.boxSizing,
             gridTemplateColumns: container.style.gridTemplateColumns,
+            gridAutoRows: container.style.gridAutoRows,
+            paddingTop: container.style.paddingTop,
             justifyContent: container.style.justifyContent,
             margin: container.style.margin
         };
@@ -436,13 +488,15 @@
                 container.style.width = '527px';
                 container.style.boxSizing = 'border-box';
                 container.style.gridTemplateColumns = 'repeat(6, 82px)';
+                container.style.gridAutoRows = 'auto';
+                container.style.paddingTop = '6px';
                 container.style.justifyContent = 'center';
                 container.style.margin = '0 auto';
             } else if (layoutType === 'matrix') {
                 const daysInput = document.getElementById('share-opt-days-input');
                 const daysVal = daysInput ? Math.min(28, Math.max(1, parseInt(daysInput.value, 10) || 28)) : 28;
 
-                const shopList = global.shops || [];
+                const shopList = getGlobalShops();
                 const shopIdsInMatrix = Array.from(container.querySelectorAll('tbody tr')).map(row => {
                     const el = row.querySelector('[onclick*="handleShopSelect"]');
                     if (!el) return null;
@@ -457,9 +511,24 @@
                     origHtml: container.innerHTML
                 });
 
-                const activeDate = typeof global.getEffectiveDisplayDate === 'function' ? global.getEffectiveDisplayDate() : new Date();
-                if (typeof global.renderMatrixScheduleTable === 'function') {
-                    container.innerHTML = global.renderMatrixScheduleTable(displayShops, activeDate, daysVal);
+                const activeDate = typeof global.getEffectiveDisplayDate === 'function' ? global.getEffectiveDisplayDate() : (typeof getEffectiveDisplayDate === 'function' ? getEffectiveDisplayDate() : new Date());
+                const renderMatrixFn = (typeof global.renderMatrixScheduleTable === 'function') ? global.renderMatrixScheduleTable : (typeof renderMatrixScheduleTable === 'function' ? renderMatrixScheduleTable : null);
+                if (renderMatrixFn) {
+                    container.innerHTML = renderMatrixFn(displayShops, activeDate, daysVal);
+                }
+
+                // 親要素（.container）の幅とoverflow制約を解除
+                const parentEl = container.parentElement;
+                if (parentEl) {
+                    modifiedElements.push({
+                        el: parentEl,
+                        origWidth: parentEl.style.width,
+                        origMaxWidth: parentEl.style.maxWidth,
+                        origOverflow: parentEl.style.overflow
+                    });
+                    parentEl.style.width = 'max-content';
+                    parentEl.style.maxWidth = 'none';
+                    parentEl.style.overflow = 'visible';
                 }
 
                 const wrapperEl = container.querySelector('.matrix-schedule-wrapper');
@@ -700,7 +769,9 @@
                 }
 
                 if (shop) {
-                    const getWeeklyTemp = (global.JiroBusinessHours && global.JiroBusinessHours.getWeeklyTemporaryText) || global.getWeeklyTemporaryText;
+                    const getWeeklyTemp = (global.JiroBusinessHours && global.JiroBusinessHours.getWeeklyTemporaryText)
+                        ? global.JiroBusinessHours.getWeeklyTemporaryText.bind(global.JiroBusinessHours)
+                        : global.getWeeklyTemporaryText;
                     const tempInfo = getWeeklyTemp ? getWeeklyTemp(shop, new Date()) : null;
                     if (tempInfo && tempInfo.text) {
                         const tempLegend = document.createElement('div');
@@ -778,8 +849,10 @@
                 const now = new Date();
                 const mi = String(now.getMinutes()).padStart(2, '0');
 
-                const shopList = global.shops || [];
-                const getWeeklyTemp = (global.JiroBusinessHours && global.JiroBusinessHours.getWeeklyTemporaryText) || global.getWeeklyTemporaryText;
+                const shopList = getGlobalShops();
+                const getWeeklyTemp = (global.JiroBusinessHours && global.JiroBusinessHours.getWeeklyTemporaryText)
+                    ? global.JiroBusinessHours.getWeeklyTemporaryText.bind(global.JiroBusinessHours)
+                    : global.getWeeklyTemporaryText;
                 let hasTempSchedule = false;
                 if (getWeeklyTemp) {
                     shopList.forEach(s => {
@@ -790,7 +863,7 @@
 
                 const headerBlock = document.createElement('div');
                 headerBlock.className = 'capture-header-legend';
-                headerBlock.style.cssText = 'background: #141414; border: 1px solid #333; border-radius: 6px; padding: 4px 8px; margin-bottom: 2px; width: 100%; box-sizing: border-box; grid-column: 1 / -1; display: flex; flex-direction: column; gap: 4px; font-size: 0.72rem; color: #ddd;';
+                headerBlock.style.cssText = 'background: #141414; border: 1px solid #333; border-radius: 6px; padding: 7px 10px; margin: 8px 0 4px 0; width: 100%; box-sizing: border-box; grid-column: 1 / -1; display: flex; flex-direction: column; gap: 4px; font-size: 0.72rem; color: #ddd;';
 
                 if (layoutType === 'minimal') {
                     const usernameInput = document.getElementById('share-opt-username');
@@ -864,7 +937,7 @@
                         `;
                     }
                 } else if (layoutType === 'today' || layoutType === 'calendar_all') {
-                    headerBlock.style.cssText = 'background: #141414; border: 1px solid #333; border-radius: 6px; padding: 4px 8px; margin-bottom: 2px; width: 100%; box-sizing: border-box; grid-column: 1 / -1; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 4px 10px; font-size: 0.72rem; color: #ddd;';
+                    headerBlock.style.cssText = 'background: #141414; border: 1px solid #333; border-radius: 6px; padding: 7px 10px; margin: 8px 0 4px 0; width: 100%; box-sizing: border-box; grid-column: 1 / -1; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 4px 10px; font-size: 0.72rem; color: #ddd;';
                     headerBlock.innerHTML = `
                         <span class="capture-header-title" style="font-weight:bold; color:var(--jiro-yellow); flex:1 1 auto; min-width:0;">ラーメン二郎 営業状況（${dateFormatted}）</span>
                         <div style="display:flex; flex-wrap:wrap; gap:6px 10px; align-items:center; margin-left:auto;">
@@ -884,7 +957,7 @@
                     finalFileName = `営業スケジュール（${daysVal}日間_${dateYmd}）_${getTimestampStr()}`;
                     finalShareText = `【ラーメン二郎 ${daysVal}日間営業スケジュール】\nhttps://app.jirolianmap.com/\n#ラーメン二郎 #二郎 #営業情報 #ジロリアンマップ`;
 
-                    headerBlock.style.cssText = 'background: #141414; border: 1px solid #333; border-radius: 6px; padding: 4px 8px; margin-bottom: 2px; width: 100%; box-sizing: border-box; grid-column: 1 / -1; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 4px 10px; font-size: 0.72rem; color: #ddd;';
+                    headerBlock.style.cssText = 'background: #141414; border: 1px solid #333; border-radius: 6px; padding: 7px 10px; margin: 8px 0 4px 0; width: 100%; box-sizing: border-box; grid-column: 1 / -1; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 4px 10px; font-size: 0.72rem; color: #ddd;';
                     headerBlock.innerHTML = `
                         <span class="capture-header-title" style="font-weight:bold; color:var(--jiro-yellow); flex:1 1 auto; min-width:0;">ラーメン二郎 営業スケジュール</span>
                         <div style="display:flex; flex-wrap:wrap; gap:6px 10px; align-items:center; margin-left:auto;">
@@ -1029,6 +1102,8 @@
             container.style.minWidth = origContainerStyle.minWidth;
             container.style.boxSizing = origContainerStyle.boxSizing;
             container.style.gridTemplateColumns = origContainerStyle.gridTemplateColumns;
+            container.style.gridAutoRows = origContainerStyle.gridAutoRows;
+            container.style.paddingTop = origContainerStyle.paddingTop;
             container.style.justifyContent = origContainerStyle.justifyContent;
             container.style.margin = origContainerStyle.margin;
 
@@ -1123,6 +1198,8 @@
             container.style.minWidth = origContainerStyle.minWidth;
             container.style.boxSizing = origContainerStyle.boxSizing;
             container.style.gridTemplateColumns = origContainerStyle.gridTemplateColumns;
+            container.style.gridAutoRows = origContainerStyle.gridAutoRows;
+            container.style.paddingTop = origContainerStyle.paddingTop;
             container.style.justifyContent = origContainerStyle.justifyContent;
             container.style.margin = origContainerStyle.margin;
 
@@ -1172,7 +1249,7 @@
 
     function shareShopCardImage(shopId, event) {
         if (event) event.stopPropagation();
-        const shopList = global.shops || [];
+        const shopList = getGlobalShops();
         const shop = shopList.find(s => s.id === shopId);
         const shopName = shop ? shop.name : '店舗';
         const container = (event && event.target)
@@ -1187,7 +1264,7 @@
 
     function shareCalendarCardImage(shopId, event) {
         if (event) event.stopPropagation();
-        const shopList = global.shops || [];
+        const shopList = getGlobalShops();
         const shop = shopList.find(s => s.id === shopId);
         const shopName = shop ? shop.name : '店舗';
         const container = (event && event.target)
