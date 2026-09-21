@@ -335,6 +335,7 @@
         </div>
         <div style="display: flex; gap: 8px; flex-wrap: wrap;">
             <button class="btn btn-sm" id="btn-pending-refresh" onclick="app.loadPendingUpdates(true)">🔄 再取得</button>
+            <button class="btn btn-sm" id="btn-ai-guidelines" onclick="app.openAiGuidelinesModal()" style="background: #2a2a2a; border-color: #555; color: #80d8ff;">🧠 AI判定ルール</button>
             <button class="btn btn-sm" id="btn-pending-trigger-crawler" onclick="app.triggerSnsCrawler()" style="background: #2a2a2a; border-color: #555; color: #ffeb3b;">⚡ 今すぐSNS再巡回</button>
             <button class="btn btn-sm btn-success" id="btn-pending-approve-all" onclick="app.approveAllPending()">✅ 全件一括承認</button>
         </div>
@@ -441,6 +442,20 @@
     <div id="pending-list-container" style="display: flex; flex-direction: column; gap: 12px;">
         <!-- JSで動的生成 -->
     </div>
+
+    <!-- 既存スケジュール完全一致等のスキップ済み一覧コンテナ -->
+    <details id="skipped-list-details" style="margin-top: 24px; background: #181818; border: 1px solid #333; border-radius: 8px; padding: 10px 14px;">
+        <summary style="font-weight: bold; color: #aaa; cursor: pointer; display: flex; align-items: center; justify-content: space-between; user-select: none; font-size: 0.9rem;">
+            <span style="display: flex; align-items: center; gap: 8px;">
+                <span>📋 既存スケジュールと完全一致のためスキップされた投稿</span>
+                <span id="skipped-count-tag" style="background: #333; color: #bbb; font-size: 0.75rem; padding: 1px 6px; border-radius: 10px;">0件</span>
+            </span>
+            <span style="font-size: 0.8rem; color: #666;">開く / 閉じる ▼</span>
+        </summary>
+        <div id="skipped-list-container" style="margin-top: 12px; display: flex; flex-direction: column; gap: 10px;">
+            <!-- JSで動的生成 -->
+        </div>
+    </details>
 </div>
 
 <!-- GitHub連携設定モーダル -->
@@ -503,6 +518,58 @@
             <button class="btn btn-sm" onclick="app.closeImageModal()">✕</button>
         </div>
         <img id="image-preview-img" src="" alt="添付画像" style="max-width: 100%; max-height: 80vh; object-fit: contain; border-radius: 4px;">
+    </div>
+</div>
+
+<!-- AI判定ルール・学習ナレッジ管理モーダル -->
+<div class="modal-overlay" id="ai-rules-modal">
+    <div class="modal-content" style="max-width: 680px; max-height: 85vh; display: flex; flex-direction: column;">
+        <div class="modal-header">
+            <h2>🧠 AI判定ルール・学習ナレッジ管理</h2>
+            <button class="btn btn-sm" onclick="app.closeAiGuidelinesModal()">✕</button>
+        </div>
+        <div style="font-size: 0.82rem; color: #aaa; margin-bottom: 12px; line-height: 1.4;">
+            GeminiがSNS投稿を解析する際の判定指示やルールです。誤判定があった場合、管理者がここに指摘やルールを追加・編集することで、AIの判定精度を継続的に向上させることができます。
+        </div>
+
+        <div style="flex: 1; overflow-y: auto; display: flex; flex-direction: column; gap: 12px; padding-right: 4px;">
+            <!-- 事前フィルタ キーワード管理 -->
+            <div class="form-group" style="margin: 0; background: #1f1f1f; border: 1px solid #3a3a3a; border-radius: 6px; padding: 10px 12px;">
+                <label style="font-size: 0.85rem; font-weight: bold; color: #80d8ff; display: flex; justify-content: space-between;">
+                    <span>🔍 事前フィルタ キーワード設定 (scheduleKeywords)</span>
+                    <span style="font-size: 0.75rem; color: #aaa; font-weight: normal;">※カンマ(,)区切りで指定</span>
+                </label>
+                <div style="margin-top: 6px; display: flex; flex-direction: column; gap: 6px;">
+                    <div>
+                        <span style="font-size: 0.75rem; color: #bbb;">営業関連キーワード（日常ポストの除外・判定用）:</span>
+                        <input type="text" id="ai-keywords-input" placeholder="休, 営業, 開店, 閉店, 昼, 夜, 臨休..." style="width: 100%; background: #111; border: 1px solid #555; color: #fff; padding: 5px 8px; border-radius: 4px; font-size: 0.8rem;">
+                    </div>
+                    <div>
+                        <span style="font-size: 0.75rem; color: #bbb;">期間・相対日キーワード:</span>
+                        <input type="text" id="ai-period-keywords-input" placeholder="本日, 明日, 明後日, 今週, 来週, 今月, 来月..." style="width: 100%; background: #111; border: 1px solid #555; color: #fff; padding: 5px 8px; border-radius: 4px; font-size: 0.8rem;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group" style="margin: 0;">
+                <label style="font-size: 0.85rem; font-weight: bold; color: var(--jiro-yellow);">共通判定ルール一覧 (generalRules)</label>
+                <div id="ai-rules-list" style="display: flex; flex-direction: column; gap: 8px; margin-top: 6px;"></div>
+                <button type="button" class="btn btn-sm" onclick="app.addNewAiRule()" style="margin-top: 8px; background: #262626; border-color: #555; color: #ddd;">+ 新しいルールを追加</button>
+            </div>
+
+            <div class="form-group" style="margin: 0; border-top: 1px solid #333; padding-top: 12px;">
+                <label style="font-size: 0.85rem; font-weight: bold; color: var(--accent-color);">JSON直接編集 (高度な設定 / 店舗固有ルール / Few-Shot事例)</label>
+                <textarea id="ai-rules-raw-json" rows="8" style="width: 100%; padding: 8px; background: #181818; border: 1px solid #444; border-radius: 4px; color: #fff; font-family: monospace; font-size: 0.8rem; line-height: 1.4;"></textarea>
+            </div>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 16px; border-top: 1px solid #333; padding-top: 12px;">
+            <span id="ai-rules-save-status" style="font-size: 0.8rem; color: #80d8ff;"></span>
+            <div style="display: flex; gap: 8px;">
+                <button class="btn btn-sm" onclick="app.closeAiGuidelinesModal()">閉じる</button>
+                <button class="btn btn-sm btn-primary" onclick="app.saveAiGuidelines()">💾 ルールを保存</button>
+            </div>
+        </div>
     </div>
 </div>
 

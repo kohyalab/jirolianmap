@@ -69,15 +69,23 @@ class EditorApp {
             pendingListContainer: document.getElementById('pending-list-container'),
             imagePreviewModal: document.getElementById('image-preview-modal'),
             imagePreviewImg: document.getElementById('image-preview-img'),
-            imagePreviewTitle: document.getElementById('image-preview-title')
+            imagePreviewTitle: document.getElementById('image-preview-title'),
+            skippedListContainer: document.getElementById('skipped-list-container'),
+            skippedCountTag: document.getElementById('skipped-count-tag'),
+            aiRulesModal: document.getElementById('ai-rules-modal'),
+            aiRulesList: document.getElementById('ai-rules-list'),
+            aiRulesRawJson: document.getElementById('ai-rules-raw-json'),
+            aiRulesSaveStatus: document.getElementById('ai-rules-save-status')
         };
 
         this.pendingUpdates = [];
         this.manualAiImages = [];
+        this.aiGuidelines = null;
         this.initPrefOptions();
         this.bindEvents();
         this.loadGithubConfigUI();
         this.loadPendingUpdates();
+        this.loadAiGuidelines();
         this.initManualAiPanel();
         if (typeof LG_CODES !== 'undefined' && LG_CODES.fetchExternalData) {
             LG_CODES.fetchExternalData().then(() => {
@@ -1271,13 +1279,18 @@ class EditorApp {
     }
 
     updatePendingBadge() {
-        const count = (this.pendingUpdates || []).length;
+        const pendingItems = (this.pendingUpdates || []).filter(p => p.status !== 'skipped');
+        const skippedItems = (this.pendingUpdates || []).filter(p => p.status === 'skipped');
+        const count = pendingItems.length;
         if (this.el.pendingBadge) {
             this.el.pendingBadge.textContent = count;
             this.el.pendingBadge.style.display = count > 0 ? 'inline-block' : 'none';
         }
         if (this.el.pendingCountTag) {
             this.el.pendingCountTag.textContent = `${count}件`;
+        }
+        if (this.el.skippedCountTag) {
+            this.el.skippedCountTag.textContent = `${skippedItems.length}件`;
         }
     }
 
@@ -1460,31 +1473,61 @@ class EditorApp {
             const todayStr = today.toISOString().split('T')[0];
             const dayOfWeekStr = ['日', '月', '火', '水', '木', '金', '土'][today.getDay()];
 
+            // 管理者学習ルールのテキスト化
+            let guidelinesText = '';
+            if (this.aiGuidelines && Array.isArray(this.aiGuidelines.generalRules)) {
+                const rules = this.aiGuidelines.generalRules.map(r => `・【${r.title}】: ${r.rule}`).join('\n');
+                const shopRules = (this.aiGuidelines.shopSpecificRules && this.aiGuidelines.shopSpecificRules[shop.id]) ? `・【店舗固有ルール】: ${this.aiGuidelines.shopSpecificRules[shop.id]}` : '';
+                guidelinesText = `\n【管理者学習ルール・判定ガイドライン】\n${rules}\n${shopRules}\n`;
+            }
+
+            // 店舗の通常シフトと登録済み臨時設定のテキスト化
+            const shiftsByDay = shop.shiftsByDay || {};
+            const dayNames = ['日曜', '月曜', '火曜', '水曜', '木曜', '金曜', '土曜'];
+            const normalShiftsText = dayNames.map((dName, idx) => {
+                const shifts = shiftsByDay[idx] || [];
+                if (shifts.length === 0) return `${dName}: 定休日`;
+                const shiftStrs = shifts.map(s => `${s[0]}:00〜${s[1]}:00`.replace(/\.5:00/g, ':30'));
+                return `${dName}: ${shiftStrs.join(', ')}`;
+            }).join(' / ');
+
+            const registeredTemps = (shop.temporary || []).slice(-5).map(t => {
+                const hStr = (t.hours && t.hours.length > 0) ? JSON.stringify(t.hours) : '終日休業';
+                return `${t.startDate}${t.endDate && t.endDate !== t.startDate ? '〜' + t.endDate : ''}: ${hStr}`;
+            }).join('; ');
+
             const systemPrompt = `
 あなたは全国の「ラーメン二郎」直系店舗の営業情報を専門に監視・判定するエキスパートAIです。
 店舗の公式SNS（Instagram / X）や店頭告知の投稿テキスト、および添付画像（店頭の手書き貼り紙、ホワイトボード、カレンダー等）を解析し、
 「臨時休業」「営業時間変更」「臨時営業」の有無と、具体的な日程・時間を正確に抽出してください。
 
-【基準日情報】
+【基準日・店舗情報】
 ・今日の日付: ${todayStr} (${dayOfWeekStr}曜日)
 ・対象店舗: ${shopName} (ID: ${shopId})
-
-【二郎特有の表現とルール】
-1. 日付表現の解釈:
+・店舗の通常営業時間 (shiftsByDay): ${normalShiftsText}
+・現在登録済みの臨時スケジュール (temporary): ${registeredTemps || 'なし'}
+${guidelinesText}
+【二郎特有の表現と重要判定ルール】
+1. 日付・期間表現の解釈:
    - 「本日」「今日」＝ ${todayStr}
-   - 「明日」＝ 翌日
+   - 「明日」＝ 翌日、「明後日」＝ 翌々日
    - 「○日(○)」＝ 今月または翌月の該当月日を西暦YYYY-MM-DD形式に変換。
-   - 「カレンダー」の画像がある場合、〇印（営業）、✕印や斜線（休業）、手書きの注釈を読み取ること。
-2. 営業状態の分類:
-   - "temporary_closure" (臨時休業): 終日休業、または昼・夜の部どちらかの休業。
-   - "special_open" (臨時営業): 通常定休日の曜日に特別に営業する、または祝日営業。
-   - "temporary_hours" (営業時間変更): 通常と異なる開店・閉店時間。
-3. 通常営業や関係のない雑談の場合:
-   - hasScheduleChange を false にし、changes を空配列にする。
-4. 時間の表現:
-   - 小数点表記（例: 11:30＝11.5, 14:00＝14, 17:30＝17.5, 21:00＝21）で [[start, end]] 形式の配列にする。
+   - 「カレンダー」の画像がある場合、〇印（営業）、✕印や斜線（休業）、手書きの注釈を正確に読み取ること。
+2. 昼の部・夜の部、および片側休業の厳格な解釈:
+   - 「昼の部」「昼」＝ 店舗の通常営業のうち前半側（1部目）。
+   - 「夜の部」「夜」＝ 店舗の通常営業のうち後半側（2部目）。
+   - 「夜の部お休み」「夜はお休み」等＝【終日休業と誤判定しないこと！】。昼の部は通常営業で夜の部のみ休業を意味するため、hours には前半の通常営業時間（例: [[11, 14.5]]）を設定し、type は "temporary_hours" としてください。
+   - 「昼のみ」「昼営業のみ」＝ 前半の通常営業時間のみ営業（夜休業）。
+   - 「夜のみ」「夜営業のみ」＝ 後半の通常営業時間のみ営業（昼休業）。
+3. リアルタイム営業終了アナウンス（早仕舞い）の終了時刻反映:
+   - 「只今並びの方で終了」「宣告」「麺切れ終了」「本日分終了」等の当日終了告知は、除外せず【投稿時刻（または文中に記載された時刻）を該当営業の終了時刻として hours に反映】してください。
+   - 【最重要】2部営業のうち1部目（昼営業）の終了投稿は『昼営業のみの終了時刻変更』です。夜営業は予定通り実施されるのが基本のため、夜営業まで終了と誤判定せず、夜営業の時間は維持してください（例: 昼が通常11-14.5、夜が通常17.5-21で、13:45に昼終了なら hours: [[11, 13.75], [17.5, 21]]）。
+4. 通常営業や雑談の場合:
+   - 「本日も通常通り営業します」「おはようございます」「限定トッピングあります」等は通常通りのため hasScheduleChange: false としてください。
+5. 時間の数値化:
+   - 小数点表記（例: 11:30＝11.5, 13:45＝13.75, 14:00＝14, 17:30＝17.5, 21:00＝21）で [[start, end], [start, end]] 形式の配列にする。
    - 終日休業の場合は hours を空配列 [] にする。
-5. 複数日程・複数変更の網羅抽出:
+6. 複数日程・複数変更の網羅抽出:
    - 1つの投稿に複数の日付の変更情報が含まれる場合は、変更がある日付ごとに【別々の要素として changes 配列にすべて漏れなく網羅】して出力してください。
 
 【出力フォーマット (JSON)】
@@ -1578,11 +1621,44 @@ class EditorApp {
                 return;
             }
 
-            // pendingUpdates に追加
+            // pendingUpdates に追加（既存完全一致の判定含む）
             const addedCount = resultJson.changes.length;
             const imageUrls = (this.manualAiImages || []).map(img => img.dataUrl);
+            let pendingAdded = 0;
+            let skippedAdded = 0;
 
             resultJson.changes.forEach(change => {
+                // 対象日の曜日を特定
+                let dayOfWeek = null;
+                if (change.startDate) {
+                    const d = new Date(change.startDate + 'T00:00:00+09:00');
+                    if (!isNaN(d.getTime())) {
+                        dayOfWeek = d.getDay().toString();
+                    }
+                }
+
+                let isExactMatch = false;
+                let matchReason = '';
+
+                // 1. 既存の temporary との一致チェック
+                const matchedTemp = (shop.temporary || []).find(t => t.startDate === change.startDate);
+                if (matchedTemp) {
+                    if (JSON.stringify(matchedTemp.hours || []) === JSON.stringify(change.hours || [])) {
+                        isExactMatch = true;
+                        matchReason = '既に登録済みの臨時スケジュールと完全に一致';
+                    }
+                } else if (dayOfWeek !== null && shop.shiftsByDay) {
+                    // 2. 通常営業時間との一致チェック
+                    const normalHours = shop.shiftsByDay[dayOfWeek] || [];
+                    if (JSON.stringify(normalHours) === JSON.stringify(change.hours || [])) {
+                        isExactMatch = true;
+                        matchReason = '対象曜日の通常営業時間と完全に一致（変更なし）';
+                    }
+                }
+
+                const status = isExactMatch ? 'skipped' : 'pending';
+                if (isExactMatch) skippedAdded++; else pendingAdded++;
+
                 const pendingItem = {
                     id: `pending_manual_${shop.id}_${change.startDate.replace(/-/g, '')}_${Date.now().toString(36)}`,
                     shopId: shop.id,
@@ -1593,10 +1669,11 @@ class EditorApp {
                     postText: postText || `[手動添付画像解析] ${change.reason || ''}`,
                     mediaUrls: imageUrls,
                     detectedChange: change,
-                    status: 'pending'
+                    status: status,
+                    skipReason: isExactMatch ? matchReason : null
                 };
 
-                // 既存の未承認同日候補があれば上書き、なければ先頭に追加
+                // 既存の同一日候補があれば上書き、なければ先頭に追加
                 this.pendingUpdates = this.pendingUpdates.filter(p => !(p.shopId === shop.id && p.detectedChange.startDate === change.startDate));
                 this.pendingUpdates.unshift(pendingItem);
             });
@@ -1605,7 +1682,11 @@ class EditorApp {
             this.updatePendingBadge();
             this.clearManualAiForm();
 
-            alert(`✨ AI解析成功！ [${addedCount}件の営業変更]\n\n「${shopName}」の営業変更候補を承認待ち一覧に追加しました！\n一覧に表示されたカードの「✅ 承認して反映」を押すと shops.json に適用されます。`);
+            if (pendingAdded > 0) {
+                alert(`✨ AI解析成功！ [${pendingAdded}件の変更候補${skippedAdded > 0 ? `、${skippedAdded}件の既存一致スキップ` : ''}]\n\n「${shopName}」の営業変更候補を承認待ち一覧に追加しました！\n一覧に表示されたカードの「✅ 承認して反映」を押すと shops.json に適用されます。`);
+            } else {
+                alert(`ℹ️ AI解析完了: 「${shopName}」\n\n抽出された営業スケジュール（${skippedAdded}件）は、すでに登録されている営業時間と完全に一致しているため「スキップ済み」として記録されました。\n承認待ち画面下部の「📋 スキップされた投稿」よりご確認いただけます。`);
+            }
 
             // 承認待ち一覧の該当カードへスムーズスクロール
             const targetCard = document.getElementById(`pending-card-${this.pendingUpdates[0].id}`);
@@ -1627,8 +1708,12 @@ class EditorApp {
     renderPendingList() {
         if (!this.el.pendingListContainer) return;
         this.el.pendingListContainer.innerHTML = '';
+        if (this.el.skippedListContainer) this.el.skippedListContainer.innerHTML = '';
 
-        if (!this.pendingUpdates || this.pendingUpdates.length === 0) {
+        const pendingItems = (this.pendingUpdates || []).filter(p => p.status !== 'skipped');
+        const skippedItems = (this.pendingUpdates || []).filter(p => p.status === 'skipped');
+
+        if (pendingItems.length === 0) {
             this.el.pendingListContainer.innerHTML = `
                 <div style="text-align: center; padding: 48px 16px; color: #888; background: #1a1a1a; border-radius: 8px;">
                     <div style="font-size: 2.5rem; margin-bottom: 8px;">🎉</div>
@@ -1636,95 +1721,128 @@ class EditorApp {
                     <div style="font-size: 0.85rem; margin-top: 6px;">新しい臨時休業や営業時間の変更投稿が検出されると、ここに自動表示されます。</div>
                 </div>
             `;
-            return;
+        } else {
+            pendingItems.forEach(item => {
+                const card = this.createPendingCardElement(item, false);
+                this.el.pendingListContainer.appendChild(card);
+            });
         }
 
-        this.pendingUpdates.forEach(item => {
-            const card = document.createElement('div');
-            card.className = 'pending-card';
-            card.id = `pending-card-${item.id}`;
-
-            const shop = (this.shops || []).find(s => s.id === item.shopId);
-            const postSource = item.postSource || 'x';
-            let handle = '';
-            let accountUrl = '';
-
-            if (postSource === 'instagram') {
-                handle = (shop && shop.instagram) ? shop.instagram : (item.accountHandle || '');
-                if (handle) accountUrl = `https://instagram.com/${handle.replace(/^@/, '')}`;
+        // スキップ済みリストの描画
+        if (this.el.skippedListContainer) {
+            if (skippedItems.length === 0) {
+                this.el.skippedListContainer.innerHTML = `
+                    <div style="text-align: center; padding: 16px; color: #777; font-size: 0.85rem;">
+                        スキップされた投稿はありません。
+                    </div>
+                `;
             } else {
-                handle = (shop && shop.x) ? shop.x : (item.accountHandle || '');
-                if (handle) accountUrl = `https://x.com/${handle.replace(/^@/, '')}`;
+                skippedItems.forEach(item => {
+                    const card = this.createPendingCardElement(item, true);
+                    this.el.skippedListContainer.appendChild(card);
+                });
             }
+        }
 
-            const change = item.detectedChange || {};
-            const isClosure = change.type === 'temporary_closure';
-            const isSpecial = change.type === 'special_open';
-            const typeClass = isClosure ? 'closure' : (isSpecial ? 'special' : 'hours');
-            const typeLabel = isClosure ? '🚫 臨時休業' : (isSpecial ? '✨ 臨時営業' : '⏰ 営業時間変更');
+        this.updatePendingBadge();
+    }
 
-            // 日時フォーマット
-            const postDateStr = item.postedAt ? new Date(item.postedAt).toLocaleString('ja-JP', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' }) : '';
-            const hoursText = (change.hours && change.hours.length > 0)
-                ? change.hours.map(([s, e]) => `${this.floatToTime(s)}-${this.floatToTime(e)}`).join(' / ')
-                : '終日休業';
+    createPendingCardElement(item, isSkipped = false) {
+        const card = document.createElement('div');
+        card.className = 'pending-card' + (isSkipped ? ' skipped-card' : '');
+        card.id = `pending-card-${item.id}`;
+        if (isSkipped) {
+            card.style.opacity = '0.85';
+            card.style.border = '1px dashed #555';
+        }
 
-            // 添付画像サムネイル
-            const mediaHtml = (item.mediaUrls && item.mediaUrls.length > 0)
-                ? `<div class="pending-media-thumbs">
-                    ${item.mediaUrls.map((url, idx) => `
-                        <img src="${url}" class="pending-thumb" alt="添付画像${idx + 1}" onclick="app.openImageModal('${url}', '${item.shopName}の投稿画像')">
-                    `).join('')}
-                   </div>`
-                : '';
+        const shop = (this.shops || []).find(s => s.id === item.shopId);
+        const postSource = item.postSource || 'x';
+        let handle = '';
+        let accountUrl = '';
 
-            card.innerHTML = `
-                <div class="pending-header">
-                    <div class="pending-shop-title">
-                        <span>🍜 ${item.shopName || item.shopId}</span>
-                        ${accountUrl ? `
-                            <a href="${accountUrl}" target="_blank" rel="noopener noreferrer" class="pending-source-tag ${postSource}" title="公式アカウント (@${handle}) を開く" style="text-decoration:none; display:inline-flex; align-items:center; gap:4px; font-size:0.75rem; cursor:pointer;">
-                                <span>${postSource.toUpperCase()}</span>
-                                <span>@${handle}</span>
-                                <span style="font-size:0.65rem;">↗</span>
-                            </a>
-                        ` : `
-                            <span class="pending-source-tag ${postSource}">${postSource.toUpperCase()}</span>
-                        `}
-                    </div>
-                    <div class="pending-meta">
-                        <span>${postDateStr}</span>
-                        ${accountUrl ? `<a href="${accountUrl}" target="_blank" rel="noopener noreferrer" style="color:#aaa; text-decoration:none; display:inline-flex; align-items:center; gap:3px; padding:2px 6px; background:#222; border-radius:4px; border:1px solid #444;" title="公式アカウントのプロフィールを開く">👤 公式アカウント</a>` : ''}
-                        ${item.postUrl ? `<a href="${item.postUrl}" target="_blank" rel="noopener noreferrer" style="color:var(--jiro-yellow); text-decoration:none; font-weight:bold; padding:2px 6px; background:#222; border-radius:4px; border:1px solid #444;">↗ 元ポストを開く</a>` : ''}
-                    </div>
+        if (postSource === 'instagram') {
+            handle = (shop && shop.instagram) ? shop.instagram : (item.accountHandle || '');
+            if (handle) accountUrl = `https://instagram.com/${handle.replace(/^@/, '')}`;
+        } else {
+            handle = (shop && shop.x) ? shop.x : (item.accountHandle || '');
+            if (handle) accountUrl = `https://x.com/${handle.replace(/^@/, '')}`;
+        }
+
+        const change = item.detectedChange || {};
+        const isClosure = change.type === 'temporary_closure';
+        const isSpecial = change.type === 'special_open';
+        const typeClass = isClosure ? 'closure' : (isSpecial ? 'special' : 'hours');
+        const typeLabel = isClosure ? '🚫 臨時休業' : (isSpecial ? '✨ 臨時営業' : '⏰ 営業時間変更');
+
+        // 日時フォーマット
+        const postDateStr = item.postedAt ? new Date(item.postedAt).toLocaleString('ja-JP', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' }) : '';
+        const hoursText = (change.hours && change.hours.length > 0)
+            ? change.hours.map(([s, e]) => `${this.floatToTime(s)}-${this.floatToTime(e)}`).join(' / ')
+            : '終日休業';
+
+        // 添付画像サムネイル
+        const mediaHtml = (item.mediaUrls && item.mediaUrls.length > 0)
+            ? `<div class="pending-media-thumbs">
+                ${item.mediaUrls.map((url, idx) => `
+                    <img src="${url}" class="pending-thumb" alt="添付画像${idx + 1}" onclick="app.openImageModal('${url}', '${item.shopName}の投稿画像')">
+                `).join('')}
+               </div>`
+            : '';
+
+        const skipBannerHtml = isSkipped ? `
+            <div style="background: #2a2215; border: 1px solid #7a5c1a; border-radius: 4px; padding: 6px 10px; margin-bottom: 8px; font-size: 0.8rem; color: #ffca28; display: flex; align-items: center; gap: 6px;">
+                <span>ℹ️ <strong>スキップ理由:</strong> ${item.skipReason || '既存の営業時間・登録スケジュールと完全に一致するため反映不要'}</span>
+            </div>
+        ` : '';
+
+        card.innerHTML = `
+            ${skipBannerHtml}
+            <div class="pending-header">
+                <div class="pending-shop-title">
+                    <span>🍜 ${item.shopName || item.shopId}</span>
+                    ${accountUrl ? `
+                        <a href="${accountUrl}" target="_blank" rel="noopener noreferrer" class="pending-source-tag ${postSource}" title="公式アカウント (@${handle}) を開く" style="text-decoration:none; display:inline-flex; align-items:center; gap:4px; font-size:0.75rem; cursor:pointer;">
+                            <span>${postSource.toUpperCase()}</span>
+                            <span>@${handle}</span>
+                            <span style="font-size:0.65rem;">↗</span>
+                        </a>
+                    ` : `
+                        <span class="pending-source-tag ${postSource}">${postSource.toUpperCase()}</span>
+                    `}
                 </div>
-
-                <div class="pending-post-box">
-                    <div>${item.postText || '（テキストなし）'}</div>
-                    ${mediaHtml}
+                <div class="pending-meta">
+                    <span>${postDateStr}</span>
+                    ${accountUrl ? `<a href="${accountUrl}" target="_blank" rel="noopener noreferrer" style="color:#aaa; text-decoration:none; display:inline-flex; align-items:center; gap:3px; padding:2px 6px; background:#222; border-radius:4px; border:1px solid #444;" title="公式アカウントのプロフィールを開く">👤 公式アカウント</a>` : ''}
+                    ${item.postUrl ? `<a href="${item.postUrl}" target="_blank" rel="noopener noreferrer" style="color:var(--jiro-yellow); text-decoration:none; font-weight:bold; padding:2px 6px; background:#222; border-radius:4px; border:1px solid #444;">↗ 元ポストを開く</a>` : ''}
                 </div>
+            </div>
 
-                <div class="pending-ai-box ${isClosure ? 'is-closure' : (isSpecial ? 'is-special' : '')}">
-                    <div class="pending-ai-title ${typeClass}">
-                        <span>🤖 AI抽出結果: <strong>${typeLabel}</strong></span>
-                        <span style="font-size:0.75rem; font-weight:normal; opacity:0.8;">(信頼度: ${Math.round((change.confidence || 1) * 100)}%)</span>
-                    </div>
-                    <div class="pending-ai-details">
-                        <div>📅 <strong>対象期間:</strong> ${change.startDate || ''} ${change.endDate && change.endDate !== change.startDate ? '〜 ' + change.endDate : ''}</div>
-                        <div>⏰ <strong>営業時間:</strong> ${hoursText}</div>
-                        ${change.reason ? `<div>💬 <strong>理由・備考:</strong> ${change.reason}</div>` : ''}
-                    </div>
+            <div class="pending-post-box">
+                <div>${item.postText || '（テキストなし）'}</div>
+                ${mediaHtml}
+            </div>
+
+            <div class="pending-ai-box ${isClosure ? 'is-closure' : (isSpecial ? 'is-special' : '')}">
+                <div class="pending-ai-title ${typeClass}">
+                    <span>🤖 AI抽出結果: <strong>${typeLabel}</strong></span>
+                    <span style="font-size:0.75rem; font-weight:normal; opacity:0.8;">(信頼度: ${Math.round((change.confidence || 1) * 100)}%)</span>
                 </div>
-
-                <div class="pending-actions">
-                    <button class="btn btn-sm" onclick="app.rejectPending('${item.id}')" style="background:#2a2a2a; border-color:#444; color:#bbb;">❌ 却下</button>
-                    <button class="btn btn-sm" onclick="app.editPending('${item.id}')" style="background:#263238; border-color:#37474f; color:#80d8ff;">✏️ 編集して反映</button>
-                    <button class="btn btn-sm btn-success" onclick="app.approvePending('${item.id}')">✅ 承認して反映</button>
+                <div class="pending-ai-details">
+                    <div>📅 <strong>対象期間:</strong> ${change.startDate || ''} ${change.endDate && change.endDate !== change.startDate ? '〜 ' + change.endDate : ''}</div>
+                    <div>⏰ <strong>営業時間:</strong> ${hoursText}</div>
+                    ${change.reason ? `<div>💬 <strong>理由・備考:</strong> ${change.reason}</div>` : ''}
                 </div>
-            `;
+            </div>
 
-            this.el.pendingListContainer.appendChild(card);
-        });
+            <div class="pending-actions">
+                <button class="btn btn-sm" onclick="app.rejectPending('${item.id}')" style="background:#2a2a2a; border-color:#444; color:#bbb;">❌ 削除</button>
+                <button class="btn btn-sm" onclick="app.editPending('${item.id}')" style="background:#263238; border-color:#37474f; color:#80d8ff;">✏️ 編集して反映</button>
+                <button class="btn btn-sm btn-success" onclick="app.approvePending('${item.id}')">✅ ${isSkipped ? '強制反映' : '承認して反映'}</button>
+            </div>
+        `;
+
+        return card;
     }
 
     async approvePending(pendingId) {
@@ -2737,6 +2855,245 @@ class EditorApp {
         const a = document.createElement('a');
         a.href = url; a.download = 'shops.json'; a.click();
         URL.revokeObjectURL(url);
+    }
+
+    // ==========================================
+    // AI学習・判定ルール管理 (AI Guidelines)
+    // ==========================================
+    async loadAiGuidelines() {
+        try {
+            const res = await fetch('data/ai_guidelines.json?t=' + Date.now());
+            if (res.ok) {
+                this.aiGuidelines = await res.json();
+                localStorage.setItem('ai_guidelines', JSON.stringify(this.aiGuidelines));
+                return;
+            }
+        } catch (e) {
+            console.warn('Failed to fetch data/ai_guidelines.json directly, trying local storage...');
+        }
+
+        const local = localStorage.getItem('ai_guidelines');
+        if (local) {
+            try {
+                this.aiGuidelines = JSON.parse(local);
+                return;
+            } catch (e) {}
+        }
+
+        // デフォルト初期値
+        this.aiGuidelines = {
+            version: "1.0",
+            lastUpdated: new Date().toISOString(),
+            generalRules: [
+                {
+                    id: "rule_shifts_definition",
+                    title: "昼の部・夜の部の定義",
+                    rule: "「昼の部」「昼」は店舗の2部営業のうち前半側のシフト（1部目）、「夜の部」「夜」は後半側のシフト（2部目）を指します。"
+                },
+                {
+                    id: "rule_night_off",
+                    title: "「夜の部お休み」の解釈",
+                    rule: "「夜の部お休み」「夜はお休み」等は終日休業ではなく「昼の部は通常営業し、夜の部のみ休業」を意味します。hours には前半の通常営業シフト時間を設定してください。"
+                },
+                {
+                    id: "rule_day_only",
+                    title: "「昼のみ」「夜のみ」の解釈",
+                    rule: "「昼のみ」は前半1部のみ営業（夜休業）、「夜のみ」は後半2部目のみ営業（昼休業）を意味します。"
+                },
+                {
+                    id: "rule_realtime_closure",
+                    title: "リアルタイム営業終了アナウンスの終了時刻反映",
+                    rule: "「並びで終了」「麺切れ終了」等の当日終了アナウンスは除外せず、投稿時刻（または文中の時刻）を終了時刻として反映してください。昼営業終了時は夜営業を維持してください。"
+                }
+            ],
+            shopSpecificRules: {},
+            fewShotExamples: []
+        };
+    }
+
+    openAiGuidelinesModal() {
+        if (!this.el.aiRulesModal) return;
+        this.renderAiRulesList();
+        
+        // キーワード入力欄への反映
+        const kwInput = document.getElementById('ai-keywords-input');
+        const periodInput = document.getElementById('ai-period-keywords-input');
+        if (kwInput && this.aiGuidelines && this.aiGuidelines.scheduleKeywords) {
+            kwInput.value = (this.aiGuidelines.scheduleKeywords.keywords || []).join(', ');
+        }
+        if (periodInput && this.aiGuidelines && this.aiGuidelines.scheduleKeywords) {
+            periodInput.value = (this.aiGuidelines.scheduleKeywords.periodKeywords || []).join(', ');
+        }
+
+        if (this.el.aiRulesRawJson) {
+            this.el.aiRulesRawJson.value = JSON.stringify(this.aiGuidelines, null, 2);
+        }
+        if (this.el.aiRulesSaveStatus) {
+            this.el.aiRulesSaveStatus.textContent = '';
+        }
+        this.el.aiRulesModal.classList.add('active');
+    }
+
+    closeAiGuidelinesModal() {
+        if (!this.el.aiRulesModal) return;
+        this.el.aiRulesModal.classList.remove('active');
+    }
+
+    renderAiRulesList() {
+        if (!this.el.aiRulesList || !this.aiGuidelines) return;
+        this.el.aiRulesList.innerHTML = '';
+
+        const rules = this.aiGuidelines.generalRules || [];
+        rules.forEach((rule, idx) => {
+            const row = document.createElement('div');
+            row.style.cssText = 'background: #222; border: 1px solid #444; border-radius: 6px; padding: 8px 10px; display: flex; flex-direction: column; gap: 4px;';
+            row.innerHTML = `
+                <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px;">
+                    <input type="text" class="ai-rule-title" value="${rule.title || ''}" placeholder="ルール見出し" style="background: #111; border: 1px solid #555; color: var(--jiro-yellow); padding: 3px 6px; border-radius: 4px; font-weight: bold; font-size: 0.82rem; flex: 1;">
+                    <button type="button" class="btn btn-sm btn-danger" onclick="app.removeAiRule(${idx})" style="padding: 2px 6px; font-size: 0.75rem;">✕</button>
+                </div>
+                <textarea class="ai-rule-body" rows="2" placeholder="AIへの指示・解釈ルール" style="width: 100%; background: #181818; border: 1px solid #555; color: #fff; padding: 4px 6px; border-radius: 4px; font-size: 0.8rem; line-height: 1.3;">${rule.rule || ''}</textarea>
+            `;
+            this.el.aiRulesList.appendChild(row);
+        });
+    }
+
+    addNewAiRule() {
+        if (!this.aiGuidelines) return;
+        if (!this.aiGuidelines.generalRules) this.aiGuidelines.generalRules = [];
+        this.syncAiRulesFromUI();
+        this.aiGuidelines.generalRules.push({
+            id: 'rule_' + Date.now().toString(36),
+            title: '新規判定ルール',
+            rule: ''
+        });
+        this.renderAiRulesList();
+        if (this.el.aiRulesRawJson) {
+            this.el.aiRulesRawJson.value = JSON.stringify(this.aiGuidelines, null, 2);
+        }
+    }
+
+    removeAiRule(idx) {
+        if (!this.aiGuidelines || !this.aiGuidelines.generalRules) return;
+        this.syncAiRulesFromUI();
+        this.aiGuidelines.generalRules.splice(idx, 1);
+        this.renderAiRulesList();
+        if (this.el.aiRulesRawJson) {
+            this.el.aiRulesRawJson.value = JSON.stringify(this.aiGuidelines, null, 2);
+        }
+    }
+
+    syncAiRulesFromUI() {
+        if (!this.aiGuidelines) return;
+
+        // キーワード設定のUI同期
+        if (!this.aiGuidelines.scheduleKeywords) {
+            this.aiGuidelines.scheduleKeywords = { keywords: [], periodKeywords: [], patterns: [] };
+        }
+        const kwInput = document.getElementById('ai-keywords-input');
+        if (kwInput && kwInput.value) {
+            this.aiGuidelines.scheduleKeywords.keywords = kwInput.value.split(/[,、]/).map(s => s.trim()).filter(Boolean);
+        }
+        const periodInput = document.getElementById('ai-period-keywords-input');
+        if (periodInput && periodInput.value) {
+            this.aiGuidelines.scheduleKeywords.periodKeywords = periodInput.value.split(/[,、]/).map(s => s.trim()).filter(Boolean);
+        }
+
+        if (this.el.aiRulesList) {
+            const titles = this.el.aiRulesList.querySelectorAll('.ai-rule-title');
+            const bodies = this.el.aiRulesList.querySelectorAll('.ai-rule-body');
+            const newRules = [];
+            titles.forEach((tInput, i) => {
+                const bInput = bodies[i];
+                newRules.push({
+                    id: (this.aiGuidelines.generalRules && this.aiGuidelines.generalRules[i] && this.aiGuidelines.generalRules[i].id) || ('rule_' + Date.now().toString(36) + '_' + i),
+                    title: tInput.value.trim(),
+                    rule: bInput ? bInput.value.trim() : ''
+                });
+            });
+            this.aiGuidelines.generalRules = newRules;
+        }
+    }
+
+    async saveAiGuidelines() {
+        if (!this.aiGuidelines) return;
+
+        // RAW JSON の入力があれば優先的に構文チェック
+        if (this.el.aiRulesRawJson && this.el.aiRulesRawJson.value.trim()) {
+            try {
+                const parsed = JSON.parse(this.el.aiRulesRawJson.value.trim());
+                this.aiGuidelines = parsed;
+            } catch (e) {
+                alert('JSONの書式にエラーがあります:\n' + e.message);
+                return;
+            }
+        } else {
+            this.syncAiRulesFromUI();
+        }
+
+        this.aiGuidelines.lastUpdated = new Date().toISOString();
+        localStorage.setItem('ai_guidelines', JSON.stringify(this.aiGuidelines, null, 2));
+
+        const statusElem = this.el.aiRulesSaveStatus;
+        if (statusElem) statusElem.textContent = '保存中...';
+
+        const cfg = this.loadGithubConfig();
+        const hasGhConfig = cfg && cfg.token && cfg.owner && cfg.repo;
+
+        if (hasGhConfig) {
+            try {
+                // GitHub上の data/ai_guidelines.json の sha を取得
+                const targetPath = 'data/ai_guidelines.json';
+                const getUrl = `https://api.github.com/repos/${cfg.owner}/${cfg.repo}/contents/${targetPath}?ref=${cfg.branch}`;
+                let fileSha = null;
+
+                const getRes = await fetch(getUrl, {
+                    headers: {
+                        'Authorization': `Bearer ${cfg.token}`,
+                        'Accept': 'application/vnd.github.v3+json'
+                    }
+                });
+                if (getRes.ok) {
+                    const fileData = await getRes.json();
+                    fileSha = fileData.sha;
+                }
+
+                const jsonStr = JSON.stringify(this.aiGuidelines, null, 2);
+                const contentBase64 = btoa(unescape(encodeURIComponent(jsonStr)));
+
+                const putUrl = `https://api.github.com/repos/${cfg.owner}/${cfg.repo}/contents/${targetPath}`;
+                const putRes = await fetch(putUrl, {
+                    method: 'PUT',
+                    headers: {
+                        'Authorization': `Bearer ${cfg.token}`,
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/vnd.github.v3+json'
+                    },
+                    body: JSON.stringify({
+                        message: 'feat(ai): update AI guidelines and prompt rules from editor',
+                        content: contentBase64,
+                        branch: cfg.branch,
+                        sha: fileSha || undefined
+                    })
+                });
+
+                if (putRes.ok) {
+                    if (statusElem) statusElem.textContent = '✅ GitHubに保存・コミット完了！';
+                    alert('🧠 AI判定ルールをGitHub（data/ai_guidelines.json）に直接保存・プッシュしました！\n次回以降の自動巡回および手動解析に即時反映されます。');
+                    this.closeAiGuidelinesModal();
+                    return;
+                } else {
+                    const errData = await putRes.json();
+                    console.warn('GitHub commit failed for ai_guidelines:', errData);
+                }
+            } catch (err) {
+                console.error('GitHub save error for ai_guidelines:', err);
+            }
+        }
+
+        if (statusElem) statusElem.textContent = '✅ ブラウザに保存完了';
+        alert('🧠 AI判定ルールをブラウザに保存しました。\n（GitHub PATが設定されている場合はGitHubへも直接コミット可能です）');
+        this.closeAiGuidelinesModal();
     }
 }
 

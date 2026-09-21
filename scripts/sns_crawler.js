@@ -13,6 +13,24 @@ const { analyzePostWithGemini } = require('./analyze_posts');
 const SHOPS_JSON_PATH = path.join(__dirname, '..', 'shops.json');
 const PENDING_UPDATES_PATH = path.join(__dirname, '..', 'data', 'pending_updates.json');
 const CRAWLED_CACHE_PATH = path.join(__dirname, '..', 'data', 'crawled_cache.json');
+const AI_GUIDELINES_PATH = path.join(__dirname, '..', 'data', 'ai_guidelines.json');
+
+/**
+ * ルール管理ファイル (data/ai_guidelines.json) からキーワード設定を読み込む
+ */
+function loadScheduleKeywords() {
+    if (fs.existsSync(AI_GUIDELINES_PATH)) {
+        try {
+            const data = JSON.parse(fs.readFileSync(AI_GUIDELINES_PATH, 'utf8'));
+            if (data && data.scheduleKeywords) {
+                return data.scheduleKeywords;
+            }
+        } catch (e) {
+            console.warn('[WARN] Failed to load scheduleKeywords from ai_guidelines.json:', e.message);
+        }
+    }
+    return null;
+}
 
 /**
  * Yahoo!リアルタイム検索を利用して特定アカウントの直近投稿を取得（IP制限・429回避）
@@ -153,8 +171,9 @@ async function fetchXFromSyndication(screenName) {
 
 /**
  * 営業情報に関連する可能性が高い投稿か事前判定（API消費を7〜8割カット）
+ * ルール管理ファイル (data/ai_guidelines.json) のキーワード設定を動的に反映
  */
-function isLikelySchedulePost(post) {
+function isLikelySchedulePost(post, keywordConfig = null) {
     // 添付画像がある場合はカレンダーや貼り紙の可能性があるため常に解析
     if (Array.isArray(post.mediaUrls) && post.mediaUrls.length > 0) {
         return true;
@@ -163,15 +182,46 @@ function isLikelySchedulePost(post) {
     const text = post.text || '';
     if (!text) return false;
 
-    // 営業・休業・時間変更に関連するキーワードリスト
-    const scheduleKeywords = [
-        '休', 'やすみ', '休み', '臨休', '営業', '開店', '閉店', '時短',
-        '時間', '早仕舞い', '早じまい', '昼', '夜', '部', '祝', '特別',
-        'カレンダー', 'お知らせ', '告知', '案内', '終了', '完売', '材料切れ',
-        '売り切れ', '並び', '宣告', 'オープン', 'ラスト'
-    ];
+    const keywords = (keywordConfig && Array.isArray(keywordConfig.keywords))
+        ? keywordConfig.keywords
+        : [
+            '休', 'やすみ', '休み', '臨休', '営業', '開店', '閉店', '時短',
+            '時間', '早仕舞い', '早じまい', '昼', '夜', '部', '祝', '特別',
+            'カレンダー', 'お知らせ', '告知', '案内', '終了', '完売', '材料切れ',
+            '売り切れ', '並び', '宣告', 'オープン', 'ラスト', 'お休み', '休業'
+        ];
 
-    return scheduleKeywords.some(kw => text.includes(kw));
+    if (keywords.some(kw => text.includes(kw))) {
+        return true;
+    }
+
+    const periodKeywords = (keywordConfig && Array.isArray(keywordConfig.periodKeywords))
+        ? keywordConfig.periodKeywords
+        : ['本日', '今日', '明日', '明後日', 'あさって', '今週', '来週', '今月', '来月', '今年', '来年'];
+
+    if (periodKeywords.some(kw => text.includes(kw))) {
+        return true;
+    }
+
+    const patterns = (keywordConfig && Array.isArray(keywordConfig.patterns))
+        ? keywordConfig.patterns
+        : [
+            '\\d{1,2}[:：]\\d{2}',
+            '\\d{1,2}時',
+            '\\d{1,2}[\\/／]\\d{1,2}',
+            '\\d{1,2}月\\d{1,2}日',
+            '\\d{1,2}日',
+            '[\\(（][月火水木金土日][\\)）]',
+            '[月火水木金土日]曜'
+        ];
+
+    for (const pat of patterns) {
+        try {
+            if (new RegExp(pat).test(text)) return true;
+        } catch (e) {}
+    }
+
+    return false;
 }
 
 /**
@@ -222,6 +272,12 @@ async function runCrawler() {
         } catch (e) {}
     }
 
+    // ルール管理ファイルからキーワード設定を読み込み
+    const keywordConfig = loadScheduleKeywords();
+    if (keywordConfig) {
+        console.log(`ℹ️ AIルール管理ファイルからキーワード設定をロードしました (キーワード: ${keywordConfig.keywords.length}語)`);
+    }
+
     console.log(`対象店舗数: ${activeShops.length}店舗 (処理済み投稿数: ${processedSet.size}件)`);
 
     const apiKey = process.env.GEMINI_API_KEY;
@@ -251,9 +307,31 @@ async function runCrawler() {
         console.log(`  -> 新規投稿: ${newPosts.length}件`);
 
         for (const post of newPosts) {
-            // 事前フィルタ: 営業変更の可能性がない日常雑談ポストはGeminiを呼ばずに処理済みとしてスキップ
-            if (!isLikelySchedulePost(post)) {
-                console.log(`  ⏭️ 日常ポストと判定しGemini解析をスキップ: "${post.text.substring(0, 25).replace(/\n/g, ' ')}..."`);
+            // 事前フィルタ: 営業変更の可能性がない日常雑談ポストはスキップ済みとして記録（APIは呼ばない）
+            if (!isLikelySchedulePost(post, keywordConfig)) {
+                console.log(`  ⏭️ 日常ポストと判定しスキップとして記録: "${post.text.substring(0, 25).replace(/\n/g, ' ')}..."`);
+                
+                const skippedItem = {
+                    id: `pending_skipped_${shop.id}_${post.postId}`,
+                    shopId: shop.id,
+                    shopName: shop.name,
+                    postSource: post.source,
+                    postUrl: post.postUrl,
+                    postedAt: post.postedAt,
+                    postText: post.text,
+                    mediaUrls: post.mediaUrls || [],
+                    detectedChange: {
+                        type: 'temporary_hours',
+                        startDate: post.postedAt.split('T')[0],
+                        endDate: post.postedAt.split('T')[0],
+                        hours: [],
+                        reason: '日常ポスト（営業関連ワードなし）'
+                    },
+                    status: 'skipped',
+                    skipReason: '営業・日程関連のキーワードが含まれないためスキップ（日常ポスト・雑談等）'
+                };
+                pendingUpdates = pendingUpdates.filter(p => p.id !== skippedItem.id);
+                pendingUpdates.push(skippedItem);
                 processedSet.add(post.postId);
                 continue;
             }
@@ -269,22 +347,45 @@ async function runCrawler() {
                     shopName: shop.name,
                     postText: post.text,
                     postedAt: post.postedAt,
-                    mediaUrls: post.mediaUrls
+                    mediaUrls: post.mediaUrls,
+                    shiftsByDay: shop.shiftsByDay || {},
+                    temporary: shop.temporary || []
                 }, apiKey);
 
                 if (analysis && analysis.hasScheduleChange && Array.isArray(analysis.changes) && analysis.changes.length > 0) {
                     for (let idx = 0; idx < analysis.changes.length; idx++) {
                         const change = analysis.changes[idx];
-                        // 既に shops.json に同一日付・同一時間の temporary が登録されていないか確認
-                        const alreadyRegistered = (shop.temporary || []).some(t => {
-                            return t.startDate === change.startDate && JSON.stringify(t.hours || []) === JSON.stringify(change.hours || []);
-                        });
-
-                        if (alreadyRegistered) {
-                            console.log(`    ℹ️ 既に shops.json に登録済みのスケジュールのため除外: ${change.startDate}`);
-                            continue;
+                        
+                        // 対象日の曜日を特定 (0=日曜, 1=月曜, ...)
+                        let dayOfWeek = null;
+                        if (change.startDate) {
+                            const d = new Date(change.startDate + 'T00:00:00+09:00');
+                            if (!isNaN(d.getTime())) {
+                                dayOfWeek = d.getDay().toString();
+                            }
                         }
 
+                        // 既存の登録スケジュール（通常シフトまたは既存temporary）との完全一致判定
+                        let isExactMatch = false;
+                        let matchReason = '';
+
+                        // 1. 既存の temporary との一致チェック
+                        const matchedTemp = (shop.temporary || []).find(t => t.startDate === change.startDate);
+                        if (matchedTemp) {
+                            if (JSON.stringify(matchedTemp.hours || []) === JSON.stringify(change.hours || [])) {
+                                isExactMatch = true;
+                                matchReason = '既に登録済みの臨時スケジュールと完全に一致';
+                            }
+                        } else if (dayOfWeek !== null && shop.shiftsByDay) {
+                            // 2. 通常営業時間との一致チェック（定休日は [] と空配列の一致含む）
+                            const normalHours = shop.shiftsByDay[dayOfWeek] || [];
+                            if (JSON.stringify(normalHours) === JSON.stringify(change.hours || [])) {
+                                isExactMatch = true;
+                                matchReason = '対象曜日の通常営業時間と完全に一致（変更なし）';
+                            }
+                        }
+
+                        const status = isExactMatch ? 'skipped' : 'pending';
                         const pendingItem = {
                             id: `pending_${shop.id}_${change.startDate.replace(/-/g, '')}_${idx}_${Math.random().toString(36).slice(2, 6)}`,
                             shopId: shop.id,
@@ -295,15 +396,20 @@ async function runCrawler() {
                             postText: post.text,
                             mediaUrls: post.mediaUrls || [],
                             detectedChange: change,
-                            status: 'pending'
+                            status: status,
+                            skipReason: isExactMatch ? matchReason : null
                         };
 
-                        // 既存の未承認同日・同タイプの候補があれば上書き、別日程・別タイプなら追加
+                        // 既存の同一日・同一タイプの候補があれば上書き、別日程・別タイプなら追加
                         pendingUpdates = pendingUpdates.filter(p => !(p.shopId === shop.id && p.detectedChange.startDate === change.startDate && p.detectedChange.type === change.type));
                         pendingUpdates.push(pendingItem);
-                        newlyDetectedCount++;
 
-                        console.log(`    ✨ 営業変更を検出！ (${idx + 1}/${analysis.changes.length}) [${change.type}] ${change.startDate}: ${change.reason || analysis.summary}`);
+                        if (isExactMatch) {
+                            console.log(`    ℹ️ 既存スケジュールと完全一致のためスキップとして記録: ${change.startDate} (${matchReason})`);
+                        } else {
+                            newlyDetectedCount++;
+                            console.log(`    ✨ 営業変更を検出！ (${idx + 1}/${analysis.changes.length}) [${change.type}] ${change.startDate}: ${change.reason || analysis.summary}`);
+                        }
                     }
                 }
 

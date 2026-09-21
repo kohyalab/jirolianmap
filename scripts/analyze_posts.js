@@ -127,38 +127,69 @@ async function analyzePostWithGemini(postData, apiKey = process.env.GEMINI_API_K
     const todayStr = postedDateObj.toISOString().split('T')[0];
     const dayOfWeekStr = ['日', '月', '火', '水', '木', '金', '土'][postedDateObj.getDay()];
 
+    // 管理者学習ルール・ガイドラインの読み込み
+    let guidelinesText = '';
+    const guidelinesPath = path.join(__dirname, '..', 'data', 'ai_guidelines.json');
+    if (fs.existsSync(guidelinesPath)) {
+        try {
+            const guidelinesData = JSON.parse(fs.readFileSync(guidelinesPath, 'utf8'));
+            const rules = (guidelinesData.generalRules || []).map(r => `・【${r.title}】: ${r.rule}`).join('\n');
+            const shopRules = (guidelinesData.shopSpecificRules && guidelinesData.shopSpecificRules[postData.shopId]) ? `・【店舗固有ルール】: ${guidelinesData.shopSpecificRules[postData.shopId]}` : '';
+            guidelinesText = `\n【管理者学習ルール・判定ガイドライン】\n${rules}\n${shopRules}\n`;
+        } catch (e) {
+            console.warn('[WARN] Failed to load ai_guidelines.json:', e.message);
+        }
+    }
+
+    // 店舗の通常営業時間および登録済み臨時スケジュールのテキスト化
+    const shiftsByDay = postData.shiftsByDay || {};
+    const dayNames = ['日曜', '月曜', '火曜', '水曜', '木曜', '金曜', '土曜'];
+    const normalShiftsText = dayNames.map((dName, idx) => {
+        const shifts = shiftsByDay[idx] || [];
+        if (shifts.length === 0) return `${dName}: 定休日`;
+        const shiftStrs = shifts.map(s => `${s[0]}:00〜${s[1]}:00`.replace(/\.5:00/g, ':30'));
+        return `${dName}: ${shiftStrs.join(', ')}`;
+    }).join(' / ');
+
+    const registeredTemps = (postData.temporary || []).slice(-5).map(t => {
+        const hStr = (t.hours && t.hours.length > 0) ? JSON.stringify(t.hours) : '終日休業';
+        return `${t.startDate}${t.endDate && t.endDate !== t.startDate ? '〜' + t.endDate : ''}: ${hStr}`;
+    }).join('; ');
+
     const systemPrompt = `
 あなたは全国の「ラーメン二郎」直系店舗の営業情報を専門に監視・判定するエキスパートAIです。
 店舗の公式SNS（X / Instagram）の投稿テキスト、および添付された画像（店頭の手書き貼り紙、ホワイトボード、カレンダー等）を解析し、
 「臨時休業」「営業時間変更」「臨時営業」の有無と、具体的な日程・時間を正確に抽出してください。
 
-【基準日情報】
+【基準日・店舗情報】
 ・投稿日時: ${postData.postedAt || '不明'}
 ・投稿日（今日）: ${todayStr} (${dayOfWeekStr}曜日)
 ・対象店舗: ${postData.shopName} (ID: ${postData.shopId})
-
-【二郎特有の表現とルール】
-1. 日付表現の解釈:
+・店舗の通常営業時間 (shiftsByDay): ${normalShiftsText}
+・現在登録済みの臨時スケジュール (temporary): ${registeredTemps || 'なし'}
+${guidelinesText}
+【二郎特有の表現と重要判定ルール】
+1. 日付・期間表現の解釈:
    - 「本日」「今日」＝ ${todayStr}
-   - 「明日」＝ 翌日
+   - 「明日」＝ 翌日、「明後日」＝ 翌々日
    - 「○日(○)」＝ 今月または翌月の該当月日を西暦YYYY-MM-DD形式に変換。
-   - 「カレンダー」の画像がある場合、〇印（営業）、✕印や斜線（休業）、手書きの注釈を読み取ること。
-2. 営業状態の分類:
-   - "temporary_closure" (臨時休業): 終日休業、または昼・夜の部どちらかの休業。
-     - 例: 「本日夜の部お休み」「助手不在のため休業」「材料切れ終了」
-   - "special_open" (臨時営業): 通常定休日の曜日に特別に営業する、または祝日営業。
-     - 例: 「祝日ですが昼のみやります」「臨時営業します」
-   - "temporary_hours" (営業時間変更): 通常と異なる開店・閉店時間。
-     - 例: 「本日18時〜20時営業」「14時閉店」
-3. 通常営業や関係のない雑談の場合:
-   - hasScheduleChange を false にし、changes を空配列にする。
-   - 「本日も通常通り営業します」「おはようございます」「限定トッピングあります」等は通常営業のため false。
-4. 時間の表現:
-   - 小数点表記（例: 11:30＝11.5, 14:00＝14, 17:30＝17.5, 21:00＝21）で [[start, end]] 形式の配列にする。
+   - 「カレンダー」の画像がある場合、〇印（営業）、✕印や斜線（休業）、手書きの注釈を正確に読み取ること。
+2. 昼の部・夜の部、および片側休業の厳格な解釈:
+   - 「昼の部」「昼」＝ 店舗の通常営業のうち前半側（1部目）。
+   - 「夜の部」「夜」＝ 店舗の通常営業のうち後半側（2部目）。
+   - 「夜の部お休み」「夜はお休み」等＝【終日休業と誤判定しないこと！】。昼の部は通常営業で夜の部のみ休業を意味するため、hours には前半の通常営業時間（例: [[11, 14.5]]）を設定し、type は "temporary_hours" としてください。
+   - 「昼のみ」「昼営業のみ」＝ 前半の通常営業時間のみ営業（夜休業）。
+   - 「夜のみ」「夜営業のみ」＝ 後半の通常営業時間のみ営業（昼休業）。
+3. リアルタイム営業終了アナウンス（早仕舞い）の終了時刻反映:
+   - 「只今並びの方で終了」「宣告」「麺切れ終了」「本日分終了」等の当日終了告知は、除外せず【投稿時刻（または文中に記載された時刻）を該当営業の終了時刻として hours に反映】してください。
+   - 【最重要】2部営業のうち1部目（昼営業）の終了投稿は『昼営業のみの終了時刻変更』です。夜営業は予定通り実施されるのが基本のため、夜営業まで終了と誤判定せず、夜営業の時間は維持してください（例: 昼が通常11-14.5、夜が通常17.5-21で、13:45に昼終了なら hours: [[11, 13.75], [17.5, 21]]）。
+4. 通常営業や雑談の場合:
+   - 「本日も通常通り営業します」「おはようございます」「限定トッピングあります」等は通常通りのため hasScheduleChange: false としてください。
+5. 時間の数値化:
+   - 小数点表記（例: 11:30＝11.5, 13:45＝13.75, 14:00＝14, 17:30＝17.5, 21:00＝21）で [[start, end], [start, end]] 形式の配列にする。
    - 終日休業の場合は hours を空配列 [] にする。
-5. 複数日程・複数変更の網羅抽出:
-   - 1つのツイート（または添付画像・カレンダー）に複数の日付の営業・休業変更（例: 「明日21日昼営業のみ、22日臨休、23日通常営業」等）が含まれる場合は、変更がある日付ごとに【別々の要素として changes 配列にすべて漏れなく網羅】して出力してください。
-   - 店頭カレンダーや貼り紙の画像がある場合、印のついている休業日や特別営業日をすべて抽出し、changes 配列にそれぞれ独立したオブジェクトとして追加してください。
+6. 複数日程・複数変更の網羅抽出:
+   - 1つの投稿に複数の日付の変更が含まれる場合は、変更がある日付ごとに【別々の要素として changes 配列にすべて漏れなく網羅】してください。
 
 【出力フォーマット (JSON)】
 必ず以下のJSONスキーマに従って出力してください（Markdownのコードブロックではなく純粋なJSON文字列で返すこと）:
@@ -171,7 +202,7 @@ async function analyzePostWithGemini(postData, apiKey = process.env.GEMINI_API_K
       "startDate": "YYYY-MM-DD",
       "endDate": "YYYY-MM-DD",
       "hours": [[number, number]], // 例: [[11, 14.5]]。終日休業は []
-      "reason": string, // 理由・備考（例: "祝日昼営業", "臨時休業", "材料切れ"）
+      "reason": string, // 理由・備考（例: "夜の部臨休（昼のみ営業）", "昼の部並び終了", "祝日営業"）
       "confidence": number // 0.0〜1.0 の確信度
     }
   ]

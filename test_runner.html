@@ -358,6 +358,74 @@
                 edWin.app.clearManualAiForm();
                 assert('手動AI解析: clearManualAiForm による入力と画像のクリア', () => manualText.value === '' && edWin.app.manualAiImages.length === 0 && edDoc.querySelectorAll('#manual-ai-previews img').length === 0);
 
+                // --- 9. 拡充キーワード判定テスト ---
+                const testKeywordText = (txt) => {
+                    const kwMatch = /休|やすみ|休み|臨休|営業|開店|閉店|時短|時間|早仕舞い|早じまい|昼|夜|部|祝|特別|カレンダー|お知らせ|告知|案内|終了|完売|材料切れ|売り切れ|並び|宣告|オープン|ラスト|お休み|休業/.test(txt);
+                    const periodMatch = /本日|今日|明日|明後日|あさって|今週|来週|今月|来月|今年|来年/.test(txt);
+                    const timeMatch = /\d{1,2}[:：]\d{2}|\d{1,2}時/.test(txt);
+                    const dateMatch = /\d{1,2}[\/／]\d{1,2}|\d{1,2}月\d{1,2}日|\d{1,2}日/.test(txt);
+                    const dayMatch = /[\(（][月火水木金土日][\)）]|[月火水木金土日]曜/.test(txt);
+                    return kwMatch || periodMatch || timeMatch || dateMatch || dayMatch;
+                };
+
+                assert('キーワード拡充: 時間表記の検知 (11:00)', () => testKeywordText('ラーメンは11:00からです'));
+                assert('キーワード拡充: 期間表記の検知 (来週/来月)', () => testKeywordText('来週の予定です') && testKeywordText('来月のシフト'));
+                assert('キーワード拡充: 日付表記の検知 (9/22)', () => testKeywordText('9/22にお待ちしております'));
+                assert('キーワード拡充: 曜日表記の検知 ((月) / 火曜)', () => testKeywordText('(月)は通常通り') && testKeywordText('火曜日に提供'));
+                assert('キーワード拡充: 日常ポストの除外判定', () => !testKeywordText('ちいかわ可愛い'));
+
+                // --- 10. スキップ済みリスト表示＆AI判定ルール管理のテスト ---
+                edWin.app.pendingUpdates = [
+                    {
+                        id: 'pending_active_1',
+                        shopId: 'mita',
+                        shopName: '三田本店',
+                        postSource: 'x',
+                        postedAt: '2026-09-21T10:00:00Z',
+                        postText: '夜の部お休みです',
+                        detectedChange: { type: 'temporary_hours', startDate: '2026-09-21', hours: [[8, 14]], reason: '夜の部休業' },
+                        status: 'pending'
+                    },
+                    {
+                        id: 'skipped_item_1',
+                        shopId: 'kameido',
+                        shopName: '亀戸店',
+                        postSource: 'x',
+                        postedAt: '2026-09-21T09:00:00Z',
+                        postText: '本日も通常営業です',
+                        detectedChange: { type: 'temporary_hours', startDate: '2026-09-21', hours: [[11, 14.5], [17.5, 21.5]], reason: '通常営業' },
+                        status: 'skipped',
+                        skipReason: '対象曜日の通常営業時間と完全に一致（変更なし）'
+                    }
+                ];
+                edWin.app.renderPendingList();
+
+                const activePendingCards = edDoc.querySelectorAll('#pending-list-container .pending-card');
+                const skippedCards = edDoc.querySelectorAll('#skipped-list-container .pending-card');
+                assert('承認待ち・スキップ分離: 承認待ちコンテナに1件描画', () => activePendingCards.length === 1);
+                assert('承認待ち・スキップ分離: スキップ済みコンテナに1件描画', () => skippedCards.length === 1);
+                assert('承認待ち・スキップ分離: スキップ理由が表示されている', () => skippedCards[0].textContent.includes('スキップ理由: 対象曜日の通常営業時間と完全に一致'));
+
+                // AI判定ルールモーダル操作
+                edWin.app.openAiGuidelinesModal();
+                assert('AIルール管理: モーダルが開く (activeクラス付与)', () => edDoc.getElementById('ai-rules-modal').classList.contains('active'));
+                
+                const kwInputElem = edDoc.getElementById('ai-keywords-input');
+                assert('AIルール管理: キーワード設定入力欄が存在し初期値が展開されている', () => kwInputElem && kwInputElem.value.includes('休') && kwInputElem.value.includes('営業'));
+
+                // キーワード編集と同期
+                kwInputElem.value += ', テスト新単語';
+                edWin.app.syncAiRulesFromUI();
+                assert('AIルール管理: キーワードUI編集が aiGuidelines に同期される', () => (edWin.app.aiGuidelines.scheduleKeywords.keywords || []).includes('テスト新単語'));
+
+                const ruleRowsBefore = edDoc.querySelectorAll('#ai-rules-list .ai-rule-title').length;
+                edWin.app.addNewAiRule();
+                const ruleRowsAfter = edDoc.querySelectorAll('#ai-rules-list .ai-rule-title').length;
+                assert('AIルール管理: 新規ルール行の追加', () => ruleRowsAfter === ruleRowsBefore + 1);
+
+                edWin.app.closeAiGuidelinesModal();
+                assert('AIルール管理: モーダルが閉じる', () => !edDoc.getElementById('ai-rules-modal').classList.contains('active'));
+
             } catch (err) {
                 assert('エディタ: 統合テスト例外', false, err.message);
             }
