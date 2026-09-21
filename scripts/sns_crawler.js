@@ -283,8 +283,8 @@ async function runCrawler() {
                 console.error(`  ❌ Gemini解析エラー (Shop: ${shop.id}):`, err.message);
             }
 
-            // APIレートリミット対策（少しウェイト）
-            await new Promise(r => setTimeout(r, 1000));
+            // APIレートリミット・負荷対策（1.5秒ウェイト）
+            await new Promise(r => setTimeout(r, 1500));
         }
 
         // 相手サーバーへの負荷軽減・Polite Crawling（店舗間に2.5秒ウェイト）

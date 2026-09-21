@@ -193,43 +193,67 @@ async function analyzePostWithGemini(postData, apiKey = process.env.GEMINI_API_K
         }
     }
 
-    const modelName = await resolveGeminiModel(apiKey);
-    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${modelName}:generateContent?key=${apiKey}`;
+    const primaryModel = await resolveGeminiModel(apiKey);
+    const candidateModels = Array.from(new Set([
+        primaryModel,
+        'gemini-3.6-flash',
+        'gemini-2.5-flash',
+        'gemini-2.5-pro',
+        'gemini-3-flash'
+    ]));
 
-    let response = await fetch(apiUrl, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-            contents: [{ parts: parts }],
-            generationConfig: {
-                responseMimeType: 'application/json',
-                temperature: 0.1
-            }
-        })
-    });
+    let response = null;
+    let successfulModel = null;
+    let lastErrorText = '';
 
-    // もし404エラーの場合はモデルキャッシュをクリアして gemini-3.6-flash 等で1回リトライ
-    if (!response.ok && response.status === 404) {
-        console.warn(`[WARN] Model ${modelName} returned 404. Falling back to alternative model...`);
-        cachedModelName = null;
-        const fallbackModel = 'gemini-3.6-flash';
-        const fallbackUrl = `https://generativelanguage.googleapis.com/v1beta/models/${fallbackModel}:generateContent?key=${apiKey}`;
-        response = await fetch(fallbackUrl, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-                contents: [{ parts: parts }],
-                generationConfig: {
-                    responseMimeType: 'application/json',
-                    temperature: 0.1
+    for (const model of candidateModels) {
+        const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
+
+        // 503 (High demand) や 429 の一時的スパイクに対応するため、モデルごとに最大2回試行
+        for (let attempt = 1; attempt <= 2; attempt++) {
+            try {
+                response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        contents: [{ parts: parts }],
+                        generationConfig: {
+                            responseMimeType: 'application/json',
+                            temperature: 0.1
+                        }
+                    })
+                });
+
+                if (response.ok) {
+                    successfulModel = model;
+                    break;
                 }
-            })
-        });
+
+                if (response.status === 503 || response.status === 429) {
+                    // 一時的な混雑スパイク: 2.5秒待って再試行
+                    console.warn(`[WARN] Model ${model} is experiencing high demand (${response.status}). Waiting 2.5s before retry (attempt ${attempt}/2)...`);
+                    await new Promise(r => setTimeout(r, 2500));
+                    continue;
+                }
+
+                // 404など他のエラーの場合はリトライせず次のモデル候補へ
+                lastErrorText = await response.text();
+                console.warn(`[WARN] Model ${model} returned ${response.status}. Trying next candidate model...`);
+                break;
+            } catch (err) {
+                lastErrorText = err.message;
+                await new Promise(r => setTimeout(r, 1500));
+            }
+        }
+
+        if (response && response.ok) {
+            cachedModelName = successfulModel;
+            break;
+        }
     }
 
-    if (!response.ok) {
-        const errText = await response.text();
-        throw new Error(`Gemini API Error (${response.status}): ${errText}`);
+    if (!response || !response.ok) {
+        throw new Error(`Gemini API Error: All model candidates failed. Last error: ${lastErrorText}`);
     }
 
     const data = await response.json();
