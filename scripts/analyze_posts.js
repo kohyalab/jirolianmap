@@ -36,20 +36,18 @@ async function resolveGeminiModel(apiKey) {
 
             console.log(`ℹ️ 利用可能なGeminiモデル候補: ${contentModels.slice(0, 5).join(', ')}...`);
 
-            // 優先度順に最適なFlashモデルを検索
+            // 優先度順に回数が稼げる軽量（Lite）モデルを最優先で検索
             const priorityList = [
+                /^gemini-2\.5-flash-lite/,
+                /^gemini-3\.1-flash-lite/,
+                /^gemini-3\.5-flash-lite/,
+                /^gemini-2-flash-lite/,
+                /^gemini-2\.5-flash/,
+                /^gemini-3\.5-flash/,
                 /^gemini-3\.6-flash/,
                 /^gemini-3-flash/,
-                /^gemini-3\./,
-                /^gemini-2\.5-flash/,
-                /^gemini-2\.0-flash/,
-                /^gemini-1\.5-flash-latest/,
-                /^gemini-1\.5-flash-8b/,
-                /^gemini-1\.5-flash/,
-                /^gemini-3\.6-pro/,
                 /^gemini-2\.5-pro/,
-                /^gemini-2\.0-pro/,
-                /^gemini-1\.5-pro/
+                /^gemini-3\.6-pro/
             ];
 
             for (const regex of priorityList) {
@@ -70,8 +68,8 @@ async function resolveGeminiModel(apiKey) {
         console.warn('[WARN] Failed to list available Gemini models:', e.message);
     }
 
-    // フォールバック（公式推奨の最新モデル）
-    cachedModelName = 'gemini-3.6-flash';
+    // フォールバック（高レート枠のFlash Liteモデル）
+    cachedModelName = 'gemini-2.5-flash-lite';
     return cachedModelName;
 }
 
@@ -196,10 +194,11 @@ async function analyzePostWithGemini(postData, apiKey = process.env.GEMINI_API_K
     const primaryModel = await resolveGeminiModel(apiKey);
     const candidateModels = Array.from(new Set([
         primaryModel,
-        'gemini-3.6-flash',
+        'gemini-2.5-flash-lite',
+        'gemini-3.1-flash-lite',
+        'gemini-3.5-flash-lite',
         'gemini-2.5-flash',
-        'gemini-2.5-pro',
-        'gemini-3-flash'
+        'gemini-3.6-flash'
     ]));
 
     let response = null;

@@ -152,6 +152,29 @@ async function fetchXFromSyndication(screenName) {
 }
 
 /**
+ * 営業情報に関連する可能性が高い投稿か事前判定（API消費を7〜8割カット）
+ */
+function isLikelySchedulePost(post) {
+    // 添付画像がある場合はカレンダーや貼り紙の可能性があるため常に解析
+    if (Array.isArray(post.mediaUrls) && post.mediaUrls.length > 0) {
+        return true;
+    }
+
+    const text = post.text || '';
+    if (!text) return false;
+
+    // 営業・休業・時間変更に関連するキーワードリスト
+    const scheduleKeywords = [
+        '休', 'やすみ', '休み', '臨休', '営業', '開店', '閉店', '時短',
+        '時間', '早仕舞い', '早じまい', '昼', '夜', '部', '祝', '特別',
+        'カレンダー', 'お知らせ', '告知', '案内', '終了', '完売', '材料切れ',
+        '売り切れ', '並び', '宣告', 'オープン', 'ラスト'
+    ];
+
+    return scheduleKeywords.some(kw => text.includes(kw));
+}
+
+/**
  * Xの直近投稿を取得（Yahoo!リアルタイム検索優先、失敗時にSyndication APIへフォールバック）
  */
 async function fetchXRecentPosts(screenName) {
@@ -228,6 +251,13 @@ async function runCrawler() {
         console.log(`  -> 新規投稿: ${newPosts.length}件`);
 
         for (const post of newPosts) {
+            // 事前フィルタ: 営業変更の可能性がない日常雑談ポストはGeminiを呼ばずに処理済みとしてスキップ
+            if (!isLikelySchedulePost(post)) {
+                console.log(`  ⏭️ 日常ポストと判定しGemini解析をスキップ: "${post.text.substring(0, 25).replace(/\n/g, ' ')}..."`);
+                processedSet.add(post.postId);
+                continue;
+            }
+
             if (!apiKey) {
                 continue;
             }
@@ -283,8 +313,8 @@ async function runCrawler() {
                 console.error(`  ❌ Gemini解析エラー (Shop: ${shop.id}):`, err.message);
             }
 
-            // APIレートリミット・負荷対策（1.5秒ウェイト）
-            await new Promise(r => setTimeout(r, 1500));
+            // APIレートリミット・負荷対策（3秒ウェイトでRPM 5の制限を確実に回避）
+            await new Promise(r => setTimeout(r, 3000));
         }
 
         // 相手サーバーへの負荷軽減・Polite Crawling（店舗間に2.5秒ウェイト）
