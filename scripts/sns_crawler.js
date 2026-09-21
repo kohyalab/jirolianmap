@@ -15,9 +15,81 @@ const PENDING_UPDATES_PATH = path.join(__dirname, '..', 'data', 'pending_updates
 const CRAWLED_CACHE_PATH = path.join(__dirname, '..', 'data', 'crawled_cache.json');
 
 /**
- * X Syndication API を利用して特定アカウントの直近投稿を取得（APIキー不要・無料）
+ * Yahoo!リアルタイム検索を利用して特定アカウントの直近投稿を取得（IP制限・429回避）
  */
-async function fetchXRecentPosts(screenName) {
+async function fetchXFromYahooRealtime(screenName) {
+    if (!screenName) return [];
+    const cleanHandle = screenName.replace(/^@/, '').trim();
+    const url = `https://search.yahoo.co.jp/realtime/search?p=id%3A${cleanHandle}`;
+
+    try {
+        const res = await fetch(url, {
+            headers: {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
+                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+                'Accept-Language': 'ja,en-US;q=0.9,en;q=0.8'
+            }
+        });
+
+        if (!res.ok) {
+            console.warn(`[WARN] Yahoo Realtime search failed for @${cleanHandle}: ${res.status}`);
+            return null;
+        }
+
+        const html = await res.text();
+        const match = html.match(/<script id="__NEXT_DATA__" type="application\/json">([^<]+)<\/script>/);
+        if (!match) return null;
+
+        const nextData = JSON.parse(match[1]);
+        const entries = nextData?.props?.pageProps?.pageData?.timeline?.entry || [];
+
+        const posts = [];
+        for (const entry of entries) {
+            const tweetId = entry.id;
+            if (!tweetId) continue;
+
+            const text = entry.displayText || entry.displayTextBody || '';
+            let createdAt = new Date().toISOString();
+            if (entry.createdAt) {
+                const ts = Number(entry.createdAt);
+                if (!isNaN(ts)) {
+                    // Unix秒なら1000倍、ミリ秒ならそのまま
+                    createdAt = new Date(ts < 10000000000 ? ts * 1000 : ts).toISOString();
+                }
+            }
+
+            // メディアURL（画像）の抽出
+            const mediaUrls = [];
+            if (Array.isArray(entry.media)) {
+                entry.media.forEach(m => {
+                    const imgUrl = m?.item?.mediaUrl || m?.metaImageUrl || m?.item?.thumbnailImageUrl;
+                    if (imgUrl) mediaUrls.push(imgUrl);
+                });
+            } else if (entry.media?.item?.mediaUrl) {
+                mediaUrls.push(entry.media.item.mediaUrl);
+            }
+
+            posts.push({
+                source: 'x',
+                postId: tweetId,
+                postUrl: `https://x.com/${cleanHandle}/status/${tweetId}`,
+                text: text,
+                postedAt: createdAt,
+                mediaUrls: mediaUrls
+            });
+        }
+
+        return posts;
+    } catch (err) {
+        console.warn(`[WARN] Error crawling Yahoo Realtime for @${cleanHandle}:`, err.message);
+        return null;
+    }
+}
+
+/**
+ * X Syndication API を利用して特定アカウントの直近投稿を取得（フォールバック用）
+ */
+async function fetchXFromSyndication(screenName) {
     if (!screenName) return [];
     const cleanHandle = screenName.replace(/^@/, '').trim();
     const url = `https://syndication.twitter.com/srv/timeline-profile/screen-name/${cleanHandle}?limit=10`;
@@ -36,7 +108,6 @@ async function fetchXRecentPosts(screenName) {
         }
 
         const html = await res.text();
-        // HTML中の __NEXT_DATA__ JSONスクリプトタグからデータを抽出
         const match = html.match(/<script id="__NEXT_DATA__" type="application\/json">([^<]+)<\/script>/);
         if (!match) return [];
 
@@ -52,7 +123,6 @@ async function fetchXRecentPosts(screenName) {
             const text = tweet.text || '';
             const createdAt = tweet.created_at ? new Date(tweet.created_at).toISOString() : new Date().toISOString();
             
-            // 添付画像URLの抽出
             const mediaUrls = [];
             if (tweet.photos && Array.isArray(tweet.photos)) {
                 tweet.photos.forEach(p => {
@@ -79,6 +149,20 @@ async function fetchXRecentPosts(screenName) {
         console.warn(`[WARN] Error crawling @${cleanHandle}:`, err.message);
         return [];
     }
+}
+
+/**
+ * Xの直近投稿を取得（Yahoo!リアルタイム検索優先、失敗時にSyndication APIへフォールバック）
+ */
+async function fetchXRecentPosts(screenName) {
+    // 1. Yahoo!リアルタイム検索（データセンターIP遮断・429回避）
+    const yahooPosts = await fetchXFromYahooRealtime(screenName);
+    if (yahooPosts !== null) {
+        return yahooPosts;
+    }
+
+    // 2. フォールバック
+    return await fetchXFromSyndication(screenName);
 }
 
 /**
@@ -199,6 +283,9 @@ async function runCrawler() {
             // APIレートリミット対策（少しウェイト）
             await new Promise(r => setTimeout(r, 1000));
         }
+
+        // 相手サーバーへの負荷軽減・Polite Crawling（店舗間に2.5秒ウェイト）
+        await new Promise(r => setTimeout(r, 2500));
     }
 
     // キャッシュ保存（最大1,000件保持）
