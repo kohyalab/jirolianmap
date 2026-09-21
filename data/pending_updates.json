@@ -481,5 +481,184 @@
       "confidence": 1
     },
     "status": "pending"
+  },
+  {
+    "id": "pending_sagamiohno_20260922_0_vszp",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2102154954123477183",
+    "postedAt": "2026-09-21T21:56:11.000Z",
+    "postText": "本日 ◇9/22（火） 【10:00〜15:00🈺】  →こちらをご覧のお客様限定→ご申告制🈸［テイクアウト割🈹］やっております！食券にて。 着席時に『テイクアウト割りお願いします。』と従業員にお申し付けください。各サービス🈂️致します！ ※店内お食事の方のみです。 ※本日は限定各5セット https://t.co/5KFZrUcg6Z https://t.co/DG3U63u0uW",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-_Na-zZ58cUGV65vIwqpNdrJf5ZENMAaIXWYax0U64sAiF_I7FMTTRFfUBUoDwJFJsMxAzhGKluzeiR86YOzZ7niDNYNyOCdL3ssVXPoGVPvVMAe2gZUHnfk3rI9x-vQDmWdxDbiBnWhGUn4HPWwgdQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-22",
+      "endDate": "2026-09-22",
+      "hours": [
+        [
+          10,
+          15
+        ]
+      ],
+      "reason": "9/22(火)の営業時間変更",
+      "confidence": 1
+    },
+    "status": "skipped",
+    "skipReason": "既に登録済みの臨時スケジュールと完全に一致"
+  },
+  {
+    "id": "pending_fujisawa_20260921_0_jehp",
+    "shopId": "fujisawa",
+    "shopName": "湘南藤沢店",
+    "postSource": "x",
+    "postUrl": "https://x.com/fujirow26/status/2101557855489065385",
+    "postedAt": "2026-09-20T06:23:32.000Z",
+    "postText": "天気悪い中ありがとうございます。  明日9月21日(月)  昼の部通常営業  夜の部 台風接近に伴いお休みします。  よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-21",
+      "endDate": "2026-09-21",
+      "hours": [
+        [
+          11,
+          14.5
+        ]
+      ],
+      "reason": "台風接近に伴い夜の部休業",
+      "confidence": 1
+    },
+    "status": "skipped",
+    "skipReason": "既に登録済みの臨時スケジュールと完全に一致"
+  },
+  {
+    "id": "pending_skipped_nishidai_2102156245755179506",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2102156245755179506",
+    "postedAt": "2026-09-21T22:01:19.000Z",
+    "postText": "@jirorian360 @0ari_9 対応、ありがとうございます。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-21",
+      "endDate": "2026-09-21",
+      "hours": [],
+      "reason": "他アカウントへのメンション"
+    },
+    "status": "skipped",
+    "skipReason": "他アカウントへのメンションのため解析対象外"
+  },
+  {
+    "id": "pending_koshigaya_20260921_0_hmvd",
+    "shopId": "koshigaya",
+    "shopName": "越谷店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ksgy26/status/2101775598293258401",
+    "postedAt": "2026-09-20T20:48:46.000Z",
+    "postText": "おはようございます！ ラーメン二郎越谷店です！  9月21日(月祝) 昼のみ10:00〜14:00LО ご来店お待ちしております🙇  22日(火祝)、23日(水祝) 昼のみ10:00〜14:00LО  9月26日(土)　臨時営業 10:00〜14:00LО よろしくお願いします🙇 https://t.co/jg2nWrLlaA",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-5XkTiqPClz5ikNOPlwjnqRCJNTsx2uqdOSJ7hxc2CwLiye5IVosAYYpKTK4PUz_Ao0oHl_lKblv9HEcq2ooFqIQqBfjulCakOXlHeihb4N1EP9R6p0CziDBSrSKAmwv6ibi7_PrEuePoCZiJnE1rhQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-21",
+      "endDate": "2026-09-21",
+      "hours": [
+        [
+          10,
+          14
+        ]
+      ],
+      "reason": "昼のみ営業",
+      "confidence": 1
+    },
+    "status": "skipped",
+    "skipReason": "既に登録済みの臨時スケジュールと完全に一致"
+  },
+  {
+    "id": "pending_koshigaya_20260922_1_v592",
+    "shopId": "koshigaya",
+    "shopName": "越谷店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ksgy26/status/2101775598293258401",
+    "postedAt": "2026-09-20T20:48:46.000Z",
+    "postText": "おはようございます！ ラーメン二郎越谷店です！  9月21日(月祝) 昼のみ10:00〜14:00LО ご来店お待ちしております🙇  22日(火祝)、23日(水祝) 昼のみ10:00〜14:00LО  9月26日(土)　臨時営業 10:00〜14:00LО よろしくお願いします🙇 https://t.co/jg2nWrLlaA",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-5XkTiqPClz5ikNOPlwjnqRCJNTsx2uqdOSJ7hxc2CwLiye5IVosAYYpKTK4PUz_Ao0oHl_lKblv9HEcq2ooFqIQqBfjulCakOXlHeihb4N1EP9R6p0CziDBSrSKAmwv6ibi7_PrEuePoCZiJnE1rhQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-22",
+      "endDate": "2026-09-22",
+      "hours": [
+        [
+          10,
+          14
+        ]
+      ],
+      "reason": "昼のみ営業",
+      "confidence": 1
+    },
+    "status": "pending",
+    "skipReason": null
+  },
+  {
+    "id": "pending_koshigaya_20260923_2_lzqs",
+    "shopId": "koshigaya",
+    "shopName": "越谷店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ksgy26/status/2101775598293258401",
+    "postedAt": "2026-09-20T20:48:46.000Z",
+    "postText": "おはようございます！ ラーメン二郎越谷店です！  9月21日(月祝) 昼のみ10:00〜14:00LО ご来店お待ちしております🙇  22日(火祝)、23日(水祝) 昼のみ10:00〜14:00LО  9月26日(土)　臨時営業 10:00〜14:00LО よろしくお願いします🙇 https://t.co/jg2nWrLlaA",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-5XkTiqPClz5ikNOPlwjnqRCJNTsx2uqdOSJ7hxc2CwLiye5IVosAYYpKTK4PUz_Ao0oHl_lKblv9HEcq2ooFqIQqBfjulCakOXlHeihb4N1EP9R6p0CziDBSrSKAmwv6ibi7_PrEuePoCZiJnE1rhQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-23",
+      "endDate": "2026-09-23",
+      "hours": [
+        [
+          10,
+          14
+        ]
+      ],
+      "reason": "昼のみ営業",
+      "confidence": 1
+    },
+    "status": "pending",
+    "skipReason": null
+  },
+  {
+    "id": "pending_koshigaya_20260926_3_shvc",
+    "shopId": "koshigaya",
+    "shopName": "越谷店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ksgy26/status/2101775598293258401",
+    "postedAt": "2026-09-20T20:48:46.000Z",
+    "postText": "おはようございます！ ラーメン二郎越谷店です！  9月21日(月祝) 昼のみ10:00〜14:00LО ご来店お待ちしております🙇  22日(火祝)、23日(水祝) 昼のみ10:00〜14:00LО  9月26日(土)　臨時営業 10:00〜14:00LО よろしくお願いします🙇 https://t.co/jg2nWrLlaA",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-5XkTiqPClz5ikNOPlwjnqRCJNTsx2uqdOSJ7hxc2CwLiye5IVosAYYpKTK4PUz_Ao0oHl_lKblv9HEcq2ooFqIQqBfjulCakOXlHeihb4N1EP9R6p0CziDBSrSKAmwv6ibi7_PrEuePoCZiJnE1rhQ=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-09-26",
+      "endDate": "2026-09-26",
+      "hours": [
+        [
+          10,
+          14
+        ]
+      ],
+      "reason": "臨時営業",
+      "confidence": 1
+    },
+    "status": "skipped",
+    "skipReason": "既に登録済みの臨時スケジュールと完全に一致"
   }
 ]
