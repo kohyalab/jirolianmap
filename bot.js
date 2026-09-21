@@ -64,6 +64,12 @@ async function run() {
         }
 
         // 2. 表示モード & ソート設定
+        if (typeof setMainViewMode === 'function') {
+            setMainViewMode(listMode === 'today' ? 'today' : 'realtime');
+        }
+        if (listMode === 'today' && typeof setPeriodMode === 'function') {
+            setPeriodMode('1'); // 日別
+        }
         if (typeof setListSubMode === 'function') {
             setListSubMode(listMode);
         }
@@ -73,6 +79,9 @@ async function run() {
             if (typeof onSortChange === 'function') onSortChange();
         }
 
+        // 表示切り替えとレンダリングの反映を少し待機
+        await new Promise(r => setTimeout(r, 600));
+
         // 3. captureElementWithPadding をフックして生成キャンバスを取得
         let capturedDataUrl = null;
         let capturedText = null;
@@ -80,17 +89,51 @@ async function run() {
         const originalCapture = window.captureElementWithPadding;
         window.captureElementWithPadding = async function (target, padding) {
             const canvas = await originalCapture(target, padding);
-            capturedDataUrl = canvas.toDataURL('image/png');
+            if (canvas && !capturedDataUrl) {
+                capturedDataUrl = canvas.toDataURL('image/png');
+            }
             return canvas;
         };
 
-        // 4. 日別レイアウトの共有ボタン処理（shareFullGridImage）を実行
-        shareFullGridImage();
+        // 4. 日別レイアウトの共有処理（shareFullGridImage でモーダル初期化）
+        if (typeof shareFullGridImage === 'function') {
+            shareFullGridImage();
+        }
 
-        // 画像生成完了を待機 (最大 10 秒)
-        for (let i = 0; i < 100; i++) {
+        // 5. 分割オプションをオフ（1枚の画像として出力）に設定
+        const splitCb = document.getElementById('share-opt-split');
+        if (splitCb) {
+            splitCb.checked = false;
+        }
+
+        // 6. 画像生成実行（executeImageShare）
+        if (typeof executeImageShare === 'function') {
+            try {
+                await executeImageShare(true);
+            } catch (shareErr) {
+                console.warn('executeImageShare error:', shareErr);
+            }
+        }
+
+        // 画像生成完了を待機 (最大 15 秒)
+        for (let i = 0; i < 150; i++) {
             if (capturedDataUrl) break;
             await new Promise(r => setTimeout(r, 100));
+        }
+
+        // フォールバック: 万が一 capturedDataUrl が取れなかった場合は直接 grid をキャプチャ
+        if (!capturedDataUrl && originalCapture) {
+            const gridEl = document.getElementById('shop-grid');
+            if (gridEl) {
+                try {
+                    const fallbackCanvas = await originalCapture(gridEl, 16);
+                    if (fallbackCanvas) {
+                        capturedDataUrl = fallbackCanvas.toDataURL('image/png');
+                    }
+                } catch (fbErr) {
+                    console.error('Fallback capture error:', fbErr);
+                }
+            }
         }
 
         if (typeof currentShareTarget !== 'undefined' && currentShareTarget && currentShareTarget.shareText) {
@@ -119,7 +162,11 @@ async function run() {
     await browser.close();
     console.log('画像生成(sheet.png)が完了しました。');
 
-    const tweetText = config.text || shareResult.text;
+    const activeDate = new Date();
+    const dayNames = ['日', '月', '火', '水', '木', '金', '土'];
+    const defaultDateStr = `${activeDate.getMonth() + 1}/${activeDate.getDate()}(${dayNames[activeDate.getDay()]})`;
+    const fallbackText = `【${defaultDateStr}のラーメン二郎営業情報】\nhttps://app.jirolianmap.com/\n#ラーメン二郎 #二郎 #営業情報 #ジロリアンマップ`;
+    const tweetText = config.text || shareResult.text || fallbackText;
     console.log('投稿テキスト:\n' + tweetText);
 
     const execEnv = (process.env.EXEC_ENV || '').toLowerCase();
