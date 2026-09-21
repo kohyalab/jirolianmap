@@ -177,7 +177,8 @@ async function runCrawler() {
     }
 
     const shops = JSON.parse(fs.readFileSync(SHOPS_JSON_PATH, 'utf8'));
-    const activeShops = shops.filter(s => !s.closedAt && (s.x || s.instagram));
+    // 自動巡回はXアカウントを持つ店舗のみを対象（Instagramはエディタからの手動貼り付けAI解析で対応）
+    const activeShops = shops.filter(s => !s.closedAt && s.x);
 
     // キャッシュ読み込み
     let cache = { lastCrawledAt: null, processedPostIds: [] };
@@ -208,7 +209,7 @@ async function runCrawler() {
     let newlyDetectedCount = 0;
 
     for (const shop of activeShops) {
-        console.log(`\n🔍 チェック中: ${shop.name} (X: @${shop.x || 'なし'}, IG: ${shop.instagram || 'なし'})`);
+        console.log(`\n🔍 チェック中: ${shop.name} (X: @${shop.x})`);
 
         let posts = [];
         if (shop.x) {
@@ -242,7 +243,8 @@ async function runCrawler() {
                 }, apiKey);
 
                 if (analysis && analysis.hasScheduleChange && Array.isArray(analysis.changes) && analysis.changes.length > 0) {
-                    for (const change of analysis.changes) {
+                    for (let idx = 0; idx < analysis.changes.length; idx++) {
+                        const change = analysis.changes[idx];
                         // 既に shops.json に同一日付・同一時間の temporary が登録されていないか確認
                         const alreadyRegistered = (shop.temporary || []).some(t => {
                             return t.startDate === change.startDate && JSON.stringify(t.hours || []) === JSON.stringify(change.hours || []);
@@ -254,7 +256,7 @@ async function runCrawler() {
                         }
 
                         const pendingItem = {
-                            id: `pending_${shop.id}_${change.startDate.replace(/-/g, '')}_${Date.now().toString(36)}`,
+                            id: `pending_${shop.id}_${change.startDate.replace(/-/g, '')}_${idx}_${Math.random().toString(36).slice(2, 6)}`,
                             shopId: shop.id,
                             shopName: shop.name,
                             postSource: post.source,
@@ -266,12 +268,12 @@ async function runCrawler() {
                             status: 'pending'
                         };
 
-                        // 既存の未承認同日候補があれば上書き、なければ追加
-                        pendingUpdates = pendingUpdates.filter(p => !(p.shopId === shop.id && p.detectedChange.startDate === change.startDate));
+                        // 既存の未承認同日・同タイプの候補があれば上書き、別日程・別タイプなら追加
+                        pendingUpdates = pendingUpdates.filter(p => !(p.shopId === shop.id && p.detectedChange.startDate === change.startDate && p.detectedChange.type === change.type));
                         pendingUpdates.push(pendingItem);
                         newlyDetectedCount++;
 
-                        console.log(`    ✨ 営業変更を検出！ [${change.type}] ${change.startDate}: ${analysis.summary || change.reason}`);
+                        console.log(`    ✨ 営業変更を検出！ (${idx + 1}/${analysis.changes.length}) [${change.type}] ${change.startDate}: ${change.reason || analysis.summary}`);
                     }
                 }
 

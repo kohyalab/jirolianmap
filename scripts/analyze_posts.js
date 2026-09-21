@@ -38,11 +38,15 @@ async function resolveGeminiModel(apiKey) {
 
             // 優先度順に最適なFlashモデルを検索
             const priorityList = [
+                /^gemini-3\.6-flash/,
+                /^gemini-3-flash/,
+                /^gemini-3\./,
                 /^gemini-2\.5-flash/,
                 /^gemini-2\.0-flash/,
                 /^gemini-1\.5-flash-latest/,
                 /^gemini-1\.5-flash-8b/,
                 /^gemini-1\.5-flash/,
+                /^gemini-3\.6-pro/,
                 /^gemini-2\.5-pro/,
                 /^gemini-2\.0-pro/,
                 /^gemini-1\.5-pro/
@@ -66,8 +70,8 @@ async function resolveGeminiModel(apiKey) {
         console.warn('[WARN] Failed to list available Gemini models:', e.message);
     }
 
-    // フォールバック
-    cachedModelName = 'gemini-2.0-flash';
+    // フォールバック（公式推奨の最新モデル）
+    cachedModelName = 'gemini-3.6-flash';
     return cachedModelName;
 }
 
@@ -154,19 +158,22 @@ async function analyzePostWithGemini(postData, apiKey = process.env.GEMINI_API_K
 4. 時間の表現:
    - 小数点表記（例: 11:30＝11.5, 14:00＝14, 17:30＝17.5, 21:00＝21）で [[start, end]] 形式の配列にする。
    - 終日休業の場合は hours を空配列 [] にする。
+5. 複数日程・複数変更の網羅抽出:
+   - 1つのツイート（または添付画像・カレンダー）に複数の日付の営業・休業変更（例: 「明日21日昼営業のみ、22日臨休、23日通常営業」等）が含まれる場合は、変更がある日付ごとに【別々の要素として changes 配列にすべて漏れなく網羅】して出力してください。
+   - 店頭カレンダーや貼り紙の画像がある場合、印のついている休業日や特別営業日をすべて抽出し、changes 配列にそれぞれ独立したオブジェクトとして追加してください。
 
 【出力フォーマット (JSON)】
 必ず以下のJSONスキーマに従って出力してください（Markdownのコードブロックではなく純粋なJSON文字列で返すこと）:
 {
   "hasScheduleChange": boolean, // 臨時休業・時間変更・臨時営業がある場合 true
-  "summary": string, // 管理者向けの要約（例: "9/21(月) 助手不在のため夜の部休業"）
+  "summary": string, // 管理者向けの要約（例: "9/21(月) 昼のみ営業、9/22(火) 終日臨時休業"）
   "changes": [
     {
       "type": "temporary_closure" | "special_open" | "temporary_hours",
       "startDate": "YYYY-MM-DD",
       "endDate": "YYYY-MM-DD",
       "hours": [[number, number]], // 例: [[11, 14.5]]。終日休業は []
-      "reason": string, // 理由・備考（例: "助手不在", "材料切れ", "祝日昼営業"）
+      "reason": string, // 理由・備考（例: "祝日昼営業", "臨時休業", "材料切れ"）
       "confidence": number // 0.0〜1.0 の確信度
     }
   ]
@@ -201,11 +208,11 @@ async function analyzePostWithGemini(postData, apiKey = process.env.GEMINI_API_K
         })
     });
 
-    // もし404エラーの場合はモデルキャッシュをクリアして gemini-2.0-flash / gemini-2.5-flash 等で1回リトライ
+    // もし404エラーの場合はモデルキャッシュをクリアして gemini-3.6-flash 等で1回リトライ
     if (!response.ok && response.status === 404) {
         console.warn(`[WARN] Model ${modelName} returned 404. Falling back to alternative model...`);
         cachedModelName = null;
-        const fallbackModel = 'gemini-2.0-flash';
+        const fallbackModel = 'gemini-3.6-flash';
         const fallbackUrl = `https://generativelanguage.googleapis.com/v1beta/models/${fallbackModel}:generateContent?key=${apiKey}`;
         response = await fetch(fallbackUrl, {
             method: 'POST',

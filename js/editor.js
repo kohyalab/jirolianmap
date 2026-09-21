@@ -1484,6 +1484,8 @@ class EditorApp {
 4. 時間の表現:
    - 小数点表記（例: 11:30＝11.5, 14:00＝14, 17:30＝17.5, 21:00＝21）で [[start, end]] 形式の配列にする。
    - 終日休業の場合は hours を空配列 [] にする。
+5. 複数日程・複数変更の網羅抽出:
+   - 1つの投稿に複数の日付の変更情報が含まれる場合は、変更がある日付ごとに【別々の要素として changes 配列にすべて漏れなく網羅】して出力してください。
 
 【出力フォーマット (JSON)】
 必ず以下のJSONスキーマに従って出力してください（Markdownのコードブロックではなく純粋なJSON文字列で返すこと）:
@@ -1520,8 +1522,8 @@ class EditorApp {
                 });
             }
 
-            // 利用可能なモデル候補リスト
-            const modelCandidates = ['gemini-2.5-flash', 'gemini-2.0-flash', 'gemini-1.5-flash-latest', 'gemini-1.5-flash-8b'];
+            // 利用可能なモデル候補リスト（gemini-3.6-flash を最優先）
+            const modelCandidates = ['gemini-3.6-flash', 'gemini-3-flash', 'gemini-2.5-flash', 'gemini-1.5-flash-latest'];
             let resultJson = null;
             let lastError = null;
 
