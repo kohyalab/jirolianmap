@@ -87,13 +87,17 @@ async function fetchXFromYahooRealtime(screenName) {
                 mediaUrls.push(entry.media.item.mediaUrl);
             }
 
+            // リプライ判定フラグ
+            const isReply = Boolean(entry.isReply || entry.inReplyToStatusId || entry.inReplyToUserId || entry.inReplyToScreenName);
+
             posts.push({
                 source: 'x',
                 postId: tweetId,
                 postUrl: `https://x.com/${cleanHandle}/status/${tweetId}`,
                 text: text,
                 postedAt: createdAt,
-                mediaUrls: mediaUrls
+                mediaUrls: mediaUrls,
+                isReply: isReply
             });
         }
 
@@ -152,13 +156,16 @@ async function fetchXFromSyndication(screenName) {
                 });
             }
 
+            const isReply = Boolean(tweet.in_reply_to_status_id_str || tweet.in_reply_to_screen_name || tweet.in_reply_to_user_id_str);
+
             posts.push({
                 source: 'x',
                 postId: tweetId,
                 postUrl: `https://x.com/${cleanHandle}/status/${tweetId}`,
                 text: text,
                 postedAt: createdAt,
-                mediaUrls: mediaUrls
+                mediaUrls: mediaUrls,
+                isReply: isReply
             });
         }
 
@@ -167,6 +174,40 @@ async function fetchXFromSyndication(screenName) {
         console.warn(`[WARN] Error crawling @${cleanHandle}:`, err.message);
         return [];
     }
+}
+
+/**
+ * 他アカウントへのメンションまたはリプライであるかを判定
+ * （公式の営業案内告知ではなく、個別会話や返信とみなして解析から除外）
+ */
+function isMentionOrReply(post, ownHandle = '') {
+    if (!post) return false;
+
+    // 1. メタデータによるリプライ判定
+    if (post.isReply) return true;
+
+    const text = (post.text || '').trim();
+    if (!text) return false;
+
+    // 2. 本文先頭が @ で始まる場合はリプライ
+    if (/^@[a-zA-Z0-9_]+/i.test(text)) {
+        return true;
+    }
+
+    // 3. 本文中に含まれるメンション (@username) の抽出と判定
+    const cleanOwnHandle = (ownHandle || '').replace(/^@/, '').toLowerCase();
+    const mentionMatches = text.match(/@[a-zA-Z0-9_]+/g);
+    if (mentionMatches && mentionMatches.length > 0) {
+        for (const m of mentionMatches) {
+            const mentionedUser = m.replace(/^@/, '').toLowerCase();
+            // 自分自身のアカウント名以外のメンションが含まれていれば「他アカウントへのメンション」と判定
+            if (mentionedUser !== cleanOwnHandle) {
+                return true;
+            }
+        }
+    }
+
+    return false;
 }
 
 /**
@@ -307,6 +348,34 @@ async function runCrawler() {
         console.log(`  -> 新規投稿: ${newPosts.length}件`);
 
         for (const post of newPosts) {
+            // 0. 他アカウントへのメンションまたはリプライはGemini解析対象外
+            if (isMentionOrReply(post, shop.x)) {
+                console.log(`  ⏭️ メンション・リプライと判定しスキップ: "${post.text.substring(0, 25).replace(/\n/g, ' ')}..."`);
+                const skippedItem = {
+                    id: `pending_skipped_${shop.id}_${post.postId}`,
+                    shopId: shop.id,
+                    shopName: shop.name,
+                    postSource: post.source,
+                    postUrl: post.postUrl,
+                    postedAt: post.postedAt,
+                    postText: post.text,
+                    mediaUrls: post.mediaUrls || [],
+                    detectedChange: {
+                        type: 'temporary_hours',
+                        startDate: post.postedAt.split('T')[0],
+                        endDate: post.postedAt.split('T')[0],
+                        hours: [],
+                        reason: '他アカウントへのメンション・リプライ'
+                    },
+                    status: 'skipped',
+                    skipReason: '他アカウントへのメンションまたはリプライのため解析対象外'
+                };
+                pendingUpdates = pendingUpdates.filter(p => p.id !== skippedItem.id);
+                pendingUpdates.push(skippedItem);
+                processedSet.add(post.postId);
+                continue;
+            }
+
             // 事前フィルタ: 営業変更の可能性がない日常雑談ポストはスキップ済みとして記録（APIは呼ばない）
             if (!isLikelySchedulePost(post, keywordConfig)) {
                 console.log(`  ⏭️ 日常ポストと判定しスキップとして記録: "${post.text.substring(0, 25).replace(/\n/g, ' ')}..."`);
@@ -447,6 +516,7 @@ if (require.main === module) {
 
 module.exports = {
     runCrawler,
-    fetchXRecentPosts
+    fetchXRecentPosts,
+    isMentionOrReply
 };
 

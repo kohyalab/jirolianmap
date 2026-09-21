@@ -13,7 +13,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const { fetchXRecentPosts } = require('./sns_crawler');
+const { fetchXRecentPosts, isMentionOrReply } = require('./sns_crawler');
 const { analyzePostWithGemini } = require('./analyze_posts');
 
 const SHOPS_JSON_PATH = path.join(__dirname, '..', 'shops.json');
@@ -71,6 +71,14 @@ async function main() {
         summaryMd += `- **本文**:\n> ${p.text.replace(/\n/g, '\n> ')}\n\n`;
         if (p.mediaUrls && p.mediaUrls.length > 0) {
             summaryMd += `- **添付画像**: ${p.mediaUrls.map((u, idx) => `[画像${idx + 1}](${u})`).join(', ')}\n\n`;
+        }
+
+        // 他アカウントへのメンション・リプライ判定
+        const isMentionReply = isMentionOrReply(p, targetHandle);
+        if (isMentionReply) {
+            console.log(`\n⏭️ 他アカウントへのメンションまたはリプライのため、Gemini AI解析はスキップします。`);
+            summaryMd += `- **AI判定**: ⏭️ **スキップ（他アカウントへのメンション・リプライ）**\n\n`;
+            continue;
         }
 
         if (apiKey) {
