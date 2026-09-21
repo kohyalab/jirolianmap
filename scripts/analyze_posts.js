@@ -9,7 +9,67 @@
 const fs = require('fs');
 const path = require('path');
 
-const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent';
+let cachedModelName = null;
+
+/**
+ * APIキーで利用可能な最適なGeminiモデルを自動判定
+ */
+async function resolveGeminiModel(apiKey) {
+    if (process.env.GEMINI_MODEL) {
+        return process.env.GEMINI_MODEL;
+    }
+    if (cachedModelName) {
+        return cachedModelName;
+    }
+
+    try {
+        const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models?key=${apiKey}`);
+        if (res.ok) {
+            const data = await res.json();
+            const models = data?.models || [];
+            
+            // generateContentをサポートしているモデルをフィルタ
+            const contentModels = models.filter(m => {
+                const methods = m.supportedGenerationMethods || [];
+                return methods.includes('generateContent');
+            }).map(m => m.name.replace(/^models\//, ''));
+
+            console.log(`ℹ️ 利用可能なGeminiモデル候補: ${contentModels.slice(0, 5).join(', ')}...`);
+
+            // 優先度順に最適なFlashモデルを検索
+            const priorityList = [
+                /^gemini-2\.5-flash/,
+                /^gemini-2\.0-flash/,
+                /^gemini-1\.5-flash-latest/,
+                /^gemini-1\.5-flash-8b/,
+                /^gemini-1\.5-flash/,
+                /^gemini-2\.5-pro/,
+                /^gemini-2\.0-pro/,
+                /^gemini-1\.5-pro/
+            ];
+
+            for (const regex of priorityList) {
+                const found = contentModels.find(name => regex.test(name));
+                if (found) {
+                    console.log(`🤖 使用するGeminiモデル: ${found}`);
+                    cachedModelName = found;
+                    return found;
+                }
+            }
+
+            if (contentModels.length > 0) {
+                cachedModelName = contentModels[0];
+                return contentModels[0];
+            }
+        }
+    } catch (e) {
+        console.warn('[WARN] Failed to list available Gemini models:', e.message);
+    }
+
+    // フォールバック
+    cachedModelName = 'gemini-2.0-flash';
+    return cachedModelName;
+}
 
 /**
  * 画像URLまたはローカルファイルパスをBase64パートに変換
@@ -126,7 +186,10 @@ async function analyzePostWithGemini(postData, apiKey = process.env.GEMINI_API_K
         }
     }
 
-    const response = await fetch(`${GEMINI_API_URL}?key=${apiKey}`, {
+    const modelName = await resolveGeminiModel(apiKey);
+    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${modelName}:generateContent?key=${apiKey}`;
+
+    let response = await fetch(apiUrl, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -137,6 +200,25 @@ async function analyzePostWithGemini(postData, apiKey = process.env.GEMINI_API_K
             }
         })
     });
+
+    // もし404エラーの場合はモデルキャッシュをクリアして gemini-2.0-flash / gemini-2.5-flash 等で1回リトライ
+    if (!response.ok && response.status === 404) {
+        console.warn(`[WARN] Model ${modelName} returned 404. Falling back to alternative model...`);
+        cachedModelName = null;
+        const fallbackModel = 'gemini-2.0-flash';
+        const fallbackUrl = `https://generativelanguage.googleapis.com/v1beta/models/${fallbackModel}:generateContent?key=${apiKey}`;
+        response = await fetch(fallbackUrl, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                contents: [{ parts: parts }],
+                generationConfig: {
+                    responseMimeType: 'application/json',
+                    temperature: 0.1
+                }
+            })
+        });
+    }
 
     if (!response.ok) {
         const errText = await response.text();
