@@ -37,8 +37,8 @@
 
         try {
             const rect = targetElement.getBoundingClientRect();
-            const targetW = Math.ceil(targetElement.offsetWidth || rect.width || targetElement.scrollWidth || 360);
-            const targetH = Math.ceil(targetElement.offsetHeight || rect.height || targetElement.scrollHeight || 100);
+            const targetW = Math.ceil(Math.max(targetElement.offsetWidth || 0, rect.width || 0, targetElement.scrollWidth || 0, 360));
+            const targetH = Math.ceil(Math.max(targetElement.offsetHeight || 0, rect.height || 0, targetElement.scrollHeight || 0, 100));
             // 横幅が1200pxを超える巨大テーブル（一覧スケジュール等）はメモリ負荷とタイムアウト軽減のため scale: 1.5
             const renderScale = targetW > 1200 ? 1.5 : 2;
 
@@ -444,6 +444,8 @@
             return;
         }
 
+        console.log('[SHARE] Starting executeImageShare, layoutType:', layoutType);
+
         const showConquest = (layoutType === 'calendar') ? true : (document.getElementById('share-opt-conquest')?.checked ?? true);
         const showStatus = (layoutType === 'popup_detail' || layoutType === 'minimal') ? (document.getElementById('share-opt-status')?.checked ?? true) : true;
         const selectedMeta = document.querySelector('input[name="share-opt-meta"]:checked')?.value || 'none';
@@ -485,6 +487,36 @@
                     });
                 }
             } else if (layoutType === 'minimal' || layoutType === 'today' || layoutType === 'calendar_all') {
+                const parentEl = container.parentElement;
+                if (parentEl) {
+                    modifiedElements.push({
+                        el: parentEl,
+                        origWidth: parentEl.style.width,
+                        origMaxWidth: parentEl.style.maxWidth,
+                        origOverflow: parentEl.style.overflow,
+                        origScrollTop: parentEl.scrollTop,
+                        origScrollLeft: parentEl.scrollLeft
+                    });
+                    parentEl.scrollTop = 0;
+                    parentEl.scrollLeft = 0;
+                    parentEl.style.width = 'max-content';
+                    parentEl.style.maxWidth = 'none';
+                    parentEl.style.overflow = 'visible';
+                }
+
+                modifiedElements.push({
+                    el: container,
+                    origHeight: container.style.height,
+                    origMaxHeight: container.style.maxHeight,
+                    origOverflow: container.style.overflow,
+                    origScrollTop: container.scrollTop,
+                    origScrollLeft: container.scrollLeft
+                });
+                container.scrollTop = 0;
+                container.scrollLeft = 0;
+                container.style.height = 'auto';
+                container.style.maxHeight = 'none';
+                container.style.overflow = 'visible';
                 container.style.width = '527px';
                 container.style.boxSizing = 'border-box';
                 container.style.gridTemplateColumns = 'repeat(6, 82px)';
@@ -1086,15 +1118,19 @@
                         }
                         partIndex++;
 
-                        const c = await captureElementWithPadding(container, 16);
+                        const captureFn = (typeof global !== 'undefined' && global.captureElementWithPadding) || captureElementWithPadding;
+                        const c = await captureFn(container, 16);
                         if (c) canvases.push(c);
                     }
                     allCards.forEach(card => { card.style.display = ''; });
                 }
             } else {
-                const c = await captureElementWithPadding(container, 16);
+                const captureFn = (typeof global !== 'undefined' && global.captureElementWithPadding) || captureElementWithPadding;
+                const c = await captureFn(container, 16);
                 if (c) canvases.push(c);
             }
+
+            console.log('[SHARE] Capture finished, canvases count:', canvases.length, 'dimensions:', canvases.map(c => `${c.width}x${c.height}`).join(', '));
 
             // 復元処理
             container.style.width = origContainerStyle.width;
@@ -1189,6 +1225,13 @@
                     alert(`${files.length}枚の画像をダウンロードしました。`);
                 }
             }
+
+            return {
+                canvases,
+                files,
+                shareText: finalShareText,
+                fileName: finalFileName
+            };
 
         } catch (err) {
             console.error('Image share execution error:', err);

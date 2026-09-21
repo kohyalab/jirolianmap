@@ -17,7 +17,12 @@ function startLocalServer(port = 3000) {
         '.svg': 'image/svg+xml'
     };
     const server = http.createServer((req, res) => {
-        let reqPath = req.url.split('?')[0];
+        let reqPath = '/index.html';
+        try {
+            reqPath = decodeURIComponent(req.url.split('?')[0]);
+        } catch (e) {
+            reqPath = req.url.split('?')[0];
+        }
         if (reqPath === '/' || reqPath === '') reqPath = '/index.html';
         const filePath = path.join(__dirname, reqPath);
         if (fs.existsSync(filePath) && fs.statSync(filePath).isFile()) {
@@ -155,14 +160,22 @@ async function run() {
         if (typeof executeImageShare === 'function') {
             try {
                 if (splitCb) splitCb.checked = false;
-                await executeImageShare(true);
+                console.log('[BOT] Calling executeImageShare(true)...');
+                const result = await executeImageShare(true);
+                if (result && result.canvases && result.canvases.length > 0) {
+                    capturedDataUrl = result.canvases[0].toDataURL('image/png');
+                    console.log('[BOT] Successfully retrieved canvas from executeImageShare, count:', result.canvases.length, 'width:', result.canvases[0].width, 'height:', result.canvases[0].height);
+                }
+                if (result && result.shareText) {
+                    capturedText = result.shareText;
+                }
             } catch (shareErr) {
-                console.warn('executeImageShare error:', shareErr);
+                console.warn('[BOT] executeImageShare error:', shareErr);
             }
         }
 
-        // 画像生成完了を待機 (最大 15 秒)
-        for (let i = 0; i < 150; i++) {
+        // フックまたは実行完了の待機 (最大 10 秒)
+        for (let i = 0; i < 100; i++) {
             if (capturedDataUrl) break;
             await new Promise(r => setTimeout(r, 100));
         }
@@ -182,7 +195,7 @@ async function run() {
             }
         }
 
-        if (typeof currentShareTarget !== 'undefined' && currentShareTarget && currentShareTarget.shareText) {
+        if (!capturedText && typeof currentShareTarget !== 'undefined' && currentShareTarget && currentShareTarget.shareText) {
             capturedText = currentShareTarget.shareText;
         }
 
