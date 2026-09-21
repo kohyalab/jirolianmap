@@ -1,0 +1,226 @@
+/**
+ * sns_crawler.js
+ * 
+ * ラーメン二郎 直系全店舗の公式X / Instagramを巡回し、
+ * 最新の投稿・添付画像を収集して Gemini 1.5 Flash で営業変更を自動解析。
+ * 承認待ちデータ（data/pending_updates.json）を更新する。
+ */
+
+const fs = require('fs');
+const path = require('path');
+const { analyzePostWithGemini } = require('./analyze_posts');
+
+const SHOPS_JSON_PATH = path.join(__dirname, '..', 'shops.json');
+const PENDING_UPDATES_PATH = path.join(__dirname, '..', 'data', 'pending_updates.json');
+const CRAWLED_CACHE_PATH = path.join(__dirname, '..', 'data', 'crawled_cache.json');
+
+/**
+ * X Syndication API を利用して特定アカウントの直近投稿を取得（APIキー不要・無料）
+ */
+async function fetchXRecentPosts(screenName) {
+    if (!screenName) return [];
+    const cleanHandle = screenName.replace(/^@/, '').trim();
+    const url = `https://syndication.twitter.com/srv/timeline-profile/screen-name/${cleanHandle}?limit=10`;
+
+    try {
+        const res = await fetch(url, {
+            headers: {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
+                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+            }
+        });
+
+        if (!res.ok) {
+            console.warn(`[WARN] X timeline fetch failed for @${cleanHandle}: ${res.status}`);
+            return [];
+        }
+
+        const html = await res.text();
+        // HTML中の __NEXT_DATA__ JSONスクリプトタグからデータを抽出
+        const match = html.match(/<script id="__NEXT_DATA__" type="application\/json">([^<]+)<\/script>/);
+        if (!match) return [];
+
+        const nextData = JSON.parse(match[1]);
+        const timeline = nextData?.props?.pageProps?.timeline?.entries || [];
+
+        const posts = [];
+        for (const entry of timeline) {
+            const tweet = entry?.content?.tweet;
+            if (!tweet) continue;
+
+            const tweetId = tweet.id_str;
+            const text = tweet.text || '';
+            const createdAt = tweet.created_at ? new Date(tweet.created_at).toISOString() : new Date().toISOString();
+            
+            // 添付画像URLの抽出
+            const mediaUrls = [];
+            if (tweet.photos && Array.isArray(tweet.photos)) {
+                tweet.photos.forEach(p => {
+                    if (p.url) mediaUrls.push(p.url);
+                });
+            } else if (tweet.mediaDetails && Array.isArray(tweet.mediaDetails)) {
+                tweet.mediaDetails.forEach(m => {
+                    if (m.media_url_https) mediaUrls.push(m.media_url_https);
+                });
+            }
+
+            posts.push({
+                source: 'x',
+                postId: tweetId,
+                postUrl: `https://x.com/${cleanHandle}/status/${tweetId}`,
+                text: text,
+                postedAt: createdAt,
+                mediaUrls: mediaUrls
+            });
+        }
+
+        return posts;
+    } catch (err) {
+        console.warn(`[WARN] Error crawling @${cleanHandle}:`, err.message);
+        return [];
+    }
+}
+
+/**
+ * メイン巡回処理
+ */
+async function runCrawler() {
+    console.log('=== ラーメン二郎 公式SNS巡回 & 営業変更解析 開始 ===');
+
+    if (!fs.existsSync(SHOPS_JSON_PATH)) {
+        console.error(`shops.json not found at ${SHOPS_JSON_PATH}`);
+        process.exit(1);
+    }
+
+    const shops = JSON.parse(fs.readFileSync(SHOPS_JSON_PATH, 'utf8'));
+    const activeShops = shops.filter(s => !s.closedAt && (s.x || s.instagram));
+
+    // キャッシュ読み込み
+    let cache = { lastCrawledAt: null, processedPostIds: [] };
+    if (fs.existsSync(CRAWLED_CACHE_PATH)) {
+        try {
+            cache = JSON.parse(fs.readFileSync(CRAWLED_CACHE_PATH, 'utf8'));
+            if (!Array.isArray(cache.processedPostIds)) cache.processedPostIds = [];
+        } catch (e) {}
+    }
+    const processedSet = new Set(cache.processedPostIds || []);
+
+    // 既存の pending_updates 読み込み
+    let pendingUpdates = [];
+    if (fs.existsSync(PENDING_UPDATES_PATH)) {
+        try {
+            pendingUpdates = JSON.parse(fs.readFileSync(PENDING_UPDATES_PATH, 'utf8'));
+            if (!Array.isArray(pendingUpdates)) pendingUpdates = [];
+        } catch (e) {}
+    }
+
+    console.log(`対象店舗数: ${activeShops.length}店舗 (処理済み投稿数: ${processedSet.size}件)`);
+
+    const apiKey = process.env.GEMINI_API_KEY;
+    if (!apiKey) {
+        console.warn('⚠️ GEMINI_API_KEY が未設定です。Gemini解析はスキップされ、モックまたは収集のみ実行されます。');
+    }
+
+    let newlyDetectedCount = 0;
+
+    for (const shop of activeShops) {
+        console.log(`\n🔍 チェック中: ${shop.name} (X: @${shop.x || 'なし'}, IG: ${shop.instagram || 'なし'})`);
+
+        let posts = [];
+        if (shop.x) {
+            const xPosts = await fetchXRecentPosts(shop.x);
+            posts.push(...xPosts);
+        }
+
+        // 新規かつ直近48時間以内の投稿のみをフィルタリング
+        const twoDaysAgo = Date.now() - (48 * 60 * 60 * 1000);
+        const newPosts = posts.filter(p => {
+            if (processedSet.has(p.postId)) return false;
+            const postTime = new Date(p.postedAt).getTime();
+            return postTime >= twoDaysAgo;
+        });
+
+        console.log(`  -> 新規投稿: ${newPosts.length}件`);
+
+        for (const post of newPosts) {
+            processedSet.add(post.postId);
+
+            if (!apiKey) {
+                continue;
+            }
+
+            try {
+                console.log(`  🤖 Gemini解析中: "${post.text.substring(0, 30).replace(/\n/g, ' ')}..."`);
+                const analysis = await analyzePostWithGemini({
+                    shopId: shop.id,
+                    shopName: shop.name,
+                    postText: post.text,
+                    postedAt: post.postedAt,
+                    mediaUrls: post.mediaUrls
+                }, apiKey);
+
+                if (analysis && analysis.hasScheduleChange && Array.isArray(analysis.changes) && analysis.changes.length > 0) {
+                    for (const change of analysis.changes) {
+                        // 既に shops.json に同一日付・同一時間の temporary が登録されていないか確認
+                        const alreadyRegistered = (shop.temporary || []).some(t => {
+                            return t.startDate === change.startDate && JSON.stringify(t.hours || []) === JSON.stringify(change.hours || []);
+                        });
+
+                        if (alreadyRegistered) {
+                            console.log(`    ℹ️ 既に shops.json に登録済みのスケジュールのため除外: ${change.startDate}`);
+                            continue;
+                        }
+
+                        const pendingItem = {
+                            id: `pending_${shop.id}_${change.startDate.replace(/-/g, '')}_${Date.now().toString(36)}`,
+                            shopId: shop.id,
+                            shopName: shop.name,
+                            postSource: post.source,
+                            postUrl: post.postUrl,
+                            postedAt: post.postedAt,
+                            postText: post.text,
+                            mediaUrls: post.mediaUrls || [],
+                            detectedChange: change,
+                            status: 'pending'
+                        };
+
+                        // 既存の未承認同日候補があれば上書き、なければ追加
+                        pendingUpdates = pendingUpdates.filter(p => !(p.shopId === shop.id && p.detectedChange.startDate === change.startDate));
+                        pendingUpdates.push(pendingItem);
+                        newlyDetectedCount++;
+
+                        console.log(`    ✨ 営業変更を検出！ [${change.type}] ${change.startDate}: ${analysis.summary || change.reason}`);
+                    }
+                }
+            } catch (err) {
+                console.error(`  ❌ Gemini解析エラー (Shop: ${shop.id}):`, err.message);
+            }
+
+            // APIレートリミット対策（少しウェイト）
+            await new Promise(r => setTimeout(r, 1000));
+        }
+    }
+
+    // キャッシュ保存（最大1,000件保持）
+    cache.lastCrawledAt = new Date().toISOString();
+    cache.processedPostIds = Array.from(processedSet).slice(-1000);
+    fs.writeFileSync(CRAWLED_CACHE_PATH, JSON.stringify(cache, null, 2), 'utf8');
+
+    // pending_updates 保存
+    fs.writeFileSync(PENDING_UPDATES_PATH, JSON.stringify(pendingUpdates, null, 2), 'utf8');
+
+    console.log(`\n=== 巡回完了: 新たに ${newlyDetectedCount} 件の営業変更候補を pending_updates.json に保存しました ===`);
+}
+
+if (require.main === module) {
+    runCrawler().catch(err => {
+        console.error('Crawler fatal error:', err);
+        process.exit(1);
+    });
+}
+
+module.exports = {
+    runCrawler,
+    fetchXRecentPosts
+};
+
