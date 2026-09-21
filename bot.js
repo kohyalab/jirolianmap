@@ -110,15 +110,12 @@ async function run() {
             }
         }
 
-        // 2. 表示モード & ソート設定
+        // 2. 「営業情報」-「日別」モード & ソート設定
         if (typeof setMainViewMode === 'function') {
-            setMainViewMode(listMode === 'today' ? 'today' : 'realtime');
+            setMainViewMode('today');
         }
-        if (listMode === 'today' && typeof setPeriodMode === 'function') {
-            setPeriodMode('1'); // 日別
-        }
-        if (typeof setListSubMode === 'function') {
-            setListSubMode(listMode);
+        if (typeof setPeriodMode === 'function') {
+            setPeriodMode('1'); // 1: 日別
         }
         const sortSelect = document.getElementById('sort-select');
         if (sortSelect) {
@@ -142,20 +139,22 @@ async function run() {
             return canvas;
         };
 
-        // 4. 日別レイアウトの共有処理（shareFullGridImage でモーダル初期化）
+        // 4. 「営業情報」-「日別」レイアウトの共有処理（shareFullGridImage でモーダル初期化）
         if (typeof shareFullGridImage === 'function') {
             shareFullGridImage();
         }
 
-        // 5. 分割オプションをオフ（1枚の画像として出力）に設定
+        // 5. 画像分割は行わない（1枚の画像として出力）
         const splitCb = document.getElementById('share-opt-split');
         if (splitCb) {
             splitCb.checked = false;
+            splitCb.dataset.userTouched = 'true';
         }
 
         // 6. 画像生成実行（executeImageShare）
         if (typeof executeImageShare === 'function') {
             try {
+                if (splitCb) splitCb.checked = false;
                 await executeImageShare(true);
             } catch (shareErr) {
                 console.warn('executeImageShare error:', shareErr);
