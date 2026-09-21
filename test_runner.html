@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Jirolian Map - Comprehensive Test Suite</title>
+    <!-- Leaflet & html2canvas -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+    <!-- 共通モジュール -->
+    <script src="js/common/lg_codes.js"></script>
+    <script src="js/common/utils.js"></script>
+    <script src="js/common/business-hours.js"></script>
+    <script src="js/app/share.js"></script>
+
+    <style>
+        body { font-family: sans-serif; background: #121212; color: #fff; padding: 20px; }
+        .pass { color: #4caf50; font-weight: bold; }
+        .fail { color: #f44336; font-weight: bold; }
+        .test-case { margin: 6px 0; padding: 6px 12px; background: #1e1e1e; border-radius: 4px; }
+        #summary { font-size: 1.2rem; margin-bottom: 20px; padding: 12px; border-radius: 6px; }
+        iframe { width: 100%; height: 400px; border: 1px solid #444; margin-top: 10px; display: none; }
+    </style>
+</head>
+<body>
+    <h1>🍜 ジロリアンマップ 全機能自動テストスイート</h1>
+    <div id="summary">テスト実行中...</div>
+    <div id="results"></div>
+
+    <!-- メイン画面とエディタの統合テスト用iframe -->
+    <iframe id="app-frame" src="index.html"></iframe>
+    <iframe id="editor-frame" src="editor.html"></iframe>
+
+    <script>
+        const results = [];
+        const resultsContainer = document.getElementById('results');
+
+        function assert(name, conditionFn, details = '') {
+            let pass = false;
+            let errDetail = '';
+            try {
+                pass = (typeof conditionFn === 'function') ? !!conditionFn() : !!conditionFn;
+            } catch (e) {
+                pass = false;
+                errDetail = e.message;
+            }
+            results.push({ name, pass, details: details || errDetail });
+            const div = document.createElement('div');
+            div.className = 'test-case';
+            div.innerHTML = `<span class="${pass ? 'pass' : 'fail'}">[${pass ? 'PASS' : 'FAIL'}]</span> ${name} ${(details || errDetail) ? `<small style="color:#aaa;">(${details || errDetail})</small>` : ''}`;
+            resultsContainer.appendChild(div);
+            return pass;
+        }
+
+        async function runTests() {
+            console.log('Starting Test Suite...');
+
+            // --- 1. JiroUtils 単体テスト ---
+            assert('JiroUtils: 定義確認', () => typeof JiroUtils === 'object' && JiroUtils !== null);
+            assert('JiroUtils.hiraganaToKatakana', () => JiroUtils.hiraganaToKatakana('じろりあん') === 'ジロリアン');
+            assert('JiroUtils.toHalfWidth', () => JiroUtils.toHalfWidth('１２３　ＡＢＣ') === '123 ABC');
+            assert('JiroUtils.parseNormalizedDateStr (Full)', () => JiroUtils.parseNormalizedDateStr('2026-08-02') === '2026-08-02');
+            assert('JiroUtils.parseNormalizedDateStr (Year only)', () => JiroUtils.parseNormalizedDateStr('2026') === '2026-12-31');
+            assert('JiroUtils.getLocalDateKey', () => /^\d{4}-\d{2}-\d{2}$/.test(JiroUtils.getLocalDateKey(new Date())));
+            assert('JiroUtils.getJSTDateString', () => /^\d{4}-\d{2}-\d{2}$/.test(JiroUtils.getJSTDateString(new Date())));
+            
+            const dist = JiroUtils.calculateDistance(35.64805, 139.74160, 35.63421, 139.70711);
+            assert('JiroUtils.calculateDistance', () => typeof dist === 'number' && dist > 3 && dist < 4, `三田本店-目黒店間: ${dist.toFixed(2)}km`);
+            assert('JiroUtils.formatDistance (km)', () => JiroUtils.formatDistance(3.456) === '約 3.5km');
+            assert('JiroUtils.formatDistance (1km未満)', () => JiroUtils.formatDistance(0.456) === '約 0.46km');
+            assert('JiroUtils.cleanAddress', () => JiroUtils.cleanAddress(' 東京都港区三田２丁目１６－４ ') === '東京都港区三田2丁目16-4');
+            assert('JiroUtils.normalizeFurigana', () => JiroUtils.normalizeFurigana('らーめんじろう') === 'ラーメンジロウ');
+            assert('JiroUtils.normalizeAccountID', () => JiroUtils.normalizeAccountID('@ramenjiro') === 'ramenjiro');
+            assert('JiroUtils.timeToFloat & floatToTime', () => JiroUtils.floatToTime(JiroUtils.timeToFloat('11:30')) === '11:30');
+
+            // --- 2. JiroBusinessHours 単体テスト ---
+            assert('JiroBusinessHours: 定義確認', () => typeof JiroBusinessHours === 'object' && JiroBusinessHours !== null);
+            assert('JiroBusinessHours.isJapaneseHoliday (元日)', () => JiroBusinessHours.isJapaneseHoliday(new Date(2026, 0, 1)) === true);
+            assert('JiroBusinessHours.isJapaneseHoliday (平日)', () => JiroBusinessHours.isJapaneseHoliday(new Date(2026, 0, 2)) === false);
+            
+            const parsedShifts = JiroBusinessHours.parseShiftString('11:00-14:30, 17:00-21:00');
+            assert('JiroBusinessHours.parseShiftString', () => Array.isArray(parsedShifts) && parsedShifts.length === 2 && parsedShifts[0][0] === 11 && parsedShifts[0][1] === 14.5);
+            assert('JiroBusinessHours.formatShiftArray', () => JiroBusinessHours.formatShiftArray(parsedShifts) === '11:00-14:30, 17:00-21:00');
+
+            // モック店舗データによる営業判定テスト
+            const mockShop = {
+                id: 'test_shop',
+                name: 'テスト二郎',
+                shiftsByDay: {
+                    '0': [[11, 14.5], [17, 21]], // 月曜
+                    '6': [] // 日曜定休
+                },
+                temporary: [
+                    { startDate: '2026-12-31', endDate: '2026-12-31', hours: [] } // 年末休業
+                ]
+            };
+            const mockDateMonNoon = new Date(2026, 8, 21, 12, 0); // 2026-09-21 (月) 12:00
+            const statusMonNoon = JiroBusinessHours.getBusinessStatus(mockShop, mockDateMonNoon);
+            assert('JiroBusinessHours.getBusinessStatus (営業中判定)', () => statusMonNoon.type === 'open');
+
+            const mockDateMonNight = new Date(2026, 8, 21, 23, 0); // 2026-09-21 (月) 23:00
+            const statusMonNight = JiroBusinessHours.getBusinessStatus(mockShop, mockDateMonNight);
+            assert('JiroBusinessHours.getBusinessStatus (営業時間外判定)', () => statusMonNight.type === 'closed');
+
+            // --- 3. LG_CODES 単体テスト ---
+            assert('LG_CODES: 定義確認', () => typeof LG_CODES === 'object' && LG_CODES !== null);
+            assert('LG_CODES.getPrefNameByCityCode', () => LG_CODES.getPrefNameByCityCode('13103') === '東京都');
+            assert('LG_CODES.getCityName', () => LG_CODES.getCityName('13103') === '港区');
+            assert('LG_CODES.getShopFullAddress', () => LG_CODES.getShopFullAddress({ cityCode: '13103', addressText: '三田2-16-4' }) === '東京都港区三田2-16-4');
+
+            // --- 4. share.js 単体テスト ---
+            assert('share.js: window.shareFullGridImage 定義確認', () => typeof window.shareFullGridImage === 'function');
+            assert('share.js: window.captureElementWithPadding 定義確認', () => typeof window.captureElementWithPadding === 'function');
+            assert('share.js: window.openShareOptionsModal 定義確認', () => typeof window.openShareOptionsModal === 'function');
+
+            // --- 5. メイン画面 (index.html) 統合テスト (iframe内評価) ---
+            const appFrame = document.getElementById('app-frame');
+            await new Promise((resolve) => {
+                let attempts = 0;
+                const checkApp = setInterval(() => {
+                    attempts++;
+                    try {
+                        const appWin = appFrame.contentWindow;
+                        if (appWin && appWin.isAppInitialized && appWin.document.querySelectorAll('#shop-grid .shop-item').length > 0) {
+                            clearInterval(checkApp);
+                            resolve();
+                        }
+                    } catch (e) {}
+                    if (attempts > 80) { // 8秒タイムアウト
+                        clearInterval(checkApp);
+                        resolve();
+                    }
+                }, 100);
+            });
+
+            try {
+                const appWin = appFrame.contentWindow;
+                const appDoc = appWin.document;
+
+                assert('メインアプリ: 初期化フラグ (isAppInitialized)', () => appWin.isAppInitialized === true);
+                
+                const shopCards = appDoc.querySelectorAll('#shop-grid .shop-item');
+                assert('メインアプリ: 店舗カード描画件数 (40店舗以上)', () => shopCards.length >= 40, `実数: ${shopCards.length}店舗`);
+
+                const sortSelect = appDoc.getElementById('sort-select');
+                assert('メインアプリ: デフォルトソートが「都道府県順 (pref)」', () => sortSelect && sortSelect.value === 'pref', `選択値: ${sortSelect ? sortSelect.value : 'なし'}`);
+
+                const detailedOpt = appDoc.getElementById('opt-detailed');
+                assert('メインアプリ: デフォルト表示密度が「詳細 (detailed)」', () => detailedOpt && detailedOpt.classList.contains('active'), `詳細クラス: ${detailedOpt ? detailedOpt.className : 'なし'}`);
+
+                // 検索機能テスト
+                const searchInput = appDoc.getElementById('search-input');
+                searchInput.value = '三田';
+                if (typeof appWin.onSearchInput === 'function') {
+                    appWin.onSearchInput();
+                } else {
+                    searchInput.dispatchEvent(new Event('input'));
+                }
+                const filteredCards = appDoc.querySelectorAll('#shop-grid .shop-item');
+                assert('メインアプリ: 検索フィルタリング動作（「三田」で絞り込み）', filteredCards.length >= 1 && filteredCards.length < 5, `該当数: ${filteredCards.length}店舗`);
+                
+                // 検索リセット
+                searchInput.value = '';
+                appWin.onSearchInput();
+
+                // 制覇トラッカーのクリックトグル動作テスト
+                const firstCard = appDoc.querySelector('#shop-grid .shop-item');
+                const firstShopId = firstCard ? firstCard.dataset.shopId : null;
+                if (firstShopId && typeof appWin.toggleVisit === 'function') {
+                    const beforeVisit = !!appWin.visitedState[firstShopId];
+                    appWin.toggleVisit(firstShopId, false, new MouseEvent('click'));
+                    const afterVisit = !!appWin.visitedState[firstShopId];
+                    assert('メインアプリ: 制覇トグル (toggleVisit)', beforeVisit !== afterVisit);
+                    // 元に戻す
+                    appWin.toggleVisit(firstShopId, false, new MouseEvent('click'));
+                }
+
+                // 共有画像設定モーダルの表示条件テスト
+                const gridEl = appDoc.getElementById('shop-grid');
+                const conquestSec = appDoc.getElementById('share-opt-conquest-section');
+                const statusSec = appDoc.getElementById('share-opt-status-section');
+                const splitSec = appDoc.getElementById('share-opt-split-section');
+
+                // 1. 店舗情報-コンパクト (minimal)
+                appWin.openShareOptionsModal(gridEl, null, 'minimal', 'test', 'test');
+                assert('共有設定: コンパクト表示 (制覇:表示, 営業状況:表示, 分割:表示)', () => {
+                    return conquestSec.style.display === 'block' && statusSec.style.display === 'block' && splitSec.style.display === 'block';
+                });
+                appWin.closeShareOptionsModal();
+
+                // 2. 営業情報-日別 (today)
+                appWin.openShareOptionsModal(gridEl, null, 'today', 'test', 'test');
+                assert('共有設定: 日別表示 (制覇:非表示, 営業状況:非表示, 分割:表示)', () => {
+                    return conquestSec.style.display === 'none' && statusSec.style.display === 'none' && splitSec.style.display === 'block';
+                });
+                appWin.closeShareOptionsModal();
+
+                // 3. 営業情報-一覧 (matrix)
+                appWin.openShareOptionsModal(gridEl, null, 'matrix', 'test', 'test');
+                assert('共有設定: 一覧マトリクス表示 (制覇:非表示, 営業状況:非表示, 分割:表示)', () => {
+                    return conquestSec.style.display === 'none' && statusSec.style.display === 'none' && splitSec.style.display === 'block';
+                });
+                appWin.closeShareOptionsModal();
+
+                // 4. 店舗詳細ポップアップ (popup_detail)
+                const firstShopObj = (appWin.shops || [])[0];
+                appWin.openShareOptionsModal(gridEl, firstShopObj, 'popup_detail', 'test', 'test');
+                assert('共有設定: 店舗詳細 (制覇:非表示, 営業状況:表示, 分割:非表示)', () => {
+                    return conquestSec.style.display === 'none' && statusSec.style.display === 'block' && splitSec.style.display === 'none';
+                });
+                appWin.closeShareOptionsModal();
+
+                // 5. カレンダー (calendar)
+                appWin.openShareOptionsModal(gridEl, firstShopObj, 'calendar', 'test', 'test');
+                assert('共有設定: カレンダー (制覇:非表示, 営業状況:非表示, 分割:非表示)', () => {
+                    return conquestSec.style.display === 'none' && statusSec.style.display === 'none' && splitSec.style.display === 'none';
+                });
+                appWin.closeShareOptionsModal();
+
+                // 6. 実際のUI切り替えテスト: 「営業情報-日別」時の shareFullGridImage()
+                appWin.setMainViewMode('today');
+                appWin.setPeriodMode('1');
+                appWin.shareFullGridImage();
+                assert('共有設定 (UI連携): 営業情報-日別シェア起動 (制覇:非表示, 営業状況:非表示, 分割:表示)', () => {
+                    return conquestSec.style.display === 'none' && statusSec.style.display === 'none' && splitSec.style.display === 'block';
+                });
+                appWin.closeShareOptionsModal();
+
+                // 7. 実際のUI切り替えテスト: 「店舗情報-コンパクト」時の shareFullGridImage()
+                appWin.setMainViewMode('realtime');
+                appWin.setDensityMode('minimal');
+                appWin.shareFullGridImage();
+                assert('共有設定 (UI連携): 店舗情報-コンパクトシェア起動 (制覇:表示, 営業状況:表示, 分割:表示)', () => {
+                    return conquestSec.style.display === 'block' && statusSec.style.display === 'block' && splitSec.style.display === 'block';
+                });
+                appWin.closeShareOptionsModal();
+
+            } catch (err) {
+                assert('メインアプリ: 統合テスト例外', false, err.message);
+            }
+
+            // --- 6. エディタ画面 (editor.html) 統合テスト (iframe内評価) ---
+            const editorFrame = document.getElementById('editor-frame');
+            await new Promise((resolve) => {
+                let attempts = 0;
+                const checkEditor = setInterval(() => {
+                    attempts++;
+                    try {
+                        const edWin = editorFrame.contentWindow;
+                        if (edWin && edWin.app) {
+                            clearInterval(checkEditor);
+                            resolve();
+                        }
+                    } catch (e) {}
+                    if (attempts > 80) {
+                        clearInterval(checkEditor);
+                        resolve();
+                    }
+                }, 100);
+            });
+
+            try {
+                const edWin = editorFrame.contentWindow;
+                const edDoc = edWin.document;
+
+                assert('エディタ: 初期化完了 (appインスタンス存在)', () => typeof edWin.app === 'object' && edWin.app !== null);
+
+                // 店舗データをロードして反映
+                const res = await fetch('shops.json');
+                const loadedShops = await res.json();
+                edWin.app.shops = loadedShops;
+                edWin.app.renderList();
+
+                assert('エディタ: 店舗データ読み込み件数', () => edWin.app.shops && edWin.app.shops.length >= 40, `実数: ${edWin.app.shops.length}店舗`);
+
+                const shopListItems = edDoc.querySelectorAll('#shop-list .shop-item');
+                assert('エディタ: 店舗一覧リスト描画', () => shopListItems.length >= 40, `リスト表示数: ${shopListItems.length}件`);
+
+                // 店舗選択テスト
+                edWin.app.selectShop(edWin.app.shops[0].id);
+                const nameInput = edDoc.getElementById('field-name');
+                assert('エディタ: 店舗選択時のフォーム反映', () => nameInput && nameInput.value === edWin.app.shops[0].name, `店名: ${nameInput ? nameInput.value : 'なし'}`);
+
+                // 店舗検索フィルタテスト
+                const searchInput = edDoc.getElementById('search-input');
+                searchInput.value = '目黒';
+                edWin.app.renderList();
+                const filteredItems = edDoc.querySelectorAll('#shop-list .shop-item');
+                assert('エディタ: 店舗検索（「目黒」で絞り込み）', () => filteredItems.length === 1, `検索ヒット数: ${filteredItems.length}件`);
+
+                // --- 7. SNS自動検出・承認フロー統合テスト ---
+                edWin.alert = () => {};
+                edWin.confirm = () => true;
+
+                // 初期状態（空データ）の読み込み検証
+                await edWin.app.loadPendingUpdates(true);
+                assert('SNS承認: 初期状態読み込み（0件）', () => edWin.app.pendingUpdates && edWin.app.pendingUpdates.length === 0, `件数: ${edWin.app.pendingUpdates ? edWin.app.pendingUpdates.length : 0}件`);
+
+                // 承認待ちタブへ切り替え（空表示メッセージの確認）
+                edWin.app.switchMode('pending');
+                const emptyMsg = edDoc.querySelector('#pending-list-container');
+                assert('SNS承認: 未承認なし時の空状態表示', () => emptyMsg && emptyMsg.textContent.includes('未承認のSNS更新候補はありません'));
+
+                // テスト用候補データ（メモリ上）をセットして承認フロー検証
+                edWin.app.pendingUpdates = [
+                    {
+                        id: 'test_pending_matsudo',
+                        shopId: 'matsudo',
+                        shopName: '松戸駅前店',
+                        postSource: 'x',
+                        postUrl: 'https://x.com/matsudojiro3/status/1',
+                        postedAt: '2026-09-21T15:30:00+09:00',
+                        postText: 'テスト臨休投稿',
+                        detectedChange: {
+                            type: 'temporary_closure',
+                            startDate: '2026-09-21',
+                            endDate: '2026-09-21',
+                            hours: [],
+                            reason: 'テスト臨休',
+                            confidence: 0.99
+                        },
+                        status: 'pending'
+                    }
+                ];
+                edWin.app.updatePendingBadge();
+                edWin.app.renderPendingList();
+
+                const pendingCards = edDoc.querySelectorAll('#pending-list-container .pending-card');
+                assert('SNS承認: 承認待ちカード描画 (1件)', () => pendingCards.length === 1, `カード描画数: ${pendingCards.length}件`);
+
+                // 単体承認テスト
+                const matsudoShop = edWin.app.shops.find(s => s.id === 'matsudo');
+                await edWin.app.approvePending('test_pending_matsudo');
+
+                const hasNewTemp = (matsudoShop.temporary || []).some(t => t.startDate === '2026-09-21' && t.hours.length === 0);
+                assert('SNS承認: ワンタップ承認・shops.jsonマージ', () => hasNewTemp);
+                assert('SNS承認: 承認後の残件数クリア (0件)', () => edWin.app.pendingUpdates.length === 0);
+
+                // --- 8. 手動貼り付けAI解析パネル (Instagram / X) の検証 ---
+                const manualPanel = edDoc.getElementById('manual-ai-panel');
+                assert('手動AI解析: パネルDOM要素が存在', () => manualPanel !== null);
+
+                const manualShopSelect = edDoc.getElementById('manual-ai-shop');
+                assert('手動AI解析: 店舗選択肢が40件以上自動生成されている', () => manualShopSelect && manualShopSelect.options.length >= 40, `選択肢数: ${manualShopSelect ? manualShopSelect.options.length : 0}`);
+
+                // 新潟店 (Instagram専用店舗) がリストに含まれているか
+                const niigataOption = Array.from(manualShopSelect.options).find(opt => opt.value === 'niigata' || opt.textContent.includes('新潟'));
+                assert('手動AI解析: 新潟店 (Instagram店舗) の選択肢が存在', () => niigataOption !== undefined && niigataOption.textContent.includes('IG:'));
+
+                // フォームクリアの動作検証
+                const manualText = edDoc.getElementById('manual-ai-text');
+                manualText.value = 'テスト投稿文';
+                edWin.app.manualAiImages = [{ name: 'test.jpg', data: 'abc', mimeType: 'image/jpeg', dataUrl: 'data:image/jpeg;base64,abc' }];
+                edWin.app.renderManualAiPreviews();
+                assert('手動AI解析: 画像プレビュー描画', () => edDoc.querySelectorAll('#manual-ai-previews img').length === 1);
+
+                edWin.app.clearManualAiForm();
+                assert('手動AI解析: clearManualAiForm による入力と画像のクリア', () => manualText.value === '' && edWin.app.manualAiImages.length === 0 && edDoc.querySelectorAll('#manual-ai-previews img').length === 0);
+
+            } catch (err) {
+                assert('エディタ: 統合テスト例外', false, err.message);
+            }
+
+            // --- サマリー出力 ---
+            const total = results.length;
+            const passCount = results.filter(r => r.pass).length;
+            const failCount = total - passCount;
+            const summaryDiv = document.getElementById('summary');
+            if (failCount === 0) {
+                summaryDiv.className = 'pass';
+                summaryDiv.style.background = '#1b5e20';
+                summaryDiv.innerHTML = `🎉 全テスト合格！ (${passCount} / ${total} PASS)`;
+            } else {
+                summaryDiv.className = 'fail';
+                summaryDiv.style.background = '#b71c1c';
+                summaryDiv.innerHTML = `⚠️ 一部テスト失敗 (${failCount} 件失敗 / 計 ${total} 件)`;
+            }
+
+            window.__TEST_RESULTS__ = { total, passCount, failCount, results };
+            console.log('Test Suite Finished:', JSON.stringify(window.__TEST_RESULTS__));
+        }
+
+        window.addEventListener('load', () => {
+            setTimeout(runTests, 500);
+        });
+    </script>
+</body>
+</html>
