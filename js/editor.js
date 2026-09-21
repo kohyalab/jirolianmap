@@ -69,9 +69,10 @@ class EditorApp {
             pendingListContainer: document.getElementById('pending-list-container'),
             imagePreviewModal: document.getElementById('image-preview-modal'),
             imagePreviewImg: document.getElementById('image-preview-img'),
-            imagePreviewTitle: document.getElementById('image-preview-title'),
             skippedListContainer: document.getElementById('skipped-list-container'),
             skippedCountTag: document.getElementById('skipped-count-tag'),
+            historyListContainer: document.getElementById('history-list-container'),
+            historyCountTag: document.getElementById('history-count-tag'),
             aiRulesModal: document.getElementById('ai-rules-modal'),
             aiRulesList: document.getElementById('ai-rules-list'),
             aiRulesRawJson: document.getElementById('ai-rules-raw-json'),
@@ -1279,8 +1280,9 @@ class EditorApp {
     }
 
     updatePendingBadge() {
-        const pendingItems = (this.pendingUpdates || []).filter(p => p.status !== 'skipped');
+        const pendingItems = (this.pendingUpdates || []).filter(p => !p.status || p.status === 'pending');
         const skippedItems = (this.pendingUpdates || []).filter(p => p.status === 'skipped');
+        const historyItems = (this.pendingUpdates || []).filter(p => p.status === 'approved' || p.status === 'rejected');
         const count = pendingItems.length;
         if (this.el.pendingBadge) {
             this.el.pendingBadge.textContent = count;
@@ -1291,6 +1293,9 @@ class EditorApp {
         }
         if (this.el.skippedCountTag) {
             this.el.skippedCountTag.textContent = `${skippedItems.length}件`;
+        }
+        if (this.el.historyCountTag) {
+            this.el.historyCountTag.textContent = `${historyItems.length}件`;
         }
     }
 
@@ -1709,9 +1714,11 @@ ${guidelinesText}
         if (!this.el.pendingListContainer) return;
         this.el.pendingListContainer.innerHTML = '';
         if (this.el.skippedListContainer) this.el.skippedListContainer.innerHTML = '';
+        if (this.el.historyListContainer) this.el.historyListContainer.innerHTML = '';
 
-        const pendingItems = (this.pendingUpdates || []).filter(p => p.status !== 'skipped');
+        const pendingItems = (this.pendingUpdates || []).filter(p => !p.status || p.status === 'pending');
         const skippedItems = (this.pendingUpdates || []).filter(p => p.status === 'skipped');
+        const historyItems = (this.pendingUpdates || []).filter(p => p.status === 'approved' || p.status === 'rejected');
 
         if (pendingItems.length === 0) {
             this.el.pendingListContainer.innerHTML = `
@@ -1723,7 +1730,7 @@ ${guidelinesText}
             `;
         } else {
             pendingItems.forEach(item => {
-                const card = this.createPendingCardElement(item, false);
+                const card = this.createPendingCardElement(item, 'pending');
                 this.el.pendingListContainer.appendChild(card);
             });
         }
@@ -1738,8 +1745,24 @@ ${guidelinesText}
                 `;
             } else {
                 skippedItems.forEach(item => {
-                    const card = this.createPendingCardElement(item, true);
+                    const card = this.createPendingCardElement(item, 'skipped');
                     this.el.skippedListContainer.appendChild(card);
+                });
+            }
+        }
+
+        // 処理済み履歴リストの描画
+        if (this.el.historyListContainer) {
+            if (historyItems.length === 0) {
+                this.el.historyListContainer.innerHTML = `
+                    <div style="text-align: center; padding: 16px; color: #777; font-size: 0.85rem;">
+                        処理済みの履歴はありません。
+                    </div>
+                `;
+            } else {
+                historyItems.forEach(item => {
+                    const card = this.createPendingCardElement(item, 'history');
+                    this.el.historyListContainer.appendChild(card);
                 });
             }
         }
@@ -1747,13 +1770,22 @@ ${guidelinesText}
         this.updatePendingBadge();
     }
 
-    createPendingCardElement(item, isSkipped = false) {
+    createPendingCardElement(item, mode = 'pending') {
+        const isSkipped = mode === 'skipped';
+        const isHistory = mode === 'history';
+        const isApproved = item.status === 'approved';
+        const isRejected = item.status === 'rejected';
+
         const card = document.createElement('div');
-        card.className = 'pending-card' + (isSkipped ? ' skipped-card' : '');
+        card.className = 'pending-card' + (isSkipped ? ' skipped-card' : '') + (isHistory ? ' history-card' : '');
         card.id = `pending-card-${item.id}`;
         if (isSkipped) {
             card.style.opacity = '0.85';
             card.style.border = '1px dashed #555';
+        } else if (isHistory) {
+            card.style.opacity = '0.8';
+            card.style.border = '1px solid #333';
+            card.style.background = '#181818';
         }
 
         const shop = (this.shops || []).find(s => s.id === item.shopId);
@@ -1775,11 +1807,51 @@ ${guidelinesText}
         const typeClass = isClosure ? 'closure' : (isSpecial ? 'special' : 'hours');
         const typeLabel = isClosure ? '🚫 臨時休業' : (isSpecial ? '✨ 臨時営業' : '⏰ 営業時間変更');
 
-        // 日時フォーマット
+        // 日時・曜日フォーマット
+        const getDayOfWeekStr = (dateStr) => {
+            if (!dateStr) return '';
+            const d = new Date(dateStr + 'T00:00:00+09:00');
+            if (isNaN(d.getTime())) return '';
+            return ['日', '月', '火', '水', '木', '金', '土'][d.getDay()];
+        };
+        const startDayStr = getDayOfWeekStr(change.startDate);
+        const endDayStr = change.endDate ? getDayOfWeekStr(change.endDate) : '';
+        const targetDateText = (!change.endDate || change.startDate === change.endDate)
+            ? `${change.startDate || ''} (${startDayStr})`
+            : `${change.startDate || ''} (${startDayStr}) 〜 ${change.endDate} (${endDayStr})`;
+
         const postDateStr = item.postedAt ? new Date(item.postedAt).toLocaleString('ja-JP', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' }) : '';
         const hoursText = (change.hours && change.hours.length > 0)
             ? change.hours.map(([s, e]) => `${this.floatToTime(s)}-${this.floatToTime(e)}`).join(' / ')
             : '終日休業';
+
+        // shops.json から判定される「対象日」の現在設定（通常営業時間または登録済み臨時）
+        let currentHoursDisplay = '未設定';
+        if (change.startDate && shop) {
+            const d = new Date(change.startDate + 'T00:00:00+09:00');
+            if (!isNaN(d.getTime())) {
+                const dayIdx = d.getDay();
+                const normalHours = (shop.shiftsByDay && shop.shiftsByDay[dayIdx]) ? shop.shiftsByDay[dayIdx] : [];
+                const normalHoursText = (normalHours.length > 0)
+                    ? normalHours.map(([s, e]) => `${this.floatToTime(s)}-${this.floatToTime(e)}`).join(' / ')
+                    : '定休日';
+
+                const existingTemp = (shop.temporary || []).find(t => {
+                    if (t.startDate === change.startDate) return true;
+                    if (t.endDate && t.startDate <= change.startDate && change.startDate <= t.endDate) return true;
+                    return false;
+                });
+
+                if (existingTemp) {
+                    const tempHoursText = (existingTemp.hours && existingTemp.hours.length > 0)
+                        ? existingTemp.hours.map(([s, e]) => `${this.floatToTime(s)}-${this.floatToTime(e)}`).join(' / ')
+                        : '終日休業';
+                    currentHoursDisplay = `${normalHoursText} <span style="color:#ffb74d; font-size:0.75rem;">(※登録済臨時: ${tempHoursText})</span>`;
+                } else {
+                    currentHoursDisplay = normalHoursText;
+                }
+            }
+        }
 
         // 添付画像サムネイル
         const mediaHtml = (item.mediaUrls && item.mediaUrls.length > 0)
@@ -1790,14 +1862,45 @@ ${guidelinesText}
                </div>`
             : '';
 
-        const skipBannerHtml = isSkipped ? `
-            <div style="background: #2a2215; border: 1px solid #7a5c1a; border-radius: 4px; padding: 6px 10px; margin-bottom: 8px; font-size: 0.8rem; color: #ffca28; display: flex; align-items: center; gap: 6px;">
-                <span>ℹ️ <strong>スキップ理由:</strong> ${item.skipReason || '既存の営業時間・登録スケジュールと完全に一致するため反映不要'}</span>
-            </div>
-        ` : '';
+        let bannerHtml = '';
+        if (isSkipped) {
+            bannerHtml = `
+                <div style="background: #2a2215; border: 1px solid #7a5c1a; border-radius: 4px; padding: 6px 10px; margin-bottom: 8px; font-size: 0.8rem; color: #ffca28; display: flex; align-items: center; gap: 6px;">
+                    <span>ℹ️ <strong>スキップ理由:</strong> ${item.skipReason || '既存の営業時間・登録スケジュールと完全に一致するため反映不要'}</span>
+                </div>
+            `;
+        } else if (isHistory) {
+            const timeStr = item.approvedAt ? new Date(item.approvedAt).toLocaleString('ja-JP') : (item.rejectedAt ? new Date(item.rejectedAt).toLocaleString('ja-JP') : '');
+            bannerHtml = `
+                <div style="background: ${isApproved ? '#1b3a20' : '#331a1a'}; border: 1px solid ${isApproved ? '#2e7d32' : '#7f1d1d'}; border-radius: 4px; padding: 4px 8px; margin-bottom: 8px; font-size: 0.8rem; color: ${isApproved ? '#a5d6a7' : '#ef9a9a'}; display: flex; justify-content: space-between; align-items: center;">
+                    <span>${isApproved ? '✅ 承認・反映済み' : '❌ 削除・却下済み'}</span>
+                    <span style="font-size: 0.72rem; color: #aaa;">${timeStr}</span>
+                </div>
+            `;
+        }
+
+        let actionsHtml = '';
+        if (isHistory) {
+            actionsHtml = `
+                <button class="btn btn-sm" onclick="app.deletePendingPermanently('${item.id}')" style="background:#222; border-color:#444; color:#888;">🗑️ 完全に消去</button>
+                <button class="btn btn-sm btn-primary" onclick="app.revertPending('${item.id}')" style="background:#1976d2; color:#fff; font-weight:bold;">↩️ 未処理（承認待ち）に戻す</button>
+            `;
+        } else if (isSkipped) {
+            actionsHtml = `
+                <button class="btn btn-sm" onclick="app.rejectPending('${item.id}')" style="background:#2a2a2a; border-color:#444; color:#bbb;">❌ 削除</button>
+                <button class="btn btn-sm" onclick="app.editPending('${item.id}')" style="background:#263238; border-color:#37474f; color:#80d8ff;">✏️ 編集して反映</button>
+                <button class="btn btn-sm btn-success" onclick="app.approvePending('${item.id}')">✅ 強制反映</button>
+            `;
+        } else {
+            actionsHtml = `
+                <button class="btn btn-sm" onclick="app.rejectPending('${item.id}')" style="background:#2a2a2a; border-color:#444; color:#bbb;">❌ 削除</button>
+                <button class="btn btn-sm" onclick="app.editPending('${item.id}')" style="background:#263238; border-color:#37474f; color:#80d8ff;">✏️ 編集して反映</button>
+                <button class="btn btn-sm btn-success" onclick="app.approvePending('${item.id}')">✅ 承認して反映</button>
+            `;
+        }
 
         card.innerHTML = `
-            ${skipBannerHtml}
+            ${bannerHtml}
             <div class="pending-header">
                 <div class="pending-shop-title">
                     <span>🍜 ${item.shopName || item.shopId}</span>
@@ -1813,7 +1916,6 @@ ${guidelinesText}
                 </div>
                 <div class="pending-meta">
                     <span>${postDateStr}</span>
-                    ${accountUrl ? `<a href="${accountUrl}" target="_blank" rel="noopener noreferrer" style="color:#aaa; text-decoration:none; display:inline-flex; align-items:center; gap:3px; padding:2px 6px; background:#222; border-radius:4px; border:1px solid #444;" title="公式アカウントのプロフィールを開く">👤 公式アカウント</a>` : ''}
                     ${item.postUrl ? `<a href="${item.postUrl}" target="_blank" rel="noopener noreferrer" style="color:var(--jiro-yellow); text-decoration:none; font-weight:bold; padding:2px 6px; background:#222; border-radius:4px; border:1px solid #444;">↗ 元ポストを開く</a>` : ''}
                 </div>
             </div>
@@ -1829,16 +1931,20 @@ ${guidelinesText}
                     <span style="font-size:0.75rem; font-weight:normal; opacity:0.8;">(信頼度: ${Math.round((change.confidence || 1) * 100)}%)</span>
                 </div>
                 <div class="pending-ai-details">
-                    <div>📅 <strong>対象期間:</strong> ${change.startDate || ''} ${change.endDate && change.endDate !== change.startDate ? '〜 ' + change.endDate : ''}</div>
-                    <div>⏰ <strong>営業時間:</strong> ${hoursText}</div>
-                    ${change.reason ? `<div>💬 <strong>理由・備考:</strong> ${change.reason}</div>` : ''}
+                    <div>📅 <strong>対象日:</strong> ${targetDateText}</div>
+                    
+                    <!-- shops.json との比較対比表示 -->
+                    <div style="margin-top: 6px; padding: 6px 10px; background: rgba(0,0,0,0.3); border-radius: 4px; border-left: 3px solid var(--accent-color); font-size: 0.82rem; display: flex; flex-direction: column; gap: 4px;">
+                        <div>🏢 <strong>現在設定:</strong> <span style="color: #bbb;">${currentHoursDisplay}</span></div>
+                        <div>⏰ <strong>変更提案:</strong> <span style="color: var(--jiro-yellow); font-weight: bold;">${hoursText}</span></div>
+                    </div>
+
+                    ${change.reason ? `<div style="margin-top: 4px;">💬 <strong>理由・備考:</strong> ${change.reason}</div>` : ''}
                 </div>
             </div>
 
             <div class="pending-actions">
-                <button class="btn btn-sm" onclick="app.rejectPending('${item.id}')" style="background:#2a2a2a; border-color:#444; color:#bbb;">❌ 削除</button>
-                <button class="btn btn-sm" onclick="app.editPending('${item.id}')" style="background:#263238; border-color:#37474f; color:#80d8ff;">✏️ 編集して反映</button>
-                <button class="btn btn-sm btn-success" onclick="app.approvePending('${item.id}')">✅ ${isSkipped ? '強制反映' : '承認して反映'}</button>
+                ${actionsHtml}
             </div>
         `;
 
@@ -1878,25 +1984,28 @@ ${guidelinesText}
         // 日付順にソート
         shop.temporary = this.sortTemporaryDates(shop.temporary);
 
-        // 承認リストから除外
-        this.pendingUpdates = this.pendingUpdates.filter(p => p.id !== pendingId);
+        // 完全に削除せず、status を 'approved' に更新して履歴として保存
+        item.status = 'approved';
+        item.approvedAt = new Date().toISOString();
+
         this.updatePendingBadge();
         this.renderPendingList();
+        this.savePendingUpdatesLocally();
 
-        alert(`【${shop.name}】の営業変更（${startDate}）を承認し、shops.json に反映しました！\n反映を確定するには、上部の「🚀 GitHubへ送信」を押して保存してください。`);
+        alert(`【${shop.name}】の営業変更（${startDate}）を承認し、shops.json に反映しました！\n（「処理済み履歴」からいつでも確認・元に戻せます）\n\n反映を確定するには、上部の「🚀 GitHubへ送信」を押して保存してください。`);
     }
 
     async approveAllPending() {
-        if (!this.pendingUpdates || this.pendingUpdates.length === 0) return;
-        if (!confirm(`表示中の未承認候補（${this.pendingUpdates.length}件）をすべて承認して shops.json に反映しますか？`)) return;
+        const activeItems = (this.pendingUpdates || []).filter(p => !p.status || p.status === 'pending');
+        if (activeItems.length === 0) return;
+        if (!confirm(`表示中の未承認候補（${activeItems.length}件）をすべて承認して shops.json に反映しますか？`)) return;
 
         // 承認の前に最新の shops.json が取得・同期されているか確認
         const loaded = await this.ensureLatestShopsLoaded();
         if (!loaded) return;
 
         let successCount = 0;
-        const pendingCopy = [...this.pendingUpdates];
-        pendingCopy.forEach(item => {
+        activeItems.forEach(item => {
             const shop = this.shops.find(s => s.id === item.shopId);
             if (shop) {
                 if (!shop.temporary) shop.temporary = [];
@@ -1912,15 +2021,18 @@ ${guidelinesText}
                     hours: hours
                 });
                 shop.temporary = this.sortTemporaryDates(shop.temporary);
+
+                item.status = 'approved';
+                item.approvedAt = new Date().toISOString();
                 successCount++;
             }
         });
 
-        this.pendingUpdates = [];
         this.updatePendingBadge();
         this.renderPendingList();
+        this.savePendingUpdatesLocally();
 
-        alert(`${successCount}件の営業変更をすべて承認・反映しました！\n反映を確定するには、上部の「🚀 GitHubへ送信」を押して保存してください。`);
+        alert(`${successCount}件の営業変更をすべて承認・反映しました！\n（「処理済み履歴」からいつでも確認・元に戻せます）\n\n反映を確定するには、上部の「🚀 GitHubへ送信」を押して保存してください。`);
     }
 
     editPending(pendingId) {
@@ -1950,9 +2062,12 @@ ${guidelinesText}
         });
         this.renderTemporaryList();
 
-        // 承認待ちリストから消化
-        this.pendingUpdates = this.pendingUpdates.filter(p => p.id !== pendingId);
+        item.status = 'approved';
+        item.approvedAt = new Date().toISOString();
+
         this.updatePendingBadge();
+        this.renderPendingList();
+        this.savePendingUpdatesLocally();
 
         // フォーム最下部へスクロールしてハイライト
         setTimeout(() => {
@@ -1962,10 +2077,61 @@ ${guidelinesText}
     }
 
     rejectPending(pendingId) {
-        if (!confirm('この更新候補を却下・削除しますか？')) return;
+        const item = this.pendingUpdates.find(p => p.id === pendingId);
+        if (!item) return;
+
+        if (!confirm('この更新候補を削除（却下）しますか？\n※完全に消去されず、「処理済み履歴」からいつでも元に戻すことができます。')) return;
+
+        item.status = 'rejected';
+        item.rejectedAt = new Date().toISOString();
+
+        this.updatePendingBadge();
+        this.renderPendingList();
+        this.savePendingUpdatesLocally();
+    }
+
+    revertPending(pendingId) {
+        const item = this.pendingUpdates.find(p => p.id === pendingId);
+        if (!item) return;
+
+        const shop = this.shops.find(s => s.id === item.shopId);
+        const wasApproved = item.status === 'approved';
+
+        if (wasApproved && shop && shop.temporary && item.detectedChange) {
+            const startDate = item.detectedChange.startDate;
+            const doRevert = confirm(`【${shop.name}】に反映した営業変更（${startDate}）を shops.json から取り消し、未処理（承認待ち）に戻しますか？`);
+            if (!doRevert) return;
+
+            // shops.json から該当の temporary を削除して元に戻す
+            shop.temporary = shop.temporary.filter(t => t.startDate !== startDate);
+        }
+
+        item.status = 'pending';
+        delete item.approvedAt;
+        delete item.rejectedAt;
+
+        this.updatePendingBadge();
+        this.renderPendingList();
+        this.savePendingUpdatesLocally();
+
+        alert(`更新候補を未処理（承認待ち）に戻しました！${wasApproved ? '\n（shops.json の反映も取り消されました。確定するには「🚀 GitHub送信」を行ってください）' : ''}`);
+    }
+
+    deletePendingPermanently(pendingId) {
+        if (!confirm('この更新候補を履歴から完全に消去しますか？\n（消去後は元に戻せなくなります）')) return;
+
         this.pendingUpdates = this.pendingUpdates.filter(p => p.id !== pendingId);
         this.updatePendingBadge();
         this.renderPendingList();
+        this.savePendingUpdatesLocally();
+    }
+
+    savePendingUpdatesLocally() {
+        try {
+            localStorage.setItem('jirolian_pending_updates', JSON.stringify(this.pendingUpdates));
+        } catch (e) {
+            console.warn('Failed to save pendingUpdates to localStorage:', e);
+        }
     }
 
     openImageModal(src, title) {

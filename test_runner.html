@@ -293,11 +293,14 @@
                 edWin.alert = () => {};
                 edWin.confirm = () => true;
 
-                // 初期状態（空データ）の読み込み検証
+                // 初期状態の読み込み検証
                 await edWin.app.loadPendingUpdates(true);
-                assert('SNS承認: 初期状態読み込み（0件）', () => edWin.app.pendingUpdates && edWin.app.pendingUpdates.length === 0, `件数: ${edWin.app.pendingUpdates ? edWin.app.pendingUpdates.length : 0}件`);
+                assert('SNS承認: 初期状態読み込み', () => Array.isArray(edWin.app.pendingUpdates), `件数: ${edWin.app.pendingUpdates ? edWin.app.pendingUpdates.length : 0}件`);
 
-                // 承認待ちタブへ切り替え（空表示メッセージの確認）
+                // 未承認なし（0件）時の空状態表示検証
+                edWin.app.pendingUpdates = [];
+                edWin.app.updatePendingBadge();
+                edWin.app.renderPendingList();
                 edWin.app.switchMode('pending');
                 const emptyMsg = edDoc.querySelector('#pending-list-container');
                 assert('SNS承認: 未承認なし時の空状態表示', () => emptyMsg && emptyMsg.textContent.includes('未承認のSNS更新候補はありません'));
@@ -329,13 +332,41 @@
                 const pendingCards = edDoc.querySelectorAll('#pending-list-container .pending-card');
                 assert('SNS承認: 承認待ちカード描画 (1件)', () => pendingCards.length === 1, `カード描画数: ${pendingCards.length}件`);
 
+                // 対象日・曜日表示、比較表示、公式ボタン削除の検証
+                const firstCardText = pendingCards[0] ? pendingCards[0].textContent : '';
+                assert('SNS承認: 「対象日」と曜日 (月) の表示', () => firstCardText.includes('対象日:') && firstCardText.includes('(月)'));
+                assert('SNS承認: 「公式アカウント」ボタンの非表示', () => !firstCardText.includes('公式アカウント'));
+                assert('SNS承認: 現在設定と変更提案の比較対比表示', () => firstCardText.includes('現在設定:') && firstCardText.includes('変更提案:'));
+
                 // 単体承認テスト
                 const matsudoShop = edWin.app.shops.find(s => s.id === 'matsudo');
                 await edWin.app.approvePending('test_pending_matsudo');
 
                 const hasNewTemp = (matsudoShop.temporary || []).some(t => t.startDate === '2026-09-21' && t.hours.length === 0);
                 assert('SNS承認: ワンタップ承認・shops.jsonマージ', () => hasNewTemp);
-                assert('SNS承認: 承認後の残件数クリア (0件)', () => edWin.app.pendingUpdates.length === 0);
+
+                // 承認後は未処理が0件となり、履歴（approved）に移動
+                const remainingActive = (edWin.app.pendingUpdates || []).filter(p => !p.status || p.status === 'pending');
+                assert('SNS承認: 承認後の未処理残件数クリア (0件)', () => remainingActive.length === 0);
+
+                const historyCards = edDoc.querySelectorAll('#history-list-container .pending-card');
+                assert('SNS承認: 処理済み履歴に移動して保持される (1件)', () => historyCards.length === 1);
+                assert('SNS承認: 履歴カードに「反映済み」と「未処理に戻す」ボタンが存在', () => {
+                    const txt = historyCards[0] ? historyCards[0].textContent : '';
+                    return (txt.includes('反映済み') || txt.includes('承認・反映済み')) && (txt.includes('未処理') && txt.includes('戻す'));
+                });
+
+                // 元に戻す (Revert) テスト
+                edWin.app.revertPending('test_pending_matsudo');
+                const revertedTemp = (matsudoShop.temporary || []).some(t => t.startDate === '2026-09-21' && t.hours.length === 0);
+                assert('SNS承認: 元に戻す (Revert) で shops.json から臨時設定が解除される', () => !revertedTemp);
+                const restoredActive = (edWin.app.pendingUpdates || []).filter(p => !p.status || p.status === 'pending');
+                assert('SNS承認: 元に戻す (Revert) で未処理（pending）に復帰する', () => restoredActive.length === 1);
+
+                // テスト用データをクリーンアップ
+                edWin.app.pendingUpdates = [];
+                edWin.app.updatePendingBadge();
+                edWin.app.renderPendingList();
 
                 // --- 8. 手動貼り付けAI解析パネル (Instagram / X) の検証 ---
                 const manualPanel = edDoc.getElementById('manual-ai-panel');

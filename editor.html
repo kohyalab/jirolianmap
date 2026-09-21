@@ -447,12 +447,26 @@
     <details id="skipped-list-details" style="margin-top: 24px; background: #181818; border: 1px solid #333; border-radius: 8px; padding: 10px 14px;">
         <summary style="font-weight: bold; color: #aaa; cursor: pointer; display: flex; align-items: center; justify-content: space-between; user-select: none; font-size: 0.9rem;">
             <span style="display: flex; align-items: center; gap: 8px;">
-                <span>📋 既存スケジュールと完全一致のためスキップされた投稿</span>
+                <span>📋 既存スケジュール一致・日常投稿のためスキップされた投稿</span>
                 <span id="skipped-count-tag" style="background: #333; color: #bbb; font-size: 0.75rem; padding: 1px 6px; border-radius: 10px;">0件</span>
             </span>
             <span style="font-size: 0.8rem; color: #666;">開く / 閉じる ▼</span>
         </summary>
         <div id="skipped-list-container" style="margin-top: 12px; display: flex; flex-direction: column; gap: 10px;">
+            <!-- JSで動的生成 -->
+        </div>
+    </details>
+
+    <!-- 処理済み履歴コンテナ（反映済み・削除済み） -->
+    <details id="history-list-details" style="margin-top: 16px; background: #141414; border: 1px solid #2a2a2a; border-radius: 8px; padding: 10px 14px;">
+        <summary style="font-weight: bold; color: #888; cursor: pointer; display: flex; align-items: center; justify-content: space-between; user-select: none; font-size: 0.9rem;">
+            <span style="display: flex; align-items: center; gap: 8px;">
+                <span>📜 処理済み履歴（反映済み / 削除済み）</span>
+                <span id="history-count-tag" style="background: #2a2a2a; color: #aaa; font-size: 0.75rem; padding: 1px 6px; border-radius: 10px;">0件</span>
+            </span>
+            <span style="font-size: 0.8rem; color: #555;">開く / 閉じる ▼</span>
+        </summary>
+        <div id="history-list-container" style="margin-top: 12px; display: flex; flex-direction: column; gap: 10px;">
             <!-- JSで動的生成 -->
         </div>
     </details>
