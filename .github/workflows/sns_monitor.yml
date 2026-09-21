@@ -1,0 +1,48 @@
+name: SNS Schedule Monitor (X & Instagram)
+
+# on:
+#   schedule:
+#     # JST 07:00 (UTC 22:00前日) - 朝の仕込み・臨休告知
+#     - cron: '0 22 * * *'
+#     # JST 10:30 (UTC 01:30) - 昼の部直前の突発告知
+#     - cron: '30 1 * * *'
+#     # JST 16:30 (UTC 07:30) - 夜の部直前の突発告知
+#     - cron: '30 7 * * *'
+on:
+  workflow_dispatch:
+    inputs:
+      force_rescan:
+        description: 'Force re-scan recent posts without cache'
+        required: false
+        default: false
+        type: boolean
+
+jobs:
+  crawl_and_analyze:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Run SNS Crawler & Gemini AI Analysis
+        env:
+          TZ: 'Asia/Tokyo'
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          node scripts/sns_crawler.js
+
+      - name: Commit & Push updated pending updates
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action [SNS Monitor]"
+          git add data/pending_updates.json data/crawled_cache.json
+          git diff --staged --quiet || (git commit -m "🤖 Auto-detect SNS schedule changes [skip ci]" && git push origin HEAD:${{ github.ref_name }})
+
