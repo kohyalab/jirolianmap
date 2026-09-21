@@ -177,24 +177,16 @@ async function fetchXFromSyndication(screenName) {
 }
 
 /**
- * 他アカウントへのメンションまたはリプライであるかを判定
- * （公式の営業案内告知ではなく、個別会話や返信とみなして解析から除外）
+ * 他アカウントへのメンションであるかを判定
+ * （自分自身へのツリー返信・リプライは営業情報告知の可能性があるため除外せず、他アカウント宛ての会話・メンションのみ除外）
  */
 function isMentionOrReply(post, ownHandle = '') {
     if (!post) return false;
 
-    // 1. メタデータによるリプライ判定
-    if (post.isReply) return true;
-
     const text = (post.text || '').trim();
     if (!text) return false;
 
-    // 2. 本文先頭が @ で始まる場合はリプライ
-    if (/^@[a-zA-Z0-9_]+/i.test(text)) {
-        return true;
-    }
-
-    // 3. 本文中に含まれるメンション (@username) の抽出と判定
+    // 本文中に含まれるメンション (@username) の抽出と判定
     const cleanOwnHandle = (ownHandle || '').replace(/^@/, '').toLowerCase();
     const mentionMatches = text.match(/@[a-zA-Z0-9_]+/g);
     if (mentionMatches && mentionMatches.length > 0) {
@@ -348,9 +340,9 @@ async function runCrawler() {
         console.log(`  -> 新規投稿: ${newPosts.length}件`);
 
         for (const post of newPosts) {
-            // 0. 他アカウントへのメンションまたはリプライはGemini解析対象外
+            // 0. 他アカウントへのメンションはGemini解析対象外（自ポストへのリプライ・ツリーは解析対象）
             if (isMentionOrReply(post, shop.x)) {
-                console.log(`  ⏭️ メンション・リプライと判定しスキップ: "${post.text.substring(0, 25).replace(/\n/g, ' ')}..."`);
+                console.log(`  ⏭️ 他アカウントへのメンションと判定しスキップ: "${post.text.substring(0, 25).replace(/\n/g, ' ')}..."`);
                 const skippedItem = {
                     id: `pending_skipped_${shop.id}_${post.postId}`,
                     shopId: shop.id,
@@ -365,10 +357,10 @@ async function runCrawler() {
                         startDate: post.postedAt.split('T')[0],
                         endDate: post.postedAt.split('T')[0],
                         hours: [],
-                        reason: '他アカウントへのメンション・リプライ'
+                        reason: '他アカウントへのメンション'
                     },
                     status: 'skipped',
-                    skipReason: '他アカウントへのメンションまたはリプライのため解析対象外'
+                    skipReason: '他アカウントへのメンションのため解析対象外'
                 };
                 pendingUpdates = pendingUpdates.filter(p => p.id !== skippedItem.id);
                 pendingUpdates.push(skippedItem);

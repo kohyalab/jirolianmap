@@ -73,11 +73,11 @@ async function main() {
             summaryMd += `- **添付画像**: ${p.mediaUrls.map((u, idx) => `[画像${idx + 1}](${u})`).join(', ')}\n\n`;
         }
 
-        // 他アカウントへのメンション・リプライ判定
-        const isMentionReply = isMentionOrReply(p, targetHandle);
-        if (isMentionReply) {
-            console.log(`\n⏭️ 他アカウントへのメンションまたはリプライのため、Gemini AI解析はスキップします。`);
-            summaryMd += `- **AI判定**: ⏭️ **スキップ（他アカウントへのメンション・リプライ）**\n\n`;
+        // 他アカウントへのメンション判定（自ポストへのリプライ・ツリーは解析対象）
+        const isMention = isMentionOrReply(p, targetHandle);
+        if (isMention) {
+            console.log(`\n⏭️ 他アカウントへのメンションのため、Gemini AI解析はスキップします。`);
+            summaryMd += `- **AI判定**: ⏭️ **スキップ（他アカウントへのメンション）**\n\n`;
             continue;
         }
 
