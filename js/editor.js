@@ -1522,8 +1522,14 @@ class EditorApp {
                 });
             }
 
-            // 利用可能なモデル候補リスト（gemini-3.6-flash を最優先）
-            const modelCandidates = ['gemini-3.6-flash', 'gemini-3-flash', 'gemini-2.5-flash', 'gemini-1.5-flash-latest'];
+            // 利用可能なモデル候補リスト（回数が稼げる Flash Lite モデルを最優先: RPD 500 / RPM 15）
+            const modelCandidates = [
+                'gemini-3.1-flash-lite',
+                'gemini-3.5-flash-lite',
+                'gemini-2.5-flash-lite',
+                'gemini-3.6-flash',
+                'gemini-2.5-flash'
+            ];
             let resultJson = null;
             let lastError = null;
 
