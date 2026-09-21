@@ -227,8 +227,6 @@ async function runCrawler() {
         console.log(`  -> 新規投稿: ${newPosts.length}件`);
 
         for (const post of newPosts) {
-            processedSet.add(post.postId);
-
             if (!apiKey) {
                 continue;
             }
@@ -276,6 +274,9 @@ async function runCrawler() {
                         console.log(`    ✨ 営業変更を検出！ [${change.type}] ${change.startDate}: ${analysis.summary || change.reason}`);
                     }
                 }
+
+                // 正常に解析が完了した場合のみ、処理済みキャッシュに追加（エラー時は次回再試行可能に保持）
+                processedSet.add(post.postId);
             } catch (err) {
                 console.error(`  ❌ Gemini解析エラー (Shop: ${shop.id}):`, err.message);
             }

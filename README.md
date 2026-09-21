@@ -42,8 +42,10 @@
 ### 6. 🤖 X (旧Twitter) 自動投稿Bot (`bot.js`)
 - **自動画像投稿**: Playwright (Headless Chromium) ＋ Node.js ＋ GitHub Actions により、毎朝自動で全店舗の最新営業状況画像を生成し、公式Xアカウントへ自動ポストします。
 
-### 7. 🛠️ 店舗データエディタ (`editor.html`)
-- **データ管理ツール**: 店舗基本情報、営業時間ルール、臨時休業スケジュール、位置情報（緯度経度・JIS自治体コード）をブラウザ上で視覚的に編集・JSON出力できる専用Webエディタを同梱。
+### 8. 🤖 SNS営業・臨休情報の自動巡回 ＆ ワンタップ承認反映
+- **自動巡回 ＆ 漏れ防止**: 定期GitHub Actionsワークフローにより、直系各店舗の公式X・Instagramの最新投稿（リプライツリー、ストーリーズ含む）を網羅的に自動巡回。3層の重複排除フィルターにより、過去処理済み投稿や既登録スケジュールの再解析を防止。
+- **マルチモーダルAI解析 (Gemini 1.5 Flash)**: 「助手不在」「材料切れ」「祝日昼営業」といった個性的な投稿テキストに加え、**店頭の貼り紙写真、手書きホワイトボード、カレンダー画像（〇印や✕印）** からも正確に日付と営業・休業判定を自動抽出。
+- **Webエディタでのワンタップ承認**: `editor.html` の「🔔 承認待ち」タブに元投稿とAI提案が一覧表示され、管理者は「✅ 承認して反映」ボタンをワンクリックするだけで `shops.json` に安全にマージ・コミットできます。
 
 ---
 
@@ -54,22 +56,81 @@
 | **フロントエンド** | HTML5, CSS3 (CSS Variables, Flexbox, CSS Grid), Vanilla JavaScript (ES6+) |
 | **地図描画** | [Leaflet.js](https://leafletjs.net/) |
 | **画像生成** | [html2canvas](https://html2canvas.hertzen.com/) |
-| **自動化Bot** | Node.js, [Playwright](https://playwright.dev/), `twitter-api-v2`, GitHub Actions |
-| **データ構造** | `shops.json` (店舗・スケジュールDB), `lg_codes.js` (JIS地方公共団体コード) |
+| **AI解析エンジン** | Google Gemini 1.5 Flash (Multimodal Text & Vision API) |
+| **自動化Bot / 巡回** | Node.js, [Playwright](https://playwright.dev/), `twitter-api-v2`, GitHub Actions |
+| **データ構造** | `shops.json` (店舗マスターDB), `data/pending_updates.json` (承認待ちデータ) |
 | **ホスティング** | GitHub Pages (カスタムドメイン: `app.jirolianmap.com`) |
 
 ---
 
-## 📂 構成ファイル
+## 📂 ディレクトリ・ファイル構成
 
-- **`index.html`**: メインアプリケーション（UI、地図・リスト描画、フィルタ・ソート・共有モーダル・画像出力処理）
-- **`shops.json`**: 直系全店舗のマスターデータ（住所、緯度経度、通常営業時間、臨時営業・休業情報）
-- **`lg_codes.js`**: JIS全国地方公共団体コードユーティリティ（都道府県名・市区町村名の自動相互参照）
-- **`editor.html`**: 店舗データ編集・メンテナンス用Webエディタ
-- **`bot.js`**: X (旧Twitter) 自動投稿用 Playwright スクリプト
+```text
+├── index.html                  # メインアプリケーション画面
+├── editor.html                 # 店舗データ編集・メンテナンス用Webエディタ画面
+├── shops.json                  # 直系全店舗のマスターデータ（住所、緯度経度、通常営業時間、臨時営業・休業情報）
+├── bot.js                      # X (旧Twitter) 自動投稿用 Playwright スクリプト
+│
+├── data/
+│   ├── pending_updates.json    # SNS自動検出による承認待ち営業変更リスト
+│   └── crawled_cache.json      # 重複解析防止用SNSクローラーキャッシュ
+│
+├── scripts/
+│   ├── sns_crawler.js          # 全店舗SNS巡回・投稿収集スクリプト
+│   └── analyze_posts.js        # Gemini 1.5 Flash によるテキスト・画像営業情報解析エンジン
+│
+├── css/
+│   ├── variables.css           # 共通デザイントークン（二郎カラー、ダークテーマ、営業状態ステータス色）
+│   ├── style.css               # メインアプリ用スタイルシート
+│   └── editor.css              # エディタ専用スタイルシート
+│
+└── js/
+    ├── common/                 # アプリ＆エディタ共通モジュール
+    │   ├── lg_codes.js         # JIS全国地方公共団体コードユーティリティ
+    │   ├── utils.js            # 共通ユーティリティ（文字正規化、日付・時刻計算、距離計算）
+    │   └── business-hours.js   # 営業時間・営業状況判定エンジン（祝日判定、シフトパース）
+    ├── app/
+    │   └── share.js            # 画像生成（html2canvas）・SNS共有・キャプチャモーダル制御
+    ├── app.js                  # メインアプリケーション制御ロジック
+    └── editor.js               # データエディタ制御ロジック
+```
+
+---
+
+## 🔑 GitHub Secrets の設定
+
+自動投稿およびSNS自動巡回を使用する場合、GitHubリポジトリの **Settings > Secrets and variables > Actions** に以下の環境変数を登録してください：
+
+| シークレット名 | 概要 | 必須 |
+| :--- | :--- | :--- |
+| `GEMINI_API_KEY` | Google AI Studio の APIキー（無料枠あり。SNS投稿テキスト・画像の営業解析用） | 推奨 |
+| `TWITTER_API_KEY` | 公式Xアカウント自動投稿用のAPI Key | 自動ポスト用 |
+| `TWITTER_API_SECRET` | 公式Xアカウント自動投稿用のAPI Secret | 自動ポスト用 |
+| `TWITTER_ACCESS_TOKEN` | 公式Xアカウント自動投稿用のAccess Token | 自動ポスト用 |
+| `TWITTER_ACCESS_SECRET` | 公式Xアカウント自動投稿用のAccess Secret | 自動ポスト用 |
+
+---
+
+## 📜 オープンデータ・クレジット表記 (Attribution)
+
+本アプリケーションでは以下のオープンデータおよびオープンソースソフトウェアを使用しています。
+
+- **地図背景データ**: [&copy; OpenStreetMap contributors](https://www.openstreetmap.org/copyright) (ODbL)
+- **全国都道府県・市区町村マスターデータ**: [Geolonia japanese-addresses](https://github.com/geolonia/japanese-addresses) (CC BY 4.0)
+- **店舗歴史データ一部参照**: [Take4 二郎 食記録 ラーメン二郎 年表](https://take4.hiyamugi.com/shop/shop_history.htm)
+
+---
+
+## 🔒 プライバシー・コンプライアンス (電気通信事業法外部送信規律)
+
+当サービスでは、品質向上および個別データ保存のため以下の外部送信およびローカルストレージを利用しています。
+
+- **Google Analytics (Google LLC)**: アクセス解析およびトラフィック分析目的（Cookie / IPアドレス / 閲覧ログ）。オプトアウトは [Google アナリティクス オプトアウト アドオン](https://tools.google.com/dlpage/gaoptout?hl=ja) をご利用ください。
+- **Browser LocalStorage**: 匿名生成端末ID (`jiro_user_id`) および訪問記録（店舗制覇データ）の保持。
 
 ---
 
 ## 📄 ライセンス
 
-MIT License
+[MIT License](LICENSE)
+

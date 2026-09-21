@@ -1,6 +1,6 @@
 // 全国地方公共団体コード (JIS X 0401/0402) マスターデータ
 const LG_CODES = {
-    prefs: {
+    prefs: Object.freeze({
         "01": "北海道", "02": "青森県", "03": "岩手県", "04": "宮城県", "05": "秋田県",
         "06": "山形県", "07": "福島県", "08": "茨城県", "09": "栃木県", "10": "群馬県",
         "11": "埼玉県", "12": "千葉県", "13": "東京都", "14": "神奈川県", "15": "新潟県",
@@ -11,7 +11,8 @@ const LG_CODES = {
         "36": "徳島県", "37": "香川県", "38": "愛媛県", "39": "高知県", "40": "福岡県",
         "41": "佐賀県", "42": "長崎県", "43": "熊本県", "44": "大分県", "45": "宮崎県",
         "46": "鹿児島県", "47": "沖縄県"
-    },
+    }),
+
     // 主要市区町村および店舗所在市区町村コード (5桁)
     cities: {
         // 北海道
@@ -91,6 +92,7 @@ const LG_CODES = {
         // 沖縄県
         "47201": "那覇市", "47205": "宜野湾市", "47362": "島尻郡八重瀬町"
     },
+
     // 都道府県コード (2桁) を市区町村コード (5桁) から取得
     getPrefCodeByCityCode(cityCode) {
         if (!cityCode || typeof cityCode !== 'string' || cityCode.length < 2) return '';
@@ -100,13 +102,13 @@ const LG_CODES = {
     // 都道府県名を市区町村コードから取得
     getPrefNameByCityCode(cityCode) {
         const pCode = this.getPrefCodeByCityCode(cityCode);
-        return this.prefs[pCode] || '';
+        return Object.hasOwn(this.prefs, pCode) ? this.prefs[pCode] : '';
     },
 
     // 市区町村名を市区町村コードから取得
     getCityName(cityCode) {
-        if (!cityCode) return '';
-        return this.cities[cityCode] || '';
+        if (!cityCode || typeof cityCode !== 'string') return '';
+        return Object.hasOwn(this.cities, cityCode) ? this.cities[cityCode] : '';
     },
 
     // 都道府県名 + 市区町村名 を取得
@@ -128,40 +130,40 @@ const LG_CODES = {
     getShopFullAddress(shop) {
         if (!shop) return '';
         const prefAndCity = this.getPrefAndCityName(shop.cityCode || shop);
-        const addrText = shop.addressText || '';
+        const addrText = typeof shop.addressText === 'string' ? shop.addressText : '';
         return `${prefAndCity}${addrText}`;
     },
 
     // 指定都道府県コードの市区町村一覧オブジェクトを取得
     getCitiesByPref(prefCode) {
-        const result = {};
-        if (!prefCode) return result;
+        const result = Object.create(null);
+        if (!prefCode || typeof prefCode !== 'string') return result;
         for (const code in this.cities) {
-            if (code.startsWith(prefCode)) {
+            if (Object.hasOwn(this.cities, code) && code.startsWith(prefCode)) {
                 result[code] = this.cities[code];
             }
         }
         return result;
     },
 
-    // 外部オープンデータ (全国市区町村マスター JSON) の動的フェッチ
+    // 外部オープンデータ (全国市区町村マスター JSON) の動的フェッチ (プロトタイプ汚染防止策付き)
     async fetchExternalData() {
         try {
             const res = await fetch('https://cdn.jsdelivr.net/gh/geolonia/japanese-addresses@master/data/api/ja/cities.json');
-            if (res.ok) {
-                const data = await res.json();
-                // 取得データの反映
-                if (Array.isArray(data)) {
-                    data.forEach(item => {
-                        if (item.code && item.name) {
-                            this.cities[item.code] = item.name;
+            if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+            const data = await res.json();
+            if (Array.isArray(data)) {
+                data.forEach(item => {
+                    if (item && typeof item.code === 'string' && typeof item.name === 'string') {
+                        if (item.code === '__proto__' || item.code === 'constructor' || item.code === 'prototype') {
+                            return;
                         }
-                    });
-                }
+                        this.cities[item.code] = item.name;
+                    }
+                });
             }
         } catch (e) {
-            // 通信エラー・オフライン時は既存のローカルマスターを使用
-            console.warn('LG_CODES: External data fetch failed, using fallback local data.', e);
+            console.warn('LG_CODES: External data fetch failed, using fallback local data.', e.message || e);
         }
     }
 };
@@ -169,5 +171,3 @@ const LG_CODES = {
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = LG_CODES;
 }
-
-
