@@ -1,14 +1,13 @@
 name: SNS Schedule Monitor (X & Instagram)
 
-# on:
-#   schedule:
-#     # JST 07:00 (UTC 22:00前日) - 朝の仕込み・臨休告知
-#     - cron: '0 22 * * *'
-#     # JST 10:30 (UTC 01:30) - 昼の部直前の突発告知
-#     - cron: '30 1 * * *'
-#     # JST 16:30 (UTC 07:30) - 夜の部直前の突発告知
-#     - cron: '30 7 * * *'
 on:
+  schedule:
+    # JST 06:00 (UTC 21:00前日) - 朝の仕込み・臨休告知
+    - cron: '0 21 * * *'
+    # JST 14:00 (UTC 05:00) - 昼の部終了後・夜の部告知
+    - cron: '0 5 * * *'
+    # JST 22:00 (UTC 13:00) - 営業終了後・翌日告知
+    - cron: '0 13 * * *'
   workflow_dispatch:
     inputs:
       force_rescan:
