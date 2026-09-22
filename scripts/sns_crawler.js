@@ -13,7 +13,6 @@ const JiroBusinessHours = require('../js/common/business-hours.js');
 
 const SHOPS_JSON_PATH = path.join(__dirname, '..', 'shops.json');
 const SNS_POSTS_PATH = path.join(__dirname, '..', 'data', 'sns_posts.json');
-const PENDING_UPDATES_PATH = path.join(__dirname, '..', 'data', 'pending_updates.json');
 const CRAWLED_CACHE_PATH = path.join(__dirname, '..', 'data', 'crawled_cache.json');
 const AI_GUIDELINES_PATH = path.join(__dirname, '..', 'data', 'ai_guidelines.json');
 
@@ -275,7 +274,6 @@ async function fetchXRecentPosts(screenName) {
 
 /**
  * data/sns_posts.json から投稿履歴・判定データを読み込む
- * (旧 pending_updates.json があれば自動移行)
  */
 function loadSnsPosts() {
     let posts = [];
@@ -285,38 +283,6 @@ function loadSnsPosts() {
             if (!Array.isArray(posts)) posts = [];
         } catch (e) {
             console.warn('[WARN] Failed to read sns_posts.json:', e.message);
-        }
-    } else if (fs.existsSync(PENDING_UPDATES_PATH)) {
-        try {
-            const oldData = JSON.parse(fs.readFileSync(PENDING_UPDATES_PATH, 'utf8'));
-            if (Array.isArray(oldData)) {
-                posts = oldData.map(item => {
-                    const isProcessed = item.status === 'approved' || item.status === 'rejected';
-                    let aiStatus = 'schedule_change';
-                    if (item.status === 'skipped') {
-                        if (item.skipReason && item.skipReason.includes('キーワード')) aiStatus = 'daily';
-                        else if (item.skipReason && item.skipReason.includes('メンション')) aiStatus = 'mention';
-                        else aiStatus = 'match';
-                    }
-                    return {
-                        id: item.id,
-                        shopId: item.shopId,
-                        shopName: item.shopName,
-                        postSource: item.postSource || 'x',
-                        postUrl: item.postUrl,
-                        postedAt: item.postedAt,
-                        postText: item.postText,
-                        mediaUrls: item.mediaUrls || [],
-                        detectedChange: item.detectedChange || null,
-                        processed: isProcessed,
-                        processedAt: item.approvedAt || item.rejectedAt || null,
-                        aiStatus: aiStatus,
-                        aiReason: item.skipReason || (item.detectedChange?.reason || '')
-                    };
-                });
-            }
-        } catch (e) {
-            console.warn('[WARN] Failed to migrate pending_updates.json:', e.message);
         }
     }
     return posts;
@@ -548,8 +514,6 @@ async function runCrawler() {
 
     // sns_posts.json 保存
     fs.writeFileSync(SNS_POSTS_PATH, JSON.stringify(snsPosts, null, 2), 'utf8');
-    // 後方互換性のため pending_updates.json も同期保存
-    fs.writeFileSync(PENDING_UPDATES_PATH, JSON.stringify(snsPosts, null, 2), 'utf8');
 
     console.log(`\n=== 巡回完了: 合計 ${snsPosts.length} 件 (新規検出: ${newlyDetectedCount}件) を sns_posts.json に保存しました ===`);
 }

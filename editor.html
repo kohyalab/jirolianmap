@@ -26,7 +26,7 @@
         <div class="mode-tabs">
             <button class="tab-btn active" id="tab-single">店舗別</button>
             <button class="tab-btn" id="tab-bulk">一括</button>
-            <button class="tab-btn" id="tab-pending" style="position:relative;">🔔 承認待ち <span id="pending-badge" class="badge" style="display:none; background:var(--jiro-yellow); color:#000; font-size:0.7rem; padding:1px 6px; border-radius:10px; font-weight:bold; margin-left:4px;">0</span></button>
+            <button class="tab-btn" id="tab-pending" style="position:relative;">🔔 SNS提案 <span id="pending-badge" class="badge" style="display:none; background:var(--jiro-yellow); color:#000; font-size:0.7rem; padding:1px 6px; border-radius:10px; font-weight:bold; margin-left:4px;">0</span></button>
         </div>
     </div>
 
@@ -329,7 +329,7 @@
     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 8px;">
         <div>
             <h2 style="font-size: 1.2rem; margin: 0; display: flex; align-items: center; gap: 8px;">
-                <span>🔔 SNS自動検出・営業判定一覧</span>
+                <span>🔔 SNS自動検出・反映提案</span>
                 <span id="pending-count-tag" style="background: var(--jiro-yellow); color: #000; font-size: 0.75rem; padding: 2px 8px; border-radius: 12px; font-weight: bold;">0件</span>
             </h2>
             <div style="font-size: 0.8rem; color: #888; margin-top: 4px;">公式SNSから自動収集・AI解析された営業情報です。カード上で直接編集し、「✏️ 反映（流し込み）」を押すと店舗の臨時設定フォームに流し込まれます。</div>
@@ -432,13 +432,13 @@
                 <span id="manual-ai-status" style="font-size: 0.85rem; color: #80d8ff; display: none;"></span>
                 <button type="button" class="btn btn-sm" onclick="app.clearManualAiForm()" style="background: #262626; border-color: #444; color: #aaa;">クリア</button>
                 <button type="button" class="btn btn-sm btn-primary" id="btn-manual-ai-submit" onclick="app.runManualAiAnalysis()" style="font-weight: bold; background: var(--jiro-yellow); color: #000; border: none; padding: 6px 16px;">
-                    🤖 AIで営業情報を解析して承認待ちに追加
+                    🤖 AIで営業情報を解析してSNS提案に追加
                 </button>
             </div>
         </div>
     </details>
 
-    <!-- 承認待ちカード一覧コンテナ -->
+    <!-- SNS提案カード一覧コンテナ -->
     <div id="pending-list-container" style="display: flex; flex-direction: column; gap: 12px;">
         <!-- JSで動的生成 -->
     </div>
@@ -447,7 +447,7 @@
     <details id="skipped-list-details" style="margin-top: 24px; background: #181818; border: 1px solid #333; border-radius: 8px; padding: 10px 14px;">
         <summary style="font-weight: bold; color: #aaa; cursor: pointer; display: flex; align-items: center; justify-content: space-between; user-select: none; font-size: 0.9rem;">
             <span style="display: flex; align-items: center; gap: 8px;">
-                <span>📋 既存スケジュール一致・日常投稿のためスキップされた投稿</span>
+                <span>📋 既存スケジュール一致・日常投稿（スキップ推奨）</span>
                 <span id="skipped-count-tag" style="background: #333; color: #bbb; font-size: 0.75rem; padding: 1px 6px; border-radius: 10px;">0件</span>
             </span>
             <span style="font-size: 0.8rem; color: #666;">開く / 閉じる ▼</span>
@@ -457,11 +457,11 @@
         </div>
     </details>
 
-    <!-- 処理済み履歴コンテナ（反映済み・削除済み） -->
+    <!-- 処理済み履歴コンテナ（反映済み・スキップ済み） -->
     <details id="history-list-details" style="margin-top: 16px; background: #141414; border: 1px solid #2a2a2a; border-radius: 8px; padding: 10px 14px;">
         <summary style="font-weight: bold; color: #888; cursor: pointer; display: flex; align-items: center; justify-content: space-between; user-select: none; font-size: 0.9rem;">
             <span style="display: flex; align-items: center; gap: 8px;">
-                <span>📜 処理済み履歴（反映済み / 削除済み）</span>
+                <span>📜 処理済み履歴（反映済み / スキップ済み）</span>
                 <span id="history-count-tag" style="background: #2a2a2a; color: #aaa; font-size: 0.75rem; padding: 1px 6px; border-radius: 10px;">0件</span>
             </span>
             <span style="font-size: 0.8rem; color: #555;">開く / 閉じる ▼</span>
@@ -543,6 +543,21 @@
             <button class="btn btn-sm" onclick="app.closeImageModal()">✕</button>
         </div>
         <img id="image-preview-img" src="" alt="添付画像" style="max-width: 100%; max-height: 80vh; object-fit: contain; border-radius: 4px;">
+    </div>
+</div>
+
+<!-- 店舗情報確認ポップアップモーダル (index.html準拠) -->
+<div class="modal-overlay" id="shop-info-modal" onclick="app.closeShopInfoModal()">
+    <div class="modal-content" style="max-width: 580px; max-height: 85vh; overflow-y: auto; padding: 16px; background: #1e1e1e; border: 1px solid #444; border-radius: 8px;" onclick="event.stopPropagation();">
+        <div class="modal-header" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #333; padding-bottom: 8px;">
+            <h2 id="shop-info-modal-title" style="margin: 0; font-size: 1.15rem; color: var(--jiro-yellow); display: flex; align-items: center; gap: 8px;">🍜 店舗情報</h2>
+            <button class="btn btn-sm" onclick="app.closeShopInfoModal()">✕</button>
+        </div>
+        <div id="shop-info-modal-body" style="margin-top: 12px; font-size: 0.88rem; line-height: 1.6;">
+        </div>
+        <div style="display: flex; justify-content: flex-end; margin-top: 16px; border-top: 1px solid #333; padding-top: 10px;">
+            <button class="btn btn-sm" onclick="app.closeShopInfoModal()">閉じる</button>
+        </div>
     </div>
 </div>
 
