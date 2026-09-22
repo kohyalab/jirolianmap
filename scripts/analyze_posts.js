@@ -127,7 +127,7 @@ async function analyzePostWithGemini(postData, apiKey = process.env.GEMINI_API_K
     const todayStr = postedDateObj.toISOString().split('T')[0];
     const dayOfWeekStr = ['日', '月', '火', '水', '木', '金', '土'][postedDateObj.getDay()];
 
-    // 管理者学習ルール・ガイドラインの読み込み
+    // 管理者学習ルール・ガイドラインおよび人間判定フィードバックの読み込み
     let guidelinesText = '';
     const guidelinesPath = path.join(__dirname, '..', 'data', 'ai_guidelines.json');
     if (fs.existsSync(guidelinesPath)) {
@@ -135,7 +135,19 @@ async function analyzePostWithGemini(postData, apiKey = process.env.GEMINI_API_K
             const guidelinesData = JSON.parse(fs.readFileSync(guidelinesPath, 'utf8'));
             const rules = (guidelinesData.generalRules || []).map(r => `・【${r.title}】: ${r.rule}`).join('\n');
             const shopRules = (guidelinesData.shopSpecificRules && guidelinesData.shopSpecificRules[postData.shopId]) ? `・【店舗固有ルール】: ${guidelinesData.shopSpecificRules[postData.shopId]}` : '';
-            guidelinesText = `\n【管理者学習ルール・判定ガイドライン】\n${rules}\n${shopRules}\n`;
+
+            // 人間判定の学習履歴（直近15件）を教師データとして動的注入
+            let feedbackText = '';
+            if (Array.isArray(guidelinesData.learnedFeedback) && guidelinesData.learnedFeedback.length > 0) {
+                const sampleFeedbacks = guidelinesData.learnedFeedback.slice(0, 15).map(f => {
+                    const actionStr = f.humanAction === 'applied' ? '反映(要変更)' : 'スキップ(反映不要)';
+                    const detail = f.finalDetails ? ` (反映内容: ${f.finalDetails.startDate} ${f.finalDetails.hours ? JSON.stringify(f.finalDetails.hours) : '休業'} 理由:${f.finalDetails.reason || 'なし'})` : '';
+                    return `  - 投稿: "${f.postText}" => 人間判定: ${actionStr}${detail}`;
+                }).join('\n');
+                feedbackText = `\n【人間による過去の判定・反映学習事例（これらを基準として判定してください）】\n${sampleFeedbacks}\n`;
+            }
+
+            guidelinesText = `\n【管理者学習ルール・判定ガイドライン】\n${rules}\n${shopRules}\n${feedbackText}\n`;
         } catch (e) {
             console.warn('[WARN] Failed to load ai_guidelines.json:', e.message);
         }

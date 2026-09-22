@@ -553,15 +553,15 @@ input.error { border-color: var(--danger-color) !important; background-color: #3
     background: #1e1e1e;
     border: 1px solid #333;
     border-radius: 8px;
-    padding: 14px 16px;
+    padding: 10px 12px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
     transition: border-color 0.2s, box-shadow 0.2s;
 }
 .pending-card:hover {
     border-color: #555;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.35);
 }
 .pending-card.is-approved {
     border-color: #2e7d32;
@@ -572,18 +572,19 @@ input.error { border-color: var(--danger-color) !important; background-color: #3
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 6px;
 }
 .pending-shop-title {
-    font-size: 1.05rem;
+    font-size: 0.98rem;
     font-weight: bold;
     color: #fff;
     display: flex;
     align-items: center;
     gap: 8px;
+    flex-wrap: wrap;
 }
 .pending-meta {
-    font-size: 0.78rem;
+    font-size: 0.75rem;
     color: #888;
     display: flex;
     align-items: center;
@@ -592,9 +593,10 @@ input.error { border-color: var(--danger-color) !important; background-color: #3
 .pending-source-tag {
     background: #2a2a2a;
     color: #aaa;
-    padding: 2px 6px;
+    padding: 1px 6px;
     border-radius: 4px;
     font-weight: 500;
+    font-size: 0.72rem;
 }
 .pending-source-tag.x {
     background: #000;
@@ -606,26 +608,85 @@ input.error { border-color: var(--danger-color) !important; background-color: #3
     color: #f48fb1;
     border: 1px solid #880e4f;
 }
+
+/* バッジ3区分（営業変更を検出 / 登録済 / 無関係） */
+.pending-badge {
+    font-size: 0.72rem;
+    font-weight: bold;
+    padding: 2px 7px;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    letter-spacing: 0.02em;
+}
+.pending-badge.badge-change {
+    background: #ffb300;
+    color: #121212;
+}
+.pending-badge.badge-registered {
+    background: #00897b;
+    color: #ffffff;
+}
+.pending-badge.badge-unrelated {
+    background: #424242;
+    color: #dcdcdc;
+}
+
+/* ボタン強調スタイル */
+.btn-action-highlight {
+    background: var(--jiro-yellow) !important;
+    color: #000 !important;
+    font-weight: bold !important;
+    border: none !important;
+    padding: 5px 14px !important;
+    font-size: 0.82rem !important;
+    box-shadow: 0 0 8px rgba(255, 235, 59, 0.35);
+}
+.btn-action-muted {
+    background: #222 !important;
+    color: #888 !important;
+    border: 1px solid #444 !important;
+    font-size: 0.75rem !important;
+    padding: 4px 8px !important;
+}
+.btn-skip-highlight {
+    background: #2c3e50 !important;
+    color: #ecf0f1 !important;
+    font-weight: bold !important;
+    border: 1px solid #5d6d7e !important;
+    padding: 5px 12px !important;
+    font-size: 0.82rem !important;
+    box-shadow: 0 0 6px rgba(93, 109, 126, 0.4);
+}
+.btn-skip-muted {
+    background: #222 !important;
+    color: #888 !important;
+    border: 1px solid #444 !important;
+    font-size: 0.75rem !important;
+    padding: 4px 8px !important;
+}
+
 .pending-post-box {
     background: #141414;
     border-left: 3px solid #555;
-    padding: 8px 12px;
+    padding: 6px 10px;
     border-radius: 0 4px 4px 0;
-    font-size: 0.85rem;
-    line-height: 1.45;
+    font-size: 0.8rem;
+    line-height: 1.4;
     color: #ccc;
     white-space: pre-wrap;
     word-break: break-word;
 }
 .pending-media-thumbs {
     display: flex;
-    gap: 8px;
+    gap: 6px;
     margin-top: 6px;
     overflow-x: auto;
 }
 .pending-thumb {
-    width: 64px;
-    height: 64px;
+    width: 56px;
+    height: 56px;
     object-fit: cover;
     border-radius: 4px;
     border: 1px solid #444;
@@ -638,18 +699,18 @@ input.error { border-color: var(--danger-color) !important; background-color: #3
 }
 .pending-ai-box {
     background: #181818;
-    border: 1px solid #383838;
+    border: 1px solid #333;
     border-radius: 6px;
-    padding: 12px;
+    padding: 8px 10px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 6px;
 }
 .pending-shop-btn {
     background: none;
     border: none;
     color: var(--jiro-yellow);
-    font-size: 1.05rem;
+    font-size: 0.98rem;
     font-weight: bold;
     cursor: pointer;
     padding: 0;
@@ -667,28 +728,28 @@ input.error { border-color: var(--danger-color) !important; background-color: #3
 /* 営業時間 比較パネル */
 .schedule-compare-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 8px;
-    margin: 6px 0;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 6px;
+    margin: 4px 0;
 }
 .schedule-compare-card {
     background: #121212;
     border: 1px solid #333;
     border-radius: 6px;
-    padding: 8px 12px;
+    padding: 6px 10px;
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 3px;
 }
 .schedule-compare-card.current {
-    border-color: #444;
+    border-color: #3e3e3e;
 }
 .schedule-compare-card.proposed {
-    border-color: #555;
-    background: #14171a;
+    border-color: #4a4a4a;
+    background: #13171b;
 }
 .schedule-compare-header {
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     font-weight: bold;
     color: #aaa;
     display: flex;
@@ -696,10 +757,9 @@ input.error { border-color: var(--danger-color) !important; background-color: #3
     align-items: center;
 }
 .schedule-compare-value {
-    font-size: 0.88rem;
-    font-weight: bold;
+    font-size: 0.8rem;
     color: #f0f0f0;
-    line-height: 1.4;
+    line-height: 1.35;
 }
 .current-temp-highlight {
     color: #ff9f43 !important; /* index.htmlの臨時営業と同色の橙色 */
@@ -711,62 +771,211 @@ input.error { border-color: var(--danger-color) !important; background-color: #3
     margin-right: 4px;
 }
 
-/* 店舗詳細モーダル用スタイル (index.htmlライク) */
-.shop-modal-table {
+/* ==========================================================================
+   店舗情報ポップアップ用スタイル (index.html 完全踏襲)
+   ========================================================================== */
+.shop-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
     width: 100%;
-    border-collapse: collapse;
-    font-size: 0.82rem;
-    margin-top: 6px;
+    min-width: 0;
+    color: #ddd;
 }
-.shop-modal-table th, .shop-modal-table td {
-    padding: 5px 8px;
-    border: 1px solid #333;
-    text-align: left;
-}
-.shop-modal-table th {
-    background: #222;
-    color: var(--jiro-yellow);
-    width: 90px;
-    font-weight: bold;
-}
-.shop-modal-section-title {
-    font-size: 0.88rem;
-    font-weight: bold;
-    color: var(--jiro-yellow);
-    margin-top: 12px;
-    margin-bottom: 4px;
-    border-bottom: 1px solid #333;
-    padding-bottom: 3px;
+.shop-header-row,
+.shop-sub-row {
     display: flex;
     align-items: center;
-    gap: 6px;
-}
-.shop-modal-badge {
-    display: inline-block;
-    padding: 2px 8px;
-    border-radius: 4px;
-    font-size: 0.72rem;
-    font-weight: bold;
-}
-.shop-modal-links {
-    display: flex;
+    justify-content: space-between;
     gap: 8px;
-    flex-wrap: wrap;
-    margin-top: 8px;
+    width: 100%;
+    min-width: 0;
 }
-.shop-modal-link {
-    background: #2a2a2a;
-    color: #80d8ff;
-    border: 1px solid #444;
-    padding: 4px 10px;
-    border-radius: 4px;
-    font-size: 0.78rem;
-    text-decoration: none;
+.shop-title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 0;
+    flex: 1;
+    overflow: hidden;
+}
+.shop-name {
+    font-size: 1.05rem;
+    font-weight: bold;
+    color: var(--jiro-yellow);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex: 1;
+    min-width: 0;
+}
+.status-badge {
+    font-size: 0.65rem;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-weight: bold;
+    color: #fff;
+    width: 74px;
+    text-align: center;
+    flex-shrink: 0;
+    margin-left: auto;
+}
+.status-open {
+    background-color: var(--status-open, #2e7d32);
+}
+.status-closing-soon {
+    background-color: var(--status-closing-soon, #f57f17);
+}
+.status-scheduled {
+    background-color: var(--status-scheduled, #0288d1);
+}
+.status-closed {
+    background-color: var(--status-closed, #c62828);
+}
+.status-preopen {
+    background-color: var(--status-preopen, #7b1fa2);
+}
+.next-schedule {
+    font-size: 0.74rem;
+    color: #bbb;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex: 1;
+    min-width: 0;
+}
+.next-schedule.is-open {
+    color: var(--status-open, #2e7d32);
     font-weight: bold;
 }
-.shop-modal-link:hover {
-    background: #333;
-    border-color: #80d8ff;
+.next-schedule.is-closing-soon {
+    color: var(--status-closing-soon, #f57f17);
+    font-weight: bold;
+}
+.next-schedule.is-scheduled {
+    color: var(--status-scheduled, #0288d1);
+    font-weight: bold;
+}
+.temp-schedule-box {
+    margin-top: 6px;
+    font-size: 0.75rem;
+    color: #fff;
+    background: transparent;
+    border: 1px solid #333;
+    padding: 5px 8px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    line-height: 1.4;
+}
+.temp-schedule-box.today-highlight {
+    background-color: rgba(255, 167, 38, 0.16);
+    border: 1px solid transparent;
+    padding: 5px 8px;
+    border-radius: 4px;
+}
+.temp-schedule-label {
+    font-weight: bold;
+    color: #ffa726;
+}
+.temp-schedule-text {
+    color: #fff;
+    word-break: break-all;
+    white-space: normal;
+}
+.detailed-content {
+    margin-top: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+}
+.detailed-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding-top: 6px;
+    border-top: 1px solid #282828;
+}
+.meta-text-outside {
+    font-size: 0.8rem;
+    color: #ddd;
+    line-height: 1.4;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.hours-box {
+    padding: 0;
+    background: transparent;
+    border: none;
+}
+.hours-title {
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #aaa;
+    margin-bottom: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 4px;
+    white-space: nowrap;
+}
+.open-date-text {
+    font-size: 0.72rem;
+    color: #888;
+    font-weight: normal;
+}
+.hours-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.72rem;
+    color: #ddd;
+    border: 1px solid #333;
+}
+.hours-table th,
+.hours-table td {
+    border: 1px solid #333;
+    padding: 3px 6px;
+    text-align: left;
+    vertical-align: top;
+}
+.hours-table th {
+    background-color: #141414;
+    color: var(--jiro-yellow);
+    width: 5.2em;
+    white-space: nowrap;
+}
+.hours-table tr.today-highlight,
+.hours-table th.today-highlight,
+.hours-table td.today-highlight {
+    background-color: rgba(255, 167, 38, 0.18) !important;
+}
+.hours-table tr.today-highlight th {
+    font-weight: bold;
+    color: var(--jiro-yellow);
+}
+.links-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 0.75rem;
+}
+.shop-link {
+    color: var(--link-color, #4fc3f7);
+    text-decoration: none;
+}
+.shop-link:hover {
+    text-decoration: underline;
+}
+.gmap-link {
+    color: var(--gmap-color, #81c784);
+    text-decoration: none;
+}
+.gmap-link:hover {
+    text-decoration: underline;
 }
 
 .pending-actions {

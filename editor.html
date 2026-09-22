@@ -325,149 +325,97 @@
 </div>
 
 <!-- 承認待ちビュー (view-pending) -->
-<div class="main-container" id="view-pending" style="display: none; padding: 16px; max-width: 900px; margin: 0 auto; overflow-y: auto; height: calc(100vh - 65px);">
-    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 8px;">
-        <div>
-            <h2 style="font-size: 1.2rem; margin: 0; display: flex; align-items: center; gap: 8px;">
-                <span>🔔 SNS自動検出・反映提案</span>
-                <span id="pending-count-tag" style="background: var(--jiro-yellow); color: #000; font-size: 0.75rem; padding: 2px 8px; border-radius: 12px; font-weight: bold;">0件</span>
-            </h2>
-            <div style="font-size: 0.8rem; color: #888; margin-top: 4px;">公式SNSから自動収集・AI解析された営業情報です。カード上で直接編集し、「✏️ 反映（流し込み）」を押すと店舗の臨時設定フォームに流し込まれます。</div>
-        </div>
-        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-            <button class="btn btn-sm" id="btn-pending-refresh" onclick="app.loadPendingUpdates(true)">🔄 再取得</button>
-            <button class="btn btn-sm" id="btn-ai-guidelines" onclick="app.openAiGuidelinesModal()" style="background: #2a2a2a; border-color: #555; color: #80d8ff;">🧠 AI判定ルール</button>
-            <button class="btn btn-sm" id="btn-pending-trigger-crawler" onclick="app.triggerSnsCrawler()" style="background: #2a2a2a; border-color: #555; color: #ffeb3b;">⚡ 今すぐSNS再巡回</button>
-        </div>
+<div class="main-container" id="view-pending" style="display: none; padding: 12px 16px; max-width: 900px; margin: 0 auto; overflow-y: auto; height: calc(100vh - 65px);">
+    <div style="margin-bottom: 12px;">
+        <h2 style="font-size: 1.15rem; margin: 0; display: flex; align-items: center; gap: 8px;">
+            <span>🔔 SNS自動検出・反映提案</span>
+            <span id="pending-count-tag" style="background: var(--jiro-yellow); color: #000; font-size: 0.75rem; padding: 2px 8px; border-radius: 12px; font-weight: bold;">0件</span>
+        </h2>
+        <div style="font-size: 0.78rem; color: #888; margin-top: 4px;">公式SNSから自動収集・AI解析された営業情報です。内容を確認し、「✏️ 反映」で臨時設定フォームに流し込むか、「⏭️ スキップ」してください。</div>
     </div>
 
-    <!-- 巡回進捗ステータスバー -->
-    <div id="pending-crawler-progress" style="display: none; margin-bottom: 16px; padding: 12px 16px; background: #1a1a1a; border: 1px solid var(--jiro-yellow); border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.5);">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-            <div style="display: flex; align-items: center; gap: 8px; font-weight: bold; font-size: 0.95rem;">
-                <span id="crawler-progress-icon" style="font-size: 1.1rem;">⚡</span>
-                <span id="crawler-progress-title" style="color: var(--jiro-yellow);">SNS巡回ワークフローを実行中...</span>
-            </div>
-            <div style="font-size: 0.8rem; color: #aaa;">
-                <span>経過時間: </span><span id="crawler-progress-timer" style="color: #fff; font-weight: bold;">0秒</span>
-            </div>
-        </div>
-        <div style="font-size: 0.82rem; color: #ccc; margin-bottom: 8px; line-height: 1.4;" id="crawler-progress-desc">
-            GitHub Actions上で巡回ジョブの起動を待機しています...
-        </div>
-        <div style="background: #2a2a2a; border-radius: 4px; height: 6px; overflow: hidden; position: relative;">
-            <div id="crawler-progress-bar" style="width: 15%; background: var(--jiro-yellow); height: 100%; transition: width 0.4s ease;"></div>
-        </div>
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 8px; font-size: 0.75rem;">
-            <span style="color: #888;">※通常1〜2分で完了し、完了時に自動で画面が更新されます</span>
-            <a href="#" id="crawler-progress-log-link" target="_blank" rel="noopener noreferrer" style="color: #80d8ff; text-decoration: none; display: none;">GitHub Actionsでログを見る ↗</a>
-        </div>
+    <!-- SNS提案カード一覧コンテナ -->
+    <div id="pending-list-container" style="display: flex; flex-direction: column; gap: 10px;">
+        <!-- JSで動的生成 -->
     </div>
 
-    <!-- 手動貼り付けAI解析パネル（Instagram / X / 貼り紙） -->
-    <details id="manual-ai-panel" style="margin-bottom: 16px; background: #181818; border: 1px solid #333; border-radius: 8px; padding: 10px 14px; box-shadow: 0 2px 8px rgba(0,0,0,0.4);">
-        <summary style="font-weight: bold; color: var(--jiro-yellow); cursor: pointer; display: flex; align-items: center; justify-content: space-between; user-select: none; font-size: 0.95rem;">
+    <!-- 既存スケジュール完全一致等のスキップ済み一覧コンテナ -->
+    <details id="skipped-list-details" style="margin-top: 18px; background: #181818; border: 1px solid #333; border-radius: 8px; padding: 8px 12px;">
+        <summary style="font-weight: bold; color: #aaa; cursor: pointer; display: flex; align-items: center; justify-content: space-between; user-select: none; font-size: 0.85rem;">
+            <span style="display: flex; align-items: center; gap: 8px;">
+                <span>📋 既存スケジュール一致・日常投稿（スキップ推奨）</span>
+                <span id="skipped-count-tag" style="background: #333; color: #bbb; font-size: 0.72rem; padding: 1px 6px; border-radius: 10px;">0件</span>
+            </span>
+            <span style="font-size: 0.75rem; color: #666;">開く / 閉じる ▼</span>
+        </summary>
+        <div id="skipped-list-container" style="margin-top: 10px; display: flex; flex-direction: column; gap: 8px;">
+            <!-- JSで動的生成 -->
+        </div>
+    </details>
+
+    <!-- 処理済み履歴コンテナ（反映済み・スキップ済み） -->
+    <details id="history-list-details" style="margin-top: 12px; background: #141414; border: 1px solid #2a2a2a; border-radius: 8px; padding: 8px 12px;">
+        <summary style="font-weight: bold; color: #888; cursor: pointer; display: flex; align-items: center; justify-content: space-between; user-select: none; font-size: 0.85rem;">
+            <span style="display: flex; align-items: center; gap: 8px;">
+                <span>📜 処理済み履歴（反映済み / スキップ済み）</span>
+                <span id="history-count-tag" style="background: #2a2a2a; color: #aaa; font-size: 0.72rem; padding: 1px 6px; border-radius: 10px;">0件</span>
+            </span>
+            <span style="font-size: 0.75rem; color: #555;">開く / 閉じる ▼</span>
+        </summary>
+        <div id="history-list-container" style="margin-top: 10px; display: flex; flex-direction: column; gap: 8px;">
+            <!-- JSで動的生成 -->
+        </div>
+    </details>
+
+    <!-- 手動貼り付けAI解析パネル（最下部へ配置） -->
+    <details id="manual-ai-panel" style="margin-top: 20px; margin-bottom: 24px; background: #161616; border: 1px solid #2e2e2e; border-radius: 8px; padding: 8px 12px;">
+        <summary style="font-weight: bold; color: #aaa; cursor: pointer; display: flex; align-items: center; justify-content: space-between; user-select: none; font-size: 0.85rem;">
             <span style="display: flex; align-items: center; gap: 8px;">
                 <span>📝 手動貼り付けAI解析 (Instagram / X / 貼り紙等の投稿を解析)</span>
-                <span style="background: #333; color: #aaa; font-size: 0.7rem; padding: 1px 6px; border-radius: 4px; font-weight: normal;">新潟店等のInstagram対応</span>
+                <span style="background: #2a2a2a; color: #888; font-size: 0.68rem; padding: 1px 6px; border-radius: 4px;">補助機能</span>
             </span>
-            <span style="font-size: 0.8rem; color: #888;">開く / 閉じる ▼</span>
+            <span style="font-size: 0.75rem; color: #666;">開く / 閉じる ▼</span>
         </summary>
 
-        <div style="margin-top: 12px; display: flex; flex-direction: column; gap: 12px; border-top: 1px solid #2a2a2a; padding-top: 12px;">
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px;">
+        <div style="margin-top: 10px; display: flex; flex-direction: column; gap: 10px; border-top: 1px solid #222; padding-top: 10px;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 8px;">
                 <div class="form-group" style="margin: 0;">
-                    <label style="font-size: 0.8rem; color: #ccc;">対象店舗 <span style="color: #ff5252;">*</span></label>
-                    <select id="manual-ai-shop" style="width: 100%; padding: 6px 8px; background: #222; border: 1px solid #444; border-radius: 4px; color: #fff;">
+                    <label style="font-size: 0.78rem; color: #ccc;">対象店舗 <span style="color: #ff5252;">*</span></label>
+                    <select id="manual-ai-shop" style="width: 100%; padding: 5px 8px; background: #222; border: 1px solid #444; border-radius: 4px; color: #fff; font-size: 0.8rem;">
                         <option value="">店舗を選択してください</option>
                     </select>
                 </div>
                 <div class="form-group" style="margin: 0;">
-                    <label style="font-size: 0.8rem; color: #ccc;">投稿元 (SNS / 告知媒体)</label>
-                    <select id="manual-ai-source" style="width: 100%; padding: 6px 8px; background: #222; border: 1px solid #444; border-radius: 4px; color: #fff;">
+                    <label style="font-size: 0.78rem; color: #ccc;">投稿元 (SNS / 告知媒体)</label>
+                    <select id="manual-ai-source" style="width: 100%; padding: 5px 8px; background: #222; border: 1px solid #444; border-radius: 4px; color: #fff; font-size: 0.8rem;">
                         <option value="instagram">Instagram</option>
                         <option value="x">X (旧Twitter)</option>
                         <option value="notice">店頭貼り紙・黒板・その他</option>
                     </select>
                 </div>
                 <div class="form-group" style="margin: 0;">
-                    <label style="font-size: 0.8rem; color: #ccc;">投稿URL (任意)</label>
-                    <input type="text" id="manual-ai-url" placeholder="https://www.instagram.com/p/... 等" style="width: 100%; padding: 6px 8px; background: #222; border: 1px solid #444; border-radius: 4px; color: #fff;">
+                    <label style="font-size: 0.78rem; color: #ccc;">投稿URL (任意)</label>
+                    <input type="text" id="manual-ai-url" placeholder="https://www.instagram.com/p/... 等" style="width: 100%; padding: 5px 8px; background: #222; border: 1px solid #444; border-radius: 4px; color: #fff; font-size: 0.8rem;">
                 </div>
             </div>
 
             <div class="form-group" style="margin: 0;">
-                <label style="font-size: 0.8rem; color: #ccc; display: flex; justify-content: space-between;">
-                    <span>投稿テキスト / キャプション本文</span>
-                    <span style="font-size: 0.75rem; color: #888;">InstagramのキャプションやXの投稿文を貼り付け</span>
-                </label>
-                <textarea id="manual-ai-text" rows="3" placeholder="例: 「本日21日(月) 祝日ですが昼のみ臨時営業いたします！11:00〜15:00 夜はお休みです」「台風接近のため本日臨時休業いたします」など" style="width: 100%; padding: 8px; background: #222; border: 1px solid #444; border-radius: 4px; color: #fff; font-size: 0.85rem; line-height: 1.4;"></textarea>
+                <label style="font-size: 0.78rem; color: #ccc;">投稿本文 / 告知テキスト <span style="color: #ff5252;">*</span></label>
+                <textarea id="manual-ai-text" rows="3" placeholder="SNSの投稿本文をここに貼り付けてください..." style="width: 100%; padding: 6px 8px; background: #222; border: 1px solid #444; border-radius: 4px; color: #fff; font-size: 0.82rem; line-height: 1.4;"></textarea>
             </div>
 
             <div class="form-group" style="margin: 0;">
-                <label style="font-size: 0.8rem; color: #ccc; display: flex; justify-content: space-between;">
-                    <span>添付画像（カレンダー、ホワイトボード、貼り紙のスクショ等）</span>
-                    <span style="font-size: 0.75rem; color: #80d8ff;">※テキスト欄で Ctrl+V 貼り付けも可能です</span>
-                </label>
-                <div style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap;">
-                    <input type="file" id="manual-ai-file" accept="image/*" multiple style="display: none;" onchange="app.handleManualAiFiles(this.files)">
-                    <button type="button" class="btn btn-sm" onclick="document.getElementById('manual-ai-file').click()" style="background: #2a2a2a; border-color: #555; color: #ddd;">📁 画像ファイルを選択</button>
-                    <span style="font-size: 0.75rem; color: #888;">または画像をここにドラッグ＆ドロップ</span>
-                </div>
-                <!-- 添付画像プレビュー一覧 -->
-                <div id="manual-ai-previews" style="display: flex; gap: 8px; margin-top: 8px; flex-wrap: wrap;"></div>
-            </div>
-
-            <!-- Gemini API設定欄 (初回未入力時向け) -->
-            <div id="manual-ai-key-container" style="background: #202020; border: 1px dashed #444; border-radius: 6px; padding: 8px 12px; display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap;">
-                <div style="font-size: 0.8rem; color: #bbb;">
-                    <span>🔑 Gemini API Key: </span>
-                    <input type="password" id="manual-gemini-key" placeholder="AIzaSy..." style="background: #111; border: 1px solid #555; color: #fff; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; width: 220px;">
-                    <button type="button" class="btn btn-sm" onclick="app.saveGeminiApiKey()" style="padding: 3px 8px; font-size: 0.75rem; margin-left: 4px;">保存</button>
-                </div>
-                <div style="font-size: 0.75rem; color: #888;">※ブラウザ内に安全に保存され、手動貼り付けAI解析にのみ使用されます</div>
+                <label style="font-size: 0.78rem; color: #ccc;">添付画像 (任意 / カレンダー画像・告知画像等)</label>
+                <input type="file" id="manual-ai-image" accept="image/*" style="font-size: 0.78rem; color: #aaa;">
             </div>
 
             <div style="display: flex; justify-content: flex-end; gap: 8px; align-items: center; margin-top: 4px;">
-                <span id="manual-ai-status" style="font-size: 0.85rem; color: #80d8ff; display: none;"></span>
+                <span id="manual-ai-status" style="font-size: 0.82rem; color: #80d8ff; display: none;"></span>
                 <button type="button" class="btn btn-sm" onclick="app.clearManualAiForm()" style="background: #262626; border-color: #444; color: #aaa;">クリア</button>
-                <button type="button" class="btn btn-sm btn-primary" id="btn-manual-ai-submit" onclick="app.runManualAiAnalysis()" style="font-weight: bold; background: var(--jiro-yellow); color: #000; border: none; padding: 6px 16px;">
+                <button type="button" class="btn btn-sm btn-primary" id="btn-manual-ai-submit" onclick="app.runManualAiAnalysis()" style="font-weight: bold; background: var(--jiro-yellow); color: #000; border: none; padding: 5px 14px;">
                     🤖 AIで営業情報を解析してSNS提案に追加
                 </button>
             </div>
-        </div>
-    </details>
-
-    <!-- SNS提案カード一覧コンテナ -->
-    <div id="pending-list-container" style="display: flex; flex-direction: column; gap: 12px;">
-        <!-- JSで動的生成 -->
-    </div>
-
-    <!-- 既存スケジュール完全一致等のスキップ済み一覧コンテナ -->
-    <details id="skipped-list-details" style="margin-top: 24px; background: #181818; border: 1px solid #333; border-radius: 8px; padding: 10px 14px;">
-        <summary style="font-weight: bold; color: #aaa; cursor: pointer; display: flex; align-items: center; justify-content: space-between; user-select: none; font-size: 0.9rem;">
-            <span style="display: flex; align-items: center; gap: 8px;">
-                <span>📋 既存スケジュール一致・日常投稿（スキップ推奨）</span>
-                <span id="skipped-count-tag" style="background: #333; color: #bbb; font-size: 0.75rem; padding: 1px 6px; border-radius: 10px;">0件</span>
-            </span>
-            <span style="font-size: 0.8rem; color: #666;">開く / 閉じる ▼</span>
-        </summary>
-        <div id="skipped-list-container" style="margin-top: 12px; display: flex; flex-direction: column; gap: 10px;">
-            <!-- JSで動的生成 -->
-        </div>
-    </details>
-
-    <!-- 処理済み履歴コンテナ（反映済み・スキップ済み） -->
-    <details id="history-list-details" style="margin-top: 16px; background: #141414; border: 1px solid #2a2a2a; border-radius: 8px; padding: 10px 14px;">
-        <summary style="font-weight: bold; color: #888; cursor: pointer; display: flex; align-items: center; justify-content: space-between; user-select: none; font-size: 0.9rem;">
-            <span style="display: flex; align-items: center; gap: 8px;">
-                <span>📜 処理済み履歴（反映済み / スキップ済み）</span>
-                <span id="history-count-tag" style="background: #2a2a2a; color: #aaa; font-size: 0.75rem; padding: 1px 6px; border-radius: 10px;">0件</span>
-            </span>
-            <span style="font-size: 0.8rem; color: #555;">開く / 閉じる ▼</span>
-        </summary>
-        <div id="history-list-container" style="margin-top: 12px; display: flex; flex-direction: column; gap: 10px;">
-            <!-- JSで動的生成 -->
         </div>
     </details>
 </div>
@@ -482,7 +430,7 @@
         <div class="form-group">
             <label>GitHub Personal Access Token (PAT)</label>
             <input type="password" id="gh-token" placeholder="github_pat_xxx または ghp_xxx">
-            <div class="hint">権限: `repo` スコープが必要です。<br>※「今すぐSNS再巡回」を利用する場合は、さらに <strong>`workflow`</strong>（Actions実行）権限も必要です。</div>
+            <div class="hint">権限: `repo` スコープが必要です。一度入力するとブラウザに安全に保持されます。</div>
         </div>
         <div class="form-group">
             <label>リポジトリ所有者名 (Owner / Username)</label>
@@ -546,69 +494,15 @@
     </div>
 </div>
 
-<!-- 店舗情報確認ポップアップモーダル (index.html準拠) -->
+<!-- 店舗情報確認ポップアップモーダル (index.html完全踏襲) -->
 <div class="modal-overlay" id="shop-info-modal" onclick="app.closeShopInfoModal()">
-    <div class="modal-content" style="max-width: 580px; max-height: 85vh; overflow-y: auto; padding: 16px; background: #1e1e1e; border: 1px solid #444; border-radius: 8px;" onclick="event.stopPropagation();">
-        <div class="modal-header" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #333; padding-bottom: 8px;">
-            <h2 id="shop-info-modal-title" style="margin: 0; font-size: 1.15rem; color: var(--jiro-yellow); display: flex; align-items: center; gap: 8px;">🍜 店舗情報</h2>
-            <button class="btn btn-sm" onclick="app.closeShopInfoModal()">✕</button>
+    <div class="modal-content" style="max-width: 520px; max-height: 88vh; overflow-y: auto; padding: 14px; background: #161616; border: 1px solid #383838; border-radius: 8px; position: relative;" onclick="event.stopPropagation();">
+        <button class="btn btn-sm" onclick="app.closeShopInfoModal()" style="position: absolute; top: 10px; right: 10px; z-index: 10; padding: 2px 8px; background: #262626; border-color: #444; color: #bbb;">✕</button>
+        <div id="shop-info-modal-body">
+            <!-- index.html と同一構造の .shop-info を動的挿入 -->
         </div>
-        <div id="shop-info-modal-body" style="margin-top: 12px; font-size: 0.88rem; line-height: 1.6;">
-        </div>
-        <div style="display: flex; justify-content: flex-end; margin-top: 16px; border-top: 1px solid #333; padding-top: 10px;">
+        <div style="display: flex; justify-content: flex-end; margin-top: 12px; border-top: 1px solid #282828; padding-top: 8px;">
             <button class="btn btn-sm" onclick="app.closeShopInfoModal()">閉じる</button>
-        </div>
-    </div>
-</div>
-
-<!-- AI判定ルール・学習ナレッジ管理モーダル -->
-<div class="modal-overlay" id="ai-rules-modal">
-    <div class="modal-content" style="max-width: 680px; max-height: 85vh; display: flex; flex-direction: column;">
-        <div class="modal-header">
-            <h2>🧠 AI判定ルール・学習ナレッジ管理</h2>
-            <button class="btn btn-sm" onclick="app.closeAiGuidelinesModal()">✕</button>
-        </div>
-        <div style="font-size: 0.82rem; color: #aaa; margin-bottom: 12px; line-height: 1.4;">
-            GeminiがSNS投稿を解析する際の判定指示やルールです。誤判定があった場合、管理者がここに指摘やルールを追加・編集することで、AIの判定精度を継続的に向上させることができます。
-        </div>
-
-        <div style="flex: 1; overflow-y: auto; display: flex; flex-direction: column; gap: 12px; padding-right: 4px;">
-            <!-- 事前フィルタ キーワード管理 -->
-            <div class="form-group" style="margin: 0; background: #1f1f1f; border: 1px solid #3a3a3a; border-radius: 6px; padding: 10px 12px;">
-                <label style="font-size: 0.85rem; font-weight: bold; color: #80d8ff; display: flex; justify-content: space-between;">
-                    <span>🔍 事前フィルタ キーワード設定 (scheduleKeywords)</span>
-                    <span style="font-size: 0.75rem; color: #aaa; font-weight: normal;">※カンマ(,)区切りで指定</span>
-                </label>
-                <div style="margin-top: 6px; display: flex; flex-direction: column; gap: 6px;">
-                    <div>
-                        <span style="font-size: 0.75rem; color: #bbb;">営業関連キーワード（日常ポストの除外・判定用）:</span>
-                        <input type="text" id="ai-keywords-input" placeholder="休, 営業, 開店, 閉店, 昼, 夜, 臨休..." style="width: 100%; background: #111; border: 1px solid #555; color: #fff; padding: 5px 8px; border-radius: 4px; font-size: 0.8rem;">
-                    </div>
-                    <div>
-                        <span style="font-size: 0.75rem; color: #bbb;">期間・相対日キーワード:</span>
-                        <input type="text" id="ai-period-keywords-input" placeholder="本日, 明日, 明後日, 今週, 来週, 今月, 来月..." style="width: 100%; background: #111; border: 1px solid #555; color: #fff; padding: 5px 8px; border-radius: 4px; font-size: 0.8rem;">
-                    </div>
-                </div>
-            </div>
-
-            <div class="form-group" style="margin: 0;">
-                <label style="font-size: 0.85rem; font-weight: bold; color: var(--jiro-yellow);">共通判定ルール一覧 (generalRules)</label>
-                <div id="ai-rules-list" style="display: flex; flex-direction: column; gap: 8px; margin-top: 6px;"></div>
-                <button type="button" class="btn btn-sm" onclick="app.addNewAiRule()" style="margin-top: 8px; background: #262626; border-color: #555; color: #ddd;">+ 新しいルールを追加</button>
-            </div>
-
-            <div class="form-group" style="margin: 0; border-top: 1px solid #333; padding-top: 12px;">
-                <label style="font-size: 0.85rem; font-weight: bold; color: var(--accent-color);">JSON直接編集 (高度な設定 / 店舗固有ルール / Few-Shot事例)</label>
-                <textarea id="ai-rules-raw-json" rows="8" style="width: 100%; padding: 8px; background: #181818; border: 1px solid #444; border-radius: 4px; color: #fff; font-family: monospace; font-size: 0.8rem; line-height: 1.4;"></textarea>
-            </div>
-        </div>
-
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 16px; border-top: 1px solid #333; padding-top: 12px;">
-            <span id="ai-rules-save-status" style="font-size: 0.8rem; color: #80d8ff;"></span>
-            <div style="display: flex; gap: 8px;">
-                <button class="btn btn-sm" onclick="app.closeAiGuidelinesModal()">閉じる</button>
-                <button class="btn btn-sm btn-primary" onclick="app.saveAiGuidelines()">💾 ルールを保存</button>
-            </div>
         </div>
     </div>
 </div>
