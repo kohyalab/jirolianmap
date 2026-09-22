@@ -246,6 +246,14 @@ class EditorApp {
     }
 
     normalizeValueForDiff(key, val) {
+        if (key === 'holidayShifts') {
+            if (val === null) return '__FOLLOW_WEEKDAY__';
+            if (Array.isArray(val)) {
+                if (val.length === 0) return '__HOLIDAY_CLOSED__';
+                return JSON.stringify(val);
+            }
+            return '__FOLLOW_WEEKDAY__';
+        }
         if (val === null || val === undefined || val === '') return '';
         if (Array.isArray(val)) {
             if (val.length === 0) return '';
