@@ -1,0 +1,27 @@
+:root {
+    /* ブランド＆基本カラー */
+    --jiro-yellow: #ffcc00;
+    --jiro-red: #ff3333;
+    --jiro-dark: #121212;
+    --card-bg: #1e1e1e;
+    --text-color: #f5f5f5;
+    --border-color: #333333;
+    --link-color: #64b5f6;
+    --gmap-color: #81c784;
+
+    /* エディタ等汎用カラーエイリアス */
+    --accent-color: var(--jiro-yellow);
+    --bg-color: var(--jiro-dark);
+    --panel-bg: var(--card-bg);
+    --danger-color: #e53935;
+    --success-color: #4caf50;
+
+    /* 営業ステータスカラー */
+    --status-closed: #616161;
+    --status-scheduled: #0288d1;
+    --status-open: #2e7d32;
+    --status-closing-soon: #ed6c02;
+    --status-preopen: #9c27b0;
+    --status-temp: #ff9f43;
+}
+
