@@ -6108,6 +6108,13 @@
         ]
       }
     ],
+    "holidaySpecialShifts": [
+      {
+        "triggerDay": 3,
+        "targetOffset": 0,
+        "hours": []
+      }
+    ],
     "shiftsByDay": {
       "0": [
         [
