@@ -1,14 +1,14 @@
 name: SNS Schedule Monitor (X & Instagram)
 
-# on:
-#   schedule:
-#     # JST 06:00 (UTC 21:00前日) - 朝の仕込み・臨休告知
-#     - cron: '0 21 * * *'
-#     # JST 14:00 (UTC 05:00) - 昼の部終了後・夜の部告知
-#     - cron: '0 5 * * *'
-#     # JST 22:00 (UTC 13:00) - 営業終了後・翌日告知
-#     - cron: '0 13 * * *'
 on:
+#  schedule:
+#    # Cloudflare Workersから指示（repository_dispatch）をもとに実行するため、GitHub cronは停止
+#    # JST 06:00 (UTC 21:00前日)
+#    - cron: '0 21 * * *'
+#    # JST 14:00 (UTC 05:00)
+#    - cron: '0 5 * * *'
+#    # JST 22:00 (UTC 13:00)
+#    - cron: '0 13 * * *'
   workflow_dispatch:
     inputs:
       force_rescan:
@@ -29,7 +29,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.client_payload.ref || github.ref || 'test-env' }}
+          ref: ${{ github.event.client_payload.ref || 'main' }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -47,6 +47,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action [SNS Monitor]"
-          git add data/pending_updates.json data/crawled_cache.json
-          git diff --staged --quiet || (git commit -m "🤖 Auto-detect SNS schedule changes [skip ci]" && git push origin HEAD:${{ github.event.client_payload.ref || github.ref_name || 'test-env' }})
+          git add data/sns_posts.json data/crawled_cache.json data/pending_updates.json 2>/dev/null || git add data/sns_posts.json data/crawled_cache.json
+          git diff --staged --quiet || (git commit -m "🤖 Auto-detect SNS schedule changes [skip ci]" && git push origin HEAD:${{ github.event.client_payload.ref || 'main' }})
+
 

@@ -1,0 +1,664 @@
+[
+  {
+    "id": "pending_kameido_20260920_0_ve91",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2101631287622811856",
+    "postedAt": "2026-09-20T11:15:20.000Z",
+    "postText": "只今並びの方までで本日の営業は終了です。申し訳ありません",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-09-20",
+      "endDate": "2026-09-20",
+      "hours": [],
+      "reason": "材料切れによる営業終了",
+      "confidence": 1
+    },
+    "status": "pending"
+  },
+  {
+    "id": "pending_yaen2_20260921_0_buxq",
+    "shopId": "yaen2",
+    "shopName": "八王子野猿街道店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/Jiro_Yaenkaido2/status/2101601217470140841",
+    "postedAt": "2026-09-20T09:15:50.000Z",
+    "postText": "9月21日(月) 9:00～12:00 チャリティー営業です 小ラーメン",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-21",
+      "endDate": "2026-09-21",
+      "hours": [
+        [
+          9,
+          12
+        ]
+      ],
+      "reason": "チャリティー営業",
+      "confidence": 1
+    },
+    "status": "pending"
+  },
+  {
+    "id": "pending_yaen2_20260921_0_4ct0",
+    "shopId": "yaen2",
+    "shopName": "八王子野猿街道店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/Jiro_Yaenkaido2/status/2101426392789655807",
+    "postedAt": "2026-09-19T21:41:09.000Z",
+    "postText": "明日の詳細です！ https://t.co/ex8PkUYNBC",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Z3GsRWIfz4KvDWPfq1ZcEGA1Htnp922BenUY8D9YqMPFmuDNf2Ue0xMLWuZy4fPLsGVrkWuhf_RR4nO6tdIUKb19L92np4swDaxPI5RZl2I-BCubMdWhbFlfQ5fI6TmEC0IyFdd_Dcynylt4ymUK3w=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-09-21",
+      "endDate": "2026-09-21",
+      "hours": [
+        [
+          9,
+          12
+        ]
+      ],
+      "reason": "熊本支援チャリティー営業、小ラーメンのみ販売、限定200杯",
+      "confidence": 1
+    },
+    "status": "pending"
+  },
+  {
+    "id": "pending_yaen2_20260920_0_7cnf",
+    "shopId": "yaen2",
+    "shopName": "八王子野猿街道店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/Jiro_Yaenkaido2/status/2101354381350470028",
+    "postedAt": "2026-09-19T16:55:00.000Z",
+    "postText": "9月20日(日) 朝7:30～15:00 ⭐テイクアウト、鍋二郎あります 並ばずかえます ⚠️⚠️駐車場待ち出来ません ⚠️駐車場満車時コインパーキングに https://t.co/3N4Z1zDJJK",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-rI0e34myFzM8_DHB6d-XXPDcKrTHiqPkO2Peopxn4uyuI5SRupXKN1zqUvVm6MVHyj9Vhf4eEGj1f5pi4g7B8eMi3uutLspUbOCZ04s9LbUwyDHMPsoIi-bz5lSd03JtS7yLEADqSc-rxWcuAUyS0A==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Qa_goDijslCnvX6GXOSdzQxvq3A8XvLGmaXtnz7IiZ2Rv6VaAaEXC0LMjBUmbXVQL-Dn-2g_4jnUyj9-fdaLRnedMadp8uOy5tkJhDgXnHbL1_J_ql9DztRrYlM-LuWpQNlk5N_POQTuvqgggFoTFg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-AKvCLKLIeEc3AdgsNCB6p2TVK5bwR0r1sit_jLyWcCIMU05TQHyhbpZY0AHftUcU55-jSiufDZg-fHMKdS30yDuuvNee53wHtWeUR8gdXIiDhW-ucH532DBTkvIQIqKqwOpf2iTotGrhq7obwIoCpQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-20",
+      "endDate": "2026-09-20",
+      "hours": [
+        [
+          7.5,
+          15
+        ]
+      ],
+      "reason": "9/20(日)の営業時間変更",
+      "confidence": 1
+    },
+    "status": "pending"
+  },
+  {
+    "id": "pending_sagamiohno_20260923_1_b8uy",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2101904623472984572",
+    "postedAt": "2026-09-21T05:21:28.000Z",
+    "postText": "明日 ◇9/22（火） 【国民の休日営業🈺】 10:00から〜15:00 ご来店ご到着お並びのお客様まで営業🈺  →［相撲部屋の湯豆腐のタレ］やってます！ →［ひやコロ］ ラストスパートです♪  ◇9/23（水）10→15時 ◇9/24（木）［昼のみ］ ◇9/25（金）［夜のみ］ ◇9/26（土）10→15時 ◇9/27（日）10→15時 https://t.co/3Fjq0Xs6Jb",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Bzg2byKk0mFSiwM9kxM-tii1YONMxuFazWpgZ6TQ7Y4srljPHnZkEu8-X-o7Y7qT10gR_BLse_NwPoqi-2eVeTKexXOD9XwTwwNWkMW1ybUmA-r39jCzPFI3ajWMWfG3ETEMWBuf3brWBsjp_IfCqQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-kXofoq_wShV4iTcbBM3cGG4wq0-Ww9cdGwaPZvvuRyRiNAIun1XkJGGG2h5TJOxhspvOiNYRJYB2237TzDaV_U5tkY4y65fjBl2P6UX8Kl_K0FF7ZWFFcVb49fxeuO1NwV9rB9d1hQf_9V9iMtRvLQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-dJ-0E-kPO0lsr6dFipVT1S1dXH1QUfstGW6cKIcOm3PaeHfKqBv4CEjuijeTsleZ65CM04_GarQMsSYWJdGEFpOcZLvoP0kPoG2BCjCbLyF2skwUGiczDkQnMqn3-zLrb2o0ewLw5uwvXCZjpRG_xA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-HVSV1WLFqNhutVxkzUmAdsVkklN-YcgL7JvCJanjt6GaFwtti9mLiGzEC7mAT9DJKy3u1T9fuY9zx9Hsck1BT68hzUC8jF2oplQu-tKsRAQAgm08DpYNCE3mjuRW_R8ePizt6cFJGMbtI59kBYyfmw=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-23",
+      "endDate": "2026-09-23",
+      "hours": [
+        [
+          10,
+          15
+        ]
+      ],
+      "reason": "営業時間変更",
+      "confidence": 1
+    },
+    "status": "pending"
+  },
+  {
+    "id": "pending_sagamiohno_20260924_2_vpqp",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2101904623472984572",
+    "postedAt": "2026-09-21T05:21:28.000Z",
+    "postText": "明日 ◇9/22（火） 【国民の休日営業🈺】 10:00から〜15:00 ご来店ご到着お並びのお客様まで営業🈺  →［相撲部屋の湯豆腐のタレ］やってます！ →［ひやコロ］ ラストスパートです♪  ◇9/23（水）10→15時 ◇9/24（木）［昼のみ］ ◇9/25（金）［夜のみ］ ◇9/26（土）10→15時 ◇9/27（日）10→15時 https://t.co/3Fjq0Xs6Jb",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Bzg2byKk0mFSiwM9kxM-tii1YONMxuFazWpgZ6TQ7Y4srljPHnZkEu8-X-o7Y7qT10gR_BLse_NwPoqi-2eVeTKexXOD9XwTwwNWkMW1ybUmA-r39jCzPFI3ajWMWfG3ETEMWBuf3brWBsjp_IfCqQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-kXofoq_wShV4iTcbBM3cGG4wq0-Ww9cdGwaPZvvuRyRiNAIun1XkJGGG2h5TJOxhspvOiNYRJYB2237TzDaV_U5tkY4y65fjBl2P6UX8Kl_K0FF7ZWFFcVb49fxeuO1NwV9rB9d1hQf_9V9iMtRvLQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-dJ-0E-kPO0lsr6dFipVT1S1dXH1QUfstGW6cKIcOm3PaeHfKqBv4CEjuijeTsleZ65CM04_GarQMsSYWJdGEFpOcZLvoP0kPoG2BCjCbLyF2skwUGiczDkQnMqn3-zLrb2o0ewLw5uwvXCZjpRG_xA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-HVSV1WLFqNhutVxkzUmAdsVkklN-YcgL7JvCJanjt6GaFwtti9mLiGzEC7mAT9DJKy3u1T9fuY9zx9Hsck1BT68hzUC8jF2oplQu-tKsRAQAgm08DpYNCE3mjuRW_R8ePizt6cFJGMbtI59kBYyfmw=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-24",
+      "endDate": "2026-09-24",
+      "hours": [],
+      "reason": "昼のみ営業",
+      "confidence": 0.9
+    },
+    "status": "pending"
+  },
+  {
+    "id": "pending_sagamiohno_20260925_3_i56q",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2101904623472984572",
+    "postedAt": "2026-09-21T05:21:28.000Z",
+    "postText": "明日 ◇9/22（火） 【国民の休日営業🈺】 10:00から〜15:00 ご来店ご到着お並びのお客様まで営業🈺  →［相撲部屋の湯豆腐のタレ］やってます！ →［ひやコロ］ ラストスパートです♪  ◇9/23（水）10→15時 ◇9/24（木）［昼のみ］ ◇9/25（金）［夜のみ］ ◇9/26（土）10→15時 ◇9/27（日）10→15時 https://t.co/3Fjq0Xs6Jb",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Bzg2byKk0mFSiwM9kxM-tii1YONMxuFazWpgZ6TQ7Y4srljPHnZkEu8-X-o7Y7qT10gR_BLse_NwPoqi-2eVeTKexXOD9XwTwwNWkMW1ybUmA-r39jCzPFI3ajWMWfG3ETEMWBuf3brWBsjp_IfCqQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-kXofoq_wShV4iTcbBM3cGG4wq0-Ww9cdGwaPZvvuRyRiNAIun1XkJGGG2h5TJOxhspvOiNYRJYB2237TzDaV_U5tkY4y65fjBl2P6UX8Kl_K0FF7ZWFFcVb49fxeuO1NwV9rB9d1hQf_9V9iMtRvLQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-dJ-0E-kPO0lsr6dFipVT1S1dXH1QUfstGW6cKIcOm3PaeHfKqBv4CEjuijeTsleZ65CM04_GarQMsSYWJdGEFpOcZLvoP0kPoG2BCjCbLyF2skwUGiczDkQnMqn3-zLrb2o0ewLw5uwvXCZjpRG_xA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-HVSV1WLFqNhutVxkzUmAdsVkklN-YcgL7JvCJanjt6GaFwtti9mLiGzEC7mAT9DJKy3u1T9fuY9zx9Hsck1BT68hzUC8jF2oplQu-tKsRAQAgm08DpYNCE3mjuRW_R8ePizt6cFJGMbtI59kBYyfmw=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-25",
+      "endDate": "2026-09-25",
+      "hours": [],
+      "reason": "夜のみ営業",
+      "confidence": 0.9
+    },
+    "status": "pending"
+  },
+  {
+    "id": "pending_sagamiohno_20260926_4_m76d",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2101904623472984572",
+    "postedAt": "2026-09-21T05:21:28.000Z",
+    "postText": "明日 ◇9/22（火） 【国民の休日営業🈺】 10:00から〜15:00 ご来店ご到着お並びのお客様まで営業🈺  →［相撲部屋の湯豆腐のタレ］やってます！ →［ひやコロ］ ラストスパートです♪  ◇9/23（水）10→15時 ◇9/24（木）［昼のみ］ ◇9/25（金）［夜のみ］ ◇9/26（土）10→15時 ◇9/27（日）10→15時 https://t.co/3Fjq0Xs6Jb",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Bzg2byKk0mFSiwM9kxM-tii1YONMxuFazWpgZ6TQ7Y4srljPHnZkEu8-X-o7Y7qT10gR_BLse_NwPoqi-2eVeTKexXOD9XwTwwNWkMW1ybUmA-r39jCzPFI3ajWMWfG3ETEMWBuf3brWBsjp_IfCqQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-kXofoq_wShV4iTcbBM3cGG4wq0-Ww9cdGwaPZvvuRyRiNAIun1XkJGGG2h5TJOxhspvOiNYRJYB2237TzDaV_U5tkY4y65fjBl2P6UX8Kl_K0FF7ZWFFcVb49fxeuO1NwV9rB9d1hQf_9V9iMtRvLQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-dJ-0E-kPO0lsr6dFipVT1S1dXH1QUfstGW6cKIcOm3PaeHfKqBv4CEjuijeTsleZ65CM04_GarQMsSYWJdGEFpOcZLvoP0kPoG2BCjCbLyF2skwUGiczDkQnMqn3-zLrb2o0ewLw5uwvXCZjpRG_xA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-HVSV1WLFqNhutVxkzUmAdsVkklN-YcgL7JvCJanjt6GaFwtti9mLiGzEC7mAT9DJKy3u1T9fuY9zx9Hsck1BT68hzUC8jF2oplQu-tKsRAQAgm08DpYNCE3mjuRW_R8ePizt6cFJGMbtI59kBYyfmw=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-26",
+      "endDate": "2026-09-26",
+      "hours": [
+        [
+          10,
+          15
+        ]
+      ],
+      "reason": "営業時間変更",
+      "confidence": 1
+    },
+    "status": "pending"
+  },
+  {
+    "id": "pending_sagamiohno_20260927_5_7pqt",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2101904623472984572",
+    "postedAt": "2026-09-21T05:21:28.000Z",
+    "postText": "明日 ◇9/22（火） 【国民の休日営業🈺】 10:00から〜15:00 ご来店ご到着お並びのお客様まで営業🈺  →［相撲部屋の湯豆腐のタレ］やってます！ →［ひやコロ］ ラストスパートです♪  ◇9/23（水）10→15時 ◇9/24（木）［昼のみ］ ◇9/25（金）［夜のみ］ ◇9/26（土）10→15時 ◇9/27（日）10→15時 https://t.co/3Fjq0Xs6Jb",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Bzg2byKk0mFSiwM9kxM-tii1YONMxuFazWpgZ6TQ7Y4srljPHnZkEu8-X-o7Y7qT10gR_BLse_NwPoqi-2eVeTKexXOD9XwTwwNWkMW1ybUmA-r39jCzPFI3ajWMWfG3ETEMWBuf3brWBsjp_IfCqQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-kXofoq_wShV4iTcbBM3cGG4wq0-Ww9cdGwaPZvvuRyRiNAIun1XkJGGG2h5TJOxhspvOiNYRJYB2237TzDaV_U5tkY4y65fjBl2P6UX8Kl_K0FF7ZWFFcVb49fxeuO1NwV9rB9d1hQf_9V9iMtRvLQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-dJ-0E-kPO0lsr6dFipVT1S1dXH1QUfstGW6cKIcOm3PaeHfKqBv4CEjuijeTsleZ65CM04_GarQMsSYWJdGEFpOcZLvoP0kPoG2BCjCbLyF2skwUGiczDkQnMqn3-zLrb2o0ewLw5uwvXCZjpRG_xA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-HVSV1WLFqNhutVxkzUmAdsVkklN-YcgL7JvCJanjt6GaFwtti9mLiGzEC7mAT9DJKy3u1T9fuY9zx9Hsck1BT68hzUC8jF2oplQu-tKsRAQAgm08DpYNCE3mjuRW_R8ePizt6cFJGMbtI59kBYyfmw=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-27",
+      "endDate": "2026-09-27",
+      "hours": [
+        [
+          10,
+          15
+        ]
+      ],
+      "reason": "営業時間変更",
+      "confidence": 1
+    },
+    "status": "pending"
+  },
+  {
+    "id": "pending_sagamiohno_20260920_0_lt3b",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2101804534926553548",
+    "postedAt": "2026-09-20T22:43:45.000Z",
+    "postText": "おはようございます。  本日→予定通り時間短縮にて営業致します🈺🈺 ※9:30〜12:30予定  よろしくお願い致します。 https://t.co/qXF331d7hR",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-20",
+      "endDate": "2026-09-20",
+      "hours": [
+        [
+          9.5,
+          12.5
+        ]
+      ],
+      "reason": "時間短縮営業",
+      "confidence": 1
+    },
+    "status": "pending"
+  },
+  {
+    "id": "pending_sagamiohno_20260921_0_qovy",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2101517127794803060",
+    "postedAt": "2026-09-20T03:41:42.000Z",
+    "postText": "相撲めし③ガリマヨ ※販売予定※ 唐揚げにぶっかけて食べてました♪ ［ガーリックマヨネーズ］ →隠し味にオイスターソースです。 →［まかない］にオススメ！  ※変則営業🈺の為、明日は新商品を無料🆓サービス🈂️！ご試食どうぞー！ ※必ず着席時に『ガリマヨお願いします。』と店員に。 https://t.co/ek9vaZLM4y https://t.co/qXF331d7hR",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-VFErZcR_RR8baMYKuHR8AZ6lZjli0-eTMRgSj003Z-NretbBz56zOxA18xUhgNpqA2E32hiBAE6VEMCA2E1HizyJs_RITVujTxzMHodMzzpvfw44b9UyxcxS6KCFDF4AEBcSfl0hi1R0QlP5UBWz4g==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-rBAY2lBAUspDX_yzbWnhKppP94g3PvZccwaWVQwr3Gzfkt_5W12LJsERr01S-fBgDDtQBjrt7154VKuI-pP6N-vP8d-GsIOWV5ScXUia4G7oVyf9YYtbCnzx2O8_hdANwAeuHtjrTBe7BX6ncCTngw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-aMNj_ea_3k-SugmCDjsw_h-QVTEAtVm5r7tOLT9T3HPTX_7JCCPzTLZNkGflCKIW36HQTdEh9n8y8b4o5UVnvOt4U4Av1rEXInEZeSRLktvwAskGpipjKsM_z-_tKqL8q1ZmOqJwvMF-nD4Y3aA68Q=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-21",
+      "endDate": "2026-09-21",
+      "hours": [],
+      "reason": "変則営業のため新商品を無料サービス",
+      "confidence": 0.9
+    },
+    "status": "pending"
+  },
+  {
+    "id": "pending_fujisawa_20260921_0_mv4l",
+    "shopId": "fujisawa",
+    "shopName": "湘南藤沢店",
+    "postSource": "x",
+    "postUrl": "https://x.com/fujirow26/status/2101809407839637620",
+    "postedAt": "2026-09-20T23:03:07.000Z",
+    "postText": "おはようございます。  9月21日(月)  豚しゃぶ にんにく特製ぽん酢🧄  豚チゲ🐷 野山商店特製タレ、崩し豚、豚カス醤油、 1番スープ、沢山にんにく🧄その他色々 粉チーズよくあいます。  夜の部台風によりお休みになります。  よろしくお願いいたします。 https://t.co/gMwX0cWrEd",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-EZ1wufFwxx9a0QurB8sAoSlky0HNYR8txINTgx2SlgekdZI3GGnKsRIcOdebzABukrqy1PH7tq4If-aOt28rbHotn2KyP0Ui5Z1Cq9bDPKb2n23ngTQ0tFYxlrl2897jGOvqKSXeTVndzvvNxFvGvg=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-09-21",
+      "endDate": "2026-09-21",
+      "hours": [],
+      "reason": "台風のため夜の部臨時休業",
+      "confidence": 1
+    },
+    "status": "pending"
+  },
+  {
+    "id": "pending_shndaita_20260921_0_xdda",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2101547908541919276",
+    "postedAt": "2026-09-20T05:44:00.000Z",
+    "postText": "2026年9月20日（日） 解ってる範囲の営業予定です！  月 〇(15:00くらい) 火 お休み 水 〇(15:00くらい) 木 〇 金 〇(15:00くらい) 土 お休み 日 〇  11:00〜16:00くらい のんべタレ(＋200円)もやります！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-21",
+      "endDate": "2026-09-21",
+      "hours": [
+        [
+          15,
+          16
+        ]
+      ],
+      "reason": "月曜日15時開店",
+      "confidence": 1
+    },
+    "status": "pending"
+  },
+  {
+    "id": "pending_shndaita_20260923_2_9s58",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2101547908541919276",
+    "postedAt": "2026-09-20T05:44:00.000Z",
+    "postText": "2026年9月20日（日） 解ってる範囲の営業予定です！  月 〇(15:00くらい) 火 お休み 水 〇(15:00くらい) 木 〇 金 〇(15:00くらい) 土 お休み 日 〇  11:00〜16:00くらい のんべタレ(＋200円)もやります！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-23",
+      "endDate": "2026-09-23",
+      "hours": [
+        [
+          15,
+          16
+        ]
+      ],
+      "reason": "水曜日15時開店",
+      "confidence": 1
+    },
+    "status": "pending"
+  },
+  {
+    "id": "pending_shndaita_20260925_3_d0f5",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2101547908541919276",
+    "postedAt": "2026-09-20T05:44:00.000Z",
+    "postText": "2026年9月20日（日） 解ってる範囲の営業予定です！  月 〇(15:00くらい) 火 お休み 水 〇(15:00くらい) 木 〇 金 〇(15:00くらい) 土 お休み 日 〇  11:00〜16:00くらい のんべタレ(＋200円)もやります！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-25",
+      "endDate": "2026-09-25",
+      "hours": [
+        [
+          15,
+          16
+        ]
+      ],
+      "reason": "金曜日15時開店",
+      "confidence": 1
+    },
+    "status": "pending"
+  },
+  {
+    "id": "pending_kyoto_20260920_0_ypry",
+    "shopId": "kyoto",
+    "shopName": "京都店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kyoto/status/2101539632156741954",
+    "postedAt": "2026-09-20T05:11:07.000Z",
+    "postText": "材料切れの為、お昼の部は只今お並びの方で終了です🙇‍♂️",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-09-20",
+      "endDate": "2026-09-20",
+      "hours": [],
+      "reason": "材料切れのため昼の部終了",
+      "confidence": 1
+    },
+    "status": "pending"
+  },
+  {
+    "id": "pending_mejirodai_20260920_0_j35d",
+    "shopId": "mejirodai",
+    "shopName": "めじろ台店",
+    "postSource": "x",
+    "postUrl": "https://x.com/mejirodai_jiro/status/2101452115738849297",
+    "postedAt": "2026-09-19T23:23:22.000Z",
+    "postText": "毎度ありがとうございます  本日20日(日)の営業時間は11〜15時となります なおアルバイト募集中ですのでXのDMの方までご連絡お待ちしてます よろしくお願いします🙇 https://t.co/0c2bZBaaKQ",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-uHRXAOrZ_pvBCtby5baZVCtEG5RUE9JJL_dJQzouZTEDrVh17PO_UY6K_IiP8TvOXi9IDWQuHMHjPHaD8jc37cBVNTLy8bOWCEIRLSq2_9s1PgBDEDlUYSVB6SVIiIMe9wcElDeZLdzZbVgJz_U4VQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-20",
+      "endDate": "2026-09-20",
+      "hours": [
+        [
+          11,
+          15
+        ]
+      ],
+      "reason": "短縮営業",
+      "confidence": 1
+    },
+    "status": "pending"
+  },
+  {
+    "id": "pending_hitotsubashi_20260920_0_ug64",
+    "shopId": "hitotsubashi",
+    "shopName": "一橋学園店",
+    "postSource": "x",
+    "postUrl": "https://x.com/1284jiro/status/2101540154733375649",
+    "postedAt": "2026-09-20T05:13:12.000Z",
+    "postText": "都合により本日の営業は只今お並びのお客様をもちまして終了とさせていただきます。誠に申し訳ありませんが、よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-09-20",
+      "endDate": "2026-09-20",
+      "hours": [],
+      "reason": "材料切れによる早期終了",
+      "confidence": 1
+    },
+    "status": "pending"
+  },
+  {
+    "id": "pending_sendai2_20260921_0_jlm9",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2101844316780114058",
+    "postedAt": "2026-09-21T01:21:50.000Z",
+    "postText": "おはようございます！！なんだか本日小雨が降り続く予報のシルバーウィーク中日！！ 11〜21時の通し営業となっております！！10月には値上げ予定ですので、是非是非どうぞ！！ 地元帰られる方は、お土産にテイクアウトも是非！！ 雨でそんなに忙しくないと思うので、御来店お待ちしております！ https://t.co/a6tUFEx7Jx",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-e0K93sAkmUsnXmy2UkvjCZTubrsin-fdji0Hpnn-w6eKrdgj8oB24BzekdH2AdFez1CJM4pOJEdoNBguZRE0Aj3Yee3x5aNehUV_9K4yXl5_dzX0Mwi6ICDriZrPfyKl4ygFZAei9gRfeP003wQWEw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-kYnUV9EA4B0wmiRn9OzXXa8Bito03yUKDWcfXhR-HuqhoFo6W8RLFIcX7iZKVvuDhFzjahj6f_4a4UBusl7M4-Nsh0bBcgBpeML8UuKjM2t5YaXYYVXCsEWC8q2Biq-9vAhHU6chqQVKxIEEh9ON7w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne--IfTHIKTrAmuO4R1gWXdodKL-b3zGIYuKqAnZcLVwJzUNyvCbm1uFAnM991AVoZ5o9IQtI0e2s0ZwfAvB-dJmjA4VXm-G27GTqK240cg61XzYtPOmXSJEqXSrk9UX3Ydvtvoc9QKjwUgFk73OQ7x4A=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-21",
+      "endDate": "2026-09-21",
+      "hours": [
+        [
+          11,
+          21
+        ]
+      ],
+      "reason": "シルバーウィーク中日の通し営業",
+      "confidence": 1
+    },
+    "status": "pending"
+  },
+  {
+    "id": "pending_nagoyaosone_20260921_0_ngbr",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2101865465819934844",
+    "postedAt": "2026-09-21T02:45:52.000Z",
+    "postText": "ラーメン二郎名古屋大曽根店です。 只今お並び頂いているお客様で終了とさせていただきます。 明日もよろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-09-21",
+      "endDate": "2026-09-21",
+      "hours": [],
+      "reason": "材料切れ終了",
+      "confidence": 1
+    },
+    "status": "pending"
+  },
+  {
+    "id": "pending_sagamiohno_20260922_0_vszp",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2102154954123477183",
+    "postedAt": "2026-09-21T21:56:11.000Z",
+    "postText": "本日 ◇9/22（火） 【10:00〜15:00🈺】  →こちらをご覧のお客様限定→ご申告制🈸［テイクアウト割🈹］やっております！食券にて。 着席時に『テイクアウト割りお願いします。』と従業員にお申し付けください。各サービス🈂️致します！ ※店内お食事の方のみです。 ※本日は限定各5セット https://t.co/5KFZrUcg6Z https://t.co/DG3U63u0uW",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-_Na-zZ58cUGV65vIwqpNdrJf5ZENMAaIXWYax0U64sAiF_I7FMTTRFfUBUoDwJFJsMxAzhGKluzeiR86YOzZ7niDNYNyOCdL3ssVXPoGVPvVMAe2gZUHnfk3rI9x-vQDmWdxDbiBnWhGUn4HPWwgdQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-22",
+      "endDate": "2026-09-22",
+      "hours": [
+        [
+          10,
+          15
+        ]
+      ],
+      "reason": "9/22(火)の営業時間変更",
+      "confidence": 1
+    },
+    "status": "skipped",
+    "skipReason": "既に登録済みの臨時スケジュールと完全に一致"
+  },
+  {
+    "id": "pending_fujisawa_20260921_0_jehp",
+    "shopId": "fujisawa",
+    "shopName": "湘南藤沢店",
+    "postSource": "x",
+    "postUrl": "https://x.com/fujirow26/status/2101557855489065385",
+    "postedAt": "2026-09-20T06:23:32.000Z",
+    "postText": "天気悪い中ありがとうございます。  明日9月21日(月)  昼の部通常営業  夜の部 台風接近に伴いお休みします。  よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-21",
+      "endDate": "2026-09-21",
+      "hours": [
+        [
+          11,
+          14.5
+        ]
+      ],
+      "reason": "台風接近に伴い夜の部休業",
+      "confidence": 1
+    },
+    "status": "skipped",
+    "skipReason": "既に登録済みの臨時スケジュールと完全に一致"
+  },
+  {
+    "id": "pending_skipped_nishidai_2102156245755179506",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2102156245755179506",
+    "postedAt": "2026-09-21T22:01:19.000Z",
+    "postText": "@jirorian360 @0ari_9 対応、ありがとうございます。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-21",
+      "endDate": "2026-09-21",
+      "hours": [],
+      "reason": "他アカウントへのメンション"
+    },
+    "status": "skipped",
+    "skipReason": "他アカウントへのメンションのため解析対象外"
+  },
+  {
+    "id": "pending_koshigaya_20260921_0_hmvd",
+    "shopId": "koshigaya",
+    "shopName": "越谷店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ksgy26/status/2101775598293258401",
+    "postedAt": "2026-09-20T20:48:46.000Z",
+    "postText": "おはようございます！ ラーメン二郎越谷店です！  9月21日(月祝) 昼のみ10:00〜14:00LО ご来店お待ちしております🙇  22日(火祝)、23日(水祝) 昼のみ10:00〜14:00LО  9月26日(土)　臨時営業 10:00〜14:00LО よろしくお願いします🙇 https://t.co/jg2nWrLlaA",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-5XkTiqPClz5ikNOPlwjnqRCJNTsx2uqdOSJ7hxc2CwLiye5IVosAYYpKTK4PUz_Ao0oHl_lKblv9HEcq2ooFqIQqBfjulCakOXlHeihb4N1EP9R6p0CziDBSrSKAmwv6ibi7_PrEuePoCZiJnE1rhQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-21",
+      "endDate": "2026-09-21",
+      "hours": [
+        [
+          10,
+          14
+        ]
+      ],
+      "reason": "昼のみ営業",
+      "confidence": 1
+    },
+    "status": "skipped",
+    "skipReason": "既に登録済みの臨時スケジュールと完全に一致"
+  },
+  {
+    "id": "pending_koshigaya_20260922_1_v592",
+    "shopId": "koshigaya",
+    "shopName": "越谷店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ksgy26/status/2101775598293258401",
+    "postedAt": "2026-09-20T20:48:46.000Z",
+    "postText": "おはようございます！ ラーメン二郎越谷店です！  9月21日(月祝) 昼のみ10:00〜14:00LО ご来店お待ちしております🙇  22日(火祝)、23日(水祝) 昼のみ10:00〜14:00LО  9月26日(土)　臨時営業 10:00〜14:00LО よろしくお願いします🙇 https://t.co/jg2nWrLlaA",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-5XkTiqPClz5ikNOPlwjnqRCJNTsx2uqdOSJ7hxc2CwLiye5IVosAYYpKTK4PUz_Ao0oHl_lKblv9HEcq2ooFqIQqBfjulCakOXlHeihb4N1EP9R6p0CziDBSrSKAmwv6ibi7_PrEuePoCZiJnE1rhQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-22",
+      "endDate": "2026-09-22",
+      "hours": [
+        [
+          10,
+          14
+        ]
+      ],
+      "reason": "昼のみ営業",
+      "confidence": 1
+    },
+    "status": "pending",
+    "skipReason": null
+  },
+  {
+    "id": "pending_koshigaya_20260923_2_lzqs",
+    "shopId": "koshigaya",
+    "shopName": "越谷店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ksgy26/status/2101775598293258401",
+    "postedAt": "2026-09-20T20:48:46.000Z",
+    "postText": "おはようございます！ ラーメン二郎越谷店です！  9月21日(月祝) 昼のみ10:00〜14:00LО ご来店お待ちしております🙇  22日(火祝)、23日(水祝) 昼のみ10:00〜14:00LО  9月26日(土)　臨時営業 10:00〜14:00LО よろしくお願いします🙇 https://t.co/jg2nWrLlaA",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-5XkTiqPClz5ikNOPlwjnqRCJNTsx2uqdOSJ7hxc2CwLiye5IVosAYYpKTK4PUz_Ao0oHl_lKblv9HEcq2ooFqIQqBfjulCakOXlHeihb4N1EP9R6p0CziDBSrSKAmwv6ibi7_PrEuePoCZiJnE1rhQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-23",
+      "endDate": "2026-09-23",
+      "hours": [
+        [
+          10,
+          14
+        ]
+      ],
+      "reason": "昼のみ営業",
+      "confidence": 1
+    },
+    "status": "pending",
+    "skipReason": null
+  },
+  {
+    "id": "pending_koshigaya_20260926_3_shvc",
+    "shopId": "koshigaya",
+    "shopName": "越谷店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ksgy26/status/2101775598293258401",
+    "postedAt": "2026-09-20T20:48:46.000Z",
+    "postText": "おはようございます！ ラーメン二郎越谷店です！  9月21日(月祝) 昼のみ10:00〜14:00LО ご来店お待ちしております🙇  22日(火祝)、23日(水祝) 昼のみ10:00〜14:00LО  9月26日(土)　臨時営業 10:00〜14:00LО よろしくお願いします🙇 https://t.co/jg2nWrLlaA",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-5XkTiqPClz5ikNOPlwjnqRCJNTsx2uqdOSJ7hxc2CwLiye5IVosAYYpKTK4PUz_Ao0oHl_lKblv9HEcq2ooFqIQqBfjulCakOXlHeihb4N1EP9R6p0CziDBSrSKAmwv6ibi7_PrEuePoCZiJnE1rhQ=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-09-26",
+      "endDate": "2026-09-26",
+      "hours": [
+        [
+          10,
+          14
+        ]
+      ],
+      "reason": "臨時営業",
+      "confidence": 1
+    },
+    "status": "skipped",
+    "skipReason": "既に登録済みの臨時スケジュールと完全に一致"
+  }
+]
