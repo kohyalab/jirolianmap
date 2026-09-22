@@ -82,12 +82,14 @@ class EditorApp {
         this.pendingUpdates = [];
         this.manualAiImages = [];
         this.aiGuidelines = null;
+        this.originalShopSnapshots = new Map();
+        this.draftAppliedItems = new Map();
+        this.draftProcessedPostIds = new Set();
         this.initPrefOptions();
         this.bindEvents();
         this.loadGithubConfigUI();
-        this.loadPendingUpdates();
-        this.loadAiGuidelines();
         this.initManualAiPanel();
+        this.autoFetchData();
         if (typeof LG_CODES !== 'undefined' && LG_CODES.fetchExternalData) {
             LG_CODES.fetchExternalData().then(() => {
                 this.initPrefOptions();
@@ -757,6 +759,69 @@ class EditorApp {
         this.el.instaInput.addEventListener('blur', () => { this.el.instaInput.value = this.normalizeAccountID(this.el.instaInput.value); this.updateSingleInstaLink(); });
         this.el.openedAtInput.addEventListener('blur', () => { this.el.openedAtInput.value = this.normalizeDate(this.el.openedAtInput.value) || ''; });
         this.el.closedAtInput.addEventListener('blur', () => { this.el.closedAtInput.value = this.normalizeDate(this.el.closedAtInput.value) || ''; });
+
+        // 未保存ガード (ブラウザ離脱・リロード時)
+        window.addEventListener('beforeunload', (e) => {
+            if (this.hasUnsavedChanges()) {
+                e.preventDefault();
+                e.returnValue = '';
+            }
+        });
+
+        // ドラッグ＆ドロップによるJSON手動取り込み
+        window.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            document.body.classList.add('drag-over');
+        });
+        window.addEventListener('dragleave', (e) => {
+            if (e.relatedTarget === null) {
+                document.body.classList.remove('drag-over');
+            }
+        });
+        window.addEventListener('drop', (e) => {
+            e.preventDefault();
+            document.body.classList.remove('drag-over');
+            const files = e.dataTransfer.files;
+            if (files && files.length > 0) {
+                const file = files[0];
+                if (!file.name.endsWith('.json')) {
+                    alert('JSONファイル (.json) をドロップしてください。');
+                    return;
+                }
+                const reader = new FileReader();
+                reader.onload = (evt) => {
+                    this.handleJsonDataLoaded(evt.target.result, file.name);
+                };
+                reader.readAsText(file);
+            }
+        });
+    }
+
+    getGeminiApiKey() {
+        return localStorage.getItem('jirolian_gemini_api_key') || '';
+    }
+
+    setGeminiApiKey(key) {
+        if (key && key.trim()) {
+            localStorage.setItem('jirolian_gemini_api_key', key.trim());
+        } else {
+            localStorage.removeItem('jirolian_gemini_api_key');
+        }
+        const manualInput = document.getElementById('manual-gemini-key');
+        if (manualInput) manualInput.value = key ? key.trim() : '';
+    }
+
+    toggleGeminiKeyVisibility() {
+        const input = document.getElementById('gh-gemini-key');
+        const btn = document.getElementById('btn-toggle-gemini-key');
+        if (!input || !btn) return;
+        if (input.type === 'password') {
+            input.type = 'text';
+            btn.textContent = '非表示';
+        } else {
+            input.type = 'password';
+            btn.textContent = '表示';
+        }
     }
 
     getGithubConfig() {
@@ -777,11 +842,19 @@ class EditorApp {
 
     loadGithubConfigUI() {
         const config = this.getGithubConfig();
-        document.getElementById('gh-token').value = config.token;
-        document.getElementById('gh-owner').value = config.owner;
-        document.getElementById('gh-repo').value = config.repo;
-        document.getElementById('gh-branch').value = config.branch;
-        document.getElementById('gh-path').value = config.path;
+        const tokenInput = document.getElementById('gh-token');
+        const ownerInput = document.getElementById('gh-owner');
+        const repoInput = document.getElementById('gh-repo');
+        const branchInput = document.getElementById('gh-branch');
+        const pathInput = document.getElementById('gh-path');
+        const geminiInput = document.getElementById('gh-gemini-key');
+
+        if (tokenInput) tokenInput.value = config.token;
+        if (ownerInput) ownerInput.value = config.owner;
+        if (repoInput) repoInput.value = config.repo;
+        if (branchInput) branchInput.value = config.branch;
+        if (pathInput) pathInput.value = config.path;
+        if (geminiInput) geminiInput.value = this.getGeminiApiKey();
     }
 
     openGithubModal() {
@@ -805,8 +878,14 @@ class EditorApp {
         localStorage.setItem('gh_repo', document.getElementById('gh-repo').value.trim());
         localStorage.setItem('gh_branch', document.getElementById('gh-branch').value.trim() || 'main');
         localStorage.setItem('gh_path', document.getElementById('gh-path').value.trim() || 'shops.json');
+        
+        const geminiInput = document.getElementById('gh-gemini-key');
+        if (geminiInput) {
+            this.setGeminiApiKey(geminiInput.value);
+        }
+
         this.closeGithubModal();
-        alert('GitHub設定を保存しました（トークンは現在のセッションのみ安全に保持されます）。');
+        alert('設定を保存しました（トークンは現在のセッションのみ安全に保持されます）。');
     }
 
     async pullFromGithub(silent = false) {
@@ -852,6 +931,7 @@ class EditorApp {
                 }
             });
             this.sortShopsByOpenedAt();
+            this.cacheOriginalSnapshots();
             this.renderList();
             if (this.currentMode === 'bulk') this.renderBulkTable();
 
@@ -872,6 +952,169 @@ class EditorApp {
         }
     }
 
+    cacheOriginalSnapshots() {
+        this.originalShopSnapshots.clear();
+        (this.shops || []).forEach(shop => {
+            this.originalShopSnapshots.set(shop.id, JSON.stringify(shop));
+        });
+    }
+
+    hasUnsavedChanges() {
+        if (this.currentMode !== 'single' || !this.selectedId) return false;
+        const currentShop = this.shops.find(s => s.id === this.selectedId);
+        if (!currentShop) return false;
+
+        try {
+            const draft = this.gatherFormShopData();
+            if (!draft) return false;
+
+            const originalJson = this.originalShopSnapshots.get(this.selectedId);
+            if (!originalJson) return false;
+
+            return JSON.stringify(draft) !== originalJson;
+        } catch (e) {
+            return false;
+        }
+    }
+
+    async autoFetchData() {
+        console.log('🚀 起動時データ自動取得を開始します...');
+        const cfg = this.getGithubConfig();
+        let loadedShops = false;
+        if (cfg.token && cfg.owner && cfg.repo && cfg.path) {
+            loadedShops = await this.pullFromGithub(true);
+        }
+        if (!loadedShops) {
+            try {
+                const res = await fetch('shops.json?t=' + Date.now());
+                if (res.ok) {
+                    const data = await res.json();
+                    if (Array.isArray(data) && data.length > 0) {
+                        this.shops = data;
+                        this.shops.forEach(shop => {
+                            if (shop.temporary) shop.temporary = this.sortTemporaryDates(shop.temporary);
+                            if (shop.notes !== undefined && shop.remarks === undefined) {
+                                shop.remarks = shop.notes;
+                                delete shop.notes;
+                            }
+                        });
+                        this.sortShopsByOpenedAt();
+                        this.cacheOriginalSnapshots();
+                        this.renderList();
+                        if (this.currentMode === 'bulk') this.renderBulkTable();
+                        console.log(`✅ ローカル shops.json から ${this.shops.length} 件読み込みました`);
+                    }
+                }
+            } catch (e) {
+                console.warn('ローカル shops.json の自動取得をスキップ:', e.message);
+            }
+        }
+        await this.loadPendingUpdates(false);
+        await this.loadAiGuidelines();
+    }
+
+    handleJsonDataLoaded(jsonText, fileName = '') {
+        try {
+            const data = JSON.parse(jsonText);
+            // 判定1: shops.json 形式 (店舗リスト)
+            if (Array.isArray(data) && data.length > 0 && data[0].id && data[0].name) {
+                this.shops = data;
+                this.shops.forEach(shop => {
+                    if (shop.temporary) shop.temporary = this.sortTemporaryDates(shop.temporary);
+                    if (shop.notes !== undefined && shop.remarks === undefined) {
+                        shop.remarks = shop.notes;
+                        delete shop.notes;
+                    }
+                });
+                this.sortShopsByOpenedAt();
+                this.cacheOriginalSnapshots();
+                this.renderList();
+                if (this.currentMode === 'bulk') this.renderBulkTable();
+                alert(`店舗データ (${fileName || 'shops.json'}): ${this.shops.length}件 を正常に読み込みました。`);
+                return;
+            }
+            // 判定2: sns_posts.json または pending_updates.json 形式
+            if (Array.isArray(data) && (data.length === 0 || data[0].detectedChange !== undefined || data[0].postUrl !== undefined || data[0].postText !== undefined)) {
+                this.pendingUpdates = data.map(item => {
+                    if (item.processed === undefined) {
+                        item.processed = (item.status === 'approved' || item.status === 'rejected');
+                    }
+                    if (!item.aiStatus) {
+                        if (item.status === 'skipped') {
+                            if (item.skipReason?.includes('キーワード')) item.aiStatus = 'daily';
+                            else if (item.skipReason?.includes('メンション')) item.aiStatus = 'mention';
+                            else item.aiStatus = 'match';
+                        } else {
+                            item.aiStatus = 'schedule_change';
+                        }
+                    }
+                    if (!item.aiReason) {
+                        item.aiReason = item.skipReason || (item.detectedChange?.reason || '');
+                    }
+                    return item;
+                });
+                this.updatePendingBadge();
+                if (this.currentMode === 'pending') this.renderPendingList();
+                alert(`SNS投稿判定データ (${fileName || 'sns_posts.json'}): ${this.pendingUpdates.length}件 を正常に読み込みました。`);
+                return;
+            }
+            // 判定3: ai_guidelines.json 形式
+            if (data && typeof data === 'object' && (data.generalRules || data.scheduleKeywords)) {
+                this.aiGuidelines = data;
+                alert(`AI判定ルール設定 (${fileName || 'ai_guidelines.json'}) を正常に読み込みました。`);
+                return;
+            }
+            alert('認識できないJSONフォーマットです。（shops.json, sns_posts.json, ai_guidelines.json のいずれかを指定してください）');
+        } catch (err) {
+            alert('JSONの解析に失敗しました:\n' + err.message);
+        }
+    }
+
+    async uploadFileToGithub(cfg, filePath, contentStr, defaultMsg = 'Update file') {
+        const utf8Bytes = new TextEncoder().encode(contentStr);
+        let binaryStr = '';
+        for (let i = 0; i < utf8Bytes.length; i++) {
+            binaryStr += String.fromCharCode(utf8Bytes[i]);
+        }
+        const base64Content = btoa(binaryStr);
+        const url = `https://api.github.com/repos/${cfg.owner}/${cfg.repo}/contents/${filePath}`;
+
+        let sha = null;
+        try {
+            const getRes = await fetch(`${url}?ref=${cfg.branch}`, {
+                headers: { 'Authorization': `Bearer ${cfg.token}`, 'Accept': 'application/vnd.github.v3+json' }
+            });
+            if (getRes.ok) {
+                const getData = await getRes.json();
+                sha = getData.sha;
+            }
+        } catch (e) {}
+
+        const payload = {
+            message: defaultMsg,
+            content: base64Content,
+            branch: cfg.branch
+        };
+        if (sha) payload.sha = sha;
+
+        const res = await fetch(url, {
+            method: 'PUT',
+            headers: {
+                'Authorization': `Bearer ${cfg.token}`,
+                'Content-Type': 'application/json',
+                'Accept': 'application/vnd.github.v3+json'
+            },
+            body: JSON.stringify(payload)
+        });
+
+        if (!res.ok) {
+            const errData = await res.json().catch(() => ({}));
+            throw new Error(`GitHub送信エラー (${filePath}): ${res.status} ${errData.message || res.statusText}`);
+        }
+        const data = await res.json();
+        return data.content ? data.content.sha : null;
+    }
+
     async pushToGithub() {
         const cfg = this.getGithubConfig();
         if (!cfg.token || !cfg.owner || !cfg.repo || !cfg.path) {
@@ -886,67 +1129,51 @@ class EditorApp {
         this.shops.forEach(shop => { if (shop.temporary) shop.temporary = this.sortTemporaryDates(shop.temporary); });
         this.sortShopsByOpenedAt();
 
-        const jsonString = JSON.stringify(this.shops, null, 2);
-        const utf8Bytes = new TextEncoder().encode(jsonString);
-        let binaryStr = '';
-        for (let i = 0; i < utf8Bytes.length; i++) {
-            binaryStr += String.fromCharCode(utf8Bytes[i]);
-        }
-        const base64Content = btoa(binaryStr);
-
-        const url = `https://api.github.com/repos/${cfg.owner}/${cfg.repo}/contents/${cfg.path}`;
-
         try {
             this.el.btnGithubPush.disabled = true;
             this.el.btnGithubPush.textContent = '送信中...';
 
-            if (!this.githubFileSha) {
-                const getRes = await fetch(`${url}?ref=${cfg.branch}`, {
-                    headers: { 'Authorization': `Bearer ${cfg.token}`, 'Accept': 'application/vnd.github.v3+json' }
+            // 1. shops.json の送信
+            const jsonString = JSON.stringify(this.shops, null, 2);
+            this.githubFileSha = await this.uploadFileToGithub(cfg, cfg.path, jsonString, commitMessage || 'Update shops.json');
+
+            // 2. data/sns_posts.json の更新（ドラフト処理済みを確定）
+            if (this.draftProcessedPostIds.size > 0) {
+                const now = new Date().toISOString();
+                this.pendingUpdates.forEach(item => {
+                    if (this.draftProcessedPostIds.has(item.id)) {
+                        item.processed = true;
+                        item.processedAt = now;
+                    }
                 });
-                if (getRes.ok) {
-                    const getData = await getRes.json();
-                    this.githubFileSha = getData.sha;
-                }
+                const snsJsonStr = JSON.stringify(this.pendingUpdates, null, 2);
+                await this.uploadFileToGithub(cfg, 'data/sns_posts.json', snsJsonStr, `${commitMessage || 'Update shops.json'} (update sns_posts)`);
+                await this.uploadFileToGithub(cfg, 'data/pending_updates.json', snsJsonStr, `${commitMessage || 'Update shops.json'} (update pending_updates)`).catch(() => {});
+                
+                this.draftProcessedPostIds.clear();
+                this.draftAppliedItems.clear();
             }
 
-            const payload = {
-                message: commitMessage || 'Update shops.json',
-                content: base64Content,
-                branch: cfg.branch
-            };
-            if (this.githubFileSha) {
-                payload.sha = this.githubFileSha;
-            }
-
-            const res = await fetch(url, {
-                method: 'PUT',
-                headers: {
-                    'Authorization': `Bearer ${cfg.token}`,
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/vnd.github.v3+json'
-                },
-                body: JSON.stringify(payload)
-            });
-
-            if (!res.ok) {
-                const errData = await res.json().catch(() => ({}));
-                throw new Error(`GitHub APIエラー (${res.status}): ${errData.message || res.statusText}`);
-            }
-
-            const resData = await res.json();
-            this.githubFileSha = resData.content.sha;
-
-            alert('GitHubに正常にコミット・反映しました！');
+            this.cacheOriginalSnapshots();
+            alert('GitHubへの送信・保存が正常に完了しました！\n（shops.json および SNS投稿判定データが更新されました）');
+            this.renderList();
+            this.updatePendingBadge();
+            if (this.currentMode === 'pending') this.renderPendingList();
         } catch (err) {
-            alert(`GitHubへの反映に失敗しました:\n${err.message}`);
+            alert('GitHubへの送信中にエラーが発生しました:\n' + err.message + '\n\n※処理済みの確定はロールバックされ、未処理状態が維持されます。');
         } finally {
             this.el.btnGithubPush.disabled = false;
-            this.el.btnGithubPush.textContent = '🚀 GitHubへ送信';
+            this.el.btnGithubPush.textContent = '🚀 GitHub送信';
         }
     }
 
     switchMode(mode) {
+        if (this.currentMode === 'single' && mode !== 'single' && this.hasUnsavedChanges()) {
+            if (!confirm('編集中（未保存）の変更があります。破棄してタブを切り替えますか？\n（「キャンセル」で編集を継続できます）')) {
+                return;
+            }
+        }
+
         this.currentMode = mode;
         this.el.tabSingle.classList.toggle('active', mode === 'single');
         this.el.tabBulk.classList.toggle('active', mode === 'bulk');
@@ -1534,6 +1761,10 @@ ${guidelinesText}
    - 終日休業の場合は hours を空配列 [] にする。
 6. 複数日程・複数変更の網羅抽出:
    - 1つの投稿に複数の日付の変更情報が含まれる場合は、変更がある日付ごとに【別々の要素として changes 配列にすべて漏れなく網羅】して出力してください。
+7. 理由（reason）の抽出ルール:
+   - reason には営業時間が変更・休業となる【原因・理由（例: 台風接近のため、店内工事のため、店主急病のため、祝日特別営業のため など）】のみを記載してください。
+   - 「昼のみ営業」「夜休業」「14時閉店」等の【変更内容】は reason に記載しないでください。
+   - 投稿テキストや画像から原因・理由がわかる場合のみ記載し、不明・記載がない場合は必ず空文字 ""（空欄）としてください。
 
 【出力フォーマット (JSON)】
 必ず以下のJSONスキーマに従って出力してください（Markdownのコードブロックではなく純粋なJSON文字列で返すこと）:
@@ -1546,7 +1777,7 @@ ${guidelinesText}
       "startDate": "YYYY-MM-DD",
       "endDate": "YYYY-MM-DD",
       "hours": [[number, number]],
-      "reason": string,
+      "reason": string, // 原因・理由のみ。変更内容は書かない。不明時は ""
       "confidence": number
     }
   ]
@@ -1716,16 +1947,20 @@ ${guidelinesText}
         if (this.el.skippedListContainer) this.el.skippedListContainer.innerHTML = '';
         if (this.el.historyListContainer) this.el.historyListContainer.innerHTML = '';
 
-        const pendingItems = (this.pendingUpdates || []).filter(p => !p.status || p.status === 'pending');
-        const skippedItems = (this.pendingUpdates || []).filter(p => p.status === 'skipped');
-        const historyItems = (this.pendingUpdates || []).filter(p => p.status === 'approved' || p.status === 'rejected');
+        const allItems = this.pendingUpdates || [];
+        const unprocessedItems = allItems.filter(p => !p.processed && !this.draftProcessedPostIds.has(p.id));
+        const historyItems = allItems.filter(p => p.processed || this.draftProcessedPostIds.has(p.id));
+
+        // 未処理のうち、AIが営業変更を検出したものを主一覧、一致・日常・メンションを除外アコーディオンへ分類
+        const pendingItems = unprocessedItems.filter(p => p.aiStatus === 'schedule_change');
+        const skippedItems = unprocessedItems.filter(p => p.aiStatus !== 'schedule_change');
 
         if (pendingItems.length === 0) {
             this.el.pendingListContainer.innerHTML = `
-                <div style="text-align: center; padding: 48px 16px; color: #888; background: #1a1a1a; border-radius: 8px;">
-                    <div style="font-size: 2.5rem; margin-bottom: 8px;">🎉</div>
-                    <div style="font-size: 1.1rem; font-weight: bold; color: #ccc;">未承認のSNS更新候補はありません</div>
-                    <div style="font-size: 0.85rem; margin-top: 6px;">新しい臨時休業や営業時間の変更投稿が検出されると、ここに自動表示されます。</div>
+                <div style="text-align: center; padding: 36px 16px; color: #888; background: #1a1a1a; border-radius: 8px; border: 1px dashed #333;">
+                    <div style="font-size: 2.2rem; margin-bottom: 6px;">🎉</div>
+                    <div style="font-size: 1.05rem; font-weight: bold; color: #ccc;">未処理の営業変更候補はありません</div>
+                    <div style="font-size: 0.8rem; margin-top: 6px; color: #777;">公式SNSから営業変更が検出されると、ここに自動表示されます。<br>※AIにより一致・日常投稿と判定されたものは下の「📋 既存スケジュール一致・日常投稿」をご確認ください。</div>
                 </div>
             `;
         } else {
@@ -1735,12 +1970,12 @@ ${guidelinesText}
             });
         }
 
-        // スキップ済みリストの描画
+        // スキップ・除外一覧（一致・日常・メンション）の描画
         if (this.el.skippedListContainer) {
             if (skippedItems.length === 0) {
                 this.el.skippedListContainer.innerHTML = `
-                    <div style="text-align: center; padding: 16px; color: #777; font-size: 0.85rem;">
-                        スキップされた投稿はありません。
+                    <div style="text-align: center; padding: 14px; color: #666; font-size: 0.8rem;">
+                        除外・スキップされた投稿はありません。
                     </div>
                 `;
             } else {
@@ -1755,7 +1990,7 @@ ${guidelinesText}
         if (this.el.historyListContainer) {
             if (historyItems.length === 0) {
                 this.el.historyListContainer.innerHTML = `
-                    <div style="text-align: center; padding: 16px; color: #777; font-size: 0.85rem;">
+                    <div style="text-align: center; padding: 14px; color: #666; font-size: 0.8rem;">
                         処理済みの履歴はありません。
                     </div>
                 `;
@@ -1773,83 +2008,74 @@ ${guidelinesText}
     createPendingCardElement(item, mode = 'pending') {
         const isSkipped = mode === 'skipped';
         const isHistory = mode === 'history';
-        const isApproved = item.status === 'approved';
-        const isRejected = item.status === 'rejected';
+        const isDraftDone = this.draftProcessedPostIds.has(item.id);
+        const isDraftApplied = this.draftAppliedItems.has(item.id);
 
         const card = document.createElement('div');
         card.className = 'pending-card' + (isSkipped ? ' skipped-card' : '') + (isHistory ? ' history-card' : '');
         card.id = `pending-card-${item.id}`;
+        
         if (isSkipped) {
-            card.style.opacity = '0.85';
+            card.style.opacity = '0.9';
             card.style.border = '1px dashed #555';
-        } else if (isHistory) {
-            card.style.opacity = '0.8';
-            card.style.border = '1px solid #333';
             card.style.background = '#181818';
+        } else if (isHistory) {
+            card.style.opacity = '0.85';
+            card.style.border = '1px solid #333';
+            card.style.background = '#151515';
         }
 
         const shop = (this.shops || []).find(s => s.id === item.shopId);
         const postSource = item.postSource || 'x';
-        let handle = '';
+        let handle = (shop && (shop.x || shop.instagram)) ? (postSource === 'instagram' ? shop.instagram : shop.x) : (item.accountHandle || '');
         let accountUrl = '';
-
-        if (postSource === 'instagram') {
-            handle = (shop && shop.instagram) ? shop.instagram : (item.accountHandle || '');
-            if (handle) accountUrl = `https://instagram.com/${handle.replace(/^@/, '')}`;
-        } else {
-            handle = (shop && shop.x) ? shop.x : (item.accountHandle || '');
-            if (handle) accountUrl = `https://x.com/${handle.replace(/^@/, '')}`;
+        if (handle) {
+            accountUrl = postSource === 'instagram' ? `https://instagram.com/${handle.replace(/^@/, '')}` : `https://x.com/${handle.replace(/^@/, '')}`;
         }
 
         const change = item.detectedChange || {};
-        const isClosure = change.type === 'temporary_closure';
-        const isSpecial = change.type === 'special_open';
-        const typeClass = isClosure ? 'closure' : (isSpecial ? 'special' : 'hours');
-        const typeLabel = isClosure ? '🚫 臨時休業' : (isSpecial ? '✨ 臨時営業' : '⏰ 営業時間変更');
+        const isClosure = change.type === 'temporary_closure' || (Array.isArray(change.hours) && change.hours.length === 0);
 
-        // 日時・曜日フォーマット
+        // AI判定バッジ
+        let aiBadgeHtml = '';
+        if (item.aiStatus === 'schedule_change') {
+            aiBadgeHtml = `<span style="background: #e65100; color: #fff; font-size: 0.72rem; padding: 2px 7px; border-radius: 4px; font-weight: bold;">🚨 営業変更検出</span>`;
+        } else if (item.aiStatus === 'match') {
+            aiBadgeHtml = `<span style="background: #2e7d32; color: #fff; font-size: 0.72rem; padding: 2px 7px; border-radius: 4px; font-weight: bold;">✅ スケジュール一致</span>`;
+        } else if (item.aiStatus === 'mention') {
+            aiBadgeHtml = `<span style="background: #4a148c; color: #e1bee7; font-size: 0.72rem; padding: 2px 7px; border-radius: 4px; font-weight: bold;">↪️ メンション除外</span>`;
+        } else {
+            aiBadgeHtml = `<span style="background: #37474f; color: #b0bec5; font-size: 0.72rem; padding: 2px 7px; border-radius: 4px; font-weight: bold;">💬 日常・雑談</span>`;
+        }
+
+        // 曜日
         const getDayOfWeekStr = (dateStr) => {
             if (!dateStr) return '';
             const d = new Date(dateStr + 'T00:00:00+09:00');
             if (isNaN(d.getTime())) return '';
             return ['日', '月', '火', '水', '木', '金', '土'][d.getDay()];
         };
-        const startDayStr = getDayOfWeekStr(change.startDate);
-        const endDayStr = change.endDate ? getDayOfWeekStr(change.endDate) : '';
-        const targetDateText = (!change.endDate || change.startDate === change.endDate)
-            ? `${change.startDate || ''} (${startDayStr})`
-            : `${change.startDate || ''} (${startDayStr}) 〜 ${change.endDate} (${endDayStr})`;
+        const sDateStr = change.startDate || (item.postedAt ? item.postedAt.split('T')[0] : '');
+        const eDateStr = change.endDate || sDateStr;
+        const hoursText = (change.hours && change.hours.length > 0)
+            ? change.hours.map(([s, e]) => `${this.floatToTime(s)}-${this.floatToTime(e)}`).join(', ')
+            : (isClosure ? '休業' : '');
 
         const postDateStr = item.postedAt ? new Date(item.postedAt).toLocaleString('ja-JP', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' }) : '';
-        const hoursText = (change.hours && change.hours.length > 0)
-            ? change.hours.map(([s, e]) => `${this.floatToTime(s)}-${this.floatToTime(e)}`).join(' / ')
-            : '終日休業';
 
-        // shops.json から判定される「対象日」の現在設定（通常営業時間または登録済み臨時）
-        let currentHoursDisplay = '未設定';
-        if (change.startDate && shop) {
-            const d = new Date(change.startDate + 'T00:00:00+09:00');
-            if (!isNaN(d.getTime())) {
-                const dayIdx = d.getDay();
-                const normalHours = (shop.shiftsByDay && shop.shiftsByDay[dayIdx]) ? shop.shiftsByDay[dayIdx] : [];
-                const normalHoursText = (normalHours.length > 0)
-                    ? normalHours.map(([s, e]) => `${this.floatToTime(s)}-${this.floatToTime(e)}`).join(' / ')
-                    : '定休日';
-
-                const existingTemp = (shop.temporary || []).find(t => {
-                    if (t.startDate === change.startDate) return true;
-                    if (t.endDate && t.startDate <= change.startDate && change.startDate <= t.endDate) return true;
-                    return false;
-                });
-
-                if (existingTemp) {
-                    const tempHoursText = (existingTemp.hours && existingTemp.hours.length > 0)
-                        ? existingTemp.hours.map(([s, e]) => `${this.floatToTime(s)}-${this.floatToTime(e)}`).join(' / ')
-                        : '終日休業';
-                    currentHoursDisplay = `${normalHoursText} <span style="color:#ffb74d; font-size:0.75rem;">(※登録済臨時: ${tempHoursText})</span>`;
-                } else {
-                    currentHoursDisplay = normalHoursText;
-                }
+        // shops.json の現在実効営業時間
+        let currentHoursDisplay = '未判定';
+        if (sDateStr && shop && typeof JiroBusinessHours !== 'undefined') {
+            const targetDate = new Date(`${sDateStr}T00:00:00+09:00`);
+            const effShifts = JiroBusinessHours.getTodayShifts(shop, targetDate);
+            const effText = (effShifts && effShifts.length > 0)
+                ? effShifts.map(([s, e]) => `${this.floatToTime(s)}-${this.floatToTime(e)}`).join(', ')
+                : '定休日 / 休業';
+            const temp = JiroBusinessHours.findTemporaryEntry(shop, targetDate);
+            if (temp) {
+                currentHoursDisplay = `${effText} <span style="color:#ffb74d; font-size:0.75rem;">(※登録済臨時あり)</span>`;
+            } else {
+                currentHoursDisplay = effText;
             }
         }
 
@@ -1862,40 +2088,46 @@ ${guidelinesText}
                </div>`
             : '';
 
+        // バナー
         let bannerHtml = '';
-        if (isSkipped) {
+        if (isDraftApplied) {
             bannerHtml = `
-                <div style="background: #2a2215; border: 1px solid #7a5c1a; border-radius: 4px; padding: 6px 10px; margin-bottom: 8px; font-size: 0.8rem; color: #ffca28; display: flex; align-items: center; gap: 6px;">
-                    <span>ℹ️ <strong>スキップ理由:</strong> ${item.skipReason || '既存の営業時間・登録スケジュールと完全に一致するため反映不要'}</span>
+                <div style="background: #1b3a20; border: 1px solid #2e7d32; border-radius: 4px; padding: 4px 8px; margin-bottom: 8px; font-size: 0.8rem; color: #a5d6a7; display: flex; justify-content: space-between; align-items: center;">
+                    <span>✨ <strong>臨時設定フォームに流し込み済み（未送信）</strong></span>
+                    <span style="font-size: 0.72rem; color: #ccc;">上部の「🚀 GitHub送信」で確定します</span>
+                </div>
+            `;
+        } else if (isDraftDone) {
+            bannerHtml = `
+                <div style="background: #263238; border: 1px solid #455a64; border-radius: 4px; padding: 4px 8px; margin-bottom: 8px; font-size: 0.8rem; color: #cfd8dc; display: flex; justify-content: space-between; align-items: center;">
+                    <span>⏭️ <strong>スキップ処理済み（未送信）</strong></span>
+                    <span style="font-size: 0.72rem; color: #aaa;">上部の「🚀 GitHub送信」で確定します</span>
                 </div>
             `;
         } else if (isHistory) {
-            const timeStr = item.approvedAt ? new Date(item.approvedAt).toLocaleString('ja-JP') : (item.rejectedAt ? new Date(item.rejectedAt).toLocaleString('ja-JP') : '');
+            const timeStr = item.processedAt ? new Date(item.processedAt).toLocaleString('ja-JP') : '';
             bannerHtml = `
-                <div style="background: ${isApproved ? '#1b3a20' : '#331a1a'}; border: 1px solid ${isApproved ? '#2e7d32' : '#7f1d1d'}; border-radius: 4px; padding: 4px 8px; margin-bottom: 8px; font-size: 0.8rem; color: ${isApproved ? '#a5d6a7' : '#ef9a9a'}; display: flex; justify-content: space-between; align-items: center;">
-                    <span>${isApproved ? '✅ 承認・反映済み' : '❌ 削除・却下済み'}</span>
-                    <span style="font-size: 0.72rem; color: #aaa;">${timeStr}</span>
+                <div style="background: #1e1e1e; border: 1px solid #444; border-radius: 4px; padding: 4px 8px; margin-bottom: 8px; font-size: 0.8rem; color: #aaa; display: flex; justify-content: space-between; align-items: center;">
+                    <span>✅ <strong>処理済み（確定）</strong></span>
+                    <span style="font-size: 0.72rem; color: #777;">${timeStr}</span>
                 </div>
             `;
         }
 
+        // アクションボタン
         let actionsHtml = '';
         if (isHistory) {
             actionsHtml = `
                 <button class="btn btn-sm" onclick="app.deletePendingPermanently('${item.id}')" style="background:#222; border-color:#444; color:#888;">🗑️ 完全に消去</button>
-                <button class="btn btn-sm btn-primary" onclick="app.revertPending('${item.id}')" style="background:#1976d2; color:#fff; font-weight:bold;">↩️ 未処理（承認待ち）に戻す</button>
-            `;
-        } else if (isSkipped) {
-            actionsHtml = `
-                <button class="btn btn-sm" onclick="app.rejectPending('${item.id}')" style="background:#2a2a2a; border-color:#444; color:#bbb;">❌ 削除</button>
-                <button class="btn btn-sm" onclick="app.editPending('${item.id}')" style="background:#263238; border-color:#37474f; color:#80d8ff;">✏️ 編集して反映</button>
-                <button class="btn btn-sm btn-success" onclick="app.approvePending('${item.id}')">✅ 強制反映</button>
+                <button class="btn btn-sm btn-primary" onclick="app.revertPending('${item.id}')" style="background:#1976d2; color:#fff;">↩️ 未処理に戻す</button>
+                <button class="btn btn-sm" onclick="app.applyPendingToTemporary('${item.id}')" style="background:#263238; border-color:#37474f; color:#80d8ff;">✏️ 再度フォームへ流し込み</button>
             `;
         } else {
             actionsHtml = `
-                <button class="btn btn-sm" onclick="app.rejectPending('${item.id}')" style="background:#2a2a2a; border-color:#444; color:#bbb;">❌ 削除</button>
-                <button class="btn btn-sm" onclick="app.editPending('${item.id}')" style="background:#263238; border-color:#37474f; color:#80d8ff;">✏️ 編集して反映</button>
-                <button class="btn btn-sm btn-success" onclick="app.approvePending('${item.id}')">✅ 承認して反映</button>
+                <button class="btn btn-sm" onclick="app.skipPending('${item.id}')" style="background:#2a2a2a; border-color:#444; color:#bbb;">⏭️ スキップ（処理済みにする）</button>
+                <button class="btn btn-sm btn-primary" onclick="app.applyPendingToTemporary('${item.id}')" style="background:var(--jiro-yellow); color:#000; font-weight:bold; border:none; padding:6px 14px;">
+                    ✏️ 反映（臨時設定フォームへ流し込み）
+                </button>
             `;
         }
 
@@ -1905,7 +2137,7 @@ ${guidelinesText}
                 <div class="pending-shop-title">
                     <span>🍜 ${item.shopName || item.shopId}</span>
                     ${accountUrl ? `
-                        <a href="${accountUrl}" target="_blank" rel="noopener noreferrer" class="pending-source-tag ${postSource}" title="公式アカウント (@${handle}) を開く" style="text-decoration:none; display:inline-flex; align-items:center; gap:4px; font-size:0.75rem; cursor:pointer;">
+                        <a href="${accountUrl}" target="_blank" rel="noopener noreferrer" class="pending-source-tag ${postSource}" style="text-decoration:none; display:inline-flex; align-items:center; gap:4px; font-size:0.75rem;">
                             <span>${postSource.toUpperCase()}</span>
                             <span>@${handle}</span>
                             <span style="font-size:0.65rem;">↗</span>
@@ -1913,33 +2145,55 @@ ${guidelinesText}
                     ` : `
                         <span class="pending-source-tag ${postSource}">${postSource.toUpperCase()}</span>
                     `}
+                    ${aiBadgeHtml}
                 </div>
                 <div class="pending-meta">
                     <span>${postDateStr}</span>
-                    ${item.postUrl ? `<a href="${item.postUrl}" target="_blank" rel="noopener noreferrer" style="color:var(--jiro-yellow); text-decoration:none; font-weight:bold; padding:2px 6px; background:#222; border-radius:4px; border:1px solid #444;">↗ 元ポストを開く</a>` : ''}
+                    ${item.postUrl ? `<a href="${item.postUrl}" target="_blank" rel="noopener noreferrer" style="color:var(--jiro-yellow); text-decoration:none; font-weight:bold; padding:2px 6px; background:#222; border-radius:4px; border:1px solid #444;">↗ 元ポスト</a>` : ''}
                 </div>
             </div>
 
             <div class="pending-post-box">
-                <div>${item.postText || '（テキストなし）'}</div>
+                <div>${this.escapeHtml(item.postText || '（テキストなし）')}</div>
                 ${mediaHtml}
             </div>
 
-            <div class="pending-ai-box ${isClosure ? 'is-closure' : (isSpecial ? 'is-special' : '')}">
-                <div class="pending-ai-title ${typeClass}">
-                    <span>🤖 AI抽出結果: <strong>${typeLabel}</strong></span>
-                    <span style="font-size:0.75rem; font-weight:normal; opacity:0.8;">(信頼度: ${Math.round((change.confidence || 1) * 100)}%)</span>
-                </div>
-                <div class="pending-ai-details">
-                    <div>📅 <strong>対象日:</strong> ${targetDateText}</div>
-                    
-                    <!-- shops.json との比較対比表示 -->
-                    <div style="margin-top: 6px; padding: 6px 10px; background: rgba(0,0,0,0.3); border-radius: 4px; border-left: 3px solid var(--accent-color); font-size: 0.82rem; display: flex; flex-direction: column; gap: 4px;">
-                        <div>🏢 <strong>現在設定:</strong> <span style="color: #bbb;">${currentHoursDisplay}</span></div>
-                        <div>⏰ <strong>変更提案:</strong> <span style="color: var(--jiro-yellow); font-weight: bold;">${hoursText}</span></div>
+            <div class="pending-ai-box ${isClosure ? 'is-closure' : ''}">
+                <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:6px;">
+                    <div style="font-size:0.85rem; font-weight:bold; color:#ffca28;">
+                        <span>🤖 AI判定理由: </span>
+                        <span style="color:#fff;">${this.escapeHtml(item.aiReason || '営業情報解析')}</span>
                     </div>
+                    <div style="font-size:0.78rem; color:#aaa;">🏢 現在の実効設定: <span style="color:#ddd;">${currentHoursDisplay}</span></div>
+                </div>
 
-                    ${change.reason ? `<div style="margin-top: 4px;">💬 <strong>理由・備考:</strong> ${change.reason}</div>` : ''}
+                <!-- インライン編集フォーム -->
+                <div class="pending-inline-edit-box">
+                    <div style="font-size:0.75rem; color:var(--jiro-yellow); font-weight:bold;">📝 流し込み前の内容確認・編集（このカード上で修正できます）:</div>
+                    <div class="pending-inline-row">
+                        <div class="pending-inline-field">
+                            <label>開始日</label>
+                            <input type="text" class="date-pick" id="p-sdate-${item.id}" value="${sDateStr}">
+                        </div>
+                        <div class="pending-inline-field">
+                            <label>終了日 (単日は開始日と同日)</label>
+                            <input type="text" class="date-pick" id="p-edate-${item.id}" value="${eDateStr}">
+                        </div>
+                        <div class="pending-inline-field">
+                            <label>営業時間 (休業は空欄)</label>
+                            <input type="text" id="p-hours-${item.id}" value="${hoursText === '休業' ? '' : hoursText}" placeholder="例: 11:00-14:30">
+                        </div>
+                    </div>
+                    <div class="pending-inline-row">
+                        <div class="pending-inline-field" style="flex:2;">
+                            <label>営業変更の原因・理由 (変更内容は書かない、不明は空欄)</label>
+                            <input type="text" id="p-reason-${item.id}" value="${this.escapeHtml(change.reason || '')}" placeholder="例: 台風接近のため、設備点検のため（不明は空欄）">
+                        </div>
+                        <div class="pending-inline-field" style="flex:2;">
+                            <label>根拠URL (X / Instagram等の投稿URL)</label>
+                            <input type="text" id="p-url-${item.id}" value="${this.escapeHtml(item.postUrl || '')}" placeholder="https://x.com/... 等">
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -1948,182 +2202,121 @@ ${guidelinesText}
             </div>
         `;
 
+        // 日付ピッカーの適用
+        setTimeout(() => {
+            const sInput = card.querySelector(`#p-sdate-${item.id}`);
+            const eInput = card.querySelector(`#p-edate-${item.id}`);
+            if (sInput && eInput && typeof flatpickr !== 'undefined') {
+                flatpickr(sInput, { locale: "ja", dateFormat: "Y-m-d", allowInput: true, disableMobile: true });
+                flatpickr(eInput, { locale: "ja", dateFormat: "Y-m-d", allowInput: true, disableMobile: true });
+            }
+        }, 10);
+
         return card;
     }
 
-    async approvePending(pendingId) {
-        const item = this.pendingUpdates.find(p => p.id === pendingId);
-        if (!item) return;
-
-        // 承認の前に最新の shops.json が取得・同期されているか確認
-        const loaded = await this.ensureLatestShopsLoaded();
-        if (!loaded) return;
-
-        const shop = this.shops.find(s => s.id === item.shopId);
-        if (!shop) {
-            alert(`店舗ID "${item.shopId}" が見つかりませんでした。店舗データ内に該当店舗が存在しません。`);
-            return;
-        }
-
-        if (!shop.temporary) shop.temporary = [];
-        const change = item.detectedChange || {};
-        const startDate = change.startDate;
-        const endDate = change.endDate || startDate;
-        const hours = change.hours || [];
-
-        // 既存の同日重複エントリを削除（上書き）
-        shop.temporary = shop.temporary.filter(t => t.startDate !== startDate);
-
-        // 新規エントリ挿入
-        shop.temporary.push({
-            startDate: startDate,
-            endDate: endDate,
-            hours: hours
-        });
-
-        // 日付順にソート
-        shop.temporary = this.sortTemporaryDates(shop.temporary);
-
-        // 完全に削除せず、status を 'approved' に更新して履歴として保存
-        item.status = 'approved';
-        item.approvedAt = new Date().toISOString();
-
-        this.updatePendingBadge();
-        this.renderPendingList();
-        this.savePendingUpdatesLocally();
-
-        alert(`【${shop.name}】の営業変更（${startDate}）を承認し、shops.json に反映しました！\n（「処理済み履歴」からいつでも確認・元に戻せます）\n\n反映を確定するには、上部の「🚀 GitHubへ送信」を押して保存してください。`);
-    }
-
-    async approveAllPending() {
-        const activeItems = (this.pendingUpdates || []).filter(p => !p.status || p.status === 'pending');
-        if (activeItems.length === 0) return;
-        if (!confirm(`表示中の未承認候補（${activeItems.length}件）をすべて承認して shops.json に反映しますか？`)) return;
-
-        // 承認の前に最新の shops.json が取得・同期されているか確認
-        const loaded = await this.ensureLatestShopsLoaded();
-        if (!loaded) return;
-
-        let successCount = 0;
-        activeItems.forEach(item => {
-            const shop = this.shops.find(s => s.id === item.shopId);
-            if (shop) {
-                if (!shop.temporary) shop.temporary = [];
-                const change = item.detectedChange || {};
-                const startDate = change.startDate;
-                const endDate = change.endDate || startDate;
-                const hours = change.hours || [];
-
-                shop.temporary = shop.temporary.filter(t => t.startDate !== startDate);
-                shop.temporary.push({
-                    startDate: startDate,
-                    endDate: endDate,
-                    hours: hours
-                });
-                shop.temporary = this.sortTemporaryDates(shop.temporary);
-
-                item.status = 'approved';
-                item.approvedAt = new Date().toISOString();
-                successCount++;
-            }
-        });
-
-        this.updatePendingBadge();
-        this.renderPendingList();
-        this.savePendingUpdatesLocally();
-
-        alert(`${successCount}件の営業変更をすべて承認・反映しました！\n（「処理済み履歴」からいつでも確認・元に戻せます）\n\n反映を確定するには、上部の「🚀 GitHubへ送信」を押して保存してください。`);
-    }
-
-    editPending(pendingId) {
-        const item = this.pendingUpdates.find(p => p.id === pendingId);
+    applyPendingToTemporary(itemId) {
+        const item = this.pendingUpdates.find(p => p.id === itemId);
         if (!item) return;
 
         const shop = this.shops.find(s => s.id === item.shopId);
         if (!shop) {
-            alert(`店舗 "${item.shopId}" が見つかりません。`);
+            alert(`店舗 "${item.shopId}" が見つかりませんでした。`);
             return;
         }
 
-        // 店舗別タブに切り替えて対象店舗を選択
+        // カード内のインライン編集フィールドから値を取得
+        const sDateInput = document.getElementById(`p-sdate-${item.id}`);
+        const eDateInput = document.getElementById(`p-edate-${item.id}`);
+        const hoursInput = document.getElementById(`p-hours-${item.id}`);
+        const reasonInput = document.getElementById(`p-reason-${item.id}`);
+        const urlInput = document.getElementById(`p-url-${item.id}`);
+
+        const startDate = sDateInput ? sDateInput.value.trim() : (item.detectedChange?.startDate || '');
+        const endDate = eDateInput ? eDateInput.value.trim() : (item.detectedChange?.endDate || startDate);
+        const hoursStr = hoursInput ? hoursInput.value.trim() : '';
+        const reason = reasonInput ? reasonInput.value.trim() : (item.detectedChange?.reason || '');
+        const sourceUrl = urlInput ? urlInput.value.trim() : (item.postUrl || '');
+
+        if (!startDate) {
+            alert('開始日を入力してください。');
+            return;
+        }
+
+        // 店舗別タブに切り替えて対象店舗を開く（未保存チェックをパスするため force = true）
         this.switchMode('single');
-        this.selectShop(shop.id);
+        this.selectShop(shop.id, true);
 
-        // 臨時休業リストにAI提案値を仮追加
-        const change = item.detectedChange || {};
-        const hoursStr = (change.hours && change.hours.length > 0)
-            ? change.hours.map(([s, e]) => `${this.floatToTime(s)}-${this.floatToTime(e)}`).join(', ')
-            : '';
+        // 現在の temporary リストをDOMから集約
+        this.gatherTemporaryFromDOM();
+        const parsedHours = this.parseShiftString(hoursStr);
+        
+        const newEntry = {
+            startDate: startDate,
+            endDate: (endDate && endDate !== startDate) ? endDate : startDate,
+            hours: parsedHours,
+            reason: reason,
+            sourceUrl: sourceUrl,
+            _isAiImported: true // 流し込みハイライト用フラグ
+        };
 
-        this.currentTemporary.push({
-            startDate: change.startDate || '',
-            endDate: change.endDate || change.startDate || '',
-            hours: hoursStr
-        });
+        // 同一開始日のエントリがあれば置き換え、なければ配列に追加（過去の流し込みが消えないよう保持）
+        const existingIdx = this.currentTemporary.findIndex(t => t.startDate === startDate);
+        if (existingIdx >= 0) {
+            this.currentTemporary[existingIdx] = newEntry;
+        } else {
+            this.currentTemporary.push(newEntry);
+        }
+
+        // 日付順にソートして再描画
+        this.currentTemporary = this.sortTemporaryDates(this.currentTemporary);
         this.renderTemporaryList();
 
-        item.status = 'approved';
-        item.approvedAt = new Date().toISOString();
+        // 当該投稿をドラフト流し込み済みとしてマーク
+        this.draftAppliedItems.set(item.id, { shopId: shop.id, entry: newEntry });
+        this.draftProcessedPostIds.add(item.id);
 
         this.updatePendingBadge();
-        this.renderPendingList();
-        this.savePendingUpdatesLocally();
 
-        // フォーム最下部へスクロールしてハイライト
+        // 案内とスクロール
         setTimeout(() => {
             const tempBox = document.getElementById('temporary-list-container');
             if (tempBox) tempBox.scrollIntoView({ behavior: 'smooth' });
-        }, 100);
+            alert(`【${shop.name}】の臨時設定フォームに流し込みました（✨ AI流し込み）。\n必要に応じて編集し、右上の「保存」を押してください。\n\n※GitHubへ送信するとSNS投稿の処理済みが確定します。`);
+        }, 150);
     }
 
-    rejectPending(pendingId) {
-        const item = this.pendingUpdates.find(p => p.id === pendingId);
+    skipPending(itemId) {
+        const item = this.pendingUpdates.find(p => p.id === itemId);
         if (!item) return;
 
-        if (!confirm('この更新候補を削除（却下）しますか？\n※完全に消去されず、「処理済み履歴」からいつでも元に戻すことができます。')) return;
-
-        item.status = 'rejected';
-        item.rejectedAt = new Date().toISOString();
-
+        this.draftProcessedPostIds.add(item.id);
         this.updatePendingBadge();
         this.renderPendingList();
-        this.savePendingUpdatesLocally();
     }
 
-    revertPending(pendingId) {
-        const item = this.pendingUpdates.find(p => p.id === pendingId);
-        if (!item) return;
+    revertPending(itemId) {
+        this.draftProcessedPostIds.delete(itemId);
+        this.draftAppliedItems.delete(itemId);
 
-        const shop = this.shops.find(s => s.id === item.shopId);
-        const wasApproved = item.status === 'approved';
-
-        if (wasApproved && shop && shop.temporary && item.detectedChange) {
-            const startDate = item.detectedChange.startDate;
-            const doRevert = confirm(`【${shop.name}】に反映した営業変更（${startDate}）を shops.json から取り消し、未処理（承認待ち）に戻しますか？`);
-            if (!doRevert) return;
-
-            // shops.json から該当の temporary を削除して元に戻す
-            shop.temporary = shop.temporary.filter(t => t.startDate !== startDate);
+        const item = this.pendingUpdates.find(p => p.id === itemId);
+        if (item) {
+            item.processed = false;
+            delete item.processedAt;
         }
 
-        item.status = 'pending';
-        delete item.approvedAt;
-        delete item.rejectedAt;
-
         this.updatePendingBadge();
         this.renderPendingList();
-        this.savePendingUpdatesLocally();
-
-        alert(`更新候補を未処理（承認待ち）に戻しました！${wasApproved ? '\n（shops.json の反映も取り消されました。確定するには「🚀 GitHub送信」を行ってください）' : ''}`);
     }
 
-    deletePendingPermanently(pendingId) {
+    deletePendingPermanently(itemId) {
         if (!confirm('この更新候補を履歴から完全に消去しますか？\n（消去後は元に戻せなくなります）')) return;
 
-        this.pendingUpdates = this.pendingUpdates.filter(p => p.id !== pendingId);
+        this.draftProcessedPostIds.delete(itemId);
+        this.draftAppliedItems.delete(itemId);
+        this.pendingUpdates = this.pendingUpdates.filter(p => p.id !== itemId);
         this.updatePendingBadge();
         this.renderPendingList();
-        this.savePendingUpdatesLocally();
     }
 
     savePendingUpdatesLocally() {
@@ -2211,29 +2404,85 @@ ${guidelinesText}
             return;
         }
 
+        // 当初スナップショットの取得（ハイライト判定用）
+        let originalTemps = [];
+        if (this.selectedId && this.originalShopSnapshots.has(this.selectedId)) {
+            try {
+                const origShop = JSON.parse(this.originalShopSnapshots.get(this.selectedId));
+                originalTemps = origShop.temporary || [];
+            } catch (e) {}
+        }
+
         this.currentTemporary.forEach((item, index) => {
             const row = document.createElement('div');
             row.className = 'list-row';
+            row.style.flexDirection = 'column';
+            row.style.alignItems = 'stretch';
+            row.style.gap = '6px';
+            row.style.padding = '8px';
+            row.style.background = '#1e1e1e';
+            row.style.borderRadius = '6px';
+            row.style.border = '1px solid #333';
+            row.style.marginBottom = '6px';
+
             const hoursStr = this.formatShiftArray(item.hours);
             const sDate = item.startDate || item.date || '';
             const eDate = item.endDate || '';
             const isNoEndDate = !item.endDate;
+            const reason = item.reason || '';
+            const sourceUrl = item.sourceUrl || '';
+
+            // スナップショット内に全く同一のエントリが存在するかチェック
+            const isMatchOriginal = originalTemps.some(orig => {
+                const oSDate = orig.startDate || orig.date || '';
+                const oEDate = orig.endDate || '';
+                const oHours = this.formatShiftArray(orig.hours);
+                const oReason = orig.reason || '';
+                const oUrl = orig.sourceUrl || '';
+                return oSDate === sDate && oEDate === eDate && oHours === hoursStr && oReason === reason && oUrl === sourceUrl;
+            });
+
+            const isModified = !isMatchOriginal || item._isAiImported;
+            if (isModified) {
+                row.classList.add('diff-highlight-item');
+            }
+            if (item._isAiImported) {
+                row.dataset.isAiImported = 'true';
+            }
+
+            const badgeHtml = item._isAiImported
+                ? '<span class="diff-highlight-badge">✨ AI流し込み</span>'
+                : (isModified ? '<span class="diff-highlight-badge">変更あり</span>' : '');
 
             row.innerHTML = `
-                <div class="date-input-wrapper" style="position: relative; display: inline-block;">
-                    <input type="text" class="date-pick s-date date-input" value="${sDate}" placeholder="開始日" data-idx="${index}" style="padding-right: 24px;">
-                    <span class="cal-icon" style="position: absolute; right: 6px; top: 50%; transform: translateY(-50%); pointer-events: none; opacity: 0.5; display: inline-flex; align-items: center; justify-content: center;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg></span>
+                <div style="display: flex; align-items: center; gap: 6px; flex-wrap: wrap;">
+                    ${badgeHtml}
+                    <div class="date-input-wrapper" style="position: relative; display: inline-block;">
+                        <input type="text" class="date-pick s-date date-input" value="${sDate}" placeholder="開始日" data-idx="${index}" style="padding-right: 24px;">
+                        <span class="cal-icon" style="position: absolute; right: 6px; top: 50%; transform: translateY(-50%); pointer-events: none; opacity: 0.5; display: inline-flex; align-items: center; justify-content: center;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg></span>
+                    </div>
+                    <span style="color:#666;">～</span>
+                    <div class="date-input-wrapper" style="position: relative; display: inline-block; ${isNoEndDate ? 'opacity: 0.4;' : ''}">
+                        <input type="text" class="date-pick e-date date-input" value="${eDate}" placeholder="終了日" data-idx="${index}" ${isNoEndDate ? 'disabled' : ''} style="padding-right: 24px;">
+                        <span class="cal-icon" style="position: absolute; right: 6px; top: 50%; transform: translateY(-50%); pointer-events: none; opacity: 0.5; display: inline-flex; align-items: center; justify-content: center;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg></span>
+                    </div>
+                    <label class="checkbox-label" style="margin: 0 4px;">
+                        <input type="checkbox" ${isNoEndDate ? 'checked' : ''} onchange="app.toggleTempNoEndDate(${index}, this)"> 未定
+                    </label>
+                    <input type="text" class="hours-input" value="${hoursStr}" placeholder="例: 11:00-14:30 (休業は空欄)" data-temp-hours="${index}" onblur="app.handleShiftBlur(this)" style="flex: 1; min-width: 140px;">
+                    <button type="button" class="btn btn-danger btn-sm" onclick="app.removeTemporary(${index})">削除</button>
                 </div>
-                <span style="color:#666;">～</span>
-                <div class="date-input-wrapper" style="position: relative; display: inline-block; ${isNoEndDate ? 'opacity: 0.4;' : ''}">
-                    <input type="text" class="date-pick e-date date-input" value="${eDate}" placeholder="終了日" data-idx="${index}" ${isNoEndDate ? 'disabled' : ''} style="padding-right: 24px;">
-                    <span class="cal-icon" style="position: absolute; right: 6px; top: 50%; transform: translateY(-50%); pointer-events: none; opacity: 0.5; display: inline-flex; align-items: center; justify-content: center;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg></span>
+                <div style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-top: 4px; padding-top: 4px; border-top: 1px dashed #2a2a2a;">
+                    <div style="flex: 1; min-width: 180px; display: flex; align-items: center; gap: 4px;">
+                        <span style="font-size: 0.72rem; color: #888; white-space: nowrap;">理由:</span>
+                        <input type="text" class="temp-reason-input" data-temp-reason="${index}" value="${this.escapeHtml(reason)}" placeholder="営業変更の原因・理由（不明は空欄）" style="width: 100%; font-size: 0.78rem; padding: 4px 6px; background: #161616; border: 1px solid #444; border-radius: 4px; color: #eee;">
+                    </div>
+                    <div style="flex: 1; min-width: 200px; display: flex; align-items: center; gap: 4px;">
+                        <span style="font-size: 0.72rem; color: #888; white-space: nowrap;">根拠URL:</span>
+                        <input type="text" class="temp-url-input" data-temp-source-url="${index}" value="${this.escapeHtml(sourceUrl)}" placeholder="https://x.com/... 等" style="width: 100%; font-size: 0.78rem; padding: 4px 6px; background: #161616; border: 1px solid #444; border-radius: 4px; color: #eee;">
+                        ${sourceUrl ? `<a href="${sourceUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-sm" style="padding: 2px 6px; font-size: 0.72rem; text-decoration: none;" title="根拠URLを開く">🔗</a>` : ''}
+                    </div>
                 </div>
-                <label class="checkbox-label" style="margin: 0 4px;">
-                    <input type="checkbox" ${isNoEndDate ? 'checked' : ''} onchange="app.toggleTempNoEndDate(${index}, this)"> 未定
-                </label>
-                <input type="text" class="hours-input" value="${hoursStr}" placeholder="例: 11:00-14:30 (休業は空欄)" data-temp-hours="${index}" onblur="app.handleShiftBlur(this)">
-                <button type="button" class="btn btn-danger btn-sm" onclick="app.removeTemporary(${index})">削除</button>
             `;
             this.el.tempContainer.appendChild(row);
         });
@@ -2297,16 +2546,24 @@ ${guidelinesText}
             const sInput = row.querySelector('.s-date');
             const eInput = row.querySelector('.e-date');
             const hInput = row.querySelector('input[data-temp-hours]');
+            const rInput = row.querySelector('input[data-temp-reason]');
+            const uInput = row.querySelector('input[data-temp-source-url]');
             const chkNoEnd = row.querySelector('input[type="checkbox"]');
             
             if (sInput && sInput.value) {
                 const sDate = sInput.value;
                 const eDate = chkNoEnd.checked ? null : (eInput.value || null);
-                updated.push({
+                const reason = (rInput ? rInput.value : '').trim();
+                const sourceUrl = (uInput ? uInput.value : '').trim();
+                const entry = {
                     startDate: sDate,
                     endDate: eDate,
                     hours: this.parseShiftString(hInput ? hInput.value : '')
-                });
+                };
+                if (reason) entry.reason = reason;
+                if (sourceUrl) entry.sourceUrl = sourceUrl;
+                if (row.dataset.isAiImported === 'true') entry._isAiImported = true;
+                updated.push(entry);
             }
         });
         this.currentTemporary = updated;
@@ -2492,6 +2749,12 @@ ${guidelinesText}
     }
 
     selectShop(id, skipSave = false) {
+        if (!skipSave && this.selectedId && this.selectedId !== id && this.hasUnsavedChanges()) {
+            if (!confirm('編集中（未保存）の変更があります。破棄して別の店舗を選択しますか？\n（「キャンセル」で編集を継続できます）')) {
+                return;
+            }
+        }
+
         this.selectedId = id;
         this.renderList();
 

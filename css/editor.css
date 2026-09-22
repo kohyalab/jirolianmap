@@ -659,4 +659,82 @@ input.error { border-color: var(--danger-color) !important; background-color: #3
     flex-wrap: wrap;
 }
 
+/* 変更差分ハイライト */
+.diff-highlight-item {
+    border: 1px solid var(--accent-color) !important;
+    background: rgba(255, 235, 59, 0.08) !important;
+    position: relative;
+}
+.diff-highlight-badge {
+    background: var(--accent-color);
+    color: #000;
+    font-size: 0.68rem;
+    font-weight: bold;
+    padding: 1px 6px;
+    border-radius: 4px;
+    margin-left: 6px;
+    display: inline-flex;
+    align-items: center;
+}
+.diff-modified-input {
+    border-color: var(--accent-color) !important;
+    background-color: rgba(255, 235, 59, 0.06) !important;
+}
+
+/* SNS自動検出カード内インライン編集グリッド */
+.pending-inline-edit-box {
+    background: #181818;
+    border: 1px solid #333;
+    border-radius: 6px;
+    padding: 10px;
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.pending-inline-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 8px;
+}
+.pending-inline-field {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.pending-inline-field label {
+    font-size: 0.72rem;
+    color: #aaa;
+    font-weight: bold;
+}
+.pending-inline-field input, .pending-inline-field select {
+    padding: 5px 8px;
+    font-size: 0.8rem;
+    background: #222;
+    border: 1px solid #444;
+    border-radius: 4px;
+    color: #fff;
+}
+.pending-inline-field input:focus, .pending-inline-field select:focus {
+    border-color: var(--accent-color);
+    outline: none;
+}
+
+/* ドラッグ＆ドロップ受け入れオーバーレイ */
+body.drag-over::after {
+    content: "📁 ここに JSON ファイルをドロップして読み込み";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.85);
+    border: 4px dashed var(--accent-color);
+    color: var(--accent-color);
+    font-size: 1.4rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+    pointer-events: none;
+}
+
 

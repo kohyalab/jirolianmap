@@ -328,16 +328,15 @@
     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 8px;">
         <div>
             <h2 style="font-size: 1.2rem; margin: 0; display: flex; align-items: center; gap: 8px;">
-                <span>🔔 SNS自動検出・承認待ち一覧</span>
+                <span>🔔 SNS自動検出・営業判定一覧</span>
                 <span id="pending-count-tag" style="background: var(--jiro-yellow); color: #000; font-size: 0.75rem; padding: 2px 8px; border-radius: 12px; font-weight: bold;">0件</span>
             </h2>
-            <div style="font-size: 0.8rem; color: #888; margin-top: 4px;">公式XやInstagramから自動収集・AI解析された営業変更候補です。内容を確認して承認すると shops.json に反映されます。</div>
+            <div style="font-size: 0.8rem; color: #888; margin-top: 4px;">公式SNSから自動収集・AI解析された営業情報です。カード上で直接編集し、「✏️ 反映（流し込み）」を押すと店舗の臨時設定フォームに流し込まれます。</div>
         </div>
         <div style="display: flex; gap: 8px; flex-wrap: wrap;">
             <button class="btn btn-sm" id="btn-pending-refresh" onclick="app.loadPendingUpdates(true)">🔄 再取得</button>
             <button class="btn btn-sm" id="btn-ai-guidelines" onclick="app.openAiGuidelinesModal()" style="background: #2a2a2a; border-color: #555; color: #80d8ff;">🧠 AI判定ルール</button>
             <button class="btn btn-sm" id="btn-pending-trigger-crawler" onclick="app.triggerSnsCrawler()" style="background: #2a2a2a; border-color: #555; color: #ffeb3b;">⚡ 今すぐSNS再巡回</button>
-            <button class="btn btn-sm btn-success" id="btn-pending-approve-all" onclick="app.approveAllPending()">✅ 全件一括承認</button>
         </div>
     </div>
 
@@ -499,6 +498,17 @@
         <div class="form-group">
             <label>ファイルパス (File Path)</label>
             <input type="text" id="gh-path" placeholder="public/shops.json または shops.json">
+        </div>
+        <div class="form-group" style="border-top: 1px solid #333; padding-top: 10px; margin-top: 10px;">
+            <label style="color: var(--jiro-yellow); display:flex; justify-content:space-between; align-items:center;">
+                <span>🔑 Google Gemini API Key</span>
+                <span style="font-size:0.75rem; color:#aaa; font-weight:normal;">AI営業判定・画像解析用</span>
+            </label>
+            <div style="display:flex; gap:6px;">
+                <input type="password" id="gh-gemini-key" placeholder="AIzaSy...">
+                <button type="button" class="btn btn-sm" id="btn-toggle-gemini-key" onclick="app.toggleGeminiKeyVisibility()" style="padding: 4px 8px; font-size:0.75rem;">表示</button>
+            </div>
+            <div class="hint">ブラウザローカル（localStorage）に安全に保存され、手動貼り付けAI解析等に利用されます。</div>
         </div>
         <div style="display:flex; justify-content:flex-end; gap:8px; margin-top:8px;">
             <button class="btn" onclick="app.closeGithubModal()">キャンセル</button>

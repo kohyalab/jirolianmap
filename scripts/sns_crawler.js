@@ -9,8 +9,10 @@
 const fs = require('fs');
 const path = require('path');
 const { analyzePostWithGemini } = require('./analyze_posts');
+const JiroBusinessHours = require('../js/common/business-hours.js');
 
 const SHOPS_JSON_PATH = path.join(__dirname, '..', 'shops.json');
+const SNS_POSTS_PATH = path.join(__dirname, '..', 'data', 'sns_posts.json');
 const PENDING_UPDATES_PATH = path.join(__dirname, '..', 'data', 'pending_updates.json');
 const CRAWLED_CACHE_PATH = path.join(__dirname, '..', 'data', 'crawled_cache.json');
 const AI_GUIDELINES_PATH = path.join(__dirname, '..', 'data', 'ai_guidelines.json');
@@ -272,6 +274,55 @@ async function fetchXRecentPosts(screenName) {
 }
 
 /**
+ * data/sns_posts.json から投稿履歴・判定データを読み込む
+ * (旧 pending_updates.json があれば自動移行)
+ */
+function loadSnsPosts() {
+    let posts = [];
+    if (fs.existsSync(SNS_POSTS_PATH)) {
+        try {
+            posts = JSON.parse(fs.readFileSync(SNS_POSTS_PATH, 'utf8'));
+            if (!Array.isArray(posts)) posts = [];
+        } catch (e) {
+            console.warn('[WARN] Failed to read sns_posts.json:', e.message);
+        }
+    } else if (fs.existsSync(PENDING_UPDATES_PATH)) {
+        try {
+            const oldData = JSON.parse(fs.readFileSync(PENDING_UPDATES_PATH, 'utf8'));
+            if (Array.isArray(oldData)) {
+                posts = oldData.map(item => {
+                    const isProcessed = item.status === 'approved' || item.status === 'rejected';
+                    let aiStatus = 'schedule_change';
+                    if (item.status === 'skipped') {
+                        if (item.skipReason && item.skipReason.includes('キーワード')) aiStatus = 'daily';
+                        else if (item.skipReason && item.skipReason.includes('メンション')) aiStatus = 'mention';
+                        else aiStatus = 'match';
+                    }
+                    return {
+                        id: item.id,
+                        shopId: item.shopId,
+                        shopName: item.shopName,
+                        postSource: item.postSource || 'x',
+                        postUrl: item.postUrl,
+                        postedAt: item.postedAt,
+                        postText: item.postText,
+                        mediaUrls: item.mediaUrls || [],
+                        detectedChange: item.detectedChange || null,
+                        processed: isProcessed,
+                        processedAt: item.approvedAt || item.rejectedAt || null,
+                        aiStatus: aiStatus,
+                        aiReason: item.skipReason || (item.detectedChange?.reason || '')
+                    };
+                });
+            }
+        } catch (e) {
+            console.warn('[WARN] Failed to migrate pending_updates.json:', e.message);
+        }
+    }
+    return posts;
+}
+
+/**
  * メイン巡回処理
  */
 async function runCrawler() {
@@ -296,14 +347,8 @@ async function runCrawler() {
     }
     const processedSet = new Set(cache.processedPostIds || []);
 
-    // 既存の pending_updates 読み込み
-    let pendingUpdates = [];
-    if (fs.existsSync(PENDING_UPDATES_PATH)) {
-        try {
-            pendingUpdates = JSON.parse(fs.readFileSync(PENDING_UPDATES_PATH, 'utf8'));
-            if (!Array.isArray(pendingUpdates)) pendingUpdates = [];
-        } catch (e) {}
-    }
+    // 既存の sns_posts 読み込み
+    let snsPosts = loadSnsPosts();
 
     // ルール管理ファイルからキーワード設定を読み込み
     const keywordConfig = loadScheduleKeywords();
@@ -315,7 +360,7 @@ async function runCrawler() {
 
     const apiKey = process.env.GEMINI_API_KEY;
     if (!apiKey) {
-        console.warn('⚠️ GEMINI_API_KEY が未設定です。Gemini解析はスキップされ、モックまたは収集のみ実行されます。');
+        console.warn('⚠️ GEMINI_API_KEY が未設定です。Gemini解析はスキップされ、収集のみ実行されます。');
     }
 
     let newlyDetectedCount = 0;
@@ -342,9 +387,9 @@ async function runCrawler() {
         for (const post of newPosts) {
             // 0. 他アカウントへのメンションはGemini解析対象外（自ポストへのリプライ・ツリーは解析対象）
             if (isMentionOrReply(post, shop.x)) {
-                console.log(`  ⏭️ 他アカウントへのメンションと判定しスキップ: "${post.text.substring(0, 25).replace(/\n/g, ' ')}..."`);
-                const skippedItem = {
-                    id: `pending_skipped_${shop.id}_${post.postId}`,
+                console.log(`  ⏭️ 他アカウントへのメンションと判定し記録: "${post.text.substring(0, 25).replace(/\n/g, ' ')}..."`);
+                const mentionItem = {
+                    id: `sns_post_mention_${shop.id}_${post.postId}`,
                     shopId: shop.id,
                     shopName: shop.name,
                     postSource: post.source,
@@ -357,23 +402,27 @@ async function runCrawler() {
                         startDate: post.postedAt.split('T')[0],
                         endDate: post.postedAt.split('T')[0],
                         hours: [],
-                        reason: '他アカウントへのメンション'
+                        reason: ''
                     },
-                    status: 'skipped',
-                    skipReason: '他アカウントへのメンションのため解析対象外'
+                    processed: false,
+                    processedAt: null,
+                    aiStatus: 'mention',
+                    aiReason: '他アカウントへのメンションのため除外'
                 };
-                pendingUpdates = pendingUpdates.filter(p => p.id !== skippedItem.id);
-                pendingUpdates.push(skippedItem);
+                const existing = snsPosts.find(p => p.id === mentionItem.id && p.processed);
+                if (!existing) {
+                    snsPosts = snsPosts.filter(p => p.id !== mentionItem.id);
+                    snsPosts.push(mentionItem);
+                }
                 processedSet.add(post.postId);
                 continue;
             }
 
-            // 事前フィルタ: 営業変更の可能性がない日常雑談ポストはスキップ済みとして記録（APIは呼ばない）
+            // 事前フィルタ: 営業変更の可能性がない日常雑談ポストは記録（APIは呼ばない）
             if (!isLikelySchedulePost(post, keywordConfig)) {
-                console.log(`  ⏭️ 日常ポストと判定しスキップとして記録: "${post.text.substring(0, 25).replace(/\n/g, ' ')}..."`);
-                
-                const skippedItem = {
-                    id: `pending_skipped_${shop.id}_${post.postId}`,
+                console.log(`  ⏭️ 日常ポストと判定し記録: "${post.text.substring(0, 25).replace(/\n/g, ' ')}..."`);
+                const dailyItem = {
+                    id: `sns_post_daily_${shop.id}_${post.postId}`,
                     shopId: shop.id,
                     shopName: shop.name,
                     postSource: post.source,
@@ -386,13 +435,18 @@ async function runCrawler() {
                         startDate: post.postedAt.split('T')[0],
                         endDate: post.postedAt.split('T')[0],
                         hours: [],
-                        reason: '日常ポスト（営業関連ワードなし）'
+                        reason: ''
                     },
-                    status: 'skipped',
-                    skipReason: '営業・日程関連のキーワードが含まれないためスキップ（日常ポスト・雑談等）'
+                    processed: false,
+                    processedAt: null,
+                    aiStatus: 'daily',
+                    aiReason: '営業・日程関連のキーワードが含まれないため除外（日常・雑談）'
                 };
-                pendingUpdates = pendingUpdates.filter(p => p.id !== skippedItem.id);
-                pendingUpdates.push(skippedItem);
+                const existing = snsPosts.find(p => p.id === dailyItem.id && p.processed);
+                if (!existing) {
+                    snsPosts = snsPosts.filter(p => p.id !== dailyItem.id);
+                    snsPosts.push(dailyItem);
+                }
                 processedSet.add(post.postId);
                 continue;
             }
@@ -417,38 +471,26 @@ async function runCrawler() {
                     for (let idx = 0; idx < analysis.changes.length; idx++) {
                         const change = analysis.changes[idx];
                         
-                        // 対象日の曜日を特定 (0=日曜, 1=月曜, ...)
-                        let dayOfWeek = null;
-                        if (change.startDate) {
-                            const d = new Date(change.startDate + 'T00:00:00+09:00');
-                            if (!isNaN(d.getTime())) {
-                                dayOfWeek = d.getDay().toString();
-                            }
-                        }
+                        // 対象日の実効営業時間を index.html と同一ロジックで取得 (祝日・特定週・通常シフト・既存temporaryを網羅)
+                        const targetDate = new Date(`${change.startDate}T00:00:00+09:00`);
+                        const effectiveShifts = JiroBusinessHours.getTodayShifts(shop, targetDate) || [];
+                        const isExactMatch = JiroBusinessHours.areShiftsEqual(effectiveShifts, change.hours || []);
 
-                        // 既存の登録スケジュール（通常シフトまたは既存temporary）との完全一致判定
-                        let isExactMatch = false;
                         let matchReason = '';
-
-                        // 1. 既存の temporary との一致チェック
-                        const matchedTemp = (shop.temporary || []).find(t => t.startDate === change.startDate);
-                        if (matchedTemp) {
-                            if (JSON.stringify(matchedTemp.hours || []) === JSON.stringify(change.hours || [])) {
-                                isExactMatch = true;
-                                matchReason = '既に登録済みの臨時スケジュールと完全に一致';
-                            }
-                        } else if (dayOfWeek !== null && shop.shiftsByDay) {
-                            // 2. 通常営業時間との一致チェック（定休日は [] と空配列の一致含む）
-                            const normalHours = shop.shiftsByDay[dayOfWeek] || [];
-                            if (JSON.stringify(normalHours) === JSON.stringify(change.hours || [])) {
-                                isExactMatch = true;
-                                matchReason = '対象曜日の通常営業時間と完全に一致（変更なし）';
+                        if (isExactMatch) {
+                            const tempEntry = JiroBusinessHours.findTemporaryEntry(shop, targetDate);
+                            if (tempEntry) {
+                                matchReason = '既に登録済みの臨時スケジュールと一致';
+                            } else {
+                                matchReason = '通常営業スケジュール（祝日・特定シフト等含む）と一致';
                             }
                         }
 
-                        const status = isExactMatch ? 'skipped' : 'pending';
-                        const pendingItem = {
-                            id: `pending_${shop.id}_${change.startDate.replace(/-/g, '')}_${idx}_${Math.random().toString(36).slice(2, 6)}`,
+                        const aiStatus = isExactMatch ? 'match' : 'schedule_change';
+                        const aiReason = isExactMatch ? matchReason : (change.reason ? `営業変更検出: ${change.reason}` : '営業時間の変更を検出');
+
+                        const postItem = {
+                            id: `sns_post_${shop.id}_${change.startDate.replace(/-/g, '')}_${idx}_${post.postId}`,
                             shopId: shop.id,
                             shopName: shop.name,
                             postSource: post.source,
@@ -457,16 +499,27 @@ async function runCrawler() {
                             postText: post.text,
                             mediaUrls: post.mediaUrls || [],
                             detectedChange: change,
-                            status: status,
-                            skipReason: isExactMatch ? matchReason : null
+                            processed: false,
+                            processedAt: null,
+                            aiStatus: aiStatus,
+                            aiReason: aiReason
                         };
 
-                        // 既存の同一日・同一タイプの候補があれば上書き、別日程・別タイプなら追加
-                        pendingUpdates = pendingUpdates.filter(p => !(p.shopId === shop.id && p.detectedChange.startDate === change.startDate && p.detectedChange.type === change.type));
-                        pendingUpdates.push(pendingItem);
+                        // 既存の同一投稿ID/同一対象日で、既に人間系により処理済み(processed: true)なものがあれば上書きせず保護
+                        const existingProcessed = snsPosts.find(p => 
+                            (p.id === postItem.id || (p.postUrl === postItem.postUrl && p.detectedChange?.startDate === change.startDate)) && p.processed
+                        );
+                        if (existingProcessed) {
+                            console.log(`    ℹ️ 既に人間系により処理済みのため保護: ${change.startDate}`);
+                            continue;
+                        }
+
+                        // 同一店舗・同一日・同一タイプの未処理アイテムがあれば更新、なければ追加
+                        snsPosts = snsPosts.filter(p => !(p.shopId === shop.id && p.detectedChange?.startDate === change.startDate && p.detectedChange?.type === change.type && !p.processed));
+                        snsPosts.push(postItem);
 
                         if (isExactMatch) {
-                            console.log(`    ℹ️ 既存スケジュールと完全一致のためスキップとして記録: ${change.startDate} (${matchReason})`);
+                            console.log(`    ℹ️ 既存スケジュールと一致（変更なし）: ${change.startDate} (${matchReason})`);
                         } else {
                             newlyDetectedCount++;
                             console.log(`    ✨ 営業変更を検出！ (${idx + 1}/${analysis.changes.length}) [${change.type}] ${change.startDate}: ${change.reason || analysis.summary}`);
@@ -474,17 +527,17 @@ async function runCrawler() {
                     }
                 }
 
-                // 正常に解析が完了した場合のみ、処理済みキャッシュに追加（エラー時は次回再試行可能に保持）
+                // 正常に解析が完了した場合のみ、処理済みキャッシュに追加
                 processedSet.add(post.postId);
             } catch (err) {
                 console.error(`  ❌ Gemini解析エラー (Shop: ${shop.id}):`, err.message);
             }
 
-            // APIレートリミット・負荷対策（3秒ウェイトでRPM 5の制限を確実に回避）
+            // APIレートリミット・負荷対策（3秒ウェイト）
             await new Promise(r => setTimeout(r, 3000));
         }
 
-        // 相手サーバーへの負荷軽減・Polite Crawling（店舗間に2.5秒ウェイト）
+        // 店舗間に2.5秒ウェイト
         await new Promise(r => setTimeout(r, 2500));
     }
 
@@ -493,10 +546,12 @@ async function runCrawler() {
     cache.processedPostIds = Array.from(processedSet).slice(-1000);
     fs.writeFileSync(CRAWLED_CACHE_PATH, JSON.stringify(cache, null, 2), 'utf8');
 
-    // pending_updates 保存
-    fs.writeFileSync(PENDING_UPDATES_PATH, JSON.stringify(pendingUpdates, null, 2), 'utf8');
+    // sns_posts.json 保存
+    fs.writeFileSync(SNS_POSTS_PATH, JSON.stringify(snsPosts, null, 2), 'utf8');
+    // 後方互換性のため pending_updates.json も同期保存
+    fs.writeFileSync(PENDING_UPDATES_PATH, JSON.stringify(snsPosts, null, 2), 'utf8');
 
-    console.log(`\n=== 巡回完了: 新たに ${newlyDetectedCount} 件の営業変更候補を pending_updates.json に保存しました ===`);
+    console.log(`\n=== 巡回完了: 合計 ${snsPosts.length} 件 (新規検出: ${newlyDetectedCount}件) を sns_posts.json に保存しました ===`);
 }
 
 if (require.main === module) {
