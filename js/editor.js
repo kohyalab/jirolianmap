@@ -157,12 +157,14 @@ class EditorApp {
                 }
                 this.selectedId = draft.id;
                 this.sortShopsByOpenedAt();
+                this.cacheOriginalSnapshots();
                 this.renderList();
-                this.selectShop(draft.id);
+                this.selectShop(draft.id, true);
                 alert('変更内容を保存しました。');
             } else if (this.pendingSaveContext.mode === 'bulk' && this.pendingSaveContext.draftShops) {
                 this.shops = JSON.parse(JSON.stringify(this.pendingSaveContext.draftShops));
                 this.sortShopsByOpenedAt();
+                this.cacheOriginalSnapshots();
                 this.renderList();
                 if (this.currentMode === 'bulk') this.renderBulkTable();
                 alert('一括編集した内容を保存しました。');
@@ -959,18 +961,19 @@ class EditorApp {
 
     hasUnsavedChanges() {
         if (this.currentMode !== 'single' || !this.selectedId) return false;
-        const currentShop = this.shops.find(s => s.id === this.selectedId);
+        const currentShop = (this.shops || []).find(s => s.id === this.selectedId);
         if (!currentShop) return false;
 
         try {
-            const draft = this.gatherFormShopData();
-            if (!draft) return false;
+            const draftShop = this.gatherFormShopData();
+            if (!draftShop) return false;
 
-            const originalJson = this.originalShopSnapshots.get(this.selectedId);
-            if (!originalJson) return false;
-
-            return JSON.stringify(draft) !== originalJson;
+            // saveCurrentShop() と完全に一致する正規化差分リストで判定
+            const diffs = this.getShopsDiffList([currentShop], [draftShop]);
+            const targetDiffs = diffs.filter(d => d.shopId === draftShop.id);
+            return targetDiffs.length > 0;
         } catch (e) {
+            console.error('hasUnsavedChanges error:', e);
             return false;
         }
     }
@@ -1946,67 +1949,91 @@ ${guidelinesText}
         }
     }
 
-    evaluatePendingItem(item) {
-        const shop = (this.shops || []).find(s => s.id === item.shopId);
-        const change = item.detectedChange || {};
-        const isClosure = change.type === 'temporary_closure' || (Array.isArray(change.hours) && change.hours.length === 0);
-
-        // 無関係判定（日常投稿、メンション、または有効な変更情報が一切ない）
-        const isExplicitlyUnrelated = item.aiStatus === 'unrelated' || item.aiStatus === 'mention' || item.aiStatus === 'daily';
-        const hasChangeInfo = (change.startDate || change.endDate) && (isClosure || (Array.isArray(change.hours) && change.hours.length > 0));
-
-        if (isExplicitlyUnrelated || !hasChangeInfo) {
-            return {
-                statusBadge: '反映不要',
-                badgeClass: 'badge-skip',
-                reasonText: '無関係',
-                isActionRequired: false
-            };
+    areShiftsEqual(shiftsA, shiftsB) {
+        if (typeof JiroBusinessHours !== 'undefined' && JiroBusinessHours.areShiftsEqual) {
+            return JiroBusinessHours.areShiftsEqual(shiftsA, shiftsB);
         }
+        const a = shiftsA || [];
+        const b = shiftsB || [];
+        if (a.length !== b.length) return false;
+        for (let i = 0; i < a.length; i++) {
+            if (!a[i] || !b[i]) return false;
+            if (a[i][0] !== b[i][0] || a[i][1] !== b[i][1]) return false;
+        }
+        return true;
+    }
 
-        // ロジックによる営業時間突合（AIではなくプログラムで同一性を厳密比較）
-        const sDateStr = change.startDate || (item.postedAt ? item.postedAt.split('T')[0] : '');
-        const eDateStr = change.endDate || sDateStr;
-        let allDaysMatch = true;
-        let validDaysCount = 0;
+    evaluatePendingItem(item) {
+        try {
+            const shop = (this.shops || []).find(s => s.id === item.shopId);
+            const change = item.detectedChange || {};
+            const isClosure = change.type === 'temporary_closure' || (Array.isArray(change.hours) && change.hours.length === 0);
 
-        if (sDateStr && shop && typeof JiroBusinessHours !== 'undefined') {
-            const startDateObj = new Date(`${sDateStr}T00:00:00+09:00`);
-            const endDateObj = eDateStr ? new Date(`${eDateStr}T00:00:00+09:00`) : startDateObj;
-            if (!isNaN(startDateObj.getTime()) && !isNaN(endDateObj.getTime())) {
-                const cur = new Date(startDateObj);
-                let count = 0;
-                while (cur <= endDateObj && count < 14) {
-                    validDaysCount++;
-                    const eff = JiroBusinessHours.getTodayShifts(shop, cur) || [];
-                    const proposedHours = isClosure ? [] : (change.hours || eff);
-                    if (!this.areShiftsEqual(eff, proposedHours)) {
-                        allDaysMatch = false;
-                        break;
+            // 無関係判定（日常投稿、メンション、または有効な変更情報が一切ない）
+            const isExplicitlyUnrelated = item.aiStatus === 'unrelated' || item.aiStatus === 'mention' || item.aiStatus === 'daily';
+            const hasChangeInfo = (change.startDate || change.endDate) && (isClosure || (Array.isArray(change.hours) && change.hours.length > 0));
+
+            if (isExplicitlyUnrelated || !hasChangeInfo) {
+                return {
+                    statusBadge: '反映不要',
+                    badgeClass: 'badge-skip',
+                    reasonText: '無関係',
+                    isActionRequired: false
+                };
+            }
+
+            // ロジックによる営業時間突合（AIではなくプログラムで同一性を厳密比較）
+            const sDateStr = change.startDate || (item.postedAt ? item.postedAt.split('T')[0] : '');
+            const eDateStr = change.endDate || sDateStr;
+            let allDaysMatch = true;
+            let validDaysCount = 0;
+
+            if (sDateStr && shop && typeof JiroBusinessHours !== 'undefined') {
+                const startDateObj = new Date(`${sDateStr}T00:00:00+09:00`);
+                const endDateObj = eDateStr ? new Date(`${eDateStr}T00:00:00+09:00`) : startDateObj;
+                if (!isNaN(startDateObj.getTime()) && !isNaN(endDateObj.getTime())) {
+                    const cur = new Date(startDateObj);
+                    let count = 0;
+                    while (cur <= endDateObj && count < 14) {
+                        validDaysCount++;
+                        const eff = JiroBusinessHours.getTodayShifts(shop, cur) || [];
+                        const proposedHours = isClosure ? [] : (change.hours || eff);
+                        if (!this.areShiftsEqual(eff, proposedHours)) {
+                            allDaysMatch = false;
+                            break;
+                        }
+                        cur.setDate(cur.getDate() + 1);
+                        count++;
                     }
-                    cur.setDate(cur.getDate() + 1);
-                    count++;
                 }
             }
-        }
 
-        // 全日一致なら「登録済（反映不要）」
-        if (validDaysCount > 0 && allDaysMatch) {
+            // 全日一致なら「登録済（反映不要）」
+            if (validDaysCount > 0 && allDaysMatch) {
+                return {
+                    statusBadge: '反映不要',
+                    badgeClass: 'badge-skip',
+                    reasonText: '登録済',
+                    isActionRequired: false
+                };
+            }
+
+            // 差分がある場合のみ「要反映（営業変更を検出）」
             return {
-                statusBadge: '反映不要',
-                badgeClass: 'badge-skip',
-                reasonText: '登録済',
-                isActionRequired: false
+                statusBadge: '要反映',
+                badgeClass: 'badge-action',
+                reasonText: '営業変更を検出',
+                isActionRequired: true
+            };
+        } catch (err) {
+            console.error('evaluatePendingItem error:', err);
+            return {
+                statusBadge: item.aiStatus === 'schedule_change' ? '要反映' : '反映不要',
+                badgeClass: item.aiStatus === 'schedule_change' ? 'badge-action' : 'badge-skip',
+                reasonText: item.aiStatus === 'schedule_change' ? '営業変更を検出' : '無関係',
+                isActionRequired: item.aiStatus === 'schedule_change'
             };
         }
-
-        // 差分がある場合のみ「要反映（営業変更を検出）」
-        return {
-            statusBadge: '要反映',
-            badgeClass: 'badge-action',
-            reasonText: '営業変更を検出',
-            isActionRequired: true
-        };
     }
 
     renderPendingList() {
@@ -2024,10 +2051,15 @@ ${guidelinesText}
         const skippedItems = [];
 
         unprocessedItems.forEach(item => {
-            const evaluation = this.evaluatePendingItem(item);
-            if (evaluation.isActionRequired) {
-                pendingItems.push(item);
-            } else {
+            try {
+                const evaluation = this.evaluatePendingItem(item);
+                if (evaluation.isActionRequired) {
+                    pendingItems.push(item);
+                } else {
+                    skippedItems.push(item);
+                }
+            } catch (e) {
+                console.error('Pending item eval failed:', item, e);
                 skippedItems.push(item);
             }
         });
@@ -2041,8 +2073,12 @@ ${guidelinesText}
             `;
         } else {
             pendingItems.forEach(item => {
-                const card = this.createPendingCardElement(item, 'pending');
-                this.el.pendingListContainer.appendChild(card);
+                try {
+                    const card = this.createPendingCardElement(item, 'pending');
+                    this.el.pendingListContainer.appendChild(card);
+                } catch (e) {
+                    console.error('Failed to create pending card:', item, e);
+                }
             });
         }
 
@@ -2056,8 +2092,12 @@ ${guidelinesText}
                 `;
             } else {
                 skippedItems.forEach(item => {
-                    const card = this.createPendingCardElement(item, 'skipped');
-                    this.el.skippedListContainer.appendChild(card);
+                    try {
+                        const card = this.createPendingCardElement(item, 'skipped');
+                        this.el.skippedListContainer.appendChild(card);
+                    } catch (e) {
+                        console.error('Failed to create skipped card:', item, e);
+                    }
                 });
             }
         }
@@ -2072,8 +2112,12 @@ ${guidelinesText}
                 `;
             } else {
                 historyItems.forEach(item => {
-                    const card = this.createPendingCardElement(item, 'history');
-                    this.el.historyListContainer.appendChild(card);
+                    try {
+                        const card = this.createPendingCardElement(item, 'history');
+                        this.el.historyListContainer.appendChild(card);
+                    } catch (e) {
+                        console.error('Failed to create history card:', item, e);
+                    }
                 });
             }
         }
