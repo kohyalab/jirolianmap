@@ -5927,6 +5927,21 @@
         "startDate": "2026-09-09",
         "endDate": "2026-09-09",
         "hours": []
+      },
+      {
+        "startDate": "2026-09-22",
+        "endDate": "2026-09-23",
+        "hours": [
+          [
+            11,
+            14
+          ],
+          [
+            17,
+            20
+          ]
+        ],
+        "sourceUrl": "https://x.com/jiro_NGY/status/2101989792456286251"
       }
     ],
     "shiftsByDay": {
