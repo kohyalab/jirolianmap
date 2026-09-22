@@ -602,8 +602,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-09-22T18:09:08.492Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   },
@@ -624,8 +624,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-09-22T18:09:08.492Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   },
@@ -655,8 +655,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-09-22T18:09:08.492Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   },
@@ -670,8 +670,8 @@
     "postText": "夜の部は材料の在庫量の関係で かなり早めの閉店になりそうです。",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-09-22T18:09:08.492Z",
     "aiStatus": "unrelated",
     "aiReason": "無関係（具体的な営業時間変更の記載なし）"
   },
@@ -701,8 +701,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-09-22T18:09:08.492Z",
     "aiStatus": "match",
     "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   },
@@ -722,8 +722,8 @@
       "hours": [],
       "reason": ""
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-09-22T18:09:08.492Z",
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
   },
@@ -754,8 +754,8 @@
       "reason": "祝日特別営業",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-09-22T18:09:08.492Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 祝日特別営業"
   },
@@ -778,8 +778,8 @@
       "reason": "台風接近のため",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-09-22T18:09:08.492Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 台風接近のため"
   },
@@ -793,8 +793,8 @@
     "postText": "21日(月)夜の部17:00〜20:00です🍜  17:00〜19:00 「つけ麺」やってます。  「魚介風、塩つけ麺」(サブスープ) 合わせて対応します。 🐟🐚🌪️🌊❄️🌾  プラス現金200円  必ずスタッフ確認時に申告して下さい。",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-09-22T18:09:08.492Z",
     "aiStatus": "match",
     "aiReason": "登録済（登録スケジュールと一致）"
   },
@@ -820,8 +820,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-09-22T18:09:08.492Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   },
@@ -852,8 +852,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-09-22T18:09:08.492Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   },
@@ -883,8 +883,8 @@
       "reason": "",
       "confidence": 0.95
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-09-22T18:09:08.492Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   },
@@ -910,8 +910,8 @@
       "reason": "台風の影響のため",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-09-22T18:09:08.492Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 台風の影響のため"
   },
@@ -931,8 +931,8 @@
       "hours": [],
       "reason": ""
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-09-22T18:09:08.492Z",
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   },
@@ -962,8 +962,8 @@
       "reason": "",
       "confidence": 0.95
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-09-22T18:09:08.492Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   }
