@@ -46,8 +46,7 @@ jobs:
       - name: Commit & Push updated pending updates
         run: |
           git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action [SNS Monitor]"
-          git add data/sns_posts.json data/crawled_cache.json data/pending_updates.json 2>/dev/null || git add data/sns_posts.json data/crawled_cache.json
+          git add data/sns_posts.json data/crawled_cache.json
           git diff --staged --quiet || (git commit -m "🤖 Auto-detect SNS schedule changes [skip ci]" && git push origin HEAD:${{ github.event.client_payload.ref || 'main' }})
 
 

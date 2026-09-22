@@ -637,40 +637,138 @@ input.error { border-color: var(--danger-color) !important; background-color: #3
     border-color: var(--jiro-yellow);
 }
 .pending-ai-box {
-    background: #1a251b;
-    border: 1px solid #2e7d32;
+    background: #181818;
+    border: 1px solid #383838;
     border-radius: 6px;
-    padding: 10px 12px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.pending-shop-btn {
+    background: none;
+    border: none;
+    color: var(--jiro-yellow);
+    font-size: 1.05rem;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+.pending-shop-btn:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* 営業時間 比較パネル */
+.schedule-compare-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 8px;
+    margin: 6px 0;
+}
+.schedule-compare-card {
+    background: #121212;
+    border: 1px solid #333;
+    border-radius: 6px;
+    padding: 8px 12px;
     display: flex;
     flex-direction: column;
     gap: 4px;
 }
-.pending-ai-box.is-closure {
-    background: #2a1515;
-    border-color: #c62828;
+.schedule-compare-card.current {
+    border-color: #444;
 }
-.pending-ai-box.is-special {
-    background: #14242e;
-    border-color: #0288d1;
+.schedule-compare-card.proposed {
+    border-color: #555;
+    background: #14171a;
 }
-.pending-ai-title {
-    font-size: 0.85rem;
+.schedule-compare-header {
+    font-size: 0.75rem;
     font-weight: bold;
+    color: #aaa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.schedule-compare-value {
+    font-size: 0.88rem;
+    font-weight: bold;
+    color: #f0f0f0;
+    line-height: 1.4;
+}
+.current-temp-highlight {
+    color: #ff9f43 !important; /* index.htmlの臨時営業と同色の橙色 */
+    font-weight: bold;
+}
+.compare-date-tag {
+    font-size: 0.75rem;
+    color: #888;
+    margin-right: 4px;
+}
+
+/* 店舗詳細モーダル用スタイル (index.htmlライク) */
+.shop-modal-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.82rem;
+    margin-top: 6px;
+}
+.shop-modal-table th, .shop-modal-table td {
+    padding: 5px 8px;
+    border: 1px solid #333;
+    text-align: left;
+}
+.shop-modal-table th {
+    background: #222;
+    color: var(--jiro-yellow);
+    width: 90px;
+    font-weight: bold;
+}
+.shop-modal-section-title {
+    font-size: 0.88rem;
+    font-weight: bold;
+    color: var(--jiro-yellow);
+    margin-top: 12px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 3px;
     display: flex;
     align-items: center;
     gap: 6px;
 }
-.pending-ai-title.closure { color: #ef5350; }
-.pending-ai-title.special { color: #29b6f6; }
-.pending-ai-title.hours { color: #ffca28; }
-
-.pending-ai-details {
-    font-size: 0.82rem;
-    color: #ddd;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
+.shop-modal-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.72rem;
+    font-weight: bold;
 }
+.shop-modal-links {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+}
+.shop-modal-link {
+    background: #2a2a2a;
+    color: #80d8ff;
+    border: 1px solid #444;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.78rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+.shop-modal-link:hover {
+    background: #333;
+    border-color: #80d8ff;
+}
+
 .pending-actions {
     display: flex;
     justify-content: flex-end;
