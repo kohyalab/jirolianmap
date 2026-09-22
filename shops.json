@@ -1663,18 +1663,27 @@
     "id": "kaminoge",
     "name": "上野毛店",
     "kana": "カミノゲテン",
+    "shortName": "上野毛",
+    "prefCode": "13",
+    "cityCode": "13112",
     "addressText": "上野毛1丁目26-16世和マンション",
     "lat": 35.61246569434824,
     "lng": 139.63897097116592,
+    "openedAt": "2002-11-12",
+    "closedAt": null,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/kaminoge/",
       "rdb": "https://ramendb.supleks.jp/s/3281.html",
       "tabelog": "https://tabelog.com/tokyo/A1317/A131715/13010417/"
     },
     "x": "kaminogeJiro",
+    "instagram": "",
     "ticketTiming": "",
-    "openedAt": "2002-11-12",
-    "closedAt": null,
+    "soupType": "",
+    "renge": "",
+    "takeout": "",
+    "hoursNotes": "",
+    "remarks": "",
     "temporary": [
       {
         "startDate": "2026-08-09",
@@ -1746,15 +1755,7 @@
       ],
       "6": []
     },
-    "holidayShifts": null,
-    "remarks": "",
-    "hoursNotes": "",
-    "instagram": "",
-    "shortName": "上野毛",
-    "soupType": "",
-    "renge": "",
-    "takeout": "",
-    "cityCode": "13112"
+    "holidayShifts": []
   },
   {
     "id": "keiseiookubo",
@@ -2769,18 +2770,27 @@
     "id": "senjuohashi",
     "name": "千住大橋駅前店",
     "kana": "センジュオオハシエキマエテン",
+    "shortName": "千住大橋",
+    "prefCode": "13",
+    "cityCode": "13121",
     "addressText": "千住橋戸町10-8",
     "lat": 35.74255425302567,
     "lng": 139.7970657753107,
+    "openedAt": "2009-04-19",
+    "closedAt": null,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/senjuohashi/",
       "rdb": "https://ramendb.supleks.jp/s/19341.html",
       "tabelog": "https://tabelog.com/tokyo/A1324/A132402/13090912/"
     },
     "x": "senjujirou26",
+    "instagram": "",
     "ticketTiming": "",
-    "openedAt": "2009-04-19",
-    "closedAt": null,
+    "soupType": "",
+    "renge": "",
+    "takeout": "",
+    "hoursNotes": "土曜、祝日不定休",
+    "remarks": "",
     "temporary": [
       {
         "startDate": "2026-08-10",
@@ -2817,12 +2827,7 @@
       "5": [],
       "6": []
     },
-    "holidayShifts": null,
-    "remarks": "",
-    "hoursNotes": "土曜、祝日不定休",
-    "instagram": "",
-    "shortName": "千住大橋",
-    "cityCode": "13121"
+    "holidayShifts": []
   },
   {
     "id": "ibarakimoriya",
