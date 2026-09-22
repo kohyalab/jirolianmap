@@ -645,7 +645,7 @@
       "hours": [
         [
           11,
-          4.6
+          13.6
         ],
         [
           17,
@@ -669,27 +669,11 @@
     "postedAt": "2026-09-22T06:57:45.000Z",
     "postText": "夜の部は材料の在庫量の関係で かなり早めの閉店になりそうです。",
     "mediaUrls": [],
-    "detectedChange": {
-      "type": "temporary_hours",
-      "startDate": "2026-09-22",
-      "endDate": "2026-09-22",
-      "hours": [
-        [
-          11.5,
-          14
-        ],
-        [
-          18,
-          18
-        ]
-      ],
-      "reason": "材料の在庫不足のため",
-      "confidence": 0.9
-    },
+    "detectedChange": null,
     "processed": false,
     "processedAt": null,
-    "aiStatus": "schedule_change",
-    "aiReason": "営業変更検出: 材料の在庫不足のため"
+    "aiStatus": "unrelated",
+    "aiReason": "無関係（具体的な営業時間変更の記載なし）"
   },
   {
     "id": "sns_post_yaen2_20260922_0_2102175554296525012",
@@ -808,27 +792,11 @@
     "postedAt": "2026-09-21T05:50:53.000Z",
     "postText": "21日(月)夜の部17:00〜20:00です🍜  17:00〜19:00 「つけ麺」やってます。  「魚介風、塩つけ麺」(サブスープ) 合わせて対応します。 🐟🐚🌪️🌊❄️🌾  プラス現金200円  必ずスタッフ確認時に申告して下さい。",
     "mediaUrls": [],
-    "detectedChange": {
-      "type": "temporary_hours",
-      "startDate": "2026-09-21",
-      "endDate": "2026-09-21",
-      "hours": [
-        [
-          11,
-          14
-        ],
-        [
-          17,
-          20
-        ]
-      ],
-      "reason": "",
-      "confidence": 1
-    },
+    "detectedChange": null,
     "processed": false,
     "processedAt": null,
-    "aiStatus": "schedule_change",
-    "aiReason": "営業時間の変更を検出"
+    "aiStatus": "match",
+    "aiReason": "登録済（登録スケジュールと一致）"
   },
   {
     "id": "sns_post_shndaita_20260921_0_2101795003240714290",
