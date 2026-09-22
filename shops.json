@@ -4157,18 +4157,27 @@
     "id": "kabuki",
     "name": "新宿歌舞伎町店",
     "kana": "シンジュクカブキチョウテン",
+    "shortName": "新宿歌舞伎",
+    "prefCode": "13",
+    "cityCode": "13104",
     "addressText": "歌舞伎町2丁目37-5日新ビル1F",
     "lat": 35.696119829384415,
     "lng": 139.70195240044566,
+    "openedAt": "2016-10-03",
+    "closedAt": null,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/kabuki/",
       "rdb": "https://ramendb.supleks.jp/s/95249.html",
       "tabelog": "https://tabelog.com/tokyo/A1304/A130401/13200815/"
     },
     "x": "kabujiikeji",
+    "instagram": "",
     "ticketTiming": "",
-    "openedAt": "2016-10-03",
-    "closedAt": null,
+    "soupType": "",
+    "renge": "",
+    "takeout": "",
+    "hoursNotes": "",
+    "remarks": "",
     "temporary": [],
     "shiftsByDay": {
       "0": [
@@ -4209,20 +4218,7 @@
         ]
       ]
     },
-    "holidayShifts": [
-      [
-        11.5,
-        26.5
-      ]
-    ],
-    "remarks": "",
-    "hoursNotes": "",
-    "instagram": "",
-    "shortName": "新宿歌舞伎",
-    "soupType": "",
-    "renge": "",
-    "takeout": "",
-    "cityCode": "13104"
+    "holidayShifts": null
   },
   {
     "id": "kawagoe",
