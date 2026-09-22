@@ -4803,7 +4803,7 @@
 
             try {
                 if (typeof LG_CODES !== 'undefined' && LG_CODES.fetchExternalData) {
-                    await LG_CODES.fetchExternalData();
+                    LG_CODES.fetchExternalData().catch(e => console.warn('LG_CODES background fetch skipped:', e));
                 }
                 const isLocalEnv = window.location.protocol === 'file:' || 
                                    window.location.hostname === 'localhost' || 
