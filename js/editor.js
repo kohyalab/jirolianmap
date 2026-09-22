@@ -825,12 +825,7 @@ class EditorApp {
     }
 
     getGithubConfig() {
-        let token = sessionStorage.getItem('gh_token') || '';
-        if (!token && localStorage.getItem('gh_token')) {
-            token = localStorage.getItem('gh_token');
-            sessionStorage.setItem('gh_token', token);
-            localStorage.removeItem('gh_token');
-        }
+        let token = localStorage.getItem('gh_token') || sessionStorage.getItem('gh_token') || '';
         return {
             token: token,
             owner: localStorage.getItem('gh_owner') || '',
@@ -869,11 +864,12 @@ class EditorApp {
     saveGithubConfig() {
         const tokenVal = document.getElementById('gh-token').value.trim();
         if (tokenVal) {
+            localStorage.setItem('gh_token', tokenVal);
             sessionStorage.setItem('gh_token', tokenVal);
         } else {
+            localStorage.removeItem('gh_token');
             sessionStorage.removeItem('gh_token');
         }
-        localStorage.removeItem('gh_token');
         localStorage.setItem('gh_owner', document.getElementById('gh-owner').value.trim());
         localStorage.setItem('gh_repo', document.getElementById('gh-repo').value.trim());
         localStorage.setItem('gh_branch', document.getElementById('gh-branch').value.trim() || 'main');
@@ -885,7 +881,7 @@ class EditorApp {
         }
 
         this.closeGithubModal();
-        alert('設定を保存しました（トークンは現在のセッションのみ安全に保持されます）。');
+        alert('GitHub設定およびGemini APIキーを保存しました。');
     }
 
     async pullFromGithub(silent = false) {
@@ -935,8 +931,11 @@ class EditorApp {
             this.renderList();
             if (this.currentMode === 'bulk') this.renderBulkTable();
 
+            // SNS提案データ (data/sns_posts.json) も同時にGitHubから一括取得
+            await this.loadPendingUpdates(false);
+
             if (!silent) {
-                alert(`GitHubから ${this.shops.length}件 のデータを正常に取得しました。`);
+                alert(`GitHubから店舗データ（${this.shops.length}件）およびSNS提案データ（${this.pendingUpdates.length}件）を正常に取得しました。`);
             }
             return true;
         } catch (err) {
@@ -978,36 +977,29 @@ class EditorApp {
     }
 
     async autoFetchData() {
-        console.log('🚀 起動時データ自動取得を開始します...');
-        const cfg = this.getGithubConfig();
-        let loadedShops = false;
-        if (cfg.token && cfg.owner && cfg.repo && cfg.path) {
-            loadedShops = await this.pullFromGithub(true);
-        }
-        if (!loadedShops) {
-            try {
-                const res = await fetch('shops.json?t=' + Date.now());
-                if (res.ok) {
-                    const data = await res.json();
-                    if (Array.isArray(data) && data.length > 0) {
-                        this.shops = data;
-                        this.shops.forEach(shop => {
-                            if (shop.temporary) shop.temporary = this.sortTemporaryDates(shop.temporary);
-                            if (shop.notes !== undefined && shop.remarks === undefined) {
-                                shop.remarks = shop.notes;
-                                delete shop.notes;
-                            }
-                        });
-                        this.sortShopsByOpenedAt();
-                        this.cacheOriginalSnapshots();
-                        this.renderList();
-                        if (this.currentMode === 'bulk') this.renderBulkTable();
-                        console.log(`✅ ローカル shops.json から ${this.shops.length} 件読み込みました`);
-                    }
+        console.log('🚀 ローカルデータの初期読み込みを開始します...');
+        try {
+            const res = await fetch('shops.json?t=' + Date.now());
+            if (res.ok) {
+                const data = await res.json();
+                if (Array.isArray(data) && data.length > 0) {
+                    this.shops = data;
+                    this.shops.forEach(shop => {
+                        if (shop.temporary) shop.temporary = this.sortTemporaryDates(shop.temporary);
+                        if (shop.notes !== undefined && shop.remarks === undefined) {
+                            shop.remarks = shop.notes;
+                            delete shop.notes;
+                        }
+                    });
+                    this.sortShopsByOpenedAt();
+                    this.cacheOriginalSnapshots();
+                    this.renderList();
+                    if (this.currentMode === 'bulk') this.renderBulkTable();
+                    console.log(`✅ ローカル shops.json から ${this.shops.length} 件読み込みました`);
                 }
-            } catch (e) {
-                console.warn('ローカル shops.json の自動取得をスキップ:', e.message);
             }
+        } catch (e) {
+            console.warn('ローカル shops.json の自動読み込みをスキップ:', e.message);
         }
         await this.loadPendingUpdates(false);
         await this.loadAiGuidelines();
@@ -1153,8 +1145,18 @@ class EditorApp {
                 this.draftAppliedItems.clear();
             }
 
+            // 3. data/ai_guidelines.json の更新（人間判定フィードバックの学習ナレッジ蓄積）
+            if (this.aiGuidelines && Array.isArray(this.aiGuidelines.learnedFeedback) && this.aiGuidelines.learnedFeedback.length > 0) {
+                try {
+                    const aiGuideStr = JSON.stringify(this.aiGuidelines, null, 2);
+                    await this.uploadFileToGithub(cfg, 'data/ai_guidelines.json', aiGuideStr, `${commitMessage || 'Update shops.json'} (update learned feedback)`);
+                } catch (guideErr) {
+                    console.warn('Failed to update ai_guidelines.json on GitHub:', guideErr);
+                }
+            }
+
             this.cacheOriginalSnapshots();
-            alert('GitHubへの送信・保存が正常に完了しました！\n（shops.json および SNS投稿判定データが更新されました）');
+            alert('GitHubへの送信・保存が正常に完了しました！\n（shops.json, SNS投稿判定データ, 学習ナレッジが更新されました）');
             this.renderList();
             this.updatePendingBadge();
             if (this.currentMode === 'pending') this.renderPendingList();
@@ -2040,22 +2042,26 @@ ${guidelinesText}
         const change = item.detectedChange || {};
         const isClosure = change.type === 'temporary_closure' || (Array.isArray(change.hours) && change.hours.length === 0);
 
-        // AI判定バッジ ＆ 判定説明
-        let aiDecisionTag = '';
-        let aiDecisionDesc = '';
-        if (item.aiStatus === 'schedule_change') {
-            aiDecisionTag = `<span style="background: #e65100; color: #fff; font-size: 0.74rem; padding: 2px 7px; border-radius: 4px; font-weight: bold;">🚨【要反映】営業変更を検出</span>`;
-            aiDecisionDesc = `【要反映】${item.aiReason || '営業時間の変更が検出されました。内容を確認して流し込みを行ってください。'}`;
-        } else if (item.aiStatus === 'match') {
-            aiDecisionTag = `<span style="background: #2e7d32; color: #fff; font-size: 0.74rem; padding: 2px 7px; border-radius: 4px; font-weight: bold;">✅【スキップ推奨】登録済と一致</span>`;
-            aiDecisionDesc = `【スキップ推奨】${item.aiReason || '登録済みのスケジュールと一致しています（反映不要）。'}`;
-        } else if (item.aiStatus === 'mention') {
-            aiDecisionTag = `<span style="background: #4a148c; color: #e1bee7; font-size: 0.74rem; padding: 2px 7px; border-radius: 4px; font-weight: bold;">↪️【スキップ推奨】メンション除外</span>`;
-            aiDecisionDesc = `【スキップ推奨】他アカウントへの返信・メンション等のため反映不要です。`;
+        // AI判定バッジ（3区分: 営業変更を検出 / 登録済 / 無関係）
+        let aiBadgeClass = 'badge-change';
+        let aiBadgeText = '営業変更を検出';
+        let isChangeDetected = false;
+
+        if (item.aiStatus === 'schedule_change' || item.aiStatus === 'action_required') {
+            aiBadgeClass = 'badge-change';
+            aiBadgeText = '⚠️ 営業変更を検出';
+            isChangeDetected = true;
+        } else if (item.aiStatus === 'match' || item.aiStatus === 'schedule_matched' || item.aiStatus === 'already_registered' || item.aiStatus === 'normal_matched') {
+            aiBadgeClass = 'badge-registered';
+            aiBadgeText = '✅ 登録済';
+            isChangeDetected = false;
         } else {
-            aiDecisionTag = `<span style="background: #37474f; color: #cfd8dc; font-size: 0.74rem; padding: 2px 7px; border-radius: 4px; font-weight: bold;">💬【スキップ推奨】通常営業と一致</span>`;
-            aiDecisionDesc = `【スキップ推奨】${item.aiReason || '通常営業スケジュールと一致しています（反映不要）。'}`;
+            aiBadgeClass = 'badge-unrelated';
+            aiBadgeText = '💬 無関係';
+            isChangeDetected = false;
         }
+        const aiDecisionTag = `<span class="pending-badge ${aiBadgeClass}">${aiBadgeText}</span>`;
+        const aiDecisionDesc = item.aiReason || (isChangeDetected ? '営業時間または臨時休業の変更が検出されました。' : '営業時間と一致、または無関係な投稿です。');
 
         const sDateStr = change.startDate || (item.postedAt ? item.postedAt.split('T')[0] : '');
         const eDateStr = change.endDate || sDateStr;
@@ -2066,7 +2072,7 @@ ${guidelinesText}
         // 投稿日時の整形（2026/9/20(日) 20:15）
         const postDateFormatted = this.formatPostDateTime(item.postedAt);
 
-        // 対象日（複数日に対応）の現在登録されている営業時間一覧
+        // 対象日（複数日に対応）のリスト生成
         const dateRangeList = [];
         if (sDateStr) {
             const startDateObj = new Date(`${sDateStr}T00:00:00+09:00`);
@@ -2081,7 +2087,7 @@ ${guidelinesText}
                     const dayStr = `${y}-${m}-${d}`;
                     const dayOfWeek = ['日', '月', '火', '水', '木', '金', '土'][cur.getDay()];
                     
-                    let currShiftsText = '定休日 / 休業';
+                    let currShiftsText = '定休日';
                     let isTemp = false;
                     if (shop && typeof JiroBusinessHours !== 'undefined') {
                         const eff = JiroBusinessHours.getTodayShifts(shop, cur);
@@ -2106,29 +2112,35 @@ ${guidelinesText}
             }
         }
 
-        // 現在登録されている営業時間 HTML
+        // 「登録営業時間」と「変更提案」を同一の形式で表示
         let currentScheduleHtml = '';
+        let proposedScheduleHtml = '';
+        const proposedShiftText = hoursText ? hoursText : (isClosure ? '<span style="color:#ef5350; font-weight:bold;">休業</span>' : '営業時間未設定');
+
         if (dateRangeList.length > 0) {
             currentScheduleHtml = dateRangeList.map(dItem => `
-                <div style="display:flex; justify-content:space-between; align-items:center; gap:8px; font-size:0.82rem; border-bottom:1px dashed #282828; padding:2px 0;">
+                <div style="display:flex; justify-content:space-between; align-items:center; gap:6px; font-size:0.78rem; border-bottom:1px dashed #282828; padding:2px 0;">
                     <span class="compare-date-tag">${dItem.label}:</span>
-                    <span class="${dItem.isTemp ? 'current-temp-highlight' : ''}">${dItem.currShiftsText} ${dItem.isTemp ? '<span style="font-size:0.7rem;">(※臨時)</span>' : ''}</span>
+                    <span class="${dItem.isTemp ? 'current-temp-highlight' : ''}">${dItem.currShiftsText}${dItem.isTemp ? ' <span style="font-size:0.68rem;">(※臨時)</span>' : ''}</span>
                 </div>
             `).join('');
-        } else {
-            currentScheduleHtml = '<span style="color:#888;">日付未設定</span>';
-        }
 
-        // 今回変更提案の営業時間 HTML
-        const proposedHoursStr = hoursText ? hoursText : (isClosure ? '<span style="color:#ef5350; font-weight:bold;">休業</span>' : '営業時間未設定');
-        const dateSpanLabel = (sDateStr === eDateStr || !eDateStr) 
-            ? (sDateStr ? `${sDateStr}` : '日付不明')
-            : `${sDateStr} ～ ${eDateStr}`;
-        const proposedScheduleHtml = `
-            <div style="font-size:0.8rem; margin-bottom:4px; color:#80d8ff; font-weight:bold;">📅 対象期間: ${dateSpanLabel}</div>
-            <div style="font-size:0.95rem; font-weight:bold; color:#ffeb3b; margin-bottom:2px;">${proposedHoursStr}</div>
-            ${change.reason ? `<div style="font-size:0.75rem; color:#bbb;">理由: ${this.escapeHtml(change.reason)}</div>` : ''}
-        `;
+            proposedScheduleHtml = dateRangeList.map(dItem => `
+                <div style="display:flex; justify-content:space-between; align-items:center; gap:6px; font-size:0.78rem; border-bottom:1px dashed #282828; padding:2px 0;">
+                    <span class="compare-date-tag" style="color:#90caf9;">${dItem.label}:</span>
+                    <span style="font-weight:bold; color:#ffeb3b;">${proposedShiftText}</span>
+                </div>
+            `).join('');
+            if (change.reason) {
+                proposedScheduleHtml += `<div style="font-size:0.72rem; color:#bbb; margin-top:3px;">理由: ${this.escapeHtml(change.reason)}</div>`;
+            }
+        } else {
+            currentScheduleHtml = '<span style="color:#888;">(登録なし / 日付不明)</span>';
+            proposedScheduleHtml = `
+                <div style="font-size:0.8rem; color:#ffeb3b; font-weight:bold;">${proposedShiftText}</div>
+                ${change.reason ? `<div style="font-size:0.72rem; color:#bbb; margin-top:2px;">理由: ${this.escapeHtml(change.reason)}</div>` : ''}
+            `;
+        }
 
         // 添付画像サムネイル
         const mediaHtml = (item.mediaUrls && item.mediaUrls.length > 0)
@@ -2143,29 +2155,29 @@ ${guidelinesText}
         let bannerHtml = '';
         if (isDraftApplied) {
             bannerHtml = `
-                <div style="background: #1b3a20; border: 1px solid #2e7d32; border-radius: 4px; padding: 4px 8px; margin-bottom: 8px; font-size: 0.8rem; color: #a5d6a7; display: flex; justify-content: space-between; align-items: center;">
+                <div style="background: #1b3a20; border: 1px solid #2e7d32; border-radius: 4px; padding: 3px 6px; margin-bottom: 6px; font-size: 0.75rem; color: #a5d6a7; display: flex; justify-content: space-between; align-items: center;">
                     <span>✨ <strong>臨時設定フォームに流し込み済み（未送信ドラフト）</strong></span>
-                    <span style="font-size: 0.72rem; color: #ccc;">上部の「🚀 GitHub送信」で確定します</span>
+                    <span style="font-size: 0.7rem; color: #ccc;">「🚀 GitHub送信」で確定します</span>
                 </div>
             `;
         } else if (isDraftDone) {
             bannerHtml = `
-                <div style="background: #263238; border: 1px solid #455a64; border-radius: 4px; padding: 4px 8px; margin-bottom: 8px; font-size: 0.8rem; color: #cfd8dc; display: flex; justify-content: space-between; align-items: center;">
+                <div style="background: #263238; border: 1px solid #455a64; border-radius: 4px; padding: 3px 6px; margin-bottom: 6px; font-size: 0.75rem; color: #cfd8dc; display: flex; justify-content: space-between; align-items: center;">
                     <span>⏭️ <strong>スキップ処理済み（未送信ドラフト）</strong></span>
-                    <span style="font-size: 0.72rem; color: #aaa;">上部の「🚀 GitHub送信」で確定します</span>
+                    <span style="font-size: 0.7rem; color: #aaa;">「🚀 GitHub送信」で確定します</span>
                 </div>
             `;
         } else if (isHistory) {
             const timeStr = item.processedAt ? this.formatPostDateTime(item.processedAt) : '';
             bannerHtml = `
-                <div style="background: #1e1e1e; border: 1px solid #444; border-radius: 4px; padding: 4px 8px; margin-bottom: 8px; font-size: 0.8rem; color: #aaa; display: flex; justify-content: space-between; align-items: center;">
+                <div style="background: #1e1e1e; border: 1px solid #444; border-radius: 4px; padding: 3px 6px; margin-bottom: 6px; font-size: 0.75rem; color: #aaa; display: flex; justify-content: space-between; align-items: center;">
                     <span>✅ <strong>処理済み（確定）</strong></span>
-                    <span style="font-size: 0.72rem; color: #777;">${timeStr}</span>
+                    <span style="font-size: 0.7rem; color: #777;">${timeStr}</span>
                 </div>
             `;
         }
 
-        // アクションボタン
+        // アクションボタン（要反映なら反映強調、スキップ推奨ならスキップ強調）
         let actionsHtml = '';
         if (isHistory) {
             actionsHtml = `
@@ -2174,10 +2186,13 @@ ${guidelinesText}
                 <button class="btn btn-sm" onclick="app.applyPendingToTemporary('${item.id}')" style="background:#263238; border-color:#37474f; color:#80d8ff;">✏️ 再度フォームへ流し込み</button>
             `;
         } else {
+            const applyBtnClass = isChangeDetected ? 'btn-action-highlight' : 'btn-skip-muted';
+            const skipBtnClass = isChangeDetected ? 'btn-action-muted' : 'btn-skip-highlight';
+
             actionsHtml = `
-                <button class="btn btn-sm" onclick="app.skipPending('${item.id}')" style="background:#2a2a2a; border-color:#444; color:#bbb;">⏭️ スキップ（処理済みにする）</button>
-                <button class="btn btn-sm btn-primary" onclick="app.applyPendingToTemporary('${item.id}')" style="background:var(--jiro-yellow); color:#000; font-weight:bold; border:none; padding:6px 16px;">
-                    ✏️ 反映（臨時設定フォームへ流し込み）
+                <button class="btn btn-sm ${skipBtnClass}" onclick="app.skipPending('${item.id}')">⏭️ スキップ</button>
+                <button class="btn btn-sm btn-primary ${applyBtnClass}" onclick="app.applyPendingToTemporary('${item.id}')">
+                    ✏️ 反映（臨時設定へ流し込み）
                 </button>
             `;
         }
@@ -2187,13 +2202,13 @@ ${guidelinesText}
             <div class="pending-header">
                 <div class="pending-shop-title">
                     <button type="button" class="pending-shop-btn" onclick="app.showShopInfoModal('${item.shopId}')" title="店舗情報をポップアップ表示">
-                        🍜 ${item.shopName || item.shopId} <span style="font-size:0.75rem; font-weight:normal; opacity:0.8;">[詳細]</span>
+                        🍜 ${item.shopName || item.shopId} <span style="font-size:0.72rem; font-weight:normal; opacity:0.8;">[詳細]</span>
                     </button>
                     ${accountUrl ? `
-                        <a href="${accountUrl}" target="_blank" rel="noopener noreferrer" class="pending-source-tag ${postSource}" style="text-decoration:none; display:inline-flex; align-items:center; gap:4px; font-size:0.75rem;">
+                        <a href="${accountUrl}" target="_blank" rel="noopener noreferrer" class="pending-source-tag ${postSource}" style="text-decoration:none; display:inline-flex; align-items:center; gap:3px;">
                             <span>${postSource.toUpperCase()}</span>
                             <span>@${handle}</span>
-                            <span style="font-size:0.65rem;">↗</span>
+                            <span style="font-size:0.6rem;">↗</span>
                         </a>
                     ` : `
                         <span class="pending-source-tag ${postSource}">${postSource.toUpperCase()}</span>
@@ -2201,8 +2216,8 @@ ${guidelinesText}
                     ${aiDecisionTag}
                 </div>
                 <div class="pending-meta">
-                    <span style="color:#ddd; font-weight:bold;">🕒 投稿: ${postDateFormatted}</span>
-                    ${item.postUrl ? `<a href="${item.postUrl}" target="_blank" rel="noopener noreferrer" style="color:var(--jiro-yellow); text-decoration:none; font-weight:bold; padding:2px 6px; background:#222; border-radius:4px; border:1px solid #444;">↗ 元ポスト</a>` : ''}
+                    <span style="color:#ddd; font-weight:bold;">🕒 ${postDateFormatted}</span>
+                    ${item.postUrl ? `<a href="${item.postUrl}" target="_blank" rel="noopener noreferrer" style="color:var(--jiro-yellow); text-decoration:none; font-weight:bold; padding:1px 5px; background:#222; border-radius:3px; border:1px solid #444; font-size:0.72rem;">↗ ポスト</a>` : ''}
                 </div>
             </div>
 
@@ -2212,29 +2227,28 @@ ${guidelinesText}
             </div>
 
             <div class="pending-ai-box">
-                <!-- AI判定結果と判定理由の明示 -->
-                <div style="font-size:0.85rem; font-weight:bold; color:#ffca28; display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
-                    <span>🤖 AI判定結果:</span>
+                <div style="font-size:0.78rem; font-weight:bold; color:#ffca28; display:flex; align-items:center; gap:5px; flex-wrap:wrap;">
+                    <span>🤖 AI判定:</span>
                     <span style="color:#fff;">${this.escapeHtml(aiDecisionDesc)}</span>
                 </div>
 
-                <!-- 営業時間 比較グリッド -->
+                <!-- 営業時間 比較グリッド（左右対称・同一フォーマット） -->
                 <div class="schedule-compare-grid">
                     <div class="schedule-compare-card current">
                         <div class="schedule-compare-header">
-                            <span>🏢 現在登録されている営業時間</span>
-                            <span style="font-size:0.7rem; color:#888;">(shops.json)</span>
+                            <span>🏢 登録営業時間</span>
+                            <span style="font-size:0.68rem; color:#888;">(shops.json)</span>
                         </div>
-                        <div class="schedule-compare-value" style="margin-top:4px;">
+                        <div class="schedule-compare-value" style="margin-top:2px;">
                             ${currentScheduleHtml}
                         </div>
                     </div>
                     <div class="schedule-compare-card proposed">
                         <div class="schedule-compare-header">
-                            <span>✨ 今回変更提案の営業時間</span>
-                            <span style="font-size:0.7rem; color:#80d8ff;">(SNS自動検出)</span>
+                            <span>✨ 変更提案</span>
+                            <span style="font-size:0.68rem; color:#80d8ff;">(SNS自動検出)</span>
                         </div>
-                        <div class="schedule-compare-value" style="margin-top:4px;">
+                        <div class="schedule-compare-value" style="margin-top:2px;">
                             ${proposedScheduleHtml}
                         </div>
                     </div>
@@ -2242,7 +2256,7 @@ ${guidelinesText}
 
                 <!-- インライン編集フォーム -->
                 <div class="pending-inline-edit-box">
-                    <div style="font-size:0.75rem; color:var(--jiro-yellow); font-weight:bold;">📝 流し込み前の内容確認・編集（このカード上で修正できます）:</div>
+                    <div style="font-size:0.72rem; color:var(--jiro-yellow); font-weight:bold;">📝 流し込み前の確認・編集（このカード上で修正可能）:</div>
                     <div class="pending-inline-row">
                         <div class="pending-inline-field">
                             <label>開始日</label>
@@ -2263,14 +2277,14 @@ ${guidelinesText}
                             <input type="text" id="p-reason-${item.id}" value="${this.escapeHtml(change.reason || '')}" placeholder="例: 台風接近のため、設備点検のため（不明は空欄）">
                         </div>
                         <div class="pending-inline-field" style="flex:2;">
-                            <label>根拠URL (X / Instagram等の投稿URL)</label>
+                            <label>根拠URL (投稿URL等)</label>
                             <input type="text" id="p-url-${item.id}" value="${this.escapeHtml(item.postUrl || '')}" placeholder="https://x.com/... 等">
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="pending-actions">
+            <div class="pending-actions" style="margin-top:2px;">
                 ${actionsHtml}
             </div>
         `;
@@ -2357,6 +2371,9 @@ ${guidelinesText}
             if (tempBox) tempBox.scrollIntoView({ behavior: 'smooth' });
             alert(`【${shop.name}】の臨時設定フォームに流し込みました（✨ AI流し込み）。\n必要に応じて編集し、右上の「保存」を押してください。\n\n※GitHubへ送信するとSNS投稿の処理済みが確定します。`);
         }, 150);
+
+        // 人間判定による反映を学習データとして自動記録
+        this.recordLearnedFeedback(item, 'applied', newEntry);
     }
 
     skipPending(itemId) {
@@ -2366,6 +2383,48 @@ ${guidelinesText}
         this.draftProcessedPostIds.add(item.id);
         this.updatePendingBadge();
         this.renderPendingList();
+
+        // 人間判定によるスキップを学習データとして自動記録
+        this.recordLearnedFeedback(item, 'skipped', null);
+    }
+
+    recordLearnedFeedback(item, humanAction, finalChange = null) {
+        if (!this.aiGuidelines) {
+            this.aiGuidelines = { generalRules: [], learnedFeedback: [] };
+        }
+        if (!Array.isArray(this.aiGuidelines.learnedFeedback)) {
+            this.aiGuidelines.learnedFeedback = [];
+        }
+
+        const entry = {
+            id: item.id || `fb-${Date.now()}`,
+            timestamp: new Date().toISOString(),
+            shopId: item.shopId,
+            shopName: item.shopName || item.shopId,
+            postDate: item.postedAt || '',
+            postText: (item.postText || '').substring(0, 300),
+            aiStatus: item.aiStatus,
+            aiReason: item.aiReason || '',
+            humanAction: humanAction, // 'applied' or 'skipped'
+            finalDetails: finalChange ? {
+                startDate: finalChange.startDate,
+                endDate: finalChange.endDate,
+                hours: finalChange.hours,
+                reason: finalChange.reason
+            } : null
+        };
+
+        this.aiGuidelines.learnedFeedback = this.aiGuidelines.learnedFeedback.filter(f => f.id !== entry.id);
+        this.aiGuidelines.learnedFeedback.unshift(entry);
+        if (this.aiGuidelines.learnedFeedback.length > 50) {
+            this.aiGuidelines.learnedFeedback = this.aiGuidelines.learnedFeedback.slice(0, 50);
+        }
+        console.log(`🧠 人間判定フィードバックをナレッジに蓄積しました [${humanAction}]:`, entry);
+
+        // ローカルストレージにも退避
+        try {
+            localStorage.setItem('jirolian_ai_guidelines', JSON.stringify(this.aiGuidelines));
+        } catch (e) {}
     }
 
     revertPending(itemId) {
@@ -2430,9 +2489,247 @@ ${guidelinesText}
         }
     }
 
+    // =========================================================================
+    // index.html 完全踏襲の店舗詳細カードレンダリング
+    // =========================================================================
+    renderBusinessHoursTableModal(shop, targetDate = new Date(), hasFeatures = false) {
+        if (!shop.shiftsByDay && (!Array.isArray(shop.specialShifts) || shop.specialShifts.length === 0)) return '情報なし';
+
+        const baseDayNames = ["月", "火", "水", "木", "金", "土", "日"];
+        const rawEntries = [];
+        const now = targetDate;
+        const currentHour = now.getHours() + (now.getMinutes() / 60);
+
+        let activeTargetDate = new Date(now);
+        const yesterday = new Date(now);
+        yesterday.setDate(now.getDate() - 1);
+        const yesterdayShifts = (typeof JiroBusinessHours !== 'undefined') ? JiroBusinessHours.getTodayShifts(shop, yesterday) : [];
+
+        if (yesterdayShifts?.length) {
+            const adjustedHour = currentHour + 24.0;
+            for (const [start, end] of yesterdayShifts) {
+                if (end > 24.0 && adjustedHour >= start && adjustedHour <= end) {
+                    activeTargetDate = yesterday;
+                    break;
+                }
+            }
+        }
+
+        const tempEntryToday = (typeof JiroBusinessHours !== 'undefined') ? JiroBusinessHours.findTemporaryEntry(shop, activeTargetDate) : null;
+        const hasTodayTemp = !!tempEntryToday;
+
+        const targetJsDay = activeTargetDate.getDay();
+        const targetMondayBasedDay = (targetJsDay + 6) % 7;
+        const targetIsHoliday = (typeof JiroBusinessHours !== 'undefined') ? JiroBusinessHours.isJapaneseHoliday(activeTargetDate) : false;
+        const hasHolidayShift = shop.holidayShifts !== null && shop.holidayShifts !== undefined;
+
+        for (let mondayIndex = 0; mondayIndex < 7; mondayIndex++) {
+            const jsDayOfWeek = (mondayIndex + 1) % 7;
+            const dayLabel = baseDayNames[mondayIndex];
+
+            const normalShifts = shop.shiftsByDay ? shop.shiftsByDay[mondayIndex] : null;
+            const normalStr = (typeof JiroBusinessHours !== 'undefined') ? JiroBusinessHours.formatShiftList(normalShifts) : this.formatShiftList(normalShifts);
+
+            const specsForThisDay = Array.isArray(shop.specialShifts)
+                ? shop.specialShifts.filter(spec => spec.day === jsDayOfWeek)
+                : [];
+
+            let fullText = normalStr;
+            if (specsForThisDay.length > 0) {
+                const specTexts = specsForThisDay.map(s => {
+                    const h = (typeof JiroBusinessHours !== 'undefined') ? JiroBusinessHours.formatShiftList(s.hours) : '';
+                    return `第${s.week === -1 ? '最終' : s.week}:${h}`;
+                });
+                fullText += `（${specTexts.join('、')}）`;
+            }
+
+            let isTodayRow = false;
+            if (!hasTodayTemp) {
+                if (targetIsHoliday) {
+                    if (!hasHolidayShift && mondayIndex === targetMondayBasedDay) isTodayRow = true;
+                } else {
+                    if (mondayIndex === targetMondayBasedDay) isTodayRow = true;
+                }
+            }
+
+            rawEntries.push({ dayLabel, text: fullText, isHoliday: false, isToday: isTodayRow });
+        }
+
+        if (hasHolidayShift) {
+            let holidayStr = (typeof JiroBusinessHours !== 'undefined') ? JiroBusinessHours.formatShiftList(shop.holidayShifts) : this.formatShiftList(shop.holidayShifts);
+            const isTodayRow = !hasTodayTemp && targetIsHoliday;
+            rawEntries.push({ dayLabel: '祝', text: holidayStr, isHoliday: true, isToday: isTodayRow });
+        }
+
+        const groupedEntries = [];
+        let currentGroup = null;
+
+        rawEntries.forEach(entry => {
+            if (!currentGroup) {
+                currentGroup = { labels: [entry.dayLabel], text: entry.text, hasHoliday: entry.isHoliday, isToday: entry.isToday };
+            } else {
+                if (currentGroup.text === entry.text && (!currentGroup.hasHoliday || (currentGroup.labels.length === 1 && currentGroup.labels[0] === '日' && entry.isHoliday))) {
+                    currentGroup.labels.push(entry.dayLabel);
+                    if (entry.isHoliday) currentGroup.hasHoliday = true;
+                    if (entry.isToday || currentGroup.isToday) currentGroup.isToday = true;
+                } else {
+                    groupedEntries.push(currentGroup);
+                    currentGroup = { labels: [entry.dayLabel], text: entry.text, hasHoliday: entry.isHoliday, isToday: entry.isToday };
+                }
+            }
+        });
+        if (currentGroup) groupedEntries.push(currentGroup);
+
+        let rowsHtml = '';
+        groupedEntries.forEach(group => {
+            let labelDisplay = '';
+            const labels = group.labels;
+            const hasHoliday = group.hasHoliday;
+            const nonHolidayLabels = labels.filter(l => l !== '祝');
+
+            if (labels.length === 3 && labels.includes('土') && labels.includes('日') && labels.includes('祝')) {
+                labelDisplay = '土日祝';
+            } else if (labels.length === 2 && labels.includes('土') && labels.includes('日')) {
+                labelDisplay = '土日';
+            } else if (labels.length === 2 && labels.includes('日') && labels.includes('祝')) {
+                labelDisplay = '日祝';
+            } else if (labels.length === 2 && !hasHoliday) {
+                labelDisplay = `${labels[0]}${labels[1]}`;
+            } else if (nonHolidayLabels.length >= 2) {
+                const rangeText = `${nonHolidayLabels[0]}-${nonHolidayLabels[nonHolidayLabels.length - 1]}`;
+                labelDisplay = hasHoliday ? `${rangeText}祝` : rangeText;
+            } else {
+                labelDisplay = labels.join('');
+            }
+
+            const todayClass = group.isToday ? 'class="today-highlight"' : '';
+            const tdStyle = hasFeatures
+                ? 'style="width: 142px; min-width: 142px; max-width: 142px; word-break: break-word; white-space: normal;"'
+                : 'style="width: 100%;"';
+            rowsHtml += `<tr ${todayClass}><th>${labelDisplay}</th><td ${tdStyle}>${group.text}</td></tr>`;
+        });
+
+        const tableStyle = hasFeatures ? 'style="width: auto;"' : 'style="width: 100%;"';
+        return `<table class="hours-table" ${tableStyle}><tbody>${rowsHtml}</tbody></table>`;
+    }
+
+    renderBusinessHoursAndFeaturesModal(shop, selectedDate = new Date()) {
+        const hasFeatures = !!(shop.ticketTiming || shop.soupType || shop.renge || shop.takeout);
+        const tableHtml = this.renderBusinessHoursTableModal(shop, selectedDate, hasFeatures);
+        const openedDateStr = shop.openedAt ? `${shop.openedAt.replace(/-/g, '/')} 開店` : '';
+
+        const hoursHeaderHtml = `
+            <div class="hours-title" style="display: flex; justify-content: space-between; align-items: center; width: 100%; margin-bottom: 2px;">
+                <span style="font-weight: bold; color: var(--jiro-yellow); font-size: 0.82rem;">営業時間</span>
+                ${openedDateStr ? `<span class="open-date-text" style="font-size: 0.68rem; color: #aaa; text-align: right; margin-left: 8px;">${openedDateStr}</span>` : ''}
+            </div>
+        `;
+
+        if (!hasFeatures) {
+            return `
+                <div style="display: flex; flex-direction: column; width: 100%;">
+                    ${hoursHeaderHtml}
+                    ${tableHtml}
+                </div>
+            `;
+        }
+
+        const rengeSvgIcon = `<svg title="レンゲ" width="18" height="15" viewBox="0 0 32 24" fill="none" style="display:inline-block; vertical-align:middle; opacity:0.95; margin-right:4px; flex-shrink:0;"><path d="M 3 12 C 3 18 8 20 16 20 C 21 20 25 16 28 8.5 C 28.5 7.2 27.2 6.2 26 7 C 23.5 8.5 19.5 11.5 14.5 11.5 C 8.5 11.5 3 12 3 12 Z" fill="#ffffff"/><path d="M 4.5 12.2 C 9.5 14 15.5 14 20.8 11.6 C 23.8 10.2 26.5 7.8 26.5 7.8" stroke="#121212" stroke-width="1.3" stroke-linecap="round"/></svg>`;
+        const soupSvgIcon = `<svg title="スープ" width="18" height="15" viewBox="0 0 32 24" fill="none" style="display:inline-block; vertical-align:middle; opacity:0.95; margin-right:4px; flex-shrink:0;"><path d="M 4 8 C 4 17 9 20 16 20 C 23 20 28 17 28 8 Z" fill="#ffffff"/><path d="M 11 20 L 12 22 L 20 22 L 21 20 Z" fill="#ffffff"/><path d="M 4 8.5 C 9.5 10.2 22.5 10.2 28 8.5" stroke="#121212" stroke-width="1.3"/></svg>`;
+        const takeoutSvgIcon = `<svg title="テイクアウト" width="18" height="15" viewBox="0 0 32 24" fill="none" style="display:inline-block; vertical-align:middle; opacity:0.95; margin-right:4px; flex-shrink:0;"><path d="M 13 4 L 16 1 L 19 4 M 16 1 L 16 5" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round"/><path d="M 12 5 C 6 6 2 10 2 16 C 2 22 7 23 16 23 C 25 23 30 22 30 16 C 30 10 26 6 20 5 Z" stroke="#ffffff" stroke-width="1.4" stroke-dasharray="3,1" fill="rgba(255,255,255,0.1)"/><path d="M 6 11 C 10 8 10 15 15 11 C 19 8 21 15 26 11" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round"/><path d="M 5 15 C 9 12 10 19 15 15 C 19 12 22 19 27 15" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round"/><path d="M 8 19 C 11 16 13 22 17 19 C 20 16 23 22 25 19" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round"/><path d="M 9 8 C 8 12 12 16 11 20" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/><path d="M 22 8 C 23 12 19 16 21 20" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/></svg>`;
+
+        const featuresHeaderHtml = `
+            <div class="features-title" style="display: flex; align-items: baseline; width: 100%; margin-bottom: 2px;">
+                <span style="font-weight: bold; color: var(--jiro-yellow); font-size: 0.82rem;">特徴</span>
+            </div>
+        `;
+
+        let featuresHtml = '';
+        if (shop.ticketTiming) featuresHtml += `<div style="white-space: normal; word-break: break-word; line-height: 1.35; font-size: 0.72rem; display: flex; align-items: flex-start;" title="食券"><span title="食券" style="filter: grayscale(100%) brightness(1.6); opacity: 0.95; margin-right: 4px; display: inline-block; flex-shrink: 0; margin-top: 1px;">🎟️</span><span>${shop.ticketTiming}</span></div>`;
+        if (shop.soupType) featuresHtml += `<div style="white-space: normal; word-break: break-word; line-height: 1.35; font-size: 0.72rem; display: flex; align-items: flex-start;" title="スープ">${soupSvgIcon}<span>${shop.soupType}</span></div>`;
+        if (shop.renge) featuresHtml += `<div style="white-space: normal; word-break: break-word; line-height: 1.35; font-size: 0.72rem; display: flex; align-items: flex-start;" title="レンゲ">${rengeSvgIcon}<span>${shop.renge}</span></div>`;
+        if (shop.takeout) featuresHtml += `<div style="white-space: normal; word-break: break-word; line-height: 1.35; font-size: 0.72rem; display: flex; align-items: flex-start;" title="テイクアウト">${takeoutSvgIcon}<span>${shop.takeout}</span></div>`;
+
+        return `
+            <div style="display: flex; gap: 12px; align-items: flex-start; flex-wrap: nowrap; width: 100%;">
+                <div style="display: flex; flex-direction: column; flex: 0 0 auto;">
+                    ${hoursHeaderHtml}
+                    ${tableHtml}
+                </div>
+                <div style="flex: 1; min-width: 140px; font-size: 0.72rem; color: #d0d0d0; display: flex; flex-direction: column; gap: 3px; box-sizing: border-box; overflow: visible;">
+                    ${featuresHeaderHtml}
+                    ${featuresHtml}
+                </div>
+            </div>
+        `;
+    }
+
+    generateShopCardContentHTML(shop) {
+        const fullAddress = (typeof LG_CODES !== 'undefined' ? LG_CODES.getShopFullAddress(shop) : `${shop.addressText || ''}`).trim();
+        const gmapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('ラーメン二郎 ' + shop.name + ' ' + fullAddress)}`;
+        const selectedDate = new Date();
+
+        let linksHtml = '';
+        if (shop.x) linksHtml += `<a href="https://x.com/${shop.x}" target="_blank" rel="noopener noreferrer" class="shop-link">X ↗</a>`;
+        if (shop.instagram) linksHtml += `<a href="https://instagram.com/${shop.instagram}" target="_blank" rel="noopener noreferrer" class="shop-link">Instagram ↗</a>`;
+        if (shop.urls?.pc) linksHtml += `<a href="${shop.urls.pc}" target="_blank" rel="noopener noreferrer" class="shop-link">PC店Ⅲ ↗</a>`;
+        if (shop.urls?.rdb) linksHtml += `<a href="${shop.urls.rdb}" target="_blank" rel="noopener noreferrer" class="shop-link">RDB ↗</a>`;
+        if (shop.urls?.tabelog) linksHtml += `<a href="${shop.urls.tabelog}" target="_blank" rel="noopener noreferrer" class="shop-link">食べログ ↗</a>`;
+
+        let statusTag = '';
+        let nextScheduleText = '';
+        let tempWeeklyHtml = '';
+
+        if (typeof JiroBusinessHours !== 'undefined') {
+            const status = JiroBusinessHours.getBusinessStatus(shop, selectedDate);
+            statusTag = `<span class="status-badge ${status.bgClass}">${status.label}</span>`;
+            nextScheduleText = JiroBusinessHours.getNextOpenScheduleText(shop, selectedDate);
+            const tempWeeklyInfo = JiroBusinessHours.getWeeklyTemporaryText(shop, selectedDate);
+            if (tempWeeklyInfo && tempWeeklyInfo.text) {
+                tempWeeklyHtml = `
+                    <div class="temp-schedule-box ${tempWeeklyInfo.hasToday ? 'today-highlight' : ''}">
+                        <span class="temp-schedule-label">臨時営業情報（～30日後）:</span>
+                        <div class="temp-schedule-text">${tempWeeklyInfo.text}</div>
+                    </div>
+                `;
+            }
+        }
+
+        const remarksText = shop.remarks || shop.notes || '';
+        const hasFeatures = !!(shop.ticketTiming || shop.soupType || shop.renge || shop.takeout);
+
+        return `
+            <div class="shop-info" data-shop-id="${shop.id}">
+                <div class="shop-header-row">
+                    <div class="shop-title-wrapper">
+                        <span class="shop-name">🍜 ${shop.name}</span>
+                        ${statusTag}
+                    </div>
+                </div>
+                <div class="shop-sub-row">
+                    ${nextScheduleText}
+                </div>
+                <div class="detailed-content">
+                    <div class="meta-text-outside">
+                        <div><a href="${gmapUrl}" target="_blank" rel="noopener noreferrer" class="gmap-link">📍 ${fullAddress || '住所不明'} ↗</a></div>
+                        ${(!hasFeatures && shop.ticketTiming) ? `<div>🎟️ ${shop.ticketTiming}</div>` : ''}
+                    </div>
+                    <div class="hours-box">
+                        ${this.renderBusinessHoursAndFeaturesModal(shop, selectedDate)}
+                        ${shop.hoursNotes ? `<div style="font-size:0.75rem; color:#ccc; margin-top:4px;"><strong>補足:</strong> ${shop.hoursNotes}</div>` : ''}
+                        ${tempWeeklyHtml}
+                    </div>
+                    ${remarksText ? `<div class="meta-text-outside"><div>${remarksText}</div></div>` : ''}
+                    <div class="detailed-card-footer">
+                        <div class="links-group">${linksHtml}</div>
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+
     showShopInfoModal(shopId) {
         const modal = document.getElementById('shop-info-modal');
-        const titleEl = document.getElementById('shop-info-modal-title');
         const bodyEl = document.getElementById('shop-info-modal-body');
         if (!modal || !bodyEl) return;
 
@@ -2442,95 +2739,7 @@ ${guidelinesText}
             return;
         }
 
-        if (titleEl) {
-            titleEl.innerHTML = `<span>🍜 ${this.escapeHtml(shop.name)}</span>`;
-        }
-
-        // 住所
-        const fullAddress = (typeof LG_CODES !== 'undefined' ? LG_CODES.getShopFullAddress(shop) : `${shop.addressText || ''}`).trim();
-        const gmapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('ラーメン二郎 ' + shop.name + ' ' + fullAddress)}`;
-
-        // 営業時間テーブル（月〜日）
-        const dayNames = ['月', '火', '水', '木', '金', '土', '日'];
-        let hoursRows = '';
-        if (shop.shiftsByDay) {
-            for (let i = 0; i < 7; i++) {
-                const shifts = shop.shiftsByDay[String(i)] || [];
-                const shiftText = shifts.length > 0 
-                    ? shifts.map(([s, e]) => `${this.floatToTime(s)} - ${this.floatToTime(e)}`).join(', ')
-                    : '<span style="color:#888;">定休日</span>';
-                hoursRows += `<tr><th>${dayNames[i]}曜</th><td>${shiftText}</td></tr>`;
-            }
-        }
-
-        // 臨時営業情報一覧
-        let tempHtml = '<div style="color:#888; font-size:0.8rem;">現在登録されている臨時スケジュールはありません。</div>';
-        if (shop.temporary && shop.temporary.length > 0) {
-            tempHtml = shop.temporary.map(t => {
-                const s = t.startDate;
-                const e = t.endDate && t.endDate !== s ? ` ～ ${t.endDate}` : '';
-                const h = (t.hours && t.hours.length > 0)
-                    ? t.hours.map(([st, en]) => `${this.floatToTime(st)}-${this.floatToTime(en)}`).join(', ')
-                    : '<span style="color:#ef5350; font-weight:bold;">休業</span>';
-                const reasonStr = t.reason ? `<span style="color:#bbb; font-size:0.75rem;">（理由: ${this.escapeHtml(t.reason)}）</span>` : '';
-                const urlStr = t.sourceUrl ? `<a href="${t.sourceUrl}" target="_blank" rel="noopener noreferrer" style="color:var(--jiro-yellow); text-decoration:none; font-size:0.75rem;">🔗根拠</a>` : '';
-                return `
-                    <div style="padding: 4px 6px; background: #141414; border-left: 3px solid #ff9f43; margin-bottom: 4px; border-radius: 0 4px 4px 0;">
-                        <span style="font-weight:bold; color:#ffca28;">📅 ${s}${e}:</span>
-                        <span style="color:#fff; margin: 0 6px;">${h}</span>
-                        ${reasonStr} ${urlStr}
-                    </div>
-                `;
-            }).join('');
-        }
-
-        // 特記事項・店舗ルール
-        let featuresList = [];
-        if (shop.ticketTiming) featuresList.push(`<strong>食券購入:</strong> ${this.escapeHtml(shop.ticketTiming)}`);
-        if (shop.soupType) featuresList.push(`<strong>スープ:</strong> ${this.escapeHtml(shop.soupType)}`);
-        if (shop.renge) featuresList.push(`<strong>レンゲ:</strong> ${this.escapeHtml(shop.renge)}`);
-        if (shop.takeout) featuresList.push(`<strong>テイクアウト:</strong> ${this.escapeHtml(shop.takeout)}`);
-        if (shop.hoursNotes) featuresList.push(`<strong>営業時間補足:</strong> ${this.escapeHtml(shop.hoursNotes)}`);
-        if (shop.remarks || shop.notes) featuresList.push(`<strong>特記・ルール:</strong> ${this.escapeHtml(shop.remarks || shop.notes)}`);
-
-        // SNS・外部リンク
-        let links = [];
-        if (shop.x) links.push(`<a href="https://x.com/${shop.x}" target="_blank" rel="noopener noreferrer" class="shop-modal-link">X (@${shop.x}) ↗</a>`);
-        if (shop.instagram) links.push(`<a href="https://instagram.com/${shop.instagram}" target="_blank" rel="noopener noreferrer" class="shop-modal-link">Instagram (@${shop.instagram}) ↗</a>`);
-        if (shop.urls?.pc) links.push(`<a href="${shop.urls.pc}" target="_blank" rel="noopener noreferrer" class="shop-modal-link">PC店Ⅲ ↗</a>`);
-        if (shop.urls?.rdb) links.push(`<a href="${shop.urls.rdb}" target="_blank" rel="noopener noreferrer" class="shop-modal-link">ラーメンデータベース ↗</a>`);
-        if (shop.urls?.tabelog) links.push(`<a href="${shop.urls.tabelog}" target="_blank" rel="noopener noreferrer" class="shop-modal-link">食べログ ↗</a>`);
-
-        bodyEl.innerHTML = `
-            <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom: 8px;">
-                <div>
-                    <a href="${gmapUrl}" target="_blank" rel="noopener noreferrer" style="color:#81c784; text-decoration:none; font-weight:bold; font-size:0.85rem;">
-                        📍 ${fullAddress || '住所未設定'} ↗
-                    </a>
-                </div>
-            </div>
-
-            <div class="shop-modal-section-title">🕒 通常営業時間</div>
-            <table class="shop-modal-table">
-                <tbody>${hoursRows}</tbody>
-            </table>
-
-            <div class="shop-modal-section-title" style="color:#ff9f43;">⚠️ 登録済みの臨時営業情報</div>
-            <div style="margin-top: 6px;">${tempHtml}</div>
-
-            ${featuresList.length > 0 ? `
-                <div class="shop-modal-section-title">ℹ️ 店舗ルール・特徴</div>
-                <div style="font-size:0.8rem; line-height:1.6; background:#141414; padding:8px 10px; border-radius:4px; border:1px solid #333;">
-                    ${featuresList.map(f => `<div>${f}</div>`).join('')}
-                </div>
-            ` : ''}
-
-            ${links.length > 0 ? `
-                <div class="shop-modal-section-title">🔗 公式SNS・外部リンク</div>
-                <div class="shop-modal-links">${links.join('')}</div>
-            ` : ''}
-        `;
-
+        bodyEl.innerHTML = this.generateShopCardContentHTML(shop);
         modal.classList.add('active');
     }
 
