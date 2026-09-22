@@ -609,28 +609,27 @@ input.error { border-color: var(--danger-color) !important; background-color: #3
     border: 1px solid #880e4f;
 }
 
-/* バッジ3区分（営業変更を検出 / 登録済 / 無関係） */
-.pending-badge {
+/* 判定バッジ（要反映 / 反映不要） */
+.decision-badge {
     font-size: 0.72rem;
     font-weight: bold;
     padding: 2px 7px;
     border-radius: 4px;
     display: inline-flex;
     align-items: center;
-    gap: 3px;
     letter-spacing: 0.02em;
 }
-.pending-badge.badge-change {
+.decision-badge.badge-action {
     background: #ffb300;
     color: #121212;
 }
-.pending-badge.badge-registered {
-    background: #00897b;
-    color: #ffffff;
-}
-.pending-badge.badge-unrelated {
+.decision-badge.badge-skip {
     background: #424242;
-    color: #dcdcdc;
+    color: #e0e0e0;
+}
+.decision-reason {
+    font-size: 0.75rem;
+    color: #aaa;
 }
 
 /* ボタン強調スタイル */
@@ -1063,6 +1062,32 @@ body.drag-over::after {
     justify-content: center;
     z-index: 99999;
     pointer-events: none;
+}
+
+/* ==========================================================================
+   店舗情報確認ポップアップ (index.html 完全踏襲)
+   ========================================================================== */
+dialog.grid-popup-modal {
+    background-color: var(--card-bg, #1e1e1e);
+    border: 1px solid var(--jiro-yellow);
+    border-radius: 8px;
+    max-width: 380px;
+    width: 90%;
+    max-height: 85vh;
+    color: var(--text-color, #f0f0f0);
+    padding: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+    z-index: 2500;
+    overflow-y: auto;
+}
+dialog.grid-popup-modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.grid-popup-body {
+    margin-top: 0;
+}
+.grid-popup-body .detailed-content {
+    display: flex !important;
 }
 
 

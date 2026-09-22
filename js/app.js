@@ -1874,8 +1874,9 @@
             }
 
             try {
+                // 全国市区町村マスターデータは初期表示をブロックせず、非同期バックグラウンドで補完取得
                 if (typeof LG_CODES !== 'undefined' && LG_CODES.fetchExternalData) {
-                    await LG_CODES.fetchExternalData();
+                    LG_CODES.fetchExternalData().catch(e => console.warn('LG_CODES async fetch:', e));
                 }
                 const isLocalEnv = window.location.protocol === 'file:' || 
                                    window.location.hostname === 'localhost' || 
