@@ -1592,6 +1592,11 @@
         "startDate": "2026-09-21",
         "endDate": "2026-09-21",
         "hours": []
+      },
+      {
+        "startDate": "2026-09-26",
+        "endDate": "2026-09-26",
+        "hours": []
       }
     ],
     "shiftsByDay": {
