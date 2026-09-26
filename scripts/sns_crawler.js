@@ -220,17 +220,14 @@ function isLikelySchedulePost(post, keywordConfig = null) {
     if (!text) return false;
 
     const defaultKeywords = [
-        '休', 'やすみ', '休み', '臨休', '営業', '開店', '閉店', '時短', '短縮',
+        '休', 'やすみ', '休み', '臨休', '営業', '開店', '閉店', '時短',
         '時間', '早仕舞い', '早じまい', '昼', '夜', '部', '祝', '特別',
         'カレンダー', 'お知らせ', '告知', '案内', '終了', '完売', '材料切れ',
-        '売り切れ', '並び', 'お並び', '宣告', 'オープン', 'ラスト', 'お休み', '休業',
-        '体調', '都合', '急遽', '仕込', 'スープ', '麺', '豚', '仕入', '工事', '点検',
-        '店主', '助手', '周年', 'つけ麺', '限定', 'テイクアウト', 'テイク', '持ち帰り', '整理券',
-        '通常', '本日', '今日', '明日', '変更'
+        '売り切れ', '並び', '宣告', 'オープン', 'ラスト', 'お休み', '休業'
     ];
 
     const keywords = (keywordConfig && Array.isArray(keywordConfig.keywords))
-        ? Array.from(new Set([...defaultKeywords, ...keywordConfig.keywords]))
+        ? keywordConfig.keywords
         : defaultKeywords;
 
     if (keywords.some(kw => text.includes(kw))) {
@@ -242,7 +239,7 @@ function isLikelySchedulePost(post, keywordConfig = null) {
     ];
 
     const periodKeywords = (keywordConfig && Array.isArray(keywordConfig.periodKeywords))
-        ? Array.from(new Set([...defaultPeriodKeywords, ...keywordConfig.periodKeywords]))
+        ? keywordConfig.periodKeywords
         : defaultPeriodKeywords;
 
     if (periodKeywords.some(kw => text.includes(kw))) {
@@ -260,7 +257,7 @@ function isLikelySchedulePost(post, keywordConfig = null) {
     ];
 
     const patterns = (keywordConfig && Array.isArray(keywordConfig.patterns))
-        ? Array.from(new Set([...defaultPatterns, ...keywordConfig.patterns]))
+        ? keywordConfig.patterns
         : defaultPatterns;
 
     for (const pat of patterns) {
@@ -385,52 +382,56 @@ async function runCrawler() {
             posts.push(...xPosts);
         }
 
-        // 新規かつ直近7日間（168時間）以内の未処理投稿をフィルタリング（数日前のお知らせやカレンダーも漏れなく網羅）
-        const sevenDaysAgo = Date.now() - (7 * 24 * 60 * 60 * 1000);
+        // 新規かつ直近24時間以内の未処理投稿をフィルタリング
+        const oneDayAgo = Date.now() - (24 * 60 * 60 * 1000);
         const newPosts = posts.filter(p => {
             if (processedSet.has(p.postId)) return false;
             const postTime = new Date(p.postedAt).getTime();
-            return isNaN(postTime) || postTime >= sevenDaysAgo;
+            return isNaN(postTime) || postTime >= oneDayAgo;
         });
 
         console.log(`  -> 新規投稿: ${newPosts.length}件`);
 
         for (const post of newPosts) {
-            // 0. 他アカウントへのメンションはGemini解析対象外（自ポストへのリプライ・ツリーは解析対象）
-            if (isMentionOrReply(post, shop.x)) {
-                console.log(`  ⏭️ 他アカウントへのメンションと判定し記録: "${post.text.substring(0, 25).replace(/\n/g, ' ')}..."`);
-                const mentionItem = {
-                    id: `sns_post_mention_${shop.id}_${post.postId}`,
-                    shopId: shop.id,
-                    shopName: shop.name,
-                    postSource: post.source,
-                    postUrl: post.postUrl,
-                    postedAt: post.postedAt,
-                    postText: post.text,
-                    mediaUrls: post.mediaUrls || [],
-                    detectedChange: {
-                        type: 'temporary_hours',
-                        startDate: post.postedAt.split('T')[0],
-                        endDate: post.postedAt.split('T')[0],
-                        hours: [],
-                        reason: ''
-                    },
-                    processed: false,
-                    processedAt: null,
-                    aiStatus: 'mention',
-                    aiReason: '他アカウントへのメンションのため除外'
-                };
-                const existing = snsPosts.find(p => p.id === mentionItem.id && p.processed);
-                if (!existing) {
-                    snsPosts = snsPosts.filter(p => p.id !== mentionItem.id);
-                    snsPosts.push(mentionItem);
-                }
-                processedSet.add(post.postId);
-                continue;
-            }
+            // 投稿されたツイートを漏れなくキーワード判定（画像有無含む）の対象にする
+            const isScheduleCandidate = isLikelySchedulePost(post, keywordConfig);
 
-            // 事前フィルタ: 営業変更の可能性がない日常雑談ポストは記録（APIは呼ばない）
-            if (!isLikelySchedulePost(post, keywordConfig)) {
+            // キーワードに合致せず、画像もない場合（営業情報と関係ない投稿）
+            if (!isScheduleCandidate) {
+                // 他アカウントへのメンション・会話リプライであれば mention として除外記録
+                if (isMentionOrReply(post, shop.x)) {
+                    console.log(`  ⏭️ 他アカウントへのメンションと判定し記録: "${post.text.substring(0, 25).replace(/\n/g, ' ')}..."`);
+                    const mentionItem = {
+                        id: `sns_post_mention_${shop.id}_${post.postId}`,
+                        shopId: shop.id,
+                        shopName: shop.name,
+                        postSource: post.source,
+                        postUrl: post.postUrl,
+                        postedAt: post.postedAt,
+                        postText: post.text,
+                        mediaUrls: post.mediaUrls || [],
+                        detectedChange: {
+                            type: 'temporary_hours',
+                            startDate: post.postedAt.split('T')[0],
+                            endDate: post.postedAt.split('T')[0],
+                            hours: [],
+                            reason: ''
+                        },
+                        processed: false,
+                        processedAt: null,
+                        aiStatus: 'mention',
+                        aiReason: '他アカウントへのメンションのため除外'
+                    };
+                    const existing = snsPosts.find(p => p.id === mentionItem.id && p.processed);
+                    if (!existing) {
+                        snsPosts = snsPosts.filter(p => p.id !== mentionItem.id);
+                        snsPosts.push(mentionItem);
+                    }
+                    processedSet.add(post.postId);
+                    continue;
+                }
+
+                // 日常・雑談ポストは daily として除外記録
                 console.log(`  ⏭️ 日常ポストと判定し記録: "${post.text.substring(0, 25).replace(/\n/g, ' ')}..."`);
                 const dailyItem = {
                     id: `sns_post_daily_${shop.id}_${post.postId}`,
@@ -462,6 +463,7 @@ async function runCrawler() {
                 continue;
             }
 
+            // キーワードに合致、または画像がある投稿はすべてGemini解析の対象
             if (!apiKey) {
                 continue;
             }
