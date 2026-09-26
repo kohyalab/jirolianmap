@@ -37,10 +37,10 @@ const SCHEDULED_JOBS = [
 async function dispatchGitHubAction(env, eventType, clientPayload = {}) {
     const owner = env.GITHUB_OWNER || 'kohyalab';
     const repo = env.GITHUB_REPO || 'jirolianmap';
-    const token = env.GITHUB_PAT || env.GITHUB_TOKEN;
+    const token = env.GH_PAT || env.GITHUB_PAT || env.GITHUB_TOKEN;
 
     if (!token) {
-        throw new Error('GITHUB_PAT (または GITHUB_TOKEN) が環境変数に設定されていません。');
+        throw new Error('GH_PAT (または GITHUB_PAT) が環境変数に設定されていません。');
     }
 
     const url = `https://api.github.com/repos/${owner}/${repo}/dispatches`;
