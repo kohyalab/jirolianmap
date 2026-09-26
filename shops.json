@@ -1592,6 +1592,11 @@
         "startDate": "2026-09-21",
         "endDate": "2026-09-21",
         "hours": []
+      },
+      {
+        "startDate": "2026-09-26",
+        "endDate": "2026-09-26",
+        "hours": []
       }
     ],
     "shiftsByDay": {
@@ -1663,18 +1668,27 @@
     "id": "kaminoge",
     "name": "上野毛店",
     "kana": "カミノゲテン",
+    "shortName": "上野毛",
+    "prefCode": "13",
+    "cityCode": "13112",
     "addressText": "上野毛1丁目26-16世和マンション",
     "lat": 35.61246569434824,
     "lng": 139.63897097116592,
+    "openedAt": "2002-11-12",
+    "closedAt": null,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/kaminoge/",
       "rdb": "https://ramendb.supleks.jp/s/3281.html",
       "tabelog": "https://tabelog.com/tokyo/A1317/A131715/13010417/"
     },
     "x": "kaminogeJiro",
+    "instagram": "",
     "ticketTiming": "",
-    "openedAt": "2002-11-12",
-    "closedAt": null,
+    "soupType": "",
+    "renge": "",
+    "takeout": "",
+    "hoursNotes": "",
+    "remarks": "",
     "temporary": [
       {
         "startDate": "2026-08-09",
@@ -1746,15 +1760,7 @@
       ],
       "6": []
     },
-    "holidayShifts": null,
-    "remarks": "",
-    "hoursNotes": "",
-    "instagram": "",
-    "shortName": "上野毛",
-    "soupType": "",
-    "renge": "",
-    "takeout": "",
-    "cityCode": "13112"
+    "holidayShifts": []
   },
   {
     "id": "keiseiookubo",
@@ -2099,6 +2105,16 @@
         "startDate": "2026-09-09",
         "endDate": "2026-09-09",
         "hours": []
+      },
+      {
+        "startDate": "2026-09-25",
+        "endDate": "2026-09-25",
+        "hours": [
+          [
+            14,
+            17.5
+          ]
+        ]
       }
     ],
     "shiftsByDay": {
@@ -2769,18 +2785,27 @@
     "id": "senjuohashi",
     "name": "千住大橋駅前店",
     "kana": "センジュオオハシエキマエテン",
+    "shortName": "千住大橋",
+    "prefCode": "13",
+    "cityCode": "13121",
     "addressText": "千住橋戸町10-8",
     "lat": 35.74255425302567,
     "lng": 139.7970657753107,
+    "openedAt": "2009-04-19",
+    "closedAt": null,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/senjuohashi/",
       "rdb": "https://ramendb.supleks.jp/s/19341.html",
       "tabelog": "https://tabelog.com/tokyo/A1324/A132402/13090912/"
     },
     "x": "senjujirou26",
+    "instagram": "",
     "ticketTiming": "",
-    "openedAt": "2009-04-19",
-    "closedAt": null,
+    "soupType": "",
+    "renge": "",
+    "takeout": "",
+    "hoursNotes": "土曜、祝日不定休",
+    "remarks": "",
     "temporary": [
       {
         "startDate": "2026-08-10",
@@ -2817,12 +2842,7 @@
       "5": [],
       "6": []
     },
-    "holidayShifts": null,
-    "remarks": "",
-    "hoursNotes": "土曜、祝日不定休",
-    "instagram": "",
-    "shortName": "千住大橋",
-    "cityCode": "13121"
+    "holidayShifts": []
   },
   {
     "id": "ibarakimoriya",
@@ -4152,18 +4172,27 @@
     "id": "kabuki",
     "name": "新宿歌舞伎町店",
     "kana": "シンジュクカブキチョウテン",
+    "shortName": "新宿歌舞伎",
+    "prefCode": "13",
+    "cityCode": "13104",
     "addressText": "歌舞伎町2丁目37-5日新ビル1F",
     "lat": 35.696119829384415,
     "lng": 139.70195240044566,
+    "openedAt": "2016-10-03",
+    "closedAt": null,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/kabuki/",
       "rdb": "https://ramendb.supleks.jp/s/95249.html",
       "tabelog": "https://tabelog.com/tokyo/A1304/A130401/13200815/"
     },
     "x": "kabujiikeji",
+    "instagram": "",
     "ticketTiming": "",
-    "openedAt": "2016-10-03",
-    "closedAt": null,
+    "soupType": "",
+    "renge": "",
+    "takeout": "",
+    "hoursNotes": "",
+    "remarks": "",
     "temporary": [],
     "shiftsByDay": {
       "0": [
@@ -4204,20 +4233,7 @@
         ]
       ]
     },
-    "holidayShifts": [
-      [
-        11.5,
-        26.5
-      ]
-    ],
-    "remarks": "",
-    "hoursNotes": "",
-    "instagram": "",
-    "shortName": "新宿歌舞伎",
-    "soupType": "",
-    "renge": "",
-    "takeout": "",
-    "cityCode": "13104"
+    "holidayShifts": null
   },
   {
     "id": "kawagoe",
@@ -4705,6 +4721,11 @@
             14
           ]
         ]
+      },
+      {
+        "startDate": "2026-10-02",
+        "endDate": "2026-10-02",
+        "hours": []
       }
     ],
     "shiftsByDay": {
@@ -5443,6 +5464,11 @@
         "startDate": "2026-09-17",
         "endDate": "2026-09-17",
         "hours": []
+      },
+      {
+        "startDate": "2026-09-24",
+        "endDate": "2026-09-24",
+        "hours": []
       }
     ],
     "shiftsByDay": {
@@ -5672,6 +5698,26 @@
         "startDate": "2026-09-21",
         "endDate": "2026-09-21",
         "hours": []
+      },
+      {
+        "startDate": "2026-09-22",
+        "endDate": "2026-09-23",
+        "hours": [
+          [
+            12,
+            15
+          ]
+        ]
+      },
+      {
+        "startDate": "2026-09-26",
+        "endDate": "2026-09-26",
+        "hours": [
+          [
+            12,
+            15
+          ]
+        ]
       }
     ],
     "shiftsByDay": {
@@ -6101,6 +6147,27 @@
             14.5
           ]
         ]
+      },
+      {
+        "startDate": "2026-09-25",
+        "endDate": "2026-09-25",
+        "hours": [
+          [
+            11,
+            14
+          ],
+          [
+            17.5,
+            19.5
+          ]
+        ]
+      }
+    ],
+    "holidaySpecialShifts": [
+      {
+        "triggerDay": 3,
+        "targetOffset": 0,
+        "hours": []
       }
     ],
     "shiftsByDay": {
