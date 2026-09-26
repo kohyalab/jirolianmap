@@ -175,53 +175,54 @@ function matchesCron(cronExpr, date = new Date()) {
 }
 
 /**
- * ジョブがトリガー対象かを判定（完全一致・同義語吸収・時刻近似判定）
+ * ジョブがトリガー対象かを判定（完全一致・同義語吸収・相互排他制御）
  */
 function isJobDue(job, triggeredCron, now) {
     if (!job.enabled) return false;
 
-    // 1. 完全一致
-    if (triggeredCron && job.cron === triggeredCron) return true;
-
-    // 2. 30分毎のあらゆるcron表現を同一視
-    if (job.id === 'sns-monitor') {
-        if (
+    // 1. Cloudflareから event.cron が渡されている場合（通常の本番Cron実行）
+    if (triggeredCron) {
+        const isSnsCron = (
             triggeredCron === '*/30 * * * *' ||
             triggeredCron === '0,30 * * * *' ||
             triggeredCron.startsWith('*/30 ') ||
             triggeredCron.startsWith('0,30 ')
-        ) {
-            return true;
-        }
-    }
-
-    // 3. 毎日 JST 07:00 (UTC 22:00) のあらゆる表現を同一視
-    if (job.id === 'daily-post') {
-        if (
+        );
+        const isDailyCron = (
             triggeredCron === '0 22 * * *' ||
             triggeredCron === '17 22 * * *' ||
             triggeredCron.includes('22 * *')
-        ) {
-            return true;
+        );
+
+        if (job.id === 'sns-monitor') {
+            // 30分間隔トリガーならSNS巡回を実行。22時(JST 7時)専用トリガーなら実行しない
+            if (isSnsCron) return true;
+            if (isDailyCron) return false;
+            return job.cron === triggeredCron;
         }
+
+        if (job.id === 'daily-post') {
+            // 22時(JST 7時)専用トリガーなら実行。30分間隔トリガーなら絶対に実行しない
+            if (isDailyCron) return true;
+            if (isSnsCron) return false;
+            return job.cron === triggeredCron;
+        }
+
+        return job.cron === triggeredCron;
     }
 
-    // 4. 時刻ベースの評価（分単位の若干のズレを許容）
+    // 2. event.cron が空文字列の場合（テスト実行や手動実行時のフォールバック時刻判定）
     const utcMin = now.getUTCMinutes();
     const utcHour = now.getUTCHours();
 
-    if (job.id === 'sns-monitor') {
-        // 0分付近 (58〜02分) または 30分付近 (28〜32分)
-        if ((utcMin >= 58 || utcMin <= 2) || (utcMin >= 28 && utcMin <= 32)) {
-            return true;
-        }
+    if (job.id === 'daily-post') {
+        // UTC 22:00（JST 07:00）付近のみ
+        return (utcHour === 22 && utcMin <= 5) || (utcHour === 21 && utcMin >= 58);
     }
 
-    if (job.id === 'daily-post') {
-        // UTC 22:00（JST 07:00）付近
-        if ((utcHour === 22 && utcMin <= 5) || (utcHour === 21 && utcMin >= 58)) {
-            return true;
-        }
+    if (job.id === 'sns-monitor') {
+        // 0分付近 (58〜02分) または 30分付近 (28〜32分)
+        return (utcMin >= 58 || utcMin <= 2) || (utcMin >= 28 && utcMin <= 32);
     }
 
     return matchesCron(job.cron, now);
