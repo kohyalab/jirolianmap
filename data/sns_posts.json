@@ -1181,5 +1181,47 @@
     "processedAt": "2026-09-26T14:45:11.246Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_daily_kameido_2103863046821339553",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2103863046821339553",
+    "postedAt": "2026-09-26T15:03:32.000Z",
+    "postText": "シーサーちゃんはそんな易きに流れる子じゃないはず。苦しい気持ちから一時は解放されても君はきっと今度は罪悪感に押し潰されるよ！辛いけど、その結果手に入れるからこそその資格には価値が出るんだよ！お師匠やくりまんじゅう達と美味しい酒を飲もう🍶 https://t.co/s1LNabeJVV",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-26",
+      "endDate": "2026-09-26",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_daily_kameido_2103862597456191734",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2103862597456191734",
+    "postedAt": "2026-09-26T15:01:45.000Z",
+    "postText": "シーサーちゃんはそんな易きに流れる子じゃないはず！辛いけど、その結果手に入れるからこそその資格には価値が出るんだよ！お師匠やくりまんじゅう達と美味しい酒を飲もう🍶 https://t.co/s1LNabeJVV",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-26",
+      "endDate": "2026-09-26",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
