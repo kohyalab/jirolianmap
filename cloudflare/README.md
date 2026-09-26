@@ -23,10 +23,9 @@
 2. 名前（例: `jirolianmap-scheduler`）を入力してデプロイします。
 3. **コードを編集** を開き、[`cloudflare/worker.js`](worker.js) の内容をそのまま貼り付けて **保存してデプロイ** します。
 4. **設定 (Settings)** > **変数 (Variables and Secrets)** にて以下を登録します:
-   - `GITHUB_PAT`（Secret推奨）: GitHubのPersonal Access Token（リポジトリへの `contents: write` 権限または `repo` 権限を持つトークン）
-   - `GITHUB_OWNER`（Text）: `kohyalab`
-   - `GITHUB_REPO`（Text）: `jirolianmap`
-   - `ADMIN_SECRET`（Secret、任意）: 手動実行APIの保護用トークン
+   - `GH_PAT`（Secret推奨）: GitHubのPersonal Access Token（リポジトリへの `contents: write` 権限または `repo` 権限を持つトークン）
+   ※ `GITHUB_OWNER` と `GITHUB_REPO` はコード内にデフォルト値（`kohyalab` / `jirolianmap`）が組み込まれているため、**登録不要（省略可能）**です。
+   - `ADMIN_SECRET`（Secret、任意）: 手動実行APIの保護用トークン（省略可能）
 5. **設定 (Settings)** > **トリガー (Triggers)** > **Cron トリガー** に以下の2つのCron式を追加します:
    - `0,30 * * * *` （毎時0分、30分）
    - `0 22 * * *` （毎日 JST 07:00 / UTC 22:00）
