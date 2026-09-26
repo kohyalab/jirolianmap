@@ -1,9 +1,8 @@
 name: Daily Jiro Tweet
 
 on:
-#  schedule:
-    # JST 07:17 (UTC 22:17)
-#    - cron: '17 22 * * *'
+  repository_dispatch:
+    types: [trigger-daily-post, daily-post]
   workflow_dispatch:
     inputs:
       environment:
@@ -15,8 +14,6 @@ on:
           - preview
           - dev
           - prod
-  repository_dispatch:
-    types: [trigger-daily-post, daily-post]
 
 jobs:
   tweet:

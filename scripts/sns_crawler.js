@@ -110,12 +110,13 @@ async function fetchXFromYahooRealtime(screenName) {
 }
 
 /**
- * X Syndication API を利用して特定アカウントの直近投稿を取得（フォールバック用）
+ * X Syndication API を利用して特定アカウントの直近投稿を取得
  */
 async function fetchXFromSyndication(screenName) {
     if (!screenName) return [];
     const cleanHandle = screenName.replace(/^@/, '').trim();
-    const url = `https://syndication.twitter.com/srv/timeline-profile/screen-name/${cleanHandle}?limit=10`;
+    // limitを20に拡大してより確実に過去の投稿も網羅
+    const url = `https://syndication.twitter.com/srv/timeline-profile/screen-name/${cleanHandle}?limit=20`;
 
     try {
         const res = await fetch(url, {
@@ -178,8 +179,9 @@ async function fetchXFromSyndication(screenName) {
 }
 
 /**
- * 他アカウントへのメンションであるかを判定
- * （自分自身へのツリー返信・リプライは営業情報告知の可能性があるため除外せず、他アカウント宛ての会話・メンションのみ除外）
+ * 他アカウントへのメンション・会話であるかを判定
+ * 本文の先頭が他アカウントへの@で始まっている会話リプライのみを除外対象とし、
+ * 告知文の途中や末尾に他アカウントが含まれる通常の告知投稿や、自分自身へのツリー返信は除外しない
  */
 function isMentionOrReply(post, ownHandle = '') {
     if (!post) return false;
@@ -187,14 +189,15 @@ function isMentionOrReply(post, ownHandle = '') {
     const text = (post.text || '').trim();
     if (!text) return false;
 
-    // 本文中に含まれるメンション (@username) の抽出と判定
     const cleanOwnHandle = (ownHandle || '').replace(/^@/, '').toLowerCase();
-    const mentionMatches = text.match(/@[a-zA-Z0-9_]+/g);
-    if (mentionMatches && mentionMatches.length > 0) {
-        for (const m of mentionMatches) {
-            const mentionedUser = m.replace(/^@/, '').toLowerCase();
-            // 自分自身のアカウント名以外のメンションが含まれていれば「他アカウントへのメンション」と判定
-            if (mentionedUser !== cleanOwnHandle) {
+
+    // 文頭が @ で始まっているかチェック（会話・返信リプライの形式）
+    if (text.startsWith('@')) {
+        const firstMentionMatch = text.match(/^@([a-zA-Z0-9_]+)/);
+        if (firstMentionMatch) {
+            const firstMentionUser = firstMentionMatch[1].toLowerCase();
+            // 自アカウント自身への返信（告知ツリー）でなければ、他者宛てのリプライと判定
+            if (firstMentionUser !== cleanOwnHandle) {
                 return true;
             }
         }
@@ -204,11 +207,11 @@ function isMentionOrReply(post, ownHandle = '') {
 }
 
 /**
- * 営業情報に関連する可能性が高い投稿か事前判定（API消費を7〜8割カット）
+ * 営業情報に関連する可能性が高い投稿か事前判定（API消費を抑制しつつ、営業情報を漏れなく拾う）
  * ルール管理ファイル (data/ai_guidelines.json) のキーワード設定を動的に反映
  */
 function isLikelySchedulePost(post, keywordConfig = null) {
-    // 添付画像がある場合はカレンダーや貼り紙の可能性があるため常に解析
+    // 添付画像がある場合はカレンダーや貼り紙の可能性が極めて高いため常に解析
     if (Array.isArray(post.mediaUrls) && post.mediaUrls.length > 0) {
         return true;
     }
@@ -216,38 +219,49 @@ function isLikelySchedulePost(post, keywordConfig = null) {
     const text = post.text || '';
     if (!text) return false;
 
+    const defaultKeywords = [
+        '休', 'やすみ', '休み', '臨休', '営業', '開店', '閉店', '時短', '短縮',
+        '時間', '早仕舞い', '早じまい', '昼', '夜', '部', '祝', '特別',
+        'カレンダー', 'お知らせ', '告知', '案内', '終了', '完売', '材料切れ',
+        '売り切れ', '並び', 'お並び', '宣告', 'オープン', 'ラスト', 'お休み', '休業',
+        '体調', '都合', '急遽', '仕込', 'スープ', '麺', '豚', '仕入', '工事', '点検',
+        '店主', '助手', '周年', 'つけ麺', '限定', 'テイクアウト', 'テイク', '持ち帰り', '整理券',
+        '通常', '本日', '今日', '明日', '変更'
+    ];
+
     const keywords = (keywordConfig && Array.isArray(keywordConfig.keywords))
-        ? keywordConfig.keywords
-        : [
-            '休', 'やすみ', '休み', '臨休', '営業', '開店', '閉店', '時短',
-            '時間', '早仕舞い', '早じまい', '昼', '夜', '部', '祝', '特別',
-            'カレンダー', 'お知らせ', '告知', '案内', '終了', '完売', '材料切れ',
-            '売り切れ', '並び', '宣告', 'オープン', 'ラスト', 'お休み', '休業'
-        ];
+        ? Array.from(new Set([...defaultKeywords, ...keywordConfig.keywords]))
+        : defaultKeywords;
 
     if (keywords.some(kw => text.includes(kw))) {
         return true;
     }
 
+    const defaultPeriodKeywords = [
+        '本日', '今日', '明日', '明後日', 'あさって', '今週', '来週', '今月', '来月', '今年', '来年'
+    ];
+
     const periodKeywords = (keywordConfig && Array.isArray(keywordConfig.periodKeywords))
-        ? keywordConfig.periodKeywords
-        : ['本日', '今日', '明日', '明後日', 'あさって', '今週', '来週', '今月', '来月', '今年', '来年'];
+        ? Array.from(new Set([...defaultPeriodKeywords, ...keywordConfig.periodKeywords]))
+        : defaultPeriodKeywords;
 
     if (periodKeywords.some(kw => text.includes(kw))) {
         return true;
     }
 
+    const defaultPatterns = [
+        '\\d{1,2}[:：]\\d{2}',
+        '\\d{1,2}時',
+        '\\d{1,2}[\\/／]\\d{1,2}',
+        '\\d{1,2}月\\d{1,2}日',
+        '\\d{1,2}日',
+        '[\\(（][月火水木金土日][\\)）]',
+        '[月火水木金土日]曜'
+    ];
+
     const patterns = (keywordConfig && Array.isArray(keywordConfig.patterns))
-        ? keywordConfig.patterns
-        : [
-            '\\d{1,2}[:：]\\d{2}',
-            '\\d{1,2}時',
-            '\\d{1,2}[\\/／]\\d{1,2}',
-            '\\d{1,2}月\\d{1,2}日',
-            '\\d{1,2}日',
-            '[\\(（][月火水木金土日][\\)）]',
-            '[月火水木金土日]曜'
-        ];
+        ? Array.from(new Set([...defaultPatterns, ...keywordConfig.patterns]))
+        : defaultPatterns;
 
     for (const pat of patterns) {
         try {
@@ -259,17 +273,48 @@ function isLikelySchedulePost(post, keywordConfig = null) {
 }
 
 /**
- * Xの直近投稿を取得（Yahoo!リアルタイム検索優先、失敗時にSyndication APIへフォールバック）
+ * Xの直近投稿を取得（Yahoo!リアルタイム検索 と Syndication API のハイブリッド結合）
+ * 2系統を同時に照会して結合することで、取りこぼしや取得漏れを完全に排除
  */
 async function fetchXRecentPosts(screenName) {
-    // 1. Yahoo!リアルタイム検索（データセンターIP遮断・429回避）
-    const yahooPosts = await fetchXFromYahooRealtime(screenName);
-    if (yahooPosts !== null) {
-        return yahooPosts;
+    if (!screenName) return [];
+
+    const [yahooPosts, syndicationPosts] = await Promise.all([
+        fetchXFromYahooRealtime(screenName).catch(() => null),
+        fetchXFromSyndication(screenName).catch(() => [])
+    ]);
+
+    const postMap = new Map();
+
+    // 1. Syndication API の投稿を追加
+    if (Array.isArray(syndicationPosts)) {
+        syndicationPosts.forEach(p => {
+            if (p && p.postId) postMap.set(p.postId, p);
+        });
     }
 
-    // 2. フォールバック
-    return await fetchXFromSyndication(screenName);
+    // 2. Yahoo!リアルタイム検索 の投稿を追加・マージ（相互補完）
+    if (Array.isArray(yahooPosts)) {
+        yahooPosts.forEach(p => {
+            if (!p || !p.postId) return;
+            if (postMap.has(p.postId)) {
+                const existing = postMap.get(p.postId);
+                // 画像URLがSyndication側に無ければYahoo側から補完
+                if ((!existing.mediaUrls || existing.mediaUrls.length === 0) && (p.mediaUrls && p.mediaUrls.length > 0)) {
+                    existing.mediaUrls = p.mediaUrls;
+                }
+                // 本文がYahoo側の方が長い場合（省略解除等）は補完
+                if ((p.text || '').length > (existing.text || '').length) {
+                    existing.text = p.text;
+                }
+            } else {
+                postMap.set(p.postId, p);
+            }
+        });
+    }
+
+    // 投稿日時の新しい順にソートして返却
+    return Array.from(postMap.values()).sort((a, b) => new Date(b.postedAt).getTime() - new Date(a.postedAt).getTime());
 }
 
 /**
@@ -340,12 +385,12 @@ async function runCrawler() {
             posts.push(...xPosts);
         }
 
-        // 新規かつ直近48時間以内の投稿のみをフィルタリング
-        const twoDaysAgo = Date.now() - (48 * 60 * 60 * 1000);
+        // 新規かつ直近7日間（168時間）以内の未処理投稿をフィルタリング（数日前のお知らせやカレンダーも漏れなく網羅）
+        const sevenDaysAgo = Date.now() - (7 * 24 * 60 * 60 * 1000);
         const newPosts = posts.filter(p => {
             if (processedSet.has(p.postId)) return false;
             const postTime = new Date(p.postedAt).getTime();
-            return postTime >= twoDaysAgo;
+            return isNaN(postTime) || postTime >= sevenDaysAgo;
         });
 
         console.log(`  -> 新規投稿: ${newPosts.length}件`);

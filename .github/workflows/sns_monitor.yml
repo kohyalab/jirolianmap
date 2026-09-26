@@ -1,14 +1,8 @@
 name: SNS Schedule Monitor (X & Instagram)
 
 on:
-#  schedule:
-#    # Cloudflare Workersから指示（repository_dispatch）をもとに実行するため、GitHub cronは停止
-#    # JST 06:00 (UTC 21:00前日)
-#    - cron: '0 21 * * *'
-#    # JST 14:00 (UTC 05:00)
-#    - cron: '0 5 * * *'
-#    # JST 22:00 (UTC 13:00)
-#    - cron: '0 13 * * *'
+  repository_dispatch:
+    types: [trigger-sns-monitor, sns-monitor]
   workflow_dispatch:
     inputs:
       force_rescan:
@@ -16,8 +10,6 @@ on:
         required: false
         default: false
         type: boolean
-  repository_dispatch:
-    types: [trigger-sns-monitor, sns-monitor]
 
 jobs:
   crawl_and_analyze:

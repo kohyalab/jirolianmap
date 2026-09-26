@@ -73,6 +73,7 @@ class EditorApp {
             skippedCountTag: document.getElementById('skipped-count-tag'),
             historyListContainer: document.getElementById('history-list-container'),
             historyCountTag: document.getElementById('history-count-tag'),
+            pendingSortSelect: document.getElementById('pending-sort-select'),
             aiRulesModal: document.getElementById('ai-rules-modal'),
             aiRulesList: document.getElementById('ai-rules-list'),
             aiRulesRawJson: document.getElementById('ai-rules-raw-json'),
@@ -82,6 +83,10 @@ class EditorApp {
         this.pendingUpdates = [];
         this.manualAiImages = [];
         this.aiGuidelines = null;
+        this.pendingSortKey = localStorage.getItem('jiro_editor_pending_sort') || 'postedAt_desc';
+        if (this.el.pendingSortSelect) {
+            this.el.pendingSortSelect.value = this.pendingSortKey;
+        }
         this.originalShopSnapshots = new Map();
         this.draftAppliedItems = new Map();
         this.draftProcessedPostIds = new Set();
@@ -743,6 +748,16 @@ class EditorApp {
         this.el.btnGithubConfig.addEventListener('click', () => this.openGithubModal());
         this.el.btnGithubPull.addEventListener('click', () => this.pullFromGithub());
         this.el.btnGithubPush.addEventListener('click', () => this.pushToGithub());
+
+        if (this.el.pendingSortSelect) {
+            this.el.pendingSortSelect.addEventListener('change', (e) => {
+                this.pendingSortKey = e.target.value;
+                try {
+                    localStorage.setItem('jiro_editor_pending_sort', this.pendingSortKey);
+                } catch (err) {}
+                this.renderPendingList();
+            });
+        }
 
         const onLatChange = () => { this.handleLatLngInput(this.el.latInput, this.el.lngInput); this.updateSingleMapLink(); };
         const onLngChange = () => { this.handleLatLngInput(this.el.lngInput, this.el.latInput); this.updateSingleMapLink(); };
@@ -2044,6 +2059,65 @@ ${guidelinesText}
         }
     }
 
+    sortPendingItems(items) {
+        if (!Array.isArray(items)) return [];
+        const sortKey = this.pendingSortKey || 'postedAt_desc';
+        const sorted = [...items];
+
+        const getShop = (item) => {
+            return (this.shops || []).find(s => s.id === item.shopId);
+        };
+
+        const getStatusPriority = (item) => {
+            try {
+                const evalResult = this.evaluatePendingItem(item);
+                if (evalResult.isActionRequired) return 1; // 要反映
+            } catch (e) {}
+            if (item.aiStatus === 'match') return 2; // 登録済
+            if (item.aiStatus === 'daily' || item.aiStatus === 'unrelated') return 3; // 無関係
+            if (item.aiStatus === 'mention') return 4; // メンション
+            return 5;
+        };
+
+        sorted.sort((a, b) => {
+            if (sortKey === 'postedAt_asc') {
+                const timeA = new Date(a.postedAt || 0).getTime();
+                const timeB = new Date(b.postedAt || 0).getTime();
+                return timeA - timeB;
+            } else if (sortKey === 'prefecture') {
+                const shopA = getShop(a);
+                const shopB = getShop(b);
+                const prefA = parseInt(shopA?.prefCode || '99', 10);
+                const prefB = parseInt(shopB?.prefCode || '99', 10);
+                if (prefA !== prefB) return prefA - prefB;
+                const shopOrderA = (this.shops || []).findIndex(s => s.id === a.shopId);
+                const shopOrderB = (this.shops || []).findIndex(s => s.id === b.shopId);
+                if (shopOrderA !== shopOrderB) return shopOrderA - shopOrderB;
+                return new Date(b.postedAt || 0).getTime() - new Date(a.postedAt || 0).getTime();
+            } else if (sortKey === 'status') {
+                const prioA = getStatusPriority(a);
+                const prioB = getStatusPriority(b);
+                if (prioA !== prioB) return prioA - prioB;
+                return new Date(b.postedAt || 0).getTime() - new Date(a.postedAt || 0).getTime();
+            } else if (sortKey === 'shop') {
+                const shopA = getShop(a);
+                const shopB = getShop(b);
+                const nameA = shopA?.kana || shopA?.name || a.shopName || '';
+                const nameB = shopB?.kana || shopB?.name || b.shopName || '';
+                const cmp = nameA.localeCompare(nameB, 'ja');
+                if (cmp !== 0) return cmp;
+                return new Date(b.postedAt || 0).getTime() - new Date(a.postedAt || 0).getTime();
+            } else {
+                // デフォルト: postedAt_desc
+                const timeA = new Date(a.postedAt || 0).getTime();
+                const timeB = new Date(b.postedAt || 0).getTime();
+                return timeB - timeA;
+            }
+        });
+
+        return sorted;
+    }
+
     renderPendingList() {
         if (!this.el.pendingListContainer) return;
         this.el.pendingListContainer.innerHTML = '';
@@ -2072,7 +2146,11 @@ ${guidelinesText}
             }
         });
 
-        if (pendingItems.length === 0) {
+        const sortedPendingItems = this.sortPendingItems(pendingItems);
+        const sortedSkippedItems = this.sortPendingItems(skippedItems);
+        const sortedHistoryItems = this.sortPendingItems(historyItems);
+
+        if (sortedPendingItems.length === 0) {
             this.el.pendingListContainer.innerHTML = `
                 <div style="text-align: center; padding: 28px 16px; color: #888; background: #1a1a1a; border-radius: 8px; border: 1px dashed #333;">
                     <div style="font-size: 1rem; font-weight: bold; color: #ccc;">未処理の営業変更候補はありません</div>
@@ -2080,7 +2158,7 @@ ${guidelinesText}
                 </div>
             `;
         } else {
-            pendingItems.forEach(item => {
+            sortedPendingItems.forEach(item => {
                 try {
                     const card = this.createPendingCardElement(item, 'pending');
                     this.el.pendingListContainer.appendChild(card);
@@ -2092,14 +2170,14 @@ ${guidelinesText}
 
         // スキップ・除外一覧（一致・日常・メンション）の描画
         if (this.el.skippedListContainer) {
-            if (skippedItems.length === 0) {
+            if (sortedSkippedItems.length === 0) {
                 this.el.skippedListContainer.innerHTML = `
                     <div style="text-align: center; padding: 12px; color: #666; font-size: 0.78rem;">
                         除外・スキップされた投稿はありません。
                     </div>
                 `;
             } else {
-                skippedItems.forEach(item => {
+                sortedSkippedItems.forEach(item => {
                     try {
                         const card = this.createPendingCardElement(item, 'skipped');
                         this.el.skippedListContainer.appendChild(card);
@@ -2112,14 +2190,14 @@ ${guidelinesText}
 
         // 処理済み履歴リストの描画
         if (this.el.historyListContainer) {
-            if (historyItems.length === 0) {
+            if (sortedHistoryItems.length === 0) {
                 this.el.historyListContainer.innerHTML = `
                     <div style="text-align: center; padding: 12px; color: #666; font-size: 0.78rem;">
                         処理済みの履歴はありません。
                     </div>
                 `;
             } else {
-                historyItems.forEach(item => {
+                sortedHistoryItems.forEach(item => {
                     try {
                         const card = this.createPendingCardElement(item, 'history');
                         this.el.historyListContainer.appendChild(card);
