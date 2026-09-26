@@ -1,0 +1,17 @@
+name = "jirolianmap-scheduler"
+main = "worker.js"
+compatibility_date = "2024-09-01"
+
+# 定期実行トリガー (Cron Triggers)
+# - 毎時0分、30分: SNS巡回 & AI営業解析 (sns-monitor)
+# - 毎日 JST 07:00 (UTC 22:00): 定期X自動投稿 (daily-post)
+[triggers]
+crons = [
+  "0,30 * * * *",
+  "0 22 * * *"
+]
+
+# 環境変数 (wrangler secret put GITHUB_PAT で秘密情報を登録してください)
+[vars]
+GITHUB_OWNER = "kohyalab"
+GITHUB_REPO = "jirolianmap"

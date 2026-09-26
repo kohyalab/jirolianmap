@@ -334,6 +334,18 @@
         <div style="font-size: 0.78rem; color: #888; margin-top: 4px;">公式SNSから自動収集・AI解析された営業情報です。内容を確認し、「反映」で臨時設定フォームに流し込むか、「スキップ」してください。</div>
     </div>
 
+    <!-- 並べ替えツールバー -->
+    <div style="display: flex; align-items: center; justify-content: flex-end; margin-bottom: 12px; gap: 8px;">
+        <label for="pending-sort-select" style="font-size: 0.78rem; color: #888;">並べ替え:</label>
+        <select id="pending-sort-select" style="background: #222; color: #eee; border: 1px solid #444; border-radius: 4px; padding: 4px 8px; font-size: 0.78rem; cursor: pointer; outline: none;">
+            <option value="postedAt_desc">投稿日時が新しい順</option>
+            <option value="postedAt_asc">投稿日時が古い順</option>
+            <option value="prefecture">都道府県順 (北から順)</option>
+            <option value="status">ステータス順 (要反映優先)</option>
+            <option value="shop">店舗名順 (五十音順)</option>
+        </select>
+    </div>
+
     <!-- SNS提案カード一覧コンテナ -->
     <div id="pending-list-container" style="display: flex; flex-direction: column; gap: 10px;">
         <!-- JSで動的生成 -->
