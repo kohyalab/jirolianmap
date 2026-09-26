@@ -966,5 +966,220 @@
     "processedAt": "2026-09-22T18:09:08.492Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_kameido_20260926_0_2103810547561234661",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2103810547561234661",
+    "postedAt": "2026-09-26T11:34:56.000Z",
+    "postText": "只今並びの方までで本日の営業は終了です。申し訳ありません",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-26",
+      "endDate": "2026-09-26",
+      "hours": [
+        [
+          11,
+          14.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_senjuohashi_20260926_0_2103750799776240055",
+    "shopId": "senjuohashi",
+    "shopName": "千住大橋駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjujirou26/status/2103750799776240055",
+    "postedAt": "2026-09-26T07:37:31.000Z",
+    "postText": "大変申し訳御座いませんが本日の販売は終了いたしました！  お持ち帰りして頂いた方へ！  脂の袋は立てて湯煎をし♨︎ 麺を茹でよーく湯切りをした熱熱の麺によーく混ぜ混ぜしてお召し上がり下さい🍜 （麺の茹で加減はお好みで！） https://t.co/AjtM2m0bEL",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-MeJiC8SKZ3kc1MiUxOkn5bcYx3YWp2V3SAn62QujBU8cygkOa5nJvXga4cAYYcjSZ5AykEFSOASvZJ-awAFPaqF3R66CkxPYi4wz-yy-Dy98N7xjswMpPrPTKW53nUi_e5nZrpgQTFZqfymeY2jn3w=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-26",
+      "endDate": "2026-09-26",
+      "hours": [
+        [
+          10.5,
+          16.616666666666667
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_sagamiohno_20260927_0_2103750528798965771",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2103750528798965771",
+    "postedAt": "2026-09-26T07:36:26.000Z",
+    "postText": "明日 ◇9/27（日） 《千秋楽》 10:00から〜15:00 ご来店ご到着お並びの お客様まで営業致します。  →限定20 ［湯豆腐のタレのラーメン］※うちのスープと麺にバッチリ👌合ってます！しょっぱ美味い😋クセになりそうー🍜  どうぞー♪ https://t.co/Ok6WNwB5jn",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-K-8A7PAuK5R93wYf35vfLvAIB6IQ2nr3-rKw3ZtMJWsDxmQG4BeKjbMogJFFg0Dtj4aHA2MYwvs3F_V0ADwPCI8fJfgG78Q_JMc5J_3kq6OhuByB9CJ8ogvPsAx_mVs4z1JAI2DpYpRqKgu8l2wGCQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-y-DeM1Gt1BMIAjAcOcShKvgHLkMu7a9wIy0WmFKzxfRp_GGI-uH_AyYmU9PWozHUId_fqf784dx4meOqe92lD053aZdzEauizbZ2Vornp_3NVZOW2o9XKnSpyIWDucmjo64X6lAmSWqcFAwYIO2khg=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-09-27",
+      "endDate": "2026-09-27",
+      "hours": [
+        [
+          10,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_fujisawa_20260928_0_2103638658465382796",
+    "shopId": "fujisawa",
+    "shopName": "湘南藤沢店",
+    "postSource": "x",
+    "postUrl": "https://x.com/fujirow26/status/2103638658465382796",
+    "postedAt": "2026-09-26T00:11:54.000Z",
+    "postText": "おはようございます。  9月26日(土)  青海苔しょっぱ豚🐷 にんにくガッチリ🧄崩し豚、豚カス醤油、1番スープ、生姜🫚その他色々🔥  特製ぽん酢冷しゃぶ🌈  とり野菜みそ葱生姜🫚  9月28.29.30日 夏休み  つけ麺27日終了  本日もよろしくお願いいたします。 https://t.co/R8vqGBe3cv",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-tkPs_VOl3NwKVD7UkrP5bc-NJYB-CoKBFtBIr4Ug3qGBGYDABALkqAL59hf_HTuz96zUZ5VbbsxKzA8wPTJx5h9wqceehnE51ed1YTthEPFbt5p8axxZFbXkGHZiJJvmk9EFQiLFjPXTk_AhS-3ZUg=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-09-28",
+      "endDate": "2026-09-30",
+      "hours": [],
+      "reason": "夏休み",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 夏休み"
+  },
+  {
+    "id": "sns_post_sendai2_20260926_0_2103718004672594109",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2103718004672594109",
+    "postedAt": "2026-09-26T05:27:12.000Z",
+    "postText": "列だいぶ早めに切れたのでよろしかったらどうぞー！！ https://t.co/g5gPwkgVT7",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-tqvt2Jlf5TufB8r8dS2ixLkQnRq8wSPFwzUixNxiuMTa8nsTOlyUSI4Y0pp-5nHRl5CG4TsRkB0Dr6qCtLI2cdAT5qCcxqq8-CjmCsXJ_vG3cb8rT1VwBzRtOe1d9nrAWc6Fed3w66QY2FyO7FzXkA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-7HPjkuyRiifTi4G7NqhdCx2QuRBq9G1SketS9l_LmHlYEhGWhSfuxfG0FLQ-jkKJin2cJ0iGfofh_fhpirL15Kh9T2_AfYRJN4ql5bB2JniVNyD4z5k4zQmvA_S89u4toYSqOnKqw-jjnVe7r1CCWg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ZbbnNUNmBLiMxrgsMSqG1LfFXQrFDhYPlAoUxvCT4LA84tIIVGe8r0_WYPJxE-fqV5u37Sism0fokVp-pz4a05c99r2w0WRUybNpmmENaPEdO0FQV6e3-CKi3Erp8sc1I1j7lKTdKrEisNVDz0Dv1Q==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ZSFJ6Vq7mPT6dPANpSs44BPLwDxj6I8BwHQVWl0eP_icUai6TwlsAP7nCO0rFh6ZYOTSA20rCQNRraMqpplIk-7-UjBKDvsOebmse08k1spfNK8bRYbaM30vtfPPmrAIf5rz_XncKIrfl0wU8pXAUg=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-26",
+      "endDate": "2026-09-26",
+      "hours": [
+        [
+          11,
+          14.45
+        ],
+        [
+          17,
+          21
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_daily_sendai2_2103665109180829944",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2103665109180829944",
+    "postedAt": "2026-09-26T01:57:00.000Z",
+    "postText": "指輪の忘れ物です！ お心当たりのある方はDMください！！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-26",
+      "endDate": "2026-09-26",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_daily_sendai2_2103658501813964967",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2103658501813964967",
+    "postedAt": "2026-09-26T01:30:45.000Z",
+    "postText": "西公園で餃子フェスだと！！！！ ウチからの餃子フェス、餃子フェスからのウチの方の御来店お待ちしております！！(腹パン)  https://t.co/dWH7076HZP",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-26",
+      "endDate": "2026-09-26",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_nagoyaosone_20260926_0_2103703226227060910",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2103703226227060910",
+    "postedAt": "2026-09-26T04:28:28.000Z",
+    "postText": "おはようございます。 ラーメン二郎名古屋大曽根店です。 お足元悪い中お越し頂き誠にありがとうございました。 本日の営業は只今のお時間、お並びを持ちまして終了とさせていただきます。 よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-26",
+      "endDate": "2026-09-26",
+      "hours": [
+        [
+          10,
+          13.466666666666667
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
