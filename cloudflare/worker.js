@@ -17,6 +17,7 @@ const SCHEDULED_JOBS = [
         description: 'ラーメン二郎直系各店舗の公式Xを巡回し、Geminiで営業変更を解析してsns_posts.jsonを更新',
         cron: '0,30 * * * *', // 毎時0分, 30分
         eventType: 'trigger-sns-monitor',
+        workflowFile: 'sns_monitor.yml',
         defaultPayload: { ref: 'main' },
         enabled: true
     },
@@ -26,44 +27,90 @@ const SCHEDULED_JOBS = [
         description: '当日の直系各店舗の営業状況・臨時営業情報を画像化して公式Xへ自動ポスト',
         cron: '0 22 * * *', // 毎日 JST 07:00 (UTC 22:00)
         eventType: 'trigger-daily-post',
+        workflowFile: 'daily_post.yml',
         defaultPayload: { environment: 'prod' },
         enabled: true
     }
 ];
 
 // ==============================================================================
-// 2. 共通ヘルパー: GitHub Repository Dispatch API 呼び出し
+// 2. 共通ヘルパー: GitHub API 呼び出し (repository_dispatch & workflow_dispatch 自動フォールバック)
 // ==============================================================================
-async function dispatchGitHubAction(env, eventType, clientPayload = {}) {
+async function dispatchGitHubAction(env, job, clientPayload = {}) {
     const owner = env.GITHUB_OWNER || 'kohyalab';
     const repo = env.GITHUB_REPO || 'jirolianmap';
     const token = env.GH_PAT || env.GITHUB_PAT || env.GITHUB_TOKEN;
 
     if (!token) {
-        throw new Error('GH_PAT (または GITHUB_PAT) が環境変数に設定されていません。');
+        throw new Error('GH_PAT (または GITHUB_PAT) が環境変数に設定されていません。CloudflareのSettings > Variables and Secrets で GH_PAT を登録してください。');
     }
 
-    const url = `https://api.github.com/repos/${owner}/${repo}/dispatches`;
-    const response = await fetch(url, {
+    const headers = {
+        'Accept': 'application/vnd.github.v3+json',
+        'Authorization': `Bearer ${token}`,
+        'User-Agent': 'Cloudflare-Worker-JiroScheduler/1.0',
+        'Content-Type': 'application/json'
+    };
+
+    const eventType = job.eventType;
+    const workflowFile = job.workflowFile;
+
+    // 1. まず repository_dispatch API を試行
+    const dispatchUrl = `https://api.github.com/repos/${owner}/${repo}/dispatches`;
+    const response = await fetch(dispatchUrl, {
         method: 'POST',
-        headers: {
-            'Accept': 'application/vnd.github.v3+json',
-            'Authorization': `Bearer ${token}`,
-            'User-Agent': 'Cloudflare-Worker-JiroScheduler/1.0',
-            'Content-Type': 'application/json'
-        },
+        headers,
         body: JSON.stringify({
             event_type: eventType,
             client_payload: clientPayload
         })
     });
 
-    if (!response.ok) {
-        const errorText = await response.text();
-        throw new Error(`GitHub API Dispatch失敗: HTTP ${response.status} ${response.statusText} - ${errorText}`);
+    if (response.ok) {
+        return { success: true, method: 'repository_dispatch', status: response.status, owner, repo, eventType, clientPayload };
     }
 
-    return { success: true, status: response.status, owner, repo, eventType, clientPayload };
+    const errorText = await response.text();
+
+    // 2. 403 Forbidden（PAT権限制限等）の場合、workflow_dispatch API にフォールバック試行
+    if ((response.status === 403 || response.status === 404) && workflowFile) {
+        console.warn(`[WARN] repository_dispatch failed (HTTP ${response.status}). Trying workflow_dispatch for ${workflowFile}...`);
+        const workflowUrl = `https://api.github.com/repos/${owner}/${repo}/actions/workflows/${workflowFile}/dispatches`;
+
+        const workflowPayload = {
+            ref: clientPayload.ref || 'main',
+            inputs: {}
+        };
+        if (clientPayload.environment) {
+            workflowPayload.inputs.environment = clientPayload.environment;
+        }
+        if (clientPayload.force_rescan) {
+            workflowPayload.inputs.force_rescan = String(clientPayload.force_rescan);
+        }
+
+        const wfResponse = await fetch(workflowUrl, {
+            method: 'POST',
+            headers,
+            body: JSON.stringify(workflowPayload)
+        });
+
+        if (wfResponse.ok) {
+            return { success: true, method: 'workflow_dispatch', status: wfResponse.status, owner, repo, workflowFile, payload: workflowPayload };
+        }
+
+        const wfErrorText = await wfResponse.text();
+        throw new Error(
+            `GitHub API呼び出し失敗 (HTTP 403 Forbidden): GitHub Personal Access Token (GH_PAT) の権限が不足しています。\n` +
+            `【エラー詳細】\n` +
+            `- repository_dispatch: ${errorText}\n` +
+            `- workflow_dispatch: ${wfErrorText}\n\n` +
+            `【解決策 (GitHubのトークン設定)】\n` +
+            `・Fine-grained PATをご利用の場合: 対象リポジトリ (${owner}/${repo}) に対し、Permissions > Repository permissions で「Contents: Read and write」および「Actions: Read and write」の両方を付与してください。\n` +
+            `・Classic PATをご利用の場合: スコープで「repo」にチェックを入れて再生成してください。`
+        );
+    }
+
+    throw new Error(`GitHub API Dispatch失敗: HTTP ${response.status} ${response.statusText} - ${errorText}`);
 }
 
 // ==============================================================================
@@ -143,7 +190,7 @@ export default {
         for (const job of jobsToRun) {
             try {
                 console.log(`[JOB START] ジョブ "${job.name}" (${job.id}) を実行中... イベント: ${job.eventType}`);
-                const res = await dispatchGitHubAction(env, job.eventType, job.defaultPayload);
+                const res = await dispatchGitHubAction(env, job, job.defaultPayload);
                 results.push({ id: job.id, success: true, res });
                 console.log(`[JOB SUCCESS] ジョブ "${job.name}" 完了`);
             } catch (err) {
@@ -230,7 +277,7 @@ export default {
                 }
 
                 console.log(`[MANUAL TRIGGER] ジョブ "${job.name}" (${job.id}) を手動実行します`);
-                const result = await dispatchGitHubAction(env, job.eventType, customPayload);
+                const result = await dispatchGitHubAction(env, job, customPayload);
                 return new Response(JSON.stringify({
                     success: true,
                     message: `ジョブ "${job.name}" をトリガーしました`,
