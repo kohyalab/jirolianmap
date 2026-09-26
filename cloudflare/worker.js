@@ -116,13 +116,23 @@ export default {
         console.log(`[SCHEDULED] Cron Trigger fired at ${now.toISOString()} with cron: "${triggeredCron}"`);
 
         // 実行すべきジョブを抽出
-        const jobsToRun = SCHEDULED_JOBS.filter(job => {
+        let jobsToRun = SCHEDULED_JOBS.filter(job => {
             if (!job.enabled) return false;
             // 1. Cloudflareから渡されたcron文字列と完全一致する場合
             if (triggeredCron && job.cron === triggeredCron) return true;
             // 2. cron文字列が異なる場合でも現在時刻とcron式が一致する場合
             return matchesCron(job.cron, now);
         });
+
+        // テスト実行への配慮: Cloudflareダッシュボードの「Test」ボタンや /__scheduled 手動呼び出しで
+        // cron が空文字 "" かつ 定時外に手動実行された場合は、テスト対象として sns-monitor を実行
+        if (jobsToRun.length === 0 && (!triggeredCron || triggeredCron === '')) {
+            console.log(`[SCHEDULED] テスト実行（cron未指定かつ定時外）と判定したため、テスト対象として sns-monitor を実行します。`);
+            const defaultTestJob = SCHEDULED_JOBS.find(j => j.id === 'sns-monitor');
+            if (defaultTestJob) {
+                jobsToRun = [defaultTestJob];
+            }
+        }
 
         if (jobsToRun.length === 0) {
             console.log(`[SCHEDULED] 該当する実行対象ジョブはありませんでした (cron: "${triggeredCron}")`);
@@ -186,7 +196,7 @@ export default {
             }, null, 2), { headers: corsHeaders });
         }
 
-        // 2. 手動トリガーエンドポイント (POST /trigger/:jobId)
+        // 2. 手動トリガーエンドポイント (/trigger/:jobId) - ブラウザからのGET・POST両対応
         if (path.startsWith('/trigger/')) {
             const jobId = path.replace('/trigger/', '').trim();
             const job = SCHEDULED_JOBS.find(j => j.id === jobId);
@@ -198,7 +208,7 @@ export default {
                 }), { status: 404, headers: corsHeaders });
             }
 
-            // 簡易セキュリティトークン認証（環境変数 ADMIN_SECRET が設定されている場合）
+            // 簡易セキュリティトークン認証（環境変数 ADMIN_SECRET が設定されている場合のみチェック）
             if (env.ADMIN_SECRET) {
                 const authHeader = request.headers.get('Authorization') || '';
                 const queryToken = url.searchParams.get('token');
