@@ -1486,5 +1486,37 @@
     "processedAt": "2026-09-26T16:35:58.106Z",
     "aiStatus": "match",
     "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_yaen2_20260927_0_2103894722200982007",
+    "shopId": "yaen2",
+    "shopName": "八王子野猿街道店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/Jiro_Yaenkaido2/status/2103894722200982007",
+    "postedAt": "2026-09-26T17:09:24.000Z",
+    "postText": "9月27日(日) 朝7:30～15:00 ⭐テイクアウト、鍋二郎あります ⚠️駐車場待ち出来ません ⚠️駐車場満車時コインパーキング ⚠️店舗近隣タバコ禁止です https://t.co/9kePQcJXoj",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-rIx4WR1r12RPYdK27jzmUowgiaJgW8-IdxzaB3ihA9ivYSQjtIWyXqMyoM1YmHJ3BL5nlHQRBFQYjTUobX5eHb4HGfcQCc6NVUQ7E1kbkMIoV1Qfzf5Os102o46-zlsbqNqiDv8_5PhWzIffAg_k9Q==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-RuYGpTESwJeu4wLnImKbcF-NQexVA5fF9KsPCX_m71wypi1R23uMIsQrzmNyjrjp7ObbyndjP06293qNMjU_heorEJkmtniGbLKTZGXCSsKw4zsS23Yzuo8GUIx0NYbWIU3d1MobBlVecuFWGZfTaw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-sJb7LuLDNC7nE83dRgdF7XxMgn7Om5IRsF40gwWATeDE7OIELUlgc06SMf3qWqfFbuAzbTq2ms24_VcZwwYowBAQb6X-vul5RvJM6Lv33Lu0qrftviQ6mKk0eZfG6lXDxM6BUvjn-XYme9yvY9wnJQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-dLJVj6PYb8r2lwPxY0QptrriJ0Y_E3Ez5KLgpC0bgnjqfO1oeAfdghmSzQ2YALm7KPVAoIWTcyVgjggLt7hFL0WZYRZuhxvpqykWXF56IW4mxELfTqYKhoh8YKIL3LGOORi91_p7OkUVmRErDgij-A=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-09-27",
+      "endDate": "2026-09-27",
+      "hours": [
+        [
+          7.5,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   }
 ]
