@@ -1244,5 +1244,247 @@
     "processedAt": null,
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_shinagawa_20260926_0_2103640347100561847",
+    "shopId": "shinagawa",
+    "shopName": "品川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/shinagawa26/status/2103640347100561847",
+    "postedAt": "2026-09-26T00:18:37.000Z",
+    "postText": "本日9月26日土曜日は都合により休みとなります ご迷惑をおかけしますが宜しくお願い致します",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-09-26",
+      "endDate": "2026-09-26",
+      "hours": [],
+      "reason": "都合により",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 都合により"
+  },
+  {
+    "id": "sns_post_kaminoge_20260926_0_2103715381466779676",
+    "shopId": "kaminoge",
+    "shopName": "上野毛店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kaminogeJiro/status/2103715381466779676",
+    "postedAt": "2026-09-26T05:16:46.000Z",
+    "postText": "ただ今の時間で麺切れ終了致します",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-26",
+      "endDate": "2026-09-26",
+      "hours": [
+        [
+          11,
+          14.266666666666667
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_jimbocho_20260926_0_2103743041978953752",
+    "shopId": "jimbocho",
+    "shopName": "神田神保町店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jbc_ramen_jiro/status/2103743041978953752",
+    "postedAt": "2026-09-26T07:06:41.000Z",
+    "postText": "ただ今お並びのお客様までで、本日の営業終了となります。よろしくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-26",
+      "endDate": "2026-09-26",
+      "hours": [
+        [
+          16.1,
+          16.1
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_senjuohashi_20260926_0_2103643247096791374",
+    "shopId": "senjuohashi",
+    "shopName": "千住大橋駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjujirou26/status/2103643247096791374",
+    "postedAt": "2026-09-26T00:30:08.000Z",
+    "postText": "本日は15時30分前よりテイクアウト販売のみの営業となりますのでご注意をお願いいたします！  フォロワー限定🐖 味噌脂蕎麦🐖魚粉油そば🐖 生姜醤油脂🐖1010カレー脂🐖 ✨復刻✨BP塩油そば🐖豚１本🐖 https://t.co/meq2FEgHrI",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-JJXqxmpDbIpBdnmlxqjEYdKpirwg90sN3KpcozU05AIdUxM0X290IMMkXIg0nBPU9VdyFaYknK6mE6qMzOUpFOPc8lHUvvMbZpA_0-sDqbm8OhaXgYjPzk-DReq_YGY-Z8OgCRkpdI1a2ksUFx1oHw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-4HeZsPDOgqs6lo1_n7f4tQ3B2FeCJrocnTJPLRR7IE6-aNqS6kJJtGereBWnjvrizPU0D4AsigGOtLnjOYVrMnP1FEGV-k3fGZJabAI138C8FOpyjzOxEGPEMqzkB9xNxMgF0FEPDctDb7ryySezOQ=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-09-26",
+      "endDate": "2026-09-26",
+      "hours": [
+        [
+          10.5,
+          15.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_kawagoe_20260926_0_2103652486234132804",
+    "shopId": "kawagoe",
+    "shopName": "川越店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kwge26/status/2103652486234132804",
+    "postedAt": "2026-09-26T01:06:51.000Z",
+    "postText": "おはようございます！ 本日通し営業です🌧 ○11:00~20:00  🍜持ち帰りあります！  無料トッピング｢紅生姜｣あります☺️ トッピング時に「アレ」で！  よろしくお願いします🙇‍♂️ https://t.co/uXYDQdil9Z",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-W3HDIUIqNZaHTabZ6T1ID-5V2ZIa5Feyo7J4LcuWLeKFZjydXBjRB9YGKAQXljtDUEXlZcgko8YQLD4HyrRh2l7_uaZjKSxeIiiNlYCpNfkif5OPd7F5RkV_STTU_KlEH6OGkRu3-nP9S4eyEsig_Q=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-26",
+      "endDate": "2026-09-26",
+      "hours": [
+        [
+          11,
+          20
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_koshigaya_20260926_0_2103592491236962662",
+    "shopId": "koshigaya",
+    "shopName": "越谷店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ksgy26/status/2103592491236962662",
+    "postedAt": "2026-09-25T21:08:27.000Z",
+    "postText": "おはようございます！ ラーメン二郎越谷店です！  9月26日(土)　臨時営業 10:00〜14:00L0 ご来店お待ちしております🙇  10月2日(金) お休みします。 よろしくお願いします！ https://t.co/MdLYEBhngx",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-irnDYfwxIHub-WJLUxSWRLtX-RRBUQngeXftBQCVppFkz-56Ya0Mt37onC9inooKTikhf1xmlozXn5slII_1ENHFAa09X5wmx_Hk_bBsE2TXEXO55ssTrVvHut96toOLX2sMIZVeZRr5Vcx1mb9k1w=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-09-26",
+      "endDate": "2026-09-26",
+      "hours": [
+        [
+          10,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_koshigaya_20261002_1_2103592491236962662",
+    "shopId": "koshigaya",
+    "shopName": "越谷店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ksgy26/status/2103592491236962662",
+    "postedAt": "2026-09-25T21:08:27.000Z",
+    "postText": "おはようございます！ ラーメン二郎越谷店です！  9月26日(土)　臨時営業 10:00〜14:00L0 ご来店お待ちしております🙇  10月2日(金) お休みします。 よろしくお願いします！ https://t.co/MdLYEBhngx",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-irnDYfwxIHub-WJLUxSWRLtX-RRBUQngeXftBQCVppFkz-56Ya0Mt37onC9inooKTikhf1xmlozXn5slII_1ENHFAa09X5wmx_Hk_bBsE2TXEXO55ssTrVvHut96toOLX2sMIZVeZRr5Vcx1mb9k1w=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-02",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_asakurakaido_20260926_0_2103677486269927748",
+    "shopId": "asakurakaido",
+    "shopName": "朝倉街道駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/r26akgd/status/2103677486269927748",
+    "postedAt": "2026-09-26T02:46:11.000Z",
+    "postText": "本日12:00-15:00営業いたします。 西鉄ストア様、西日本シティ銀行様、他店舗病院等駐車禁止 空いていても一般的なコインパーキングをご利用下さい。 グループの方は歩道を塞がずお静かにお願いします。 代表待ち、割込み、飲酒喫煙禁止 朝倉街道駅徒歩1分、天拝山駅7分",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-09-26",
+      "endDate": "2026-09-26",
+      "hours": [
+        [
+          12,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_nagoyaosone_20260926_0_2103645133732565323",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2103645133732565323",
+    "postedAt": "2026-09-26T00:37:38.000Z",
+    "postText": "おはようございます。 ラーメン二郎名古屋大曽根店です。 本日の営業時間です。 10:00〜14:00 雨予報ですので足もと、傘の忘れ物にお気をつけくださいませ。 よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-09-26",
+      "endDate": "2026-09-26",
+      "hours": [
+        [
+          10,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   }
 ]
