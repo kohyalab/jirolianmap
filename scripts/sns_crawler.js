@@ -60,7 +60,29 @@ async function fetchXFromYahooRealtime(screenName) {
         if (!match) return null;
 
         const nextData = JSON.parse(match[1]);
-        const entries = nextData?.props?.pageProps?.pageData?.timeline?.entry || [];
+        const pageData = nextData?.props?.pageProps?.pageData;
+        const rawEntries = [];
+
+        // 1. Yahoo!リアルタイム検索の「ベストポスト (bestTweet)」を最優先で追加
+        // （反響や最新性の高い最重要告知がここに格納されるため、取りこぼし防止に必須）
+        if (pageData?.bestTweet && pageData.bestTweet.id) {
+            rawEntries.push(pageData.bestTweet);
+        }
+
+        // 2. 通常のタイムライン投稿を追加
+        if (Array.isArray(pageData?.timeline?.entry)) {
+            rawEntries.push(...pageData.timeline.entry);
+        }
+
+        // ID重複を排除
+        const seenIds = new Set();
+        const entries = [];
+        for (const e of rawEntries) {
+            if (e && e.id && !seenIds.has(e.id)) {
+                seenIds.add(e.id);
+                entries.push(e);
+            }
+        }
 
         const posts = [];
         for (const entry of entries) {
