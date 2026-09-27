@@ -1695,5 +1695,41 @@
     "processedAt": null,
     "aiStatus": "match",
     "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sendai2_20260927_0_2104067249074286785",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2104067249074286785",
+    "postedAt": "2026-09-27T04:34:58.000Z",
+    "postText": "列だいぶ早めに切れたので、お昼ご飯まだの方どうぞー！！ 近くでベトナムフェスも🇻🇳やってますね！！ 是非どうぞ！！ https://t.co/BTGZN2Qmqo",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-RtuL3yR07Nx6AbIhsqDQQqDQyzBatj4kn5zhyKmNqM0PoP0BxNge8MQ1wrMigNWqJKlGv5iUP80LCNIeygut0CmsNRMAI3FS-xEqk27NqzDbHq4MN5AG8_PSgCZP8EeKAxqhP0Hlk7E9N5t1DmxfXg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-pNBn20AzrNlco8gPURTPDERiATo3GLhIECanyq5bbi4hPUCVqqq8vS_tr3SDqlaN9Bu145-Ic6ZSzNaa341a7Xgl7j0TW_Q5MunYxTwNNuLCWHr78P-w2cVMGYiF89So9QGJQJSyn5fn7eQLdjwoFg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-X8UKnOKQGDp9W6XUmFIJ_2yx5A5Xo7kFEMLT3q4wSoaV495pJrbfwkxCd-y6QUj-henHMU9L0Ql0kAgVsA5DGWLyMfnE7erzRs4FrrpXba-ZSVKiOi6xO2QvmUIZi5l7pvJln3jLZ0zgHbmofsO_oQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-dlQIU5eI0mOinyPo11jCzRMyEiJ_xcwlGAIdFQmEtRXgPlUW6PalamHEzApmvSmxOZTzwaB2zkTfzOFlYF3qggXsxZ3yX2nd8EIyEbr0VwkwiUcPb2izIFZPqKGuBFK_EoBQ5dw75o-DjJQPGuILNw=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-27",
+      "endDate": "2026-09-27",
+      "hours": [
+        [
+          11,
+          13.566666666666666
+        ],
+        [
+          17,
+          21
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
