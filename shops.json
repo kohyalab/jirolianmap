@@ -3786,6 +3786,18 @@
         "startDate": "2026-09-26",
         "endDate": "2026-09-26",
         "hours": []
+      },
+      {
+        "startDate": "2026-09-27",
+        "endDate": "2026-09-27",
+        "hours": [
+          [
+            11,
+            15
+          ]
+        ],
+        "sourceUrl": "https://x.com/26shinshindaita/status/2103976166571024461",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -6166,6 +6178,19 @@
             19.5
           ]
         ]
+      },
+      {
+        "startDate": "2026-09-27",
+        "endDate": "2026-09-27",
+        "hours": [
+          [
+            11,
+            14
+          ]
+        ],
+        "reason": "都合により",
+        "sourceUrl": "https://x.com/okinawa_jiro/status/2104011602072883393",
+        "_isAiImported": true
       }
     ],
     "holidaySpecialShifts": [
