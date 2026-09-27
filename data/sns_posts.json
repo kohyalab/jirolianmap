@@ -1900,5 +1900,191 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_sagamiohno_20260929_0_2104345467291369928",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2104345467291369928",
+    "postedAt": "2026-09-27T23:00:30.000Z",
+    "postText": "【場所休み】 力士達は千秋楽の翌日から一週間稽古無しのお休みです♪この休みが唯一稽古から解き放たれる、サイコーの一週間です♪その後、花相撲（引退相撲など）から巡業へ。九州場所へ向かって旅立ちます。力士の皆さん今場所もお疲れ様でした♪ ラーメンでも食べてゆっくりお休みください🍜笑 https://t.co/qMrwFlq452",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Cmf4d-C5_xOCTyoK5M0T8fZvf-2svQI-VZZsWkPiGpTDkNLdpxD8Feb9VUc9No5JyZX7t-LfmjTMhvJjyKjF9Z3RJlZBgeuNXDDYIornMvGx_DNADDxXovg5buP1KGt4S90NDJTcMGVWdaUAqW1ybg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-fWcolaJ9V5dP7wKKRfryWxpbAmZyr9tCXl7lZ_rc6hlhcNjB8ehZOoAicX5_KZdqkHg_rx94bCw_VnovVjS1UZMBVU9eQALcvM7ig1LpJKsceQEA2tceOkNIAzETFaMxB94Ry6o8_k-12OWx0_MFZw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-LPuGlaLwqd_klPA6xhSKEes1h1AfiZ-wMfyJoQzJNE558Og0W1p1DGD65kNoXxDf2xgKPzrV59inihdHVmbICKd7lqoYzgaMIrGadP_SeMev6paBrkBAuP0h6tL7ucdKtlhI-xGdq8QHwtyH6k5rmg=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-09-29",
+      "endDate": "2026-10-05",
+      "hours": [],
+      "reason": "力士の休養期間に伴う店舗休業",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 力士の休養期間に伴う店舗休業"
+  },
+  {
+    "id": "sns_post_sagamiohno_20260929_0_2104338990761750794",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2104338990761750794",
+    "postedAt": "2026-09-27T22:34:46.000Z",
+    "postText": "◆9/28（月）【定休日】 ◇9/29（火）［昼のみ］ ◇9/30（水）［昼夜］ ◇10/1（木）［昼のみ］ ◇10/2（金）［夜のみ］ ◇10/3（土）10→15時  ◇10/4（日）10→15時  →［ひやコロ］ 今週にて最終のご案内となります。  よろしくお願い致します。 https://t.co/kcX2WqNlbu",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-s3t5hmt2ScP_2NMLbkRnbrvs6AY17BIJtdLbj7cuWGSN6aklGfiwKIGT9JDMFrp-6_VwNiko6NlSnvVpzZ5cTsLBHh6bQa2y5lDcY3xtjkLBPBAOqX5LTJGSOxkpbunQMhPPESHq20bdR9cm2wH0sQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-9q8W4jRBK3cC3s4RcEQAlctVsPJHgZXUtnsPOPdaPBfPhocZROiWbm2h8o0bdN3h-oPeb2IfTlZ1bBY4Qy-MAMZ5lHPuhdwfPbUMTaL2nP62MQ2XDKuNtWWvinMiCXdoVuL1AqfwF3JZOp-F5PDCUw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ra069jKTyk1csUNy61VnWP2MoKvg92kbxAAw6e-lmgAJhGxD45Qcy-qnuDzedw2-jTuFBDs3XQReWsZ7Fb0xuoInvAtw-s_x6pNCpzebs011XkbpJ8bWqtjd8TIpFd2tmQfuLTJD5wNw_vGyxQAazw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-zidE4S05b2pC1yPGD2UD6EHCX6CWAtZyPsELaOpzrIqRFjoHjjeqSzxUDb8RJaJG29eKp17OmfK_LXD3XagwdC5NTrvOoRqyjh5zn8t7lh5x6IJTchQpOWe0QOL4Fdgnx3Tt3dIHE4V81V9HawhWOQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-29",
+      "endDate": "2026-09-29",
+      "hours": [
+        [
+          10.333333333333334,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261001_1_2104338990761750794",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2104338990761750794",
+    "postedAt": "2026-09-27T22:34:46.000Z",
+    "postText": "◆9/28（月）【定休日】 ◇9/29（火）［昼のみ］ ◇9/30（水）［昼夜］ ◇10/1（木）［昼のみ］ ◇10/2（金）［夜のみ］ ◇10/3（土）10→15時  ◇10/4（日）10→15時  →［ひやコロ］ 今週にて最終のご案内となります。  よろしくお願い致します。 https://t.co/kcX2WqNlbu",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-s3t5hmt2ScP_2NMLbkRnbrvs6AY17BIJtdLbj7cuWGSN6aklGfiwKIGT9JDMFrp-6_VwNiko6NlSnvVpzZ5cTsLBHh6bQa2y5lDcY3xtjkLBPBAOqX5LTJGSOxkpbunQMhPPESHq20bdR9cm2wH0sQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-9q8W4jRBK3cC3s4RcEQAlctVsPJHgZXUtnsPOPdaPBfPhocZROiWbm2h8o0bdN3h-oPeb2IfTlZ1bBY4Qy-MAMZ5lHPuhdwfPbUMTaL2nP62MQ2XDKuNtWWvinMiCXdoVuL1AqfwF3JZOp-F5PDCUw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ra069jKTyk1csUNy61VnWP2MoKvg92kbxAAw6e-lmgAJhGxD45Qcy-qnuDzedw2-jTuFBDs3XQReWsZ7Fb0xuoInvAtw-s_x6pNCpzebs011XkbpJ8bWqtjd8TIpFd2tmQfuLTJD5wNw_vGyxQAazw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-zidE4S05b2pC1yPGD2UD6EHCX6CWAtZyPsELaOpzrIqRFjoHjjeqSzxUDb8RJaJG29eKp17OmfK_LXD3XagwdC5NTrvOoRqyjh5zn8t7lh5x6IJTchQpOWe0QOL4Fdgnx3Tt3dIHE4V81V9HawhWOQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-01",
+      "hours": [
+        [
+          10.333333333333334,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261002_2_2104338990761750794",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2104338990761750794",
+    "postedAt": "2026-09-27T22:34:46.000Z",
+    "postText": "◆9/28（月）【定休日】 ◇9/29（火）［昼のみ］ ◇9/30（水）［昼夜］ ◇10/1（木）［昼のみ］ ◇10/2（金）［夜のみ］ ◇10/3（土）10→15時  ◇10/4（日）10→15時  →［ひやコロ］ 今週にて最終のご案内となります。  よろしくお願い致します。 https://t.co/kcX2WqNlbu",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-s3t5hmt2ScP_2NMLbkRnbrvs6AY17BIJtdLbj7cuWGSN6aklGfiwKIGT9JDMFrp-6_VwNiko6NlSnvVpzZ5cTsLBHh6bQa2y5lDcY3xtjkLBPBAOqX5LTJGSOxkpbunQMhPPESHq20bdR9cm2wH0sQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-9q8W4jRBK3cC3s4RcEQAlctVsPJHgZXUtnsPOPdaPBfPhocZROiWbm2h8o0bdN3h-oPeb2IfTlZ1bBY4Qy-MAMZ5lHPuhdwfPbUMTaL2nP62MQ2XDKuNtWWvinMiCXdoVuL1AqfwF3JZOp-F5PDCUw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ra069jKTyk1csUNy61VnWP2MoKvg92kbxAAw6e-lmgAJhGxD45Qcy-qnuDzedw2-jTuFBDs3XQReWsZ7Fb0xuoInvAtw-s_x6pNCpzebs011XkbpJ8bWqtjd8TIpFd2tmQfuLTJD5wNw_vGyxQAazw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-zidE4S05b2pC1yPGD2UD6EHCX6CWAtZyPsELaOpzrIqRFjoHjjeqSzxUDb8RJaJG29eKp17OmfK_LXD3XagwdC5NTrvOoRqyjh5zn8t7lh5x6IJTchQpOWe0QOL4Fdgnx3Tt3dIHE4V81V9HawhWOQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-02",
+      "hours": [
+        [
+          17,
+          20.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261003_3_2104338990761750794",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2104338990761750794",
+    "postedAt": "2026-09-27T22:34:46.000Z",
+    "postText": "◆9/28（月）【定休日】 ◇9/29（火）［昼のみ］ ◇9/30（水）［昼夜］ ◇10/1（木）［昼のみ］ ◇10/2（金）［夜のみ］ ◇10/3（土）10→15時  ◇10/4（日）10→15時  →［ひやコロ］ 今週にて最終のご案内となります。  よろしくお願い致します。 https://t.co/kcX2WqNlbu",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-s3t5hmt2ScP_2NMLbkRnbrvs6AY17BIJtdLbj7cuWGSN6aklGfiwKIGT9JDMFrp-6_VwNiko6NlSnvVpzZ5cTsLBHh6bQa2y5lDcY3xtjkLBPBAOqX5LTJGSOxkpbunQMhPPESHq20bdR9cm2wH0sQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-9q8W4jRBK3cC3s4RcEQAlctVsPJHgZXUtnsPOPdaPBfPhocZROiWbm2h8o0bdN3h-oPeb2IfTlZ1bBY4Qy-MAMZ5lHPuhdwfPbUMTaL2nP62MQ2XDKuNtWWvinMiCXdoVuL1AqfwF3JZOp-F5PDCUw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ra069jKTyk1csUNy61VnWP2MoKvg92kbxAAw6e-lmgAJhGxD45Qcy-qnuDzedw2-jTuFBDs3XQReWsZ7Fb0xuoInvAtw-s_x6pNCpzebs011XkbpJ8bWqtjd8TIpFd2tmQfuLTJD5wNw_vGyxQAazw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-zidE4S05b2pC1yPGD2UD6EHCX6CWAtZyPsELaOpzrIqRFjoHjjeqSzxUDb8RJaJG29eKp17OmfK_LXD3XagwdC5NTrvOoRqyjh5zn8t7lh5x6IJTchQpOWe0QOL4Fdgnx3Tt3dIHE4V81V9HawhWOQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-03",
+      "endDate": "2026-10-03",
+      "hours": [
+        [
+          10,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261004_4_2104338990761750794",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2104338990761750794",
+    "postedAt": "2026-09-27T22:34:46.000Z",
+    "postText": "◆9/28（月）【定休日】 ◇9/29（火）［昼のみ］ ◇9/30（水）［昼夜］ ◇10/1（木）［昼のみ］ ◇10/2（金）［夜のみ］ ◇10/3（土）10→15時  ◇10/4（日）10→15時  →［ひやコロ］ 今週にて最終のご案内となります。  よろしくお願い致します。 https://t.co/kcX2WqNlbu",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-s3t5hmt2ScP_2NMLbkRnbrvs6AY17BIJtdLbj7cuWGSN6aklGfiwKIGT9JDMFrp-6_VwNiko6NlSnvVpzZ5cTsLBHh6bQa2y5lDcY3xtjkLBPBAOqX5LTJGSOxkpbunQMhPPESHq20bdR9cm2wH0sQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-9q8W4jRBK3cC3s4RcEQAlctVsPJHgZXUtnsPOPdaPBfPhocZROiWbm2h8o0bdN3h-oPeb2IfTlZ1bBY4Qy-MAMZ5lHPuhdwfPbUMTaL2nP62MQ2XDKuNtWWvinMiCXdoVuL1AqfwF3JZOp-F5PDCUw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ra069jKTyk1csUNy61VnWP2MoKvg92kbxAAw6e-lmgAJhGxD45Qcy-qnuDzedw2-jTuFBDs3XQReWsZ7Fb0xuoInvAtw-s_x6pNCpzebs011XkbpJ8bWqtjd8TIpFd2tmQfuLTJD5wNw_vGyxQAazw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-zidE4S05b2pC1yPGD2UD6EHCX6CWAtZyPsELaOpzrIqRFjoHjjeqSzxUDb8RJaJG29eKp17OmfK_LXD3XagwdC5NTrvOoRqyjh5zn8t7lh5x6IJTchQpOWe0QOL4Fdgnx3Tt3dIHE4V81V9HawhWOQ=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-10-04",
+      "endDate": "2026-10-04",
+      "hours": [
+        [
+          10,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   }
 ]
