@@ -1775,10 +1775,10 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
     "aiStatus": "schedule_change",
-    "aiReason": "営業時間の変更を検出"
+    "aiReason": "営業時間の変更を検出",
+    "processedAt": "2026-09-27T08:11:01.933Z"
   },
   {
     "id": "sns_post_shndaita_20260929_1_2104090999698133202",
@@ -1797,8 +1797,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-09-27T08:11:01.933Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   },
@@ -1824,10 +1824,10 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
     "aiStatus": "schedule_change",
-    "aiReason": "営業時間の変更を検出"
+    "aiReason": "営業時間の変更を検出",
+    "processedAt": "2026-09-27T08:11:01.933Z"
   },
   {
     "id": "sns_post_shndaita_20261003_3_2104090999698133202",
@@ -1851,8 +1851,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-09-27T08:11:01.933Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   }
