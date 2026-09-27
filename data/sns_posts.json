@@ -1855,5 +1855,26 @@
     "processedAt": "2026-09-27T08:11:01.933Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_mention_kameido_2104242306882900072",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2104242306882900072",
+    "postedAt": "2026-09-27T16:10:35.000Z",
+    "postText": "@discyurion おめでとうございます！同学年！これからもお互い頑張りましょう✨",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-27",
+      "endDate": "2026-09-27",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
   }
 ]
