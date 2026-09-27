@@ -1637,5 +1637,36 @@
     "processedAt": null,
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_okinawa_20260927_0_2104011602072883393",
+    "shopId": "okinawa",
+    "shopName": "沖縄店",
+    "postSource": "x",
+    "postUrl": "https://x.com/okinawa_jiro/status/2104011602072883393",
+    "postedAt": "2026-09-27T00:53:51.000Z",
+    "postText": "本日、都合により14時過ぎの早閉まいといたします。ご了承ください。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-27",
+      "endDate": "2026-09-27",
+      "hours": [
+        [
+          11,
+          14
+        ],
+        [
+          17,
+          20
+        ]
+      ],
+      "reason": "都合により",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 都合により"
   }
 ]
