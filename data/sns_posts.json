@@ -2211,5 +2211,32 @@
     "processedAt": null,
     "aiStatus": "match",
     "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_nagoyaosone_20260928_0_2104518514564641226",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2104518514564641226",
+    "postedAt": "2026-09-28T10:28:08.000Z",
+    "postText": "おはようございます。 ラーメン二郎名古屋大曽根店です。 お足元悪い中お越し頂き誠にありがとうございました。 本日の営業は只今のお時間、お並びを持ちまして終了とさせていただきます。 よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-28",
+      "endDate": "2026-09-28",
+      "hours": [
+        [
+          11,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
