@@ -2086,5 +2086,35 @@
     "processedAt": null,
     "aiStatus": "match",
     "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_nishidai_20261005_0_2104360460028141579",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2104360460028141579",
+    "postedAt": "2026-09-28T00:00:05.000Z",
+    "postText": "おはようございます。  来週の月曜日、画像の通りです。 お気をつけ下さい。  本日、醤油味付き・切り落とし ¥800×3、あります。 https://t.co/nvDmbRbelF",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Wx4LOK7hhShrbo_jcnyRDUXcGezK0C-gW7MEQcBARha0PFogaVqEJTc27lrK7pdru0e_plCDM4kTMX6ItDl31fNjvrc8gnXTrWFoCgzUitc0gOYACtAO2HC_fvQEKibi0H8540GZA2IPYSfYGb0zfA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-wI4LsScz0hhIxJmS4fXuOxDRyR1ysDxL1s-F7_ypn-kDGttQ8hO4gh296SKrUWsYSkmN4U5SHFDUCgWlD2ONN0-jhJkAetx-a90gcq7j9L2NHAcNAZ5r5EY-eMYGP-3-6ugqd_O9Cvk984uc1aHqgQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-05",
+      "hours": [
+        [
+          10.416666666666666,
+          13.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
