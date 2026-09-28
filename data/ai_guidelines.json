@@ -2,68 +2,58 @@
   "generalRules": [],
   "learnedFeedback": [
     {
-      "id": "sns_post_shndaita_20260927_0_2104090999698133202",
-      "timestamp": "2026-09-27T08:10:07.826Z",
-      "shopId": "shndaita",
-      "shopName": "環七新新代田店",
-      "postDate": "2026-09-27T06:09:21.000Z",
-      "postText": "2026年9月27日（日） 解ってる範囲の営業予定です！  月 お休み 火 〇 水 〇 木 〇 金 〇(15:00くらい) 土 〇(15:00くらい) 日 〇  11:00〜16:00くらい にんにく地獄(＋200円)もやります！  よろしくお願いします！",
+      "id": "sns_post_sapporo_20260930_0_2104376039606817075",
+      "timestamp": "2026-09-28T12:06:20.633Z",
+      "shopId": "sapporo",
+      "shopName": "札幌店",
+      "postDate": "2026-09-28T01:01:59.000Z",
+      "postText": "28日(月)通常営業です🍜 昼の部、12:30〜14:00 「つけ麺」サブスープ対応します。 必ず、スタッフ確認時に申告して下さい。  麺の旨みが感じやすいです、違いをお楽しみ下さい😄  本日のサブスープもかなり濃厚です。  30日(水)終日休業になります。",
       "aiStatus": "schedule_change",
       "aiReason": "営業時間の変更を検出",
       "humanAction": "applied",
       "finalDetails": {
-        "startDate": "2026-10-04",
-        "endDate": "2026-10-04",
-        "hours": [
-          [
-            11,
-            16
-          ]
-        ],
+        "startDate": "2026-09-30",
+        "endDate": "2026-09-30",
+        "hours": [],
         "reason": ""
       }
     },
     {
-      "id": "sns_post_shndaita_20261003_3_2104090999698133202",
-      "timestamp": "2026-09-27T08:09:00.411Z",
-      "shopId": "shndaita",
-      "shopName": "環七新新代田店",
-      "postDate": "2026-09-27T06:09:21.000Z",
-      "postText": "2026年9月27日（日） 解ってる範囲の営業予定です！  月 お休み 火 〇 水 〇 木 〇 金 〇(15:00くらい) 土 〇(15:00くらい) 日 〇  11:00〜16:00くらい にんにく地獄(＋200円)もやります！  よろしくお願いします！",
-      "aiStatus": "schedule_change",
-      "aiReason": "営業時間の変更を検出",
+      "id": "sns_post_okinawa_20260928_0_2104426042006052920",
+      "timestamp": "2026-09-28T12:05:54.672Z",
+      "shopId": "okinawa",
+      "shopName": "沖縄店",
+      "postDate": "2026-09-28T04:20:41.000Z",
+      "postText": "本日9/28(月)夜の部は  都合により 臨休いたします",
+      "aiStatus": "match",
+      "aiReason": "既に登録済みの臨時スケジュールと一致",
       "humanAction": "applied",
       "finalDetails": {
-        "startDate": "2026-10-03",
-        "endDate": "2026-10-03",
+        "startDate": "2026-09-28",
+        "endDate": "2026-09-28",
         "hours": [
           [
             11,
-            15
+            14
           ]
         ],
-        "reason": ""
+        "reason": "都合により"
       }
     },
     {
-      "id": "sns_post_shndaita_20261002_2_2104090999698133202",
-      "timestamp": "2026-09-27T08:08:27.913Z",
-      "shopId": "shndaita",
-      "shopName": "環七新新代田店",
-      "postDate": "2026-09-27T06:09:21.000Z",
-      "postText": "2026年9月27日（日） 解ってる範囲の営業予定です！  月 お休み 火 〇 水 〇 木 〇 金 〇(15:00くらい) 土 〇(15:00くらい) 日 〇  11:00〜16:00くらい にんにく地獄(＋200円)もやります！  よろしくお願いします！",
+      "id": "sns_post_kyoto_20261001_0_2104473333144424895",
+      "timestamp": "2026-09-28T12:05:34.390Z",
+      "shopId": "kyoto",
+      "shopName": "京都店",
+      "postDate": "2026-09-28T07:28:36.000Z",
+      "postText": "こんにちは！本日通常営業です！ 「ドパ味噌」あります！ 「ドパホルモン」あります！  今週木曜日の1日はお休みいただきます🙇‍♂️ 水曜日と合わせて連休になります。よろしくお願いします。",
       "aiStatus": "schedule_change",
       "aiReason": "営業時間の変更を検出",
       "humanAction": "applied",
       "finalDetails": {
-        "startDate": "2026-10-02",
-        "endDate": "2026-10-02",
-        "hours": [
-          [
-            11,
-            15
-          ]
-        ],
+        "startDate": "2026-10-01",
+        "endDate": "2026-10-01",
+        "hours": [],
         "reason": ""
       }
     }
