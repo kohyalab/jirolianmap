@@ -2385,5 +2385,26 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2104786782961512887",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2104786782961512887",
+    "postedAt": "2026-09-29T04:14:08.000Z",
+    "postText": "なんかそんなに地獄でもないみたいです！ https://t.co/LKrCY9rAYk",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-29",
+      "endDate": "2026-09-29",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
