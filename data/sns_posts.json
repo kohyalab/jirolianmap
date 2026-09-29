@@ -2502,5 +2502,32 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_kyoto_20260929_0_2104903810221298081",
+    "shopId": "kyoto",
+    "shopName": "京都店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kyoto/status/2104903810221298081",
+    "postedAt": "2026-09-29T11:59:10.000Z",
+    "postText": "都合により本日は22時閉店とさせていただきます。ご予定してくださっていた方には大変申し訳ありません",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-09-29",
+      "endDate": "2026-09-29",
+      "hours": [
+        [
+          17,
+          22
+        ]
+      ],
+      "reason": "都合により",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 都合により"
   }
 ]
