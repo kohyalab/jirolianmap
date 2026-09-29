@@ -2208,6 +2208,14 @@
         "startDate": "2026-09-19",
         "endDate": "2026-09-23",
         "hours": []
+      },
+      {
+        "startDate": "2026-09-29",
+        "endDate": "2026-09-29",
+        "hours": [],
+        "reason": "都合により",
+        "sourceUrl": "https://x.com/koiwajiro/status/2104697479426150603",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -3807,6 +3815,18 @@
         "_isAiImported": true
       },
       {
+        "startDate": "2026-09-30",
+        "endDate": "2026-09-30",
+        "hours": [
+          [
+            11,
+            15
+          ]
+        ],
+        "sourceUrl": "https://x.com/26shinshindaita/status/2105056639795790317",
+        "_isAiImported": true
+      },
+      {
         "startDate": "2026-10-02",
         "endDate": "2026-10-02",
         "hours": [
@@ -4457,6 +4477,19 @@
         "startDate": "2026-09-23",
         "endDate": "2026-09-23",
         "hours": []
+      },
+      {
+        "startDate": "2026-09-29",
+        "endDate": "2026-09-29",
+        "hours": [
+          [
+            17,
+            22
+          ]
+        ],
+        "reason": "都合により",
+        "sourceUrl": "https://x.com/jiro_kyoto/status/2104903810221298081",
+        "_isAiImported": true
       },
       {
         "startDate": "2026-10-01",
