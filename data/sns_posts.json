@@ -2329,5 +2329,37 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_nishidai_20261005_0_2104723787468165271",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2104723787468165271",
+    "postedAt": "2026-09-29T00:03:49.000Z",
+    "postText": "おはようございます。  本日、29日、昼の部  持ち帰りブタ・¥3800 切り落とし・¥1000×2 あります！ https://t.co/WCKyWzSbhG",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ryqRWl4XTQ_HqSDDhrDzfzl4nw1Gi_o7TMmUURGSQMOeQ_jgxPeR_3NibZKRJoi4eynz0cYIu9BVvCQj-8XFAczAFh9-cryyDBCxXNomSwpk_FqPtCn6X3VmYa6fD2h92cL9-eux2Bz18baS0ZDebQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-XmCnUmTrIZbJVFpMzdlNHZAOIWoc8PjHqLfH1wNyjflTo0bE6i9873U9WXCfLwmNFRoy0vgHcx_bU95lTR42_4LeXggrMNTpnrxPDw3ajwozIVbKNKvekSAA3KSuAa3f8iRQc4ddEg3KipTeB1so5w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-mJQbD8ySREAfWFWQMrPqQOTNqTV5Bn3-UeWavl8icoBxmZ-FYEFdeVY31NVq_BEe7754TRt0_ZzGencA8h4r9-hqgX6BzNxXgRE_OH1qF0MM4lcZbv7uUuPfDVrZydG93t7RnZghI0UEdjMEFKsatQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-5t_Y7ywI9rwv-155rvZbQnH-6nmIWj3pU8TO6CMWvH_9wvK2eQVJhXAYS8wZeBNFGsjp6jS7dOWHbeUMzgcIyaAcIG_gzOLaHRYO6afmweYfJsOrxqunxwox4ikvNoT7mqhmt_msuF1SxAE0CJ20rg=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-05",
+      "hours": [
+        [
+          10.416666666666666,
+          13.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
