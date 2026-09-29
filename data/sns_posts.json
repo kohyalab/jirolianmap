@@ -2427,5 +2427,49 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_kyoto_20260930_0_2104836374260339131",
+    "shopId": "kyoto",
+    "shopName": "京都店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kyoto/status/2104836374260339131",
+    "postedAt": "2026-09-29T07:31:12.000Z",
+    "postText": "こんにちは！本日通常営業です！ 「ドパ味噌」あるんですけど、なくなるかもしれません！ 明日と明後日はお休みです！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-09-30",
+      "endDate": "2026-09-30",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_kyoto_20261001_1_2104836374260339131",
+    "shopId": "kyoto",
+    "shopName": "京都店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kyoto/status/2104836374260339131",
+    "postedAt": "2026-09-29T07:31:12.000Z",
+    "postText": "こんにちは！本日通常営業です！ 「ドパ味噌」あるんですけど、なくなるかもしれません！ 明日と明後日はお休みです！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-01",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
