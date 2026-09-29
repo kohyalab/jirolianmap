@@ -2361,5 +2361,29 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_sapporo_20260930_0_2104734212880572648",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2104734212880572648",
+    "postedAt": "2026-09-29T00:45:15.000Z",
+    "postText": "29日(火)昼の部、券売機 「ジロリアン陸」 ボタン¥150で「食べるカリカリほぐし豚ラー油」 追加30  明日30日(水)終日休業になります。 https://t.co/GP5zMQRSmT",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-IylrSGZR2QUZ8CcX4Wx-BMnMYCG-2HRwtNsBk73MdfDu-AGWQgZ4TXjF0Nv6hR2nJUsnQ1cbXJeVzW2KQc4AGOsum51pWH06ggFvzkAappXViygy8hV46O0dD-aUFI5477mu6r5w2xZbbXeyaXpfKw=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-09-30",
+      "endDate": "2026-09-30",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
