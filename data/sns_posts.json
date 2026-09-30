@@ -2867,5 +2867,58 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_ichinoe_20261013_0_2105196477849153990",
+    "shopId": "ichinoe",
+    "shopName": "環七一之江店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ichinoejiro/status/2105196477849153990",
+    "postedAt": "2026-09-30T07:22:07.000Z",
+    "postText": "10月の営業予定となります。 宜しくお願い申し上げます https://t.co/UziKVNQtli",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-CgLJDuN16xWpDig0zXpMTTwDp2IJQAoFH8Ml47awFY5M3lX0phnIB8-O3BBePwyiTeluvS5cvYeDFHLNzNf3wb6A-aITSIRkdhNY1L6nSIE3XPMKkBQrMIYC1WN_qVBvn19DAdHooolPHZtC4Ea6ig=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-13",
+      "endDate": "2026-10-14",
+      "hours": [],
+      "reason": "都合により",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 都合により"
+  },
+  {
+    "id": "sns_post_ichinoe_20261006_1_2105196477849153990",
+    "shopId": "ichinoe",
+    "shopName": "環七一之江店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ichinoejiro/status/2105196477849153990",
+    "postedAt": "2026-09-30T07:22:07.000Z",
+    "postText": "10月の営業予定となります。 宜しくお願い申し上げます https://t.co/UziKVNQtli",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-CgLJDuN16xWpDig0zXpMTTwDp2IJQAoFH8Ml47awFY5M3lX0phnIB8-O3BBePwyiTeluvS5cvYeDFHLNzNf3wb6A-aITSIRkdhNY1L6nSIE3XPMKkBQrMIYC1WN_qVBvn19DAdHooolPHZtC4Ea6ig=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-10-06",
+      "endDate": "2026-10-06",
+      "hours": [
+        [
+          17.5,
+          20
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
