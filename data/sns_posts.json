@@ -3104,5 +3104,27 @@
     "processedAt": "2026-09-30T20:16:25.643Z",
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_ogikubo_20261003_0_2105401278486774009",
+    "shopId": "ogikubo",
+    "shopName": "荻窪店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ogkb_jiro/status/2105401278486774009",
+    "postedAt": "2026-09-30T20:55:55.000Z",
+    "postText": "10月3日（土）は休業します",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-03",
+      "endDate": "2026-10-03",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
