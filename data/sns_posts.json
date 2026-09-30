@@ -2646,5 +2646,125 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_chiba_20261004_0_2105106592874312054",
+    "shopId": "chiba",
+    "shopName": "千葉店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_chiba/status/2105106592874312054",
+    "postedAt": "2026-09-30T01:24:57.000Z",
+    "postText": "10月の予定です。よろしくお願い致します https://t.co/7rDs6U0ZIV",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-EbNL-GE9jaGhG_WRQtwCtvukM2lf6uZhjkRe1jS0mMF5ZV8uVrzGjq1rnFdr1CjUXfjfq7qmSe2aV45n-4Hf3EyyXSkkXGFxovBqCXa0TqNzMLFaq6JP6mHpexRaOIHnsMxh9J1Oh0Dhn9JR5gLsAQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-04",
+      "endDate": "2026-10-04",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_chiba_20261011_1_2105106592874312054",
+    "shopId": "chiba",
+    "shopName": "千葉店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_chiba/status/2105106592874312054",
+    "postedAt": "2026-09-30T01:24:57.000Z",
+    "postText": "10月の予定です。よろしくお願い致します https://t.co/7rDs6U0ZIV",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-EbNL-GE9jaGhG_WRQtwCtvukM2lf6uZhjkRe1jS0mMF5ZV8uVrzGjq1rnFdr1CjUXfjfq7qmSe2aV45n-4Hf3EyyXSkkXGFxovBqCXa0TqNzMLFaq6JP6mHpexRaOIHnsMxh9J1Oh0Dhn9JR5gLsAQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-11",
+      "endDate": "2026-10-11",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_chiba_20261012_2_2105106592874312054",
+    "shopId": "chiba",
+    "shopName": "千葉店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_chiba/status/2105106592874312054",
+    "postedAt": "2026-09-30T01:24:57.000Z",
+    "postText": "10月の予定です。よろしくお願い致します https://t.co/7rDs6U0ZIV",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-EbNL-GE9jaGhG_WRQtwCtvukM2lf6uZhjkRe1jS0mMF5ZV8uVrzGjq1rnFdr1CjUXfjfq7qmSe2aV45n-4Hf3EyyXSkkXGFxovBqCXa0TqNzMLFaq6JP6mHpexRaOIHnsMxh9J1Oh0Dhn9JR5gLsAQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-12",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_chiba_20261018_3_2105106592874312054",
+    "shopId": "chiba",
+    "shopName": "千葉店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_chiba/status/2105106592874312054",
+    "postedAt": "2026-09-30T01:24:57.000Z",
+    "postText": "10月の予定です。よろしくお願い致します https://t.co/7rDs6U0ZIV",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-EbNL-GE9jaGhG_WRQtwCtvukM2lf6uZhjkRe1jS0mMF5ZV8uVrzGjq1rnFdr1CjUXfjfq7qmSe2aV45n-4Hf3EyyXSkkXGFxovBqCXa0TqNzMLFaq6JP6mHpexRaOIHnsMxh9J1Oh0Dhn9JR5gLsAQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-18",
+      "endDate": "2026-10-18",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_chiba_20261025_4_2105106592874312054",
+    "shopId": "chiba",
+    "shopName": "千葉店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_chiba/status/2105106592874312054",
+    "postedAt": "2026-09-30T01:24:57.000Z",
+    "postText": "10月の予定です。よろしくお願い致します https://t.co/7rDs6U0ZIV",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-EbNL-GE9jaGhG_WRQtwCtvukM2lf6uZhjkRe1jS0mMF5ZV8uVrzGjq1rnFdr1CjUXfjfq7qmSe2aV45n-4Hf3EyyXSkkXGFxovBqCXa0TqNzMLFaq6JP6mHpexRaOIHnsMxh9J1Oh0Dhn9JR5gLsAQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-25",
+      "endDate": "2026-10-25",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   }
 ]
