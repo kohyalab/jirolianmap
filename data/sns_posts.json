@@ -2819,5 +2819,53 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_koiwa_20260930_0_2105167604323405922",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2105167604323405922",
+    "postedAt": "2026-09-30T05:27:23.000Z",
+    "postText": "ただいまお並びのお客様をもちまして、本日の営業は終了しました。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-30",
+      "endDate": "2026-09-30",
+      "hours": [
+        [
+          10.5,
+          14.45
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2105165731617009839",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2105165731617009839",
+    "postedAt": "2026-09-30T05:19:57.000Z",
+    "postText": "いまいるひとでおわりです！ ごめんなさい！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-30",
+      "endDate": "2026-09-30",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
