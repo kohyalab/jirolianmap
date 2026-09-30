@@ -3150,5 +3150,79 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261001_0_2105421298134622452",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2105421298134622452",
+    "postedAt": "2026-09-30T22:15:28.000Z",
+    "postText": "本日 ◇10/1（木） 【昼の部のみ営業🈺】 10:20から〜14:00 ご来店ご到着お並びのお客様まで営業致します🈺  →［お椀で和ッカレー］ やります！ ※お椀にてご提供です。和ッカレーにスープ入りです。味変にどうぞ。  →［ひやコロ］今週最終です♪今日は気温も上がって［ひやコロ日和！］⁈  どうぞ！ https://t.co/QZfASaJ3uE",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Q0b_FAsyxmJutxGvci3Dj7775EQ5RU6W4DHSj9mPrnfGmRX3Er55F6P0nEyMEPfh1iZkUUVLFcswQY52SOtb8fyNaeaCe59DZ8m8c1ITgPPUX3wyYvVPFAvJVs8Msvl7Odzc4Q9cCLO7R8g0TNEQ7w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-pcOZNhHljDe58nqOXdpheg2WgGJuwnGToZGMydF-QMSJrXARAdqsuYNpTZ5_6PA3VcEAGmanUZK8EQPU7M8iNqfkDirS9UJT5baqx1olSIyx2TiCFAvEa9T_RXAbzWKjh3-mAHEvcehbDkMJ6sRWNQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-fYCUkgi6CbsVviR1QAA6b4J010EqLzAEiXPrC3F_hyOMBzfqwfvrAFJYOxELmmWAkvTSFmFvsjCPX06Cew6-2akrqzbmlw6bnCGGxIIKId6BwuxVlbGLR3SFE-9D95YOecw4TzWamOrsGShPldeW5w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Y52gALK_m5_ZA71P9FgATGNLleCqGAJgluXFWMEr0fLGiYOL2zxvwLkXesBd_uM4x5x4Xx9DllQ7o5w77jgnTToaGC35Y3W5L8XqnlErHhWXTDtHQPKgVft01hK9AjTzggvv_09GCE0hPiZtL5kchg=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-01",
+      "hours": [
+        [
+          10.333333333333334,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2105419384626024579",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2105419384626024579",
+    "postedAt": "2026-09-30T22:07:52.000Z",
+    "postText": "激辛もやります！ 多分ちゃんと辛いです！  1倍  100円 2倍 200円 3倍 300円です！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-30",
+      "endDate": "2026-09-30",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2105419171131752883",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2105419171131752883",
+    "postedAt": "2026-09-30T22:07:01.000Z",
+    "postText": "にんにく地獄ラーメン(+200円)もやります！ すりおろしにんにくをまぜこんでます！  麺の量と一緒に じごくでって言ってください！ ラーメンのひとはしょうゆでって言ってくれるとわかりやすいです！  麺の量を聞かれた時に じぶんから言ってください！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-30",
+      "endDate": "2026-09-30",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
