@@ -1835,19 +1835,44 @@
     "id": "ichinoe",
     "name": "環七一之江店",
     "kana": "カンナナイチノエテン",
+    "shortName": "環七一之江",
+    "prefCode": "13",
+    "cityCode": "13123",
     "addressText": "一之江8丁目3-4",
     "lat": 35.68407502831897,
     "lng": 139.88196182882908,
+    "openedAt": "2003-11-16",
+    "closedAt": null,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/ichinoe/",
       "rdb": "https://ramendb.supleks.jp/s/1124.html",
       "tabelog": "https://tabelog.com/tokyo/A1312/A131205/13010385/"
     },
     "x": "ichinoejiro",
+    "instagram": "",
     "ticketTiming": "",
-    "openedAt": "2003-11-16",
-    "closedAt": null,
-    "temporary": [],
+    "soupType": "",
+    "renge": "",
+    "takeout": "",
+    "hoursNotes": "",
+    "remarks": "",
+    "temporary": [
+      {
+        "startDate": "2026-10-13",
+        "endDate": "2026-10-14",
+        "hours": [],
+        "reason": "都合により",
+        "sourceUrl": "https://x.com/ichinoejiro/status/2105196477849153990",
+        "_isAiImported": true
+      }
+    ],
+    "holidaySpecialShifts": [
+      {
+        "triggerDay": 3,
+        "targetOffset": 0,
+        "hours": []
+      }
+    ],
     "shiftsByDay": {
       "0": [
         [
@@ -1904,22 +1929,7 @@
         9,
         14
       ]
-    ],
-    "remarks": "",
-    "hoursNotes": "",
-    "instagram": "",
-    "shortName": "環七一之江",
-    "soupType": "",
-    "renge": "",
-    "takeout": "",
-    "holidaySpecialShifts": [
-      {
-        "triggerDay": 3,
-        "targetOffset": 0,
-        "hours": []
-      }
-    ],
-    "cityCode": "13123"
+    ]
   },
   {
     "id": "sagamionoekimae",
@@ -4982,18 +4992,27 @@
     "id": "chiba",
     "name": "千葉店",
     "kana": "チバテン",
+    "shortName": "千葉",
+    "prefCode": "12",
+    "cityCode": "12101",
     "addressText": "中央1丁目7-8",
     "lat": 35.610492809715176,
     "lng": 140.12360292943615,
+    "openedAt": "2020-06-02",
+    "closedAt": null,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/chiba/",
       "rdb": "https://ramendb.supleks.jp/s/124574.html",
       "tabelog": "https://tabelog.com/chiba/A1201/A120101/12049275/"
     },
     "x": "jiro_chiba",
+    "instagram": "",
     "ticketTiming": "",
-    "openedAt": "2020-06-02",
-    "closedAt": null,
+    "soupType": "",
+    "renge": "",
+    "takeout": "",
+    "hoursNotes": "祝日不定休",
+    "remarks": "",
     "temporary": [
       {
         "startDate": "2026-08-11",
@@ -5034,6 +5053,13 @@
         "startDate": "2026-09-23",
         "endDate": "2026-09-23",
         "hours": []
+      },
+      {
+        "startDate": "2026-10-12",
+        "endDate": "2026-10-12",
+        "hours": [],
+        "sourceUrl": "https://x.com/jiro_chiba/status/2105106592874312054",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -5099,15 +5125,7 @@
       ],
       "6": []
     },
-    "holidayShifts": null,
-    "remarks": "",
-    "hoursNotes": "祝日不定休",
-    "instagram": "",
-    "shortName": "千葉",
-    "soupType": "",
-    "renge": "",
-    "takeout": "",
-    "cityCode": "12101"
+    "holidayShifts": null
   },
   {
     "id": "omiyakoenekimae",
@@ -5569,6 +5587,14 @@
         "startDate": "2026-09-24",
         "endDate": "2026-09-24",
         "hours": []
+      },
+      {
+        "startDate": "2026-10-01",
+        "endDate": "2026-10-01",
+        "hours": [],
+        "reason": "都合により",
+        "sourceUrl": "https://x.com/genkimoriya/status/2105150235496595846",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
