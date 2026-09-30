@@ -2,64 +2,54 @@
   "generalRules": [],
   "learnedFeedback": [
     {
-      "id": "sns_post_koiwa_20260929_0_2104697479426150603",
-      "timestamp": "2026-09-29T22:41:26.142Z",
-      "shopId": "koiwa",
-      "shopName": "小岩店",
-      "postDate": "2026-09-28T22:19:17.000Z",
-      "postText": "おはようございます。  誠に勝手ながら、本日は都合により臨時休業いたします。  大変申し訳ございませんが、よろしくお願いいたします。  ラーメン二郎小岩店",
+      "id": "sns_post_chiba_20261012_2_2105106592874312054",
+      "timestamp": "2026-09-30T20:15:20.433Z",
+      "shopId": "chiba",
+      "shopName": "千葉店",
+      "postDate": "2026-09-30T01:24:57.000Z",
+      "postText": "10月の予定です。よろしくお願い致します https://t.co/7rDs6U0ZIV",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-10-12",
+        "endDate": "2026-10-12",
+        "hours": [],
+        "reason": ""
+      }
+    },
+    {
+      "id": "sns_post_kashiwa_20261001_0_2105150235496595846",
+      "timestamp": "2026-09-30T20:14:52.297Z",
+      "shopId": "kashiwa",
+      "shopName": "柏店",
+      "postDate": "2026-09-30T04:18:22.000Z",
+      "postText": "お世話になっております。 ラーメン二郎柏店です。  本日16時頃までの通常営業。 明日10月1(木)は、都合により臨時休業とさせていただきます。  大変ご迷惑をお掛けします。 どうぞ宜しくお願い致します。",
       "aiStatus": "schedule_change",
       "aiReason": "営業変更検出: 都合により",
       "humanAction": "applied",
       "finalDetails": {
-        "startDate": "2026-09-29",
-        "endDate": "2026-09-29",
+        "startDate": "2026-10-01",
+        "endDate": "2026-10-01",
         "hours": [],
         "reason": "都合により"
       }
     },
     {
-      "id": "sns_post_kyoto_20260929_0_2104903810221298081",
-      "timestamp": "2026-09-29T22:41:01.561Z",
-      "shopId": "kyoto",
-      "shopName": "京都店",
-      "postDate": "2026-09-29T11:59:10.000Z",
-      "postText": "都合により本日は22時閉店とさせていただきます。ご予定してくださっていた方には大変申し訳ありません",
+      "id": "sns_post_ichinoe_20261013_0_2105196477849153990",
+      "timestamp": "2026-09-30T20:14:17.116Z",
+      "shopId": "ichinoe",
+      "shopName": "環七一之江店",
+      "postDate": "2026-09-30T07:22:07.000Z",
+      "postText": "10月の営業予定となります。 宜しくお願い申し上げます https://t.co/UziKVNQtli",
       "aiStatus": "schedule_change",
       "aiReason": "営業変更検出: 都合により",
       "humanAction": "applied",
       "finalDetails": {
-        "startDate": "2026-09-29",
-        "endDate": "2026-09-29",
-        "hours": [
-          [
-            17,
-            22
-          ]
-        ],
+        "startDate": "2026-10-13",
+        "endDate": "2026-10-14",
+        "hours": [],
         "reason": "都合により"
-      }
-    },
-    {
-      "id": "sns_post_shndaita_20260930_0_2105056639795790317",
-      "timestamp": "2026-09-29T22:40:29.993Z",
-      "shopId": "shndaita",
-      "shopName": "環七新新代田店",
-      "postDate": "2026-09-29T22:06:27.000Z",
-      "postText": "2026年9月30日(水)  ⚠️短縮営業です！⚠️ 11:00～15:00くらいです！  よろしくお願いします！  ※住宅地なのでおしゃべりしないで待っててください",
-      "aiStatus": "schedule_change",
-      "aiReason": "営業時間の変更を検出",
-      "humanAction": "applied",
-      "finalDetails": {
-        "startDate": "2026-09-30",
-        "endDate": "2026-09-30",
-        "hours": [
-          [
-            11,
-            15
-          ]
-        ],
-        "reason": ""
       }
     }
   ]
