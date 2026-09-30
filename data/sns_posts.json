@@ -2622,5 +2622,29 @@
     "processedAt": "2026-09-29T22:42:43.210Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_mejirodai_20260930_0_2105087230180311403",
+    "shopId": "mejirodai",
+    "shopName": "めじろ台店",
+    "postSource": "x",
+    "postUrl": "https://x.com/mejirodai_jiro/status/2105087230180311403",
+    "postedAt": "2026-09-30T00:08:00.000Z",
+    "postText": "毎度ありがとうございます 本日30日(水)は臨時休業となりますのでご注意下さい よろしくお願いします🙇 https://t.co/tV6m56UCTy",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-P7gphkgh-qUX0Rk1N-HRkhaEdJeOJF2GiGh-Cx-ydlV4ULYEm4v9X_J6-5kmTvbOWfyji59ZUs16seU5aJdkDhXgKLMDQxptsTfupIBU33EZxKEKfpJ-IruG53EqLtnqfM8OJlHqwldlULxULaNl8Q=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-09-30",
+      "endDate": "2026-09-30",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
