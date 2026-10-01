@@ -3830,5 +3830,27 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_kyoto_20261001_0_2105566879159033901",
+    "shopId": "kyoto",
+    "shopName": "京都店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kyoto/status/2105566879159033901",
+    "postedAt": "2026-10-01T07:53:58.000Z",
+    "postText": "こんにちは！お伝えしていました通り、本日はお休みいただきます🙇‍♂️  天一の日ですね！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-01",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
