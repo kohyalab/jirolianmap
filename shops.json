@@ -2125,6 +2125,19 @@
             17.5
           ]
         ]
+      },
+      {
+        "startDate": "2026-10-01",
+        "endDate": "2026-10-01",
+        "hours": [
+          [
+            11,
+            13.5
+          ]
+        ],
+        "reason": "都合により",
+        "sourceUrl": "https://x.com/jbc_ramen_jiro/status/2105515787708682572",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -4643,6 +4656,36 @@
         "startDate": "2026-09-30",
         "endDate": "2026-09-30",
         "hours": []
+      },
+      {
+        "startDate": "2026-10-12",
+        "endDate": "2026-10-13",
+        "hours": [
+          [
+            11,
+            14
+          ],
+          [
+            17.5,
+            20.5
+          ]
+        ],
+        "sourceUrl": "https://x.com/mejirodai_jiro/status/2105599872993042838",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-14",
+        "endDate": "2026-10-14",
+        "hours": [],
+        "sourceUrl": "https://x.com/mejirodai_jiro/status/2105599872993042838",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-18",
+        "endDate": "2026-10-18",
+        "hours": [],
+        "sourceUrl": "https://x.com/mejirodai_jiro/status/2105599872993042838",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -5469,6 +5512,29 @@
         "startDate": "2026-09-23",
         "endDate": "2026-09-24",
         "hours": []
+      },
+      {
+        "startDate": "2026-10-12",
+        "endDate": "2026-10-12",
+        "hours": [
+          [
+            11,
+            15
+          ],
+          [
+            17.5,
+            20.5
+          ]
+        ],
+        "sourceUrl": "https://x.com/1284jiro/status/2105601517868949776",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-21",
+        "endDate": "2026-10-21",
+        "hours": [],
+        "sourceUrl": "https://x.com/1284jiro/status/2105601517868949776",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -5642,18 +5708,27 @@
     "id": "ikuta",
     "name": "生田駅前店",
     "kana": "イクタエキマエテン",
+    "shortName": "生田",
+    "prefCode": "14",
+    "cityCode": "14135",
     "addressText": "生田8丁目1-15スワンハイツ",
     "lat": 35.61550336329281,
     "lng": 139.54543979904597,
+    "openedAt": "2023-05-21",
+    "closedAt": null,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/ikuta/",
       "rdb": "https://ramendb.supleks.jp/s/149549.html",
       "tabelog": "https://tabelog.com/kanagawa/A1405/A140506/14091118/"
     },
     "x": "ikuta_jiro",
+    "instagram": "ikuta_jiro",
     "ticketTiming": "",
-    "openedAt": "2023-05-21",
-    "closedAt": null,
+    "soupType": "",
+    "renge": "",
+    "takeout": "",
+    "hoursNotes": "",
+    "remarks": "",
     "temporary": [
       {
         "startDate": "2026-08-14",
@@ -5684,6 +5759,22 @@
         "startDate": "2026-09-24",
         "endDate": "2026-09-24",
         "hours": []
+      },
+      {
+        "startDate": "2026-10-15",
+        "endDate": "2026-10-15",
+        "hours": [],
+        "reason": "都合により",
+        "sourceUrl": "https://x.com/ikuta_jiro/status/2105459164617343168",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-27",
+        "endDate": "2026-10-27",
+        "hours": [],
+        "reason": "都合により",
+        "sourceUrl": "https://x.com/ikuta_jiro/status/2105459164617343168",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -5749,15 +5840,7 @@
         ]
       ]
     },
-    "holidayShifts": null,
-    "remarks": "",
-    "hoursNotes": "",
-    "instagram": "ikuta_jiro",
-    "shortName": "生田",
-    "soupType": "",
-    "renge": "",
-    "takeout": "",
-    "cityCode": "14135"
+    "holidayShifts": null
   },
   {
     "id": "asakurakaido",
@@ -5844,6 +5927,14 @@
             15
           ]
         ]
+      },
+      {
+        "startDate": "2026-10-18",
+        "endDate": "2026-10-22",
+        "hours": [],
+        "reason": "所用のため",
+        "sourceUrl": "https://x.com/r26akgd/status/2105636449257480333",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
