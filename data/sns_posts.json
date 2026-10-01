@@ -3782,5 +3782,32 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_tachikawa_20261001_0_2105542174888853729",
+    "shopId": "tachikawa",
+    "shopName": "立川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jirotachikawa/status/2105542174888853729",
+    "postedAt": "2026-10-01T06:15:48.000Z",
+    "postText": "ぱた郎、昼の部で売り切れてしまいました。 ご容赦下さい。 https://t.co/8cjwvf2Xdy",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-01",
+      "hours": [
+        [
+          11,
+          14.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
