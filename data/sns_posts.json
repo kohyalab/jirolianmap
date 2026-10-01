@@ -3459,5 +3459,149 @@
     "processedAt": null,
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_ikuta_20261007_0_2105459164617343168",
+    "shopId": "ikuta",
+    "shopName": "生田駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ikuta_jiro/status/2105459164617343168",
+    "postedAt": "2026-10-01T00:45:57.000Z",
+    "postText": "10月の予定です。水曜定休日。 15日(木) 27日(火) は都合によりお休みになります。 ❄⚫️お楽しみに！ よろしくお願いします。 https://t.co/f2z7dWNJJD",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-DhWeOGrPrBMnmFmN_gkatjSqMzu4my_5h0m-6qNO7PF5WOkKKclP9aluSb_r6ZJx1tMwu6KOmWehj15ptx5HeZHNOHpjNJmxpOePbZlK7E5iLQ_ojbdOvIJlnZqkEISnOqsn68-JEnMkWis1MqomlQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-07",
+      "endDate": "2026-10-07",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_ikuta_20261014_1_2105459164617343168",
+    "shopId": "ikuta",
+    "shopName": "生田駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ikuta_jiro/status/2105459164617343168",
+    "postedAt": "2026-10-01T00:45:57.000Z",
+    "postText": "10月の予定です。水曜定休日。 15日(木) 27日(火) は都合によりお休みになります。 ❄⚫️お楽しみに！ よろしくお願いします。 https://t.co/f2z7dWNJJD",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-DhWeOGrPrBMnmFmN_gkatjSqMzu4my_5h0m-6qNO7PF5WOkKKclP9aluSb_r6ZJx1tMwu6KOmWehj15ptx5HeZHNOHpjNJmxpOePbZlK7E5iLQ_ojbdOvIJlnZqkEISnOqsn68-JEnMkWis1MqomlQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-14",
+      "endDate": "2026-10-14",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_ikuta_20261015_2_2105459164617343168",
+    "shopId": "ikuta",
+    "shopName": "生田駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ikuta_jiro/status/2105459164617343168",
+    "postedAt": "2026-10-01T00:45:57.000Z",
+    "postText": "10月の予定です。水曜定休日。 15日(木) 27日(火) は都合によりお休みになります。 ❄⚫️お楽しみに！ よろしくお願いします。 https://t.co/f2z7dWNJJD",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-DhWeOGrPrBMnmFmN_gkatjSqMzu4my_5h0m-6qNO7PF5WOkKKclP9aluSb_r6ZJx1tMwu6KOmWehj15ptx5HeZHNOHpjNJmxpOePbZlK7E5iLQ_ojbdOvIJlnZqkEISnOqsn68-JEnMkWis1MqomlQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-15",
+      "endDate": "2026-10-15",
+      "hours": [],
+      "reason": "都合により",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 都合により"
+  },
+  {
+    "id": "sns_post_ikuta_20261021_3_2105459164617343168",
+    "shopId": "ikuta",
+    "shopName": "生田駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ikuta_jiro/status/2105459164617343168",
+    "postedAt": "2026-10-01T00:45:57.000Z",
+    "postText": "10月の予定です。水曜定休日。 15日(木) 27日(火) は都合によりお休みになります。 ❄⚫️お楽しみに！ よろしくお願いします。 https://t.co/f2z7dWNJJD",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-DhWeOGrPrBMnmFmN_gkatjSqMzu4my_5h0m-6qNO7PF5WOkKKclP9aluSb_r6ZJx1tMwu6KOmWehj15ptx5HeZHNOHpjNJmxpOePbZlK7E5iLQ_ojbdOvIJlnZqkEISnOqsn68-JEnMkWis1MqomlQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-21",
+      "endDate": "2026-10-21",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_ikuta_20261027_4_2105459164617343168",
+    "shopId": "ikuta",
+    "shopName": "生田駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ikuta_jiro/status/2105459164617343168",
+    "postedAt": "2026-10-01T00:45:57.000Z",
+    "postText": "10月の予定です。水曜定休日。 15日(木) 27日(火) は都合によりお休みになります。 ❄⚫️お楽しみに！ よろしくお願いします。 https://t.co/f2z7dWNJJD",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-DhWeOGrPrBMnmFmN_gkatjSqMzu4my_5h0m-6qNO7PF5WOkKKclP9aluSb_r6ZJx1tMwu6KOmWehj15ptx5HeZHNOHpjNJmxpOePbZlK7E5iLQ_ojbdOvIJlnZqkEISnOqsn68-JEnMkWis1MqomlQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-27",
+      "endDate": "2026-10-27",
+      "hours": [],
+      "reason": "都合により",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 都合により"
+  },
+  {
+    "id": "sns_post_ikuta_20261028_5_2105459164617343168",
+    "shopId": "ikuta",
+    "shopName": "生田駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ikuta_jiro/status/2105459164617343168",
+    "postedAt": "2026-10-01T00:45:57.000Z",
+    "postText": "10月の予定です。水曜定休日。 15日(木) 27日(火) は都合によりお休みになります。 ❄⚫️お楽しみに！ よろしくお願いします。 https://t.co/f2z7dWNJJD",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-DhWeOGrPrBMnmFmN_gkatjSqMzu4my_5h0m-6qNO7PF5WOkKKclP9aluSb_r6ZJx1tMwu6KOmWehj15ptx5HeZHNOHpjNJmxpOePbZlK7E5iLQ_ojbdOvIJlnZqkEISnOqsn68-JEnMkWis1MqomlQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-28",
+      "endDate": "2026-10-28",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   }
 ]
