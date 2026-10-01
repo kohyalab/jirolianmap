@@ -3603,5 +3603,53 @@
     "processedAt": null,
     "aiStatus": "match",
     "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_daily_sendai2_2105469112730435916",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2105469112730435916",
+    "postedAt": "2026-10-01T01:25:28.000Z",
+    "postText": "おちゃ、おちゃ、しかまーえーん🎵 色んなところ潰れていきますね…。 悲しいです。 https://t.co/beBctjTJDM",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-01",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_nagoyaosone_20261002_0_2105469589446602972",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2105469589446602972",
+    "postedAt": "2026-10-01T01:27:22.000Z",
+    "postText": "おはようございます。 ラーメン二郎名古屋大曽根店です。 本日昼夜営業です。 昼の部11:00〜14:00 夜の部17:00〜20:00 よろしくお願いします。  ※明日の営業は昼の部11:00〜14:00 となります。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-02",
+      "hours": [
+        [
+          10,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
