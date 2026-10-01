@@ -3672,5 +3672,36 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_tochigikaido_20261001_0_2105507801099542810",
+    "shopId": "tochigikaido",
+    "shopName": "栃木街道店",
+    "postSource": "x",
+    "postUrl": "https://x.com/Tochigikaidoten/status/2105507801099542810",
+    "postedAt": "2026-10-01T03:59:12.000Z",
+    "postText": "1258現在空席あり〼 超絶マッタリ 15時頃まで",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-01",
+      "hours": [
+        [
+          11.5,
+          15
+        ],
+        [
+          18,
+          21
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   }
 ]
