@@ -4330,5 +4330,26 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_daily_kameido_2105668222779593207",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2105668222779593207",
+    "postedAt": "2026-10-01T14:36:40.000Z",
+    "postText": "心が疲れると誘惑に負けそうになるよね。でも今ならまだ引き返せるよ！親方（郎鎧さん）もちゃん話せばわかってくれるし応援してくれるよ！だからちゃんと正直に打ち明けよう！😭 https://t.co/4FANLzk0DQ",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-01",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
