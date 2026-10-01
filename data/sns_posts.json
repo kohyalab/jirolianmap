@@ -3730,5 +3730,57 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 都合により"
+  },
+  {
+    "id": "sns_post_daily_kameido_2105535169914646552",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2105535169914646552",
+    "postedAt": "2026-10-01T05:47:58.000Z",
+    "postText": "見るしかない！ https://t.co/a4DAzpkG68",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-01",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_sapporo_20261001_0_2105534896613855506",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2105534896613855506",
+    "postedAt": "2026-10-01T05:46:52.000Z",
+    "postText": "夜の部も17:00〜18:30  「魚介風汁なし」、「魚介風ラーメン」 合わせて対応します。 🐟🐚🌪️  プラス現金１００円  必ず、スタッフ確認時に申告して下さい。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-01",
+      "hours": [
+        [
+          11,
+          14
+        ],
+        [
+          17,
+          18.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
