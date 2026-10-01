@@ -4287,5 +4287,27 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_asakurakaido_20261018_0_2105636449257480333",
+    "shopId": "asakurakaido",
+    "shopName": "朝倉街道駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/r26akgd/status/2105636449257480333",
+    "postedAt": "2026-10-01T12:30:24.000Z",
+    "postText": "夜分に失礼いたします。  毎度ありがとうございます。 10/18(日)〜10/22(木)所用のためお休みいただきます。 ご来店予定のお客様には大変申し訳ございませんが、よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-18",
+      "endDate": "2026-10-22",
+      "hours": [],
+      "reason": "所用のため",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   }
 ]
