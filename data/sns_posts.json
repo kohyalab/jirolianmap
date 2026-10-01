@@ -3224,5 +3224,240 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_nishidai_20261005_0_2105449731271098542",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2105449731271098542",
+    "postedAt": "2026-10-01T00:08:27.000Z",
+    "postText": "おはようございます。  本日、10/1、昼の部 切り落とし ¥1000×2 ¥700×1  あります。 https://t.co/wAyYI4LORk",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-OySm6OQN12IZCAVB6GXifcHhRjyY_-zWy-U1fvYBgURF9sy2DrP2klgY10MAbY6be20crFAJleC_A0JCt0HsQd5ojyHlg9y3S2kG97XmoJ3RTW-4a5xakszFm4_yA8RZI7-B167rmhbWQvyaynvcMA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-I3OsNFqwkmUWEwko0_-9PBR_M2P_njB67nSovJX3XOr1WZaoib2Q-aMesOhrX_RnYDfg4MpAina-oEKssxWylb1f5U2ubuqHR4hzGVEg0bm42wnmggVHPycUIdXLAojoqx-z_iNPqXELrXrtCdSqKw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-FyHX_ul54hkdRWnq8DCN9PxLPFS95REYDaNBt3HHTpnjG5_8wWV2NedEJQ_L9f-gJjrsJoeZpOkdt3mpWvrSQ1Qtac0R_-23G8K1KLa-Nfe4CCqw8cKJUwqi5XKXSQewY56JQi1iNogz_Yia282HuA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-FH9OVsn3iqG8hwawGF4mcK8FciKPigw9-m-PCEmUSc3P04P6ZfJYBV6Fur7H-3CMYiSfQvl-VxuxfuJvahEElzVjNukUCqaaRaOPzEUuWRXFvAXliquw7irq0NsVhdeyoznEwoHTfDkeYq_VWXvWcA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-05",
+      "hours": [
+        [
+          10.25,
+          13.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_aizuwakamatsu_20261005_0_2105452519845670967",
+    "shopId": "aizuwakamatsu",
+    "shopName": "会津若松駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/aizu_jiro/status/2105452519845670967",
+    "postedAt": "2026-10-01T00:19:32.000Z",
+    "postText": "毎度ありがとうございます。 10月の予定&臨時営業のお知らせです。 よろしくお願いいたしますm(__)m https://t.co/kXydI09ntB",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne--OauiZd_dNWbgIJpJKk_OI1vG7a8rvaVLsp0LUOJuVnUObKwa3V_UTCSvxG_Lfabki43zrWn9iGmTVbKeG_nuAebgucOefOybJBL2-saMo6tEaI72aGwIKckpBrjFSVrHHtBs37YpMdhLJQ0ILzuTg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-o6zFv1xkU0Zu1fbbKxu_WRPrOSiBEALVBIJFqKOnQNLCTCBv8ATEdIaFgaKL9oncFNg0TDZzYVNt3i_1B2qOT6bAMIieRz0OLUCsADd6u1g8TzT_jr4BDz-MLMRwklhgoBM_t-UZmL5LWrfrP7xSjg=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-05",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_aizuwakamatsu_20261012_1_2105452519845670967",
+    "shopId": "aizuwakamatsu",
+    "shopName": "会津若松駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/aizu_jiro/status/2105452519845670967",
+    "postedAt": "2026-10-01T00:19:32.000Z",
+    "postText": "毎度ありがとうございます。 10月の予定&臨時営業のお知らせです。 よろしくお願いいたしますm(__)m https://t.co/kXydI09ntB",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne--OauiZd_dNWbgIJpJKk_OI1vG7a8rvaVLsp0LUOJuVnUObKwa3V_UTCSvxG_Lfabki43zrWn9iGmTVbKeG_nuAebgucOefOybJBL2-saMo6tEaI72aGwIKckpBrjFSVrHHtBs37YpMdhLJQ0ILzuTg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-o6zFv1xkU0Zu1fbbKxu_WRPrOSiBEALVBIJFqKOnQNLCTCBv8ATEdIaFgaKL9oncFNg0TDZzYVNt3i_1B2qOT6bAMIieRz0OLUCsADd6u1g8TzT_jr4BDz-MLMRwklhgoBM_t-UZmL5LWrfrP7xSjg=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-12",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_aizuwakamatsu_20261019_2_2105452519845670967",
+    "shopId": "aizuwakamatsu",
+    "shopName": "会津若松駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/aizu_jiro/status/2105452519845670967",
+    "postedAt": "2026-10-01T00:19:32.000Z",
+    "postText": "毎度ありがとうございます。 10月の予定&臨時営業のお知らせです。 よろしくお願いいたしますm(__)m https://t.co/kXydI09ntB",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne--OauiZd_dNWbgIJpJKk_OI1vG7a8rvaVLsp0LUOJuVnUObKwa3V_UTCSvxG_Lfabki43zrWn9iGmTVbKeG_nuAebgucOefOybJBL2-saMo6tEaI72aGwIKckpBrjFSVrHHtBs37YpMdhLJQ0ILzuTg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-o6zFv1xkU0Zu1fbbKxu_WRPrOSiBEALVBIJFqKOnQNLCTCBv8ATEdIaFgaKL9oncFNg0TDZzYVNt3i_1B2qOT6bAMIieRz0OLUCsADd6u1g8TzT_jr4BDz-MLMRwklhgoBM_t-UZmL5LWrfrP7xSjg=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-19",
+      "endDate": "2026-10-19",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_aizuwakamatsu_20261026_3_2105452519845670967",
+    "shopId": "aizuwakamatsu",
+    "shopName": "会津若松駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/aizu_jiro/status/2105452519845670967",
+    "postedAt": "2026-10-01T00:19:32.000Z",
+    "postText": "毎度ありがとうございます。 10月の予定&臨時営業のお知らせです。 よろしくお願いいたしますm(__)m https://t.co/kXydI09ntB",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne--OauiZd_dNWbgIJpJKk_OI1vG7a8rvaVLsp0LUOJuVnUObKwa3V_UTCSvxG_Lfabki43zrWn9iGmTVbKeG_nuAebgucOefOybJBL2-saMo6tEaI72aGwIKckpBrjFSVrHHtBs37YpMdhLJQ0ILzuTg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-o6zFv1xkU0Zu1fbbKxu_WRPrOSiBEALVBIJFqKOnQNLCTCBv8ATEdIaFgaKL9oncFNg0TDZzYVNt3i_1B2qOT6bAMIieRz0OLUCsADd6u1g8TzT_jr4BDz-MLMRwklhgoBM_t-UZmL5LWrfrP7xSjg=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-26",
+      "endDate": "2026-10-26",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_aizuwakamatsu_20261004_4_2105452519845670967",
+    "shopId": "aizuwakamatsu",
+    "shopName": "会津若松駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/aizu_jiro/status/2105452519845670967",
+    "postedAt": "2026-10-01T00:19:32.000Z",
+    "postText": "毎度ありがとうございます。 10月の予定&臨時営業のお知らせです。 よろしくお願いいたしますm(__)m https://t.co/kXydI09ntB",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne--OauiZd_dNWbgIJpJKk_OI1vG7a8rvaVLsp0LUOJuVnUObKwa3V_UTCSvxG_Lfabki43zrWn9iGmTVbKeG_nuAebgucOefOybJBL2-saMo6tEaI72aGwIKckpBrjFSVrHHtBs37YpMdhLJQ0ILzuTg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-o6zFv1xkU0Zu1fbbKxu_WRPrOSiBEALVBIJFqKOnQNLCTCBv8ATEdIaFgaKL9oncFNg0TDZzYVNt3i_1B2qOT6bAMIieRz0OLUCsADd6u1g8TzT_jr4BDz-MLMRwklhgoBM_t-UZmL5LWrfrP7xSjg=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-10-04",
+      "endDate": "2026-10-04",
+      "hours": [
+        [
+          11,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_aizuwakamatsu_20261018_5_2105452519845670967",
+    "shopId": "aizuwakamatsu",
+    "shopName": "会津若松駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/aizu_jiro/status/2105452519845670967",
+    "postedAt": "2026-10-01T00:19:32.000Z",
+    "postText": "毎度ありがとうございます。 10月の予定&臨時営業のお知らせです。 よろしくお願いいたしますm(__)m https://t.co/kXydI09ntB",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne--OauiZd_dNWbgIJpJKk_OI1vG7a8rvaVLsp0LUOJuVnUObKwa3V_UTCSvxG_Lfabki43zrWn9iGmTVbKeG_nuAebgucOefOybJBL2-saMo6tEaI72aGwIKckpBrjFSVrHHtBs37YpMdhLJQ0ILzuTg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-o6zFv1xkU0Zu1fbbKxu_WRPrOSiBEALVBIJFqKOnQNLCTCBv8ATEdIaFgaKL9oncFNg0TDZzYVNt3i_1B2qOT6bAMIieRz0OLUCsADd6u1g8TzT_jr4BDz-MLMRwklhgoBM_t-UZmL5LWrfrP7xSjg=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-10-18",
+      "endDate": "2026-10-18",
+      "hours": [
+        [
+          11,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_kawagoe_20261002_0_2105452926076629326",
+    "shopId": "kawagoe",
+    "shopName": "川越店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kwge26/status/2105452926076629326",
+    "postedAt": "2026-10-01T00:21:09.000Z",
+    "postText": "１０月２日金曜日  従業員不足の為 休業します🙏",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-02",
+      "hours": [],
+      "reason": "従業員不足のため",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 従業員不足のため"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2105452636447347065",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2105452636447347065",
+    "postedAt": "2026-10-01T00:20:00.000Z",
+    "postText": "@me_ak177907 おおお！！！ありがとうございます！！友達も喜びます！！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-01",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
   }
 ]
