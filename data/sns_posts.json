@@ -4399,38 +4399,6 @@
     "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   },
   {
-    "id": "sns_post_nishidai_20261005_0_2105808563620991232",
-    "shopId": "nishidai",
-    "shopName": "西台駅前店",
-    "postSource": "x",
-    "postUrl": "https://x.com/jiro_nishidai/status/2105808563620991232",
-    "postedAt": "2026-10-01T23:54:20.000Z",
-    "postText": "おはようございます。 本日、2日の昼の部  崩れ・¥700×1  切り落とし・¥700×1   あります。 https://t.co/WLxmTgMpU3",
-    "mediaUrls": [
-      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-uQQrc9_GMi--wAtYVz1x5UldmhSR8QVulTeDhY_nK_3LATsURiJbYh9FrJhdznrfKAthxuJFmxO8Jj0JeaqsC7wLtd2X7EmIqhEWdGl64PNVk1KuhqBzvxO_Njqt_Ac6HZlB4PWi6lNTUmqmXLqb0g==",
-      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Awm4DXZi9lHwhpou3EcjUTU6Aufyas_j1U2CL2eEXIDUWPuYiBNGbLkvquT10QI0dJIHYoIA-_P6nnxtHcdZoSEoLKSVd2JvH7J7lt5OZ7K9ylT1Vd2tg_LTnxt5af7jxkf_4pC0OpkIPWRRcd6u-w==",
-      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-3cIquigCl9nAH20lT6WVTXJtjzHknjslDxMsSHArG-9Tc9Y2FzTmEe6Iv49lERJ4p3OcYM4iXdTRSI9ifcEp0-siGw0nZWp8rWz_T4aK7oCvUMt3MgOCPcxOW6sTa4pris7vjeeAq_XGBFWNUoFrtg==",
-      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-LvlMV1wlRvsLRPVz5x10l64UsTUxi26iNcqmn0-JYrgSaHeWxok_vTygegIFTLJm8UNEzcw9VgTP7ma2xFJsnR_Pymq_4xHTJjJ7XZYmhjQUkDNIKs8VZce69mEs4fGJ-lrF0IYTpEBvYNbHhJx4Vw=="
-    ],
-    "detectedChange": {
-      "type": "temporary_hours",
-      "startDate": "2026-10-05",
-      "endDate": "2026-10-05",
-      "hours": [
-        [
-          10.25,
-          13.5
-        ]
-      ],
-      "reason": "",
-      "confidence": 1
-    },
-    "processed": false,
-    "processedAt": null,
-    "aiStatus": "schedule_change",
-    "aiReason": "営業時間の変更を検出"
-  },
-  {
     "id": "sns_post_sapporo_20261002_0_2105813350856937670",
     "shopId": "sapporo",
     "shopName": "札幌店",
@@ -5561,5 +5529,106 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_nishidai_20261005_0_2106148410902659127",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2106148410902659127",
+    "postedAt": "2026-10-02T22:24:46.000Z",
+    "postText": "おはようございます。  本日、3日、 切り落とし・¥1100×1                          ¥1000×1 崩れ・¥800×1              ¥700×1  あります。 https://t.co/33oQ5x3KJO",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-kMo8fofKJNy4I3WC_qDWkSB66KFYdVpuc7oBHwzerZKhUpOK-EtkA7eP0g_Bi6s7Re4eVT7fLjbTSRRVSROiHp_E7_EzlQXK0C7VZbg0eULxOExa6OEWSRGKNEdCVcVSo5qV3u_NJcmsa-UIZs8Suw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-LZmaKWyt3zZBHFnJd6oohauVnx2OieYqeaxNFaE0ygd9x2FBxkbnn61AQRIjgzD4bvfYlFw2iIm-lyTduLecJ3OObNdEiUPbJN3yNZLH3yM0hQsGHkLySM1QuTKOaqv27RfKEUybi9X4Hs5NrUxH2w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-QfYF8800-cBwvObinAQ1ZbT1JSL4_SzoISImMSMVDnziH-jxxzs0fn5ARrvZ19IHGKEEkGnUj23ibjT5k00By5im-YMS9xfsIC2xpFz20gKdMteSY8mmnR1zEAiWaeqXNLgf_UGSTR6UzjU52brT5A==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2J3IFKg96cm_F-03SC6IgUd9fF_R35uWxwxwq8uFwAxfdVONoDQfw32ZBHYUo7MYwzUTPLy1igmH32DAoWHrjqYbHhsIKYprGLY36zt1BEqJ-RnTCO6v8sXV92hYXgs8gUaslX0u1LHQvINtHR4ttQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-05",
+      "hours": [
+        [
+          10.25,
+          13.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2106144814249177531",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2106144814249177531",
+    "postedAt": "2026-10-02T22:10:28.000Z",
+    "postText": "激辛もやります！ 多分ちゃんと辛いです！  1倍  100円 2倍 200円 3倍 300円です！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-02",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2106144565988397146",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2106144565988397146",
+    "postedAt": "2026-10-02T22:09:29.000Z",
+    "postText": "にんにく地獄汁なし(+200円)もやります！ すりおろしにんにくをまぜこんでます！  麺の量と一緒に じごくでって言ってください！ ラーメンのひとはラーメンでって言ってくれるとわかりやすいです！  麺の量を聞かれた時に じぶんから言ってください！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-02",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_shndaita_20261003_0_2106144427400212613",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2106144427400212613",
+    "postedAt": "2026-10-02T22:08:56.000Z",
+    "postText": "2026年10月3日(土)  ⚠️短縮営業です！⚠️ 11:00～15:00くらいです！  よろしくお願いします！  ※住宅地なのでおしゃべりしないで待っててください",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-03",
+      "endDate": "2026-10-03",
+      "hours": [
+        [
+          11,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "既に登録済みの臨時スケジュールと一致"
   }
 ]
