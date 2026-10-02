@@ -3202,38 +3202,6 @@
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   },
   {
-    "id": "sns_post_nishidai_20261005_0_2105449731271098542",
-    "shopId": "nishidai",
-    "shopName": "西台駅前店",
-    "postSource": "x",
-    "postUrl": "https://x.com/jiro_nishidai/status/2105449731271098542",
-    "postedAt": "2026-10-01T00:08:27.000Z",
-    "postText": "おはようございます。  本日、10/1、昼の部 切り落とし ¥1000×2 ¥700×1  あります。 https://t.co/wAyYI4LORk",
-    "mediaUrls": [
-      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-OySm6OQN12IZCAVB6GXifcHhRjyY_-zWy-U1fvYBgURF9sy2DrP2klgY10MAbY6be20crFAJleC_A0JCt0HsQd5ojyHlg9y3S2kG97XmoJ3RTW-4a5xakszFm4_yA8RZI7-B167rmhbWQvyaynvcMA==",
-      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-I3OsNFqwkmUWEwko0_-9PBR_M2P_njB67nSovJX3XOr1WZaoib2Q-aMesOhrX_RnYDfg4MpAina-oEKssxWylb1f5U2ubuqHR4hzGVEg0bm42wnmggVHPycUIdXLAojoqx-z_iNPqXELrXrtCdSqKw==",
-      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-FyHX_ul54hkdRWnq8DCN9PxLPFS95REYDaNBt3HHTpnjG5_8wWV2NedEJQ_L9f-gJjrsJoeZpOkdt3mpWvrSQ1Qtac0R_-23G8K1KLa-Nfe4CCqw8cKJUwqi5XKXSQewY56JQi1iNogz_Yia282HuA==",
-      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-FH9OVsn3iqG8hwawGF4mcK8FciKPigw9-m-PCEmUSc3P04P6ZfJYBV6Fur7H-3CMYiSfQvl-VxuxfuJvahEElzVjNukUCqaaRaOPzEUuWRXFvAXliquw7irq0NsVhdeyoznEwoHTfDkeYq_VWXvWcA=="
-    ],
-    "detectedChange": {
-      "type": "temporary_hours",
-      "startDate": "2026-10-05",
-      "endDate": "2026-10-05",
-      "hours": [
-        [
-          10.25,
-          13.5
-        ]
-      ],
-      "reason": "",
-      "confidence": 1
-    },
-    "processed": false,
-    "processedAt": null,
-    "aiStatus": "schedule_change",
-    "aiReason": "営業時間の変更を検出"
-  },
-  {
     "id": "sns_post_aizuwakamatsu_20261005_0_2105452519845670967",
     "shopId": "aizuwakamatsu",
     "shopName": "会津若松駅前店",
@@ -4388,6 +4356,70 @@
         [
           11,
           15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261002_0_2105809348329197659",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2105809348329197659",
+    "postedAt": "2026-10-01T23:57:27.000Z",
+    "postText": "本日 ◇10/2（金） 【夜の部のみ営業🈺】 17:00から〜20:30 ご来店ご到着お並びの お客様まで営業致します。  →［ひやコロ］ 日曜日にて終了☑️！  →［お椀で和ッカレー］ やっております！  どうぞー♪ https://t.co/ZbErJliae2",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-YzuVwgZyzC30kStlD5b65aSZ4jbLecFW6b2fZPe9f49GrmrwbfX1fPVtE3o0RRk2XamI7YowITA1bupZmKQOJVFr8phTRXvRHdS--ACfio9yHHEfa1GD9m8_DwjkrMb5-n1NUmdP6aef0pQAevkKeQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-zSxBfCM0PJHmCCJskQ0EZICjTnnrSfWTcf9gk_3q_Mkb0gZ2HYAi7UJst0YLX6pg25QEwa0EF-oz0ygc87nQcRzs_p3e7jG6goaKNjEhGw8aUlepU4d15UKfptRJMpUVZryhhv33i1sTOecZFRJQSw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Xt1SdCum4FX3XjzEXcGAzGpaamTOSC-aI2fYk5LSFYFjR_Bb7P6w1VbWLMZez7W5XWcRqWo3Xn9RoodEOzYNe0MQXcjolw5xXOMkca8WmNjVuq_T3t0ig56oSixXZMGnVTLSiBwIDfoX8W98pkqJ5g==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-qlt0hSw5pkEouvVPS3YfH4ZygEMmiEZ4INldqnbIt-jKjHkO4qr3RxWKpsFX477etvy1uzHAc6ttxomQHhfjIFJ41JAH7VxTKik9HGEOawA8T16w-XiX1OI5p95B4hiByTx0AXePSTgDXy2TmRNeeQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-02",
+      "hours": [
+        [
+          17,
+          20.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_nishidai_20261005_0_2105808563620991232",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2105808563620991232",
+    "postedAt": "2026-10-01T23:54:20.000Z",
+    "postText": "おはようございます。 本日、2日の昼の部  崩れ・¥700×1  切り落とし・¥700×1   あります。 https://t.co/WLxmTgMpU3",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-uQQrc9_GMi--wAtYVz1x5UldmhSR8QVulTeDhY_nK_3LATsURiJbYh9FrJhdznrfKAthxuJFmxO8Jj0JeaqsC7wLtd2X7EmIqhEWdGl64PNVk1KuhqBzvxO_Njqt_Ac6HZlB4PWi6lNTUmqmXLqb0g==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Awm4DXZi9lHwhpou3EcjUTU6Aufyas_j1U2CL2eEXIDUWPuYiBNGbLkvquT10QI0dJIHYoIA-_P6nnxtHcdZoSEoLKSVd2JvH7J7lt5OZ7K9ylT1Vd2tg_LTnxt5af7jxkf_4pC0OpkIPWRRcd6u-w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-3cIquigCl9nAH20lT6WVTXJtjzHknjslDxMsSHArG-9Tc9Y2FzTmEe6Iv49lERJ4p3OcYM4iXdTRSI9ifcEp0-siGw0nZWp8rWz_T4aK7oCvUMt3MgOCPcxOW6sTa4pris7vjeeAq_XGBFWNUoFrtg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-LvlMV1wlRvsLRPVz5x10l64UsTUxi26iNcqmn0-JYrgSaHeWxok_vTygegIFTLJm8UNEzcw9VgTP7ma2xFJsnR_Pymq_4xHTJjJ7XZYmhjQUkDNIKs8VZce69mEs4fGJ-lrF0IYTpEBvYNbHhJx4Vw=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-05",
+      "hours": [
+        [
+          10.25,
+          13.5
         ]
       ],
       "reason": "",
