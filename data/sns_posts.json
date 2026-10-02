@@ -4429,5 +4429,36 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_sapporo_20261002_0_2105813350856937670",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2105813350856937670",
+    "postedAt": "2026-10-02T00:13:21.000Z",
+    "postText": "2日(金)通常営業です🍜  12:30〜14:00 17:00〜18:30  「塩汁なし(醤油ベース)」(ブラックペッパーバージョン) 対応します。 ⚫︎🧂  プラス現金１００円  必ず、スタッフ確認時に申告して下さい。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-02",
+      "hours": [
+        [
+          12.5,
+          14
+        ],
+        [
+          17,
+          18.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
