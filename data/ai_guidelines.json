@@ -2,68 +2,141 @@
   "generalRules": [],
   "learnedFeedback": [
     {
-      "id": "sns_post_ikuta_20261027_4_2105459164617343168",
-      "timestamp": "2026-10-01T21:59:44.146Z",
-      "shopId": "ikuta",
-      "shopName": "生田駅前店",
-      "postDate": "2026-10-01T00:45:57.000Z",
-      "postText": "10月の予定です。水曜定休日。 15日(木) 27日(火) は都合によりお休みになります。 ❄⚫️お楽しみに！ よろしくお願いします。 https://t.co/f2z7dWNJJD",
+      "id": "sns_post_ogikubo_20261003_0_2105401278486774009",
+      "timestamp": "2026-10-02T22:55:29.541Z",
+      "shopId": "ogikubo",
+      "shopName": "荻窪店",
+      "postDate": "2026-09-30T20:55:55.000Z",
+      "postText": "10月3日（土）は休業します",
       "aiStatus": "schedule_change",
-      "aiReason": "営業変更検出: 都合により",
+      "aiReason": "営業時間の変更を検出",
       "humanAction": "applied",
       "finalDetails": {
-        "startDate": "2026-10-27",
-        "endDate": "2026-10-27",
+        "startDate": "2026-10-03",
+        "endDate": "2026-10-03",
         "hours": [],
-        "reason": "都合により"
+        "reason": ""
       }
     },
     {
-      "id": "sns_post_ikuta_20261015_2_2105459164617343168",
-      "timestamp": "2026-10-01T21:59:06.145Z",
-      "shopId": "ikuta",
-      "shopName": "生田駅前店",
-      "postDate": "2026-10-01T00:45:57.000Z",
-      "postText": "10月の予定です。水曜定休日。 15日(木) 27日(火) は都合によりお休みになります。 ❄⚫️お楽しみに！ よろしくお願いします。 https://t.co/f2z7dWNJJD",
+      "id": "sns_post_aizuwakamatsu_20261018_5_2105452519845670967",
+      "timestamp": "2026-10-02T22:54:52.219Z",
+      "shopId": "aizuwakamatsu",
+      "shopName": "会津若松駅前店",
+      "postDate": "2026-10-01T00:19:32.000Z",
+      "postText": "毎度ありがとうございます。 10月の予定&臨時営業のお知らせです。 よろしくお願いいたしますm(__)m https://t.co/kXydI09ntB",
       "aiStatus": "schedule_change",
-      "aiReason": "営業変更検出: 都合により",
+      "aiReason": "営業時間の変更を検出",
       "humanAction": "applied",
       "finalDetails": {
-        "startDate": "2026-10-15",
-        "endDate": "2026-10-15",
-        "hours": [],
-        "reason": "都合により"
-      }
-    },
-    {
-      "id": "sns_post_jimbocho_20261001_0_2105515787708682572",
-      "timestamp": "2026-10-01T21:58:17.941Z",
-      "shopId": "jimbocho",
-      "shopName": "神田神保町店",
-      "postDate": "2026-10-01T04:30:57.000Z",
-      "postText": "都合により本日の営業は終了しました。申し訳ありませんがよろしくお願いします。",
-      "aiStatus": "schedule_change",
-      "aiReason": "営業変更検出: 都合により",
-      "humanAction": "applied",
-      "finalDetails": {
-        "startDate": "2026-10-01",
-        "endDate": "2026-10-01",
+        "startDate": "2026-10-18",
+        "endDate": "2026-10-18",
         "hours": [
           [
             11,
-            13.5
+            15
           ]
         ],
+        "reason": ""
+      }
+    },
+    {
+      "id": "sns_post_aizuwakamatsu_20261004_4_2105452519845670967",
+      "timestamp": "2026-10-02T22:54:31.898Z",
+      "shopId": "aizuwakamatsu",
+      "shopName": "会津若松駅前店",
+      "postDate": "2026-10-01T00:19:32.000Z",
+      "postText": "毎度ありがとうございます。 10月の予定&臨時営業のお知らせです。 よろしくお願いいたしますm(__)m https://t.co/kXydI09ntB",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-10-04",
+        "endDate": "2026-10-04",
+        "hours": [
+          [
+            11,
+            15
+          ]
+        ],
+        "reason": ""
+      }
+    },
+    {
+      "id": "sns_post_aizuwakamatsu_20261012_1_2105452519845670967",
+      "timestamp": "2026-10-02T22:53:56.685Z",
+      "shopId": "aizuwakamatsu",
+      "shopName": "会津若松駅前店",
+      "postDate": "2026-10-01T00:19:32.000Z",
+      "postText": "毎度ありがとうございます。 10月の予定&臨時営業のお知らせです。 よろしくお願いいたしますm(__)m https://t.co/kXydI09ntB",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-10-12",
+        "endDate": "2026-10-12",
+        "hours": [],
+        "reason": ""
+      }
+    },
+    {
+      "id": "sns_post_kawagoe_20261002_0_2105452926076629326",
+      "timestamp": "2026-10-02T22:53:22.404Z",
+      "shopId": "kawagoe",
+      "shopName": "川越店",
+      "postDate": "2026-10-01T00:21:09.000Z",
+      "postText": "１０月２日金曜日  従業員不足の為 休業します🙏",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業変更検出: 従業員不足のため",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-10-02",
+        "endDate": "2026-10-02",
+        "hours": [],
+        "reason": "従業員不足のため"
+      }
+    },
+    {
+      "id": "sns_post_okinawa_20261011_0_2105837770208129141",
+      "timestamp": "2026-10-02T22:51:42.465Z",
+      "shopId": "okinawa",
+      "shopName": "沖縄店",
+      "postDate": "2026-10-02T01:50:23.000Z",
+      "postText": "【10月の営業予定】 ・11日（日）　休業 ・12日（月）　昼営業のみ（祝日）  また、今月より土日祝の営業時間を １０：３０〜１４：３０ に変更いたします。 https://t.co/9jaUx2r9DX",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-10-11",
+        "endDate": "2026-10-11",
+        "hours": [],
+        "reason": ""
+      }
+    },
+    {
+      "id": "sns_post_nakayamaekimae_20261003_0_2105838896601055454",
+      "timestamp": "2026-10-02T22:50:19.538Z",
+      "shopId": "nakayamaekimae",
+      "shopName": "中山駅前店",
+      "postDate": "2026-10-02T01:54:52.000Z",
+      "postText": "おはようございます。m(._.)m 明日、3日(土)は都合により終日休業となります、申し訳ありませんがよろしくお願い致します。m(_ _)m https://t.co/pUEYsLPPpu",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業変更検出: 都合により",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-10-03",
+        "endDate": "2026-10-03",
+        "hours": [],
         "reason": "都合により"
       }
     },
     {
-      "id": "sns_post_mejirodai_20261018_6_2105599872993042838",
-      "timestamp": "2026-10-01T21:57:29.691Z",
-      "shopId": "mejirodai",
-      "shopName": "めじろ台店",
-      "postDate": "2026-10-01T10:05:04.000Z",
-      "postText": "10月の予定です よろしくお願いします🙇 https://t.co/dotq65Oyb1",
+      "id": "sns_post_sagamiohno_20261018_2_2105922901849645065",
+      "timestamp": "2026-10-02T22:49:34.269Z",
+      "shopId": "sagamiohno",
+      "shopName": "相模大野店",
+      "postDate": "2026-10-02T07:28:40.000Z",
+      "postText": "【10月の予定】 https://t.co/RH3k1FaSsM",
       "aiStatus": "schedule_change",
       "aiReason": "営業時間の変更を検出",
       "humanAction": "applied",
@@ -75,106 +148,20 @@
       }
     },
     {
-      "id": "sns_post_mejirodai_20261014_4_2105599872993042838",
-      "timestamp": "2026-10-01T21:57:06.660Z",
-      "shopId": "mejirodai",
-      "shopName": "めじろ台店",
-      "postDate": "2026-10-01T10:05:04.000Z",
-      "postText": "10月の予定です よろしくお願いします🙇 https://t.co/dotq65Oyb1",
+      "id": "sns_post_sagamiohno_20261013_1_2105922901849645065",
+      "timestamp": "2026-10-02T22:49:03.661Z",
+      "shopId": "sagamiohno",
+      "shopName": "相模大野店",
+      "postDate": "2026-10-02T07:28:40.000Z",
+      "postText": "【10月の予定】 https://t.co/RH3k1FaSsM",
       "aiStatus": "schedule_change",
       "aiReason": "営業時間の変更を検出",
       "humanAction": "applied",
       "finalDetails": {
-        "startDate": "2026-10-14",
-        "endDate": "2026-10-14",
-        "hours": [],
-        "reason": ""
-      }
-    },
-    {
-      "id": "sns_post_mejirodai_20261012_2_2105599872993042838",
-      "timestamp": "2026-10-01T21:56:32.166Z",
-      "shopId": "mejirodai",
-      "shopName": "めじろ台店",
-      "postDate": "2026-10-01T10:05:04.000Z",
-      "postText": "10月の予定です よろしくお願いします🙇 https://t.co/dotq65Oyb1",
-      "aiStatus": "schedule_change",
-      "aiReason": "営業時間の変更を検出",
-      "humanAction": "applied",
-      "finalDetails": {
-        "startDate": "2026-10-12",
+        "startDate": "2026-10-13",
         "endDate": "2026-10-13",
-        "hours": [
-          [
-            11,
-            14
-          ],
-          [
-            17.5,
-            20.5
-          ]
-        ],
-        "reason": ""
-      }
-    },
-    {
-      "id": "sns_post_hitotsubashi_20261030_5_2105601517868949776",
-      "timestamp": "2026-10-01T21:54:47.834Z",
-      "shopId": "hitotsubashi",
-      "shopName": "一橋学園店",
-      "postDate": "2026-10-01T10:11:36.000Z",
-      "postText": "10月の予定です。よろしくお願いいたします。 https://t.co/s247VNAAxl",
-      "aiStatus": "schedule_change",
-      "aiReason": "営業時間の変更を検出",
-      "humanAction": "applied",
-      "finalDetails": {
-        "startDate": "2026-10-21",
-        "endDate": "2026-10-21",
         "hours": [],
         "reason": ""
-      }
-    },
-    {
-      "id": "sns_post_hitotsubashi_20261012_2_2105601517868949776",
-      "timestamp": "2026-10-01T13:42:13.885Z",
-      "shopId": "hitotsubashi",
-      "shopName": "一橋学園店",
-      "postDate": "2026-10-01T10:11:36.000Z",
-      "postText": "10月の予定です。よろしくお願いいたします。 https://t.co/s247VNAAxl",
-      "aiStatus": "schedule_change",
-      "aiReason": "営業時間の変更を検出",
-      "humanAction": "applied",
-      "finalDetails": {
-        "startDate": "2026-10-12",
-        "endDate": "2026-10-12",
-        "hours": [
-          [
-            11,
-            15
-          ],
-          [
-            17.5,
-            20.5
-          ]
-        ],
-        "reason": ""
-      }
-    },
-    {
-      "id": "sns_post_asakurakaido_20261018_0_2105636449257480333",
-      "timestamp": "2026-10-01T13:41:20.326Z",
-      "shopId": "asakurakaido",
-      "shopName": "朝倉街道駅前店",
-      "postDate": "2026-10-01T12:30:24.000Z",
-      "postText": "夜分に失礼いたします。  毎度ありがとうございます。 10/18(日)〜10/22(木)所用のためお休みいただきます。 ご来店予定のお客様には大変申し訳ございませんが、よろしくお願いいたします。",
-      "aiStatus": "match",
-      "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致",
-      "humanAction": "applied",
-      "finalDetails": {
-        "startDate": "2026-10-18",
-        "endDate": "2026-10-22",
-        "hours": [],
-        "reason": "所用のため"
       }
     }
   ]
