@@ -4726,5 +4726,331 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_mention_kameido_2105920352882942267",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2105920352882942267",
+    "postedAt": "2026-10-02T07:18:32.000Z",
+    "postText": "@syokumutaiman よくご存知で！笑 アニメが最後までやっていてくれてたら具志堅用高は声優としてもなお馳せたはず！笑",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-02",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261005_0_2105922901849645065",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2105922901849645065",
+    "postedAt": "2026-10-02T07:28:40.000Z",
+    "postText": "【10月の予定】 https://t.co/RH3k1FaSsM",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2ebLIFQR2IMsFcf0dJjuysunyMr33KdIhvHRdUaZvH-pksf2Cc-UQnXu3RXGbe6691cvojaifd8pEfL68508aMc6HNAGwOb0HK5uiT-JwfMZh3UpqGXImTYqXx46pqyVsIa4J2co40Ifiu9B96nZfA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-D1RZodjoc_5Zod-Z43rwEvH-1TuJS6kmsu3Ts9ltUdk3t9h6rGCTRWNywVALBW5wpMLJdOKJrnPYWa24VqyGSD53rwARJQSPeZREdW_6SpkvcOO8eNHPDcvSBp8PflAEVLdxSdWMjND3IyQJtd7dwQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-05",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261013_1_2105922901849645065",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2105922901849645065",
+    "postedAt": "2026-10-02T07:28:40.000Z",
+    "postText": "【10月の予定】 https://t.co/RH3k1FaSsM",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2ebLIFQR2IMsFcf0dJjuysunyMr33KdIhvHRdUaZvH-pksf2Cc-UQnXu3RXGbe6691cvojaifd8pEfL68508aMc6HNAGwOb0HK5uiT-JwfMZh3UpqGXImTYqXx46pqyVsIa4J2co40Ifiu9B96nZfA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-D1RZodjoc_5Zod-Z43rwEvH-1TuJS6kmsu3Ts9ltUdk3t9h6rGCTRWNywVALBW5wpMLJdOKJrnPYWa24VqyGSD53rwARJQSPeZREdW_6SpkvcOO8eNHPDcvSBp8PflAEVLdxSdWMjND3IyQJtd7dwQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-13",
+      "endDate": "2026-10-13",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261018_2_2105922901849645065",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2105922901849645065",
+    "postedAt": "2026-10-02T07:28:40.000Z",
+    "postText": "【10月の予定】 https://t.co/RH3k1FaSsM",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2ebLIFQR2IMsFcf0dJjuysunyMr33KdIhvHRdUaZvH-pksf2Cc-UQnXu3RXGbe6691cvojaifd8pEfL68508aMc6HNAGwOb0HK5uiT-JwfMZh3UpqGXImTYqXx46pqyVsIa4J2co40Ifiu9B96nZfA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-D1RZodjoc_5Zod-Z43rwEvH-1TuJS6kmsu3Ts9ltUdk3t9h6rGCTRWNywVALBW5wpMLJdOKJrnPYWa24VqyGSD53rwARJQSPeZREdW_6SpkvcOO8eNHPDcvSBp8PflAEVLdxSdWMjND3IyQJtd7dwQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-18",
+      "endDate": "2026-10-18",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261019_3_2105922901849645065",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2105922901849645065",
+    "postedAt": "2026-10-02T07:28:40.000Z",
+    "postText": "【10月の予定】 https://t.co/RH3k1FaSsM",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2ebLIFQR2IMsFcf0dJjuysunyMr33KdIhvHRdUaZvH-pksf2Cc-UQnXu3RXGbe6691cvojaifd8pEfL68508aMc6HNAGwOb0HK5uiT-JwfMZh3UpqGXImTYqXx46pqyVsIa4J2co40Ifiu9B96nZfA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-D1RZodjoc_5Zod-Z43rwEvH-1TuJS6kmsu3Ts9ltUdk3t9h6rGCTRWNywVALBW5wpMLJdOKJrnPYWa24VqyGSD53rwARJQSPeZREdW_6SpkvcOO8eNHPDcvSBp8PflAEVLdxSdWMjND3IyQJtd7dwQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-19",
+      "endDate": "2026-10-19",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261026_4_2105922901849645065",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2105922901849645065",
+    "postedAt": "2026-10-02T07:28:40.000Z",
+    "postText": "【10月の予定】 https://t.co/RH3k1FaSsM",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2ebLIFQR2IMsFcf0dJjuysunyMr33KdIhvHRdUaZvH-pksf2Cc-UQnXu3RXGbe6691cvojaifd8pEfL68508aMc6HNAGwOb0HK5uiT-JwfMZh3UpqGXImTYqXx46pqyVsIa4J2co40Ifiu9B96nZfA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-D1RZodjoc_5Zod-Z43rwEvH-1TuJS6kmsu3Ts9ltUdk3t9h6rGCTRWNywVALBW5wpMLJdOKJrnPYWa24VqyGSD53rwARJQSPeZREdW_6SpkvcOO8eNHPDcvSBp8PflAEVLdxSdWMjND3IyQJtd7dwQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-26",
+      "endDate": "2026-10-26",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261003_5_2105922901849645065",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2105922901849645065",
+    "postedAt": "2026-10-02T07:28:40.000Z",
+    "postText": "【10月の予定】 https://t.co/RH3k1FaSsM",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2ebLIFQR2IMsFcf0dJjuysunyMr33KdIhvHRdUaZvH-pksf2Cc-UQnXu3RXGbe6691cvojaifd8pEfL68508aMc6HNAGwOb0HK5uiT-JwfMZh3UpqGXImTYqXx46pqyVsIa4J2co40Ifiu9B96nZfA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-D1RZodjoc_5Zod-Z43rwEvH-1TuJS6kmsu3Ts9ltUdk3t9h6rGCTRWNywVALBW5wpMLJdOKJrnPYWa24VqyGSD53rwARJQSPeZREdW_6SpkvcOO8eNHPDcvSBp8PflAEVLdxSdWMjND3IyQJtd7dwQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-03",
+      "endDate": "2026-10-04",
+      "hours": [
+        [
+          10,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261010_6_2105922901849645065",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2105922901849645065",
+    "postedAt": "2026-10-02T07:28:40.000Z",
+    "postText": "【10月の予定】 https://t.co/RH3k1FaSsM",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2ebLIFQR2IMsFcf0dJjuysunyMr33KdIhvHRdUaZvH-pksf2Cc-UQnXu3RXGbe6691cvojaifd8pEfL68508aMc6HNAGwOb0HK5uiT-JwfMZh3UpqGXImTYqXx46pqyVsIa4J2co40Ifiu9B96nZfA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-D1RZodjoc_5Zod-Z43rwEvH-1TuJS6kmsu3Ts9ltUdk3t9h6rGCTRWNywVALBW5wpMLJdOKJrnPYWa24VqyGSD53rwARJQSPeZREdW_6SpkvcOO8eNHPDcvSBp8PflAEVLdxSdWMjND3IyQJtd7dwQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-11",
+      "hours": [
+        [
+          10,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261012_7_2105922901849645065",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2105922901849645065",
+    "postedAt": "2026-10-02T07:28:40.000Z",
+    "postText": "【10月の予定】 https://t.co/RH3k1FaSsM",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2ebLIFQR2IMsFcf0dJjuysunyMr33KdIhvHRdUaZvH-pksf2Cc-UQnXu3RXGbe6691cvojaifd8pEfL68508aMc6HNAGwOb0HK5uiT-JwfMZh3UpqGXImTYqXx46pqyVsIa4J2co40Ifiu9B96nZfA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-D1RZodjoc_5Zod-Z43rwEvH-1TuJS6kmsu3Ts9ltUdk3t9h6rGCTRWNywVALBW5wpMLJdOKJrnPYWa24VqyGSD53rwARJQSPeZREdW_6SpkvcOO8eNHPDcvSBp8PflAEVLdxSdWMjND3IyQJtd7dwQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-12",
+      "hours": [
+        [
+          10,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261017_8_2105922901849645065",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2105922901849645065",
+    "postedAt": "2026-10-02T07:28:40.000Z",
+    "postText": "【10月の予定】 https://t.co/RH3k1FaSsM",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2ebLIFQR2IMsFcf0dJjuysunyMr33KdIhvHRdUaZvH-pksf2Cc-UQnXu3RXGbe6691cvojaifd8pEfL68508aMc6HNAGwOb0HK5uiT-JwfMZh3UpqGXImTYqXx46pqyVsIa4J2co40Ifiu9B96nZfA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-D1RZodjoc_5Zod-Z43rwEvH-1TuJS6kmsu3Ts9ltUdk3t9h6rGCTRWNywVALBW5wpMLJdOKJrnPYWa24VqyGSD53rwARJQSPeZREdW_6SpkvcOO8eNHPDcvSBp8PflAEVLdxSdWMjND3IyQJtd7dwQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-17",
+      "endDate": "2026-10-17",
+      "hours": [
+        [
+          10,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261024_9_2105922901849645065",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2105922901849645065",
+    "postedAt": "2026-10-02T07:28:40.000Z",
+    "postText": "【10月の予定】 https://t.co/RH3k1FaSsM",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2ebLIFQR2IMsFcf0dJjuysunyMr33KdIhvHRdUaZvH-pksf2Cc-UQnXu3RXGbe6691cvojaifd8pEfL68508aMc6HNAGwOb0HK5uiT-JwfMZh3UpqGXImTYqXx46pqyVsIa4J2co40Ifiu9B96nZfA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-D1RZodjoc_5Zod-Z43rwEvH-1TuJS6kmsu3Ts9ltUdk3t9h6rGCTRWNywVALBW5wpMLJdOKJrnPYWa24VqyGSD53rwARJQSPeZREdW_6SpkvcOO8eNHPDcvSBp8PflAEVLdxSdWMjND3IyQJtd7dwQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-24",
+      "endDate": "2026-10-25",
+      "hours": [
+        [
+          10,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261031_10_2105922901849645065",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2105922901849645065",
+    "postedAt": "2026-10-02T07:28:40.000Z",
+    "postText": "【10月の予定】 https://t.co/RH3k1FaSsM",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2ebLIFQR2IMsFcf0dJjuysunyMr33KdIhvHRdUaZvH-pksf2Cc-UQnXu3RXGbe6691cvojaifd8pEfL68508aMc6HNAGwOb0HK5uiT-JwfMZh3UpqGXImTYqXx46pqyVsIa4J2co40Ifiu9B96nZfA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-D1RZodjoc_5Zod-Z43rwEvH-1TuJS6kmsu3Ts9ltUdk3t9h6rGCTRWNywVALBW5wpMLJdOKJrnPYWa24VqyGSD53rwARJQSPeZREdW_6SpkvcOO8eNHPDcvSBp8PflAEVLdxSdWMjND3IyQJtd7dwQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-31",
+      "endDate": "2026-11-01",
+      "hours": [
+        [
+          10,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   }
 ]
