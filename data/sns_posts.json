@@ -4598,5 +4598,85 @@
     "processedAt": null,
     "aiStatus": "match",
     "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_nakayamaekimae_20261003_0_2105838896601055454",
+    "shopId": "nakayamaekimae",
+    "shopName": "中山駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/NKYMJIRO/status/2105838896601055454",
+    "postedAt": "2026-10-02T01:54:52.000Z",
+    "postText": "おはようございます。m(._.)m 明日、3日(土)は都合により終日休業となります、申し訳ありませんがよろしくお願い致します。m(_ _)m https://t.co/pUEYsLPPpu",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-v7fJKH8GaMhqER8Ki5UbB3wM0xIXe6TxBRvnLYc4y-RPziWZKMDzxnDPZzq8AmrXILdnD-0H4rsDU37LhDKC-3wFS35DUCnldrKktDg26rWheQ3sES7l2I5f1myiLgCLrr5Y9vZjU1e6tUTQlaCBUw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-E1zb_8iwjEoCeomEXlh7cDXhUuu9MK9lQVRmbiapSm6ZLfmDxx1P4h9k1e0O8Sa6YcF0_GoHr9Lxf0HWPxn1cJZ-PdGlYltup15BXqSmmLMPjz9WTYmHcyHZjxwIs_KJj4YDhV084Pcph5F1PB1TiQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-03",
+      "endDate": "2026-10-03",
+      "hours": [],
+      "reason": "都合により",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 都合により"
+  },
+  {
+    "id": "sns_post_okinawa_20261011_0_2105837770208129141",
+    "shopId": "okinawa",
+    "shopName": "沖縄店",
+    "postSource": "x",
+    "postUrl": "https://x.com/okinawa_jiro/status/2105837770208129141",
+    "postedAt": "2026-10-02T01:50:23.000Z",
+    "postText": "【10月の営業予定】 ・11日（日）　休業 ・12日（月）　昼営業のみ（祝日）  また、今月より土日祝の営業時間を １０：３０〜１４：３０ に変更いたします。 https://t.co/9jaUx2r9DX",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-df5PMS6XI9hINPKY4AS-FDveDnwYAU9QwP0_9MxXdn9MG3ygpeo0db0i7u2zdNYN_dCtudxquauQYB5qLVslDNSKHkqCDEImrsstZ9Nqh50Ueg2Z4hDZZFZ-Ern4hKl6AofMtCmwcSygTuplSU9ayw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-LQRh0q169OrrgOc3F8LgDXS_Z2860kO8sseuDZPrjCIqJfQulzOQNEmg21MdPyM6tf4gF7sldumSpzIlRfhLr36GQdgr5rXkw_zSYV0KJ_7TEWRqo9mK5N_ZDeESW7ap1AaYuwbp_Y_aY0XDKlZRJQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-11",
+      "endDate": "2026-10-11",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_okinawa_20261012_1_2105837770208129141",
+    "shopId": "okinawa",
+    "shopName": "沖縄店",
+    "postSource": "x",
+    "postUrl": "https://x.com/okinawa_jiro/status/2105837770208129141",
+    "postedAt": "2026-10-02T01:50:23.000Z",
+    "postText": "【10月の営業予定】 ・11日（日）　休業 ・12日（月）　昼営業のみ（祝日）  また、今月より土日祝の営業時間を １０：３０〜１４：３０ に変更いたします。 https://t.co/9jaUx2r9DX",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-df5PMS6XI9hINPKY4AS-FDveDnwYAU9QwP0_9MxXdn9MG3ygpeo0db0i7u2zdNYN_dCtudxquauQYB5qLVslDNSKHkqCDEImrsstZ9Nqh50Ueg2Z4hDZZFZ-Ern4hKl6AofMtCmwcSygTuplSU9ayw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-LQRh0q169OrrgOc3F8LgDXS_Z2860kO8sseuDZPrjCIqJfQulzOQNEmg21MdPyM6tf4gF7sldumSpzIlRfhLr36GQdgr5rXkw_zSYV0KJ_7TEWRqo9mK5N_ZDeESW7ap1AaYuwbp_Y_aY0XDKlZRJQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-12",
+      "hours": [
+        [
+          10.5,
+          14.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
