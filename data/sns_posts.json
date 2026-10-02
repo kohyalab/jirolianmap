@@ -5131,5 +5131,435 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_ichinoe_20261001_0_2106131023021170826",
+    "shopId": "ichinoe",
+    "shopName": "環七一之江店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ichinoejiro/status/2106131023021170826",
+    "postedAt": "2026-10-02T21:15:40.000Z",
+    "postText": "1（木）〜2（金）と、 夜のご来店が少ないと思ってましたが、赤丸🔴がついてなかったので。 改めて10月の営業予定です。 宜しくお願い申し上げます https://t.co/8cuHuURXuF",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-tQbtusz2GcAK32TJwRsEP4G7n9xhXZe-4FWuNnTj-bofN2LIMgRpw-itxB9kE1mpbqx_2ffQ4jUwarZTdH45ZOxk1h9KE6kXqlxZsAOJgVtGk6wzut0m4nNa9uuVlWXq5C3ksRKd95h8sY2Wf7M5Zg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-As1P8KhLkfxmZywDEPppi7oCkYK5l2aah5Ln0q-oHMvxf6NeKTdXXPIs5UYf5aeNCEw2_cjQ2pqrHiilVgxBGJlPAzQVBuSytEAUY0etnmcflFWQNTc3m35o2iPCk9LQWfG_ZjxQKBrsn2-EoFNYaQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-01",
+      "hours": [
+        [
+          10.5,
+          14
+        ],
+        [
+          17.5,
+          20
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_ichinoe_20261002_1_2106131023021170826",
+    "shopId": "ichinoe",
+    "shopName": "環七一之江店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ichinoejiro/status/2106131023021170826",
+    "postedAt": "2026-10-02T21:15:40.000Z",
+    "postText": "1（木）〜2（金）と、 夜のご来店が少ないと思ってましたが、赤丸🔴がついてなかったので。 改めて10月の営業予定です。 宜しくお願い申し上げます https://t.co/8cuHuURXuF",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-tQbtusz2GcAK32TJwRsEP4G7n9xhXZe-4FWuNnTj-bofN2LIMgRpw-itxB9kE1mpbqx_2ffQ4jUwarZTdH45ZOxk1h9KE6kXqlxZsAOJgVtGk6wzut0m4nNa9uuVlWXq5C3ksRKd95h8sY2Wf7M5Zg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-As1P8KhLkfxmZywDEPppi7oCkYK5l2aah5Ln0q-oHMvxf6NeKTdXXPIs5UYf5aeNCEw2_cjQ2pqrHiilVgxBGJlPAzQVBuSytEAUY0etnmcflFWQNTc3m35o2iPCk9LQWfG_ZjxQKBrsn2-EoFNYaQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-02",
+      "hours": [
+        [
+          9,
+          14
+        ],
+        [
+          17.5,
+          20
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_ichinoe_20261006_2_2106131023021170826",
+    "shopId": "ichinoe",
+    "shopName": "環七一之江店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ichinoejiro/status/2106131023021170826",
+    "postedAt": "2026-10-02T21:15:40.000Z",
+    "postText": "1（木）〜2（金）と、 夜のご来店が少ないと思ってましたが、赤丸🔴がついてなかったので。 改めて10月の営業予定です。 宜しくお願い申し上げます https://t.co/8cuHuURXuF",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-tQbtusz2GcAK32TJwRsEP4G7n9xhXZe-4FWuNnTj-bofN2LIMgRpw-itxB9kE1mpbqx_2ffQ4jUwarZTdH45ZOxk1h9KE6kXqlxZsAOJgVtGk6wzut0m4nNa9uuVlWXq5C3ksRKd95h8sY2Wf7M5Zg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-As1P8KhLkfxmZywDEPppi7oCkYK5l2aah5Ln0q-oHMvxf6NeKTdXXPIs5UYf5aeNCEw2_cjQ2pqrHiilVgxBGJlPAzQVBuSytEAUY0etnmcflFWQNTc3m35o2iPCk9LQWfG_ZjxQKBrsn2-EoFNYaQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-06",
+      "endDate": "2026-10-06",
+      "hours": [
+        [
+          17.5,
+          20
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_ichinoe_20261008_3_2106131023021170826",
+    "shopId": "ichinoe",
+    "shopName": "環七一之江店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ichinoejiro/status/2106131023021170826",
+    "postedAt": "2026-10-02T21:15:40.000Z",
+    "postText": "1（木）〜2（金）と、 夜のご来店が少ないと思ってましたが、赤丸🔴がついてなかったので。 改めて10月の営業予定です。 宜しくお願い申し上げます https://t.co/8cuHuURXuF",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-tQbtusz2GcAK32TJwRsEP4G7n9xhXZe-4FWuNnTj-bofN2LIMgRpw-itxB9kE1mpbqx_2ffQ4jUwarZTdH45ZOxk1h9KE6kXqlxZsAOJgVtGk6wzut0m4nNa9uuVlWXq5C3ksRKd95h8sY2Wf7M5Zg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-As1P8KhLkfxmZywDEPppi7oCkYK5l2aah5Ln0q-oHMvxf6NeKTdXXPIs5UYf5aeNCEw2_cjQ2pqrHiilVgxBGJlPAzQVBuSytEAUY0etnmcflFWQNTc3m35o2iPCk9LQWfG_ZjxQKBrsn2-EoFNYaQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-08",
+      "endDate": "2026-10-08",
+      "hours": [
+        [
+          10.5,
+          14
+        ],
+        [
+          17.5,
+          20
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_ichinoe_20261009_4_2106131023021170826",
+    "shopId": "ichinoe",
+    "shopName": "環七一之江店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ichinoejiro/status/2106131023021170826",
+    "postedAt": "2026-10-02T21:15:40.000Z",
+    "postText": "1（木）〜2（金）と、 夜のご来店が少ないと思ってましたが、赤丸🔴がついてなかったので。 改めて10月の営業予定です。 宜しくお願い申し上げます https://t.co/8cuHuURXuF",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-tQbtusz2GcAK32TJwRsEP4G7n9xhXZe-4FWuNnTj-bofN2LIMgRpw-itxB9kE1mpbqx_2ffQ4jUwarZTdH45ZOxk1h9KE6kXqlxZsAOJgVtGk6wzut0m4nNa9uuVlWXq5C3ksRKd95h8sY2Wf7M5Zg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-As1P8KhLkfxmZywDEPppi7oCkYK5l2aah5Ln0q-oHMvxf6NeKTdXXPIs5UYf5aeNCEw2_cjQ2pqrHiilVgxBGJlPAzQVBuSytEAUY0etnmcflFWQNTc3m35o2iPCk9LQWfG_ZjxQKBrsn2-EoFNYaQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-09",
+      "endDate": "2026-10-09",
+      "hours": [
+        [
+          9,
+          14
+        ],
+        [
+          17.5,
+          20
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_ichinoe_20261015_5_2106131023021170826",
+    "shopId": "ichinoe",
+    "shopName": "環七一之江店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ichinoejiro/status/2106131023021170826",
+    "postedAt": "2026-10-02T21:15:40.000Z",
+    "postText": "1（木）〜2（金）と、 夜のご来店が少ないと思ってましたが、赤丸🔴がついてなかったので。 改めて10月の営業予定です。 宜しくお願い申し上げます https://t.co/8cuHuURXuF",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-tQbtusz2GcAK32TJwRsEP4G7n9xhXZe-4FWuNnTj-bofN2LIMgRpw-itxB9kE1mpbqx_2ffQ4jUwarZTdH45ZOxk1h9KE6kXqlxZsAOJgVtGk6wzut0m4nNa9uuVlWXq5C3ksRKd95h8sY2Wf7M5Zg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-As1P8KhLkfxmZywDEPppi7oCkYK5l2aah5Ln0q-oHMvxf6NeKTdXXPIs5UYf5aeNCEw2_cjQ2pqrHiilVgxBGJlPAzQVBuSytEAUY0etnmcflFWQNTc3m35o2iPCk9LQWfG_ZjxQKBrsn2-EoFNYaQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-15",
+      "endDate": "2026-10-15",
+      "hours": [
+        [
+          10.5,
+          14
+        ],
+        [
+          17.5,
+          20
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_ichinoe_20261016_6_2106131023021170826",
+    "shopId": "ichinoe",
+    "shopName": "環七一之江店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ichinoejiro/status/2106131023021170826",
+    "postedAt": "2026-10-02T21:15:40.000Z",
+    "postText": "1（木）〜2（金）と、 夜のご来店が少ないと思ってましたが、赤丸🔴がついてなかったので。 改めて10月の営業予定です。 宜しくお願い申し上げます https://t.co/8cuHuURXuF",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-tQbtusz2GcAK32TJwRsEP4G7n9xhXZe-4FWuNnTj-bofN2LIMgRpw-itxB9kE1mpbqx_2ffQ4jUwarZTdH45ZOxk1h9KE6kXqlxZsAOJgVtGk6wzut0m4nNa9uuVlWXq5C3ksRKd95h8sY2Wf7M5Zg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-As1P8KhLkfxmZywDEPppi7oCkYK5l2aah5Ln0q-oHMvxf6NeKTdXXPIs5UYf5aeNCEw2_cjQ2pqrHiilVgxBGJlPAzQVBuSytEAUY0etnmcflFWQNTc3m35o2iPCk9LQWfG_ZjxQKBrsn2-EoFNYaQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-16",
+      "endDate": "2026-10-16",
+      "hours": [
+        [
+          9,
+          14
+        ],
+        [
+          17.5,
+          20
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_ichinoe_20261020_7_2106131023021170826",
+    "shopId": "ichinoe",
+    "shopName": "環七一之江店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ichinoejiro/status/2106131023021170826",
+    "postedAt": "2026-10-02T21:15:40.000Z",
+    "postText": "1（木）〜2（金）と、 夜のご来店が少ないと思ってましたが、赤丸🔴がついてなかったので。 改めて10月の営業予定です。 宜しくお願い申し上げます https://t.co/8cuHuURXuF",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-tQbtusz2GcAK32TJwRsEP4G7n9xhXZe-4FWuNnTj-bofN2LIMgRpw-itxB9kE1mpbqx_2ffQ4jUwarZTdH45ZOxk1h9KE6kXqlxZsAOJgVtGk6wzut0m4nNa9uuVlWXq5C3ksRKd95h8sY2Wf7M5Zg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-As1P8KhLkfxmZywDEPppi7oCkYK5l2aah5Ln0q-oHMvxf6NeKTdXXPIs5UYf5aeNCEw2_cjQ2pqrHiilVgxBGJlPAzQVBuSytEAUY0etnmcflFWQNTc3m35o2iPCk9LQWfG_ZjxQKBrsn2-EoFNYaQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-20",
+      "endDate": "2026-10-20",
+      "hours": [
+        [
+          17.5,
+          20
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_ichinoe_20261022_8_2106131023021170826",
+    "shopId": "ichinoe",
+    "shopName": "環七一之江店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ichinoejiro/status/2106131023021170826",
+    "postedAt": "2026-10-02T21:15:40.000Z",
+    "postText": "1（木）〜2（金）と、 夜のご来店が少ないと思ってましたが、赤丸🔴がついてなかったので。 改めて10月の営業予定です。 宜しくお願い申し上げます https://t.co/8cuHuURXuF",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-tQbtusz2GcAK32TJwRsEP4G7n9xhXZe-4FWuNnTj-bofN2LIMgRpw-itxB9kE1mpbqx_2ffQ4jUwarZTdH45ZOxk1h9KE6kXqlxZsAOJgVtGk6wzut0m4nNa9uuVlWXq5C3ksRKd95h8sY2Wf7M5Zg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-As1P8KhLkfxmZywDEPppi7oCkYK5l2aah5Ln0q-oHMvxf6NeKTdXXPIs5UYf5aeNCEw2_cjQ2pqrHiilVgxBGJlPAzQVBuSytEAUY0etnmcflFWQNTc3m35o2iPCk9LQWfG_ZjxQKBrsn2-EoFNYaQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-22",
+      "endDate": "2026-10-22",
+      "hours": [
+        [
+          10.5,
+          14
+        ],
+        [
+          17.5,
+          20
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_ichinoe_20261023_9_2106131023021170826",
+    "shopId": "ichinoe",
+    "shopName": "環七一之江店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ichinoejiro/status/2106131023021170826",
+    "postedAt": "2026-10-02T21:15:40.000Z",
+    "postText": "1（木）〜2（金）と、 夜のご来店が少ないと思ってましたが、赤丸🔴がついてなかったので。 改めて10月の営業予定です。 宜しくお願い申し上げます https://t.co/8cuHuURXuF",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-tQbtusz2GcAK32TJwRsEP4G7n9xhXZe-4FWuNnTj-bofN2LIMgRpw-itxB9kE1mpbqx_2ffQ4jUwarZTdH45ZOxk1h9KE6kXqlxZsAOJgVtGk6wzut0m4nNa9uuVlWXq5C3ksRKd95h8sY2Wf7M5Zg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-As1P8KhLkfxmZywDEPppi7oCkYK5l2aah5Ln0q-oHMvxf6NeKTdXXPIs5UYf5aeNCEw2_cjQ2pqrHiilVgxBGJlPAzQVBuSytEAUY0etnmcflFWQNTc3m35o2iPCk9LQWfG_ZjxQKBrsn2-EoFNYaQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-23",
+      "endDate": "2026-10-23",
+      "hours": [
+        [
+          9,
+          14
+        ],
+        [
+          17.5,
+          20
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_ichinoe_20261027_10_2106131023021170826",
+    "shopId": "ichinoe",
+    "shopName": "環七一之江店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ichinoejiro/status/2106131023021170826",
+    "postedAt": "2026-10-02T21:15:40.000Z",
+    "postText": "1（木）〜2（金）と、 夜のご来店が少ないと思ってましたが、赤丸🔴がついてなかったので。 改めて10月の営業予定です。 宜しくお願い申し上げます https://t.co/8cuHuURXuF",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-tQbtusz2GcAK32TJwRsEP4G7n9xhXZe-4FWuNnTj-bofN2LIMgRpw-itxB9kE1mpbqx_2ffQ4jUwarZTdH45ZOxk1h9KE6kXqlxZsAOJgVtGk6wzut0m4nNa9uuVlWXq5C3ksRKd95h8sY2Wf7M5Zg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-As1P8KhLkfxmZywDEPppi7oCkYK5l2aah5Ln0q-oHMvxf6NeKTdXXPIs5UYf5aeNCEw2_cjQ2pqrHiilVgxBGJlPAzQVBuSytEAUY0etnmcflFWQNTc3m35o2iPCk9LQWfG_ZjxQKBrsn2-EoFNYaQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-27",
+      "endDate": "2026-10-27",
+      "hours": [
+        [
+          17.5,
+          20
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_ichinoe_20261029_11_2106131023021170826",
+    "shopId": "ichinoe",
+    "shopName": "環七一之江店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ichinoejiro/status/2106131023021170826",
+    "postedAt": "2026-10-02T21:15:40.000Z",
+    "postText": "1（木）〜2（金）と、 夜のご来店が少ないと思ってましたが、赤丸🔴がついてなかったので。 改めて10月の営業予定です。 宜しくお願い申し上げます https://t.co/8cuHuURXuF",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-tQbtusz2GcAK32TJwRsEP4G7n9xhXZe-4FWuNnTj-bofN2LIMgRpw-itxB9kE1mpbqx_2ffQ4jUwarZTdH45ZOxk1h9KE6kXqlxZsAOJgVtGk6wzut0m4nNa9uuVlWXq5C3ksRKd95h8sY2Wf7M5Zg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-As1P8KhLkfxmZywDEPppi7oCkYK5l2aah5Ln0q-oHMvxf6NeKTdXXPIs5UYf5aeNCEw2_cjQ2pqrHiilVgxBGJlPAzQVBuSytEAUY0etnmcflFWQNTc3m35o2iPCk9LQWfG_ZjxQKBrsn2-EoFNYaQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-29",
+      "endDate": "2026-10-29",
+      "hours": [
+        [
+          10.5,
+          14
+        ],
+        [
+          17.5,
+          20
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_ichinoe_20261030_12_2106131023021170826",
+    "shopId": "ichinoe",
+    "shopName": "環七一之江店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ichinoejiro/status/2106131023021170826",
+    "postedAt": "2026-10-02T21:15:40.000Z",
+    "postText": "1（木）〜2（金）と、 夜のご来店が少ないと思ってましたが、赤丸🔴がついてなかったので。 改めて10月の営業予定です。 宜しくお願い申し上げます https://t.co/8cuHuURXuF",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-tQbtusz2GcAK32TJwRsEP4G7n9xhXZe-4FWuNnTj-bofN2LIMgRpw-itxB9kE1mpbqx_2ffQ4jUwarZTdH45ZOxk1h9KE6kXqlxZsAOJgVtGk6wzut0m4nNa9uuVlWXq5C3ksRKd95h8sY2Wf7M5Zg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-As1P8KhLkfxmZywDEPppi7oCkYK5l2aah5Ln0q-oHMvxf6NeKTdXXPIs5UYf5aeNCEw2_cjQ2pqrHiilVgxBGJlPAzQVBuSytEAUY0etnmcflFWQNTc3m35o2iPCk9LQWfG_ZjxQKBrsn2-EoFNYaQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-30",
+      "endDate": "2026-10-30",
+      "hours": [
+        [
+          9,
+          14
+        ],
+        [
+          17.5,
+          20
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
