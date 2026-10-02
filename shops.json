@@ -1597,6 +1597,13 @@
         "startDate": "2026-09-26",
         "endDate": "2026-09-26",
         "hours": []
+      },
+      {
+        "startDate": "2026-10-03",
+        "endDate": "2026-10-03",
+        "hours": [],
+        "sourceUrl": "https://x.com/ogkb_jiro/status/2105401278486774009",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -2993,6 +3000,20 @@
             15
           ]
         ]
+      },
+      {
+        "startDate": "2026-10-13",
+        "endDate": "2026-10-13",
+        "hours": [],
+        "sourceUrl": "https://x.com/sumo_jiro/status/2105922901849645065",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-18",
+        "endDate": "2026-10-18",
+        "hours": [],
+        "sourceUrl": "https://x.com/sumo_jiro/status/2105922901849645065",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -3275,23 +3296,40 @@
     "id": "nakayamaekimae",
     "name": "中山駅前店",
     "kana": "ナカヤマエキマエテン",
+    "shortName": "中山",
+    "prefCode": "14",
+    "cityCode": "14113",
     "addressText": "台村町309番地1土井ビル",
     "lat": 35.51306740037521,
     "lng": 139.5386489179161,
-    "urls": {
-      "pc": "https://ramen-jiro-pc3.com/nakayamaekimae/",
-      "tabelog": "https://tabelog.com/kanagawa/A1401/A140207/14038422/",
-      "rdb": "https://ramendb.supleks.jp/s/30935.html"
-    },
-    "x": "NKYMJIRO",
-    "ticketTiming": "",
     "openedAt": "2010-12-12",
     "closedAt": null,
+    "urls": {
+      "pc": "https://ramen-jiro-pc3.com/nakayamaekimae/",
+      "rdb": "https://ramendb.supleks.jp/s/30935.html",
+      "tabelog": "https://tabelog.com/kanagawa/A1401/A140207/14038422/"
+    },
+    "x": "NKYMJIRO",
+    "instagram": "",
+    "ticketTiming": "",
+    "soupType": "",
+    "renge": "",
+    "takeout": "",
+    "hoursNotes": "",
+    "remarks": "",
     "temporary": [
       {
         "startDate": "2026-08-20",
         "endDate": "2026-08-27",
         "hours": []
+      },
+      {
+        "startDate": "2026-10-03",
+        "endDate": "2026-10-03",
+        "hours": [],
+        "reason": "都合により",
+        "sourceUrl": "https://x.com/NKYMJIRO/status/2105838896601055454",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -3357,12 +3395,7 @@
         ]
       ]
     },
-    "holidayShifts": null,
-    "remarks": "",
-    "hoursNotes": "",
-    "instagram": "",
-    "shortName": "中山",
-    "cityCode": "14113"
+    "holidayShifts": null
   },
   {
     "id": "shimbashi2",
@@ -3992,6 +4025,37 @@
             15
           ]
         ]
+      },
+      {
+        "startDate": "2026-10-04",
+        "endDate": "2026-10-04",
+        "hours": [
+          [
+            11,
+            15
+          ]
+        ],
+        "sourceUrl": "https://x.com/aizu_jiro/status/2105452519845670967",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-12",
+        "endDate": "2026-10-12",
+        "hours": [],
+        "sourceUrl": "https://x.com/aizu_jiro/status/2105452519845670967",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-18",
+        "endDate": "2026-10-18",
+        "hours": [
+          [
+            11,
+            15
+          ]
+        ],
+        "sourceUrl": "https://x.com/aizu_jiro/status/2105452519845670967",
+        "_isAiImported": true
       }
     ],
     "specialShifts": [
@@ -4373,6 +4437,14 @@
         "startDate": "2026-09-20",
         "endDate": "2026-09-20",
         "hours": []
+      },
+      {
+        "startDate": "2026-10-02",
+        "endDate": "2026-10-02",
+        "hours": [],
+        "reason": "従業員不足のため",
+        "sourceUrl": "https://x.com/kwge26/status/2105452926076629326",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -6404,6 +6476,13 @@
         "reason": "都合により",
         "sourceUrl": "https://x.com/okinawa_jiro/status/2104426042006052920",
         "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-11",
+        "endDate": "2026-10-11",
+        "hours": [],
+        "sourceUrl": "https://x.com/okinawa_jiro/status/2105837770208129141",
+        "_isAiImported": true
       }
     ],
     "holidaySpecialShifts": [
@@ -6457,21 +6536,21 @@
       ],
       "5": [
         [
-          11,
-          15
+          10.5,
+          14.5
         ]
       ],
       "6": [
         [
-          11,
-          15
+          10.5,
+          14.5
         ]
       ]
     },
     "holidayShifts": [
       [
-        11,
-        15
+        10.5,
+        14.5
       ]
     ]
   }
