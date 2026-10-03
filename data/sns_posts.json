@@ -5630,5 +5630,26 @@
     "processedAt": null,
     "aiStatus": "match",
     "aiReason": "既に登録済みの臨時スケジュールと一致"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2106195769422402014",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2106195769422402014",
+    "postedAt": "2026-10-03T01:32:57.000Z",
+    "postText": "@jagabayashi うおおおおぉおん！！帰り際まで気付けなくてすみません！！ぼんやり仕事してて猛省…。  またお越しくださいませ！！ Mリーグいつも楽しみに見ております！🫡",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-03",
+      "endDate": "2026-10-03",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
   }
 ]
