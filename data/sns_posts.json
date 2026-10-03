@@ -5977,5 +5977,36 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_kyoto_20261003_0_2106354952457400449",
+    "shopId": "kyoto",
+    "shopName": "京都店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kyoto/status/2106354952457400449",
+    "postedAt": "2026-10-03T12:05:29.000Z",
+    "postText": "本日は只今お待ちの方で終了です🙇‍♂️",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-03",
+      "endDate": "2026-10-03",
+      "hours": [
+        [
+          11,
+          14.5
+        ],
+        [
+          17.5,
+          21.08
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
