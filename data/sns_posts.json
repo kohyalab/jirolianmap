@@ -5784,5 +5784,85 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_sengawa_20261003_0_2106266653214257267",
+    "shopId": "sengawa",
+    "shopName": "仙川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjiro26/status/2106266653214257267",
+    "postedAt": "2026-10-03T06:14:37.000Z",
+    "postText": "本日17時から店内営業とテイクアウト販売します。テイクアウトはつけ麺に転用可能です。お薦めの調味料です。 https://t.co/1sadbS11VF",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-K9zS4EatooNxUVu-yAMDZ8MnMXZTj0tufn_LbSrKXWcUL9BC_WVkGTCBUW2tIqa1-HNWz28AxO3qF4inPtMpJqWLmQvdLEpqzXsXVv5vZPVOZRnyZlxPC7JKHyjK57q_zOkRCL7mBuOZMOIKwhiCRw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-F_bPv9wr8t3cY6rO6wbSJ3HFFHwuOhypRfS9HscbvRt2NHtdOxUK8SEJryUaRzbhoCYMcbmhBc3lBwPNmG_M3PEZzKdeEEDVzAi9I0DTuhWODMD4z3SASKiIxbyUr6ONYCIP0--bwRWIEjBnNhkHmA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-U8zZH1SVDeRtpHPk-hSObbu35bTu3qLq9P8YpILZXF7sQujMsslGAPcMp3eTF21erMKLDoKjZ3h-ho3-IGgz7pHIHC4NhcN_WfI-zk8UlAIDT44hHDW6Way1MRmnzZRIMy45dG2jgApc76ucHy47cg=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-10-03",
+      "endDate": "2026-10-03",
+      "hours": [
+        [
+          17,
+          21
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_jimbocho_20261003_0_2106267919982502246",
+    "shopId": "jimbocho",
+    "shopName": "神田神保町店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jbc_ramen_jiro/status/2106267919982502246",
+    "postedAt": "2026-10-03T06:19:39.000Z",
+    "postText": "ただ今お並びのお客様までで、本日の営業終了となります。  なお、あさって10月5日(月)は都合によりお休みさせていただきます。  よろしくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-03",
+      "endDate": "2026-10-03",
+      "hours": [
+        [
+          11,
+          15.316666666666666
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_jimbocho_20261005_1_2106267919982502246",
+    "shopId": "jimbocho",
+    "shopName": "神田神保町店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jbc_ramen_jiro/status/2106267919982502246",
+    "postedAt": "2026-10-03T06:19:39.000Z",
+    "postText": "ただ今お並びのお客様までで、本日の営業終了となります。  なお、あさって10月5日(月)は都合によりお休みさせていただきます。  よろしくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-05",
+      "hours": [],
+      "reason": "都合により",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 都合により"
   }
 ]
