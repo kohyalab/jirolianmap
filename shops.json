@@ -2651,18 +2651,27 @@
     "id": "tachikawa",
     "name": "立川店",
     "kana": "タチカワテン",
+    "shortName": "立川",
+    "prefCode": "13",
+    "cityCode": "13202",
     "addressText": "柴崎町2丁目10-1",
     "lat": 35.69653102428673,
     "lng": 139.4095437508755,
+    "openedAt": "2008-04-27",
+    "closedAt": null,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/tachikawa/",
       "rdb": "https://ramendb.supleks.jp/s/14757.html",
       "tabelog": "https://tabelog.com/tokyo/A1329/A132901/13049195/"
     },
     "x": "jirotachikawa",
+    "instagram": "tachikawajiro",
     "ticketTiming": "",
-    "openedAt": "2008-04-27",
-    "closedAt": null,
+    "soupType": "",
+    "renge": "",
+    "takeout": "",
+    "hoursNotes": "祝日不定休",
+    "remarks": "",
     "temporary": [
       {
         "startDate": "2026-08-11",
@@ -2709,6 +2718,34 @@
       {
         "startDate": "2026-09-22",
         "endDate": "2026-09-22",
+        "hours": [
+          [
+            11,
+            14.5
+          ],
+          [
+            17,
+            21.5
+          ]
+        ]
+      },
+      {
+        "startDate": "2026-10-13",
+        "endDate": "2026-10-13",
+        "hours": [
+          [
+            11,
+            14.5
+          ],
+          [
+            17,
+            21.5
+          ]
+        ]
+      },
+      {
+        "startDate": "2026-10-27",
+        "endDate": "2026-10-27",
         "hours": [
           [
             11,
@@ -2784,15 +2821,7 @@
         ]
       ]
     },
-    "holidayShifts": null,
-    "remarks": "",
-    "hoursNotes": "祝日不定休",
-    "instagram": "tachikawajiro",
-    "shortName": "立川",
-    "soupType": "",
-    "renge": "",
-    "takeout": "",
-    "cityCode": "13202"
+    "holidayShifts": null
   },
   {
     "id": "omiya",
