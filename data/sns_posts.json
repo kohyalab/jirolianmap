@@ -5914,5 +5914,37 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261004_0_2106308517565194613",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2106308517565194613",
+    "postedAt": "2026-10-03T09:00:58.000Z",
+    "postText": "明日 ◇10/4（日） 【日曜日営業🈺】 10:00から〜15:00 ご来店ご到着お並びの お客様まで営業致します。  →［ひやコロ］日曜日で終了致します☑️最終です♪ →［お椀で和ッカレー］ →まかない←にオススメ！  よろしくお願い致します。 https://t.co/0kRO0K87yY",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-gz-X5YSkYuOAfNIqsgEVE9jgzG6Em-E7Rg7xTmGOJAMZM2HkwZw_3kIBA0h0rlROUC14plPhV_eCrjqKshGtbuZU79hqrdaO0v1iJLs-RJhSIDnIpN6BPXyYASWmZpvPFxpXG_Q9EzCQ1ykCLVzx0Q==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-AxEBmJpuzwnt-DdyQhgPlGmqNCEPY2sti_t_K3ij53Mcq3dLDFTjEjG5arEGIl5mlbm2Xz5KWDlGhAcBxL425_xhYj9J2-EFGvg5PEpYL-PPe_tlg3O4p35zT1UNAtCKaWhg-eTrsRlxUI2KiDIT1Q==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-f6UQImVuKjBt1i_-8MgdRLEwWw_7rKYaC-E25sO9vd1__MMkGWQVB1AQw-HsBdYbOnnNGlYPmgBEUm2G8nUnEazevBmt1wFZPpwLlnShturH9D7CDikudm0BMGpeAHjQj9baFcgdYdIghKovh47hbg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-wET7eChqSH4JJvY1QYxIHZS-elI9QfaJsOzArFCCvkb-Y6VE7j09BvfXnP2J3mRalitt0oYTEFepfBFTZ0ftf1Dws_hDFtr1qX87lHs1uQ0driHRwSTGHF6xwPzrg_5jUSd7rJ0YdCNSKgENPxD_dQ=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-10-04",
+      "endDate": "2026-10-04",
+      "hours": [
+        [
+          10,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   }
 ]
