@@ -1476,6 +1476,13 @@
         "startDate": "2026-09-21",
         "endDate": "2026-09-21",
         "hours": []
+      },
+      {
+        "startDate": "2026-10-10",
+        "endDate": "2026-10-10",
+        "hours": [],
+        "sourceUrl": "https://x.com/matsudojiro3/status/2106403668404863285",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
