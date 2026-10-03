@@ -2,42 +2,20 @@
   "generalRules": [],
   "learnedFeedback": [
     {
-      "id": "sns_post_asakurakaido_20261003_0_2106214350935748967",
-      "timestamp": "2026-10-03T07:19:46.038Z",
-      "shopId": "asakurakaido",
-      "shopName": "朝倉街道駅前店",
-      "postDate": "2026-10-03T02:46:47.000Z",
-      "postText": "本日12:00-15:00営業いたします。 西鉄ストア様、西日本シティ銀行様、他店舗病院等駐車禁止 空いていても一般的なコインパーキングをご利用下さい。 グループの方は歩道を塞がずお静かにお願いします。 代表待ち、割込み、飲酒喫煙禁止 朝倉街道駅徒歩1分、天拝山駅7分",
+      "id": "sns_post_matsudo_20261010_0_2106403668404863285",
+      "timestamp": "2026-10-03T21:56:13.993Z",
+      "shopId": "matsudo",
+      "shopName": "松戸駅前店",
+      "postDate": "2026-10-03T15:19:04.000Z",
+      "postText": "毎度ありがとうございます。  10月10日土曜日は休業します。  よろしくお願いいたします。",
       "aiStatus": "schedule_change",
       "aiReason": "営業時間の変更を検出",
       "humanAction": "applied",
       "finalDetails": {
-        "startDate": "2026-10-03",
-        "endDate": "2026-10-03",
-        "hours": [
-          [
-            12,
-            15
-          ]
-        ],
-        "reason": ""
-      }
-    },
-    {
-      "id": "sns_post_jimbocho_20261005_1_2106267919982502246",
-      "timestamp": "2026-10-03T07:19:03.784Z",
-      "shopId": "jimbocho",
-      "shopName": "神田神保町店",
-      "postDate": "2026-10-03T06:19:39.000Z",
-      "postText": "ただ今お並びのお客様までで、本日の営業終了となります。  なお、あさって10月5日(月)は都合によりお休みさせていただきます。  よろしくお願いします。",
-      "aiStatus": "schedule_change",
-      "aiReason": "営業変更検出: 都合により",
-      "humanAction": "applied",
-      "finalDetails": {
-        "startDate": "2026-10-05",
-        "endDate": "2026-10-05",
+        "startDate": "2026-10-10",
+        "endDate": "2026-10-10",
         "hours": [],
-        "reason": "都合により"
+        "reason": ""
       }
     }
   ]
