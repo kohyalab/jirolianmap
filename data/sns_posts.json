@@ -6162,5 +6162,34 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_mejirodai_20261004_0_2106523415574458475",
+    "shopId": "mejirodai",
+    "shopName": "めじろ台店",
+    "postSource": "x",
+    "postUrl": "https://x.com/mejirodai_jiro/status/2106523415574458475",
+    "postedAt": "2026-10-03T23:14:54.000Z",
+    "postText": "毎度ありがとうございます 本日4(日)の営業時間は11〜15時となります なおただ今アルバイト募集中ですのでXのDMの方までご連絡お待ちしてます よろしくお願いします🙇 https://t.co/0pHSsSmj80",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-efOl4WeU1HJfMU1EAhZ2ecjSZO6FnOClUkquNlhD6S3Li4zF--0y23YzDmutQvF_SBveOdDeM2OlRn0T1PZMD4BUN4h2N4VornWTXi2btjy7vhWHHcHmN8qOal6fraPaP_dRMaC3BdzYzh5jBeabhQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-04",
+      "endDate": "2026-10-04",
+      "hours": [
+        [
+          11,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   }
 ]
