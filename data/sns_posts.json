@@ -5893,5 +5893,26 @@
     "processedAt": "2026-10-03T07:20:05.560Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_daily_kannai_2106289413303206166",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2106289413303206166",
+    "postedAt": "2026-10-03T07:45:03.000Z",
+    "postText": "こんにちは。 カラマヨ無くなり次第 タルタルとなります。 ご希望の方は「アレ」でお願いします。 海老っちょ辣油はもう少しあります。 宜しくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-03",
+      "endDate": "2026-10-03",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
