@@ -2145,6 +2145,14 @@
         "reason": "都合により",
         "sourceUrl": "https://x.com/jbc_ramen_jiro/status/2105515787708682572",
         "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-05",
+        "endDate": "2026-10-05",
+        "hours": [],
+        "reason": "都合により",
+        "sourceUrl": "https://x.com/jbc_ramen_jiro/status/2106267919982502246",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -5999,6 +6007,18 @@
             15
           ]
         ]
+      },
+      {
+        "startDate": "2026-10-03",
+        "endDate": "2026-10-03",
+        "hours": [
+          [
+            12,
+            15
+          ]
+        ],
+        "sourceUrl": "https://x.com/r26akgd/status/2106214350935748967",
+        "_isAiImported": true
       },
       {
         "startDate": "2026-10-18",
