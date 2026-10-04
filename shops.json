@@ -5303,18 +5303,27 @@
     "id": "omiyakoenekimae",
     "name": "大宮公園駅前店",
     "kana": "オオミヤコウエンエキマエテン",
+    "shortName": "大宮公園",
+    "prefCode": "11",
+    "cityCode": "11103",
     "addressText": "寿能町1丁目24",
     "lat": 35.922585729252674,
     "lng": 139.63200873447423,
+    "openedAt": "2020-06-05",
+    "closedAt": null,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/omiya/",
       "rdb": "https://ramendb.supleks.jp/s/125117.html",
-      "tabelog": "https://tabelog.com/saitama/A1101/A110101/11005758/"
+      "tabelog": "https://tabelog.com/saitama/A1101/A110101/11052604/"
     },
     "x": "omiyapark26",
+    "instagram": "",
     "ticketTiming": "",
-    "openedAt": "2020-06-05",
-    "closedAt": null,
+    "soupType": "",
+    "renge": "",
+    "takeout": "",
+    "hoursNotes": "",
+    "remarks": "",
     "temporary": [
       {
         "startDate": "2026-08-13",
@@ -5391,15 +5400,7 @@
         11,
         15
       ]
-    ],
-    "remarks": "",
-    "hoursNotes": "",
-    "instagram": "",
-    "shortName": "大宮公園",
-    "soupType": "",
-    "renge": "",
-    "takeout": "",
-    "cityCode": "11103"
+    ]
   },
   {
     "id": "hitachinaka",
