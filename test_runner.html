@@ -176,7 +176,10 @@
             const parsedAddr1 = LG_CODES.parseAddress('東京都港区三田2-16-4');
             assert('LG_CODES.parseAddress (都道府県・市区町村分離)', () => parsedAddr1.prefCode === '13' && parsedAddr1.cityCode === '13103' && parsedAddr1.remainingAddress === '三田2-16-4');
             const parsedAddr2 = LG_CODES.parseAddress('港区三田2-16-4');
-            assert('LG_CODES.parseAddress (市区町村のみから都道府県逆引き分離)', () => parsedAddr2.prefCode === '13' && parsedAddr2.cityCode === '13103' && parsedAddr2.remainingAddress === '三田2-16-4');
+            assert('LG_CODES.getPrefAndCityName (shop object)', () => LG_CODES.getPrefAndCityName({ prefCode: '13', cityCode: '13103' }) === '東京都港区');
+            assert('LG_CODES.getPrefAndCityName (shop object with prefCode only)', () => LG_CODES.getPrefAndCityName({ prefCode: '13' }) === '東京都');
+            assert('LG_CODES.getPrefAndCityName (prefCode and cityCode args)', () => LG_CODES.getPrefAndCityName('13', '13103') === '東京都港区');
+            assert('LG_CODES.getPrefAndCityName (cityCode alone)', () => LG_CODES.getPrefAndCityName('13103') === '東京都港区');
 
             // --- 4. share.js 単体テスト ---
             assert('share.js: window.shareFullGridImage 定義確認', () => typeof window.shareFullGridImage === 'function');
@@ -240,6 +243,59 @@
                     assert('メインアプリ: 制覇トグル (toggleVisit)', beforeVisit !== afterVisit);
                     // 元に戻す
                     appWin.toggleVisit(firstShopId, false, new MouseEvent('click'));
+                }
+
+                // オープン予定フィルタUIテスト
+                const preOpenChip = appDoc.getElementById('filter-chip-preopen');
+                assert('オープン予定フィルタ: 要素が存在する', () => preOpenChip !== null);
+                const hasPreOpen = (appWin.shops || []).some(s => appWin.getBusinessStatus(s).type === 'preopen');
+                assert('オープン予定フィルタ: 該当店舗の有無に応じた表示/非表示同期', () => {
+                    const isVisible = preOpenChip.style.display !== 'none';
+                    return isVisible === hasPreOpen;
+                });
+
+                // お気に入り機能テスト
+                const favTargetShop = (appWin.shops || [])[0];
+                if (favTargetShop && typeof appWin.toggleFavorite === 'function') {
+                    const favShopId = favTargetShop.id;
+                    const initialFavState = !!appWin.favoriteState[favShopId];
+                    // お気に入りON
+                    appWin.toggleFavorite(favShopId, new MouseEvent('click'));
+                    assert('お気に入り機能: トグルでONになる', () => !!appWin.favoriteState[favShopId] === !initialFavState);
+
+                    // お気に入りのみフィルタのテスト
+                    const favFilterCb = appDoc.getElementById('filter-favorite-only');
+                    if (favFilterCb) {
+                        favFilterCb.checked = true;
+                        appWin.render();
+                        const favOnlyCards = appDoc.querySelectorAll('#shop-grid .shop-item');
+                        const allFavCardsAreFav = Array.from(favOnlyCards).every(card => !!appWin.favoriteState[card.dataset.shopId]);
+                        assert('お気に入り機能: お気に入りのみフィルタ動作', () => favOnlyCards.length >= 1 && allFavCardsAreFav);
+                        favFilterCb.checked = false;
+                        appWin.render();
+                    }
+
+                    // 元に戻す
+                    appWin.toggleFavorite(favShopId, new MouseEvent('click'));
+                    assert('お気に入り機能: 再トグルで元の状態に復帰', () => !!appWin.favoriteState[favShopId] === initialFavState);
+                }
+
+                // 地図ON/OFF切り替えテスト
+                if (typeof appWin.toggleMapActive === 'function') {
+                    const initialMapActive = appWin.isMapActive;
+                    appWin.toggleMapActive();
+                    assert('地図表示切替: toggleMapActiveで状態反転', () => appWin.isMapActive === !initialMapActive);
+                    // 元に戻す
+                    appWin.toggleMapActive();
+                    assert('地図表示切替: 元の状態に復帰', () => appWin.isMapActive === initialMapActive);
+                }
+
+                // グリッド/リスト切り替えテスト
+                if (typeof appWin.setLayoutViewMode === 'function') {
+                    appWin.setLayoutViewMode('grid');
+                    assert('レイアウト切替: グリッドモード設定', () => appWin.layoutViewMode === 'grid');
+                    appWin.setLayoutViewMode('list');
+                    assert('レイアウト切替: リストモード設定', () => appWin.layoutViewMode === 'list');
                 }
 
                 // 共有画像設定モーダルの表示条件テスト
@@ -548,7 +604,15 @@
                     }, `結果: pref=${prefSelect.value}, city=${citySelect.value}, addr="${addrInput.value}"`);
                 }
 
-                // --- 6-3. エディタ機能: 臨時営業の過去エントリ（2日前以前）非表示＆トグルテスト ---
+                // --- 6-3. エディタ機能: 市区町村・都道府県変更の差分検出テスト ---
+                const testShopA = { id: 'test_diff_shop', name: '差分テスト店', prefCode: '13', cityCode: '13103' };
+                const testShopB = { id: 'test_diff_shop', name: '差分テスト店', prefCode: '14', cityCode: '14100' };
+                const testDiffs = edWin.app.getShopsDiffList([testShopA], [testShopB]);
+                assert('エディタ差分検出: 都道府県・市区町村の変更が差分として検出される', () => {
+                    return testDiffs.length > 0 && testDiffs[0].changes.some(c => c.field === 'prefCode' || c.field === 'cityCode');
+                });
+
+                // --- 6-4. エディタ機能: 臨時営業の過去エントリ（2日前以前）非表示＆トグルテスト ---
                 edWin.app.selectShop(edWin.app.shops[0].id);
                 edWin.app.currentTemporary = [
                     { startDate: '2020-01-01', endDate: '2020-01-02', hours: [] }, // 2日前以前

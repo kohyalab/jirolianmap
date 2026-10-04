@@ -1680,6 +1680,11 @@
                                         onchange="render()">
                                     <span class="color-dot bg-closed"></span> 営業時間外
                                 </label>
+                                <label class="chip-label" id="filter-chip-preopen" style="display: none;">
+                                    <input type="checkbox" name="open-filter" value="preopen" checked
+                                        onchange="render()">
+                                    <span class="color-dot bg-preopen"></span> オープン予定
+                                </label>
                             </div>
                         </fieldset>
                     </div>
@@ -1704,7 +1709,7 @@
 
                     <div class="filter-row">
                         <fieldset style="border:none; padding:0; margin:0;">
-                            <legend class="filter-group-title">制覇状態</legend>
+                            <legend class="filter-group-title">制覇・お気に入り</legend>
                             <div class="checkbox-group">
                                 <label class="chip-label">
                                     <input type="checkbox" name="visit-filter" value="visited" checked
@@ -1715,6 +1720,11 @@
                                     <input type="checkbox" name="visit-filter" value="unvisited" checked
                                         onchange="render()">
                                     <span class="visit-border-sample unvisited"></span> 未制覇
+                                </label>
+                                <label class="chip-label">
+                                    <input type="checkbox" id="filter-favorite-only"
+                                        onchange="render()">
+                                    <span style="color:var(--jiro-yellow); font-size:0.95rem; line-height:1;">★</span> お気に入りのみ
                                 </label>
                             </div>
                         </fieldset>
@@ -1733,9 +1743,9 @@
                 <div class="list-header-controls" id="list-header-controls">
                     <div class="mode-switch" role="group" aria-label="リスト表示モード" id="view-mode-control-wrapper">
                         <button type="button" class="mode-switch-option" id="opt-minimal"
-                            onclick="setListSubMode('minimal')">最小</button>
+                            onclick="setListSubMode('minimal')">グリッド</button>
                         <button type="button" class="mode-switch-option active" id="opt-compact"
-                            onclick="setListSubMode('compact')">コンパクト</button>
+                            onclick="setListSubMode('compact')">リスト</button>
                         <button type="button" class="mode-switch-option" id="opt-detailed"
                             onclick="setListSubMode('detailed')">詳細</button>
                         <button type="button" class="mode-switch-option" id="opt-today"
@@ -1747,6 +1757,7 @@
                         style="display: flex; align-items: center; gap: 6px; margin-left: auto;">
                         <button type="button" class="sns-share-btn" id="full-grid-share-btn" onclick="shareFullGridImage(event)" aria-label="全店舗の営業状況を共有" title="全店舗の営業状況を共有" style="display:none; padding: 3px 6px; border: 1px solid var(--border-color); border-radius: 4px; background: #141414;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg></button>
                         <select id="sort-select" class="sort-select" onchange="onSortChange()">
+                            <option value="favorite">お気に入り順</option>
                             <option value="distance_user" disabled">距離順（現在地）</option>
                             <option value="distance_center">距離順（地図中心）</option>
                             <option value="pref">都道府県順</option>
@@ -4267,7 +4278,7 @@
                 const isVisited = !!visitedState[shop.id];
                 if (!selectedVisit.includes(isVisited ? 'visited' : 'unvisited')) return false;
                 const status = getBusinessStatus(shop);
-                let statusKey = status.type === 'preopen' ? 'closed' : status.type;
+                let statusKey = status.type;
                 if (!selectedOpen.includes(statusKey)) return false;
 
                 const fullAddress = (typeof LG_CODES !== 'undefined' ? LG_CODES.getShopFullAddress(shop) : `${shop.addressText || ''}`).toLowerCase();
@@ -4318,6 +4329,15 @@
             const fullGridShareBtn = document.getElementById('full-grid-share-btn');
             if (fullGridShareBtn) {
                 fullGridShareBtn.style.display = (listSubMode === 'minimal' || listSubMode === 'today') ? 'inline-flex' : 'none';
+            }
+
+            const preOpenChip = document.getElementById('filter-chip-preopen');
+            if (preOpenChip) {
+                const hasPreOpen = shops.some(s => {
+                    const st = getBusinessStatus(s);
+                    return st && st.type === 'preopen';
+                });
+                preOpenChip.style.display = hasPreOpen ? 'inline-flex' : 'none';
             }
 
             const rawSearchQuery = document.getElementById('search-input').value.toLowerCase().trim();
@@ -4426,7 +4446,7 @@
                     return;
                 }
 
-                let statusKey = currentStatus.type === 'preopen' ? 'closed' : currentStatus.type;
+                let statusKey = currentStatus.type;
                 if (!selectedOpen.includes(statusKey)) {
                     updateMarkerVisibility(shop.id, false);
                     return;

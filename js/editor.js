@@ -102,7 +102,7 @@ class EditorApp {
                 if (this.selectedId) {
                     const shop = this.shops.find(s => s.id === this.selectedId);
                     if (shop) {
-                        const prefCode = typeof LG_CODES !== 'undefined' ? LG_CODES.getPrefCodeByCityCode(shop.cityCode) : '';
+                        const prefCode = shop.prefCode || (typeof LG_CODES !== 'undefined' ? LG_CODES.getPrefCodeByCityCode(shop.cityCode) : '');
                         if (this.el.prefCodeInput) this.el.prefCodeInput.value = prefCode;
                         this.updateCityOptions(prefCode, shop.cityCode || '');
                     }
@@ -248,6 +248,12 @@ class EditorApp {
             }
             return '(なし)';
         }
+        if (key === 'prefCode') {
+            return (typeof LG_CODES !== 'undefined' && LG_CODES.prefs && LG_CODES.prefs[val]) ? `${LG_CODES.prefs[val]} (${val})` : (val || '(なし)');
+        }
+        if (key === 'cityCode') {
+            return (typeof LG_CODES !== 'undefined' && LG_CODES.getCityName) ? `${LG_CODES.getCityName(val)} (${val})` : (val || '(なし)');
+        }
         if (typeof val === 'object') {
             return JSON.stringify(val);
         }
@@ -341,6 +347,8 @@ class EditorApp {
             id: 'ID',
             kana: 'フリガナ',
             shortName: '店舗名略称',
+            prefCode: '都道府県',
+            cityCode: '市区町村',
             prefecture: '都道府県',
             addressText: '住所',
             lat: '緯度',
@@ -401,7 +409,7 @@ class EditorApp {
 
             const changes = [];
             const checkKeys = [
-                'id', 'name', 'kana', 'shortName', 'prefecture', 'addressText', 'lat', 'lng',
+                'id', 'name', 'kana', 'shortName', 'prefCode', 'cityCode', 'addressText', 'lat', 'lng',
                 'openedAt', 'closedAt', 'x', 'instagram', 'ticketTiming', 'soupType',
                 'renge', 'takeout', 'hoursNotes', 'remarks', 'temporary', 'shiftsByDay',
                 'holidayShifts', 'specialShifts', 'holidaySpecialShifts'
@@ -3556,7 +3564,7 @@ ${guidelinesText}
             if (status === 'BEFORE_OPEN') badgeHtml = `<span class="status-badge before-open">オープン前</span>`;
             else if (status === 'CLOSED') badgeHtml = `<span class="status-badge closed">閉店</span>`;
 
-            const prefCity = typeof LG_CODES !== 'undefined' ? LG_CODES.getPrefAndCityName(shop.prefCode, shop.cityCode) : '';
+            const prefCity = typeof LG_CODES !== 'undefined' ? LG_CODES.getPrefAndCityName(shop) : '';
             const item = document.createElement('div');
             item.className = `shop-item ${shop.id === this.selectedId ? 'active' : ''}`;
             item.innerHTML = `
@@ -3614,7 +3622,10 @@ ${guidelinesText}
         document.getElementById('field-name').value = shop.name || '';
         document.getElementById('field-kana').value = this.normalizeFurigana(shop.kana || '');
         document.getElementById('field-shortName').value = shop.shortName || '';
-        const prefCode = typeof LG_CODES !== 'undefined' ? LG_CODES.getPrefCodeByCityCode(shop.cityCode) : '';
+        if (this.el.prefCodeInput && this.el.prefCodeInput.options.length <= 1) {
+            this.initPrefOptions();
+        }
+        const prefCode = shop.prefCode || (typeof LG_CODES !== 'undefined' ? LG_CODES.getPrefCodeByCityCode(shop.cityCode) : '');
         if (this.el.prefCodeInput) this.el.prefCodeInput.value = prefCode;
         this.updateCityOptions(prefCode, shop.cityCode || '');
         document.getElementById('field-addressText').value = this.cleanAddress(shop.addressText || '');
@@ -3824,7 +3835,7 @@ ${guidelinesText}
                         <a href="${gmapUrl}" target="_blank" class="btn btn-sm" data-bulk-gmap-btn="${shop.id}">🗺️</a>
                     </div>`;
             } else if (fieldKey === 'pref_city_address' || fieldKey === 'pref_address') {
-                const prefCode = typeof LG_CODES !== 'undefined' ? LG_CODES.getPrefCodeByCityCode(shop.cityCode) : '';
+                const prefCode = shop.prefCode || (typeof LG_CODES !== 'undefined' ? LG_CODES.getPrefCodeByCityCode(shop.cityCode) : '');
                 let prefOpts = '<option value="">選択</option>';
                 if (typeof LG_CODES !== 'undefined') {
                     for (const pCode in LG_CODES.prefs) {
@@ -3841,8 +3852,8 @@ ${guidelinesText}
                 const gmapUrl = this.generateMapUrl(prefCode, shop.cityCode, shop.addressText, shop.name);
                 inputHtml = `
                     <div class="bulk-row-flex">
-                        <div class="bulk-field-wrap" style="width:90px; flex:none;"><select data-shop-id="${shop.id}" data-bulk-sub="prefCode" onchange="app.handleBulkPrefChange(this)"><option value="">選択</option>${prefOpts}</select></div>
-                        <div class="bulk-field-wrap" style="width:120px; flex:none;"><select data-shop-id="${shop.id}" data-bulk-sub="cityCode" onchange="app.updateBulkGMapLink(this)"><option value="">選択</option>${cityOpts}</select></div>
+                        <div class="bulk-field-wrap" style="width:90px; flex:none;"><select data-shop-id="${shop.id}" data-bulk-sub="prefCode" onchange="app.handleBulkPrefChange(this)">${prefOpts}</select></div>
+                        <div class="bulk-field-wrap" style="width:120px; flex:none;"><select data-shop-id="${shop.id}" data-bulk-sub="cityCode" onchange="app.updateBulkGMapLink(this)">${cityOpts}</select></div>
                         <div class="bulk-field-wrap" style="flex:1;"><input type="text" data-shop-id="${shop.id}" data-bulk-sub="addressText" value="${shop.addressText || ''}" onblur="app.handleAddressBlur(this); app.updateBulkGMapLink(this);" oninput="app.handleAddressInput(this); app.updateBulkGMapLink(this);"></div>
                         <a href="${gmapUrl}" target="_blank" class="btn btn-sm" data-bulk-gmap-btn="${shop.id}">🗺️</a>
                     </div>`;

@@ -54,12 +54,28 @@
             return {};
         })();
 
+        let favoriteState = (() => {
+            try {
+                const data = localStorage.getItem('jiro_favorites');
+                if (data) {
+                    try {
+                        return JSON.parse(data) || {};
+                    } catch (e) {
+                        console.warn('Failed to parse jiro_favorites:', e);
+                    }
+                }
+            } catch (err) {
+                console.warn('LocalStorage access error during favoriteState init:', err);
+            }
+            return {};
+        })();
+
+        let isMapActive = true;
         let listSubMode = 'detailed';
         let selectedDateKey = getLocalDateKey(new Date());
 
         let isShowMap = true;
         let isShowList = true;
-
         let narrowViewMode = 'map';
 
         let userCoords = null;
@@ -582,6 +598,7 @@
 
             const remarksText = shop.remarks || shop.notes || '';
             const hasFeatures = !!(shop.ticketTiming || shop.soupType || shop.renge || shop.takeout);
+            const isFavorite = !!favoriteState[shop.id];
 
             return `
         <div class="shop-info" data-shop-id="${shop.id}">
@@ -590,9 +607,14 @@
                     <span class="shop-name">${shop.name}</span>
                     ${statusTag}
                 </div>
-                <button type="button" class="visit-toggle-btn ${isVisited ? 'is-visited' : ''}" ${isProcessing ? 'disabled' : ''} onclick="toggleVisit('${shop.id}', ${fromPopup}, event)" aria-label="${shop.name}の制覇状態を切り替え">
-                    ${isVisited ? '制覇済' : '未制覇'}
-                </button>
+                <div style="display: flex; align-items: center; gap: 6px;">
+                    <button type="button" class="favorite-toggle-btn ${isFavorite ? 'is-fav' : ''}" onclick="toggleFavorite('${shop.id}', ${fromPopup}, event)" aria-label="${shop.name}のお気に入り状態を切り替え" title="お気に入り登録/解除">
+                        ${isFavorite ? '★' : '☆'}
+                    </button>
+                    <button type="button" class="visit-toggle-btn ${isVisited ? 'is-visited' : ''}" ${isProcessing ? 'disabled' : ''} onclick="toggleVisit('${shop.id}', ${fromPopup}, event)" aria-label="${shop.name}の制覇状態を切り替え">
+                        ${isVisited ? '制覇済' : '未制覇'}
+                    </button>
+                </div>
             </div>
             <div class="shop-sub-row">
                 ${getNextOpenScheduleText(shop, selectedDate)}
@@ -696,6 +718,14 @@
             localStorage.setItem('jiro_pc_visited', dataStr);
             localStorage.setItem('jiro_pc_visited_backup', dataStr);
             updateStats();
+        }
+
+        function saveFavoriteState() {
+            try {
+                localStorage.setItem('jiro_favorites', JSON.stringify(favoriteState));
+            } catch (e) {
+                console.warn('Failed to save jiro_favorites:', e);
+            }
         }
 
         function exportVisitedData() {
@@ -906,9 +936,26 @@
                 sidebar.style.minWidth = (listSubMode === 'minimal' || (currentMainViewMode === 'realtime' && currentDensityMode === 'minimal')) ? '280px' : '390px';
             }
 
+            updateLayout();
             render();
         }
         window.setListSubMode = setListSubMode;
+
+        function toggleMapActive() {
+            isMapActive = !isMapActive;
+            updateLayout();
+        }
+        window.toggleMapActive = toggleMapActive;
+
+        function setLayoutViewMode(mode) {
+            if (mode === 'grid') {
+                setListSubMode('minimal');
+            } else if (mode === 'list') {
+                setListSubMode('compact');
+            }
+            updateLayout();
+        }
+        window.setLayoutViewMode = setLayoutViewMode;
 
         function updateLayout() {
             const isWide = window.innerWidth >= 900;
@@ -920,59 +967,80 @@
             sidebar.style.minWidth = (listSubMode === 'minimal') ? '280px' : '390px';
 
             if (isWide) {
-                resizer.style.display = (isShowMap && isShowList) ? 'block' : 'none';
-                mapWrapper.style.display = isShowMap ? 'block' : 'none';
-                sidebar.style.display = isShowList ? 'flex' : 'none';
-
-                if (!isShowMap && isShowList) {
-                    sidebar.style.width = '100%';
-                } else if (isShowMap && isShowList) {
+                // ワイド画面: 地図ONなら地図+リスト(2ペイン)、地図OFFならリスト100%全幅
+                if (isMapActive) {
+                    mapWrapper.style.display = 'block';
+                    sidebar.style.display = 'flex';
+                    resizer.style.display = 'block';
                     if (sidebar.style.width === '100%') sidebar.style.width = '380px';
+                } else {
+                    mapWrapper.style.display = 'none';
+                    sidebar.style.display = 'flex';
+                    sidebar.style.width = '100%';
+                    resizer.style.display = 'none';
                 }
-
-                container.innerHTML = `
-            <button type="button" class="mode-switch-option ${isShowMap ? 'active' : ''}" onclick="toggleWideComponent('map')">地図</button>
-            <button type="button" class="mode-switch-option ${isShowList ? 'active' : ''}" onclick="toggleWideComponent('list')">リスト</button>
-        `;
             } else {
+                // 狭い画面 (スマホ): 地図ONなら地図のみ、地図OFFならリストのみ
                 resizer.style.display = 'none';
                 sidebar.style.width = '100%';
-
-                if (narrowViewMode === 'map') {
+                if (isMapActive) {
                     mapWrapper.style.display = 'block';
                     sidebar.style.display = 'none';
                 } else {
                     mapWrapper.style.display = 'none';
                     sidebar.style.display = 'flex';
                 }
+            }
 
+            if (container) {
+                const isGridActive = (listSubMode === 'minimal');
+                const isListActive = (listSubMode === 'compact' || listSubMode === 'detailed');
                 container.innerHTML = `
-            <button type="button" class="mode-switch-option ${narrowViewMode === 'map' ? 'active' : ''}" onclick="setNarrowView('map')">地図</button>
-            <button type="button" class="mode-switch-option ${narrowViewMode === 'list' ? 'active' : ''}" onclick="setNarrowView('list')">リスト</button>
-        `;
+                    <div class="layout-icon-btn-group">
+                        <button type="button" class="layout-icon-btn ${isMapActive ? 'active' : ''}" onclick="toggleMapActive()" title="地図表示切替" aria-label="地図表示切替">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon>
+                                <line x1="8" y1="2" x2="8" y2="18"></line>
+                                <line x1="16" y1="6" x2="16" y2="22"></line>
+                            </svg>
+                        </button>
+                        <div class="layout-btn-divider"></div>
+                        <button type="button" class="layout-icon-btn ${isGridActive ? 'active' : ''}" onclick="setLayoutViewMode('grid')" title="グリッド表示" aria-label="グリッド表示">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="3" y="3" width="7" height="7"></rect>
+                                <rect x="14" y="3" width="7" height="7"></rect>
+                                <rect x="14" y="14" width="7" height="7"></rect>
+                                <rect x="3" y="14" width="7" height="7"></rect>
+                            </svg>
+                        </button>
+                        <button type="button" class="layout-icon-btn ${isListActive ? 'active' : ''}" onclick="setLayoutViewMode('list')" title="リスト表示" aria-label="リスト表示">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <line x1="8" y1="6" x2="21" y2="6"></line>
+                                <line x1="8" y1="12" x2="21" y2="12"></line>
+                                <line x1="8" y1="18" x2="21" y2="18"></line>
+                                <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                                <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                                <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                            </svg>
+                        </button>
+                    </div>
+                `;
             }
 
             updateSortDropdownOptions();
-            setTimeout(() => map.invalidateSize(), 50);
+            setTimeout(() => map && map.invalidateSize(), 50);
             setTimeout(updateMatrixWrapperHeight, 30);
         }
 
         function toggleWideComponent(component) {
             if (component === 'map') {
-                if (isShowMap && !isShowList) return;
-                isShowMap = !isShowMap;
-            } else if (component === 'list') {
-                if (isShowList && !isShowMap) return;
-                isShowList = !isShowList;
+                toggleMapActive();
             }
-            updateLayout();
-            render();
         }
 
         function setNarrowView(mode) {
-            narrowViewMode = mode;
+            isMapActive = (mode === 'map');
             updateLayout();
-            render();
         }
 
         function updateSortDropdownOptions() {
@@ -1111,6 +1179,31 @@
             }
         }
 
+        function toggleFavorite(id, fromPopup = false, event = null) {
+            if (event) event.stopPropagation();
+            favoriteState[id] = !favoriteState[id];
+            saveFavoriteState();
+            const shop = shops.find(s => s.id === id);
+            const isVisited = !!visitedState[id];
+            if (markers[id] && shop) {
+                markers[id].setPopupContent(generateCardContentHTML(shop, isVisited, true));
+                if (fromPopup || markers[id].isPopupOpen()) {
+                    setTimeout(() => {
+                        markers[id].openPopup();
+                    }, 0);
+                }
+            }
+            const gridModal = document.getElementById('grid-popup-modal');
+            if (gridModal && gridModal.open) {
+                const contentArea = document.getElementById('grid-popup-content-area');
+                if (contentArea && contentArea.dataset.shopId === id && shop) {
+                    contentArea.innerHTML = generateCardContentHTML(shop, isVisited, true);
+                }
+            }
+            render();
+        }
+        window.toggleFavorite = toggleFavorite;
+
         function focusShopOnMap(shopId) {
             const shop = shops.find(s => s.id === shopId);
             if (shop?.lat && shop?.lng && markers[shopId]) {
@@ -1163,8 +1256,10 @@
                 if (shop.lat === undefined || shop.lng === undefined || isClosedShopExpired(shop)) return false;
                 const isVisited = !!visitedState[shop.id];
                 if (!selectedVisit.includes(isVisited ? 'visited' : 'unvisited')) return false;
+                const favFilter = document.getElementById('filter-favorite-only');
+                if (favFilter && favFilter.checked && !favoriteState[shop.id]) return false;
                 const status = getBusinessStatus(shop);
-                let statusKey = status.type === 'preopen' ? 'closed' : status.type;
+                let statusKey = status.type;
                 if (!selectedOpen.includes(statusKey)) return false;
 
                 const fullAddress = (typeof LG_CODES !== 'undefined' ? LG_CODES.getShopFullAddress(shop) : `${shop.addressText || ''}`).toLowerCase();
@@ -1224,6 +1319,15 @@
                     showFullShare = false;
                 }
                 fullGridShareBtn.style.display = showFullShare ? 'inline-flex' : 'none';
+            }
+
+            const preOpenChip = document.getElementById('filter-chip-preopen');
+            if (preOpenChip) {
+                const hasPreOpen = shops.some(s => {
+                    const st = getBusinessStatus(s);
+                    return st && st.type === 'preopen';
+                });
+                preOpenChip.style.display = hasPreOpen ? 'inline-flex' : 'none';
             }
 
             const rawSearchQuery = document.getElementById('search-input').value.toLowerCase().trim();
@@ -1315,6 +1419,16 @@
                     }
                     return a.centerDistance - b.centerDistance;
                 });
+            } else if (sortType === 'favorite') {
+                displayShops.sort((a, b) => {
+                    const favA = !!favoriteState[a.id];
+                    const favB = !!favoriteState[b.id];
+                    if (favA !== favB) return favA ? -1 : 1;
+                    if (userCoords && a.userDistance !== undefined && b.userDistance !== undefined) {
+                        return a.userDistance - b.userDistance;
+                    }
+                    return a.centerDistance - b.centerDistance;
+                });
             } else if (sortType === 'name') {
                 displayShops.sort((a, b) => (a.kana || a.name).localeCompare(b.kana || b.name, 'ja'));
             }
@@ -1323,18 +1437,26 @@
             let visibleShopCount = 0;
             const visibleShops = [];
             const isMatrixMode = (currentMainViewMode === 'today' && ['7', '14', '21', '28'].includes(currentPeriodMode));
+            const favFilter = document.getElementById('filter-favorite-only');
+            const isFavOnly = favFilter && favFilter.checked;
 
             displayShops.forEach(shop => {
                 const isVisited = !!visitedState[shop.id];
+                const isFavorite = !!favoriteState[shop.id];
                 const status = getBusinessStatus(shop, activeDate);
                 const currentStatus = getBusinessStatus(shop, new Date());
+
+                if (isFavOnly && !isFavorite) {
+                    updateMarkerVisibility(shop.id, false);
+                    return;
+                }
 
                 if (!selectedVisit.includes(isVisited ? 'visited' : 'unvisited')) {
                     updateMarkerVisibility(shop.id, false);
                     return;
                 }
 
-                let statusKey = currentStatus.type === 'preopen' ? 'closed' : currentStatus.type;
+                let statusKey = currentStatus.type;
                 if (!selectedOpen.includes(statusKey)) {
                     updateMarkerVisibility(shop.id, false);
                     return;
@@ -1405,6 +1527,14 @@
                 <div class="today-summary-card">
                     <div class="today-summary-name" title="${shop.name}">${displayName}</div>
                     <div class="today-hours-text ${textClass}" title="${todayHoursData.text}">${todayHoursData.html}</div>
+                    <div style="display:flex; align-items:center; justify-content:center; gap:6px; width:100%; margin-top:2px;">
+                        <button type="button" class="favorite-toggle-btn-minimal ${isFavorite ? 'is-fav' : ''}" onclick="toggleFavorite('${shop.id}', false, event)" aria-label="${shop.name}のお気に入り切り替え" title="お気に入り登録/解除">
+                            ${isFavorite ? '★' : '☆'}
+                        </button>
+                        <button type="button" class="visit-toggle-btn-minimal ${isVisited ? 'is-visited' : ''}" onclick="toggleVisit('${shop.id}', false, event)" aria-label="${shop.name}の制覇状態を切り替え">
+                            ${isVisited ? '✔' : '☐'}
+                        </button>
+                    </div>
                 </div>
             `;
                 } else if (listSubMode === 'minimal' || (currentMainViewMode === 'realtime' && currentDensityMode === 'minimal')) {
@@ -1422,8 +1552,11 @@
                 <div class="today-summary-card">
                     <div class="today-summary-name" title="${shop.name}">${displayName}</div>
                     <div class="today-hours-text" style="color: #ddd;" title="${nextOpenText}">${nextOpenHtml}</div>
-                    <div style="display:flex; align-items:center; justify-content:center; width:100%;">
-                        <button type="button" class="visit-toggle-btn-minimal ${isVisited ? 'is-visited' : ''}" onclick="toggleVisit('${shop.id}', false, event)" aria-label="${shop.name}の制覇状態を切り替え" style="background:none; border:none; color: ${isVisited ? 'var(--jiro-yellow)' : '#555'}; font-size: 0.9rem; padding: 0; cursor: pointer; line-height: 1; outline: none; flex-shrink: 0;">
+                    <div style="display:flex; align-items:center; justify-content:center; gap:6px; width:100%; margin-top:2px;">
+                        <button type="button" class="favorite-toggle-btn-minimal ${isFavorite ? 'is-fav' : ''}" onclick="toggleFavorite('${shop.id}', false, event)" aria-label="${shop.name}のお気に入り切り替え" title="お気に入り登録/解除">
+                            ${isFavorite ? '★' : '☆'}
+                        </button>
+                        <button type="button" class="visit-toggle-btn-minimal ${isVisited ? 'is-visited' : ''}" onclick="toggleVisit('${shop.id}', false, event)" aria-label="${shop.name}の制覇状態を切り替え">
                             ${isVisited ? '✔' : '☐'}
                         </button>
                     </div>
@@ -1476,6 +1609,8 @@
                                 <div class="shop-title-wrapper" style="display:flex; align-items:center; gap:6px; flex:1; min-width:0; overflow:hidden; justify-content:space-between;">
                                     <div style="display:flex; align-items:center; gap:6px; flex-shrink:0;">
                                         <span class="shop-name" style="white-space:nowrap;">${shop.name}</span>
+                                        <button type="button" class="favorite-toggle-btn-minimal ${isFavorite ? 'is-fav' : ''}" onclick="toggleFavorite('${shop.id}', false, event)" aria-label="${shop.name}のお気に入り切り替え" title="お気に入り登録/解除">${isFavorite ? '★' : '☆'}</button>
+                                        <button type="button" class="visit-toggle-btn-minimal ${isVisited ? 'is-visited' : ''}" onclick="toggleVisit('${shop.id}', false, event)" aria-label="${shop.name}の制覇状態を切り替え">${isVisited ? '✔' : '☐'}</button>
                                         <button type="button" class="sns-share-btn" onclick="shareCalendarCardImage('${shop.id}', event)" aria-label="SNSに画像付きでシェア" title="SNSに画像付きでシェア"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg></button>
                                     </div>
                                     ${sortMetaHtml}

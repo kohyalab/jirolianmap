@@ -1557,3 +1557,99 @@
             letter-spacing: 0.5px;
             text-align: center;
             white-space: pre-line;
+        }
+
+        /* お気に入りマーク用ボタンスタイル */
+        .favorite-toggle-btn {
+            background: none;
+            border: none;
+            color: #666;
+            font-size: 1.15rem;
+            padding: 2px 4px;
+            cursor: pointer;
+            line-height: 1;
+            transition: color 0.15s ease, transform 0.1s ease;
+            outline: none;
+            user-select: none;
+        }
+
+        .favorite-toggle-btn:hover {
+            color: var(--jiro-yellow);
+            transform: scale(1.15);
+        }
+
+        .favorite-toggle-btn.is-fav {
+            color: var(--jiro-yellow);
+            text-shadow: 0 0 6px rgba(255, 204, 0, 0.5);
+        }
+
+        .favorite-toggle-btn-minimal {
+            background: none;
+            border: none;
+            color: #555;
+            font-size: 0.95rem;
+            padding: 0 3px;
+            cursor: pointer;
+            line-height: 1;
+            outline: none;
+            flex-shrink: 0;
+            transition: color 0.15s ease;
+        }
+
+        .favorite-toggle-btn-minimal:hover,
+        .favorite-toggle-btn-minimal.is-fav {
+            color: var(--jiro-yellow);
+        }
+
+        /* ヘッダーの文字なしアイコンボタン（地図・グリッド・リスト） */
+        .layout-icon-btn-group {
+            display: inline-flex;
+            align-items: center;
+            gap: 3px;
+            background: #181818;
+            padding: 2px 4px;
+            border-radius: 6px;
+            border: 1px solid #444;
+        }
+
+        .layout-icon-btn {
+            background: none;
+            border: 1px solid transparent;
+            color: #888;
+            padding: 4px 6px;
+            border-radius: 4px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.18s ease;
+            outline: none;
+            width: 30px;
+            height: 28px;
+            box-sizing: border-box;
+        }
+
+        .layout-icon-btn:hover {
+            color: #fff;
+            background: #2a2a2a;
+        }
+
+        .layout-icon-btn.active {
+            color: #000 !important;
+            background: var(--jiro-yellow) !important;
+            border-color: #ffffff !important;
+            box-shadow: 0 0 4px rgba(255, 204, 0, 0.6);
+        }
+
+        .layout-icon-btn svg {
+            width: 17px;
+            height: 17px;
+            stroke-width: 2.2;
+        }
+
+        .layout-btn-divider {
+            width: 1px;
+            height: 16px;
+            background: #444;
+            margin: 0 2px;
+        }
