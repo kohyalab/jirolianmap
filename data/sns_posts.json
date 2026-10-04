@@ -6358,8 +6358,8 @@
       "hours": [],
       "reason": ""
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-04T14:55:02.682Z",
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   },
@@ -6380,8 +6380,8 @@
       "reason": "諸事情のため",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-04T14:55:02.682Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 諸事情のため"
   },
@@ -6403,8 +6403,8 @@
       "hours": [],
       "reason": "ライス提供開始の告知であり、営業時間の変更ではないため変更なしと判定。"
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-04T14:55:02.682Z",
     "aiStatus": "no_change",
     "aiReason": "ライス提供開始の告知であり、営業時間の変更ではないため変更なしと判定。"
   }
