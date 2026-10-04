@@ -865,6 +865,11 @@
             border-color: rgba(158, 158, 158, 0.8);
         }
 
+        .shop-grid .shop-item.current-preopen {
+            background-color: rgba(156, 39, 176, 0.18);
+            border-color: rgba(156, 39, 176, 0.8);
+        }
+
         .shop-grid.view-mode-minimal .shop-info,
         .shop-grid.view-mode-minimal .detailed-content {
             display: none !important;
@@ -2163,7 +2168,8 @@
             render();
         }
 
-        function formatShiftList(shifts) {
+        function formatShiftList(shifts, isPreOpeningAllEmpty = false) {
+            if (shifts === '未定' || (isPreOpeningAllEmpty && (!shifts || shifts.length === 0))) return '未定';
             if (!Array.isArray(shifts) || shifts.length === 0) return '定休日';
             return shifts.map(([start, end]) => `${formatTime(start)}-${formatTime(end)}`).join(', ');
         }
@@ -2361,8 +2367,8 @@
 
         function getTodayShifts(shop, targetDate = new Date()) {
             if (!shop) return [];
-            // 開店日が空欄の場合は「未定」
-            if (!shop.openedAt || !shop.openedAt.trim()) return '未定';
+            // 開店日未定店舗はすべて「休業」
+            if (!shop.openedAt || !shop.openedAt.trim()) return [];
             // オープン前店舗は開店日前日まで「休業」
             if (isPreOpen(shop, targetDate)) return [];
             // 閉店店舗は閉店日翌日以降「休業」
@@ -2386,14 +2392,15 @@
         }
 
         function getBusinessStatus(shop, targetDate = new Date()) {
+            // 開店日未定店舗およびオープン前店舗の営業ステータスは「オープン予定」
             if (!shop || !shop.openedAt || !shop.openedAt.trim()) {
-                return { type: 'closed', bgClass: 'bg-closed', label: '開店日未定' };
+                return { type: 'preopen', bgClass: 'bg-preopen', label: 'オープン予定' };
             }
             if (isPreOpen(shop, targetDate)) {
-                return { type: 'closed', bgClass: 'bg-closed', label: 'オープン前（休業）' };
+                return { type: 'preopen', bgClass: 'bg-preopen', label: 'オープン予定' };
             }
             if (isClosedShopExpired(shop, targetDate)) {
-                return { type: 'closed', bgClass: 'bg-closed', label: '閉店（休業）' };
+                return { type: 'closed', bgClass: 'bg-closed', label: '閉店' };
             }
             const tempStatus = getTemporaryStatus(shop, targetDate);
             if (tempStatus === '休業') return { type: 'closed', bgClass: 'bg-closed', label: '営業時間外' };
@@ -2486,7 +2493,7 @@
 
         function getNextOpenScheduleText(shop, targetDate = new Date()) {
             if (!shop || !shop.openedAt || !shop.openedAt.trim()) {
-                return `<span class="next-schedule" title="開店予定: 未定">開店予定: 未定</span>`;
+                return `<span class="next-schedule" title="次回営業時間: 未定">未定</span>`;
             }
             if (isPreOpen(shop)) {
                 const openDateStr = shop.openedAt ? shop.openedAt.replace(/-/g, '/') : '';
@@ -2695,12 +2702,17 @@
             const targetIsHoliday = isJapaneseHoliday(activeTargetDate);
             const hasHolidayShift = shop.holidayShifts !== null && shop.holidayShifts !== undefined;
 
+            // オープン前または開店日未定店舗で、営業時間が未登録（全曜日空配列）か判定
+            const isShopPreOpening = isPreOpen(shop) || !shop.openedAt || !shop.openedAt.trim();
+            const hasAnyDefinedHours = shop.shiftsByDay && Object.values(shop.shiftsByDay).some(s => (Array.isArray(s) && s.length > 0) || (typeof s === 'string' && s.trim() !== '' && s !== '未定'));
+            const isPreOpeningAllEmpty = isShopPreOpening && !hasAnyDefinedHours;
+
             for (let mondayIndex = 0; mondayIndex < 7; mondayIndex++) {
                 const jsDayOfWeek = (mondayIndex + 1) % 7;
                 const dayLabel = baseDayNames[mondayIndex];
 
                 const normalShifts = shop.shiftsByDay ? shop.shiftsByDay[mondayIndex] : null;
-                const normalStr = formatShiftList(normalShifts);
+                const normalStr = formatShiftList(normalShifts, isPreOpeningAllEmpty);
 
                 const specsForThisDay = Array.isArray(shop.specialShifts)
                     ? shop.specialShifts.filter(spec => spec.day === jsDayOfWeek)
@@ -2762,7 +2774,7 @@
             }
 
             if (hasHolidayShift) {
-                let holidayStr = formatShiftList(shop.holidayShifts);
+                let holidayStr = formatShiftList(shop.holidayShifts, isPreOpeningAllEmpty);
                 const specRulesForHolidayRow = [];
                 if (Array.isArray(shop.holidaySpecialShifts)) {
                     const dayNamesShort = ["日", "月", "火", "水", "木", "金", "土"];
@@ -2918,13 +2930,10 @@
                     const dateLabel = `${d.getMonth() + 1}/${d.getDate()}`;
                     const tempStatus = getTemporaryStatus(shop, d);
                     const shifts = getTodayShifts(shop, d);
-                    const isTodayOpen = Array.isArray(shifts) && shifts.length > 0;
+                    const isTodayOpen = !!(shifts && shifts.length > 0 && !isPreOpen(shop, d));
                     let hoursHtml = '';
                     let plainText = '休業';
-                    if (shifts === '未定') {
-                        hoursHtml = `<div style="white-space: nowrap; line-height: 1.1;">${formatShiftTimeText('未定', 'calendar')}</div>`;
-                        plainText = '未定';
-                    } else if (!shifts || shifts.length === 0) {
+                    if (!shifts || shifts.length === 0) {
                         hoursHtml = `<div style="white-space: nowrap; line-height: 1.1;">${formatShiftTimeText('休業', 'calendar')}</div>`;
                     } else {
                         plainText = shifts.map(([s, e]) => `${formatTime(s)}-${formatTime(e)}`).join(' / ');
@@ -4482,22 +4491,17 @@
                     item.dataset.shopId = shop.id;
 
                     const tempStatus = getTemporaryStatus(shop, activeDate);
+                    const shifts = getTodayShifts(shop, activeDate);
+                    const isDayOpen = !!(shifts && shifts.length > 0 && !isPreOpen(shop, activeDate));
                     const todayHoursData = (() => {
-                        const shifts = getTodayShifts(shop, activeDate);
-                        if (shifts === '未定') {
-                            return { html: `<div style="white-space:nowrap; line-height:1.1;">${formatShiftTimeText('未定', 'today')}</div>`, text: '未定', isOpen: false };
-                        }
-                        if (!shifts || shifts.length === 0) {
-                            return { html: `<div style="white-space:nowrap; line-height:1.1;">${formatShiftTimeText('休業', 'today')}</div>`, text: '休業', isOpen: false };
-                        }
+                        if (!shifts || shifts.length === 0) return { html: `<div style="white-space:nowrap; line-height:1.1;">${formatShiftTimeText('休業', 'today')}</div>`, text: '休業' };
                         const plainText = shifts.map(([start, end]) => `${formatTime(start)}-${formatTime(end)}`).join(' / ');
                         const htmlContent = shifts.map(([start, end]) => {
                             return `<div style="white-space:nowrap; line-height:1.1;">${formatShiftTimeText(`${formatTime(start)}-${formatTime(end)}`, 'today')}</div>`;
                         }).join('');
-                        return { html: htmlContent, text: plainText, isOpen: true };
+                        return { html: htmlContent, text: plainText };
                     })();
 
-                    const isDayOpen = todayHoursData.isOpen;
                     item.className = `shop-item ${isVisited ? 'visited' : ''} ${isDayOpen ? 'today-open' : 'today-closed'}`;
 
                     const textClass = tempStatus ? 'is-temp' : (isDayOpen ? 'is-open' : 'is-closed');
