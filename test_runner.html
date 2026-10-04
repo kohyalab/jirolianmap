@@ -176,6 +176,7 @@
             const parsedAddr1 = LG_CODES.parseAddress('東京都港区三田2-16-4');
             assert('LG_CODES.parseAddress (都道府県・市区町村分離)', () => parsedAddr1.prefCode === '13' && parsedAddr1.cityCode === '13103' && parsedAddr1.remainingAddress === '三田2-16-4');
             const parsedAddr2 = LG_CODES.parseAddress('港区三田2-16-4');
+            assert('LG_CODES.parseAddress (市区町村のみから都道府県逆引き分離)', () => parsedAddr2.prefCode === '13' && parsedAddr2.cityCode === '13103' && parsedAddr2.remainingAddress === '三田2-16-4');
             assert('LG_CODES.getPrefAndCityName (shop object)', () => LG_CODES.getPrefAndCityName({ prefCode: '13', cityCode: '13103' }) === '東京都港区');
             assert('LG_CODES.getPrefAndCityName (shop object with prefCode only)', () => LG_CODES.getPrefAndCityName({ prefCode: '13' }) === '東京都');
             assert('LG_CODES.getPrefAndCityName (prefCode and cityCode args)', () => LG_CODES.getPrefAndCityName('13', '13103') === '東京都港区');

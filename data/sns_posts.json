@@ -6137,33 +6137,6 @@
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   },
   {
-    "id": "sns_post_shndaita_20261004_0_2106511561062048154",
-    "shopId": "shndaita",
-    "shopName": "環七新新代田店",
-    "postSource": "x",
-    "postUrl": "https://x.com/26shinshindaita/status/2106511561062048154",
-    "postedAt": "2026-10-03T22:27:47.000Z",
-    "postText": "2026年10月4日（日）  通常営業です！ 11:00～16:00くらいです！  よろしくお願いします！  ※住宅地なのでおしゃべりしないで待っててください",
-    "mediaUrls": [],
-    "detectedChange": {
-      "type": "special_open",
-      "startDate": "2026-10-04",
-      "endDate": "2026-10-04",
-      "hours": [
-        [
-          11,
-          16
-        ]
-      ],
-      "reason": "",
-      "confidence": 1
-    },
-    "processed": false,
-    "processedAt": null,
-    "aiStatus": "schedule_change",
-    "aiReason": "営業時間の変更を検出"
-  },
-  {
     "id": "sns_post_mejirodai_20261004_0_2106523415574458475",
     "shopId": "mejirodai",
     "shopName": "めじろ台店",
@@ -6335,6 +6308,33 @@
     },
     "processed": false,
     "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_shndaita_20261004_0_2106678834766692594",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2106678834766692594",
+    "postedAt": "2026-10-04T09:32:29.000Z",
+    "postText": "2026年10月4日（日） 解ってる範囲の営業予定です！  月 お休み 火 お休み 水 〇 木 お休み 金 お休み 土 〇 日 〇  11:00〜16:00くらい にんにく地獄(＋200円)もやります！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-10-04",
+      "endDate": "2026-10-04",
+      "hours": [
+        [
+          11,
+          16
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-10-04T10:30:05.422Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   }
