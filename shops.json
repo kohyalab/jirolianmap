@@ -1127,6 +1127,19 @@
         "startDate": "2026-09-21",
         "endDate": "2026-09-21",
         "hours": []
+      },
+      {
+        "startDate": "2026-10-04",
+        "endDate": "2026-10-04",
+        "hours": [
+          [
+            17,
+            21
+          ]
+        ],
+        "reason": "スタッフ体調不良のため",
+        "sourceUrl": "https://x.com/jiro_kame/status/2106547636115481065",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -1476,6 +1489,13 @@
         "startDate": "2026-09-21",
         "endDate": "2026-09-21",
         "hours": []
+      },
+      {
+        "startDate": "2026-10-10",
+        "endDate": "2026-10-10",
+        "hours": [],
+        "sourceUrl": "https://x.com/matsudojiro3/status/2106403668404863285",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -1597,6 +1617,13 @@
         "startDate": "2026-09-26",
         "endDate": "2026-09-26",
         "hours": []
+      },
+      {
+        "startDate": "2026-10-03",
+        "endDate": "2026-10-03",
+        "hours": [],
+        "sourceUrl": "https://x.com/ogkb_jiro/status/2105401278486774009",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -1835,19 +1862,44 @@
     "id": "ichinoe",
     "name": "環七一之江店",
     "kana": "カンナナイチノエテン",
+    "shortName": "環七一之江",
+    "prefCode": "13",
+    "cityCode": "13123",
     "addressText": "一之江8丁目3-4",
     "lat": 35.68407502831897,
     "lng": 139.88196182882908,
+    "openedAt": "2003-11-16",
+    "closedAt": null,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/ichinoe/",
       "rdb": "https://ramendb.supleks.jp/s/1124.html",
       "tabelog": "https://tabelog.com/tokyo/A1312/A131205/13010385/"
     },
     "x": "ichinoejiro",
+    "instagram": "",
     "ticketTiming": "",
-    "openedAt": "2003-11-16",
-    "closedAt": null,
-    "temporary": [],
+    "soupType": "",
+    "renge": "",
+    "takeout": "",
+    "hoursNotes": "",
+    "remarks": "",
+    "temporary": [
+      {
+        "startDate": "2026-10-13",
+        "endDate": "2026-10-14",
+        "hours": [],
+        "reason": "都合により",
+        "sourceUrl": "https://x.com/ichinoejiro/status/2105196477849153990",
+        "_isAiImported": true
+      }
+    ],
+    "holidaySpecialShifts": [
+      {
+        "triggerDay": 3,
+        "targetOffset": 0,
+        "hours": []
+      }
+    ],
     "shiftsByDay": {
       "0": [
         [
@@ -1904,22 +1956,7 @@
         9,
         14
       ]
-    ],
-    "remarks": "",
-    "hoursNotes": "",
-    "instagram": "",
-    "shortName": "環七一之江",
-    "soupType": "",
-    "renge": "",
-    "takeout": "",
-    "holidaySpecialShifts": [
-      {
-        "triggerDay": 3,
-        "targetOffset": 0,
-        "hours": []
-      }
-    ],
-    "cityCode": "13123"
+    ]
   },
   {
     "id": "sagamionoekimae",
@@ -2115,6 +2152,27 @@
             17.5
           ]
         ]
+      },
+      {
+        "startDate": "2026-10-01",
+        "endDate": "2026-10-01",
+        "hours": [
+          [
+            11,
+            13.5
+          ]
+        ],
+        "reason": "都合により",
+        "sourceUrl": "https://x.com/jbc_ramen_jiro/status/2105515787708682572",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-05",
+        "endDate": "2026-10-05",
+        "hours": [],
+        "reason": "都合により",
+        "sourceUrl": "https://x.com/jbc_ramen_jiro/status/2106267919982502246",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -2208,6 +2266,14 @@
         "startDate": "2026-09-19",
         "endDate": "2026-09-23",
         "hours": []
+      },
+      {
+        "startDate": "2026-09-29",
+        "endDate": "2026-09-29",
+        "hours": [],
+        "reason": "都合により",
+        "sourceUrl": "https://x.com/koiwajiro/status/2104697479426150603",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -2605,18 +2671,27 @@
     "id": "tachikawa",
     "name": "立川店",
     "kana": "タチカワテン",
+    "shortName": "立川",
+    "prefCode": "13",
+    "cityCode": "13202",
     "addressText": "柴崎町2丁目10-1",
     "lat": 35.69653102428673,
     "lng": 139.4095437508755,
+    "openedAt": "2008-04-27",
+    "closedAt": null,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/tachikawa/",
       "rdb": "https://ramendb.supleks.jp/s/14757.html",
       "tabelog": "https://tabelog.com/tokyo/A1329/A132901/13049195/"
     },
     "x": "jirotachikawa",
+    "instagram": "tachikawajiro",
     "ticketTiming": "",
-    "openedAt": "2008-04-27",
-    "closedAt": null,
+    "soupType": "",
+    "renge": "",
+    "takeout": "",
+    "hoursNotes": "祝日不定休",
+    "remarks": "",
     "temporary": [
       {
         "startDate": "2026-08-11",
@@ -2663,6 +2738,34 @@
       {
         "startDate": "2026-09-22",
         "endDate": "2026-09-22",
+        "hours": [
+          [
+            11,
+            14.5
+          ],
+          [
+            17,
+            21.5
+          ]
+        ]
+      },
+      {
+        "startDate": "2026-10-13",
+        "endDate": "2026-10-13",
+        "hours": [
+          [
+            11,
+            14.5
+          ],
+          [
+            17,
+            21.5
+          ]
+        ]
+      },
+      {
+        "startDate": "2026-10-27",
+        "endDate": "2026-10-27",
         "hours": [
           [
             11,
@@ -2738,15 +2841,7 @@
         ]
       ]
     },
-    "holidayShifts": null,
-    "remarks": "",
-    "hoursNotes": "祝日不定休",
-    "instagram": "tachikawajiro",
-    "shortName": "立川",
-    "soupType": "",
-    "renge": "",
-    "takeout": "",
-    "cityCode": "13202"
+    "holidayShifts": null
   },
   {
     "id": "omiya",
@@ -2962,6 +3057,20 @@
             15
           ]
         ]
+      },
+      {
+        "startDate": "2026-10-13",
+        "endDate": "2026-10-13",
+        "hours": [],
+        "sourceUrl": "https://x.com/sumo_jiro/status/2105922901849645065",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-18",
+        "endDate": "2026-10-18",
+        "hours": [],
+        "sourceUrl": "https://x.com/sumo_jiro/status/2105922901849645065",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -3244,23 +3353,40 @@
     "id": "nakayamaekimae",
     "name": "中山駅前店",
     "kana": "ナカヤマエキマエテン",
+    "shortName": "中山",
+    "prefCode": "14",
+    "cityCode": "14113",
     "addressText": "台村町309番地1土井ビル",
     "lat": 35.51306740037521,
     "lng": 139.5386489179161,
-    "urls": {
-      "pc": "https://ramen-jiro-pc3.com/nakayamaekimae/",
-      "tabelog": "https://tabelog.com/kanagawa/A1401/A140207/14038422/",
-      "rdb": "https://ramendb.supleks.jp/s/30935.html"
-    },
-    "x": "NKYMJIRO",
-    "ticketTiming": "",
     "openedAt": "2010-12-12",
     "closedAt": null,
+    "urls": {
+      "pc": "https://ramen-jiro-pc3.com/nakayamaekimae/",
+      "rdb": "https://ramendb.supleks.jp/s/30935.html",
+      "tabelog": "https://tabelog.com/kanagawa/A1401/A140207/14038422/"
+    },
+    "x": "NKYMJIRO",
+    "instagram": "",
+    "ticketTiming": "",
+    "soupType": "",
+    "renge": "",
+    "takeout": "",
+    "hoursNotes": "",
+    "remarks": "",
     "temporary": [
       {
         "startDate": "2026-08-20",
         "endDate": "2026-08-27",
         "hours": []
+      },
+      {
+        "startDate": "2026-10-03",
+        "endDate": "2026-10-03",
+        "hours": [],
+        "reason": "都合により",
+        "sourceUrl": "https://x.com/NKYMJIRO/status/2105838896601055454",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -3326,12 +3452,7 @@
         ]
       ]
     },
-    "holidayShifts": null,
-    "remarks": "",
-    "hoursNotes": "",
-    "instagram": "",
-    "shortName": "中山",
-    "cityCode": "14113"
+    "holidayShifts": null
   },
   {
     "id": "shimbashi2",
@@ -3550,6 +3671,13 @@
             14
           ]
         ]
+      },
+      {
+        "startDate": "2026-09-30",
+        "endDate": "2026-09-30",
+        "hours": [],
+        "sourceUrl": "https://x.com/jiro_sapporo_/status/2104376039606817075",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -3786,6 +3914,66 @@
         "startDate": "2026-09-26",
         "endDate": "2026-09-26",
         "hours": []
+      },
+      {
+        "startDate": "2026-09-27",
+        "endDate": "2026-09-27",
+        "hours": [
+          [
+            11,
+            15
+          ]
+        ],
+        "sourceUrl": "https://x.com/26shinshindaita/status/2103976166571024461",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-09-30",
+        "endDate": "2026-09-30",
+        "hours": [
+          [
+            11,
+            15
+          ]
+        ],
+        "sourceUrl": "https://x.com/26shinshindaita/status/2105056639795790317",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-02",
+        "endDate": "2026-10-02",
+        "hours": [
+          [
+            11,
+            15
+          ]
+        ],
+        "sourceUrl": "https://x.com/26shinshindaita/status/2104090999698133202",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-03",
+        "endDate": "2026-10-03",
+        "hours": [
+          [
+            11,
+            15
+          ]
+        ],
+        "sourceUrl": "https://x.com/26shinshindaita/status/2104090999698133202",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-04",
+        "endDate": "2026-10-04",
+        "hours": [
+          [
+            11,
+            16
+          ]
+        ],
+        "sourceUrl": "https://x.com/26shinshindaita/status/2104090999698133202",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -3894,6 +4082,37 @@
             15
           ]
         ]
+      },
+      {
+        "startDate": "2026-10-04",
+        "endDate": "2026-10-04",
+        "hours": [
+          [
+            11,
+            15
+          ]
+        ],
+        "sourceUrl": "https://x.com/aizu_jiro/status/2105452519845670967",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-12",
+        "endDate": "2026-10-12",
+        "hours": [],
+        "sourceUrl": "https://x.com/aizu_jiro/status/2105452519845670967",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-18",
+        "endDate": "2026-10-18",
+        "hours": [
+          [
+            11,
+            15
+          ]
+        ],
+        "sourceUrl": "https://x.com/aizu_jiro/status/2105452519845670967",
+        "_isAiImported": true
       }
     ],
     "specialShifts": [
@@ -4275,6 +4494,14 @@
         "startDate": "2026-09-20",
         "endDate": "2026-09-20",
         "hours": []
+      },
+      {
+        "startDate": "2026-10-02",
+        "endDate": "2026-10-02",
+        "hours": [],
+        "reason": "従業員不足のため",
+        "sourceUrl": "https://x.com/kwge26/status/2105452926076629326",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -4402,6 +4629,26 @@
         "startDate": "2026-09-23",
         "endDate": "2026-09-23",
         "hours": []
+      },
+      {
+        "startDate": "2026-09-29",
+        "endDate": "2026-09-29",
+        "hours": [
+          [
+            17,
+            22
+          ]
+        ],
+        "reason": "都合により",
+        "sourceUrl": "https://x.com/jiro_kyoto/status/2104903810221298081",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-01",
+        "endDate": "2026-10-01",
+        "hours": [],
+        "sourceUrl": "https://x.com/jiro_kyoto/status/2104473333144424895",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -4538,6 +4785,36 @@
         "startDate": "2026-09-30",
         "endDate": "2026-09-30",
         "hours": []
+      },
+      {
+        "startDate": "2026-10-12",
+        "endDate": "2026-10-13",
+        "hours": [
+          [
+            11,
+            14
+          ],
+          [
+            17.5,
+            20.5
+          ]
+        ],
+        "sourceUrl": "https://x.com/mejirodai_jiro/status/2105599872993042838",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-14",
+        "endDate": "2026-10-14",
+        "hours": [],
+        "sourceUrl": "https://x.com/mejirodai_jiro/status/2105599872993042838",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-18",
+        "endDate": "2026-10-18",
+        "hours": [],
+        "sourceUrl": "https://x.com/mejirodai_jiro/status/2105599872993042838",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -4887,18 +5164,27 @@
     "id": "chiba",
     "name": "千葉店",
     "kana": "チバテン",
+    "shortName": "千葉",
+    "prefCode": "12",
+    "cityCode": "12101",
     "addressText": "中央1丁目7-8",
     "lat": 35.610492809715176,
     "lng": 140.12360292943615,
+    "openedAt": "2020-06-02",
+    "closedAt": null,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/chiba/",
       "rdb": "https://ramendb.supleks.jp/s/124574.html",
       "tabelog": "https://tabelog.com/chiba/A1201/A120101/12049275/"
     },
     "x": "jiro_chiba",
+    "instagram": "",
     "ticketTiming": "",
-    "openedAt": "2020-06-02",
-    "closedAt": null,
+    "soupType": "",
+    "renge": "",
+    "takeout": "",
+    "hoursNotes": "祝日不定休",
+    "remarks": "",
     "temporary": [
       {
         "startDate": "2026-08-11",
@@ -4939,6 +5225,13 @@
         "startDate": "2026-09-23",
         "endDate": "2026-09-23",
         "hours": []
+      },
+      {
+        "startDate": "2026-10-12",
+        "endDate": "2026-10-12",
+        "hours": [],
+        "sourceUrl": "https://x.com/jiro_chiba/status/2105106592874312054",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -5004,15 +5297,7 @@
       ],
       "6": []
     },
-    "holidayShifts": null,
-    "remarks": "",
-    "hoursNotes": "祝日不定休",
-    "instagram": "",
-    "shortName": "千葉",
-    "soupType": "",
-    "renge": "",
-    "takeout": "",
-    "cityCode": "12101"
+    "holidayShifts": null
   },
   {
     "id": "omiyakoenekimae",
@@ -5195,6 +5480,11 @@
         "startDate": "2026-09-21",
         "endDate": "2026-09-23",
         "hours": []
+      },
+      {
+        "startDate": "2026-10-17",
+        "endDate": "2026-10-17",
+        "hours": []
       }
     ],
     "shiftsByDay": {
@@ -5351,6 +5641,29 @@
         "startDate": "2026-09-23",
         "endDate": "2026-09-24",
         "hours": []
+      },
+      {
+        "startDate": "2026-10-12",
+        "endDate": "2026-10-12",
+        "hours": [
+          [
+            11,
+            15
+          ],
+          [
+            17.5,
+            20.5
+          ]
+        ],
+        "sourceUrl": "https://x.com/1284jiro/status/2105601517868949776",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-21",
+        "endDate": "2026-10-21",
+        "hours": [],
+        "sourceUrl": "https://x.com/1284jiro/status/2105601517868949776",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -5469,6 +5782,14 @@
         "startDate": "2026-09-24",
         "endDate": "2026-09-24",
         "hours": []
+      },
+      {
+        "startDate": "2026-10-01",
+        "endDate": "2026-10-01",
+        "hours": [],
+        "reason": "都合により",
+        "sourceUrl": "https://x.com/genkimoriya/status/2105150235496595846",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -5516,18 +5837,27 @@
     "id": "ikuta",
     "name": "生田駅前店",
     "kana": "イクタエキマエテン",
+    "shortName": "生田",
+    "prefCode": "14",
+    "cityCode": "14135",
     "addressText": "生田8丁目1-15スワンハイツ",
     "lat": 35.61550336329281,
     "lng": 139.54543979904597,
+    "openedAt": "2023-05-21",
+    "closedAt": null,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/ikuta/",
       "rdb": "https://ramendb.supleks.jp/s/149549.html",
       "tabelog": "https://tabelog.com/kanagawa/A1405/A140506/14091118/"
     },
     "x": "ikuta_jiro",
+    "instagram": "ikuta_jiro",
     "ticketTiming": "",
-    "openedAt": "2023-05-21",
-    "closedAt": null,
+    "soupType": "",
+    "renge": "",
+    "takeout": "",
+    "hoursNotes": "",
+    "remarks": "",
     "temporary": [
       {
         "startDate": "2026-08-14",
@@ -5558,6 +5888,22 @@
         "startDate": "2026-09-24",
         "endDate": "2026-09-24",
         "hours": []
+      },
+      {
+        "startDate": "2026-10-15",
+        "endDate": "2026-10-15",
+        "hours": [],
+        "reason": "都合により",
+        "sourceUrl": "https://x.com/ikuta_jiro/status/2105459164617343168",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-27",
+        "endDate": "2026-10-27",
+        "hours": [],
+        "reason": "都合により",
+        "sourceUrl": "https://x.com/ikuta_jiro/status/2105459164617343168",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -5623,20 +5969,12 @@
         ]
       ]
     },
-    "holidayShifts": null,
-    "remarks": "",
-    "hoursNotes": "",
-    "instagram": "ikuta_jiro",
-    "shortName": "生田",
-    "soupType": "",
-    "renge": "",
-    "takeout": "",
-    "cityCode": "14135"
+    "holidayShifts": null
   },
   {
-    "id": "asakurakaido",
+    "id": "asakuragaido",
     "name": "朝倉街道駅前店",
-    "kana": "アサクラカイドウエキマエテン",
+    "kana": "アサクラガイドウエキマエテン",
     "shortName": "朝倉街道",
     "prefCode": "40",
     "cityCode": "40225",
@@ -5718,6 +6056,26 @@
             15
           ]
         ]
+      },
+      {
+        "startDate": "2026-10-03",
+        "endDate": "2026-10-03",
+        "hours": [
+          [
+            12,
+            15
+          ]
+        ],
+        "sourceUrl": "https://x.com/r26akgd/status/2106214350935748967",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-18",
+        "endDate": "2026-10-22",
+        "hours": [],
+        "reason": "所用のため",
+        "sourceUrl": "https://x.com/r26akgd/status/2105636449257480333",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -6161,6 +6519,39 @@
             19.5
           ]
         ]
+      },
+      {
+        "startDate": "2026-09-27",
+        "endDate": "2026-09-27",
+        "hours": [
+          [
+            11,
+            14
+          ]
+        ],
+        "reason": "都合により",
+        "sourceUrl": "https://x.com/okinawa_jiro/status/2104011602072883393",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-09-28",
+        "endDate": "2026-09-28",
+        "hours": [
+          [
+            11,
+            14
+          ]
+        ],
+        "reason": "都合により",
+        "sourceUrl": "https://x.com/okinawa_jiro/status/2104426042006052920",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-11",
+        "endDate": "2026-10-11",
+        "hours": [],
+        "sourceUrl": "https://x.com/okinawa_jiro/status/2105837770208129141",
+        "_isAiImported": true
       }
     ],
     "holidaySpecialShifts": [
@@ -6214,21 +6605,21 @@
       ],
       "5": [
         [
-          11,
-          15
+          10.5,
+          14.5
         ]
       ],
       "6": [
         [
-          11,
-          15
+          10.5,
+          14.5
         ]
       ]
     },
     "holidayShifts": [
       [
-        11,
-        15
+        10.5,
+        14.5
       ]
     ]
   }

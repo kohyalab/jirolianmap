@@ -8,6 +8,15 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 
+    <script>
+        window.onerror = function(msg, url, line, col, error) {
+            console.error('GLOBAL ERROR:', msg, url, line, col, error);
+            var d = document.createElement('div');
+            d.className = 'test-case fail';
+            d.textContent = 'GLOBAL ERROR: ' + msg + ' at ' + url + ':' + line + ':' + col;
+            document.body.appendChild(d);
+        };
+    </script>
     <!-- 共通モジュール -->
     <script src="js/common/lg_codes.js"></script>
     <script src="js/common/utils.js"></script>
@@ -45,10 +54,11 @@
                 pass = false;
                 errDetail = e.message;
             }
-            results.push({ name, pass, details: details || errDetail });
+            const detText = (typeof details === 'function') ? details() : details;
+            results.push({ name, pass, details: detText || errDetail });
             const div = document.createElement('div');
             div.className = 'test-case';
-            div.innerHTML = `<span class="${pass ? 'pass' : 'fail'}">[${pass ? 'PASS' : 'FAIL'}]</span> ${name} ${(details || errDetail) ? `<small style="color:#aaa;">(${details || errDetail})</small>` : ''}`;
+            div.innerHTML = `<span class="${pass ? 'pass' : 'fail'}">[${pass ? 'PASS' : 'FAIL'}]</span> ${name} ${(detText || errDetail) ? `<small style="color:#aaa;">(${detText || errDetail})</small>` : ''}`;
             resultsContainer.appendChild(div);
             return pass;
         }
@@ -87,6 +97,8 @@
             const mockShop = {
                 id: 'test_shop',
                 name: 'テスト二郎',
+                openedAt: '2020-01-01',
+                closedAt: null,
                 shiftsByDay: {
                     '0': [[11, 14.5], [17, 21]], // 月曜
                     '6': [] // 日曜定休
@@ -103,11 +115,43 @@
             const statusMonNight = JiroBusinessHours.getBusinessStatus(mockShop, mockDateMonNight);
             assert('JiroBusinessHours.getBusinessStatus (営業時間外判定)', () => statusMonNight.type === 'closed');
 
+            // --- 2-2. 開店前・閉店・未定・セル色判定テスト ---
+            const preOpenShop = { id: 'pre_shop', name: '新店二郎', openedAt: '2026-12-01', closedAt: null, shiftsByDay: { '0': [[11, 15]] } };
+            const beforeOpenDate = new Date(2026, 9, 4); // 2026-10-04 (開店前)
+            assert('JiroBusinessHours.isPreOpen (開店日前日は休業扱い)', () => JiroBusinessHours.isPreOpen(preOpenShop, beforeOpenDate) === true);
+            assert('JiroBusinessHours.getTodayShifts (オープン前店舗は空配列/休業)', () => {
+                const s = JiroBusinessHours.getTodayShifts(preOpenShop, beforeOpenDate);
+                return Array.isArray(s) && s.length === 0;
+            });
+
+            const closedShop = { id: 'closed_shop', name: '閉店二郎', openedAt: '2020-01-01', closedAt: '2026-09-30', shiftsByDay: { '0': [[11, 15]] } };
+            const afterCloseDate = new Date(2026, 9, 1); // 2026-10-01 (閉店翌日)
+            assert('JiroBusinessHours.isClosedShopExpired (閉店日翌日以降は閉店)', () => JiroBusinessHours.isClosedShopExpired(closedShop, afterCloseDate) === true);
+            assert('JiroBusinessHours.getTodayShifts (閉店店舗は翌日以降空配列/休業)', () => {
+                const s = JiroBusinessHours.getTodayShifts(closedShop, afterCloseDate);
+                return Array.isArray(s) && s.length === 0;
+            });
+
+            const noOpenDateShop = { id: 'pending_open_shop', name: '準備中二郎', openedAt: '', closedAt: null, shiftsByDay: { '0': [[11, 15]] } };
+            assert('JiroBusinessHours.getTodayShifts (開店日空欄は「未定」)', () => JiroBusinessHours.getTodayShifts(noOpenDateShop, beforeOpenDate) === '未定');
+            assert('JiroUtils.formatOpenedDateText (開店日空欄は「開店日未定」)', () => JiroUtils.formatOpenedDateText('') === '開店日未定');
+
+            const pendingShiftsShop = { id: 'pending_shifts_shop', name: '未定二郎', openedAt: '2020-01-01', closedAt: null, shiftsByDay: { '0': '未定' } };
+            assert('JiroBusinessHours.getTodayShifts (営業時間シフト「未定」は「未定」)', () => JiroBusinessHours.getTodayShifts(pendingShiftsShop, new Date(2026, 8, 21)) === '未定');
+            assert('JiroBusinessHours.parseShiftString (「未定」のパース)', () => JiroBusinessHours.parseShiftString('未定') === '未定');
+            assert('JiroBusinessHours.formatShiftArray (「未定」のフォーマット)', () => JiroBusinessHours.formatShiftArray('未定') === '未定');
+
             // --- 3. LG_CODES 単体テスト ---
-            assert('LG_CODES: 定義確認', () => typeof LG_CODES === 'object' && LG_CODES !== null);
+            assert('LG_CODES: 定義確認', () => typeof LG_CODES === 'object' && LG_CODES !== null, () => 'LG_CODES type: ' + (typeof LG_CODES));
+            assert('LG_CODES.cities: 全47都道府県の市区町村（1800件以上内蔵）', () => Object.keys(LG_CODES.cities).length >= 1800, `自治体数: ${Object.keys(LG_CODES.cities).length}`);
             assert('LG_CODES.getPrefNameByCityCode', () => LG_CODES.getPrefNameByCityCode('13103') === '東京都');
             assert('LG_CODES.getCityName', () => LG_CODES.getCityName('13103') === '港区');
             assert('LG_CODES.getShopFullAddress', () => LG_CODES.getShopFullAddress({ cityCode: '13103', addressText: '三田2-16-4' }) === '東京都港区三田2-16-4');
+            
+            const parsedAddr1 = LG_CODES.parseAddress('東京都港区三田2-16-4');
+            assert('LG_CODES.parseAddress (都道府県・市区町村分離)', () => parsedAddr1.prefCode === '13' && parsedAddr1.cityCode === '13103' && parsedAddr1.remainingAddress === '三田2-16-4');
+            const parsedAddr2 = LG_CODES.parseAddress('港区三田2-16-4');
+            assert('LG_CODES.parseAddress (市区町村のみから都道府県逆引き分離)', () => parsedAddr2.prefCode === '13' && parsedAddr2.cityCode === '13103' && parsedAddr2.remainingAddress === '三田2-16-4');
 
             // --- 4. share.js 単体テスト ---
             assert('share.js: window.shareFullGridImage 定義確認', () => typeof window.shareFullGridImage === 'function');

@@ -75,7 +75,7 @@
          * 開店日の表示用テキストを整形
          */
         formatOpenedDateText(openedAt) {
-            if (!openedAt) return '';
+            if (!openedAt || !String(openedAt).trim()) return '開店日未定';
             const parts = String(openedAt).trim().split('-');
             if (parts.length === 1) return `${parts[0]}開店`;
             if (parts.length === 2) return `${parts[0]}/${parseInt(parts[1], 10)}開店`;
