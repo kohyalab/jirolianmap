@@ -158,8 +158,8 @@
             return arr.map(([s, e]) => `${fmt(s)}-${fmt(e)}`).join(', ');
         },
 
-        formatShiftList(shifts) {
-            if (shifts === '未定') return '未定';
+        formatShiftList(shifts, isPreOpeningAllEmpty = false) {
+            if (shifts === '未定' || (isPreOpeningAllEmpty && (!shifts || shifts.length === 0))) return '未定';
             if (!Array.isArray(shifts) || shifts.length === 0) return '定休日';
             const fmt = Utils.formatTime || (v => `${Math.floor(v)}:${Math.round((v - Math.floor(v)) * 60).toString().padStart(2, '0')}`);
             return shifts.map(([start, end]) => `${fmt(start)}-${fmt(end)}`).join(', ');
@@ -349,8 +349,8 @@
 
         getTodayShifts(shop, targetDate = new Date()) {
             if (!shop) return [];
-            // 開店日が空欄の場合は「未定」
-            if (!shop.openedAt || !shop.openedAt.trim()) return '未定';
+            // 開店日未定店舗はすべて「休業」
+            if (!shop.openedAt || !shop.openedAt.trim()) return [];
             // オープン前店舗は開店日前日まで「休業」
             if (this.isPreOpen(shop, targetDate)) return [];
             // 閉店店舗は閉店日翌日以降「休業」
@@ -374,14 +374,15 @@
         },
 
         getBusinessStatus(shop, targetDate = new Date()) {
+            // 開店日未定店舗およびオープン前店舗の営業ステータスは「オープン予定」
             if (!shop || !shop.openedAt || !shop.openedAt.trim()) {
-                return { type: 'closed', bgClass: 'bg-closed', label: '開店日未定' };
+                return { type: 'preopen', bgClass: 'bg-preopen', label: 'オープン予定' };
             }
             if (this.isPreOpen(shop, targetDate)) {
-                return { type: 'closed', bgClass: 'bg-closed', label: 'オープン前（休業）' };
+                return { type: 'preopen', bgClass: 'bg-preopen', label: 'オープン予定' };
             }
             if (this.isClosedShopExpired(shop, targetDate)) {
-                return { type: 'closed', bgClass: 'bg-closed', label: '閉店（休業）' };
+                return { type: 'closed', bgClass: 'bg-closed', label: '閉店' };
             }
             const tempStatus = this.getTemporaryStatus(shop, targetDate);
             if (tempStatus === '休業') return { type: 'closed', bgClass: 'bg-closed', label: '営業時間外' };
@@ -474,7 +475,7 @@
             const fmt = Utils.formatTime || (v => `${Math.floor(v)}:${Math.round((v - Math.floor(v)) * 60).toString().padStart(2, '0')}`);
 
             if (!shop || !shop.openedAt || !shop.openedAt.trim()) {
-                return `<span class="next-schedule" title="開店予定: 未定">開店予定: 未定</span>`;
+                return `<span class="next-schedule" title="次回営業時間: 未定">未定</span>`;
             }
             if (this.isPreOpen(shop)) {
                 const openDateStr = shop.openedAt ? shop.openedAt.replace(/-/g, '/') : '';

@@ -804,6 +804,11 @@
             border-color: rgba(158, 158, 158, 0.8);
         }
 
+        .shop-grid .shop-item.current-preopen {
+            background-color: rgba(156, 39, 176, 0.18);
+            border-color: rgba(156, 39, 176, 0.8);
+        }
+
         .shop-grid.view-mode-minimal .shop-info,
         .shop-grid.view-mode-minimal .detailed-content {
             display: none !important;

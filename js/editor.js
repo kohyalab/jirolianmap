@@ -2748,12 +2748,16 @@ ${guidelinesText}
         const targetIsHoliday = (typeof JiroBusinessHours !== 'undefined') ? JiroBusinessHours.isJapaneseHoliday(activeTargetDate) : false;
         const hasHolidayShift = shop.holidayShifts !== null && shop.holidayShifts !== undefined;
 
+        const isShopPreOpening = (typeof JiroBusinessHours !== 'undefined') ? (JiroBusinessHours.isPreOpen(shop) || !shop.openedAt || !shop.openedAt.trim()) : (!shop.openedAt || !shop.openedAt.trim());
+        const hasAnyDefinedHours = shop.shiftsByDay && Object.values(shop.shiftsByDay).some(s => (Array.isArray(s) && s.length > 0) || (typeof s === 'string' && s.trim() !== '' && s !== '未定'));
+        const isPreOpeningAllEmpty = isShopPreOpening && !hasAnyDefinedHours;
+
         for (let mondayIndex = 0; mondayIndex < 7; mondayIndex++) {
             const jsDayOfWeek = (mondayIndex + 1) % 7;
             const dayLabel = baseDayNames[mondayIndex];
 
             const normalShifts = shop.shiftsByDay ? shop.shiftsByDay[mondayIndex] : null;
-            const normalStr = (typeof JiroBusinessHours !== 'undefined') ? JiroBusinessHours.formatShiftList(normalShifts) : this.formatShiftList(normalShifts);
+            const normalStr = (typeof JiroBusinessHours !== 'undefined') ? JiroBusinessHours.formatShiftList(normalShifts, isPreOpeningAllEmpty) : this.formatShiftList(normalShifts);
 
             const specsForThisDay = Array.isArray(shop.specialShifts)
                 ? shop.specialShifts.filter(spec => spec.day === jsDayOfWeek)
@@ -2781,7 +2785,7 @@ ${guidelinesText}
         }
 
         if (hasHolidayShift) {
-            let holidayStr = (typeof JiroBusinessHours !== 'undefined') ? JiroBusinessHours.formatShiftList(shop.holidayShifts) : this.formatShiftList(shop.holidayShifts);
+            let holidayStr = (typeof JiroBusinessHours !== 'undefined') ? JiroBusinessHours.formatShiftList(shop.holidayShifts, isPreOpeningAllEmpty) : this.formatShiftList(shop.holidayShifts);
             const isTodayRow = !hasTodayTemp && targetIsHoliday;
             rawEntries.push({ dayLabel: '祝', text: holidayStr, isHoliday: true, isToday: isTodayRow });
         }

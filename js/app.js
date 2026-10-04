@@ -211,12 +211,17 @@
             const targetIsHoliday = isJapaneseHoliday(activeTargetDate);
             const hasHolidayShift = shop.holidayShifts !== null && shop.holidayShifts !== undefined;
 
+            // オープン前または開店日未定店舗で、営業時間が未登録（全曜日空配列）か判定
+            const isShopPreOpening = isPreOpen(shop) || !shop.openedAt || !shop.openedAt.trim();
+            const hasAnyDefinedHours = shop.shiftsByDay && Object.values(shop.shiftsByDay).some(s => (Array.isArray(s) && s.length > 0) || (typeof s === 'string' && s.trim() !== '' && s !== '未定'));
+            const isPreOpeningAllEmpty = isShopPreOpening && !hasAnyDefinedHours;
+
             for (let mondayIndex = 0; mondayIndex < 7; mondayIndex++) {
                 const jsDayOfWeek = (mondayIndex + 1) % 7;
                 const dayLabel = baseDayNames[mondayIndex];
 
                 const normalShifts = shop.shiftsByDay ? shop.shiftsByDay[mondayIndex] : null;
-                const normalStr = formatShiftList(normalShifts);
+                const normalStr = formatShiftList(normalShifts, isPreOpeningAllEmpty);
 
                 const specsForThisDay = Array.isArray(shop.specialShifts)
                     ? shop.specialShifts.filter(spec => spec.day === jsDayOfWeek)
@@ -278,7 +283,7 @@
             }
 
             if (hasHolidayShift) {
-                let holidayStr = formatShiftList(shop.holidayShifts);
+                let holidayStr = formatShiftList(shop.holidayShifts, isPreOpeningAllEmpty);
                 const specRulesForHolidayRow = [];
                 if (Array.isArray(shop.holidaySpecialShifts)) {
                     const dayNamesShort = ["日", "月", "火", "水", "木", "金", "土"];
@@ -446,13 +451,10 @@
                     const dayColorStyle = getDateDayColorStyle(d);
                     const tempStatus = getTemporaryStatus(shop, d);
                     const shifts = getTodayShifts(shop, d);
-                    const isTodayOpen = Array.isArray(shifts) && shifts.length > 0;
+                    const isTodayOpen = !!(shifts && shifts.length > 0 && !isPreOpen(shop, d));
                     let hoursHtml = '';
                     let plainText = '休業';
-                    if (shifts === '未定') {
-                        hoursHtml = `<span style="white-space: nowrap; line-height: 1.1; display: inline-block;">${formatShiftTimeText('未定', 'calendar')}</span>`;
-                        plainText = '未定';
-                    } else if (!shifts || shifts.length === 0) {
+                    if (!shifts || shifts.length === 0) {
                         hoursHtml = `<span style="white-space: nowrap; line-height: 1.1; display: inline-block;">${formatShiftTimeText('休業', 'calendar')}</span>`;
                     } else {
                         plainText = shifts.map(([s, e]) => `${formatTime(s)}-${formatTime(e)}`).join(' / ');
@@ -1341,7 +1343,7 @@
                 if (listSubMode === 'today' || currentMainViewMode === 'today') {
                     const selectedTodayOpen = Array.from(document.querySelectorAll('input[name="today-open-filter"]:checked')).map(cb => cb.value);
                     const shifts = getTodayShifts(shop, activeDate);
-                    const isShopOpenOnDay = Array.isArray(shifts) && shifts.length > 0;
+                    const isShopOpenOnDay = shifts && shifts.length > 0;
                     const shopTodayStatus = isShopOpenOnDay ? 'open' : 'closed';
                     if (!selectedTodayOpen.includes(shopTodayStatus)) {
                         updateMarkerVisibility(shop.id, false);
@@ -1384,27 +1386,20 @@
                         }
                     };
                     item.dataset.shopId = shop.id;
+                    item.className = `shop-item ${isVisited ? 'visited' : ''} ${isTodayOpen ? 'today-open' : 'today-closed'}`;
 
                     const tempStatus = getTemporaryStatus(shop, activeDate);
                     const todayHoursData = (() => {
                         const shifts = getTodayShifts(shop, activeDate);
-                        if (shifts === '未定') {
-                            return { html: `<span>${formatShiftTimeText('未定', 'today')}</span>`, text: '未定', isOpen: false };
-                        }
-                        if (!shifts || shifts.length === 0) {
-                            return { html: `<span>${formatShiftTimeText('休業', 'today')}</span>`, text: '休業', isOpen: false };
-                        }
+                        if (!shifts || shifts.length === 0) return { html: `<span>${formatShiftTimeText('休業', 'today')}</span>`, text: '休業' };
                         const plainText = shifts.map(([start, end]) => `${formatTime(start)}-${formatTime(end)}`).join(' / ');
                         const htmlContent = shifts.map(([start, end]) => {
                             return `<span>${formatShiftTimeText(`${formatTime(start)}-${formatTime(end)}`, 'today')}</span>`;
                         }).join('');
-                        return { html: htmlContent, text: plainText, isOpen: true };
+                        return { html: htmlContent, text: plainText };
                     })();
 
-                    const isDayOpen = todayHoursData.isOpen;
-                    item.className = `shop-item ${isVisited ? 'visited' : ''} ${isDayOpen ? 'today-open' : 'today-closed'}`;
-
-                    const textClass = tempStatus ? 'is-temp' : (isDayOpen ? 'is-open' : 'is-closed');
+                    const textClass = tempStatus ? 'is-temp' : (isTodayOpen ? 'is-open' : 'is-closed');
 
                     item.innerHTML = `
                 <div class="today-summary-card">
@@ -1582,14 +1577,11 @@
                 let tdsHtml = dates.map(d => {
                     const tempStatus = getTemporaryStatus(shop, d.dateObj);
                     const shifts = getTodayShifts(shop, d.dateObj);
-                    const isShopOpenOnDay = Array.isArray(shifts) && shifts.length > 0;
+                    const isShopOpenOnDay = !!(shifts && shifts.length > 0 && !isPreOpen(shop, d.dateObj));
                     
                     let hoursHtml = '';
                     let plainText = '休業';
-                    if (shifts === '未定') {
-                        hoursHtml = `<span style="white-space: nowrap; line-height: 1.05; display: inline-block;">${formatShiftTimeText('未定', 'calendar')}</span>`;
-                        plainText = '未定';
-                    } else if (!shifts || shifts.length === 0) {
+                    if (!shifts || shifts.length === 0) {
                         hoursHtml = `<span style="white-space: nowrap; line-height: 1.05; display: inline-block;">${formatShiftTimeText('休業', 'calendar')}</span>`;
                     } else {
                         plainText = shifts.map(([s, e]) => `${formatTime(s)}-${formatTime(e)}`).join(' / ');

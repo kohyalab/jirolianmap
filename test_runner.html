@@ -133,7 +133,23 @@
             });
 
             const noOpenDateShop = { id: 'pending_open_shop', name: '準備中二郎', openedAt: '', closedAt: null, shiftsByDay: { '0': [[11, 15]] } };
-            assert('JiroBusinessHours.getTodayShifts (開店日空欄は「未定」)', () => JiroBusinessHours.getTodayShifts(noOpenDateShop, beforeOpenDate) === '未定');
+            assert('JiroBusinessHours.getTodayShifts (開店日未定はすべて「休業」)', () => {
+                const s = JiroBusinessHours.getTodayShifts(noOpenDateShop, beforeOpenDate);
+                return Array.isArray(s) && s.length === 0;
+            });
+            assert('JiroBusinessHours.getBusinessStatus (開店日未定は「オープン予定」)', () => {
+                const st = JiroBusinessHours.getBusinessStatus(noOpenDateShop, beforeOpenDate);
+                return st.type === 'preopen' && st.label === 'オープン予定';
+            });
+            assert('JiroBusinessHours.getNextOpenScheduleText (開店日未定は次回営業時間「未定」)', () => {
+                const text = JiroBusinessHours.getNextOpenScheduleText(noOpenDateShop, beforeOpenDate);
+                return text.includes('未定');
+            });
+            assert('JiroBusinessHours.getBusinessStatus (オープン前店舗は「オープン予定」)', () => {
+                const st = JiroBusinessHours.getBusinessStatus(preOpenShop, beforeOpenDate);
+                return st.type === 'preopen' && st.label === 'オープン予定';
+            });
+            assert('JiroBusinessHours.formatShiftList (オープン前店舗の未設定シフトは「未定」)', () => JiroBusinessHours.formatShiftList([], true) === '未定');
             assert('JiroUtils.formatOpenedDateText (開店日空欄は「開店日未定」)', () => JiroUtils.formatOpenedDateText('') === '開店日未定');
 
             const pendingShiftsShop = { id: 'pending_shifts_shop', name: '未定二郎', openedAt: '2020-01-01', closedAt: null, shiftsByDay: { '0': '未定' } };
