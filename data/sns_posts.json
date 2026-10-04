@@ -6333,8 +6333,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-04T10:30:05.422Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   }
