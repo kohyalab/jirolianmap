@@ -192,7 +192,7 @@
             const yesterdayShifts = getTodayShifts(shop, yesterday);
             let isLateNightOvernight = false;
 
-            if (Array.isArray(yesterdayShifts) && yesterdayShifts.length > 0) {
+            if (yesterdayShifts?.length) {
                 const adjustedHour = currentHour + 24.0;
                 for (const [start, end] of yesterdayShifts) {
                     if (end > 24.0 && adjustedHour >= start && adjustedHour <= end) {
@@ -427,7 +427,7 @@
                     const d = new Date(startDate);
                     d.setDate(startDate.getDate() + offset);
                     const shifts = getTodayShifts(shop, d);
-                    if (Array.isArray(shifts) && shifts.length > maxShiftsInRow) {
+                    if (shifts && shifts.length > maxShiftsInRow) {
                         maxShiftsInRow = shifts.length;
                     }
                 }
@@ -1341,7 +1341,7 @@
                 if (listSubMode === 'today' || currentMainViewMode === 'today') {
                     const selectedTodayOpen = Array.from(document.querySelectorAll('input[name="today-open-filter"]:checked')).map(cb => cb.value);
                     const shifts = getTodayShifts(shop, activeDate);
-                    const isShopOpenOnDay = shifts && shifts.length > 0;
+                    const isShopOpenOnDay = Array.isArray(shifts) && shifts.length > 0;
                     const shopTodayStatus = isShopOpenOnDay ? 'open' : 'closed';
                     if (!selectedTodayOpen.includes(shopTodayStatus)) {
                         updateMarkerVisibility(shop.id, false);
@@ -1572,7 +1572,7 @@
                 let maxShiftsInShopRow = 2;
                 dates.forEach(d => {
                     const shifts = getTodayShifts(shop, d.dateObj);
-                    if (Array.isArray(shifts) && shifts.length > maxShiftsInShopRow) {
+                    if (shifts && shifts.length > maxShiftsInShopRow) {
                         maxShiftsInShopRow = shifts.length;
                     }
                 });

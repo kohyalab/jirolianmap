@@ -432,6 +432,21 @@
                 }
                 assert('店舗情報-詳細: 制覇状況オフで制覇バッジ非表示', () => visitBtnDisplayDuringCapture === 'none', `バッジstyle.display: "${visitBtnDisplayDuringCapture}" (期待値: "none")`);
 
+                // 12. 日別表示: 2026/10/07 (水) 新宿歌舞伎町店が today-closed (休業) になることの検証
+                if (typeof appWin.setMainViewMode === 'function') {
+                    appWin.setMainViewMode('today');
+                    appWin.setPeriodMode('1');
+                } else if (typeof appWin.setDensityMode === 'function') {
+                    appWin.setDensityMode('today');
+                }
+                if (typeof appWin.setSelectedDate === 'function') {
+                    appWin.setSelectedDate('2026-10-07');
+                }
+                await new Promise(r => setTimeout(r, 400));
+                const kabukiCard = appDoc.querySelector('.shop-item[data-shop-id="kabuki"]');
+                const isKabukiClosed = kabukiCard && kabukiCard.classList.contains('today-closed') && !kabukiCard.classList.contains('today-open');
+                assert('日別表示: 2026/10/07 新宿歌舞伎町店が休業(today-closed)表示', () => isKabukiClosed, kabukiCard ? `クラス: ${kabukiCard.className}` : '要素未検出');
+
             } catch (err) {
                 assert('メインアプリ: 統合テスト例外', false, err.message);
             }
@@ -484,6 +499,35 @@
                 edWin.app.renderList();
                 const filteredItems = edDoc.querySelectorAll('#shop-list .shop-item');
                 assert('エディタ: 店舗検索（「目黒」で絞り込み）', () => filteredItems.length === 1, `検索ヒット数: ${filteredItems.length}件`);
+
+                // --- 6-2. エディタ機能: 「未定」ボタン＆住所自動分離テスト ---
+                const monPendingBtn = edDoc.querySelector('button[onclick*="setShiftPending(\'field-shift-0\')"]');
+                const monInput = edDoc.getElementById('field-shift-0');
+                if (monPendingBtn && monInput) {
+                    monPendingBtn.click();
+                    assert('エディタ: 月曜「未定」ボタンクリック動作', () => monInput.value === '未定', `値: "${monInput.value}"`);
+                    monPendingBtn.click();
+                    assert('エディタ: 月曜「未定」ボタン再クリックでクリア動作', () => monInput.value === '', `値: "${monInput.value}"`);
+                }
+
+                const allPendingBtn = edDoc.querySelector('button[onclick*="setAllShiftsPending()"]');
+                if (allPendingBtn) {
+                    allPendingBtn.click();
+                    const allPending = [0,1,2,3,4,5,6].every(i => edDoc.getElementById(`field-shift-${i}`).value === '未定');
+                    assert('エディタ: 全曜日「未定」ボタンクリック動作', () => allPending);
+                }
+
+                const addrInput = edDoc.getElementById('field-address-text');
+                const prefSelect = edDoc.getElementById('field-pref-code');
+                const citySelect = edDoc.getElementById('field-city-code');
+                if (addrInput && prefSelect && citySelect) {
+                    addrInput.value = '東京都港区三田2丁目16-4';
+                    addrInput.dispatchEvent(new Event('input'));
+                    addrInput.dispatchEvent(new Event('blur'));
+                    assert('エディタ: 住所自動分離（都道府県・市区町村自動選択および住所残余反映）', () => {
+                        return prefSelect.value === '13' && citySelect.value === '13103' && addrInput.value === '三田2丁目16-4';
+                    }, `結果: pref=${prefSelect.value}, city=${citySelect.value}, addr="${addrInput.value}"`);
+                }
 
                 // --- 7. SNS自動検出・承認フロー統合テスト ---
                 edWin.alert = () => {};
