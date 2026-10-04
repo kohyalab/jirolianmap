@@ -6289,5 +6289,26 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_daily_kannai_2106638872314880052",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2106638872314880052",
+    "postedAt": "2026-10-04T06:53:41.000Z",
+    "postText": "こんにちは。  無いと思っていた海老ちゃんまだ一袋残ってたので 急遽、海老っちょ辣油作りました。 途中で終わってしまいそうですが宜しくお願いします。 タルタルご希望の方は「アレ」でお願いします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-04",
+      "endDate": "2026-10-04",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
