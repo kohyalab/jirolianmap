@@ -2,25 +2,25 @@
   "generalRules": [],
   "learnedFeedback": [
     {
-      "id": "sns_post_kameido_20261004_0_2106547636115481065",
-      "timestamp": "2026-10-04T03:54:56.436Z",
-      "shopId": "kameido",
-      "shopName": "亀戸店",
-      "postDate": "2026-10-04T00:51:08.000Z",
-      "postText": "お世話になってます。今朝になってスタッフが体調不良になってしまったため本日4日(日)の昼の部はお休みさせていただきます。夜の部は通常通り営業します。急で申し訳ありません、よろしくお願いします。",
+      "id": "sns_post_shndaita_20261004_0_2106678834766692594",
+      "timestamp": "2026-10-04T10:29:01.271Z",
+      "shopId": "shndaita",
+      "shopName": "環七新新代田店",
+      "postDate": "2026-10-04T09:32:29.000Z",
+      "postText": "2026年10月4日（日） 解ってる範囲の営業予定です！  月 お休み 火 お休み 水 〇 木 お休み 金 お休み 土 〇 日 〇  11:00〜16:00くらい にんにく地獄(＋200円)もやります！  よろしくお願いします！",
       "aiStatus": "schedule_change",
-      "aiReason": "営業変更検出: スタッフ体調不良のため",
+      "aiReason": "営業時間の変更を検出",
       "humanAction": "applied",
       "finalDetails": {
         "startDate": "2026-10-04",
         "endDate": "2026-10-04",
         "hours": [
           [
-            17,
-            21
+            11,
+            16
           ]
         ],
-        "reason": "スタッフ体調不良のため"
+        "reason": ""
       }
     }
   ]
