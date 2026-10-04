@@ -6548,5 +6548,29 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_senjuohashi_20261019_0_2106876749510541564",
+    "shopId": "senjuohashi",
+    "shopName": "千住大橋駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjujirou26/status/2106876749510541564",
+    "postedAt": "2026-10-04T22:38:55.000Z",
+    "postText": "ラー油あります！  ※営業時間10時30分〜 15時30分ラストオーダー！  ※10月19日（月）は定期検診の為休業となりますのでご注意をお願いいたします！ https://t.co/bWAerUQtbj",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-E3pHULZfMoqCw1Rs7m48KHlcnqTobakoqvwnKMt0n8cHgSsGV5ZYgNarVU5fHjNzyoZEEGyM10M1lA3eOmvCXJ61DwthLe8xRiQPLo11gN89mqBhpybgdjWuVpMlY-m0V5vTMzCXuhGedmhcjFpSlw=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-19",
+      "endDate": "2026-10-19",
+      "hours": [],
+      "reason": "定期検診のため",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 定期検診のため"
   }
 ]
