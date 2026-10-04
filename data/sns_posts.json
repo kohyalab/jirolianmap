@@ -989,8 +989,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-09-26T14:45:11.246Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   },
@@ -1018,8 +1018,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-09-26T14:45:11.246Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   },
@@ -1048,8 +1048,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-09-26T14:45:11.246Z",
     "aiStatus": "match",
     "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   },
@@ -1072,8 +1072,8 @@
       "reason": "夏休み",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-09-26T14:45:11.246Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 夏休み"
   },
@@ -1108,8 +1108,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-09-26T14:45:11.246Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   },
@@ -1129,8 +1129,8 @@
       "hours": [],
       "reason": ""
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-09-26T14:45:11.246Z",
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   },
@@ -1150,8 +1150,8 @@
       "hours": [],
       "reason": ""
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-09-26T14:45:11.246Z",
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   },
@@ -1177,9 +1177,5117 @@
       "reason": "",
       "confidence": 1
     },
+    "processed": true,
+    "processedAt": "2026-09-26T14:45:11.246Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_daily_kameido_2103863046821339553",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2103863046821339553",
+    "postedAt": "2026-09-26T15:03:32.000Z",
+    "postText": "シーサーちゃんはそんな易きに流れる子じゃないはず。苦しい気持ちから一時は解放されても君はきっと今度は罪悪感に押し潰されるよ！辛いけど、その結果手に入れるからこそその資格には価値が出るんだよ！お師匠やくりまんじゅう達と美味しい酒を飲もう🍶 https://t.co/s1LNabeJVV",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-26",
+      "endDate": "2026-09-26",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": true,
+    "processedAt": "2026-09-26T16:35:58.106Z",
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_daily_kameido_2103862597456191734",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2103862597456191734",
+    "postedAt": "2026-09-26T15:01:45.000Z",
+    "postText": "シーサーちゃんはそんな易きに流れる子じゃないはず！辛いけど、その結果手に入れるからこそその資格には価値が出るんだよ！お師匠やくりまんじゅう達と美味しい酒を飲もう🍶 https://t.co/s1LNabeJVV",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-26",
+      "endDate": "2026-09-26",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": true,
+    "processedAt": "2026-09-26T16:35:58.106Z",
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_mention_kameido_2103869235319779638",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2103869235319779638",
+    "postedAt": "2026-09-26T15:28:08.000Z",
+    "postText": "@yuukikagou おめでとうございます✨㊗️",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-26",
+      "endDate": "2026-09-26",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": true,
+    "processedAt": "2026-09-26T16:35:58.106Z",
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_shinagawa_20260926_0_2103640347100561847",
+    "shopId": "shinagawa",
+    "shopName": "品川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/shinagawa26/status/2103640347100561847",
+    "postedAt": "2026-09-26T00:18:37.000Z",
+    "postText": "本日9月26日土曜日は都合により休みとなります ご迷惑をおかけしますが宜しくお願い致します",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-09-26",
+      "endDate": "2026-09-26",
+      "hours": [],
+      "reason": "都合により",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-26T16:35:58.106Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 都合により"
+  },
+  {
+    "id": "sns_post_kaminoge_20260926_0_2103715381466779676",
+    "shopId": "kaminoge",
+    "shopName": "上野毛店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kaminogeJiro/status/2103715381466779676",
+    "postedAt": "2026-09-26T05:16:46.000Z",
+    "postText": "ただ今の時間で麺切れ終了致します",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-26",
+      "endDate": "2026-09-26",
+      "hours": [
+        [
+          11,
+          14.266666666666667
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-26T16:35:58.106Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_jimbocho_20260926_0_2103743041978953752",
+    "shopId": "jimbocho",
+    "shopName": "神田神保町店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jbc_ramen_jiro/status/2103743041978953752",
+    "postedAt": "2026-09-26T07:06:41.000Z",
+    "postText": "ただ今お並びのお客様までで、本日の営業終了となります。よろしくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-26",
+      "endDate": "2026-09-26",
+      "hours": [
+        [
+          16.1,
+          16.1
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-26T16:35:58.106Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_senjuohashi_20260926_0_2103643247096791374",
+    "shopId": "senjuohashi",
+    "shopName": "千住大橋駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjujirou26/status/2103643247096791374",
+    "postedAt": "2026-09-26T00:30:08.000Z",
+    "postText": "本日は15時30分前よりテイクアウト販売のみの営業となりますのでご注意をお願いいたします！  フォロワー限定🐖 味噌脂蕎麦🐖魚粉油そば🐖 生姜醤油脂🐖1010カレー脂🐖 ✨復刻✨BP塩油そば🐖豚１本🐖 https://t.co/meq2FEgHrI",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-JJXqxmpDbIpBdnmlxqjEYdKpirwg90sN3KpcozU05AIdUxM0X290IMMkXIg0nBPU9VdyFaYknK6mE6qMzOUpFOPc8lHUvvMbZpA_0-sDqbm8OhaXgYjPzk-DReq_YGY-Z8OgCRkpdI1a2ksUFx1oHw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-4HeZsPDOgqs6lo1_n7f4tQ3B2FeCJrocnTJPLRR7IE6-aNqS6kJJtGereBWnjvrizPU0D4AsigGOtLnjOYVrMnP1FEGV-k3fGZJabAI138C8FOpyjzOxEGPEMqzkB9xNxMgF0FEPDctDb7ryySezOQ=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-09-26",
+      "endDate": "2026-09-26",
+      "hours": [
+        [
+          10.5,
+          15.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-26T16:35:58.106Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_kawagoe_20260926_0_2103652486234132804",
+    "shopId": "kawagoe",
+    "shopName": "川越店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kwge26/status/2103652486234132804",
+    "postedAt": "2026-09-26T01:06:51.000Z",
+    "postText": "おはようございます！ 本日通し営業です🌧 ○11:00~20:00  🍜持ち帰りあります！  無料トッピング｢紅生姜｣あります☺️ トッピング時に「アレ」で！  よろしくお願いします🙇‍♂️ https://t.co/uXYDQdil9Z",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-W3HDIUIqNZaHTabZ6T1ID-5V2ZIa5Feyo7J4LcuWLeKFZjydXBjRB9YGKAQXljtDUEXlZcgko8YQLD4HyrRh2l7_uaZjKSxeIiiNlYCpNfkif5OPd7F5RkV_STTU_KlEH6OGkRu3-nP9S4eyEsig_Q=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-26",
+      "endDate": "2026-09-26",
+      "hours": [
+        [
+          11,
+          20
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-26T16:35:58.106Z",
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_koshigaya_20260926_0_2103592491236962662",
+    "shopId": "koshigaya",
+    "shopName": "越谷店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ksgy26/status/2103592491236962662",
+    "postedAt": "2026-09-25T21:08:27.000Z",
+    "postText": "おはようございます！ ラーメン二郎越谷店です！  9月26日(土)　臨時営業 10:00〜14:00L0 ご来店お待ちしております🙇  10月2日(金) お休みします。 よろしくお願いします！ https://t.co/MdLYEBhngx",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-irnDYfwxIHub-WJLUxSWRLtX-RRBUQngeXftBQCVppFkz-56Ya0Mt37onC9inooKTikhf1xmlozXn5slII_1ENHFAa09X5wmx_Hk_bBsE2TXEXO55ssTrVvHut96toOLX2sMIZVeZRr5Vcx1mb9k1w=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-09-26",
+      "endDate": "2026-09-26",
+      "hours": [
+        [
+          10,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-26T16:35:58.106Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_koshigaya_20261002_1_2103592491236962662",
+    "shopId": "koshigaya",
+    "shopName": "越谷店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ksgy26/status/2103592491236962662",
+    "postedAt": "2026-09-25T21:08:27.000Z",
+    "postText": "おはようございます！ ラーメン二郎越谷店です！  9月26日(土)　臨時営業 10:00〜14:00L0 ご来店お待ちしております🙇  10月2日(金) お休みします。 よろしくお願いします！ https://t.co/MdLYEBhngx",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-irnDYfwxIHub-WJLUxSWRLtX-RRBUQngeXftBQCVppFkz-56Ya0Mt37onC9inooKTikhf1xmlozXn5slII_1ENHFAa09X5wmx_Hk_bBsE2TXEXO55ssTrVvHut96toOLX2sMIZVeZRr5Vcx1mb9k1w=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-02",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-26T16:35:58.106Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_asakurakaido_20260926_0_2103677486269927748",
+    "shopId": "asakurakaido",
+    "shopName": "朝倉街道駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/r26akgd/status/2103677486269927748",
+    "postedAt": "2026-09-26T02:46:11.000Z",
+    "postText": "本日12:00-15:00営業いたします。 西鉄ストア様、西日本シティ銀行様、他店舗病院等駐車禁止 空いていても一般的なコインパーキングをご利用下さい。 グループの方は歩道を塞がずお静かにお願いします。 代表待ち、割込み、飲酒喫煙禁止 朝倉街道駅徒歩1分、天拝山駅7分",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-09-26",
+      "endDate": "2026-09-26",
+      "hours": [
+        [
+          12,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-26T16:35:58.106Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_nagoyaosone_20260926_0_2103645133732565323",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2103645133732565323",
+    "postedAt": "2026-09-26T00:37:38.000Z",
+    "postText": "おはようございます。 ラーメン二郎名古屋大曽根店です。 本日の営業時間です。 10:00〜14:00 雨予報ですので足もと、傘の忘れ物にお気をつけくださいませ。 よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-09-26",
+      "endDate": "2026-09-26",
+      "hours": [
+        [
+          10,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-26T16:35:58.106Z",
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_yaen2_20260927_0_2103894722200982007",
+    "shopId": "yaen2",
+    "shopName": "八王子野猿街道店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/Jiro_Yaenkaido2/status/2103894722200982007",
+    "postedAt": "2026-09-26T17:09:24.000Z",
+    "postText": "9月27日(日) 朝7:30～15:00 ⭐テイクアウト、鍋二郎あります ⚠️駐車場待ち出来ません ⚠️駐車場満車時コインパーキング ⚠️店舗近隣タバコ禁止です https://t.co/9kePQcJXoj",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-rIx4WR1r12RPYdK27jzmUowgiaJgW8-IdxzaB3ihA9ivYSQjtIWyXqMyoM1YmHJ3BL5nlHQRBFQYjTUobX5eHb4HGfcQCc6NVUQ7E1kbkMIoV1Qfzf5Os102o46-zlsbqNqiDv8_5PhWzIffAg_k9Q==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-RuYGpTESwJeu4wLnImKbcF-NQexVA5fF9KsPCX_m71wypi1R23uMIsQrzmNyjrjp7ObbyndjP06293qNMjU_heorEJkmtniGbLKTZGXCSsKw4zsS23Yzuo8GUIx0NYbWIU3d1MobBlVecuFWGZfTaw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-sJb7LuLDNC7nE83dRgdF7XxMgn7Om5IRsF40gwWATeDE7OIELUlgc06SMf3qWqfFbuAzbTq2ms24_VcZwwYowBAQb6X-vul5RvJM6Lv33Lu0qrftviQ6mKk0eZfG6lXDxM6BUvjn-XYme9yvY9wnJQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-dLJVj6PYb8r2lwPxY0QptrriJ0Y_E3Ez5KLgpC0bgnjqfO1oeAfdghmSzQ2YALm7KPVAoIWTcyVgjggLt7hFL0WZYRZuhxvpqykWXF56IW4mxELfTqYKhoh8YKIL3LGOORi91_p7OkUVmRErDgij-A=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-09-27",
+      "endDate": "2026-09-27",
+      "hours": [
+        [
+          7.5,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-26T17:33:54.969Z",
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2103976911143858254",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2103976911143858254",
+    "postedAt": "2026-09-26T22:36:00.000Z",
+    "postText": "のんべタレ(＋200円)もやります！ 鬼ころしに煮干しを漬け込んだやつなので 運転のひとと未成年はだめです！  汁なしの方がおすすめです！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-26",
+      "endDate": "2026-09-26",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": true,
+    "processedAt": "2026-09-27T06:02:35.883Z",
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2103976806063947961",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2103976806063947961",
+    "postedAt": "2026-09-26T22:35:35.000Z",
+    "postText": "汁なし(+100円)もやります！  麺の量と一緒に しるなしでって言ってください！ ラーメンのひとはラーメンでって言ってくれるとわかりやすいです！  麺の量を聞かれた時に じぶんから言ってください！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-26",
+      "endDate": "2026-09-26",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": true,
+    "processedAt": "2026-09-27T06:02:35.883Z",
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_shndaita_20260927_0_2103976166571024461",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2103976166571024461",
+    "postedAt": "2026-09-26T22:33:02.000Z",
+    "postText": "2026年9月27日（日）  ⚠️短縮営業です！⚠️ 11:00～15:00くらいです！  よろしくお願いします！  ※住宅地なのでおしゃべりしないで待っててください",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-09-27",
+      "endDate": "2026-09-27",
+      "hours": [
+        [
+          11,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-27T06:02:35.883Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_mejirodai_20260927_0_2103988769607270532",
+    "shopId": "mejirodai",
+    "shopName": "めじろ台店",
+    "postSource": "x",
+    "postUrl": "https://x.com/mejirodai_jiro/status/2103988769607270532",
+    "postedAt": "2026-09-26T23:23:07.000Z",
+    "postText": "毎度ありがとうございます 本日27日(日)の営業時間は11〜15時となります なおただ今アルバイト募集中ですのでXのDMの方までご連絡お待ちしてます よろしくお願いします🙇 https://t.co/EHII4aADec",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-LnD96XIUuaPTgv5Bmg9k-z9jSMUHYP2iXd-55_lG-GoS62rFx_cpuwWz3eYIzBv1Y0mP_9nb4xvesr1xi0YZdiKhuY0ADMNyIc9FFe7IjPkub8ufyHpuCUc4W9xHwiYZNg3QSgWxiH_2j8KLBtnztw=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-27",
+      "endDate": "2026-09-27",
+      "hours": [
+        [
+          11,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-27T06:02:35.883Z",
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_mention_kameido_2103997098475831757",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2103997098475831757",
+    "postedAt": "2026-09-26T23:56:13.000Z",
+    "postText": "@funatsukazuki 頑張ってください！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-26",
+      "endDate": "2026-09-26",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": true,
+    "processedAt": "2026-09-27T06:02:35.883Z",
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_okinawa_20260927_0_2104011602072883393",
+    "shopId": "okinawa",
+    "shopName": "沖縄店",
+    "postSource": "x",
+    "postUrl": "https://x.com/okinawa_jiro/status/2104011602072883393",
+    "postedAt": "2026-09-27T00:53:51.000Z",
+    "postText": "本日、都合により14時過ぎの早閉まいといたします。ご了承ください。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-27",
+      "endDate": "2026-09-27",
+      "hours": [
+        [
+          11,
+          14
+        ],
+        [
+          17,
+          20
+        ]
+      ],
+      "reason": "都合により",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-27T06:02:35.883Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 都合により"
+  },
+  {
+    "id": "sns_post_kawagoe_20260927_0_2104019448919367702",
+    "shopId": "kawagoe",
+    "shopName": "川越店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kwge26/status/2104019448919367702",
+    "postedAt": "2026-09-27T01:25:02.000Z",
+    "postText": "おはようございます！ 本日昼のみ営業です☁️ ○11:00~14:00  🍜持ち帰りあります！  無料トッピング｢紅生姜｣あります☺️ トッピング時に「アレ」で！  よろしくお願いします🙇‍♂️",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-27",
+      "endDate": "2026-09-27",
+      "hours": [
+        [
+          11,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-27T06:02:35.883Z",
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sendai2_20260927_0_2104067249074286785",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2104067249074286785",
+    "postedAt": "2026-09-27T04:34:58.000Z",
+    "postText": "列だいぶ早めに切れたので、お昼ご飯まだの方どうぞー！！ 近くでベトナムフェスも🇻🇳やってますね！！ 是非どうぞ！！ https://t.co/BTGZN2Qmqo",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-RtuL3yR07Nx6AbIhsqDQQqDQyzBatj4kn5zhyKmNqM0PoP0BxNge8MQ1wrMigNWqJKlGv5iUP80LCNIeygut0CmsNRMAI3FS-xEqk27NqzDbHq4MN5AG8_PSgCZP8EeKAxqhP0Hlk7E9N5t1DmxfXg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-pNBn20AzrNlco8gPURTPDERiATo3GLhIECanyq5bbi4hPUCVqqq8vS_tr3SDqlaN9Bu145-Ic6ZSzNaa341a7Xgl7j0TW_Q5MunYxTwNNuLCWHr78P-w2cVMGYiF89So9QGJQJSyn5fn7eQLdjwoFg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-X8UKnOKQGDp9W6XUmFIJ_2yx5A5Xo7kFEMLT3q4wSoaV495pJrbfwkxCd-y6QUj-henHMU9L0Ql0kAgVsA5DGWLyMfnE7erzRs4FrrpXba-ZSVKiOi6xO2QvmUIZi5l7pvJln3jLZ0zgHbmofsO_oQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-dlQIU5eI0mOinyPo11jCzRMyEiJ_xcwlGAIdFQmEtRXgPlUW6PalamHEzApmvSmxOZTzwaB2zkTfzOFlYF3qggXsxZ3yX2nd8EIyEbr0VwkwiUcPb2izIFZPqKGuBFK_EoBQ5dw75o-DjJQPGuILNw=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-27",
+      "endDate": "2026-09-27",
+      "hours": [
+        [
+          11,
+          13.566666666666666
+        ],
+        [
+          17,
+          21
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-27T06:02:35.883Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2104079939150721184",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2104079939150721184",
+    "postedAt": "2026-09-27T05:25:24.000Z",
+    "postText": "いまいるひとでおわりです！ ごめんなさい！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-27",
+      "endDate": "2026-09-27",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": true,
+    "processedAt": "2026-09-27T06:02:35.883Z",
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_shndaita_20260927_0_2104090999698133202",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2104090999698133202",
+    "postedAt": "2026-09-27T06:09:21.000Z",
+    "postText": "2026年9月27日（日） 解ってる範囲の営業予定です！  月 お休み 火 〇 水 〇 木 〇 金 〇(15:00くらい) 土 〇(15:00くらい) 日 〇  11:00〜16:00くらい にんにく地獄(＋200円)もやります！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-09-27",
+      "endDate": "2026-09-27",
+      "hours": [
+        [
+          11,
+          16
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出",
+    "processedAt": "2026-09-27T08:11:01.933Z"
+  },
+  {
+    "id": "sns_post_shndaita_20260929_1_2104090999698133202",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2104090999698133202",
+    "postedAt": "2026-09-27T06:09:21.000Z",
+    "postText": "2026年9月27日（日） 解ってる範囲の営業予定です！  月 お休み 火 〇 水 〇 木 〇 金 〇(15:00くらい) 土 〇(15:00くらい) 日 〇  11:00〜16:00くらい にんにく地獄(＋200円)もやります！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-09-29",
+      "endDate": "2026-09-29",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-27T08:11:01.933Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_shndaita_20261002_2_2104090999698133202",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2104090999698133202",
+    "postedAt": "2026-09-27T06:09:21.000Z",
+    "postText": "2026年9月27日（日） 解ってる範囲の営業予定です！  月 お休み 火 〇 水 〇 木 〇 金 〇(15:00くらい) 土 〇(15:00くらい) 日 〇  11:00〜16:00くらい にんにく地獄(＋200円)もやります！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-02",
+      "hours": [
+        [
+          11,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出",
+    "processedAt": "2026-09-27T08:11:01.933Z"
+  },
+  {
+    "id": "sns_post_shndaita_20261003_3_2104090999698133202",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2104090999698133202",
+    "postedAt": "2026-09-27T06:09:21.000Z",
+    "postText": "2026年9月27日（日） 解ってる範囲の営業予定です！  月 お休み 火 〇 水 〇 木 〇 金 〇(15:00くらい) 土 〇(15:00くらい) 日 〇  11:00〜16:00くらい にんにく地獄(＋200円)もやります！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-03",
+      "endDate": "2026-10-03",
+      "hours": [
+        [
+          11,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-27T08:11:01.933Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_mention_kameido_2104242306882900072",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2104242306882900072",
+    "postedAt": "2026-09-27T16:10:35.000Z",
+    "postText": "@discyurion おめでとうございます！同学年！これからもお互い頑張りましょう✨",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-27",
+      "endDate": "2026-09-27",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": true,
+    "processedAt": "2026-09-28T12:08:05.346Z",
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_koshigaya_20261002_0_2104320738996220132",
+    "shopId": "koshigaya",
+    "shopName": "越谷店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ksgy26/status/2104320738996220132",
+    "postedAt": "2026-09-27T21:22:15.000Z",
+    "postText": "おはようございます！ ラーメン二郎越谷店です！  9月28日(月) 昼11:00〜14:00LО 夜17:00〜20:00LО ご来店お待ちしております🙇🙇  10月2日(金) お休みします。 よろしくお願いします！ https://t.co/CXoXHqmmOk",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-qn8RO7ib5I35dzxvUuTAq8WmX5-_no_q5qPWz9klpraQXyuLxfMX7htB1HNGBoeS-p1SIIBXFlZepRHTiQcoUqUL7TUhv8RedipEQxmMe__4lt1KPLloWUwQmN-fonDc4B5hmp0sJytrZGBs5siTrA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-02",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-28T12:08:05.346Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_sagamiohno_20260929_0_2104345467291369928",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2104345467291369928",
+    "postedAt": "2026-09-27T23:00:30.000Z",
+    "postText": "【場所休み】 力士達は千秋楽の翌日から一週間稽古無しのお休みです♪この休みが唯一稽古から解き放たれる、サイコーの一週間です♪その後、花相撲（引退相撲など）から巡業へ。九州場所へ向かって旅立ちます。力士の皆さん今場所もお疲れ様でした♪ ラーメンでも食べてゆっくりお休みください🍜笑 https://t.co/qMrwFlq452",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Cmf4d-C5_xOCTyoK5M0T8fZvf-2svQI-VZZsWkPiGpTDkNLdpxD8Feb9VUc9No5JyZX7t-LfmjTMhvJjyKjF9Z3RJlZBgeuNXDDYIornMvGx_DNADDxXovg5buP1KGt4S90NDJTcMGVWdaUAqW1ybg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-fWcolaJ9V5dP7wKKRfryWxpbAmZyr9tCXl7lZ_rc6hlhcNjB8ehZOoAicX5_KZdqkHg_rx94bCw_VnovVjS1UZMBVU9eQALcvM7ig1LpJKsceQEA2tceOkNIAzETFaMxB94Ry6o8_k-12OWx0_MFZw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-LPuGlaLwqd_klPA6xhSKEes1h1AfiZ-wMfyJoQzJNE558Og0W1p1DGD65kNoXxDf2xgKPzrV59inihdHVmbICKd7lqoYzgaMIrGadP_SeMev6paBrkBAuP0h6tL7ucdKtlhI-xGdq8QHwtyH6k5rmg=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-09-29",
+      "endDate": "2026-10-05",
+      "hours": [],
+      "reason": "力士の休養期間に伴う店舗休業",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-28T12:08:05.346Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 力士の休養期間に伴う店舗休業"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261001_1_2104338990761750794",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2104338990761750794",
+    "postedAt": "2026-09-27T22:34:46.000Z",
+    "postText": "◆9/28（月）【定休日】 ◇9/29（火）［昼のみ］ ◇9/30（水）［昼夜］ ◇10/1（木）［昼のみ］ ◇10/2（金）［夜のみ］ ◇10/3（土）10→15時  ◇10/4（日）10→15時  →［ひやコロ］ 今週にて最終のご案内となります。  よろしくお願い致します。 https://t.co/kcX2WqNlbu",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-s3t5hmt2ScP_2NMLbkRnbrvs6AY17BIJtdLbj7cuWGSN6aklGfiwKIGT9JDMFrp-6_VwNiko6NlSnvVpzZ5cTsLBHh6bQa2y5lDcY3xtjkLBPBAOqX5LTJGSOxkpbunQMhPPESHq20bdR9cm2wH0sQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-9q8W4jRBK3cC3s4RcEQAlctVsPJHgZXUtnsPOPdaPBfPhocZROiWbm2h8o0bdN3h-oPeb2IfTlZ1bBY4Qy-MAMZ5lHPuhdwfPbUMTaL2nP62MQ2XDKuNtWWvinMiCXdoVuL1AqfwF3JZOp-F5PDCUw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ra069jKTyk1csUNy61VnWP2MoKvg92kbxAAw6e-lmgAJhGxD45Qcy-qnuDzedw2-jTuFBDs3XQReWsZ7Fb0xuoInvAtw-s_x6pNCpzebs011XkbpJ8bWqtjd8TIpFd2tmQfuLTJD5wNw_vGyxQAazw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-zidE4S05b2pC1yPGD2UD6EHCX6CWAtZyPsELaOpzrIqRFjoHjjeqSzxUDb8RJaJG29eKp17OmfK_LXD3XagwdC5NTrvOoRqyjh5zn8t7lh5x6IJTchQpOWe0QOL4Fdgnx3Tt3dIHE4V81V9HawhWOQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-01",
+      "hours": [
+        [
+          10.333333333333334,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-28T12:08:05.346Z",
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261002_2_2104338990761750794",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2104338990761750794",
+    "postedAt": "2026-09-27T22:34:46.000Z",
+    "postText": "◆9/28（月）【定休日】 ◇9/29（火）［昼のみ］ ◇9/30（水）［昼夜］ ◇10/1（木）［昼のみ］ ◇10/2（金）［夜のみ］ ◇10/3（土）10→15時  ◇10/4（日）10→15時  →［ひやコロ］ 今週にて最終のご案内となります。  よろしくお願い致します。 https://t.co/kcX2WqNlbu",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-s3t5hmt2ScP_2NMLbkRnbrvs6AY17BIJtdLbj7cuWGSN6aklGfiwKIGT9JDMFrp-6_VwNiko6NlSnvVpzZ5cTsLBHh6bQa2y5lDcY3xtjkLBPBAOqX5LTJGSOxkpbunQMhPPESHq20bdR9cm2wH0sQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-9q8W4jRBK3cC3s4RcEQAlctVsPJHgZXUtnsPOPdaPBfPhocZROiWbm2h8o0bdN3h-oPeb2IfTlZ1bBY4Qy-MAMZ5lHPuhdwfPbUMTaL2nP62MQ2XDKuNtWWvinMiCXdoVuL1AqfwF3JZOp-F5PDCUw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ra069jKTyk1csUNy61VnWP2MoKvg92kbxAAw6e-lmgAJhGxD45Qcy-qnuDzedw2-jTuFBDs3XQReWsZ7Fb0xuoInvAtw-s_x6pNCpzebs011XkbpJ8bWqtjd8TIpFd2tmQfuLTJD5wNw_vGyxQAazw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-zidE4S05b2pC1yPGD2UD6EHCX6CWAtZyPsELaOpzrIqRFjoHjjeqSzxUDb8RJaJG29eKp17OmfK_LXD3XagwdC5NTrvOoRqyjh5zn8t7lh5x6IJTchQpOWe0QOL4Fdgnx3Tt3dIHE4V81V9HawhWOQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-02",
+      "hours": [
+        [
+          17,
+          20.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-28T12:08:05.346Z",
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261003_3_2104338990761750794",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2104338990761750794",
+    "postedAt": "2026-09-27T22:34:46.000Z",
+    "postText": "◆9/28（月）【定休日】 ◇9/29（火）［昼のみ］ ◇9/30（水）［昼夜］ ◇10/1（木）［昼のみ］ ◇10/2（金）［夜のみ］ ◇10/3（土）10→15時  ◇10/4（日）10→15時  →［ひやコロ］ 今週にて最終のご案内となります。  よろしくお願い致します。 https://t.co/kcX2WqNlbu",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-s3t5hmt2ScP_2NMLbkRnbrvs6AY17BIJtdLbj7cuWGSN6aklGfiwKIGT9JDMFrp-6_VwNiko6NlSnvVpzZ5cTsLBHh6bQa2y5lDcY3xtjkLBPBAOqX5LTJGSOxkpbunQMhPPESHq20bdR9cm2wH0sQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-9q8W4jRBK3cC3s4RcEQAlctVsPJHgZXUtnsPOPdaPBfPhocZROiWbm2h8o0bdN3h-oPeb2IfTlZ1bBY4Qy-MAMZ5lHPuhdwfPbUMTaL2nP62MQ2XDKuNtWWvinMiCXdoVuL1AqfwF3JZOp-F5PDCUw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ra069jKTyk1csUNy61VnWP2MoKvg92kbxAAw6e-lmgAJhGxD45Qcy-qnuDzedw2-jTuFBDs3XQReWsZ7Fb0xuoInvAtw-s_x6pNCpzebs011XkbpJ8bWqtjd8TIpFd2tmQfuLTJD5wNw_vGyxQAazw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-zidE4S05b2pC1yPGD2UD6EHCX6CWAtZyPsELaOpzrIqRFjoHjjeqSzxUDb8RJaJG29eKp17OmfK_LXD3XagwdC5NTrvOoRqyjh5zn8t7lh5x6IJTchQpOWe0QOL4Fdgnx3Tt3dIHE4V81V9HawhWOQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-03",
+      "endDate": "2026-10-03",
+      "hours": [
+        [
+          10,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-28T12:08:05.346Z",
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261004_4_2104338990761750794",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2104338990761750794",
+    "postedAt": "2026-09-27T22:34:46.000Z",
+    "postText": "◆9/28（月）【定休日】 ◇9/29（火）［昼のみ］ ◇9/30（水）［昼夜］ ◇10/1（木）［昼のみ］ ◇10/2（金）［夜のみ］ ◇10/3（土）10→15時  ◇10/4（日）10→15時  →［ひやコロ］ 今週にて最終のご案内となります。  よろしくお願い致します。 https://t.co/kcX2WqNlbu",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-s3t5hmt2ScP_2NMLbkRnbrvs6AY17BIJtdLbj7cuWGSN6aklGfiwKIGT9JDMFrp-6_VwNiko6NlSnvVpzZ5cTsLBHh6bQa2y5lDcY3xtjkLBPBAOqX5LTJGSOxkpbunQMhPPESHq20bdR9cm2wH0sQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-9q8W4jRBK3cC3s4RcEQAlctVsPJHgZXUtnsPOPdaPBfPhocZROiWbm2h8o0bdN3h-oPeb2IfTlZ1bBY4Qy-MAMZ5lHPuhdwfPbUMTaL2nP62MQ2XDKuNtWWvinMiCXdoVuL1AqfwF3JZOp-F5PDCUw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ra069jKTyk1csUNy61VnWP2MoKvg92kbxAAw6e-lmgAJhGxD45Qcy-qnuDzedw2-jTuFBDs3XQReWsZ7Fb0xuoInvAtw-s_x6pNCpzebs011XkbpJ8bWqtjd8TIpFd2tmQfuLTJD5wNw_vGyxQAazw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-zidE4S05b2pC1yPGD2UD6EHCX6CWAtZyPsELaOpzrIqRFjoHjjeqSzxUDb8RJaJG29eKp17OmfK_LXD3XagwdC5NTrvOoRqyjh5zn8t7lh5x6IJTchQpOWe0QOL4Fdgnx3Tt3dIHE4V81V9HawhWOQ=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-10-04",
+      "endDate": "2026-10-04",
+      "hours": [
+        [
+          10,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-28T12:08:05.346Z",
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_nishidai_20261005_0_2104360460028141579",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2104360460028141579",
+    "postedAt": "2026-09-28T00:00:05.000Z",
+    "postText": "おはようございます。  来週の月曜日、画像の通りです。 お気をつけ下さい。  本日、醤油味付き・切り落とし ¥800×3、あります。 https://t.co/nvDmbRbelF",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Wx4LOK7hhShrbo_jcnyRDUXcGezK0C-gW7MEQcBARha0PFogaVqEJTc27lrK7pdru0e_plCDM4kTMX6ItDl31fNjvrc8gnXTrWFoCgzUitc0gOYACtAO2HC_fvQEKibi0H8540GZA2IPYSfYGb0zfA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-wI4LsScz0hhIxJmS4fXuOxDRyR1ysDxL1s-F7_ypn-kDGttQ8hO4gh296SKrUWsYSkmN4U5SHFDUCgWlD2ONN0-jhJkAetx-a90gcq7j9L2NHAcNAZ5r5EY-eMYGP-3-6ugqd_O9Cvk984uc1aHqgQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-05",
+      "hours": [
+        [
+          10.416666666666666,
+          13.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-28T12:08:05.346Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_sapporo_20260930_0_2104376039606817075",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2104376039606817075",
+    "postedAt": "2026-09-28T01:01:59.000Z",
+    "postText": "28日(月)通常営業です🍜 昼の部、12:30〜14:00 「つけ麺」サブスープ対応します。 必ず、スタッフ確認時に申告して下さい。  麺の旨みが感じやすいです、違いをお楽しみ下さい😄  本日のサブスープもかなり濃厚です。  30日(水)終日休業になります。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-09-30",
+      "endDate": "2026-09-30",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-28T12:08:05.346Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_okinawa_20260928_0_2104426042006052920",
+    "shopId": "okinawa",
+    "shopName": "沖縄店",
+    "postSource": "x",
+    "postUrl": "https://x.com/okinawa_jiro/status/2104426042006052920",
+    "postedAt": "2026-09-28T04:20:41.000Z",
+    "postText": "本日9/28(月)夜の部は  都合により 臨休いたします",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-28",
+      "endDate": "2026-09-28",
+      "hours": [
+        [
+          11,
+          14
+        ]
+      ],
+      "reason": "都合により",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-28T12:08:05.346Z",
+    "aiStatus": "match",
+    "aiReason": "既に登録済みの臨時スケジュールと一致"
+  },
+  {
+    "id": "sns_post_jimbocho_20260928_0_2104471983576735790",
+    "shopId": "jimbocho",
+    "shopName": "神田神保町店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jbc_ramen_jiro/status/2104471983576735790",
+    "postedAt": "2026-09-28T07:23:14.000Z",
+    "postText": "ただ今お並びのお客様までで、本日の営業終了となります。よろしくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-28",
+      "endDate": "2026-09-28",
+      "hours": [
+        [
+          11,
+          16.38
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-28T12:08:05.346Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_kyoto_20261001_0_2104473333144424895",
+    "shopId": "kyoto",
+    "shopName": "京都店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kyoto/status/2104473333144424895",
+    "postedAt": "2026-09-28T07:28:36.000Z",
+    "postText": "こんにちは！本日通常営業です！ 「ドパ味噌」あります！ 「ドパホルモン」あります！  今週木曜日の1日はお休みいただきます🙇‍♂️ 水曜日と合わせて連休になります。よろしくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-01",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-28T12:08:05.346Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_sagamiohno_20260929_0_2104508201505026258",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2104508201505026258",
+    "postedAt": "2026-09-28T09:47:09.000Z",
+    "postText": "◇9/29（火） 【昼の部のみ営業】  →こちらをご覧のお客様限定→ご申告制🈸［テイクアウト割🈹］やっております！食券にて。 着席時に『テイクアウト割りお願いします。』と従業員にお申し付けください。各サービス🈂️致します！ ※店内お食事の方のみです。 https://t.co/nutp5Bmw7e https://t.co/VtiWWN77t3",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-f_EULBl2Klqc6U7p1xYoAexrSIqSKP2UCmVvoTcogh8gisINpl1mkV1dwO9FdipSOG1rAZP7oWPOvbvDS_OaCO2DPYAJBdxA46iorTMMhkLkX70pmPH-gvOKHHXjN-YHESqkJRSMHbV2d3i3N93QYw=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-29",
+      "endDate": "2026-09-29",
+      "hours": [
+        [
+          10.333333333333334,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-28T12:08:05.346Z",
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_nagoyaosone_20260928_0_2104518514564641226",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2104518514564641226",
+    "postedAt": "2026-09-28T10:28:08.000Z",
+    "postText": "おはようございます。 ラーメン二郎名古屋大曽根店です。 お足元悪い中お越し頂き誠にありがとうございました。 本日の営業は只今のお時間、お並びを持ちまして終了とさせていただきます。 よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-28",
+      "endDate": "2026-09-28",
+      "hours": [
+        [
+          11,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-28T12:08:05.346Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_kameido_20260928_0_2104535322197692853",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2104535322197692853",
+    "postedAt": "2026-09-28T11:34:55.000Z",
+    "postText": "只今並びの方までで本日の営業は終了です。申し訳ありません",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-28",
+      "endDate": "2026-09-28",
+      "hours": [
+        [
+          11,
+          14.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-28T12:08:05.346Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_koiwa_20260929_0_2104697479426150603",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2104697479426150603",
+    "postedAt": "2026-09-28T22:19:17.000Z",
+    "postText": "おはようございます。  誠に勝手ながら、本日は都合により臨時休業いたします。  大変申し訳ございませんが、よろしくお願いいたします。  ラーメン二郎小岩店",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-09-29",
+      "endDate": "2026-09-29",
+      "hours": [],
+      "reason": "都合により",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-29T22:42:43.210Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 都合により"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2104710817459716399",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2104710817459716399",
+    "postedAt": "2026-09-28T23:12:17.000Z",
+    "postText": "激辛もやります！ 多分ちゃんと辛いです！  1倍  100円 2倍 200円 3倍 300円です！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-28",
+      "endDate": "2026-09-28",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": true,
+    "processedAt": "2026-09-29T22:42:43.210Z",
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2104710582909972488",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2104710582909972488",
+    "postedAt": "2026-09-28T23:11:21.000Z",
+    "postText": "にんにく地獄ラーメン(+200円)もやります！ すりおろしにんにくをまぜこんでます！  麺の量と一緒に じごくでって言ってください！ ラーメンのひとはしょうゆでって言ってくれるとわかりやすいです！  麺の量を聞かれた時に じぶんから言ってください！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-28",
+      "endDate": "2026-09-28",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": true,
+    "processedAt": "2026-09-29T22:42:43.210Z",
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_nishidai_20261005_0_2104723787468165271",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2104723787468165271",
+    "postedAt": "2026-09-29T00:03:49.000Z",
+    "postText": "おはようございます。  本日、29日、昼の部  持ち帰りブタ・¥3800 切り落とし・¥1000×2 あります！ https://t.co/WCKyWzSbhG",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ryqRWl4XTQ_HqSDDhrDzfzl4nw1Gi_o7TMmUURGSQMOeQ_jgxPeR_3NibZKRJoi4eynz0cYIu9BVvCQj-8XFAczAFh9-cryyDBCxXNomSwpk_FqPtCn6X3VmYa6fD2h92cL9-eux2Bz18baS0ZDebQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-XmCnUmTrIZbJVFpMzdlNHZAOIWoc8PjHqLfH1wNyjflTo0bE6i9873U9WXCfLwmNFRoy0vgHcx_bU95lTR42_4LeXggrMNTpnrxPDw3ajwozIVbKNKvekSAA3KSuAa3f8iRQc4ddEg3KipTeB1so5w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-mJQbD8ySREAfWFWQMrPqQOTNqTV5Bn3-UeWavl8icoBxmZ-FYEFdeVY31NVq_BEe7754TRt0_ZzGencA8h4r9-hqgX6BzNxXgRE_OH1qF0MM4lcZbv7uUuPfDVrZydG93t7RnZghI0UEdjMEFKsatQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-5t_Y7ywI9rwv-155rvZbQnH-6nmIWj3pU8TO6CMWvH_9wvK2eQVJhXAYS8wZeBNFGsjp6jS7dOWHbeUMzgcIyaAcIG_gzOLaHRYO6afmweYfJsOrxqunxwox4ikvNoT7mqhmt_msuF1SxAE0CJ20rg=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-05",
+      "hours": [
+        [
+          10.416666666666666,
+          13.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-29T22:42:43.210Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_sapporo_20260930_0_2104734212880572648",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2104734212880572648",
+    "postedAt": "2026-09-29T00:45:15.000Z",
+    "postText": "29日(火)昼の部、券売機 「ジロリアン陸」 ボタン¥150で「食べるカリカリほぐし豚ラー油」 追加30  明日30日(水)終日休業になります。 https://t.co/GP5zMQRSmT",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-IylrSGZR2QUZ8CcX4Wx-BMnMYCG-2HRwtNsBk73MdfDu-AGWQgZ4TXjF0Nv6hR2nJUsnQ1cbXJeVzW2KQc4AGOsum51pWH06ggFvzkAappXViygy8hV46O0dD-aUFI5477mu6r5w2xZbbXeyaXpfKw=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-09-30",
+      "endDate": "2026-09-30",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-29T22:42:43.210Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2104786782961512887",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2104786782961512887",
+    "postedAt": "2026-09-29T04:14:08.000Z",
+    "postText": "なんかそんなに地獄でもないみたいです！ https://t.co/LKrCY9rAYk",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-29",
+      "endDate": "2026-09-29",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": true,
+    "processedAt": "2026-09-29T22:42:43.210Z",
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2104824920517873881",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2104824920517873881",
+    "postedAt": "2026-09-29T06:45:41.000Z",
+    "postText": "いまいるひとでおわりです！ ごめんなさい！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-29",
+      "endDate": "2026-09-29",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": true,
+    "processedAt": "2026-09-29T22:42:43.210Z",
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_kyoto_20260930_0_2104836374260339131",
+    "shopId": "kyoto",
+    "shopName": "京都店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kyoto/status/2104836374260339131",
+    "postedAt": "2026-09-29T07:31:12.000Z",
+    "postText": "こんにちは！本日通常営業です！ 「ドパ味噌」あるんですけど、なくなるかもしれません！ 明日と明後日はお休みです！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-09-30",
+      "endDate": "2026-09-30",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-29T22:42:43.210Z",
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_kyoto_20261001_1_2104836374260339131",
+    "shopId": "kyoto",
+    "shopName": "京都店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kyoto/status/2104836374260339131",
+    "postedAt": "2026-09-29T07:31:12.000Z",
+    "postText": "こんにちは！本日通常営業です！ 「ドパ味噌」あるんですけど、なくなるかもしれません！ 明日と明後日はお休みです！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-01",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-29T22:42:43.210Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_sapporo_20260929_0_2104847442340724863",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2104847442340724863",
+    "postedAt": "2026-09-29T08:15:11.000Z",
+    "postText": "あれがあれなんで、18:30まで「塩汁なし」対応します🧂",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-29",
+      "endDate": "2026-09-29",
+      "hours": [
+        [
+          11,
+          14
+        ],
+        [
+          17,
+          18.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-29T22:42:43.210Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_kyoto_20260929_0_2104903810221298081",
+    "shopId": "kyoto",
+    "shopName": "京都店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kyoto/status/2104903810221298081",
+    "postedAt": "2026-09-29T11:59:10.000Z",
+    "postText": "都合により本日は22時閉店とさせていただきます。ご予定してくださっていた方には大変申し訳ありません",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-09-29",
+      "endDate": "2026-09-29",
+      "hours": [
+        [
+          17,
+          22
+        ]
+      ],
+      "reason": "都合により",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-29T22:42:43.210Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 都合により"
+  },
+  {
+    "id": "sns_post_koshigaya_20261002_0_2105048215204798734",
+    "shopId": "koshigaya",
+    "shopName": "越谷店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ksgy26/status/2105048215204798734",
+    "postedAt": "2026-09-29T21:32:59.000Z",
+    "postText": "おはようございます！ ラーメン二郎越谷店です！  9月30日(水) 昼11:00〜14:00LО 夜17:00〜20:00LО ご来店お待ちしております🙇🙇  10月2日(金) お休みします。 よろしくお願いします！ https://t.co/MwgJizHFq0",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-OfiH59Wa22jGb_9uUZK3hqlLj-qj3hjeVq8d3gWX-wdZ9M52AjC3dAgOaMr4XUoAzJusV2qkb4cGkkdqLN0I-UfDaHbjk5vsY6kUEg9mNE-Fr5tt35F6LRiRnv3H6AGeD1LFjgFIGlfhGZJM6QbonQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-02",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-29T22:42:43.210Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2105056942016372922",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2105056942016372922",
+    "postedAt": "2026-09-29T22:07:39.000Z",
+    "postText": "激辛もやります！ 多分ちゃんと辛いです！  1倍  100円 2倍 200円 3倍 300円です！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-29",
+      "endDate": "2026-09-29",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": true,
+    "processedAt": "2026-09-29T22:42:43.210Z",
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2105056840833007941",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2105056840833007941",
+    "postedAt": "2026-09-29T22:07:15.000Z",
+    "postText": "にんにく地獄汁なし(+200円)もやります！ すりおろしにんにくをまぜこんでます！  麺の量と一緒に じごくでって言ってください！ ラーメンのひとはラーメンでって言ってくれるとわかりやすいです！  麺の量を聞かれた時に じぶんから言ってください！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-29",
+      "endDate": "2026-09-29",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": true,
+    "processedAt": "2026-09-29T22:42:43.210Z",
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_shndaita_20260930_0_2105056639795790317",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2105056639795790317",
+    "postedAt": "2026-09-29T22:06:27.000Z",
+    "postText": "2026年9月30日(水)  ⚠️短縮営業です！⚠️ 11:00～15:00くらいです！  よろしくお願いします！  ※住宅地なのでおしゃべりしないで待っててください",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-30",
+      "endDate": "2026-09-30",
+      "hours": [
+        [
+          11,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-29T22:42:43.210Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_mejirodai_20260930_0_2105087230180311403",
+    "shopId": "mejirodai",
+    "shopName": "めじろ台店",
+    "postSource": "x",
+    "postUrl": "https://x.com/mejirodai_jiro/status/2105087230180311403",
+    "postedAt": "2026-09-30T00:08:00.000Z",
+    "postText": "毎度ありがとうございます 本日30日(水)は臨時休業となりますのでご注意下さい よろしくお願いします🙇 https://t.co/tV6m56UCTy",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-P7gphkgh-qUX0Rk1N-HRkhaEdJeOJF2GiGh-Cx-ydlV4ULYEm4v9X_J6-5kmTvbOWfyji59ZUs16seU5aJdkDhXgKLMDQxptsTfupIBU33EZxKEKfpJ-IruG53EqLtnqfM8OJlHqwldlULxULaNl8Q=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-09-30",
+      "endDate": "2026-09-30",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-30T20:16:25.643Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_chiba_20261004_0_2105106592874312054",
+    "shopId": "chiba",
+    "shopName": "千葉店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_chiba/status/2105106592874312054",
+    "postedAt": "2026-09-30T01:24:57.000Z",
+    "postText": "10月の予定です。よろしくお願い致します https://t.co/7rDs6U0ZIV",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-EbNL-GE9jaGhG_WRQtwCtvukM2lf6uZhjkRe1jS0mMF5ZV8uVrzGjq1rnFdr1CjUXfjfq7qmSe2aV45n-4Hf3EyyXSkkXGFxovBqCXa0TqNzMLFaq6JP6mHpexRaOIHnsMxh9J1Oh0Dhn9JR5gLsAQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-04",
+      "endDate": "2026-10-04",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-30T20:16:25.643Z",
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_chiba_20261011_1_2105106592874312054",
+    "shopId": "chiba",
+    "shopName": "千葉店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_chiba/status/2105106592874312054",
+    "postedAt": "2026-09-30T01:24:57.000Z",
+    "postText": "10月の予定です。よろしくお願い致します https://t.co/7rDs6U0ZIV",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-EbNL-GE9jaGhG_WRQtwCtvukM2lf6uZhjkRe1jS0mMF5ZV8uVrzGjq1rnFdr1CjUXfjfq7qmSe2aV45n-4Hf3EyyXSkkXGFxovBqCXa0TqNzMLFaq6JP6mHpexRaOIHnsMxh9J1Oh0Dhn9JR5gLsAQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-11",
+      "endDate": "2026-10-11",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-30T20:16:25.643Z",
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_chiba_20261012_2_2105106592874312054",
+    "shopId": "chiba",
+    "shopName": "千葉店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_chiba/status/2105106592874312054",
+    "postedAt": "2026-09-30T01:24:57.000Z",
+    "postText": "10月の予定です。よろしくお願い致します https://t.co/7rDs6U0ZIV",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-EbNL-GE9jaGhG_WRQtwCtvukM2lf6uZhjkRe1jS0mMF5ZV8uVrzGjq1rnFdr1CjUXfjfq7qmSe2aV45n-4Hf3EyyXSkkXGFxovBqCXa0TqNzMLFaq6JP6mHpexRaOIHnsMxh9J1Oh0Dhn9JR5gLsAQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-12",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-30T20:16:25.643Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_chiba_20261018_3_2105106592874312054",
+    "shopId": "chiba",
+    "shopName": "千葉店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_chiba/status/2105106592874312054",
+    "postedAt": "2026-09-30T01:24:57.000Z",
+    "postText": "10月の予定です。よろしくお願い致します https://t.co/7rDs6U0ZIV",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-EbNL-GE9jaGhG_WRQtwCtvukM2lf6uZhjkRe1jS0mMF5ZV8uVrzGjq1rnFdr1CjUXfjfq7qmSe2aV45n-4Hf3EyyXSkkXGFxovBqCXa0TqNzMLFaq6JP6mHpexRaOIHnsMxh9J1Oh0Dhn9JR5gLsAQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-18",
+      "endDate": "2026-10-18",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-30T20:16:25.643Z",
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_chiba_20261025_4_2105106592874312054",
+    "shopId": "chiba",
+    "shopName": "千葉店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_chiba/status/2105106592874312054",
+    "postedAt": "2026-09-30T01:24:57.000Z",
+    "postText": "10月の予定です。よろしくお願い致します https://t.co/7rDs6U0ZIV",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-EbNL-GE9jaGhG_WRQtwCtvukM2lf6uZhjkRe1jS0mMF5ZV8uVrzGjq1rnFdr1CjUXfjfq7qmSe2aV45n-4Hf3EyyXSkkXGFxovBqCXa0TqNzMLFaq6JP6mHpexRaOIHnsMxh9J1Oh0Dhn9JR5gLsAQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-25",
+      "endDate": "2026-10-25",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-30T20:16:25.643Z",
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_kashiwa_20261001_0_2105150235496595846",
+    "shopId": "kashiwa",
+    "shopName": "柏店",
+    "postSource": "x",
+    "postUrl": "https://x.com/genkimoriya/status/2105150235496595846",
+    "postedAt": "2026-09-30T04:18:22.000Z",
+    "postText": "お世話になっております。 ラーメン二郎柏店です。  本日16時頃までの通常営業。 明日10月1(木)は、都合により臨時休業とさせていただきます。  大変ご迷惑をお掛けします。 どうぞ宜しくお願い致します。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-01",
+      "hours": [],
+      "reason": "都合により",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-30T20:16:25.643Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 都合により"
+  },
+  {
+    "id": "sns_post_koiwa_20260930_0_2105167604323405922",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2105167604323405922",
+    "postedAt": "2026-09-30T05:27:23.000Z",
+    "postText": "ただいまお並びのお客様をもちまして、本日の営業は終了しました。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-30",
+      "endDate": "2026-09-30",
+      "hours": [
+        [
+          10.5,
+          14.45
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-30T20:16:25.643Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2105165731617009839",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2105165731617009839",
+    "postedAt": "2026-09-30T05:19:57.000Z",
+    "postText": "いまいるひとでおわりです！ ごめんなさい！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-30",
+      "endDate": "2026-09-30",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": true,
+    "processedAt": "2026-09-30T20:16:25.643Z",
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_ichinoe_20261013_0_2105196477849153990",
+    "shopId": "ichinoe",
+    "shopName": "環七一之江店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ichinoejiro/status/2105196477849153990",
+    "postedAt": "2026-09-30T07:22:07.000Z",
+    "postText": "10月の営業予定となります。 宜しくお願い申し上げます https://t.co/UziKVNQtli",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-CgLJDuN16xWpDig0zXpMTTwDp2IJQAoFH8Ml47awFY5M3lX0phnIB8-O3BBePwyiTeluvS5cvYeDFHLNzNf3wb6A-aITSIRkdhNY1L6nSIE3XPMKkBQrMIYC1WN_qVBvn19DAdHooolPHZtC4Ea6ig=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-13",
+      "endDate": "2026-10-14",
+      "hours": [],
+      "reason": "都合により",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-30T20:16:25.643Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 都合により"
+  },
+  {
+    "id": "sns_post_ichinoe_20261006_1_2105196477849153990",
+    "shopId": "ichinoe",
+    "shopName": "環七一之江店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ichinoejiro/status/2105196477849153990",
+    "postedAt": "2026-09-30T07:22:07.000Z",
+    "postText": "10月の営業予定となります。 宜しくお願い申し上げます https://t.co/UziKVNQtli",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-CgLJDuN16xWpDig0zXpMTTwDp2IJQAoFH8Ml47awFY5M3lX0phnIB8-O3BBePwyiTeluvS5cvYeDFHLNzNf3wb6A-aITSIRkdhNY1L6nSIE3XPMKkBQrMIYC1WN_qVBvn19DAdHooolPHZtC4Ea6ig=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-10-06",
+      "endDate": "2026-10-06",
+      "hours": [
+        [
+          17.5,
+          20
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-30T20:16:25.643Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_jimbocho_20260930_0_2105200883223155175",
+    "shopId": "jimbocho",
+    "shopName": "神田神保町店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jbc_ramen_jiro/status/2105200883223155175",
+    "postedAt": "2026-09-30T07:39:37.000Z",
+    "postText": "ただ今お並びのお客様までで、本日の営業終了となります。よろしくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-30",
+      "endDate": "2026-09-30",
+      "hours": [
+        [
+          11,
+          16.65
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-30T20:16:25.643Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_nagoyaosone_20260930_0_2105245299015131567",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2105245299015131567",
+    "postedAt": "2026-09-30T10:36:07.000Z",
+    "postText": "ラーメン二郎名古屋大曽根店です。 只今の時間、並びを持ちまして本日の営業は終了とさせていただきます。 よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-30",
+      "endDate": "2026-09-30",
+      "hours": [
+        [
+          11,
+          14
+        ],
+        [
+          17,
+          19.6
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-30T20:16:25.643Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_kameido_20260930_0_2105257575331799133",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2105257575331799133",
+    "postedAt": "2026-09-30T11:24:54.000Z",
+    "postText": "只今並びの方までで本日の営業は終了です。申し訳ありません",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-30",
+      "endDate": "2026-09-30",
+      "hours": [
+        [
+          11,
+          14.5
+        ],
+        [
+          17,
+          20.4
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-09-30T20:16:25.643Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2105302944908562581",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2105302944908562581",
+    "postedAt": "2026-09-30T14:25:11.000Z",
+    "postText": "@tr4y8D5HS449890 まーじでうまいです！！ 牛タンとか分厚くて最高です！！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-30",
+      "endDate": "2026-09-30",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": true,
+    "processedAt": "2026-09-30T20:16:25.643Z",
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2105302821977653747",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2105302821977653747",
+    "postedAt": "2026-09-30T14:24:42.000Z",
+    "postText": "@me_ak177907 返信遅くてすみません！！ ありがとうございます！！ 美味しいですよねー！！たまに食いたくなります！！  なんだか、鯉の餌もこだわってて、海外にも輸出したりしてるみたいです！！！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-30",
+      "endDate": "2026-09-30",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": true,
+    "processedAt": "2026-09-30T20:16:25.643Z",
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2105302210980794564",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2105302210980794564",
+    "postedAt": "2026-09-30T14:22:16.000Z",
+    "postText": "@matukaze001 山辺行く機会なんてあるんですか？ 私、父の実家がここら辺なので、小さい頃はよくベルまで歩いて遊びに行きました！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-30",
+      "endDate": "2026-09-30",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": true,
+    "processedAt": "2026-09-30T20:16:25.643Z",
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2105301808566644760",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2105301808566644760",
+    "postedAt": "2026-09-30T14:20:40.000Z",
+    "postText": "@abacaxi8181 御来店ありがとうございます😭",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-30",
+      "endDate": "2026-09-30",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": true,
+    "processedAt": "2026-09-30T20:16:25.643Z",
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2105301763469500683",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2105301763469500683",
+    "postedAt": "2026-09-30T14:20:29.000Z",
+    "postText": "@abacaxi8181 すみません！！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-30",
+      "endDate": "2026-09-30",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": true,
+    "processedAt": "2026-09-30T20:16:25.643Z",
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2105301641624965262",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2105301641624965262",
+    "postedAt": "2026-09-30T14:20:00.000Z",
+    "postText": "@HiroS371221 @fbxPzlHMTnHc3gv ヒロさんいつも代返ありがとうございます！ ラーメンもあります。つけ麺ご希望の時、つけ麺の食券をお買い求めください！！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-30",
+      "endDate": "2026-09-30",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": true,
+    "processedAt": "2026-09-30T20:16:25.643Z",
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_ogikubo_20261003_0_2105401278486774009",
+    "shopId": "ogikubo",
+    "shopName": "荻窪店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ogkb_jiro/status/2105401278486774009",
+    "postedAt": "2026-09-30T20:55:55.000Z",
+    "postText": "10月3日（土）は休業します",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-03",
+      "endDate": "2026-10-03",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-10-02T22:59:41.925Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261001_0_2105421298134622452",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2105421298134622452",
+    "postedAt": "2026-09-30T22:15:28.000Z",
+    "postText": "本日 ◇10/1（木） 【昼の部のみ営業🈺】 10:20から〜14:00 ご来店ご到着お並びのお客様まで営業致します🈺  →［お椀で和ッカレー］ やります！ ※お椀にてご提供です。和ッカレーにスープ入りです。味変にどうぞ。  →［ひやコロ］今週最終です♪今日は気温も上がって［ひやコロ日和！］⁈  どうぞ！ https://t.co/QZfASaJ3uE",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Q0b_FAsyxmJutxGvci3Dj7775EQ5RU6W4DHSj9mPrnfGmRX3Er55F6P0nEyMEPfh1iZkUUVLFcswQY52SOtb8fyNaeaCe59DZ8m8c1ITgPPUX3wyYvVPFAvJVs8Msvl7Odzc4Q9cCLO7R8g0TNEQ7w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-pcOZNhHljDe58nqOXdpheg2WgGJuwnGToZGMydF-QMSJrXARAdqsuYNpTZ5_6PA3VcEAGmanUZK8EQPU7M8iNqfkDirS9UJT5baqx1olSIyx2TiCFAvEa9T_RXAbzWKjh3-mAHEvcehbDkMJ6sRWNQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-fYCUkgi6CbsVviR1QAA6b4J010EqLzAEiXPrC3F_hyOMBzfqwfvrAFJYOxELmmWAkvTSFmFvsjCPX06Cew6-2akrqzbmlw6bnCGGxIIKId6BwuxVlbGLR3SFE-9D95YOecw4TzWamOrsGShPldeW5w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Y52gALK_m5_ZA71P9FgATGNLleCqGAJgluXFWMEr0fLGiYOL2zxvwLkXesBd_uM4x5x4Xx9DllQ7o5w77jgnTToaGC35Y3W5L8XqnlErHhWXTDtHQPKgVft01hK9AjTzggvv_09GCE0hPiZtL5kchg=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-01",
+      "hours": [
+        [
+          10.333333333333334,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2105419384626024579",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2105419384626024579",
+    "postedAt": "2026-09-30T22:07:52.000Z",
+    "postText": "激辛もやります！ 多分ちゃんと辛いです！  1倍  100円 2倍 200円 3倍 300円です！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-30",
+      "endDate": "2026-09-30",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2105419171131752883",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2105419171131752883",
+    "postedAt": "2026-09-30T22:07:01.000Z",
+    "postText": "にんにく地獄ラーメン(+200円)もやります！ すりおろしにんにくをまぜこんでます！  麺の量と一緒に じごくでって言ってください！ ラーメンのひとはしょうゆでって言ってくれるとわかりやすいです！  麺の量を聞かれた時に じぶんから言ってください！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-09-30",
+      "endDate": "2026-09-30",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_aizuwakamatsu_20261005_0_2105452519845670967",
+    "shopId": "aizuwakamatsu",
+    "shopName": "会津若松駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/aizu_jiro/status/2105452519845670967",
+    "postedAt": "2026-10-01T00:19:32.000Z",
+    "postText": "毎度ありがとうございます。 10月の予定&臨時営業のお知らせです。 よろしくお願いいたしますm(__)m https://t.co/kXydI09ntB",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne--OauiZd_dNWbgIJpJKk_OI1vG7a8rvaVLsp0LUOJuVnUObKwa3V_UTCSvxG_Lfabki43zrWn9iGmTVbKeG_nuAebgucOefOybJBL2-saMo6tEaI72aGwIKckpBrjFSVrHHtBs37YpMdhLJQ0ILzuTg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-o6zFv1xkU0Zu1fbbKxu_WRPrOSiBEALVBIJFqKOnQNLCTCBv8ATEdIaFgaKL9oncFNg0TDZzYVNt3i_1B2qOT6bAMIieRz0OLUCsADd6u1g8TzT_jr4BDz-MLMRwklhgoBM_t-UZmL5LWrfrP7xSjg=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-05",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_aizuwakamatsu_20261012_1_2105452519845670967",
+    "shopId": "aizuwakamatsu",
+    "shopName": "会津若松駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/aizu_jiro/status/2105452519845670967",
+    "postedAt": "2026-10-01T00:19:32.000Z",
+    "postText": "毎度ありがとうございます。 10月の予定&臨時営業のお知らせです。 よろしくお願いいたしますm(__)m https://t.co/kXydI09ntB",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne--OauiZd_dNWbgIJpJKk_OI1vG7a8rvaVLsp0LUOJuVnUObKwa3V_UTCSvxG_Lfabki43zrWn9iGmTVbKeG_nuAebgucOefOybJBL2-saMo6tEaI72aGwIKckpBrjFSVrHHtBs37YpMdhLJQ0ILzuTg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-o6zFv1xkU0Zu1fbbKxu_WRPrOSiBEALVBIJFqKOnQNLCTCBv8ATEdIaFgaKL9oncFNg0TDZzYVNt3i_1B2qOT6bAMIieRz0OLUCsADd6u1g8TzT_jr4BDz-MLMRwklhgoBM_t-UZmL5LWrfrP7xSjg=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-12",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-10-02T22:59:41.925Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_aizuwakamatsu_20261019_2_2105452519845670967",
+    "shopId": "aizuwakamatsu",
+    "shopName": "会津若松駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/aizu_jiro/status/2105452519845670967",
+    "postedAt": "2026-10-01T00:19:32.000Z",
+    "postText": "毎度ありがとうございます。 10月の予定&臨時営業のお知らせです。 よろしくお願いいたしますm(__)m https://t.co/kXydI09ntB",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne--OauiZd_dNWbgIJpJKk_OI1vG7a8rvaVLsp0LUOJuVnUObKwa3V_UTCSvxG_Lfabki43zrWn9iGmTVbKeG_nuAebgucOefOybJBL2-saMo6tEaI72aGwIKckpBrjFSVrHHtBs37YpMdhLJQ0ILzuTg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-o6zFv1xkU0Zu1fbbKxu_WRPrOSiBEALVBIJFqKOnQNLCTCBv8ATEdIaFgaKL9oncFNg0TDZzYVNt3i_1B2qOT6bAMIieRz0OLUCsADd6u1g8TzT_jr4BDz-MLMRwklhgoBM_t-UZmL5LWrfrP7xSjg=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-19",
+      "endDate": "2026-10-19",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_aizuwakamatsu_20261026_3_2105452519845670967",
+    "shopId": "aizuwakamatsu",
+    "shopName": "会津若松駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/aizu_jiro/status/2105452519845670967",
+    "postedAt": "2026-10-01T00:19:32.000Z",
+    "postText": "毎度ありがとうございます。 10月の予定&臨時営業のお知らせです。 よろしくお願いいたしますm(__)m https://t.co/kXydI09ntB",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne--OauiZd_dNWbgIJpJKk_OI1vG7a8rvaVLsp0LUOJuVnUObKwa3V_UTCSvxG_Lfabki43zrWn9iGmTVbKeG_nuAebgucOefOybJBL2-saMo6tEaI72aGwIKckpBrjFSVrHHtBs37YpMdhLJQ0ILzuTg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-o6zFv1xkU0Zu1fbbKxu_WRPrOSiBEALVBIJFqKOnQNLCTCBv8ATEdIaFgaKL9oncFNg0TDZzYVNt3i_1B2qOT6bAMIieRz0OLUCsADd6u1g8TzT_jr4BDz-MLMRwklhgoBM_t-UZmL5LWrfrP7xSjg=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-26",
+      "endDate": "2026-10-26",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_aizuwakamatsu_20261004_4_2105452519845670967",
+    "shopId": "aizuwakamatsu",
+    "shopName": "会津若松駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/aizu_jiro/status/2105452519845670967",
+    "postedAt": "2026-10-01T00:19:32.000Z",
+    "postText": "毎度ありがとうございます。 10月の予定&臨時営業のお知らせです。 よろしくお願いいたしますm(__)m https://t.co/kXydI09ntB",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne--OauiZd_dNWbgIJpJKk_OI1vG7a8rvaVLsp0LUOJuVnUObKwa3V_UTCSvxG_Lfabki43zrWn9iGmTVbKeG_nuAebgucOefOybJBL2-saMo6tEaI72aGwIKckpBrjFSVrHHtBs37YpMdhLJQ0ILzuTg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-o6zFv1xkU0Zu1fbbKxu_WRPrOSiBEALVBIJFqKOnQNLCTCBv8ATEdIaFgaKL9oncFNg0TDZzYVNt3i_1B2qOT6bAMIieRz0OLUCsADd6u1g8TzT_jr4BDz-MLMRwklhgoBM_t-UZmL5LWrfrP7xSjg=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-10-04",
+      "endDate": "2026-10-04",
+      "hours": [
+        [
+          11,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-10-02T22:59:41.925Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_aizuwakamatsu_20261018_5_2105452519845670967",
+    "shopId": "aizuwakamatsu",
+    "shopName": "会津若松駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/aizu_jiro/status/2105452519845670967",
+    "postedAt": "2026-10-01T00:19:32.000Z",
+    "postText": "毎度ありがとうございます。 10月の予定&臨時営業のお知らせです。 よろしくお願いいたしますm(__)m https://t.co/kXydI09ntB",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne--OauiZd_dNWbgIJpJKk_OI1vG7a8rvaVLsp0LUOJuVnUObKwa3V_UTCSvxG_Lfabki43zrWn9iGmTVbKeG_nuAebgucOefOybJBL2-saMo6tEaI72aGwIKckpBrjFSVrHHtBs37YpMdhLJQ0ILzuTg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-o6zFv1xkU0Zu1fbbKxu_WRPrOSiBEALVBIJFqKOnQNLCTCBv8ATEdIaFgaKL9oncFNg0TDZzYVNt3i_1B2qOT6bAMIieRz0OLUCsADd6u1g8TzT_jr4BDz-MLMRwklhgoBM_t-UZmL5LWrfrP7xSjg=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-10-18",
+      "endDate": "2026-10-18",
+      "hours": [
+        [
+          11,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-10-02T22:59:41.925Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_kawagoe_20261002_0_2105452926076629326",
+    "shopId": "kawagoe",
+    "shopName": "川越店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kwge26/status/2105452926076629326",
+    "postedAt": "2026-10-01T00:21:09.000Z",
+    "postText": "１０月２日金曜日  従業員不足の為 休業します🙏",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-02",
+      "hours": [],
+      "reason": "従業員不足のため",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-10-02T22:59:41.925Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 従業員不足のため"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2105452636447347065",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2105452636447347065",
+    "postedAt": "2026-10-01T00:20:00.000Z",
+    "postText": "@me_ak177907 おおお！！！ありがとうございます！！友達も喜びます！！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-01",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_ikuta_20261007_0_2105459164617343168",
+    "shopId": "ikuta",
+    "shopName": "生田駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ikuta_jiro/status/2105459164617343168",
+    "postedAt": "2026-10-01T00:45:57.000Z",
+    "postText": "10月の予定です。水曜定休日。 15日(木) 27日(火) は都合によりお休みになります。 ❄⚫️お楽しみに！ よろしくお願いします。 https://t.co/f2z7dWNJJD",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-DhWeOGrPrBMnmFmN_gkatjSqMzu4my_5h0m-6qNO7PF5WOkKKclP9aluSb_r6ZJx1tMwu6KOmWehj15ptx5HeZHNOHpjNJmxpOePbZlK7E5iLQ_ojbdOvIJlnZqkEISnOqsn68-JEnMkWis1MqomlQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-07",
+      "endDate": "2026-10-07",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_ikuta_20261014_1_2105459164617343168",
+    "shopId": "ikuta",
+    "shopName": "生田駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ikuta_jiro/status/2105459164617343168",
+    "postedAt": "2026-10-01T00:45:57.000Z",
+    "postText": "10月の予定です。水曜定休日。 15日(木) 27日(火) は都合によりお休みになります。 ❄⚫️お楽しみに！ よろしくお願いします。 https://t.co/f2z7dWNJJD",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-DhWeOGrPrBMnmFmN_gkatjSqMzu4my_5h0m-6qNO7PF5WOkKKclP9aluSb_r6ZJx1tMwu6KOmWehj15ptx5HeZHNOHpjNJmxpOePbZlK7E5iLQ_ojbdOvIJlnZqkEISnOqsn68-JEnMkWis1MqomlQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-14",
+      "endDate": "2026-10-14",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_ikuta_20261015_2_2105459164617343168",
+    "shopId": "ikuta",
+    "shopName": "生田駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ikuta_jiro/status/2105459164617343168",
+    "postedAt": "2026-10-01T00:45:57.000Z",
+    "postText": "10月の予定です。水曜定休日。 15日(木) 27日(火) は都合によりお休みになります。 ❄⚫️お楽しみに！ よろしくお願いします。 https://t.co/f2z7dWNJJD",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-DhWeOGrPrBMnmFmN_gkatjSqMzu4my_5h0m-6qNO7PF5WOkKKclP9aluSb_r6ZJx1tMwu6KOmWehj15ptx5HeZHNOHpjNJmxpOePbZlK7E5iLQ_ojbdOvIJlnZqkEISnOqsn68-JEnMkWis1MqomlQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-15",
+      "endDate": "2026-10-15",
+      "hours": [],
+      "reason": "都合により",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-10-01T22:00:01.747Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 都合により"
+  },
+  {
+    "id": "sns_post_ikuta_20261021_3_2105459164617343168",
+    "shopId": "ikuta",
+    "shopName": "生田駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ikuta_jiro/status/2105459164617343168",
+    "postedAt": "2026-10-01T00:45:57.000Z",
+    "postText": "10月の予定です。水曜定休日。 15日(木) 27日(火) は都合によりお休みになります。 ❄⚫️お楽しみに！ よろしくお願いします。 https://t.co/f2z7dWNJJD",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-DhWeOGrPrBMnmFmN_gkatjSqMzu4my_5h0m-6qNO7PF5WOkKKclP9aluSb_r6ZJx1tMwu6KOmWehj15ptx5HeZHNOHpjNJmxpOePbZlK7E5iLQ_ojbdOvIJlnZqkEISnOqsn68-JEnMkWis1MqomlQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-21",
+      "endDate": "2026-10-21",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_ikuta_20261027_4_2105459164617343168",
+    "shopId": "ikuta",
+    "shopName": "生田駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ikuta_jiro/status/2105459164617343168",
+    "postedAt": "2026-10-01T00:45:57.000Z",
+    "postText": "10月の予定です。水曜定休日。 15日(木) 27日(火) は都合によりお休みになります。 ❄⚫️お楽しみに！ よろしくお願いします。 https://t.co/f2z7dWNJJD",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-DhWeOGrPrBMnmFmN_gkatjSqMzu4my_5h0m-6qNO7PF5WOkKKclP9aluSb_r6ZJx1tMwu6KOmWehj15ptx5HeZHNOHpjNJmxpOePbZlK7E5iLQ_ojbdOvIJlnZqkEISnOqsn68-JEnMkWis1MqomlQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-27",
+      "endDate": "2026-10-27",
+      "hours": [],
+      "reason": "都合により",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-10-01T22:00:01.747Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 都合により"
+  },
+  {
+    "id": "sns_post_ikuta_20261028_5_2105459164617343168",
+    "shopId": "ikuta",
+    "shopName": "生田駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ikuta_jiro/status/2105459164617343168",
+    "postedAt": "2026-10-01T00:45:57.000Z",
+    "postText": "10月の予定です。水曜定休日。 15日(木) 27日(火) は都合によりお休みになります。 ❄⚫️お楽しみに！ よろしくお願いします。 https://t.co/f2z7dWNJJD",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-DhWeOGrPrBMnmFmN_gkatjSqMzu4my_5h0m-6qNO7PF5WOkKKclP9aluSb_r6ZJx1tMwu6KOmWehj15ptx5HeZHNOHpjNJmxpOePbZlK7E5iLQ_ojbdOvIJlnZqkEISnOqsn68-JEnMkWis1MqomlQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-28",
+      "endDate": "2026-10-28",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_daily_sendai2_2105469112730435916",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2105469112730435916",
+    "postedAt": "2026-10-01T01:25:28.000Z",
+    "postText": "おちゃ、おちゃ、しかまーえーん🎵 色んなところ潰れていきますね…。 悲しいです。 https://t.co/beBctjTJDM",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-01",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_nagoyaosone_20261002_0_2105469589446602972",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2105469589446602972",
+    "postedAt": "2026-10-01T01:27:22.000Z",
+    "postText": "おはようございます。 ラーメン二郎名古屋大曽根店です。 本日昼夜営業です。 昼の部11:00〜14:00 夜の部17:00〜20:00 よろしくお願いします。  ※明日の営業は昼の部11:00〜14:00 となります。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-02",
+      "hours": [
+        [
+          10,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-10-01T22:00:01.747Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2105490341969498286",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2105490341969498286",
+    "postedAt": "2026-10-01T02:49:50.000Z",
+    "postText": "ふつうにおいしいみたいです！ https://t.co/xpb1VtfUoQ",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-01",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_tochigikaido_20261001_0_2105507801099542810",
+    "shopId": "tochigikaido",
+    "shopName": "栃木街道店",
+    "postSource": "x",
+    "postUrl": "https://x.com/Tochigikaidoten/status/2105507801099542810",
+    "postedAt": "2026-10-01T03:59:12.000Z",
+    "postText": "1258現在空席あり〼 超絶マッタリ 15時頃まで",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-01",
+      "hours": [
+        [
+          11.5,
+          15
+        ],
+        [
+          18,
+          21
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_jimbocho_20261001_0_2105515787708682572",
+    "shopId": "jimbocho",
+    "shopName": "神田神保町店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jbc_ramen_jiro/status/2105515787708682572",
+    "postedAt": "2026-10-01T04:30:57.000Z",
+    "postText": "都合により本日の営業は終了しました。申し訳ありませんがよろしくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-01",
+      "hours": [
+        [
+          11,
+          13.5
+        ]
+      ],
+      "reason": "都合により",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-10-01T22:00:01.747Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 都合により"
+  },
+  {
+    "id": "sns_post_daily_kameido_2105535169914646552",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2105535169914646552",
+    "postedAt": "2026-10-01T05:47:58.000Z",
+    "postText": "見るしかない！ https://t.co/a4DAzpkG68",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-01",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_sapporo_20261001_0_2105534896613855506",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2105534896613855506",
+    "postedAt": "2026-10-01T05:46:52.000Z",
+    "postText": "夜の部も17:00〜18:30  「魚介風汁なし」、「魚介風ラーメン」 合わせて対応します。 🐟🐚🌪️  プラス現金１００円  必ず、スタッフ確認時に申告して下さい。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-01",
+      "hours": [
+        [
+          11,
+          14
+        ],
+        [
+          17,
+          18.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-10-01T22:00:01.747Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_tachikawa_20261001_0_2105542174888853729",
+    "shopId": "tachikawa",
+    "shopName": "立川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jirotachikawa/status/2105542174888853729",
+    "postedAt": "2026-10-01T06:15:48.000Z",
+    "postText": "ぱた郎、昼の部で売り切れてしまいました。 ご容赦下さい。 https://t.co/8cjwvf2Xdy",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-01",
+      "hours": [
+        [
+          11,
+          14.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-10-01T22:00:01.747Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2105550818888008189",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2105550818888008189",
+    "postedAt": "2026-10-01T06:50:09.000Z",
+    "postText": "いまいるひとでおわりです！ ごめんなさい！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-01",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_kyoto_20261001_0_2105566879159033901",
+    "shopId": "kyoto",
+    "shopName": "京都店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kyoto/status/2105566879159033901",
+    "postedAt": "2026-10-01T07:53:58.000Z",
+    "postText": "こんにちは！お伝えしていました通り、本日はお休みいただきます🙇‍♂️  天一の日ですね！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-01",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
     "processed": false,
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_daily_kameido_2105579549027430557",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2105579549027430557",
+    "postedAt": "2026-10-01T08:44:18.000Z",
+    "postText": "只今店内待ちなしです …お近くにいらっしゃる方、狙い目です！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-01",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_mejirodai_20261001_0_2105599872993042838",
+    "shopId": "mejirodai",
+    "shopName": "めじろ台店",
+    "postSource": "x",
+    "postUrl": "https://x.com/mejirodai_jiro/status/2105599872993042838",
+    "postedAt": "2026-10-01T10:05:04.000Z",
+    "postText": "10月の予定です よろしくお願いします🙇 https://t.co/dotq65Oyb1",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-fwmTT_z1whM3etZksGCTQ2fueenR34KcBmu5Dgc_jtXQ3V1uBSlII-jQ1UZLjPBkuHeM-ln2DhKN8e2ltvp2Kwpj1vWdFENqmV60fjrC-0V1JUgMZNQkqS_t2cD-7k4dngq7ZxlcvQ7P9GYrem6HMQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-01",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_mejirodai_20261008_1_2105599872993042838",
+    "shopId": "mejirodai",
+    "shopName": "めじろ台店",
+    "postSource": "x",
+    "postUrl": "https://x.com/mejirodai_jiro/status/2105599872993042838",
+    "postedAt": "2026-10-01T10:05:04.000Z",
+    "postText": "10月の予定です よろしくお願いします🙇 https://t.co/dotq65Oyb1",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-fwmTT_z1whM3etZksGCTQ2fueenR34KcBmu5Dgc_jtXQ3V1uBSlII-jQ1UZLjPBkuHeM-ln2DhKN8e2ltvp2Kwpj1vWdFENqmV60fjrC-0V1JUgMZNQkqS_t2cD-7k4dngq7ZxlcvQ7P9GYrem6HMQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-08",
+      "endDate": "2026-10-08",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_mejirodai_20261012_2_2105599872993042838",
+    "shopId": "mejirodai",
+    "shopName": "めじろ台店",
+    "postSource": "x",
+    "postUrl": "https://x.com/mejirodai_jiro/status/2105599872993042838",
+    "postedAt": "2026-10-01T10:05:04.000Z",
+    "postText": "10月の予定です よろしくお願いします🙇 https://t.co/dotq65Oyb1",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-fwmTT_z1whM3etZksGCTQ2fueenR34KcBmu5Dgc_jtXQ3V1uBSlII-jQ1UZLjPBkuHeM-ln2DhKN8e2ltvp2Kwpj1vWdFENqmV60fjrC-0V1JUgMZNQkqS_t2cD-7k4dngq7ZxlcvQ7P9GYrem6HMQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-12",
+      "hours": [
+        [
+          11,
+          14
+        ],
+        [
+          17.5,
+          20.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-10-01T22:00:01.747Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_mejirodai_20261013_3_2105599872993042838",
+    "shopId": "mejirodai",
+    "shopName": "めじろ台店",
+    "postSource": "x",
+    "postUrl": "https://x.com/mejirodai_jiro/status/2105599872993042838",
+    "postedAt": "2026-10-01T10:05:04.000Z",
+    "postText": "10月の予定です よろしくお願いします🙇 https://t.co/dotq65Oyb1",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-fwmTT_z1whM3etZksGCTQ2fueenR34KcBmu5Dgc_jtXQ3V1uBSlII-jQ1UZLjPBkuHeM-ln2DhKN8e2ltvp2Kwpj1vWdFENqmV60fjrC-0V1JUgMZNQkqS_t2cD-7k4dngq7ZxlcvQ7P9GYrem6HMQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-13",
+      "endDate": "2026-10-13",
+      "hours": [
+        [
+          11,
+          14
+        ],
+        [
+          17.5,
+          20.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_mejirodai_20261014_4_2105599872993042838",
+    "shopId": "mejirodai",
+    "shopName": "めじろ台店",
+    "postSource": "x",
+    "postUrl": "https://x.com/mejirodai_jiro/status/2105599872993042838",
+    "postedAt": "2026-10-01T10:05:04.000Z",
+    "postText": "10月の予定です よろしくお願いします🙇 https://t.co/dotq65Oyb1",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-fwmTT_z1whM3etZksGCTQ2fueenR34KcBmu5Dgc_jtXQ3V1uBSlII-jQ1UZLjPBkuHeM-ln2DhKN8e2ltvp2Kwpj1vWdFENqmV60fjrC-0V1JUgMZNQkqS_t2cD-7k4dngq7ZxlcvQ7P9GYrem6HMQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-14",
+      "endDate": "2026-10-14",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-10-01T22:00:01.747Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_mejirodai_20261015_5_2105599872993042838",
+    "shopId": "mejirodai",
+    "shopName": "めじろ台店",
+    "postSource": "x",
+    "postUrl": "https://x.com/mejirodai_jiro/status/2105599872993042838",
+    "postedAt": "2026-10-01T10:05:04.000Z",
+    "postText": "10月の予定です よろしくお願いします🙇 https://t.co/dotq65Oyb1",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-fwmTT_z1whM3etZksGCTQ2fueenR34KcBmu5Dgc_jtXQ3V1uBSlII-jQ1UZLjPBkuHeM-ln2DhKN8e2ltvp2Kwpj1vWdFENqmV60fjrC-0V1JUgMZNQkqS_t2cD-7k4dngq7ZxlcvQ7P9GYrem6HMQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-15",
+      "endDate": "2026-10-15",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_mejirodai_20261018_6_2105599872993042838",
+    "shopId": "mejirodai",
+    "shopName": "めじろ台店",
+    "postSource": "x",
+    "postUrl": "https://x.com/mejirodai_jiro/status/2105599872993042838",
+    "postedAt": "2026-10-01T10:05:04.000Z",
+    "postText": "10月の予定です よろしくお願いします🙇 https://t.co/dotq65Oyb1",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-fwmTT_z1whM3etZksGCTQ2fueenR34KcBmu5Dgc_jtXQ3V1uBSlII-jQ1UZLjPBkuHeM-ln2DhKN8e2ltvp2Kwpj1vWdFENqmV60fjrC-0V1JUgMZNQkqS_t2cD-7k4dngq7ZxlcvQ7P9GYrem6HMQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-18",
+      "endDate": "2026-10-18",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-10-01T22:00:01.747Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_mejirodai_20261022_7_2105599872993042838",
+    "shopId": "mejirodai",
+    "shopName": "めじろ台店",
+    "postSource": "x",
+    "postUrl": "https://x.com/mejirodai_jiro/status/2105599872993042838",
+    "postedAt": "2026-10-01T10:05:04.000Z",
+    "postText": "10月の予定です よろしくお願いします🙇 https://t.co/dotq65Oyb1",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-fwmTT_z1whM3etZksGCTQ2fueenR34KcBmu5Dgc_jtXQ3V1uBSlII-jQ1UZLjPBkuHeM-ln2DhKN8e2ltvp2Kwpj1vWdFENqmV60fjrC-0V1JUgMZNQkqS_t2cD-7k4dngq7ZxlcvQ7P9GYrem6HMQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-22",
+      "endDate": "2026-10-22",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_mejirodai_20261029_8_2105599872993042838",
+    "shopId": "mejirodai",
+    "shopName": "めじろ台店",
+    "postSource": "x",
+    "postUrl": "https://x.com/mejirodai_jiro/status/2105599872993042838",
+    "postedAt": "2026-10-01T10:05:04.000Z",
+    "postText": "10月の予定です よろしくお願いします🙇 https://t.co/dotq65Oyb1",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-fwmTT_z1whM3etZksGCTQ2fueenR34KcBmu5Dgc_jtXQ3V1uBSlII-jQ1UZLjPBkuHeM-ln2DhKN8e2ltvp2Kwpj1vWdFENqmV60fjrC-0V1JUgMZNQkqS_t2cD-7k4dngq7ZxlcvQ7P9GYrem6HMQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-29",
+      "endDate": "2026-10-29",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_hitotsubashi_20261001_0_2105601517868949776",
+    "shopId": "hitotsubashi",
+    "shopName": "一橋学園店",
+    "postSource": "x",
+    "postUrl": "https://x.com/1284jiro/status/2105601517868949776",
+    "postedAt": "2026-10-01T10:11:36.000Z",
+    "postText": "10月の予定です。よろしくお願いいたします。 https://t.co/s247VNAAxl",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Jy2ysgRwpq8PrsVfjHEfNhVVJJUAYur83WSs5vtJdyUpiCy3NgzRQYkffCaelq61bgLptl0hyvul1Fftmf_8ah-LQHN-vzgnOb-lG9COVELa3Wgy8GSsIXcs6VvXaLMgD6px-vSSG_UDkyntvJLYoQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-01",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_hitotsubashi_20261008_1_2105601517868949776",
+    "shopId": "hitotsubashi",
+    "shopName": "一橋学園店",
+    "postSource": "x",
+    "postUrl": "https://x.com/1284jiro/status/2105601517868949776",
+    "postedAt": "2026-10-01T10:11:36.000Z",
+    "postText": "10月の予定です。よろしくお願いいたします。 https://t.co/s247VNAAxl",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Jy2ysgRwpq8PrsVfjHEfNhVVJJUAYur83WSs5vtJdyUpiCy3NgzRQYkffCaelq61bgLptl0hyvul1Fftmf_8ah-LQHN-vzgnOb-lG9COVELa3Wgy8GSsIXcs6VvXaLMgD6px-vSSG_UDkyntvJLYoQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-08",
+      "endDate": "2026-10-08",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_hitotsubashi_20261012_2_2105601517868949776",
+    "shopId": "hitotsubashi",
+    "shopName": "一橋学園店",
+    "postSource": "x",
+    "postUrl": "https://x.com/1284jiro/status/2105601517868949776",
+    "postedAt": "2026-10-01T10:11:36.000Z",
+    "postText": "10月の予定です。よろしくお願いいたします。 https://t.co/s247VNAAxl",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Jy2ysgRwpq8PrsVfjHEfNhVVJJUAYur83WSs5vtJdyUpiCy3NgzRQYkffCaelq61bgLptl0hyvul1Fftmf_8ah-LQHN-vzgnOb-lG9COVELa3Wgy8GSsIXcs6VvXaLMgD6px-vSSG_UDkyntvJLYoQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-12",
+      "hours": [
+        [
+          11,
+          15
+        ],
+        [
+          17.5,
+          20.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-10-01T22:00:01.747Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_hitotsubashi_20261015_3_2105601517868949776",
+    "shopId": "hitotsubashi",
+    "shopName": "一橋学園店",
+    "postSource": "x",
+    "postUrl": "https://x.com/1284jiro/status/2105601517868949776",
+    "postedAt": "2026-10-01T10:11:36.000Z",
+    "postText": "10月の予定です。よろしくお願いいたします。 https://t.co/s247VNAAxl",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Jy2ysgRwpq8PrsVfjHEfNhVVJJUAYur83WSs5vtJdyUpiCy3NgzRQYkffCaelq61bgLptl0hyvul1Fftmf_8ah-LQHN-vzgnOb-lG9COVELa3Wgy8GSsIXcs6VvXaLMgD6px-vSSG_UDkyntvJLYoQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-15",
+      "endDate": "2026-10-15",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_hitotsubashi_20261028_4_2105601517868949776",
+    "shopId": "hitotsubashi",
+    "shopName": "一橋学園店",
+    "postSource": "x",
+    "postUrl": "https://x.com/1284jiro/status/2105601517868949776",
+    "postedAt": "2026-10-01T10:11:36.000Z",
+    "postText": "10月の予定です。よろしくお願いいたします。 https://t.co/s247VNAAxl",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Jy2ysgRwpq8PrsVfjHEfNhVVJJUAYur83WSs5vtJdyUpiCy3NgzRQYkffCaelq61bgLptl0hyvul1Fftmf_8ah-LQHN-vzgnOb-lG9COVELa3Wgy8GSsIXcs6VvXaLMgD6px-vSSG_UDkyntvJLYoQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-28",
+      "endDate": "2026-10-29",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-10-01T22:00:01.747Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_hitotsubashi_20261030_5_2105601517868949776",
+    "shopId": "hitotsubashi",
+    "shopName": "一橋学園店",
+    "postSource": "x",
+    "postUrl": "https://x.com/1284jiro/status/2105601517868949776",
+    "postedAt": "2026-10-01T10:11:36.000Z",
+    "postText": "10月の予定です。よろしくお願いいたします。 https://t.co/s247VNAAxl",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Jy2ysgRwpq8PrsVfjHEfNhVVJJUAYur83WSs5vtJdyUpiCy3NgzRQYkffCaelq61bgLptl0hyvul1Fftmf_8ah-LQHN-vzgnOb-lG9COVELa3Wgy8GSsIXcs6VvXaLMgD6px-vSSG_UDkyntvJLYoQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-30",
+      "endDate": "2026-10-30",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-10-01T22:00:01.747Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_nagoyaosone_20261001_0_2105604958141997245",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2105604958141997245",
+    "postedAt": "2026-10-01T10:25:16.000Z",
+    "postText": "只今の時間、並びを持ちまして本日の営業は終了とさせていただきます。 よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-01",
+      "hours": [
+        [
+          17,
+          19.416666666666668
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-10-01T22:00:01.747Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_asakurakaido_20261018_0_2105636449257480333",
+    "shopId": "asakurakaido",
+    "shopName": "朝倉街道駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/r26akgd/status/2105636449257480333",
+    "postedAt": "2026-10-01T12:30:24.000Z",
+    "postText": "夜分に失礼いたします。  毎度ありがとうございます。 10/18(日)〜10/22(木)所用のためお休みいただきます。 ご来店予定のお客様には大変申し訳ございませんが、よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-18",
+      "endDate": "2026-10-22",
+      "hours": [],
+      "reason": "所用のため",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-10-01T22:00:01.747Z",
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_daily_kameido_2105641883150201236",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2105641883150201236",
+    "postedAt": "2026-10-01T12:52:00.000Z",
+    "postText": "買わなくちゃ🐭 https://t.co/TLKHXkSuq0",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-01",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_koshigaya_20261002_0_2105780078194180223",
+    "shopId": "koshigaya",
+    "shopName": "越谷店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ksgy26/status/2105780078194180223",
+    "postedAt": "2026-10-01T22:01:08.000Z",
+    "postText": "おはようございます。 ラーメン二郎越谷店です。  先日よりお知らせしていましたが、本日10月2日(金)お休みします。 ご来店予定だったお客様大変申し訳ございません。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-02",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2105795219744837684",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2105795219744837684",
+    "postedAt": "2026-10-01T23:01:18.000Z",
+    "postText": "激辛もやります！ 多分ちゃんと辛いです！  1倍  100円 2倍 200円 3倍 300円です！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-01",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2105795109598220582",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2105795109598220582",
+    "postedAt": "2026-10-01T23:00:52.000Z",
+    "postText": "にんにく地獄汁なし(+200円)もやります！ すりおろしにんにくをまぜこんでます！  麺の量と一緒に じごくでって言ってください！ ラーメンのひとはラーメンでって言ってくれるとわかりやすいです！  麺の量を聞かれた時に じぶんから言ってください！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-01",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_shndaita_20261002_0_2105794872125100357",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2105794872125100357",
+    "postedAt": "2026-10-01T22:59:55.000Z",
+    "postText": "2026年10月2日(金)  ⚠️短縮営業です！⚠️ 11:00～15:00くらいです！  よろしくお願いします！  ※住宅地なのでおしゃべりしないで待っててください",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-02",
+      "hours": [
+        [
+          11,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261002_0_2105809348329197659",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2105809348329197659",
+    "postedAt": "2026-10-01T23:57:27.000Z",
+    "postText": "本日 ◇10/2（金） 【夜の部のみ営業🈺】 17:00から〜20:30 ご来店ご到着お並びの お客様まで営業致します。  →［ひやコロ］ 日曜日にて終了☑️！  →［お椀で和ッカレー］ やっております！  どうぞー♪ https://t.co/ZbErJliae2",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-YzuVwgZyzC30kStlD5b65aSZ4jbLecFW6b2fZPe9f49GrmrwbfX1fPVtE3o0RRk2XamI7YowITA1bupZmKQOJVFr8phTRXvRHdS--ACfio9yHHEfa1GD9m8_DwjkrMb5-n1NUmdP6aef0pQAevkKeQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-zSxBfCM0PJHmCCJskQ0EZICjTnnrSfWTcf9gk_3q_Mkb0gZ2HYAi7UJst0YLX6pg25QEwa0EF-oz0ygc87nQcRzs_p3e7jG6goaKNjEhGw8aUlepU4d15UKfptRJMpUVZryhhv33i1sTOecZFRJQSw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Xt1SdCum4FX3XjzEXcGAzGpaamTOSC-aI2fYk5LSFYFjR_Bb7P6w1VbWLMZez7W5XWcRqWo3Xn9RoodEOzYNe0MQXcjolw5xXOMkca8WmNjVuq_T3t0ig56oSixXZMGnVTLSiBwIDfoX8W98pkqJ5g==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-qlt0hSw5pkEouvVPS3YfH4ZygEMmiEZ4INldqnbIt-jKjHkO4qr3RxWKpsFX477etvy1uzHAc6ttxomQHhfjIFJ41JAH7VxTKik9HGEOawA8T16w-XiX1OI5p95B4hiByTx0AXePSTgDXy2TmRNeeQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-02",
+      "hours": [
+        [
+          17,
+          20.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sapporo_20261002_0_2105813350856937670",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2105813350856937670",
+    "postedAt": "2026-10-02T00:13:21.000Z",
+    "postText": "2日(金)通常営業です🍜  12:30〜14:00 17:00〜18:30  「塩汁なし(醤油ベース)」(ブラックペッパーバージョン) 対応します。 ⚫︎🧂  プラス現金１００円  必ず、スタッフ確認時に申告して下さい。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-02",
+      "hours": [
+        [
+          12.5,
+          14
+        ],
+        [
+          17,
+          18.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-10-02T22:59:41.925Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2105821860877435047",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2105821860877435047",
+    "postedAt": "2026-10-02T00:47:10.000Z",
+    "postText": "@BZJQoTeIqFd5o0v 昨日あったんですか？ 初二郎体験お待ちしております！！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-02",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2105821686277050683",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2105821686277050683",
+    "postedAt": "2026-10-02T00:46:28.000Z",
+    "postText": "@GmnZ8MFzo903c76 夏の秘策なので内緒です笑",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-02",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2105821457897107957",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2105821457897107957",
+    "postedAt": "2026-10-02T00:45:34.000Z",
+    "postText": "@www_katsuya いつもありがとうございます！！！ またお越しくださいませ💓",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-02",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2105821388598829365",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2105821388598829365",
+    "postedAt": "2026-10-02T00:45:17.000Z",
+    "postText": "@HTASAGOHAN @tr4y8D5HS449890 かわ福　仙台 でググってください！！！ マジでうまいです！！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-02",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_nagoyaosone_20261003_1_2105826764220162491",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2105826764220162491",
+    "postedAt": "2026-10-02T01:06:39.000Z",
+    "postText": "おはようございます。 ラーメン二郎名古屋大曽根店です。 本日の営業は昼のみです。 営業時間11:00〜14:00  明日の土曜日は10:00〜14:00となります。 よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-10-03",
+      "endDate": "2026-10-03",
+      "hours": [
+        [
+          10,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_nakayamaekimae_20261003_0_2105838896601055454",
+    "shopId": "nakayamaekimae",
+    "shopName": "中山駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/NKYMJIRO/status/2105838896601055454",
+    "postedAt": "2026-10-02T01:54:52.000Z",
+    "postText": "おはようございます。m(._.)m 明日、3日(土)は都合により終日休業となります、申し訳ありませんがよろしくお願い致します。m(_ _)m https://t.co/pUEYsLPPpu",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-v7fJKH8GaMhqER8Ki5UbB3wM0xIXe6TxBRvnLYc4y-RPziWZKMDzxnDPZzq8AmrXILdnD-0H4rsDU37LhDKC-3wFS35DUCnldrKktDg26rWheQ3sES7l2I5f1myiLgCLrr5Y9vZjU1e6tUTQlaCBUw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-E1zb_8iwjEoCeomEXlh7cDXhUuu9MK9lQVRmbiapSm6ZLfmDxx1P4h9k1e0O8Sa6YcF0_GoHr9Lxf0HWPxn1cJZ-PdGlYltup15BXqSmmLMPjz9WTYmHcyHZjxwIs_KJj4YDhV084Pcph5F1PB1TiQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-03",
+      "endDate": "2026-10-03",
+      "hours": [],
+      "reason": "都合により",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-10-02T22:59:41.925Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 都合により"
+  },
+  {
+    "id": "sns_post_okinawa_20261011_0_2105837770208129141",
+    "shopId": "okinawa",
+    "shopName": "沖縄店",
+    "postSource": "x",
+    "postUrl": "https://x.com/okinawa_jiro/status/2105837770208129141",
+    "postedAt": "2026-10-02T01:50:23.000Z",
+    "postText": "【10月の営業予定】 ・11日（日）　休業 ・12日（月）　昼営業のみ（祝日）  また、今月より土日祝の営業時間を １０：３０〜１４：３０ に変更いたします。 https://t.co/9jaUx2r9DX",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-df5PMS6XI9hINPKY4AS-FDveDnwYAU9QwP0_9MxXdn9MG3ygpeo0db0i7u2zdNYN_dCtudxquauQYB5qLVslDNSKHkqCDEImrsstZ9Nqh50Ueg2Z4hDZZFZ-Ern4hKl6AofMtCmwcSygTuplSU9ayw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-LQRh0q169OrrgOc3F8LgDXS_Z2860kO8sseuDZPrjCIqJfQulzOQNEmg21MdPyM6tf4gF7sldumSpzIlRfhLr36GQdgr5rXkw_zSYV0KJ_7TEWRqo9mK5N_ZDeESW7ap1AaYuwbp_Y_aY0XDKlZRJQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-11",
+      "endDate": "2026-10-11",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-10-02T22:59:41.925Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_okinawa_20261012_1_2105837770208129141",
+    "shopId": "okinawa",
+    "shopName": "沖縄店",
+    "postSource": "x",
+    "postUrl": "https://x.com/okinawa_jiro/status/2105837770208129141",
+    "postedAt": "2026-10-02T01:50:23.000Z",
+    "postText": "【10月の営業予定】 ・11日（日）　休業 ・12日（月）　昼営業のみ（祝日）  また、今月より土日祝の営業時間を １０：３０〜１４：３０ に変更いたします。 https://t.co/9jaUx2r9DX",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-df5PMS6XI9hINPKY4AS-FDveDnwYAU9QwP0_9MxXdn9MG3ygpeo0db0i7u2zdNYN_dCtudxquauQYB5qLVslDNSKHkqCDEImrsstZ9Nqh50Ueg2Z4hDZZFZ-Ern4hKl6AofMtCmwcSygTuplSU9ayw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-LQRh0q169OrrgOc3F8LgDXS_Z2860kO8sseuDZPrjCIqJfQulzOQNEmg21MdPyM6tf4gF7sldumSpzIlRfhLr36GQdgr5rXkw_zSYV0KJ_7TEWRqo9mK5N_ZDeESW7ap1AaYuwbp_Y_aY0XDKlZRJQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-12",
+      "hours": [
+        [
+          10.5,
+          14.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_nagoyaosone_20261002_0_2105879201350078801",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2105879201350078801",
+    "postedAt": "2026-10-02T04:35:01.000Z",
+    "postText": "ラーメン二郎名古屋大曽根店です。 只今の時間、並びを持ちまして本日の営業は終了とさせて頂きます。 よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-02",
+      "hours": [
+        [
+          10,
+          13.58
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-10-02T22:59:41.925Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_koiwa_20261002_0_2105886555336544513",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2105886555336544513",
+    "postedAt": "2026-10-02T05:04:14.000Z",
+    "postText": "現在外並び27名。  まもなく終了宣告を出します。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-02",
+      "hours": [
+        [
+          10.5,
+          14.066666666666666
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-10-02T22:59:41.925Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2105893577121517802",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2105893577121517802",
+    "postedAt": "2026-10-02T05:32:09.000Z",
+    "postText": "いまいるひとでおわりです！ ごめんなさい！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-02",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_mention_kameido_2105920352882942267",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2105920352882942267",
+    "postedAt": "2026-10-02T07:18:32.000Z",
+    "postText": "@syokumutaiman よくご存知で！笑 アニメが最後までやっていてくれてたら具志堅用高は声優としてもなお馳せたはず！笑",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-02",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261005_0_2105922901849645065",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2105922901849645065",
+    "postedAt": "2026-10-02T07:28:40.000Z",
+    "postText": "【10月の予定】 https://t.co/RH3k1FaSsM",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2ebLIFQR2IMsFcf0dJjuysunyMr33KdIhvHRdUaZvH-pksf2Cc-UQnXu3RXGbe6691cvojaifd8pEfL68508aMc6HNAGwOb0HK5uiT-JwfMZh3UpqGXImTYqXx46pqyVsIa4J2co40Ifiu9B96nZfA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-D1RZodjoc_5Zod-Z43rwEvH-1TuJS6kmsu3Ts9ltUdk3t9h6rGCTRWNywVALBW5wpMLJdOKJrnPYWa24VqyGSD53rwARJQSPeZREdW_6SpkvcOO8eNHPDcvSBp8PflAEVLdxSdWMjND3IyQJtd7dwQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-05",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261013_1_2105922901849645065",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2105922901849645065",
+    "postedAt": "2026-10-02T07:28:40.000Z",
+    "postText": "【10月の予定】 https://t.co/RH3k1FaSsM",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2ebLIFQR2IMsFcf0dJjuysunyMr33KdIhvHRdUaZvH-pksf2Cc-UQnXu3RXGbe6691cvojaifd8pEfL68508aMc6HNAGwOb0HK5uiT-JwfMZh3UpqGXImTYqXx46pqyVsIa4J2co40Ifiu9B96nZfA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-D1RZodjoc_5Zod-Z43rwEvH-1TuJS6kmsu3Ts9ltUdk3t9h6rGCTRWNywVALBW5wpMLJdOKJrnPYWa24VqyGSD53rwARJQSPeZREdW_6SpkvcOO8eNHPDcvSBp8PflAEVLdxSdWMjND3IyQJtd7dwQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-13",
+      "endDate": "2026-10-13",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-10-02T22:59:41.925Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261018_2_2105922901849645065",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2105922901849645065",
+    "postedAt": "2026-10-02T07:28:40.000Z",
+    "postText": "【10月の予定】 https://t.co/RH3k1FaSsM",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2ebLIFQR2IMsFcf0dJjuysunyMr33KdIhvHRdUaZvH-pksf2Cc-UQnXu3RXGbe6691cvojaifd8pEfL68508aMc6HNAGwOb0HK5uiT-JwfMZh3UpqGXImTYqXx46pqyVsIa4J2co40Ifiu9B96nZfA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-D1RZodjoc_5Zod-Z43rwEvH-1TuJS6kmsu3Ts9ltUdk3t9h6rGCTRWNywVALBW5wpMLJdOKJrnPYWa24VqyGSD53rwARJQSPeZREdW_6SpkvcOO8eNHPDcvSBp8PflAEVLdxSdWMjND3IyQJtd7dwQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-18",
+      "endDate": "2026-10-18",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-10-02T22:59:41.925Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261019_3_2105922901849645065",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2105922901849645065",
+    "postedAt": "2026-10-02T07:28:40.000Z",
+    "postText": "【10月の予定】 https://t.co/RH3k1FaSsM",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2ebLIFQR2IMsFcf0dJjuysunyMr33KdIhvHRdUaZvH-pksf2Cc-UQnXu3RXGbe6691cvojaifd8pEfL68508aMc6HNAGwOb0HK5uiT-JwfMZh3UpqGXImTYqXx46pqyVsIa4J2co40Ifiu9B96nZfA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-D1RZodjoc_5Zod-Z43rwEvH-1TuJS6kmsu3Ts9ltUdk3t9h6rGCTRWNywVALBW5wpMLJdOKJrnPYWa24VqyGSD53rwARJQSPeZREdW_6SpkvcOO8eNHPDcvSBp8PflAEVLdxSdWMjND3IyQJtd7dwQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-19",
+      "endDate": "2026-10-19",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261026_4_2105922901849645065",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2105922901849645065",
+    "postedAt": "2026-10-02T07:28:40.000Z",
+    "postText": "【10月の予定】 https://t.co/RH3k1FaSsM",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2ebLIFQR2IMsFcf0dJjuysunyMr33KdIhvHRdUaZvH-pksf2Cc-UQnXu3RXGbe6691cvojaifd8pEfL68508aMc6HNAGwOb0HK5uiT-JwfMZh3UpqGXImTYqXx46pqyVsIa4J2co40Ifiu9B96nZfA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-D1RZodjoc_5Zod-Z43rwEvH-1TuJS6kmsu3Ts9ltUdk3t9h6rGCTRWNywVALBW5wpMLJdOKJrnPYWa24VqyGSD53rwARJQSPeZREdW_6SpkvcOO8eNHPDcvSBp8PflAEVLdxSdWMjND3IyQJtd7dwQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-26",
+      "endDate": "2026-10-26",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261003_5_2105922901849645065",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2105922901849645065",
+    "postedAt": "2026-10-02T07:28:40.000Z",
+    "postText": "【10月の予定】 https://t.co/RH3k1FaSsM",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2ebLIFQR2IMsFcf0dJjuysunyMr33KdIhvHRdUaZvH-pksf2Cc-UQnXu3RXGbe6691cvojaifd8pEfL68508aMc6HNAGwOb0HK5uiT-JwfMZh3UpqGXImTYqXx46pqyVsIa4J2co40Ifiu9B96nZfA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-D1RZodjoc_5Zod-Z43rwEvH-1TuJS6kmsu3Ts9ltUdk3t9h6rGCTRWNywVALBW5wpMLJdOKJrnPYWa24VqyGSD53rwARJQSPeZREdW_6SpkvcOO8eNHPDcvSBp8PflAEVLdxSdWMjND3IyQJtd7dwQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-03",
+      "endDate": "2026-10-04",
+      "hours": [
+        [
+          10,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261010_6_2105922901849645065",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2105922901849645065",
+    "postedAt": "2026-10-02T07:28:40.000Z",
+    "postText": "【10月の予定】 https://t.co/RH3k1FaSsM",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2ebLIFQR2IMsFcf0dJjuysunyMr33KdIhvHRdUaZvH-pksf2Cc-UQnXu3RXGbe6691cvojaifd8pEfL68508aMc6HNAGwOb0HK5uiT-JwfMZh3UpqGXImTYqXx46pqyVsIa4J2co40Ifiu9B96nZfA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-D1RZodjoc_5Zod-Z43rwEvH-1TuJS6kmsu3Ts9ltUdk3t9h6rGCTRWNywVALBW5wpMLJdOKJrnPYWa24VqyGSD53rwARJQSPeZREdW_6SpkvcOO8eNHPDcvSBp8PflAEVLdxSdWMjND3IyQJtd7dwQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-11",
+      "hours": [
+        [
+          10,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261012_7_2105922901849645065",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2105922901849645065",
+    "postedAt": "2026-10-02T07:28:40.000Z",
+    "postText": "【10月の予定】 https://t.co/RH3k1FaSsM",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2ebLIFQR2IMsFcf0dJjuysunyMr33KdIhvHRdUaZvH-pksf2Cc-UQnXu3RXGbe6691cvojaifd8pEfL68508aMc6HNAGwOb0HK5uiT-JwfMZh3UpqGXImTYqXx46pqyVsIa4J2co40Ifiu9B96nZfA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-D1RZodjoc_5Zod-Z43rwEvH-1TuJS6kmsu3Ts9ltUdk3t9h6rGCTRWNywVALBW5wpMLJdOKJrnPYWa24VqyGSD53rwARJQSPeZREdW_6SpkvcOO8eNHPDcvSBp8PflAEVLdxSdWMjND3IyQJtd7dwQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-12",
+      "hours": [
+        [
+          10,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261017_8_2105922901849645065",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2105922901849645065",
+    "postedAt": "2026-10-02T07:28:40.000Z",
+    "postText": "【10月の予定】 https://t.co/RH3k1FaSsM",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2ebLIFQR2IMsFcf0dJjuysunyMr33KdIhvHRdUaZvH-pksf2Cc-UQnXu3RXGbe6691cvojaifd8pEfL68508aMc6HNAGwOb0HK5uiT-JwfMZh3UpqGXImTYqXx46pqyVsIa4J2co40Ifiu9B96nZfA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-D1RZodjoc_5Zod-Z43rwEvH-1TuJS6kmsu3Ts9ltUdk3t9h6rGCTRWNywVALBW5wpMLJdOKJrnPYWa24VqyGSD53rwARJQSPeZREdW_6SpkvcOO8eNHPDcvSBp8PflAEVLdxSdWMjND3IyQJtd7dwQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-17",
+      "endDate": "2026-10-17",
+      "hours": [
+        [
+          10,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261024_9_2105922901849645065",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2105922901849645065",
+    "postedAt": "2026-10-02T07:28:40.000Z",
+    "postText": "【10月の予定】 https://t.co/RH3k1FaSsM",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2ebLIFQR2IMsFcf0dJjuysunyMr33KdIhvHRdUaZvH-pksf2Cc-UQnXu3RXGbe6691cvojaifd8pEfL68508aMc6HNAGwOb0HK5uiT-JwfMZh3UpqGXImTYqXx46pqyVsIa4J2co40Ifiu9B96nZfA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-D1RZodjoc_5Zod-Z43rwEvH-1TuJS6kmsu3Ts9ltUdk3t9h6rGCTRWNywVALBW5wpMLJdOKJrnPYWa24VqyGSD53rwARJQSPeZREdW_6SpkvcOO8eNHPDcvSBp8PflAEVLdxSdWMjND3IyQJtd7dwQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-24",
+      "endDate": "2026-10-25",
+      "hours": [
+        [
+          10,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261031_10_2105922901849645065",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2105922901849645065",
+    "postedAt": "2026-10-02T07:28:40.000Z",
+    "postText": "【10月の予定】 https://t.co/RH3k1FaSsM",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2ebLIFQR2IMsFcf0dJjuysunyMr33KdIhvHRdUaZvH-pksf2Cc-UQnXu3RXGbe6691cvojaifd8pEfL68508aMc6HNAGwOb0HK5uiT-JwfMZh3UpqGXImTYqXx46pqyVsIa4J2co40Ifiu9B96nZfA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-D1RZodjoc_5Zod-Z43rwEvH-1TuJS6kmsu3Ts9ltUdk3t9h6rGCTRWNywVALBW5wpMLJdOKJrnPYWa24VqyGSD53rwARJQSPeZREdW_6SpkvcOO8eNHPDcvSBp8PflAEVLdxSdWMjND3IyQJtd7dwQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-31",
+      "endDate": "2026-11-01",
+      "hours": [
+        [
+          10,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_jimbocho_20261002_0_2105924707799482547",
+    "shopId": "jimbocho",
+    "shopName": "神田神保町店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jbc_ramen_jiro/status/2105924707799482547",
+    "postedAt": "2026-10-02T07:35:51.000Z",
+    "postText": "ただ今お並びのお客様までで、本日の営業終了となります。よろしくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-02",
+      "hours": [
+        [
+          11,
+          16.58
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-10-02T22:59:41.925Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_kyoto_20261002_0_2106008483342827981",
+    "shopId": "kyoto",
+    "shopName": "京都店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kyoto/status/2106008483342827981",
+    "postedAt": "2026-10-02T13:08:44.000Z",
+    "postText": "何もかも無くなったので、本日は只今お並びの方で終了です🙇‍♂️  明日のスープも多分ほぼ獄門です。やりすぎました。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-02",
+      "hours": [
+        [
+          11,
+          14.5
+        ],
+        [
+          17.5,
+          22.13
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-10-02T22:59:41.925Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_daily_kameido_2106041849609949565",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2106041849609949565",
+    "postedAt": "2026-10-02T15:21:19.000Z",
+    "postText": "それでこそシーサーちゃんだよ！😭 https://t.co/IJ4ybJedg4",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-02",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_ichinoe_20261001_0_2106131023021170826",
+    "shopId": "ichinoe",
+    "shopName": "環七一之江店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ichinoejiro/status/2106131023021170826",
+    "postedAt": "2026-10-02T21:15:40.000Z",
+    "postText": "1（木）〜2（金）と、 夜のご来店が少ないと思ってましたが、赤丸🔴がついてなかったので。 改めて10月の営業予定です。 宜しくお願い申し上げます https://t.co/8cuHuURXuF",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-tQbtusz2GcAK32TJwRsEP4G7n9xhXZe-4FWuNnTj-bofN2LIMgRpw-itxB9kE1mpbqx_2ffQ4jUwarZTdH45ZOxk1h9KE6kXqlxZsAOJgVtGk6wzut0m4nNa9uuVlWXq5C3ksRKd95h8sY2Wf7M5Zg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-As1P8KhLkfxmZywDEPppi7oCkYK5l2aah5Ln0q-oHMvxf6NeKTdXXPIs5UYf5aeNCEw2_cjQ2pqrHiilVgxBGJlPAzQVBuSytEAUY0etnmcflFWQNTc3m35o2iPCk9LQWfG_ZjxQKBrsn2-EoFNYaQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-01",
+      "hours": [
+        [
+          10.5,
+          14
+        ],
+        [
+          17.5,
+          20
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_ichinoe_20261002_1_2106131023021170826",
+    "shopId": "ichinoe",
+    "shopName": "環七一之江店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ichinoejiro/status/2106131023021170826",
+    "postedAt": "2026-10-02T21:15:40.000Z",
+    "postText": "1（木）〜2（金）と、 夜のご来店が少ないと思ってましたが、赤丸🔴がついてなかったので。 改めて10月の営業予定です。 宜しくお願い申し上げます https://t.co/8cuHuURXuF",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-tQbtusz2GcAK32TJwRsEP4G7n9xhXZe-4FWuNnTj-bofN2LIMgRpw-itxB9kE1mpbqx_2ffQ4jUwarZTdH45ZOxk1h9KE6kXqlxZsAOJgVtGk6wzut0m4nNa9uuVlWXq5C3ksRKd95h8sY2Wf7M5Zg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-As1P8KhLkfxmZywDEPppi7oCkYK5l2aah5Ln0q-oHMvxf6NeKTdXXPIs5UYf5aeNCEw2_cjQ2pqrHiilVgxBGJlPAzQVBuSytEAUY0etnmcflFWQNTc3m35o2iPCk9LQWfG_ZjxQKBrsn2-EoFNYaQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-02",
+      "hours": [
+        [
+          9,
+          14
+        ],
+        [
+          17.5,
+          20
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-10-02T22:59:41.925Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_ichinoe_20261006_2_2106131023021170826",
+    "shopId": "ichinoe",
+    "shopName": "環七一之江店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ichinoejiro/status/2106131023021170826",
+    "postedAt": "2026-10-02T21:15:40.000Z",
+    "postText": "1（木）〜2（金）と、 夜のご来店が少ないと思ってましたが、赤丸🔴がついてなかったので。 改めて10月の営業予定です。 宜しくお願い申し上げます https://t.co/8cuHuURXuF",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-tQbtusz2GcAK32TJwRsEP4G7n9xhXZe-4FWuNnTj-bofN2LIMgRpw-itxB9kE1mpbqx_2ffQ4jUwarZTdH45ZOxk1h9KE6kXqlxZsAOJgVtGk6wzut0m4nNa9uuVlWXq5C3ksRKd95h8sY2Wf7M5Zg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-As1P8KhLkfxmZywDEPppi7oCkYK5l2aah5Ln0q-oHMvxf6NeKTdXXPIs5UYf5aeNCEw2_cjQ2pqrHiilVgxBGJlPAzQVBuSytEAUY0etnmcflFWQNTc3m35o2iPCk9LQWfG_ZjxQKBrsn2-EoFNYaQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-06",
+      "endDate": "2026-10-06",
+      "hours": [
+        [
+          17.5,
+          20
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-10-02T22:59:41.925Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_ichinoe_20261008_3_2106131023021170826",
+    "shopId": "ichinoe",
+    "shopName": "環七一之江店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ichinoejiro/status/2106131023021170826",
+    "postedAt": "2026-10-02T21:15:40.000Z",
+    "postText": "1（木）〜2（金）と、 夜のご来店が少ないと思ってましたが、赤丸🔴がついてなかったので。 改めて10月の営業予定です。 宜しくお願い申し上げます https://t.co/8cuHuURXuF",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-tQbtusz2GcAK32TJwRsEP4G7n9xhXZe-4FWuNnTj-bofN2LIMgRpw-itxB9kE1mpbqx_2ffQ4jUwarZTdH45ZOxk1h9KE6kXqlxZsAOJgVtGk6wzut0m4nNa9uuVlWXq5C3ksRKd95h8sY2Wf7M5Zg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-As1P8KhLkfxmZywDEPppi7oCkYK5l2aah5Ln0q-oHMvxf6NeKTdXXPIs5UYf5aeNCEw2_cjQ2pqrHiilVgxBGJlPAzQVBuSytEAUY0etnmcflFWQNTc3m35o2iPCk9LQWfG_ZjxQKBrsn2-EoFNYaQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-08",
+      "endDate": "2026-10-08",
+      "hours": [
+        [
+          10.5,
+          14
+        ],
+        [
+          17.5,
+          20
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_ichinoe_20261009_4_2106131023021170826",
+    "shopId": "ichinoe",
+    "shopName": "環七一之江店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ichinoejiro/status/2106131023021170826",
+    "postedAt": "2026-10-02T21:15:40.000Z",
+    "postText": "1（木）〜2（金）と、 夜のご来店が少ないと思ってましたが、赤丸🔴がついてなかったので。 改めて10月の営業予定です。 宜しくお願い申し上げます https://t.co/8cuHuURXuF",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-tQbtusz2GcAK32TJwRsEP4G7n9xhXZe-4FWuNnTj-bofN2LIMgRpw-itxB9kE1mpbqx_2ffQ4jUwarZTdH45ZOxk1h9KE6kXqlxZsAOJgVtGk6wzut0m4nNa9uuVlWXq5C3ksRKd95h8sY2Wf7M5Zg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-As1P8KhLkfxmZywDEPppi7oCkYK5l2aah5Ln0q-oHMvxf6NeKTdXXPIs5UYf5aeNCEw2_cjQ2pqrHiilVgxBGJlPAzQVBuSytEAUY0etnmcflFWQNTc3m35o2iPCk9LQWfG_ZjxQKBrsn2-EoFNYaQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-09",
+      "endDate": "2026-10-09",
+      "hours": [
+        [
+          9,
+          14
+        ],
+        [
+          17.5,
+          20
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-10-02T22:59:41.925Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_ichinoe_20261015_5_2106131023021170826",
+    "shopId": "ichinoe",
+    "shopName": "環七一之江店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ichinoejiro/status/2106131023021170826",
+    "postedAt": "2026-10-02T21:15:40.000Z",
+    "postText": "1（木）〜2（金）と、 夜のご来店が少ないと思ってましたが、赤丸🔴がついてなかったので。 改めて10月の営業予定です。 宜しくお願い申し上げます https://t.co/8cuHuURXuF",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-tQbtusz2GcAK32TJwRsEP4G7n9xhXZe-4FWuNnTj-bofN2LIMgRpw-itxB9kE1mpbqx_2ffQ4jUwarZTdH45ZOxk1h9KE6kXqlxZsAOJgVtGk6wzut0m4nNa9uuVlWXq5C3ksRKd95h8sY2Wf7M5Zg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-As1P8KhLkfxmZywDEPppi7oCkYK5l2aah5Ln0q-oHMvxf6NeKTdXXPIs5UYf5aeNCEw2_cjQ2pqrHiilVgxBGJlPAzQVBuSytEAUY0etnmcflFWQNTc3m35o2iPCk9LQWfG_ZjxQKBrsn2-EoFNYaQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-15",
+      "endDate": "2026-10-15",
+      "hours": [
+        [
+          10.5,
+          14
+        ],
+        [
+          17.5,
+          20
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_ichinoe_20261016_6_2106131023021170826",
+    "shopId": "ichinoe",
+    "shopName": "環七一之江店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ichinoejiro/status/2106131023021170826",
+    "postedAt": "2026-10-02T21:15:40.000Z",
+    "postText": "1（木）〜2（金）と、 夜のご来店が少ないと思ってましたが、赤丸🔴がついてなかったので。 改めて10月の営業予定です。 宜しくお願い申し上げます https://t.co/8cuHuURXuF",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-tQbtusz2GcAK32TJwRsEP4G7n9xhXZe-4FWuNnTj-bofN2LIMgRpw-itxB9kE1mpbqx_2ffQ4jUwarZTdH45ZOxk1h9KE6kXqlxZsAOJgVtGk6wzut0m4nNa9uuVlWXq5C3ksRKd95h8sY2Wf7M5Zg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-As1P8KhLkfxmZywDEPppi7oCkYK5l2aah5Ln0q-oHMvxf6NeKTdXXPIs5UYf5aeNCEw2_cjQ2pqrHiilVgxBGJlPAzQVBuSytEAUY0etnmcflFWQNTc3m35o2iPCk9LQWfG_ZjxQKBrsn2-EoFNYaQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-16",
+      "endDate": "2026-10-16",
+      "hours": [
+        [
+          9,
+          14
+        ],
+        [
+          17.5,
+          20
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-10-02T22:59:41.925Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_ichinoe_20261020_7_2106131023021170826",
+    "shopId": "ichinoe",
+    "shopName": "環七一之江店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ichinoejiro/status/2106131023021170826",
+    "postedAt": "2026-10-02T21:15:40.000Z",
+    "postText": "1（木）〜2（金）と、 夜のご来店が少ないと思ってましたが、赤丸🔴がついてなかったので。 改めて10月の営業予定です。 宜しくお願い申し上げます https://t.co/8cuHuURXuF",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-tQbtusz2GcAK32TJwRsEP4G7n9xhXZe-4FWuNnTj-bofN2LIMgRpw-itxB9kE1mpbqx_2ffQ4jUwarZTdH45ZOxk1h9KE6kXqlxZsAOJgVtGk6wzut0m4nNa9uuVlWXq5C3ksRKd95h8sY2Wf7M5Zg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-As1P8KhLkfxmZywDEPppi7oCkYK5l2aah5Ln0q-oHMvxf6NeKTdXXPIs5UYf5aeNCEw2_cjQ2pqrHiilVgxBGJlPAzQVBuSytEAUY0etnmcflFWQNTc3m35o2iPCk9LQWfG_ZjxQKBrsn2-EoFNYaQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-20",
+      "endDate": "2026-10-20",
+      "hours": [
+        [
+          17.5,
+          20
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-10-02T22:59:41.925Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_ichinoe_20261022_8_2106131023021170826",
+    "shopId": "ichinoe",
+    "shopName": "環七一之江店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ichinoejiro/status/2106131023021170826",
+    "postedAt": "2026-10-02T21:15:40.000Z",
+    "postText": "1（木）〜2（金）と、 夜のご来店が少ないと思ってましたが、赤丸🔴がついてなかったので。 改めて10月の営業予定です。 宜しくお願い申し上げます https://t.co/8cuHuURXuF",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-tQbtusz2GcAK32TJwRsEP4G7n9xhXZe-4FWuNnTj-bofN2LIMgRpw-itxB9kE1mpbqx_2ffQ4jUwarZTdH45ZOxk1h9KE6kXqlxZsAOJgVtGk6wzut0m4nNa9uuVlWXq5C3ksRKd95h8sY2Wf7M5Zg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-As1P8KhLkfxmZywDEPppi7oCkYK5l2aah5Ln0q-oHMvxf6NeKTdXXPIs5UYf5aeNCEw2_cjQ2pqrHiilVgxBGJlPAzQVBuSytEAUY0etnmcflFWQNTc3m35o2iPCk9LQWfG_ZjxQKBrsn2-EoFNYaQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-22",
+      "endDate": "2026-10-22",
+      "hours": [
+        [
+          10.5,
+          14
+        ],
+        [
+          17.5,
+          20
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_ichinoe_20261023_9_2106131023021170826",
+    "shopId": "ichinoe",
+    "shopName": "環七一之江店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ichinoejiro/status/2106131023021170826",
+    "postedAt": "2026-10-02T21:15:40.000Z",
+    "postText": "1（木）〜2（金）と、 夜のご来店が少ないと思ってましたが、赤丸🔴がついてなかったので。 改めて10月の営業予定です。 宜しくお願い申し上げます https://t.co/8cuHuURXuF",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-tQbtusz2GcAK32TJwRsEP4G7n9xhXZe-4FWuNnTj-bofN2LIMgRpw-itxB9kE1mpbqx_2ffQ4jUwarZTdH45ZOxk1h9KE6kXqlxZsAOJgVtGk6wzut0m4nNa9uuVlWXq5C3ksRKd95h8sY2Wf7M5Zg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-As1P8KhLkfxmZywDEPppi7oCkYK5l2aah5Ln0q-oHMvxf6NeKTdXXPIs5UYf5aeNCEw2_cjQ2pqrHiilVgxBGJlPAzQVBuSytEAUY0etnmcflFWQNTc3m35o2iPCk9LQWfG_ZjxQKBrsn2-EoFNYaQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-23",
+      "endDate": "2026-10-23",
+      "hours": [
+        [
+          9,
+          14
+        ],
+        [
+          17.5,
+          20
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-10-02T22:59:41.925Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_ichinoe_20261027_10_2106131023021170826",
+    "shopId": "ichinoe",
+    "shopName": "環七一之江店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ichinoejiro/status/2106131023021170826",
+    "postedAt": "2026-10-02T21:15:40.000Z",
+    "postText": "1（木）〜2（金）と、 夜のご来店が少ないと思ってましたが、赤丸🔴がついてなかったので。 改めて10月の営業予定です。 宜しくお願い申し上げます https://t.co/8cuHuURXuF",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-tQbtusz2GcAK32TJwRsEP4G7n9xhXZe-4FWuNnTj-bofN2LIMgRpw-itxB9kE1mpbqx_2ffQ4jUwarZTdH45ZOxk1h9KE6kXqlxZsAOJgVtGk6wzut0m4nNa9uuVlWXq5C3ksRKd95h8sY2Wf7M5Zg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-As1P8KhLkfxmZywDEPppi7oCkYK5l2aah5Ln0q-oHMvxf6NeKTdXXPIs5UYf5aeNCEw2_cjQ2pqrHiilVgxBGJlPAzQVBuSytEAUY0etnmcflFWQNTc3m35o2iPCk9LQWfG_ZjxQKBrsn2-EoFNYaQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-27",
+      "endDate": "2026-10-27",
+      "hours": [
+        [
+          17.5,
+          20
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-10-02T22:59:41.925Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_ichinoe_20261029_11_2106131023021170826",
+    "shopId": "ichinoe",
+    "shopName": "環七一之江店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ichinoejiro/status/2106131023021170826",
+    "postedAt": "2026-10-02T21:15:40.000Z",
+    "postText": "1（木）〜2（金）と、 夜のご来店が少ないと思ってましたが、赤丸🔴がついてなかったので。 改めて10月の営業予定です。 宜しくお願い申し上げます https://t.co/8cuHuURXuF",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-tQbtusz2GcAK32TJwRsEP4G7n9xhXZe-4FWuNnTj-bofN2LIMgRpw-itxB9kE1mpbqx_2ffQ4jUwarZTdH45ZOxk1h9KE6kXqlxZsAOJgVtGk6wzut0m4nNa9uuVlWXq5C3ksRKd95h8sY2Wf7M5Zg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-As1P8KhLkfxmZywDEPppi7oCkYK5l2aah5Ln0q-oHMvxf6NeKTdXXPIs5UYf5aeNCEw2_cjQ2pqrHiilVgxBGJlPAzQVBuSytEAUY0etnmcflFWQNTc3m35o2iPCk9LQWfG_ZjxQKBrsn2-EoFNYaQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-29",
+      "endDate": "2026-10-29",
+      "hours": [
+        [
+          10.5,
+          14
+        ],
+        [
+          17.5,
+          20
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_ichinoe_20261030_12_2106131023021170826",
+    "shopId": "ichinoe",
+    "shopName": "環七一之江店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ichinoejiro/status/2106131023021170826",
+    "postedAt": "2026-10-02T21:15:40.000Z",
+    "postText": "1（木）〜2（金）と、 夜のご来店が少ないと思ってましたが、赤丸🔴がついてなかったので。 改めて10月の営業予定です。 宜しくお願い申し上げます https://t.co/8cuHuURXuF",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-tQbtusz2GcAK32TJwRsEP4G7n9xhXZe-4FWuNnTj-bofN2LIMgRpw-itxB9kE1mpbqx_2ffQ4jUwarZTdH45ZOxk1h9KE6kXqlxZsAOJgVtGk6wzut0m4nNa9uuVlWXq5C3ksRKd95h8sY2Wf7M5Zg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-As1P8KhLkfxmZywDEPppi7oCkYK5l2aah5Ln0q-oHMvxf6NeKTdXXPIs5UYf5aeNCEw2_cjQ2pqrHiilVgxBGJlPAzQVBuSytEAUY0etnmcflFWQNTc3m35o2iPCk9LQWfG_ZjxQKBrsn2-EoFNYaQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-30",
+      "endDate": "2026-10-30",
+      "hours": [
+        [
+          9,
+          14
+        ],
+        [
+          17.5,
+          20
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-10-02T22:59:41.925Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_nishidai_20261005_0_2106148410902659127",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2106148410902659127",
+    "postedAt": "2026-10-02T22:24:46.000Z",
+    "postText": "おはようございます。  本日、3日、 切り落とし・¥1100×1                          ¥1000×1 崩れ・¥800×1              ¥700×1  あります。 https://t.co/33oQ5x3KJO",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-kMo8fofKJNy4I3WC_qDWkSB66KFYdVpuc7oBHwzerZKhUpOK-EtkA7eP0g_Bi6s7Re4eVT7fLjbTSRRVSROiHp_E7_EzlQXK0C7VZbg0eULxOExa6OEWSRGKNEdCVcVSo5qV3u_NJcmsa-UIZs8Suw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-LZmaKWyt3zZBHFnJd6oohauVnx2OieYqeaxNFaE0ygd9x2FBxkbnn61AQRIjgzD4bvfYlFw2iIm-lyTduLecJ3OObNdEiUPbJN3yNZLH3yM0hQsGHkLySM1QuTKOaqv27RfKEUybi9X4Hs5NrUxH2w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-QfYF8800-cBwvObinAQ1ZbT1JSL4_SzoISImMSMVDnziH-jxxzs0fn5ARrvZ19IHGKEEkGnUj23ibjT5k00By5im-YMS9xfsIC2xpFz20gKdMteSY8mmnR1zEAiWaeqXNLgf_UGSTR6UzjU52brT5A==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2J3IFKg96cm_F-03SC6IgUd9fF_R35uWxwxwq8uFwAxfdVONoDQfw32ZBHYUo7MYwzUTPLy1igmH32DAoWHrjqYbHhsIKYprGLY36zt1BEqJ-RnTCO6v8sXV92hYXgs8gUaslX0u1LHQvINtHR4ttQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-05",
+      "hours": [
+        [
+          10.25,
+          13.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2106144814249177531",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2106144814249177531",
+    "postedAt": "2026-10-02T22:10:28.000Z",
+    "postText": "激辛もやります！ 多分ちゃんと辛いです！  1倍  100円 2倍 200円 3倍 300円です！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-02",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2106144565988397146",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2106144565988397146",
+    "postedAt": "2026-10-02T22:09:29.000Z",
+    "postText": "にんにく地獄汁なし(+200円)もやります！ すりおろしにんにくをまぜこんでます！  麺の量と一緒に じごくでって言ってください！ ラーメンのひとはラーメンでって言ってくれるとわかりやすいです！  麺の量を聞かれた時に じぶんから言ってください！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-02",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_shndaita_20261003_0_2106144427400212613",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2106144427400212613",
+    "postedAt": "2026-10-02T22:08:56.000Z",
+    "postText": "2026年10月3日(土)  ⚠️短縮営業です！⚠️ 11:00～15:00くらいです！  よろしくお願いします！  ※住宅地なのでおしゃべりしないで待っててください",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-03",
+      "endDate": "2026-10-03",
+      "hours": [
+        [
+          11,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "既に登録済みの臨時スケジュールと一致"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2106195769422402014",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2106195769422402014",
+    "postedAt": "2026-10-03T01:32:57.000Z",
+    "postText": "@jagabayashi うおおおおぉおん！！帰り際まで気付けなくてすみません！！ぼんやり仕事してて猛省…。  またお越しくださいませ！！ Mリーグいつも楽しみに見ております！🫡",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-03",
+      "endDate": "2026-10-03",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_asakurakaido_20261003_0_2106214350935748967",
+    "shopId": "asakurakaido",
+    "shopName": "朝倉街道駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/r26akgd/status/2106214350935748967",
+    "postedAt": "2026-10-03T02:46:47.000Z",
+    "postText": "本日12:00-15:00営業いたします。 西鉄ストア様、西日本シティ銀行様、他店舗病院等駐車禁止 空いていても一般的なコインパーキングをご利用下さい。 グループの方は歩道を塞がずお静かにお願いします。 代表待ち、割込み、飲酒喫煙禁止 朝倉街道駅徒歩1分、天拝山駅7分",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-10-03",
+      "endDate": "2026-10-03",
+      "hours": [
+        [
+          12,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-10-03T07:20:05.560Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_nagoyaosone_20261003_0_2106228558171656286",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2106228558171656286",
+    "postedAt": "2026-10-03T03:43:14.000Z",
+    "postText": "ラーメン二郎名古屋大曽根店です。 只今の時間、並びを持ちまして本日の営業は終了とさせていただきます。 よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-03",
+      "endDate": "2026-10-03",
+      "hours": [
+        [
+          12.716666666666667,
+          12.716666666666667
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-10-03T07:20:05.560Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_sapporo_20261003_0_2106241921798848556",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2106241921798848556",
+    "postedAt": "2026-10-03T04:36:20.000Z",
+    "postText": "材料切れの為、只今お並びのお客様で営業終了致します。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-03",
+      "endDate": "2026-10-03",
+      "hours": [
+        [
+          10.5,
+          13.6
+        ]
+      ],
+      "reason": "材料切れのため",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-10-03T07:20:05.560Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 材料切れのため"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2106248188223271151",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2106248188223271151",
+    "postedAt": "2026-10-03T05:01:14.000Z",
+    "postText": "いまいるひとでおわりです！ ごめんなさい！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-03",
+      "endDate": "2026-10-03",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_kyoto_20261003_0_2106247564043633075",
+    "shopId": "kyoto",
+    "shopName": "京都店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kyoto/status/2106247564043633075",
+    "postedAt": "2026-10-03T04:58:46.000Z",
+    "postText": "お昼の部は只今お並びの方で終了です🙇‍♂️",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-03",
+      "endDate": "2026-10-03",
+      "hours": [
+        [
+          11,
+          13.97
+        ],
+        [
+          17.5,
+          20.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-10-03T07:20:05.560Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_sengawa_20261003_0_2106266653214257267",
+    "shopId": "sengawa",
+    "shopName": "仙川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjiro26/status/2106266653214257267",
+    "postedAt": "2026-10-03T06:14:37.000Z",
+    "postText": "本日17時から店内営業とテイクアウト販売します。テイクアウトはつけ麺に転用可能です。お薦めの調味料です。 https://t.co/1sadbS11VF",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-K9zS4EatooNxUVu-yAMDZ8MnMXZTj0tufn_LbSrKXWcUL9BC_WVkGTCBUW2tIqa1-HNWz28AxO3qF4inPtMpJqWLmQvdLEpqzXsXVv5vZPVOZRnyZlxPC7JKHyjK57q_zOkRCL7mBuOZMOIKwhiCRw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-F_bPv9wr8t3cY6rO6wbSJ3HFFHwuOhypRfS9HscbvRt2NHtdOxUK8SEJryUaRzbhoCYMcbmhBc3lBwPNmG_M3PEZzKdeEEDVzAi9I0DTuhWODMD4z3SASKiIxbyUr6ONYCIP0--bwRWIEjBnNhkHmA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-U8zZH1SVDeRtpHPk-hSObbu35bTu3qLq9P8YpILZXF7sQujMsslGAPcMp3eTF21erMKLDoKjZ3h-ho3-IGgz7pHIHC4NhcN_WfI-zk8UlAIDT44hHDW6Way1MRmnzZRIMy45dG2jgApc76ucHy47cg=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-10-03",
+      "endDate": "2026-10-03",
+      "hours": [
+        [
+          17,
+          21
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_jimbocho_20261003_0_2106267919982502246",
+    "shopId": "jimbocho",
+    "shopName": "神田神保町店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jbc_ramen_jiro/status/2106267919982502246",
+    "postedAt": "2026-10-03T06:19:39.000Z",
+    "postText": "ただ今お並びのお客様までで、本日の営業終了となります。  なお、あさって10月5日(月)は都合によりお休みさせていただきます。  よろしくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-03",
+      "endDate": "2026-10-03",
+      "hours": [
+        [
+          11,
+          15.316666666666666
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-10-03T07:20:05.560Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_jimbocho_20261005_1_2106267919982502246",
+    "shopId": "jimbocho",
+    "shopName": "神田神保町店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jbc_ramen_jiro/status/2106267919982502246",
+    "postedAt": "2026-10-03T06:19:39.000Z",
+    "postText": "ただ今お並びのお客様までで、本日の営業終了となります。  なお、あさって10月5日(月)は都合によりお休みさせていただきます。  よろしくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-05",
+      "hours": [],
+      "reason": "都合により",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-10-03T07:20:05.560Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 都合により"
+  },
+  {
+    "id": "sns_post_senjuohashi_20261003_0_2106272881772806513",
+    "shopId": "senjuohashi",
+    "shopName": "千住大橋駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjujirou26/status/2106272881772806513",
+    "postedAt": "2026-10-03T06:39:22.000Z",
+    "postText": "大変申し訳御座いませんが本日の販売は終了いたしました！  お持ち帰りして頂いた方へ！  脂の袋は立てて湯煎をし♨︎ 麺を茹でよーく湯切りをした熱熱の麺によーく混ぜ混ぜしてお召し上がり下さい🍜 （麺の茹で加減はお好みで！） https://t.co/fgVscb0wnj",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-gq4Nn7bnxRCXhWG4EpIF6EYPna5gFnN4-fsuQdvuS8cVgZ57yiWUMnWb5nr7_mbjDM2WS3CligmajLOEDDwh62PFXPIG5Yvf7JgxYJEh28hwXqdHffae17DOCoQbMGd_VABDAGZ8C80nOhsIiNAqUQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-03",
+      "endDate": "2026-10-03",
+      "hours": [
+        [
+          10.5,
+          15.65
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-10-03T07:20:05.560Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_daily_kannai_2106289413303206166",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2106289413303206166",
+    "postedAt": "2026-10-03T07:45:03.000Z",
+    "postText": "こんにちは。 カラマヨ無くなり次第 タルタルとなります。 ご希望の方は「アレ」でお願いします。 海老っちょ辣油はもう少しあります。 宜しくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-03",
+      "endDate": "2026-10-03",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261004_0_2106308517565194613",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2106308517565194613",
+    "postedAt": "2026-10-03T09:00:58.000Z",
+    "postText": "明日 ◇10/4（日） 【日曜日営業🈺】 10:00から〜15:00 ご来店ご到着お並びの お客様まで営業致します。  →［ひやコロ］日曜日で終了致します☑️最終です♪ →［お椀で和ッカレー］ →まかない←にオススメ！  よろしくお願い致します。 https://t.co/0kRO0K87yY",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-gz-X5YSkYuOAfNIqsgEVE9jgzG6Em-E7Rg7xTmGOJAMZM2HkwZw_3kIBA0h0rlROUC14plPhV_eCrjqKshGtbuZU79hqrdaO0v1iJLs-RJhSIDnIpN6BPXyYASWmZpvPFxpXG_Q9EzCQ1ykCLVzx0Q==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-AxEBmJpuzwnt-DdyQhgPlGmqNCEPY2sti_t_K3ij53Mcq3dLDFTjEjG5arEGIl5mlbm2Xz5KWDlGhAcBxL425_xhYj9J2-EFGvg5PEpYL-PPe_tlg3O4p35zT1UNAtCKaWhg-eTrsRlxUI2KiDIT1Q==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-f6UQImVuKjBt1i_-8MgdRLEwWw_7rKYaC-E25sO9vd1__MMkGWQVB1AQw-HsBdYbOnnNGlYPmgBEUm2G8nUnEazevBmt1wFZPpwLlnShturH9D7CDikudm0BMGpeAHjQj9baFcgdYdIghKovh47hbg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-wET7eChqSH4JJvY1QYxIHZS-elI9QfaJsOzArFCCvkb-Y6VE7j09BvfXnP2J3mRalitt0oYTEFepfBFTZ0ftf1Dws_hDFtr1qX87lHs1uQ0driHRwSTGHF6xwPzrg_5jUSd7rJ0YdCNSKgENPxD_dQ=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-10-04",
+      "endDate": "2026-10-04",
+      "hours": [
+        [
+          10,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_kameido_20261003_0_2106347512047219070",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2106347512047219070",
+    "postedAt": "2026-10-03T11:35:55.000Z",
+    "postText": "只今並びの方までで本日の営業は終了です。申し訳ありません",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-03",
+      "endDate": "2026-10-03",
+      "hours": [
+        [
+          11,
+          14.5
+        ],
+        [
+          17,
+          20.58
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-10-03T21:56:49.647Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_kyoto_20261003_0_2106354952457400449",
+    "shopId": "kyoto",
+    "shopName": "京都店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kyoto/status/2106354952457400449",
+    "postedAt": "2026-10-03T12:05:29.000Z",
+    "postText": "本日は只今お待ちの方で終了です🙇‍♂️",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-03",
+      "endDate": "2026-10-03",
+      "hours": [
+        [
+          11,
+          14.5
+        ],
+        [
+          17.5,
+          21.08
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-10-03T21:56:49.647Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_daily_kameido_2106386567359275408",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2106386567359275408",
+    "postedAt": "2026-10-03T14:11:07.000Z",
+    "postText": "メシア（救世主）！ https://t.co/eQfQd9TMqE",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-03",
+      "endDate": "2026-10-03",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_mention_yaen2_2106391941508485389",
+    "shopId": "yaen2",
+    "shopName": "八王子野猿街道店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/Jiro_Yaenkaido2/status/2106391941508485389",
+    "postedAt": "2026-10-03T14:32:28.000Z",
+    "postText": "@homura20251006 凄く美味しかった！😃",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-03",
+      "endDate": "2026-10-03",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_matsudo_20261010_0_2106403668404863285",
+    "shopId": "matsudo",
+    "shopName": "松戸駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/matsudojiro3/status/2106403668404863285",
+    "postedAt": "2026-10-03T15:19:04.000Z",
+    "postText": "毎度ありがとうございます。  10月10日土曜日は休業します。  よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-10",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-10-03T21:56:49.647Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_mention_kameido_2106416225060581650",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2106416225060581650",
+    "postedAt": "2026-10-03T16:08:58.000Z",
+    "postText": "@yamadayoshinob おめでとうございます✨",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-03",
+      "endDate": "2026-10-03",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2106511820450414745",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2106511820450414745",
+    "postedAt": "2026-10-03T22:28:49.000Z",
+    "postText": "激辛もやります！ 多分ちゃんと辛いです！  1倍  100円 2倍 200円 3倍 300円です！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-03",
+      "endDate": "2026-10-03",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2106511677286240735",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2106511677286240735",
+    "postedAt": "2026-10-03T22:28:15.000Z",
+    "postText": "にんにく地獄ラーメン(+200円)もやります！ すりおろしにんにくをまぜこんでます！  麺の量と一緒に じごくでって言ってください！ ラーメンのひとはしょうゆでって言ってくれるとわかりやすいです！  麺の量を聞かれた時に じぶんから言ってください！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-03",
+      "endDate": "2026-10-03",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_shndaita_20261004_0_2106511561062048154",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2106511561062048154",
+    "postedAt": "2026-10-03T22:27:47.000Z",
+    "postText": "2026年10月4日（日）  通常営業です！ 11:00～16:00くらいです！  よろしくお願いします！  ※住宅地なのでおしゃべりしないで待っててください",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-10-04",
+      "endDate": "2026-10-04",
+      "hours": [
+        [
+          11,
+          16
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_mejirodai_20261004_0_2106523415574458475",
+    "shopId": "mejirodai",
+    "shopName": "めじろ台店",
+    "postSource": "x",
+    "postUrl": "https://x.com/mejirodai_jiro/status/2106523415574458475",
+    "postedAt": "2026-10-03T23:14:54.000Z",
+    "postText": "毎度ありがとうございます 本日4(日)の営業時間は11〜15時となります なおただ今アルバイト募集中ですのでXのDMの方までご連絡お待ちしてます よろしくお願いします🙇 https://t.co/0pHSsSmj80",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-efOl4WeU1HJfMU1EAhZ2ecjSZO6FnOClUkquNlhD6S3Li4zF--0y23YzDmutQvF_SBveOdDeM2OlRn0T1PZMD4BUN4h2N4VornWTXi2btjy7vhWHHcHmN8qOal6fraPaP_dRMaC3BdzYzh5jBeabhQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-04",
+      "endDate": "2026-10-04",
+      "hours": [
+        [
+          11,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_kameido_20261004_0_2106547636115481065",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2106547636115481065",
+    "postedAt": "2026-10-04T00:51:08.000Z",
+    "postText": "お世話になってます。今朝になってスタッフが体調不良になってしまったため本日4日(日)の昼の部はお休みさせていただきます。夜の部は通常通り営業します。急で申し訳ありません、よろしくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-04",
+      "endDate": "2026-10-04",
+      "hours": [
+        [
+          17,
+          21
+        ]
+      ],
+      "reason": "スタッフ体調不良のため",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-10-04T03:55:13.167Z",
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: スタッフ体調不良のため"
+  },
+  {
+    "id": "sns_post_aizuwakamatsu_20261004_0_2106547111886283053",
+    "shopId": "aizuwakamatsu",
+    "shopName": "会津若松駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/aizu_jiro/status/2106547111886283053",
+    "postedAt": "2026-10-04T00:49:03.000Z",
+    "postText": "おはようございます。 本日10/4(日)11:00〜15:00 臨時営業いたします。 よろしくお願いいたしますm(__)m https://t.co/YzhQ4pr3iv",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-CFM5pXK7Bg89CtxipWkt71xFO-ZRbUDwPmo-_Pw6sVCKsY4BeXIo4NOJoAo7qPVXHb3s-Wpp_9jd6cz50W5vUcbEY_3a8wPOICu10xl2g5PiB2KtUbb9BxKdIekiTCA5P6WXlZ51MWyonbjyhnK4iA=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-10-04",
+      "endDate": "2026-10-04",
+      "hours": [
+        [
+          11,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2106552182480961566",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2106552182480961566",
+    "postedAt": "2026-10-04T01:09:12.000Z",
+    "postText": "さいきん暇すぎて しまう場所的に麺打てなかったので開けちゃいますwww https://t.co/3RSWZpJApf",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-04",
+      "endDate": "2026-10-04",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2106616982489718801",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2106616982489718801",
+    "postedAt": "2026-10-04T05:26:42.000Z",
+    "postText": "いまいるひとでおわりです！ ごめんなさい！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-04",
+      "endDate": "2026-10-04",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
