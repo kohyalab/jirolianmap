@@ -6424,8 +6424,8 @@
       "hours": [],
       "reason": "営業時間の変更に関する言及なし"
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-04T16:15:08.661Z",
     "aiStatus": "no_change",
     "aiReason": "営業時間の変更に関する言及なし"
   },
@@ -6445,8 +6445,8 @@
       "hours": [],
       "reason": ""
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-04T16:15:08.661Z",
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
   }
