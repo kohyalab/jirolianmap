@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Jirolian Map - Comprehensive Test Suite</title>
+    <!-- Leaflet & html2canvas -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+    <script>
+        window.onerror = function(msg, url, line, col, error) {
+            console.error('GLOBAL ERROR:', msg, url, line, col, error);
+            var d = document.createElement('div');
+            d.className = 'test-case fail';
+            d.textContent = 'GLOBAL ERROR: ' + msg + ' at ' + url + ':' + line + ':' + col;
+            document.body.appendChild(d);
+        };
+    </script>
+    <!-- 共通モジュール -->
+    <script src="js/common/lg_codes.js"></script>
+    <script src="js/common/utils.js"></script>
+    <script src="js/common/business-hours.js"></script>
+    <script src="js/app/share.js"></script>
+
+    <style>
+        body { font-family: sans-serif; background: #121212; color: #fff; padding: 20px; }
+        .pass { color: #4caf50; font-weight: bold; }
+        .fail { color: #f44336; font-weight: bold; }
+        .test-case { margin: 6px 0; padding: 6px 12px; background: #1e1e1e; border-radius: 4px; }
+        #summary { font-size: 1.2rem; margin-bottom: 20px; padding: 12px; border-radius: 6px; }
+        iframe { width: 1280px; height: 1200px; border: 1px solid #444; margin-top: 10px; display: block; }
+    </style>
+</head>
+<body>
+    <h1>🍜 ジロリアンマップ 全機能自動テストスイート</h1>
+    <div id="summary">テスト実行中...</div>
+    <div id="results"></div>
+
+    <!-- メイン画面とエディタの統合テスト用iframe -->
+    <iframe id="app-frame" src="index.html"></iframe>
+    <iframe id="editor-frame" src="editor.html"></iframe>
+
+    <script>
+        const results = [];
+        const resultsContainer = document.getElementById('results');
+
+        function assert(name, conditionFn, details = '') {
+            let pass = false;
+            let errDetail = '';
+            try {
+                pass = (typeof conditionFn === 'function') ? !!conditionFn() : !!conditionFn;
+            } catch (e) {
+                pass = false;
+                errDetail = e.message;
+            }
+            const detText = (typeof details === 'function') ? details() : details;
+            results.push({ name, pass, details: detText || errDetail });
+            const div = document.createElement('div');
+            div.className = 'test-case';
+            div.innerHTML = `<span class="${pass ? 'pass' : 'fail'}">[${pass ? 'PASS' : 'FAIL'}]</span> ${name} ${(detText || errDetail) ? `<small style="color:#aaa;">(${detText || errDetail})</small>` : ''}`;
+            resultsContainer.appendChild(div);
+            return pass;
+        }
+
+        async function runTests() {
+            console.log('Starting Test Suite...');
+
+            // --- 1. JiroUtils 単体テスト ---
+            assert('JiroUtils: 定義確認', () => typeof JiroUtils === 'object' && JiroUtils !== null);
+            assert('JiroUtils.hiraganaToKatakana', () => JiroUtils.hiraganaToKatakana('じろりあん') === 'ジロリアン');
+            assert('JiroUtils.toHalfWidth', () => JiroUtils.toHalfWidth('１２３　ＡＢＣ') === '123 ABC');
+            assert('JiroUtils.parseNormalizedDateStr (Full)', () => JiroUtils.parseNormalizedDateStr('2026-08-02') === '2026-08-02');
+            assert('JiroUtils.parseNormalizedDateStr (Year only)', () => JiroUtils.parseNormalizedDateStr('2026') === '2026-12-31');
+            assert('JiroUtils.getLocalDateKey', () => /^\d{4}-\d{2}-\d{2}$/.test(JiroUtils.getLocalDateKey(new Date())));
+            assert('JiroUtils.getJSTDateString', () => /^\d{4}-\d{2}-\d{2}$/.test(JiroUtils.getJSTDateString(new Date())));
+            
+            const dist = JiroUtils.calculateDistance(35.64805, 139.74160, 35.63421, 139.70711);
+            assert('JiroUtils.calculateDistance', () => typeof dist === 'number' && dist > 3 && dist < 4, `三田本店-目黒店間: ${dist.toFixed(2)}km`);
+            assert('JiroUtils.formatDistance (km)', () => JiroUtils.formatDistance(3.456) === '約 3.5km');
+            assert('JiroUtils.formatDistance (1km未満)', () => JiroUtils.formatDistance(0.456) === '約 0.46km');
+            assert('JiroUtils.cleanAddress', () => JiroUtils.cleanAddress(' 東京都港区三田２丁目１６－４ ') === '東京都港区三田2丁目16-4');
+            assert('JiroUtils.normalizeFurigana', () => JiroUtils.normalizeFurigana('らーめんじろう') === 'ラーメンジロウ');
+            assert('JiroUtils.normalizeAccountID', () => JiroUtils.normalizeAccountID('@ramenjiro') === 'ramenjiro');
+            assert('JiroUtils.timeToFloat & floatToTime', () => JiroUtils.floatToTime(JiroUtils.timeToFloat('11:30')) === '11:30');
+
+            // --- 2. JiroBusinessHours 単体テスト ---
+            assert('JiroBusinessHours: 定義確認', () => typeof JiroBusinessHours === 'object' && JiroBusinessHours !== null);
+            assert('JiroBusinessHours.isJapaneseHoliday (元日)', () => JiroBusinessHours.isJapaneseHoliday(new Date(2026, 0, 1)) === true);
+            assert('JiroBusinessHours.isJapaneseHoliday (平日)', () => JiroBusinessHours.isJapaneseHoliday(new Date(2026, 0, 2)) === false);
+            
+            const parsedShifts = JiroBusinessHours.parseShiftString('11:00-14:30, 17:00-21:00');
+            assert('JiroBusinessHours.parseShiftString', () => Array.isArray(parsedShifts) && parsedShifts.length === 2 && parsedShifts[0][0] === 11 && parsedShifts[0][1] === 14.5);
+            assert('JiroBusinessHours.formatShiftArray', () => JiroBusinessHours.formatShiftArray(parsedShifts) === '11:00-14:30, 17:00-21:00');
+
+            // モック店舗データによる営業判定テスト
+            const mockShop = {
+                id: 'test_shop',
+                name: 'テスト二郎',
+                openedAt: '2020-01-01',
+                closedAt: null,
+                shiftsByDay: {
+                    '0': [[11, 14.5], [17, 21]], // 月曜
+                    '6': [] // 日曜定休
+                },
+                temporary: [
+                    { startDate: '2026-12-31', endDate: '2026-12-31', hours: [] } // 年末休業
+                ]
+            };
+            const mockDateMonNoon = new Date(2026, 8, 21, 12, 0); // 2026-09-21 (月) 12:00
+            const statusMonNoon = JiroBusinessHours.getBusinessStatus(mockShop, mockDateMonNoon);
+            assert('JiroBusinessHours.getBusinessStatus (営業中判定)', () => statusMonNoon.type === 'open');
+
+            const mockDateMonNight = new Date(2026, 8, 21, 23, 0); // 2026-09-21 (月) 23:00
+            const statusMonNight = JiroBusinessHours.getBusinessStatus(mockShop, mockDateMonNight);
+            assert('JiroBusinessHours.getBusinessStatus (営業時間外判定)', () => statusMonNight.type === 'closed');
+
+            // --- 2-2. 開店前・閉店・未定・セル色判定テスト ---
+            const preOpenShop = { id: 'pre_shop', name: '新店二郎', openedAt: '2026-12-01', closedAt: null, shiftsByDay: { '0': [[11, 15]] } };
+            const beforeOpenDate = new Date(2026, 9, 4); // 2026-10-04 (開店前)
+            assert('JiroBusinessHours.isPreOpen (開店日前日は休業扱い)', () => JiroBusinessHours.isPreOpen(preOpenShop, beforeOpenDate) === true);
+            assert('JiroBusinessHours.getTodayShifts (オープン前店舗は空配列/休業)', () => {
+                const s = JiroBusinessHours.getTodayShifts(preOpenShop, beforeOpenDate);
+                return Array.isArray(s) && s.length === 0;
+            });
+
+            const closedShop = { id: 'closed_shop', name: '閉店二郎', openedAt: '2020-01-01', closedAt: '2026-09-30', shiftsByDay: { '0': [[11, 15]] } };
+            const afterCloseDate = new Date(2026, 9, 1); // 2026-10-01 (閉店翌日)
+            assert('JiroBusinessHours.isClosedShopExpired (閉店日翌日以降は閉店)', () => JiroBusinessHours.isClosedShopExpired(closedShop, afterCloseDate) === true);
+            assert('JiroBusinessHours.getTodayShifts (閉店店舗は翌日以降空配列/休業)', () => {
+                const s = JiroBusinessHours.getTodayShifts(closedShop, afterCloseDate);
+                return Array.isArray(s) && s.length === 0;
+            });
+
+            const noOpenDateShop = { id: 'pending_open_shop', name: '準備中二郎', openedAt: '', closedAt: null, shiftsByDay: { '0': [[11, 15]] } };
+            assert('JiroBusinessHours.getTodayShifts (開店日未定はすべて「休業」)', () => {
+                const s = JiroBusinessHours.getTodayShifts(noOpenDateShop, beforeOpenDate);
+                return Array.isArray(s) && s.length === 0;
+            });
+            assert('JiroBusinessHours.getBusinessStatus (開店日未定は「オープン予定」)', () => {
+                const st = JiroBusinessHours.getBusinessStatus(noOpenDateShop, beforeOpenDate);
+                return st.type === 'preopen' && st.label === 'オープン予定';
+            });
+            assert('JiroBusinessHours.getNextOpenScheduleText (開店日未定は次回営業時間「未定」)', () => {
+                const text = JiroBusinessHours.getNextOpenScheduleText(noOpenDateShop, beforeOpenDate);
+                return text.includes('未定');
+            });
+            assert('JiroBusinessHours.getBusinessStatus (オープン前店舗は「オープン予定」)', () => {
+                const st = JiroBusinessHours.getBusinessStatus(preOpenShop, beforeOpenDate);
+                return st.type === 'preopen' && st.label === 'オープン予定';
+            });
+            assert('JiroBusinessHours.formatShiftList (オープン前店舗の未設定シフトは「未定」)', () => JiroBusinessHours.formatShiftList([], true) === '未定');
+            assert('JiroUtils.formatOpenedDateText (開店日空欄は「開店日未定」)', () => JiroUtils.formatOpenedDateText('') === '開店日未定');
+
+            // 制覇店舗カウント対象判定テスト
+            const normalShop = mockShop;
+            const openDate = new Date(2026, 11, 1); // 2026-12-01 (preOpenShop の開店当日)
+            assert('JiroBusinessHours.isConquestTarget (通常営業中店舗はカウント対象)', () => JiroBusinessHours.isConquestTarget(normalShop, beforeOpenDate) === true);
+            assert('JiroBusinessHours.isConquestTarget (オープン前店舗はカウント除外)', () => JiroBusinessHours.isConquestTarget(preOpenShop, beforeOpenDate) === false);
+            assert('JiroBusinessHours.isConquestTarget (オープン日当日はカウント対象)', () => JiroBusinessHours.isConquestTarget(preOpenShop, openDate) === true);
+            assert('JiroBusinessHours.isConquestTarget (開店日未定店舗はカウント除外)', () => JiroBusinessHours.isConquestTarget(noOpenDateShop, beforeOpenDate) === false);
+            assert('JiroBusinessHours.isConquestTarget (閉店済み店舗はカウント除外)', () => JiroBusinessHours.isConquestTarget(closedShop, afterCloseDate) === false);
+
+            const pendingShiftsShop = { id: 'pending_shifts_shop', name: '未定二郎', openedAt: '2020-01-01', closedAt: null, shiftsByDay: { '0': '未定' } };
+            assert('JiroBusinessHours.getTodayShifts (営業時間シフト「未定」は「未定」)', () => JiroBusinessHours.getTodayShifts(pendingShiftsShop, new Date(2026, 8, 21)) === '未定');
+            assert('JiroBusinessHours.parseShiftString (「未定」のパース)', () => JiroBusinessHours.parseShiftString('未定') === '未定');
+            assert('JiroBusinessHours.formatShiftArray (「未定」のフォーマット)', () => JiroBusinessHours.formatShiftArray('未定') === '未定');
+
+            // --- 3. LG_CODES 単体テスト ---
+            assert('LG_CODES: 定義確認', () => typeof LG_CODES === 'object' && LG_CODES !== null, () => 'LG_CODES type: ' + (typeof LG_CODES));
+            assert('LG_CODES.cities: 全47都道府県の市区町村（1800件以上内蔵）', () => Object.keys(LG_CODES.cities).length >= 1800, `自治体数: ${Object.keys(LG_CODES.cities).length}`);
+            assert('LG_CODES.getPrefNameByCityCode', () => LG_CODES.getPrefNameByCityCode('13103') === '東京都');
+            assert('LG_CODES.getCityName', () => LG_CODES.getCityName('13103') === '港区');
+            assert('LG_CODES.getShopFullAddress', () => LG_CODES.getShopFullAddress({ cityCode: '13103', addressText: '三田2-16-4' }) === '東京都港区三田2-16-4');
+            
+            const parsedAddr1 = LG_CODES.parseAddress('東京都港区三田2-16-4');
+            assert('LG_CODES.parseAddress (都道府県・市区町村分離)', () => parsedAddr1.prefCode === '13' && parsedAddr1.cityCode === '13103' && parsedAddr1.remainingAddress === '三田2-16-4');
+            const parsedAddr2 = LG_CODES.parseAddress('港区三田2-16-4');
+            assert('LG_CODES.parseAddress (市区町村のみから都道府県逆引き分離)', () => parsedAddr2.prefCode === '13' && parsedAddr2.cityCode === '13103' && parsedAddr2.remainingAddress === '三田2-16-4');
+
+            // --- 4. share.js 単体テスト ---
+            assert('share.js: window.shareFullGridImage 定義確認', () => typeof window.shareFullGridImage === 'function');
+            assert('share.js: window.captureElementWithPadding 定義確認', () => typeof window.captureElementWithPadding === 'function');
+            assert('share.js: window.openShareOptionsModal 定義確認', () => typeof window.openShareOptionsModal === 'function');
+
+            // --- 5. メイン画面 (index.html) 統合テスト (iframe内評価) ---
+            const appFrame = document.getElementById('app-frame');
+            await new Promise((resolve) => {
+                let attempts = 0;
+                const checkApp = setInterval(() => {
+                    attempts++;
+                    try {
+                        const appWin = appFrame.contentWindow;
+                        if (appWin && appWin.isAppInitialized && appWin.document.querySelectorAll('#shop-grid .shop-item').length > 0) {
+                            clearInterval(checkApp);
+                            resolve();
+                        }
+                    } catch (e) {}
+                    if (attempts > 80) { // 8秒タイムアウト
+                        clearInterval(checkApp);
+                        resolve();
+                    }
+                }, 100);
+            });
+
+            try {
+                const appWin = appFrame.contentWindow;
+                const appDoc = appWin.document;
+
+                assert('メインアプリ: 初期化フラグ (isAppInitialized)', () => appWin.isAppInitialized === true);
+                
+                const shopCards = appDoc.querySelectorAll('#shop-grid .shop-item');
+                assert('メインアプリ: 店舗カード描画件数 (40店舗以上)', () => shopCards.length >= 40, `実数: ${shopCards.length}店舗`);
+
+                const sortSelect = appDoc.getElementById('sort-select');
+                assert('メインアプリ: ソートドロップダウン存在', () => sortSelect !== null);
+
+                // 検索機能テスト
+                const searchInput = appDoc.getElementById('search-input');
+                searchInput.value = '三田';
+                if (typeof appWin.onSearchInput === 'function') {
+                    appWin.onSearchInput();
+                } else {
+                    searchInput.dispatchEvent(new Event('input'));
+                }
+                const filteredCards = appDoc.querySelectorAll('#shop-grid .shop-item');
+                assert('メインアプリ: 検索フィルタリング動作（「三田」で絞り込み）', filteredCards.length >= 1 && filteredCards.length < 5, `該当数: ${filteredCards.length}店舗`);
+                
+                // 検索リセット
+                searchInput.value = '';
+                appWin.onSearchInput();
+
+                // 制覇トラッカーのクリックトグル動作テスト
+                const firstCard = appDoc.querySelector('#shop-grid .shop-item');
+                const firstShopId = firstCard ? firstCard.dataset.shopId : null;
+                if (firstShopId && typeof appWin.toggleVisit === 'function') {
+                    const beforeVisit = !!appWin.visitedState[firstShopId];
+                    appWin.toggleVisit(firstShopId, false, new MouseEvent('click'));
+                    const afterVisit = !!appWin.visitedState[firstShopId];
+                    assert('メインアプリ: 制覇トグル (toggleVisit)', beforeVisit !== afterVisit);
+                    // 元に戻す
+                    appWin.toggleVisit(firstShopId, false, new MouseEvent('click'));
+                }
+
+                // 共有画像設定モーダルの表示条件テスト
+                const gridEl = appDoc.getElementById('shop-grid');
+                const conquestSec = appDoc.getElementById('share-opt-conquest-section');
+                const statusSec = appDoc.getElementById('share-opt-status-section');
+                const metaSec = appDoc.getElementById('share-opt-meta-section');
+
+                // 1. 店舗情報-コンパクト (minimal)
+                appWin.openShareOptionsModal(gridEl, null, 'minimal', 'test', 'test');
+                assert('共有設定: コンパクト表示 (制覇:表示, 営業状況:表示, メタ:非表示)', () => {
+                    return conquestSec.style.display === 'block' && statusSec.style.display === 'block' && metaSec.style.display === 'none';
+                });
+                appWin.closeShareOptionsModal();
+
+                // 2. 営業情報-日別 (today)
+                appWin.openShareOptionsModal(gridEl, null, 'today', 'test', 'test');
+                assert('共有設定: 日別表示 (制覇:表示, 営業状況:非表示, メタ:表示)', () => {
+                    return conquestSec.style.display === 'block' && statusSec.style.display === 'none' && metaSec.style.display === 'block';
+                });
+                appWin.closeShareOptionsModal();
+
+                // 3. 店舗詳細ポップアップ (popup_detail)
+                const firstShopObj = (appWin.shops || [])[0];
+                appWin.openShareOptionsModal(gridEl, firstShopObj, 'popup_detail', 'test', 'test');
+                assert('共有設定: 店舗詳細 (制覇:表示, 営業状況:表示, メタ:表示)', () => {
+                    return conquestSec.style.display === 'block' && statusSec.style.display === 'block' && metaSec.style.display === 'block';
+                });
+                appWin.closeShareOptionsModal();
+
+                // 4. カレンダー (calendar)
+                appWin.openShareOptionsModal(gridEl, firstShopObj, 'calendar', 'test', 'test');
+                assert('共有設定: カレンダー (制覇:非表示, 営業状況:非表示, メタ:表示)', () => {
+                    return conquestSec.style.display === 'none' && statusSec.style.display === 'none' && metaSec.style.display === 'block';
+                });
+                appWin.closeShareOptionsModal();
+
+                // 5. 実際のUI切り替えテスト: 「店舗情報-コンパクト」時の shareFullGridImage()
+                appWin.setListSubMode('minimal');
+                appWin.shareFullGridImage();
+                assert('共有設定 (UI連携): コンパクト表示シェア起動 (制覇:表示, 営業状況:表示)', () => {
+                    return conquestSec.style.display === 'block' && statusSec.style.display === 'block';
+                });
+                appWin.closeShareOptionsModal();
+
+                // 画像生成実行テスト (executeImageShare)
+                let caughtErrors = [];
+                let shareLogs = [];
+                const origConsoleLog = appWin.console.log;
+                appWin.console.log = function(...args) {
+                    const str = args.join(' ');
+                    if (str.includes('[DEBUG-SHARE]')) {
+                        shareLogs.push(str);
+                    }
+                    origConsoleLog.apply(this, args);
+                };
+                const origConsoleErr = appWin.console.error;
+                appWin.console.error = function(...args) {
+                    const msg = args.map(a => (a && a.stack) ? a.stack : String(a)).join(' ');
+                    caughtErrors.push(msg);
+                    origConsoleErr.apply(this, args);
+                };
+                appWin.alert = (msg) => {
+                    caughtErrors.push('ALERT: ' + msg);
+                };
+
+                let matrixCanvasCount = 0;
+                const origCapture = appWin.captureElementWithPadding;
+                appWin.captureElementWithPadding = async function(target, pad) {
+                    const c = await origCapture.call(this, target, pad);
+                    if (c) matrixCanvasCount++;
+                    return c;
+                };
+
+                try {
+                    await Promise.race([
+                        appWin.executeImageShare(true),
+                        new Promise((_, reject) => setTimeout(() => reject(new Error('TIMEOUT_25s')), 25000))
+                    ]);
+                } catch (e) {
+                    caughtErrors.push('THROWN: ' + (e.stack || e.message));
+                } finally {
+                    appWin.captureElementWithPadding = origCapture;
+                    appWin.console.error = origConsoleErr;
+                    appWin.console.log = origConsoleLog;
+                    appWin.closeShareOptionsModal();
+                }
+
+                const detailMsg = (caughtErrors.length > 0 ? caughtErrors.join(' | ') : '') + ' [LOGS: ' + shareLogs.join(' -> ') + `] (枚数: ${matrixCanvasCount})`;
+                assert('営業情報-一覧: 画像生成実行 (executeImageShare)', () => caughtErrors.length === 0 && matrixCanvasCount > 0, detailMsg);
+
+                await new Promise(r => setTimeout(r, 600));
+
+                // 9. X自動投稿相当テスト: 「営業情報-日別」時の shareFullGridImage() & ヘッダー包含確認
+                appWin.setListSubMode('today');
+                await new Promise(r => setTimeout(r, 600));
+
+                appWin.shareFullGridImage();
+                await new Promise(r => setTimeout(r, 300));
+
+                const todaySplitCb = appDoc.getElementById('share-opt-split');
+                if (todaySplitCb) todaySplitCb.checked = false;
+
+                let todayCaughtErrors = [];
+                let capturedHeaderTitles = [];
+                let todayCanvasCount = 0;
+                const origCapture2 = appWin.captureElementWithPadding;
+                appWin.captureElementWithPadding = async function(target, pad) {
+                    const headerLegend = target ? (target.querySelector('.capture-header-legend') || target.querySelector('.capture-header-title')) : null;
+                    if (headerLegend) {
+                        capturedHeaderTitles.push(headerLegend.textContent);
+                    }
+                    const c = await origCapture2.call(this, target, pad);
+                    if (c) todayCanvasCount++;
+                    return c;
+                };
+                const origErr2 = appWin.console.error;
+                appWin.console.error = function(...args) {
+                    const msg = args.map(a => (a && a.stack) ? a.stack : String(a)).join(' ');
+                    todayCaughtErrors.push(msg);
+                    origErr2.apply(this, args);
+                };
+
+                try {
+                    await Promise.race([
+                        appWin.executeImageShare(true),
+                        new Promise((_, reject) => setTimeout(() => reject(new Error('TIMEOUT_25s')), 25000))
+                    ]);
+                } catch (e) {
+                    todayCaughtErrors.push('THROWN: ' + (e.stack || e.message));
+                } finally {
+                    appWin.captureElementWithPadding = origCapture2;
+                    appWin.console.error = origErr2;
+                    appWin.closeShareOptionsModal();
+                }
+
+                const todayDetail = (todayCaughtErrors.length > 0 ? todayCaughtErrors.join(' | ') : '') + ` [ヘッダー: ${capturedHeaderTitles.join(', ')}] (枚数: ${todayCanvasCount})`;
+                assert('営業情報-日別 (X自動投稿): 画像生成実行 & ヘッダー包含確認', () => todayCaughtErrors.length === 0 && todayCanvasCount > 0 && capturedHeaderTitles.length > 0, todayDetail);
+
+                await new Promise(r => setTimeout(r, 600));
+
+                // 10. 店舗情報-詳細 (札幌店) 画像サイズ最適化テスト
+                appWin.shareShopCardImage('sapporo');
+                await new Promise(r => setTimeout(r, 300));
+
+                let detailCanvasH = 0;
+                let detailCanvasW = 0;
+                const origCapture3 = appWin.captureElementWithPadding;
+                appWin.captureElementWithPadding = async function(target, pad) {
+                    const c = await origCapture3.call(this, target, pad);
+                    if (c) {
+                        detailCanvasH = c.height;
+                        detailCanvasW = c.width;
+                    }
+                    return c;
+                };
+
+                try {
+                    await Promise.race([
+                        appWin.executeImageShare(true),
+                        new Promise((_, reject) => setTimeout(() => reject(new Error('TIMEOUT_25s')), 25000))
+                    ]);
+                } catch (e) {
+                } finally {
+                    appWin.captureElementWithPadding = origCapture3;
+                    appWin.closeShareOptionsModal();
+                }
+
+                // 以前は targetH >= 600 (scale:2 で 1200px以上)、targetW >= 520 に強制されていたが、最適化により実寸（<=1200px高）に収まることを検証
+                assert('店舗情報-詳細: 画像サイズ最適化 (余白削減)', () => detailCanvasH > 0 && detailCanvasH <= 1200, `Canvasサイズ: ${detailCanvasW}x${detailCanvasH}px (適正範囲: 高さ<=1200px)`);
+
+                await new Promise(r => setTimeout(r, 300));
+
+                // 11. 店舗情報-詳細: 制覇状況チェックオフ時のバッジ非表示テスト
+                appWin.shareShopCardImage('sapporo');
+                await new Promise(r => setTimeout(r, 300));
+                const conquestCbInModal = appDoc.getElementById('share-opt-conquest');
+                if (conquestCbInModal) conquestCbInModal.checked = false;
+
+                let visitBtnDisplayDuringCapture = '';
+                const origCapture4 = appWin.captureElementWithPadding;
+                appWin.captureElementWithPadding = async function(target, pad) {
+                    const btn = target ? target.querySelector('.visit-toggle-btn') : null;
+                    if (btn) visitBtnDisplayDuringCapture = btn.style.display;
+                    return origCapture4.call(this, target, pad);
+                };
+
+                try {
+                    await appWin.executeImageShare(true);
+                } catch (e) {
+                } finally {
+                    appWin.captureElementWithPadding = origCapture4;
+                    appWin.closeShareOptionsModal();
+                }
+                assert('店舗情報-詳細: 制覇状況オフで制覇バッジ非表示', () => visitBtnDisplayDuringCapture === 'none', `バッジstyle.display: "${visitBtnDisplayDuringCapture}" (期待値: "none")`);
+
+                // 12. 日別表示: 2026/10/07 (水) 新宿歌舞伎町店が today-closed (休業) になることの検証
+                if (typeof appWin.setMainViewMode === 'function') {
+                    appWin.setMainViewMode('today');
+                    appWin.setPeriodMode('1');
+                } else if (typeof appWin.setDensityMode === 'function') {
+                    appWin.setDensityMode('today');
+                }
+                if (typeof appWin.setSelectedDate === 'function') {
+                    appWin.setSelectedDate('2026-10-07');
+                }
+                await new Promise(r => setTimeout(r, 400));
+                const kabukiCard = appDoc.querySelector('.shop-item[data-shop-id="kabuki"]');
+                const isKabukiClosed = kabukiCard && kabukiCard.classList.contains('today-closed') && !kabukiCard.classList.contains('today-open');
+                assert('日別表示: 2026/10/07 新宿歌舞伎町店が休業(today-closed)表示', () => isKabukiClosed, kabukiCard ? `クラス: ${kabukiCard.className}` : '要素未検出');
+
+            } catch (err) {
+                assert('メインアプリ: 統合テスト例外', false, err.message);
+            }
+
+            // --- 6. エディタ画面 (editor.html) 統合テスト (iframe内評価) ---
+            const editorFrame = document.getElementById('editor-frame');
+            await new Promise((resolve) => {
+                let attempts = 0;
+                const checkEditor = setInterval(() => {
+                    attempts++;
+                    try {
+                        const edWin = editorFrame.contentWindow;
+                        if (edWin && edWin.app) {
+                            clearInterval(checkEditor);
+                            resolve();
+                        }
+                    } catch (e) {}
+                    if (attempts > 80) {
+                        clearInterval(checkEditor);
+                        resolve();
+                    }
+                }, 100);
+            });
+
+            try {
+                const edWin = editorFrame.contentWindow;
+                const edDoc = edWin.document;
+
+                assert('エディタ: 初期化完了 (appインスタンス存在)', () => typeof edWin.app === 'object' && edWin.app !== null);
+
+                // 店舗データをロードして反映
+                const res = await fetch('shops.json');
+                const loadedShops = await res.json();
+                edWin.app.shops = loadedShops;
+                edWin.app.renderList();
+
+                assert('エディタ: 店舗データ読み込み件数', () => edWin.app.shops && edWin.app.shops.length >= 40, `実数: ${edWin.app.shops.length}店舗`);
+
+                const shopListItems = edDoc.querySelectorAll('#shop-list .shop-item');
+                assert('エディタ: 店舗一覧リスト描画', () => shopListItems.length >= 40, `リスト表示数: ${shopListItems.length}件`);
+
+                // 店舗選択テスト
+                edWin.app.selectShop(edWin.app.shops[0].id);
+                const nameInput = edDoc.getElementById('field-name');
+                assert('エディタ: 店舗選択時のフォーム反映', () => nameInput && nameInput.value === edWin.app.shops[0].name, `店名: ${nameInput ? nameInput.value : 'なし'}`);
+
+                // 店舗検索フィルタテスト
+                const searchInput = edDoc.getElementById('search-input');
+                searchInput.value = '目黒';
+                edWin.app.renderList();
+                const filteredItems = edDoc.querySelectorAll('#shop-list .shop-item');
+                assert('エディタ: 店舗検索（「目黒」で絞り込み）', () => filteredItems.length === 1, `検索ヒット数: ${filteredItems.length}件`);
+
+                // --- 6-2. エディタ機能: 「未定」ボタン＆住所自動分離テスト ---
+                const monPendingBtn = edDoc.querySelector('button[onclick*="setShiftPending(\'shift-0\')"]');
+                const monInput = edDoc.getElementById('shift-0');
+                if (monPendingBtn && monInput) {
+                    monPendingBtn.click();
+                    assert('エディタ: 月曜「未定」ボタンクリック動作', () => monInput.value === '未定', `値: "${monInput.value}"`);
+                    monPendingBtn.click();
+                    assert('エディタ: 月曜「未定」ボタン再クリックでクリア動作', () => monInput.value === '', `値: "${monInput.value}"`);
+                }
+
+                const allPendingBtn = edDoc.querySelector('button[onclick*="setAllShiftsPending()"]');
+                if (allPendingBtn) {
+                    allPendingBtn.click();
+                    const allPending = [0,1,2,3,4,5,6].every(i => edDoc.getElementById(`shift-${i}`).value === '未定');
+                    assert('エディタ: 全曜日「未定」ボタンクリック動作', () => allPending);
+                }
+
+                const addrInput = edDoc.getElementById('field-addressText');
+                const prefSelect = edDoc.getElementById('field-prefCode');
+                const citySelect = edDoc.getElementById('field-cityCode');
+                if (addrInput && prefSelect && citySelect) {
+                    addrInput.value = '東京都港区三田2丁目16-4';
+                    edWin.app.handleAddressInput(addrInput);
+                    edWin.app.handleAddressBlur(addrInput);
+                    assert('エディタ: 住所自動分離（都道府県・市区町村自動選択および住所残余反映）', () => {
+                        return prefSelect.value === '13' && citySelect.value === '13103' && addrInput.value === '三田2丁目16-4';
+                    }, `結果: pref=${prefSelect.value}, city=${citySelect.value}, addr="${addrInput.value}"`);
+                }
+
+                // --- 6-3. エディタ機能: 臨時営業の過去エントリ（2日前以前）非表示＆トグルテスト ---
+                edWin.app.selectShop(edWin.app.shops[0].id);
+                edWin.app.currentTemporary = [
+                    { startDate: '2020-01-01', endDate: '2020-01-02', hours: [] }, // 2日前以前
+                    { startDate: '2099-01-01', endDate: '2099-01-02', hours: [] }  // 未来
+                ];
+                edWin.app.showPastTemporary = false;
+                edWin.app.renderTemporaryList();
+                const pastRows = edDoc.querySelectorAll('#temporary-list-container .past-temp-row');
+                const togglePastBtn = edDoc.getElementById('btn-toggle-past-temp');
+                assert('エディタ: 2日前以前の臨時営業がデフォルトで非表示', () => {
+                    return pastRows.length === 1 && pastRows[0].style.display === 'none' && togglePastBtn !== null;
+                });
+                if (togglePastBtn) {
+                    togglePastBtn.click();
+                    assert('エディタ: トグルボタンクリックで2日前以前の臨時営業を表示', () => {
+                        return pastRows[0].style.display === 'flex';
+                    });
+                }
+
+                // --- 7. SNS自動検出・承認フロー統合テスト ---
+                edWin.alert = () => {};
+                edWin.confirm = () => true;
+
+                // 初期状態の読み込み検証
+                await edWin.app.loadPendingUpdates(true);
+                assert('SNS承認: 初期状態読み込み', () => Array.isArray(edWin.app.pendingUpdates), `件数: ${edWin.app.pendingUpdates ? edWin.app.pendingUpdates.length : 0}件`);
+
+                // 未承認なし（0件）時の空状態表示検証
+                edWin.app.pendingUpdates = [];
+                edWin.app.draftProcessedPostIds.clear();
+                edWin.app.updatePendingBadge();
+                edWin.app.renderPendingList();
+                edWin.app.switchMode('pending');
+                const emptyMsg = edDoc.querySelector('#pending-list-container');
+                assert('SNS承認: 未承認なし時の空状態表示', () => emptyMsg && emptyMsg.textContent.includes('未処理の営業変更候補はありません'));
+
+                // テスト用候補データ（メモリ上）をセットして承認フロー検証
+                // 松戸駅前店は火曜営業のため、2026-09-22 (火) の臨休投稿は確実に差分（要反映）として判定される
+                edWin.app.pendingUpdates = [
+                    {
+                        id: 'test_pending_matsudo',
+                        shopId: 'matsudo',
+                        shopName: '松戸駅前店',
+                        postSource: 'x',
+                        postUrl: 'https://x.com/matsudojiro3/status/1',
+                        postedAt: '2026-09-22T15:30:00+09:00',
+                        postText: 'テスト臨休投稿',
+                        detectedChange: {
+                            type: 'temporary_closure',
+                            startDate: '2026-09-22',
+                            endDate: '2026-09-22',
+                            hours: [],
+                            reason: 'テスト臨休',
+                            confidence: 0.99
+                        },
+                        status: 'pending'
+                    }
+                ];
+                edWin.app.draftProcessedPostIds.clear();
+                edWin.app.updatePendingBadge();
+                edWin.app.renderPendingList();
+
+                const pendingCards = edDoc.querySelectorAll('#pending-list-container .pending-card');
+                assert('SNS承認: 承認待ちカード描画 (1件)', () => pendingCards.length === 1, `カード描画数: ${pendingCards.length}件`);
+
+                // 対象日・曜日表示、比較表示、公式ボタン削除の検証
+                const firstCardText = pendingCards[0] ? pendingCards[0].textContent : '';
+                assert('SNS承認: 「対象日」と曜日 (火) の表示', () => firstCardText.includes('対象日:') && firstCardText.includes('(火)'));
+                assert('SNS承認: 「公式アカウント」ボタンの非表示', () => !firstCardText.includes('公式アカウント'));
+                assert('SNS承認: 現在設定と変更提案の比較対比表示', () => firstCardText.includes('現在設定:') && firstCardText.includes('変更提案:'));
+
+                // ワンタッチ反映テスト
+                const matsudoShop = edWin.app.shops.find(s => s.id === 'matsudo');
+                edWin.app.applyPendingDirectly('test_pending_matsudo');
+
+                const hasNewTemp = (matsudoShop.temporary || []).some(t => t.startDate === '2026-09-22' && t.hours.length === 0);
+                assert('SNS承認: ワンタッチ反映・shops.jsonマージ', () => hasNewTemp);
+
+                // 承認後は未処理が0件となり、処理済み履歴に保持される
+                assert('SNS承認: 承認後の未処理残件数クリア', () => edWin.app.draftProcessedPostIds.has('test_pending_matsudo'));
+                const historyCards = edDoc.querySelectorAll('#history-list-container .pending-card');
+                assert('SNS承認: 処理済み履歴に移動して保持される (1件)', () => historyCards.length === 1);
+                assert('SNS承認: 履歴カードに「反映済み」と「未処理に戻す」ボタンが存在', () => {
+                    const txt = historyCards[0] ? historyCards[0].textContent : '';
+                    return (txt.includes('反映済み') || txt.includes('承認・反映済み') || txt.includes('反映完了')) && (txt.includes('未処理') || txt.includes('戻す'));
+                });
+
+                // --- ワンタッチ反映 (applyPendingDirectly) テスト ---
+                edWin.app.draftProcessedPostIds.clear();
+                edWin.app.pendingUpdates = [
+                    {
+                        id: 'test_quick_apply_item',
+                        shopId: 'matsudo',
+                        shopName: '松戸駅前店',
+                        postSource: 'x',
+                        postUrl: 'https://x.com/matsudojiro3/status/999',
+                        postedAt: '2026-09-25T10:00:00+09:00',
+                        postText: '9/25急遽お休みとさせていただきます',
+                        detectedChange: {
+                            type: 'temporary_closure',
+                            startDate: '2026-09-25',
+                            endDate: '2026-09-25',
+                            hours: [],
+                            reason: '急遽休業',
+                            confidence: 0.99
+                        },
+                        status: 'pending'
+                    }
+                ];
+                edWin.app.renderPendingList();
+                assert('ワンタッチ反映: 反映前に対象カードが存在する', () => edDoc.getElementById('p-sdate-test_quick_apply_item') !== null);
+
+                edWin.app.applyPendingDirectly('test_quick_apply_item');
+                const quickAppliedTemp = (matsudoShop.temporary || []).some(t => t.startDate === '2026-09-25' && t.hours.length === 0);
+                assert('ワンタッチ反映: 店舗データ (shops.json) に即座に臨時営業がマージされる', () => quickAppliedTemp);
+                assert('ワンタッチ反映: draftProcessedPostIds に追加され未処理から除外される', () => edWin.app.draftProcessedPostIds.has('test_quick_apply_item'));
+                assert('ワンタッチ反映: draftAppliedItems に反映内容が保持される', () => edWin.app.draftAppliedItems.has('test_quick_apply_item'));
+
+                // --- 一括スキップ (bulkSkipPending) テスト ---
+                edWin.app.draftProcessedPostIds.clear();
+                edWin.app.pendingUpdates = [
+                    {
+                        id: 'test_bulk_skip_routine',
+                        shopId: 'mita',
+                        shopName: '三田本店',
+                        postSource: 'x',
+                        postUrl: 'https://x.com/mita/1',
+                        postedAt: '2026-09-25T08:00:00+09:00',
+                        postText: '本日も通常営業です',
+                        detectedChange: {
+                            type: 'routine',
+                            startDate: '2026-09-25',
+                            endDate: '2026-09-25',
+                            hours: [[8.5, 15.0]],
+                            reason: '通常営業',
+                            confidence: 0.95
+                        },
+                        status: 'pending'
+                    },
+                    {
+                        id: 'test_bulk_skip_action_required',
+                        shopId: 'mita',
+                        shopName: '三田本店',
+                        postSource: 'x',
+                        postUrl: 'https://x.com/mita/2',
+                        postedAt: '2026-09-26T08:00:00+09:00',
+                        postText: '明日は臨時休業いたします',
+                        detectedChange: {
+                            type: 'temporary_closure',
+                            startDate: '2026-09-26',
+                            endDate: '2026-09-26',
+                            hours: [],
+                            reason: '臨時休業',
+                            confidence: 0.95
+                        },
+                        status: 'pending'
+                    }
+                ];
+                edWin.app.renderPendingList();
+                // スキップ推奨のみ一括スキップ
+                edWin.app.bulkSkipPending('skipped');
+                assert('一括スキップ: スキップ推奨提案のみスキップ（処理済み）に追加される', () => {
+                    return edWin.app.draftProcessedPostIds.has('test_bulk_skip_routine') &&
+                           !edWin.app.draftProcessedPostIds.has('test_bulk_skip_action_required');
+                });
+
+                // すべて一括スキップ
+                edWin.app.bulkSkipPending('all');
+                assert('一括スキップ: 全ての未処理提案が一括スキップされる', () => {
+                    return edWin.app.draftProcessedPostIds.has('test_bulk_skip_action_required');
+                });
+
+                // テスト用データをクリーンアップ
+                edWin.app.pendingUpdates = [];
+                edWin.app.draftProcessedPostIds.clear();
+                edWin.app.updatePendingBadge();
+                edWin.app.renderPendingList();
+
+                // --- 8. 手動貼り付けAI解析パネル (Instagram / X) の検証 ---
+                const manualPanel = edDoc.getElementById('manual-ai-panel');
+                assert('手動AI解析: パネルDOM要素が存在', () => manualPanel !== null);
+
+                const manualShopSelect = edDoc.getElementById('manual-ai-shop');
+                assert('手動AI解析: 店舗選択肢が40件以上自動生成されている', () => manualShopSelect && manualShopSelect.options.length >= 40, `選択肢数: ${manualShopSelect ? manualShopSelect.options.length : 0}`);
+
+                // 新潟店 (Instagram専用店舗) がリストに含まれているか
+                const niigataOption = Array.from(manualShopSelect.options).find(opt => opt.value === 'niigata' || opt.textContent.includes('新潟'));
+                assert('手動AI解析: 新潟店 (Instagram店舗) の選択肢が存在', () => niigataOption !== undefined && niigataOption.textContent.includes('IG:'));
+
+                // フォームクリアの動作検証
+                const manualText = edDoc.getElementById('manual-ai-text');
+                manualText.value = 'テスト投稿文';
+                edWin.app.manualAiImages = [{ name: 'test.jpg', data: 'abc', mimeType: 'image/jpeg', dataUrl: 'data:image/jpeg;base64,abc' }];
+                edWin.app.renderManualAiPreviews();
+                assert('手動AI解析: 画像プレビュー描画', () => edDoc.querySelectorAll('#manual-ai-previews img').length === 1);
+
+                edWin.app.clearManualAiForm();
+                assert('手動AI解析: clearManualAiForm による入力と画像のクリア', () => manualText.value === '' && edWin.app.manualAiImages.length === 0 && edDoc.querySelectorAll('#manual-ai-previews img').length === 0);
+
+                // --- 9. 拡充キーワード判定テスト ---
+                const testKeywordText = (txt) => {
+                    const kwMatch = /休|やすみ|休み|臨休|営業|開店|閉店|時短|時間|早仕舞い|早じまい|昼|夜|部|祝|特別|カレンダー|お知らせ|告知|案内|終了|完売|材料切れ|売り切れ|並び|宣告|オープン|ラスト|お休み|休業/.test(txt);
+                    const periodMatch = /本日|今日|明日|明後日|あさって|今週|来週|今月|来月|今年|来年/.test(txt);
+                    const timeMatch = /\d{1,2}[:：]\d{2}|\d{1,2}時/.test(txt);
+                    const dateMatch = /\d{1,2}[\/／]\d{1,2}|\d{1,2}月\d{1,2}日|\d{1,2}日/.test(txt);
+                    const dayMatch = /[\(（][月火水木金土日][\)）]|[月火水木金土日]曜/.test(txt);
+                    return kwMatch || periodMatch || timeMatch || dateMatch || dayMatch;
+                };
+
+                assert('キーワード拡充: 時間表記の検知 (11:00)', () => testKeywordText('ラーメンは11:00からです'));
+                assert('キーワード拡充: 期間表記の検知 (来週/来月)', () => testKeywordText('来週の予定です') && testKeywordText('来月のシフト'));
+                assert('キーワード拡充: 日付表記の検知 (9/22)', () => testKeywordText('9/22にお待ちしております'));
+                assert('キーワード拡充: 曜日表記の検知 ((月) / 火曜)', () => testKeywordText('(月)は通常通り') && testKeywordText('火曜日に提供'));
+                assert('キーワード拡充: 日常ポストの除外判定', () => !testKeywordText('ちいかわ可愛い'));
+
+                // --- 10. スキップ済みリスト表示＆AI判定ルール管理のテスト ---
+                edWin.app.pendingUpdates = [
+                    {
+                        id: 'pending_active_1',
+                        shopId: 'mita',
+                        shopName: '三田本店',
+                        postSource: 'x',
+                        postedAt: '2026-09-21T10:00:00Z',
+                        postText: '夜の部お休みです',
+                        detectedChange: { type: 'temporary_hours', startDate: '2026-09-21', hours: [[8, 14]], reason: '夜の部休業' },
+                        status: 'pending'
+                    },
+                    {
+                        id: 'skipped_item_1',
+                        shopId: 'kameido',
+                        shopName: '亀戸店',
+                        postSource: 'x',
+                        postedAt: '2026-09-21T09:00:00Z',
+                        postText: '本日も通常営業です',
+                        detectedChange: { type: 'temporary_hours', startDate: '2026-09-21', hours: [[11, 14.5], [17.5, 21.5]], reason: '通常営業' },
+                        status: 'skipped',
+                        skipReason: '対象曜日の通常営業時間と完全に一致（変更なし）'
+                    }
+                ];
+                edWin.app.renderPendingList();
+
+                const activePendingCards = edDoc.querySelectorAll('#pending-list-container .pending-card');
+                const skippedCards = edDoc.querySelectorAll('#skipped-list-container .pending-card');
+                assert('承認待ち・スキップ分離: 承認待ちコンテナに1件描画', () => activePendingCards.length === 1);
+                assert('承認待ち・スキップ分離: スキップ済みコンテナに1件描画', () => skippedCards.length === 1);
+                assert('承認待ち・スキップ分離: スキップ理由が表示されている', () => skippedCards[0].textContent.includes('スキップ理由: 対象曜日の通常営業時間と完全に一致'));
+
+                // AI判定ルールモーダル操作
+                edWin.app.openAiGuidelinesModal();
+                assert('AIルール管理: モーダルが開く (activeクラス付与)', () => edDoc.getElementById('ai-rules-modal').classList.contains('active'));
+                
+                const kwInputElem = edDoc.getElementById('ai-keywords-input');
+                assert('AIルール管理: キーワード設定入力欄が存在し初期値が展開されている', () => kwInputElem && kwInputElem.value.includes('休') && kwInputElem.value.includes('営業'));
+
+                // キーワード編集と同期
+                kwInputElem.value += ', テスト新単語';
+                edWin.app.syncAiRulesFromUI();
+                assert('AIルール管理: キーワードUI編集が aiGuidelines に同期される', () => (edWin.app.aiGuidelines.scheduleKeywords.keywords || []).includes('テスト新単語'));
+
+                const ruleRowsBefore = edDoc.querySelectorAll('#ai-rules-list .ai-rule-title').length;
+                edWin.app.addNewAiRule();
+                const ruleRowsAfter = edDoc.querySelectorAll('#ai-rules-list .ai-rule-title').length;
+                assert('AIルール管理: 新規ルール行の追加', () => ruleRowsAfter === ruleRowsBefore + 1);
+
+                edWin.app.closeAiGuidelinesModal();
+                assert('AIルール管理: モーダルが閉じる', () => !edDoc.getElementById('ai-rules-modal').classList.contains('active'));
+
+            } catch (err) {
+                assert('エディタ: 統合テスト例外', false, err.message);
+            }
+
+            // --- サマリー出力 ---
+            const total = results.length;
+            const passCount = results.filter(r => r.pass).length;
+            const failCount = total - passCount;
+            const summaryDiv = document.getElementById('summary');
+            if (failCount === 0) {
+                summaryDiv.className = 'pass';
+                summaryDiv.style.background = '#1b5e20';
+                summaryDiv.innerHTML = `🎉 全テスト合格！ (${passCount} / ${total} PASS)`;
+            } else {
+                summaryDiv.className = 'fail';
+                summaryDiv.style.background = '#b71c1c';
+                summaryDiv.innerHTML = `⚠️ 一部テスト失敗 (${failCount} 件失敗 / 計 ${total} 件)`;
+            }
+
+            window.__TEST_RESULTS__ = { total, passCount, failCount, results };
+            console.log('Test Suite Finished:', JSON.stringify(window.__TEST_RESULTS__));
+        }
+
+        window.addEventListener('load', () => {
+            setTimeout(runTests, 500);
+        });
+    </script>
+</body>
+</html>

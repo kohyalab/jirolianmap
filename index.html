@@ -2250,6 +2250,17 @@
             return false;
         }
 
+        function isConquestTarget(shop, targetDate = new Date()) {
+            if (!shop) return false;
+            // 開店日未定店舗は除外
+            if (!shop.openedAt || !shop.openedAt.trim()) return false;
+            // オープン前（開店日前日まで）は除外
+            if (isPreOpen(shop, targetDate)) return false;
+            // 閉店済み店舗は除外
+            if (isClosedShopExpired(shop, targetDate)) return false;
+            return true;
+        }
+
         function areShiftsEqual(shiftsA, shiftsB) {
             if (shiftsA === '未定' || shiftsB === '未定') {
                 return shiftsA === shiftsB;
@@ -3582,8 +3593,9 @@
 
                         let conquestHtml = '';
                         if (showConquest) {
-                            const totalCount = shops.length;
-                            const visitedCount = shops.filter(s => visitedState[s.id]).length;
+                            const conquestTargetShops = shops.filter(s => isConquestTarget(s));
+                            const totalCount = conquestTargetShops.length;
+                            const visitedCount = conquestTargetShops.filter(s => visitedState[s.id]).length;
                             const percent = totalCount > 0 ? Math.round((visitedCount / totalCount) * 100) : 0;
                             conquestHtml = `
                                 <div style="display:inline-flex; align-items:center; justify-content:flex-end; gap:8px; background:#1a1a1a; border:1px solid #333; border-radius:4px; padding:4px 8px; font-size:0.75rem; color:#ddd; width:fit-content; margin-left:auto; box-sizing:border-box; flex-shrink:0;">
@@ -3989,8 +4001,9 @@
         }
 
         function updateStats() {
-            const total = shops.length;
-            const visitedCount = shops.filter(s => visitedState[s.id]).length;
+            const conquestTargetShops = shops.filter(s => isConquestTarget(s));
+            const total = conquestTargetShops.length;
+            const visitedCount = conquestTargetShops.filter(s => visitedState[s.id]).length;
             const percent = total > 0 ? Math.round((visitedCount / total) * 100) : 0;
 
             document.getElementById('total-count').textContent = total;
@@ -4922,6 +4935,16 @@
             }
 
             isAppInitialized = true;
+            window.isAppInitialized = true;
+            window.shops = shops;
+            window.visitedState = visitedState;
+            window.openShareOptionsModal = openShareOptionsModal;
+            window.closeShareOptionsModal = closeShareOptionsModal;
+            window.setListSubMode = setListSubMode;
+            window.shareFullGridImage = shareFullGridImage;
+            window.executeImageShare = executeImageShare;
+            window.toggleVisit = toggleVisit;
+            window.onSearchInput = onSearchInput;
             setTimeout(() => {
                 map.invalidateSize();
                 hideLoadingOverlay();

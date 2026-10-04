@@ -231,6 +231,17 @@
             return false;
         },
 
+        /**
+         * 制覇店舗カウント対象判定
+         * 開店日より前（開店日前日まで・開店日未定）および閉店済み店舗はカウント除外。開店日以降のみカウント対象。
+         */
+        isConquestTarget(shop, targetDate = new Date()) {
+            if (!shop || !shop.openedAt || !shop.openedAt.trim()) return false;
+            if (this.isPreOpen(shop, targetDate)) return false;
+            if (this.isClosedShopExpired(shop, targetDate)) return false;
+            return true;
+        },
+
         areShiftsEqual(shiftsA, shiftsB) {
             if (shiftsA === '未定' || shiftsB === '未定') {
                 return shiftsA === shiftsB;

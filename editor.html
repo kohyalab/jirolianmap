@@ -53,7 +53,7 @@
                 <label class="checkbox-label"><input type="checkbox" id="filter-closed" onchange="app.renderList()"> 閉店</label>
             </div>
             <div class="search-box">
-                <input type="text" id="search-input" placeholder="店舗名・IDで検索...">
+                <input type="search" id="search-input" name="jiro_shop_search_query" placeholder="店舗名・IDで検索..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" data-form-type="other" data-1p-ignore data-lpignore="true">
             </div>
             <div class="shop-count-header" id="shop-count-header">全 0 件</div>
             <div class="shop-list" id="shop-list"></div>
@@ -447,24 +447,24 @@
         </div>
         <div class="form-group">
             <label>GitHub Personal Access Token (PAT)</label>
-            <input type="password" id="gh-token" placeholder="github_pat_xxx または ghp_xxx">
+            <input type="password" id="gh-token" placeholder="github_pat_xxx または ghp_xxx" autocomplete="new-password">
             <div class="hint">権限: `repo` スコープが必要です。一度入力するとブラウザに安全に保持されます。</div>
         </div>
         <div class="form-group">
             <label>リポジトリ所有者名 (Owner / Username)</label>
-            <input type="text" id="gh-owner" placeholder="例: octocat">
+            <input type="text" id="gh-owner" placeholder="例: octocat" autocomplete="off">
         </div>
         <div class="form-group">
             <label>リポジトリ名 (Repo Name)</label>
-            <input type="text" id="gh-repo" placeholder="例: my-ramen-app">
+            <input type="text" id="gh-repo" placeholder="例: my-ramen-app" autocomplete="off">
         </div>
         <div class="form-group">
             <label>ブランチ名 (Branch)</label>
-            <input type="text" id="gh-branch" placeholder="main">
+            <input type="text" id="gh-branch" placeholder="main" autocomplete="off">
         </div>
         <div class="form-group">
             <label>ファイルパス (File Path)</label>
-            <input type="text" id="gh-path" placeholder="public/shops.json または shops.json">
+            <input type="text" id="gh-path" placeholder="public/shops.json または shops.json" autocomplete="off">
         </div>
         <div class="form-group" style="border-top: 1px solid #333; padding-top: 10px; margin-top: 10px;">
             <label style="color: var(--jiro-yellow); display:flex; justify-content:space-between; align-items:center;">
@@ -472,7 +472,7 @@
                 <span style="font-size:0.75rem; color:#aaa; font-weight:normal;">AI営業判定・画像解析用</span>
             </label>
             <div style="display:flex; gap:6px;">
-                <input type="password" id="gh-gemini-key" placeholder="AIzaSy...">
+                <input type="password" id="gh-gemini-key" placeholder="AIzaSy..." autocomplete="new-password">
                 <button type="button" class="btn btn-sm" id="btn-toggle-gemini-key" onclick="app.toggleGeminiKeyVisibility()" style="padding: 4px 8px; font-size:0.75rem;">表示</button>
             </div>
             <div class="hint">ブラウザローカル（localStorage）に安全に保存され、手動貼り付けAI解析等に利用されます。</div>
