@@ -1685,6 +1685,11 @@
                                         onchange="render()">
                                     <span class="color-dot bg-closed"></span> 営業時間外
                                 </label>
+                                <label class="chip-label" id="filter-chip-preopen" style="display: none;">
+                                    <input type="checkbox" name="open-filter" value="preopen" checked
+                                        onchange="render()">
+                                    <span class="color-dot bg-preopen"></span> オープン予定
+                                </label>
                             </div>
                         </fieldset>
                     </div>
@@ -4276,7 +4281,7 @@
                 const isVisited = !!visitedState[shop.id];
                 if (!selectedVisit.includes(isVisited ? 'visited' : 'unvisited')) return false;
                 const status = getBusinessStatus(shop);
-                let statusKey = status.type === 'preopen' ? 'closed' : status.type;
+                let statusKey = status.type;
                 if (!selectedOpen.includes(statusKey)) return false;
 
                 const fullAddress = (typeof LG_CODES !== 'undefined' ? LG_CODES.getShopFullAddress(shop) : `${shop.addressText || ''}`).toLowerCase();
@@ -4327,6 +4332,15 @@
             const fullGridShareBtn = document.getElementById('full-grid-share-btn');
             if (fullGridShareBtn) {
                 fullGridShareBtn.style.display = (listSubMode === 'minimal' || listSubMode === 'today') ? 'inline-flex' : 'none';
+            }
+
+            const preOpenChip = document.getElementById('filter-chip-preopen');
+            if (preOpenChip) {
+                const hasPreOpen = shops.some(s => {
+                    const st = getBusinessStatus(s);
+                    return st && st.type === 'preopen';
+                });
+                preOpenChip.style.display = hasPreOpen ? 'inline-flex' : 'none';
             }
 
             const rawSearchQuery = document.getElementById('search-input').value.toLowerCase().trim();
@@ -4435,7 +4449,7 @@
                     return;
                 }
 
-                let statusKey = currentStatus.type === 'preopen' ? 'closed' : currentStatus.type;
+                let statusKey = currentStatus.type;
                 if (!selectedOpen.includes(statusKey)) {
                     updateMarkerVisibility(shop.id, false);
                     return;

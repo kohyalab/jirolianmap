@@ -1935,15 +1935,25 @@ const LG_CODES = {
 
     // 都道府県名 + 市区町村名 を取得
     getPrefAndCityName(prefCodeOrShop, cityCodeArg) {
+        let prefCode = '';
         let cityCode = '';
         if (typeof prefCodeOrShop === 'object' && prefCodeOrShop !== null) {
             cityCode = prefCodeOrShop.cityCode || '';
+            prefCode = prefCodeOrShop.prefCode || '';
         } else if (cityCodeArg) {
+            prefCode = prefCodeOrShop || '';
             cityCode = cityCodeArg;
-        } else if (typeof prefCodeOrShop === 'string' && prefCodeOrShop.length >= 5) {
-            cityCode = prefCodeOrShop;
+        } else if (typeof prefCodeOrShop === 'string') {
+            if (prefCodeOrShop.length === 2) {
+                prefCode = prefCodeOrShop;
+            } else if (prefCodeOrShop.length >= 5) {
+                cityCode = prefCodeOrShop;
+            }
         }
-        const prefName = this.getPrefNameByCityCode(cityCode);
+        if (!prefCode && cityCode) {
+            prefCode = this.getPrefCodeByCityCode(cityCode);
+        }
+        const prefName = (prefCode && this.prefs[prefCode]) ? this.prefs[prefCode] : this.getPrefNameByCityCode(cityCode);
         const cityName = this.getCityName(cityCode);
         return `${prefName}${cityName}`;
     },
