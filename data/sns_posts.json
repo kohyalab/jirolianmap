@@ -6214,8 +6214,8 @@
       "reason": "スタッフ体調不良のため",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-04T03:55:13.167Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: スタッフ体調不良のため"
   },
