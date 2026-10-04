@@ -1127,6 +1127,19 @@
         "startDate": "2026-09-21",
         "endDate": "2026-09-21",
         "hours": []
+      },
+      {
+        "startDate": "2026-10-04",
+        "endDate": "2026-10-04",
+        "hours": [
+          [
+            17,
+            21
+          ]
+        ],
+        "reason": "スタッフ体調不良のため",
+        "sourceUrl": "https://x.com/jiro_kame/status/2106547636115481065",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
