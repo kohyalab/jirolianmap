@@ -3964,16 +3964,14 @@
         "_isAiImported": true
       },
       {
-        "startDate": "2026-10-04",
-        "endDate": "2026-10-04",
-        "hours": [
-          [
-            11,
-            16
-          ]
-        ],
-        "sourceUrl": "https://x.com/26shinshindaita/status/2104090999698133202",
-        "_isAiImported": true
+        "startDate": "2026-10-06",
+        "endDate": "2026-10-06",
+        "hours": []
+      },
+      {
+        "startDate": "2026-10-08",
+        "endDate": "2026-10-09",
+        "hours": []
       }
     ],
     "shiftsByDay": {
