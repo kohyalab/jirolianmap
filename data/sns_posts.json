@@ -6191,5 +6191,61 @@
     "processedAt": null,
     "aiStatus": "match",
     "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_kameido_20261004_0_2106547636115481065",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2106547636115481065",
+    "postedAt": "2026-10-04T00:51:08.000Z",
+    "postText": "お世話になってます。今朝になってスタッフが体調不良になってしまったため本日4日(日)の昼の部はお休みさせていただきます。夜の部は通常通り営業します。急で申し訳ありません、よろしくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-04",
+      "endDate": "2026-10-04",
+      "hours": [
+        [
+          17,
+          21
+        ]
+      ],
+      "reason": "スタッフ体調不良のため",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: スタッフ体調不良のため"
+  },
+  {
+    "id": "sns_post_aizuwakamatsu_20261004_0_2106547111886283053",
+    "shopId": "aizuwakamatsu",
+    "shopName": "会津若松駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/aizu_jiro/status/2106547111886283053",
+    "postedAt": "2026-10-04T00:49:03.000Z",
+    "postText": "おはようございます。 本日10/4(日)11:00〜15:00 臨時営業いたします。 よろしくお願いいたしますm(__)m https://t.co/YzhQ4pr3iv",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-CFM5pXK7Bg89CtxipWkt71xFO-ZRbUDwPmo-_Pw6sVCKsY4BeXIo4NOJoAo7qPVXHb3s-Wpp_9jd6cz50W5vUcbEY_3a8wPOICu10xl2g5PiB2KtUbb9BxKdIekiTCA5P6WXlZ51MWyonbjyhnK4iA=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-10-04",
+      "endDate": "2026-10-04",
+      "hours": [
+        [
+          11,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
