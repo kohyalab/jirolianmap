@@ -404,12 +404,12 @@ async function runCrawler() {
             posts.push(...xPosts);
         }
 
-        // 新規かつ直近24時間以内の未処理投稿をフィルタリング
-        const oneDayAgo = Date.now() - (24 * 60 * 60 * 1000);
+        // 新規かつ直近7日以内の未処理投稿をフィルタリング（取りこぼし完全防止のため期間を余裕をもって設定）
+        const sevenDaysAgo = Date.now() - (7 * 24 * 60 * 60 * 1000);
         const newPosts = posts.filter(p => {
             if (processedSet.has(p.postId)) return false;
             const postTime = new Date(p.postedAt).getTime();
-            return isNaN(postTime) || postTime >= oneDayAgo;
+            return isNaN(postTime) || postTime >= sevenDaysAgo;
         });
 
         console.log(`  -> 新規投稿: ${newPosts.length}件`);
@@ -487,6 +487,34 @@ async function runCrawler() {
 
             // キーワードに合致、または画像がある投稿はすべてGemini解析の対象
             if (!apiKey) {
+                // APIキーが無い場合でも投稿を破棄せず未解析アイテムとして記録
+                const noKeyItem = {
+                    id: `sns_post_pending_${shop.id}_${post.postId}`,
+                    shopId: shop.id,
+                    shopName: shop.name,
+                    postSource: post.source,
+                    postUrl: post.postUrl,
+                    postedAt: post.postedAt,
+                    postText: post.text,
+                    mediaUrls: post.mediaUrls || [],
+                    detectedChange: {
+                        type: 'temporary_hours',
+                        startDate: post.postedAt.split('T')[0],
+                        endDate: post.postedAt.split('T')[0],
+                        hours: [],
+                        reason: '要確認（APIキー未設定）'
+                    },
+                    processed: false,
+                    processedAt: null,
+                    aiStatus: 'unresolved',
+                    aiReason: 'APIキー未設定のため手動確認待ち'
+                };
+                const existing = snsPosts.find(p => p.id === noKeyItem.id && p.processed);
+                if (!existing) {
+                    snsPosts = snsPosts.filter(p => p.id !== noKeyItem.id);
+                    snsPosts.push(noKeyItem);
+                }
+                processedSet.add(post.postId);
                 continue;
             }
 
@@ -560,12 +588,69 @@ async function runCrawler() {
                             console.log(`    ✨ 営業変更を検出！ (${idx + 1}/${analysis.changes.length}) [${change.type}] ${change.startDate}: ${change.reason || analysis.summary}`);
                         }
                     }
+                } else {
+                    // Gemini解析の結果、営業変更が検出されなかった場合（通常営業、雑談、告知以外の投稿など）
+                    console.log(`    ℹ️ 営業変更なし（通常営業・挨拶・その他と判定）: "${post.text.substring(0, 25).replace(/\n/g, ' ')}..."`);
+                    const noChangeItem = {
+                        id: `sns_post_routine_${shop.id}_${post.postId}`,
+                        shopId: shop.id,
+                        shopName: shop.name,
+                        postSource: post.source,
+                        postUrl: post.postUrl,
+                        postedAt: post.postedAt,
+                        postText: post.text,
+                        mediaUrls: post.mediaUrls || [],
+                        detectedChange: {
+                            type: 'routine',
+                            startDate: post.postedAt.split('T')[0],
+                            endDate: post.postedAt.split('T')[0],
+                            hours: [],
+                            reason: analysis?.summary || '営業変更なし（通常通り営業・雑談等）'
+                        },
+                        processed: false,
+                        processedAt: null,
+                        aiStatus: 'no_change',
+                        aiReason: analysis?.summary || '営業変更なし（通常通り営業・雑談等）'
+                    };
+                    const existing = snsPosts.find(p => p.id === noChangeItem.id && p.processed);
+                    if (!existing) {
+                        snsPosts = snsPosts.filter(p => p.id !== noChangeItem.id);
+                        snsPosts.push(noChangeItem);
+                    }
                 }
 
-                // 正常に解析が完了した場合のみ、処理済みキャッシュに追加
+                // 正常に解析・記録が完了した場合のみ、処理済みキャッシュに追加
                 processedSet.add(post.postId);
             } catch (err) {
                 console.error(`  ❌ Gemini解析エラー (Shop: ${shop.id}):`, err.message);
+                // エラー時でも新規投稿をドロップさせず、未解決アイテムとして sns_posts.json に記録して保護
+                const unresolvedItem = {
+                    id: `sns_post_unresolved_${shop.id}_${post.postId}`,
+                    shopId: shop.id,
+                    shopName: shop.name,
+                    postSource: post.source,
+                    postUrl: post.postUrl,
+                    postedAt: post.postedAt,
+                    postText: post.text,
+                    mediaUrls: post.mediaUrls || [],
+                    detectedChange: {
+                        type: 'temporary_hours',
+                        startDate: post.postedAt.split('T')[0],
+                        endDate: post.postedAt.split('T')[0],
+                        hours: [],
+                        reason: 'AI解析エラー（手動確認）'
+                    },
+                    processed: false,
+                    processedAt: null,
+                    aiStatus: 'unresolved',
+                    aiReason: `解析時エラー: ${err.message}`
+                };
+                const existing = snsPosts.find(p => p.id === unresolvedItem.id && p.processed);
+                if (!existing) {
+                    snsPosts = snsPosts.filter(p => p.id !== unresolvedItem.id);
+                    snsPosts.push(unresolvedItem);
+                }
+                processedSet.add(post.postId);
             }
 
             // APIレートリミット・負荷対策（3秒ウェイト）

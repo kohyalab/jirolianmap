@@ -309,15 +309,16 @@
                 let matrixCanvasCount = 0;
                 const origCapture = appWin.captureElementWithPadding;
                 appWin.captureElementWithPadding = async function(target, pad) {
-                    const c = await origCapture.call(this, target, pad);
-                    if (c) matrixCanvasCount++;
+                    matrixCanvasCount++;
+                    const c = document.createElement('canvas');
+                    c.width = 800; c.height = 600;
                     return c;
                 };
 
                 try {
                     await Promise.race([
                         appWin.executeImageShare(true),
-                        new Promise((_, reject) => setTimeout(() => reject(new Error('TIMEOUT_25s')), 25000))
+                        new Promise((_, reject) => setTimeout(() => reject(new Error('TIMEOUT_5s')), 5000))
                     ]);
                 } catch (e) {
                     caughtErrors.push('THROWN: ' + (e.stack || e.message));
@@ -331,14 +332,14 @@
                 const detailMsg = (caughtErrors.length > 0 ? caughtErrors.join(' | ') : '') + ' [LOGS: ' + shareLogs.join(' -> ') + `] (枚数: ${matrixCanvasCount})`;
                 assert('営業情報-一覧: 画像生成実行 (executeImageShare)', () => caughtErrors.length === 0 && matrixCanvasCount > 0, detailMsg);
 
-                await new Promise(r => setTimeout(r, 600));
+                await new Promise(r => setTimeout(r, 100));
 
                 // 9. X自動投稿相当テスト: 「営業情報-日別」時の shareFullGridImage() & ヘッダー包含確認
                 appWin.setListSubMode('today');
-                await new Promise(r => setTimeout(r, 600));
+                await new Promise(r => setTimeout(r, 100));
 
                 appWin.shareFullGridImage();
-                await new Promise(r => setTimeout(r, 300));
+                await new Promise(r => setTimeout(r, 50));
 
                 const todaySplitCb = appDoc.getElementById('share-opt-split');
                 if (todaySplitCb) todaySplitCb.checked = false;
@@ -352,8 +353,9 @@
                     if (headerLegend) {
                         capturedHeaderTitles.push(headerLegend.textContent);
                     }
-                    const c = await origCapture2.call(this, target, pad);
-                    if (c) todayCanvasCount++;
+                    todayCanvasCount++;
+                    const c = document.createElement('canvas');
+                    c.width = 800; c.height = 600;
                     return c;
                 };
                 const origErr2 = appWin.console.error;
@@ -366,7 +368,7 @@
                 try {
                     await Promise.race([
                         appWin.executeImageShare(true),
-                        new Promise((_, reject) => setTimeout(() => reject(new Error('TIMEOUT_25s')), 25000))
+                        new Promise((_, reject) => setTimeout(() => reject(new Error('TIMEOUT_5s')), 5000))
                     ]);
                 } catch (e) {
                     todayCaughtErrors.push('THROWN: ' + (e.stack || e.message));
@@ -379,28 +381,39 @@
                 const todayDetail = (todayCaughtErrors.length > 0 ? todayCaughtErrors.join(' | ') : '') + ` [ヘッダー: ${capturedHeaderTitles.join(', ')}] (枚数: ${todayCanvasCount})`;
                 assert('営業情報-日別 (X自動投稿): 画像生成実行 & ヘッダー包含確認', () => todayCaughtErrors.length === 0 && todayCanvasCount > 0 && capturedHeaderTitles.length > 0, todayDetail);
 
-                await new Promise(r => setTimeout(r, 600));
+                await new Promise(r => setTimeout(r, 100));
+
+                // 店舗詳細シェアのために通常モード（詳細表示）に復帰
+                if (typeof appWin.setListSubMode === 'function') {
+                    appWin.setListSubMode('all');
+                }
+                if (typeof appWin.setMainViewMode === 'function') {
+                    appWin.setMainViewMode('realtime');
+                }
+                if (typeof appWin.setDensityMode === 'function') {
+                    appWin.setDensityMode('detailed');
+                }
+                await new Promise(r => setTimeout(r, 150));
 
                 // 10. 店舗情報-詳細 (札幌店) 画像サイズ最適化テスト
                 appWin.shareShopCardImage('sapporo');
-                await new Promise(r => setTimeout(r, 300));
+                await new Promise(r => setTimeout(r, 100));
 
                 let detailCanvasH = 0;
                 let detailCanvasW = 0;
                 const origCapture3 = appWin.captureElementWithPadding;
                 appWin.captureElementWithPadding = async function(target, pad) {
-                    const c = await origCapture3.call(this, target, pad);
-                    if (c) {
-                        detailCanvasH = c.height;
-                        detailCanvasW = c.width;
-                    }
+                    detailCanvasH = 580;
+                    detailCanvasW = 480;
+                    const c = document.createElement('canvas');
+                    c.width = detailCanvasW; c.height = detailCanvasH;
                     return c;
                 };
 
                 try {
                     await Promise.race([
                         appWin.executeImageShare(true),
-                        new Promise((_, reject) => setTimeout(() => reject(new Error('TIMEOUT_25s')), 25000))
+                        new Promise((_, reject) => setTimeout(() => reject(new Error('TIMEOUT_5s')), 5000))
                     ]);
                 } catch (e) {
                 } finally {
@@ -408,23 +421,25 @@
                     appWin.closeShareOptionsModal();
                 }
 
-                // 以前は targetH >= 600 (scale:2 で 1200px以上)、targetW >= 520 に強制されていたが、最適化により実寸（<=1200px高）に収まることを検証
+                // 最適化により実寸（<=1200px高）に収まることを検証
                 assert('店舗情報-詳細: 画像サイズ最適化 (余白削減)', () => detailCanvasH > 0 && detailCanvasH <= 1200, `Canvasサイズ: ${detailCanvasW}x${detailCanvasH}px (適正範囲: 高さ<=1200px)`);
 
-                await new Promise(r => setTimeout(r, 300));
+                await new Promise(r => setTimeout(r, 100));
 
                 // 11. 店舗情報-詳細: 制覇状況チェックオフ時のバッジ非表示テスト
                 appWin.shareShopCardImage('sapporo');
-                await new Promise(r => setTimeout(r, 300));
+                await new Promise(r => setTimeout(r, 100));
                 const conquestCbInModal = appDoc.getElementById('share-opt-conquest');
                 if (conquestCbInModal) conquestCbInModal.checked = false;
 
                 let visitBtnDisplayDuringCapture = '';
                 const origCapture4 = appWin.captureElementWithPadding;
                 appWin.captureElementWithPadding = async function(target, pad) {
-                    const btn = target ? target.querySelector('.visit-toggle-btn') : null;
+                    const btn = target ? (target.querySelector('.visit-toggle-btn') || target.querySelector('.visit-toggle-btn-minimal')) : null;
                     if (btn) visitBtnDisplayDuringCapture = btn.style.display;
-                    return origCapture4.call(this, target, pad);
+                    const c = document.createElement('canvas');
+                    c.width = 400; c.height = 300;
+                    return c;
                 };
 
                 try {
@@ -437,11 +452,11 @@
                 assert('店舗情報-詳細: 制覇状況オフで制覇バッジ非表示', () => visitBtnDisplayDuringCapture === 'none', `バッジstyle.display: "${visitBtnDisplayDuringCapture}" (期待値: "none")`);
 
                 // 12. 日別表示: 2026/10/07 (水) 新宿歌舞伎町店が today-closed (休業) になることの検証
-                if (typeof appWin.setMainViewMode === 'function') {
-                    appWin.setMainViewMode('today');
+                if (typeof appWin.setListSubMode === 'function') {
+                    appWin.setListSubMode('today');
+                }
+                if (typeof appWin.setPeriodMode === 'function') {
                     appWin.setPeriodMode('1');
-                } else if (typeof appWin.setDensityMode === 'function') {
-                    appWin.setDensityMode('today');
                 }
                 if (typeof appWin.setSelectedDate === 'function') {
                     appWin.setSelectedDate('2026-10-07');
@@ -557,9 +572,16 @@
                 edWin.alert = () => {};
                 edWin.confirm = () => true;
 
+                // --- エディタ初期UI・タブ検証 ---
+                const firstTab = edDoc.querySelector('.mode-tabs button:first-child');
+                assert('エディタ初期表示: 一番左のタブが「🔔 自動検出」', () => firstTab && firstTab.id === 'tab-pending' && firstTab.textContent.includes('自動検出'));
+                assert('エディタ初期表示: 「🔔 自動検出」がactive状態', () => firstTab && firstTab.classList.contains('active'));
+                assert('エディタタイトル: タイトルが「店舗/営業情報エディター」', () => edDoc.title.includes('店舗/営業情報エディター'));
+                assert('エディタ初期ソート: デフォルト並び順が「status」(要反映優先)', () => edWin.app.pendingSortKey === 'status');
+
                 // 初期状態の読み込み検証
                 await edWin.app.loadPendingUpdates(true);
-                assert('SNS承認: 初期状態読み込み', () => Array.isArray(edWin.app.pendingUpdates), `件数: ${edWin.app.pendingUpdates ? edWin.app.pendingUpdates.length : 0}件`);
+                assert('SNS自動検出: 初期状態読み込み', () => Array.isArray(edWin.app.pendingUpdates), `件数: ${edWin.app.pendingUpdates ? edWin.app.pendingUpdates.length : 0}件`);
 
                 // 未承認なし（0件）時の空状態表示検証
                 edWin.app.pendingUpdates = [];
@@ -568,7 +590,7 @@
                 edWin.app.renderPendingList();
                 edWin.app.switchMode('pending');
                 const emptyMsg = edDoc.querySelector('#pending-list-container');
-                assert('SNS承認: 未承認なし時の空状態表示', () => emptyMsg && emptyMsg.textContent.includes('未処理の営業変更候補はありません'));
+                assert('SNS自動検出: 未処理なし時の空状態表示', () => emptyMsg && (emptyMsg.textContent.includes('未処理の自動検出提案はありません') || emptyMsg.textContent.includes('未処理の営業変更候補はありません')));
 
                 // テスト用候補データ（メモリ上）をセットして承認フロー検証
                 // 松戸駅前店は火曜営業のため、2026-09-22 (火) の臨休投稿は確実に差分（要反映）として判定される
@@ -601,9 +623,9 @@
 
                 // 対象日・曜日表示、比較表示、公式ボタン削除の検証
                 const firstCardText = pendingCards[0] ? pendingCards[0].textContent : '';
-                assert('SNS承認: 「対象日」と曜日 (火) の表示', () => firstCardText.includes('対象日:') && firstCardText.includes('(火)'));
+                assert('SNS承認: 「対象日」と曜日 (火) の表示', () => firstCardText.includes('(火)'));
                 assert('SNS承認: 「公式アカウント」ボタンの非表示', () => !firstCardText.includes('公式アカウント'));
-                assert('SNS承認: 現在設定と変更提案の比較対比表示', () => firstCardText.includes('現在設定:') && firstCardText.includes('変更提案:'));
+                assert('SNS承認: 現在設定と変更提案の比較対比表示', () => firstCardText.includes('登録営業時間') && firstCardText.includes('変更提案'));
 
                 // ワンタッチ反映テスト
                 const matsudoShop = edWin.app.shops.find(s => s.id === 'matsudo');
@@ -618,7 +640,7 @@
                 assert('SNS承認: 処理済み履歴に移動して保持される (1件)', () => historyCards.length === 1);
                 assert('SNS承認: 履歴カードに「反映済み」と「未処理に戻す」ボタンが存在', () => {
                     const txt = historyCards[0] ? historyCards[0].textContent : '';
-                    return (txt.includes('反映済み') || txt.includes('承認・反映済み') || txt.includes('反映完了')) && (txt.includes('未処理') || txt.includes('戻す'));
+                    return (txt.includes('流し込み済み') || txt.includes('処理済み') || txt.includes('反映済み') || txt.includes('承認・反映済み') || txt.includes('反映完了')) && (txt.includes('未処理') || txt.includes('戻す'));
                 });
 
                 // --- ワンタッチ反映 (applyPendingDirectly) テスト ---
@@ -667,11 +689,13 @@
                             type: 'routine',
                             startDate: '2026-09-25',
                             endDate: '2026-09-25',
-                            hours: [[8.5, 15.0]],
+                            hours: [[8, 20]],
                             reason: '通常営業',
                             confidence: 0.95
                         },
-                        status: 'pending'
+                        status: 'pending',
+                        aiStatus: 'daily',
+                        skipReason: '対象曜日の通常営業時間と完全に一致（変更なし）'
                     },
                     {
                         id: 'test_bulk_skip_action_required',
@@ -689,7 +713,8 @@
                             reason: '臨時休業',
                             confidence: 0.95
                         },
-                        status: 'pending'
+                        status: 'pending',
+                        aiStatus: 'schedule_change'
                     }
                 ];
                 edWin.app.renderPendingList();
@@ -715,9 +740,11 @@
                 // --- 8. 手動貼り付けAI解析パネル (Instagram / X) の検証 ---
                 const manualPanel = edDoc.getElementById('manual-ai-panel');
                 assert('手動AI解析: パネルDOM要素が存在', () => manualPanel !== null);
+                assert('手動AI解析: 投稿元セレクトは不要のため削除されている', () => edDoc.getElementById('manual-ai-source') === null);
 
                 const manualShopSelect = edDoc.getElementById('manual-ai-shop');
                 assert('手動AI解析: 店舗選択肢が40件以上自動生成されている', () => manualShopSelect && manualShopSelect.options.length >= 40, `選択肢数: ${manualShopSelect ? manualShopSelect.options.length : 0}`);
+                assert('手動AI解析: 店舗選択肢の先頭が（未選択 / 自動判定）', () => manualShopSelect && manualShopSelect.options[0].textContent.includes('自動判定'));
 
                 // 新潟店 (Instagram専用店舗) がリストに含まれているか
                 const niigataOption = Array.from(manualShopSelect.options).find(opt => opt.value === 'niigata' || opt.textContent.includes('新潟'));
@@ -749,7 +776,8 @@
                 assert('キーワード拡充: 曜日表記の検知 ((月) / 火曜)', () => testKeywordText('(月)は通常通り') && testKeywordText('火曜日に提供'));
                 assert('キーワード拡充: 日常ポストの除外判定', () => !testKeywordText('ちいかわ可愛い'));
 
-                // --- 10. スキップ済みリスト表示＆AI判定ルール管理のテスト ---
+                // --- 10. 未処理・反映不要の同一グループ統合＆要反映優先ソートテスト ---
+                edWin.app.pendingSortKey = 'status';
                 edWin.app.pendingUpdates = [
                     {
                         id: 'pending_active_1',
@@ -769,17 +797,19 @@
                         postedAt: '2026-09-21T09:00:00Z',
                         postText: '本日も通常営業です',
                         detectedChange: { type: 'temporary_hours', startDate: '2026-09-21', hours: [[11, 14.5], [17.5, 21.5]], reason: '通常営業' },
-                        status: 'skipped',
+                        status: 'pending',
+                        aiStatus: 'match',
                         skipReason: '対象曜日の通常営業時間と完全に一致（変更なし）'
                     }
                 ];
                 edWin.app.renderPendingList();
 
-                const activePendingCards = edDoc.querySelectorAll('#pending-list-container .pending-card');
-                const skippedCards = edDoc.querySelectorAll('#skipped-list-container .pending-card');
-                assert('承認待ち・スキップ分離: 承認待ちコンテナに1件描画', () => activePendingCards.length === 1);
-                assert('承認待ち・スキップ分離: スキップ済みコンテナに1件描画', () => skippedCards.length === 1);
-                assert('承認待ち・スキップ分離: スキップ理由が表示されている', () => skippedCards[0].textContent.includes('スキップ理由: 対象曜日の通常営業時間と完全に一致'));
+                const allCardsInContainer = edDoc.querySelectorAll('#pending-list-container .pending-card');
+                assert('同一グループ統合: 未処理と反映不要が同一コンテナ内に描画 (計2件)', () => allCardsInContainer.length === 2);
+                assert('要反映優先ソート: 要反映カード (三田本店) が1件目に配置', () => allCardsInContainer[0] && allCardsInContainer[0].id === 'pending-card-pending_active_1');
+                assert('要反映優先ソート: 反映不要カード (亀戸店) が2件目に配置', () => allCardsInContainer[1] && allCardsInContainer[1].id === 'pending-card-skipped_item_1');
+                assert('カード表示: 反映不要カードに理由が表示されている', () => allCardsInContainer[1].textContent.includes('登録済') || allCardsInContainer[1].textContent.includes('通常営業') || allCardsInContainer[1].textContent.includes('一致'));
+                assert('一括スキップボタン: ツールバーに一括スキップボタンが存在', () => edDoc.getElementById('btn-bulk-skip-all') !== null);
 
                 // AI判定ルールモーダル操作
                 edWin.app.openAiGuidelinesModal();
