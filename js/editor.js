@@ -507,7 +507,7 @@ class EditorApp {
                 this._applyAddressSeparation(input, parsed);
             }
         }
-    },
+    }
 
     handleAddressBlur(input) {
         if (!input) return;
@@ -521,7 +521,7 @@ class EditorApp {
         }
         input.value = val;
         this.updateSingleGMapSearchLink();
-    },
+    }
 
     _applyAddressSeparation(input, parsed) {
         const isBulk = !!input.dataset.bulkSub;
@@ -551,14 +551,14 @@ class EditorApp {
             input.value = this.cleanAddress(parsed.remainingAddress || '');
             this.updateSingleGMapSearchLink();
         }
-    },
+    }
 
     setShiftPending(inputId) {
         const input = document.getElementById(inputId);
         if (!input) return;
         input.value = (input.value.trim() === '未定') ? '' : '未定';
         this.handleShiftBlur(input);
-    },
+    }
 
     setAllShiftsPending() {
         for (let i = 0; i <= 6; i++) {
@@ -568,7 +568,7 @@ class EditorApp {
                 this.handleShiftBlur(input);
             }
         }
-    },
+    }
 
     setTempHoursPending(index) {
         const hInput = this.el.tempContainer.querySelector(`input[data-temp-hours="${index}"]`);
@@ -577,7 +577,7 @@ class EditorApp {
             this.handleShiftBlur(hInput);
             this.gatherTemporaryFromDOM();
         }
-    },
+    }
 
     generateMapUrl(prefCode, cityCode, addressText, name) {
         const queryParts = ['ラーメン二郎'];
