@@ -8,6 +8,7 @@ class EditorApp {
         this.currentSpecialShifts = [];
         this.githubFileSha = null;
         this.pendingSaveContext = null;
+        this.showPastTemporary = false;
 
         this.el = {
             fileInput: document.getElementById('file-input'),
@@ -163,6 +164,7 @@ class EditorApp {
                 this.selectedId = draft.id;
                 this.sortShopsByOpenedAt();
                 this.cacheOriginalSnapshots();
+                this.saveShopsDraftLocally();
                 this.renderList();
                 this.selectShop(draft.id, true);
                 alert('変更内容を保存しました。');
@@ -170,6 +172,7 @@ class EditorApp {
                 this.shops = JSON.parse(JSON.stringify(this.pendingSaveContext.draftShops));
                 this.sortShopsByOpenedAt();
                 this.cacheOriginalSnapshots();
+                this.saveShopsDraftLocally();
                 this.renderList();
                 if (this.currentMode === 'bulk') this.renderBulkTable();
                 alert('一括編集した内容を保存しました。');
@@ -1066,6 +1069,27 @@ class EditorApp {
                     });
                     this.sortShopsByOpenedAt();
                     this.cacheOriginalSnapshots();
+
+                    // ローカルドラフト（前回編集中データ）の復元チェック
+                    try {
+                        const savedDraft = localStorage.getItem('jirolian_editor_shops_draft');
+                        if (savedDraft) {
+                            const draftObj = JSON.parse(savedDraft);
+                            if (Array.isArray(draftObj) && draftObj.length > 0) {
+                                const diffs = this.getShopsDiffList(this.shops, draftObj);
+                                if (diffs.length > 0) {
+                                    const timeStr = localStorage.getItem('jirolian_editor_shops_draft_time');
+                                    const timeMsg = timeStr ? `（保存日時: ${new Date(timeStr).toLocaleString('ja-JP')}）` : '';
+                                    if (confirm(`💾 前回ブラウザで編集中の未送信下書きデータ${timeMsg}が見つかりました。\n変更内容（${diffs.length}件の変更）を復元しますか？\n（「キャンセル」を押すと最新のファイルデータで開きます）`)) {
+                                        this.shops = draftObj;
+                                        this.sortShopsByOpenedAt();
+                                        console.log('✅ ローカルストレージの下書きデータを復元しました');
+                                    }
+                                }
+                            }
+                        }
+                    } catch (e) {}
+
                     this.renderList();
                     if (this.currentMode === 'bulk') this.renderBulkTable();
                     console.log(`✅ ローカル shops.json から ${this.shops.length} 件読み込みました`);
@@ -1202,21 +1226,58 @@ class EditorApp {
             const jsonString = JSON.stringify(this.shops, null, 2);
             this.githubFileSha = await this.uploadFileToGithub(cfg, cfg.path, jsonString, commitMessage || 'Update shops.json');
 
-            // 2. data/sns_posts.json の更新（ドラフト処理済みを確定）
-            if (this.draftProcessedPostIds.size > 0) {
-                const now = new Date().toISOString();
+            // 2. data/sns_posts.json の更新（ドラフト処理済みを確定し、リモート最新投稿とマージ）
+            if (this.draftProcessedPostIds.size > 0 || this.draftAppliedItems.size > 0) {
+                let remoteSnsPosts = [];
+                try {
+                    const url = `https://api.github.com/repos/${cfg.owner}/${cfg.repo}/contents/data/sns_posts.json?ref=${cfg.branch || 'main'}`;
+                    const ghRes = await fetch(url, {
+                        headers: {
+                            'Authorization': `Bearer ${cfg.token}`,
+                            'Accept': 'application/vnd.github.v3+json'
+                        },
+                        cache: 'no-cache'
+                    });
+                    if (ghRes.ok) {
+                        const ghData = await ghRes.json();
+                        const jsonText = decodeURIComponent(escape(atob(ghData.content.replace(/\n/g, ''))));
+                        remoteSnsPosts = JSON.parse(jsonText);
+                    }
+                } catch (e) {
+                    console.warn('Failed to fetch remote sns_posts.json for merge, using local:', e);
+                }
+
+                // リモート最新（GitHub Actionの定期実行で追加された新着投稿を含む）をベースにマージ
+                const baseList = (Array.isArray(remoteSnsPosts) && remoteSnsPosts.length > 0) ? remoteSnsPosts : this.pendingUpdates;
+                const baseMap = new Map(baseList.map(item => [item.id, item]));
+
+                // ローカルにしか存在しないアイテムも取り込む
                 this.pendingUpdates.forEach(item => {
-                    if (this.draftProcessedPostIds.has(item.id)) {
-                        item.processed = true;
-                        item.processedAt = now;
+                    if (!baseMap.has(item.id)) {
+                        baseMap.set(item.id, item);
                     }
                 });
-                const snsJsonStr = JSON.stringify(this.pendingUpdates, null, 2);
+
+                // draftProcessedPostIds を反映して処理済みに確定
+                const now = new Date().toISOString();
+                baseMap.forEach((item, id) => {
+                    if (this.draftProcessedPostIds.has(id)) {
+                        item.processed = true;
+                        if (!item.processedAt) item.processedAt = now;
+                    }
+                });
+
+                const mergedSnsPosts = Array.from(baseMap.values());
+                const snsJsonStr = JSON.stringify(mergedSnsPosts, null, 2);
                 await this.uploadFileToGithub(cfg, 'data/sns_posts.json', snsJsonStr, `${commitMessage || 'Update shops.json'} (update sns_posts)`);
                 
+                this.pendingUpdates = mergedSnsPosts;
                 this.draftProcessedPostIds.clear();
                 this.draftAppliedItems.clear();
+                this.savePendingUpdatesLocally();
             }
+
+            this.clearShopsDraftLocally();
 
             // 3. data/ai_guidelines.json の更新（人間判定フィードバックの学習ナレッジ蓄積）
             if (this.aiGuidelines && Array.isArray(this.aiGuidelines.learnedFeedback) && this.aiGuidelines.learnedFeedback.length > 0) {
@@ -1305,7 +1366,14 @@ class EditorApp {
                 }
             }
 
-            this.pendingUpdates = Array.isArray(loadedData) ? loadedData : [];
+            const rawList = Array.isArray(loadedData) ? loadedData : [];
+            // リモートの最新リストを取り込みつつ、現在のローカル作業中フラグ（draftProcessedPostIds）を維持
+            this.pendingUpdates = rawList.map(item => {
+                if (this.draftProcessedPostIds.has(item.id)) {
+                    return { ...item, processed: true };
+                }
+                return item;
+            });
 
             if (isUserClick) {
                 const unprocessed = this.pendingUpdates.filter(p => !p.processed && !this.draftProcessedPostIds.has(p.id));
@@ -2198,6 +2266,29 @@ ${guidelinesText}
         const sortedSkippedItems = this.sortPendingItems(skippedItems);
         const sortedHistoryItems = this.sortPendingItems(historyItems);
 
+        // 一括操作ツールバーの描画
+        if (unprocessedItems.length > 0) {
+            const toolbar = document.createElement('div');
+            toolbar.style.cssText = 'display:flex; justify-content:space-between; align-items:center; gap:8px; margin-bottom:12px; padding:8px 12px; background:#1e1e1e; border:1px solid #333; border-radius:6px; flex-wrap:wrap;';
+            toolbar.innerHTML = `
+                <div style="font-size:0.85rem; font-weight:bold; color:var(--jiro-yellow); display:flex; align-items:center; gap:6px;">
+                    <span>📋 未処理の提案: ${unprocessedItems.length}件</span>
+                    <span style="font-size:0.75rem; color:#aaa; font-weight:normal;">（要確認: ${pendingItems.length}件 / スキップ推奨: ${skippedItems.length}件）</span>
+                </div>
+                <div style="display:flex; gap:6px; flex-wrap:wrap;">
+                    ${skippedItems.length > 0 ? `
+                        <button type="button" class="btn btn-sm" onclick="app.bulkSkipPending('skipped')" style="font-size:0.75rem; background:#37474f; border-color:#455a64; color:#eceff1; font-weight:bold;">
+                            ⏭️ スキップ推奨を一括スキップ (${skippedItems.length}件)
+                        </button>
+                    ` : ''}
+                    <button type="button" class="btn btn-sm" onclick="app.bulkSkipPending('all')" style="font-size:0.75rem; background:#262626; border-color:#444; color:#ccc;">
+                        ⏭️ 未処理をすべて一括スキップ (${unprocessedItems.length}件)
+                    </button>
+                </div>
+            `;
+            this.el.pendingListContainer.appendChild(toolbar);
+        }
+
         if (sortedPendingItems.length === 0) {
             this.el.pendingListContainer.innerHTML = `
                 <div style="text-align: center; padding: 28px 16px; color: #888; background: #1a1a1a; border-radius: 8px; border: 1px dashed #333;">
@@ -2421,10 +2512,11 @@ ${guidelinesText}
             const skipBtnClass = evalResult.isActionRequired ? 'btn-action-muted' : 'btn-skip-highlight';
 
             actionsHtml = `
-                <button class="btn btn-sm ${skipBtnClass}" onclick="app.skipPending('${item.id}')">スキップ</button>
-                <button class="btn btn-sm btn-primary ${applyBtnClass}" onclick="app.applyPendingToTemporary('${item.id}')">
-                    反映（臨時設定へ流し込み）
+                <button type="button" class="btn btn-sm ${skipBtnClass}" onclick="app.skipPending('${item.id}')">スキップ</button>
+                <button type="button" class="btn btn-sm btn-primary ${applyBtnClass}" onclick="app.applyPendingDirectly('${item.id}')" style="font-weight:bold; display:inline-flex; align-items:center; gap:4px;">
+                    <span>⚡ ワンタッチ反映</span>
                 </button>
+                <button type="button" class="btn btn-sm" onclick="app.applyPendingToTemporary('${item.id}')" style="background:#222; border-color:#444; color:#888; font-size:0.7rem;" title="店舗別画面を開いて詳細編集・流し込み">詳細編集 ▼</button>
             `;
         }
 
@@ -3050,6 +3142,12 @@ ${guidelinesText}
             return;
         }
 
+        // 1日前（昨日）の日付文字列を計算（1日前以降を表示、2日前以前を過去としてデフォルト非表示）
+        const now = new Date();
+        const yesterday = new Date(now.getFullYear(), now.getMonth(), now.getDate() - 1);
+        const fmtYmd = (v) => `${v.getFullYear()}-${String(v.getMonth() + 1).padStart(2, '0')}-${String(v.getDate()).padStart(2, '0')}`;
+        const yesterdayStr = (typeof JiroUtils !== 'undefined' && JiroUtils.getLocalDateKey) ? JiroUtils.getLocalDateKey(yesterday) : fmtYmd(yesterday);
+
         // 当初スナップショットの取得（ハイライト判定用）
         let originalTemps = [];
         if (this.selectedId && this.originalShopSnapshots.has(this.selectedId)) {
@@ -3057,6 +3155,31 @@ ${guidelinesText}
                 const origShop = JSON.parse(this.originalShopSnapshots.get(this.selectedId));
                 originalTemps = origShop.temporary || [];
             } catch (e) {}
+        }
+
+        // 過去エントリ（2日前以前）の件数をカウント
+        let pastCount = 0;
+        this.currentTemporary.forEach(item => {
+            const isNoEndDate = !item.endDate;
+            const sDate = item.startDate || item.date || '';
+            const eDate = item.endDate || '';
+            const checkDate = isNoEndDate ? '9999-99-99' : (eDate || sDate || '');
+            if (checkDate && checkDate < yesterdayStr) {
+                pastCount++;
+            }
+        });
+
+        // 過去エントリがある場合、先頭に表示切り替えトグルバーを表示
+        if (pastCount > 0) {
+            const toggleWrap = document.createElement('div');
+            toggleWrap.style.cssText = 'margin-bottom: 8px; display: flex; justify-content: space-between; align-items: center; background: #161616; padding: 4px 8px; border-radius: 4px; border: 1px dashed #333;';
+            toggleWrap.innerHTML = `
+                <span style="font-size: 0.72rem; color: #888;">🕒 2日前以前の臨時営業: ${pastCount}件</span>
+                <button type="button" class="btn btn-sm" id="btn-toggle-past-temp" style="font-size: 0.74rem; background: #262626; color: #aaa; border: 1px solid #444; padding: 2px 8px;" onclick="app.toggleShowPastTemporary()">
+                    ${this.showPastTemporary ? '▲ 2日前以前を隠す' : `▼ 2日前以前を表示 (${pastCount}件)`}
+                </button>
+            `;
+            this.el.tempContainer.appendChild(toggleWrap);
         }
 
         this.currentTemporary.forEach((item, index) => {
@@ -3077,6 +3200,17 @@ ${guidelinesText}
             const isNoEndDate = !item.endDate;
             const reason = item.reason || '';
             const sourceUrl = item.sourceUrl || '';
+
+            // 2日前以前の過去エントリ判定（終了日が未定の場合は過去と見なさない）
+            const checkDate = isNoEndDate ? '9999-99-99' : (eDate || sDate || '');
+            const isPast = Boolean(checkDate && checkDate < yesterdayStr);
+            if (isPast) {
+                row.classList.add('past-temp-row');
+                row.dataset.isPastTemp = 'true';
+                if (!this.showPastTemporary) {
+                    row.style.display = 'none';
+                }
+            }
 
             // スナップショット内に全く同一のエントリが存在するかチェック
             const isMatchOriginal = originalTemps.some(orig => {
@@ -3100,9 +3234,12 @@ ${guidelinesText}
                 ? '<span class="diff-highlight-badge">✨ AI流し込み</span>'
                 : (isModified ? '<span class="diff-highlight-badge">変更あり</span>' : '');
 
+            const pastBadge = isPast ? '<span style="font-size: 0.68rem; background: #2a2a2a; color: #888; padding: 1px 5px; border-radius: 3px; border: 1px solid #444;">過去</span>' : '';
+
             row.innerHTML = `
                 <div style="display: flex; align-items: center; gap: 6px; flex-wrap: wrap;">
                     ${badgeHtml}
+                    ${pastBadge}
                     <div class="date-input-wrapper" style="position: relative; display: inline-block;">
                         <input type="text" class="date-pick s-date date-input" value="${sDate}" placeholder="開始日" data-idx="${index}" style="padding-right: 24px;">
                         <span class="cal-icon" style="position: absolute; right: 6px; top: 50%; transform: translateY(-50%); pointer-events: none; opacity: 0.5; display: inline-flex; align-items: center; justify-content: center;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg></span>
@@ -4170,6 +4307,161 @@ ${guidelinesText}
         if (statusElem) statusElem.textContent = '✅ ブラウザに保存完了';
         alert('🧠 AI判定ルールをブラウザに保存しました。\n（GitHub PATが設定されている場合はGitHubへも直接コミット可能です）');
         this.closeAiGuidelinesModal();
+    }
+
+    showToast(message, duration = 3000) {
+        let toast = document.getElementById('editor-toast-notification');
+        if (!toast) {
+            toast = document.createElement('div');
+            toast.id = 'editor-toast-notification';
+            toast.style.cssText = 'position: fixed; bottom: 24px; right: 24px; background: #222; border: 1px solid var(--jiro-yellow); color: #fff; padding: 10px 18px; border-radius: 6px; box-shadow: 0 4px 16px rgba(0,0,0,0.6); z-index: 10000; font-size: 0.85rem; font-weight: bold; display: flex; align-items: center; gap: 8px; transition: opacity 0.3s, transform 0.3s; pointer-events: none; opacity: 0; transform: translateY(10px);';
+            document.body.appendChild(toast);
+        }
+        toast.textContent = message;
+        toast.style.opacity = '1';
+        toast.style.transform = 'translateY(0)';
+        if (this._toastTimer) clearTimeout(this._toastTimer);
+        this._toastTimer = setTimeout(() => {
+            toast.style.opacity = '0';
+            toast.style.transform = 'translateY(10px)';
+        }, duration);
+    }
+
+    saveShopsDraftLocally() {
+        try {
+            if (Array.isArray(this.shops) && this.shops.length > 0) {
+                localStorage.setItem('jirolian_editor_shops_draft', JSON.stringify(this.shops));
+                localStorage.setItem('jirolian_editor_shops_draft_time', new Date().toISOString());
+            }
+        } catch (e) {
+            console.warn('Failed to save shops draft to localStorage:', e);
+        }
+    }
+
+    clearShopsDraftLocally() {
+        try {
+            localStorage.removeItem('jirolian_editor_shops_draft');
+            localStorage.removeItem('jirolian_editor_shops_draft_time');
+        } catch (e) {}
+    }
+
+    toggleShowPastTemporary() {
+        this.showPastTemporary = !this.showPastTemporary;
+        const btn = document.getElementById('btn-toggle-past-temp');
+        const pastRows = this.el.tempContainer.querySelectorAll('.past-temp-row');
+        pastRows.forEach(row => {
+            row.style.display = this.showPastTemporary ? 'flex' : 'none';
+        });
+        if (btn) {
+            const count = pastRows.length;
+            btn.textContent = this.showPastTemporary ? '▲ 2日前以前の臨時営業を隠す' : `▼ 2日前以前の過去の臨時営業 (${count}件) を表示`;
+        }
+    }
+
+    applyPendingDirectly(itemId) {
+        const item = this.pendingUpdates.find(p => p.id === itemId);
+        if (!item) return;
+
+        const shop = this.shops.find(s => s.id === item.shopId);
+        if (!shop) {
+            alert(`店舗 "${item.shopId}" が見つかりませんでした。`);
+            return;
+        }
+
+        // カード内のインライン編集フィールドから最新値を取得
+        const sDateInput = document.getElementById(`p-sdate-${item.id}`);
+        const eDateInput = document.getElementById(`p-edate-${item.id}`);
+        const hoursInput = document.getElementById(`p-hours-${item.id}`);
+        const reasonInput = document.getElementById(`p-reason-${item.id}`);
+        const urlInput = document.getElementById(`p-url-${item.id}`);
+
+        const startDate = sDateInput ? sDateInput.value.trim() : (item.detectedChange?.startDate || '');
+        const endDate = eDateInput ? eDateInput.value.trim() : (item.detectedChange?.endDate || startDate);
+        const hoursStr = hoursInput ? hoursInput.value.trim() : '';
+        const reason = reasonInput ? reasonInput.value.trim() : (item.detectedChange?.reason || '');
+        const sourceUrl = urlInput ? urlInput.value.trim() : (item.postUrl || '');
+
+        if (!startDate) {
+            alert('開始日を入力してください。');
+            return;
+        }
+
+        const parsedHours = this.parseShiftString(hoursStr);
+        const newEntry = {
+            startDate: startDate,
+            endDate: (endDate && endDate !== startDate) ? endDate : startDate,
+            hours: parsedHours,
+            reason: reason,
+            sourceUrl: sourceUrl,
+            _isAiImported: true
+        };
+
+        shop.temporary = shop.temporary || [];
+        const existingIdx = shop.temporary.findIndex(t => t.startDate === startDate);
+        if (existingIdx >= 0) {
+            shop.temporary[existingIdx] = newEntry;
+        } else {
+            shop.temporary.push(newEntry);
+        }
+        shop.temporary = this.sortTemporaryDates(shop.temporary);
+
+        // 単一店舗編集中に対象店舗だった場合は画面側も同期
+        if (this.selectedId === shop.id && this.currentMode === 'single') {
+            this.currentTemporary = JSON.parse(JSON.stringify(shop.temporary));
+            this.renderTemporaryList();
+        }
+
+        // 当該投稿をドラフト反映済みとしてマーク
+        this.draftAppliedItems.set(item.id, { shopId: shop.id, entry: newEntry });
+        this.draftProcessedPostIds.add(item.id);
+
+        // 人間判定による反映を学習データとして自動記録
+        this.recordLearnedFeedback(item, 'applied', newEntry);
+
+        // 状態保存＆再描画
+        this.savePendingUpdatesLocally();
+        this.saveShopsDraftLocally();
+        this.updatePendingBadge();
+        this.renderPendingList();
+        this.renderList();
+
+        const timeLabel = parsedHours.length === 0 ? '休業' : (hoursStr || '営業');
+        this.showToast(`⚡【${shop.name}】${startDate} ${timeLabel} をワンタッチ反映しました！`);
+    }
+
+    bulkSkipPending(target = 'all') {
+        const allItems = this.pendingUpdates || [];
+        const unprocessedItems = allItems.filter(p => !p.processed && !this.draftProcessedPostIds.has(p.id));
+        let targets = [];
+        let label = '';
+        if (target === 'skipped') {
+            targets = unprocessedItems.filter(item => {
+                const evalRes = this.evaluatePendingItem(item);
+                return !evalRes.isActionRequired;
+            });
+            label = `「既存一致・日常等のスキップ推奨」提案 ${targets.length}件`;
+        } else {
+            targets = unprocessedItems;
+            label = `表示中の未処理提案 ${targets.length}件`;
+        }
+
+        if (targets.length === 0) {
+            alert('スキップ対象の提案がありません。');
+            return;
+        }
+
+        if (!confirm(`${label} を一括でスキップ（処理済みに）しますか？\n（※スキップ後も下部の「処理済み履歴」から元に戻せます）`)) {
+            return;
+        }
+
+        targets.forEach(item => {
+            this.draftProcessedPostIds.add(item.id);
+        });
+
+        this.savePendingUpdatesLocally();
+        this.updatePendingBadge();
+        this.renderPendingList();
+        this.showToast(`✅ ${targets.length}件の提案を一括スキップしました。`);
     }
 }
 

@@ -923,9 +923,10 @@
 
                     let conquestHtml = '';
                     if (showConquest) {
-                        const totalCount = shopList.length;
+                        const targetShops = shopList.filter(s => (typeof JiroBusinessHours !== 'undefined') ? JiroBusinessHours.isConquestTarget(s) : (s && s.openedAt && s.openedAt.trim() && (typeof isPreOpen !== 'undefined' ? !isPreOpen(s) : true) && (typeof isClosedShopExpired !== 'undefined' ? !isClosedShopExpired(s) : true)));
+                        const totalCount = targetShops.length;
                         const vState = global.visitedState || {};
-                        const visitedCount = shopList.filter(s => vState[s.id]).length;
+                        const visitedCount = targetShops.filter(s => vState[s.id]).length;
                         const percent = totalCount > 0 ? Math.round((visitedCount / totalCount) * 100) : 0;
                         conquestHtml = `
                             <div style="display:inline-flex; align-items:center; justify-content:flex-end; gap:8px; background:#1a1a1a; border:1px solid #333; border-radius:4px; padding:3px 6px; font-size:0.75rem; color:#ddd; width:fit-content; margin-left:auto; box-sizing:border-box; flex-shrink:0;">

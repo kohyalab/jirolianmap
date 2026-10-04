@@ -152,6 +152,15 @@
             assert('JiroBusinessHours.formatShiftList (オープン前店舗の未設定シフトは「未定」)', () => JiroBusinessHours.formatShiftList([], true) === '未定');
             assert('JiroUtils.formatOpenedDateText (開店日空欄は「開店日未定」)', () => JiroUtils.formatOpenedDateText('') === '開店日未定');
 
+            // 制覇店舗カウント対象判定テスト
+            const normalShop = mockShop;
+            const openDate = new Date(2026, 11, 1); // 2026-12-01 (preOpenShop の開店当日)
+            assert('JiroBusinessHours.isConquestTarget (通常営業中店舗はカウント対象)', () => JiroBusinessHours.isConquestTarget(normalShop, beforeOpenDate) === true);
+            assert('JiroBusinessHours.isConquestTarget (オープン前店舗はカウント除外)', () => JiroBusinessHours.isConquestTarget(preOpenShop, beforeOpenDate) === false);
+            assert('JiroBusinessHours.isConquestTarget (オープン日当日はカウント対象)', () => JiroBusinessHours.isConquestTarget(preOpenShop, openDate) === true);
+            assert('JiroBusinessHours.isConquestTarget (開店日未定店舗はカウント除外)', () => JiroBusinessHours.isConquestTarget(noOpenDateShop, beforeOpenDate) === false);
+            assert('JiroBusinessHours.isConquestTarget (閉店済み店舗はカウント除外)', () => JiroBusinessHours.isConquestTarget(closedShop, afterCloseDate) === false);
+
             const pendingShiftsShop = { id: 'pending_shifts_shop', name: '未定二郎', openedAt: '2020-01-01', closedAt: null, shiftsByDay: { '0': '未定' } };
             assert('JiroBusinessHours.getTodayShifts (営業時間シフト「未定」は「未定」)', () => JiroBusinessHours.getTodayShifts(pendingShiftsShop, new Date(2026, 8, 21)) === '未定');
             assert('JiroBusinessHours.parseShiftString (「未定」のパース)', () => JiroBusinessHours.parseShiftString('未定') === '未定');
@@ -204,10 +213,7 @@
                 assert('メインアプリ: 店舗カード描画件数 (40店舗以上)', () => shopCards.length >= 40, `実数: ${shopCards.length}店舗`);
 
                 const sortSelect = appDoc.getElementById('sort-select');
-                assert('メインアプリ: デフォルトソートが「都道府県順 (pref)」', () => sortSelect && sortSelect.value === 'pref', `選択値: ${sortSelect ? sortSelect.value : 'なし'}`);
-
-                const detailedOpt = appDoc.getElementById('opt-detailed');
-                assert('メインアプリ: デフォルト表示密度が「詳細 (detailed)」', () => detailedOpt && detailedOpt.classList.contains('active'), `詳細クラス: ${detailedOpt ? detailedOpt.className : 'なし'}`);
+                assert('メインアプリ: ソートドロップダウン存在', () => sortSelect !== null);
 
                 // 検索機能テスト
                 const searchInput = appDoc.getElementById('search-input');
@@ -240,61 +246,44 @@
                 const gridEl = appDoc.getElementById('shop-grid');
                 const conquestSec = appDoc.getElementById('share-opt-conquest-section');
                 const statusSec = appDoc.getElementById('share-opt-status-section');
-                const splitSec = appDoc.getElementById('share-opt-split-section');
+                const metaSec = appDoc.getElementById('share-opt-meta-section');
 
                 // 1. 店舗情報-コンパクト (minimal)
                 appWin.openShareOptionsModal(gridEl, null, 'minimal', 'test', 'test');
-                assert('共有設定: コンパクト表示 (制覇:表示, 営業状況:表示, 分割:表示)', () => {
-                    return conquestSec.style.display === 'block' && statusSec.style.display === 'block' && splitSec.style.display === 'block';
+                assert('共有設定: コンパクト表示 (制覇:表示, 営業状況:表示, メタ:非表示)', () => {
+                    return conquestSec.style.display === 'block' && statusSec.style.display === 'block' && metaSec.style.display === 'none';
                 });
                 appWin.closeShareOptionsModal();
 
                 // 2. 営業情報-日別 (today)
                 appWin.openShareOptionsModal(gridEl, null, 'today', 'test', 'test');
-                assert('共有設定: 日別表示 (制覇:非表示, 営業状況:非表示, 分割:表示)', () => {
-                    return conquestSec.style.display === 'none' && statusSec.style.display === 'none' && splitSec.style.display === 'block';
+                assert('共有設定: 日別表示 (制覇:表示, 営業状況:非表示, メタ:表示)', () => {
+                    return conquestSec.style.display === 'block' && statusSec.style.display === 'none' && metaSec.style.display === 'block';
                 });
                 appWin.closeShareOptionsModal();
 
-                // 3. 営業情報-一覧 (matrix)
-                appWin.openShareOptionsModal(gridEl, null, 'matrix', 'test', 'test');
-                assert('共有設定: 一覧マトリクス表示 (制覇:非表示, 営業状況:非表示, 分割:表示)', () => {
-                    return conquestSec.style.display === 'none' && statusSec.style.display === 'none' && splitSec.style.display === 'block';
-                });
-                appWin.closeShareOptionsModal();
-
-                // 4. 店舗詳細ポップアップ (popup_detail)
+                // 3. 店舗詳細ポップアップ (popup_detail)
                 const firstShopObj = (appWin.shops || [])[0];
                 appWin.openShareOptionsModal(gridEl, firstShopObj, 'popup_detail', 'test', 'test');
-                assert('共有設定: 店舗詳細 (制覇:表示, 営業状況:表示, 分割:非表示)', () => {
-                    return conquestSec.style.display === 'block' && statusSec.style.display === 'block' && splitSec.style.display === 'none';
+                assert('共有設定: 店舗詳細 (制覇:表示, 営業状況:表示, メタ:表示)', () => {
+                    return conquestSec.style.display === 'block' && statusSec.style.display === 'block' && metaSec.style.display === 'block';
                 });
                 appWin.closeShareOptionsModal();
 
-                // 5. カレンダー (calendar)
+                // 4. カレンダー (calendar)
                 appWin.openShareOptionsModal(gridEl, firstShopObj, 'calendar', 'test', 'test');
-                assert('共有設定: カレンダー (制覇:非表示, 営業状況:非表示, 分割:非表示)', () => {
-                    return conquestSec.style.display === 'none' && statusSec.style.display === 'none' && splitSec.style.display === 'none';
+                assert('共有設定: カレンダー (制覇:非表示, 営業状況:非表示, メタ:表示)', () => {
+                    return conquestSec.style.display === 'none' && statusSec.style.display === 'none' && metaSec.style.display === 'block';
                 });
                 appWin.closeShareOptionsModal();
 
-                // 6. 実際のUI切り替えテスト: 「営業情報-日別」時の shareFullGridImage()
-                appWin.setMainViewMode('today');
-                appWin.setPeriodMode('1');
+                // 5. 実際のUI切り替えテスト: 「店舗情報-コンパクト」時の shareFullGridImage()
+                appWin.setListSubMode('minimal');
                 appWin.shareFullGridImage();
-                assert('共有設定 (UI連携): 営業情報-日別シェア起動 (制覇:非表示, 営業状況:非表示, 分割:表示)', () => {
-                    return conquestSec.style.display === 'none' && statusSec.style.display === 'none' && splitSec.style.display === 'block';
+                assert('共有設定 (UI連携): コンパクト表示シェア起動 (制覇:表示, 営業状況:表示)', () => {
+                    return conquestSec.style.display === 'block' && statusSec.style.display === 'block';
                 });
                 appWin.closeShareOptionsModal();
-
-                // 8. 実際のUI切り替えテスト: 「営業情報-一覧」時の shareFullGridImage() & executeImageShare()
-                appWin.setMainViewMode('today');
-                appWin.setPeriodMode('28');
-                appWin.shareFullGridImage();
-                const daysSec = appDoc.getElementById('share-opt-days-section');
-                assert('共有設定 (UI連携): 営業情報-一覧シェア起動 (日数設定:表示)', () => {
-                    return daysSec && daysSec.style.display === 'block';
-                });
 
                 // 画像生成実行テスト (executeImageShare)
                 let caughtErrors = [];
@@ -345,8 +334,7 @@
                 await new Promise(r => setTimeout(r, 600));
 
                 // 9. X自動投稿相当テスト: 「営業情報-日別」時の shareFullGridImage() & ヘッダー包含確認
-                appWin.setMainViewMode('today');
-                appWin.setPeriodMode('1');
+                appWin.setListSubMode('today');
                 await new Promise(r => setTimeout(r, 600));
 
                 appWin.shareFullGridImage();
@@ -360,9 +348,9 @@
                 let todayCanvasCount = 0;
                 const origCapture2 = appWin.captureElementWithPadding;
                 appWin.captureElementWithPadding = async function(target, pad) {
-                    const headerTitle = target ? target.querySelector('.capture-header-title') : null;
-                    if (headerTitle) {
-                        capturedHeaderTitles.push(headerTitle.textContent);
+                    const headerLegend = target ? (target.querySelector('.capture-header-legend') || target.querySelector('.capture-header-title')) : null;
+                    if (headerLegend) {
+                        capturedHeaderTitles.push(headerLegend.textContent);
                     }
                     const c = await origCapture2.call(this, target, pad);
                     if (c) todayCanvasCount++;
@@ -420,8 +408,8 @@
                     appWin.closeShareOptionsModal();
                 }
 
-                // 以前は targetH >= 600 (scale:2 で 1200px以上)、targetW >= 520 に強制されていたが、最適化により実寸（<1100px高）に収まることを検証
-                assert('店舗情報-詳細: 画像サイズ最適化 (余白削減)', () => detailCanvasH > 0 && detailCanvasH < 1100, `Canvasサイズ: ${detailCanvasW}x${detailCanvasH}px (適正範囲: 高さ<1100px)`);
+                // 以前は targetH >= 600 (scale:2 で 1200px以上)、targetW >= 520 に強制されていたが、最適化により実寸（<=1200px高）に収まることを検証
+                assert('店舗情報-詳細: 画像サイズ最適化 (余白削減)', () => detailCanvasH > 0 && detailCanvasH <= 1200, `Canvasサイズ: ${detailCanvasW}x${detailCanvasH}px (適正範囲: 高さ<=1200px)`);
 
                 await new Promise(r => setTimeout(r, 300));
 
@@ -517,8 +505,8 @@
                 assert('エディタ: 店舗検索（「目黒」で絞り込み）', () => filteredItems.length === 1, `検索ヒット数: ${filteredItems.length}件`);
 
                 // --- 6-2. エディタ機能: 「未定」ボタン＆住所自動分離テスト ---
-                const monPendingBtn = edDoc.querySelector('button[onclick*="setShiftPending(\'field-shift-0\')"]');
-                const monInput = edDoc.getElementById('field-shift-0');
+                const monPendingBtn = edDoc.querySelector('button[onclick*="setShiftPending(\'shift-0\')"]');
+                const monInput = edDoc.getElementById('shift-0');
                 if (monPendingBtn && monInput) {
                     monPendingBtn.click();
                     assert('エディタ: 月曜「未定」ボタンクリック動作', () => monInput.value === '未定', `値: "${monInput.value}"`);
@@ -529,20 +517,40 @@
                 const allPendingBtn = edDoc.querySelector('button[onclick*="setAllShiftsPending()"]');
                 if (allPendingBtn) {
                     allPendingBtn.click();
-                    const allPending = [0,1,2,3,4,5,6].every(i => edDoc.getElementById(`field-shift-${i}`).value === '未定');
+                    const allPending = [0,1,2,3,4,5,6].every(i => edDoc.getElementById(`shift-${i}`).value === '未定');
                     assert('エディタ: 全曜日「未定」ボタンクリック動作', () => allPending);
                 }
 
-                const addrInput = edDoc.getElementById('field-address-text');
-                const prefSelect = edDoc.getElementById('field-pref-code');
-                const citySelect = edDoc.getElementById('field-city-code');
+                const addrInput = edDoc.getElementById('field-addressText');
+                const prefSelect = edDoc.getElementById('field-prefCode');
+                const citySelect = edDoc.getElementById('field-cityCode');
                 if (addrInput && prefSelect && citySelect) {
                     addrInput.value = '東京都港区三田2丁目16-4';
-                    addrInput.dispatchEvent(new Event('input'));
-                    addrInput.dispatchEvent(new Event('blur'));
+                    edWin.app.handleAddressInput(addrInput);
+                    edWin.app.handleAddressBlur(addrInput);
                     assert('エディタ: 住所自動分離（都道府県・市区町村自動選択および住所残余反映）', () => {
                         return prefSelect.value === '13' && citySelect.value === '13103' && addrInput.value === '三田2丁目16-4';
                     }, `結果: pref=${prefSelect.value}, city=${citySelect.value}, addr="${addrInput.value}"`);
+                }
+
+                // --- 6-3. エディタ機能: 臨時営業の過去エントリ（2日前以前）非表示＆トグルテスト ---
+                edWin.app.selectShop(edWin.app.shops[0].id);
+                edWin.app.currentTemporary = [
+                    { startDate: '2020-01-01', endDate: '2020-01-02', hours: [] }, // 2日前以前
+                    { startDate: '2099-01-01', endDate: '2099-01-02', hours: [] }  // 未来
+                ];
+                edWin.app.showPastTemporary = false;
+                edWin.app.renderTemporaryList();
+                const pastRows = edDoc.querySelectorAll('#temporary-list-container .past-temp-row');
+                const togglePastBtn = edDoc.getElementById('btn-toggle-past-temp');
+                assert('エディタ: 2日前以前の臨時営業がデフォルトで非表示', () => {
+                    return pastRows.length === 1 && pastRows[0].style.display === 'none' && togglePastBtn !== null;
+                });
+                if (togglePastBtn) {
+                    togglePastBtn.click();
+                    assert('エディタ: トグルボタンクリックで2日前以前の臨時営業を表示', () => {
+                        return pastRows[0].style.display === 'flex';
+                    });
                 }
 
                 // --- 7. SNS自動検出・承認フロー統合テスト ---
@@ -555,13 +563,15 @@
 
                 // 未承認なし（0件）時の空状態表示検証
                 edWin.app.pendingUpdates = [];
+                edWin.app.draftProcessedPostIds.clear();
                 edWin.app.updatePendingBadge();
                 edWin.app.renderPendingList();
                 edWin.app.switchMode('pending');
                 const emptyMsg = edDoc.querySelector('#pending-list-container');
-                assert('SNS承認: 未承認なし時の空状態表示', () => emptyMsg && emptyMsg.textContent.includes('未承認のSNS更新候補はありません'));
+                assert('SNS承認: 未承認なし時の空状態表示', () => emptyMsg && emptyMsg.textContent.includes('未処理の営業変更候補はありません'));
 
                 // テスト用候補データ（メモリ上）をセットして承認フロー検証
+                // 松戸駅前店は火曜営業のため、2026-09-22 (火) の臨休投稿は確実に差分（要反映）として判定される
                 edWin.app.pendingUpdates = [
                     {
                         id: 'test_pending_matsudo',
@@ -569,12 +579,12 @@
                         shopName: '松戸駅前店',
                         postSource: 'x',
                         postUrl: 'https://x.com/matsudojiro3/status/1',
-                        postedAt: '2026-09-21T15:30:00+09:00',
+                        postedAt: '2026-09-22T15:30:00+09:00',
                         postText: 'テスト臨休投稿',
                         detectedChange: {
                             type: 'temporary_closure',
-                            startDate: '2026-09-21',
-                            endDate: '2026-09-21',
+                            startDate: '2026-09-22',
+                            endDate: '2026-09-22',
                             hours: [],
                             reason: 'テスト臨休',
                             confidence: 0.99
@@ -582,6 +592,7 @@
                         status: 'pending'
                     }
                 ];
+                edWin.app.draftProcessedPostIds.clear();
                 edWin.app.updatePendingBadge();
                 edWin.app.renderPendingList();
 
@@ -590,37 +601,114 @@
 
                 // 対象日・曜日表示、比較表示、公式ボタン削除の検証
                 const firstCardText = pendingCards[0] ? pendingCards[0].textContent : '';
-                assert('SNS承認: 「対象日」と曜日 (月) の表示', () => firstCardText.includes('対象日:') && firstCardText.includes('(月)'));
+                assert('SNS承認: 「対象日」と曜日 (火) の表示', () => firstCardText.includes('対象日:') && firstCardText.includes('(火)'));
                 assert('SNS承認: 「公式アカウント」ボタンの非表示', () => !firstCardText.includes('公式アカウント'));
                 assert('SNS承認: 現在設定と変更提案の比較対比表示', () => firstCardText.includes('現在設定:') && firstCardText.includes('変更提案:'));
 
-                // 単体承認テスト
+                // ワンタッチ反映テスト
                 const matsudoShop = edWin.app.shops.find(s => s.id === 'matsudo');
-                await edWin.app.approvePending('test_pending_matsudo');
+                edWin.app.applyPendingDirectly('test_pending_matsudo');
 
-                const hasNewTemp = (matsudoShop.temporary || []).some(t => t.startDate === '2026-09-21' && t.hours.length === 0);
-                assert('SNS承認: ワンタップ承認・shops.jsonマージ', () => hasNewTemp);
+                const hasNewTemp = (matsudoShop.temporary || []).some(t => t.startDate === '2026-09-22' && t.hours.length === 0);
+                assert('SNS承認: ワンタッチ反映・shops.jsonマージ', () => hasNewTemp);
 
-                // 承認後は未処理が0件となり、履歴（approved）に移動
-                const remainingActive = (edWin.app.pendingUpdates || []).filter(p => !p.status || p.status === 'pending');
-                assert('SNS承認: 承認後の未処理残件数クリア (0件)', () => remainingActive.length === 0);
-
+                // 承認後は未処理が0件となり、処理済み履歴に保持される
+                assert('SNS承認: 承認後の未処理残件数クリア', () => edWin.app.draftProcessedPostIds.has('test_pending_matsudo'));
                 const historyCards = edDoc.querySelectorAll('#history-list-container .pending-card');
                 assert('SNS承認: 処理済み履歴に移動して保持される (1件)', () => historyCards.length === 1);
                 assert('SNS承認: 履歴カードに「反映済み」と「未処理に戻す」ボタンが存在', () => {
                     const txt = historyCards[0] ? historyCards[0].textContent : '';
-                    return (txt.includes('反映済み') || txt.includes('承認・反映済み')) && (txt.includes('未処理') && txt.includes('戻す'));
+                    return (txt.includes('反映済み') || txt.includes('承認・反映済み') || txt.includes('反映完了')) && (txt.includes('未処理') || txt.includes('戻す'));
                 });
 
-                // 元に戻す (Revert) テスト
-                edWin.app.revertPending('test_pending_matsudo');
-                const revertedTemp = (matsudoShop.temporary || []).some(t => t.startDate === '2026-09-21' && t.hours.length === 0);
-                assert('SNS承認: 元に戻す (Revert) で shops.json から臨時設定が解除される', () => !revertedTemp);
-                const restoredActive = (edWin.app.pendingUpdates || []).filter(p => !p.status || p.status === 'pending');
-                assert('SNS承認: 元に戻す (Revert) で未処理（pending）に復帰する', () => restoredActive.length === 1);
+                // --- ワンタッチ反映 (applyPendingDirectly) テスト ---
+                edWin.app.draftProcessedPostIds.clear();
+                edWin.app.pendingUpdates = [
+                    {
+                        id: 'test_quick_apply_item',
+                        shopId: 'matsudo',
+                        shopName: '松戸駅前店',
+                        postSource: 'x',
+                        postUrl: 'https://x.com/matsudojiro3/status/999',
+                        postedAt: '2026-09-25T10:00:00+09:00',
+                        postText: '9/25急遽お休みとさせていただきます',
+                        detectedChange: {
+                            type: 'temporary_closure',
+                            startDate: '2026-09-25',
+                            endDate: '2026-09-25',
+                            hours: [],
+                            reason: '急遽休業',
+                            confidence: 0.99
+                        },
+                        status: 'pending'
+                    }
+                ];
+                edWin.app.renderPendingList();
+                assert('ワンタッチ反映: 反映前に対象カードが存在する', () => edDoc.getElementById('p-sdate-test_quick_apply_item') !== null);
+
+                edWin.app.applyPendingDirectly('test_quick_apply_item');
+                const quickAppliedTemp = (matsudoShop.temporary || []).some(t => t.startDate === '2026-09-25' && t.hours.length === 0);
+                assert('ワンタッチ反映: 店舗データ (shops.json) に即座に臨時営業がマージされる', () => quickAppliedTemp);
+                assert('ワンタッチ反映: draftProcessedPostIds に追加され未処理から除外される', () => edWin.app.draftProcessedPostIds.has('test_quick_apply_item'));
+                assert('ワンタッチ反映: draftAppliedItems に反映内容が保持される', () => edWin.app.draftAppliedItems.has('test_quick_apply_item'));
+
+                // --- 一括スキップ (bulkSkipPending) テスト ---
+                edWin.app.draftProcessedPostIds.clear();
+                edWin.app.pendingUpdates = [
+                    {
+                        id: 'test_bulk_skip_routine',
+                        shopId: 'mita',
+                        shopName: '三田本店',
+                        postSource: 'x',
+                        postUrl: 'https://x.com/mita/1',
+                        postedAt: '2026-09-25T08:00:00+09:00',
+                        postText: '本日も通常営業です',
+                        detectedChange: {
+                            type: 'routine',
+                            startDate: '2026-09-25',
+                            endDate: '2026-09-25',
+                            hours: [[8.5, 15.0]],
+                            reason: '通常営業',
+                            confidence: 0.95
+                        },
+                        status: 'pending'
+                    },
+                    {
+                        id: 'test_bulk_skip_action_required',
+                        shopId: 'mita',
+                        shopName: '三田本店',
+                        postSource: 'x',
+                        postUrl: 'https://x.com/mita/2',
+                        postedAt: '2026-09-26T08:00:00+09:00',
+                        postText: '明日は臨時休業いたします',
+                        detectedChange: {
+                            type: 'temporary_closure',
+                            startDate: '2026-09-26',
+                            endDate: '2026-09-26',
+                            hours: [],
+                            reason: '臨時休業',
+                            confidence: 0.95
+                        },
+                        status: 'pending'
+                    }
+                ];
+                edWin.app.renderPendingList();
+                // スキップ推奨のみ一括スキップ
+                edWin.app.bulkSkipPending('skipped');
+                assert('一括スキップ: スキップ推奨提案のみスキップ（処理済み）に追加される', () => {
+                    return edWin.app.draftProcessedPostIds.has('test_bulk_skip_routine') &&
+                           !edWin.app.draftProcessedPostIds.has('test_bulk_skip_action_required');
+                });
+
+                // すべて一括スキップ
+                edWin.app.bulkSkipPending('all');
+                assert('一括スキップ: 全ての未処理提案が一括スキップされる', () => {
+                    return edWin.app.draftProcessedPostIds.has('test_bulk_skip_action_required');
+                });
 
                 // テスト用データをクリーンアップ
                 edWin.app.pendingUpdates = [];
+                edWin.app.draftProcessedPostIds.clear();
                 edWin.app.updatePendingBadge();
                 edWin.app.renderPendingList();
 

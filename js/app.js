@@ -743,7 +743,7 @@
         }
 
         function updateStats() {
-            const activeShops = shops.filter(s => s && !isClosedShopExpired(s));
+            const activeShops = shops.filter(s => (typeof JiroBusinessHours !== 'undefined') ? JiroBusinessHours.isConquestTarget(s) : (s && s.openedAt && s.openedAt.trim() && !isPreOpen(s) && !isClosedShopExpired(s)));
             const total = activeShops.length;
             const visitedCount = activeShops.filter(s => visitedState[s.id]).length;
             const percent = total > 0 ? Math.round((visitedCount / total) * 100) : 0;
