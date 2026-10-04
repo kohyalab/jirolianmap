@@ -6384,5 +6384,28 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 諸事情のため"
+  },
+  {
+    "id": "sns_post_routine_tochigikaido_2106747722258870636",
+    "shopId": "tochigikaido",
+    "shopName": "栃木街道店",
+    "postSource": "x",
+    "postUrl": "https://x.com/Tochigikaidoten/status/2106747722258870636",
+    "postedAt": "2026-10-04T14:06:13.000Z",
+    "postText": "明日から炊きます🌾🍚 現金100円で お残しは🙅 昼夜とも炊飯器空になったら終了です しばらくやりますので是非二郎でラーメン&ライスをお楽しみください！ https://t.co/whRojPrXfN",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-k9Kukz45hmwi_aQca44NDAfbAw6llyU0NZbVIUkZl823xIuKg-HUuUpVc0wNkmTruDChMoDKUTB9TSR6_wYo3cNKtjUtYgBselHyh94p7W2itKUD5vw0Ki3pF3ZmG1EoXVLG6KcGH2NktP0XrOyKVA=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-04",
+      "endDate": "2026-10-04",
+      "hours": [],
+      "reason": "ライス提供開始の告知であり、営業時間の変更ではないため変更なしと判定。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "ライス提供開始の告知であり、営業時間の変更ではないため変更なしと判定。"
   }
 ]
