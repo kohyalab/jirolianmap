@@ -6341,5 +6341,26 @@
     "processedAt": "2026-10-04T11:35:40.199Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_daily_tochigikaido_2106733282746335564",
+    "shopId": "tochigikaido",
+    "shopName": "栃木街道店",
+    "postSource": "x",
+    "postUrl": "https://x.com/Tochigikaidoten/status/2106733282746335564",
+    "postedAt": "2026-10-04T13:08:50.000Z",
+    "postText": "仕事？って聞いたらプライベートとのこと😂全二郎中唯一、区とか市とかじゃなく「町」にあるウチにわざわざ来てくれるなんて二郎愛しかない！ありがとう！ https://t.co/dYf0DHe2EN",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-04",
+      "endDate": "2026-10-04",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
