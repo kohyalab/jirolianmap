@@ -6623,5 +6623,42 @@
         14.5
       ]
     ]
+  },
+  {
+    "id": "matsumoto",
+    "name": "松本店",
+    "kana": "マツモトテン",
+    "shortName": "松本",
+    "prefCode": "20",
+    "cityCode": "20202",
+    "addressText": "中央1丁目27-15",
+    "lat": 36.23408227021703,
+    "lng": 137.96441006360328,
+    "openedAt": null,
+    "closedAt": null,
+    "urls": {
+      "pc": "",
+      "rdb": "https://ramendb.supleks.jp/s/175529.html",
+      "tabelog": ""
+    },
+    "x": "ramen_jiro_mtmt",
+    "instagram": "",
+    "ticketTiming": "",
+    "soupType": "",
+    "renge": "",
+    "takeout": "",
+    "hoursNotes": "",
+    "remarks": "",
+    "temporary": [],
+    "shiftsByDay": {
+      "0": "未定",
+      "1": "未定",
+      "2": "未定",
+      "3": "未定",
+      "4": "未定",
+      "5": "未定",
+      "6": "未定"
+    },
+    "holidayShifts": null
   }
 ]
