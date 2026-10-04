@@ -6428,5 +6428,26 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業時間の変更に関する言及なし"
+  },
+  {
+    "id": "sns_post_mention_tochigikaido_2106776357728596019",
+    "shopId": "tochigikaido",
+    "shopName": "栃木街道店",
+    "postSource": "x",
+    "postUrl": "https://x.com/Tochigikaidoten/status/2106776357728596019",
+    "postedAt": "2026-10-04T16:00:00.000Z",
+    "postText": "@SAK_SAK_SAKUMA カッコよすぎます 是非また！ ピンク色づくしの岩下の新生姜ミュージアムも是非！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-04",
+      "endDate": "2026-10-04",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
   }
 ]
