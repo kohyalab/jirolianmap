@@ -180,14 +180,14 @@
         const splitSection = document.getElementById('share-opt-split-section');
 
         if (daysSection) daysSection.style.display = (layoutType === 'matrix') ? 'block' : 'none';
-        // 制覇状態が表示されるレイアウト（店舗情報-コンパクト: minimal、店舗情報-詳細: popup_detail）で「制覇状況の表示」を表示
-        const isConquestApplicable = (layoutType === 'minimal' || layoutType === 'popup_detail');
+        // 制覇状態が表示されるレイアウト（店舗情報-コンパクト: minimal、店舗情報-詳細: popup_detail、日別: today）で「制覇状況の表示」を表示
+        const isConquestApplicable = (layoutType === 'minimal' || layoutType === 'popup_detail' || layoutType === 'today');
         if (conquestSection) conquestSection.style.display = isConquestApplicable ? 'block' : 'none';
         // 現在の営業状況（リアルタイム判定）が表示されるレイアウト（店舗情報-コンパクト: minimal、店舗詳細: popup_detail）のみ表示
         const isStatusApplicable = (layoutType === 'minimal') || (layoutType === 'popup_detail' && (!shop || !shop.closedAt));
         if (statusSection) statusSection.style.display = isStatusApplicable ? 'block' : 'none';
         if (metaSection) {
-            metaSection.style.display = (layoutType === 'calendar' || layoutType === 'popup_detail') ? 'block' : 'none';
+            metaSection.style.display = (layoutType === 'calendar' || layoutType === 'popup_detail' || layoutType === 'today') ? 'block' : 'none';
             metaSection.style.borderTop = 'none';
             metaSection.style.paddingTop = '0';
         }

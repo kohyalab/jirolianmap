@@ -943,11 +943,13 @@
 
         function toggleMapActive() {
             isMapActive = !isMapActive;
+            window.isMapActive = isMapActive;
             updateLayout();
         }
         window.toggleMapActive = toggleMapActive;
 
         function setLayoutViewMode(mode) {
+            window.layoutViewMode = mode;
             if (mode === 'grid') {
                 setListSubMode('minimal');
             } else if (mode === 'list') {
@@ -1180,9 +1182,14 @@
         }
 
         function toggleFavorite(id, fromPopup = false, event = null) {
+            if (fromPopup && typeof fromPopup === 'object' && fromPopup.stopPropagation) {
+                event = fromPopup;
+                fromPopup = false;
+            }
             if (event) event.stopPropagation();
             favoriteState[id] = !favoriteState[id];
             saveFavoriteState();
+            window.favoriteState = favoriteState;
             const shop = shops.find(s => s.id === id);
             const isVisited = !!visitedState[id];
             if (markers[id] && shop) {
@@ -1496,6 +1503,7 @@
                 }
 
                 const item = document.createElement('div');
+                item.dataset.shopId = shop.id;
                 const isTodayOpen = ['open', 'closing-soon', 'scheduled'].includes(status.type);
 
                 const displayName = (shop.shortName && shop.shortName.trim()) ? shop.shortName.trim() : shop.name;
@@ -1507,12 +1515,13 @@
                             handleShopSelect(shop.id);
                         }
                     };
-                    item.dataset.shopId = shop.id;
-                    item.className = `shop-item ${isVisited ? 'visited' : ''} ${isTodayOpen ? 'today-open' : 'today-closed'}`;
 
                     const tempStatus = getTemporaryStatus(shop, activeDate);
+                    const shifts = getTodayShifts(shop, activeDate);
+                    const isDayOpen = !!(Array.isArray(shifts) && shifts.length > 0 && !isPreOpen(shop, activeDate));
+                    item.className = `shop-item ${isVisited ? 'visited' : ''} ${isDayOpen ? 'today-open' : 'today-closed'}`;
+
                     const todayHoursData = (() => {
-                        const shifts = getTodayShifts(shop, activeDate);
                         if (!shifts || shifts.length === 0) return { html: `<span>${formatShiftTimeText('休業', 'today')}</span>`, text: '休業' };
                         const plainText = shifts.map(([start, end]) => `${formatTime(start)}-${formatTime(end)}`).join(' / ');
                         const htmlContent = shifts.map(([start, end]) => {
@@ -1521,7 +1530,7 @@
                         return { html: htmlContent, text: plainText };
                     })();
 
-                    const textClass = tempStatus ? 'is-temp' : (isTodayOpen ? 'is-open' : 'is-closed');
+                    const textClass = tempStatus ? 'is-temp' : (isDayOpen ? 'is-open' : 'is-closed');
 
                     item.innerHTML = `
                 <div class="today-summary-card">
@@ -2100,7 +2109,28 @@
             isAppInitialized = true;
             window.isAppInitialized = true;
             window.shops = shops;
+            window.visitedState = visitedState;
+            window.favoriteState = favoriteState;
+            window.toggleFavorite = toggleFavorite;
+            window.toggleVisit = toggleVisit;
+            window.onSearchInput = onSearchInput;
+            window.render = render;
+            window.getBusinessStatus = getBusinessStatus;
             window.renderMatrixScheduleTable = renderMatrixScheduleTable;
+            window.openShareOptionsModal = openShareOptionsModal;
+            window.closeShareOptionsModal = closeShareOptionsModal;
+            window.shareFullGridImage = shareFullGridImage;
+            window.executeImageShare = executeImageShare;
+            window.shareShopCardImage = shareShopCardImage;
+            window.setListSubMode = setListSubMode;
+            window.setMainViewMode = setMainViewMode;
+            window.setDensityMode = setDensityMode;
+            window.setPeriodMode = setPeriodMode;
+            window.setSelectedDate = setSelectedDate;
+            window.toggleMapActive = toggleMapActive;
+            window.isMapActive = isMapActive;
+            window.setLayoutViewMode = setLayoutViewMode;
+            window.layoutViewMode = (listSubMode === 'minimal') ? 'grid' : 'list';
             setTimeout(() => {
                 map.invalidateSize();
                 hideLoadingOverlay();
