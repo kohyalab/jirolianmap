@@ -2063,8 +2063,8 @@
         }
 
         function formatOpenedDateText(openedAt) {
-            if (!openedAt) return '';
-            const parts = openedAt.trim().split('-');
+            if (!openedAt || !String(openedAt).trim()) return '開店日未定';
+            const parts = String(openedAt).trim().split('-');
             if (parts.length === 1) return `${parts[0]}開店`;
             if (parts.length === 2) return `${parts[0]}/${parseInt(parts[1], 10)}開店`;
             if (parts.length === 3) return `${parts[0]}/${parseInt(parts[1], 10)}/${parseInt(parts[2], 10)}開店`;
@@ -2192,7 +2192,7 @@
         }
 
         function isPreOpen(shop, targetDate = new Date()) {
-            if (!shop.openedAt) return false;
+            if (!shop || !shop.openedAt || !shop.openedAt.trim()) return false;
             const normalizedOpenDate = parseNormalizedDateStr(shop.openedAt);
             return normalizedOpenDate > getLocalDateKey(targetDate);
         }
@@ -2215,6 +2215,7 @@
                 dashSize = '0.48rem';
             }
 
+            if (timeStr === '未定') return `<span style="font-size:${mode === 'today' ? '0.72rem' : hourSize}; font-weight:normal; letter-spacing:0.2px; color:#aaa;">未定</span>`;
             if (!timeStr || timeStr === '休業') return `<span style="font-size:${mode === 'today' ? '0.72rem' : hourSize}; font-weight:normal; letter-spacing:0.2px;">休業</span>`;
             return timeStr.split('-').map(t => {
                 const parts = t.trim().split(':');
@@ -2226,28 +2227,32 @@
         }
 
         function isClosedShopExpired(shop, targetDate = new Date()) {
-            if (!shop.closedAt) return false;
+            if (!shop || !shop.closedAt || !shop.closedAt.trim()) return false;
             const normalizedCloseDate = parseNormalizedDateStr(shop.closedAt);
-            const todayStr = targetDate.toISOString().split('T')[0];
+            const targetDateStr = getLocalDateKey(targetDate);
 
-            if (normalizedCloseDate < todayStr) return true;
-            if (normalizedCloseDate === todayStr) {
+            // 閉店日の翌日以降は完全に閉店・休業
+            if (normalizedCloseDate < targetDateStr) return true;
+            if (normalizedCloseDate === targetDateStr) {
                 const currentHour = targetDate.getHours() + (targetDate.getMinutes() / 60);
                 const todayShifts = getTodayShifts(shop, targetDate);
-                if (todayShifts?.length) {
+                if (Array.isArray(todayShifts) && todayShifts.length > 0) {
                     return currentHour > Math.max(...todayShifts.map(s => s[1]));
                 }
-                return currentHour >= 4;
+                return currentHour >= 24;
             }
             return false;
         }
 
         function areShiftsEqual(shiftsA, shiftsB) {
-            const a = shiftsA || [];
-            const b = shiftsB || [];
+            if (shiftsA === '未定' || shiftsB === '未定') {
+                return shiftsA === shiftsB;
+            }
+            const a = Array.isArray(shiftsA) ? shiftsA : [];
+            const b = Array.isArray(shiftsB) ? shiftsB : [];
             if (a.length !== b.length) return false;
             for (let i = 0; i < a.length; i++) {
-                if (a[i][0] !== b[i][0] || a[i][1] !== b[i][1]) return false;
+                if (!a[i] || !b[i] || a[i][0] !== b[i][0] || a[i][1] !== b[i][1]) return false;
             }
             return true;
         }
@@ -2355,22 +2360,44 @@
         }
 
         function getTodayShifts(shop, targetDate = new Date()) {
+            if (!shop) return [];
+            // 開店日が空欄の場合は「未定」
+            if (!shop.openedAt || !shop.openedAt.trim()) return '未定';
+            // オープン前店舗は開店日前日まで「休業」
+            if (isPreOpen(shop, targetDate)) return [];
+            // 閉店店舗は閉店日翌日以降「休業」
+            if (isClosedShopExpired(shop, targetDate)) return [];
+
             const tempEntry = findTemporaryEntry(shop, targetDate);
             if (tempEntry) return tempEntry.hours;
 
-            return getRegularShiftsByDay(shop, targetDate);
+            const regular = getRegularShiftsByDay(shop, targetDate);
+            if (regular === '未定' || (regular === null && shop.shiftsByDay === null)) return '未定';
+            return regular || [];
         }
 
         function getTemporaryStatus(shop, targetDate = new Date()) {
             const tempEntry = findTemporaryEntry(shop, targetDate);
-            if (tempEntry) return tempEntry.hours.length === 0 ? '休業' : '営業';
+            if (tempEntry) {
+                if (tempEntry.hours === '未定') return '未定';
+                return (!tempEntry.hours || tempEntry.hours.length === 0) ? '休業' : '営業';
+            }
             return null;
         }
 
         function getBusinessStatus(shop, targetDate = new Date()) {
-            if (isPreOpen(shop, targetDate)) return { type: 'preopen', bgClass: 'bg-preopen', label: 'オープン予定' };
+            if (!shop || !shop.openedAt || !shop.openedAt.trim()) {
+                return { type: 'closed', bgClass: 'bg-closed', label: '開店日未定' };
+            }
+            if (isPreOpen(shop, targetDate)) {
+                return { type: 'closed', bgClass: 'bg-closed', label: 'オープン前（休業）' };
+            }
+            if (isClosedShopExpired(shop, targetDate)) {
+                return { type: 'closed', bgClass: 'bg-closed', label: '閉店（休業）' };
+            }
             const tempStatus = getTemporaryStatus(shop, targetDate);
             if (tempStatus === '休業') return { type: 'closed', bgClass: 'bg-closed', label: '営業時間外' };
+            if (tempStatus === '未定') return { type: 'closed', bgClass: 'bg-closed', label: '営業未定' };
 
             let currentHour = targetDate.getHours() + (targetDate.getMinutes() / 60);
 
@@ -2378,7 +2405,7 @@
             const yesterday = new Date(targetDate);
             yesterday.setDate(targetDate.getDate() - 1);
             const yesterdayShifts = getTodayShifts(shop, yesterday);
-            if (yesterdayShifts?.length) {
+            if (Array.isArray(yesterdayShifts) && yesterdayShifts.length > 0) {
                 const adjustedHour = currentHour + 24.0;
                 for (const [start, end] of yesterdayShifts) {
                     if (end > 24.0 && adjustedHour >= start && adjustedHour <= end) {
@@ -2394,7 +2421,10 @@
 
             // 2. 当日シフトの判定
             let shifts = getTodayShifts(shop, targetDate);
-            if (shifts?.length) {
+            if (shifts === '未定') {
+                return { type: 'closed', bgClass: 'bg-closed', label: '営業未定' };
+            }
+            if (Array.isArray(shifts) && shifts.length > 0) {
                 // 現在営業中またはまもなく終了かを判定
                 for (const [start, end] of shifts) {
                     if (currentHour >= start && currentHour <= end) {
@@ -2423,7 +2453,9 @@
         }
 
         function getNextShiftTimes(shop, targetDate = new Date()) {
-            if (isPreOpen(shop)) return { startTime: 99999, endTime: 99999 };
+            if (!shop || !shop.openedAt || !shop.openedAt.trim() || isPreOpen(shop) || isClosedShopExpired(shop)) {
+                return { startTime: 99999, endTime: 99999 };
+            }
             const now = targetDate;
             const currentHour = now.getHours() + (now.getMinutes() / 60);
             const status = getBusinessStatus(shop, now);
@@ -2433,7 +2465,7 @@
             }
 
             const todayShifts = getTodayShifts(shop, now);
-            if (todayShifts?.some(([start]) => currentHour < start)) {
+            if (Array.isArray(todayShifts) && todayShifts.some(([start]) => currentHour < start)) {
                 const nextShift = todayShifts.find(([start]) => currentHour < start);
                 return { startTime: nextShift[0], endTime: nextShift[1] };
             }
@@ -2442,7 +2474,7 @@
                 const checkDate = new Date(now);
                 checkDate.setDate(now.getDate() + offset);
                 const checkShifts = getTodayShifts(shop, checkDate);
-                if (checkShifts?.length) {
+                if (Array.isArray(checkShifts) && checkShifts.length > 0) {
                     return {
                         startTime: offset * 24 + checkShifts[0][0],
                         endTime: offset * 24 + checkShifts[0][1]
@@ -2453,9 +2485,15 @@
         }
 
         function getNextOpenScheduleText(shop, targetDate = new Date()) {
+            if (!shop || !shop.openedAt || !shop.openedAt.trim()) {
+                return `<span class="next-schedule" title="開店予定: 未定">開店予定: 未定</span>`;
+            }
             if (isPreOpen(shop)) {
                 const openDateStr = shop.openedAt ? shop.openedAt.replace(/-/g, '/') : '';
                 return `<span class="next-schedule" title="オープン予定: ${openDateStr}">オープン予定: ${openDateStr}</span>`;
+            }
+            if (isClosedShopExpired(shop)) {
+                return `<span class="next-schedule" title="閉店">閉店</span>`;
             }
             const now = targetDate;
             const status = getBusinessStatus(shop, now);
@@ -2862,7 +2900,7 @@
                     const d = new Date(startDate);
                     d.setDate(startDate.getDate() + offset);
                     const shifts = getTodayShifts(shop, d);
-                    if (shifts && shifts.length > maxShiftsInRow) {
+                    if (Array.isArray(shifts) && shifts.length > maxShiftsInRow) {
                         maxShiftsInRow = shifts.length;
                     }
                 }
@@ -2880,10 +2918,13 @@
                     const dateLabel = `${d.getMonth() + 1}/${d.getDate()}`;
                     const tempStatus = getTemporaryStatus(shop, d);
                     const shifts = getTodayShifts(shop, d);
-                    const isTodayOpen = !!(shifts && shifts.length > 0 && !isPreOpen(shop, d));
+                    const isTodayOpen = Array.isArray(shifts) && shifts.length > 0;
                     let hoursHtml = '';
                     let plainText = '休業';
-                    if (!shifts || shifts.length === 0) {
+                    if (shifts === '未定') {
+                        hoursHtml = `<div style="white-space: nowrap; line-height: 1.1;">${formatShiftTimeText('未定', 'calendar')}</div>`;
+                        plainText = '未定';
+                    } else if (!shifts || shifts.length === 0) {
                         hoursHtml = `<div style="white-space: nowrap; line-height: 1.1;">${formatShiftTimeText('休業', 'calendar')}</div>`;
                     } else {
                         plainText = shifts.map(([s, e]) => `${formatTime(s)}-${formatTime(e)}`).join(' / ');
@@ -4381,7 +4422,7 @@
                 if (listSubMode === 'today') {
                     const selectedTodayOpen = Array.from(document.querySelectorAll('input[name="today-open-filter"]:checked')).map(cb => cb.value);
                     const shifts = getTodayShifts(shop, activeDate);
-                    const isShopOpenOnDay = shifts && shifts.length > 0;
+                    const isShopOpenOnDay = Array.isArray(shifts) && shifts.length > 0;
                     const shopTodayStatus = isShopOpenOnDay ? 'open' : 'closed';
                     if (!selectedTodayOpen.includes(shopTodayStatus)) {
                         updateMarkerVisibility(shop.id, false);
@@ -4407,8 +4448,6 @@
                 visibleShopCount++;
 
                 const item = document.createElement('div');
-                const isTodayOpen = ['open', 'closing-soon', 'scheduled'].includes(status.type);
-
                 const displayName = (shop.shortName && shop.shortName.trim()) ? shop.shortName.trim() : shop.name;
 
                 if (listSubMode === 'minimal') {
@@ -4441,20 +4480,27 @@
                         }
                     };
                     item.dataset.shopId = shop.id;
-                    item.className = `shop-item ${isVisited ? 'visited' : ''} ${isTodayOpen ? 'today-open' : 'today-closed'}`;
 
                     const tempStatus = getTemporaryStatus(shop, activeDate);
                     const todayHoursData = (() => {
                         const shifts = getTodayShifts(shop, activeDate);
-                        if (!shifts || shifts.length === 0) return { html: `<div style="white-space:nowrap; line-height:1.1;">${formatShiftTimeText('休業', 'today')}</div>`, text: '休業' };
+                        if (shifts === '未定') {
+                            return { html: `<div style="white-space:nowrap; line-height:1.1;">${formatShiftTimeText('未定', 'today')}</div>`, text: '未定', isOpen: false };
+                        }
+                        if (!shifts || shifts.length === 0) {
+                            return { html: `<div style="white-space:nowrap; line-height:1.1;">${formatShiftTimeText('休業', 'today')}</div>`, text: '休業', isOpen: false };
+                        }
                         const plainText = shifts.map(([start, end]) => `${formatTime(start)}-${formatTime(end)}`).join(' / ');
                         const htmlContent = shifts.map(([start, end]) => {
                             return `<div style="white-space:nowrap; line-height:1.1;">${formatShiftTimeText(`${formatTime(start)}-${formatTime(end)}`, 'today')}</div>`;
                         }).join('');
-                        return { html: htmlContent, text: plainText };
+                        return { html: htmlContent, text: plainText, isOpen: true };
                     })();
 
-                    const textClass = tempStatus ? 'is-temp' : (isTodayOpen ? 'is-open' : 'is-closed');
+                    const isDayOpen = todayHoursData.isOpen;
+                    item.className = `shop-item ${isVisited ? 'visited' : ''} ${isDayOpen ? 'today-open' : 'today-closed'}`;
+
+                    const textClass = tempStatus ? 'is-temp' : (isDayOpen ? 'is-open' : 'is-closed');
 
                     item.innerHTML = `
                 <div class="today-summary-card">

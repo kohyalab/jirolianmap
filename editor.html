@@ -91,24 +91,30 @@
                 </div>
 
                 <!-- 2. 営業時間シフト設定 (基本設定) -->
-                <div class="section-title">🕒 営業時間シフト設定 (`shiftsByDay`, `holidayShifts`)</div>
+                <div class="section-title" style="display: flex; justify-content: space-between; align-items: center;">
+                    <span>🕒 営業時間シフト設定 (`shiftsByDay`, `holidayShifts`)</span>
+                    <button type="button" class="btn btn-sm" style="font-size: 0.72rem; padding: 2px 6px;" onclick="app.setAllShiftsPending()">全曜日を未定に設定</button>
+                </div>
                 <div class="hint">
-                    ※ 入力形式: `11:00-14:30, 17:00-21:00`（定休日は空欄）。
+                    ※ 入力形式: `11:00-14:30, 17:00-21:00`（定休日は空欄、未定時は「未定」）。
                 </div>
 
                 <div class="shifts-grid">
-                    <div class="shift-item"><label>月曜</label><input type="text" id="shift-0" onblur="app.handleShiftBlur(this)"></div>
-                    <div class="shift-item"><label>火曜</label><input type="text" id="shift-1" onblur="app.handleShiftBlur(this)"></div>
-                    <div class="shift-item"><label>水曜</label><input type="text" id="shift-2" onblur="app.handleShiftBlur(this)"></div>
-                    <div class="shift-item"><label>木曜</label><input type="text" id="shift-3" onblur="app.handleShiftBlur(this)"></div>
-                    <div class="shift-item"><label>金曜</label><input type="text" id="shift-4" onblur="app.handleShiftBlur(this)"></div>
-                    <div class="shift-item"><label>土曜</label><input type="text" id="shift-5" onblur="app.handleShiftBlur(this)"></div>
-                    <div class="shift-item"><label>日曜</label><input type="text" id="shift-6" onblur="app.handleShiftBlur(this)"></div>
+                    <div class="shift-item"><div style="display: flex; justify-content: space-between; align-items: center;"><label>月曜</label><button type="button" class="btn btn-sm" style="padding: 1px 4px; font-size: 0.65rem; height: auto;" onclick="app.setShiftPending('shift-0')">未定</button></div><input type="text" id="shift-0" onblur="app.handleShiftBlur(this)"></div>
+                    <div class="shift-item"><div style="display: flex; justify-content: space-between; align-items: center;"><label>火曜</label><button type="button" class="btn btn-sm" style="padding: 1px 4px; font-size: 0.65rem; height: auto;" onclick="app.setShiftPending('shift-1')">未定</button></div><input type="text" id="shift-1" onblur="app.handleShiftBlur(this)"></div>
+                    <div class="shift-item"><div style="display: flex; justify-content: space-between; align-items: center;"><label>水曜</label><button type="button" class="btn btn-sm" style="padding: 1px 4px; font-size: 0.65rem; height: auto;" onclick="app.setShiftPending('shift-2')">未定</button></div><input type="text" id="shift-2" onblur="app.handleShiftBlur(this)"></div>
+                    <div class="shift-item"><div style="display: flex; justify-content: space-between; align-items: center;"><label>木曜</label><button type="button" class="btn btn-sm" style="padding: 1px 4px; font-size: 0.65rem; height: auto;" onclick="app.setShiftPending('shift-3')">未定</button></div><input type="text" id="shift-3" onblur="app.handleShiftBlur(this)"></div>
+                    <div class="shift-item"><div style="display: flex; justify-content: space-between; align-items: center;"><label>金曜</label><button type="button" class="btn btn-sm" style="padding: 1px 4px; font-size: 0.65rem; height: auto;" onclick="app.setShiftPending('shift-4')">未定</button></div><input type="text" id="shift-4" onblur="app.handleShiftBlur(this)"></div>
+                    <div class="shift-item"><div style="display: flex; justify-content: space-between; align-items: center;"><label>土曜</label><button type="button" class="btn btn-sm" style="padding: 1px 4px; font-size: 0.65rem; height: auto;" onclick="app.setShiftPending('shift-5')">未定</button></div><input type="text" id="shift-5" onblur="app.handleShiftBlur(this)"></div>
+                    <div class="shift-item"><div style="display: flex; justify-content: space-between; align-items: center;"><label>日曜</label><button type="button" class="btn btn-sm" style="padding: 1px 4px; font-size: 0.65rem; height: auto;" onclick="app.setShiftPending('shift-6')">未定</button></div><input type="text" id="shift-6" onblur="app.handleShiftBlur(this)"></div>
                     
                     <div class="holiday-shift-container">
-                        <label class="title">祝日シフト</label>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <label class="title">祝日シフト</label>
+                            <button type="button" class="btn btn-sm" style="padding: 1px 4px; font-size: 0.65rem; height: auto;" onclick="app.setShiftPending('shift-hol')">未定</button>
+                        </div>
                         <div class="holiday-input-row">
-                            <input type="text" id="shift-hol" placeholder="例: 11:00-14:30" onblur="app.handleShiftBlur(this)">
+                            <input type="text" id="shift-hol" placeholder="例: 11:00-14:30 または 未定" onblur="app.handleShiftBlur(this)">
                             <label class="checkbox-label">
                                 <input type="checkbox" id="chk-follow-weekday"> 平日に準ずる (`null`)
                             </label>
@@ -179,7 +185,7 @@
                         <div class="form-group col-2">
                             <label>町名・番地等 (`addressText`)</label>
                             <div class="link-input-group">
-                                <input type="text" id="field-addressText" placeholder="三田2-16-4" onblur="app.handleAddressBlur(this)" oninput="app.updateSingleGMapSearchLink()">
+                                <input type="text" id="field-addressText" placeholder="三田2-16-4" onblur="app.handleAddressBlur(this)" oninput="app.handleAddressInput(this); app.updateSingleGMapSearchLink()">
                                 <a href="#" id="single-gmap-search-link" target="_blank" class="btn btn-sm" style="display:none;">🗺️</a>
                             </div>
                         </div>

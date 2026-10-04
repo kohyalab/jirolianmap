@@ -498,38 +498,86 @@ class EditorApp {
         input.value = val;
     }
 
-    handleAddressBlur(input) {
-        let val = this.cleanAddress(input.value);
-        if (typeof LG_CODES !== 'undefined') {
-            for (const pCode in LG_CODES.prefs) {
-                const pName = LG_CODES.prefs[pCode];
-                if (val.startsWith(pName)) {
-                    if (this.el.prefCodeInput) {
-                        this.el.prefCodeInput.value = pCode;
-                        this.updateCityOptions(pCode, '');
-                    }
-                    val = val.substring(pName.length).trim();
-                    break;
-                }
+    handleAddressInput(input) {
+        if (!input || !input.value) return;
+        const raw = input.value;
+        if (typeof LG_CODES !== 'undefined' && LG_CODES.parseAddress) {
+            const parsed = LG_CODES.parseAddress(raw);
+            if (parsed.prefCode || parsed.cityCode) {
+                this._applyAddressSeparation(input, parsed);
             }
-            const currentPrefCode = this.el.prefCodeInput ? this.el.prefCodeInput.value : '';
-            if (currentPrefCode) {
-                const cities = LG_CODES.getCitiesByPref(currentPrefCode);
-                const cityEntries = Object.entries(cities).sort((a, b) => b[1].length - a[1].length);
-                for (const [cCode, cName] of cityEntries) {
-                    if (val.startsWith(cName)) {
-                        if (this.el.cityCodeInput) {
-                            this.el.cityCodeInput.value = cCode;
-                        }
-                        val = val.substring(cName.length).trim();
-                        break;
-                    }
-                }
+        }
+    },
+
+    handleAddressBlur(input) {
+        if (!input) return;
+        let val = this.cleanAddress(input.value);
+        if (typeof LG_CODES !== 'undefined' && LG_CODES.parseAddress) {
+            const parsed = LG_CODES.parseAddress(val);
+            if (parsed.prefCode || parsed.cityCode) {
+                this._applyAddressSeparation(input, parsed);
+                return;
             }
         }
         input.value = val;
         this.updateSingleGMapSearchLink();
-    }
+    },
+
+    _applyAddressSeparation(input, parsed) {
+        const isBulk = !!input.dataset.bulkSub;
+        if (isBulk) {
+            const row = input.closest('.bulk-row-flex');
+            if (row) {
+                const prefSelect = row.querySelector('select[data-bulk-sub="prefCode"]');
+                const citySelect = row.querySelector('select[data-bulk-sub="cityCode"]');
+                if (parsed.prefCode && prefSelect) {
+                    prefSelect.value = parsed.prefCode;
+                    this.handleBulkPrefChange(prefSelect);
+                }
+                if (parsed.cityCode && citySelect) {
+                    citySelect.value = parsed.cityCode;
+                }
+            }
+            input.value = this.cleanAddress(parsed.remainingAddress || '');
+            this.updateBulkGMapLink(input);
+        } else {
+            if (parsed.prefCode && this.el.prefCodeInput) {
+                this.el.prefCodeInput.value = parsed.prefCode;
+                this.updateCityOptions(parsed.prefCode, parsed.cityCode || '');
+            }
+            if (parsed.cityCode && this.el.cityCodeInput) {
+                this.el.cityCodeInput.value = parsed.cityCode;
+            }
+            input.value = this.cleanAddress(parsed.remainingAddress || '');
+            this.updateSingleGMapSearchLink();
+        }
+    },
+
+    setShiftPending(inputId) {
+        const input = document.getElementById(inputId);
+        if (!input) return;
+        input.value = (input.value.trim() === '未定') ? '' : '未定';
+        this.handleShiftBlur(input);
+    },
+
+    setAllShiftsPending() {
+        for (let i = 0; i <= 6; i++) {
+            const input = document.getElementById(`shift-${i}`);
+            if (input) {
+                input.value = '未定';
+                this.handleShiftBlur(input);
+            }
+        }
+    },
+
+    setTempHoursPending(index) {
+        const hInput = this.el.tempContainer.querySelector(`input[data-temp-hours="${index}"]`);
+        if (hInput) {
+            hInput.value = (hInput.value.trim() === '未定') ? '' : '未定';
+            this.handleShiftBlur(hInput);
+            this.gatherTemporaryFromDOM();
+        }
+    },
 
     generateMapUrl(prefCode, cityCode, addressText, name) {
         const queryParts = ['ラーメン二郎'];
@@ -3063,7 +3111,8 @@ ${guidelinesText}
                     <label class="checkbox-label" style="margin: 0 4px;">
                         <input type="checkbox" ${isNoEndDate ? 'checked' : ''} onchange="app.toggleTempNoEndDate(${index}, this)"> 未定
                     </label>
-                    <input type="text" class="hours-input" value="${hoursStr}" placeholder="例: 11:00-14:30 (休業は空欄)" data-temp-hours="${index}" onblur="app.handleShiftBlur(this)" style="flex: 1; min-width: 140px;">
+                    <input type="text" class="hours-input" value="${hoursStr}" placeholder="例: 11:00-14:30 (休業は空欄、未定は「未定」)" data-temp-hours="${index}" onblur="app.handleShiftBlur(this)" style="flex: 1; min-width: 140px;">
+                    <button type="button" class="btn btn-sm" style="padding: 2px 6px; font-size: 0.72rem;" onclick="app.setTempHoursPending(${index})">未定</button>
                     <button type="button" class="btn btn-danger btn-sm" onclick="app.removeTemporary(${index})">削除</button>
                 </div>
                 <div style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-top: 4px; padding-top: 4px; border-top: 1px dashed #2a2a2a;">
@@ -3597,7 +3646,7 @@ ${guidelinesText}
                     <div class="bulk-row-flex">
                         <div class="bulk-field-wrap" style="width:90px; flex:none;"><select data-shop-id="${shop.id}" data-bulk-sub="prefCode" onchange="app.handleBulkPrefChange(this)"><option value="">選択</option>${prefOpts}</select></div>
                         <div class="bulk-field-wrap" style="width:120px; flex:none;"><select data-shop-id="${shop.id}" data-bulk-sub="cityCode" onchange="app.updateBulkGMapLink(this)"><option value="">選択</option>${cityOpts}</select></div>
-                        <div class="bulk-field-wrap" style="flex:1;"><input type="text" data-shop-id="${shop.id}" data-bulk-sub="addressText" value="${shop.addressText || ''}" onblur="app.handleAddressBlur(this); app.updateBulkGMapLink(this);"></div>
+                        <div class="bulk-field-wrap" style="flex:1;"><input type="text" data-shop-id="${shop.id}" data-bulk-sub="addressText" value="${shop.addressText || ''}" onblur="app.handleAddressBlur(this); app.updateBulkGMapLink(this);" oninput="app.handleAddressInput(this); app.updateBulkGMapLink(this);"></div>
                         <a href="${gmapUrl}" target="_blank" class="btn btn-sm" data-bulk-gmap-btn="${shop.id}">🗺️</a>
                     </div>`;
             } else if (fieldKey === 'lat_lng') {
