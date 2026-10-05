@@ -7636,8 +7636,8 @@
       "hours": [],
       "reason": "通常営業時間の再確認投稿であり、変更はありません。"
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-05T23:17:26.596Z",
     "aiStatus": "no_change",
     "aiReason": "通常営業時間の再確認投稿であり、変更はありません。"
   },
@@ -7660,8 +7660,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-05T23:17:26.596Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   }
