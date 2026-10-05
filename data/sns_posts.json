@@ -7476,5 +7476,47 @@
     "processedAt": "2026-10-05T13:33:13.131Z",
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_kameido_2107129352571982276",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2107129352571982276",
+    "postedAt": "2026-10-05T15:22:40.000Z",
+    "postText": "肝臓みたいに頑張りすぎずたまには休肝日を作りなさい。ってこと？ https://t.co/fx24EmM0Ix",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-05",
+      "hours": [],
+      "reason": "投稿内容に具体的な営業情報の変更や臨時休業の言及がないため、変更なしと判定しました。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "投稿内容に具体的な営業情報の変更や臨時休業の言及がないため、変更なしと判定しました。"
+  },
+  {
+    "id": "sns_post_daily_kameido_2107128617469886764",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2107128617469886764",
+    "postedAt": "2026-10-05T15:19:45.000Z",
+    "postText": "金言きたかこれ？ https://t.co/fx24EmM0Ix",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-05",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
