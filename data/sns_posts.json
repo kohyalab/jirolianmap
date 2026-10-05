@@ -7109,5 +7109,112 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の告知であり、臨時休業や営業時間変更の記載はありません。"
+  },
+  {
+    "id": "sns_post_routine_kannai_2106928065406525555",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2106928065406525555",
+    "postedAt": "2026-10-05T02:02:50.000Z",
+    "postText": "おはようございます。  本日高菜ありますのでご希望の方は「アレ」でお願いします。  しびれ汁なしご希望の方は黒の食券、玉ねぎ納豆沢庵ご希望の方は赤の食券でお願いします！ https://t.co/2lRs0B7O1S",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-6aSlDFt_vA01lZ9H9ea0jWoALRR7dOYNhQ3od7qn3Gx8stUER7XIDgyFpERjey01U2dIp60UlUxKzoqpVSNAFME0tJ6JvrVTIQSGFnC1EfH0UWC_1ky08wCkENOQdBc2ITIgF1Q2nsee6kxLd62SeA=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-05",
+      "hours": [],
+      "reason": "通常営業の案内および限定トッピングの告知であり、営業時間の変更はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内および限定トッピングの告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_asakuragaido_2106932716621160450",
+    "shopId": "asakuragaido",
+    "shopName": "朝倉街道駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/r26akgd/status/2106932716621160450",
+    "postedAt": "2026-10-05T02:21:19.000Z",
+    "postText": "本日通常営業！ ネギあります！ よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-05",
+      "hours": [],
+      "reason": "本日通常営業の告知のため、変更なし。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "本日通常営業の告知のため、変更なし。"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2106930529874657455",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2106930529874657455",
+    "postedAt": "2026-10-05T02:12:37.000Z",
+    "postText": "@Follower_co_jp おじさんなので、ゲーム課金とかちょっと考えれないんですよね笑 友達が昔、パズドラで最強の無課金ユーザーになってました笑",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-05",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2106930103582388620",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2106930103582388620",
+    "postedAt": "2026-10-05T02:10:56.000Z",
+    "postText": "@RcFm0EcQGqUTcL4 ありがとうございます！！ もうちょいだけ頑張ります！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-05",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2106929932605739348",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2106929932605739348",
+    "postedAt": "2026-10-05T02:10:15.000Z",
+    "postText": "@jagabayashi 是非是非！！またのお越しをお待ちしております🫡",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-05",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
   }
 ]
