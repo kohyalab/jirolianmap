@@ -3678,6 +3678,39 @@
         "hours": [],
         "sourceUrl": "https://x.com/jiro_sapporo_/status/2104376039606817075",
         "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-05",
+        "endDate": "2026-10-05",
+        "hours": [
+          [
+            11,
+            14
+          ],
+          [
+            17,
+            20
+          ]
+        ],
+        "reason": "",
+        "sourceUrl": "https://x.com/jiro_sapporo_/status/2107050815026532626",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-07",
+        "endDate": "2026-10-07",
+        "hours": [],
+        "reason": "",
+        "sourceUrl": "https://x.com/jiro_sapporo_/status/2106999060540571709",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-14",
+        "endDate": "2026-10-14",
+        "hours": [],
+        "reason": "",
+        "sourceUrl": "https://x.com/jiro_sapporo_/status/2106999060540571709",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -5001,6 +5034,31 @@
         "startDate": "2026-10-02",
         "endDate": "2026-10-02",
         "hours": []
+      },
+      {
+        "startDate": "2026-10-05",
+        "endDate": "2026-10-05",
+        "hours": [
+          [
+            11,
+            14.5
+          ],
+          [
+            17,
+            20.5
+          ]
+        ],
+        "reason": "",
+        "sourceUrl": "https://x.com/ksgy26/status/2106861578889072684",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-12",
+        "endDate": "2026-10-12",
+        "hours": [],
+        "reason": "",
+        "sourceUrl": "https://x.com/ksgy26/status/2106861578889072684",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -6345,6 +6403,14 @@
           ]
         ],
         "sourceUrl": "https://x.com/jiro_NGY/status/2101989792456286251"
+      },
+      {
+        "startDate": "2026-10-10",
+        "endDate": "2026-10-12",
+        "hours": [],
+        "reason": "",
+        "sourceUrl": "https://x.com/jiro_NGY/status/2106898850674102661",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
