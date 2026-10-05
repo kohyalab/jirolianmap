@@ -6871,5 +6871,243 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "5日(月)は通常営業の告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_tachikawa_2106920914281730430",
+    "shopId": "tachikawa",
+    "shopName": "立川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jirotachikawa/status/2106920914281730430",
+    "postedAt": "2026-10-05T01:34:25.000Z",
+    "postText": "10/5(月)、昼夜とも時間内売り切れなし営業です。 昼11:00-14:30 夜17:00-21:30  ①「Ｔ2」、担々風 担々麺風のラーメン。 汁なし変更券と組み合わせると、汁なし坦々麺(風)になります。  ②持帰りラーメン販売します。 　標準:2人前のスープと生麺 　　　+ブタハーフ2,500円 https://t.co/SsEK5AIv5h",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-9qt5nBngJBOqJXUEHH22u0U95jILX9Fu4HL4IfqZv_E1ngHYDhWYLTqPTnG279a67eqYH_NzkT_sRD22UqLRrfEbRbJP6mTM3sc9RIxjERGTq0VShmdoo3XIEr56unynozts5COXFGnf_cHm286PRQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-P4GHp-pfkq0VnOz6QOWlPJCjElLdv_HhBOM-eUzGb05te07nwnwFPFOw8gayn-JTOxGNIBp5W71ypeF-P5SeJiU8l2RnHqKGLJOWHMXAWhOBP8Wv-Tb0CSRnDezlTfLugrQyZO7D0e9Ts5G5EbeKpg=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-05",
+      "hours": [],
+      "reason": "通常営業の案内であり、変更はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内であり、変更はありません。"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2106927551767859361",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2106927551767859361",
+    "postedAt": "2026-10-05T02:00:47.000Z",
+    "postText": "@sasanigori もう少し頑張ります！！ デリバリーの具合と、原価との戦いですね！！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-05",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2106927402777751988",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2106927402777751988",
+    "postedAt": "2026-10-05T02:00:12.000Z",
+    "postText": "@talll_woman_bbw ありがとうございます！！！ 行ける時で全然大丈夫です！！ 御来店お待ちしております！！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-05",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2106927259395489987",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2106927259395489987",
+    "postedAt": "2026-10-05T01:59:38.000Z",
+    "postText": "@bb90125 頑張ります！！ありがとうございます！！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-05",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2106927206501056625",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2106927206501056625",
+    "postedAt": "2026-10-05T01:59:25.000Z",
+    "postText": "@Marupo_n_ ですです！色々試行錯誤しながらやりますので、しばらくお待ちください！！  最初は家で茹でるタイプのやつになります！！ そんなに出ない時は茹でるタイプのも始めるくらいでいこうかと…。 うちのラーメンちゃんが配達先でグズグズにならないか心配で…",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-05",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2106926539678142709",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2106926539678142709",
+    "postedAt": "2026-10-05T01:56:46.000Z",
+    "postText": "@tr4y8D5HS449890 頑張ります！！！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-05",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2106926482736214305",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2106926482736214305",
+    "postedAt": "2026-10-05T01:56:32.000Z",
+    "postText": "@Itosinomiko それが一番嬉しいです！！！ またお越しくださいませ！！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-05",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2106926407414923580",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2106926407414923580",
+    "postedAt": "2026-10-05T01:56:14.000Z",
+    "postText": "@HiroS371221 うーん。悪用はどうなんでしょう？  案の一つとして、すごいいいと思います！！ ありがとうございます！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-05",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2106926026760901012",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2106926026760901012",
+    "postedAt": "2026-10-05T01:54:44.000Z",
+    "postText": "@sk_05201 ありがとうございます！！  ですが、値段上がっても、豚ましは二個につき一個です笑",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-05",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2106925788792860818",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2106925788792860818",
+    "postedAt": "2026-10-05T01:53:47.000Z",
+    "postText": "@BUG_KILLER_M ありがとうございます！！  昨日めちゃくちゃ忙しくて、これが続けばいいとか考えてしまいました笑 ダメな時は宜しくお願いいたします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-05",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2106925550539551183",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2106925550539551183",
+    "postedAt": "2026-10-05T01:52:50.000Z",
+    "postText": "おはようございます！秋花粉が飛んできましたね！鼻詰まりで目が覚めました…。春は大丈夫なのですが、この時期けっこうキツイです。ネタになるので、勝手にブタクサだと決めつけてますw 本日も御来店お待ちしております！！ https://t.co/n7l6yfGy3d",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-mqNR1zhXAUGlead3P2UrXV3Gld3WxofXxhIt8mbOBCuwi2mxVq-34vluEfQIw02hnz4ZgF2rEcJ0jAfltO_KSO_7c0GiRfjBnKjN6ng6I_8v2yLlp44OWmzfF7DjUhuVs5ZFJYlw4jWDytfaw_XdNA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-uQRTd9cYcQUa6JbwByF1o38j8cBQXF1O0_812W-VzCIp7zKlfWmlMZ_0WhAZYU3VhpFDM3NsgceWwvHwYl74EeRkrn9Am5MCv_ezL7KB8eZmqxbFuABCsSLiiT3CCLCNSOM02cNu3fHk2BxAonjQCA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-7YOVLu-eqz31bmYGCT5-sdQhcg-V8j9o9WyQStqYU_37qwqmS8D7u25Uo9KZk52PHN_1Dl5CmSqsL5eBovVl9SRGXrmZMOgvrgXZZ_kOa0zLFC4zPHKu50NJy9UvoG5Ladro2lhXukGOR31a-vGEJw=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-05",
+      "hours": [],
+      "reason": "通常営業の告知であり、臨時休業や営業時間変更の記載はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知であり、臨時休業や営業時間変更の記載はありません。"
   }
 ]
