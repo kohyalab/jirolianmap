@@ -7493,8 +7493,8 @@
       "hours": [],
       "reason": "投稿内容に具体的な営業情報の変更や臨時休業の言及がないため、変更なしと判定しました。"
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-05T21:47:37.436Z",
     "aiStatus": "no_change",
     "aiReason": "投稿内容に具体的な営業情報の変更や臨時休業の言及がないため、変更なしと判定しました。"
   },
@@ -7514,8 +7514,8 @@
       "hours": [],
       "reason": ""
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-05T21:47:37.436Z",
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   },
@@ -7535,8 +7535,8 @@
       "hours": [],
       "reason": "通常営業"
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-05T21:47:37.436Z",
     "aiStatus": "no_change",
     "aiReason": "通常営業"
   },
@@ -7556,8 +7556,8 @@
       "hours": [],
       "reason": "通常営業の案内"
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-05T21:47:37.436Z",
     "aiStatus": "no_change",
     "aiReason": "通常営業の案内"
   },
@@ -7589,8 +7589,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-05T21:47:37.436Z",
     "aiStatus": "match",
     "aiReason": "既に登録済みの臨時スケジュールと一致"
   },
@@ -7613,8 +7613,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-05T21:47:37.436Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   }
