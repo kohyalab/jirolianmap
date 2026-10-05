@@ -7455,5 +7455,26 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_daily_sendai2_2107094005452583408",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2107094005452583408",
+    "postedAt": "2026-10-05T13:02:13.000Z",
+    "postText": "ナィスゥートップ！！ https://t.co/YanbSu4Euh",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-05",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
