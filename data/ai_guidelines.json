@@ -2,6 +2,126 @@
   "generalRules": [],
   "learnedFeedback": [
     {
+      "id": "sns_post_koshigaya_20261012_1_2106861578889072684",
+      "timestamp": "2026-10-05T13:31:51.289Z",
+      "shopId": "koshigaya",
+      "shopName": "越谷店",
+      "postDate": "2026-10-04T21:38:38.000Z",
+      "postText": "おはようございます！ ラーメン二郎越谷店です！  10月5日(月) 昼11:00〜14:30LО 夜17:00〜20:30LО ご来店お待ちしております🙇🙇  10月12日(月祝) お休みします。 よろしくお願いします！ https://t.co/LxFA2KNj3H",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-10-12",
+        "endDate": "2026-10-12",
+        "hours": [],
+        "reason": ""
+      }
+    },
+    {
+      "id": "sns_post_koshigaya_20261005_0_2106861578889072684",
+      "timestamp": "2026-10-05T13:31:45.498Z",
+      "shopId": "koshigaya",
+      "shopName": "越谷店",
+      "postDate": "2026-10-04T21:38:38.000Z",
+      "postText": "おはようございます！ ラーメン二郎越谷店です！  10月5日(月) 昼11:00〜14:30LО 夜17:00〜20:30LО ご来店お待ちしております🙇🙇  10月12日(月祝) お休みします。 よろしくお願いします！ https://t.co/LxFA2KNj3H",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-10-05",
+        "endDate": "2026-10-05",
+        "hours": [
+          [
+            11,
+            14.5
+          ],
+          [
+            17,
+            20.5
+          ]
+        ],
+        "reason": ""
+      }
+    },
+    {
+      "id": "sns_post_nagoyaosone_20261010_0_2106898850674102661",
+      "timestamp": "2026-10-05T13:30:57.368Z",
+      "shopId": "nagoyaosone",
+      "shopName": "名古屋大曽根店",
+      "postDate": "2026-10-05T00:06:44.000Z",
+      "postText": "おはようございます。 ラーメン二郎名古屋大曽根店です。 本日昼夜営業です。 昼の部11:00〜14:00 夜の部17:00〜20:00  ※今月１０日〜１２日はお休みさせていただきます。予めご了承くださいませ。  よろしくお願いいたします。",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-10-10",
+        "endDate": "2026-10-12",
+        "hours": [],
+        "reason": ""
+      }
+    },
+    {
+      "id": "sns_post_sapporo_20261014_1_2106999060540571709",
+      "timestamp": "2026-10-05T13:30:00.608Z",
+      "shopId": "sapporo",
+      "shopName": "札幌店",
+      "postDate": "2026-10-05T06:44:56.000Z",
+      "postText": "夜の部も、17:00〜18:30 「つけ麺」サブスープ対応します。  又、現金＋100円でサブ塩(醤油ベース) も対応します🧂  必ず、スタッフ確認時に申告して下さい。 「サブ」、「サブ塩」！  麺の旨みが感じやすいです、違いをお楽しみ下さい😄  10月7日(水)、14日(水)終日休業になります。",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-10-14",
+        "endDate": "2026-10-14",
+        "hours": [],
+        "reason": ""
+      }
+    },
+    {
+      "id": "sns_post_sapporo_20261007_0_2106999060540571709",
+      "timestamp": "2026-10-05T13:29:54.507Z",
+      "shopId": "sapporo",
+      "shopName": "札幌店",
+      "postDate": "2026-10-05T06:44:56.000Z",
+      "postText": "夜の部も、17:00〜18:30 「つけ麺」サブスープ対応します。  又、現金＋100円でサブ塩(醤油ベース) も対応します🧂  必ず、スタッフ確認時に申告して下さい。 「サブ」、「サブ塩」！  麺の旨みが感じやすいです、違いをお楽しみ下さい😄  10月7日(水)、14日(水)終日休業になります。",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-10-07",
+        "endDate": "2026-10-07",
+        "hours": [],
+        "reason": ""
+      }
+    },
+    {
+      "id": "sns_post_sapporo_20261005_0_2107050815026532626",
+      "timestamp": "2026-10-05T13:29:31.712Z",
+      "shopId": "sapporo",
+      "shopName": "札幌店",
+      "postDate": "2026-10-05T10:10:36.000Z",
+      "postText": "都合により、20時くらいで営業終了致しますm(_ _)m",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-10-05",
+        "endDate": "2026-10-05",
+        "hours": [
+          [
+            11,
+            14
+          ],
+          [
+            17,
+            20
+          ]
+        ],
+        "reason": ""
+      }
+    },
+    {
       "id": "sns_post_okinawa_20261006_0_2106740817369174090",
       "timestamp": "2026-10-04T14:54:18.616Z",
       "shopId": "okinawa",
