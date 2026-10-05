@@ -2,6 +2,23 @@
   "generalRules": [],
   "learnedFeedback": [
     {
+      "id": "sns_post_maebashichiyoda_20261006_0_2107244127163490395",
+      "timestamp": "2026-10-05T23:17:07.195Z",
+      "shopId": "maebashichiyoda",
+      "shopName": "前橋千代田町店",
+      "postDate": "2026-10-05T22:58:45.000Z",
+      "postText": "ラーメン二郎前橋千代田町店です。 10/6火曜日お休みします。 すみません。 宜しくお願い致します。 https://t.co/OwMHsLAD1p",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-10-06",
+        "endDate": "2026-10-06",
+        "hours": [],
+        "reason": ""
+      }
+    },
+    {
       "id": "sns_post_koshigaya_20261006_0_2107221257112670335",
       "timestamp": "2026-10-05T21:43:41.997Z",
       "shopId": "koshigaya",
