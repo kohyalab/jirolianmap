@@ -2,6 +2,32 @@
   "generalRules": [],
   "learnedFeedback": [
     {
+      "id": "sns_post_koshigaya_20261006_0_2107221257112670335",
+      "timestamp": "2026-10-05T21:43:41.997Z",
+      "shopId": "koshigaya",
+      "shopName": "越谷店",
+      "postDate": "2026-10-05T21:27:52.000Z",
+      "postText": "おはようございます！ ラーメン二郎越谷店です！  10月6日(火) 昼11:00〜14:30LО 夜17:00〜20:30LО ご来店お待ちしております🙇🙇  10月12日(月祝) お休みします。 よろしくお願いします！ https://t.co/hX1iuP415h",
+      "aiStatus": "match",
+      "aiReason": "既に登録済みの臨時スケジュールと一致",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-10-06",
+        "endDate": "2026-10-06",
+        "hours": [
+          [
+            11,
+            14.5
+          ],
+          [
+            17,
+            20.5
+          ]
+        ],
+        "reason": ""
+      }
+    },
+    {
       "id": "sns_post_koshigaya_20261012_1_2106861578889072684",
       "timestamp": "2026-10-05T13:31:51.289Z",
       "shopId": "koshigaya",
