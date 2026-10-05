@@ -6604,5 +6604,48 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_fujisawa_2106900952418865583",
+    "shopId": "fujisawa",
+    "shopName": "湘南藤沢店",
+    "postSource": "x",
+    "postUrl": "https://x.com/fujirow26/status/2106900952418865583",
+    "postedAt": "2026-10-05T00:15:06.000Z",
+    "postText": "おはようございます。  10月5日(月)  しょっぱ豚🐷  カレータマネギ🧅  豚しゃぶ特製ぽん酢🐷  よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-05",
+      "hours": [],
+      "reason": "通常営業の案内であり、臨時休業や営業時間変更の記載はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内であり、臨時休業や営業時間変更の記載はありません。"
+  },
+  {
+    "id": "sns_post_nagoyaosone_20261010_0_2106898850674102661",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2106898850674102661",
+    "postedAt": "2026-10-05T00:06:44.000Z",
+    "postText": "おはようございます。 ラーメン二郎名古屋大曽根店です。 本日昼夜営業です。 昼の部11:00〜14:00 夜の部17:00〜20:00  ※今月１０日〜１２日はお休みさせていただきます。予めご了承くださいませ。  よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-12",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
