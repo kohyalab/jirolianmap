@@ -7560,5 +7560,62 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の案内"
+  },
+  {
+    "id": "sns_post_koshigaya_20261006_0_2107221257112670335",
+    "shopId": "koshigaya",
+    "shopName": "越谷店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ksgy26/status/2107221257112670335",
+    "postedAt": "2026-10-05T21:27:52.000Z",
+    "postText": "おはようございます！ ラーメン二郎越谷店です！  10月6日(火) 昼11:00〜14:30LО 夜17:00〜20:30LО ご来店お待ちしております🙇🙇  10月12日(月祝) お休みします。 よろしくお願いします！ https://t.co/hX1iuP415h",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-79tV3tYKiquc3jSdlqRDF1e5MVJy-2tFws-tmpmQOner2pKMAvb35q15Vkw9B3LtvFH3Z7871xlwniSukcbn3DeFxcSFIzI7RncHjSlBw_Db_2eozNISYjp7rE23eKTDaZs82r6xBkE61Zq-L-jm9g=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-06",
+      "endDate": "2026-10-06",
+      "hours": [
+        [
+          11,
+          14.5
+        ],
+        [
+          17,
+          20.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "既に登録済みの臨時スケジュールと一致"
+  },
+  {
+    "id": "sns_post_koshigaya_20261012_1_2107221257112670335",
+    "shopId": "koshigaya",
+    "shopName": "越谷店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ksgy26/status/2107221257112670335",
+    "postedAt": "2026-10-05T21:27:52.000Z",
+    "postText": "おはようございます！ ラーメン二郎越谷店です！  10月6日(火) 昼11:00〜14:30LО 夜17:00〜20:30LО ご来店お待ちしております🙇🙇  10月12日(月祝) お休みします。 よろしくお願いします！ https://t.co/hX1iuP415h",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-79tV3tYKiquc3jSdlqRDF1e5MVJy-2tFws-tmpmQOner2pKMAvb35q15Vkw9B3LtvFH3Z7871xlwniSukcbn3DeFxcSFIzI7RncHjSlBw_Db_2eozNISYjp7rE23eKTDaZs82r6xBkE61Zq-L-jm9g=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-12",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
