@@ -7372,5 +7372,67 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業時間の変更や臨時休業はありません。"
+  },
+  {
+    "id": "sns_post_sapporo_20261005_0_2107050815026532626",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2107050815026532626",
+    "postedAt": "2026-10-05T10:10:36.000Z",
+    "postText": "都合により、20時くらいで営業終了致しますm(_ _)m",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-05",
+      "hours": [
+        [
+          11,
+          14
+        ],
+        [
+          17,
+          20
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_nagoyaosone_20261005_0_2107052715964764553",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2107052715964764553",
+    "postedAt": "2026-10-05T10:18:09.000Z",
+    "postText": "ラーメン二郎名古屋大曽根店です。 只今の時間、並びを持ちまして本日の営業は終了とさせていただきます。 よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-05",
+      "hours": [
+        [
+          11,
+          14
+        ],
+        [
+          17,
+          19.3
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
