@@ -7640,5 +7640,29 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業時間の再確認投稿であり、変更はありません。"
+  },
+  {
+    "id": "sns_post_maebashichiyoda_20261006_0_2107244127163490395",
+    "shopId": "maebashichiyoda",
+    "shopName": "前橋千代田町店",
+    "postSource": "x",
+    "postUrl": "https://x.com/SnBZt6eRCdz7lQw/status/2107244127163490395",
+    "postedAt": "2026-10-05T22:58:45.000Z",
+    "postText": "ラーメン二郎前橋千代田町店です。 10/6火曜日お休みします。 すみません。 宜しくお願い致します。 https://t.co/OwMHsLAD1p",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-UOkg4I-eFZGVbUqOkLHZkzFqh_WnI8AUTOncYeUIP7NLontsHSVqdYq4PAKpPsG0DyWK48iIGarx3fQrXWMc9cew5EBEa46N2gMTAketm4Sf8DgV5N9pGgQ39N0VGPtxnMNKutD09fD6gDr8ggkzKA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-06",
+      "endDate": "2026-10-06",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
