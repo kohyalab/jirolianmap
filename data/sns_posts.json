@@ -7304,5 +7304,73 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "本日通常営業の告知"
+  },
+  {
+    "id": "sns_post_routine_kameido_2107008745733775588",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2107008745733775588",
+    "postedAt": "2026-10-05T07:23:25.000Z",
+    "postText": "お世話になってます。本日のタレは肉カス、タマネギ、大葉になります！よろしければどうぞ！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-05",
+      "hours": [],
+      "reason": "通常営業の案内"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内"
+  },
+  {
+    "id": "sns_post_routine_kameido_2107006337435803997",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2107006337435803997",
+    "postedAt": "2026-10-05T07:13:51.000Z",
+    "postText": "今のタイミングで改めてこのキーホルダー見るとめっちゃ良いなぁ https://t.co/LFA4hbElgy https://t.co/FrWoJEz5cb",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-0BdFVE6-6Xa5nAwj2AwdFaGgqpaVfkhZzrw7EjKwI84DSspLNq7z-sy8qqhAEZGgj_Jj-HfZyt8dQ6avmMcEqgmVyAKOKnRY7FLQLS1Zko38U9gYm_4yKtznU41C9eU4wMWAosb8dNNeLj3qw4B94g=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-05",
+      "hours": [],
+      "reason": "営業情報の変更に関する言及はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_kameido_2107005849990562161",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2107005849990562161",
+    "postedAt": "2026-10-05T07:11:55.000Z",
+    "postText": "お世話になってます。最近ありがたいことにお客さんからご当地ちいかわなどのお土産をいただくことが多くなったのでこちらに飾らせていただきます✨いつもありがとうございます！ https://t.co/0pUkAOATjs",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-EpVLjJLL4YNeDQp_G-VkNfoBQ02EQdpe6BZpGulUOqkQbDjQHA1KRrHIN8F2cbHzBSd2tV36qohcIDpjH2_iNsEGQqPy0VkOGzeH27bvLJsKjzHFAXsQ4SnzLRIcFFmqs3jyNaqE6J87P2ojJO9NPA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ZkBNRXKjUyZ2KyPk6DjMKv9zc4RcXpwZRC_BRqoeKw-pHdJ0heiTBX7in7B2tX97P0PDKIxe3mHpVZ_w8MoGie-adhW97hXKuUe2KWFSd7vpNvBHZHECjOaHijzr2iDQ9_U6TfWD-42yDs85rwhaoA=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-05",
+      "hours": [],
+      "reason": "営業時間の変更や臨時休業はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更や臨時休業はありません。"
   }
 ]
