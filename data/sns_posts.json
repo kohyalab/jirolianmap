@@ -8562,5 +8562,28 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の告知のため、変更なし。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2107599809087746360",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2107599809087746360",
+    "postedAt": "2026-10-06T22:32:06.000Z",
+    "postText": "本日 ◇10/7（水） 【昼の部】＆【夜の部】 明日 ◇10/8（木） 【昼の部】  ［フライドチリガーリック］🉐特割🈹！ →50円引き！券売機設定中！  本日100円です♪ →［まかない］に！ どうぞー♪ https://t.co/PwWEoit7QI",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-KhCVPth17KfPntspEMttntxmuQTeSN13p097PbEzod95ep9-WjFdqzFMqdf0n7qh5dYVgXsbFK87jYVwoDG4uNLTK40CQpO5JZv5HutoDWHIRSlnRBlM7GWtry5yXbcFx3R9VyFaT5Uc9ArH78Wl6Q=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-06",
+      "endDate": "2026-10-06",
+      "hours": [],
+      "reason": "通常営業の案内およびトッピングの価格変更に関する投稿であり、営業時間の変更はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内およびトッピングの価格変更に関する投稿であり、営業時間の変更はありません。"
   }
 ]
