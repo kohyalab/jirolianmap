@@ -8359,8 +8359,8 @@
       "hours": [],
       "reason": "営業情報の変更に関する言及はありません。"
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-06T21:58:04.162Z",
     "aiStatus": "no_change",
     "aiReason": "営業情報の変更に関する言及はありません。"
   },
@@ -8380,8 +8380,8 @@
       "hours": [],
       "reason": "10月7日(水)の営業案内ですが、通常営業時間と同一のため変更なしと判定します。"
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-06T21:58:04.162Z",
     "aiStatus": "no_change",
     "aiReason": "10月7日(水)の営業案内ですが、通常営業時間と同一のため変更なしと判定します。"
   },
@@ -8404,8 +8404,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-06T21:58:04.162Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   }
