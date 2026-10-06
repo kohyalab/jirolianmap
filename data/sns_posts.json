@@ -8063,5 +8063,30 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業変更なし（通常通り営業・雑談等）"
+  },
+  {
+    "id": "sns_post_routine_nishidai_2107363402410856463",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2107363402410856463",
+    "postedAt": "2026-10-06T06:52:42.000Z",
+    "postText": "こんにちは。 夜の部、 持ち帰り肩ロース ¥2600×1 、残っています。 https://t.co/phvj7ckK7W",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-lSVinsnQvsibDTN7HUbgy4vF230-67-qlV7HfVoeeq-rQZ3fM_bHLqjfLleeDGga-Igfb7tSQxWCjetsUtyXVhfgNqz7-AqniTQ-3N7huAZGXwhQpggBMgyKHykavLWDuWbFHlOlvta5mLWYhVuuqA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-lwVkX_tbA8nM-WLgJgAMx3kiIou1678zU82ZEZBszOm-3xMYqqUawQRe-4z6XmhRTa-kxEnyXaUErvGb8b7fb5ggYxeJBThwbnLLpSEsbCsS2AK6mj1acOgKvVN6bKJNRkw2ukMfrqoZZ3ngwQAFGA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-q-a3ZUNO4Y9poqtgS1TlsuyUTC_WQ0t2eDsKmARs1SERwHXiJEF9tsaMzjcASI46LwzX7QofmKAhkc_J3zIvu1ALAc9iFnV_Vi_jKYGr_l0FHh3s9OkeVtI1VsBiCD8D1skO2B47V8fE66n_kd7Wfg=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-06",
+      "endDate": "2026-10-06",
+      "hours": [],
+      "reason": "営業情報の変更に関する言及はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報の変更に関する言及はありません。"
   }
 ]
