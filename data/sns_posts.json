@@ -8109,5 +8109,47 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "日常的なトッピング案内の投稿であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_kameido_2107377545339691121",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2107377545339691121",
+    "postedAt": "2026-10-06T07:48:54.000Z",
+    "postText": "夜の部は大葉、青トウガラシのタレになります！肉カスとタマネギは少しだけ入ってます💦 https://t.co/ZAxGeXt42S",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-06",
+      "endDate": "2026-10-06",
+      "hours": [],
+      "reason": "限定トッピングの案内のみであり、営業時間の変更はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの案内のみであり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_kyoto_2107379477093503238",
+    "shopId": "kyoto",
+    "shopName": "京都店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kyoto/status/2107379477093503238",
+    "postedAt": "2026-10-06T07:56:35.000Z",
+    "postText": "こんにちは、本日通常営業です！多分「ドパ味噌」今日で終わりです！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-06",
+      "endDate": "2026-10-06",
+      "hours": [],
+      "reason": "本日通常営業の告知であり、臨時休業や営業時間変更はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "本日通常営業の告知であり、臨時休業や営業時間変更はありません。"
   }
 ]
