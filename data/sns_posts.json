@@ -8408,5 +8408,159 @@
     "processedAt": "2026-10-06T21:58:04.162Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_senjuohashi_2107598305555632498",
+    "shopId": "senjuohashi",
+    "shopName": "千住大橋駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjujirou26/status/2107598305555632498",
+    "postedAt": "2026-10-06T22:26:07.000Z",
+    "postText": "ラー油あります！  ※営業時間10時30分〜 15時30分ラストオーダー！ https://t.co/ZSiI92LLJl",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-VJjEjVRUShuwqbL0Z_FdVhhD9E9orCKYBlpNKuww8WJkRIuamVhGRpwdxPRbeHQA8u2vHb3kq2_rHe6iivxoxzgbMMX0r9bts5BkbozKf4KaAKazvj5XbWrvzJYKjH9zqEnhmYCxch2lOKd7HG4WtQ=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-06",
+      "endDate": "2026-10-06",
+      "hours": [],
+      "reason": "通常営業時間の案内であり、変更はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業時間の案内であり、変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2107597795951861936",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2107597795951861936",
+    "postedAt": "2026-10-06T22:24:06.000Z",
+    "postText": "本日 ◇10/7水 【昼の部】 →こちらをご覧のお客様限定です！ ↓ ※お客様ご自身で→丸の🟥赤又は白🤍食券を１枚お取りになって席までお越しください。→食券は券売機の前の台の二段目に置いておきます。 ※必ず着席時にお出しください。 ※サービス中の目印は［黄色いハンカチ］ どうぞご利用下さい♪ https://t.co/MLevrNvdza https://t.co/S0fVbVdXhA",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Cp_CvUX5Kh0ne87GN8p1EU7qJR5ojV7rvUYxMSnbDq_teQ3NtI2EYhDzb0X_mpHNfPzCYjsrKYQW9kBwmrYAAfpRM2fWgNAROPIH7VuGKoKaPp44lgU3FdymMB6U5ClNftmaEM9un32CVv373JRMRQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-RE-bAfmDMwjRHEc4xpkkZ1VaQdccH6Dl7VnzUUzaAN3zZfoVg0jwENpeXmqDwAxrvubElNbUagasI9YybyyXAqr__2GeC2C-LglCtiJ0yoF5L2w4FMj4EtgaleTBnIDAB6PhncB_cJSPfL1QLjn4aQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Cc7_3ifG-PkHmW3PFjtTd3XYe1etaZTM-kGcb0gZPRKDZXIw-Rtyls6yUiNmjWv6WK9Gw5kR_VPqNnE6nq3Z8WfGABIYwBbvBBm5GHV1BBnLMLSi0YSAnOv5GjfL8iXW7XydVBpOnZuTp82ETT6ziw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-MtnfHMmouMXGaGboC90WkQZfA3w3XucJ0RKAxHfgy07CxLul0Mbe8A3u6edilOu7LanT16mhEbsQYWrPoXAVx8qElEd6zxPasq33DtZv7HV813oK9BUAOnRonJwhHpVS4iu7cDDUebtnB4a1n8rkNA=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-06",
+      "endDate": "2026-10-06",
+      "hours": [],
+      "reason": "通常営業の案内およびトッピングの告知であり、営業時間の変更はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内およびトッピングの告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_shndaita_2107595464162111892",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2107595464162111892",
+    "postedAt": "2026-10-06T22:14:50.000Z",
+    "postText": "バイト募集します！  時給1300円 くらい(慣れたらすこし増えます) 7時〜17時くらい(応相談) 週2〜4回くらい（25〜45歳くらい） まかないあります 近所のひと希望 日払いです ※インスパの出店をしようとしているひとは不可です   希望の方は 年齢、最寄り駅、飲食業経験を書いてDMしてください！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-06",
+      "endDate": "2026-10-06",
+      "hours": [],
+      "reason": "アルバイト募集の告知であり、営業時間の変更や臨時休業に関する記載はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "アルバイト募集の告知であり、営業時間の変更や臨時休業に関する記載はありません。"
+  },
+  {
+    "id": "sns_post_routine_shndaita_2107595381949530166",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2107595381949530166",
+    "postedAt": "2026-10-06T22:14:30.000Z",
+    "postText": "すだち(100円)もやります！ これが消えたら売り切れです！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-06",
+      "endDate": "2026-10-06",
+      "hours": [],
+      "reason": "通常営業の範囲内であり、臨時休業や営業時間変更の告知はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の範囲内であり、臨時休業や営業時間変更の告知はありません。"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2107595237988385071",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2107595237988385071",
+    "postedAt": "2026-10-06T22:13:56.000Z",
+    "postText": "激辛もやります！ 多分ちゃんと辛いです！  1倍  100円 2倍 200円 3倍 300円です！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-06",
+      "endDate": "2026-10-06",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2107595094807527777",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2107595094807527777",
+    "postedAt": "2026-10-06T22:13:22.000Z",
+    "postText": "にんにく地獄汁なし(+200円)もやります！ すりおろしにんにくをまぜこんでます！  麺の量と一緒に じごくでって言ってください！ ラーメンのひとはラーメンでって言ってくれるとわかりやすいです！  麺の量を聞かれた時に じぶんから言ってください！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-06",
+      "endDate": "2026-10-06",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_shndaita_2107594990079897694",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2107594990079897694",
+    "postedAt": "2026-10-06T22:12:57.000Z",
+    "postText": "2026年10月7日(水)  通常営業です！ 11:00～16:00くらいです！  よろしくお願いします！  ※住宅地なのでおしゃべりしないで待っててください",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-06",
+      "endDate": "2026-10-06",
+      "hours": [],
+      "reason": "通常営業の告知のため、変更なし。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知のため、変更なし。"
   }
 ]
