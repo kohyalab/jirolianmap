@@ -7993,5 +7993,29 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業時間の変更に関する具体的な告知はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2107320036637712878",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2107320036637712878",
+    "postedAt": "2026-10-06T04:00:23.000Z",
+    "postText": "只今混雑無くなりました！ どうぞー！🈳🈳🈳 https://t.co/mwLQsHyRY7",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ygmmLwwzXJw3O9gzxwFgiVtsRXKsWT50e3tuYRlLYRlV861oaNcQRNnUjh4WiLwe__dVWtoIH0e2UcWPNeqqGRfknNrxHNGSZTOiWry9w6S0NggBwhpxlsChbSbDZGeCFv5mlW3lwIZDBn9-wj6hZg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-23Cq1J18kYlHwMcWbi3P5JuqFw1gx1DA2s8dN_GzhiqYT9UkNTmhWup-tzTsBkSvhlRMtoUZy_IlYQglFwOIxwldYqnKCvyoMleSbJxcYqNOTLOLG1pvxakZzItxzXqZOPztHXxnDDNJ6JjpkNUQpg=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-06",
+      "endDate": "2026-10-06",
+      "hours": [],
+      "reason": "混雑状況の案内およびメニュー紹介であり、営業時間の変更はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "混雑状況の案内およびメニュー紹介であり、営業時間の変更はありません。"
   }
 ]
