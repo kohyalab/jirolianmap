@@ -7737,5 +7737,82 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261012_0_2107260062876205470",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2107260062876205470",
+    "postedAt": "2026-10-06T00:02:04.000Z",
+    "postText": "【ご案内】 ［まかない］終わり🔚まーす🔚！ ※10/12（月臨時営業🈺）までの予定です♪🔚  『下の丼を使ってお召し上がりくださーい。』  よろしくお願い致します！ https://t.co/KUddx3Uoe0",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-52vozat3WpYZDkYWC69Drwr_KPwBIcfU9Q8a121JKCNw788sROcQTLKb5E8CBfg3kX4nGkDNMglZb0lO__-4LZuysh-nMqGf7hKWlvYTr8bgPi6D0oF-U33XaPMwFC70rrmHQnb82JnHWIpJPahkBw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-JHo87hBoTzKabIFXGFQE47VOTB3ifx3T9pVW7rKnGqYIUZ_d8CEMtzJX0_xh00w3XUfl2RXDn2EN_uT5MBWitIO17Ur5qedrbvazQK-KQPuu9JjqtVVAzityrUoR-MJ1mVKfX9bkVDOxF95dv_vH5A==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-xorFTq3WpJynmkJQ2enMw9XT2ivgGJVRCq2gpNnw8kZg5FhgbytpniLHs58cEQ-m-HGAFBDkcD7b6FZA_yx73dDYV9VnB4ZX24xjbenhL9i-IZv7zm7P6tPsMuKk9pO0yjHpMzUQCl-4GLTIbPgJkA=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-12",
+      "hours": [
+        [
+          10.333333333333334,
+          14
+        ],
+        [
+          17,
+          20.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_kashiwa_2107265548111540337",
+    "shopId": "kashiwa",
+    "shopName": "柏店",
+    "postSource": "x",
+    "postUrl": "https://x.com/genkimoriya/status/2107265548111540337",
+    "postedAt": "2026-10-06T00:23:52.000Z",
+    "postText": "お世話になっております。 ラーメン二郎柏店です。  今週休まず通常営業となります。 10月11日（日）は店休日です。  どうぞ宜しくお願い致します。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-06",
+      "endDate": "2026-10-06",
+      "hours": [],
+      "reason": "今週は休まず通常営業、10月11日（日）は定休日となります。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "今週は休まず通常営業、10月11日（日）は定休日となります。"
+  },
+  {
+    "id": "sns_post_routine_nagoyaosone_2107266178553168283",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2107266178553168283",
+    "postedAt": "2026-10-06T00:26:22.000Z",
+    "postText": "おはようございます。 ラーメン二郎名古屋大曽根店です。 本日昼夜営業です。 昼の部11:00〜14:00 夜の部17:00〜20:00  よろしくお願いいたします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-06",
+      "endDate": "2026-10-06",
+      "hours": [],
+      "reason": "本日(2026-10-06)は通常通りの昼夜営業（昼11:00〜14:00、夜17:00〜20:00）であり、営業時間の変更や臨時休業はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "本日(2026-10-06)は通常通りの昼夜営業（昼11:00〜14:00、夜17:00〜20:00）であり、営業時間の変更や臨時休業はありません。"
   }
 ]
