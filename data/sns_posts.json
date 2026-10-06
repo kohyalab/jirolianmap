@@ -7814,5 +7814,79 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "本日(2026-10-06)は通常通りの昼夜営業（昼11:00〜14:00、夜17:00〜20:00）であり、営業時間の変更や臨時休業はありません。"
+  },
+  {
+    "id": "sns_post_sapporo_20261006_0_2107277361444278326",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2107277361444278326",
+    "postedAt": "2026-10-06T01:10:48.000Z",
+    "postText": "10月6日(火)通常営業です🍜  昼の部12:30〜14:00  「魚介風汁なし」、「魚介風ラーメン」 合わせて対応します。 🐟🐚🌪️  プラス現金１００円  必ず、スタッフ確認時に申告して下さい。  明日7日(水)終日休業です。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-06",
+      "endDate": "2026-10-06",
+      "hours": [
+        [
+          12.5,
+          14
+        ],
+        [
+          17,
+          20.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_sapporo_20261007_1_2107277361444278326",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2107277361444278326",
+    "postedAt": "2026-10-06T01:10:48.000Z",
+    "postText": "10月6日(火)通常営業です🍜  昼の部12:30〜14:00  「魚介風汁なし」、「魚介風ラーメン」 合わせて対応します。 🐟🐚🌪️  プラス現金１００円  必ず、スタッフ確認時に申告して下さい。  明日7日(水)終日休業です。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-07",
+      "endDate": "2026-10-07",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_kawagoe_2107279301397934087",
+    "shopId": "kawagoe",
+    "shopName": "川越店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kwge26/status/2107279301397934087",
+    "postedAt": "2026-10-06T01:18:31.000Z",
+    "postText": "おはようございます！ 本日通し営業です☀️ ○11:00~20:00  🍜持ち帰りあります！  無料トッピング｢紅生姜｣あります☺️ トッピング時に「アレ」で！  よろしくお願いします🙇‍♂️",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-06",
+      "endDate": "2026-10-06",
+      "hours": [],
+      "reason": "通常営業の範囲内であるため変更なし"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の範囲内であるため変更なし"
   }
 ]
