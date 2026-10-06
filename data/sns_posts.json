@@ -8040,5 +8040,28 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "本日10/6(火)は通常営業の案内であり、カレンダー画像も営業日を示しているため変更なし。"
+  },
+  {
+    "id": "sns_post_routine_kameido_2107354410905174519",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2107354410905174519",
+    "postedAt": "2026-10-06T06:16:58.000Z",
+    "postText": "キャロライナリーパーがやっと実をつけ始めてくれました✨🌶️ https://t.co/rch5C1vXmK https://t.co/S3XUzLC7ph",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-eP7dIyuvhIduQE5c2vjrQNb6LOzabWThvfhRJeJY8Jp01viTNQxKzDLCzr5xUqUZ75SCSUH6dhF78WcpwXLiUHdkRRsVxISurWT0T7qJFphv7cOErU-WsWAKGv81N0TxSBUxS8aqu6XGw7e1aDNCJA=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-06",
+      "endDate": "2026-10-06",
+      "hours": [],
+      "reason": "営業変更なし（通常通り営業・雑談等）"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業変更なし（通常通り営業・雑談等）"
   }
 ]
