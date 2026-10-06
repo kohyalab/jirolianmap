@@ -8017,5 +8017,28 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_sengawa_2107350181582864872",
+    "shopId": "sengawa",
+    "shopName": "仙川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjiro26/status/2107350181582864872",
+    "postedAt": "2026-10-06T06:00:10.000Z",
+    "postText": "本日17時から店内営業とテイクアウト販売します。 https://t.co/neektDIX88",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-G_tv9KJ7e6hdIQ7xrp-n6p8DCQbQx1IHeW0TpMSczc7FE9wYi8bxIKmZdfB_KFDoPflr90fGnmMl9ygFankaCdhZ9hIGnWQ5l52kHbM7ofINtoTqhSBJdLxOjs8yQ4YR_uAgitmANgNgPHTJDMAICg=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-06",
+      "endDate": "2026-10-06",
+      "hours": [],
+      "reason": "本日10/6(火)は通常営業の案内であり、カレンダー画像も営業日を示しているため変更なし。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "本日10/6(火)は通常営業の案内であり、カレンダー画像も営業日を示しているため変更なし。"
   }
 ]
