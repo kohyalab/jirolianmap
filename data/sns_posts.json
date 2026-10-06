@@ -8151,5 +8151,57 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "本日通常営業の告知であり、臨時休業や営業時間変更はありません。"
+  },
+  {
+    "id": "sns_post_jimbocho_20261006_0_2107383424105525694",
+    "shopId": "jimbocho",
+    "shopName": "神田神保町店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jbc_ramen_jiro/status/2107383424105525694",
+    "postedAt": "2026-10-06T08:12:16.000Z",
+    "postText": "ただ今お並びのお客様までで、本日の営業終了となります。よろしくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-06",
+      "endDate": "2026-10-06",
+      "hours": [
+        [
+          11,
+          17.2
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2107388486072582584",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2107388486072582584",
+    "postedAt": "2026-10-06T08:32:23.000Z",
+    "postText": "めちゃ暇ナウですので、宜しかったらどうぞ！！！ https://t.co/EkFiQkYGH1",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ivAaAW3QInWjIORn6eDW2EcZBAYKnf3wZGKt5NG5YOgVbkcBFtS21WETmuwX2Pcpejgo0_iW31iElnALiuJZUes5BxAGmSF4kL9fxNOqpVXEs7ke6yeO9YBH1-yPzT22XyNAMywu8JC0GK7s2U7T3w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-n5o7Dl2CBWhx0zVjRLexnrP8vJdf4xG3a9dbVZYkQBr-pAcTsc9fCDucPSvQHw8m-4LMo7GEQkDkvVb0JOIM3beVd9lHPpC7kdXB0QOowh2bxQVcmO72JGGbyWmxONXPrnXgY6Hq4LSYuy2SwpGcWw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-fJv1VJ3zOHugNUfqpSeM6n0e5FX53DqhgcA0O7_jSIM5P2SCxF_X0u6w6FUTNPSlBiDAdKw3iCztsFCd3tOW1FErUljHF_v-6iigvhvjV-ZkEbgYY_Hu1TfqB89NrpwaD7t0sPQt1yYbH7gHG9xR0w=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-06",
+      "endDate": "2026-10-06",
+      "hours": [],
+      "reason": "営業情報の変更に関する言及はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報の変更に関する言及はありません。"
   }
 ]
