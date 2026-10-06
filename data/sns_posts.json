@@ -8342,5 +8342,26 @@
     "processedAt": "2026-10-06T13:14:25.302Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_kameido_2107471985756533103",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2107471985756533103",
+    "postedAt": "2026-10-06T14:04:10.000Z",
+    "postText": "何事も好きでいられる距離感ってありますよね。心も体も疲弊すると好きだったもの目指してたものが嫌いになったり嫌になってしまうこともあるの、一度休んで距離を取るのもいいかもね！ https://t.co/1B1y1GigL8",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-06",
+      "endDate": "2026-10-06",
+      "hours": [],
+      "reason": "営業情報の変更に関する言及はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報の変更に関する言及はありません。"
   }
 ]
