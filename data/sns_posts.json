@@ -7664,5 +7664,78 @@
     "processedAt": "2026-10-05T23:17:26.596Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_yaen2_2107257209457709186",
+    "shopId": "yaen2",
+    "shopName": "八王子野猿街道店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/Jiro_Yaenkaido2/status/2107257209457709186",
+    "postedAt": "2026-10-05T23:50:44.000Z",
+    "postText": "10月6日(火) 11:00～15:00 17:30～21:00 ⭐テイクアウト、鍋二郎あります 並ばず買えます ⚠️駐車場待ち出来ません ⚠️駐車場満車時コインパーキングに ⚠️店舗近隣タバコ禁止です 🌟きまぐれたまご うめ https://t.co/Z5ReUHlGPd",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-sDFiKhOhXATOBYPL5sHSMQtlRxyrS9GhTDzxU_N8CsQ-xKelAJ3iYmlM0AAeFugJWXmwxe28NACJ_242JpMnk-5zHcFoKkySKZQvoO4XZSxG-q8SoD4L95nwMUWSbT3ienutFwRZM_m8axGOVnv4BA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-T_lZFFNkVkvSzZ7yAam3kvozuikJVSdhN94rpx51eAoYXVo5k01usen5cfkL934Ejg1jH3s634CgOM2xLtgNoTNCnxZ2ZcFjPZrjFaTPeAthGAfmaIiOTWkJlkLi-Cc3j3QnslmpoReaC5TWhdAEgQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-pj_JEkFp8Vq5bHs8bmQrLXQCd0SkcBWJssJl2b7Hdjkah5CN_SAS6GkDk-oGiTkWjvOZzKtxZnYxCmY7s54SnoyI2uGz5AZckUBfo2uw1t3A72pf7nOYz62cb2ZEIw2sIkpDQeVEiDxW-4XVVqGAqw=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-05",
+      "hours": [],
+      "reason": "通常営業の案内であり、臨時休業や営業時間変更はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内であり、臨時休業や営業時間変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_nishidai_2107257380388127113",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2107257380388127113",
+    "postedAt": "2026-10-05T23:51:25.000Z",
+    "postText": "おはようございます。 本日、6日  肩ロース ¥3800、¥2600、¥2000 ウデ ¥1300×1  切り落とし ¥1000×1  崩れ ¥700×1   あります！ https://t.co/CVTjTJ30Ds",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-EcUsn4zcSebJSyqAcpEG2gxvWE-b9RUd9hUyC6_27sLkJc_tMkDdtTPeMWBZWAbOMkVGCbxuGgG-WbDF_uPMfEUtmujrfB8RLrKkwzX7yeOj9EVPQBi-ArgO-JLsl-snlp_DXdfECNSXv6g3g8Vyig==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-RtJZ2IXDGD-Wvb-wbKH3-WEp2-gAsF9kRXFMwEKPP82tczzv7Wngc6876acR0gfTmJHSZlIpTwXIA4eOOmxVc81qEjvQ8viXtIul7Ws13McnuQZTdCDW7NBGcR0fg5tig2_GUKKukPBeSdQXgd8_PA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-PG0qEwy7cEFu06m8agcc-l-f6eMYeWe5V4U7s95fp5OOF9UlLX8veCMjjjcDhgfOmRcKNNp0GynbQ7nXADcGKAnzbvaEsL7TIvS1FSY8JmJnZEmLsBMwMdckAJbSnbrw_z5Pe_N_SQeYcU71-L99pA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-IloscTQ7ruuZEY600A51sI87tjl6BkkyBLpPNwn2OHIGdv6itDh1_hj_pBgg2wZq-LmwnBVGVPr7461m15hsJGqdU4Wolr1X37euIze4i9N_CLft4QOZeE3c3LrTIfhD82b2a_qFqu_tlN9_HYA_pA=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-05",
+      "hours": [],
+      "reason": "本日の営業に関する変更の告知はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "本日の営業に関する変更の告知はありません。"
+  },
+  {
+    "id": "sns_post_okinawa_20261006_0_2107258035764904113",
+    "shopId": "okinawa",
+    "shopName": "沖縄店",
+    "postSource": "x",
+    "postUrl": "https://x.com/okinawa_jiro/status/2107258035764904113",
+    "postedAt": "2026-10-05T23:54:01.000Z",
+    "postText": "本日臨時休業です。  明日は定休日のため、次の営業日は10/8（木）です。  ご来店予定の方はご注意ください。 https://t.co/cLH2ge51Dk",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-06",
+      "endDate": "2026-10-06",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
