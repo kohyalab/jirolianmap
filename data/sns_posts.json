@@ -8275,5 +8275,41 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261007_0_2107414284074664439",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2107414284074664439",
+    "postedAt": "2026-10-06T10:14:53.000Z",
+    "postText": "明日 ◇10/7（水） 【昼の部】 10:20から〜14:00 【夜の部】 17:00から〜20:30  →［まかない］最終です！10/12月までです♪  →［お椀で和ッカレー］ 混ぜるとスープ入りなのでカレールーに。付けても！ぶっ掛けても！ ［まかない］がオススメです♪  どうぞー♪ https://t.co/47nUjO9yLm",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2dJ7Ryx9fgp-ldkLpp5u4f0L_PirDQ-DYu5ronAl0aXFlcid36DdJZmrI_amocW6fEhaco2hfuut09pqe2dV2GBtZrWPYLFcqdXyZrBNaLRfykzJd2WTHfOAOD34VkBiGx_w6WWp94cQeZ02oh2PHg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ADcbQPKh0mHcIRU75J6WxklpkZ1iemd-gOjhAC0tE1qkz3BK2UAyUNH8YX7kdSKQz9sAnKIPoUt66xEVuRSM6W9ZaMweGwaepMY48HFu0f4pNjCtjgcgZYT59BfLZ_P-HfjSgq2KmhUH1DKPHw1wmg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-a723WtbqNMSqo_m4olAVLo2DLbBLX6zynsTzs7Mhdqd6zk597eA_9jwWOKsQxOFvoXrqpqYE64bTruPKRxNzDNQN8fD4WQ0dy4OP2GGcs_iC05l_X3GkVPRrUsUMxFvMU51p1rtwVRzax6vBQSwEXg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ln7VtCzWyq8heDkNsQu9o2_r6siG5dC7_2MNsgpzF9GJEwI89vLQuoMB3mHZqZ1MsRSE29DCuc7YU_4XVGv1s2F7iQZiwvYNwwI1rDKSSvB5w6vQHqgJy5ia8QSOJse3rDIIjCHEKQFZ6Anddwqg7w=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-07",
+      "endDate": "2026-10-07",
+      "hours": [
+        [
+          10.333333333333334,
+          14
+        ],
+        [
+          17,
+          20.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   }
 ]
