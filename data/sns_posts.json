@@ -7888,5 +7888,26 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の範囲内であるため変更なし"
+  },
+  {
+    "id": "sns_post_routine_kameido_2107284923430379887",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2107284923430379887",
+    "postedAt": "2026-10-06T01:40:51.000Z",
+    "postText": "お世話になってます。本日のタレは肉カス、タマネギ、大葉、青トウガラシになります！よろしくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-06",
+      "endDate": "2026-10-06",
+      "hours": [],
+      "reason": "日常的なトッピング案内の投稿であり、営業時間の変更はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常的なトッピング案内の投稿であり、営業時間の変更はありません。"
   }
 ]
