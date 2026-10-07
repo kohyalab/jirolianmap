@@ -9035,5 +9035,37 @@
     "processedAt": "2026-10-07T21:41:36.626Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261008_0_2107957297276395623",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2107957297276395623",
+    "postedAt": "2026-10-07T22:12:38.000Z",
+    "postText": "おはようございます。  本日 ◇10/8（木） 【昼の部のみ営業🈺】 10:20から〜14:00 ご来店ご到着お並びの お客様まで営業致します  →［まかない］最終です！→10/12月まで  →［まかない］にオススメ♪ ※［お椀で和ッカレー］ 販売中！ ※［フライドチリガーリック］特割中🉐🈹！  どうぞー♪ https://t.co/7WUrFVUHZb",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Mfj3H3v_DYp-7VEIGIwipm3kUFmz3vdDdZcsIjOuSEdLjO8Rc3wizMJqabMvoxLNs9z4w3pe78J-wpkk_pq-8gpEZg8tyDwF_IZ-wz5wtrCgDHBWZmwDyH2pu8XNZFwf_n7-seR6f5f-BD-a8dIoiQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-rTrZ3w-8tqi94BRpfVSjdTsiS_p2OAGpRa73ELIyC6rC1LmKgelFHoHFAIlCqNLSi7gq5G7PZepqrlUtgshBJW7BZ5oDX03rlUEFiH_Ll_i-DRQfMU1UceBt80WIB7h8ZKHizby2nNtTcUY0IarA7Q==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-wKtsmgn04mVzi1dDK6xhprykWpTC99pqCln6xG_lRCaokMS7o8tN6zq205qspTxlME6ajft0ejAkaVWPAxkPiyndsnhgRyzi4wDSoXQKW3uaiK8291pf1dqQwqiVEBuJjt7xJjqmUhRQhbtD5wfPgw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-M_eRGKE4sqlG46EpToMNZ7cBI0xRPj_q4eFozADjanCQbGEP_YRzh0uiS5EeI3UwpaIgES84_MhFPhgWHee6G3svAm2eq3jqnjduhdDmBjsM_-hJgh_6Q-CiXYLrwBSqTqIr4dUgxvwS83TDhDvWdQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-08",
+      "endDate": "2026-10-08",
+      "hours": [
+        [
+          10.333333333333334,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   }
 ]
