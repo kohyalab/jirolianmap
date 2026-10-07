@@ -8920,8 +8920,8 @@
       "hours": [],
       "reason": "営業情報に関する言及はありません。"
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-07T21:41:36.626Z",
     "aiStatus": "no_change",
     "aiReason": "営業情報に関する言及はありません。"
   },
@@ -8941,8 +8941,8 @@
       "hours": [],
       "reason": "通常営業の案内であり、営業時間の変更はありません。"
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-07T21:41:36.626Z",
     "aiStatus": "no_change",
     "aiReason": "通常営業の案内であり、営業時間の変更はありません。"
   },
@@ -8962,8 +8962,8 @@
       "hours": [],
       "reason": ""
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-07T21:41:36.626Z",
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   },
@@ -8986,8 +8986,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-07T21:41:36.626Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   },
@@ -9007,8 +9007,8 @@
       "hours": [],
       "reason": "通常営業時間の案内であり、変更はありません。"
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-07T21:41:36.626Z",
     "aiStatus": "no_change",
     "aiReason": "通常営業時間の案内であり、変更はありません。"
   },
@@ -9031,8 +9031,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-07T21:41:36.626Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   }
