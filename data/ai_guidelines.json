@@ -2,6 +2,23 @@
   "generalRules": [],
   "learnedFeedback": [
     {
+      "id": "sns_post_routine_yaen2_2107613134794219653",
+      "timestamp": "2026-10-07T12:38:45.870Z",
+      "shopId": "yaen2",
+      "shopName": "八王子野猿街道店2",
+      "postDate": "2026-10-06T23:25:03.000Z",
+      "postText": "10月7日(水) 11:00～15:00 17:30～21:00 ⭐テイクアウト、鍋二郎あります 並ばず買えます ⚠️駐車場待ち出来ません ⚠️駐車場満車時コインパーキングに ⚠️店舗近隣タバコ禁止です  🌟きまぐれたまご うめ https://t.co/0pnV4R99E6",
+      "aiStatus": "no_change",
+      "aiReason": "通常営業時間の案内であり、変更はありません。",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-10-06",
+        "endDate": "2026-10-06",
+        "hours": [],
+        "reason": "通常営業時間の案内であり、変更はありません。"
+      }
+    },
+    {
       "id": "sns_post_ogikubo_20261012_0_2107389044669976904",
       "timestamp": "2026-10-06T12:56:30.002Z",
       "shopId": "ogikubo",
