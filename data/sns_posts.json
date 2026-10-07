@@ -8901,5 +8901,28 @@
     "processedAt": "2026-10-07T12:40:15.765Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_kameido_2107868385015214143",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2107868385015214143",
+    "postedAt": "2026-10-07T16:19:19.000Z",
+    "postText": "最近ハマってる漫画の単行本出て嬉しい✨ #悪魔と俺と https://t.co/kre8HOh2IK",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-lABpSo2-qPhfgBSilwLY7mknS5PSxELcezs5D82pQN3vIb2oNVHbtF79KevSOlIyTPEgmLFJ1VfEGLWsYn4GKp_9JtipSCu78v33nT1hAwmkz3QptO9b286d3hKgwBBfCz70dsuIr9buwWTACOBrUQ=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-07",
+      "endDate": "2026-10-07",
+      "hours": [],
+      "reason": "営業情報に関する言及はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報に関する言及はありません。"
   }
 ]
