@@ -8698,5 +8698,32 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の範囲内であるため変更なし"
+  },
+  {
+    "id": "sns_post_kashiwa_20261008_0_2107672770595492303",
+    "shopId": "kashiwa",
+    "shopName": "柏店",
+    "postSource": "x",
+    "postUrl": "https://x.com/genkimoriya/status/2107672770595492303",
+    "postedAt": "2026-10-07T03:22:01.000Z",
+    "postText": "お世話になっております。 ラーメン二郎柏店です。  本日16時頃までの通常営業。 最近木曜日は臨時休業しておりましたが、 明日10月8日は通常営業致します。  大変ご迷惑をおかけしします。 どうぞ宜しくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-10-08",
+      "endDate": "2026-10-08",
+      "hours": [
+        [
+          10.5,
+          16
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   }
 ]
