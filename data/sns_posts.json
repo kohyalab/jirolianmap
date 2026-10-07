@@ -8750,5 +8750,54 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業時間変更や臨時休業の情報はありません。"
+  },
+  {
+    "id": "sns_post_routine_sengawa_2107712860143141118",
+    "shopId": "sengawa",
+    "shopName": "仙川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjiro26/status/2107712860143141118",
+    "postedAt": "2026-10-07T06:01:19.000Z",
+    "postText": "本日17時から店内営業とテイクアウト販売します。 https://t.co/DNgYVSnv0g",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-bhx6iV1YDHj5ldGuPgXOaPD_ayhw4udjsgmVu8u0KyBwB9EGRsETBO26yEgCwVCXxlPBCMNR-PlhR57nm7f09T03fMKPl9U_1PYC211hCRENT9fkUTJZnNmNGXfGynChmuj6R1HkbEVx1bM2PUfmEg=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-07",
+      "endDate": "2026-10-07",
+      "hours": [],
+      "reason": "本日10/7(水)は通常営業です。添付画像のカレンダーは営業日を示しており、臨時休業や時間変更の告知ではありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "本日10/7(水)は通常営業です。添付画像のカレンダーは営業日を示しており、臨時休業や時間変更の告知ではありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2107716637856346180",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2107716637856346180",
+    "postedAt": "2026-10-07T06:16:20.000Z",
+    "postText": "本日 ◇10/7水 【夜の部】 →こちらをご覧のお客様限定です！ ↓ ※お客様ご自身で→丸の🟥赤又は白🤍食券を１枚お取りになって席までお越しください。→食券は券売機の前の台の二段目に置いておきます。 ※必ず着席時にお出しください。 ※サービス中の目印は［黄色いハンカチ］ どうぞご利用下さい♪ https://t.co/cFHO12cn7v https://t.co/S0fVbVdXhA",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-0wurqNyW9hKvzI7qjOJwWJiCa_U769LQWcy8mVRg1NalnRyYotbeCJbOuJClBXK44vhnmp_8kXEZB5Zq6yun480OOOz49BMeH4wa_YXwzsie_0yVTp2xJDc7K-Zqu0-PCB_N8RuPfUO-3m7Nb_WOBw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-yrh7vDouDE8d01K2O6L4z5o-VDFJTeDOxf6LFlfjomEtaCl4HxDY2Jbo5bK4hDdKzAf4X_0QKrCmfAzkPBeEWOTJHG7v1l7wQOjYg9lfBnA0Zo1aeNgDGA4CJkDIDfLbaYOsWgLR2cQ-YU1JeN9sPA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-eTDjJTABK5-2IjMM0dby4LNNmB0iXaesS9OzT5dRZcPzlT5nxTeuVE3JhFEGwsVJ4gWo6YDK0ljuH28yEXioo-5GJdcoGaj5XCRtXytoGkiYvIixsh3feReJzK807ZPsdnDlMMB3kMmxsk4qohI3Ug==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-0xtj3_l7e14EdYY3FJMLYe0tbye6SaaPTaVBsVK0AicLDKxBmfdKIO4gMnBqJZefvJe5RZBUvJpVSl1jk1WccyUNNtvU4akJLyTIcRUZ-PFlYlU3nPt8btxNwf5FxC6-69AHJbfu1qe5oSKV2HDDRg=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-07",
+      "endDate": "2026-10-07",
+      "hours": [],
+      "reason": "営業情報の変更はなく、限定トッピングやサービスに関する案内のみの投稿です。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報の変更はなく、限定トッピングやサービスに関する案内のみの投稿です。"
   }
 ]
