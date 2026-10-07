@@ -8631,5 +8631,30 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の案内であり、臨時休業や営業時間変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_tachikawa_2107634136303436279",
+    "shopId": "tachikawa",
+    "shopName": "立川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jirotachikawa/status/2107634136303436279",
+    "postedAt": "2026-10-07T00:48:30.000Z",
+    "postText": "10/7(水)、時間内売り切れなし営業です。 昼11:00-14:30 夜17:00-21:30  ①ぱた郎、仕込んだので今日は売り切れ 　無しです！  　+汁なし券で、まぜぱた郎も。  ②持帰り販売 　標準:2人前のスープと生麺 　　　+ブタハーフ2,500円  ※2-3枚目の写真は他店様 https://t.co/WQoWNMYWto",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-X4lvqGf3LdFLqL-8G9RpLs3cltrFdd2KFCFU14TwAbatk244XCeXUhuuKwRyDZOoRvE72VlzaKqPIBCVF5jyWyGXgoHIyrRynGCcwl_lrziKXsR4FHn4CID_46kpKASbT8jIMwdCB2J3Dwgbp8Nzhg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-aYIrtXYE-QUEARKCLy-1iCj3BaKofbeh2JEcASsZ8OO8NCXxlvSCv1mArhHiBE-NSsD6SuC-0PWCJCeUBEjmdtYRojaekt--Lihxbo5FI2Q9gF-kvm7d836oM8f_LmCwggMXbW0WObHurmLBJkTlqw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-6pyfMw2pE3VrXY8l-hyXJHUJM_2ece_HJforzwwjt0fLdEDv23iCcuxEOLPFNkn6t6lx1e1OcxVSQ5oq_QqyPItZ2PVJ_89Sd3lBN1uE6C0VtzAb_2-9NcYHIUPQ7RQaf7QtOzSF5slNWrmj0HGEmg=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-07",
+      "endDate": "2026-10-07",
+      "hours": [],
+      "reason": "10/7(水)の通常営業に関する案内であり、臨時休業や営業時間変更はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "10/7(水)の通常営業に関する案内であり、臨時休業や営業時間変更はありません。"
   }
 ]
