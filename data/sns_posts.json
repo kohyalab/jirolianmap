@@ -8924,5 +8924,26 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業情報に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_kannai_2107873463755325922",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2107873463755325922",
+    "postedAt": "2026-10-07T16:39:30.000Z",
+    "postText": "こんばんは。 明日も高菜ありますので ご希望の方は「アレ」でお願いします。 シビレ汁無し‼️ 玉ねぎ納豆も しばらく出来そうですので 宜しくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-07",
+      "endDate": "2026-10-07",
+      "hours": [],
+      "reason": "通常営業の案内であり、営業時間の変更はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内であり、営業時間の変更はありません。"
   }
 ]
