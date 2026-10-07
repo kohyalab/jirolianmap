@@ -8725,5 +8725,30 @@
     "processedAt": null,
     "aiStatus": "match",
     "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2107689417876148522",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2107689417876148522",
+    "postedAt": "2026-10-07T04:28:10.000Z",
+    "postText": "列切れたのでよろしかったらどうぞー！！！ https://t.co/3yhcNBQ5QK",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2BYH30lhbezVhSbwS_1UQmJUk1Neae2OzwuCN3sC_M3Ve7qDJwVTKWiZxV-kKUqOxS512MxJKKmsUTBeZL_8la6C88ZEVrtiRmeNtJznoZloXh4vo90rXvMb9ts29HVy8bPzIHV2VaTF7M2vNVLymA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-F6YU-TYA3ira5FxQgGCzgyuQTiIrYIeJWcCTykMFwiWaIsJsZRfycS7ywQtMqzDozegIICLPv6mZRkYalAxWj2_cws5bjOiFHWOoFgPniWJDQxJdPVfcIfLeMr48OlzNTSe9tvXy-t5YN-nZdZMJOw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Qc5QNaikxHSVT4Yos9TXQvDm5_x3rDbhANlriQ1AX_I9rzdJEnau8WtG-gjUVddbxx2Av9alRTIzTDsK6EkAJnRm54-UAOpXJFznx8CEgw91KwvJXQI8V9Q1KuuuykerV3QUTikDaGAoGCYT5rLHzA=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-07",
+      "endDate": "2026-10-07",
+      "hours": [],
+      "reason": "営業時間変更や臨時休業の情報はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間変更や臨時休業の情報はありません。"
   }
 ]
