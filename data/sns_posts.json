@@ -8799,5 +8799,49 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業情報の変更はなく、限定トッピングやサービスに関する案内のみの投稿です。"
+  },
+  {
+    "id": "sns_post_routine_kameido_2107721989054251347",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2107721989054251347",
+    "postedAt": "2026-10-07T06:37:36.000Z",
+    "postText": "今日のお昼はご近所さんのふじさきさん@men_fujisaki でチャーシューワンタン塩ラーメンいただいてきました✨いつ食べてもレベル高い！美味しかったです✨ https://t.co/RsH10u7zxf",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-HgcDmYG0vArx0WLtDul0fplIK_E1CDT7R4VZO5i4G5Q_v2TFa8sMVPalQ-oWVSiVEl-pdBbQ24CsBinQuJQPzVA5EDuLl01kGi0zNW0Uv28_IvKzdsgrFTd-CjmR58kGYHYKVNZZUnLVMJmn5YjZYg=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-07",
+      "endDate": "2026-10-07",
+      "hours": [],
+      "reason": "日常的な投稿であり、営業情報の変更は含まれていません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常的な投稿であり、営業情報の変更は含まれていません。"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2107722103994863925",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2107722103994863925",
+    "postedAt": "2026-10-07T06:38:03.000Z",
+    "postText": "いまいるひとでおわりです！ ごめんなさい！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-07",
+      "endDate": "2026-10-07",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
