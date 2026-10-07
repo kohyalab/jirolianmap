@@ -8966,5 +8966,29 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_ichinoe_20261013_0_2107926030992502836",
+    "shopId": "ichinoe",
+    "shopName": "環七一之江店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ichinoejiro/status/2107926030992502836",
+    "postedAt": "2026-10-07T20:08:23.000Z",
+    "postText": "本日、木曜日 明日の金曜日 🔴印の日です。 10:30〜14:00 17:30〜20:00  週末から三連休 9:00〜14:00  13（火曜）は臨休を 頂きます。 宜しくお願い申し上げます https://t.co/CJJG5wehVJ",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-wcvJjFSk-G1fBJ0ZUFH7knlgzF9JqjDhOzYhd07Rzhtu-0ttR0B7pjj2rYtOgtvTjiJfwyfQlA3DhCzfw2UUeDHSQBKGB1fePhoQo2mi5ZcOGFLDrHxSW3Aa9GugQAKqbkUwaofJ4UTY2kAPi5jG-A=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-13",
+      "endDate": "2026-10-13",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
