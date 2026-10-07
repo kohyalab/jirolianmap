@@ -9067,5 +9067,79 @@
     "processedAt": null,
     "aiStatus": "match",
     "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_routine_yaen2_2107976953139773609",
+    "shopId": "yaen2",
+    "shopName": "八王子野猿街道店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/Jiro_Yaenkaido2/status/2107976953139773609",
+    "postedAt": "2026-10-07T23:30:44.000Z",
+    "postText": "10月8日(木) 11:00～15:00 17:30～21:00 ⭐テイクアウト、鍋二郎あります 並ばず買えます えびざるドクロテイクアウト現金です 🌟きまぐれたまご うめ ⚠️駐車場待ち出来ません ⚠️駐車場満車時コインパーキングに ⚠️店舗近隣タバコ禁止です https://t.co/JsACEA8DbD",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ysIC8SZr9QMdYmMptPDJRIiH_lGficnvEI1TipWAzhGvGwyyarsBXiBrvptlWuOMyKFTo0A-K6lq0j62B80liBWFqC_Y4z7FG2IseR9hWMTqh2qHPsmaAOytNXbjGZLqKK3sdFWV7vDrJujgphV8Nw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-1LXdm9zfryDxJ9C9K6kRdfyzvypnCNJDkePp3zqcp__KxumsR_QHVNhqlur_N3pQ9_qaeoMZu1obqpRgK8Djiu84S68ywCj4bGj7i5rVvFQnTrW6_n3sGGv_bWKgL_3uXFKky5L2bu4Nxw10mjLnLw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-_GY_f4deNXjjw-HZu2G4VrBpUWcmd9KSU4mtCwqTePvGamWjJmwQByvHZ2o65xAu35p6o17zF-dNZbetK5lBeYu9-7OBDR-FKAu-xXvR9WnHQWN08uPVP6i8ulNU6e5VRIEuFi9b3CxklWS0pLsolA=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-07",
+      "endDate": "2026-10-07",
+      "hours": [],
+      "reason": "通常営業時間の案内であり、変更はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業時間の案内であり、変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2107971156863324555",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2107971156863324555",
+    "postedAt": "2026-10-07T23:07:42.000Z",
+    "postText": "本日 ◇10/8木 【昼の部】 →こちらをご覧のお客様限定です！ ↓ ※お客様ご自身で→丸の🟥赤又は白🤍食券を１枚お取りになって席までお越しください。→食券は券売機の前の台の二段目に置いておきます。 ※必ず着席時にお出しください。 ※サービス中の目印は［黄色いハンカチ］ どうぞご利用下さい♪ https://t.co/gvhI5RzXOg https://t.co/T7XgKZihp9",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-AtCk2WdSY7k6oSwmsHfG_c-4FUPznLajQNWuiVKbm5FmZmT0_jFFhD5Jb52sjN3FSh3WfNwlupAb_MVLdpLbE7jFHYrfroI8VYM_tiKewZ4zQW2r0nhw9fBcSDhq153ItG0bd88d16c6rbTcvY5pvQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-XZTorqT5zoscIeEUS_Nk4r4t0DRnqJ2le8gIgQ9-2YFGh76AtGed-fHEjfEi3GfZE05cedT0hIIj1-lFI_PlNZfq3o4tXtPxmRR-9HIUJY1Pw57kDX1tvHpvs_2JQmc4ngQW4HW6BHMa1_isUf8gmw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-YYlNhxmkDVWQo6Y8WdpOWkZ_ljzeyLqgpyMkHyJ-3P9RYbin-taHZklHLsXn6z8KOycmEsm910jcmAZzuZ0j3FCFxd38GFgkEp4de7VXD6_H6X4vxd5wumRIdz009GlGmwTatPrHfzro7Oi4-muEug==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-PchrkSYXmih-PGJ3J_vJ-23Bm8slk2uuQq8Wr68-TAJShKsBW-OVjLp3bPF6XI15qAQfPEZjQWoMK5hska6GtMJVlkKIernNFjjJ7B9gl8hiUBe009gkQykCmRXsTFdHKZVEc_j5XBY54rMhWiPasw=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-07",
+      "endDate": "2026-10-07",
+      "hours": [],
+      "reason": "通常営業の案内および限定トッピングの告知であり、営業時間の変更はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内および限定トッピングの告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_fujisawa_2107970586928701886",
+    "shopId": "fujisawa",
+    "shopName": "湘南藤沢店",
+    "postSource": "x",
+    "postUrl": "https://x.com/fujirow26/status/2107970586928701886",
+    "postedAt": "2026-10-07T23:05:26.000Z",
+    "postText": "おはようございます  10月8日(木)  豚チゲ🐷 野山商店特製タレ、崩し豚、豚カス醤油、 1番スープ、沢山にんにく🧄その他色々 粉チーズよくあいます。  タマネギ生姜🧅🫚  太刀魚行ってきました。 サイズ、数まだまだ 修行です。 https://t.co/CxCmbWWny6",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-v18Q4ljagEL0eAKDdGYV6mhb9eGQNdxVNECEb4Sji9MlX4R1j40un99_3Co-tcBW5NGKqWxmXQXDvQs43zfltNRkxtVpVhBpKrI0cfV8LaAJbDLA8uRpOSVFzsUron8bJsLfduahaai4C-UrsJVQzQ=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-07",
+      "endDate": "2026-10-07",
+      "hours": [],
+      "reason": "通常営業の案内であり、変更はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内であり、変更はありません。"
   }
 ]
