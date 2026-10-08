@@ -3700,7 +3700,6 @@
             20
           ]
         ],
-        "reason": "",
         "sourceUrl": "https://x.com/jiro_sapporo_/status/2107050815026532626",
         "_isAiImported": true
       },
@@ -3708,16 +3707,31 @@
         "startDate": "2026-10-07",
         "endDate": "2026-10-07",
         "hours": [],
-        "reason": "",
         "sourceUrl": "https://x.com/jiro_sapporo_/status/2106999060540571709",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-12",
+        "endDate": "2026-10-12",
+        "hours": [
+          [
+            10.5,
+            14.5
+          ]
+        ],
+        "sourceUrl": "https://x.com/jiro_sapporo_/status/2107998200531677675",
         "_isAiImported": true
       },
       {
         "startDate": "2026-10-14",
         "endDate": "2026-10-14",
-        "hours": [],
-        "reason": "",
-        "sourceUrl": "https://x.com/jiro_sapporo_/status/2106999060540571709",
+        "hours": [
+          [
+            11,
+            14
+          ]
+        ],
+        "sourceUrl": "https://x.com/jiro_sapporo_/status/2107998200531677675",
         "_isAiImported": true
       }
     ],
@@ -5073,6 +5087,19 @@
           ]
         ],
         "sourceUrl": "https://x.com/ksgy26/status/2107221257112670335",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-09",
+        "endDate": "2026-10-09",
+        "hours": [
+          [
+            17,
+            20.5
+          ]
+        ],
+        "reason": "",
+        "sourceUrl": "https://x.com/ksgy26/status/2108091004314390576",
         "_isAiImported": true
       },
       {
@@ -6436,10 +6463,10 @@
       },
       {
         "startDate": "2026-10-10",
-        "endDate": "2026-10-12",
+        "endDate": "2026-10-13",
         "hours": [],
         "reason": "",
-        "sourceUrl": "https://x.com/jiro_NGY/status/2106898850674102661",
+        "sourceUrl": "https://x.com/jiro_NGY/status/2108012763293552930",
         "_isAiImported": true
       }
     ],
