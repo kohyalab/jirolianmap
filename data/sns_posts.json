@@ -9141,5 +9141,31 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の案内であり、変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_nishidai_2107980026725773738",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2107980026725773738",
+    "postedAt": "2026-10-07T23:42:57.000Z",
+    "postText": "おはようございます。 本日、8日、 切り落とし ¥1000×2 ¥800×1   あります。 https://t.co/MSdnJpypBU",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-4YYx4_tG0Mxzx3hqDdsh6gBIENbMdIM3F_W7iYy82eNCPKdnnmuVjngCw8TixfOh76qQuGObe2gHL8o9H-iaNLc3x_5Vc46_aqhOkvnD8c1y9_dJQKMbnqli2nZBu5bFEYKVZhhKcy9V5073docrkA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Y92fz8AjZkjrCq_cAOmN6w4m0eRWf6yBsYDel0KDgAUXWW2SIOIj3W2nhBLBgIKcvJed9b7jkuAQbHsXIwRjebgJI70yoRWxRS9bO1pyegiVpoMHO1LXATB2FBpxniDoXli8ffUFq-a6UYWDCBfmcw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-utnnGpYAaknloEdlO25hM7snMLIucG2HBmFceK7c7EOw6AUaYt-bF1tci48WXOt7XsJPXv9ZZzTUtzfyOwr9Mkd6StaUt1_pqnrlEC414Y4-1Mf0Zj72tLPDsBFi21grkDI_zOQ0kdG1JHdFd3GqQw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-nmkry0Yy6tg1qbHZfoA3w2k2gffe2mK1WmeWZBTpwfzI7uukkaG_O_qNQyePVLGQfzvHQhtBLnhK8zLv5gzBnvDLMSP1XtwzNfkYTlMWiQcAC1a2oxaSSeQkMbBcgTP3XNM8K88VUX3ztj4DyRtiAQ=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-07",
+      "endDate": "2026-10-07",
+      "hours": [],
+      "reason": "通常営業の案内であり、変更はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内であり、変更はありません。"
   }
 ]
