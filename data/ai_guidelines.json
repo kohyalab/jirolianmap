@@ -2,6 +2,49 @@
   "generalRules": [],
   "learnedFeedback": [
     {
+      "id": "sns_post_senjuohashi_20261009_0_2108309632875991062",
+      "timestamp": "2026-10-08T22:50:40.367Z",
+      "shopId": "senjuohashi",
+      "shopName": "千住大橋駅前店",
+      "postDate": "2026-10-08T21:32:41.000Z",
+      "postText": "おはようございます。 本日体調不良の為休業いたします。 早朝から申し訳御座いませんがご注意をお願いいたします。",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業変更検出: 体調不良のため",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-10-09",
+        "endDate": "2026-10-09",
+        "hours": [],
+        "reason": "体調不良のため"
+      }
+    },
+    {
+      "id": "sns_post_hibarigaoka_20261010_0_2108321271083917451",
+      "timestamp": "2026-10-08T22:50:32.945Z",
+      "shopId": "hibarigaoka",
+      "shopName": "ひばりヶ丘駅前店",
+      "postDate": "2026-10-08T22:18:56.000Z",
+      "postText": "三連休の営業案内  10月10日(土)　 11時〜17時　＆（非乳化特別営業：19時半〜21時）  10月11日(日) 定休日　  10月12日(月・祝) 通常営業（昼＆夜）  ラーメン二郎仙川店@senjiro26がデザインした、当店のTシャツ。ボツになりました‥ https://t.co/OPrGp2zEUL",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-10-10",
+        "endDate": "2026-10-10",
+        "hours": [
+          [
+            11,
+            17
+          ],
+          [
+            19.5,
+            21
+          ]
+        ],
+        "reason": ""
+      }
+    },
+    {
       "id": "sns_post_sapporo_20261014_2_2107998200531677675",
       "timestamp": "2026-10-08T21:42:08.643Z",
       "shopId": "sapporo",
