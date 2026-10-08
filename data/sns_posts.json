@@ -9974,5 +9974,38 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_hibarigaoka_20261010_0_2108321271083917451",
+    "shopId": "hibarigaoka",
+    "shopName": "ひばりヶ丘駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/Aarf0xvdBXkWd7o/status/2108321271083917451",
+    "postedAt": "2026-10-08T22:18:56.000Z",
+    "postText": "三連休の営業案内  10月10日(土)　 11時〜17時　＆（非乳化特別営業：19時半〜21時）  10月11日(日) 定休日　  10月12日(月・祝) 通常営業（昼＆夜）  ラーメン二郎仙川店@senjiro26がデザインした、当店のTシャツ。ボツになりました‥ https://t.co/OPrGp2zEUL",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-V2QNWAKBl_wJDSZVwNQViIGfLTB8JvpIZIgXcaQPynrNeCXYQm6rHz1UUHFTGusKdBh5-6NdS-BD66XpFL5iEjBt4JyRU4ZmeYAfVQ0IsRusunqh2jKQAXPMYe1lPcs7FygOCF3zqWFL2iHVPorQLA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-10",
+      "hours": [
+        [
+          11,
+          17
+        ],
+        [
+          19.5,
+          21
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
