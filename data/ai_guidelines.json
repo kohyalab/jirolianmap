@@ -2,6 +2,28 @@
   "generalRules": [],
   "learnedFeedback": [
     {
+      "id": "sns_post_sapporo_20261014_2_2107998200531677675",
+      "timestamp": "2026-10-08T21:42:08.643Z",
+      "shopId": "sapporo",
+      "shopName": "札幌店",
+      "postDate": "2026-10-08T00:55:10.000Z",
+      "postText": "8日(木)通常営業です🍜  12:30〜14:00     17:00〜18:30  「塩汁なし(醤油ベース)」(ブラックペッパーバージョン) 対応します。 ⚫︎🧂プラス現金１００円  12日(月)[スポーツの日] 10:30〜14:30 (昼営業のみ、材料切れ次第終了。)  14日(水)昼営業のみ、夜休業。  宜しくお願い致します🍜 https://t.co/3SP3uHj2mF",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-10-14",
+        "endDate": "2026-10-14",
+        "hours": [
+          [
+            11,
+            14
+          ]
+        ],
+        "reason": ""
+      }
+    },
+    {
       "id": "sns_post_routine_yaen2_2107613134794219653",
       "timestamp": "2026-10-07T12:38:45.870Z",
       "shopId": "yaen2",
