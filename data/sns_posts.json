@@ -9584,5 +9584,101 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の案内および限定トッピングの告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_sengawa_20261011_0_2108081184614089117",
+    "shopId": "sengawa",
+    "shopName": "仙川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjiro26/status/2108081184614089117",
+    "postedAt": "2026-10-08T06:24:55.000Z",
+    "postText": "本日17時から店内営業とテイクアウト販売します。 https://t.co/09paGCpCc7",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Z-AQBDSXqFbDtVzkOa1FNBCV2-YYKSvylKd6Ue1a5q3VLMLKXMzPm-s77pkh3YBKQz2eF0eqf9CFWkt6IaJTL43Sf48qHyz07pNeCox7APB1jCzKKSoPVhqCLNN77z09IfQ2Zk5nOqn1O6WNLaiptA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-11",
+      "endDate": "2026-10-11",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sengawa_20261012_1_2108081184614089117",
+    "shopId": "sengawa",
+    "shopName": "仙川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjiro26/status/2108081184614089117",
+    "postedAt": "2026-10-08T06:24:55.000Z",
+    "postText": "本日17時から店内営業とテイクアウト販売します。 https://t.co/09paGCpCc7",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Z-AQBDSXqFbDtVzkOa1FNBCV2-YYKSvylKd6Ue1a5q3VLMLKXMzPm-s77pkh3YBKQz2eF0eqf9CFWkt6IaJTL43Sf48qHyz07pNeCox7APB1jCzKKSoPVhqCLNN77z09IfQ2Zk5nOqn1O6WNLaiptA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-12",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sengawa_20261018_2_2108081184614089117",
+    "shopId": "sengawa",
+    "shopName": "仙川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjiro26/status/2108081184614089117",
+    "postedAt": "2026-10-08T06:24:55.000Z",
+    "postText": "本日17時から店内営業とテイクアウト販売します。 https://t.co/09paGCpCc7",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Z-AQBDSXqFbDtVzkOa1FNBCV2-YYKSvylKd6Ue1a5q3VLMLKXMzPm-s77pkh3YBKQz2eF0eqf9CFWkt6IaJTL43Sf48qHyz07pNeCox7APB1jCzKKSoPVhqCLNN77z09IfQ2Zk5nOqn1O6WNLaiptA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-18",
+      "endDate": "2026-10-18",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sengawa_20261025_3_2108081184614089117",
+    "shopId": "sengawa",
+    "shopName": "仙川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjiro26/status/2108081184614089117",
+    "postedAt": "2026-10-08T06:24:55.000Z",
+    "postText": "本日17時から店内営業とテイクアウト販売します。 https://t.co/09paGCpCc7",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Z-AQBDSXqFbDtVzkOa1FNBCV2-YYKSvylKd6Ue1a5q3VLMLKXMzPm-s77pkh3YBKQz2eF0eqf9CFWkt6IaJTL43Sf48qHyz07pNeCox7APB1jCzKKSoPVhqCLNN77z09IfQ2Zk5nOqn1O6WNLaiptA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-25",
+      "endDate": "2026-10-25",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   }
 ]
