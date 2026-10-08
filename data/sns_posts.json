@@ -9899,5 +9899,80 @@
     "processedAt": "2026-10-08T21:45:56.861Z",
     "aiStatus": "no_change",
     "aiReason": "通常営業時間の案内であり、変更はありません。"
+  },
+  {
+    "id": "sns_post_senjuohashi_20261009_0_2108309632875991062",
+    "shopId": "senjuohashi",
+    "shopName": "千住大橋駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjujirou26/status/2108309632875991062",
+    "postedAt": "2026-10-08T21:32:41.000Z",
+    "postText": "おはようございます。 本日体調不良の為休業いたします。 早朝から申し訳御座いませんがご注意をお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-09",
+      "endDate": "2026-10-09",
+      "hours": [],
+      "reason": "体調不良のため",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 体調不良のため"
+  },
+  {
+    "id": "sns_post_koshigaya_20261009_0_2108310355399344470",
+    "shopId": "koshigaya",
+    "shopName": "越谷店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ksgy26/status/2108310355399344470",
+    "postedAt": "2026-10-08T21:35:33.000Z",
+    "postText": "おはようございます！ ラーメン二郎越谷店です！  10月9日(金) 昼の部お休みします。すみません。 夜17:00〜20:30LО ご来店お待ちしております🙇🙇  10月12日(月祝) お休みします。 よろしくお願いします！ https://t.co/VOSOqK96eU https://t.co/I8UuSjIlok",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-xeUOBQWpeGF7RZ8xVK3tsMKVal_YNMGRbZud9IlUg3LXFfs_FYzUFjUAAirwTHSfKydCnbG4bcbHO83EfeEZ19M66yduPZslRIIclODheUteuWMhHZwSqo_CVFZSx33R1EjqCNOrSfocxeWNTFXwrA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-09",
+      "endDate": "2026-10-09",
+      "hours": [
+        [
+          17,
+          20.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_koshigaya_20261012_1_2108310355399344470",
+    "shopId": "koshigaya",
+    "shopName": "越谷店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ksgy26/status/2108310355399344470",
+    "postedAt": "2026-10-08T21:35:33.000Z",
+    "postText": "おはようございます！ ラーメン二郎越谷店です！  10月9日(金) 昼の部お休みします。すみません。 夜17:00〜20:30LО ご来店お待ちしております🙇🙇  10月12日(月祝) お休みします。 よろしくお願いします！ https://t.co/VOSOqK96eU https://t.co/I8UuSjIlok",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-xeUOBQWpeGF7RZ8xVK3tsMKVal_YNMGRbZud9IlUg3LXFfs_FYzUFjUAAirwTHSfKydCnbG4bcbHO83EfeEZ19M66yduPZslRIIclODheUteuWMhHZwSqo_CVFZSx33R1EjqCNOrSfocxeWNTFXwrA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-12",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
