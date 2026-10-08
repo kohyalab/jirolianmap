@@ -9703,5 +9703,80 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業情報の変更に関する記載はありません。"
+  },
+  {
+    "id": "sns_post_jimbocho_20261008_0_2108093506057322524",
+    "shopId": "jimbocho",
+    "shopName": "神田神保町店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jbc_ramen_jiro/status/2108093506057322524",
+    "postedAt": "2026-10-08T07:13:52.000Z",
+    "postText": "ただ今お並びのお客様までで、本日の営業終了となります。よろしくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-08",
+      "endDate": "2026-10-08",
+      "hours": [
+        [
+          11,
+          16.216666666666665
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_kyoto_2108093275068674116",
+    "shopId": "kyoto",
+    "shopName": "京都店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kyoto/status/2108093275068674116",
+    "postedAt": "2026-10-08T07:12:57.000Z",
+    "postText": "こんにちは。本日通常営業です。  当店のお客様が、入店した瞬間にいきなり怒鳴りつけられた、というXの投稿がありましたが、従業員に確認したところ、そのような行為は無かったとのことです。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-08",
+      "endDate": "2026-10-08",
+      "hours": [],
+      "reason": "本日通常営業の案内であり、変更はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "本日通常営業の案内であり、変更はありません。"
+  },
+  {
+    "id": "sns_post_koshigaya_20261009_0_2108091004314390576",
+    "shopId": "koshigaya",
+    "shopName": "越谷店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ksgy26/status/2108091004314390576",
+    "postedAt": "2026-10-08T07:03:56.000Z",
+    "postText": "毎度ありがとうございます。 ラーメン二郎越谷店です。  急なお知らせとなり大変申し訳ございませんが、明日10月9日(金)昼の部お休みします。 夜の部は通常営業です。 ご迷惑おかけしますがよろしくお願い致します。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-09",
+      "endDate": "2026-10-09",
+      "hours": [
+        [
+          17,
+          20.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
