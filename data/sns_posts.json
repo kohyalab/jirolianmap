@@ -9167,5 +9167,120 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の案内であり、変更はありません。"
+  },
+  {
+    "id": "sns_post_sapporo_20261008_0_2107998200531677675",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2107998200531677675",
+    "postedAt": "2026-10-08T00:55:10.000Z",
+    "postText": "8日(木)通常営業です🍜  12:30〜14:00     17:00〜18:30  「塩汁なし(醤油ベース)」(ブラックペッパーバージョン) 対応します。 ⚫︎🧂プラス現金１００円  12日(月)[スポーツの日] 10:30〜14:30 (昼営業のみ、材料切れ次第終了。)  14日(水)昼営業のみ、夜休業。  宜しくお願い致します🍜 https://t.co/3SP3uHj2mF",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-lDo1iXgDISuAfp69KFu3pbuaFngoj7FEfTrd4YyQRsvioQzFi2U9nFr7T9P6ogillIj3neNsIgac2lAYcMldIKldJ-6YOyOARTX0nvQ_SxHnPKroA72a2FadW9lNExAyXk8SoUvQSP6HpcHqBOwiXQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Koy15O7gwXu3IzpOvkTZnIg5d5jsDgDweCo9opP3kdRO-G_ogNCzZIlrn7NipJHzx8Oo3Yn8hPmkhwYq3841-G385do6poWkSu_pVybj8fBQetkGF3OrdiIQIXPU6kpWm3HoiAP7r4Ca0Xw81itRTw=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-08",
+      "endDate": "2026-10-08",
+      "hours": [
+        [
+          12.5,
+          14
+        ],
+        [
+          17,
+          18.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_sapporo_20261012_1_2107998200531677675",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2107998200531677675",
+    "postedAt": "2026-10-08T00:55:10.000Z",
+    "postText": "8日(木)通常営業です🍜  12:30〜14:00     17:00〜18:30  「塩汁なし(醤油ベース)」(ブラックペッパーバージョン) 対応します。 ⚫︎🧂プラス現金１００円  12日(月)[スポーツの日] 10:30〜14:30 (昼営業のみ、材料切れ次第終了。)  14日(水)昼営業のみ、夜休業。  宜しくお願い致します🍜 https://t.co/3SP3uHj2mF",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-lDo1iXgDISuAfp69KFu3pbuaFngoj7FEfTrd4YyQRsvioQzFi2U9nFr7T9P6ogillIj3neNsIgac2lAYcMldIKldJ-6YOyOARTX0nvQ_SxHnPKroA72a2FadW9lNExAyXk8SoUvQSP6HpcHqBOwiXQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Koy15O7gwXu3IzpOvkTZnIg5d5jsDgDweCo9opP3kdRO-G_ogNCzZIlrn7NipJHzx8Oo3Yn8hPmkhwYq3841-G385do6poWkSu_pVybj8fBQetkGF3OrdiIQIXPU6kpWm3HoiAP7r4Ca0Xw81itRTw=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-12",
+      "hours": [
+        [
+          10.5,
+          14.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_sapporo_20261014_2_2107998200531677675",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2107998200531677675",
+    "postedAt": "2026-10-08T00:55:10.000Z",
+    "postText": "8日(木)通常営業です🍜  12:30〜14:00     17:00〜18:30  「塩汁なし(醤油ベース)」(ブラックペッパーバージョン) 対応します。 ⚫︎🧂プラス現金１００円  12日(月)[スポーツの日] 10:30〜14:30 (昼営業のみ、材料切れ次第終了。)  14日(水)昼営業のみ、夜休業。  宜しくお願い致します🍜 https://t.co/3SP3uHj2mF",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-lDo1iXgDISuAfp69KFu3pbuaFngoj7FEfTrd4YyQRsvioQzFi2U9nFr7T9P6ogillIj3neNsIgac2lAYcMldIKldJ-6YOyOARTX0nvQ_SxHnPKroA72a2FadW9lNExAyXk8SoUvQSP6HpcHqBOwiXQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Koy15O7gwXu3IzpOvkTZnIg5d5jsDgDweCo9opP3kdRO-G_ogNCzZIlrn7NipJHzx8Oo3Yn8hPmkhwYq3841-G385do6poWkSu_pVybj8fBQetkGF3OrdiIQIXPU6kpWm3HoiAP7r4Ca0Xw81itRTw=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-14",
+      "endDate": "2026-10-14",
+      "hours": [
+        [
+          11,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_kawagoe_2107998274766750128",
+    "shopId": "kawagoe",
+    "shopName": "川越店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kwge26/status/2107998274766750128",
+    "postedAt": "2026-10-08T00:55:28.000Z",
+    "postText": "おはようございます！ 本日通し営業です☀️ ○11:00~20:00  🍜持ち帰りあります！  無料トッピング｢紅生姜｣あります☺️ トッピング時に「アレ」で！  よろしくお願いします🙇‍♂️",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-08",
+      "endDate": "2026-10-08",
+      "hours": [],
+      "reason": "本日10/8(木)は通常通りの通し営業（11:00〜20:00）です。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "本日10/8(木)は通常通りの通し営業（11:00〜20:00）です。"
   }
 ]
