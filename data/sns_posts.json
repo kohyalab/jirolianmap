@@ -9282,5 +9282,55 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "本日10/8(木)は通常通りの通し営業（11:00〜20:00）です。"
+  },
+  {
+    "id": "sns_post_routine_tachikawa_2108000895803986430",
+    "shopId": "tachikawa",
+    "shopName": "立川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jirotachikawa/status/2108000895803986430",
+    "postedAt": "2026-10-08T01:05:52.000Z",
+    "postText": "10/8(木)、時間内売り切れなし営業です。 昼11:00-14:30 夜17:00-21:30  ①ぱた郎、本日は売切れ無しの見通しです。 　+汁なし券で、まぜぱた郎も。  ②持帰り販売 　標準:2人前のスープと生麺 　　　+ブタハーフ2,500円  ※2枚目〜の写真は他店様 https://t.co/HvoXWHPigq",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-pgiK0Qr4nDfzFTmzfIDISj_UPY066i6rZQCG9I9JczF3UVYmt9CAD3DBKTJv2nDoYvU4dSkSw9oujb5GmSbWZEaqtIai50p3oP6rjjzb7XavkJAVKA2B3Glik2fV_VuUIBVex_GXSkSZlG6IDBECjg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-x7ghbAdSuaLYp_Iah7GQp0s3YJIW_RlKTviPXinHeB7tVFPDJ035y4EnSF2K-F2WzzBNiT0fwqNacc8h2b1kF8uS04L-26Gx5B9BQMD0QdK4-5lI_rVdOkZ38QeW_Ymv2K2AF7B5idAY-kM5YlPgOA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2CkeBQJpKlvCl3vDmot_6J6iDVJY2UIo86G9lJPHo9eGPBqkrcqz0MNDy4Jg0OMYvr1G0E8TNkJ--k-JxHMlsZYfSwS8QperU0MM4pixZzrzZRmNCmphsQ1L6kJa6wVk-lEQus6g5GBPbyW0H6_5Nw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-PyhiY9iqKgqbgMYpF0ane0ShIEWaf8yMcnqcv75afGJe1qZGxkuUEzXsmU3k8iopNdPs47BTjG0Qo-kLMI83FsytmOZQf99t0hHsyA1D7go_Kacfg_JX8cD2pnl9EGddKI0bH6ZGWvIHLX_uGJte4w=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-08",
+      "endDate": "2026-10-08",
+      "hours": [],
+      "reason": "通常営業の案内であり、変更はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内であり、変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_ikuta_2108002406202310660",
+    "shopId": "ikuta",
+    "shopName": "生田駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ikuta_jiro/status/2108002406202310660",
+    "postedAt": "2026-10-08T01:11:53.000Z",
+    "postText": "アルバイト募集します！ 営業スタッフ、製麺補助スタッフのどちらも募集中！  明治、他大学の学生、フリーター、社会人（副業）男女問わず働いています。 ラーメン好きな方大歓迎！ 気軽に応募してください！ https://t.co/c5YG7xumui",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-U-10qlhmFut3culnt2chVQiM9FI6oXhUYF7wCxH268eRG13a6uyAsX1d1NljAF5fFb278T5tYwdFWQyoqhn-6pJKtemoXVnqNnqAXoIU30CTS67J6pD4FoFGzibgCzrA1vKTes1mBxgoMrYrJ0JtIw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-o5Xpfl1glGE6gZceLZQAHjinIUsUfwgI2NrUTNA3IG9s9eUwriJ74vChY8Jd6qnuat1IoDLyATzqwDGvzvMrtxDmMb8vlVdhPvdHoxMZKLhuADeBRJwcrI6Y1FoSi60fQbdD99Gi7e1YWEbukzVVVA=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-08",
+      "endDate": "2026-10-08",
+      "hours": [],
+      "reason": "アルバイト募集に関する投稿であり、営業時間の変更はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "アルバイト募集に関する投稿であり、営業時間の変更はありません。"
   }
 ]
