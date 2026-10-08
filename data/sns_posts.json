@@ -9513,5 +9513,55 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "本日通常営業の案内であり、変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2108043230273249491",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2108043230273249491",
+    "postedAt": "2026-10-08T03:54:06.000Z",
+    "postText": "只今混雑無くなりました！ どうぞー！🈳🈳🈳 https://t.co/dSmOlaSrQh",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-zweJxCdit7125kASxAd6vrl3VW-hFpJPTXC1-QU568YxNptOdOwW_SE3iOJtMv07hPHWkTQ2XFv0iJz6bwJC283GbCYa0E17BoAOiUKj-ixOQqlwkyIs4MTx9opLgkVBKwCym855i61M8T12D7uXDg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-0VrZUuWBo-MunRta0WYBC4-CB-Hq63z9LSVKM4odmdJFCp4chYB8L4dlKOQAkCjZzJHwJsbBFKWhbOznVYWxAqbB4kB_6LFfnHin4W6YF4QCEiBXbHAqV3TVB4Sz4ogHOaxRix9c4TeQCsp7R02kRg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-0O3UumD7yAKsg54H6BtzulMqwoVnFaWlgP-Oql7pjaY7wYubWTm2MxN8rEd4MTwO0SKgHL-5O3j-7nVhpcVSoJAf15rll8p0xo1vb3FLL1P1XgYjAR3banTnzzpfmcjEVJYRBaX-BJfhUls1NFz8SQ=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-08",
+      "endDate": "2026-10-08",
+      "hours": [],
+      "reason": "限定メニューの案内であり、営業時間の変更はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定メニューの案内であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2108042707784593720",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2108042707784593720",
+    "postedAt": "2026-10-08T03:52:01.000Z",
+    "postText": "列切れたのでよろしかったどうぞー！！ 空気乾燥して肌も乾燥してると思いますので、コラーゲン摂取にどうぞー！！ 内側から綺麗に😍 https://t.co/MHwcTiPa0d",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-odcRg4BAiKYHvL0nuhHTH_h2q-4gfdYzNQnybhm5CiAOtT4Gdg9y3XCOOSgsZ09f5LEEIcaFGDxYD93e57qCjnUZOQH6A8qoImKPdoTWIt7K9ZzuXT_cNYVWIUR0UeXN1bNUBJTHBEQPxzQQn3HMzQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-umuqar2ioGHGXJqZIKW4TY79hoLdLh7gpWE86grgm1FPNH3VVROn4keRc4pOV2oV3WElbRH05-VN1WFa-scNKmO4ZkNNjD8TuW-ypkIPgV73-cYaffKsadcC_csKf_mN7SpH7X-HLj-NemWPO2shUg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-tybJV2twoLCXaetjYtH0r6CrpmoKL2CyFjy3q2cX3gbEhz6Qrc2HjvdNba5w5WJGpWiD6egwJsSPX4y1BdRAXY2sLmcFqoVTm6wCvxEYNftmJVEvT0d7ODFvwKUw4AsbNRzgioDRT9JNrRb1VH4htA=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-08",
+      "endDate": "2026-10-08",
+      "hours": [],
+      "reason": "通常営業の案内であり、変更はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内であり、変更はありません。"
   }
 ]
