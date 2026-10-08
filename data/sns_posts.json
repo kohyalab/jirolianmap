@@ -9332,5 +9332,165 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "アルバイト募集に関する投稿であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_kameido_2108009362354778365",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2108009362354778365",
+    "postedAt": "2026-10-08T01:39:31.000Z",
+    "postText": "お世話になってます。本日のタレは肉カス、タマネギ、青トウガラシ、大葉になります！朝はだいぶ秋っぽくなってきましたが昼は気温が上がるようなのでまだまだ熱中症にお気をつけください。本日も11時から開店です！ https://t.co/5AtDx2Hznu",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-O8xs6RWbyGFcrYTYb_YBuGbfEjRX8qjt07z71kW9YoRwY7JLPLPSXdLGcwjoWhXza3B8vj3RoafVCOExn5yqx5H8QzF1fG0V1fMUEwSAsviufEKx-jA8KC5VftoTxJDIbu79ADg_n6NZfRg_xhPs_A=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-08",
+      "endDate": "2026-10-08",
+      "hours": [],
+      "reason": "通常営業の案内であり、変更はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内であり、変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_nishidai_2108012196001419346",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2108012196001419346",
+    "postedAt": "2026-10-08T01:50:47.000Z",
+    "postText": "本日の切り落としは 売り切れました。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-08",
+      "endDate": "2026-10-08",
+      "hours": [],
+      "reason": "切り落とし売り切れの告知であり、営業時間の変更はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "切り落とし売り切れの告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2108013651026460956",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2108013651026460956",
+    "postedAt": "2026-10-08T01:56:34.000Z",
+    "postText": "@g_kn_near_48232 忙しそうでも声かけてください！ 腹一杯になって帰ってください！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-08",
+      "endDate": "2026-10-08",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2108012600659456491",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2108012600659456491",
+    "postedAt": "2026-10-08T01:52:23.000Z",
+    "postText": "おはようございます！！なんだか空気が乾燥してますね！火事にお気をつけください！ ラーメンおじさんは顔にニベアを体にジョンソンアンドジョンソンをなり始める季節です。(乾燥肌) 秋晴れの中、お散歩がてらのカロリー摂取の御来店お待ちしております！！ https://t.co/i7LD1ZpjUF",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-bYTlcJHWBOZ06d7-hUYFOyHX0so7-U6sfu9M0yxio94_dK2cb7hEv4MsrTPrXU3mRk4jH2VFuayArScu99GJDIy73Tm9O61Vuja9nj5-Fgs-RznzDGblZj3RiJgyDUmqup28kdPA0mrLnyQO6TAXBw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-gpoc7rQyk4LDjHkzpZxm2KZh9w-QaJqPNHF9Unt1bjPQ87dXtTuPmAo40cVJmuJ8GRsIvxl-e1RfWUWqKkehveTOJFTa2VGW-3Z3iIAeCyIS-L3B8NV6EOTb7OhiFJMEq53LII4KyvRwBPSf_vm34w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-u19c7hlp1W6VfxezwBncrMgktsun6-4ZJxr7D3psQXNoj_v7r83ISqrU4lfinFdwtosy-6iQAFvqzJzLMRpfNw5J7IQ73BufOhRpfYfoHp55_Ibi1Ud5kYSRrIwxkldtGJQaKvxb0KeLjPElLJ76Nw=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-08",
+      "endDate": "2026-10-08",
+      "hours": [],
+      "reason": "通常営業の案内であり、変更はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内であり、変更はありません。"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2108010770885918868",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2108010770885918868",
+    "postedAt": "2026-10-08T01:45:07.000Z",
+    "postText": "@sakauchi_k お元気そうでよかったです笑",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-08",
+      "endDate": "2026-10-08",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_nagoyaosone_20261009_0_2108012763293552930",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2108012763293552930",
+    "postedAt": "2026-10-08T01:53:02.000Z",
+    "postText": "おはようございます。 ラーメン二郎名古屋大曽根店です。 本日昼夜営業です。 昼の部11:00〜14:00 夜の部17:00〜20:00  明日の営業は昼の部のみとなります。  ※お休みの変更です。  １０日〜１３日はお休みさせていただきます。予めご了承くださいませ。  よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-09",
+      "endDate": "2026-10-09",
+      "hours": [
+        [
+          10,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_nagoyaosone_20261010_1_2108012763293552930",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2108012763293552930",
+    "postedAt": "2026-10-08T01:53:02.000Z",
+    "postText": "おはようございます。 ラーメン二郎名古屋大曽根店です。 本日昼夜営業です。 昼の部11:00〜14:00 夜の部17:00〜20:00  明日の営業は昼の部のみとなります。  ※お休みの変更です。  １０日〜１３日はお休みさせていただきます。予めご了承くださいませ。  よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-13",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
