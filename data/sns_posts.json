@@ -9857,5 +9857,26 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_kannai_2108212623993102558",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2108212623993102558",
+    "postedAt": "2026-10-08T15:07:12.000Z",
+    "postText": "本日もありがとうございました。 明日もまだまだシビレも納豆も高菜も用意できそうです。 シビレに関してはもう少ししたら辛めとシビレをパワーアップしようかと悩んでるところです😊 宜しくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-08",
+      "endDate": "2026-10-08",
+      "hours": [],
+      "reason": "通常営業の案内であり、変更はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内であり、変更はありません。"
   }
 ]
