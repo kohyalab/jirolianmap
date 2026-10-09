@@ -10235,5 +10235,99 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の案内であり、変更はありません。"
+  },
+  {
+    "id": "sns_post_mention_kameido_2108368045899174365",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2108368045899174365",
+    "postedAt": "2026-10-09T01:24:48.000Z",
+    "postText": "@AB10os ここは一体何屋さんなんだ😅",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-09",
+      "endDate": "2026-10-09",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_routine_ikuta_2108368224337412364",
+    "shopId": "ikuta",
+    "shopName": "生田駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ikuta_jiro/status/2108368224337412364",
+    "postedAt": "2026-10-09T01:25:30.000Z",
+    "postText": "おはようございます。  魚玉🐟️今ある材料がなくなり次第一旦終了になります。13日(火)くらいまではあると思います。お早めにどうぞ！ https://t.co/1DgiiayZxa",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ku4xtQwADRZNrWOIcnD6ionzWk2-3XDW83UUwifDAcyfuUL5r6xjV3QJizuyoeQuCyqv6WZ01OTMzm-UZDlPRGA0kZuvxBZI-bFQrKMm7LeQj_hnHzZu0xeBwbL_xFFKFJxMTlk7N7zJIaDWcpXa2Q==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Bc2wQZiBZgFjl8PSgEMtaX9_fkmeVy3anRurRubeuG91KHgEZMLBe4yYnIonv9EoGaOu-uwauCd-mQxU3PqHEdr7U0XlbLfBhEmEXGFgsMxWeW-BKFh13xcXzkAWzCo2KSyvaKcKVZ5k58VUndv30w=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-09",
+      "endDate": "2026-10-09",
+      "hours": [],
+      "reason": "限定トッピング「魚玉」の販売告知であり、営業時間の変更はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピング「魚玉」の販売告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_nagoyaosone_20261009_0_2108362695414296605",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2108362695414296605",
+    "postedAt": "2026-10-09T01:03:32.000Z",
+    "postText": "おはようございます。 ラーメン二郎名古屋大曽根店です。 本日昼のみの営業です。  営業時間11:00〜14:00  ※１０日〜１３日までお休みさせていただきます。ご迷惑おかけいたします。  １４日から営業いたします。 よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-09",
+      "endDate": "2026-10-09",
+      "hours": [
+        [
+          11,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_nagoyaosone_20261010_1_2108362695414296605",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2108362695414296605",
+    "postedAt": "2026-10-09T01:03:32.000Z",
+    "postText": "おはようございます。 ラーメン二郎名古屋大曽根店です。 本日昼のみの営業です。  営業時間11:00〜14:00  ※１０日〜１３日までお休みさせていただきます。ご迷惑おかけいたします。  １４日から営業いたします。 よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-13",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
