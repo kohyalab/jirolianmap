@@ -11029,5 +11029,175 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 都合により"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261013_0_2108680914960310477",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2108680914960310477",
+    "postedAt": "2026-10-09T22:08:02.000Z",
+    "postText": "おはようございます。  本日 ◇10/10（土） 【土曜日営業🈺】 10:00から〜15:00 ご来店ご到着お並びの お客様まで営業致します🈺  →［まかない］そろそろ終了☑️です♪ ※10/12まで  →［お椀で和ッカレー］ やっております♪  ◇10/11日10→15時 ◇10/12月10→15時 ◆10/13火【臨時休業】 https://t.co/poToQGEk9z",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-rJWCtRrGRVv-ikw6rXfo6fkCgjx_KYyUfalP9njZ8nVLhh6CxhicvgctgpdAN4pUW8cLvPU1HENlB_z_OyU3VUfP5F5coicxYJv78Z33zAGZXJH3Z9QVGa87udI2DmNKK0P8GuqIddGsC_Ig6Cnzlw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-AZ4JaC5VP_FP_qbhYUDazg6mmtfTW0_7WnvUni6EOiZuHHxArwe3f-n6OQlLQU4Axmbft1owO6r2Th3qC7fNdGt5WXCnfOjJcd3n85lPlML5uqJjVaDgswz2OqCBwcPQFv1KITHRz61otJe9Rtz7bw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-XRhAEv2u0fo1FT_Av09Ai8UiMHD_nK_Ga1TYPllBMlwo1f10thCh6lHnqNN7o1Zz0y_2edL9bPPGd2zMLmtafbZP9o61JJrUvMiW-IOedDpsws9BgmflCPTVw19dYvaDsSIky5YNsW6aliELlpkBMw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2qeOKR_9PdrTZlq14Nt-in1YfXfZ0AHxFg59NieGbNx3YwoEhshCLfZND8nIO-1T0Gsx3MXbl2YuZihaJSv8NPLrwdgU_Nhk-N541hXDC0d-IRYOcdTkYepXRuN7UIH62EXrgJ8EoPshUkA9jIQZ2Q=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-13",
+      "endDate": "2026-10-13",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_nishidai_20261010_0_2108681769788801247",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2108681769788801247",
+    "postedAt": "2026-10-09T22:11:25.000Z",
+    "postText": "おはようございます。 本日、10日(土)の営業は都合により 9:15〜12:30と短くなっております。 お気をつけ下さい。  また肩ロース・4本(ハーフ) 用意しています。 連休のお供にいかが？  ¥2200、¥2000、¥1700、¥1500  皆様のご来店をお待ちしております。 https://t.co/v6fpEG27my",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ex1maT7WRo8ZYQqA0OxGcO5R3eU-06z_Xp2c2-GFQVro0XxRIMJPdCLeTU4pCJb1dilwUi5XcIrYPKWThkehNFRxFH-FyScFb56xvxMBMmnOEhqj-ykRvCUxXb0nnZn2D3-b5wj2MK0vYJBo3N1dTg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-dBeG3Acb2djQG0CshR30R1rJIIeHcop6oZOXvZwTlKtEXzjVNSo6ZK7fer0mQYiYwtFALYRB_DD6rFinqOvlUpryh69mMBDM6e2rBbS7whLGI5i5jLV-qj_xOtMXf6_XowlTedR5TfmivP9VB4Kh0A==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-kFjnnXSZDiqqWlPg7VqQ0Z2SQdXf-1K09IElCRMJ6Z6kaKTRylGs33BS7RgAeL2xu6kjRIi9hl3d6RC-Fr8hBPlatZnm5KQANS-HYJTu7Tk2Zv1yWWi3QclYTzoGzpV8MQTY6KdUGxh_OXD0-g31vQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-WYyxQO1QuRIyx-mdTOXtm08VNwwy_JaJqHIOI2KYUn5N-M-SHXQkgsNlgLiVzHRpl5sLzTqQLOUkgqoHYVneb4g7B6euyxJY9HBU4HbQ-ApvvDj8V_SGBsyUcPmqHbqWBcp2ZfH-C7WVgTfQtoGClw=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-10",
+      "hours": [
+        [
+          9.25,
+          12.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_nishidai_20261103_1_2108681769788801247",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2108681769788801247",
+    "postedAt": "2026-10-09T22:11:25.000Z",
+    "postText": "おはようございます。 本日、10日(土)の営業は都合により 9:15〜12:30と短くなっております。 お気をつけ下さい。  また肩ロース・4本(ハーフ) 用意しています。 連休のお供にいかが？  ¥2200、¥2000、¥1700、¥1500  皆様のご来店をお待ちしております。 https://t.co/v6fpEG27my",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ex1maT7WRo8ZYQqA0OxGcO5R3eU-06z_Xp2c2-GFQVro0XxRIMJPdCLeTU4pCJb1dilwUi5XcIrYPKWThkehNFRxFH-FyScFb56xvxMBMmnOEhqj-ykRvCUxXb0nnZn2D3-b5wj2MK0vYJBo3N1dTg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-dBeG3Acb2djQG0CshR30R1rJIIeHcop6oZOXvZwTlKtEXzjVNSo6ZK7fer0mQYiYwtFALYRB_DD6rFinqOvlUpryh69mMBDM6e2rBbS7whLGI5i5jLV-qj_xOtMXf6_XowlTedR5TfmivP9VB4Kh0A==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-kFjnnXSZDiqqWlPg7VqQ0Z2SQdXf-1K09IElCRMJ6Z6kaKTRylGs33BS7RgAeL2xu6kjRIi9hl3d6RC-Fr8hBPlatZnm5KQANS-HYJTu7Tk2Zv1yWWi3QclYTzoGzpV8MQTY6KdUGxh_OXD0-g31vQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-WYyxQO1QuRIyx-mdTOXtm08VNwwy_JaJqHIOI2KYUn5N-M-SHXQkgsNlgLiVzHRpl5sLzTqQLOUkgqoHYVneb4g7B6euyxJY9HBU4HbQ-ApvvDj8V_SGBsyUcPmqHbqWBcp2ZfH-C7WVgTfQtoGClw=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-03",
+      "endDate": "2026-11-03",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_shndaita_2108682804762710444",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2108682804762710444",
+    "postedAt": "2026-10-09T22:15:32.000Z",
+    "postText": "バイト募集します！  時給1300円 くらい(慣れたらすこし増えます) 7時〜17時くらい(応相談) 週2〜4回くらい（25〜45歳くらい） まかないあります 近所のひと希望 日払いです ※インスパの出店をしようとしているひとは不可です   希望の方は 年齢、最寄り駅、飲食業経験を書いてDMしてください！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-09",
+      "endDate": "2026-10-09",
+      "hours": [],
+      "reason": "アルバイト募集の告知であり、営業時間の変更はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "アルバイト募集の告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2108682739574837320",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2108682739574837320",
+    "postedAt": "2026-10-09T22:15:17.000Z",
+    "postText": "激辛もやります！ 多分ちゃんと辛いです！  1倍  100円 2倍 200円 3倍 300円です！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-09",
+      "endDate": "2026-10-09",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2108682621945512232",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2108682621945512232",
+    "postedAt": "2026-10-09T22:14:49.000Z",
+    "postText": "にんにく地獄汁なし(+200円)もやります！ すりおろしにんにくをまぜこんでます！  麺の量と一緒に じごくでって言ってください！ ラーメンのひとはラーメンでって言ってくれるとわかりやすいです！  麺の量を聞かれた時に じぶんから言ってください！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-09",
+      "endDate": "2026-10-09",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_shndaita_2108682371956638007",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2108682371956638007",
+    "postedAt": "2026-10-09T22:13:49.000Z",
+    "postText": "2026年10月10日(土)  通常営業です！ 11:00～16:00くらいです！  よろしくお願いします！  ※住宅地なのでおしゃべりしないで待っててください",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-09",
+      "endDate": "2026-10-09",
+      "hours": [],
+      "reason": "通常営業の案内であり、変更はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内であり、変更はありません。"
   }
 ]
