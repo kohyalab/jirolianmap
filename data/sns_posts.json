@@ -10474,5 +10474,55 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "本日通常営業の告知であり、変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2108397027054981420",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2108397027054981420",
+    "postedAt": "2026-10-09T03:19:58.000Z",
+    "postText": "天気予報では今日から連日晴れ予報です☀️  今日から（４日間→10/9金〜10/12月）［顔出しパネル］出しておきます♪※雨の時は中止します💦  ご興味がございましたら、どうぞやっちゃってください♪ 撮っちゃってください♪  🍜世界中に平和が訪れますように…🍜 https://t.co/iEABAbL6WG",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-C7mdcu7TYnsBz5FmFkc6-leEj9uRsOnlPVrF7YfAXToLxWNElRb4OJKW22Gk9OD_MUPl5bazlIsOD7wBDGWhDcR98a1Z8_n4o6X7EBw2Amu2tyCWTrjjfW2xBxeS87hPz8is25Dfyh_RoNepofSHmA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-mx-XfKDrJd2vk7nUC1OtRd0GpaJ460wyr__j-IOf46aJsuQ-jnz5CoM8qR8ywYqXnrAdcF9AbIsZmMr5wj5yq1Cqvib_yb_T_E5N5NSJ_zG_Ry9ROFJCMTCeEG7FjxXdFhE9CzdJ_gnxaSdkaace0A=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-09",
+      "endDate": "2026-10-09",
+      "hours": [],
+      "reason": "店舗の営業に関する変更告知はなく、顔出しパネル設置の案内のみです。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "店舗の営業に関する変更告知はなく、顔出しパネル設置の案内のみです。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2108393502283608140",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2108393502283608140",
+    "postedAt": "2026-10-09T03:05:57.000Z",
+    "postText": "本日 ◇10/9金 【昼の部】 →こちらをご覧のお客様限定です！ ↓ ※お客様ご自身で→丸の🟥赤又は白🤍食券を１枚お取りになって席までお越しください。→食券は券売機の前の台の二段目に置いておきます。 ※必ず着席時にお出しください。 ※サービス中の目印は［黄色いハンカチ］ どうぞご利用下さい♪ https://t.co/CLvejSnVFu https://t.co/BHMOUhTYfv",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-sPSehEyx0fpkUHCWSxe0RnZoEOS8wzIV0FtBGJVL5qieW83l3DUxjHGtc2ikW25od2hequmEVTG5co9nwLmRnzJdRsMdnFkTCNBfCpkSHhiv_lkaRSSh5rMmZ4lmrpAZQEeK5H_CwPjwJlddzgf59w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-64-jNyupLSZQuyj_QyOgWqbd14r1VIO983wyUTOApc4IyrVYj-SFX0eSrdjKkVkegOAOzcMIbhNpIN24vmjvmMvOK_OAC9sBYKxT2L2GKj8HOZpkPXk_Ya0ufyd7viBqQYMFtCb5GpoJwB7tPd5tAQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-VScF7F6KJ9hZVIBxOi7B-HBjagiQPWLXGQCYZFo4c0nX5zCgFDVY4XrP8-jkygCuARb6M9U09jQ564eN6geCOmJyHsjdkA0i8J5oxiFDmVgohxAQ1ecq-Gaq5a7JbPCRNgUPcEXWX5NzkAGFfqFcfA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-PbZllwTVndDsvRdngxYhwAMi_MCX4YAdbSKy-CRulh_UjCyvrjlW_k_H5EDKzWi3QUuoZhknmYj_LYT9N5HM7S_kvg7GteBRLfXeZn6C3sgC1zkQWAtjnhtYgKYU6GMhwb7ljECbQWQNDUJfYVolDg=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-09",
+      "endDate": "2026-10-09",
+      "hours": [],
+      "reason": "通常営業の案内および限定トッピングの告知であり、営業時間の変更はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内および限定トッピングの告知であり、営業時間の変更はありません。"
   }
 ]
