@@ -10329,5 +10329,129 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_kameido_2108370188383228321",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2108370188383228321",
+    "postedAt": "2026-10-09T01:33:19.000Z",
+    "postText": "お世話になってます。本日お昼の部有料トッピング「ニンニクの芽のキムチ」¥200と無料トッピング「生姜」をやります！キムチ希望の方は本日のトッピング¥200の券を購入してください。生姜を希望の方はニンニク入れますか？の時にショウガとお伝えください。なおタマネギキムチはお休みです。よろしくお https://t.co/4Ke71W734d",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2OWfi1RMqgD8XtEsSKfk_zWs8FT3yJk_pM8Uamq54KMgpuj6EKU79Hy7b0MWVxFFzC5ESNyZ44a1UtmmxHvQ3G0wFp90TMsOr5i866XChAUW6bbcgKlcd1NiIsAuF_YZFV1CPzfsJpjxBetAFu2OyA=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-09",
+      "endDate": "2026-10-09",
+      "hours": [],
+      "reason": "トッピングの案内のみであり、営業時間の変更はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "トッピングの案内のみであり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_tachikawa_2108373428428529870",
+    "shopId": "tachikawa",
+    "shopName": "立川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jirotachikawa/status/2108373428428529870",
+    "postedAt": "2026-10-09T01:46:11.000Z",
+    "postText": "10/9(金)、昼夜とも時間内売り切れなし営業です。 昼11:00-14:30 夜17:00-21:30  ①「Ｔ2」、担々風 担々麺風のラーメン。 汁なし変更券と組み合わせると、汁なし坦々麺(風)になります。  ②持帰りラーメン販売します。 　標準:2人前のスープと生麺 　　　+ブタハーフ2,500円  ※2-3枚目の写真は他店様 https://t.co/qpbsqEuVCN",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-wd9KfHmDh4l04j07mFPbCLckKK_R6wLYTgXIZ-VX4BNohjmJtcw6DRZIAEGfonOoO09yBDg493N4Mu62qz1OtwOSig8pkyu_H86505M0jZEu8tmeXI1V-TCieVZaQHp-LwYs4MuSCgCKNT005o69YA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-MrZG0VCMFmhDkwmcG2TKObtcO081-MOfMzTZzw9Jwn5cCRHoURsl_dKaVsZL_qeUYC5UsZEoNf8uDmLn3oROLa2FyviZ71_QAQqk6zGLKNhwKQR_drK7jPFKgyfNyJwadnWH0kh_zuaDaVtX7fosNA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-jNAhdKGra8ykf_X6U1YzL8D-QsOtMA-suRQxc8tlk3pr4uIpNNUWlCDfUgKUKom4QMWh_JfKx3CUsspFEPwB736opc_3P7kbRNHV1wdTGNSloLXX19TVp0CI-XRXUHaM70n7U7cT-qE-QTgSY5DbOw=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-09",
+      "endDate": "2026-10-09",
+      "hours": [],
+      "reason": "通常営業の案内であり、営業時間の変更はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_fujisawa_2108374651638538393",
+    "shopId": "fujisawa",
+    "shopName": "湘南藤沢店",
+    "postSource": "x",
+    "postUrl": "https://x.com/fujirow26/status/2108374651638538393",
+    "postedAt": "2026-10-09T01:51:03.000Z",
+    "postText": "おはようございます。  10月9日(金)  豚チゲ🐷 野山商店特製タレ、崩し豚、豚カス醤油、 1番スープ、沢山にんにく🧄その他色々 粉チーズよくあいます。  青ネギ生姜🫚  本日もよろしくお願いいたします。 https://t.co/Mpa4SQi8e6",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-SJW9CMjc9kdqBEBGoO_2DqJQuLpvDb8wOoBq9QAAdGB8egNGMnQR1ckCMVp6xE3TLOpfwdFOVYdfYUitjvUD0SwmZeV5Q6mTMnXE0buX9P1fi3zaTbnYIqjZqya-fugXxG2nGHGdj8_kVUhvn1sAOg=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-09",
+      "endDate": "2026-10-09",
+      "hours": [],
+      "reason": "通常営業の案内であり、営業時間の変更はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_nishidai_20261009_0_2108376586051551241",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2108376586051551241",
+    "postedAt": "2026-10-09T01:58:44.000Z",
+    "postText": "9日、昼の部 切り落とし、崩れ、終わりました。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-09",
+      "endDate": "2026-10-09",
+      "hours": [
+        [
+          9.416666666666666,
+          10.966666666666667
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2108376042289365263",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2108376042289365263",
+    "postedAt": "2026-10-09T01:56:34.000Z",
+    "postText": "おはようございます！！昨晩すごく忙しかったんですが、大企業の方はもしかしてもはや三連休突入モードなのでしょうか？羨ましい限りです！ ビールがラガーかオリオン選べるようになりました！！ 是非ビールもどうぞ！ より一層炭酸で腹パンになります！胃袋との対峙です！ 御来店お待ちしております！ https://t.co/OjHm0g23Ac",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-6FbJMLOyRKyIKWIAsewGzksonic5nyRi2XKrEzK53xS6ziN3gN4qav4dHavjenlJ4lgb9P_dzsdpZudR84H6-s1ZMLZlAC4UcLY65Nf_Z3wZtCatZ5pixIYdeZHXrDFfOD2VIUbYVZaVIYZjIqebyw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-GiL9UoIlSryiicVGSfCHfNJLcJAR4ApUi2QiELHv3ZB8AnlCtJV_Z_YdNxxIHXkAzZ_l_5EQVlpblaN_qZUG53M1D41kdONxX4RD30S0wDX6EHe6EwpXj1liuOsOHxPf0OhbxlojPrqgINaHTiXXMQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Ms0NDOOs7PIjBJW7YpVPeggkbxoe0PUzgLTruxQZpPsspSAg4dX5XskROByD0JLZLI1wsGTb6dqQG_6hBC2Gp2VkUpPRKlLvuYhNZDD0-5PTpgDUpYZ7miP0hlLXlKG1YqyA8tGe7gAWinPnymMuvg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-pTBgxOsAqZgTABQBQ7DnYqxLIBtf0ZK6ElkAVrS6phJIu1G8uC_eAR6TZcGkIdcplny7X4PY23kZL8-CHWp6aFaLsDvHk0LK3z5-ieYeE998hHqECf2CZifi-w0YhjekTDlhQJDmtefLaW3RIjAEyw=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-09",
+      "endDate": "2026-10-09",
+      "hours": [],
+      "reason": "通常営業の案内であり、変更はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内であり、変更はありません。"
   }
 ]
