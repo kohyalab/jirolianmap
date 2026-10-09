@@ -10997,5 +10997,37 @@
     "processedAt": null,
     "aiStatus": "match",
     "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_nishidai_20261010_0_2108677930645954812",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2108677930645954812",
+    "postedAt": "2026-10-09T21:56:10.000Z",
+    "postText": "おはようございます。 本日、10日(土)の営業は都合により 9:15〜12:30と短くなっております。 お気をつけ下さい。  また肩ロース・4本用意しています。 連休のお供にいかが？  ¥2200、¥2000、¥1700、¥1500  皆様のご来店をお待ちしております。 https://t.co/fkCVF2Db0O",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ex1maT7WRo8ZYQqA0OxGcO5R3eU-06z_Xp2c2-GFQVro0XxRIMJPdCLeTU4pCJb1dilwUi5XcIrYPKWThkehNFRxFH-FyScFb56xvxMBMmnOEhqj-ykRvCUxXb0nnZn2D3-b5wj2MK0vYJBo3N1dTg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-dBeG3Acb2djQG0CshR30R1rJIIeHcop6oZOXvZwTlKtEXzjVNSo6ZK7fer0mQYiYwtFALYRB_DD6rFinqOvlUpryh69mMBDM6e2rBbS7whLGI5i5jLV-qj_xOtMXf6_XowlTedR5TfmivP9VB4Kh0A==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-kFjnnXSZDiqqWlPg7VqQ0Z2SQdXf-1K09IElCRMJ6Z6kaKTRylGs33BS7RgAeL2xu6kjRIi9hl3d6RC-Fr8hBPlatZnm5KQANS-HYJTu7Tk2Zv1yWWi3QclYTzoGzpV8MQTY6KdUGxh_OXD0-g31vQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-WYyxQO1QuRIyx-mdTOXtm08VNwwy_JaJqHIOI2KYUn5N-M-SHXQkgsNlgLiVzHRpl5sLzTqQLOUkgqoHYVneb4g7B6euyxJY9HBU4HbQ-ApvvDj8V_SGBsyUcPmqHbqWBcp2ZfH-C7WVgTfQtoGClw=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-10",
+      "hours": [
+        [
+          9.25,
+          12.5
+        ]
+      ],
+      "reason": "都合により",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 都合により"
   }
 ]
