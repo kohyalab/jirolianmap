@@ -10029,8 +10029,8 @@
       "hours": [],
       "reason": "通常営業の案内であり、変更はありません。"
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-09T09:09:49.151Z",
     "aiStatus": "no_change",
     "aiReason": "通常営業の案内であり、変更はありません。"
   },
@@ -10058,8 +10058,8 @@
       "reason": "都合のため",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-09T09:09:49.151Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 都合のため"
   },
@@ -10079,8 +10079,8 @@
       "hours": [],
       "reason": "アルバイト募集の告知であり、営業時間の変更に関する情報はありません。"
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-09T09:09:49.151Z",
     "aiStatus": "no_change",
     "aiReason": "アルバイト募集の告知であり、営業時間の変更に関する情報はありません。"
   },
@@ -10101,8 +10101,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-09T09:09:49.151Z",
     "aiStatus": "match",
     "aiReason": "既に登録済みの臨時スケジュールと一致"
   },
@@ -10125,8 +10125,8 @@
       "hours": [],
       "reason": "投稿内容は店舗での食事風景に関する日常的なものであり、営業情報の変更は含まれていません。"
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-09T09:09:49.151Z",
     "aiStatus": "no_change",
     "aiReason": "投稿内容は店舗での食事風景に関する日常的なものであり、営業情報の変更は含まれていません。"
   },
@@ -10157,8 +10157,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-09T09:09:49.151Z",
     "aiStatus": "match",
     "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   },
@@ -10189,8 +10189,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-09T09:09:49.151Z",
     "aiStatus": "match",
     "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   },
@@ -10210,8 +10210,8 @@
       "hours": [],
       "reason": "限定トッピングの案内であり、営業時間の変更はありません。"
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-09T09:09:49.151Z",
     "aiStatus": "no_change",
     "aiReason": "限定トッピングの案内であり、営業時間の変更はありません。"
   },
@@ -10231,8 +10231,8 @@
       "hours": [],
       "reason": "通常営業の案内であり、変更はありません。"
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-09T09:09:49.151Z",
     "aiStatus": "no_change",
     "aiReason": "通常営業の案内であり、変更はありません。"
   },
@@ -10252,8 +10252,8 @@
       "hours": [],
       "reason": ""
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-09T09:09:49.151Z",
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
   },
@@ -10276,8 +10276,8 @@
       "hours": [],
       "reason": "限定トッピング「魚玉」の販売告知であり、営業時間の変更はありません。"
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-09T09:09:49.151Z",
     "aiStatus": "no_change",
     "aiReason": "限定トッピング「魚玉」の販売告知であり、営業時間の変更はありません。"
   },
@@ -10298,8 +10298,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-09T09:09:49.151Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   },
@@ -10321,8 +10321,8 @@
       "hours": [],
       "reason": "トッピングの案内のみであり、営業時間の変更はありません。"
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-09T09:09:49.151Z",
     "aiStatus": "no_change",
     "aiReason": "トッピングの案内のみであり、営業時間の変更はありません。"
   },
@@ -10346,8 +10346,8 @@
       "hours": [],
       "reason": "通常営業の案内であり、営業時間の変更はありません。"
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-09T09:09:49.151Z",
     "aiStatus": "no_change",
     "aiReason": "通常営業の案内であり、営業時間の変更はありません。"
   },
@@ -10369,8 +10369,8 @@
       "hours": [],
       "reason": "通常営業の案内であり、営業時間の変更はありません。"
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-09T09:09:49.151Z",
     "aiStatus": "no_change",
     "aiReason": "通常営業の案内であり、営業時間の変更はありません。"
   },
@@ -10396,8 +10396,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-09T09:09:49.151Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   },
@@ -10422,8 +10422,8 @@
       "hours": [],
       "reason": "通常営業の案内であり、変更はありません。"
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-09T09:09:49.151Z",
     "aiStatus": "no_change",
     "aiReason": "通常営業の案内であり、変更はありません。"
   },
@@ -10443,8 +10443,8 @@
       "hours": [],
       "reason": "本日通常営業の告知であり、変更はありません。"
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-09T09:09:49.151Z",
     "aiStatus": "no_change",
     "aiReason": "本日通常営業の告知であり、変更はありません。"
   },
@@ -10467,8 +10467,8 @@
       "hours": [],
       "reason": "店舗の営業に関する変更告知はなく、顔出しパネル設置の案内のみです。"
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-09T09:09:49.151Z",
     "aiStatus": "no_change",
     "aiReason": "店舗の営業に関する変更告知はなく、顔出しパネル設置の案内のみです。"
   },
@@ -10493,8 +10493,8 @@
       "hours": [],
       "reason": "通常営業の案内および限定トッピングの告知であり、営業時間の変更はありません。"
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-09T09:09:49.151Z",
     "aiStatus": "no_change",
     "aiReason": "通常営業の案内および限定トッピングの告知であり、営業時間の変更はありません。"
   },
@@ -10515,8 +10515,8 @@
       "reason": "体調不良のため",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-09T09:09:49.151Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 体調不良のため"
   },
@@ -10542,8 +10542,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-09T09:09:49.151Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   },
@@ -10569,8 +10569,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-09T09:09:49.151Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   },
@@ -10592,8 +10592,8 @@
       "hours": [],
       "reason": "本日10/9(金)は通常営業です。"
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-09T09:09:49.151Z",
     "aiStatus": "no_change",
     "aiReason": "本日10/9(金)は通常営業です。"
   },
@@ -10615,8 +10615,8 @@
       "hours": [],
       "reason": "営業情報の変更に関する言及はありません。"
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-09T09:09:49.151Z",
     "aiStatus": "no_change",
     "aiReason": "営業情報の変更に関する言及はありません。"
   },
@@ -10638,8 +10638,8 @@
       "hours": [],
       "reason": "営業情報に関する投稿ではありません。"
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-09T09:09:49.151Z",
     "aiStatus": "no_change",
     "aiReason": "営業情報に関する投稿ではありません。"
   },
@@ -10661,8 +10661,8 @@
       "hours": [],
       "reason": "投稿内容は日常的なSNS投稿であり、営業情報の変更に関する記載はありません。"
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-09T09:09:49.151Z",
     "aiStatus": "no_change",
     "aiReason": "投稿内容は日常的なSNS投稿であり、営業情報の変更に関する記載はありません。"
   },
@@ -10688,8 +10688,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-09T09:09:49.151Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   },
@@ -10710,8 +10710,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-09T09:09:49.151Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   },
@@ -10731,8 +10731,8 @@
       "hours": [],
       "reason": "通常営業の案内であり、営業時間の変更はありません。"
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-09T09:09:49.151Z",
     "aiStatus": "no_change",
     "aiReason": "通常営業の案内であり、営業時間の変更はありません。"
   },
@@ -10754,8 +10754,8 @@
       "hours": [],
       "reason": "店舗敷地内に放置された自転車の移動を求める投稿であり、営業情報の変更はありません。"
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-09T09:09:49.151Z",
     "aiStatus": "no_change",
     "aiReason": "店舗敷地内に放置された自転車の移動を求める投稿であり、営業情報の変更はありません。"
   },
@@ -10777,8 +10777,8 @@
       "hours": [],
       "reason": "営業情報の変更に関する投稿ではありません。"
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-09T09:09:49.151Z",
     "aiStatus": "no_change",
     "aiReason": "営業情報の変更に関する投稿ではありません。"
   },
@@ -10804,8 +10804,8 @@
       "reason": "都合により",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-09T09:09:49.151Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 都合により"
   }
