@@ -10282,33 +10282,6 @@
     "aiReason": "限定トッピング「魚玉」の販売告知であり、営業時間の変更はありません。"
   },
   {
-    "id": "sns_post_nagoyaosone_20261009_0_2108362695414296605",
-    "shopId": "nagoyaosone",
-    "shopName": "名古屋大曽根店",
-    "postSource": "x",
-    "postUrl": "https://x.com/jiro_NGY/status/2108362695414296605",
-    "postedAt": "2026-10-09T01:03:32.000Z",
-    "postText": "おはようございます。 ラーメン二郎名古屋大曽根店です。 本日昼のみの営業です。  営業時間11:00〜14:00  ※１０日〜１３日までお休みさせていただきます。ご迷惑おかけいたします。  １４日から営業いたします。 よろしくお願いいたします。",
-    "mediaUrls": [],
-    "detectedChange": {
-      "type": "temporary_hours",
-      "startDate": "2026-10-09",
-      "endDate": "2026-10-09",
-      "hours": [
-        [
-          11,
-          14
-        ]
-      ],
-      "reason": "",
-      "confidence": 1
-    },
-    "processed": false,
-    "processedAt": null,
-    "aiStatus": "match",
-    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
-  },
-  {
     "id": "sns_post_nagoyaosone_20261010_1_2108362695414296605",
     "shopId": "nagoyaosone",
     "shopName": "名古屋大曽根店",
@@ -10524,5 +10497,54 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の案内および限定トッピングの告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_senjuohashi_20261009_0_2108414202369163497",
+    "shopId": "senjuohashi",
+    "shopName": "千住大橋駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjujirou26/status/2108414202369163497",
+    "postedAt": "2026-10-09T04:28:12.000Z",
+    "postText": "取り急ぎ体調不良の為定休日を含め暫く休業となりますので大変申し訳御座いませんがご注意の程よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-09",
+      "endDate": "2026-10-09",
+      "hours": [],
+      "reason": "体調不良のため",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 体調不良のため"
+  },
+  {
+    "id": "sns_post_nagoyaosone_20261009_0_2108410557259034839",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2108410557259034839",
+    "postedAt": "2026-10-09T04:13:43.000Z",
+    "postText": "ラーメン二郎名古屋大曽根店です。 只今の時間、並びを持ちまして本日の営業は終了とさせていただきます。 次回の営業日は10月14日です。 よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-09",
+      "endDate": "2026-10-09",
+      "hours": [
+        [
+          10,
+          13.216666666666667
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
