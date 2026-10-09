@@ -912,7 +912,16 @@
     "ticketTiming": "",
     "openedAt": "2001-02-09",
     "closedAt": null,
-    "temporary": [],
+    "temporary": [
+      {
+        "startDate": "2026-10-09",
+        "endDate": "2026-10-09",
+        "hours": [],
+        "reason": "従業員体調不良のため",
+        "sourceUrl": "https://x.com/ikejikabuji/status/2108523276037407086",
+        "_isAiImported": true
+      }
+    ],
     "shiftsByDay": {
       "0": [
         [
