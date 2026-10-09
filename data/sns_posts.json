@@ -11225,5 +11225,36 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の案内および限定トッピングの告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_yaen2_20261010_0_2108701352205627570",
+    "shopId": "yaen2",
+    "shopName": "八王子野猿街道店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/Jiro_Yaenkaido2/status/2108701352205627570",
+    "postedAt": "2026-10-09T23:29:14.000Z",
+    "postText": "10月10日(土) 11:00～20:00 通し営業 ⭐テイクアウト、鍋二郎あります 並ばず買えます エビドクロテイクアウト現金です  ⚠️駐車場待ち出来ません ⚠️駐車場満車時コインパーキングに ⚠️店舗近隣タバコ禁止です  🌟きまぐれたまご うめ https://t.co/Jp1kK6NN7s",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-8hQdcCquAA0GOhO3QJGaL4pvwnH77zPbsGkjyBZuenc_cUwWh4toh49pyvqhNydUa6Y5kt1bXb8xYt1cASZ49V-Fwm8lSyZRECB43kWbjeorkn7WTdyCrTOk2gpNIexKL9kjOIzKq6cSs4TWRfrUkA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ASWMOdtvzl3hZ0Soej6T0gQaIJkUbGnWrNk2xnU8Qi9qkdq4K7AmgzkMdTbMroqMK-4AXPh9_Qel_BVesuqVwo4wsS6D8JzS_KL89bB_S5p99I_NFz0TlQxVPKehFKV5CcsIKWw0OqHPf6LrTQK_dA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-byz1TPvZV79u0kSdS6vksFv6nXBZke-yJ0hIfpyCXrAyLuWj7GJuQ9ROC8czf0GZctjAx75ZboA4NrZfXF9nDQCmxrV_iiqGC4tM-z2a7Wfix5GzkldLSV9xdR6SjtlW2VF4_m7cvefGu2uUOxqYGg=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-10",
+      "hours": [
+        [
+          11,
+          20
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   }
 ]
