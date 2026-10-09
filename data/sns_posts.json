@@ -10573,5 +10573,146 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_sengawa_2108437331040686143",
+    "shopId": "sengawa",
+    "shopName": "仙川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjiro26/status/2108437331040686143",
+    "postedAt": "2026-10-09T06:00:07.000Z",
+    "postText": "本日17時から店内営業とテイクアウト販売します。 https://t.co/epeI1k4Oxf",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Shak-MPmhOn_Bhnf76l7OBUHzMBek7fxwi26yUwlZqEzo6xbkt3cHTh4OVqi-DM7mpHx1T-v8ECmPL3aPVIGCFNcM5mh8vmA4EElNq307Nu7FHT6qlDAVv4BpurXHM59KrKtGu-QBiy916QK93ZjEw=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-09",
+      "endDate": "2026-10-09",
+      "hours": [],
+      "reason": "本日10/9(金)は通常営業です。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "本日10/9(金)は通常営業です。"
+  },
+  {
+    "id": "sns_post_routine_kameido_2108431921567191469",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2108431921567191469",
+    "postedAt": "2026-10-09T05:38:37.000Z",
+    "postText": "一応意思表示はしておきました😅 https://t.co/1i4s414rG3 https://t.co/odMjkFmxmh",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-TTnQILFBtutfOvgR6396rixG3NcqIkDOdjOqaK6uEqfx-GHX2qYQyaFWnF-X7ZYETWrS2FIBFc8ElRDPz9RUWW_HuIiXxaISI0ojXDLUJjULYNGoMIJqj3qB-CaWu5AR8UsQbcUJsA-HzTQoemcRIA=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-09",
+      "endDate": "2026-10-09",
+      "hours": [],
+      "reason": "営業情報の変更に関する言及はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_kameido_2108431814268522646",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2108431814268522646",
+    "postedAt": "2026-10-09T05:38:11.000Z",
+    "postText": "一応意思表示はしておきました https://t.co/ne2j3PyIhM https://t.co/odMjkFmxmh",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-TTnQILFBtutfOvgR6396rixG3NcqIkDOdjOqaK6uEqfx-GHX2qYQyaFWnF-X7ZYETWrS2FIBFc8ElRDPz9RUWW_HuIiXxaISI0ojXDLUJjULYNGoMIJqj3qB-CaWu5AR8UsQbcUJsA-HzTQoemcRIA=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-09",
+      "endDate": "2026-10-09",
+      "hours": [],
+      "reason": "営業情報に関する投稿ではありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報に関する投稿ではありません。"
+  },
+  {
+    "id": "sns_post_routine_kameido_2108431057116938422",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2108431057116938422",
+    "postedAt": "2026-10-09T05:35:11.000Z",
+    "postText": "これもひどい！笑 https://t.co/I12l1bRjrO https://t.co/odMjkFmxmh",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-WETcugr8eo_2AiIn73thB_Xr83qbUqWyYvyDBoUH1tvmrOUB4RHkDnkffmyf8Wjd0Xlq49vNHXZza3t_L5ZZNocSDfIBrEq9sCU1AUYq9ZRYoU4PQWTAewmacJoZBVnl-LUsYhRRQ4h-wvT5xdJQ8g=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-09",
+      "endDate": "2026-10-09",
+      "hours": [],
+      "reason": "投稿内容は日常的なSNS投稿であり、営業情報の変更に関する記載はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "投稿内容は日常的なSNS投稿であり、営業情報の変更に関する記載はありません。"
+  },
+  {
+    "id": "sns_post_koiwa_20261009_0_2108431084933595604",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2108431084933595604",
+    "postedAt": "2026-10-09T05:35:18.000Z",
+    "postText": "ただいまお並びのお客様をもちまして本日の営業は終了しました。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-09",
+      "endDate": "2026-10-09",
+      "hours": [
+        [
+          10.5,
+          14.58
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_kyoto_20261009_0_2108435310619357612",
+    "shopId": "kyoto",
+    "shopName": "京都店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kyoto/status/2108435310619357612",
+    "postedAt": "2026-10-09T05:52:05.000Z",
+    "postText": "本日はお休みします。ご予定してくださっていた方には大変申し訳ありません🙇‍♂️",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-09",
+      "endDate": "2026-10-09",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
