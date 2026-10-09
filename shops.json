@@ -2324,18 +2324,27 @@
     "id": "yaen2",
     "name": "八王子野猿街道店2",
     "kana": "ハチオウジヤエンカイドウテンツー",
+    "shortName": "野猿街道2",
+    "prefCode": "13",
+    "cityCode": "13201",
     "addressText": "堀之内2丁目13-16",
     "lat": 35.62946601937981,
     "lng": 139.40134589999886,
+    "openedAt": "2006-06-10",
+    "closedAt": null,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/yaen2/",
       "rdb": "https://ramendb.supleks.jp/s/4017.html",
       "tabelog": "https://tabelog.com/tokyo/A1329/A132904/13025633/"
     },
     "x": "Jiro_Yaenkaido2",
+    "instagram": "yaen0828",
     "ticketTiming": "",
-    "openedAt": "2006-06-10",
-    "closedAt": null,
+    "soupType": "",
+    "renge": "",
+    "takeout": "",
+    "hoursNotes": "",
+    "remarks": "",
     "temporary": [
       {
         "startDate": "2026-08-22",
@@ -2350,6 +2359,13 @@
       {
         "startDate": "2026-09-08",
         "endDate": "2026-09-09",
+        "hours": []
+      }
+    ],
+    "holidaySpecialShifts": [
+      {
+        "triggerDay": 1,
+        "targetOffset": 0,
         "hours": []
       }
     ],
@@ -2413,22 +2429,7 @@
         11,
         20
       ]
-    ],
-    "remarks": "",
-    "hoursNotes": "",
-    "instagram": "yaen0828",
-    "holidaySpecialShifts": [
-      {
-        "triggerDay": 1,
-        "targetOffset": 0,
-        "hours": []
-      }
-    ],
-    "shortName": "野猿街道2",
-    "soupType": "",
-    "renge": "",
-    "takeout": "",
-    "cityCode": "13201"
+    ]
   },
   {
     "id": "hibarigaoka",
@@ -2934,10 +2935,10 @@
       },
       {
         "startDate": "2026-10-09",
-        "endDate": "2026-10-09",
+        "endDate": null,
         "hours": [],
         "reason": "体調不良のため",
-        "sourceUrl": "https://x.com/senjujirou26/status/2108309632875991062",
+        "sourceUrl": "https://x.com/senjujirou26/status/2108414202369163497",
         "_isAiImported": true
       }
     ],
@@ -3318,6 +3319,19 @@
             13.5
           ]
         ]
+      },
+      {
+        "startDate": "2026-10-10",
+        "endDate": "2026-10-10",
+        "hours": [
+          [
+            9.25,
+            12.5
+          ]
+        ],
+        "reason": "都合のため",
+        "sourceUrl": "https://x.com/jiro_nishidai/status/2108342156457124240",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -4732,6 +4746,14 @@
         "hours": [],
         "sourceUrl": "https://x.com/jiro_kyoto/status/2104473333144424895",
         "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-09",
+        "endDate": "2026-10-09",
+        "hours": [],
+        "reason": "",
+        "sourceUrl": "https://x.com/jiro_kyoto/status/2108435310619357612",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -5933,6 +5955,19 @@
         "hours": [],
         "reason": "都合により",
         "sourceUrl": "https://x.com/genkimoriya/status/2105150235496595846",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-10",
+        "endDate": "2026-10-10",
+        "hours": [
+          [
+            10.5,
+            17
+          ]
+        ],
+        "reason": "都合により",
+        "sourceUrl": "https://x.com/genkimoriya/status/2108470772897558568",
         "_isAiImported": true
       }
     ],
