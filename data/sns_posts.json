@@ -10857,5 +10857,69 @@
     "processedAt": "2026-10-09T12:38:21.850Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 従業員体調不良のため"
+  },
+  {
+    "id": "sns_post_hitachinaka_20261010_0_2108541786264412359",
+    "shopId": "hitachinaka",
+    "shopName": "ひたちなか店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26_hitachinaka/status/2108541786264412359",
+    "postedAt": "2026-10-09T12:55:11.000Z",
+    "postText": "【10日・12日 営業の件】  つけ麺の粉があまっています。  しばらく使用予定がないので、 10日・12日の営業で (10：00〜16：00) (11日は日曜定休日) つけ味ラーメンやります！ 粉を消化させて下さい。  辛いのはお休みです。 つけ麺の粉なくなり次第、 辛いの復活。  17日 土曜日 お休みします。 https://t.co/zOxeN1VyOX",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-spLKhruDvMt5Dmoxxs_THfiAPgkKRJLYg4iBG412gWG4RssA-LWqSGrbKz3L3R-goSBWcdIR5MGbkau_UP-wvzewwE3CSyKYwDsPRNxeOM-U0nZBS0tmlzFLhbLDBNS7ZVuwL0rbSkZ6mHAYWqjd3w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-rDJts2zeekrLgfhZC0A0G-4Bt59d8V_-WAQzJviOBRcg5VokuAu3GQyw--R6qchiaZDWTOHvI9bqLW6YJ22-AUHYKG2VT_Ew9WGole2YI_Bs8EgvIlRl_sx1_MAoRAoDMO0ZnGcaVPfapy3NXT9Lhw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-CYfVhXfiCyTJGPoD__L5A2j3wfxdDkzVgpit794rwiSlm4Dh3oAQa9NHOSLQP_toVkw243VabuEnsKgWAE3w6Kxp6LyrQ3NYMv6XUHT7-ArMYHCkjdLQx7VS-QY59qEW7gY8Izo_4Gu03OlW92OEHA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-5hukKGG0cxP1djAzzK5dkVMxX6Msm4IEaVeSWTRMD51B699GQeJMunZWg6-z0FN7LF34v5kU04MkMo-UkHC3D895Pb8s2iCS9kWwZoRzXnklRaT3EXPr5EUNVo1F0L5-ZiOY4_ewNeKWdg46Iwe5nw=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-10",
+      "hours": [
+        [
+          10,
+          16
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_hitachinaka_20261012_1_2108541786264412359",
+    "shopId": "hitachinaka",
+    "shopName": "ひたちなか店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26_hitachinaka/status/2108541786264412359",
+    "postedAt": "2026-10-09T12:55:11.000Z",
+    "postText": "【10日・12日 営業の件】  つけ麺の粉があまっています。  しばらく使用予定がないので、 10日・12日の営業で (10：00〜16：00) (11日は日曜定休日) つけ味ラーメンやります！ 粉を消化させて下さい。  辛いのはお休みです。 つけ麺の粉なくなり次第、 辛いの復活。  17日 土曜日 お休みします。 https://t.co/zOxeN1VyOX",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-spLKhruDvMt5Dmoxxs_THfiAPgkKRJLYg4iBG412gWG4RssA-LWqSGrbKz3L3R-goSBWcdIR5MGbkau_UP-wvzewwE3CSyKYwDsPRNxeOM-U0nZBS0tmlzFLhbLDBNS7ZVuwL0rbSkZ6mHAYWqjd3w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-rDJts2zeekrLgfhZC0A0G-4Bt59d8V_-WAQzJviOBRcg5VokuAu3GQyw--R6qchiaZDWTOHvI9bqLW6YJ22-AUHYKG2VT_Ew9WGole2YI_Bs8EgvIlRl_sx1_MAoRAoDMO0ZnGcaVPfapy3NXT9Lhw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-CYfVhXfiCyTJGPoD__L5A2j3wfxdDkzVgpit794rwiSlm4Dh3oAQa9NHOSLQP_toVkw243VabuEnsKgWAE3w6Kxp6LyrQ3NYMv6XUHT7-ArMYHCkjdLQx7VS-QY59qEW7gY8Izo_4Gu03OlW92OEHA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-5hukKGG0cxP1djAzzK5dkVMxX6Msm4IEaVeSWTRMD51B699GQeJMunZWg6-z0FN7LF34v5kU04MkMo-UkHC3D895Pb8s2iCS9kWwZoRzXnklRaT3EXPr5EUNVo1F0L5-ZiOY4_ewNeKWdg46Iwe5nw=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-12",
+      "hours": [
+        [
+          10,
+          16
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   }
 ]
