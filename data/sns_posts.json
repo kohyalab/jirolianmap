@@ -10831,8 +10831,8 @@
       "reason": "材料切れのため",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-09T12:38:21.850Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 材料切れのため"
   },
@@ -10853,8 +10853,8 @@
       "reason": "従業員体調不良のため",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-09T12:38:21.850Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 従業員体調不良のため"
   }
