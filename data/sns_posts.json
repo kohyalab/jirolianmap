@@ -10735,5 +10735,51 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の案内であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_fujisawa_2108461289517555923",
+    "shopId": "fujisawa",
+    "shopName": "湘南藤沢店",
+    "postSource": "x",
+    "postUrl": "https://x.com/fujirow26/status/2108461289517555923",
+    "postedAt": "2026-10-09T07:35:19.000Z",
+    "postText": "いつもありがとうございます。  鍵かけてあるので、すぐとりにこられるかと思ってましたが、数日たってます。 移動の方お願いいたしますね。 https://t.co/58P2dV6Wxf",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-R6QzSlYk5oYmqiMKLI4WdbsPlj-WQMZ3FKwLaLz3Kn9KeN3L0oD-F-6aoEaSqkzkeywI4dhQ3nbghe-qfIh-40YFi_xZ8NfenmaF3yfgXcyRO3GsZ6uM2UEsI3hrC-8NRi5xiBljFEN-jZUwsM1-jg=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-09",
+      "endDate": "2026-10-09",
+      "hours": [],
+      "reason": "店舗敷地内に放置された自転車の移動を求める投稿であり、営業情報の変更はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "店舗敷地内に放置された自転車の移動を求める投稿であり、営業情報の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2108466578635575566",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2108466578635575566",
+    "postedAt": "2026-10-09T07:56:20.000Z",
+    "postText": "今日きたお嬢ちゃんの食べ終わった後飴あげたら、これあげるともらった！！ どこに飾ろうかしら💓 https://t.co/6MsJTaeL6m",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-hetwzEviBM34i7SfaO0gDyi0wfMgJstIwNdX2hfAx2YL2ANeSGd1UkRtl9pP7K-VYIKZTLP8XbBA9UsVg4NCC442euAYOra8XMugOs9A5t3Ph2ZsdGLgxx612Hu5331ENzOCGHsGvj1ntWIlwcFUhg=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-09",
+      "endDate": "2026-10-09",
+      "hours": [],
+      "reason": "営業情報の変更に関する投稿ではありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報の変更に関する投稿ではありません。"
   }
 ]
