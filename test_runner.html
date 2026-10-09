@@ -596,6 +596,13 @@
                 const filteredItems = edDoc.querySelectorAll('#shop-list .shop-item');
                 assert('エディタ: 店舗検索（「目黒」で絞り込み）', () => filteredItems.length === 1, `検索ヒット数: ${filteredItems.length}件`);
 
+                // 開店日未定店舗（松本店）の営業状態バッジが「オープン予定」であることの検証
+                searchInput.value = '松本';
+                edWin.app.renderList();
+                const matsumotoEdItem = edDoc.querySelector('#shop-list .shop-item');
+                const matsumotoBadge = matsumotoEdItem ? matsumotoEdItem.querySelector('.status-badge') : null;
+                assert('エディタ: 開店日未定店舗（松本店）の営業状態バッジが「オープン予定」', () => matsumotoBadge && matsumotoBadge.textContent.trim() === 'オープン予定', matsumotoBadge ? `バッジ: "${matsumotoBadge.textContent.trim()}"` : 'バッジ未検出');
+
                 // --- 6-2. エディタ機能: 「未定」ボタン＆住所自動分離テスト ---
                 const monPendingBtn = edDoc.querySelector('button[onclick*="setShiftPending(\'shift-0\')"]');
                 const monInput = edDoc.getElementById('shift-0');
