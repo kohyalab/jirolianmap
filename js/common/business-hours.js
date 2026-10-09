@@ -187,6 +187,7 @@
             }
 
             if (timeStr === '未定') return `<span style="font-size:${mode === 'today' ? '0.72rem' : hourSize}; font-weight:normal; letter-spacing:0.2px; color:#aaa;">未定</span>`;
+            if (timeStr === 'オープン前') return `<span style="font-size:${mode === 'today' ? '0.72rem' : (mode === 'calendar' ? '0.60rem' : hourSize)}; font-weight:normal; letter-spacing:0.2px; color:#aaa;">オープン前</span>`;
             if (!timeStr || timeStr === '休業') return `<span style="font-size:${mode === 'today' ? '0.72rem' : hourSize}; font-weight:normal; letter-spacing:0.2px;">休業</span>`;
             return timeStr.split('-').map(t => {
                 const parts = t.trim().split(':');
@@ -538,12 +539,13 @@
                         }
                     }
                     if (!found) {
-                        text = `30日後以降-`;
+                        text = `未定`;
                     }
                 }
             }
 
-            return `<span class="next-schedule ${extraClass}" title="${text}">${text}</span>`;
+            const titleText = (text === '未定') ? '次回営業時間: 未定' : text;
+            return `<span class="next-schedule ${extraClass}" title="${titleText}">${text}</span>`;
         },
 
         getWeeklyTemporaryText(shop, targetDate = new Date()) {

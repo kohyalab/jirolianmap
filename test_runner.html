@@ -145,6 +145,22 @@
                 const text = JiroBusinessHours.getNextOpenScheduleText(noOpenDateShop, beforeOpenDate);
                 return text.includes('未定');
             });
+            const noUpcomingShiftsShop = {
+                id: 'no_upcoming_shifts_shop',
+                name: '全休二郎',
+                openedAt: '2020-01-01',
+                closedAt: null,
+                shiftsByDay: { '0': [], '1': [], '2': [], '3': [], '4': [], '5': [], '6': [] }
+            };
+            assert('JiroBusinessHours.getNextOpenScheduleText (次回営業日が30日以内にない場合は「未定」)', () => {
+                const text = JiroBusinessHours.getNextOpenScheduleText(noUpcomingShiftsShop, new Date(2026, 9, 1));
+                return text.includes('未定') && !text.includes('30日後以降');
+            });
+            assert('JiroBusinessHours.formatShiftTimeText (「オープン前」表示対応)', () => {
+                const todayHtml = JiroBusinessHours.formatShiftTimeText('オープン前', 'today');
+                const calHtml = JiroBusinessHours.formatShiftTimeText('オープン前', 'calendar');
+                return todayHtml.includes('オープン前') && calHtml.includes('オープン前');
+            });
             assert('JiroBusinessHours.getBusinessStatus (オープン前店舗は「オープン予定」)', () => {
                 const st = JiroBusinessHours.getBusinessStatus(preOpenShop, beforeOpenDate);
                 return st.type === 'preopen' && st.label === 'オープン予定';
@@ -472,12 +488,16 @@
                     appWin.setPeriodMode('1');
                 }
                 if (typeof appWin.setSelectedDate === 'function') {
-                    appWin.setSelectedDate('2026-10-07');
+                    appWin.setSelectedDate('2026-10-14');
                 }
                 await new Promise(r => setTimeout(r, 400));
                 const kabukiCard = appDoc.querySelector('.shop-item[data-shop-id="kabuki"]');
                 const isKabukiClosed = kabukiCard && kabukiCard.classList.contains('today-closed') && !kabukiCard.classList.contains('today-open');
-                assert('日別表示: 2026/10/07 新宿歌舞伎町店が休業(today-closed)表示', () => isKabukiClosed, kabukiCard ? `クラス: ${kabukiCard.className}` : '要素未検出');
+                assert('日別表示: 2026/10/14 新宿歌舞伎町店が休業(today-closed)表示', () => isKabukiClosed, kabukiCard ? `クラス: ${kabukiCard.className}` : '要素未検出');
+
+                const matsumotoCard = appDoc.querySelector('.shop-item[data-shop-id="matsumoto"]');
+                const matsumotoHoursText = matsumotoCard ? matsumotoCard.querySelector('.today-hours-text')?.textContent?.trim() : '';
+                assert('日別表示: オープン予定店舗（松本店）の営業状況が「オープン前」表示', () => matsumotoHoursText === 'オープン前', matsumotoCard ? `テキスト: "${matsumotoHoursText}"` : '要素未検出');
 
             } catch (err) {
                 assert('メインアプリ: 統合テスト例外', false, err.message);

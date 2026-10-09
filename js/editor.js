@@ -2476,8 +2476,11 @@ ${guidelinesText}
                     let currShiftsText = '定休日';
                     let isTemp = false;
                     if (shop && typeof JiroBusinessHours !== 'undefined') {
+                        const isPre = JiroBusinessHours.isPreOpen(shop, cur) || (!shop.openedAt || !shop.openedAt.trim());
                         const eff = JiroBusinessHours.getTodayShifts(shop, cur);
-                        if (eff && eff.length > 0) {
+                        if (isPre) {
+                            currShiftsText = 'オープン前';
+                        } else if (eff && eff.length > 0) {
                             currShiftsText = eff.map(([s, e]) => `${this.floatToTime(s)}-${this.floatToTime(e)}`).join(', ');
                         }
                         const tempEntry = JiroBusinessHours.findTemporaryEntry(shop, cur);
