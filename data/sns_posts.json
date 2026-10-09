@@ -10921,5 +10921,28 @@
     "processedAt": null,
     "aiStatus": "match",
     "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_routine_kameido_2108565172805853611",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2108565172805853611",
+    "postedAt": "2026-10-09T14:28:07.000Z",
+    "postText": "購入しました🍜明日の夜久しぶりにゲーム配信しようかと思います笑 https://t.co/TEzwN8fDqc",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-3Tvdy-KGpIzpJZtp44Y1cOCw9IlJlNRHy2DhZyXIlW__SIgSjZnVYOQT27gPvMN5e-1OIVApJ4RuXjtMXEdZTZw5ieFp4YnPnFZ4px2JkuKVxcyCM9nd4fCB40djtP9kxE1rBmuI7aXAnOkySLzd6g=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-09",
+      "endDate": "2026-10-09",
+      "hours": [],
+      "reason": "営業情報の変更に関する言及はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報の変更に関する言及はありません。"
   }
 ]
