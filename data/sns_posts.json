@@ -10835,5 +10835,27 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 材料切れのため"
+  },
+  {
+    "id": "sns_post_ikebukuro_20261009_0_2108523276037407086",
+    "shopId": "ikebukuro",
+    "shopName": "池袋東口店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ikejikabuji/status/2108523276037407086",
+    "postedAt": "2026-10-09T11:41:38.000Z",
+    "postText": "池袋店です。  10月9日(金) 本日従業員体調不良の為お休みとさせて頂きます。  ご予定されてた方々ご迷惑お掛けしますが宜しくお願い致します。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-09",
+      "endDate": "2026-10-09",
+      "hours": [],
+      "reason": "従業員体調不良のため",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 従業員体調不良のため"
   }
 ]
