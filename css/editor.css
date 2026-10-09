@@ -209,8 +209,13 @@ h1 { margin: 0; font-size: 1.1rem; color: var(--accent-color); white-space: nowr
     white-space: nowrap;
     flex-shrink: 0;
 }
-.status-badge.before-open { background-color: #0288d1; color: #ffffff; }
-.status-badge.closed { background-color: #d32f2f; color: #ffffff; }
+.status-badge.before-open,
+.status-badge.bg-preopen { background-color: var(--status-preopen, #7b1fa2); color: #ffffff; }
+.status-badge.closed,
+.status-badge.bg-closed { background-color: var(--status-closed, #616161); color: #ffffff; }
+.status-badge.bg-open { background-color: var(--status-open, #2e7d32); color: #ffffff; }
+.status-badge.bg-closing-soon { background-color: var(--status-closing-soon, #ed6c02); color: #ffffff; }
+.status-badge.bg-scheduled { background-color: var(--status-scheduled, #0288d1); color: #ffffff; }
 
 .editor-panel {
     flex: 1;

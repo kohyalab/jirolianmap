@@ -680,11 +680,13 @@ class EditorApp {
     getShopStatus(shop) {
         const todayStr = this.getJSTDateString();
 
-        if (shop.openedAt) {
-            let openCompareStr = shop.openedAt;
+        if (shop.openedAt && shop.openedAt.trim()) {
+            let openCompareStr = shop.openedAt.trim();
             if (openCompareStr.length === 4) openCompareStr += '-01-01';
             else if (openCompareStr.length === 7) openCompareStr += '-01';
             if (openCompareStr > todayStr) return 'BEFORE_OPEN';
+        } else if (!shop.openedAt || !shop.openedAt.trim()) {
+            return 'BEFORE_OPEN';
         }
 
         if (shop.closedAt) {
@@ -3564,7 +3566,7 @@ ${guidelinesText}
 
             count++;
             let badgeHtml = '';
-            if (status === 'BEFORE_OPEN') badgeHtml = `<span class="status-badge before-open">オープン前</span>`;
+            if (status === 'BEFORE_OPEN') badgeHtml = `<span class="status-badge before-open">オープン予定</span>`;
             else if (status === 'CLOSED') badgeHtml = `<span class="status-badge closed">閉店</span>`;
 
             const prefCity = typeof LG_CODES !== 'undefined' ? LG_CODES.getPrefAndCityName(shop) : '';
@@ -3813,7 +3815,7 @@ ${guidelinesText}
             const tr = document.createElement('tr');
             let inputHtml = '';
             const status = this.getShopStatus(shop);
-            let badgeHtml = status === 'BEFORE_OPEN' ? `<span class="status-badge before-open">オープン前</span>` : (status === 'CLOSED' ? `<span class="status-badge closed">閉店</span>` : '');
+            let badgeHtml = status === 'BEFORE_OPEN' ? `<span class="status-badge before-open">オープン予定</span>` : (status === 'CLOSED' ? `<span class="status-badge closed">閉店</span>` : '');
 
             if (fieldKey === 'id_pc') {
                 const pcVal = shop.urls?.pc || '';
