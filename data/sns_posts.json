@@ -11368,5 +11368,284 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "10/10(土)は通常通りの営業案内であり、変更はありません。"
+  },
+  {
+    "id": "sns_post_ikebukuro_20261010_0_2108732223428108348",
+    "shopId": "ikebukuro",
+    "shopName": "池袋東口店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ikejikabuji/status/2108732223428108348",
+    "postedAt": "2026-10-10T01:31:55.000Z",
+    "postText": "池袋店です。  10月10日(土)の告知になります。  従業員体調不良の為暫くの間お休みとなります。  営業再開に着いては体調治り次第追って報告します。 連休中の急なお休みで予定されていた方、ご迷惑お掛けしますがご理解の程宜しくお願い致します。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-10",
+      "hours": [],
+      "reason": "従業員体調不良のため",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "既に登録済みの臨時スケジュールと一致"
+  },
+  {
+    "id": "sns_post_nishidai_20261103_0_2108733538761904506",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2108733538761904506",
+    "postedAt": "2026-10-10T01:37:08.000Z",
+    "postText": "本日、10日の 肩ロース、切り落としは 売り切れました。 https://t.co/otTXJTD50v",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-eVdzGbDfKjI4cwUtvuBSH1HWZqg1K7DCcDmcpvffpBT_gUGm3GyigwFacGcg4YBG0VuZJNuJnyoAHXMTEUbcZHrsg8QXoKUVrH6XMHI6QaEUlC7TwXcLiLNA5BL3in8h48358vR0ic7nN8x6jl3eCw=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-03",
+      "endDate": "2026-11-03",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_kyoto_20261010_0_2108733242992115949",
+    "shopId": "kyoto",
+    "shopName": "京都店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kyoto/status/2108733242992115949",
+    "postedAt": "2026-10-10T01:35:58.000Z",
+    "postText": "おはようございます！ 本日と明日はお昼の部のみの営業です。 12日月曜日は夜営業17時から21時で営業いたします。 よろしくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-10",
+      "hours": [
+        [
+          11,
+          14.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_kyoto_20261011_1_2108733242992115949",
+    "shopId": "kyoto",
+    "shopName": "京都店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kyoto/status/2108733242992115949",
+    "postedAt": "2026-10-10T01:35:58.000Z",
+    "postText": "おはようございます！ 本日と明日はお昼の部のみの営業です。 12日月曜日は夜営業17時から21時で営業いたします。 よろしくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-11",
+      "endDate": "2026-10-11",
+      "hours": [
+        [
+          17,
+          23
+        ]
+      ],
+      "reason": "",
+      "confidence": 0.9
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_kyoto_20261012_2_2108733242992115949",
+    "shopId": "kyoto",
+    "shopName": "京都店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kyoto/status/2108733242992115949",
+    "postedAt": "2026-10-10T01:35:58.000Z",
+    "postText": "おはようございます！ 本日と明日はお昼の部のみの営業です。 12日月曜日は夜営業17時から21時で営業いたします。 よろしくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-12",
+      "hours": [
+        [
+          17,
+          21
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2108737939790586343",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2108737939790586343",
+    "postedAt": "2026-10-10T01:54:37.000Z",
+    "postText": "@ako_banchou 大丈夫ですよ！基本、閉店時間以降、列切れるまでやってます！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-10",
+      "hours": [],
+      "reason": "投稿内容は営業時間の変更や臨時休業に関するものではなく、通常の営業方針に関する回答であるため変更なし。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "投稿内容は営業時間の変更や臨時休業に関するものではなく、通常の営業方針に関する回答であるため変更なし。"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2108737832504492269",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2108737832504492269",
+    "postedAt": "2026-10-10T01:54:12.000Z",
+    "postText": "@fhGkDNSzNoGgb23 でもやはり飲兵衛の人たちはラガー派が多めですね！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-10",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2108737720092897454",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2108737720092897454",
+    "postedAt": "2026-10-10T01:53:45.000Z",
+    "postText": "@ebizo1972 まさかの展開にラーメンおじさんはあたふたしちゃいました笑",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-10",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2108737140398129242",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2108737140398129242",
+    "postedAt": "2026-10-10T01:51:27.000Z",
+    "postText": "@tr4y8D5HS449890 御来店お待ちしております！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-10",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2108736977877291375",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2108736977877291375",
+    "postedAt": "2026-10-10T01:50:48.000Z",
+    "postText": "@DqAC8TUMsZCz0lm 店広いんで大丈夫です！！ あまり気になさらず！！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-10",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2108736707193671929",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2108736707193671929",
+    "postedAt": "2026-10-10T01:49:44.000Z",
+    "postText": "@zuomuguiji97299 注文も意外と簡単ですし、時間ずらすとそんなに混んでませんので、当店も是非！！ お口に合えば嬉しいです！！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-10",
+      "hours": [],
+      "reason": "営業情報の変更に関する言及はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2108736316418699502",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2108736316418699502",
+    "postedAt": "2026-10-10T01:48:10.000Z",
+    "postText": "おはようございます！最高の秋晴れで三連休スタートです！ 写真は先日行った魚がうまい店と申しますさんの刺し盛り！！名前に偽りなし！！魚うまい！！  テイクアウトもお土産にどうぞ！！並ばずに買えます！！ 御来店お待ちしております！！ https://t.co/pN4z0Q5dtx",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-r_gHRAW5bBXrTmh_nrgJ1ll-zFpcBd3msfWDbOFAtxGn41XHThhk8_mEX0lN_HxYXf56wjNCjpcWw3wAmqa8mx7TG9qsEMS4RUdy08PBy8XFSB5Y_ruTifC49m4meIk8ScgxF-ktuS8YCoccvqCG9w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Wg5vCeOhu2QqnevbMYzHwTOJSwy1_mco92Ql33x6OQQ26B9p3YsVQYQLEOcI1XOJuZQU2Bx7OKVH9Pb2Rs3CB2j97UUK0xAPzqsmV8XeP8nklt1W_4S_thS6CBCx6thrcVvd55LFnntJiqBjJ2aDCA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-vgK0oOWaDfyS77ZNcgtVfphJ5-78oiU1DstRSrRPHJiUuACtvRhAyRv_nc-NjUT115K5dkX5HDfllHsZ86NTaeO58m9KwIKad8mAiSMREbLx16uZp9BWNwI0Ft7o_o_zc1hnMhE5qmuBBZSEMraQFg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-gxmgjliYJNXY4ZFhdxZyleaPKrhxxmvybe0QsJPsW98Wk0I-cRzYvn-lezR9rWOdzRrsXkh6duaFv983EQp3mZavFz5uffNGUUbVZmGQBGif8ipyr_RdZIXh7PIo-uA8k-XG1jJ4ITpIKzWK-jgKoA=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-10",
+      "hours": [],
+      "reason": "通常営業の案内であり、営業時間の変更はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内であり、営業時間の変更はありません。"
   }
 ]
