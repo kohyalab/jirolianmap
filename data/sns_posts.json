@@ -12108,5 +12108,26 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "店舗の営業に関する言及はなく、配信に関する投稿であるため変更なし。"
+  },
+  {
+    "id": "sns_post_daily_kameido_2108906011822350504",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2108906011822350504",
+    "postedAt": "2026-10-10T13:02:29.000Z",
+    "postText": "久しぶりにゲーム配信  素人配信なので下手くそなところはご容赦ください💦   https://t.co/BhL1AMVAgS",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-10",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
