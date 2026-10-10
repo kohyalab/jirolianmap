@@ -11869,5 +11869,52 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "投稿内容は券売機の写真と「金曜日にポストし忘れてました」という日常的なコメントのみであり、営業時間の変更に関する情報はありません。"
+  },
+  {
+    "id": "sns_post_routine_kameido_2108808363647828243",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2108808363647828243",
+    "postedAt": "2026-10-10T06:34:28.000Z",
+    "postText": "今日のお昼はご近所にあるブリトー屋さんTERRITORIOさんでブリトーをテイクアウトしてきました🌯コーラゼロが合う！美味しくいただきました✨ https://t.co/RCKYyB0vQv",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2VfsbG64C1qDxlQkuY8x6CqQA_DCBGZsT7TrKNp9XquEswyJJcJJUdVrOTXsqPSoYlzdiFLz1F3KQyHOSVk9iWbT58KnwI1Q3ype_C81F2P-_BkDbUcyClndeIKPeLJ0RPZO_BgSuGDugKVyHHZGYA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2cY5yrFuN0e_A0p-Q0aLbraEWwSrMtYWSOcF1TqJGLwlJpWrpSwPosQNhu_wYkFak29lfpDMJ175JB0bheQq2mXHDUOG4mbei5IVboYAjVxugabKNEyHH62IoUBr7opkNMgEFt_0xFEzNuYKg2uKng==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-eOpsHi3bt97z-4o-L0X1QLIdG6bqOaV8-dRv8We6orlZ1r1WFmARv90iZqPsj24e6FD0FatbNu9r95OLOV2W0QIs5d2Fsfi2RKdqEeDwkNTSS47-eFJl-Pp21Ja4F2Re-uuQqexj6Mprv9_TPyQlhw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-3xaPB3izx6qUgq6ly2PSus_IcALkye2t05yQ4KvNhBzCZaJvs-hMcjjee9RYH5G1WQtUhFRyKcJYszQrFeSNrEsDCaQ8ILJ9yFcyRcjy2wSi3g-6DYdoAL8yZ1kW41rO6eT5rJ7hb30N9Miw3wvRsQ=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-10",
+      "hours": [],
+      "reason": "投稿内容は近隣店舗の紹介であり、ラーメン二郎亀戸店の営業に関する変更はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "投稿内容は近隣店舗の紹介であり、ラーメン二郎亀戸店の営業に関する変更はありません。"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2108810676110278783",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2108810676110278783",
+    "postedAt": "2026-10-10T06:43:39.000Z",
+    "postText": "いまいるひとでおわりです！ ごめんなさい！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-10",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
