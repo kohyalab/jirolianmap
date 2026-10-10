@@ -11756,5 +11756,26 @@
     "processedAt": null,
     "aiStatus": "match",
     "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_routine_shndaita_2108791684213723167",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2108791684213723167",
+    "postedAt": "2026-10-10T05:28:11.000Z",
+    "postText": "まだやってます！ 来週もお休み多めです！ https://t.co/Ku4pGFAie0",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-10",
+      "hours": [],
+      "reason": "投稿内容に具体的な営業時間の変更や休業の告知が含まれていないため、変更なしと判定しました。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "投稿内容に具体的な営業時間の変更や休業の告知が含まれていないため、変更なしと判定しました。"
   }
 ]
