@@ -12363,5 +12363,60 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の案内であり、変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2109060918374195502",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2109060918374195502",
+    "postedAt": "2026-10-10T23:18:02.000Z",
+    "postText": "本日 ◇10/11日 【昼】 →こちらをご覧のお客様限定です！ ↓ ※お客様ご自身で→丸の🟥赤又は白🤍食券を１枚お取りになって席までお越しください。→食券は券売機の前の台の二段目に置いておきます。 ※必ず着席時にお出しください。 ※サービス中の目印は［黄色いハンカチ］ どうぞご利用下さい♪ https://t.co/IREofxxhLZ https://t.co/UgEuKoGh05",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-csCnd0NyEoOvNxzUBdgc4-wBuxhYOmnBuEoxeOTgKaI8xs7NR7rtWolQmpKEgctvA29W5LcpP12s3kxeAGElpkBDKm8ryzfvak9ZmaDwu6xJMOJemBow6IRBot0LUKp7OhFbE54eazfjMM8aNel6CQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-d8MTn_GSLySBz-dwlgdL5KxffkQsSz9R_Khg9tNuKUdIhg5g_utinMzPpjwBLJNNTghbaSE9WuZLngZVBx0ru5FchzcyubNyFj1V7xTk7aDv2kA8SFfKd-VIlFDV7hqtfiXbZG2j2hdb-2kkmRn4ZA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-dKRZ9PNCgZFsEeawp0FubVkzIAyrgzGCigVJS-k_jzthYPwSt_NpCAURudFuTStJmVnSSHbrNyYDxpl0yWoCXyUusu1lV0C42AENrAKwU6_ypUkPRn6EQJUciJ0A1YIUt6tY9dD6T1zaoNAJVdALjQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2xJhXCXN5B_gH05LTU5jFKvOGT9Puf3qAfcMe4Ql7P2qm_JwgwIfeG5D9K7UDLWcgzzAasbAGIwNAxfNiN_2ysThID-MkdZ365Z60jpFTFR05Zzt2Nlzdw7Gij5kTINk-CXXHDYc6T3qVFc0qtwMMw=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-10",
+      "hours": [],
+      "reason": "10/11(日)は通常通り定休日です。投稿内容は限定トッピングの案内であり、営業時間の変更はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "10/11(日)は通常通り定休日です。投稿内容は限定トッピングの案内であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_mejirodai_20261011_0_2109060073335247213",
+    "shopId": "mejirodai",
+    "shopName": "めじろ台店",
+    "postSource": "x",
+    "postUrl": "https://x.com/mejirodai_jiro/status/2109060073335247213",
+    "postedAt": "2026-10-10T23:14:40.000Z",
+    "postText": "毎度ありがとうございます 本日11日(日)の営業時間は11〜15時となります なおただ今アルバイト募集中ですのでXのDMの方までご連絡お待ちしてます よろしくお願いします🙇 https://t.co/aAcDOTtaZ1",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-FYHJkecHb2cJ2WW2dBDq3RJWkQ2thSo2JObcf7_2yCOBXvJoudlVscJraSTy6i7Ucv4W5HCVwJWd-5zb0svKj6QdimT3f3w0bxtHl81AgfC_HqDr6qGuQjvl_ISU012T1z0wSUQylWG0BLk9vDZ6sQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-11",
+      "endDate": "2026-10-11",
+      "hours": [
+        [
+          11,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   }
 ]
