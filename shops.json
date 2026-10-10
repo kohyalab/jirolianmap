@@ -900,26 +900,52 @@
     "id": "ikebukuro",
     "name": "池袋東口店",
     "kana": "イケブクロヒガシグチテン",
+    "shortName": "池袋東口",
+    "prefCode": "13",
+    "cityCode": "13116",
     "addressText": "南池袋2丁目27-17",
     "lat": 35.72823488367566,
     "lng": 139.7138991067635,
+    "openedAt": "2001-02-09",
+    "closedAt": null,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/ikebukuro/",
       "rdb": "https://ramendb.supleks.jp/s/67.html",
       "tabelog": "https://tabelog.com/tokyo/A1305/A130501/13003881/"
     },
     "x": "ikejikabuji",
+    "instagram": "",
     "ticketTiming": "",
-    "openedAt": "2001-02-09",
-    "closedAt": null,
+    "soupType": "",
+    "renge": "",
+    "takeout": "",
+    "hoursNotes": "",
+    "remarks": "",
     "temporary": [
       {
-        "startDate": "2026-10-09",
-        "endDate": "2026-10-09",
+        "startDate": "2026-10-10",
+        "endDate": null,
         "hours": [],
         "reason": "従業員体調不良のため",
         "sourceUrl": "https://x.com/ikejikabuji/status/2108523276037407086",
         "_isAiImported": true
+      }
+    ],
+    "holidaySpecialShifts": [
+      {
+        "triggerDay": 2,
+        "targetOffset": 0,
+        "hours": [
+          [
+            17,
+            21.5
+          ]
+        ]
+      },
+      {
+        "triggerDay": 2,
+        "targetOffset": 1,
+        "hours": []
       }
     ],
     "shiftsByDay": {
@@ -966,32 +992,7 @@
         17,
         21.5
       ]
-    ],
-    "remarks": "",
-    "hoursNotes": "",
-    "instagram": "",
-    "holidaySpecialShifts": [
-      {
-        "triggerDay": 2,
-        "targetOffset": 0,
-        "hours": [
-          [
-            17,
-            21.5
-          ]
-        ]
-      },
-      {
-        "triggerDay": 2,
-        "targetOffset": 1,
-        "hours": []
-      }
-    ],
-    "shortName": "池袋東口",
-    "soupType": "",
-    "renge": "",
-    "takeout": "",
-    "cityCode": "13116"
+    ]
   },
   {
     "id": "shinkoganei",
@@ -4779,6 +4780,32 @@
         "reason": "",
         "sourceUrl": "https://x.com/jiro_kyoto/status/2108435310619357612",
         "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-10",
+        "endDate": "2026-10-11",
+        "hours": [
+          [
+            11,
+            14.5
+          ]
+        ],
+        "reason": "",
+        "sourceUrl": "https://x.com/jiro_kyoto/status/2108733242992115949",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-12",
+        "endDate": "2026-10-12",
+        "hours": [
+          [
+            17,
+            21
+          ]
+        ],
+        "reason": "",
+        "sourceUrl": "https://x.com/jiro_kyoto/status/2108733242992115949",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -6271,6 +6298,19 @@
           ]
         ],
         "sourceUrl": "https://x.com/r26akgd/status/2106214350935748967",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-10",
+        "endDate": "2026-10-10",
+        "hours": [
+          [
+            12,
+            15
+          ]
+        ],
+        "reason": "",
+        "sourceUrl": "https://x.com/r26akgd/status/2108748867013677466",
         "_isAiImported": true
       },
       {
