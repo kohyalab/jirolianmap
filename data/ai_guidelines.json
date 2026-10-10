@@ -2,6 +2,23 @@
   "generalRules": [],
   "learnedFeedback": [
     {
+      "id": "sns_post_koiwa_20261017_0_2108709092923715701",
+      "timestamp": "2026-10-10T00:29:07.166Z",
+      "shopId": "koiwa",
+      "shopName": "小岩店",
+      "postDate": "2026-10-10T00:00:00.000Z",
+      "postText": "おはようございます✨  本日のテイクアウトラーメンセット購入URLです👇 https://t.co/ZyAF58qT2a  フォロワーのみなさま、リポストにて拡散のご協力をお願いいたします😄  📢来週の土曜日（10/17）は所用のため臨時休業となりますので、本日のご購入がおススメです！ https://t.co/DQrKvHdmJn",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業変更検出: 所用のため",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-10-17",
+        "endDate": "2026-10-17",
+        "hours": [],
+        "reason": "所用のため"
+      }
+    },
+    {
       "id": "sns_post_nishidai_20261103_1_2108681769788801247",
       "timestamp": "2026-10-09T23:58:39.612Z",
       "shopId": "nishidai",
