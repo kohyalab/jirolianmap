@@ -12129,5 +12129,51 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_kannai_2108950095727301096",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2108950095727301096",
+    "postedAt": "2026-10-10T15:57:39.000Z",
+    "postText": "こんばんは。 明日は久しぶりに 煮干しの波動用意出来そうです。 納豆もシビレも高菜もまだ ありますので宜しくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-10",
+      "hours": [],
+      "reason": "通常営業の案内であり、臨時休業や営業時間変更の記載はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内であり、臨時休業や営業時間変更の記載はありません。"
+  },
+  {
+    "id": "sns_post_routine_yaen2_2108949507723624838",
+    "shopId": "yaen2",
+    "shopName": "八王子野猿街道店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/Jiro_Yaenkaido2/status/2108949507723624838",
+    "postedAt": "2026-10-10T15:55:19.000Z",
+    "postText": "10月11日(日) 朝7:30～15:00 ⭐テイクアウト、鍋二郎あります 並ばず買えます エビドクロテイクアウト現金です 🌟きまぐれたまご うめ  ⚠️駐車場待ち出来ません ⚠️駐車場満車時コインパーキングに ⚠️店舗近隣タバコ禁止です https://t.co/T5hjlPeFIL",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-z3TIu5wGOnpyGb_06K8Z3bzwGgHO8C1frJg5S4VTcZqfyE2VW3i81_ccsa-9v2WwNhaQ9p4i-SxW-dWwkEvS8hOyEBzIRnOLliNtnAGfnUqP5KentiQF6icFDpBfAsMoOg3Jc5UwBDMWQEhmdj5jzA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-_ykdonqK7tZTlYTgHjGC_BgJE-Fw421fXj5mRavEifTefpeg3BZk9eA3sP8Bn5oBjsQzDf1GVlmy-eCnXLwxQAaD7y0kN0x-bdeeEs4IjgZowQscK5PcPZFbns-doFNq3g1_rGMcrsVZbGc6twRMAw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-BW-SOobHoou3evDjHt4MDV1YBtWMbwoNJQJg8zFszn1BGGMIJHHLvpl9FzaDU68E5WFYGuaytADtE7Ke-oGGDSEBwqCq31CGQF4kT5VeptLXnt9Y47jX6bSoEwcMasILfkkQ2yVzF_23A6xrtsVv3Q=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-10",
+      "hours": [],
+      "reason": "10月11日(日)の営業案内ですが、通常日曜日は定休日であるところ、投稿にて営業の告知がなされています。しかし、店舗の通常営業時間設定において日曜が定休日とされているため、これは臨時営業（special_open）に該当します。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "10月11日(日)の営業案内ですが、通常日曜日は定休日であるところ、投稿にて営業の告知がなされています。しかし、店舗の通常営業時間設定において日曜が定休日とされているため、これは臨時営業（special_open）に該当します。"
   }
 ]
