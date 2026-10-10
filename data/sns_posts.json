@@ -12083,8 +12083,8 @@
       "reason": "材料切れのため",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-10T20:34:59.648Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 材料切れのため"
   },
@@ -12104,8 +12104,8 @@
       "hours": [],
       "reason": "店舗の営業に関する言及はなく、配信に関する投稿であるため変更なし。"
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-10T20:34:59.648Z",
     "aiStatus": "no_change",
     "aiReason": "店舗の営業に関する言及はなく、配信に関する投稿であるため変更なし。"
   },
@@ -12125,8 +12125,8 @@
       "hours": [],
       "reason": ""
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-10T20:34:59.648Z",
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   },
@@ -12146,8 +12146,8 @@
       "hours": [],
       "reason": "通常営業の案内であり、臨時休業や営業時間変更の記載はありません。"
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-10T20:34:59.648Z",
     "aiStatus": "no_change",
     "aiReason": "通常営業の案内であり、臨時休業や営業時間変更の記載はありません。"
   },
@@ -12171,8 +12171,8 @@
       "hours": [],
       "reason": "10月11日(日)の営業案内ですが、通常日曜日は定休日であるところ、投稿にて営業の告知がなされています。しかし、店舗の通常営業時間設定において日曜が定休日とされているため、これは臨時営業（special_open）に該当します。"
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-10T20:34:59.648Z",
     "aiStatus": "no_change",
     "aiReason": "10月11日(日)の営業案内ですが、通常日曜日は定休日であるところ、投稿にて営業の告知がなされています。しかし、店舗の通常営業時間設定において日曜が定休日とされているため、これは臨時営業（special_open）に該当します。"
   },
@@ -12192,8 +12192,8 @@
       "hours": [],
       "reason": ""
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-10T20:34:59.648Z",
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
   }
