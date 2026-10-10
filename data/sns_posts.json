@@ -12087,5 +12087,26 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 材料切れのため"
+  },
+  {
+    "id": "sns_post_routine_kameido_2108900708632367352",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2108900708632367352",
+    "postedAt": "2026-10-10T12:41:25.000Z",
+    "postText": "こちらの配信おそらく22時ごろからやります。OBSの使い方などすっかり忘れてしまっていて設定など色々してますのでもしかしたら遅れるかもしれません💦 https://t.co/Vja9S3BFke",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-10",
+      "hours": [],
+      "reason": "店舗の営業に関する言及はなく、配信に関する投稿であるため変更なし。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "店舗の営業に関する言及はなく、配信に関する投稿であるため変更なし。"
   }
 ]
