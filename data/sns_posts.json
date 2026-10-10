@@ -12196,5 +12196,64 @@
     "processedAt": "2026-10-10T20:34:59.648Z",
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_hitachinaka_20261012_0_2109027096739954809",
+    "shopId": "hitachinaka",
+    "shopName": "ひたちなか店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26_hitachinaka/status/2109027096739954809",
+    "postedAt": "2026-10-10T21:03:38.000Z",
+    "postText": "【11日〜17日 営業時間のご案内】  12日(月曜日・祝日)10〜16 17日(土曜日)お休み  海浜公園コキア見頃です  つけ味の粉、残ってます  スタッフ募集中(残り若干名) 学生・主婦・学生・Wワーク ご連絡下さい！  基本ラストオーダー宣告ナシ 列が途切れたら閉店 https://t.co/sHqjB50fj2",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-YH8MlH9yqn9cnaoYyFtMbogivMOygtq4sbCCatSQ1JFgi9LrLJqRdBiMTj7pIT6OqaOH5pm60Wu9T9yBp7pu0G1nu-WIE569dhaz-om496DlAtM_c4omvJEYTmMdVpqwcCmivTPF6OPPaFfRhSf8fA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-_slAcxw9Sn4MqYUaYVsGBvAw5q6QKjMCeD678FaVgeZw3Udw0rP5Y93qpuBwf5m71UcOxR9VcDVy09wcoxEbGpumX_7zSYvf6ZhY4r9-_exwpZNXY_1UbonwNM5UD6dDVnwqz6BtVOBZ30l-U5nEtA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-wuwzD4bwPpXRTpu-Ed4FuAW9MUwN2rfMKqse1knHcLHtci5ErF6TXshdTaFbg8v0t91P4T9YzjDkSI1RWxvfs_Q3vUUQFCULeTleDEFKDqtpSEyF-mgqxtxlssWfQERGxbEsRLJUs6x_XukLPBVQKg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-LVyULLvNnke4SvTYufRTPwTbRr9S_f1CWbtmelMgr2Fi7fPjRQ8TWynw3sqFozb76xNDCpJs063R8YMOspsZiAC7WExgh9ixQL4eKOVI4uv_mobWUrGnrrd1z-GatNv6U9CJOrbBRamLsIxIYajqhw=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-12",
+      "hours": [
+        [
+          10,
+          16
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_hitachinaka_20261017_1_2109027096739954809",
+    "shopId": "hitachinaka",
+    "shopName": "ひたちなか店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26_hitachinaka/status/2109027096739954809",
+    "postedAt": "2026-10-10T21:03:38.000Z",
+    "postText": "【11日〜17日 営業時間のご案内】  12日(月曜日・祝日)10〜16 17日(土曜日)お休み  海浜公園コキア見頃です  つけ味の粉、残ってます  スタッフ募集中(残り若干名) 学生・主婦・学生・Wワーク ご連絡下さい！  基本ラストオーダー宣告ナシ 列が途切れたら閉店 https://t.co/sHqjB50fj2",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-YH8MlH9yqn9cnaoYyFtMbogivMOygtq4sbCCatSQ1JFgi9LrLJqRdBiMTj7pIT6OqaOH5pm60Wu9T9yBp7pu0G1nu-WIE569dhaz-om496DlAtM_c4omvJEYTmMdVpqwcCmivTPF6OPPaFfRhSf8fA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-_slAcxw9Sn4MqYUaYVsGBvAw5q6QKjMCeD678FaVgeZw3Udw0rP5Y93qpuBwf5m71UcOxR9VcDVy09wcoxEbGpumX_7zSYvf6ZhY4r9-_exwpZNXY_1UbonwNM5UD6dDVnwqz6BtVOBZ30l-U5nEtA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-wuwzD4bwPpXRTpu-Ed4FuAW9MUwN2rfMKqse1knHcLHtci5ErF6TXshdTaFbg8v0t91P4T9YzjDkSI1RWxvfs_Q3vUUQFCULeTleDEFKDqtpSEyF-mgqxtxlssWfQERGxbEsRLJUs6x_XukLPBVQKg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-LVyULLvNnke4SvTYufRTPwTbRr9S_f1CWbtmelMgr2Fi7fPjRQ8TWynw3sqFozb76xNDCpJs063R8YMOspsZiAC7WExgh9ixQL4eKOVI4uv_mobWUrGnrrd1z-GatNv6U9CJOrbBRamLsIxIYajqhw=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-17",
+      "endDate": "2026-10-17",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
