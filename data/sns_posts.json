@@ -11916,5 +11916,32 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_kashiwa_20261010_0_2108823247139803290",
+    "shopId": "kashiwa",
+    "shopName": "柏店",
+    "postSource": "x",
+    "postUrl": "https://x.com/genkimoriya/status/2108823247139803290",
+    "postedAt": "2026-10-10T07:33:36.000Z",
+    "postText": "お世話になっております。 ラーメン二郎柏店です。  只今のお時間で閉店とさせていただきます。  どうぞ宜しくお願い致します。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-10",
+      "hours": [
+        [
+          10.5,
+          16.55
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
