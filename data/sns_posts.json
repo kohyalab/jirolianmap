@@ -12060,5 +12060,32 @@
     "processedAt": "2026-10-10T10:38:32.282Z",
     "aiStatus": "no_change",
     "aiReason": "通常営業の案内であり、臨時休業や営業時間変更はありません。"
+  },
+  {
+    "id": "sns_post_sengawa_20261010_0_2108874326326005849",
+    "shopId": "sengawa",
+    "shopName": "仙川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjiro26/status/2108874326326005849",
+    "postedAt": "2026-10-10T10:56:35.000Z",
+    "postText": "大変申し訳ございませんが材料切れのため、只今お並びの方をもって本日の営業を終了とさせていただきます。 今日も大変ありがとうございました！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-10",
+      "hours": [
+        [
+          17,
+          19.93
+        ]
+      ],
+      "reason": "材料切れのため",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 材料切れのため"
   }
 ]
