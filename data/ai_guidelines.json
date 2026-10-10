@@ -2,6 +2,23 @@
   "generalRules": [],
   "learnedFeedback": [
     {
+      "id": "sns_post_nishidai_20261103_1_2108681769788801247",
+      "timestamp": "2026-10-09T23:58:39.612Z",
+      "shopId": "nishidai",
+      "shopName": "西台駅前店",
+      "postDate": "2026-10-09T22:11:25.000Z",
+      "postText": "おはようございます。 本日、10日(土)の営業は都合により 9:15〜12:30と短くなっております。 お気をつけ下さい。  また肩ロース・4本(ハーフ) 用意しています。 連休のお供にいかが？  ¥2200、¥2000、¥1700、¥1500  皆様のご来店をお待ちしております。 https://t.co/v6fpEG27my",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-11-03",
+        "endDate": "2026-11-03",
+        "hours": [],
+        "reason": ""
+      }
+    },
+    {
       "id": "sns_post_ikebukuro_20261009_0_2108523276037407086",
       "timestamp": "2026-10-09T12:38:05.995Z",
       "shopId": "ikebukuro",
