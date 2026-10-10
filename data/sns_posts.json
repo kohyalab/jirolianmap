@@ -12175,5 +12175,26 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "10月11日(日)の営業案内ですが、通常日曜日は定休日であるところ、投稿にて営業の告知がなされています。しかし、店舗の通常営業時間設定において日曜が定休日とされているため、これは臨時営業（special_open）に該当します。"
+  },
+  {
+    "id": "sns_post_mention_kameido_2108979184098058308",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2108979184098058308",
+    "postedAt": "2026-10-10T17:53:15.000Z",
+    "postText": "@funatsukazuki おめでとうございます✨",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-10",
+      "hours": [],
+      "reason": ""
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
   }
 ]
