@@ -11943,5 +11943,122 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261011_0_2108838617628238043",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2108838617628238043",
+    "postedAt": "2026-10-10T08:34:41.000Z",
+    "postText": "明日！ ◇10/11日曜日 【日曜日営業🈺】 10:00から〜15:00 ご来店ご到着お並びの お客様まで営業致します🈺  →［まかない］そろそろ終了☑️です♪ ※10/12まで  →［お椀で和ッカレー］ やっております♪  ◇10/12月10→15時 ◆10/13火【臨時休業】  三連休も営業🈺しております！ https://t.co/GuY9HSmXCR",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-_g51qaxsmuq9oZHei9qqwgeoKWSPk6cfbuOcaO3ZN6v-e0xV_FVri2BKKJ36KUzN9mrOvHLXJmp7ridBYnQoQPju1C_E8pK9Xz9Q0Ofn0UWGYXhDqDuVz7rKrDjujCIyt6b6vk4iAntJJ_WnJYU9LQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne--o1DGj8DcA5ShWpE_Nm-tyBRBpgFDKC8LJwbkexFZW3AAh4X3niD4JGsvsevS1RFAvTBQqhPqyn9gBJpOLyOTqaSBtWVy3oj1F_sIeknyjjRmma-840nXN4MGrqx-wzBtGrscZAeKdW8yoJzWO8EeQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-RCdhwSQt-lHtbpIMba_lfHEaEabRkK-IQD6_kI2ZAD-bVoJ1GohYefg13CoGh8zt-D6b1eUP9T2EILq3W1JHq7PDJ18DgrXOIs_BcHcBLAjR86v-5XJLiTH1TCDJwyfwTKSjsPamjPuC2X58za7qrA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-LIv9IoZwhl0NTkUh2aHN0t6Mshl0RLS6puTRf_bRBJqWQyig7n1m0SBVAHNKB8n-B-hpkmwFkSgEJdC6q3-4u0q7AxrmUnWGaSE5RHj4pQHEA96I8E2XGJ-JetVzcPz5OSEHd6ELwNDlJwOQkTzqCA=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-10-11",
+      "endDate": "2026-10-11",
+      "hours": [
+        [
+          10,
+          15
+        ]
+      ],
+      "reason": "三連休特別営業",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261012_1_2108838617628238043",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2108838617628238043",
+    "postedAt": "2026-10-10T08:34:41.000Z",
+    "postText": "明日！ ◇10/11日曜日 【日曜日営業🈺】 10:00から〜15:00 ご来店ご到着お並びの お客様まで営業致します🈺  →［まかない］そろそろ終了☑️です♪ ※10/12まで  →［お椀で和ッカレー］ やっております♪  ◇10/12月10→15時 ◆10/13火【臨時休業】  三連休も営業🈺しております！ https://t.co/GuY9HSmXCR",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-_g51qaxsmuq9oZHei9qqwgeoKWSPk6cfbuOcaO3ZN6v-e0xV_FVri2BKKJ36KUzN9mrOvHLXJmp7ridBYnQoQPju1C_E8pK9Xz9Q0Ofn0UWGYXhDqDuVz7rKrDjujCIyt6b6vk4iAntJJ_WnJYU9LQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne--o1DGj8DcA5ShWpE_Nm-tyBRBpgFDKC8LJwbkexFZW3AAh4X3niD4JGsvsevS1RFAvTBQqhPqyn9gBJpOLyOTqaSBtWVy3oj1F_sIeknyjjRmma-840nXN4MGrqx-wzBtGrscZAeKdW8yoJzWO8EeQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-RCdhwSQt-lHtbpIMba_lfHEaEabRkK-IQD6_kI2ZAD-bVoJ1GohYefg13CoGh8zt-D6b1eUP9T2EILq3W1JHq7PDJ18DgrXOIs_BcHcBLAjR86v-5XJLiTH1TCDJwyfwTKSjsPamjPuC2X58za7qrA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-LIv9IoZwhl0NTkUh2aHN0t6Mshl0RLS6puTRf_bRBJqWQyig7n1m0SBVAHNKB8n-B-hpkmwFkSgEJdC6q3-4u0q7AxrmUnWGaSE5RHj4pQHEA96I8E2XGJ-JetVzcPz5OSEHd6ELwNDlJwOQkTzqCA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-12",
+      "hours": [
+        [
+          10,
+          15
+        ]
+      ],
+      "reason": "三連休特別営業",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261013_2_2108838617628238043",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2108838617628238043",
+    "postedAt": "2026-10-10T08:34:41.000Z",
+    "postText": "明日！ ◇10/11日曜日 【日曜日営業🈺】 10:00から〜15:00 ご来店ご到着お並びの お客様まで営業致します🈺  →［まかない］そろそろ終了☑️です♪ ※10/12まで  →［お椀で和ッカレー］ やっております♪  ◇10/12月10→15時 ◆10/13火【臨時休業】  三連休も営業🈺しております！ https://t.co/GuY9HSmXCR",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-_g51qaxsmuq9oZHei9qqwgeoKWSPk6cfbuOcaO3ZN6v-e0xV_FVri2BKKJ36KUzN9mrOvHLXJmp7ridBYnQoQPju1C_E8pK9Xz9Q0Ofn0UWGYXhDqDuVz7rKrDjujCIyt6b6vk4iAntJJ_WnJYU9LQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne--o1DGj8DcA5ShWpE_Nm-tyBRBpgFDKC8LJwbkexFZW3AAh4X3niD4JGsvsevS1RFAvTBQqhPqyn9gBJpOLyOTqaSBtWVy3oj1F_sIeknyjjRmma-840nXN4MGrqx-wzBtGrscZAeKdW8yoJzWO8EeQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-RCdhwSQt-lHtbpIMba_lfHEaEabRkK-IQD6_kI2ZAD-bVoJ1GohYefg13CoGh8zt-D6b1eUP9T2EILq3W1JHq7PDJ18DgrXOIs_BcHcBLAjR86v-5XJLiTH1TCDJwyfwTKSjsPamjPuC2X58za7qrA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-LIv9IoZwhl0NTkUh2aHN0t6Mshl0RLS6puTRf_bRBJqWQyig7n1m0SBVAHNKB8n-B-hpkmwFkSgEJdC6q3-4u0q7AxrmUnWGaSE5RHj4pQHEA96I8E2XGJ-JetVzcPz5OSEHd6ELwNDlJwOQkTzqCA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-13",
+      "endDate": "2026-10-13",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2108838420428837219",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2108838420428837219",
+    "postedAt": "2026-10-10T08:33:54.000Z",
+    "postText": "列切れたのでよろしかったらどうぞ！ アーケードのマーラータン屋さんもオープンしたんですね！！ 家賃高そうだから、休業期間きつかっただろうなぁ…。 三連休初日の夜、ニンニクチャージにお越しくださいませ！ https://t.co/jLzWLhT86Y",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-K5CXlSbW5qlyZqzkKfLowWtWcKRMiuzgj9E2Ygq9B_p7_RSuTJPYJNhHoxYPqqBU7siM8zzKDcoNSFlhEZlHB0T4U8WXNXaUS-aCO8UCHhtgdTv1YDrGjLEq2jiGxcIsHeaSIRXRsss0V79CL_exuw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-10nqE7rdqmjrp2m0tME0V3-wyiRPfNJNlM6C58lyjKpPg0ikrDw65v6kN-QTSWgcMKBA6HXInm2_yPcMSH06RCUe3-kgyY57PQIgf2aYW_awtprcnksu7SFBJlx0d902GvbhrvlJrBg9W4sMHZcn1A==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-_D9hY0njk6WSsnvJma4UBs1j2GuqS17IJ0drlYSSQHaN_gsJt_NRGdIqNt3mGcDcz9b8sg8VlKjAiDZFb5FxCr-OE7qyAtaPkPEG2-yLZNcmjZeUy7XfOzerRldSwoJOqF6HNTwEQc8Q2xO-oR55EQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-7VMy8OFd3jo1hEel7pzs8SdT1XqQ-CZX_uxeoejt3RqRue9lGFtDmuQOavYnYBHVGN_KlMBv8r4Ktz_xYCHffLXHVdMPF02IAQqKyBnCRZ7yMEvDwhofzpMxDJVIj6YV07P49M1f1xLyDSGI5H0GmQ=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-10",
+      "hours": [],
+      "reason": "通常営業の案内であり、臨時休業や営業時間変更はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内であり、臨時休業や営業時間変更はありません。"
   }
 ]
