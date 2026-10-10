@@ -11276,8 +11276,8 @@
       "reason": "所用のため",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-10T00:29:14.392Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 所用のため"
   }
