@@ -11825,5 +11825,49 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "メニュー追加および販売開始時刻の案内であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_koiwa_2108805598573941007",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2108805598573941007",
+    "postedAt": "2026-10-10T06:23:29.000Z",
+    "postText": "汁なしの素、つけ麺の素は売り切れました😭",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-10",
+      "hours": [],
+      "reason": "商品売り切れの告知であり、営業時間の変更はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "商品売り切れの告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_nakayamaekimae_2108807039682228477",
+    "shopId": "nakayamaekimae",
+    "shopName": "中山駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/NKYMJIRO/status/2108807039682228477",
+    "postedAt": "2026-10-10T06:29:12.000Z",
+    "postText": "金曜日にポストし忘れてました。 m(_ _)m https://t.co/pdnxdZ1kr4",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-aSAdiez6TrWr7_XIM7XOtkQc_-SVsNf3URfcslYxah_AEnllawDaY4KeeOyf1cd3V2pO_yevlB-hUaZ2h1EA_GE9WT4svHgvuXKECWY60DXIx12q0drRxZ-jD57Yv3YG2ZrlmameCZGzwXKMXGKeeg=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-10",
+      "hours": [],
+      "reason": "投稿内容は券売機の写真と「金曜日にポストし忘れてました」という日常的なコメントのみであり、営業時間の変更に関する情報はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "投稿内容は券売機の写真と「金曜日にポストし忘れてました」という日常的なコメントのみであり、営業時間の変更に関する情報はありません。"
   }
 ]
