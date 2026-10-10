@@ -11256,5 +11256,29 @@
     "processedAt": "2026-10-10T00:00:37.400Z",
     "aiStatus": "match",
     "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_koiwa_20261017_0_2108709092923715701",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2108709092923715701",
+    "postedAt": "2026-10-10T00:00:00.000Z",
+    "postText": "おはようございます✨  本日のテイクアウトラーメンセット購入URLです👇 https://t.co/ZyAF58qT2a  フォロワーのみなさま、リポストにて拡散のご協力をお願いいたします😄  📢来週の土曜日（10/17）は所用のため臨時休業となりますので、本日のご購入がおススメです！ https://t.co/DQrKvHdmJn",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-SO-3m_0VE4x4mAZAuqWQukk37SVK6OURVfYffYwzHhE_Y9CNoE73_gODi5O5zt7tGAs-mBumlnMH60o9Cz2jZvV_qLlk897cWM0EztQ9JkJDwzHU4QhgIzqBzMlQ72YRTA2cjxslF64v2NyOonusSA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-17",
+      "endDate": "2026-10-17",
+      "hours": [],
+      "reason": "所用のため",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 所用のため"
   }
 ]
