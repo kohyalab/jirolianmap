@@ -11777,5 +11777,53 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "投稿内容に具体的な営業時間の変更や休業の告知が含まれていないため、変更なしと判定しました。"
+  },
+  {
+    "id": "sns_post_jimbocho_20261010_0_2108796207539917014",
+    "shopId": "jimbocho",
+    "shopName": "神田神保町店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jbc_ramen_jiro/status/2108796207539917014",
+    "postedAt": "2026-10-10T05:46:10.000Z",
+    "postText": "ただ今お並びのお客様までで、本日の営業終了となります。よろしくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-10",
+      "hours": [
+        [
+          11,
+          14.76
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_koiwa_2108797503231647845",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2108797503231647845",
+    "postedAt": "2026-10-10T05:51:18.000Z",
+    "postText": "10/10の追加メニュー  🐷豚ハーフ 🐽くずれ豚 📍生麺 📍汁なしの素 📍魚介つけ麺の素 個数制限なし  くずれ豚は2個以上ご購入の方は1個あたり800円→700円にお値下げします。  まとめ買いのチャンス‼️  📢新メニュー📢  「味付き脂300円」 おひとり様１個まで  15時から販売開始です⏰",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-10",
+      "hours": [],
+      "reason": "メニュー追加および販売開始時刻の案内であり、営業時間の変更はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "メニュー追加および販売開始時刻の案内であり、営業時間の変更はありません。"
   }
 ]
