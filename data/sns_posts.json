@@ -11647,5 +11647,59 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の案内であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_nishidai_20261010_0_2108751343368433954",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2108751343368433954",
+    "postedAt": "2026-10-10T02:47:53.000Z",
+    "postText": "本日、10日の営業は 只今、22人待ちにて 終了しました。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-10",
+      "hours": [
+        [
+          10.416666666666666,
+          11.783333333333333
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_asakuragaido_20261010_0_2108748867013677466",
+    "shopId": "asakuragaido",
+    "shopName": "朝倉街道駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/r26akgd/status/2108748867013677466",
+    "postedAt": "2026-10-10T02:38:03.000Z",
+    "postText": "本日12:00-15:00営業いたします。 西鉄ストア様、西日本シティ銀行様、他店舗病院等駐車禁止 空いていても一般的なコインパーキングをご利用下さい。 グループの方は歩道を塞がずお静かにお願いします。 代表待ち、割込み、飲酒喫煙禁止 朝倉街道駅徒歩1分、天拝山駅7分",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-10",
+      "hours": [
+        [
+          12,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
