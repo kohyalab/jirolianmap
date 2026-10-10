@@ -11701,5 +11701,31 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2108765586004275253",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2108765586004275253",
+    "postedAt": "2026-10-10T03:44:29.000Z",
+    "postText": "只今混雑無くなりました！ どうぞー♪🈳🈳🈳 https://t.co/LkzK3TDAHf",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Dn7UgkbAhH5a8Hv1deP-O0cfrX47O-HvxMrl7mSSGxQB84ptu_o92U48E52KGhFmScmrBtFamd-a_IabRIRWGEm0D61RMsAbLlTDCZnirYv9X9nl78RfilloP8uf88NWKmBEvvbDhZpMtzbAPJzj1w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-DMz6WZIOYgGMlToYL3Mrqs668xlByoxc9SqRYAAuR55O3A9TZzJ6nLZA63Eyfz72neMSlQDQ-5aurNUg5xKqDUCTL0eir2428kjWAD_uHzrCvXebE3DLNOTxtFM1NBwFPYqSOeHXKGEItxioFs_bYg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-immgO1F6begn8LtvzAKtIUwmRgbLjaq9MPtlSCeHj4UTPC5rs8XE3U5PI2nNgd6wUg2JyWHAKQrGRgp6_On2VRjQwG5dy2DsifHIALqJKIfGZ3W0ePA1p-nkc-2wmnWtBd4b1tmjt_NqXFTgB3xhDQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-IctZbAEPN7VcagZwlXgZ9BG-3kYO_HxUBsZKNkH06Os1fPQRFc3xy1mmEDEkpABGsMerIALudNSP22p81SwdIKR3ZBeiBiPJQqz9HdFNMHBl8VQwa0sgWiquBwj_6HDweqhyJAxnJ1l7UPljjF1M1Q=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-10",
+      "hours": [],
+      "reason": "限定メニューの案内であり、営業時間の変更はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定メニューの案内であり、営業時間の変更はありません。"
   }
 ]
