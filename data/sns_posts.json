@@ -12733,5 +12733,157 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_shndaita_20261011_0_2109175048896696473",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2109175048896696473",
+    "postedAt": "2026-10-11T06:51:32.000Z",
+    "postText": "2026年10月11日（日） 解ってる範囲の営業予定です！  月 〇 火 お休み 水 〇 木 お休み 金 お休み 土 〇 日 〇  11:00〜16:00くらい にんにく地獄の亜種(＋200円)もやります！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-10-11",
+      "endDate": "2026-10-11",
+      "hours": [
+        [
+          11,
+          16
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_shndaita_20261012_1_2109175048896696473",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2109175048896696473",
+    "postedAt": "2026-10-11T06:51:32.000Z",
+    "postText": "2026年10月11日（日） 解ってる範囲の営業予定です！  月 〇 火 お休み 水 〇 木 お休み 金 お休み 土 〇 日 〇  11:00〜16:00くらい にんにく地獄の亜種(＋200円)もやります！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-12",
+      "hours": [
+        [
+          11,
+          16
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_shndaita_20261013_2_2109175048896696473",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2109175048896696473",
+    "postedAt": "2026-10-11T06:51:32.000Z",
+    "postText": "2026年10月11日（日） 解ってる範囲の営業予定です！  月 〇 火 お休み 水 〇 木 お休み 金 お休み 土 〇 日 〇  11:00〜16:00くらい にんにく地獄の亜種(＋200円)もやります！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-13",
+      "endDate": "2026-10-13",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_shndaita_20261014_3_2109175048896696473",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2109175048896696473",
+    "postedAt": "2026-10-11T06:51:32.000Z",
+    "postText": "2026年10月11日（日） 解ってる範囲の営業予定です！  月 〇 火 お休み 水 〇 木 お休み 金 お休み 土 〇 日 〇  11:00〜16:00くらい にんにく地獄の亜種(＋200円)もやります！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-14",
+      "endDate": "2026-10-14",
+      "hours": [
+        [
+          11,
+          16
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_shndaita_20261015_4_2109175048896696473",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2109175048896696473",
+    "postedAt": "2026-10-11T06:51:32.000Z",
+    "postText": "2026年10月11日（日） 解ってる範囲の営業予定です！  月 〇 火 お休み 水 〇 木 お休み 金 お休み 土 〇 日 〇  11:00〜16:00くらい にんにく地獄の亜種(＋200円)もやります！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-15",
+      "endDate": "2026-10-16",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_shndaita_20261017_5_2109175048896696473",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2109175048896696473",
+    "postedAt": "2026-10-11T06:51:32.000Z",
+    "postText": "2026年10月11日（日） 解ってる範囲の営業予定です！  月 〇 火 お休み 水 〇 木 お休み 金 お休み 土 〇 日 〇  11:00〜16:00くらい にんにく地獄の亜種(＋200円)もやります！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-17",
+      "endDate": "2026-10-17",
+      "hours": [
+        [
+          11,
+          16
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   }
 ]
