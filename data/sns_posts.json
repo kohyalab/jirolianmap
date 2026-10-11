@@ -12418,5 +12418,29 @@
     "processedAt": null,
     "aiStatus": "match",
     "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_routine_ikuta_2109077108320600173",
+    "shopId": "ikuta",
+    "shopName": "生田駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ikuta_jiro/status/2109077108320600173",
+    "postedAt": "2026-10-11T00:22:22.000Z",
+    "postText": "おはようございます。 11日(日) 12日(月) 通常通り営業です。  お昼営業❄あります！今季ラストです。※夜営業は❄はありません。 魚玉🐟️は昼夜あります。  よろしくお願いします。 https://t.co/dfx4k9xvh9",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-QOHZ_-vePQRqjgMi0O4jYvRVXDowjfFlzIYooO77FqHZ1qzSARTHIRJmAEy-YYZBDQCO-Ziyn82K2SFPNB_3878Wl3CKzKh-gQEo8LyFw03DSi4_j46qAiH9f1yNuJlCKptzKyr5EpQxIp12ObmZIw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-oYt2fQd0ndGuSq53IpC4lq8CVJIVg86yIolqm7y8y4rp83lEf7HjuKukLpu1c-5Pmz8wL_55P0Rk7uhlp2xXptfXM5razYPlNuSdMUefBZgfalPeGqxnWmAAEp_tjAS7F50at95qs20EmxxfNfh5Dw=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-11",
+      "endDate": "2026-10-11",
+      "hours": [],
+      "reason": "10/11(日)、10/12(月)は通常営業の案内であり、営業時間の変更はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "10/11(日)、10/12(月)は通常営業の案内であり、営業時間の変更はありません。"
   }
 ]
