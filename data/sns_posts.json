@@ -11950,5 +11950,120 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "本日10/12は祝日営業の告知であり、通常営業時間内での営業のため変更なしと判定します。"
+  },
+  {
+    "id": "sns_post_mejirodai_20261012_0_2109419735809245623",
+    "shopId": "mejirodai",
+    "shopName": "めじろ台店",
+    "postSource": "x",
+    "postUrl": "https://x.com/mejirodai_jiro/status/2109419735809245623",
+    "postedAt": "2026-10-11T23:03:50.000Z",
+    "postText": "毎度ありがとうございます 本日12日(月)、13日(火)の昼営業は11〜14時までの予定となりますのでご注意下さい 夜は通常通り営業します  よろしくお願いします🙇 https://t.co/DJcxUTsIMk",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-IFRDslPe-V0XBgXIE_OeIW-cbkRK_TMiTYEf5ecXwkBwjMV0HyWDAEKVGds6dycI1Sf38me79wsYEFzPvtv5iPqsLVuj2c8LkTTzAlbsrkTMSuOWUNUWap60RqU93DjjUyxHTmUBgIp7NcknooB1Dw=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-12",
+      "hours": [
+        [
+          11,
+          14
+        ],
+        [
+          17.5,
+          20.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_mejirodai_20261013_1_2109419735809245623",
+    "shopId": "mejirodai",
+    "shopName": "めじろ台店",
+    "postSource": "x",
+    "postUrl": "https://x.com/mejirodai_jiro/status/2109419735809245623",
+    "postedAt": "2026-10-11T23:03:50.000Z",
+    "postText": "毎度ありがとうございます 本日12日(月)、13日(火)の昼営業は11〜14時までの予定となりますのでご注意下さい 夜は通常通り営業します  よろしくお願いします🙇 https://t.co/DJcxUTsIMk",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-IFRDslPe-V0XBgXIE_OeIW-cbkRK_TMiTYEf5ecXwkBwjMV0HyWDAEKVGds6dycI1Sf38me79wsYEFzPvtv5iPqsLVuj2c8LkTTzAlbsrkTMSuOWUNUWap60RqU93DjjUyxHTmUBgIp7NcknooB1Dw=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-13",
+      "endDate": "2026-10-13",
+      "hours": [
+        [
+          11,
+          14
+        ],
+        [
+          17.5,
+          20.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "既に登録済みの臨時スケジュールと一致"
+  },
+  {
+    "id": "sns_post_koshigaya_20261012_0_2109419882194628769",
+    "shopId": "koshigaya",
+    "shopName": "越谷店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ksgy26/status/2109419882194628769",
+    "postedAt": "2026-10-11T23:04:25.000Z",
+    "postText": "おはようございます。 ラーメン二郎越谷店です。  先日よりお知らせしていましたが、本日10月12日(月祝)お休みします。 ご来店予定だったお客様大変申し訳ございません。  10月17日(土)　臨時営業 10:00〜14:30LО よろしくお願いします🙇",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-12",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_koshigaya_20261017_1_2109419882194628769",
+    "shopId": "koshigaya",
+    "shopName": "越谷店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ksgy26/status/2109419882194628769",
+    "postedAt": "2026-10-11T23:04:25.000Z",
+    "postText": "おはようございます。 ラーメン二郎越谷店です。  先日よりお知らせしていましたが、本日10月12日(月祝)お休みします。 ご来店予定だったお客様大変申し訳ございません。  10月17日(土)　臨時営業 10:00〜14:30LО よろしくお願いします🙇",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-10-17",
+      "endDate": "2026-10-17",
+      "hours": [
+        [
+          10,
+          14.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
