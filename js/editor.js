@@ -1134,8 +1134,9 @@ class EditorApp {
                 return;
             }
             // 判定2: sns_posts.json または pending_updates.json 形式
-            if (Array.isArray(data) && (data.length === 0 || data[0].detectedChange !== undefined || data[0].postUrl !== undefined || data[0].postText !== undefined)) {
-                this.pendingUpdates = data.map(item => {
+            const snsData = Array.isArray(data) ? data : (data && Array.isArray(data.value) ? data.value : null);
+            if (snsData && (snsData.length === 0 || snsData[0].detectedChange !== undefined || snsData[0].postUrl !== undefined || snsData[0].postText !== undefined)) {
+                this.pendingUpdates = snsData.map(item => {
                     if (item.processed === undefined) {
                         item.processed = (item.status === 'approved' || item.status === 'rejected');
                     }
@@ -1377,7 +1378,7 @@ class EditorApp {
                 }
             }
 
-            const rawList = Array.isArray(loadedData) ? loadedData : [];
+            const rawList = Array.isArray(loadedData) ? loadedData : (loadedData && Array.isArray(loadedData.value) ? loadedData.value : []);
             // リモートの最新リストを取り込みつつ、現在のローカル作業中フラグ（draftProcessedPostIds）を維持
             this.pendingUpdates = rawList.map(item => {
                 if (this.draftProcessedPostIds.has(item.id)) {
@@ -2481,7 +2482,7 @@ ${guidelinesText}
 
         // 対象日（複数日に対応）のリスト生成
         const dateRangeList = [];
-        if (sDateStr && hasChange) {
+        if (sDateStr) {
             const startDateObj = new Date(`${sDateStr}T00:00:00+09:00`);
             const endDateObj = eDateStr ? new Date(`${eDateStr}T00:00:00+09:00`) : startDateObj;
             if (!isNaN(startDateObj.getTime()) && !isNaN(endDateObj.getTime())) {

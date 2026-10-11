@@ -313,6 +313,50 @@
                     return isVisible === hasPreOpen;
                 });
 
+                // お気に入り機能テスト
+                const favTargetShop = (appWin.shops || [])[0];
+                if (favTargetShop && typeof appWin.toggleFavorite === 'function') {
+                    const favShopId = favTargetShop.id;
+                    const initialFavState = !!appWin.favoriteState[favShopId];
+                    // お気に入りON
+                    appWin.toggleFavorite(favShopId, new MouseEvent('click'));
+                    assert('お気に入り機能: トグルでONになる', () => !!appWin.favoriteState[favShopId] === !initialFavState);
+
+                    // お気に入りのみフィルタのテスト
+                    const favFilterCb = appDoc.getElementById('filter-favorite-only');
+                    if (favFilterCb) {
+                        favFilterCb.checked = true;
+                        appWin.render();
+                        const favOnlyCards = appDoc.querySelectorAll('#shop-grid .shop-item');
+                        const allFavCardsAreFav = Array.from(favOnlyCards).every(card => !!appWin.favoriteState[card.dataset.shopId]);
+                        assert('お気に入り機能: お気に入りのみフィルタ動作', () => favOnlyCards.length >= 1 && allFavCardsAreFav);
+                        favFilterCb.checked = false;
+                        appWin.render();
+                    }
+
+                    // 元に戻す
+                    appWin.toggleFavorite(favShopId, new MouseEvent('click'));
+                    assert('お気に入り機能: 再トグルで元の状態に復帰', () => !!appWin.favoriteState[favShopId] === initialFavState);
+                }
+
+                // 地図ON/OFF切り替えテスト
+                if (typeof appWin.toggleMapActive === 'function') {
+                    const initialMapActive = appWin.isMapActive;
+                    appWin.toggleMapActive();
+                    assert('地図表示切替: toggleMapActiveで状態反転', () => appWin.isMapActive === !initialMapActive);
+                    // 元に戻す
+                    appWin.toggleMapActive();
+                    assert('地図表示切替: 元の状態に復帰', () => appWin.isMapActive === initialMapActive);
+                }
+
+                // グリッド/リスト切り替えテスト
+                if (typeof appWin.setLayoutViewMode === 'function') {
+                    appWin.setLayoutViewMode('grid');
+                    assert('レイアウト切替: グリッドモード設定', () => appWin.layoutViewMode === 'grid');
+                    appWin.setLayoutViewMode('list');
+                    assert('レイアウト切替: リストモード設定', () => appWin.layoutViewMode === 'list');
+                }
+
                 // 共有画像設定モーダルの表示条件テスト
                 const gridEl = appDoc.getElementById('shop-grid');
                 const conquestSec = appDoc.getElementById('share-opt-conquest-section');
@@ -522,7 +566,7 @@
                 }
                 assert('店舗情報-詳細: 制覇状況オフで制覇バッジ非表示', () => visitBtnDisplayDuringCapture === 'none', `バッジstyle.display: "${visitBtnDisplayDuringCapture}" (期待値: "none")`);
 
-                // 12. 日別表示: 2026/10/07 (水) 新宿歌舞伎町店が today-closed (休業) になることの検証
+                // 12. 日別表示: 2026/10/14 (水) 新宿歌舞伎町店が today-closed (休業) になることの検証
                 if (typeof appWin.setListSubMode === 'function') {
                     appWin.setListSubMode('today');
                 }
@@ -643,7 +687,15 @@
                     }, `結果: pref=${prefSelect.value}, city=${citySelect.value}, addr="${addrInput.value}"`);
                 }
 
-                // --- 6-3. エディタ機能: 臨時営業の過去エントリ（2日前以前）非表示＆トグルテスト ---
+                // --- 6-3. エディタ機能: 市区町村・都道府県変更の差分検出テスト ---
+                const testShopA = { id: 'test_diff_shop', name: '差分テスト店', prefCode: '13', cityCode: '13103' };
+                const testShopB = { id: 'test_diff_shop', name: '差分テスト店', prefCode: '14', cityCode: '14100' };
+                const testDiffs = edWin.app.getShopsDiffList([testShopA], [testShopB]);
+                assert('エディタ差分検出: 都道府県・市区町村の変更が差分として検出される', () => {
+                    return testDiffs.length > 0 && testDiffs[0].changes.some(c => c.field === 'prefCode' || c.field === 'cityCode');
+                });
+
+                // --- 6-4. エディタ機能: 臨時営業の過去エントリ（2日前以前）非表示＆トグルテスト ---
                 edWin.app.selectShop(edWin.app.shops[0].id);
                 edWin.app.currentTemporary = [
                     { startDate: '2020-01-01', endDate: '2020-01-02', hours: [] }, // 2日前以前

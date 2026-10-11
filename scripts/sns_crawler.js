@@ -343,8 +343,10 @@ function loadSnsPosts() {
     let posts = [];
     if (fs.existsSync(SNS_POSTS_PATH)) {
         try {
-            posts = JSON.parse(fs.readFileSync(SNS_POSTS_PATH, 'utf8'));
-            if (!Array.isArray(posts)) posts = [];
+            const raw = JSON.parse(fs.readFileSync(SNS_POSTS_PATH, 'utf8'));
+            if (Array.isArray(raw)) posts = raw;
+            else if (raw && Array.isArray(raw.value)) posts = raw.value;
+            else posts = [];
         } catch (e) {
             console.warn('[WARN] Failed to read sns_posts.json:', e.message);
         }
