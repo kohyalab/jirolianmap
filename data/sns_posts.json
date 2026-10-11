@@ -13024,5 +13024,32 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_aizuwakamatsu_20261011_0_2109225483095400765",
+    "shopId": "aizuwakamatsu",
+    "shopName": "会津若松駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/aizu_jiro/status/2109225483095400765",
+    "postedAt": "2026-10-11T10:11:57.000Z",
+    "postText": "誠に申し訳ございませんが、只今お待ちのお客様で本日の営業終了とさせて頂きますm(__)m",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-11",
+      "endDate": "2026-10-11",
+      "hours": [
+        [
+          19.18,
+          19.18
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
