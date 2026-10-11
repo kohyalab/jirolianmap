@@ -12911,5 +12911,118 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "店舗周辺のイベント告知であり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261012_0_2109188235717128391",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2109188235717128391",
+    "postedAt": "2026-10-11T07:43:56.000Z",
+    "postText": "明日！ ◇10/12月 【スポーツの日営業🈺】 🈺臨時営業🈺 10:00から〜15:00 ご来店ご到着お並びの お客様まで営業致します🈺  →［まかない］最後です！ →［お椀で和ッカレー］ やっております♪ →［フライドチリガーリック］特割🈹！50円引き🈹販売中！  ◆10/13火【臨時休業】 https://t.co/gvolLghuqq",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ml6U6FtH2GXWddTrJOHH5ipjAl9pVXtga2JqyyjC796qe0S8-g4PotjkV8c8uBbfK4f9ZSKcDw6D4Ca9XwIex2QQnub-FsoTCtfInhfEV3mjGcVU9XYI1uSAID38z7MR_iLobrroEP_J9g3tWnZjaw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-0jkzmyIzG3XT7aK1623tS4LSU4ZP08uBMZCVxPM9qkLbjYn-ErymcXdvs093oYttwFJ_TLfiz38b68xT6k9U1SLc-xVtu6-o4nTkdJmPzNJWNZX2M9ptGTGzUW0_KXsn_0chIaZvauCEfJ4owTsylw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-LMVrUagKrfgtglbGXyxYa__qnrus7nPAeJjC9PVIv4422MHVKrdtGwZZEdHCCef2-9RU0BDodK6N5qjCN7mUse3nGbajzSeiYTLd69P8iD8NcI--zI-LBykGHCSodb6oHmSgaHbbxV9tAbex2BFx1g==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-5MwLqespmtIFpVsmvRZMqfwGowNBR57dmaCkqQ4KpjlhF0VWqJnkEsR6cnD5h_2jr6rZQMD4y101v45lIhgvzZOBLjwW-e75FyvbrhiNADnjLRp9R5ZBjibkeAkqsW3t8J8uxOgL4UK42Q88DegSzw=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-12",
+      "hours": [
+        [
+          10,
+          15
+        ]
+      ],
+      "reason": "スポーツの日特別営業",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261013_1_2109188235717128391",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2109188235717128391",
+    "postedAt": "2026-10-11T07:43:56.000Z",
+    "postText": "明日！ ◇10/12月 【スポーツの日営業🈺】 🈺臨時営業🈺 10:00から〜15:00 ご来店ご到着お並びの お客様まで営業致します🈺  →［まかない］最後です！ →［お椀で和ッカレー］ やっております♪ →［フライドチリガーリック］特割🈹！50円引き🈹販売中！  ◆10/13火【臨時休業】 https://t.co/gvolLghuqq",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ml6U6FtH2GXWddTrJOHH5ipjAl9pVXtga2JqyyjC796qe0S8-g4PotjkV8c8uBbfK4f9ZSKcDw6D4Ca9XwIex2QQnub-FsoTCtfInhfEV3mjGcVU9XYI1uSAID38z7MR_iLobrroEP_J9g3tWnZjaw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-0jkzmyIzG3XT7aK1623tS4LSU4ZP08uBMZCVxPM9qkLbjYn-ErymcXdvs093oYttwFJ_TLfiz38b68xT6k9U1SLc-xVtu6-o4nTkdJmPzNJWNZX2M9ptGTGzUW0_KXsn_0chIaZvauCEfJ4owTsylw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-LMVrUagKrfgtglbGXyxYa__qnrus7nPAeJjC9PVIv4422MHVKrdtGwZZEdHCCef2-9RU0BDodK6N5qjCN7mUse3nGbajzSeiYTLd69P8iD8NcI--zI-LBykGHCSodb6oHmSgaHbbxV9tAbex2BFx1g==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-5MwLqespmtIFpVsmvRZMqfwGowNBR57dmaCkqQ4KpjlhF0VWqJnkEsR6cnD5h_2jr6rZQMD4y101v45lIhgvzZOBLjwW-e75FyvbrhiNADnjLRp9R5ZBjibkeAkqsW3t8J8uxOgL4UK42Q88DegSzw=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-13",
+      "endDate": "2026-10-13",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_shndaita_20261015_0_2109186510184751166",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2109186510184751166",
+    "postedAt": "2026-10-11T07:37:05.000Z",
+    "postText": "2026年10月11日（日） 解ってる範囲の営業予定です！  月 〇 火 お休み 水 〇 木 〇(15:00くらい) 金 〇(15:00くらい) 土 〇 日 お休み  11:00〜16:00くらい にんにく地獄(＋200円)もやります！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-15",
+      "endDate": "2026-10-15",
+      "hours": [
+        [
+          11,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_shndaita_20261016_1_2109186510184751166",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2109186510184751166",
+    "postedAt": "2026-10-11T07:37:05.000Z",
+    "postText": "2026年10月11日（日） 解ってる範囲の営業予定です！  月 〇 火 お休み 水 〇 木 〇(15:00くらい) 金 〇(15:00くらい) 土 〇 日 お休み  11:00〜16:00くらい にんにく地獄(＋200円)もやります！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-16",
+      "endDate": "2026-10-16",
+      "hours": [
+        [
+          11,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
