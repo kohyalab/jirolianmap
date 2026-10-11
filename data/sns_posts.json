@@ -11738,8 +11738,8 @@
       "reason": "周年記念のため",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-11T15:19:52.453Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 周年記念のため"
   }
