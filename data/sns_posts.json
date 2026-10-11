@@ -12442,5 +12442,39 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "10/11(日)、10/12(月)は通常営業の案内であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_tachikawa_20261013_0_2109081170080346131",
+    "shopId": "tachikawa",
+    "shopName": "立川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jirotachikawa/status/2109081170080346131",
+    "postedAt": "2026-10-11T00:38:30.000Z",
+    "postText": "10/11(日)、昼夜とも時間内売り切れなし営業です。 昼11:00-14:30 夜17:00-21:30  ①「Ｔ2」、担々風 担々麺風ラーメン。 ＋汁なし変更券で汁なし坦々麺(風) になります。  ②持帰りラーメン販売します。 　標準:2人前のスープと生麺+ブタハーフ  ③持ち帰り一本豚、3連休中は休止します。 https://t.co/ZEsJgGNjtm https://t.co/MWHK8EIW1z",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-j0lx3EzdWJIPG9NOcZvOk1nzS4INvf50cbpOr23k6wX9_9tveCCXL2b7a1zeB8GVNAWP3seL1OAqRVMsJvhCQHN5Glz304jhOCCsjVXrlqdOXTCqIw2ijeN6rIRrknaRu1f31TdyNQL2QbsltfiN9A==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-u7RNZKjfnW0yDRt_baDQd8yMmKKXYB0jDzacRvEWF7bvdIKyl0Qn3oAsvLKiTrdN-LuyYVFANNCHWpFbIGnWN86eF5F2WTaolFcqSJowVh-D1nmdc4tNWfW6tfYbKsZ9CunxxmXbDP8tG_Xw_XW1Ug=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-10-13",
+      "endDate": "2026-10-13",
+      "hours": [
+        [
+          11,
+          14.5
+        ],
+        [
+          17,
+          21.5
+        ]
+      ],
+      "reason": "特別営業",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 特別営業"
   }
 ]
