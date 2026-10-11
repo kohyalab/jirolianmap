@@ -1941,7 +1941,10 @@ ${guidelinesText}
 【二郎特有の表現と重要判定ルール】
 1. 対象店舗の特定:
    - 指定対象店舗が未選択の場合は、投稿URL（公式アカウント名）、テキスト内の店名・通称・地名、または画像内の看板・暖簾・貼り紙・カレンダーの文字から該当する直系店舗の "shopId"（店舗一覧のIDと完全一致）を特定してください。二郎直系店舗でない場合や特定不能時は shopId: null としてください。
-2. 日付・期間表現の解釈:
+2. 日常投稿・通常営業の変更なし判定（最重要）:
+   - 限定メニュー・豚切り落とし・トッピング販売告知、仕込み報告、日々の挨拶など、営業時間の変更に明示的に言及していない日常投稿は、絶対に休業（temporary_closure / hours: []）と判定せず、必ず hasScheduleChange: false, changes: [] としてください。
+   - 営業時間に言及のない日常投稿を勝手に休業と推測して変更提案を作ってはなりません。
+3. 日付・期間表現の解釈:
    - 「本日」「今日」＝ ${todayStr}
    - 「明日」＝ 翌日、「明後日」＝ 翌々日
    - 「○日(○)」＝ 今月または翌月の該当月日を西暦YYYY-MM-DD形式に変換。
@@ -2191,21 +2194,35 @@ ${guidelinesText}
     evaluatePendingItem(item) {
         try {
             const shop = (this.shops || []).find(s => s.id === item.shopId);
-            const change = item.detectedChange || {};
-            const isClosure = change.type === 'temporary_closure' || (Array.isArray(change.hours) && change.hours.length === 0);
+            const change = item.detectedChange;
 
-            // 無関係判定（日常投稿、メンション、または有効な変更情報が一切ない）
-            const isExplicitlyUnrelated = item.aiStatus === 'unrelated' || item.aiStatus === 'mention' || item.aiStatus === 'daily';
-            const hasChangeInfo = (change.startDate || change.endDate) && (isClosure || (Array.isArray(change.hours) && change.hours.length > 0));
+            // 無関係・変更なし判定（日常投稿、メンション、営業変更なし、または変更データなし）
+            const isExplicitlyUnrelated = item.aiStatus === 'unrelated' ||
+                                          item.aiStatus === 'mention' ||
+                                          item.aiStatus === 'daily' ||
+                                          item.aiStatus === 'no_change' ||
+                                          item.aiStatus === 'routine' ||
+                                          item.status === 'skipped';
+
+            const hasChangeInfo = change &&
+                                  change.type !== 'routine' &&
+                                  (change.startDate || change.endDate) &&
+                                  (change.type === 'temporary_closure' || (Array.isArray(change.hours) && change.hours.length > 0));
 
             if (isExplicitlyUnrelated || !hasChangeInfo) {
+                let reason = '無関係';
+                if (item.aiStatus === 'no_change' || item.aiStatus === 'routine') reason = '変更なし';
+                else if (item.aiStatus === 'daily') reason = '日常';
+                else if (item.aiStatus === 'mention') reason = 'メンション';
                 return {
                     statusBadge: '反映不要',
                     badgeClass: 'badge-skip',
-                    reasonText: '無関係',
+                    reasonText: reason,
                     isActionRequired: false
                 };
             }
+
+            const isClosure = change.type === 'temporary_closure';
 
             // ロジックによる営業時間突合（AIではなくプログラムで同一性を厳密比較）
             const sDateStr = change.startDate || (item.postedAt ? item.postedAt.split('T')[0] : '');
@@ -2252,11 +2269,12 @@ ${guidelinesText}
             };
         } catch (err) {
             console.error('evaluatePendingItem error:', err);
+            const isChange = item.aiStatus === 'schedule_change';
             return {
-                statusBadge: item.aiStatus === 'schedule_change' ? '要反映' : '反映不要',
-                badgeClass: item.aiStatus === 'schedule_change' ? 'badge-action' : 'badge-skip',
-                reasonText: item.aiStatus === 'schedule_change' ? '営業変更を検出' : '無関係',
-                isActionRequired: item.aiStatus === 'schedule_change'
+                statusBadge: isChange ? '要反映' : '反映不要',
+                badgeClass: isChange ? 'badge-action' : 'badge-skip',
+                reasonText: isChange ? '営業変更を検出' : '無関係',
+                isActionRequired: isChange
             };
         }
     }
@@ -2444,16 +2462,17 @@ ${guidelinesText}
             accountUrl = postSource === 'instagram' ? `https://instagram.com/${handle.replace(/^@/, '')}` : `https://x.com/${handle.replace(/^@/, '')}`;
         }
 
-        const change = item.detectedChange || {};
-        const isClosure = change.type === 'temporary_closure' || (Array.isArray(change.hours) && change.hours.length === 0);
+        const change = item.detectedChange || null;
+        const hasChange = !!change && change.type !== 'routine' && (change.type === 'temporary_closure' || (Array.isArray(change.hours) && change.hours.length > 0));
+        const isClosure = hasChange && change.type === 'temporary_closure';
 
         // ロジックによる判定（要反映 / 反映不要 + 理由テキスト）
         const evalResult = this.evaluatePendingItem(item);
         const badgeTag = `<span class="decision-badge ${evalResult.badgeClass}">${evalResult.statusBadge}</span> <span class="decision-reason">${evalResult.reasonText}</span>`;
 
-        const sDateStr = change.startDate || (item.postedAt ? item.postedAt.split('T')[0] : '');
-        const eDateStr = change.endDate || sDateStr;
-        const hoursText = (change.hours && change.hours.length > 0)
+        const sDateStr = (change && change.startDate) ? change.startDate : (item.postedAt ? item.postedAt.split('T')[0] : '');
+        const eDateStr = (change && change.endDate) ? change.endDate : sDateStr;
+        const hoursText = (hasChange && Array.isArray(change.hours) && change.hours.length > 0)
             ? change.hours.map(([s, e]) => `${this.floatToTime(s)}-${this.floatToTime(e)}`).join(', ')
             : (isClosure ? '休業' : '');
 
@@ -2462,7 +2481,7 @@ ${guidelinesText}
 
         // 対象日（複数日に対応）のリスト生成
         const dateRangeList = [];
-        if (sDateStr) {
+        if (sDateStr && hasChange) {
             const startDateObj = new Date(`${sDateStr}T00:00:00+09:00`);
             const endDateObj = eDateStr ? new Date(`${eDateStr}T00:00:00+09:00`) : startDateObj;
             if (!isNaN(startDateObj.getTime()) && !isNaN(endDateObj.getTime())) {
@@ -2506,7 +2525,7 @@ ${guidelinesText}
         // 「登録営業時間」と「変更提案」を同一の形式で表示
         let currentScheduleHtml = '';
         let proposedScheduleHtml = '';
-        const proposedShiftText = hoursText ? hoursText : (isClosure ? '<span style="color:#ef5350; font-weight:bold;">休業</span>' : '営業時間未設定');
+        const proposedShiftText = hoursText ? hoursText : (isClosure ? '<span style="color:#ef5350; font-weight:bold;">休業</span>' : '<span style="color:#aaa;">営業変更なし（通常通り営業）</span>');
 
         if (dateRangeList.length > 0) {
             currentScheduleHtml = dateRangeList.map(dItem => `
@@ -2522,14 +2541,14 @@ ${guidelinesText}
                     <span style="font-weight:bold; color:#ffeb3b;">${proposedShiftText}</span>
                 </div>
             `).join('');
-            if (change.reason) {
+            if (change && change.reason) {
                 proposedScheduleHtml += `<div style="font-size:0.72rem; color:#bbb; margin-top:3px;">理由: ${this.escapeHtml(change.reason)}</div>`;
             }
         } else {
             currentScheduleHtml = '<span style="color:#888;">(登録なし / 日付不明)</span>';
             proposedScheduleHtml = `
                 <div style="font-size:0.8rem; color:#ffeb3b; font-weight:bold;">${proposedShiftText}</div>
-                ${change.reason ? `<div style="font-size:0.72rem; color:#bbb; margin-top:2px;">理由: ${this.escapeHtml(change.reason)}</div>` : ''}
+                ${(change && change.reason) ? `<div style="font-size:0.72rem; color:#bbb; margin-top:2px;">理由: ${this.escapeHtml(change.reason)}</div>` : ''}
             `;
         }
 
@@ -2661,7 +2680,7 @@ ${guidelinesText}
                     <div class="pending-inline-row">
                         <div class="pending-inline-field" style="flex:2;">
                             <label>営業変更の原因・理由 (変更内容は書かない、不明は空欄)</label>
-                            <input type="text" id="p-reason-${item.id}" value="${this.escapeHtml(change.reason || '')}" placeholder="例: 台風接近のため、設備点検のため（不明は空欄）">
+                            <input type="text" id="p-reason-${item.id}" value="${this.escapeHtml((change && change.reason) || '')}" placeholder="例: 台風接近のため、設備点検のため（不明は空欄）">
                         </div>
                         <div class="pending-inline-field" style="flex:2;">
                             <label>根拠URL (投稿URL等)</label>

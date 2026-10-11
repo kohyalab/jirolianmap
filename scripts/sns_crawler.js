@@ -432,13 +432,7 @@ async function runCrawler() {
                         postedAt: post.postedAt,
                         postText: post.text,
                         mediaUrls: post.mediaUrls || [],
-                        detectedChange: {
-                            type: 'temporary_hours',
-                            startDate: post.postedAt.split('T')[0],
-                            endDate: post.postedAt.split('T')[0],
-                            hours: [],
-                            reason: ''
-                        },
+                        detectedChange: null,
                         processed: false,
                         processedAt: null,
                         aiStatus: 'mention',
@@ -464,13 +458,7 @@ async function runCrawler() {
                     postedAt: post.postedAt,
                     postText: post.text,
                     mediaUrls: post.mediaUrls || [],
-                    detectedChange: {
-                        type: 'temporary_hours',
-                        startDate: post.postedAt.split('T')[0],
-                        endDate: post.postedAt.split('T')[0],
-                        hours: [],
-                        reason: ''
-                    },
+                    detectedChange: null,
                     processed: false,
                     processedAt: null,
                     aiStatus: 'daily',
@@ -497,13 +485,7 @@ async function runCrawler() {
                     postedAt: post.postedAt,
                     postText: post.text,
                     mediaUrls: post.mediaUrls || [],
-                    detectedChange: {
-                        type: 'temporary_hours',
-                        startDate: post.postedAt.split('T')[0],
-                        endDate: post.postedAt.split('T')[0],
-                        hours: [],
-                        reason: '要確認（APIキー未設定）'
-                    },
+                    detectedChange: null,
                     processed: false,
                     processedAt: null,
                     aiStatus: 'unresolved',
@@ -600,13 +582,7 @@ async function runCrawler() {
                         postedAt: post.postedAt,
                         postText: post.text,
                         mediaUrls: post.mediaUrls || [],
-                        detectedChange: {
-                            type: 'routine',
-                            startDate: post.postedAt.split('T')[0],
-                            endDate: post.postedAt.split('T')[0],
-                            hours: [],
-                            reason: analysis?.summary || '営業変更なし（通常通り営業・雑談等）'
-                        },
+                        detectedChange: null,
                         processed: false,
                         processedAt: null,
                         aiStatus: 'no_change',
@@ -633,13 +609,7 @@ async function runCrawler() {
                     postedAt: post.postedAt,
                     postText: post.text,
                     mediaUrls: post.mediaUrls || [],
-                    detectedChange: {
-                        type: 'temporary_hours',
-                        startDate: post.postedAt.split('T')[0],
-                        endDate: post.postedAt.split('T')[0],
-                        hours: [],
-                        reason: 'AI解析エラー（手動確認）'
-                    },
+                    detectedChange: null,
                     processed: false,
                     processedAt: null,
                     aiStatus: 'unresolved',
