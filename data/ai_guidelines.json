@@ -2,6 +2,28 @@
   "generalRules": [],
   "learnedFeedback": [
     {
+      "id": "sns_post_kameido_20261017_0_2109295053525192830",
+      "timestamp": "2026-10-11T15:19:44.055Z",
+      "shopId": "kameido",
+      "shopName": "亀戸店",
+      "postDate": "2026-10-11T14:48:24.000Z",
+      "postText": "お世話になってます。来週の17日(土)は当店スタッフY君の誕生日と当店の13.5周年ということで今年の周年限定で提供した「ゴマ味噌担々麺」をまたやります！前回は白と黒がありましたが今回は白のみです。そのかわり以前より濃厚になります✨営業時間も11時から20時まで休みなしの通し営業になります。 https://t.co/Xy5vEQ9dIl",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業変更検出: 周年記念のため",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-10-17",
+        "endDate": "2026-10-17",
+        "hours": [
+          [
+            11,
+            20
+          ]
+        ],
+        "reason": "周年記念のため"
+      }
+    },
+    {
       "id": "sns_post_shndaita_20261016_1_2109186510184751166",
       "timestamp": "2026-10-11T13:22:25.813Z",
       "shopId": "shndaita",
