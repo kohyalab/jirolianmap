@@ -826,6 +826,25 @@
                     return edWin.app.draftProcessedPostIds.has('test_bulk_skip_action_required');
                 });
 
+                // --- 7-2. 日常・変更なし投稿が「休業（要反映）」にならず「反映不要」となるテスト ---
+                const testDailyPost = {
+                    id: 'test_daily_topping_post',
+                    shopId: 'mita',
+                    shopName: '三田本店',
+                    postSource: 'x',
+                    postUrl: 'https://x.com/mita/3',
+                    postedAt: '2026-09-25T11:00:00+09:00',
+                    postText: '限定トッピング（しょうが）あります！よろしくお願いします。',
+                    detectedChange: null,
+                    aiStatus: 'daily',
+                    aiReason: '限定メニュー・トッピング告知のため除外（日常）'
+                };
+                const evalDaily = edWin.app.evaluatePendingItem(testDailyPost);
+                assert('SNS判定: 日常投稿は「要反映」にならず「反映不要」と判定される', () => !evalDaily.isActionRequired && evalDaily.statusBadge === '反映不要');
+
+                const dailyCardEl = edWin.app.createPendingCardElement(testDailyPost);
+                assert('SNS判定: 日常投稿のカードに変更提案「休業」が表示されない', () => !dailyCardEl.innerHTML.includes('color:#ef5350; font-weight:bold;">休業') && dailyCardEl.textContent.includes('営業変更なし'));
+
                 // テスト用データをクリーンアップ
                 edWin.app.pendingUpdates = [];
                 edWin.app.draftProcessedPostIds.clear();
