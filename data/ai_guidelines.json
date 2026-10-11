@@ -2,6 +2,28 @@
   "generalRules": [],
   "learnedFeedback": [
     {
+      "id": "sns_post_shndaita_20261016_1_2109186510184751166",
+      "timestamp": "2026-10-11T13:22:25.813Z",
+      "shopId": "shndaita",
+      "shopName": "環七新新代田店",
+      "postDate": "2026-10-11T07:37:05.000Z",
+      "postText": "2026年10月11日（日） 解ってる範囲の営業予定です！  月 〇 火 お休み 水 〇 木 〇(15:00くらい) 金 〇(15:00くらい) 土 〇 日 お休み  11:00〜16:00くらい にんにく地獄(＋200円)もやります！  よろしくお願いします！",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-10-16",
+        "endDate": "2026-10-16",
+        "hours": [
+          [
+            11,
+            15
+          ]
+        ],
+        "reason": ""
+      }
+    },
+    {
       "id": "sns_post_koiwa_20261017_0_2108709092923715701",
       "timestamp": "2026-10-10T00:29:07.166Z",
       "shopId": "koiwa",
