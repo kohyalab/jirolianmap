@@ -11742,5 +11742,20 @@
     "processedAt": "2026-10-11T15:19:52.453Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 周年記念のため"
+  },
+  {
+    "id": "sns_post_mention_kameido_2109324051080687765",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2109324051080687765",
+    "postedAt": "2026-10-11T16:43:37.000Z",
+    "postText": "@funatsukazuki これだけ釣れると捌くのも大変ですよね😅ともあれお疲れ様でした✨",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
   }
 ]
