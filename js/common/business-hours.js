@@ -490,8 +490,31 @@
                 return `<span class="next-schedule" title="次回営業時間: 未定">未定</span>`;
             }
             if (this.isPreOpen(shop)) {
-                const openDateStr = shop.openedAt ? shop.openedAt.replace(/-/g, '/') : '';
-                return `<span class="next-schedule" title="オープン予定: ${openDateStr}">オープン予定: ${openDateStr}</span>`;
+                const dayNames = ["日", "月", "火", "水", "木", "金", "土"];
+                const openDateStr = shop.openedAt ? shop.openedAt.trim() : '';
+                let openDateObj = null;
+                if (/^\d{4}-\d{2}-\d{2}$/.test(openDateStr)) {
+                    const [y, m, d] = openDateStr.split('-').map(Number);
+                    openDateObj = new Date(y, m - 1, d);
+                }
+
+                if (openDateObj && !isNaN(openDateObj.getTime())) {
+                    const m = openDateObj.getMonth() + 1;
+                    const d = openDateObj.getDate();
+                    const w = dayNames[openDateObj.getDay()];
+                    const dateFormatted = `${m}/${d}(${w})`;
+
+                    const openShifts = this.getTodayShifts(shop, openDateObj);
+                    if (Array.isArray(openShifts) && openShifts.length > 0) {
+                        const text = `${dateFormatted}${fmt(openShifts[0][0])}-`;
+                        return `<span class="next-schedule" title="オープン予定: ${text}">${text}</span>`;
+                    } else {
+                        return `<span class="next-schedule" title="オープン予定: ${dateFormatted}">${dateFormatted}</span>`;
+                    }
+                } else {
+                    const fallbackStr = openDateStr.replace(/-/g, '/');
+                    return `<span class="next-schedule" title="オープン予定: ${fallbackStr}">オープン予定: ${fallbackStr}</span>`;
+                }
             }
             if (this.isClosedShopExpired(shop)) {
                 return `<span class="next-schedule" title="閉店">閉店</span>`;
@@ -517,7 +540,7 @@
                 } else {
                     const dayNames = ["日", "月", "火", "水", "木", "金", "土"];
                     let found = false;
-                    for (let offset = 1; offset <= 30; offset++) {
+                    for (let offset = 1; offset <= 365; offset++) {
                         const checkDate = new Date(now);
                         checkDate.setDate(now.getDate() + offset);
                         const checkShifts = this.getTodayShifts(shop, checkDate);
