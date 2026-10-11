@@ -145,6 +145,31 @@
                 const text = JiroBusinessHours.getNextOpenScheduleText(noOpenDateShop, beforeOpenDate);
                 return text.includes('未定');
             });
+            // 開店前店舗で営業時間が未定の場合は「11/25(水)」のように日付・曜日のみ表示
+            const preOpenShopPendingHours = {
+                id: 'pre_pending_hours_shop',
+                name: '開店前未定二郎',
+                openedAt: '2026-11-25',
+                closedAt: null,
+                shiftsByDay: { '0': [], '1': [], '2': [], '3': [], '4': [], '5': [], '6': [] }
+            };
+            assert('JiroBusinessHours.getNextOpenScheduleText (開店前・営業時間未定は「11/25(水)」)', () => {
+                const text = JiroBusinessHours.getNextOpenScheduleText(preOpenShopPendingHours, new Date(2026, 9, 1));
+                return text.includes('11/25(水)') && !text.includes('11:00');
+            });
+            // 開店前店舗で開店日の営業時間が決定済みの場合は「11/25(水)11:00-」のように時間付きで表示
+            const preOpenShopWithHours = {
+                id: 'pre_with_hours_shop',
+                name: '開店前時間決定二郎',
+                openedAt: '2026-11-25', // 2026-11-25は水曜 (shiftsByDay['2'])
+                closedAt: null,
+                shiftsByDay: { '2': [[11, 14.5]] }
+            };
+            assert('JiroBusinessHours.getNextOpenScheduleText (開店前・営業時間設定済は「11/25(水)11:00-」)', () => {
+                const text = JiroBusinessHours.getNextOpenScheduleText(preOpenShopWithHours, new Date(2026, 9, 1));
+                return text.includes('11/25(水)11:00-');
+            });
+
             const noUpcomingShiftsShop = {
                 id: 'no_upcoming_shifts_shop',
                 name: '全休二郎',
@@ -152,9 +177,26 @@
                 closedAt: null,
                 shiftsByDay: { '0': [], '1': [], '2': [], '3': [], '4': [], '5': [], '6': [] }
             };
-            assert('JiroBusinessHours.getNextOpenScheduleText (次回営業日が30日以内にない場合は「未定」)', () => {
+            assert('JiroBusinessHours.getNextOpenScheduleText (次回営業日が365日以内にない場合は「未定」)', () => {
                 const text = JiroBusinessHours.getNextOpenScheduleText(noUpcomingShiftsShop, new Date(2026, 9, 1));
                 return text.includes('未定') && !text.includes('30日後以降');
+            });
+
+            // 30日後以降（例: 45日後まで休業、46日後に営業再開）に営業予定がある場合はその予定日を表示
+            const longTempClosedShop = {
+                id: 'long_temp_shop',
+                name: '長期休業二郎',
+                openedAt: '2020-01-01',
+                closedAt: null,
+                shiftsByDay: { '0': [[11, 15]] }, // 月曜営業
+                temporary: [
+                    { startDate: '2026-10-01', endDate: '2026-11-15', hours: [] } // 11/15まで休業
+                ]
+            };
+            // 2026-11-16 (月) が営業再開日 (46日後)
+            assert('JiroBusinessHours.getNextOpenScheduleText (30日後以降に営業予定がある場合はその予定日を表示)', () => {
+                const text = JiroBusinessHours.getNextOpenScheduleText(longTempClosedShop, new Date(2026, 9, 1));
+                return text.includes('11/16(月)11:00-');
             });
             assert('JiroBusinessHours.formatShiftTimeText (「オープン前」表示対応)', () => {
                 const todayHtml = JiroBusinessHours.formatShiftTimeText('オープン前', 'today');
@@ -602,6 +644,19 @@
                 const matsumotoEdItem = edDoc.querySelector('#shop-list .shop-item');
                 const matsumotoBadge = matsumotoEdItem ? matsumotoEdItem.querySelector('.status-badge') : null;
                 assert('エディタ: 開店日未定店舗（松本店）の営業状態バッジが「オープン予定」', () => matsumotoBadge && matsumotoBadge.textContent.trim() === 'オープン予定', matsumotoBadge ? `バッジ: "${matsumotoBadge.textContent.trim()}"` : 'バッジ未検出');
+
+                // エディタ一括編集（shifts_all）の曜日定義が月曜=0〜日曜=6であることの検証
+                const mitaShop = edWin.app.shops.find(s => s.id === 'mita');
+                if (mitaShop && typeof edWin.app.generateBulkFieldHtml === 'function') {
+                    const bulkShiftsHtml = edWin.app.generateBulkFieldHtml(mitaShop, 'shifts_all');
+                    const tempWrap = document.createElement('div');
+                    tempWrap.innerHTML = bulkShiftsHtml;
+                    const monInput = tempWrap.querySelector('input[data-bulk-shift-day="0"]');
+                    const sunInput = tempWrap.querySelector('input[data-bulk-shift-day="6"]');
+                    const monLabel = monInput ? monInput.parentElement.querySelector('label')?.textContent : '';
+                    const sunLabel = sunInput ? sunInput.parentElement.querySelector('label')?.textContent : '';
+                    assert('エディタ一括編集: 曜日マッピング (0=月曜, 6=日曜)', () => monLabel === '月' && sunLabel === '日', `月=${monLabel}, 日=${sunLabel}`);
+                }
 
                 // --- 6-2. エディタ機能: 「未定」ボタン＆住所自動分離テスト ---
                 const monPendingBtn = edDoc.querySelector('button[onclick*="setShiftPending(\'shift-0\')"]');

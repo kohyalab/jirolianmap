@@ -1902,7 +1902,7 @@ class EditorApp {
             let shopContextText = '';
             if (selectedShop) {
                 const shiftsByDay = selectedShop.shiftsByDay || {};
-                const dayNames = ['日曜', '月曜', '火曜', '水曜', '木曜', '金曜', '土曜'];
+                const dayNames = ['月曜', '火曜', '水曜', '木曜', '金曜', '土曜', '日曜'];
                 const normalShiftsText = dayNames.map((dName, idx) => {
                     const shifts = shiftsByDay[idx] || [];
                     if (shifts.length === 0) return `${dName}: 定休日`;
@@ -2097,7 +2097,7 @@ ${guidelinesText}
                 if (change.startDate) {
                     const d = new Date(change.startDate + 'T00:00:00+09:00');
                     if (!isNaN(d.getTime())) {
-                        dayOfWeek = d.getDay().toString();
+                        dayOfWeek = ((d.getDay() + 6) % 7).toString();
                     }
                 }
 
@@ -3929,7 +3929,7 @@ ${guidelinesText}
                         <div class="bulk-field-wrap"><textarea data-shop-id="${shop.id}" data-bulk-sub="remarks" rows="1">${shop.remarks || shop.notes || ''}</textarea></div>
                     </div>`;
             } else if (fieldKey === 'shifts_all') {
-                const days = [{id:'1', l:'月'}, {id:'2', l:'火'}, {id:'3', l:'水'}, {id:'4', l:'木'}, {id:'5', l:'金'}, {id:'6', l:'土'}, {id:'0', l:'日'}];
+                const days = [{id:'0', l:'月'}, {id:'1', l:'火'}, {id:'2', l:'水'}, {id:'3', l:'木'}, {id:'4', l:'金'}, {id:'5', l:'土'}, {id:'6', l:'日'}];
                 let itemsHtml = '';
                 days.forEach(d => {
                     const val = this.formatShiftArray(shop.shiftsByDay ? shop.shiftsByDay[d.id] : []);

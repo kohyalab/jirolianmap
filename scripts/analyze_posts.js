@@ -164,7 +164,7 @@ async function analyzePostWithGemini(postData, apiKey = process.env.GEMINI_API_K
 
     // 店舗の通常営業時間および登録済み臨時スケジュールのテキスト化
     const shiftsByDay = postData.shiftsByDay || {};
-    const dayNames = ['日曜', '月曜', '火曜', '水曜', '木曜', '金曜', '土曜'];
+    const dayNames = ['月曜', '火曜', '水曜', '木曜', '金曜', '土曜', '日曜'];
     const normalShiftsText = dayNames.map((dName, idx) => {
         const shifts = shiftsByDay[idx] || [];
         if (shifts.length === 0) return `${dName}: 定休日`;
