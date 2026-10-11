@@ -12885,5 +12885,31 @@
     "processedAt": null,
     "aiStatus": "match",
     "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2109185034007806365",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2109185034007806365",
+    "postedAt": "2026-10-11T07:31:13.000Z",
+    "postText": "列切れたのでよろしかったらどうぞーー！！ 近くでイベントもやってるみたいです！！ 素敵な椅子が見つかったりするかもしれません！！こちらも是非どうぞー！！ https://t.co/Qrik5zdPvM",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-O2KFkzG-e15VNTWpbEmn30LggEZ-Qs0dSsic0pXQUY2DYB9e7JIralRAgDOH58jk8oBpDdBO3jeAEV42zYlhuMjk_AbfncJd3i8ahQkzsAqDIznCLMZCn_Z47oF3NqlfZln-sFrq7tdPbt-nmg1MdA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-WLxsYjPQ_SBD78bXj29jBr0kGIWrPzFMR7zETP028bPq-3sccOiYPIo6Rd_Z3Kgt2qqO7OQVFvoDUT_guXw9GeF-CcZk6ezZ-nqX_r2ggMso9AW8YAmljVU4u2BHoP99cd6xKao6DYk_NepeboMmIg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-nT22r29oCgRXgMveQwg39GuCbGJvM9HiowWsL8tBbNkpXTgEbNDk1JJ9Qa9NUWuEwEXHP2PSGGV5YgqPeJ6CIdWC7qIB41wVaSC7nvqqdBiMxryhSjmmkSrFRd02MEHfO8SB91bBksA1-zXNCIBPgw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-mPQButMCmh_tLQuH9-RzbazLpFcin7xGZNZC89GtorAttBRwaU-PnDW-OtnYVLDEsaWcEZPxe4nYXVcSjgUY6sKKwSICXZZokx2kwEL0ew6gs1dh2ILXUZPRP8znrG_6DmE_-QUOHzsawKNcGAqhjA=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-11",
+      "endDate": "2026-10-11",
+      "hours": [],
+      "reason": "店舗周辺のイベント告知であり、営業時間の変更に関する言及はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "店舗周辺のイベント告知であり、営業時間の変更に関する言及はありません。"
   }
 ]
