@@ -421,6 +421,12 @@ class EditorApp {
                 const normOld = this.normalizeValueForDiff(key, oldVal);
                 const normNew = this.normalizeValueForDiff(key, newVal);
                 if (normOld !== normNew) {
+                    // prefCodeの安全ガード: 片方が未定義で、もう片方がcityCodeから導出されるprefCodeと一致する場合は差分としない
+                    if (key === 'prefCode') {
+                        const oldP = normOld || (oldShop.cityCode ? String(oldShop.cityCode).substring(0, 2) : '');
+                        const newP = normNew || (newShop.cityCode ? String(newShop.cityCode).substring(0, 2) : '');
+                        if (oldP === newP) return;
+                    }
                     const newValStr = key === 'temporary'
                         ? this.getTemporaryDiffText(oldVal, newVal)
                         : this.formatDiffValue(key, newVal);
@@ -608,6 +614,18 @@ class EditorApp {
             const dateB = b.startDate || b.date || '';
             return dateA.localeCompare(dateB);
         });
+    }
+
+    normalizeShop(shop) {
+        if (!shop) return;
+        if (shop.temporary) shop.temporary = this.sortTemporaryDates(shop.temporary);
+        if (shop.notes !== undefined && shop.remarks === undefined) {
+            shop.remarks = shop.notes;
+            delete shop.notes;
+        }
+        if (!shop.prefCode && shop.cityCode) {
+            shop.prefCode = String(shop.cityCode).substring(0, 2);
+        }
     }
 
     sortShopsByOpenedAt() {
@@ -1006,11 +1024,7 @@ class EditorApp {
             this.shops = JSON.parse(jsonText);
 
             this.shops.forEach(shop => {
-                if (shop.temporary) shop.temporary = this.sortTemporaryDates(shop.temporary);
-                if (shop.notes !== undefined && shop.remarks === undefined) {
-                    shop.remarks = shop.notes;
-                    delete shop.notes;
-                }
+                this.normalizeShop(shop);
             });
             this.sortShopsByOpenedAt();
             this.cacheOriginalSnapshots();
@@ -1072,11 +1086,7 @@ class EditorApp {
                 if (Array.isArray(data) && data.length > 0) {
                     this.shops = data;
                     this.shops.forEach(shop => {
-                        if (shop.temporary) shop.temporary = this.sortTemporaryDates(shop.temporary);
-                        if (shop.notes !== undefined && shop.remarks === undefined) {
-                            shop.remarks = shop.notes;
-                            delete shop.notes;
-                        }
+                        this.normalizeShop(shop);
                     });
                     this.sortShopsByOpenedAt();
                     this.cacheOriginalSnapshots();
@@ -1120,11 +1130,7 @@ class EditorApp {
             if (Array.isArray(data) && data.length > 0 && data[0].id && data[0].name) {
                 this.shops = data;
                 this.shops.forEach(shop => {
-                    if (shop.temporary) shop.temporary = this.sortTemporaryDates(shop.temporary);
-                    if (shop.notes !== undefined && shop.remarks === undefined) {
-                        shop.remarks = shop.notes;
-                        delete shop.notes;
-                    }
+                    this.normalizeShop(shop);
                 });
                 this.sortShopsByOpenedAt();
                 this.cacheOriginalSnapshots();
@@ -3175,11 +3181,7 @@ ${guidelinesText}
             try {
                 this.shops = JSON.parse(evt.target.result);
                 this.shops.forEach(shop => {
-                    if (shop.temporary) shop.temporary = this.sortTemporaryDates(shop.temporary);
-                    if (shop.notes !== undefined && shop.remarks === undefined) {
-                        shop.remarks = shop.notes;
-                        delete shop.notes;
-                    }
+                    this.normalizeShop(shop);
                 });
                 this.sortShopsByOpenedAt();
                 this.renderList();
