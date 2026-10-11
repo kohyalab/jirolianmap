@@ -12548,5 +12548,85 @@
     "processedAt": null,
     "aiStatus": "match",
     "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_kyoto_20261011_0_2109100441854423224",
+    "shopId": "kyoto",
+    "shopName": "京都店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kyoto/status/2109100441854423224",
+    "postedAt": "2026-10-11T01:55:05.000Z",
+    "postText": "おはようございます！本日もお昼の部のみの営業です！ 明日は17時から21時までの夜営業です！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-11",
+      "endDate": "2026-10-11",
+      "hours": [
+        [
+          17,
+          23
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_kyoto_20261012_1_2109100441854423224",
+    "shopId": "kyoto",
+    "shopName": "京都店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kyoto/status/2109100441854423224",
+    "postedAt": "2026-10-11T01:55:05.000Z",
+    "postText": "おはようございます！本日もお昼の部のみの営業です！ 明日は17時から21時までの夜営業です！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-12",
+      "hours": [
+        [
+          17,
+          21
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2109101809684148494",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2109101809684148494",
+    "postedAt": "2026-10-11T02:00:31.000Z",
+    "postText": "おはようございます！三連休中日！天気がいい！イオンだったところもだいぶ解体が進んで低くなってきましたね！！何が建つのかしら？御来店お待ちしております！！ テイクアウトもお土産に是非どうぞ！！昨日すごい出たな… https://t.co/vMGHsWoLEh",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-y9SILrQSwXIVPjI8JQazCcn7TVaip4Fi0JCSguqkogTT7C2lAO1GNwFgjN_rBJ4CXAtdn-SVoiyIijtB5HImjtyRjMVEYcXtJRXOROYN2LuDusUjFO2Hgvwl2PAvGH4YTZvyjmX7U3Mi3h4ocvmRBA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-O82mT255GO8Ngkb2hx1sd7BzdGavVZGXgMlnqvnYbSws78xgSHDDJnJQdMoPcAJbUBvlbYDhWHqQ2jWFXnWmytlArmW6Akh_4rS_0nrka_ghX_rXvhW_SA1hr_vB28-87o5SHrcR3UGRBp-cYtDTQA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-rKJTv-HYngHv4IVLkgK6cGQkx6qMpmxWWwpriNBL2KjGHqvGfaGnXGINYINwIBMDOUkO6e13SRCXEZwG9-HuUEw9FJ89LYsytBTipuCdLWLnEpXcIIcvhh1dhiB-49b8lx-kXhg8n3kUS0fVinR83w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-XBes5uhspzp6VtIevsKNSGnry4SWqOh_Ii6RUbk2iLbTEaFJJzcIQgYjHRi7OmRSekJ7eqdTFSb2Wlo-XVVocYU6ffapxRCH-hI5NoEGQbgkdYcCoDCo7zxcxKPI8fP97VSCC2SrJo_KkPYzqmm4GA=="
+    ],
+    "detectedChange": {
+      "type": "routine",
+      "startDate": "2026-10-11",
+      "endDate": "2026-10-11",
+      "hours": [],
+      "reason": "通常営業の案内であり、変更はありません。"
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内であり、変更はありません。"
   }
 ]
