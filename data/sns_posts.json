@@ -11772,5 +11772,54 @@
     "processedAt": null,
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_ichinoe_20261012_0_2109389446827393131",
+    "shopId": "ichinoe",
+    "shopName": "環七一之江店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ichinoejiro/status/2109389446827393131",
+    "postedAt": "2026-10-11T21:03:29.000Z",
+    "postText": "本日、祝日営業。 9:00〜14:00 となります。  明日の火曜〜水曜定休 お休みを頂きますので、 宜しくお願い申し上げます",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-12",
+      "hours": [
+        [
+          9,
+          14
+        ]
+      ],
+      "reason": "祝日特別営業",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_ichinoe_20261013_1_2109389446827393131",
+    "shopId": "ichinoe",
+    "shopName": "環七一之江店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ichinoejiro/status/2109389446827393131",
+    "postedAt": "2026-10-11T21:03:29.000Z",
+    "postText": "本日、祝日営業。 9:00〜14:00 となります。  明日の火曜〜水曜定休 お休みを頂きますので、 宜しくお願い申し上げます",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-13",
+      "endDate": "2026-10-13",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
