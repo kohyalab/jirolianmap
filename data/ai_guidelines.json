@@ -2,6 +2,45 @@
   "generalRules": [],
   "learnedFeedback": [
     {
+      "id": "sns_post_routine_senjuohashi_2109417858505830611",
+      "timestamp": "2026-10-11T23:44:25.197Z",
+      "shopId": "senjuohashi",
+      "shopName": "千住大橋駅前店",
+      "postDate": "2026-10-11T22:56:23.000Z",
+      "postText": "ようやく熱も下がり今から仕込みに行けそうなので明日より通常通り営業いたします！皆様にご心配いただき大変申し訳御座いませんでした！",
+      "aiStatus": "no_change",
+      "aiReason": "体調不良からの復帰による通常営業再開の告知であり、臨時休業や時間変更の対象ではありません。",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-10-11",
+        "endDate": "2026-10-11",
+        "hours": [],
+        "reason": ""
+      }
+    },
+    {
+      "id": "sns_post_koshigaya_20261017_1_2109419882194628769",
+      "timestamp": "2026-10-11T23:43:07.051Z",
+      "shopId": "koshigaya",
+      "shopName": "越谷店",
+      "postDate": "2026-10-11T23:04:25.000Z",
+      "postText": "おはようございます。 ラーメン二郎越谷店です。  先日よりお知らせしていましたが、本日10月12日(月祝)お休みします。 ご来店予定だったお客様大変申し訳ございません。  10月17日(土)　臨時営業 10:00〜14:30LО よろしくお願いします🙇",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-10-17",
+        "endDate": "2026-10-17",
+        "hours": [
+          [
+            10,
+            14.5
+          ]
+        ],
+        "reason": ""
+      }
+    },
+    {
       "id": "sns_post_kameido_20261017_0_2109295053525192830",
       "timestamp": "2026-10-11T15:19:44.055Z",
       "shopId": "kameido",
