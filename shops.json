@@ -2982,7 +2982,7 @@
     "soupType": "",
     "renge": "",
     "takeout": "",
-    "hoursNotes": "土曜、祝日不定休、次回営業未定",
+    "hoursNotes": "土曜、祝日不定休",
     "remarks": "",
     "temporary": [
       {
@@ -2992,7 +2992,7 @@
       },
       {
         "startDate": "2026-10-09",
-        "endDate": null,
+        "endDate": "2026-10-12",
         "hours": [],
         "reason": "体調不良のため",
         "sourceUrl": "https://x.com/senjujirou26/status/2108414202369163497",
@@ -5295,6 +5295,19 @@
         "endDate": "2026-10-12",
         "hours": [],
         "sourceUrl": "https://x.com/ksgy26/status/2106861578889072684",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-17",
+        "endDate": "2026-10-17",
+        "hours": [
+          [
+            10,
+            14.5
+          ]
+        ],
+        "reason": "",
+        "sourceUrl": "https://x.com/ksgy26/status/2109419882194628769",
         "_isAiImported": true
       }
     ],
