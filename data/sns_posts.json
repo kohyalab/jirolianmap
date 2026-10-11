@@ -11713,5 +11713,34 @@
     "processedAt": "2026-10-09T09:09:49.151Z",
     "aiStatus": "match",
     "aiReason": "既に登録済みの臨時スケジュールと一致"
+  },
+  {
+    "id": "sns_post_kameido_20261017_0_2109295053525192830",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2109295053525192830",
+    "postedAt": "2026-10-11T14:48:24.000Z",
+    "postText": "お世話になってます。来週の17日(土)は当店スタッフY君の誕生日と当店の13.5周年ということで今年の周年限定で提供した「ゴマ味噌担々麺」をまたやります！前回は白と黒がありましたが今回は白のみです。そのかわり以前より濃厚になります✨営業時間も11時から20時まで休みなしの通し営業になります。 https://t.co/Xy5vEQ9dIl",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-UqOcsuqPXiZuf5A5Yb_kD9pI8KDMo2jLWEyMKNdXXp7iKyrSLRDM9Qq-Z-GSopFrwj1pvbBT0mgt3n6TSsimujGnzWih6nfUaZFvIXxQAuSCeiScSjxglzVb25ut9W0p5I3XZlFMd6191tXljUkJPg=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-17",
+      "endDate": "2026-10-17",
+      "hours": [
+        [
+          11,
+          20
+        ]
+      ],
+      "reason": "周年記念のため",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 周年記念のため"
   }
 ]
