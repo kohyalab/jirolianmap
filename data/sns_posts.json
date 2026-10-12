@@ -12354,5 +12354,39 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_kameido_2109534357958672628",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2109534357958672628",
+    "postedAt": "2026-10-12T06:39:18.000Z",
+    "postText": "この券売機も結構年季が入ってきましたね✨ https://t.co/mkVVtZq9oX",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Tvjaz8a8zZDAzXDtDqz-TzsWN2F46MotOIXP6Nmq2DmHAl7qxUqxMRIjCjyXIlQiWV-TdKEntJLSFGVtbdXFmjMo_phCbmgwMLIA2P4pF33RCU2g6zj_pTZ7yxEGfOCHFp_KEEVag2nHzAPU4t1ztw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-p_XPa9aUAwizLIcuBxCnyFr9BdqqkcGSNgfe0mNddBtzEF9UsRw2M4ggVskMU_i_3GObHpL1LLzee7NQ9w64G2a3hAoREck-H_NODa3tYFgOd6c55MDzWPI5odyl4SgJ7Ro9l7XZBoD6xlESQ7sqow==",
+      "https://video.twimg.com/amplify_video/2109534215511691264/pl/0t3ZJJxPzoG5XOpT.m3u8"
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2109535834064228524",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2109535834064228524",
+    "postedAt": "2026-10-12T06:45:10.000Z",
+    "postText": "いまいるひとでおわりです！ ごめんなさい！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
