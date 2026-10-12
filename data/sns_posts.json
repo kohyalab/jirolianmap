@@ -12437,5 +12437,24 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の案内であり、変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2109563691297566880",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2109563691297566880",
+    "postedAt": "2026-10-12T08:35:52.000Z",
+    "postText": "やはり夜もぼちぼちのスターティンなので、遅い時間は暇そうなので明日仕事行きたくない方のエナジーチャージに是非是非！！ https://t.co/zOfyHemb0W",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-KOBnUaY8OM9k4Skn4YY5sO_9rnGuGBH12D1SyXxxFhMBCJIDL0ConoZNm_Bhrb2Z1m0z5qwuhoXDjoWrPjyf9TUmqJphbZd9WAipOB825yoVX0Svko6E3HR9EhEKureNQAN3d8I46D6YI78mgchJWg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-3vya5Mksj4MYBqNxdWIFyjV3X3tCjP7nlXtJnSoAoH26iSjjRfBM4AaUj6iP80ahjmXt_ETgLZ7OuoKFMQ5rbafP5ATOb-m5jnY9ygVQaE5zmsjaEKrA5fPtaHk6IcaKymx8mVXzY1wmx0imDkxhbA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-1keNBrsHMg7GasbpF1PvgOT-cHqSGasaUuuKqRBxpSLDn0xgCGuDvWbcV_2zsB2gnrQ7DXUB7t6dnVoe1P_uRgo8sJt0dqecCEpNMFrDJgED7PEqvFnZ8mfBU3rq-u40ZR05w97HIL-5DiPOQ2_4sw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更や臨時休業に関する言及はありません。"
   }
 ]
