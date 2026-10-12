@@ -12753,5 +12753,20 @@
     "processedAt": null,
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_daily_kameido_2109652280442339378",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2109652280442339378",
+    "postedAt": "2026-10-12T14:27:53.000Z",
+    "postText": "もしナデシコに興味が会って劇場版を見に行こうとしてる人がいたら悪いことは言わないのでテレビシリーズ見てからにしましょう ( ◜◡◝ ) https://t.co/n8toMQorm2",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
