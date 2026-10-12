@@ -2,6 +2,28 @@
   "generalRules": [],
   "learnedFeedback": [
     {
+      "id": "sns_post_asakuragaido_20261012_0_2109468940967846255",
+      "timestamp": "2026-10-12T11:11:25.417Z",
+      "shopId": "asakuragaido",
+      "shopName": "朝倉街道駅前店",
+      "postDate": "2026-10-12T02:19:22.000Z",
+      "postText": "本日12:00-15:00営業いたします。 西鉄ストア様、西日本シティ銀行様、他店舗病院等駐車禁止 空いていても一般的なコインパーキングをご利用下さい。 グループの方は歩道を塞がずお静かにお願いします。 代表待ち、割込み、飲酒喫煙禁止 朝倉街道駅徒歩1分、天拝山駅7分",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-10-12",
+        "endDate": "2026-10-12",
+        "hours": [
+          [
+            12,
+            15
+          ]
+        ],
+        "reason": ""
+      }
+    },
+    {
       "id": "sns_post_routine_senjuohashi_2109417858505830611",
       "timestamp": "2026-10-11T23:44:25.197Z",
       "shopId": "senjuohashi",
