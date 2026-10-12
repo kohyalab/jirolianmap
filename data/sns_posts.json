@@ -12768,5 +12768,20 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_ogikubo_2109749805379731665",
+    "shopId": "ogikubo",
+    "shopName": "荻窪店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ogkb_jiro/status/2109749805379731665",
+    "postedAt": "2026-10-12T20:55:25.000Z",
+    "postText": "10月13日（火） 昼11:30〜14:00頃 夜18:00〜21:00頃までです",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常通りの営業案内です。"
   }
 ]
