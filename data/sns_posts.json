@@ -12217,5 +12217,22 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2109487041927135234",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2109487041927135234",
+    "postedAt": "2026-10-12T03:31:17.000Z",
+    "postText": "夜が暇な事多いのでと言ってたのですが、既に列切れて暇なうです笑笑 三連休読めないw  お昼ご飯まだな方是非どうぞー！！ テイクアウトも是非！！ https://t.co/u1XwjxaOcT https://t.co/urTpENEm84",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-P8dyaZaMJH-g47ZelteeKDoZCe_ceUycfsYkUAs7Ngq7vnEgl7MI3MiFZsuFjpPYqdgMuc5V5-wv2oWCvDqjjTYDa7RG4SUwhiYMXQxGe5UjArHaG2FdXgPPuUkLTd9FGSPw0rhGHdQ9OZmYIpiQlw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業状況に関する言及はあるものの、具体的な営業時間変更や休業の告知ではないため変更なし。"
   }
 ]
