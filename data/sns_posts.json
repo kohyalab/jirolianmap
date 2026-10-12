@@ -12261,5 +12261,56 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2109496661399744720",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2109496661399744720",
+    "postedAt": "2026-10-12T04:09:31.000Z",
+    "postText": "只今混雑無くなりました！ どうぞー♪🈳🈳🈳  ［まかない］最終です！  →15:00ご来店ご到着お並びのお客様まで営業致します🈺 https://t.co/pxnrETCmk2",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-78_hp4toCmsoAvI3hstOX36iGM1UoOCw0blr6RZnt3TMFSPFVvizoz-8WvN7oOit9uqmLULrO_Y8pkaUz2uUKYNyDT4JdH7aSGUemlHylBrq1qCPubR2HmM7hoLC_2pgXRzTAS0ngVLRUWti2EArrg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-E3kFm2pqq6RdM0-J7RewOvvry8k4OF7FrB_AvBk3-jzlCc9NYmD5O204IA65YaKCPh1ibzVmA1ggmpANCS9z050wVm0TZNpHIgt65AsAec6jLlis7FyF1iDOuvYGsGds58ui-bua1aCy28HFP9tryA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-bSzygp86MIn0m3LfyWPY1Z-KG8uKgoUVhYTwiy-eB85f9wJ7tpTZrShJTFER4DVO1XFbHObbKvPAhJyVB6NCcDORsGz_MQpSCgevFBTtL40hpe9ZUhCUvmNRKtr91-JHA4pqkqtvB_yBXSXFzGdStA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-HeCTztBR79eSs4ZMXzeJnpuUxhzG7KK8OZio6CJj7szVAvPBl9qKySWRviJdyaTzepab93jxT4PUSUrSwgYU2MldXdKPe7ZAOPrj5FXhEpYRAqLZwtIsaXzL0tq8ScvRHI9XnF6W2BM5MIPdSbYQMA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定メニューの告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_mejirodai_20261012_0_2109502236967702596",
+    "shopId": "mejirodai",
+    "shopName": "めじろ台店",
+    "postSource": "x",
+    "postUrl": "https://x.com/mejirodai_jiro/status/2109502236967702596",
+    "postedAt": "2026-10-12T04:31:40.000Z",
+    "postText": "ただ今お並びの方で昼営業は終了となります 申し訳ありません 夜は17時半からととなりますのでよろしくお願いします",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-12",
+      "hours": [
+        [
+          11,
+          13.516666666666667
+        ],
+        [
+          17.5,
+          20.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
