@@ -12088,8 +12088,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-12T11:13:21.267Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   },
@@ -12103,8 +12103,8 @@
     "postText": "おはようございます！ 高菜まだありますので 今日もご希望の方は「アレ」でお願いします！ 煮干しの波動も納豆も まだまだあります。",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-12T11:13:21.267Z",
     "aiStatus": "no_change",
     "aiReason": "日常的なトッピング告知であり、営業時間の変更はありません。"
   },
@@ -12118,8 +12118,8 @@
     "postText": "12日昼夜とも通常営業です 連休最終日の夜の部後半はまったり傾向 どうぞ宜しくお願いします",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-12T11:13:21.267Z",
     "aiStatus": "no_change",
     "aiReason": "10月12日(月)は通常営業である旨の告知。"
   },
@@ -12137,8 +12137,8 @@
       "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-cIM-FZXz30wS_ev-2mWM8Bq_HVe-ks1KCawP2Yk0Z7Y5ka5JySrJ3HwtGJ7ewHd9cinbAA3wjfPY73h5rdbj-59HkZ3z5VShTSewrKB0nAbNf6Gruch4yY4DsmssGPejCB4vrsm6Z6q47mstVnhcvQ=="
     ],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-12T11:13:21.267Z",
     "aiStatus": "no_change",
     "aiReason": "営業時間の変更に関する言及はなく、通常営業の案内です。"
   },
@@ -12171,8 +12171,8 @@
       "reason": "特別営業",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-12T11:13:21.267Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 特別営業"
   },
@@ -12186,8 +12186,8 @@
     "postText": "本日、12日の 肩ロース、切り落としは 売り切れました。",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-12T11:13:21.267Z",
     "aiStatus": "no_change",
     "aiReason": "日常的な販売状況の告知であり、営業時間の変更はありません。"
   },
@@ -12213,8 +12213,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-12T11:13:21.267Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   },
@@ -12230,8 +12230,8 @@
       "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-P8dyaZaMJH-g47ZelteeKDoZCe_ceUycfsYkUAs7Ngq7vnEgl7MI3MiFZsuFjpPYqdgMuc5V5-wv2oWCvDqjjTYDa7RG4SUwhiYMXQxGe5UjArHaG2FdXgPPuUkLTd9FGSPw0rhGHdQ9OZmYIpiQlw=="
     ],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-12T11:13:21.267Z",
     "aiStatus": "no_change",
     "aiReason": "営業状況に関する言及はあるものの、具体的な営業時間変更や休業の告知ではないため変更なし。"
   },
@@ -12257,8 +12257,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-12T11:13:21.267Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   },
@@ -12277,8 +12277,8 @@
       "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-HeCTztBR79eSs4ZMXzeJnpuUxhzG7KK8OZio6CJj7szVAvPBl9qKySWRviJdyaTzepab93jxT4PUSUrSwgYU2MldXdKPe7ZAOPrj5FXhEpYRAqLZwtIsaXzL0tq8ScvRHI9XnF6W2BM5MIPdSbYQMA=="
     ],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-12T11:13:21.267Z",
     "aiStatus": "no_change",
     "aiReason": "限定メニューの告知であり、営業時間の変更はありません。"
   },
@@ -12308,8 +12308,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-12T11:13:21.267Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   },
@@ -12335,8 +12335,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-12T11:13:21.267Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   },
@@ -12350,8 +12350,8 @@
     "postText": "まだやってます！ https://t.co/6XsJTiAAvH",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-12T11:13:21.267Z",
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   },
@@ -12369,8 +12369,8 @@
       "https://video.twimg.com/amplify_video/2109534215511691264/pl/0t3ZJJxPzoG5XOpT.m3u8"
     ],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-12T11:13:21.267Z",
     "aiStatus": "no_change",
     "aiReason": "営業情報の変更に関する言及はありません。"
   },
@@ -12384,8 +12384,8 @@
     "postText": "いまいるひとでおわりです！ ごめんなさい！",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-12T11:13:21.267Z",
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   },
@@ -12399,8 +12399,8 @@
     "postText": "こんにちは！本日17時から21時の夜営業です。いつもと違う麺で営業します（無くなったらいつもの麺になります）  秋刀魚の出汁を使ったラーメン「三冠王」あります。ヤサイの代わりにネギがのります。 コールはネギ増し、ニンニク少しが可能です。",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-12T11:13:21.267Z",
     "aiStatus": "no_change",
     "aiReason": "本日10/12(月)の夜営業に関する告知ですが、営業時間の変更はなく通常通り（17:00-23:00）の範囲内であるため変更なしと判定します。"
   },
@@ -12416,8 +12416,8 @@
       "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-04n0YXk8maymCx8-7DujwSftq54e1a9USuc7Cjfvq5HNDaqKo3_JKq74TZUkeYLoobqb301wKUBGLEknmeKUp7dX1FMPDAWgDIKDmYqKgNrJqptgAbTN7ibXOdo_JowZPXOunbC75E6-bAdqWBHWtQ=="
     ],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-12T11:13:21.267Z",
     "aiStatus": "no_change",
     "aiReason": "営業時間の変更に関する言及はなく、日常的な投稿であるため変更なしと判定しました。"
   },
@@ -12433,8 +12433,8 @@
       "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-SX9dbNQm90zxB8mS2delisHOOj7RTgCn7IuXQVS_K8gRp_B2YOfKzXD6GJQjmvZuqmE5duSq_s5tyDPLkkvVgc2DoIhVuXjSv8e30bsKgP1aGhjSfdAycrnsGACbLB3kcgshABVw_38UNyeOwyCegg=="
     ],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-12T11:13:21.267Z",
     "aiStatus": "no_change",
     "aiReason": "通常営業の案内であり、変更はありません。"
   },
@@ -12452,8 +12452,8 @@
       "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-1keNBrsHMg7GasbpF1PvgOT-cHqSGasaUuuKqRBxpSLDn0xgCGuDvWbcV_2zsB2gnrQ7DXUB7t6dnVoe1P_uRgo8sJt0dqecCEpNMFrDJgED7PEqvFnZ8mfBU3rq-u40ZR05w97HIL-5DiPOQ2_4sw=="
     ],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-12T11:13:21.267Z",
     "aiStatus": "no_change",
     "aiReason": "営業時間の変更や臨時休業に関する言及はありません。"
   }
