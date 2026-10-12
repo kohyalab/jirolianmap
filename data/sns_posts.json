@@ -12141,5 +12141,54 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業時間の変更に関する言及はなく、通常営業の案内です。"
+  },
+  {
+    "id": "sns_post_tachikawa_20261013_0_2109461989001228517",
+    "shopId": "tachikawa",
+    "shopName": "立川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jirotachikawa/status/2109461989001228517",
+    "postedAt": "2026-10-12T01:51:44.000Z",
+    "postText": "10/12(月)、祝日でも時間内売り切れなし営業です。 明日は火曜定休の特別営業！  昼11:00-14:30 夜17:00-21:30  ①「赤」は辛いラーメン。 +汁なし変更券で、辛い汁なしもできます。  ②持帰りラーメン販売します。 　標準:2人前のスープと生麺+ブタハーフ  ③持ち帰り一本豚、3連休中は休止します。 https://t.co/6a8kcB3o9f",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-G6RtctAoHE6FsNdo4v4NLvAt6HeR8QTzL5srk0g0LdOVGV3NJ14rVlqDWxe4lGzZDrNABb33Gzt4NxiGZe3yQtJuNako0-XA6M7u76DdKDUGgLACjEaZ2WIYXfJI80C1VDWlUayPqprxjLjE-oTWcg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-jMjquZ-nS_avOO3bKVM5CRBnALqjTBkIWxHlQDRPOEOnVcPGhEXsFGlgngNeiK_oeykLPuWqFBXflA2qEZisIV0vwH5lIzdXDBjkdyIDAxMzg49zLlLroNOra4Mhz7b4EKbGxlT38-CBCwxnHMI62g=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-10-13",
+      "endDate": "2026-10-13",
+      "hours": [
+        [
+          11,
+          14.5
+        ],
+        [
+          17,
+          21.5
+        ]
+      ],
+      "reason": "特別営業",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 特別営業"
+  },
+  {
+    "id": "sns_post_routine_nishidai_2109463402271916359",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2109463402271916359",
+    "postedAt": "2026-10-12T01:57:21.000Z",
+    "postText": "本日、12日の 肩ロース、切り落としは 売り切れました。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常的な販売状況の告知であり、営業時間の変更はありません。"
   }
 ]
