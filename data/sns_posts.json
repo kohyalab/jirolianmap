@@ -12829,5 +12829,193 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業時間の案内であり、変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_yaen2_2109788819927212239",
+    "shopId": "yaen2",
+    "shopName": "八王子野猿街道店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/Jiro_Yaenkaido2/status/2109788819927212239",
+    "postedAt": "2026-10-12T23:30:27.000Z",
+    "postText": "10月13日(火) 11:00～15:00 17:30～21:00 ⭐テイクアウト、鍋二郎あります 並ばず買えます エビドクロテイクアウト現金 ⚠️駐車場待ち出来ません ⚠️駐車場満車時コインパーキングに ⚠️店舗近隣タバコ禁止  🌟きまぐれたまご かつおちゃん https://t.co/u4GMB97oTi",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-aJnH_yRa7J_0Jst2C3SIkc_L1F3-kiqwBESun6FZ9gheOf_UVxE--sdVWmCi0wHvmkt1tUdJ33yPvyl2ly088AatSSEFDvvc1NPOVpxJESoQlLv7UbiRLeru41zTICXmKz_KTwSWO_A5WLuPVlp51A==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-yL1tcQpeStydQYqQ2r2OdpVUGm789umnEuORSiE4q9ke_eWO8u6OZmvvNS5gzpH6hfVbtHqO_9yw7b7TyphBQfvKw_PCfAMZIXkKgMtC9_vGSMoMketw54aoEft2rJZSsQv74U6457OxGGQgqGDAEA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-iP9VHOxgecAh8BZJ6HK5VrrU8K9xump2BWKg8tZEiCajt52T745vQKwcETuQCjokaXJCvSO67kPDijDCFDNoi8_RqCaM6rsb01UNwX61o4YURcUFvZlJV8P-7lc4FkRiQi12PH-X3EpZ_yCRogUCgw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業時間の案内であり、変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2109786766274363726",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2109786766274363726",
+    "postedAt": "2026-10-12T23:22:17.000Z",
+    "postText": "【価格改定】  今まで［本日のしょうが］枠だった［相撲部屋のしょうがダレ］も独立して価格を改定（増量あり）させて頂きます。 相変わらずのご贔屓を賜りますよう、よろしくお願い致します。  こちらも明日より販売致します。 https://t.co/NFrVWBTC25",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ma4c0-E8ow3devqHByIXJBQp-QmAcvSJpyWn9150yAbi2xABwn-Xx8HfAqGzFQk9xxf5pMChBDzYpdf2cQ2bL90xW5k7gzLgaOmywqHdT6RE0FhDvsu9xSAMAMay0oEP7jboLf1WJvNdVJnDyCP0Fg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-H72-hCJRWs1_OkdbBtPIV2u5oZvim3FDT_8K5uClUysI2SFBVTcTpAvrOmITKxYYwWXPKNH_MJ9By529U6qYvRQJUZmvbs3gcYuH6afmpxVq2UNqr84o8EWCHD3uDlnH6J7Z-KDY9G-CTEIVH7j7zA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-p590gzbBwAXQPFok-ulcI9UTDk6fmnXxhMP4IuOtvNQZY4dLDnHt-bxKGgWuzacXHqpXXED1kwdISsMcr63UfsDGLAmVyV0EepnP63mtdLLvQnJbJ6MBPd6DO8wHqIlJqC1TuNbA9K5dGkeUeNyksw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの価格改定に関する告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261013_0_2109784678618292308",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2109784678618292308",
+    "postedAt": "2026-10-12T23:13:59.000Z",
+    "postText": "◆10/13（火）【臨時休業】 ◇10/14（水）［昼夜］ ◇10/15（木）［昼のみ］ ◇10/16（金）［夜のみ］ ◇10/17（土）10→15時  ◆10/18（日）【臨時休業】 ◆10/19（月）【定休】  →今週！ ［温かいまかない汁あり！］販売致します！  →［お椀で和ッカレー］ 一軍昇格です♪こちらになります。 https://t.co/2DZXXyjrK4",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-P1B1gB6UjkcvDMTxWC_-8MFIcDGdOg6I2aL9tu873yWDNmzM-CfwDy1VOhwRPUPZO4LDsW-jA-isAKGvdivxJmSwcQkxsunGldr56Ub1mCLsoH-plBCFwW8S1YpKQ5iq9ogN-V-YcJI_5y3rOE0OUg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-q_eqa6aK4p2r8O_dNc0qIwHuO9NK8BgvneQ3rvtxlE6ROM4Y_b5vVHBUrioEOBlDPC7kBFF3Xt4RsqVkvz-3AmTt_GKCAIfxNXtrIhFE2plP4evxtKZAKZV9GX7X2xzK6VAetnIYXlw0woWqnyadEA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-_uJRPlHX2JuGn1TkpkhqEwsQu96XQcR-DTIh0he-qBIy0ORNYBEPm_iBXMF7mPgZQsvYSYqgD53EybMEAqjZAYHNAPhQNFH5joYFITQgnzLMceR-lauxMtxI06AryOgUVsTmbuT3Clpl2_E9CZWBFA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ZKRxKfFrPM96Y3VAZnZyUk__Wzrx2WTpihHZGHC1ltYAlamDRELTmCoiNz_TThXqP_0JaKiqR59wjLqs2IyCBgYxXLcROfChr5s8BVEvC0S1RtVjFJKEZZRITQ83QaG4kn66bNRtl9pbbknZ4COyHA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-13",
+      "endDate": "2026-10-13",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261015_1_2109784678618292308",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2109784678618292308",
+    "postedAt": "2026-10-12T23:13:59.000Z",
+    "postText": "◆10/13（火）【臨時休業】 ◇10/14（水）［昼夜］ ◇10/15（木）［昼のみ］ ◇10/16（金）［夜のみ］ ◇10/17（土）10→15時  ◆10/18（日）【臨時休業】 ◆10/19（月）【定休】  →今週！ ［温かいまかない汁あり！］販売致します！  →［お椀で和ッカレー］ 一軍昇格です♪こちらになります。 https://t.co/2DZXXyjrK4",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-P1B1gB6UjkcvDMTxWC_-8MFIcDGdOg6I2aL9tu873yWDNmzM-CfwDy1VOhwRPUPZO4LDsW-jA-isAKGvdivxJmSwcQkxsunGldr56Ub1mCLsoH-plBCFwW8S1YpKQ5iq9ogN-V-YcJI_5y3rOE0OUg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-q_eqa6aK4p2r8O_dNc0qIwHuO9NK8BgvneQ3rvtxlE6ROM4Y_b5vVHBUrioEOBlDPC7kBFF3Xt4RsqVkvz-3AmTt_GKCAIfxNXtrIhFE2plP4evxtKZAKZV9GX7X2xzK6VAetnIYXlw0woWqnyadEA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-_uJRPlHX2JuGn1TkpkhqEwsQu96XQcR-DTIh0he-qBIy0ORNYBEPm_iBXMF7mPgZQsvYSYqgD53EybMEAqjZAYHNAPhQNFH5joYFITQgnzLMceR-lauxMtxI06AryOgUVsTmbuT3Clpl2_E9CZWBFA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ZKRxKfFrPM96Y3VAZnZyUk__Wzrx2WTpihHZGHC1ltYAlamDRELTmCoiNz_TThXqP_0JaKiqR59wjLqs2IyCBgYxXLcROfChr5s8BVEvC0S1RtVjFJKEZZRITQ83QaG4kn66bNRtl9pbbknZ4COyHA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-15",
+      "endDate": "2026-10-15",
+      "hours": [
+        [
+          10.333333333333334,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261016_2_2109784678618292308",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2109784678618292308",
+    "postedAt": "2026-10-12T23:13:59.000Z",
+    "postText": "◆10/13（火）【臨時休業】 ◇10/14（水）［昼夜］ ◇10/15（木）［昼のみ］ ◇10/16（金）［夜のみ］ ◇10/17（土）10→15時  ◆10/18（日）【臨時休業】 ◆10/19（月）【定休】  →今週！ ［温かいまかない汁あり！］販売致します！  →［お椀で和ッカレー］ 一軍昇格です♪こちらになります。 https://t.co/2DZXXyjrK4",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-P1B1gB6UjkcvDMTxWC_-8MFIcDGdOg6I2aL9tu873yWDNmzM-CfwDy1VOhwRPUPZO4LDsW-jA-isAKGvdivxJmSwcQkxsunGldr56Ub1mCLsoH-plBCFwW8S1YpKQ5iq9ogN-V-YcJI_5y3rOE0OUg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-q_eqa6aK4p2r8O_dNc0qIwHuO9NK8BgvneQ3rvtxlE6ROM4Y_b5vVHBUrioEOBlDPC7kBFF3Xt4RsqVkvz-3AmTt_GKCAIfxNXtrIhFE2plP4evxtKZAKZV9GX7X2xzK6VAetnIYXlw0woWqnyadEA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-_uJRPlHX2JuGn1TkpkhqEwsQu96XQcR-DTIh0he-qBIy0ORNYBEPm_iBXMF7mPgZQsvYSYqgD53EybMEAqjZAYHNAPhQNFH5joYFITQgnzLMceR-lauxMtxI06AryOgUVsTmbuT3Clpl2_E9CZWBFA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ZKRxKfFrPM96Y3VAZnZyUk__Wzrx2WTpihHZGHC1ltYAlamDRELTmCoiNz_TThXqP_0JaKiqR59wjLqs2IyCBgYxXLcROfChr5s8BVEvC0S1RtVjFJKEZZRITQ83QaG4kn66bNRtl9pbbknZ4COyHA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-16",
+      "endDate": "2026-10-16",
+      "hours": [
+        [
+          17,
+          20.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261017_3_2109784678618292308",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2109784678618292308",
+    "postedAt": "2026-10-12T23:13:59.000Z",
+    "postText": "◆10/13（火）【臨時休業】 ◇10/14（水）［昼夜］ ◇10/15（木）［昼のみ］ ◇10/16（金）［夜のみ］ ◇10/17（土）10→15時  ◆10/18（日）【臨時休業】 ◆10/19（月）【定休】  →今週！ ［温かいまかない汁あり！］販売致します！  →［お椀で和ッカレー］ 一軍昇格です♪こちらになります。 https://t.co/2DZXXyjrK4",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-P1B1gB6UjkcvDMTxWC_-8MFIcDGdOg6I2aL9tu873yWDNmzM-CfwDy1VOhwRPUPZO4LDsW-jA-isAKGvdivxJmSwcQkxsunGldr56Ub1mCLsoH-plBCFwW8S1YpKQ5iq9ogN-V-YcJI_5y3rOE0OUg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-q_eqa6aK4p2r8O_dNc0qIwHuO9NK8BgvneQ3rvtxlE6ROM4Y_b5vVHBUrioEOBlDPC7kBFF3Xt4RsqVkvz-3AmTt_GKCAIfxNXtrIhFE2plP4evxtKZAKZV9GX7X2xzK6VAetnIYXlw0woWqnyadEA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-_uJRPlHX2JuGn1TkpkhqEwsQu96XQcR-DTIh0he-qBIy0ORNYBEPm_iBXMF7mPgZQsvYSYqgD53EybMEAqjZAYHNAPhQNFH5joYFITQgnzLMceR-lauxMtxI06AryOgUVsTmbuT3Clpl2_E9CZWBFA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ZKRxKfFrPM96Y3VAZnZyUk__Wzrx2WTpihHZGHC1ltYAlamDRELTmCoiNz_TThXqP_0JaKiqR59wjLqs2IyCBgYxXLcROfChr5s8BVEvC0S1RtVjFJKEZZRITQ83QaG4kn66bNRtl9pbbknZ4COyHA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-17",
+      "endDate": "2026-10-17",
+      "hours": [
+        [
+          10,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261018_4_2109784678618292308",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2109784678618292308",
+    "postedAt": "2026-10-12T23:13:59.000Z",
+    "postText": "◆10/13（火）【臨時休業】 ◇10/14（水）［昼夜］ ◇10/15（木）［昼のみ］ ◇10/16（金）［夜のみ］ ◇10/17（土）10→15時  ◆10/18（日）【臨時休業】 ◆10/19（月）【定休】  →今週！ ［温かいまかない汁あり！］販売致します！  →［お椀で和ッカレー］ 一軍昇格です♪こちらになります。 https://t.co/2DZXXyjrK4",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-P1B1gB6UjkcvDMTxWC_-8MFIcDGdOg6I2aL9tu873yWDNmzM-CfwDy1VOhwRPUPZO4LDsW-jA-isAKGvdivxJmSwcQkxsunGldr56Ub1mCLsoH-plBCFwW8S1YpKQ5iq9ogN-V-YcJI_5y3rOE0OUg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-q_eqa6aK4p2r8O_dNc0qIwHuO9NK8BgvneQ3rvtxlE6ROM4Y_b5vVHBUrioEOBlDPC7kBFF3Xt4RsqVkvz-3AmTt_GKCAIfxNXtrIhFE2plP4evxtKZAKZV9GX7X2xzK6VAetnIYXlw0woWqnyadEA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-_uJRPlHX2JuGn1TkpkhqEwsQu96XQcR-DTIh0he-qBIy0ORNYBEPm_iBXMF7mPgZQsvYSYqgD53EybMEAqjZAYHNAPhQNFH5joYFITQgnzLMceR-lauxMtxI06AryOgUVsTmbuT3Clpl2_E9CZWBFA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ZKRxKfFrPM96Y3VAZnZyUk__Wzrx2WTpihHZGHC1ltYAlamDRELTmCoiNz_TThXqP_0JaKiqR59wjLqs2IyCBgYxXLcROfChr5s8BVEvC0S1RtVjFJKEZZRITQ83QaG4kn66bNRtl9pbbknZ4COyHA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-18",
+      "endDate": "2026-10-18",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
