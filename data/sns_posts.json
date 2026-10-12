@@ -12388,5 +12388,20 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_kyoto_2109545974142222660",
+    "shopId": "kyoto",
+    "shopName": "京都店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kyoto/status/2109545974142222660",
+    "postedAt": "2026-10-12T07:25:28.000Z",
+    "postText": "こんにちは！本日17時から21時の夜営業です。いつもと違う麺で営業します（無くなったらいつもの麺になります）  秋刀魚の出汁を使ったラーメン「三冠王」あります。ヤサイの代わりにネギがのります。 コールはネギ増し、ニンニク少しが可能です。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "本日10/12(月)の夜営業に関する告知ですが、営業時間の変更はなく通常通り（17:00-23:00）の範囲内であるため変更なしと判定します。"
   }
 ]
