@@ -12403,5 +12403,39 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "本日10/12(月)の夜営業に関する告知ですが、営業時間の変更はなく通常通り（17:00-23:00）の範囲内であるため変更なしと判定します。"
+  },
+  {
+    "id": "sns_post_routine_kameido_2109551382760222796",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2109551382760222796",
+    "postedAt": "2026-10-12T07:46:57.000Z",
+    "postText": "夜の部は店主のアニソンプレイリストが火を吹きます🔥 https://t.co/5yDFoy0OpE https://t.co/rXvKDzDBxs",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-04n0YXk8maymCx8-7DujwSftq54e1a9USuc7Cjfvq5HNDaqKo3_JKq74TZUkeYLoobqb301wKUBGLEknmeKUp7dX1FMPDAWgDIKDmYqKgNrJqptgAbTN7ibXOdo_JowZPXOunbC75E6-bAdqWBHWtQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更に関する言及はなく、日常的な投稿であるため変更なしと判定しました。"
+  },
+  {
+    "id": "sns_post_routine_kameido_2109548127007150406",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2109548127007150406",
+    "postedAt": "2026-10-12T07:34:01.000Z",
+    "postText": "お世話になってます。三連休最終日です！連休最後の締めを二郎で締めくくるのもなかなか乙ではないでしょうか？笑 夜の部も17時からオープンです！ https://t.co/Amt1jhN4Bv",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-SX9dbNQm90zxB8mS2delisHOOj7RTgCn7IuXQVS_K8gRp_B2YOfKzXD6GJQjmvZuqmE5duSq_s5tyDPLkkvVgc2DoIhVuXjSv8e30bsKgP1aGhjSfdAycrnsGACbLB3kcgshABVw_38UNyeOwyCegg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内であり、変更はありません。"
   }
 ]
