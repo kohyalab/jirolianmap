@@ -2,6 +2,40 @@
   "generalRules": [],
   "learnedFeedback": [
     {
+      "id": "sns_post_kawagoe_20261014_1_2109796037225533469",
+      "timestamp": "2026-10-13T15:27:24.774Z",
+      "shopId": "kawagoe",
+      "shopName": "川越店",
+      "postDate": "2026-10-12T23:59:08.000Z",
+      "postText": "１０月１３日(火) １０月１４日(水)はおやすみします。",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-10-14",
+        "endDate": "2026-10-14",
+        "hours": [],
+        "reason": ""
+      }
+    },
+    {
+      "id": "sns_post_kawagoe_20261013_0_2109796037225533469",
+      "timestamp": "2026-10-13T15:27:19.697Z",
+      "shopId": "kawagoe",
+      "shopName": "川越店",
+      "postDate": "2026-10-12T23:59:08.000Z",
+      "postText": "１０月１３日(火) １０月１４日(水)はおやすみします。",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-10-13",
+        "endDate": "2026-10-13",
+        "hours": [],
+        "reason": ""
+      }
+    },
+    {
       "id": "sns_post_asakuragaido_20261012_0_2109468940967846255",
       "timestamp": "2026-10-12T11:11:25.417Z",
       "shopId": "asakuragaido",
