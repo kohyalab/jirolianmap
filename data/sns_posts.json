@@ -13371,5 +13371,39 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の案内および限定メニューの告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_kameido_2109912188211360041",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2109912188211360041",
+    "postedAt": "2026-10-13T07:40:40.000Z",
+    "postText": "最近うちのスタッフにリポビタンDを差し入れしたらエナドリよりも効く！とのこと。やはりリポビタンDは最強！今こそエナドリの代わりにリポビタンDを！ https://t.co/mVs92CaGBJ",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-SS3rx9cHExKx5yzXu37OHT59aM4N9i11dDmQhaJ7yM97EKzJq-vucAfkXFcHCKn3KWoXdPX8P01mU-V4PRiBkzofMbg0H-8_rWLjb420a2hlVyS0BtKSN-2x_sOJDJXICp58liY3UbJTlMaGAsySIw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業変更なし（通常通り営業・雑談等）"
+  },
+  {
+    "id": "sns_post_routine_kameido_2109910494245208323",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2109910494245208323",
+    "postedAt": "2026-10-13T07:33:56.000Z",
+    "postText": "お世話になってます。本日も夜の部17時から開店です！お気に入りのTシャツ着て皆様のご来店お待ちしております✨ https://t.co/ro64eMkjW9",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-eR8czy-NVgMSxxdqkiMGlasH5TIY-iw9RnaNBChjHqQ3sU6NXQmRucJQDTFpr_kjX50eu0sr7lPlxSPVj9CdK1QdnqDWJkm1W6ZACjHJ_6aDT_u5i8JVe3VlO7ad7DVqcWVj9doyeuqEP8siq1xvSA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内であり、変更はありません。"
   }
 ]
