@@ -13306,5 +13306,40 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の案内であり、変更はありません。"
+  },
+  {
+    "id": "sns_post_daily_kannai_2109892556549136650",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2109892556549136650",
+    "postedAt": "2026-10-13T06:22:40.000Z",
+    "postText": "こんにちは。 煮干しの波動追加で 作れました！ 宜しくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_nishidai_2109889356198818095",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2109889356198818095",
+    "postedAt": "2026-10-13T06:09:57.000Z",
+    "postText": "こんにちは。 本日、13日、夜の部に  FZ味付き肩ロース ¥2200×2、¥2100×1 、¥1700×1 の４本あります。 https://t.co/q4dUVcnyDc",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-fdPBq9dqmGYMpGS_HXuChDPXT6l5_U1vTo6VB-Vh60kCMpHZrHXuud792movSxOxI1pEIXnvQkqPhvTxV72RnKY-EuUO5JFwHDHJF2adDAPhaF4Cr7Un_FnMpUWbJ5UDsTR55zXVa5gw17fE9kWf_w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-kDkJE-pCkgBTP6lzyBDDt6SPQidgQZIZnrzmawEX56Ouq7EiOaZwr9DkxgzIP5ZwH0EhHgeJFhM-_YNqdH9M6_JpZj6_CElvsBVmLWY31WeS_EOEsFbk5LGaX_pFdIO_wYRkRS0GbakmMHzkuSbrnw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-yeryeKXiSmL75gfTfkkwPpvkfH8kAwyMvZ9qZwpq22WkhiU2QcqG_auADUpedu8sw7NGS46U4tRq0V_z4Q87vtv-Bk2rE7A956TFZa88v9944f9Jpk1ueO-H1Syny9D9Kob45QhsHQAwOKeDbdAKVg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Tp3IWn_tirXgMJHYc6OFUIMplUp5Vs01oA5Da-wErXkV8oprU0MwKEeSJCgKGq705rIdaSLUHtLKhpPav5OMyVtgVkVfoC4kBB0lnrYfOPT9hQMyhR6W6GVc97gOkgaT53ChfA2lNDm2xB06APZc0Q=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "本日の営業に関する言及はなく、限定商品の販売告知のみであるため変更なし。"
   }
 ]
