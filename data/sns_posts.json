@@ -13080,5 +13080,23 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_tachikawa_2109799647523037518",
+    "shopId": "tachikawa",
+    "shopName": "立川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jirotachikawa/status/2109799647523037518",
+    "postedAt": "2026-10-13T00:13:28.000Z",
+    "postText": "10/13(火)、特別営業です。 昼11:00-14:30 夜17:00-21:30  ①塩汁なし 　特別営業の本日限定！  ②塩煮干し汁なし  ①②ともに茶色い券(通常の汁なし券)は 不要です。  生玉子は別売りになります。  ③連休に続き、持ち帰り豚は休止中です。 https://t.co/RIff3zjJx3",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-w5usYbrL9IqCIWgV1LoNsH0M7XuaYaJKr_V2NMDC9p3bVtJMuBjcydAl1jr4yEIl2J2Ag83XLZh3nU2R7XDgE0fV9m-f5GTzxvpqYCx9GVD-behnJrTyjP0a7FE_xyBVZnNUKnedMm0rTNOkx8k1_A==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-bSn1F094RhOXcfmlnXGf5lnO3fScbw--did1kQflL33-BNLMVuV0TAC6ebe08X9oiDP1Rdj-hVH0JJTQp9WprHbFzlQFZ9MJ28EpAv0wMpjckPUDYduVMYxUQCjJEABb5C79PYSzXCOigiSsfP1fzQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "10/13(火)は特別営業の告知ですが、提示された営業時間は通常営業時間と同一であるため、スケジュール変更としては登録しません。"
   }
 ]
