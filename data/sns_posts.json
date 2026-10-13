@@ -13131,33 +13131,6 @@
     "aiReason": "営業時間の変更を検出"
   },
   {
-    "id": "sns_post_sapporo_20261014_1_2109805309778964623",
-    "shopId": "sapporo",
-    "shopName": "札幌店",
-    "postSource": "x",
-    "postUrl": "https://x.com/jiro_sapporo_/status/2109805309778964623",
-    "postedAt": "2026-10-13T00:35:58.000Z",
-    "postText": "10月13日(火)通常営業です🍜  昼の部12:30〜14:00  「魚介風汁なし」、「魚介風ラーメン」 合わせて対応します。 🐟🐚🌪️  プラス現金１００円  必ず、スタッフ確認時に申告して下さい。  明日14日(水)昼営業のみです。(夜休業)",
-    "mediaUrls": [],
-    "detectedChange": {
-      "type": "temporary_hours",
-      "startDate": "2026-10-14",
-      "endDate": "2026-10-14",
-      "hours": [
-        [
-          11,
-          14
-        ]
-      ],
-      "reason": "",
-      "confidence": 1
-    },
-    "processed": false,
-    "processedAt": null,
-    "aiStatus": "schedule_change",
-    "aiReason": "営業時間の変更を検出"
-  },
-  {
     "id": "sns_post_routine_kannai_2109812429945532662",
     "shopId": "kannai",
     "shopName": "横浜関内店",
@@ -13341,5 +13314,47 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "本日の営業に関する言及はなく、限定商品の販売告知のみであるため変更なし。"
+  },
+  {
+    "id": "sns_post_mention_kameido_2109898929227895069",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2109898929227895069",
+    "postedAt": "2026-10-13T06:47:59.000Z",
+    "postText": "@ish_kaito 誕生日おめでとうございます✨㊗️",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_sapporo_20261014_0_2109897941708411304",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2109897941708411304",
+    "postedAt": "2026-10-13T06:44:03.000Z",
+    "postText": "13日(火)夜の部、券売機 「ジロリアン陸」 ボタン¥150で「ざく切り白髪ねぎ」 やります。  明日14日(水)昼営業のみ、夜お休み。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-14",
+      "endDate": "2026-10-14",
+      "hours": [
+        [
+          11,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
