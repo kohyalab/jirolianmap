@@ -13506,5 +13506,22 @@
     "processedAt": "2026-10-13T19:38:52.631Z",
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_kameido_2110103735070593248",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2110103735070593248",
+    "postedAt": "2026-10-13T20:21:48.000Z",
+    "postText": "めっちゃ良かったです  南スーダンの農村のごく普通の家庭に男の子として生まれた。 妻と54年を共に暮らした。 孫6人、ひ孫3人に恵まれた。 引退したあと、79歳のとき脳卒中で世を去った。 同じ年に生まれた子どものうち11%は、わたしより長く生きる。 あなたなら、どこで、誰として生まれるだろう？ https://t.co/vzQGDy9aa0",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-JMvjKLMn3T6MammbKyTWc4FMYCHBnlSiuaGDdcX5wlVboeAHVBIm6SbqpREbn5hG7ammDyEtHK0_5X-cQye9UeHc4nWrQk6ls7BC6JbjZt12OIMjRi_AsioFjYjlOFbeirC4Ca28_lqutIN4NSOEEA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報に関する言及はありません。"
   }
 ]
