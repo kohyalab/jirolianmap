@@ -13502,8 +13502,8 @@
     "postText": "シーサーちゃん、漢だぜ… その前途はきっと今みたいに輝いているよ✨ https://t.co/uQujSJvRug",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-13T19:38:52.631Z",
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
