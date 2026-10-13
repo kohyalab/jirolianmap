@@ -13447,5 +13447,22 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "肩ロース売り切れの日常的なお知らせであり、営業時間の変更や臨時休業はありません。"
+  },
+  {
+    "id": "sns_post_routine_nishidai_2109989815815115001",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2109989815815115001",
+    "postedAt": "2026-10-13T12:49:08.000Z",
+    "postText": "13日、本日の忘れ物です。 https://t.co/7VUiUvcV5T",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-yCSQ7JIq_Pj-_Sb-HhSlA3Ha_IFafKpPcZTm084Tey6TJk4NTm6SwyTRD4CMQxRQwkbtTm6W7M6vX-wmDK16__ME-IVKoNzbJSDmjYnVmQowThmljC8SDUGJjZPQBIzIQMomIsVQv8nzyzTmt9XwvQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "忘れ物の告知であり、営業時間の変更に関する言及はありません。"
   }
 ]
