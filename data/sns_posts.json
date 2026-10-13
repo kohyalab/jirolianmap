@@ -13171,5 +13171,66 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業変更なし（通常通り営業・雑談等）"
+  },
+  {
+    "id": "sns_post_routine_kannai_2109825153383448649",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2109825153383448649",
+    "postedAt": "2026-10-13T01:54:49.000Z",
+    "postText": "ごめんなさい。 煮干の波動だけ、営業の途中で無くなってしまうかもしれません。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更や休業に関する言及はなく、限定メニューの在庫状況に関する投稿であるため変更なし。"
+  },
+  {
+    "id": "sns_post_routine_nishidai_2109820117731377390",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2109820117731377390",
+    "postedAt": "2026-10-13T01:34:49.000Z",
+    "postText": "13日、昼の部、切り落としは 売り切れました。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常的な売り切れ告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_nishidai_20261013_0_2109820032717140193",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2109820032717140193",
+    "postedAt": "2026-10-13T01:34:29.000Z",
+    "postText": "13時、昼の部、切り落としは 売り切れました。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-13",
+      "endDate": "2026-10-13",
+      "hours": [
+        [
+          10.416666666666666,
+          13.5
+        ],
+        [
+          17.416666666666668,
+          20.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
