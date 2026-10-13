@@ -13098,5 +13098,63 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "10/13(火)は特別営業の告知ですが、提示された営業時間は通常営業時間と同一であるため、スケジュール変更としては登録しません。"
+  },
+  {
+    "id": "sns_post_sapporo_20261013_0_2109805309778964623",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2109805309778964623",
+    "postedAt": "2026-10-13T00:35:58.000Z",
+    "postText": "10月13日(火)通常営業です🍜  昼の部12:30〜14:00  「魚介風汁なし」、「魚介風ラーメン」 合わせて対応します。 🐟🐚🌪️  プラス現金１００円  必ず、スタッフ確認時に申告して下さい。  明日14日(水)昼営業のみです。(夜休業)",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-13",
+      "endDate": "2026-10-13",
+      "hours": [
+        [
+          12.5,
+          14
+        ],
+        [
+          17,
+          20.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_sapporo_20261014_1_2109805309778964623",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2109805309778964623",
+    "postedAt": "2026-10-13T00:35:58.000Z",
+    "postText": "10月13日(火)通常営業です🍜  昼の部12:30〜14:00  「魚介風汁なし」、「魚介風ラーメン」 合わせて対応します。 🐟🐚🌪️  プラス現金１００円  必ず、スタッフ確認時に申告して下さい。  明日14日(水)昼営業のみです。(夜休業)",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-14",
+      "endDate": "2026-10-14",
+      "hours": [
+        [
+          11,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
