@@ -13247,5 +13247,22 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "本日通常営業の告知であり、変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2109846196621836727",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2109846196621836727",
+    "postedAt": "2026-10-13T03:18:26.000Z",
+    "postText": "こんにちは！10月18日に慶應日吉キャンパス並木上ライブステージにて、10時35分〜55分と20分程度なのですが、連合三田会のラーメン二郎のトークイベントを行うみたいです！！ うちの親方、二郎店主も10数人行かれるみたいです！！お近くの方やお時間ある方は是非是非！！ https://t.co/i5YbfFLjqu",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-3joQSXxcMF6OOfvWVy-5Z85R4z1wRCKZBsfCKbVt9QJFbEiVxN4RaCgJxBCd_qQLjdEn2H3DajtX4XElOTodbaBQH_gjAfS3VKbpISSVjCrLd611-oX52cTHICVvYcT9sWs8FIlraMtowxu_07XFEw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "イベント告知であり、店舗の営業スケジュール変更に関する言及はありません。"
   }
 ]
