@@ -13491,5 +13491,20 @@
     "processedAt": "2026-10-13T15:30:06.422Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: スープ切れのため"
+  },
+  {
+    "id": "sns_post_daily_kameido_2110039957972902039",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2110039957972902039",
+    "postedAt": "2026-10-13T16:08:23.000Z",
+    "postText": "シーサーちゃん、漢だぜ… その前途はきっと今みたいに輝いているよ✨ https://t.co/uQujSJvRug",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
