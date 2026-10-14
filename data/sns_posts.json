@@ -13854,5 +13854,20 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 都合により"
+  },
+  {
+    "id": "sns_post_routine_kannai_2110174313701851185",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2110174313701851185",
+    "postedAt": "2026-10-14T01:02:16.000Z",
+    "postText": "ごめんなさい。 テイクアウトの味噌ラーメン完売しました。 汁なしはまだあります！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "テイクアウトの販売状況に関する投稿であり、営業時間の変更はありません。"
   }
 ]
