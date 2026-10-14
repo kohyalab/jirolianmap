@@ -13869,5 +13869,25 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "テイクアウトの販売状況に関する投稿であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2110186663737778177",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2110186663737778177",
+    "postedAt": "2026-10-14T01:51:20.000Z",
+    "postText": "おはようございます！ なんだか小雨がぱらついてきちゃいましたね… 山は紅葉が綺麗な季節なのに、勿体無い。  18日慶應日吉キャンパスにて親方が出ますので、おやっさんファンの方是非是非！！ 18日も晴れるといいなぁ…。 https://t.co/obHgGK4Kp5",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-PtFaJtZmEkIoZ7_bPKZ_IigqICI5lIxJCSSEPGJZs3RcsdSf-ZIJqlt9USWIvkDnE5WK0SNKOIREakxUCkpiDnkgTx4iSpfyZalpqdYsQIi-UWZDxQ7Bic2KBIXnsnYaAieadNSBPKNHaIEOg0IZwg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-9A82mWTQFW3f1zHP47Agx0UU0KprSPbspwYnZOQ2h_BS7oIcfgTre4ebSTrVifXpWTfBOQgP2c_7m4bBwKtFWXrRLlFAt-Llkv4Ugt03aXQyFm740mQmnMndTPUHeGDEEUwIaP_doQ3WnPdXOnhPxA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-TqBOsk7kjP-VVL95bSxbI6O81HnWvTNR5tJKfNUQt825rvMNMI3Q_Py_SACd_ipqV7wLaUnzISVBUePfLW13y8qUkjAidz0wytPTAM7k9cUVhD51JktIFzOg0iAyvGir_vtE0c5X-DKYNvL6SKJpTQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-fLYCI7wd-HWKty3n7eoVgscgstOtVx3kOaJsedwkVp2aBtxp-XbYQyoQjwKSoDQsmK8AYX2woYV9oUrdWZIb2oL_FOegn7GuVUsjnlBQDUl3mO9ekY3hPepAZdHAteXpBq-UAbLrEXZbWiJynETpSA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更や臨時休業に関する言及はありません。"
   }
 ]
