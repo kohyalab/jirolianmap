@@ -13812,5 +13812,47 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の案内であり、変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_tachikawa_2110171301243756826",
+    "shopId": "tachikawa",
+    "shopName": "立川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jirotachikawa/status/2110171301243756826",
+    "postedAt": "2026-10-14T00:50:17.000Z",
+    "postText": "10/14(水)、昼夜とも時間内売り切れなし営業です。 昼11:00-14:30 夜17:00-21:30  ①「赤」は辛いラーメン。 +汁なし変更券で、辛い汁なしもできます。  ②持帰りラーメン販売します。 　標準:2人前のスープと生麺+ブタハーフ  ③持ち帰り一本豚、本日まで休止します。  ※2枚目写真は他店様 https://t.co/bkkt8Qg8do",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-X2v0-DuwvWOnfwSL7POO-VjNvCx5sOfFHmQkWJ0-zdmc1_-9pFRx9YAnR35oMfMYyGcLrk5adoRbARPe0yg-8JaWBnhT3_ziksY2v7HjNBoNAHZR7APBGRNrlGCPBA_6LWXxSbs9j--qe35aXFpBuA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-wBI6k9y_jfUL3EadzZ3rBGwmGwKO2dRSDrEPZTZnpPKWtczBsBG_vnoFFzuIiH_dF2NXdrI7b-Qi_u6qgVe8gjRXBofbnITas7M0pNxk_hekrYSK4QFsc3FMp-esA7HkF1WaQkdGz063axUZ6PgR8g=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内であり、変更はありません。"
+  },
+  {
+    "id": "sns_post_mejirodai_20261014_0_2110168050175754287",
+    "shopId": "mejirodai",
+    "shopName": "めじろ台店",
+    "postSource": "x",
+    "postUrl": "https://x.com/mejirodai_jiro/status/2110168050175754287",
+    "postedAt": "2026-10-14T00:37:22.000Z",
+    "postText": "毎度ありがとうございます 本日14日(水)は都合により臨時休業となりますのでご注意下さい よろしくお願いします🙇 https://t.co/CpWzwZlAjH",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-i69Riil-pPEEvuOZB7Cb7Kpi44gCkvm9MvSz0QhPrCn9gJkSg949li9oE8JQ9L_jy8j4PBiIw2zaO8LEG8Z3uxtanSggO_eservvR_ku7TkWSTTvP3VGUCh2UfSYmnaV7exANfbxjDnTqPacxH-eRw=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-14",
+      "endDate": "2026-10-14",
+      "hours": [],
+      "reason": "都合により",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 都合により"
   }
 ]
