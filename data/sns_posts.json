@@ -13964,5 +13964,67 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_koiwa_20261014_0_2110247769982353875",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2110247769982353875",
+    "postedAt": "2026-10-14T05:54:09.000Z",
+    "postText": "本日はこの時間をもちまして営業を終了しました。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-14",
+      "endDate": "2026-10-14",
+      "hours": [
+        [
+          10.5,
+          14.9
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_daily_sagamiohno_2110249332620537882",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2110249332620537882",
+    "postedAt": "2026-10-14T06:00:22.000Z",
+    "postText": "【相撲甚句】 相撲甚句（すもうじんく）とは、大相撲の地方巡業や引退・断髪式などで歌われる、角界に口移しだけで伝えられる七五調の伝統的な囃子歌です。楽器の伴奏はなく、力士たちの歌声と手拍子、かけ声だけで構成されます。 ※実は私、甚句力士として地方巡業などで歌っておりました🎤✨",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2110243038295720004",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2110243038295720004",
+    "postedAt": "2026-10-14T05:35:21.000Z",
+    "postText": "本日 ◇10/14水 【夜】 →こちらをご覧のお客様限定です！ ↓ ※お客様ご自身で→丸の🟥赤又は白🤍食券を１枚お取りになって席までお越しください。→食券は券売機の前の台の二段目に置いておきます。 ※必ず着席時にお出しください。 ※サービス中の目印は［黄色いハンカチ］ どうぞご利用下さい♪ https://t.co/ZB0PGIHbEt https://t.co/49hpUKs8Nx",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-HgynGQHW_MOEeYlBTPaMHHbRDCG1HXdZG4haA4p4PieFZFst7WvHHm0tvh--FVXqtNt9F3mM0guZLqeU-I6yqFeaA04goj7Feta9bIjM1pBlyfFinhz0yTozL_AQdcw-l67DjqJN8IYvUahw53HlIw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-45csAmN-wO3LTgALtbR3DLrH4z8zkqWcVjLJ6Dzn-EWPjR87dgg_g69KMCCPsoOWca2B00gwtcdxXujDQQTALCNCPvsIyCZ96rndckR4RFDglrba0GXvrkeygAX_qivAe_YrHSEpf7nKAjIpYMdBRw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Ejid1O3y7W3BxI4dtsTMbwtF5Nbs9fLE9s2NkWkR9a7pyVjM161neuNjg3wOaGtwdYJ8Bj5LzMMeIBQD0ezDVHhlcCirF0_vndapEnBLWXeRR9kPUUlMh7eVm0dMu2BDWs9p_61yrpkShhTvSVeAUQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-y8cCgfuSN8JC5iQbwwA1ZMGGZUpYiFrukCr2p8LLSKs4f75VMRyb5R73X_wFNUXLXKzG7FxEx96dvICPv3Xj-cbY7MSPTGONIHR0rgQQLtpsEXoGErswxS3P8mt4A_vETS74yF5WfbxvOj0d_9YJKw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの告知であり、営業時間の変更はありません。"
   }
 ]
