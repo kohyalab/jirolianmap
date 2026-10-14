@@ -14075,5 +14075,30 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "限定メニューの告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261018_0_2110269280570970401",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2110269280570970401",
+    "postedAt": "2026-10-14T07:19:38.000Z",
+    "postText": "◆10/18日【臨時休業】  いざ！［慶應連合三田会］へ 10:35から〜10:55 ［ラーメン二郎トークショー］に参加させていただきます。 ※本店のオヤジさんも！各店店主さん達もちらほら。 ※私、こちらのイベント冒頭でオヤジさんの為の相撲甚句（一部抜粋ショートバージョン）を披露させて頂きます♪ https://t.co/7FzqyXXSyL",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ScHVl9NirM_TQcBs5cSz3_ir6oMl_48N2gnhtWoZ0P62FLzTwK0t4nkgPE1NHHMXHvlyTHYmGtLy7JJCx6HZIGLZMJU7U_NTQjb2yrAuqF9amteeftdVAfwtypfQvgSnXshOq9857QjhauammakHqA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-gRU87UuF3kC3Z3aTOXKi_rINmLj_pv6I6wXmULRVCuI-kyLlt6AanFEwV0-nkGj-tCnwd52cVweQYXmZgYEC1tbmXNvychcEdwMGiwJ0nIgvUjnlCaNmCySDDeFy3DhOlLsLCTo9v7OAIJadNR0aJA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-18",
+      "endDate": "2026-10-18",
+      "hours": [],
+      "reason": "慶應連合三田会参加のため",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 慶應連合三田会参加のため"
   }
 ]
