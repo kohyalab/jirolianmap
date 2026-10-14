@@ -14100,5 +14100,24 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 慶應連合三田会参加のため"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2110312988561523117",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2110312988561523117",
+    "postedAt": "2026-10-14T10:13:18.000Z",
+    "postText": "混雑無くなりました！ どうぞー！🈳🈳🈳 https://t.co/WdJ7JGOtqa",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-BuZXvD7L8NzIT1sQ9Z1BC3ddBEEPgWsmO8qaexoP-DkOtHrFHWk0WuwI-L74gmNRj4VeSnAHsKQ0CSVBvLwGIak7GNd7zqHVMafikeAMbwQiiL7GfRSvH05nUx4zcnXx_Pp9RbRK4agNKPxkiKGjTw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-_wsw5P5eoAc41rkOViJL2hV9D0PrfRXdW3fbHaCi-z0uZEM66dYU5gfe_uUu3xt0Qzg-K6ob7bFHzsrsiiHjvnpox4IjtvtJim_YfnUVVgf1Hdz7pIIXG-KVe9-eOuHGYMKYZNYcBxK-reb01dRsWw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-wLSN1vaxe49bN4twd_8yWSJAfnugDEmRLglrXTtshBCEiDL8DlB_Q0IM0Zh9Q4_JYghchsUTsAFPM3qWClnWCk0tYyXi6Blvv-NYCre5NoMQ14D-Td5dT9OLp8LP0OEhjHhk8hgqSeRha6vjsxPXYw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更や臨時休業に関する言及はなく、限定メニューやトッピングの販売告知のみであるため、変更なしと判定します。"
   }
 ]
