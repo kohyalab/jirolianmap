@@ -13949,5 +13949,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "テイクアウト完売の告知であり、店舗の営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2110239512677023896",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2110239512677023896",
+    "postedAt": "2026-10-14T05:21:20.000Z",
+    "postText": "お手隙です！ https://t.co/PeyRSy3QOI",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
