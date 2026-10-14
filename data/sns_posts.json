@@ -13684,5 +13684,72 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業時間の案内であり、変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_kannai_2110156204672713184",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2110156204672713184",
+    "postedAt": "2026-10-13T23:50:18.000Z",
+    "postText": "おはようございます！  だいぶはやいのですが まもなく営業開始させて頂きます。 テイクアウトの方も9:00から販売させて頂きます。 本日も宜しくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_kannai_2110156082702340355",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2110156082702340355",
+    "postedAt": "2026-10-13T23:49:49.000Z",
+    "postText": "テイクアウト9時より販売します！ よろしくお願いします！！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "テイクアウト販売の告知のみであり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_yaen2_2110152867005005847",
+    "shopId": "yaen2",
+    "shopName": "八王子野猿街道店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/Jiro_Yaenkaido2/status/2110152867005005847",
+    "postedAt": "2026-10-13T23:37:02.000Z",
+    "postText": "10月14日(水) 11:00～15:00 17:30～21:00 ⭐テイクアウト、鍋二郎あります 並ばず買えます エビドクロテイクアウトは現金です 🌟きまぐれたまご かつおちゃん  ⚠️駐車場待ち出来ません ⚠️駐車場満車時コインパーキングに ⚠️店舗近隣タバコ禁止です https://t.co/GNrOQu1Hci",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-foGOYUqW9gIyr4A6KZXjSmNWqQsz7fq2Nqa1oNiqvKt0GH24bGQ9bVrU69MfEKCT-3D7QKT-5Ml_ijrqXRBSy3lZ8MYSIVzLkTJcW8b_dZym8gUSJNNF4Y22Ppsm57fBpnTR09tPVwu-i6EIxdoFNQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-wMLDTx_oRHMqdVOgEZTWU-Gxvj-D8aQA8NcDCZWFyTY3qmo0ceH0TD4LvYE5JGMUD0gVjgsZ12JwuJT6FhW5S2aT33niN7D5B6djbtlRQCAvES7DFtailHMSpjuaz8NzsHcYpJsk9xElJ9HIVh1rSw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-h8vcsC0gOO7pfK1TwAYHnCNl4F7-RhZfxq3WeA0QGn9CdGALoQEMelcx_HN-ZHidjLCDbtO_bAbRa3wb1WQShJIIURPes-zKlTU6nuoi8f7tVZiMmtt6h5tWWdWHE6Gm99BnrBUUamVovs8wE6q3Ng=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2110158172094931235",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2110158172094931235",
+    "postedAt": "2026-10-13T23:58:07.000Z",
+    "postText": "【和ッカレー】 当分の間［お椀で和ッカレー］に変更させて頂きます。一軍昇格です♪ ※いままでの［汁無しタイプ］をお希望の場合は店員にお声かけください。申し訳ございませんが金額は［お椀で和ッカレー］と同額です。 よろしくお願い致します。 ※よくかき混ぜてから お召し上がりください♪ https://t.co/BHX62RSjR0",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-SSp5cnTkLUD7nSlOccv_d-vcm-J46mM9IFsnA5MgVVZkwtLdyW8HwxWOOJSv5GHqOl6uFMyuWsN9oSZgMjl_aHdLsGdnRnfPFAAKogA6SUWEo0MSHuZWFIC_HkLW1l3vBUj62m4ZPPouY-S6y3EzkA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Ln4vTB_rFBFfVy_ddYjDFIPQ0dPlSY8VyiNZBTlX_iLw9Gcpymktyw_RKiAjvrUmK1XsV2QyWrrdule9cuajYvWOspqWPyzhV2RGPU6rluuF070F5Nn0W_YASMXMsMoN8hVQFmlugB9GkhBq3hQjVA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定メニュー（和ッカレー）の提供方法変更に関する告知であり、営業時間の変更はありません。"
   }
 ]
