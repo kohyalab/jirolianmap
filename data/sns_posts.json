@@ -14026,5 +14026,22 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "限定トッピングの告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2110254612729188481",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2110254612729188481",
+    "postedAt": "2026-10-14T06:21:20.000Z",
+    "postText": "こちらは私が本店のオヤジさんの為に作った相撲甚句です♪ ［山田拓美相撲甚句］  ※角界では横綱、大関、人気力士が引退した時などに相撲甚句が作られます。横綱でもあり、大関でもあり、人気力士でもあるオヤジさんの為に心を込めて作りました♪オヤジさんの前では一回だけ披露した事があります🎤笑 https://t.co/wOP8rB3tuJ https://t.co/MLLLey0vNE",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-npaYn1ArIrf3FEBsQtnZMuiVOjsCnrKkKf4S5_A-W5DcZqFm-2WhaGG3a2_-Wiy7XC-IfKc7d3UjFSJYKrT8kbMgcZlbccjlyANlpSel3Ji5KW3hbuwEumQcj4lj2rCVcdHPK8ztupjcygRvBEH4gQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報の変更に関する記載はありません。"
   }
 ]
