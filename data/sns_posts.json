@@ -14801,5 +14801,129 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2110493146232897682",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2110493146232897682",
+    "postedAt": "2026-10-14T22:09:11.000Z",
+    "postText": "本日 ◇10/15木 【昼】 →こちらをご覧のお客様限定です！ ↓ ※お客様ご自身で→丸の🟥赤又は白🤍食券を１枚お取りになって席までお越しください。→食券は券売機の前の台の二段目に置いておきます。 ※必ず着席時にお出しください。 ※サービス中の目印は［黄色いハンカチ］ どうぞご利用下さい♪ https://t.co/Hx3sBPuRDp https://t.co/002GVgfFu3",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-vsLbJK0KA4gOTyxgyqse81Ocx-o3J8FJmwYJXSWi4NDsUfQb1HQvJdV1djClWDk7eP3JZU_0mfwXMFbwvY_gJpoMhOw_3UQFBekgA-mWknGfve-cwcksSPRMASU7OJGnbAolbAo4n1kvuSaizFpF9w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2-ol0RrGL7gaHPgXr1dNmKpDuQtPStjJho0cu2HDoDP9poYChLLDl2e8xU8NXe549DYGgfAoy0-c8yfKQlZ_Ebiv3Djmb6O4AtpoUpufG3jP6TSWPBlOMJ-ry8PWDNBeYarsfXBRE0wGsg23ABwVDA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-cqcL14lufT-aB5jfzetTVqET3DP33Ox1BhRM87uM2z6ZTIcmCPbCX9OfpdJzcmHmxnSZxxcxmtBSCivbHiSQ8pkXxKKFLtnqdBuTOfT3Bh66R2SneEUTIRw91hAX-wAvNJqIurzYjfePhRU5jfWv4w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-8MLbeXDn9U1EgQCHSdRx4PDXObbq6kth73UtDS16U_15EqyauF-dzlVdcWkPExTtwBKGvG3cM2asgIWOz42sq_oyB9kpjYU23M9ykr43l_gQ0pAgybn83-ziXa7LOsu4XmThnp5JpASeEgtyzEbpcw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261015_0_2110492216737320967",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2110492216737320967",
+    "postedAt": "2026-10-14T22:05:30.000Z",
+    "postText": "おはようございます。  本日 ◇10/15木 【昼の部のみ営業🈺】 10:20から〜14:00 ご来店ご到着お並びの お客様まで営業致します  →［温かいまかない汁あり］ →［お椀で和ッカレー］ →［相撲部屋のしょうがダレ］ やっております♪  どうぞー！ https://t.co/R982LdGJ2k",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-4KC7LB65p0SVScf18MsZUsYCeK2A5IS3J50FvfclbPwShfAOePHSnc3BCsdpYb_7bjH4gpsGXrZbgKyH0305YEviCBxkp_t19jzgA558ztmKHF5tLaok6OGsZ3J95WiL9crhoUWrtYnaao819xGofA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ZT_aw4juleuNhDS2k9G_bVG7esjj57rhIX7_axXXxYBSNqkYiohjm5LX54abjhzYG861-ZqEtz4N4bT2m48YA-sHQs_S3BkSrnMrfs9pzMfsmoUniJ_7d9nYjhhZrQlrkEwnXzX8BT4ZxNIE_OZrWg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-peSiYVeXQDdmMjjklKCfs9ep49TMiQaygBRsBH3NpHLNK5K2Tqn5F0rkFblOnaqwd_yaB9VM9fpULSn7etey4eGz9dU5osLtQpM0PFR9QSCrBOVdkj-Dw9lVM45iScspUyEJgdYRYB3P4w26i0zrrA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-MeKIM2AWRvneZoClAWJR5hVpRmkRkHLuuHVPrXwmQFK7kAPj_MWea_9YcRTWzL-7bvCQ22uyIMgHJ3FMCUsA80oNj12uGq-b7yyEA3Lox3PDaQPFeKwtSlf4_nOsjp5c3edu6VGy0NQwiFn-AgdQMQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-15",
+      "endDate": "2026-10-15",
+      "hours": [
+        [
+          10.333333333333334,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_routine_shndaita_2110494774751035872",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2110494774751035872",
+    "postedAt": "2026-10-14T22:15:40.000Z",
+    "postText": "バイト募集します！  時給1300円 くらい(慣れたらすこし増えます) 7時〜17時くらい(応相談) 週2〜4回くらい（25〜45歳くらい） まかないあります 近所のひと希望 日払いです ※インスパの出店をしようとしているひとは不可です   希望の方は 年齢、最寄り駅、飲食業経験を書いてDMしてください！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "アルバイト募集の告知であり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2110494711773618546",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2110494711773618546",
+    "postedAt": "2026-10-14T22:15:25.000Z",
+    "postText": "激辛もやります！ 多分ちゃんと辛いです！  1倍  100円 2倍 200円 3倍 300円です！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2110494518105772235",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2110494518105772235",
+    "postedAt": "2026-10-14T22:14:38.000Z",
+    "postText": "にんにく地獄塩ラーメン(+200円)もやります！ すりおろしにんにくをまぜてます！  麺の量と一緒に じごくでって言ってください！ ラーメンのひとはしょうゆでって言ってくれるとわかりやすいです！  麺の量を聞かれた時に じぶんから言ってください！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_shndaita_20261015_0_2110494404956062071",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2110494404956062071",
+    "postedAt": "2026-10-14T22:14:11.000Z",
+    "postText": "2026年10月15日(木)  ⚠️短縮営業です！⚠️ 11:00～15:00くらいです！  よろしくお願いします！  ※住宅地なのでおしゃべりしないで待っててください",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-15",
+      "endDate": "2026-10-15",
+      "hours": [
+        [
+          11,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
