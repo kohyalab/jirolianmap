@@ -13919,5 +13919,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "現在の外並び状況を伝える日常的な投稿であり、営業時間の変更や休業の告知はありません。"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2110222420028362814",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2110222420028362814",
+    "postedAt": "2026-10-14T04:13:25.000Z",
+    "postText": "大盛りを頼むひとがやたら多いんですが 裏メニューなのであまり頼まないでくださいwww https://t.co/B5DXr5Vvx3",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
