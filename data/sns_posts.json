@@ -14925,5 +14925,44 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_yaen2_2110510597507010854",
+    "shopId": "yaen2",
+    "shopName": "八王子野猿街道店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/Jiro_Yaenkaido2/status/2110510597507010854",
+    "postedAt": "2026-10-14T23:18:32.000Z",
+    "postText": "10月15日(木) 11:00～15:00 17:30～21:00 ⭐テイクアウト、鍋二郎あります 並ばず買えます エビドクロテイクアウト現金です  ⚠️駐車場待ち出来ません ⚠️駐車場満車時コインパーキングに ⚠️店舗近隣タバコ禁止  🌟きまぐれたまご かつおちゃん https://t.co/YaoU42vrZ9",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-9kIMz9Y64NE7DS_FySNBVY0dvkRnSBIfmyrbsiTYjcqfZ0wToD47SlumBZ_fD5GlMuN_tbsLL-a3K93DX-z-tHmoZiBjmw23z059QhPmCr5k8jh692mrDjEWASOjlowmEIeQ8ycI6Q1rzAVbQwGzLA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-uMn8Hb7v6zHVetMb6ev8lwwU46MnzTOSAIgRC85IGq2L9GWgLbseseV_UhwbYzpOJpLuIw2PHfFxsQydLf5RgHrJlABUv6RrkrUbIA_mAUrP5nGNh2nb8LOt4guxo15qBL28LiLo20fWfLMBuJzawA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-d8bYHQZW4K0KeEYjiyaaykaFigVleUkWmKIUS_7De4tNoj8N4nlw_wMnT1z23QAW3wBmX0NW8LHdWUqeCwl0CUh_ZaWQXyJserZWSOSEXxlQCbIeuy1x-IlQG3MNpAetVsSYKPCKs6iDmE4vh_C4Rw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-IcwiDCGOH_pk3202R8HZ1lBsYN_BFE8udHJ4lOh9nGFss0hXFODs5vNVLdHFYU2cme4ncTgYkB-Zu0C5U24j2MVTE3O7JZz_63QkwNt-jgbeNJvYsQP97MV5ByjVN-MzFEPpXkuFyKwn6xHaXV4viw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内であり、変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2110508280904822920",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2110508280904822920",
+    "postedAt": "2026-10-14T23:09:20.000Z",
+    "postText": "［慶應連合三田会］  一般の方のご参加も受け入れている様です♪  東急日吉駅改札を出て、東口へ。いちょう並木の坂を登り、パルテノン神殿（記念館）が見える坂を登り切った右側にある、以前くまモンが踊ってた屋外ステージだと思います。高校側に曲がるところ。 オヤジさんがお待ち致しております♪ https://t.co/1ke0KGzQOR https://t.co/3SsPukMw31",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-xUm4icjzU_ZiQoPeoTberQcShT6QKrqA2Xyt-wDJIebGk_P70fPtBzLCP9RRWHIyk0hrsJBZTqHZaal77Z7Gc-_N8ZE2uYwDoRb4vwfmieVgPhM6s2jp6rY0dBvSnEeXNJxnlPv02CJ0fEwIJ-ECoA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-006_4FlN6ybvSLJ17pjs2f59Z5yXu2NBOL00V4xJQd_7U969PApO5IBworrwHu70JPE2s9r1fLJGJB0x36f1L2cAuvLqMc7j_lqyB_FbCXqnBHgZmRwnKuuuQ1NPaHyN-toD1BUTVz1C229rQx1gdw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-EcR83BI7LFAPPo2jUAAFVQu0zdGHyt4WmIUKD6hU5pLKPXZqr9GukSR97h1eupTsbeghVVts6g-z-zlsgL4QXF7G3bWOTdi3cXw_Z-cBXhLo66dxTdY8So1HXmdYb82aUHVgQcsjO8gFw8stpAtBGg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "イベントへの出演告知であり、店舗の営業スケジュール変更に関する言及はありません。"
   }
 ]
