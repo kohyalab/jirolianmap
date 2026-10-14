@@ -14043,5 +14043,37 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業情報の変更に関する記載はありません。"
+  },
+  {
+    "id": "sns_post_routine_kameido_2110257940246790451",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2110257940246790451",
+    "postedAt": "2026-10-14T06:34:34.000Z",
+    "postText": "お友達のアサウラさん@asaura_seizon の紹介でご近所のあおと鍼灸院さんで施術してもらいました✨めっちゃすっきりして体が軽くなりました🪽これからもお世話になります🙇‍♂️ https://t.co/XJTZhKDUml",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2AAnNE6zix4hLKvBA37PlkfrcdE3vyfxgvL9geADlELzIUtOH2jWLKDpJ2i7vTMxbFr42k_zf5r8aNhUGzmx75SYih1Xyr02p9mZxwIMlack8Im-mJ-ssj9tYApgtuTya8OSnsNn9h-u1JfBE4pElg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業変更なし（通常通り営業・雑談等）"
+  },
+  {
+    "id": "sns_post_routine_koshigaya_2110262766065852482",
+    "shopId": "koshigaya",
+    "shopName": "越谷店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ksgy26/status/2110262766065852482",
+    "postedAt": "2026-10-14T06:53:44.000Z",
+    "postText": "毎度ありがとうございます。 ラーメン二郎越谷店です。  なんだか良い陽気なので夜の部「つけ麺」やります。 塩ラーメンはお休みします。 ご来店お待ちしております🙇 https://t.co/ieKXJuWJIQ",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定メニューの告知であり、営業時間の変更はありません。"
   }
 ]
