@@ -15457,5 +15457,50 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "災害支援金の募金報告に関する投稿であり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_kannai_2110727793462124863",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2110727793462124863",
+    "postedAt": "2026-10-15T13:41:36.000Z",
+    "postText": "こんばんは。 本日はお休み頂きありがとうございました。  明日よりまたスタッフ一同 23周年に向けて頑張っていきますので宜しくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "本日は休業であった旨の報告と、明日以降の通常営業再開の告知であり、臨時スケジュール変更には該当しません。"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2110726181398122943",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2110726181398122943",
+    "postedAt": "2026-10-15T13:35:11.000Z",
+    "postText": "@UmaimonZundamon ありがとうございます！！ 直しました！！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2110726020383055922",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2110726020383055922",
+    "postedAt": "2026-10-15T13:34:33.000Z",
+    "postText": "卒業しちゃう子がいるので、アルバイト募集中です！ 時給1100円スタート！交通費、賄いつき。プライベートで食べにきてもOK！ 「暇だから今日早めに上がって」という事が無いので、ちゃんと1日分のお給料出ます！ 仕事出来るようになると割とすぐ時給上がります！  気になる方はDMください！！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "アルバイト募集の告知であり、営業時間の変更に関する言及はありません。"
   }
 ]
