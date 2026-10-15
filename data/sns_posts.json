@@ -15221,5 +15221,94 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_nishidai_2110613147111526627",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2110613147111526627",
+    "postedAt": "2026-10-15T06:06:02.000Z",
+    "postText": "こんにちは。 本日、15日の夜の部開始から  FZ味付き肩ロース・３本 ¥3000、¥2400、¥1800 FZ味付き切り落とし ¥1000×1 、¥800×2  あります。 https://t.co/CXXdbUhrVK",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-UnpJLqZkW2if06LFzcQsQDNhO44OgEy0u3rjuAmi0k1Y-5IFHryS6jd2CQZpY0tR5W7t9DntWcv4mw_A0Hd6Zwwf3j7VcsvnwD0hKv3mA3Kzw3EjzLneasrugUlFg2NSkk7-CTTFJt0eiUTdtHCDwg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-c8sidtoXLyC9tXaJVumQu6DYl-EQoea5HZy5oO-BE0ejq6kBWEZKq-60hlzqr2LuTogwUch2Hf2hny_--zoDU1hABj57ceoj0oShKeaUDQjcZOsG2AYrzf-IIXqYG63Hqh0zgg-MIWrFwzGXqn_UUg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Hr0M1iB19CQYC4eVBp59zXitrJCwZrdOjnRIVkH-BJebJriwAzcoFyUfdVZfNf7Lvol0Or_CwEdfbI42xIIm9unLgTkDSo0nvY2Lelm9BjDQ38IfN-1QYYg7Ge6GPKSy5dp0quWccZmN4pXfNlrHIg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-VGa3Iraxs1JsDkN5TrFrcLBg7aJh9DDtsK-BvxZPF2U_peDVtQ-K5C-6moA4YI-glTVIPXmlgS3zvWlcXYbXefA2YQmcfWlbQ8smPKxTWvqQyL2bZuDUBvj0KfyXGDCRvcTW_HZaqYofe3375ouv-A=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "投稿内容は限定メニューの告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sapporo_2110617102818382174",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2110617102818382174",
+    "postedAt": "2026-10-15T06:21:45.000Z",
+    "postText": "15日(木)夜の部、券売機 「ジロリアン陸」 ボタン¥150で「九条ねぎ端豚しき」 あります。  汁なしにピッタリ👌",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_maebashichiyoda_20261018_0_2110612984217448618",
+    "shopId": "maebashichiyoda",
+    "shopName": "前橋千代田町店",
+    "postSource": "x",
+    "postUrl": "https://x.com/SnBZt6eRCdz7lQw/status/2110612984217448618",
+    "postedAt": "2026-10-15T06:05:23.000Z",
+    "postText": "ラーメン二郎前橋千代田町店です。 10/18日曜日ですがお休みします。 宜しくお願い致します🙇 https://t.co/2W6snCPELy",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-6y9WWGi96dM--uHJh-uNS9wSXH0LCSfYT7wpTXZOrgnXbBqbzCVbHRqqhNUhfkApL4YICid4FFj5glrvwfrVGmSDuqF7SNmVl-0JmLqbhuYh5XNB5D332AlmHFoS7sI01Z3fYzo3iCSoagXVEwz7vg=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-18",
+      "endDate": "2026-10-18",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2110618965265494153",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2110618965265494153",
+    "postedAt": "2026-10-15T06:29:09.000Z",
+    "postText": "@valeron_rtb いやー。流石にそんな言い方してないかと思うんですがそう聞こえたならすみません。  初めての方は小でお願いしまーす か ひどくても 自信ない時は小にしてー！！ くらいだと思うのですが…",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2110613372849070177",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2110613372849070177",
+    "postedAt": "2026-10-15T06:06:56.000Z",
+    "postText": "@deraburnout こういうどうでもいい事をちゃんと解説してくださる方の才能の無駄使い好きです笑(褒めてますよ)",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
   }
 ]
