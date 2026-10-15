@@ -15665,5 +15665,32 @@
     "processedAt": null,
     "aiStatus": "match",
     "aiReason": "既に登録済みの臨時スケジュールと一致"
+  },
+  {
+    "id": "sns_post_hitachinaka_20261017_0_2110871107964387650",
+    "shopId": "hitachinaka",
+    "shopName": "ひたちなか店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26_hitachinaka/status/2110871107964387650",
+    "postedAt": "2026-10-15T23:11:04.000Z",
+    "postText": "【週末 営業の件】  本日16日 金曜日 11：00〜14：30 17：30〜21：00  17日 土曜日 臨時休業  18日 日曜日 店休日  19日 月曜日〜 通常営業  基本ラストオーダー宣告ナシ 列が途切れたら閉店 https://t.co/dxGs7kzWnd",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-HTEucnSUSHAk5KoY3d83-vc5woJFVWAbULlHNfrMMZuQAoJS0F8RtVwFcOi13NHjubNuuYb8jDVRBZaPo11ChWwU2V3hhgTRyURLMNYHQhipvMcwDUBXsXAVaREU9mmJqrLO45rJ3gCa4wYl9DYZHw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-HuPEZolhnifDfx9HAysD43hbHrcVJK7ME2l9oFWBpyte6SH_W7-g8gHXfVY_Rd6_Kw2aeZEuCgZRQV20Bc6nIFQpNVV4nUTFzu4l-dg93rcGjanhREYoup_-3aedQUzgNBrHng5tMxryPOkSHu8A2Q==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-B-QVO9r3BPdVzxVAsOlaFM2J0zx2aRnd2RJ-1JqLlW7Ew4rCrSAwp0PUg6lbY4Jx-uwgVGidc3WeJPOmxqWSfphUxqPJvOxVPKc7w4g5Ipj2p3-TGXxqBNQNGbhbBMwo6fld2xLOGuQdSAhr3EQYiw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-WPxNu7sdHgdq6-D5wtIQfV9YjKWHW_YwsdPYX6n8txNQLdlgniUbIdgCQZOztsyw-HzDGmkUrvhj7qLRMP49Z1pErguUscJZWD2Bunik9wrqrlBMsKKHwNTd7pCr-xpVSHBRFcm2zuqJWcPmMooxfw=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-17",
+      "endDate": "2026-10-17",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
