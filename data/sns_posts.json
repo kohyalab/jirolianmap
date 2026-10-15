@@ -15145,5 +15145,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の案内であり、変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_asakuragaido_2110556836650962949",
+    "shopId": "asakuragaido",
+    "shopName": "朝倉街道駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/r26akgd/status/2110556836650962949",
+    "postedAt": "2026-10-15T02:22:16.000Z",
+    "postText": "本日通常営業！ ネギあります！ よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "本日通常営業の告知であり、スケジュールの変更はありません。"
   }
 ]
