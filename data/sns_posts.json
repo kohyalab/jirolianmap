@@ -15008,5 +15008,68 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "限定メニュー（豚チゲ）の告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_tachikawa_2110532832468897826",
+    "shopId": "tachikawa",
+    "shopName": "立川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jirotachikawa/status/2110532832468897826",
+    "postedAt": "2026-10-15T00:46:53.000Z",
+    "postText": "10/15(木)、昼夜とも時間内売り切れなし営業です。 昼11:00-14:30 夜17:00-21:30  ①「赤」は辛いラーメン。 +汁なし変更券で、辛い汁なしもできます。  ②持帰りラーメン販売します。 　標準:2人前のスープと生麺+ブタハーフ  ※持ち帰り一本豚復活しました。 https://t.co/kt3FE1jISd",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-zoLTdsmRZtUb-xsKKwimpYipdxqkgOh7uuwi9nxGK6FOpe3pDjyhlnUHAEunM16CGCN2mRZH4rgLiZNYx-_feNb7H4ctHSY9h4XExQxQtQcFiNgVf5d5Lyv9HPwlIZCsGD_TcPY6TZdoTKFj41-obQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内であり、変更はありません。"
+  },
+  {
+    "id": "sns_post_sapporo_20261015_0_2110534567828635743",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2110534567828635743",
+    "postedAt": "2026-10-15T00:53:47.000Z",
+    "postText": "15日(木)通常営業です🍜  12:30〜14:00     17:00〜18:30  「塩汁なし(醤油ベース)」 対応します。 ⚫︎🧂プラス現金１００円",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-15",
+      "endDate": "2026-10-15",
+      "hours": [
+        [
+          12.5,
+          14
+        ],
+        [
+          17,
+          18.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_nagoyaosone_2110531720906997948",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2110531720906997948",
+    "postedAt": "2026-10-15T00:42:28.000Z",
+    "postText": "おはようございます。 ラーメン二郎名古屋大曽根店です。 本日昼夜営業です。  昼の部11:00〜14:00 夜の部17:00〜20:00  よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "本日通常営業の案内"
   }
 ]
