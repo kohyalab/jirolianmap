@@ -15453,8 +15453,8 @@
       "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-eAq5DmPk-ssl5X9JuBUMvG5X4hZevgHUp6aWBjuHwAPZuawsLW-g5JQSz6vXyaMasncra8j0I17bXqODTo4yFU208JmsBqpQ-gTkILOjqEstQBLNbtTstGgz2I-RTk5ifA9IJna36byjW4y2z_1Mqw=="
     ],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-15T21:58:34.785Z",
     "aiStatus": "no_change",
     "aiReason": "災害支援金の募金報告に関する投稿であり、営業時間の変更に関する言及はありません。"
   },
@@ -15468,8 +15468,8 @@
     "postText": "こんばんは。 本日はお休み頂きありがとうございました。  明日よりまたスタッフ一同 23周年に向けて頑張っていきますので宜しくお願いします。",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-15T21:58:34.785Z",
     "aiStatus": "no_change",
     "aiReason": "本日は休業であった旨の報告と、明日以降の通常営業再開の告知であり、臨時スケジュール変更には該当しません。"
   },
@@ -15483,8 +15483,8 @@
     "postText": "@UmaimonZundamon ありがとうございます！！ 直しました！！",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-15T21:58:34.785Z",
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
   },
@@ -15498,8 +15498,8 @@
     "postText": "卒業しちゃう子がいるので、アルバイト募集中です！ 時給1100円スタート！交通費、賄いつき。プライベートで食べにきてもOK！ 「暇だから今日早めに上がって」という事が無いので、ちゃんと1日分のお給料出ます！ 仕事出来るようになると割とすぐ時給上がります！  気になる方はDMください！！",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-15T21:58:34.785Z",
     "aiStatus": "no_change",
     "aiReason": "アルバイト募集の告知であり、営業時間の変更に関する言及はありません。"
   },
@@ -15513,8 +15513,8 @@
     "postText": "@yusaburukokoro ありがとうございます！僕はいつも適度に休ませていただいているので！笑",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-15T21:58:34.785Z",
     "aiStatus": "no_change",
     "aiReason": "営業情報の変更に関する言及はありません。"
   },
@@ -15528,8 +15528,8 @@
     "postText": "ここが分かれ目だったったのか！しばらく休んで心身共にリフレッシュして欲しい✨ https://t.co/mUnK79esOt",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-15T21:58:34.785Z",
     "aiStatus": "no_change",
     "aiReason": "日常的な投稿であり、営業時間の変更に関する言及はありません。"
   },
@@ -15543,8 +15543,8 @@
     "postText": "10月16日（金） 昼11:30〜14:00頃 夜18:00〜21:00頃までです",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-15T21:58:34.785Z",
     "aiStatus": "no_change",
     "aiReason": "通常営業の告知のため変更なし"
   },
@@ -15572,8 +15572,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-15T21:58:34.785Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   }
