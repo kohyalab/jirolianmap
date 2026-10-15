@@ -2,6 +2,79 @@
   "generalRules": [],
   "learnedFeedback": [
     {
+      "id": "sns_post_kaminoge_20261021_0_2110407815496142876",
+      "timestamp": "2026-10-15T11:02:27.552Z",
+      "shopId": "kaminoge",
+      "shopName": "上野毛店",
+      "postDate": "2026-10-14T16:30:07.000Z",
+      "postText": "21日(水) 空調設備工事のため臨時休業です",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業変更検出: 空調設備工事のため",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-10-21",
+        "endDate": "2026-10-21",
+        "hours": [],
+        "reason": "空調設備工事のため"
+      }
+    },
+    {
+      "id": "sns_post_kameido_20261015_0_2110525083290828805",
+      "timestamp": "2026-10-15T11:02:19.320Z",
+      "shopId": "kameido",
+      "shopName": "亀戸店",
+      "postDate": "2026-10-15T00:16:06.000Z",
+      "postText": "お世話になってます。大変申し訳ありません、店主体調不良のため本日昼の部はお休みさせていただきます。夜の部は通常通り営業予定です。よろしくお願いします。",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業変更検出: 店主体調不良のため",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-10-15",
+        "endDate": "2026-10-15",
+        "hours": [
+          [
+            17,
+            21
+          ]
+        ],
+        "reason": "店主体調不良のため"
+      }
+    },
+    {
+      "id": "sns_post_maebashichiyoda_20261018_0_2110612984217448618",
+      "timestamp": "2026-10-15T11:01:58.107Z",
+      "shopId": "maebashichiyoda",
+      "shopName": "前橋千代田町店",
+      "postDate": "2026-10-15T06:05:23.000Z",
+      "postText": "ラーメン二郎前橋千代田町店です。 10/18日曜日ですがお休みします。 宜しくお願い致します🙇 https://t.co/2W6snCPELy",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-10-18",
+        "endDate": "2026-10-18",
+        "hours": [],
+        "reason": ""
+      }
+    },
+    {
+      "id": "sns_post_jimbocho_20261016_1_2110640017039372718",
+      "timestamp": "2026-10-15T11:01:21.397Z",
+      "shopId": "jimbocho",
+      "shopName": "神田神保町店",
+      "postDate": "2026-10-15T07:52:48.000Z",
+      "postText": "ただ今お並びのお客様までで、本日の営業終了となります。  なお、明日10月16日(金)は都合によりお休みさせて頂きます。  よろしくお願いします。",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業変更検出: 都合により",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-10-16",
+        "endDate": "2026-10-16",
+        "hours": [],
+        "reason": "都合により"
+      }
+    },
+    {
       "id": "sns_post_kawagoe_20261014_1_2109796037225533469",
       "timestamp": "2026-10-13T15:27:24.774Z",
       "shopId": "kawagoe",
