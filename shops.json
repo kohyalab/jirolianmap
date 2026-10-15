@@ -1170,6 +1170,19 @@
         "_isAiImported": true
       },
       {
+        "startDate": "2026-10-15",
+        "endDate": "2026-10-15",
+        "hours": [
+          [
+            17,
+            21
+          ]
+        ],
+        "reason": "店主体調不良のため",
+        "sourceUrl": "https://x.com/jiro_kame/status/2110525083290828805",
+        "_isAiImported": true
+      },
+      {
         "startDate": "2026-10-17",
         "endDate": "2026-10-17",
         "hours": [
@@ -1778,6 +1791,14 @@
         "startDate": "2026-09-09",
         "endDate": "2026-09-09",
         "hours": []
+      },
+      {
+        "startDate": "2026-10-21",
+        "endDate": "2026-10-21",
+        "hours": [],
+        "reason": "空調設備工事のため",
+        "sourceUrl": "https://x.com/kaminogeJiro/status/2110407815496142876",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -2232,6 +2253,14 @@
         "hours": [],
         "reason": "都合により",
         "sourceUrl": "https://x.com/jbc_ramen_jiro/status/2106267919982502246",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-16",
+        "endDate": "2026-10-16",
+        "hours": [],
+        "reason": "都合により",
+        "sourceUrl": "https://x.com/jbc_ramen_jiro/status/2110640017039372718",
         "_isAiImported": true
       }
     ],
@@ -5435,6 +5464,14 @@
         "hours": [],
         "reason": "",
         "sourceUrl": "https://x.com/SnBZt6eRCdz7lQw/status/2107244127163490395",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-18",
+        "endDate": "2026-10-18",
+        "hours": [],
+        "reason": "",
+        "sourceUrl": "https://x.com/SnBZt6eRCdz7lQw/status/2110612984217448618",
         "_isAiImported": true
       }
     ],
