@@ -14964,5 +14964,49 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "イベントへの出演告知であり、店舗の営業スケジュール変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_kameido_20261015_0_2110525083290828805",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2110525083290828805",
+    "postedAt": "2026-10-15T00:16:06.000Z",
+    "postText": "お世話になってます。大変申し訳ありません、店主体調不良のため本日昼の部はお休みさせていただきます。夜の部は通常通り営業予定です。よろしくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-15",
+      "endDate": "2026-10-15",
+      "hours": [
+        [
+          17,
+          21
+        ]
+      ],
+      "reason": "店主体調不良のため",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 店主体調不良のため"
+  },
+  {
+    "id": "sns_post_routine_fujisawa_2110528099146465786",
+    "shopId": "fujisawa",
+    "shopName": "湘南藤沢店",
+    "postSource": "x",
+    "postUrl": "https://x.com/fujirow26/status/2110528099146465786",
+    "postedAt": "2026-10-15T00:28:05.000Z",
+    "postText": "おはようございます。  10月15日(木) 豚チゲ🐷 にんにく入れますか？の時 アレ、豚チゲとお伝えください。 なくなり次第終了です。 野山商店特製タレ、崩し豚、豚カス醤油、 1番スープ、沢山にんにく🧄その他色々 粉チーズよくあいます。  葱生姜🫚  本日もよろしくお願いいたします。 https://t.co/4LfFzmb5Ou",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-nD3_pDL9SmAkzmLItoUnzyYsL1RSlJ0JOrdWBo0r3c_-AS4c4Ms7lFFUTC2kRGjYMjFANPvDMub-0ye2LCIEFWO3AVuZczBlPrGo6VyuetgTPvvzKjT54jiSWTXDMjqkHXywdsXiUAtM-zzpYqZ7gg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定メニュー（豚チゲ）の告知であり、営業時間の変更はありません。"
   }
 ]
