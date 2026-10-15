@@ -15310,5 +15310,103 @@
     "processedAt": null,
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_routine_kameido_2110639001556414495",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2110639001556414495",
+    "postedAt": "2026-10-15T07:48:46.000Z",
+    "postText": "お世話になってます。すいません、夜の部の開店時間10分ほど遅れます。申し訳ありません",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "夜の部の開店時間変更に関する日常的な遅れ連絡であり、長時間の営業時間変更や臨時休業ではないためスケジュール変更なし"
+  },
+  {
+    "id": "sns_post_jimbocho_20261015_0_2110640017039372718",
+    "shopId": "jimbocho",
+    "shopName": "神田神保町店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jbc_ramen_jiro/status/2110640017039372718",
+    "postedAt": "2026-10-15T07:52:48.000Z",
+    "postText": "ただ今お並びのお客様までで、本日の営業終了となります。  なお、明日10月16日(金)は都合によりお休みさせて頂きます。  よろしくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-15",
+      "endDate": "2026-10-15",
+      "hours": [
+        [
+          11,
+          16.866
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_jimbocho_20261016_1_2110640017039372718",
+    "shopId": "jimbocho",
+    "shopName": "神田神保町店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jbc_ramen_jiro/status/2110640017039372718",
+    "postedAt": "2026-10-15T07:52:48.000Z",
+    "postText": "ただ今お並びのお客様までで、本日の営業終了となります。  なお、明日10月16日(金)は都合によりお休みさせて頂きます。  よろしくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-16",
+      "endDate": "2026-10-16",
+      "hours": [],
+      "reason": "都合により",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 都合により"
+  },
+  {
+    "id": "sns_post_routine_kyoto_2110637183531172169",
+    "shopId": "kyoto",
+    "shopName": "京都店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kyoto/status/2110637183531172169",
+    "postedAt": "2026-10-15T07:41:32.000Z",
+    "postText": "こんにちは！本日通常営業です！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内であり、営業時間の変更や臨時休業はありません。"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2110640033732735314",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2110640033732735314",
+    "postedAt": "2026-10-15T07:52:52.000Z",
+    "postText": "何やらまだ燃えてますが、夜の部も通常営業です！御来店お待ちしておりまーす！  擁護派の方ありがとうございますー！！ いやーまさかこんな感じに受け取る人いるとは！気にせずまたおいでがメインテーマだったのですが…。 確かに高校生って書いた方良かったなー(でも個人特定出来ます？コレw) https://t.co/VCOYa9RnC3",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-je0WNh5Q_1OUBgvpS5b16qS6NVjz0pGz4HzK5MBAEuyNJLp9itWaT1cbEIdKafMlX_cwbNGk97pYU-jHsKVRcCTlbTETwcflTTPVVFAxVY0hIbPoUB7D1_EP6wjozOsiZoRKlC0miqNFgdplTqU1EA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-DnJoHF_hmWmUiuAAEJRmaSqPSqtH9LbGU0BN0OYvmEqsXfdDQY7utgTIPJRmZ4oiXAgooyYwmaXKtxuOHHhnbrnnHz1jANv23eeTly1lD9hVex_tdVSqunVLXj6Wrj2k_RKrIA4_B6qMoExosGL0Pw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-pnQEAAV4FX7eq8xOELEB34qjJuEe9mNSsUTmpbKdNGPB17nxsekd_dVNbkCWqfiRog8U0v8lGd0NyDhNAW0nHJcmFbt-J88HKkCMMyvUpsBZrtQ48QjVenA3WaHhWZigDrgjdNlbMscaBiLSvurzkA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内であり、変更はありません。"
   }
 ]
