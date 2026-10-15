@@ -2049,18 +2049,27 @@
     "id": "kannai",
     "name": "横浜関内店",
     "kana": "ヨコハマカンナイテン",
+    "shortName": "横浜関内",
+    "prefCode": "14",
+    "cityCode": "14104",
     "addressText": "長者町6丁目94オムニビル1階",
     "lat": 35.441955288770465,
     "lng": 139.63076517117022,
+    "openedAt": "2004-10-11",
+    "closedAt": null,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/kannai/",
       "rdb": "https://ramendb.supleks.jp/s/2532.html",
       "tabelog": "https://tabelog.com/kanagawa/A1401/A140104/14001518/"
     },
     "x": "kannaijiro",
+    "instagram": "kannaijiro",
     "ticketTiming": "",
-    "openedAt": "2004-10-11",
-    "closedAt": null,
+    "soupType": "",
+    "renge": "",
+    "takeout": "",
+    "hoursNotes": "",
+    "remarks": "",
     "temporary": [
       {
         "startDate": "2026-08-17",
@@ -2076,6 +2085,11 @@
             14.5
           ]
         ]
+      },
+      {
+        "startDate": "2026-10-15",
+        "endDate": "2026-10-15",
+        "hours": []
       }
     ],
     "shiftsByDay": {
@@ -2141,16 +2155,7 @@
         ]
       ]
     },
-    "holidayShifts": null,
-    "remarks": "",
-    "hoursNotes": "",
-    "instagram": "kannaijiro",
-    "shortName": "横浜関内",
-    "soupType": "",
-    "renge": "",
-    "takeout": "",
-    "cityCode": "14104",
-    "prefCode": "14"
+    "holidayShifts": null
   },
   {
     "id": "jimbocho",
