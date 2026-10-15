@@ -15194,5 +15194,32 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_koiwa_20261015_0_2110605020005810477",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2110605020005810477",
+    "postedAt": "2026-10-15T05:33:44.000Z",
+    "postText": "ただいまお並びのお客様をもちまして本日の営業は終了しました。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-15",
+      "endDate": "2026-10-15",
+      "hours": [
+        [
+          10.5,
+          14.55
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
