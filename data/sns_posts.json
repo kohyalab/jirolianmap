@@ -16045,5 +16045,66 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_sengawa_2110972271712231427",
+    "shopId": "sengawa",
+    "shopName": "仙川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjiro26/status/2110972271712231427",
+    "postedAt": "2026-10-16T05:53:04.000Z",
+    "postText": "本日17時から店内営業とテイクアウト販売します。テイクアウトはつけ麺に転用可能です。お薦めの調味料です。 https://t.co/Zinb6ohjhd",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-cPwhWk68V1iz1O4oh-iLCPiNjpiJ3nUimLJl7h35SFqVa6bJZWuuvalEKTARyB33N_lGlL9B-BO1H_WLQQ5eO9zdHCX5zsIG49eJPZjo9udysORnbcakbGcUIHd8ra6ZbE6p-duGRjJ-q9taJ1RmUQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-16gpwOqqwWArauno6sWAd-c4s7pugMVidh5sGbSdP6W-J8Q0B0XnwVpxWL8T7eo-wkzWk-HRhiRxYCSBONOmPgYNfWfbQt7_v99NuudJhym_q-mB2FdeEWraGaaYuJ4T6CmD50W8hOWljwxpPYOwHw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-_MX-ykvetwNbC2HMUFe70voo45ETtfO-HjVyRBbDYb4GsIcisHJLWQTsyvWgk2TF74vXNAxs6s_AwErvnrQmQWJT4EewbRCE9sUsn0XxTf2GD2COsRHz2ijPN4HBm27dw-tqUMjn0fkBD77RngfmAw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内およびおすすめ調味料の紹介であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_koiwa_20261016_0_2110972916661961019",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2110972916661961019",
+    "postedAt": "2026-10-16T05:55:37.000Z",
+    "postText": "本日はこの時間をもちまして営業終了です。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-16",
+      "endDate": "2026-10-16",
+      "hours": [
+        [
+          10.5,
+          14.9167
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2110970889882018130",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2110970889882018130",
+    "postedAt": "2026-10-16T05:47:34.000Z",
+    "postText": "いまいるひとでおわりです！ ごめんなさい！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
