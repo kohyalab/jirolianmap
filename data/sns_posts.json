@@ -16232,5 +16232,37 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の案内のため、スケジュール変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_hitotsubashi_2111008556522827986",
+    "shopId": "hitotsubashi",
+    "shopName": "一橋学園店",
+    "postSource": "x",
+    "postUrl": "https://x.com/1284jiro/status/2111008556522827986",
+    "postedAt": "2026-10-16T08:17:15.000Z",
+    "postText": "当店ではアルバイトを募集しています。今回はお昼に勤務可能な方を募集します。年齢と勤務可能な曜日と昼or夜をご記入の上ご応募お願いします。 https://t.co/nrFiGe5QNq",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-3e6qKe_hQHYky_kJMCLh8xsfxiISFvtEQvMBBu7veWn9PY6yQJsD279BBZqHeVpcsYFM_agbkMqw2FZ1tpvexwow_b4EfH-mP82Q7psvzbk5_3rF-pkVyX5TlfpQzThoqs46VGHHsplFRXtHoSI96w=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "アルバイト募集に関する投稿であり、営業時間の変更に関する告知は含まれていません。"
+  },
+  {
+    "id": "sns_post_routine_kashiwa_2111007779247084000",
+    "shopId": "kashiwa",
+    "shopName": "柏店",
+    "postSource": "x",
+    "postUrl": "https://x.com/genkimoriya/status/2111007779247084000",
+    "postedAt": "2026-10-16T08:14:09.000Z",
+    "postText": "お世話になっております。 ラーメン二郎柏店です。  明日10月17日（土）は、早めの開店とさせていただきます。  どうぞ宜しくお願い致します。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "「早めの開店」との記載があるが、具体的な開店時刻の指定がないため変更なしと判定。"
   }
 ]
