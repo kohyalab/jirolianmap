@@ -16390,5 +16390,20 @@
     "processedAt": null,
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2111163641697644941",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2111163641697644941",
+    "postedAt": "2026-10-16T18:33:30.000Z",
+    "postText": "@sendaiten よく見るアカウントの方なのですが、まだどの方かわかりません。今度声かけてくださると有り難いです。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
   }
 ]
