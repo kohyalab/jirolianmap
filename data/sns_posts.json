@@ -16375,5 +16375,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "明日の限定営業に関する告知であり、営業時間の変更や臨時休業はありません。"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2111147761920057366",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2111147761920057366",
+    "postedAt": "2026-10-16T17:30:24.000Z",
+    "postText": "@1600_3200 遠くから文句言ってくる見たこともない人より、近くで心配してくださる人やお客さんに\"元気ですよ\"、\"普段通りですよ\"、というのを伝えたかったので、こういう文章になりました。煽ってるつもりは一切ありませんよ！ そして、まー馬は余計です笑",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
   }
 ]
