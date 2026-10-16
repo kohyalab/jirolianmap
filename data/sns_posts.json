@@ -15844,5 +15844,35 @@
     "processedAt": null,
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_routine_sapporo_2110897206748483879",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2110897206748483879",
+    "postedAt": "2026-10-16T00:54:47.000Z",
+    "postText": "16日(金)昼の部、券売機 「ジロリアン陸」 ボタン¥150で「九条ねぎ端豚しき」 残10  又、昼の部「濃厚TARO2」対応します。 ラーメン➕辛味噌変更券➕現金100円  必ずスタッフ確認時に申告して下さい。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定メニューおよびトッピングの告知であり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_nagoyaosone_2110897876771701226",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2110897876771701226",
+    "postedAt": "2026-10-16T00:57:27.000Z",
+    "postText": "おはようございます。 ラーメン二郎名古屋大曽根店です。 本日昼のみです。 営業時間11:00〜14:00  明日の土曜日は10:00〜14:00予定となります。 よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "本日および明日の営業時間は通常通りであるため変更なし"
   }
 ]
