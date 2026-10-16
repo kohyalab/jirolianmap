@@ -16279,5 +16279,56 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "日常的な販売告知であり、営業時間の変更に関する言及はないため変更なし。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2111038654307303619",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2111038654307303619",
+    "postedAt": "2026-10-16T10:16:51.000Z",
+    "postText": "只今混雑無くなりました！ どうぞー♪🈳🈳🈳 https://t.co/mzlmYnqxaz",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-d8SdniRQutrGDHJHgS-pMSHa6LoPZapN__vI4Mktcs8Wii1ceSqTlnxC4yodpBBH_H2wiW8IC2f-voyM3FaJkMnFQXiJwGfhgO2ovJHCmRKiKjDCPKW9VwiEaF7I2JFfw5OdtCqrON0PtTV4Adw1hA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-HnujGkzUK5M-pMNChbV4SrxgXj2cml6bIopo69k0sJNPZdfqOHSGnJLJXkDtD3h11cGUB3PrGv471MecmxK_j1Mn5dFI6dNeOzc5mDUyA5HUIeFdBCA7O6udZvT3wqBEJ0P6yErZPQoSBZfzjbDg2Q==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-qNkhm0hEMfjVfRkRc0EKpwOCCS8SZiSyFH_TU4d9wadqagw-RSRv6Bl3PxM5K4UPmM3NAN5kt-Ys-AsiWf3RJI9zBA00GLlogW_qkRaOfMA-7WIaPl4zxdPLxl7bCW2sfkfziE-XNqdM04vTvGueOA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-lDjk76yLO285qP1Iysc3OxY2_sSlJ7UU_A9PO2_N4nJ4k36rO2WSdmWJdtzsXyahlQOyJewU3vMn3cGIkeuW6m4eBkpAMRJ-lTYWHkrRo6rbBV6LR1EWMiSmy8Rt2_uIHl1oNRqSZQ0YF6iBEtrjdw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更や臨時休業はありません。"
+  },
+  {
+    "id": "sns_post_nishidai_20261016_0_2111042183646392399",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2111042183646392399",
+    "postedAt": "2026-10-16T10:30:52.000Z",
+    "postText": "本日、16日の営業は 只今、32人待ちにて 終了しました。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-16",
+      "endDate": "2026-10-16",
+      "hours": [
+        [
+          10.25,
+          13.5
+        ],
+        [
+          17.25,
+          19.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 0.95
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
