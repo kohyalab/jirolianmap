@@ -16592,5 +16592,42 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2111231983049461792",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2111231983049461792",
+    "postedAt": "2026-10-16T23:05:04.000Z",
+    "postText": "本日 ◇10/17土 【昼】 →こちらをご覧のお客様限定です！ ↓ ※お客様ご自身で→丸の🟥赤又は白🤍食券を１枚お取りになって席までお越しください。→食券は券売機の前の台の二段目に置いておきます。 ※必ず着席時にお出しください。 ※サービス中の目印は［黄色いハンカチ］ どうぞご利用下さい♪ https://t.co/OzIuE7YwQf https://t.co/PM4DeODznG",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-SSA6hp3z_MJL7E1ZKx5xfu4zMPqIOtd-FN3MNK52d9ltyS-oEHNuQvAnO6X-qrb5XzGLEENjnpfTeOSfw5QMd6d2nvXO244MABlzHDSZVpec8r0MEoGxR4PTFyduh3N8Wagok4h3Tvck3NesrK3Hjw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-o4PlN9nltdmUscWJjKXBwdMEdJv8fXmtgvRRVaM338SpSLNV4Y-6pe_JJNHrV1cFENDenD_nbgO7maSoIdZqYSIc1p8usb3s33O8riUmzXIemmArfHmcWdrLnwxTsqaKVR2GRl33CPuMzKtX6IgfGA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-j62dHbIB6gZu_hGgVQIyy0S2JdrIZMa-NgVaSaLLih8tJ3kGGI1vwWUZ3pSg_C3V54d7mC3rDP9QyNgcuJS1RY0by15SrQuAjw5ZCG1FwEZxAZTFX24w6EFSADKxkGGNrOA_BwXgVtkwJLVR2xDFDA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-62baFo-jkOOVjCL38_RnAa2DMxkMuvO3w1vvZXzVzF-x2BH6chG1tmSLPfQNQpXZXW6WgQQbXb7uOkLE9RmGo8DtwTI5kyxD_wscoP8YAs2nvgjgi3dZqhxbiwllq_4cZiH6HFUu1YHdszJ9WW062w=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの告知であり、営業時間の変更に関する言及はないため変更なしと判定。"
+  },
+  {
+    "id": "sns_post_routine_fujisawa_2111235760125026355",
+    "shopId": "fujisawa",
+    "shopName": "湘南藤沢店",
+    "postSource": "x",
+    "postUrl": "https://x.com/fujirow26/status/2111235760125026355",
+    "postedAt": "2026-10-16T23:20:04.000Z",
+    "postText": "おはようございます。  10月17日(土)  しょっぱ豚🐷 無料トッピング にんにく入れますか？の時お伝えください。  とり野菜みそタマネギ生姜🫚🧅  本日もよろしくお願いいたします。 https://t.co/iHtjp6rfAw",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-oao7DhMoI0Mk3wEd8-tJAsDR-83MbEB6HHWhuCmlGrUryFr0CcXnEXujnD8YBQ1f67uWFMzUdxwyY8qFt5aivA3zQujjC73oDXCmmRT9rVAGqwyukTZNr0GDy6QOjXZvHUConztE2a8BwRuicHZUNg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "本日は通常営業の告知であり、営業時間の変更はありません。"
   }
 ]
