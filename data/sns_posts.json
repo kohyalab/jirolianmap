@@ -16171,5 +16171,66 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "本日通常営業の告知"
+  },
+  {
+    "id": "sns_post_koiwa_20261017_0_2111004646009709049",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2111004646009709049",
+    "postedAt": "2026-10-16T08:01:42.000Z",
+    "postText": "【臨時休業】  明日10/17(土曜日)のテイクアウト販売はお休みです。  よろしくお願いいたします。  小岩二郎",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-17",
+      "endDate": "2026-10-17",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2111001182714151053",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2111001182714151053",
+    "postedAt": "2026-10-16T07:47:57.000Z",
+    "postText": "［あったかいまかない汁あり］販売中です♪ どうぞご利用ください！ https://t.co/ZMvW1Iq3dr https://t.co/ALeZeO8jli",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-yX77dYA43GVfIVxeLm9Fwwq0cA81gjshUBnhuxHVU1KXvISgr6NmCQ1DWfFhC54YQ4D_5KErAoob2AbKLbclFRvX2MOjWeLc_fc8iBsOcNXEpCGBP104UBuOrkN6_kRJV5KFaX3bvBhfbUPTLWhZwg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-soX73249vy8DWNimpormRLYJtm_xR49BCDc3if4yrsPg-R4ryNbX0mWNT5ttxY-k7GoQFkKFiXXYkZoPvzWXbyEnihaJ5OCyXePd_0dpLq8dT4rlwyrMlTx0c-8f8lUqCmOiiXwYdt_V0zbEp2K1GA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-3vr8_lL5iqr1-CiRv0BUkaE1uZ8B9_msrHsLdzu5VV8sVcdr9b0yXQv4m96wpmh7bUD3gMqUtOqkGCZWAEfQOpKQ8y8Xby0KwbDMWwgrmOxf-ttU8wxcPXlS_eRnWo_M9oKk-TIGfprcrN-RheTPgQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-PL5SMZi0MdhJVCxZlxDsWqrYjEDOCQtxGRoXmSHFXwzggImMQB42q6y8bGqO7Dk0qYP43AhGOUn5ettrxRMlEUsYmH-RvwluYmYjomJC8BvFVP5aAic84ChaaZgwklFJ5nwZL3Vwlg1m1CSx5IJ4zw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更なし"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2111002111760851303",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2111002111760851303",
+    "postedAt": "2026-10-16T07:51:38.000Z",
+    "postText": "アルバイト募集が5人来た笑(イタズラなのではと疑心暗鬼だったのですが) こんな中、逆張りが過ぎる笑 ありがとうございます！！　  夜の部も通常営業です！ 冷やかし来店お待ちしております！！ https://t.co/S7nBs9nh0W",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-3SGAvObs7Ay5VxQCgostUHOhMzveNmc-5KA6cxf2YKlWIYMRida6H9Ck3BtYhFmqPSkRsJxFCDuCm2n8hgkGKdyRrZXHJ5zxoEMZBDDloQnib-WxFzzY_i7RgKAmBpfn3wyl_dCseAFNMUFFvs73mQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-So1Q8sXh5uFJLWdcBDKaBt9B_P0xWc0MM-4BobVRaxpHa6a1yFiGYUDoPk7DmIEMDOZ9dkS_I9bUwuefOruIJDrjppbFM_3YbzYVCUxcnSkPRLTOP2Vm2pxp6m5HNDKbVh_q6bIHH-D7oiWbLblMIQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Ek16JWXR60cBSDK1w_bFd9IkHM-M_EqWNAFzontSF6IXWWRtZC93LI4aSoO3FFN02SGmL9DKhI0luYpIL2-u5i84sxZnA7m_2gcoo0HMDywn-pGF68RNCRTqpeDo9a9QAK8Uj4sERNhP8j2CcZz5Sw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内のため、スケジュール変更はありません。"
   }
 ]
