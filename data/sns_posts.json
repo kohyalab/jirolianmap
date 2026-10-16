@@ -16527,5 +16527,70 @@
     "processedAt": "2026-10-16T22:25:17.371Z",
     "aiStatus": "match",
     "aiReason": "既に登録済みの臨時スケジュールと一致"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2111218780659654771",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2111218780659654771",
+    "postedAt": "2026-10-16T22:12:36.000Z",
+    "postText": "おはようございます。  本日 ◇10/17土 【土曜日営業🈺】 10:00から〜15:00 ご来店ご到着お並びの お客様まで営業致します。  →［あったかい賄い汁あり］ →［相撲部屋のしょうがダレ］ →［お椀で和ッカレー］ 本日もやっております♪  明日 ◆10/18日【連合三田会】 ◆10/19月【定休日】 https://t.co/aiV1qExp0x",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-LGiZ5Cd2x0WHMs-m7rkDyzuDMbkE-F5UtJhSJ2LU06UJmmutWxz8hDRWdiqnklaSS4PL3fA-UkrEl3P2OZNISZGTsqwm6VOwJY_2AfMdJbvQDCWuSE2t9pBjewSBNg4fQlETsiWefNt51BrlMBpCOw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-9vALo6rF8yTr7cHbTz6FkscYU9ZgvkdbuGmD2k7QiS9qD6WZY9QH3dDWItDyLItbKq2eaG2mOd58zbDTe4KxbwUJOg2zutVhAOEASosXhpFZjXCCJ57wt9doKxLXTnbI50Z1W2Z54r72ULZuLQ1Ong==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-QfP9Ustdu2pwf0HQ98U6pvdtc-l4mwJJNuO4YAqU125M2M4ARqUu8p0Rte31ZKDEuPRAgkGWcJBTP-4fIAzhz1CcPclAWha00RAeECUTjy9Lt5-EEVm_1kiGC_m6o53o92VwWfI36p_g0xZDgHN4rA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-_Hcw-30bisuyZgvSlqSXR596OynbKNBaW9lB0ZNNTAS8x0gQd6tNiougZWz-g2L7K8toULUAiML_HkNuhLUweTItP35DYtiNhvJOv9XvR9ukfVga4gljxyRCUCqYqWWPEodJeF9duK-ix7w8MVRZwg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "10/17(土)は通常営業の範囲内であり、臨時休業や時間変更の告知はありません。"
+  },
+  {
+    "id": "sns_post_routine_shndaita_2111218687177052550",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2111218687177052550",
+    "postedAt": "2026-10-16T22:12:14.000Z",
+    "postText": "バイト募集します！  時給1300円 くらい(慣れたらすこし増えます) 7時〜17時くらい(応相談) 週2〜4回くらい（25〜45歳くらい） まかないあります 近所のひと希望 日払いです ※インスパの出店をしようとしているひとは不可です   希望の方は 年齢、最寄り駅、飲食業経験を書いてDMしてください！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "アルバイト募集の告知であり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2111218588975796397",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2111218588975796397",
+    "postedAt": "2026-10-16T22:11:50.000Z",
+    "postText": "激辛もやります！ 多分ちゃんと辛いです！  1倍  100円 2倍 200円 3倍 300円です！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2111218473280143554",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2111218473280143554",
+    "postedAt": "2026-10-16T22:11:23.000Z",
+    "postText": "にんにく地獄塩ラーメン(+200円)もやります！ すりおろしにんにくをまぜてます！  麺の量と一緒に じごくでって言ってください！ ラーメンのひとはしょうゆでって言ってくれるとわかりやすいです！  麺の量を聞かれた時に じぶんから言ってください！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
