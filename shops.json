@@ -2368,14 +2368,6 @@
         "reason": "都合により",
         "sourceUrl": "https://x.com/koiwajiro/status/2104697479426150603",
         "_isAiImported": true
-      },
-      {
-        "startDate": "2026-10-17",
-        "endDate": "2026-10-17",
-        "hours": [],
-        "reason": "所用のため",
-        "sourceUrl": "https://x.com/koiwajiro/status/2108709092923715701",
-        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -2404,12 +2396,7 @@
           15
         ]
       ],
-      "5": [
-        [
-          10.5,
-          15
-        ]
-      ],
+      "5": [],
       "6": []
     },
     "holidayShifts": []
@@ -2725,6 +2712,14 @@
         "startDate": "2026-09-21",
         "endDate": "2026-09-21",
         "hours": []
+      },
+      {
+        "startDate": "2026-10-17",
+        "endDate": "2026-10-17",
+        "hours": [],
+        "reason": "",
+        "sourceUrl": "https://x.com/Tochigikaidoten/status/2111182310154625109",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -4213,6 +4208,19 @@
           ]
         ],
         "sourceUrl": "https://x.com/26shinshindaita/status/2109186510184751166",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-17",
+        "endDate": "2026-10-17",
+        "hours": [
+          [
+            11,
+            15
+          ]
+        ],
+        "reason": "",
+        "sourceUrl": "https://x.com/26shinshindaita/status/2111215697602998440",
         "_isAiImported": true
       }
     ],
