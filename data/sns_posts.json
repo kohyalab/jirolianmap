@@ -15874,5 +15874,39 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "本日および明日の営業時間は通常通りであるため変更なし"
+  },
+  {
+    "id": "sns_post_routine_kawagoe_2110901548071203267",
+    "shopId": "kawagoe",
+    "shopName": "川越店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kwge26/status/2110901548071203267",
+    "postedAt": "2026-10-16T01:12:02.000Z",
+    "postText": "おはようございます！ 本日通し営業です☀️ ○11:00~20:00  🍜持ち帰りあります！  無料トッピング｢紅生姜｣あります☺️ トッピング時に「アレ」で！  よろしくお願いします🙇‍♂️",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知であり、臨時休業や時間変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2110899426390864075",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2110899426390864075",
+    "postedAt": "2026-10-16T01:03:36.000Z",
+    "postText": "おはようございます！ まだ燃えてますね！まいったまいった笑 変なのも多いのですが、温かい言葉をかけてくださる方も返信が出来ないくらい多くて有り難いです！常連さんの冷やかし来店も多く有り難いです！ 心配しないでくださいませ！ありがとうございます！ 本日も通常営業です！ https://t.co/bDtAc9vsXL",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne--se28gXi9R8lLgAvlX3v7gUIK7yFv81vTf3IHTaTy6m7Qn-Gpm8bLr4OVIdIe5Na3L5bxuJXKrmvIFkIupPgP1AVEriKqCbGCvw3hQv5RgmLU-SVV_b6au-m1WdOomznWyJKmCo5eEthccVnONo2sw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-hcwc2UehiDpqp-WFr6uNi9ltv7h95oVqsEGpAcTzGt73VemPdMF0oYv76Ttx-GkuMzB9vzIhmVbi4vcd55rBZ1MuSHfptoXAQonUmcFs-XNcQ3ukfaqRbRf9i3CLYXkK1T057zAMxu5nw-thByDyBg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-O2Cxz0V6adfe-MDb0yWADMqf5Cflc2Bon-jf1XdabDTr6YHV862EDLHn6A6D4p0xmr3O1P2D90C03Z-5kNAt14Xg0qYYp4xAkYJEkS_H2NKjEW-crD3ACJe2NjYNum2qxY1RT-fqGys9jO1EM_kddA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知であり、営業時間の変更はありません。"
   }
 ]
