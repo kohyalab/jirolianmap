@@ -15973,5 +15973,35 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "日常投稿のため変更なし"
+  },
+  {
+    "id": "sns_post_routine_nishidai_2110923152662708562",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2110923152662708562",
+    "postedAt": "2026-10-16T02:37:53.000Z",
+    "postText": "16日、昼の部の 肩ロース、切り落としは 売り切れました。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常的な売り切れ告知であり、営業時間の変更ではないため変更なし。"
+  },
+  {
+    "id": "sns_post_routine_shndaita_2110926461561643283",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2110926461561643283",
+    "postedAt": "2026-10-16T02:51:02.000Z",
+    "postText": "日曜日お休みなのできょう来れるひとどうぞ！ https://t.co/k4uRZ9GrGA",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常的な営業告知のため変更なし"
   }
 ]
