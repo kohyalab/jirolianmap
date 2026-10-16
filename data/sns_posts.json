@@ -16003,5 +16003,47 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "日常的な営業告知のため変更なし"
+  },
+  {
+    "id": "sns_post_routine_koiwa_2110953794108539101",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2110953794108539101",
+    "postedAt": "2026-10-16T04:39:38.000Z",
+    "postText": "現在外並び4名。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業状況に関する具体的な変更告知なし"
+  },
+  {
+    "id": "sns_post_nagoyaosone_20261016_0_2110955141407113684",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2110955141407113684",
+    "postedAt": "2026-10-16T04:45:00.000Z",
+    "postText": "ラーメン二郎名古屋大曽根店です。 只今の時間、並びを持ちまして本日の営業は終了とさせて頂きます。 明日もよろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-16",
+      "endDate": "2026-10-16",
+      "hours": [
+        [
+          11,
+          13.75
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
