@@ -15811,5 +15811,38 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "限定トッピングの販売告知のみであり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_tachikawa_2110890467755962437",
+    "shopId": "tachikawa",
+    "shopName": "立川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jirotachikawa/status/2110890467755962437",
+    "postedAt": "2026-10-16T00:28:00.000Z",
+    "postText": "10/16(金)、昼夜とも時間内売り切れなし営業です。 昼11:00-14:30 夜17:00-21:30  ①「赤」は辛いラーメン。 +汁なし変更券で、辛い汁なしもできます。  ②持帰りラーメン販売します。 　標準:2人前のスープと生麺+ブタハーフ  ※2枚目の写真は他店様です。 https://t.co/umWCMr5Pi4",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-7nrIQu4_-MNKaeKr5jnrkrS1fpg8Z-lgSQS1YtOmEJ890d8u30enr-l2dAhQqYFqpFTxaAGwG2LX1xeisM89FqRVTXDt2aXHJ-HhJ9fOlusXDTKv0hUpEsyx3Y4EnLHEubnsOhg94kdXhg5Tft8_pw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-O5phrS1iZoLHcizz7uA_lWXbIjy64J1fm4cS0QlJIuNYGeUVNuLCXlTGIZpf-fb44WhHHeT5jPfF5M0kqfh7oxMWRqvNtORk26JHo24XMlXDDPngZ8mY2X0zo2J17zzBrO8p4C_zUmdIJ8ty0g4WrQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知であり、臨時休業や営業時間変更はありません。"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2110884908138975352",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2110884908138975352",
+    "postedAt": "2026-10-16T00:05:55.000Z",
+    "postText": "@UUFUUSHIN_RAMEN おはようございます！！ ご心配くださってありがとうございます！本人いたって元気です！ \"あーたしかに高校生って書けば良かったなぁー\" くらいであとはなんともないです笑 温かい言葉掛けてくださる人には返信したいのですが、変なの増えすぎてて追いつかないですね笑",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
   }
 ]
