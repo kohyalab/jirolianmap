@@ -16141,5 +16141,20 @@
     "processedAt": null,
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_routine_sapporo_2110986612226314380",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2110986612226314380",
+    "postedAt": "2026-10-16T06:50:03.000Z",
+    "postText": "16日(金)夜の部、券売機 「ジロリアン陸」 ボタン¥150で「九条ねぎ端豚しき」 残5  夜の部も「濃厚TARO2」対応します。 ラーメン➕辛味噌変更券➕現金100円  必ずスタッフ確認時に申告して下さい。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業変更なし（通常通り営業・雑談等）"
   }
 ]
