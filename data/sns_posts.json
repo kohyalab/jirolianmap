@@ -17428,5 +17428,22 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_kameido_2111443505843478567",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2111443505843478567",
+    "postedAt": "2026-10-17T13:05:35.000Z",
+    "postText": "今こちらの子は当店にいます✨ https://t.co/b73hd58fAz https://t.co/EJLxO4pTkv",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-8ko3EnWg5iF2qLpk0rTwpQsXCtpcRT5eeEf8YgoyM6OMMZDJ746cl4T65nj7V0FDvDp7ZrM2OkNoYk8AnGaK8lzhZ-Pt5cPRDCVfxv2zKYMYO_dYsNaHn0Ty-wb0W5kfpzdU8wDK_ov7oQjpvjc0tg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常投稿であり、営業時間の変更に関する言及はありません。"
   }
 ]
