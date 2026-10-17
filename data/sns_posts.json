@@ -16741,5 +16741,23 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "本日の営業時間は通常通り（10:00〜14:00）のため変更なし"
+  },
+  {
+    "id": "sns_post_routine_ikuta_2111261114340438193",
+    "shopId": "ikuta",
+    "shopName": "生田駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ikuta_jiro/status/2111261114340438193",
+    "postedAt": "2026-10-17T01:00:49.000Z",
+    "postText": "おはようございます。  🧄本日からです！ ニンニクジャンの別バージョンです🧄 詳しくは店内ホワイトボードをご確認ください。  魚玉あと8個だけあります🐟️ https://t.co/rIA9BJXw6H",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-9PmbuMDYgPXMW73sCIT-JUs7Y6gg26bItIvTSlWPvKKwbqRrA98xegGUzFCNtq-mvkcsyk-zdGQ7llswxr92si6dTXBNXCWD6nAzxkY-VYM33YYo_uruDJSOPleYV-VEuSTWzIatvZQNyEtGKJKuSQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-7BPwPpJgxpc9a9RYhOs6a0pXunnmfmIwrdPAx88-3cvo7PQEuEQz1ETd-Y1Rx6tCMImIbdk-YrMGqid4KBb6BL0Z7ZBG8G8B3wkL5T1e561HP-cNFoByTuuZIP_1dwurX-5jMvmcscy9tI5Rb9p1-Q=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業変更なし（通常通り営業・雑談等）"
   }
 ]
