@@ -17548,5 +17548,44 @@
     "processedAt": "2026-10-17T22:59:59.269Z",
     "aiStatus": "no_change",
     "aiReason": "投稿内容は10月18日〜24日の営業案内であり、通常営業時間と同一であるため変更なし。"
+  },
+  {
+    "id": "sns_post_routine_shndaita_2111589121009545394",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2111589121009545394",
+    "postedAt": "2026-10-17T22:44:12.000Z",
+    "postText": "2026年10月18日(日) 2026年10月19日(月)  お休みです！ よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業通りの定休日（月曜日）のため変更なし"
+  },
+  {
+    "id": "sns_post_mejirodai_20261018_0_2111589437549556022",
+    "shopId": "mejirodai",
+    "shopName": "めじろ台店",
+    "postSource": "x",
+    "postUrl": "https://x.com/mejirodai_jiro/status/2111589437549556022",
+    "postedAt": "2026-10-17T22:45:28.000Z",
+    "postText": "毎度ありがとうございます 本日18日(日)は都合により臨時休業となりますのでご注意下さい よろしくお願いします🙇 https://t.co/Kl4qmnddeC",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-nRhWQ3rSLLyh-Kx5M2HpL6yi4V42HPPEiJvzk1DsVNEMgQ2nJ53AAfqdBpM_yjBTmh91Y9XrOMZ_tcKlfSLroFCca7m9TWr7LzogwK5Z4bvtAb5B3qZDD7mHs-Hjxe4t695aY1J97sJhsSiRGCqe-Q=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-18",
+      "endDate": "2026-10-18",
+      "hours": [],
+      "reason": "都合により",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 都合により"
   }
 ]
