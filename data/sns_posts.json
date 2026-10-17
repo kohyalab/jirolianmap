@@ -16664,5 +16664,82 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "切り落としの売り切れ告知のみであり、営業時間の変更や休業に関する言及はないため変更なし。"
+  },
+  {
+    "id": "sns_post_jimbocho_20261017_0_2111248081627054542",
+    "shopId": "jimbocho",
+    "shopName": "神田神保町店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jbc_ramen_jiro/status/2111248081627054542",
+    "postedAt": "2026-10-17T00:09:02.000Z",
+    "postText": "本日の営業は都合により15時終了とさせて頂きます。よろしくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-17",
+      "endDate": "2026-10-17",
+      "hours": [
+        [
+          11,
+          15
+        ]
+      ],
+      "reason": "都合により",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 都合により"
+  },
+  {
+    "id": "sns_post_routine_senjuohashi_2111253396145725520",
+    "shopId": "senjuohashi",
+    "shopName": "千住大橋駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjujirou26/status/2111253396145725520",
+    "postedAt": "2026-10-17T00:30:09.000Z",
+    "postText": "本日は15時30分前よりテイクアウト販売のみの営業となりますのでご注意をお願いいたします！  フォロワー限定🐖 味噌脂蕎麦🐖魚粉油そば🐖 生姜醤油脂🐖1010カレー脂🐖 ✨復刻✨BP塩油そば🐖豚１本🐖 https://t.co/HX7aNqoP3t",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-UgAoggc58CyzYeJBDc2ePKEOAa7MAdFExAc1nOsY1_GEjXJY-YFxuPLYzmDjBQJ5Ynb5U-a9eOae_a5yxipTplSVYn12ETFBPRoOTm42wiKP9ycxQhJI4Rphi6RWFA21aeZg2MdU6GIEU8BsmW1LLw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-PJP-JpWaskA2upgz9Qqf5Gb0jq5ih-BJm9kQeDjiJkvnQ5vaSSk1iCDZxS3c0gPeuJCfsJZi7hBeGN1gX2wZ2lnEpE0YloMUOlpITUfMGm5JtORuNbtxAwnDz05ezFqSdlVsx7fxU8im8-x8QnBiiw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "テイクアウト販売のみの告知であり、営業時間の変更ではないため変更なしと判定"
+  },
+  {
+    "id": "sns_post_routine_sapporo_2111252781843775506",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2111252781843775506",
+    "postedAt": "2026-10-17T00:27:43.000Z",
+    "postText": "10月17日(土) 「魚介風ラーメン」対応します。 🐟🐚🌪️ ラーメンの食券＋現金１００円 必ず、スタッフ確認時に申告して下さい。  画像は東京三鷹市の「中華そば みたか」 お持ち帰りラーメン🍜 五臓六腑に沁み渡りました🤗  店主さん、スタッフの皆さん、荒川さん 有難う御座いました🙇 https://t.co/K63tw2V23a",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-dXckPqMKylu8iT8FqSVBdWfDbs8azZ35wcYrxDLbQ-4Vd36nwbJohGliJxNQ6B8_-dCdjWSBzRmbXDhdfTNSZrVrrcDXj7VdZsXPQFfhNA5w5_eE8Np2g77qgYe6fiZFPJ5twtoTFxZhLb-6MtHfFw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定メニューの告知であり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_nagoyaosone_2111251117179088940",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2111251117179088940",
+    "postedAt": "2026-10-17T00:21:06.000Z",
+    "postText": "おはようございます。 ラーメン二郎名古屋大曽根店です。 本日の営業時間  10:00〜14:00(材料がなくなり次第終了) よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "本日の営業時間は通常通り（10:00〜14:00）のため変更なし"
   }
 ]
