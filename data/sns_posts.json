@@ -17389,5 +17389,44 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_kameido_2111427076985356463",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2111427076985356463",
+    "postedAt": "2026-10-17T12:00:18.000Z",
+    "postText": "お世話になってます。本日もご来店ありがとうございました🙇‍♂️途中で味噌が足りなくなってしまい大変申し訳ありませんでした。またゲリラでやると思いますのでご縁があったらよろしくお願いします。 明日は通常通り営業予定です！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常投稿のため変更なし"
+  },
+  {
+    "id": "sns_post_maebashichiyoda_20261018_0_2111427415734153422",
+    "shopId": "maebashichiyoda",
+    "shopName": "前橋千代田町店",
+    "postSource": "x",
+    "postUrl": "https://x.com/SnBZt6eRCdz7lQw/status/2111427415734153422",
+    "postedAt": "2026-10-17T12:01:38.000Z",
+    "postText": "ラーメン二郎前橋千代田町店です。 お知らせ通り10/18日曜日お休みです。 すみません。宜しくお願い致します🙇 https://t.co/TRnBOKC7pa",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-1YB29QdkBvgEXqn4s2nnwgLYV1yko1os42DMPDGzTgfbtLVKbOSOk7K7V_8pbSQ7UGj9YBgie7MHeOdAfgXmxBUwFZY8WNo-pAsSCPSTJLmygsIBZ10DDylWxxaVyEElmwM8oB8zLJisKmaZFfklAg=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-18",
+      "endDate": "2026-10-18",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
