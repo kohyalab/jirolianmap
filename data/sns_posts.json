@@ -16838,5 +16838,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "店舗の営業に関する変更告知はなく、イベント告知および日常的なテイクアウトの案内のみであるため、変更なしと判定します。"
+  },
+  {
+    "id": "sns_post_routine_kannai_2111277178868695217",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2111277178868695217",
+    "postedAt": "2026-10-17T02:04:39.000Z",
+    "postText": "おはようございます！  高菜残り少ないですが、ご希望の方はアレでお願いします！  納豆、煮干しはまだあります！  本日もよろしくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常的なトッピング告知であり、営業時間の変更に関する言及はないため変更なし。"
   }
 ]
