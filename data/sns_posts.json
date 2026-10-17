@@ -17117,5 +17117,142 @@
     "processedAt": null,
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_senjuohashi_20261017_0_2111340166074003949",
+    "shopId": "senjuohashi",
+    "shopName": "千住大橋駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjujirou26/status/2111340166074003949",
+    "postedAt": "2026-10-17T06:14:57.000Z",
+    "postText": "大変申し訳御座いませんが本日の販売は終了いたしました！  お持ち帰りして頂いた方へ！  脂の袋は立てて湯煎をし♨︎ 麺を茹でよーく湯切りをした熱熱の麺によーく混ぜ混ぜしてお召し上がり下さい🍜 （麺の茹で加減はお好みで！） https://t.co/adNuGfHyxj",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-IZKzeZyAxT3vAH2xx7JedlfAxavFCyV7Bhgp-xNmkHzVjHBj3ERWAwqymFy6ACUfzeAmJ5FtpDsRjcCffYU-gCdEWYjdBsXe3SBgDBj_yYgFbfH_MYl7Mkwc9qr4dvcQo-qZLsRaKubhFltlQfWhag=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-17",
+      "endDate": "2026-10-17",
+      "hours": [
+        [
+          10.5,
+          15.23
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_shndaita_20261019_0_2111342824860045531",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2111342824860045531",
+    "postedAt": "2026-10-17T06:25:30.000Z",
+    "postText": "2026年10月17日(土) 解ってる範囲の営業予定です！  日 お休み 月 お休み 火 〇 水 〇(15:00くらい) 木 〇 金 お休み 土 〇 日 〇  11:00〜16:00くらい にんにく地獄塩(＋200円)もやります！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-19",
+      "endDate": "2026-10-19",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_shndaita_20261020_1_2111342824860045531",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2111342824860045531",
+    "postedAt": "2026-10-17T06:25:30.000Z",
+    "postText": "2026年10月17日(土) 解ってる範囲の営業予定です！  日 お休み 月 お休み 火 〇 水 〇(15:00くらい) 木 〇 金 お休み 土 〇 日 〇  11:00〜16:00くらい にんにく地獄塩(＋200円)もやります！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-20",
+      "endDate": "2026-10-20",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_shndaita_20261021_2_2111342824860045531",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2111342824860045531",
+    "postedAt": "2026-10-17T06:25:30.000Z",
+    "postText": "2026年10月17日(土) 解ってる範囲の営業予定です！  日 お休み 月 お休み 火 〇 水 〇(15:00くらい) 木 〇 金 お休み 土 〇 日 〇  11:00〜16:00くらい にんにく地獄塩(＋200円)もやります！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-21",
+      "endDate": "2026-10-21",
+      "hours": [
+        [
+          11,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_shndaita_20261023_3_2111342824860045531",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2111342824860045531",
+    "postedAt": "2026-10-17T06:25:30.000Z",
+    "postText": "2026年10月17日(土) 解ってる範囲の営業予定です！  日 お休み 月 お休み 火 〇 水 〇(15:00くらい) 木 〇 金 お休み 土 〇 日 〇  11:00〜16:00くらい にんにく地獄塩(＋200円)もやります！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-23",
+      "endDate": "2026-10-23",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_mejirodai_2111341267062030360",
+    "shopId": "mejirodai",
+    "shopName": "めじろ台店",
+    "postSource": "x",
+    "postUrl": "https://x.com/mejirodai_jiro/status/2111341267062030360",
+    "postedAt": "2026-10-17T06:19:19.000Z",
+    "postText": "今日の昼黒い財布の忘れ物がありました 心当たりがあるかた取りに来て下さい",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "忘れ物の告知のみであり、営業時間の変更に関する言及はありません。"
   }
 ]
