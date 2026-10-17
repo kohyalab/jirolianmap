@@ -17445,5 +17445,35 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "日常投稿であり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_kannai_2111450240922620024",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2111450240922620024",
+    "postedAt": "2026-10-17T13:32:20.000Z",
+    "postText": "本日もありがとうございました。 シビレに必要な調味料など さらに仕入れる事が出来ましたので、後しばらくは出来そうです カレーチンも用意出来たので 明日ご希望の方は「アレ」でお願いします  煮干しと納豆はまだまだ健在です 宜しくお願いします",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常的なメニュー告知であり、営業時間の変更に関する言及はない。"
+  },
+  {
+    "id": "sns_post_routine_okinawa_2111451295668404358",
+    "shopId": "okinawa",
+    "shopName": "沖縄店",
+    "postSource": "x",
+    "postUrl": "https://x.com/okinawa_jiro/status/2111451295668404358",
+    "postedAt": "2026-10-17T13:36:32.000Z",
+    "postText": "本日、持ち帰り完売御礼 誠にありがとうございました。  せっかくご来店いただいたにもかかわらず、ご購入いただけなかったお客様、申し訳ございませんでした。  ご要望多数につき、明日は10セット限定でご用意いたします。 仕入れ・仕込みの都合上、少量で恐縮ですが、何卒ご了承ください。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "持ち帰り販売の告知のみであり、店舗の営業時間の変更に関する言及はないため変更なし。"
   }
 ]
