@@ -17254,5 +17254,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "忘れ物の告知のみであり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_ogikubo_2111349771445416004",
+    "shopId": "ogikubo",
+    "shopName": "荻窪店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ogkb_jiro/status/2111349771445416004",
+    "postedAt": "2026-10-17T06:53:07.000Z",
+    "postText": "夜営業は材料の在庫量の関係で かなり早めの閉店になりそうです",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "具体的な終了時刻の記載がないため、変更なしと判定しました。"
   }
 ]
