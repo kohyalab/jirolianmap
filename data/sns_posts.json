@@ -17490,5 +17490,23 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_kameido_2111470590569906622",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2111470590569906622",
+    "postedAt": "2026-10-17T14:53:12.000Z",
+    "postText": "店主の視覚トリック✊✋ https://t.co/iLwchgfNkL https://t.co/woh7HQJdwE",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ZXpWhZCoeCOb8sS6GMpP8BVw6sAJnDnOEhAN6rlQTCfMpt4PgMvX1EGfSDs4L3UMIbFdqxIbOwCQ_TKHJlAmmZgsFAOc_WzlrGG1NkMqCw5whnHw98ItkKv72wldHAptJARTzBk5b6ugkXiUc-SD4Q==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-il8-NVfPt1iU-34FsBhZYfwq-nivtpJ-Wz-MFfwA62mHxOkmAf-Z1JG9FuNdr30Qq8RjkZByVdB8jJ_4dr9yFh0q0_PYH_a8j9x1ll20VhDE7NKEhLtNBEjKOCQtDOIDz3Pben7LStl5D81LMZsj2g=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報の変更に関する言及はありません。"
   }
 ]
