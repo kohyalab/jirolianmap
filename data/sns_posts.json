@@ -16987,5 +16987,103 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 麺切れのため"
+  },
+  {
+    "id": "sns_post_ikebukuro_20261017_0_2111323476334387448",
+    "shopId": "ikebukuro",
+    "shopName": "池袋東口店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ikejikabuji/status/2111323476334387448",
+    "postedAt": "2026-10-17T05:08:37.000Z",
+    "postText": "池袋店です。  10月17日の告知になります。  従業員の体調も良くなり、営業再開の準備をしていた矢先客席側に結構な水漏れが発覚した為、お休みとなります。  お客様には休みが重なりご迷惑を掛けしてすみません。 再開の目処が立ち次第報告させて頂きます。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-17",
+      "endDate": "2026-10-17",
+      "hours": [],
+      "reason": "客席側の水漏れのため",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "既に登録済みの臨時スケジュールと一致"
+  },
+  {
+    "id": "sns_post_routine_kannai_2111322359542296766",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2111322359542296766",
+    "postedAt": "2026-10-17T05:04:11.000Z",
+    "postText": "高菜終了しました。 ありがとうございました。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定メニュー終了の告知であり、営業時間の変更は含まれていません。"
+  },
+  {
+    "id": "sns_post_routine_shndaita_2111328806955000089",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2111328806955000089",
+    "postedAt": "2026-10-17T05:29:48.000Z",
+    "postText": "お持ち帰りの豚もあります！ 1本2000円です！  入れ物は無くて大丈夫です！  たべて買うひとは 最初に麺の量を聞かれた時に言ってください！  お持ち帰りだけのひとは ならばないで 入口から声をかけてください！  これが消えたら売り切れです！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常的な販売告知であり、営業時間の変更に関する言及はないため変更なし。"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2111328517023748185",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2111328517023748185",
+    "postedAt": "2026-10-17T05:28:39.000Z",
+    "postText": "いまいるひとでおわりです！ ごめんなさい！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_mejirodai_20261017_0_2111324779550802420",
+    "shopId": "mejirodai",
+    "shopName": "めじろ台店",
+    "postSource": "x",
+    "postUrl": "https://x.com/mejirodai_jiro/status/2111324779550802420",
+    "postedAt": "2026-10-17T05:13:48.000Z",
+    "postText": "ただ今お並びの方で本日の昼営業は終了しました 申し訳ありません 夜は17時半からとなりますのでよろしくお願いします",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-17",
+      "endDate": "2026-10-17",
+      "hours": [
+        [
+          11,
+          14.21
+        ],
+        [
+          17.5,
+          20.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
