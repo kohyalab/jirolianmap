@@ -16926,5 +16926,66 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_sengawa_2111315547023679792",
+    "shopId": "sengawa",
+    "shopName": "仙川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjiro26/status/2111315547023679792",
+    "postedAt": "2026-10-17T04:37:07.000Z",
+    "postText": "本日17時から店内営業とテイクアウト販売します。テイクアウトはつけ麺に転用可能です。追加の生麺一玉１００円です。お薦めの調味料です。 https://t.co/Zvm9ybuWEh",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-K90WSJ6cgan3wlsrBNfZ203oLl9BnS0Zf2LZ1eu7f92MB4QVUMAw8A8YKoa5tvp6kHNEUGLT9pywM00CMvOrCMZ1MkV6RtBwxXPTQm81-eXIo2k97Smpl1Y_ZQkr2QLZ1u-wT58EPOPVHvi4akr5GA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ov4aUniP7BQ2BHwTWNtOW8nSH9qN8k6Tn1MqT0qfybcMf_XqE_-BvfMXDw4dZkNiw4zS5jWmyGWbJdLWqnqe2Znxi5av_w53UobQq757YrwVD0MUO3IMbdEPuAtKpodqDcIlw_DqvRqCYixpKsQkmA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-AynFuCPjU0BnEtSDHG0EfHJwC2zsL8gf92R6zmogoRHkFk1upB6ChRrKhAiA1_gMKNE-Vc2qi9Fn6bM0JpWNMxSzoPFPyi8tnkbL2lHIe3yldjESQLyvscbxGkpBvoRDX9uZ75Uqqsxr_YjjCRQYQg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知および商品紹介のため、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_kameido_2111316205911134289",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2111316205911134289",
+    "postedAt": "2026-10-17T04:39:44.000Z",
+    "postText": "お世話になってます。思っていたより味噌の消費が激しくこのペースのままだと16時ごろに味噌が尽きそうです。申し訳ありません、味噌が尽きた場合そのまま普通のラーメンに移行して通しのまま営業させていただきます。ご迷惑をおかけして申し訳ありません、よろしくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "味噌の在庫状況に関する告知であり、営業時間の変更ではないため変更なし。"
+  },
+  {
+    "id": "sns_post_kaminoge_20261017_0_2111321676252151810",
+    "shopId": "kaminoge",
+    "shopName": "上野毛店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kaminogeJiro/status/2111321676252151810",
+    "postedAt": "2026-10-17T05:01:28.000Z",
+    "postText": "ただ今の時間で麺切れ終了致します",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-17",
+      "endDate": "2026-10-17",
+      "hours": [
+        [
+          11,
+          14.016666666666667
+        ]
+      ],
+      "reason": "麺切れのため",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 麺切れのため"
   }
 ]
