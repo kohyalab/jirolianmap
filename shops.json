@@ -4222,6 +4222,35 @@
         "reason": "",
         "sourceUrl": "https://x.com/26shinshindaita/status/2111215697602998440",
         "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-18",
+        "endDate": "2026-10-18",
+        "hours": [],
+        "reason": "",
+        "sourceUrl": "https://x.com/26shinshindaita/status/2111342824860045531",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-21",
+        "endDate": "2026-10-21",
+        "hours": [
+          [
+            11,
+            15
+          ]
+        ],
+        "reason": "",
+        "sourceUrl": "https://x.com/26shinshindaita/status/2111342824860045531",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-23",
+        "endDate": "2026-10-23",
+        "hours": [],
+        "reason": "",
+        "sourceUrl": "https://x.com/26shinshindaita/status/2111342824860045531",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -4952,6 +4981,19 @@
         ],
         "reason": "",
         "sourceUrl": "https://x.com/jiro_kyoto/status/2108733242992115949",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-17",
+        "endDate": "2026-10-17",
+        "hours": [
+          [
+            11,
+            14.5
+          ]
+        ],
+        "reason": "従業員体調不良のため",
+        "sourceUrl": "https://x.com/jiro_kyoto/status/2111266052298735871",
         "_isAiImported": true
       }
     ],
@@ -6492,6 +6534,19 @@
         ],
         "reason": "",
         "sourceUrl": "https://x.com/r26akgd/status/2109468940967846255",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-17",
+        "endDate": "2026-10-17",
+        "hours": [
+          [
+            12,
+            15
+          ]
+        ],
+        "reason": "",
+        "sourceUrl": "https://x.com/r26akgd/status/2111290833207267530",
         "_isAiImported": true
       },
       {
