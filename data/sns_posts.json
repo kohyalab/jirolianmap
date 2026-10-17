@@ -16818,5 +16818,25 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 従業員体調不良のため"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2111276246667755843",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2111276246667755843",
+    "postedAt": "2026-10-17T02:00:57.000Z",
+    "postText": "おはようございます！！ 明日親方のイベントが慶應日吉キャンパスで行われます！！ 天気もいいみたいなので是非是非！！  今回の炎上で少なからず怖いと思った方もいるかもしれませんが、意外と普通ですので、御来店お待ちしております！！ どうしても怖い方はテイクアウトから是非どうぞ！！ https://t.co/mTFi32wd1Q",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-6JiNlrlNEYlbb1ihmg8oIqlGHPShqL_mZmT4J3dK6VUCxIZkdzvkFl0YI9wpsWt8UkYJ8iBG4qJ2OoCheYuFNFhIciAKaeJ8lqiu3eliMLuHpOk-a2e97EC3Knu2j5S94fRYDDFmKyN_0tS0_ZjE4Q==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-D2SeAIixDA5OZOMRJeNtl1ZlO68zl4ZOyVVJyLsrvjhZOiLI8C73qKtWepPY_6LJErNaGTSOAuB-o9F6aR3Fh1GPcWOqLkVQmroqgzfvcSsDyBEKEs1ZFAfSGtK6Dq-i2cQ3Ar9kfillJQCS8f56_w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-w_pUABdM3sMpmsiUw2HlqNG6KG8MOZYscK4doBgz9pzXRdIZ4eyiq6Yv8nuPjy402mEf_kNQXTthYcspJj1cFasjTEdIM3HFPf_i6x_SHIqwNqZLjp1jB5tqlkGFyI-C6VYhWA7WCijLFtCbTmdPgw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-NdyKdLfUu2bwE34X1ZcJJNvSPotEaweDxfA9XdipZk5Z8hfbHro2xUdDDq3AajFnGQAzBCXGAzyFD1qmlbhDMafKdClh27t5MMKJewgZPn9cmCRZb_TgAsdoDki4fhyGaxAnhSearHxxL3e-D3To3Q=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "店舗の営業に関する変更告知はなく、イベント告知および日常的なテイクアウトの案内のみであるため、変更なしと判定します。"
   }
 ]
