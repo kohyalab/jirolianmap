@@ -17508,5 +17508,25 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業情報の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_yaen2_2111495491997589529",
+    "shopId": "yaen2",
+    "shopName": "八王子野猿街道店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/Jiro_Yaenkaido2/status/2111495491997589529",
+    "postedAt": "2026-10-17T16:32:09.000Z",
+    "postText": "10月18日(日) 朝7:30～15:00 材料切れ終了 ⭐テイクアウト、鍋二郎あります 並ばず買えます エビドクロテイクアウト現金です ⚠️駐車場待ち出来ません ⚠️駐車場満車時コインパーキングに ⚠️店舗近隣タバコ禁止です https://t.co/ZzmfckZhP1",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-CGE-xMCt1w-fvRWx3sdehfiaGRn9ci9-rhFI6d5_t2KQhbMLJj6QO1u1RFkXWsHtuILqH2Sr1p3d4G4vkuVbuDCMXy1mj5vsVVPhjqPaot3loWhqPvL79S3b_iRstH2rLgsYyGVOKOGwqKaqj59uvg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-i_dpkC1prkHufpe3biTF3KukhZKboeNLp2R40C_QAcYEOSpRbU7lWzeUNyjRmgOM0CxH-4vwZ7azJ9EN1eOGpNJYQ--U0q0lwSVqaKfDd9YF6Ows19jwEwiJSuc4q3IBgOd0OkiRgkBO2TGlVlF-wA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-p-H16oHJpsUrEYSGHSZS-YlqNMpnNbT2CUll6lpxJdrkiuA7xNxL4GzIbyzzfbztN17d0VjODzxdk5SlhFFWCbOkvkCeN5I3Ps4vmgrUy3BlZG4LGH2ZC_yyQecOLJPYy1NSj7rttPM4nzOEjrh3eg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-oD6Nw3jmkzMxwsLjEeZr6VFQsYO2OPUPxZw_UrsMdxnhGeoLsPynJ0AvfuuVhlwrbhfBT0Uf5g414HSz5zTpnluH4PrDjDEuCd9p-scJYDiMlUe2xbYgvHPWvH4zhP-Pf07VBSLaeGtO0sBvEXAT9A=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知であり、臨時休業や時間変更の記載はありません。"
   }
 ]
