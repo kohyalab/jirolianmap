@@ -16666,33 +16666,6 @@
     "aiReason": "切り落としの売り切れ告知のみであり、営業時間の変更や休業に関する言及はないため変更なし。"
   },
   {
-    "id": "sns_post_jimbocho_20261017_0_2111248081627054542",
-    "shopId": "jimbocho",
-    "shopName": "神田神保町店",
-    "postSource": "x",
-    "postUrl": "https://x.com/jbc_ramen_jiro/status/2111248081627054542",
-    "postedAt": "2026-10-17T00:09:02.000Z",
-    "postText": "本日の営業は都合により15時終了とさせて頂きます。よろしくお願いします。",
-    "mediaUrls": [],
-    "detectedChange": {
-      "type": "temporary_hours",
-      "startDate": "2026-10-17",
-      "endDate": "2026-10-17",
-      "hours": [
-        [
-          11,
-          15
-        ]
-      ],
-      "reason": "都合により",
-      "confidence": 1
-    },
-    "processed": false,
-    "processedAt": null,
-    "aiStatus": "schedule_change",
-    "aiReason": "営業変更検出: 都合により"
-  },
-  {
     "id": "sns_post_routine_senjuohashi_2111253396145725520",
     "shopId": "senjuohashi",
     "shopName": "千住大橋駅前店",
@@ -17085,5 +17058,64 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_jimbocho_20261017_0_2111334956643590189",
+    "shopId": "jimbocho",
+    "shopName": "神田神保町店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jbc_ramen_jiro/status/2111334956643590189",
+    "postedAt": "2026-10-17T05:54:15.000Z",
+    "postText": "ただ今お並びのお客様までで、本日の営業終了となります。よろしくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-17",
+      "endDate": "2026-10-17",
+      "hours": [
+        [
+          11,
+          14.9
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_senjuohashi_2111336417913979202",
+    "shopId": "senjuohashi",
+    "shopName": "千住大橋駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjujirou26/status/2111336417913979202",
+    "postedAt": "2026-10-17T06:00:03.000Z",
+    "postText": "只今の時間より🍜  SH脂蕎麦セット 2人前1セット  1500円 （麺1玉2袋、豚入脂パック2つ）  ノーマル1つとPlus  ラー油🐖or魚粉油そば🐟 味噌脂🐖or1010カレー🐖 生姜醤油脂🫚復刻BP塩油そば🐖 よりお1つお選び下さい！  お1人様  2セットまで！  豚1本1500円🐷 https://t.co/FsqfovxlhJ",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-R--Fy2iJfLVTPvUDMYaSv279K7H5sGeLTsZ6hGyMyOISz1iCj_vZlPSu-ezCtCaRzbiky9Ui4SiaKgTOk3faUf8WXl8_wtn-8IaHLs56xGxrpsgCX62Axxdj69s2rTaM5vbmEdTjrKWtOgnaIgvlpg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "テイクアウト商品の販売告知であり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_mention_sapporo_2111331922404331893",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2111331922404331893",
+    "postedAt": "2026-10-17T05:42:11.000Z",
+    "postText": "@JONSON_come ご来店有難う御座いました。 当店は化学調味料の代わりに、焦がし脂で、ファーストインプレッションを出しています。 又、お待ちしてます🍜",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
   }
 ]
