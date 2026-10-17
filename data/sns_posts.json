@@ -17475,5 +17475,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "持ち帰り販売の告知のみであり、店舗の営業時間の変更に関する言及はないため変更なし。"
+  },
+  {
+    "id": "sns_post_daily_matsudo_2111457856713380121",
+    "shopId": "matsudo",
+    "shopName": "松戸駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/matsudojiro3/status/2111457856713380121",
+    "postedAt": "2026-10-17T14:02:36.000Z",
+    "postText": "毎度ありがとうございます。  財布の忘れ物あります。  交番に届けます。  よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
