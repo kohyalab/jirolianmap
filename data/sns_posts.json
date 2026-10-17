@@ -17303,5 +17303,29 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業時間の変更や臨時休業に関する言及がないため、変更なしと判定しました。"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261018_0_2111386353808396418",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2111386353808396418",
+    "postedAt": "2026-10-17T09:18:29.000Z",
+    "postText": "◆10/18日【臨時休業】 ◆10/19月【定休日】 よろしくお願い致します。 https://t.co/7iYpVjYGlQ",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-RsmMv6Dh5qIi-6ZJp_r8v9SL_dmULpnY6WZ_nC_ziw0ei-2TbcJ4HzP2E3N5BMIdxFZZseS6DEmu_9SLdKxDibiJmz5_yN6uLm7C60gvKDrvYzJQcFOxBtcYv5QoWhxRY9mhmvC9meVqi3FejYH37g=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-18",
+      "endDate": "2026-10-18",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
