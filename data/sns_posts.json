@@ -18019,5 +18019,163 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_senjuohashi_20261019_0_2111949269184000440",
+    "shopId": "senjuohashi",
+    "shopName": "千住大橋駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjujirou26/status/2111949269184000440",
+    "postedAt": "2026-10-18T22:35:18.000Z",
+    "postText": "先日告知済みの通り本日10月19日は定期検診の為休業となりますので大変申し訳御座いませんがご注意をお願いいたします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-19",
+      "endDate": "2026-10-19",
+      "hours": [],
+      "reason": "定期検診のため",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 定期検診のため"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261020_0_2111952861911466152",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2111952861911466152",
+    "postedAt": "2026-10-18T22:49:35.000Z",
+    "postText": "◆10/19月【定休】 ◇10/20火［昼のみ］ ◇10/21水［昼&夜］ ◇10/22木［昼のみ］ ◇10/23金［夜のみ］ ◇10/24土10〜14時         ※16:30〜20:00 ↑夜の部臨時営業🈺します。 ◇10/25日10〜15時  →今週もこちら！ ［温かいまかない汁あり］ →［お椀で和ッカレー］ →［相撲部屋のしょうがダレ］",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-20",
+      "endDate": "2026-10-20",
+      "hours": [
+        [
+          10.333333333333334,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261022_1_2111952861911466152",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2111952861911466152",
+    "postedAt": "2026-10-18T22:49:35.000Z",
+    "postText": "◆10/19月【定休】 ◇10/20火［昼のみ］ ◇10/21水［昼&夜］ ◇10/22木［昼のみ］ ◇10/23金［夜のみ］ ◇10/24土10〜14時         ※16:30〜20:00 ↑夜の部臨時営業🈺します。 ◇10/25日10〜15時  →今週もこちら！ ［温かいまかない汁あり］ →［お椀で和ッカレー］ →［相撲部屋のしょうがダレ］",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-22",
+      "endDate": "2026-10-22",
+      "hours": [
+        [
+          10.333333333333334,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261023_2_2111952861911466152",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2111952861911466152",
+    "postedAt": "2026-10-18T22:49:35.000Z",
+    "postText": "◆10/19月【定休】 ◇10/20火［昼のみ］ ◇10/21水［昼&夜］ ◇10/22木［昼のみ］ ◇10/23金［夜のみ］ ◇10/24土10〜14時         ※16:30〜20:00 ↑夜の部臨時営業🈺します。 ◇10/25日10〜15時  →今週もこちら！ ［温かいまかない汁あり］ →［お椀で和ッカレー］ →［相撲部屋のしょうがダレ］",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-23",
+      "endDate": "2026-10-23",
+      "hours": [
+        [
+          17,
+          20.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261024_3_2111952861911466152",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2111952861911466152",
+    "postedAt": "2026-10-18T22:49:35.000Z",
+    "postText": "◆10/19月【定休】 ◇10/20火［昼のみ］ ◇10/21水［昼&夜］ ◇10/22木［昼のみ］ ◇10/23金［夜のみ］ ◇10/24土10〜14時         ※16:30〜20:00 ↑夜の部臨時営業🈺します。 ◇10/25日10〜15時  →今週もこちら！ ［温かいまかない汁あり］ →［お椀で和ッカレー］ →［相撲部屋のしょうがダレ］",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-24",
+      "endDate": "2026-10-24",
+      "hours": [
+        [
+          10,
+          14
+        ],
+        [
+          16.5,
+          20
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_asakuragaido_20261019_0_2111950397632020525",
+    "shopId": "asakuragaido",
+    "shopName": "朝倉街道駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/r26akgd/status/2111950397632020525",
+    "postedAt": "2026-10-18T22:39:47.000Z",
+    "postText": "毎度ありがとうございます。 10/19(月)〜22(木)は都合によりお休みいたします。 ご来店予定のお客様、大変申し訳ございません。 よろしくお願い申し上げます。 https://t.co/Qqd3LRvg5P",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-OFpG6Ahz837Lj2xmebf-Yuf1qkjMbA2Q6qw76fsullUAU7MEH0eH4Ntlg_XZmgA4F9QNlv9gkuGbxumXXH8SWLFH_LmQ584u9Zd7nOg0bLQ7aXX6LBxCMSNqzQKJzs-4_tpPEcBNx8NMmyqawTa8ZQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-19",
+      "endDate": "2026-10-22",
+      "hours": [],
+      "reason": "都合により",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "既に登録済みの臨時スケジュールと一致"
   }
 ]
