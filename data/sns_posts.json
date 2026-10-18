@@ -17978,5 +17978,46 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_ichinoe_20261020_0_2111937838279479465",
+    "shopId": "ichinoe",
+    "shopName": "環七一之江店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ichinoejiro/status/2111937838279479465",
+    "postedAt": "2026-10-18T21:49:53.000Z",
+    "postText": "宜しくお願い申し上げます https://t.co/0abBpFNwS1",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-dlKwOXmAo395x6nWKwBCLZ2iIEjE80xC6FwatTmem_x7vfA9xdClrX8jz9IR5Xd62I-OrqqsfnPAw27zktAU16kmvObF90lQGcFJtA5AMLexrg01ohnVjFW4frJhv7vyOX5_EbBULlSE_ARBIKNmxA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-20",
+      "endDate": "2026-10-20",
+      "hours": [],
+      "reason": "都合により",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 都合により"
+  },
+  {
+    "id": "sns_post_routine_fujisawa_2111939216154448264",
+    "shopId": "fujisawa",
+    "shopName": "湘南藤沢店",
+    "postSource": "x",
+    "postUrl": "https://x.com/fujirow26/status/2111939216154448264",
+    "postedAt": "2026-10-18T21:55:21.000Z",
+    "postText": "おはようございます。  10月19日(月)  しょっぱ豚🐷 無料トッピング にんにく入れますか？の時お伝えください。  味噌タマネギ🧅 野山商店特製ピリ辛 なくなり次第 とり野菜みそになります。  本日もよろしくお願いいたします。 https://t.co/UEqhIg487b",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-GD6dP6NodB7RJcBYvvVsW-p6t1VWPYPpABTJ4tR690qqub5DKPe2PdthzqLHRFIjQRzYazARMzm9USAINSx2On6Xfj9z56FF8dTN0oMCQnaKTwgAizGXdqIGxq8XIrdrAkSMNSO2jZKUuWo_eF6cLg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知であり、営業時間の変更はありません。"
   }
 ]
