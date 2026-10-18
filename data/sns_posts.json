@@ -17776,5 +17776,53 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業情報の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2111719116478509279",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2111719116478509279",
+    "postedAt": "2026-10-18T07:20:45.000Z",
+    "postText": "10/18日 【慶應連合三田会大会】 ［山田拓実相撲甚句］ ※一部抜粋ショートバージョンにてお届けさせていただきました！  お集まりいただきました皆様ありがとうございました♪  お陰様で、オヤジさんと仲間達と素敵な一日を過ごさせて頂きました♫  ありがとうございました😊 https://t.co/Wsv8eViGai",
+    "mediaUrls": [
+      "https://video.twimg.com/amplify_video/2111719047905841152/pl/Kjv15MLzd-aUpTsd.m3u8",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-4NCkEgaQl94W8wXEEWlzEqHpZ2Ca_UrtuMuv01SSZmbaxGoKbErhJ8iVB99f50XkInc9wVOcb4lSVq9oCj4Cm3B-FfQ90bHgJsicpmrp26-Hq2z8eAL1tOrQAf2OAZbDf7ufkfw5wFWarsdRZ9uUdQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_daily_sendai2_2111719712803762644",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2111719712803762644",
+    "postedAt": "2026-10-18T07:23:08.000Z",
+    "postText": "ウンザウンザの人が米沢にいる！！！ https://t.co/avn4qiwdBi",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2111719381273399645",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2111719381273399645",
+    "postedAt": "2026-10-18T07:21:49.000Z",
+    "postText": "@hellskitchen128 (´；Д；`)見捨てないで！！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
   }
 ]
