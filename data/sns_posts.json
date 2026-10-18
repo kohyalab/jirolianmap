@@ -18177,5 +18177,39 @@
     "processedAt": null,
     "aiStatus": "match",
     "aiReason": "既に登録済みの臨時スケジュールと一致"
+  },
+  {
+    "id": "sns_post_routine_nishidai_2111963094712992190",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2111963094712992190",
+    "postedAt": "2026-10-18T23:30:14.000Z",
+    "postText": "おはようございます。 求人の案内です。  二郎が好きな方、二郎をたらふく 食べたい方、二郎の店主になりたい方 ダブルワーク、副業の方  髪型、髪色自由、ピアスOKです。  働きやすい環境を皆で作っています、 皆さん、お気軽にDMにて お問い合わせ下さい。 お待ちしております♪ https://t.co/pGqKrzJnwr",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-JU-O6fFUuMfqkq1o0XSkO3azrFr8QXctefLaXwx_Oc2r0PohWYpIT13ufGc01b1FcNaK5F6D5bmcJK-i7r5Wc_CzkyEq2YF6NOcjJhlBGv4ZBQ4Ez0ii4R30T7VlamtP6c1cXLTuRW3SUteFkzbVEg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "アルバイト募集の告知であり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_mejirodai_2111956992520835242",
+    "shopId": "mejirodai",
+    "shopName": "めじろ台店",
+    "postSource": "x",
+    "postUrl": "https://x.com/mejirodai_jiro/status/2111956992520835242",
+    "postedAt": "2026-10-18T23:05:59.000Z",
+    "postText": "毎度ありがとうございます 現在ご利用されている駐車場なのですが建物解体工事のため閉鎖されることになりました 自販機などを撤去しスペースをつくりましたので今後そちらの方に自転車を止めて下さい  申し訳ありませんがよろしくお願い致します🙇 https://t.co/dbjoCjJrMx",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-vSpEUzhiNDklhwFSWvkBFoVDE7YmaPw-wVTyNB5IDtI9yWgM6UqEtVwgfA2xdgCx2A2Ik9L3YvZIBff2TDP6scqmUYV2KBjzlCsZNADoAYXvWxfOZ1jdwGA6vV8fAyV7aWqc9GsGO349tocXX7_2dA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "駐車場閉鎖に伴う駐輪スペース変更の案内であり、営業時間の変更は含まれていません。"
   }
 ]
