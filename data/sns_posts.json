@@ -17654,5 +17654,22 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "本日日曜日は通常営業の告知であり、臨時休業や営業時間変更の記載はありません。"
+  },
+  {
+    "id": "sns_post_routine_fujisawa_2111626373882318990",
+    "shopId": "fujisawa",
+    "shopName": "湘南藤沢店",
+    "postSource": "x",
+    "postUrl": "https://x.com/fujirow26/status/2111626373882318990",
+    "postedAt": "2026-10-18T01:12:14.000Z",
+    "postText": "おはようございます。  10月18日(日)  しょっぱ豚🐷 無料トッピング にんにく入れますか？の時お伝えください。  味噌タマネギ🧅 野山商店特製ピリ辛 なくなり次第 とり野菜みそになります。  本日もよろしくお願いいたします。 https://t.co/XaDCx9RHKG",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-4DPIKM-YGi-uoU7326bY65NJqXZu5CbWbaat_YSHjfPYcb5bppDpM1Jug21QoPIHH7gHf2qY5eLbd9cfQYkrux_gSEUPG0pECzVefa34_-hrUmHzaud0LD_aCKpnvjEjBAvuSojhm_SA5bOvm4Ps7A=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常の営業告知であり、営業時間の変更に関する言及はありません。"
   }
 ]
