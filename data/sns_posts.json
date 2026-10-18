@@ -17839,5 +17839,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "日常的な感謝の投稿であり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_kameido_2111729617082224902",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2111729617082224902",
+    "postedAt": "2026-10-18T08:02:29.000Z",
+    "postText": "お世話になってます。お知らせ遅くなってしまいましたが本日の夜の部「ニンニクの芽のキムチ」やってます！ご希望の方は本日のトッピング¥200を購入してください。なお、タマネギキムチはお休みです。よろしくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常的なトッピング告知であり、営業時間の変更は含まれていません。"
   }
 ]
