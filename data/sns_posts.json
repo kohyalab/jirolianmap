@@ -17671,5 +17671,32 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "日常の営業告知であり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_kannai_20261018_0_2111676390542086382",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2111676390542086382",
+    "postedAt": "2026-10-18T04:30:59.000Z",
+    "postText": "完売しました。ありがとうございます！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-18",
+      "endDate": "2026-10-18",
+      "hours": [
+        [
+          11,
+          13.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
