@@ -17881,8 +17881,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-18T21:32:59.012Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   },
@@ -17896,8 +17896,8 @@
     "postText": "つくしあきひと先生が配信でよくこのゲームの愚地独歩の声真似してましたが、初めて本物を聞いた笑 https://t.co/zhAVs3wwxX",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-18T21:32:59.012Z",
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   },
@@ -17913,8 +17913,8 @@
       "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-d8_Vb8pMWwSrnY4f9wvT9o6j2-xGywlRzRDrofVwq8jwcKgAAUfJ4XqrhcMg7n_snxCZXyfLUlN8l4QFE9c-z8HoSwJwbNlZuhjh-CuiihN6UfVXpm_DOloZlgoEEG4dGG56DDknPfga_KMxFZPrfA=="
     ],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-18T21:32:59.012Z",
     "aiStatus": "no_change",
     "aiReason": "投稿内容は店舗の監視カメラモニター下に貼られたイラストに関するものであり、営業情報の変更に関する言及はありません。"
   },
@@ -17930,8 +17930,8 @@
       "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-c0OCw0MNz-QrB_JMFShKaGDhgMG6w4lr9oTYueXvi17TECb9gusw9wjnDJnyU18dF8KUlZnI1J4-ZYokZ1cUOdC-tHMlOfv7mXtfJ7GxgrLjTE5lKVyU-0OsoyNzWfUsJ6lPJ0sEDGQQCrRP-V9p1g=="
     ],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-18T21:32:59.012Z",
     "aiStatus": "no_change",
     "aiReason": "営業情報の変更に関する言及はありません。"
   },
@@ -17945,8 +17945,8 @@
     "postText": "10月19日（月） 昼11:30〜14:00頃 夜18:00〜21:00頃までです",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-18T21:32:59.012Z",
     "aiStatus": "no_change",
     "aiReason": "通常通りの営業案内です。"
   },
