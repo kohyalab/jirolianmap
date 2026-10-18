@@ -17885,5 +17885,20 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_daily_kameido_2111792806583038400",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2111792806583038400",
+    "postedAt": "2026-10-18T12:13:34.000Z",
+    "postText": "つくしあきひと先生が配信でよくこのゲームの愚地独歩の声真似してましたが、初めて本物を聞いた笑 https://t.co/zhAVs3wwxX",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
