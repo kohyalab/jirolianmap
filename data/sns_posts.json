@@ -17917,5 +17917,22 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "投稿内容は店舗の監視カメラモニター下に貼られたイラストに関するものであり、営業情報の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_kameido_2111822681008189934",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2111822681008189934",
+    "postedAt": "2026-10-18T14:12:17.000Z",
+    "postText": "これは毒です…か？ https://t.co/PjsjzA0jSJ",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-c0OCw0MNz-QrB_JMFShKaGDhgMG6w4lr9oTYueXvi17TECb9gusw9wjnDJnyU18dF8KUlZnI1J4-ZYokZ1cUOdC-tHMlOfv7mXtfJ7GxgrLjTE5lKVyU-0OsoyNzWfUsJ6lPJ0sEDGQQCrRP-V9p1g=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報の変更に関する言及はありません。"
   }
 ]
