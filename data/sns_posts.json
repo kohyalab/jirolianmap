@@ -17900,5 +17900,22 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_kameido_2111811927932641579",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2111811927932641579",
+    "postedAt": "2026-10-18T13:29:33.000Z",
+    "postText": "お店の監視カメラのモニターの下にこっそり貼ってありました… とりあえずこのままにしておきます笑 https://t.co/YpzjXFDIYE",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-d8_Vb8pMWwSrnY4f9wvT9o6j2-xGywlRzRDrofVwq8jwcKgAAUfJ4XqrhcMg7n_snxCZXyfLUlN8l4QFE9c-z8HoSwJwbNlZuhjh-CuiihN6UfVXpm_DOloZlgoEEG4dGG56DDknPfga_KMxFZPrfA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "投稿内容は店舗の監視カメラモニター下に貼られたイラストに関するものであり、営業情報の変更に関する言及はありません。"
   }
 ]
