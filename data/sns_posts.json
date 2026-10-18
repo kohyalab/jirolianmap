@@ -17756,5 +17756,25 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_kameido_2111701014793613643",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2111701014793613643",
+    "postedAt": "2026-10-18T06:08:50.000Z",
+    "postText": "なんかやたらTLに男がメロつく男という話題が上がるので店主が思うかっこいい男（雄）が登場するマンガはこちらです。マキバオーはみどり〜の後にたいよう〜を読んでいただければ…！ https://t.co/m40lyaYelR",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-EEDptp31M5eCGtwsE298o4vzCSgGKl4_8eM-DXLFeIY0Vux1Aub_rkMD38w2corOwgrGdSAfpJAUIjMjhid8K29v10LDc0kuhyYMVHxgzPABdz8kPVKnVCYyDxRIXvaU_VQU4YQsCr6jTZO2E-sj6w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-B81gK_OM3eIjVWT71a7SDi7keFRSfCkHfEBDLBAkgeRGOqJlszU_jCyB3mIBObsYwuJXo3IO0XO8B3LIcZ00Z_QImCvCqN9xD5RqcGw1bwHZlms2eHEqEUzo_Wwjxh0ASHjczQaN4n3THd3qd8B0rw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-y2KlQ8e-8HwXHos2D5ynpLW2W_YmF1IfLgV1G5VGYO-E-Zp7Ts6NUhGDyHel1R3yiPqhQhQxyE6Gx7f1Y6wI3PN5-Obg7FsA7OOEsRvQq7dL6ZL9y_rtyQeF5zEENDAGwE2_o7zvp29CSCdaTr5J0g==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-iwHK3aOikgviZiny0t1lcxxMI7-qaW5yJJX_Sj0zSXW5zk9SZ2zuUMJJ_zZLZAPpk5hRkOkRlS9r4oM4ipGZtnAcyb-cRyXzw3qgkj3xDYq_fOV2R2it3UN61GBKKOycQh4iXjL5YTPqhUpCIoLNgw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報の変更に関する言及はありません。"
   }
 ]
