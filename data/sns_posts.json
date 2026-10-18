@@ -17587,5 +17587,25 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 都合により"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2111607029626540292",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2111607029626540292",
+    "postedAt": "2026-10-17T23:55:22.000Z",
+    "postText": "おはようございます！炎上も収まり、平和が訪れました。 擁護してくださった皆様、お忙しい中貴重なお時間を当店の為に使っていただきありがとうございます！！ 話は変わりますが、本日、親方が慶應日吉キャンパスに現れます！お時間のある方、是非是非！！ 本日日曜、11〜21の通し営業です！ https://t.co/UjAoRsb5sD",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-nYps64g2DFDvcOYzoUsoSoUmm6xpLDWj-L-yIoTEKCprUdZjifT-H26IdVDFN1o0aZV4bqkjFlRu5wRKbXBk5rmIozsbWY0xQgxMN4uxl_VKexYZkxaeXILpDP4DWq_9FhDrdDASXQdzXtgIuOwODQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-rdqWSwjv2Tnm5lFQKANwngMVqFsODOsfVwf0ZEin6HBUC46ih5-U4gAODYFJOStkiUhnGFldAKMxG2RKqn9EaEJarqCBoZJTxKn644Kj6-qkrgnuM5mk7Qu8_zwrLe4QWVxRLg3t0Yy0PtlYKOI6mg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-9cDOmgjY77WIVAZQVyyY6x373P3aP51TOWDL0x89SRI3ts89IDrHeNlKPXslh5S59gFiUOfGZkgW9hJ2MsnkIuLFJ6RgtT2GD5dzZTbHPJXVm-khMzG8dY0fgqBaKGXcQwTKJlybOlMBgoqNFM6_sw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ta4W3O5lrAu_ufs2RdzdOdrHMZ4GJm1NhHMldjG2LXz8XKuRmutQm-r0DUYOFHohx9NCGEAGcqEA1upISJZU1H05ZZGKdokvPozfIzZi_I4nJgnHqTPBn_CO3gDkUf0J3TeQ-tJ8Ne8g1nNGHmaTDw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知であり、スケジュールの変更はありません。"
   }
 ]
