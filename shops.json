@@ -1970,6 +1970,14 @@
         "reason": "都合により",
         "sourceUrl": "https://x.com/ichinoejiro/status/2105196477849153990",
         "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-20",
+        "endDate": "2026-10-20",
+        "hours": [],
+        "reason": "都合により",
+        "sourceUrl": "https://x.com/ichinoejiro/status/2111937838279479465",
+        "_isAiImported": true
       }
     ],
     "holidaySpecialShifts": [
@@ -3031,6 +3039,14 @@
         "reason": "体調不良のため",
         "sourceUrl": "https://x.com/senjujirou26/status/2108414202369163497",
         "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-19",
+        "endDate": "2026-10-19",
+        "hours": [],
+        "reason": "定期検診のため",
+        "sourceUrl": "https://x.com/senjujirou26/status/2111949269184000440",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -3196,6 +3212,23 @@
         "endDate": "2026-10-18",
         "hours": [],
         "sourceUrl": "https://x.com/sumo_jiro/status/2105922901849645065",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-24",
+        "endDate": "2026-10-24",
+        "hours": [
+          [
+            10,
+            14
+          ],
+          [
+            16.5,
+            20
+          ]
+        ],
+        "reason": "",
+        "sourceUrl": "https://x.com/sumo_jiro/status/2111952861911466152",
         "_isAiImported": true
       }
     ],
@@ -3874,6 +3907,57 @@
           ]
         ],
         "sourceUrl": "https://x.com/jiro_sapporo_/status/2107998200531677675",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-19",
+        "endDate": "2026-10-19",
+        "hours": [
+          [
+            11,
+            14
+          ],
+          [
+            17,
+            20
+          ]
+        ],
+        "reason": "都合により",
+        "sourceUrl": "https://x.com/jiro_sapporo_/status/2112123281302311007",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-20",
+        "endDate": "2026-10-20",
+        "hours": [
+          [
+            11,
+            14
+          ]
+        ],
+        "reason": "",
+        "sourceUrl": "https://x.com/jiro_sapporo_/status/2111976919722070358",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-22",
+        "endDate": "2026-10-22",
+        "hours": [
+          [
+            11,
+            14
+          ]
+        ],
+        "reason": "",
+        "sourceUrl": "https://x.com/jiro_sapporo_/status/2111976919722070358",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-28",
+        "endDate": "2026-10-28",
+        "hours": [],
+        "reason": "",
+        "sourceUrl": "https://x.com/jiro_sapporo_/status/2111976919722070358",
         "_isAiImported": true
       }
     ],
@@ -5413,6 +5497,19 @@
         ],
         "reason": "",
         "sourceUrl": "https://x.com/ksgy26/status/2109419882194628769",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-25",
+        "endDate": "2026-10-25",
+        "hours": [
+          [
+            10,
+            14.5
+          ]
+        ],
+        "reason": "",
+        "sourceUrl": "https://x.com/ksgy26/status/2111931360529285161",
         "_isAiImported": true
       }
     ],
