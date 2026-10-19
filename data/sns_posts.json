@@ -18043,33 +18043,6 @@
     "aiReason": "営業変更検出: 定期検診のため"
   },
   {
-    "id": "sns_post_sagamiohno_20261020_0_2111952861911466152",
-    "shopId": "sagamiohno",
-    "shopName": "相模大野店",
-    "postSource": "x",
-    "postUrl": "https://x.com/sumo_jiro/status/2111952861911466152",
-    "postedAt": "2026-10-18T22:49:35.000Z",
-    "postText": "◆10/19月【定休】 ◇10/20火［昼のみ］ ◇10/21水［昼&夜］ ◇10/22木［昼のみ］ ◇10/23金［夜のみ］ ◇10/24土10〜14時         ※16:30〜20:00 ↑夜の部臨時営業🈺します。 ◇10/25日10〜15時  →今週もこちら！ ［温かいまかない汁あり］ →［お椀で和ッカレー］ →［相撲部屋のしょうがダレ］",
-    "mediaUrls": [],
-    "detectedChange": {
-      "type": "temporary_hours",
-      "startDate": "2026-10-20",
-      "endDate": "2026-10-20",
-      "hours": [
-        [
-          10.333333333333334,
-          14
-        ]
-      ],
-      "reason": "",
-      "confidence": 1
-    },
-    "processed": false,
-    "processedAt": null,
-    "aiStatus": "match",
-    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
-  },
-  {
     "id": "sns_post_sagamiohno_20261022_1_2111952861911466152",
     "shopId": "sagamiohno",
     "shopName": "相模大野店",
@@ -18399,5 +18372,72 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業情報の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_tochigikaido_2112000752768180250",
+    "shopId": "tochigikaido",
+    "shopName": "栃木街道店",
+    "postSource": "x",
+    "postUrl": "https://x.com/Tochigikaidoten/status/2112000752768180250",
+    "postedAt": "2026-10-19T01:59:53.000Z",
+    "postText": "おはようございます。 先日のSnowManさっくん来店記念で岩下の新生姜トッピング販売します！本日より2週間くらいでしょうか。岩下社長の心の声が聞こえた気が致しました。 どうぞお楽しみ下さい🩷",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの告知のみであり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_tachikawa_2111995057368945080",
+    "shopId": "tachikawa",
+    "shopName": "立川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jirotachikawa/status/2111995057368945080",
+    "postedAt": "2026-10-19T01:37:15.000Z",
+    "postText": "10/19(月)、昼夜とも時間内売り切れなし営業です。 昼11:00-14:30 夜17:00-21:30  ①「赤」は辛いラーメン。 +汁なし変更券で、辛い汁なしもできます。  ②持帰りラーメン販売します。 　標準:2人前のスープと生麺+ブタハーフ  2枚目以降はチラシが入っていた新しいクレープ屋さん@西立川です！ https://t.co/Sq7B46ZYIf",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-pBgreq7xYTL_Y9obhfAoJ4NkWN9Ieke_26C94oSRLc71ExeemsGApRlFvWB0bFVZoKItF4qo9xO_RUfV2KMQlQytOaslrD2_lD8_X0DtLGCj96xqUut3ZBc2tGGoz0si3-ojA58b_Q3z6HwYVhtlCw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-3RBE6jxsCpEhOD1WdWC6wqeKM1N2M3rvbC7kGppXWVEQ-_OigLawaOcelCfpcwAEhL1Sc5-zbssNCu64ih_VwyYhhBqY8FFv3hJVKw2_FSEagy0ws5AHU1R95-4TzdAelCgoRBM5Wz1u2SfInfYtWQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-kj0ssteWRNfKs_3RN5HyUUcAdEWRJB4z7g4EugnGVhEV9s2HOHXCr070JRuzfpbK4FdcMfctx_RhoGiOD2inN_vQZi8DNrnl0GoNqafeT1_MhfgBsNuKzbV7vXF9BnS0N7tTLJ0lVbuhI1VpEGrUHQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-niTpa630om6i-8EOP2e57Pq0raMruzjjzlUaXX6IcvlpTULV1PzvILV96WfBmIIRZ2syr_6I7GDkh6-4NDZ-I-vDEMR5hW8sy8X1dWUwqXa_6VUyck9ZuBMPqiFbMDKVF__canB4MUHNaXObqWhnvw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "10/19(月)は通常通りの営業告知であり、臨時休業や時間変更はありません。"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261020_0_2111996803558351137",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2111996803558351137",
+    "postedAt": "2026-10-19T01:44:11.000Z",
+    "postText": "明日 ◇10/20火 【昼の部のみ営業🈺】 10:20から〜14:00 ご来店ご到着お並びの お客様まで営業致します🈺  →［あったかい賄い汁あり］ →［相撲部屋のしょうがダレ］ →［お椀で和ッカレー］  やっております♪ https://t.co/V7oYAlThbp",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-0oKZ2GRRHeHGtXOC1-U4NSoaNdq1f8cjl6e5m244-_vKS7IgDovpk7wtpMs8_o741hc_ew6dwPtRQp4eQEE1oDZgD16Xuu_G4Y7I2UbPBhiWB90_g2DyGpMt30vUpvw0IdrDo9VPcNE8oVwFDTAZ0g==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-wgfBX8jGf5KD94J-JsJNb0MqPKSeBimJp_hPYKH3lZcHlDTdE5n8r98LQMsc7a0I7bsabgGl-R-Ok5uP6nrxZ0s3OrWLrkxkkhX_uiocG7SwXgnbppQ4StpbDVaJeb67DZxnI3iIP9bhC2v5CfYkqQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-GFVd2-wQ58kVn44d8Ny2NE1W8CYedWRr_CH2NAf9v5nKCER9-sKQYE4Piyx7FlTmc4yItFP1djO7s515MNVga9RCKTXqHinwwyFpfLi5P-fEef6oAqA0MLGSZqMAHP_dAA_U4E_yEdJXakHneHgyfA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-M3hpyjtNbSt0P5IWbUPThqmPBmuy0fF79T4kahJ-QZCIi38am9FPzEgz1LeXr969rZDsfw_Q1WJwEWjYbpu9XGvzEDrdZV11gt_QOYmelRbDilre8MZkX06raxjaeptEMqCL0L6D1MLKjsqZc1JeFQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-20",
+      "endDate": "2026-10-20",
+      "hours": [
+        [
+          10.333333333333334,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   }
 ]
