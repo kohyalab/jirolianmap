@@ -18327,5 +18327,77 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の告知であり、臨時休業や営業時間変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_kannai_2111990997274255511",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2111990997274255511",
+    "postedAt": "2026-10-19T01:21:07.000Z",
+    "postText": "おはようございます！ 本日もカレーチン有りますのでご希望の方は「アレ」でお願いします。 シビレ！納豆！煮干しの波動！まだまだ頑張ってますので宜しくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常的なメニュー告知のみであり、営業時間の変更に関する言及はない。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2111988603513606554",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2111988603513606554",
+    "postedAt": "2026-10-19T01:11:36.000Z",
+    "postText": "天気良し！ 元気良し！  二郎良し！ 慶應良し！  我が師匠と仲間たちと！ 良い一日でした！ https://t.co/M8HuxQOq8P",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-rhyY0_N_VGoj_OXuYXldX2Wk-oV5Hz3bvLf9lAAporOZW3G3MnxaZq3iQfIKXc6HgrjyHgK5_eJtye5dYY0_cOvMCPC1xMZkOnuGzWQiREttlAT-r8TosRyDQsoK8YJ4eCyH4oDefRuB4KpO7Im7Gg==",
+      "https://video.twimg.com/amplify_video/2111988422336548864/pl/HaicD-SNxtxx9hot.m3u8",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-gf18ZHq7hYdJhOKTB3tC1bJztyvtJaKp85ZVbjaTZEpsNMiv64_eDz6xEBigncKj9g00ShSFDQ1KvjJEHMVK0qnwJBk7iAWwjIFjlVw4FpQDJC-r6q4QsotQ_OqvNZ-_oGf8_LVesPWb7geA9WbHbw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-UevhIqj1aE1HUFp-sJrt7fCvROv6jEcdkLaI4TLb6fWercJHYt4TvODyw6uQKV0WIwDUfH2aPnNV832v3jPqZmEXtLLnnA7dfpZjh6Tf1-15jiUKFBvyeUGdCquOUQEL6PoX9GKSP3knekb4dbUTZQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "投稿内容は日常的な活動報告であり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2111992576505167982",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2111992576505167982",
+    "postedAt": "2026-10-19T01:27:23.000Z",
+    "postText": "おはようございます！ 昨日は連合三田会に呼んでいただきありがとうございました！ 修行時代の懐かしい方々にも会えて楽しかったです！！ そして慶應の凄さを改めて再確認。(福引で車当たるとか笑) さすが日本を裏で操る闇の組織、連合三田会w  本日も通常営業です。 御来店お待ちしております。 https://t.co/glEPfQ3fkW",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-o4p5pY6ZDfC949ldC86GFbribvLckpWowaU0K5ZCRi6vRQMmEKrq9dIrXywkemuujaHPx3ANF7kqh0EO01M8vKKUh1UzDS_j4l0hEFheQAz1eUcF--i8P66DVMx2MxnyDjGySFPgrx1jLUyfCuXHYg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-iYQrkyePkG4826mQStXNxNhBqO5JDXQ8TIxEHq2-4j_QgTPg3uoQ9nOTODhZJzkb6cBSZTbEEnRGDG7EFvPy0_rpyVfxfJAOSyWtZb5ymZNcukEtR2GaojN74PRG9RMEglwu2f8Nlie3KkpTqdtm-w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-H-cA3M1v4wnTHig64B8l00yaDD1m_tJDr-yYiF2RCnNGBcACoPyh_W9PtiGnIzXswGSv5K9PbOpvkblzKqvvLxbabM_naxskHn3BJnPH0AbKscbJEgEdOgU4PYJU8txxiDJLHEmcMpvy_VMAtYJkfQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-iCSsAvsxqYmxQkp7z8ztK_-UnE4ovhCxXZ65uUCmYUi_92MJw0Be-mzdYqMOe_4IluNe4fmV2MIBktCBKubsgzKkQGKYNJjSTA7IKeQuVK7Uze121FP15HMN9zdXfcS20MIe5-OFZvWDdJq1RD5x0A=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知であり、臨時休業や営業時間変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2111989850496995661",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2111989850496995661",
+    "postedAt": "2026-10-19T01:16:33.000Z",
+    "postText": "@ebizo1972 @hellskitchen128 私もです💛  エビさんほじくらないで💛 https://t.co/inRbA1k5X1",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Wf0LAS2Lfe5tIR2KTMFC6ygGCt51y3sB-dSN9ZMhpLwJXqs-egFZQ7vrXe7ssLowHgP3jBIob8uxH6Ir6mG46LyRijCf_NmFeTAZ8-37-9xqq6oj9CeibQ0_krCZbUEGcY5Q1LNcWcMe9NjjWYFFCw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報の変更に関する言及はありません。"
   }
 ]
