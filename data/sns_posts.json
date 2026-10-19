@@ -18742,5 +18742,22 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_kameido_2112158214401949911",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2112158214401949911",
+    "postedAt": "2026-10-19T12:25:34.000Z",
+    "postText": "こ、これはちいかわと古本屋さんが（概念的に）ヒトハでハチワレとおそらく写っているであろうモモンガが（こちらも概念的に）フタハってこと？ああ…心が、心がキュッとする… https://t.co/f04EfXbxct https://t.co/uDJy0FrKut",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-yY001NivG0S3kxwY6R8oCaeuT8QlCB04CXrir9HdUJwuGw80-oJBJZC2EuWGTChcs7ddIJscsUuI8DLpCwOh20WEnsmN0GDjCR8__NNjIMTRHTzNvie-fPex3TPyXHnfjJoK-8UUIbgP1DymgeyjWQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業変更なし（通常通り営業・雑談等）"
   }
 ]
