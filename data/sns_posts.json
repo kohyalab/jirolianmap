@@ -18606,5 +18606,22 @@
     "processedAt": null,
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_routine_kameido_2112085143855005782",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2112085143855005782",
+    "postedAt": "2026-10-19T07:35:13.000Z",
+    "postText": "なんなんだ！？この島二郎は一体なんなんだ！？ https://t.co/Rml7sIPF3t https://t.co/uDJy0FrKut",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-vGeuq0xzXm7Nvr30v2MGx_RAMNZopddvC-mU5wrZQsQSjXQDPDr-CX2eQxPd0oWcJrWhkwbyCyGC6QerehHqw_kWQyAQ9Yuiam3fLvCO6pPWlDGNXn9dske2hfDahRTjBB_XS9voPvisjA1yHj0bbQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報の変更に関する言及はありません。"
   }
 ]
