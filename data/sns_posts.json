@@ -18439,5 +18439,20 @@
     "processedAt": null,
     "aiStatus": "match",
     "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_routine_sapporo_2112004534101049571",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2112004534101049571",
+    "postedAt": "2026-10-19T02:14:54.000Z",
+    "postText": "12:30〜14:00 「サブ」、「サブ塩(現金＋100円)」 のつけ麺対応します。  本日のサブスープも濃厚です💪",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常的なメニュー告知であり、営業時間の変更は含まれていません。"
   }
 ]
