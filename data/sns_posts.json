@@ -18989,5 +18989,69 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業時間の変更はなく、ランチタイムサービスの告知のみです。"
+  },
+  {
+    "id": "sns_post_ichinoe_20261020_0_2112323842341580938",
+    "shopId": "ichinoe",
+    "shopName": "環七一之江店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ichinoejiro/status/2112323842341580938",
+    "postedAt": "2026-10-19T23:23:43.000Z",
+    "postText": "お世話になります。 本日は臨休となりますのでご注意下さい。 また、昨日は麺が早い時間に終了となりお詫び申し上げます。  麺少なめ、半分の、 お客様。 食券購入時に、お申し付け下さい。 そして、お手数ですがお好きな色の洗濯バサミをお取り頂けると助かります^ ^ 宜しくお願い申し上げます https://t.co/dxu5e7keKS",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-5AbCkCn9EAReIP_Uw0rW4aJGDfIpsSYb6hgSA0R8ncamTxtcOnPO5PaWiRC7yqSr6aGv3Cx5kc-tNUmuqouQkmBJNANH0i-_5zmfFNbOTz9_LNpoAzF2XU4s_vy5BkMCKPMz_DawLTnbr5akaqShTQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-20",
+      "endDate": "2026-10-20",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_yaen2_2112322490924212651",
+    "shopId": "yaen2",
+    "shopName": "八王子野猿街道店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/Jiro_Yaenkaido2/status/2112322490924212651",
+    "postedAt": "2026-10-19T23:18:21.000Z",
+    "postText": "10月20日(火) 11:00～15:00 17:30～21:00 ⭐テイクアウト、鍋二郎あります 並ばず買えます エビドクロテイクアウト現金です ⚠️駐車場待ち出来ません ⚠️駐車場満車時コインパーキングに ⚠️店舗近隣タバコ禁止です  🌟きまぐれたまご しそ https://t.co/sysOMXFsva",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-eVo1USPdLK842RPO15z_z9VDbE-qFA--2eqZW6NKYZOnhdBpRtLo1Cvcdkrhf4rmWvRbnd9tIA9dDtLGiiNw2RV_HXN55-P6OMsDKVSKLaehmwzGgHV-nvTv0lYnpVik23b3hMBDnOm9zxS6a_vVEQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-4ivCWp1rmYNWYt9JXn57ZSlG47Km6DzzRk0lrIxE_hvFYHB-pYU7I6Mq0eWfPlp3j33jtBkO9OypcqQGJdSGb9OZFy61ahLF7tOIfYc5_uTeiGbBediWANXeB50ysIL0TCxsx6EJXde9m3fRQIkYRQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-AuoOVRLx1cjMT7AgVyTZayh5ukpxTNkL7e-3T6ys3ShCeUFHsEICcj44DVxLij7o5pj7b7wuyCW7FYm3Gbj69l5lXsnRZtE_39MQ8P03MUynnKajWGyf03JuJOAcOSzpuEH5q8aORYkpVgKdBaH4QQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-kCsrZ0m_4hjhWiH4GaEIX6q_iWdFgvl3X_33-kRmESfMFR7Q3MEFO5TSD5-iBYy2UiPjCDmEQ_Z1wW3H2aWlbvy0rzAscUdlSphn33GI_bWKtt0DuPyc1z7Xxfx_KDP5ajg-j2Ht2pwN2iPD3g1udg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知であり、臨時休業や営業時間変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_yaen2_2112320670625616253",
+    "shopId": "yaen2",
+    "shopName": "八王子野猿街道店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/Jiro_Yaenkaido2/status/2112320670625616253",
+    "postedAt": "2026-10-19T23:11:07.000Z",
+    "postText": "10月20日(火) 11:00～15:00 17:30～21:00 ⭐テイクアウト、鍋二郎あります 並ばず買えます エビドクロテイクアウト現金です ⚠️駐車場待ち出来ません ⚠️駐車場満車時コインパーキングに ⚠️店舗近隣タバコ禁止です https://t.co/wqEZcdrq0w",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-EYNDMTVOnt3gwPopMjAXSt76xUILTlJK2VkmcdIRWtJTVlDJakq7YB79HODT8OGH7Y30wLWj1L59m-4BQL3YUY_1JRczTDbKrSoosFUeZ1jM-_M2coM3wN38fn0S3u5LLfWeWdDrr8Y-cBwyS4gCrQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-W4f7Ii-_f08wbHBGFi_CUkHbqrjYBG7ZY9WNi_Kooy2iGFbEChp1_TkOgZEO7gc0cOiRAHayOKvv9Bg5sOO7vwzBtULT7D40MKr4dCJWBuD6geJ_PkwE1L3VGHEK_pm-rVWICE9xu_kSpGIMz-YbeQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-RgbKP5gzF0naKU5VHPxDD2GkCyYRfPEgrMC0Uvq5F6c5ggzFaNdqbYzB_gNKBw_liS3demf-Q1921tXdFWtmRz0DkbsGl5ynBfaFml5E769MFDrpYS1AnxxKFF8xTR3ORjghDX0dia4CvCn0VwVNSw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-SF1smkSGSyMXhwWrGvnoHjRhD1UCaIYJnAiMYMiN6hoP_R9eZk46SiMyVKI0HzY62d7NxkelIO7-usJOlwO2DgZyqDPUdZtxb67Cw8d5TQWZfOcFZ1KrpJeJJwvkxS7wnKzr5fSKBVyM2yQUtjU1Ug=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "投稿内容は通常営業の案内であり、臨時休業や営業時間変更の告知は含まれていません。"
   }
 ]
