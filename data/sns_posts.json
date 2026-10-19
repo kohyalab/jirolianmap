@@ -18665,5 +18665,20 @@
     "processedAt": null,
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_routine_nishidai_2112119022024278448",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2112119022024278448",
+    "postedAt": "2026-10-19T09:49:50.000Z",
+    "postText": "本日、19日の切り落とし、崩れは 売り切れました。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "切り落とし・崩れの売り切れ告知のみであり、営業時間の変更に関する言及はないため変更なし。"
   }
 ]
