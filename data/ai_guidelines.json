@@ -2,6 +2,175 @@
   "generalRules": [],
   "learnedFeedback": [
     {
+      "id": "sns_post_koshigaya_20261025_0_2111931360529285161",
+      "timestamp": "2026-10-19T15:06:48.036Z",
+      "shopId": "koshigaya",
+      "shopName": "越谷店",
+      "postDate": "2026-10-18T21:24:08.000Z",
+      "postText": "おはようございます！ ラーメン二郎越谷店です！  10月19日(月) 昼11:00〜14:30LО 夜17:00〜20:30LО ご来店お待ちしております🙇🙇  10月25日(日)　臨時営業 10:00〜14:30LО よろしくお願いします！ https://t.co/WlDTNgF0oW",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-10-25",
+        "endDate": "2026-10-25",
+        "hours": [
+          [
+            10,
+            14.5
+          ]
+        ],
+        "reason": ""
+      }
+    },
+    {
+      "id": "sns_post_ichinoe_20261020_0_2111937838279479465",
+      "timestamp": "2026-10-19T15:06:34.865Z",
+      "shopId": "ichinoe",
+      "shopName": "環七一之江店",
+      "postDate": "2026-10-18T21:49:53.000Z",
+      "postText": "宜しくお願い申し上げます https://t.co/0abBpFNwS1",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業変更検出: 都合により",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-10-20",
+        "endDate": "2026-10-20",
+        "hours": [],
+        "reason": "都合により"
+      }
+    },
+    {
+      "id": "sns_post_senjuohashi_20261019_0_2111949269184000440",
+      "timestamp": "2026-10-19T15:06:15.030Z",
+      "shopId": "senjuohashi",
+      "shopName": "千住大橋駅前店",
+      "postDate": "2026-10-18T22:35:18.000Z",
+      "postText": "先日告知済みの通り本日10月19日は定期検診の為休業となりますので大変申し訳御座いませんがご注意をお願いいたします！",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業変更検出: 定期検診のため",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-10-19",
+        "endDate": "2026-10-19",
+        "hours": [],
+        "reason": "定期検診のため"
+      }
+    },
+    {
+      "id": "sns_post_sagamiohno_20261024_3_2111952861911466152",
+      "timestamp": "2026-10-19T15:06:05.253Z",
+      "shopId": "sagamiohno",
+      "shopName": "相模大野店",
+      "postDate": "2026-10-18T22:49:35.000Z",
+      "postText": "◆10/19月【定休】 ◇10/20火［昼のみ］ ◇10/21水［昼&夜］ ◇10/22木［昼のみ］ ◇10/23金［夜のみ］ ◇10/24土10〜14時         ※16:30〜20:00 ↑夜の部臨時営業🈺します。 ◇10/25日10〜15時  →今週もこちら！ ［温かいまかない汁あり］ →［お椀で和ッカレー］ →［相撲部屋のしょうがダレ］",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-10-24",
+        "endDate": "2026-10-24",
+        "hours": [
+          [
+            10,
+            14
+          ],
+          [
+            16.5,
+            20
+          ]
+        ],
+        "reason": ""
+      }
+    },
+    {
+      "id": "sns_post_sapporo_20261028_2_2111976919722070358",
+      "timestamp": "2026-10-19T15:05:01.897Z",
+      "shopId": "sapporo",
+      "shopName": "札幌店",
+      "postDate": "2026-10-19T00:25:10.000Z",
+      "postText": "19日(月)通常営業です🍜 本日より、券売機「ざく切り白髪ねぎ」レギュラーメニューにします。 是非、麺と一緒に食感をお楽しみ下さい。  又、「ねぎミジン」は一時休止、 「玉ねぎカツオ」は現金100円シリーズに移行。  20日(火)、22日(木)は昼のみ営業、夜休業。 28日(水)終日休業になります。 https://t.co/uIhs7hLhoa",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-10-28",
+        "endDate": "2026-10-28",
+        "hours": [],
+        "reason": ""
+      }
+    },
+    {
+      "id": "sns_post_sapporo_20261022_1_2111976919722070358",
+      "timestamp": "2026-10-19T15:04:50.832Z",
+      "shopId": "sapporo",
+      "shopName": "札幌店",
+      "postDate": "2026-10-19T00:25:10.000Z",
+      "postText": "19日(月)通常営業です🍜 本日より、券売機「ざく切り白髪ねぎ」レギュラーメニューにします。 是非、麺と一緒に食感をお楽しみ下さい。  又、「ねぎミジン」は一時休止、 「玉ねぎカツオ」は現金100円シリーズに移行。  20日(火)、22日(木)は昼のみ営業、夜休業。 28日(水)終日休業になります。 https://t.co/uIhs7hLhoa",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-10-22",
+        "endDate": "2026-10-22",
+        "hours": [
+          [
+            11,
+            14
+          ]
+        ],
+        "reason": ""
+      }
+    },
+    {
+      "id": "sns_post_sapporo_20261020_0_2111976919722070358",
+      "timestamp": "2026-10-19T15:04:44.732Z",
+      "shopId": "sapporo",
+      "shopName": "札幌店",
+      "postDate": "2026-10-19T00:25:10.000Z",
+      "postText": "19日(月)通常営業です🍜 本日より、券売機「ざく切り白髪ねぎ」レギュラーメニューにします。 是非、麺と一緒に食感をお楽しみ下さい。  又、「ねぎミジン」は一時休止、 「玉ねぎカツオ」は現金100円シリーズに移行。  20日(火)、22日(木)は昼のみ営業、夜休業。 28日(水)終日休業になります。 https://t.co/uIhs7hLhoa",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-10-20",
+        "endDate": "2026-10-20",
+        "hours": [
+          [
+            11,
+            14
+          ]
+        ],
+        "reason": ""
+      }
+    },
+    {
+      "id": "sns_post_sapporo_20261019_0_2112123281302311007",
+      "timestamp": "2026-10-19T15:04:17.005Z",
+      "shopId": "sapporo",
+      "shopName": "札幌店",
+      "postDate": "2026-10-19T10:06:46.000Z",
+      "postText": "都合により本日20時で営業終了致しますm(_ _)m",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業変更検出: 都合により",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-10-19",
+        "endDate": "2026-10-19",
+        "hours": [
+          [
+            11,
+            14
+          ],
+          [
+            17,
+            20
+          ]
+        ],
+        "reason": "都合により"
+      }
+    },
+    {
       "id": "sns_post_kyoto_20261017_0_2111266052298735871",
       "timestamp": "2026-10-17T22:54:32.375Z",
       "shopId": "kyoto",
