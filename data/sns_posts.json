@@ -18484,5 +18484,20 @@
     "processedAt": null,
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_routine_sengawa_2112054668222484805",
+    "shopId": "sengawa",
+    "shopName": "仙川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjiro26/status/2112054668222484805",
+    "postedAt": "2026-10-19T05:34:07.000Z",
+    "postText": "本日17時から店内営業とテイクアウト販売します。営業時間17:00〜21:00",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知"
   }
 ]
