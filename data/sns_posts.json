@@ -18576,5 +18576,35 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "本日通常営業の告知であり、臨時休業や営業時間変更の記載はありません。"
+  },
+  {
+    "id": "sns_post_routine_kameido_2112078641232568425",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2112078641232568425",
+    "postedAt": "2026-10-19T07:09:23.000Z",
+    "postText": "お世話になってます。本日夜の部は「ニンニクの芽のキムチ」やります！ご希望の方は本日のトッピング¥200を購入してください。なお、タマネギキムチはお休みです。よろしくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常のトッピング告知であり、営業時間の変更はない。"
+  },
+  {
+    "id": "sns_post_mention_kameido_2112078397392498834",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2112078397392498834",
+    "postedAt": "2026-10-19T07:08:25.000Z",
+    "postText": "@syokumutaiman ちゃんと準備しておかないと…な！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
   }
 ]
