@@ -18454,5 +18454,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "日常的なメニュー告知であり、営業時間の変更は含まれていません。"
+  },
+  {
+    "id": "sns_post_routine_ichinoe_2112035541541921227",
+    "shopId": "ichinoe",
+    "shopName": "環七一之江店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ichinoejiro/status/2112035541541921227",
+    "postedAt": "2026-10-19T04:18:07.000Z",
+    "postText": "営業時間前に麺切れしてしまう見込みです。 お越しになられても麺切れでお断りしてしまう可能性がありますので、ご了承願います。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業変更なし（通常通り営業・雑談等）"
   }
 ]
