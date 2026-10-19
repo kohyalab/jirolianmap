@@ -18923,5 +18923,71 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の告知"
+  },
+  {
+    "id": "sns_post_routine_senjuohashi_2112312228250825176",
+    "shopId": "senjuohashi",
+    "shopName": "千住大橋駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjujirou26/status/2112312228250825176",
+    "postedAt": "2026-10-19T22:37:34.000Z",
+    "postText": "ラー油あります！  ※営業時間10時30分〜 15時30分ラストオーダー！ https://t.co/EyTZrNyw96",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-3HqVbg9Oke29DIxUJRdtkQwzHktJqg2ZLwRVn9z8dz_JoWYdQqB1VCfH0Q7mx0yAaLjBxqL0fgjr4kyocwH59I93AcwBcaQTb8AXULU94DJIdUYEznZNa0LRavMcOvH2DIOUZRFYKHqVLE7DUNabHg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業時間の再確認投稿であり、臨時休業や時間変更の告知ではないため変更なし。"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261020_0_2112318124783788398",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2112318124783788398",
+    "postedAt": "2026-10-19T23:01:00.000Z",
+    "postText": "本日もやります！  ◇10/20火 【昼の部のみ営業】 【テイクアウト割り🈹】  →こちらをご覧のお客様限定→ご申告制🈸［テイクアウト割🈹］やっております！食券にて。  着席時に『テイクアウト割りお願いします。』と従業員にお申し付けください。各サービス🈂️致します！ ※店内お食事の方のみです。 https://t.co/8fVuGBdodA https://t.co/OUesAxawdn",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-fmsUUJJ7zQvVzyzLR_wSSfSdeF_wZo2iBEf2qgQ42mDuQu0Olcrtpily9UvLhn9VS6UjML8O8rjL3ocmyxXmLhDgaWux6bLR-Jho8GNGtHAo_nldLcAQzMJ5QPB_DgOnL0BFVNn_7rm33gxVe77zWA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-20",
+      "endDate": "2026-10-20",
+      "hours": [
+        [
+          10.333333333333334,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2112317766380482593",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2112317766380482593",
+    "postedAt": "2026-10-19T22:59:35.000Z",
+    "postText": "本日 ◇10/20火 【昼】 →こちらをご覧のお客様限定です！ ↓ ※お客様ご自身で→丸の🟥赤又は白🤍食券を１枚お取りになって席までお越しください。→食券は券売機の前の台の二段目に置いておきます。 ※必ず着席時にお出しください。 ※サービス中の目印は［黄色いハンカチ］ どうぞご利用下さい♪ https://t.co/nJnrSuwhrv https://t.co/OUesAxawdn",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-0oeM7bv7rnN-8aDc8iPEJj8hV1qiYUDm7VnPfhtcMtnj47mPETbuIzthzoDXSaMEKWaoZRWT9twNEdkaHBHzsLnKnOzNyI5X2BaIPRRhIo_9jYdutu81uNDNaIBCayf2iFP9oiOx9ror2MSVnxBQfg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-dQb9IeasUn8-ec1290EQQsZGadh2ARaP2QyW3zv-C3Z72fZI7bbjNJnbb05eJT6N5diN3wO--6I1wAcfzupopOfUCoelegJ3aiwYZ9ITP-kxxmXWa9ClEHJEQWJ47MD8SBg-CKUht7YwNffo4ixIXw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-RMQFr-mbMp2A8rKLTQHWzZZLlw6rzkFkEvqkgu6jmCnkreeu1r_nTivD0k4jC5g5FJW4SP9CVyCLEXPTNixHR0kJk35kMAdl6YLJs45WXJubM4byoyKWoVaGIfvcWdWjDaexImCRG660a0DbUhzvug==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-fKri1EaqAeswahxM5Z_zDamLqi8rq1wujYcQ0f2EUzMpjoaSmcYO9_QiXf6qdVw05y9iLnOp2UoRZpxNwt0z4d97hjuWX5BIobQ8NSszlllJQhDgFJKbIuMMqMPLegOIx7ha38RKAsf0uTEhmuLXqA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更はなく、ランチタイムサービスの告知のみです。"
   }
 ]
