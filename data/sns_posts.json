@@ -18469,5 +18469,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業変更なし（通常通り営業・雑談等）"
+  },
+  {
+    "id": "sns_post_mention_sagamiohno_2112051167211729185",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2112051167211729185",
+    "postedAt": "2026-10-19T05:20:12.000Z",
+    "postText": "@kanrekijiroria @JunZ_007 いつも有難うございます。 お待ち致しております。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
   }
 ]
