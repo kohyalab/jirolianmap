@@ -19596,5 +19596,79 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業時間内での案内であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_yaen2_2112685929483870518",
+    "shopId": "yaen2",
+    "shopName": "八王子野猿街道店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/Jiro_Yaenkaido2/status/2112685929483870518",
+    "postedAt": "2026-10-20T23:22:32.000Z",
+    "postText": "10月21日(水) 11:00～15:00 17:30～21:00 ⭐テイクアウト、鍋二郎あります 並ばず買えます エビドクロテイクアウト現金です  ⚠️駐車場待ち出来ません ⚠️駐車場満車時コインパーキングに ⚠️店舗近隣タバコ禁止です  🌟きまぐれたまご しそ https://t.co/vjl11oZyTp",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-63Ne4uE1e9Cc6K0X_5j4LWqILmaew8o209jVHcVSTp3xxT5pgj_18IjtubDsSgxzJ6Jn3TQ6Qvyij-7ZxBRAdlB4mddb3HvfEfJEH1sZcAX3B_7bHiVRbc9pG1HSIcOeyu-XwzJKB8gWMQHiFqZrWQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-B_E6j4EvcK3ZP8UQrvoAJCGREbBTbrX7JuyHrtGg-b-WWHMTbcg_7fwNITMJDNDaHLbgqKVIL4OLkil5c-Tuxq3tbDh6WJklSi3m_i1zsbajp6ztUk01gwfAvqbfpXiXkYyuulNKejv_W-YzoL3wYA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-70CP5quQ5bVNgMfsTX6ljdBBYL_XhIYFGfnzPHpLYpqjGeSr6QXKoc7-Ez9zOGq4hIf6IhNXcltV4_5n79RSUjidpQMG_tmRuCmsFzeentk584PzPJl5H3RZPp-tN3TtGcEgDYbcGBu7LILQc00Qmw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知であり、臨時休業や営業時間変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_yaen2_2112685755596411139",
+    "shopId": "yaen2",
+    "shopName": "八王子野猿街道店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/Jiro_Yaenkaido2/status/2112685755596411139",
+    "postedAt": "2026-10-20T23:21:50.000Z",
+    "postText": "10月21日(水) 11:00～15:00 17:30～21:00 ⭐テイクアウト、鍋二郎あります 並ばず買えます エビドクロテイクアウト現金です  ⚠️駐車場待ち出来ません ⚠️駐車場満車時コインパーキングに ⚠️店舗近隣タバコ禁止です  🌟きまぐれたまご しそ",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2112686142500077889",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2112686142500077889",
+    "postedAt": "2026-10-20T23:23:22.000Z",
+    "postText": "本日！ ◇10/21水 【昼の部】＆【夜の部】 ［つけ麺］🉐得割🈹！ →５０円引き！ ※券売機150円設定！  思いがけない蒸し暑さ💦  →［相撲部屋のしょうがダレ］とも相性バッチリ👍  どうぞご利用ください♪ https://t.co/mcgCXAF2Ep https://t.co/65SwsreYtj",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-UQzdPRii439cGsXyvKSI82pLLsFW8_zs_QtWcnePtwNxLd8f2c8N6-0lxOh5UK7WPHeVLtpuE1N20YftV0JLq-ZZd-BUVuFleWLHWzRf9xlObC5qt-Ym0sRMkFAjSjAZwf9h3NPxB7H0Ez5owKAYKQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-_G66lDLSwoza8Cq5xwUoqYyTM_01Pl9RgYP3uGF90n9smjbSKrxVqjdiapzRrvL7W4DuD8CxMm5IhWJyHp55WoW5Z05945O_ojPbPuJgilyQ4xDt0l2g_-nKwePTMvHeqe8NzRK5pLajsoUT4J5hJw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-78S6Envo-o1sqdKtxSo54msQoA2IXVRVXfx7UMv3mtO2Ci_55DGgdxnYHXDUbbVYemKHviU33TQ1InAIhI167DxpsBYBNupZykKCfQVDsKIvLVUA7qC8Mi7QIu9nzIFjuaMBx_lRdB_qFffGU2WR7w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-1hH88rf4PbdMf3gvFNyjUAQIQyG6EGQdkW0Hf1kyZGyItCwgXx3oQBhuYyaa31KCiJG-jpJ0HLR5mio9U-zQp1y7UaesMYLMlFzVJgUoYLQuU43fGImaOhqvhFhA1rJUSDRWNdP8qh4a9yvC1XHJ5g=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "10/21(水)は通常営業の告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2112684624904348029",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2112684624904348029",
+    "postedAt": "2026-10-20T23:17:21.000Z",
+    "postText": "本日 ◇10/21水 【昼】 →こちらをご覧のお客様限定です！ ↓ ※お客様ご自身で→丸の🟥赤又は白🤍食券を１枚お取りになって席までお越しください。→食券は券売機の前の台の二段目に置いておきます。 ※必ず着席時にお出しください。 ※サービス中の目印は［黄色いハンカチ］ どうぞご利用下さい♪ https://t.co/tz9v8koufF https://t.co/65SwsreYtj",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-RMAuP4IcWRBpGi_fDPfbJRa8xu22At9jtmaYYUS9Yy_AOyJsro331dXQRNqGMXbviC42JibttLtBTEcDAW_MIAMHlzjPTm17ZVDiGMDCe-kZByU9kbLCI1M4EZJJDixmhX_OapwiNI90_V-osolJ8Q==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-pHKsfBHcQkKhiWHOn-NJzgZGtZXzovar3IPbjS5sXoKtiWRcbBFhI23GZZY9-UwnpfgIHukesbjuH4iRQUYMjeA2lDufqvxcyPXVJ60yw3llVHKCfhJEYICP9fjGDTwvA4byjP9O5y2PYI88eh07gg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-dY1GMo3EX7f7NiZb5R0FM_0i3Tt5f5CvHgLmQ2HTihSPKME15cGzBeZTBVtEU2HjnMvOxtv0VrVEKLZHU3ZZlbpoLif1neFferqzpl0yUhGdN41uptbHeN5a0aJ4PO9ooB3WQB3ttPlhb6GDKFamVQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-wjcymXO0nkpPEvs6QavP9hxEu7o17Z911s_B8MMwzfCdaDKQWWSSe_6N8dL2saaUPyyCDzsMX-4rvr2papoZpGOHZLtzkXdasP4shNamwd_kbX3gA7umV4sazFsdAAQChmBaQvVg_GoLi8d-yFsjaA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更や臨時休業に関する告知はなく、限定トッピングやサービスに関する日常的な投稿です。"
   }
 ]
