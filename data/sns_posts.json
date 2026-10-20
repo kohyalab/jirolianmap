@@ -19326,5 +19326,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "本日通常営業の告知および限定メニューの案内であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_daily_kannai_2112457812957880608",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2112457812957880608",
+    "postedAt": "2026-10-20T08:16:04.000Z",
+    "postText": "関内店スタッフ募集中です！ 興味のある方はぜひ スタッフまでお声掛けください。 一緒に楽しみましょう。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
