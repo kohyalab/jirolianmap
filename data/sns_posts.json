@@ -19053,5 +19053,23 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "投稿内容は通常営業の案内であり、臨時休業や営業時間変更の告知は含まれていません。"
+  },
+  {
+    "id": "sns_post_routine_nishidai_2112331898014089272",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2112331898014089272",
+    "postedAt": "2026-10-19T23:55:44.000Z",
+    "postText": "おはようございます。 本日、20、昼の部  FZ味付き切り落とし ¥700×2 FZ味付き崩れ ¥700×1  あります。 https://t.co/9KdYU1dPCT",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-gMHl6Oc0xpTtWk8cgK_oD3RFek2FjmuqEbT9DUvn2uYgC4ySljvqI47CgTwOdsPno44d_gHbQWMDtb6Q1ZuA19RCfyDZAvUGxb697RnkiRu8eI0xcN8SU7oCIsNGiVK42Q61xJ2g0-Tr4PTLe1yMEg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-cdAGB8_lUrjljNCeKgilTWHDKofc9ZBiuaRTmT43c9f05n3D0bOtVSvbruuknsSdZ5yy1qa2hAMzmZ1PxsY40bVNF96abzE3EKS7K1KulB2aMECJvAeMdn5ADelz_yGTfc2Ci7V0vZ7mI0ckV6RozQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "投稿内容はメニュー告知およびアルバイト募集、ならびに既に登録済みの11/3の臨時休業告知であり、本日の営業時間の変更はありません。"
   }
 ]
