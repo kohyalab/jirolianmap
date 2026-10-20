@@ -19239,5 +19239,62 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "投稿内容が抽象的であり、具体的な営業時間の変更や休業の定義がなされていないため、変更なしと判定しました。"
+  },
+  {
+    "id": "sns_post_routine_sengawa_2112416722557043082",
+    "shopId": "sengawa",
+    "shopName": "仙川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjiro26/status/2112416722557043082",
+    "postedAt": "2026-10-20T05:32:48.000Z",
+    "postText": "本日17時から店内営業とテイクアウト販売します。営業時間17:00〜21:00",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知のため変更なし"
+  },
+  {
+    "id": "sns_post_daily_ogikubo_2112030084253233295",
+    "shopId": "ogikubo",
+    "shopName": "荻窪店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ogkb_jiro/status/2112030084253233295",
+    "postedAt": "2026-10-19T03:56:26.000Z",
+    "postText": "https://t.co/q5qF2DtrUt",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_koiwa_20261020_0_2112417117186462024",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2112417117186462024",
+    "postedAt": "2026-10-20T05:34:22.000Z",
+    "postText": "ただいまお並びのお客様をもちまして本日の営業は終了しました",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-20",
+      "endDate": "2026-10-20",
+      "hours": [
+        [
+          10.5,
+          14.566666666666666
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
