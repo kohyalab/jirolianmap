@@ -19296,5 +19296,20 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_kameido_2112442836465639757",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2112442836465639757",
+    "postedAt": "2026-10-20T07:16:34.000Z",
+    "postText": "お世話になってます。本日のタレは肉カス、辛味噌、青トウガラシ、タマネギです！別皿提供もできますのでご希望の方はニンニク入れますか？の時にタレとお伝えください。カラメとの併用はできません、よろしくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常のトッピング告知であり、営業時間の変更はありません。"
   }
 ]
