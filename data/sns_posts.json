@@ -19311,5 +19311,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "日常のトッピング告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_kyoto_2112447207043690855",
+    "shopId": "kyoto",
+    "shopName": "京都店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kyoto/status/2112447207043690855",
+    "postedAt": "2026-10-20T07:33:56.000Z",
+    "postText": "こんにちは！本日通常営業です！ 「京都ブラック」今日の分くらいまでありそうです！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "本日通常営業の告知および限定メニューの案内であり、営業時間の変更はありません。"
   }
 ]
