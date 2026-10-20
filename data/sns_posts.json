@@ -19145,5 +19145,54 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の告知であり、臨時休業や営業時間変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_nishidai_2112355990050062783",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2112355990050062783",
+    "postedAt": "2026-10-20T01:31:28.000Z",
+    "postText": "本日、20日、昼の部の 切り落とし、崩れは 売り切れました。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常的なメニュー販売状況の告知であり、営業時間の変更は含まれていません。"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2112362097749422456",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2112362097749422456",
+    "postedAt": "2026-10-20T01:55:44.000Z",
+    "postText": "おはようございます！！！ 小雨がパラつく天気ですが、本日も宜しくお願いいたします。 近々ロケットナウさんでデリバリー始めようと思います。家で茹でていただくタイプから始めようかと思います。(生麺タイプは需要あるのかしら？) 仙台デリバリーの先駆者キリンジさんに今度話聞きに行ってこよ。 https://t.co/cBZNCSHnYx",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-nbEb2Wln6oPOJkC4-DSVY_uJ4JJ9aa5hRh0FTDKViGeNntEVm_TbLx2Pa_w6MRCibizn0UMd9EHd3ZZ5QPK_RpNSkM67ccvOMwdk_PGZw2CTMt9eenJPoKodbOphtPD4U3zNJbOe6Li9DuwW-ntSYQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-romYUEZeUE9TGWlGiPAQjCOOMcztMBn4e2nR7YY4-pOCb_YwMKFvtFZpVNeOC28X_N_90yPoSXcY5ZrmT4CZdCVTgBSqfqZs_8dObdihiUb4NsaNpYNWJsQcrBxaO0oulkGhn_54xWxUzmA3aikEUw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-st54puKT9wW10dEzAWlOzQWMFRkjJQjgwx6seuauVcARq7bD7TK2WmoHMNIxxvWvLDw9ntax39K2iS-25xJpUgGGWDrstrra63qLn7oUlPVTIuH3wvpK3jWrzkcycttNNCf5VSr1tr11E172cW_8xA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業変更なし（通常通り営業・雑談等）"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2112359458190070007",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2112359458190070007",
+    "postedAt": "2026-10-20T01:45:15.000Z",
+    "postText": "@homuranotaka @ramensatoko 割と最近、友達が本気で言ってたから、もしかしてと思ったら長州さんのネタかーい！！！ 恥ずかしい🫣🫣",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
   }
 ]
