@@ -18821,35 +18821,6 @@
     "aiReason": "通常営業の告知"
   },
   {
-    "id": "sns_post_koshigaya_20261025_0_2112297018576257184",
-    "shopId": "koshigaya",
-    "shopName": "越谷店",
-    "postSource": "x",
-    "postUrl": "https://x.com/ksgy26/status/2112297018576257184",
-    "postedAt": "2026-10-19T21:37:08.000Z",
-    "postText": "おはようございます！ ラーメン二郎越谷店です！  10月20日(火) 昼11:00〜14:30LО 夜17:00〜20:30LО ご来店お待ちしております🙇🙇  10月25日(日)　臨時営業 10:00〜14:30LО よろしくお願いします！ https://t.co/P5rAzUtLmB",
-    "mediaUrls": [
-      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne--T0m-XtomzhdyAxkTnCDUFTZydMS_XdQ6g8655BjGaQZvD5WFtSeZ1kwxE9ZvJ4sl1LTsuCG7oElCZmpdn5LxMDYiWYJvIuAC1lShVBGPiFTQHHl7EfzVfP8TXuMhWJRcsg7UJwMjJzrbCh1faokqA=="
-    ],
-    "detectedChange": {
-      "type": "special_open",
-      "startDate": "2026-10-25",
-      "endDate": "2026-10-25",
-      "hours": [
-        [
-          10,
-          14.5
-        ]
-      ],
-      "reason": "",
-      "confidence": 1
-    },
-    "processed": false,
-    "processedAt": null,
-    "aiStatus": "schedule_change",
-    "aiReason": "営業時間の変更を検出"
-  },
-  {
     "id": "sns_post_mention_koshigaya_2112296455830647167",
     "shopId": "koshigaya",
     "shopName": "越谷店",
@@ -19485,5 +19456,56 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の告知"
+  },
+  {
+    "id": "sns_post_kaminoge_20261021_0_2112653246913479115",
+    "shopId": "kaminoge",
+    "shopName": "上野毛店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kaminogeJiro/status/2112653246913479115",
+    "postedAt": "2026-10-20T21:12:39.000Z",
+    "postText": "本日は臨時休業です",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-21",
+      "endDate": "2026-10-21",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_koshigaya_20261025_0_2112657410427121910",
+    "shopId": "koshigaya",
+    "shopName": "越谷店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ksgy26/status/2112657410427121910",
+    "postedAt": "2026-10-20T21:29:12.000Z",
+    "postText": "おはようございます！ ラーメン二郎越谷店です！  10月21日(水) 昼11:00〜14:30LО 夜17:00〜20:30LО ご来店お待ちしております🙇🙇  10月25日(日)　臨時営業 10:00〜14:30LО よろしくお願いします！ https://t.co/YBZaoqepzf",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-NRNlzNVEi4h3Uj-aUP9n_xHqShZkQp4sjQzGzk3Y6uk2ddht8ftBjuN9Zqycn1uaoIL9dCi_s7HPax6-DCT_0M-evX3lwnAe0whoLkA_gBkMeIJArG0sTks08J3dO4ccaElwtCTmGeKWeF-7vI168Q=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-10-25",
+      "endDate": "2026-10-25",
+      "hours": [
+        [
+          10,
+          14.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
