@@ -2,6 +2,23 @@
   "generalRules": [],
   "learnedFeedback": [
     {
+      "id": "sns_post_routine_ikebukuro_2112477952487374956",
+      "timestamp": "2026-10-20T21:51:15.783Z",
+      "shopId": "ikebukuro",
+      "shopName": "池袋東口店",
+      "postDate": "2026-10-20T09:36:06.000Z",
+      "postText": "池袋店です‼️ 10月20日の告知になります。  明日10月21日(水)より営業再開となり ⚠️17時00～21:30までの営業となります。  水漏れは止まりましたが、原因分からずのままの営業となります。 何かありましたらXの方で告知させて頂きます。 ご迷惑おかけしますが、よろしくお願い致します。",
+      "aiStatus": "no_change",
+      "aiReason": "10月21日(水)より通常営業再開の告知",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-10-20",
+        "endDate": "2026-10-20",
+        "hours": [],
+        "reason": ""
+      }
+    },
+    {
       "id": "sns_post_koshigaya_20261025_0_2111931360529285161",
       "timestamp": "2026-10-19T15:06:48.036Z",
       "shopId": "koshigaya",
