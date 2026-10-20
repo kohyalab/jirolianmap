@@ -19224,5 +19224,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "日常的な営業状況の報告であり、臨時休業や営業時間変更の告知ではないため変更なし。"
+  },
+  {
+    "id": "sns_post_routine_shndaita_2112416111170068692",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2112416111170068692",
+    "postedAt": "2026-10-20T05:30:22.000Z",
+    "postText": "半分お休みみたいです！ https://t.co/aXjJvVB0Cb",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "投稿内容が抽象的であり、具体的な営業時間の変更や休業の定義がなされていないため、変更なしと判定しました。"
   }
 ]
