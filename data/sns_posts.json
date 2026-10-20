@@ -19376,5 +19376,51 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "10月21日(水)より通常営業再開の告知"
+  },
+  {
+    "id": "sns_post_routine_kameido_2112490778350223545",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2112490778350223545",
+    "postedAt": "2026-10-20T10:27:04.000Z",
+    "postText": "辛味噌ダレ終了しました！申し訳ありません",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定メニュー終了の告知であり、営業時間の変更は含まれていません。"
+  },
+  {
+    "id": "sns_post_nagoyaosone_20261020_0_2112492001614815390",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2112492001614815390",
+    "postedAt": "2026-10-20T10:31:56.000Z",
+    "postText": "ラーメン二郎名古屋大曽根店です。 只今の時間、並びを持ちまして本日の営業は終了とさせていただきます。 よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-20",
+      "endDate": "2026-10-20",
+      "hours": [
+        [
+          11,
+          14
+        ],
+        [
+          17,
+          19.51
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
