@@ -19071,5 +19071,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "投稿内容はメニュー告知およびアルバイト募集、ならびに既に登録済みの11/3の臨時休業告知であり、本日の営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_kawagoe_2112346960166633881",
+    "shopId": "kawagoe",
+    "shopName": "川越店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kwge26/status/2112346960166633881",
+    "postedAt": "2026-10-20T00:55:35.000Z",
+    "postText": "おはようございます！ 本日通し営業です☀️ ○11:00~20:00  🍜持ち帰りあります！  無料トッピング｢紅生姜｣あります☺️ トッピング時に「アレ」で！  よろしくお願いします🙇‍♂️",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知であり、臨時休業や営業時間変更はありません。"
   }
 ]
