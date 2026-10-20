@@ -19341,5 +19341,25 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2112473346478936270",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2112473346478936270",
+    "postedAt": "2026-10-20T09:17:48.000Z",
+    "postText": "明日 ◇10/21水 【昼の部】 10:20から〜14:00 【夜の部】 17:00から〜20:30  →［温かいまかない汁あり］ →［お椀で和ッカレー］ →［相撲部屋のしょうがダレ］  やっております！  どうぞー♪ https://t.co/6KMTZSDB6J",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-YygLY9dQsooXw-mi8pKP3piV9snjC_vF4u2nSzdTvAiWnXMn64ZOBnCMS6O4GuaLNpRxV3QyPqjXbjm0uia9nkPAc1WPlZctlC4rxLGY7l8RabOYwuwuFegc4GD7BVPRP5XelHenxiAGzDpNT_-Fnw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ymBymzkWci5VUjyZtoqTVJ1gY4-wsP6V0DIAwUn9uXM8mz0EueBDGfLP-avAhgdGgAZ69T9JwEVG4ZIlJDNfQRdQdxVtolJuw-erYFTcZHfwv7WbsmfxIlLeuE7J-0gXZ7es5znsCdk1Fimx5zvlZg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-8wT4t6gEicBvFPpXD-0I53SagnDtnK2N3L-pjhcaovewq6l8Zj7H5OUuXrOsPIe47xC9scsaKCddEQ9uTL24uRF3gxsClLfP2vfhGWlxE0lTGfpZ-sUmncUBTdfvMiPQntea_oK0Iszvrk-xJ9lLqA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ohxdQOjDd3L5ieWKPpH8MwVklYVRZTxm85Rojrr4z0c7y8JaMnKxSnRHDebgQSZyOIBNxXM0VXNibHpBw8-5laacbasnxqkjEPsk3k7sNaLEyFpiRyuLfojZ7BatqNV0JD07YyjDQZjlxX2V4rbRgA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "10/21(水)の営業案内および限定トッピングの告知であり、通常営業時間と同一のため変更なし。"
   }
 ]
