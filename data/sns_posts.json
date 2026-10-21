@@ -20100,5 +20100,35 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_daily_kameido_2112901887792124137",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2112901887792124137",
+    "postedAt": "2026-10-21T13:40:40.000Z",
+    "postText": "郎のバッグ当てて通勤用にするんだ！🍜 https://t.co/u1FcyNFenj",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_daily_tochigikaido_2112906610079416664",
+    "shopId": "tochigikaido",
+    "shopName": "栃木街道店",
+    "postSource": "x",
+    "postUrl": "https://x.com/Tochigikaidoten/status/2112906610079416664",
+    "postedAt": "2026-10-21T13:59:26.000Z",
+    "postText": "少なめにしたいものを先に言うのが🙆 https://t.co/TTfGIfzApS",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
