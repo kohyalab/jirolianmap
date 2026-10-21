@@ -19781,5 +19781,40 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_nakayamaekimae_2112723991546978547",
+    "shopId": "nakayamaekimae",
+    "shopName": "中山駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/NKYMJIRO/status/2112723991546978547",
+    "postedAt": "2026-10-21T01:53:46.000Z",
+    "postText": "すみません、ブったまの材料が切れてしまって本日はち〜たまの汁なしになります。 m(._.)m 申し訳ありませんが、よろしくお願いします。m(_ _)m",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業変更なし（通常通り営業・雑談等）"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2112725564385869956",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2112725564385869956",
+    "postedAt": "2026-10-21T02:00:01.000Z",
+    "postText": "おはようございます！！先日東京行った際に捕鯨船という飲み屋さん行ってきました！ビートたけしさんの歌とかで有名なお店。 鯨と煮込みがめちゃくちゃ美味かったです！  少し小雨降ってますが、御来店お待ちしております！！ https://t.co/TLWDhajPlB",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-8pKlXzL4PTTZvZ4-RHoQ5M2pQmfcp8KJ3y23cBR0Q495o8XKZ4srmEEwEDhrLyChvmrUaEDEt-JCg1vTmcevM6G2Uj_SoGAXwNtGodtEO05lXSBkcEx2RXMpGYz436v9aIzY15jEJaAwD1ZQivepxg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-fJkqQV74dhLRFwdNMcRNX7gMNcW7h8NGccT8vIH2wnxJjDKR3pY0-s0IpuDFA7IcZv1leunSQR7eBfOt9BapgEOFQre0e4KURBDBygxoKAlVjSIjUSJA2F8wDgGHyaE2Z-_SJ6_rNQHq3DLDVXvhrg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-YVHxBVHvolGniuFLmfDGCn-eonLOJlrVTVqnm0cZY4JJEtrHsw16wUQiNKbluTXaGFv2OA23eUhyerWYzEn8pBvw6yi9-ba9QwFivAXpfrkj4vs7V-HHkRKhEdxEly1b_lgFhkG3m3_Ym9MW1nxh_Q==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-D-63fUvPWBW4JtQ_mfYQP8E4QWyevT-DQoFEksRS2brFvJ9ZjHbbU-8LfKX4IGXWfHiXdaAYXprVsrrnniWGP_2JRZDpja5xg4yq8RJUHz3Sen-1lGJeq5-rMYtOB_cBE5kx5yT2czx9QeZYZuXeCA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更や臨時休業に関する言及はありません。"
   }
 ]
