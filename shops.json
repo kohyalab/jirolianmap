@@ -3940,6 +3940,19 @@
         "_isAiImported": true
       },
       {
+        "startDate": "2026-10-21",
+        "endDate": "2026-10-21",
+        "hours": [
+          [
+            11,
+            14
+          ]
+        ],
+        "reason": "都合により",
+        "sourceUrl": "https://x.com/jiro_sapporo_/status/2112710126742487380",
+        "_isAiImported": true
+      },
+      {
         "startDate": "2026-10-22",
         "endDate": "2026-10-22",
         "hours": [
@@ -4303,7 +4316,6 @@
             15
           ]
         ],
-        "reason": "",
         "sourceUrl": "https://x.com/26shinshindaita/status/2111215697602998440",
         "_isAiImported": true
       },
@@ -4311,7 +4323,6 @@
         "startDate": "2026-10-18",
         "endDate": "2026-10-18",
         "hours": [],
-        "reason": "",
         "sourceUrl": "https://x.com/26shinshindaita/status/2111342824860045531",
         "_isAiImported": true
       },
@@ -4325,15 +4336,7 @@
           ]
         ],
         "reason": "",
-        "sourceUrl": "https://x.com/26shinshindaita/status/2111342824860045531",
-        "_isAiImported": true
-      },
-      {
-        "startDate": "2026-10-23",
-        "endDate": "2026-10-23",
-        "hours": [],
-        "reason": "",
-        "sourceUrl": "https://x.com/26shinshindaita/status/2111342824860045531",
+        "sourceUrl": "https://x.com/26shinshindaita/status/2112664124434104715",
         "_isAiImported": true
       }
     ],
@@ -6930,6 +6933,14 @@
         "hours": [],
         "reason": "",
         "sourceUrl": "https://x.com/jiro_NGY/status/2108012763293552930",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-22",
+        "endDate": "2026-10-22",
+        "hours": [],
+        "reason": "",
+        "sourceUrl": "https://x.com/jiro_NGY/status/2112714222249656697",
         "_isAiImported": true
       }
     ],
