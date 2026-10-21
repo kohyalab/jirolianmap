@@ -20378,5 +20378,74 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_yaen2_2113047534918918604",
+    "shopId": "yaen2",
+    "shopName": "八王子野猿街道店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/Jiro_Yaenkaido2/status/2113047534918918604",
+    "postedAt": "2026-10-21T23:19:25.000Z",
+    "postText": "10月22日(木) 11:00～15:00 17:30～21:00 ⭐テイクアウト、鍋二郎あります　 並ばず買えます エビドクロテイクアウト現金です ⚠️駐車場待ち出来ません ⚠️駐車場満車時コインパーキングに ⚠️店舗近隣タバコ禁止です  🌟きまぐれたまご しそ https://t.co/RQv99ygHDi",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-6uvYmVV2YsXZy8f_MGM9SO_WcWVfBIgAD_-zkey4RCJk8Ho7C9-8IHaVxo01qlBgvrGPhq4WFPu-dpnKkB9dwFVTNvzi0aXNM2V2ThTDUFG_G1RoX_xXpsjW4CXImp6bRAG9IKUhYPTnIJyg73wL_Q==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-eE4g0iMB39itkNQra1ln7EQ_gAjG3t2kHxQxnzpE1wJH5wbRWj-XnXJDXAojtOXmoNIn7UssqhRbPGnL1AizGKHVg5Wtc-1LDqmW1W2xMUph7UUEvb2xH3oyTzxZVfFYfmx4Aa0RERBcEmM4OxbUcA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-yKYnFXT4GAo7oH3IPw1kdqf65ayfHarWCWxBENWVAR_w5irhevzDeJ51xrgPwm1yggkJpMWNWlbGxHGReKTma7JIa8gbRICqzNwbCuOKQBvwnVAqce-cSB561IuZ-jiczYslJyk5OBHhRHJjuw2M7w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-RiLEsBKt0NPOcL9t093aFg3HkmrKRDzVV6jSDXSm2cxoRbnnzYlF1yPTwYTt2LIk8nCLciTNh5c-2q2gynXpNgJ0k36AbBsNQHt2gs8XSmTWPT2VlKDcIe8a9kc9taOE2NRyxZrvYVBQc3KbhBhURw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知であり、臨時休業や時間変更はありません。"
+  },
+  {
+    "id": "sns_post_nagoyaosone_20261022_0_2113043399976849631",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2113043399976849631",
+    "postedAt": "2026-10-21T23:02:59.000Z",
+    "postText": "おはようございます。 ラーメン二郎名古屋大曽根店です。  本日はお休みさせていただきます。  明日２３日(金曜日)は昼の部営業となります。 よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-22",
+      "endDate": "2026-10-22",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_nagoyaosone_20261023_1_2113043399976849631",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2113043399976849631",
+    "postedAt": "2026-10-21T23:02:59.000Z",
+    "postText": "おはようございます。 ラーメン二郎名古屋大曽根店です。  本日はお休みさせていただきます。  明日２３日(金曜日)は昼の部営業となります。 よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-23",
+      "endDate": "2026-10-23",
+      "hours": [
+        [
+          11,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
