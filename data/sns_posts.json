@@ -19964,5 +19964,50 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "投稿内容は通常営業の案内であり、臨時休業や営業時間変更はありません。"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2112853446965833745",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2112853446965833745",
+    "postedAt": "2026-10-21T10:28:11.000Z",
+    "postText": "そういう事です！ ありがとうございます！ https://t.co/ZWpB21TNNm",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2112852248472736026",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2112852248472736026",
+    "postedAt": "2026-10-21T10:23:25.000Z",
+    "postText": "それか ヤサイマシニンニクすくなめで！って 伝わり方ですよねって思うけど 頭の中はそれぞれだから なるべく間違え(させ)ない風に言ってもらえるとありがたいです☆",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2112851170746376580",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2112851170746376580",
+    "postedAt": "2026-10-21T10:19:08.000Z",
+    "postText": "ヤサイニンニクスクナメって言われると 両方すくなめと思ってしまうので 野菜をふやしたくてにんにくをすくなめにしたいなら ニンニクすくなめヤサイって言ってもらえると間違いが減るかもです",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
