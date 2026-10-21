@@ -20009,5 +20009,96 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_shndaita_2112860676863693014",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2112860676863693014",
+    "postedAt": "2026-10-21T10:56:55.000Z",
+    "postText": "(金)も営業できそうです！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報の変更に関する具体的な言及がないため、変更なしと判定しました。"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2112859751537385861",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2112859751537385861",
+    "postedAt": "2026-10-21T10:53:14.000Z",
+    "postText": "持ち帰りやりますって ツイートしてる日はやってます https://t.co/LHrCMRnwSC",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2112856363156279345",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2112856363156279345",
+    "postedAt": "2026-10-21T10:39:46.000Z",
+    "postText": "そうです https://t.co/aUfKnHPGYA",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2112854769253666824",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2112854769253666824",
+    "postedAt": "2026-10-21T10:33:26.000Z",
+    "postText": "なんとなくの二郎あるあるかなって思ってるのが 野菜と脂は増やしたい ニンニクは少なめにしたい ヤサイアブラ ニンニク少なめで！  だったら ニンニク少なめヤサイアブラで！って 言って貰えたら間違えないと思います！   伝わるかな？",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_nagoyaosone_20261021_0_2112854721790636260",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2112854721790636260",
+    "postedAt": "2026-10-21T10:33:15.000Z",
+    "postText": "ラーメン二郎名古屋大曽根店です。 只今の時間、並びを持ちまして本日の営業は終了とさせていただきます。 よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-21",
+      "endDate": "2026-10-21",
+      "hours": [
+        [
+          11,
+          14
+        ],
+        [
+          17,
+          19.55
+        ]
+      ],
+      "reason": "",
+      "confidence": 0.95
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
