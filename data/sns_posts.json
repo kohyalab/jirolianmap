@@ -19672,13 +19672,33 @@
     "aiReason": "営業時間の変更や臨時休業に関する告知はなく、限定トッピングやサービスに関する日常的な投稿です。"
   },
   {
-    "id": "sns_post_sapporo_20261021_0_2112699796217848093",
+    "id": "sns_post_routine_tachikawa_2112706799543763053",
+    "shopId": "tachikawa",
+    "shopName": "立川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jirotachikawa/status/2112706799543763053",
+    "postedAt": "2026-10-21T00:45:27.000Z",
+    "postText": "10/21(水)、昼夜とも時間内売り切れなし営業です。 昼11:00-14:30 夜17:00-21:30  ①「赤」は辛いラーメン。 +汁なし変更券で、辛い汁なしも可！  ②持帰りラーメン販売します。 　標準:2人前のスープと生麺+ブタハーフ  写真2枚目〜は井上和さんおすすめのハングリータイガー@横浜！  #乃木坂46ANN https://t.co/SjZwnJ82p0",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-BylZ9LrzfOfW69gFP459WbXCvJiDgnHw4ltTB73Y8bP5v_9MpII_vxBt6uAdVfBzn0q28TzXFjlP8TC-vyVl7oPs70hJt_1B5xVZoCeXURCDbOLpEwZ1ssNsybGlSndUSNGIchlEqZpAdt3Ovuj0YA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-WkkZcsxZjD6wZYlAHFxfsb27j-TTNJC6EhDACoZha9NRzA9bb5J9-wMgcNtXFTbJ-Toiixpl2PtdkX0qMZ8UtExL1twEnvQm7sZCyMqM3jOm2oqCpLLUN9mrN_im-cYxzMRu-ERpODg1iEvj-kU6OQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Y78wd4YTT14sySjQ-8lDM3eu3Gu616t4kquSN_bje_kZmnte0rwn7MRjMO9GsC7y5nrKacJbeI5GW8dAX_KKNOoy3YSHUzr677PqijLag9dqA6qcyYf2AWDgB17FnEiJbLF6IBZXy3KL2nwafZmVwQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-uT2eHbFjeiQNk5qqwYsWX_B6VrcOIVYXC9ZAZz02f9qgmzRkIPwXb-iah8ljK1ttxtYASck9EPG51rGNlwKZy-3liwUhyccX61Msc6LkL36V6ClCbGDK6PSgZl2okrniu4z1xaBonzj2CbgxqkuIHQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知であり、臨時休業や営業時間変更はありません。"
+  },
+  {
+    "id": "sns_post_sapporo_20261021_0_2112710126742487380",
     "shopId": "sapporo",
     "shopName": "札幌店",
     "postSource": "x",
-    "postUrl": "https://x.com/jiro_sapporo_/status/2112699796217848093",
-    "postedAt": "2026-10-21T00:17:38.000Z",
-    "postText": "都合により本日21日(水)昼営業のみ、夜営業お休みします、急ですいませんm(_ _)m  「濃厚TARO2」対応します。",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2112710126742487380",
+    "postedAt": "2026-10-21T00:58:41.000Z",
+    "postText": "都合により本日21日(水)昼営業のみ、夜営業お休みします、急ですいませんm(_ _)m  「濃厚TARO2」対応します。   新レギュラートッピング　 「ざく切り白髪ねぎ」 麺や、豚と絡めるとよりバッチリです👌",
     "mediaUrls": [],
     "detectedChange": {
       "type": "temporary_hours",
