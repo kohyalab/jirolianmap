@@ -19670,5 +19670,32 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業時間の変更や臨時休業に関する告知はなく、限定トッピングやサービスに関する日常的な投稿です。"
+  },
+  {
+    "id": "sns_post_sapporo_20261021_0_2112699796217848093",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2112699796217848093",
+    "postedAt": "2026-10-21T00:17:38.000Z",
+    "postText": "都合により本日21日(水)昼営業のみ、夜営業お休みします、急ですいませんm(_ _)m  「濃厚TARO2」対応します。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-21",
+      "endDate": "2026-10-21",
+      "hours": [
+        [
+          11,
+          14
+        ]
+      ],
+      "reason": "都合により",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "既に登録済みの臨時スケジュールと一致"
   }
 ]
