@@ -20467,5 +20467,32 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "日常の営業告知およびメニュー案内であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_sapporo_20261022_0_2113062027782685003",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2113062027782685003",
+    "postedAt": "2026-10-22T00:17:00.000Z",
+    "postText": "先日告知通り 本日22日(木)昼営業のみ、夜お休みです🍜  昼の部  「魚介風汁なし」、「魚介風ラーメン」 合わせて対応します。 🐟🐚🌪️  プラス現金１００円  必ず、スタッフ確認時に申告して下さい。  「ざく切り白髪ねぎ」もバッチリ👌",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-22",
+      "endDate": "2026-10-22",
+      "hours": [
+        [
+          11,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "既に登録済みの臨時スケジュールと一致"
   }
 ]
