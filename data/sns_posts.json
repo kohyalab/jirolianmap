@@ -20745,5 +20745,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "本日通常営業の告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_kannai_2113185756827300190",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2113185756827300190",
+    "postedAt": "2026-10-22T08:28:40.000Z",
+    "postText": "こんばんは。 お昼の部ありがとうございました。 玉ねぎ納豆沢庵、追加で仕込みました。 ご希望の方は赤の食券でおねがいします。 引き続き夜の部よろしくおねがいします。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常投稿のため変更なし"
   }
 ]
