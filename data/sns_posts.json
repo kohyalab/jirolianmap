@@ -20959,5 +20959,25 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業時間の再確認投稿であり、臨時休業や時間変更の告知はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2113412306193506410",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2113412306193506410",
+    "postedAt": "2026-10-22T23:28:53.000Z",
+    "postText": "本日 ◇10/23金 【夜の部のみ営業🈺】 17:00から〜20:30 ご来店ご到着お並びの お客様まで営業致します。  →［温かいまかない汁あり］ →［お椀で和ッカレー］ →［相撲部屋のしょうがダレ］ やっております♪  明日　昼と夜の部もやります！ ◇10/24土10→14時 　　　16:30→20時  ◇10/25日10→15時 https://t.co/yQneXA2eGw",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-R_DtptaefIOWjZT7FrVTVyEi4r3okInQTnb1rUqE5m9rQergFUvT0guf1s38Fl1ajCRbcjsrdppRjc8wVSDrMC0__6h74_viMXzI63SIX2oCmVHX9mvwLVAu3f6neiGFHrTUGUBPpBNwainTgE-VRA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-fOEgMQBkfOS3XWvWuvHtuRalwNPZKDacogH0zdKzffVwkyB83hubr87hUPVAQeeydCl4_wNmmIyzeRO70e5RpTfJ-9aeUx0mKVc3Af1yiuIkqChxmZu3eZOIRJAvXEP5BD_3uVqZVH8EnhIwqVbbwA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-4rpksMf2D4in-zHegw_G2SbArgv6VQXsgfzPI4K0WPIth3EmDzn7SfKzocIYxbEJrDBm9n76xtV_okuzfeaEhbdc7AOMfE1_GitJs-8fPRumIsGjAYusBYw-sLcbDfv36iQXrqtqIdtq1thDuh68dA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-FZysRbuI6mBdo0ey8yel0WUPLUroHt0vX-k8dkjEfOeHrvP_c6xNT7hPS2K-858cYN-OHKUFPYc3F9mMYjP2Y7Pw3OKawYSKF4M6dQ19ELWhS6dzr_WARJKXA8Pi7d6IE4VmNlFGjm8GBINYbRRA6A=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更はなく、限定メニューの告知のみです。"
   }
 ]
