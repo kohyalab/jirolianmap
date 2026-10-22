@@ -1199,6 +1199,19 @@
         "reason": "周年記念のため",
         "sourceUrl": "https://x.com/jiro_kame/status/2109295053525192830",
         "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-22",
+        "endDate": "2026-10-22",
+        "hours": [
+          [
+            11,
+            14.5
+          ]
+        ],
+        "reason": "スタッフの急な体調不良のため",
+        "sourceUrl": "https://x.com/jiro_kame/status/2113167285905207449",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -3227,7 +3240,6 @@
             20
           ]
         ],
-        "reason": "",
         "sourceUrl": "https://x.com/sumo_jiro/status/2111952861911466152",
         "_isAiImported": true
       }
@@ -4338,6 +4350,19 @@
         "reason": "",
         "sourceUrl": "https://x.com/26shinshindaita/status/2112664124434104715",
         "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-22",
+        "endDate": "2026-10-22",
+        "hours": [
+          [
+            11,
+            15
+          ]
+        ],
+        "reason": "",
+        "sourceUrl": "https://x.com/26shinshindaita/status/2113034328292860256",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -4887,6 +4912,23 @@
         "hours": [],
         "reason": "",
         "sourceUrl": "https://x.com/kwge26/status/2109796037225533469",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-22",
+        "endDate": "2026-10-22",
+        "hours": [
+          [
+            11,
+            16
+          ],
+          [
+            17,
+            20
+          ]
+        ],
+        "reason": "",
+        "sourceUrl": "https://x.com/kwge26/status/2113066449048866968",
         "_isAiImported": true
       }
     ],
