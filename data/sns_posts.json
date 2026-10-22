@@ -20612,5 +20612,35 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "切り落とし・崩れの売り切れ告知のみであり、営業時間の変更に関する言及はないため変更なし。"
+  },
+  {
+    "id": "sns_post_routine_shndaita_2113115365287018799",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2113115365287018799",
+    "postedAt": "2026-10-22T03:48:57.000Z",
+    "postText": "お持ち帰りの豚もあります！ 1本2000円です！  入れ物は無くて大丈夫です！  たべて買うひとは 最初に麺の量を聞かれた時に言ってください！  お持ち帰りだけのひとは ならばないで 入口から声をかけてください！  これが消えたら売り切れです！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2113111379632906326",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2113111379632906326",
+    "postedAt": "2026-10-22T03:33:07.000Z",
+    "postText": "次回ゼロですw https://t.co/T7PWb9Ahub",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
