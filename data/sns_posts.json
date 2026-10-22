@@ -20794,5 +20794,20 @@
     "processedAt": "2026-10-22T15:12:06.068Z",
     "aiStatus": "no_change",
     "aiReason": "営業時間の変更に関する言及がない日常投稿のため、変更なしと判定しました。"
+  },
+  {
+    "id": "sns_post_daily_yaen2_2112774196422226187",
+    "shopId": "yaen2",
+    "shopName": "八王子野猿街道店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/Jiro_Yaenkaido2/status/2112774196422226187",
+    "postedAt": "2026-10-21T05:13:16.000Z",
+    "postText": "https://t.co/yKu9THpy9j",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
