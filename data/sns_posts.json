@@ -20809,5 +20809,37 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_ogikubo_2113373701479788833",
+    "shopId": "ogikubo",
+    "shopName": "荻窪店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ogkb_jiro/status/2113373701479788833",
+    "postedAt": "2026-10-22T20:55:29.000Z",
+    "postText": "10月23日（金） 昼11:30〜14:00頃 夜18:00〜21:00頃までです",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常通りの営業です。"
+  },
+  {
+    "id": "sns_post_routine_fujisawa_2113368251552207321",
+    "shopId": "fujisawa",
+    "shopName": "湘南藤沢店",
+    "postSource": "x",
+    "postUrl": "https://x.com/fujirow26/status/2113368251552207321",
+    "postedAt": "2026-10-22T20:33:50.000Z",
+    "postText": "おはようございます。  10月23日(金)  しょっぱ豚🐷 無料トッピング にんにく入れますか？の時お伝えください。  タマネギカレー🍛🧅  本日もよろしくお願いいたします。 少しだけ上達してきました🔥 https://t.co/RGBaglRAFg",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-RCxCPSuRmC0p65vJKS_gEeJwnMBFuAMceBJTkVcf31WTEEizr2pAWS4J0oIVeTdaXbGjxi515U5pR9CixlC2iHNUTfwC7shcB63x9J2_zkkYukhr-vOrjl-JHMSJ5PGqrH01zYbDMrNI289XHm6osw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知"
   }
 ]
