@@ -20942,5 +20942,22 @@
     "processedAt": null,
     "aiStatus": "match",
     "aiReason": "既に登録済みの臨時スケジュールと一致"
+  },
+  {
+    "id": "sns_post_routine_senjuohashi_2113399569279336736",
+    "shopId": "senjuohashi",
+    "shopName": "千住大橋駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjujirou26/status/2113399569279336736",
+    "postedAt": "2026-10-22T22:38:17.000Z",
+    "postText": "ラー油あります！  ※営業時間10時30分〜 15時30分ラストオーダー！ https://t.co/OWrLx9McN0",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Irf4mOOWsa7WTqO5vB4mhVt3TCk88C8SnQk6w-lmo2VKUxQbqVWqmYkXfsEjWChqj7r3uJ_LvNAaym3rrDm3oL6CbU_TAS_RHIFjgFQ4y5xoi-yc4NcTXlH8Vj6L1KYXH75CFAcTO3esvNGiVKrK3g=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業時間の再確認投稿であり、臨時休業や時間変更の告知はありません。"
   }
 ]
