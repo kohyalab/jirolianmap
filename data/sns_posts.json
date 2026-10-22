@@ -20805,8 +20805,8 @@
     "postText": "https://t.co/yKu9THpy9j",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-22T21:59:50.476Z",
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   },
@@ -20820,8 +20820,8 @@
     "postText": "10月23日（金） 昼11:30〜14:00頃 夜18:00〜21:00頃までです",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-22T21:59:50.476Z",
     "aiStatus": "no_change",
     "aiReason": "通常通りの営業です。"
   },
@@ -20837,8 +20837,8 @@
       "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-RCxCPSuRmC0p65vJKS_gEeJwnMBFuAMceBJTkVcf31WTEEizr2pAWS4J0oIVeTdaXbGjxi515U5pR9CixlC2iHNUTfwC7shcB63x9J2_zkkYukhr-vOrjl-JHMSJ5PGqrH01zYbDMrNI289XHm6osw=="
     ],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-22T21:59:50.476Z",
     "aiStatus": "no_change",
     "aiReason": "通常営業の告知"
   },
@@ -20866,8 +20866,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-22T21:59:50.476Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   }
