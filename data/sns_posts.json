@@ -20760,5 +20760,39 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "日常投稿のため変更なし"
+  },
+  {
+    "id": "sns_post_daily_sendai2_2113189197234491854",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2113189197234491854",
+    "postedAt": "2026-10-22T08:42:20.000Z",
+    "postText": "仙台も寒いけど北海道エグすぎる！！ 昨日大阪30℃だったのに！！ https://t.co/8hJ4zJumCN",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2113188874918961163",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2113188874918961163",
+    "postedAt": "2026-10-22T08:41:03.000Z",
+    "postText": "寒くて暇なうですので、是非どうぞー！！ 1枚目は今日のマカナイ！ 麺半分とかも出来ますので、是非どうぞ！！ https://t.co/MJbUOHjlh6",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-N46mtBWhBoWshJzFt60dukF3ao24VklvZ65X8pj_LLOR9BccYmSeQ2Y0Jgl3fK8FZL0hkOVxztRIZpD-BoaAe707dd-0qNKaysCY94yy4Mk99bI3_scDaNwSFXfaOO4IAdTY_jXullrYlkXjnTc-Mw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-rcPE_CuxlZ30yPbo7C_WIiNaw2Vat0fS6vse0qWZs-8pZLUVP5mfgyU9KZMcoKisgIiqp19iCXW-7k2uQsdXfmCBcZp3QwgZMosHrYifoLw8SJA0woKojZqyk3UZaUd1JGNg6sxefY8Q__ivJVW-IQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Z6rEz_yUrIvOjuff0cAc0SQMEWa4rUDJAms5Cj5fT19BycsjL3iyAe3WWBQKkgI0KGEHSE0rxDqq7pC3iz4EJOmr9GrJWq_WhmyzkkLGaXYC-u5fmBJEwJGkjcuI1kT_-7i0VChVo1H_D7w6sucMow=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更に関する言及がない日常投稿のため、変更なしと判定しました。"
   }
 ]
