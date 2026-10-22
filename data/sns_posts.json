@@ -20703,5 +20703,47 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_kameido_20261022_0_2113167285905207449",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2113167285905207449",
+    "postedAt": "2026-10-22T07:15:16.000Z",
+    "postText": "大変申し訳ありません、スタッフの急な体調不良により本日22日(木)の夜の部はお休みさせていただきます。申し訳ありません",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-22",
+      "endDate": "2026-10-22",
+      "hours": [
+        [
+          11,
+          14.5
+        ]
+      ],
+      "reason": "スタッフの急な体調不良のため",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: スタッフの急な体調不良のため"
+  },
+  {
+    "id": "sns_post_routine_kyoto_2113171355302760501",
+    "shopId": "kyoto",
+    "shopName": "京都店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kyoto/status/2113171355302760501",
+    "postedAt": "2026-10-22T07:31:26.000Z",
+    "postText": "こんにちは！本日通常営業です！ 「京都ブラック」ちょっとだけあります！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "本日通常営業の告知であり、営業時間の変更はありません。"
   }
 ]
