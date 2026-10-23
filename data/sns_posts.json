@@ -21510,5 +21510,38 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_kameido_20261023_0_2113630948814393705",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2113630948814393705",
+    "postedAt": "2026-10-23T13:57:42.000Z",
+    "postText": "一緒にコスプレしたいですね笑✨ https://t.co/bJvHpbUhEH https://t.co/JprYBBlZMH",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-pDPX9Ajd9FPsrROjATIPa9lIC3Smb-HrKwkskIeOwWljvpkLAirlyQLhYRt01Mj69nEUThFbx0vrl8_6_LXYCnVumtVN62Kk44pEeCCzXScos5MZy3dMY0vxtawnWg5EbfmXDVfsEdPKdkHslV87vg=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-23",
+      "endDate": "2026-10-23",
+      "hours": [
+        [
+          11,
+          14.5
+        ],
+        [
+          17,
+          22.95
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
