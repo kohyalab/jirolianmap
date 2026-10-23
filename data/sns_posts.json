@@ -21167,33 +21167,6 @@
     "aiReason": "通常営業の告知であり、営業時間の変更はありません。"
   },
   {
-    "id": "sns_post_koiwa_20261023_0_2113494904089518210",
-    "shopId": "koiwa",
-    "shopName": "小岩店",
-    "postSource": "x",
-    "postUrl": "https://x.com/koiwajiro/status/2113494904089518210",
-    "postedAt": "2026-10-23T04:57:06.000Z",
-    "postText": "現在外並び28名。  間もなく終了宣告が出ます。",
-    "mediaUrls": [],
-    "detectedChange": {
-      "type": "temporary_hours",
-      "startDate": "2026-10-23",
-      "endDate": "2026-10-23",
-      "hours": [
-        [
-          10.5,
-          13.95
-        ]
-      ],
-      "reason": "",
-      "confidence": 1
-    },
-    "processed": false,
-    "processedAt": null,
-    "aiStatus": "schedule_change",
-    "aiReason": "営業時間の変更を検出"
-  },
-  {
     "id": "sns_post_nagoyaosone_20261023_0_2113489913249460410",
     "shopId": "nagoyaosone",
     "shopName": "名古屋大曽根店",
@@ -21210,6 +21183,33 @@
         [
           11,
           13.616666666666667
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_koiwa_20261023_0_2113500919493275668",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2113500919493275668",
+    "postedAt": "2026-10-23T05:21:00.000Z",
+    "postText": "ただいまお並びのお客様をもちまして本日の営業は終了しました。、",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-23",
+      "endDate": "2026-10-23",
+      "hours": [
+        [
+          10.5,
+          14.35
         ]
       ],
       "reason": "",
