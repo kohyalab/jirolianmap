@@ -4363,6 +4363,19 @@
         "reason": "",
         "sourceUrl": "https://x.com/26shinshindaita/status/2113034328292860256",
         "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-23",
+        "endDate": "2026-10-23",
+        "hours": [
+          [
+            11,
+            15
+          ]
+        ],
+        "reason": "",
+        "sourceUrl": "https://x.com/26shinshindaita/status/2113395547478598029",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -6055,6 +6068,14 @@
         "startDate": "2026-10-17",
         "endDate": "2026-10-17",
         "hours": []
+      },
+      {
+        "startDate": "2026-10-24",
+        "endDate": "2026-10-24",
+        "hours": [],
+        "reason": "諸事情のため",
+        "sourceUrl": "https://x.com/26_hitachinaka/status/2113695618472538310",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
