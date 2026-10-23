@@ -21319,5 +21319,25 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業時間の変更に関する言及はなく、限定メニューの告知のみであるため変更なし。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2113519383557632206",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2113519383557632206",
+    "postedAt": "2026-10-23T06:34:22.000Z",
+    "postText": "［スモジスタンプ］できました！！①  ［相撲の二郎］［募金感謝］のビラです。②  こちらのビラに［スモジスタンプ］を押印して記念にお持ちください。感謝の気持ちです。③  こちらの募金設置期間中に置いておきます。ご興味がありましたらどうぞご利用下さい。④  ※別用紙お持ちいただいても🆗！ https://t.co/a1kEavHVQU",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-wCd0G2xmx7gEed3x_vZFkz0OM68tkOkiLwuPer3_77zQTFLwQopMLBKmUsZwU9X5Sxk7mXP4dapKRB_TDdaOBGuNE32nAziE7t4Ps97kPcAFVZvkFgPeZ1iIUgwXjepvpP92E0jp6bIBzjZ6RmD-Pw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-soCcd2cj_GjgX7_Q4rCuIMsjy4xhUK5Zs13ZfGEWjQslh3LiQ4qQuc3J4nkppvxWn9d2z30HZjpEX1uuMtGRBBCgM8ZJyKWIgbEvc3KnLTHpHwi-Xblg2geq8VIbj5Qn5ckwkqMXR0Dm7dYK0zjoIw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Jv3ZU1gsCp63k8H-xQsMWtsbME5gweU52g-b5Xqb2wan3F8wB4grzLl1Ua91Da1xDv_K2Es2eFC_VVX6WUs_I4VFP279sucSIrKaH78B-ALs8M9jdiQKUtMPoG2CZDSMwCIqOX5yockUiGDC5mDoag==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-NTkFpupKG0DL1N9OmIzHUXGJbpCzgZQGl1zmHVyy3i0Y9V6h778Zp1YtnCcK6QCmBsWjGQwBkYQW8aqHkYfLmHB6c0UqLyacrL_ydcVgHdUYc1tFLp5-gDDl8vWE2a1F-pl-fTd-piKvpvpuxsW0zg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報の変更に関する言及はありません。"
   }
 ]
