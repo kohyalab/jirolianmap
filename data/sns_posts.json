@@ -21219,5 +21219,40 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_nishidai_2113509092623053144",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2113509092623053144",
+    "postedAt": "2026-10-23T05:53:29.000Z",
+    "postText": "こんにちは！ 本日、23日、夜の部 FZ味付き切り落とし ¥600×1、¥500×1 FZ味付き崩れ ¥500×1  あります。 https://t.co/BLgh3rN1cr",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-aafrKR8vWTbRj5UoQpLbTAB5a0D3WmgbkcySLPY2GP4dGdhvJEmqAwFo7LkarKUzqMlPgjnoKAzO9LsSMnZKEbSVE9w15PbufZu97YBRJL9AW8qsVFtfwCvWPw783FDmLbqXhDy-fZ1LdYrMT6a6dw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-L53V8zMYWtiM3_53Lsi44mVWxkLsYAj_VfwSxgC7kLazho0KXxP1imELVaKBrnu-TtqWvbzxZyfWQWTTZUJau0YIzA7gfEzRR6zEdJnTL-BFmsRKhpHzSbDjd2XkSCZ6hftdUifo6o50GIEjHVHniw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-TdDX1o-RnkyxIdXt09geSGK6k0OTUWFkVkCeziN63Eh9_mbyyqq0IlY2z3mTSyT3vVxVCeuuCmvilM2HPb4bitE5XOdY0OZojFCxaE2l5ySLi5Z_jSiM_Kofp36L_sngCyB_nsApRuBc2vuGNFcWHw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-p8RsJ_cLCLGjwAqEv1McVCZZiDS60k9zYdeskImoaHPdm9-K4Wy2w82RD3XvUg9lQOPT9e-UVN2coiNOLDi-zHc60NMwguVC6o2_IZ0mc3YVIo1eCP_3DfIfz2yW03cIZNWmPab_BVNEDogJvJ4YqQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "投稿内容は限定メニューの告知であり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2113504615182500244",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2113504615182500244",
+    "postedAt": "2026-10-23T05:35:41.000Z",
+    "postText": "いまいるひとでおわりです！ ごめんなさい！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
