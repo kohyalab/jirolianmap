@@ -21049,5 +21049,78 @@
     "processedAt": null,
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_routine_kawagoe_2113439522189135898",
+    "shopId": "kawagoe",
+    "shopName": "川越店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kwge26/status/2113439522189135898",
+    "postedAt": "2026-10-23T01:17:02.000Z",
+    "postText": "おはようございます！ 本日通し営業です☀️ ○11:00~20:00  🍜持ち帰りあります！  無料トッピング｢紅生姜｣あります☺️ トッピング時に「アレ」で！  よろしくお願いします🙇‍♂️",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知のため変更なし"
+  },
+  {
+    "id": "sns_post_nagoyaosone_20261023_0_2113436763230470446",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2113436763230470446",
+    "postedAt": "2026-10-23T01:06:04.000Z",
+    "postText": "おはようございます。 ラーメン二郎名古屋大曽根店です。 本日お昼営業のみです。 営業時間11:00〜14:00  明日２４日(土曜日)の営業時間 10:00〜14:00予定となります。  よろしくお願いいたします。 https://t.co/USg7K3oQTI",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Ywi6DG71QJCrGXl7b02XUVTG-siBnIC7TvDUsg6pm2jJiL0g-9S_kuQrDB0tGHMe0VsI51HM3yPRCtIPolEuY2SdwxBgDhMAG1kfXc_8j_XCh2xS6mZLDzd6cwNG2hp4DyJSn1GhWNmXSdgK6JU_0A=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-23",
+      "endDate": "2026-10-23",
+      "hours": [
+        [
+          11,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_nagoyaosone_20261024_1_2113436763230470446",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2113436763230470446",
+    "postedAt": "2026-10-23T01:06:04.000Z",
+    "postText": "おはようございます。 ラーメン二郎名古屋大曽根店です。 本日お昼営業のみです。 営業時間11:00〜14:00  明日２４日(土曜日)の営業時間 10:00〜14:00予定となります。  よろしくお願いいたします。 https://t.co/USg7K3oQTI",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Ywi6DG71QJCrGXl7b02XUVTG-siBnIC7TvDUsg6pm2jJiL0g-9S_kuQrDB0tGHMe0VsI51HM3yPRCtIPolEuY2SdwxBgDhMAG1kfXc_8j_XCh2xS6mZLDzd6cwNG2hp4DyJSn1GhWNmXSdgK6JU_0A=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-24",
+      "endDate": "2026-10-24",
+      "hours": [
+        [
+          10,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   }
 ]
