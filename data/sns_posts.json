@@ -21034,5 +21034,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "2026-10-23(金)は通常営業です。"
+  },
+  {
+    "id": "sns_post_mention_nishidai_2113430847051489291",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2113430847051489291",
+    "postedAt": "2026-10-23T00:42:34.000Z",
+    "postText": "@Kana_Momonogi ご来店、ありがとうございました♪  半分しか食べれない人は 来るたびに少しずつ、麺を盛って 胃袋を大きくしていこうと思います😁",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
   }
 ]
