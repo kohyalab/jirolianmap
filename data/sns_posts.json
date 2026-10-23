@@ -21582,5 +21582,20 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 諸事情のため"
+  },
+  {
+    "id": "sns_post_routine_ogikubo_2113736111264776649",
+    "shopId": "ogikubo",
+    "shopName": "荻窪店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ogkb_jiro/status/2113736111264776649",
+    "postedAt": "2026-10-23T20:55:34.000Z",
+    "postText": "10月24日（土） 昼11:30〜14:00頃 夜18:00〜21:00頃までです",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業"
   }
 ]
