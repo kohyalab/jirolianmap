@@ -21543,5 +21543,20 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_kannai_2113657215915843651",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2113657215915843651",
+    "postedAt": "2026-10-23T15:42:04.000Z",
+    "postText": "こんばんは。 明日シビレの材料がなくなってしまいまして急遽シビレの代打で味噌の汁無しになります。昼の部途中で終わってしまうかもしれませんが宜しくお願いします。 夜の部にはシビレもまた仕込めますので重ねてお願いします。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定メニューの変更告知であり、営業時間の変更に関する明示的な記載がないため変更なし。"
   }
 ]
