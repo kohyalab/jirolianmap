@@ -20999,5 +20999,40 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "投稿内容は通常営業時間の案内であり、臨時休業や営業時間変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_tachikawa_2113426014378541369",
+    "shopId": "tachikawa",
+    "shopName": "立川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jirotachikawa/status/2113426014378541369",
+    "postedAt": "2026-10-23T00:23:22.000Z",
+    "postText": "10/23(金)、昼夜とも時間内売り切れなし営業です。 昼11:00-14:30 夜17:00-21:30  ①「赤」は辛いラーメン。 +汁なし変更券で、辛い汁なしも可！  ②持帰りラーメン販売します。 　標準:2人前のスープと生麺+ブタハーフ https://t.co/rpn3Wo7UCo",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-oUay8X80QOBBAbAS0GDtKBMhEV0ajY9fLBKlLnWCfP817D7hmaf2VgiaGYas1t0Xef_hruvikBHiNDgcKC0jX8dlkYPthDJ-klKnqJsWvJNL_TaP16iUO1nEwS7T36yzEzpEp5JISo_EuR6Fdnk62g==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-7tMnLrKWBm_PYw7F0rGH9a-N3L94i3xjtmSSGPTfr6I2pq7OmtjA_tAlF7OUO6BZuqnXI23q9XuWzmlD0m9djr9Oso1eZ3nmBLixuJxi_05HvXnCZn-TDaYCnQ_KZrCr4_b7kbcSokY-1qSpkLE75w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-5ecmXXYOfp75jboHyjCZs-wDwredyzfIl_ss9mVfc17IzBt7IpfkWsOGGqHmp69CI7qeO_7-QY22BORnQLE_ep1ewR3k-ha0E-Pvwg6wXdWQ9NZQMTN1adI_8hZri8UzcfbIP69c1Lc-xS53grd9Lg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-tQ8-HbRL2gWOH5hmAYncOLLik1JVqomSlZBJQgF5FJfJqB0rlmmOMzKmrSGo7ekWQIoqUiL0ulxhDzPzjxfiUOwWpFiJR9_4KH2bNkv1UTs2w1RDxJD61g0m4yJ1llRBI_zgyw6ogOKhmZW3mAlfNQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "10/23(金)は通常通りの営業告知であり、臨時休業や時間変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sapporo_2113421923636154726",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2113421923636154726",
+    "postedAt": "2026-10-23T00:07:06.000Z",
+    "postText": "23日(金)通常営業です🍜 昼の部、12:30〜14:00 「つけ麺」サブスープ対応します。  又、現金＋100円でサブ塩(醤油ベース) も対応します🧂  必ず、スタッフ確認時に申告して下さい。 「サブ」、「サブ塩」！  麺の旨みが感じやすいです、違いをお楽しみ下さい😄  本日のサブスープもかなり濃厚です👌",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "2026-10-23(金)は通常営業です。"
   }
 ]
