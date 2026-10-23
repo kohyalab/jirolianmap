@@ -21697,5 +21697,61 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の告知のため変更なし"
+  },
+  {
+    "id": "sns_post_routine_yaen2_2113774435673219411",
+    "shopId": "yaen2",
+    "shopName": "八王子野猿街道店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/Jiro_Yaenkaido2/status/2113774435673219411",
+    "postedAt": "2026-10-23T23:27:52.000Z",
+    "postText": "10月24日(土) 11:00～20:00 通し営業 ⭐テイクアウト、鍋二郎あります 並ばず買えます エビドクロテイクアウト現金です ⚠️駐車場待ち出来ません ⚠️駐車場満車時コインパーキングに ⚠️店舗近隣タバコ禁止です https://t.co/oW2RHjEFU5",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-4zPqTqQtU_tcJn3hceaHcPFZ7Uc67cXlYlVC2d8bROLY57_C0-dOTugyKbLdZn1TH1YcpTU-9MXLQJqycH_szlps_qZEcWE_SRXLziNps4USyGpqJWM6GOyrK-X7xX0mOdl43d_cys8DS8PDobjAjQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-9Pq7sDPYnQfIJjvbUlrlMniuCfSaCB0YnRHZliy7K2C5hfrSKzIvjMXcCTr-cSm7EU9Xk1xNu4CgPS9CQ7OqQVbWbKnZyj0Tf5OOWHpOefGo0Quj8hth498_OhUBQQmv8-CoR9YWPIe_xVDyJgcTIA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-HS_svfgoZYE8gzLTLhx2oJVsDWOL9ghB1roV-caaRl4jZdPjDOnednvP6Dns3TQrrYm3AETi4PvKLnp2O0RbqqPBVqSXgiNyhDaY6MrZcWi6wxPcGOoZ9x3QxExy92ilHHxc2Mk8id7sMypFdgHErw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "10/24(土)の営業案内ですが、通常営業時間と同一のため変更なしと判定します。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2113771168734048758",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2113771168734048758",
+    "postedAt": "2026-10-23T23:14:53.000Z",
+    "postText": "[相撲部屋のしょうがダレ］ 私が育った《大相撲　放駒部屋》のちゃんこで食べた[鉄板焼きのタレ]をアレンジしたものです。 今はテレビなどでも相撲部屋の[ちゃんこの風景]が放送される時代ですもんね… 昔は陽が当たらない日陰の部分です笑 だから楽しいんですよね。私も懐かしく見ちゃいます。 https://t.co/fZdUd4oMx9",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-uIYJlukr_jmicabcRtt838vl7C1uD4H7PNDCddPBa8_mdtsZ_rIuymWXPAIhKx6JgYueBZ_WXBG-sD0RxMtVo8Sgb6c6CSdxSFsIf7E5bovuP4mAGqTpIPAOXMqP2Cjth-OpU4m68CSwt1Y6_15yAw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-U4Ue0iFBNSQtJrVyZaknBg3MqChyvPneWYcwi3gjL4FGMcm8aOvB6byHsbcAKYmQkvWNq4LW4HTb2fIYEOpTWmt_j3K_f5KI_ofO5GW5oVpRWHTQRQXYvc93k4FhOHHENhBYsIgjU5LV9AMrV7vgUw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-OWdK0Lj3Txwbtz3OPh9_tyYPr5igntt--u0avG7spTU41gs5h1TKgUXVVcvHUt--lmV9FC0-TkUjvNORskBndUKJKcZLo0GMdWxfkH175EW2H7IL4uzvMGtfYmZ0xpjF5JKQDMs8mJmjGA7czxNMbQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-HxpaBXc0EBL5mOHEH6AZw65Noy8_F5ksrPfaTjhK6dXLTxx2pDJtC_DF1MzNOnDGT_oc5QXm9PawJGTuUbsA_KKU0db6jUkQyF-gjXPTNd9pBc1yIuyWEjGhuckafydsFwaC1ZtzE8a6xVRE5l3W9Q=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの告知であり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_fujisawa_2113775197291733466",
+    "shopId": "fujisawa",
+    "shopName": "湘南藤沢店",
+    "postSource": "x",
+    "postUrl": "https://x.com/fujirow26/status/2113775197291733466",
+    "postedAt": "2026-10-23T23:30:53.000Z",
+    "postText": "おはようございます。  10月24日(土)  しょっぱ豚🐷 無料トッピング にんにく入れますか？の時お伝えください。  タマネギカレー🍛🧅  本日もよろしくお願いいたします。 https://t.co/ysp9zP0pxn",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-8oui72_3fVUYxDK97Cs36D0Db9y5G8wyb-QMuQ8oX7Ihomk7zN6rGNi2euQAlHedhips3hCbLvXxjo5pGpoeIXOTImDfTfWVUP-hzQevwqvIBnPaiAHh_OlvtI8me9-Qrd_9lLwtJwhXpZ2AmXjKSQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知であり、営業時間の変更はありません。"
   }
 ]
