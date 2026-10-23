@@ -21558,5 +21558,29 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "限定メニューの変更告知であり、営業時間の変更に関する明示的な記載がないため変更なし。"
+  },
+  {
+    "id": "sns_post_hitachinaka_20261024_0_2113695618472538310",
+    "shopId": "hitachinaka",
+    "shopName": "ひたちなか店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26_hitachinaka/status/2113695618472538310",
+    "postedAt": "2026-10-23T18:14:40.000Z",
+    "postText": "【10月24日 土曜日 営業の件】  表題の件ですが、諸事情により 本日 終日お休みいただきます。 申し訳ございません。 https://t.co/TUZ1eC1f9t",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-lko0nRyzZYy1MnczJzVyMMBWpfmyLkfcNOAuDBKF7qLtJoV-WX49RO4Ps1wYT3cVedS3FD3mEr_XkT8_Fzk9gjafuijWhGV1yZwY-6TO3Kv0m5tdqrajVRATMfLtbndjMyg4m4FBLcoMDwObO1z6vQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-24",
+      "endDate": "2026-10-24",
+      "hours": [],
+      "reason": "諸事情のため",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 諸事情のため"
   }
 ]
