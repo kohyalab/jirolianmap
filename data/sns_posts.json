@@ -21381,5 +21381,53 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "本日通常営業の告知"
+  },
+  {
+    "id": "sns_post_routine_kannai_2113538775989243998",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2113538775989243998",
+    "postedAt": "2026-10-23T07:51:26.000Z",
+    "postText": "こんばんは。 夜の部カレーちん用意しました。 ご希望の方はアレでお願いします!",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常投稿のため変更なし"
+  },
+  {
+    "id": "sns_post_routine_nakayamaekimae_2113539247060004936",
+    "shopId": "nakayamaekimae",
+    "shopName": "中山駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/NKYMJIRO/status/2113539247060004936",
+    "postedAt": "2026-10-23T07:53:18.000Z",
+    "postText": "今週はつけでいきます。 よろしくお願いします。m(._.)m https://t.co/y4wRMAdM0l",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-LhVjy8Za4aoTCFl_VIPX_WMMgbTlPcP_Q5ycpn7D1Cb-6pxDqde1pdOxsdlU52aNUbtAJ2zxBbOX0VueLA4PkIG2FtLgB2AKlhDDxvkoMCUu3r_DogMguQ7bR4MU5vnGonTfaQT20blr3E-N3t-Rkw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-vbBZ5s1dqYkh6oQJU8TqVuOsn6V_DYxN1JeWWuTQgdZwojE9qN102-UEmFk-kQQ__x5eLR4ata-TNrypXBCW9_kJq7brJaanPaNA98s-UcMInftHkO17-Q8wlbSkynFZCnpcU4HXVnLIhYs7AYZcyg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定メニューの告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_kashiwa_2113541359076507917",
+    "shopId": "kashiwa",
+    "shopName": "柏店",
+    "postSource": "x",
+    "postUrl": "https://x.com/genkimoriya/status/2113541359076507917",
+    "postedAt": "2026-10-23T08:01:42.000Z",
+    "postText": "お世話になっております。 ラーメン二郎柏店です。  明日10月24日（土）は早めの開店とさせていただきます。  どうぞ宜しくお願い致します。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "「早めの開店」との記載があるが、具体的な時刻の指定がないため変更なしと判定。"
   }
 ]
