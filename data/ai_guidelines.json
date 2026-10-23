@@ -2,6 +2,45 @@
   "generalRules": [],
   "learnedFeedback": [
     {
+      "id": "sns_post_shndaita_20261023_0_2113395547478598029",
+      "timestamp": "2026-10-23T21:13:34.260Z",
+      "shopId": "shndaita",
+      "shopName": "環七新新代田店",
+      "postDate": "2026-10-22T22:22:18.000Z",
+      "postText": "2026年10月23日(金)  ⚠️短縮営業です！⚠️ 11:00～15:00くらいです！  よろしくお願いします！  ※住宅地なのでおしゃべりしないで待っててください",
+      "aiStatus": "match",
+      "aiReason": "既に登録済みの臨時スケジュールと一致",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-10-23",
+        "endDate": "2026-10-23",
+        "hours": [
+          [
+            11,
+            15
+          ]
+        ],
+        "reason": ""
+      }
+    },
+    {
+      "id": "sns_post_hitachinaka_20261024_0_2113695618472538310",
+      "timestamp": "2026-10-23T21:12:46.474Z",
+      "shopId": "hitachinaka",
+      "shopName": "ひたちなか店",
+      "postDate": "2026-10-23T18:14:40.000Z",
+      "postText": "【10月24日 土曜日 営業の件】  表題の件ですが、諸事情により 本日 終日お休みいただきます。 申し訳ございません。 https://t.co/TUZ1eC1f9t",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業変更検出: 諸事情のため",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-10-24",
+        "endDate": "2026-10-24",
+        "hours": [],
+        "reason": "諸事情のため"
+      }
+    },
+    {
       "id": "sns_post_sagamiohno_20261022_0_2113040995206238305",
       "timestamp": "2026-10-22T15:10:04.333Z",
       "shopId": "sagamiohno",
@@ -954,49 +993,6 @@
         "endDate": "2026-10-07",
         "hours": [],
         "reason": ""
-      }
-    },
-    {
-      "id": "sns_post_sapporo_20261005_0_2107050815026532626",
-      "timestamp": "2026-10-05T13:29:31.712Z",
-      "shopId": "sapporo",
-      "shopName": "札幌店",
-      "postDate": "2026-10-05T10:10:36.000Z",
-      "postText": "都合により、20時くらいで営業終了致しますm(_ _)m",
-      "aiStatus": "schedule_change",
-      "aiReason": "営業時間の変更を検出",
-      "humanAction": "applied",
-      "finalDetails": {
-        "startDate": "2026-10-05",
-        "endDate": "2026-10-05",
-        "hours": [
-          [
-            11,
-            14
-          ],
-          [
-            17,
-            20
-          ]
-        ],
-        "reason": ""
-      }
-    },
-    {
-      "id": "sns_post_okinawa_20261006_0_2106740817369174090",
-      "timestamp": "2026-10-04T14:54:18.616Z",
-      "shopId": "okinawa",
-      "shopName": "沖縄店",
-      "postDate": "2026-10-04T13:38:46.000Z",
-      "postText": "10/6（火）は諸事情により休業いたします。",
-      "aiStatus": "schedule_change",
-      "aiReason": "営業変更検出: 諸事情のため",
-      "humanAction": "applied",
-      "finalDetails": {
-        "startDate": "2026-10-06",
-        "endDate": "2026-10-06",
-        "hours": [],
-        "reason": "諸事情のため"
       }
     }
   ]
