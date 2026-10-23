@@ -21254,5 +21254,70 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_sengawa_2113511786011857148",
+    "shopId": "sengawa",
+    "shopName": "仙川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjiro26/status/2113511786011857148",
+    "postedAt": "2026-10-23T06:04:11.000Z",
+    "postText": "本日17時から店内営業とテイクアウト販売します。営業時間17:00〜21:00",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2113512370350035157",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2113512370350035157",
+    "postedAt": "2026-10-23T06:06:30.000Z",
+    "postText": "【アップデート❤️】 ラーメンのお写真をなるべく撮れるように致しました。ラーメンの写真のみ→５枚まで🆗に。人の写り込み写真は❌、動画も❌。 →カウンターに［スモジポスター］いろいろ貼りました♪是非、写し込んで撮影を♪  #スモジ宣伝部　をつけて引用リポスト、拡散お願いします♪いいね❤️ https://t.co/jXGM4Zge9c",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-JoDHIUalMVOVsDxfC9imp7U9le3rUL4L2aDCdQNjNNSqGF_2U5IVnS29do536jBGaBuqM6sjnM3F97j2jVHCk0GXH5FiBo928aY13WMkGWi58_oo5M4L3uOYW4lj__-jmttZd3ChG2B7inX8RopUnA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-weI9DtOZ3IBMIAI1Wbl65cqgaZFrjySI7d-XB-nc_tHOGYdYTPtYqQADxiku_oCufTTwrb6IxSMB5hMLD_hGLDHPr1PSahyHypSY5nveh3qFJ34cFFQ8JVHUK225F_YqJ_LKi9QOW2CXynSOFW-nsw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-oXBj-bShfxckVT5i75SnC8Q0Z9lH8x6T1FnKgsxHeBqcy-KsomyKTDqOQ197GyMBfMamchJKJNLiRv6tUbbR_tCbcOCay5im3E34Nh1MbCX3S0NVWX3LA95KN13B8EMnYHOCt6XSlsbWQlbgL6k45A==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-eIheQG-tAUxEqkIbUeg2HSFtCzBwuSNh6gD-MXkvvTWaIA0J9zJ_NOjoeU1fXgC4Hi6JZcXMpviEv2S_JXeclWsimN263fiohuRvJ5OF5QHx4D99A6cY-rkhkW1Rql7J_vpuVm-LDfsC8Y_MqLAtDg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2113511861555704302",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2113511861555704302",
+    "postedAt": "2026-10-23T06:04:29.000Z",
+    "postText": "【アップデート❤️】 ここ2ヶ月程度［なるべく連席を］を試して、案内を実施してみました。お一人のお客様に多少ご迷惑はおかけ致しておりますが、まずまず許容範囲内との実証結果です♪なるべく連席をご用意致します。お一人様の方、ご了承くださいませ。 必ず［絶対連席］は今まで通り❌です…💦。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_sapporo_2113513878441398472",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2113513878441398472",
+    "postedAt": "2026-10-23T06:12:30.000Z",
+    "postText": "夜の部も、17:00〜18:30 「つけ麺」サブスープ対応します。  又、現金＋100円でサブ塩(醤油ベース) も対応します🧂  必ず、スタッフ確認時に申告して下さい。 「サブ」、「サブ塩」！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更に関する言及はなく、限定メニューの告知のみであるため変更なし。"
   }
 ]
