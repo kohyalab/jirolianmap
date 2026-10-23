@@ -21475,5 +21475,40 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 材料切れのため"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261024_0_2113611277369282964",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2113611277369282964",
+    "postedAt": "2026-10-23T12:39:32.000Z",
+    "postText": "明日 ◇10/24土 ※【昼の部】※ 10:00から〜14:00 ご来店ご到着お並びの お客様まで営業🈺  ※【夜の部】※ 16:30から〜20:00 ご来店ご到着お並びの お客様まで営業🈺  よろしくお願い致します🈺 https://t.co/MR46EY7dy9",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-h-R5MpYF10uDouzMMB4n2farHI9Ti8CxVeiBJB_kVzX4TonZnxwuKlvY2hThSRO_qZchj5NQGPYj6xe8nOOtHGFldbxPmkr2nTZZP7B-dR7QJcSFq7gfz0WabyhOrmIZke5m472XgsJ7-VDYM0_WYA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-KixfJDRvsLFIWWDDqAImpCEWuRTXMJ32uLSkHhhi_5C8_bc75yHXfiUwgozCi0r8d_zGmkTJDyf1L9w7LGc4cDMOqBhhJIXxWF265Q-KAsYLKM_UEU0FQ-Gs8KQd5WCTPXFHBSu9i0cywSl6Z6aovw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-aVhwJ2kbr5LOSEqIZBkvmyM0UQSDihc2IS6lNt41_w7SqMdddj6EVpKIqdZclApklpm2yGfakK80qhuXI-_PWWdI3omySa3tN75HfamGHuZZnsJtXzaNh85hiAYCsxHvWb420OBamkipk6QWCgnMQA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-24",
+      "endDate": "2026-10-24",
+      "hours": [
+        [
+          10,
+          14
+        ],
+        [
+          16.5,
+          20
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
