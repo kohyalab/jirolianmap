@@ -21429,5 +21429,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "「早めの開店」との記載があるが、具体的な時刻の指定がないため変更なしと判定。"
+  },
+  {
+    "id": "sns_post_routine_nishidai_2113548426415898909",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2113548426415898909",
+    "postedAt": "2026-10-23T08:29:47.000Z",
+    "postText": "本日、23日、夜の部の 切り落とし・崩れは売り切れました。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業変更なし（通常通り営業・雑談等）"
   }
 ]
