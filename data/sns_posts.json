@@ -21156,5 +21156,43 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "本日(10/23)の営業に関する告知ですが、限定トッピング「ち〜たま」の提供告知であり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2113453050539254048",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2113453050539254048",
+    "postedAt": "2026-10-23T02:10:47.000Z",
+    "postText": "本日 ◇10/23金 【夜】 →こちらをご覧のお客様限定です！ ↓ ※お客様ご自身で→丸の🟥赤又は白🤍食券を１枚お取りになって席までお越しください。→食券は券売機の前の台の二段目に置いておきます。 ※必ず着席時にお出しください。 ※サービス中の目印は［黄色いハンカチ］ どうぞご利用下さい♪ https://t.co/GBuzIE9Cmu https://t.co/v5XTweRXgv",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-uwF04LaKKniUK3N9gsPk9qYOf5ytphtcGAmcntAXcC4Z3WcKofN0TkyKFV7zQ5TawGrKxQD6Kp0xz1gNNZc4WDC2arrfVQvMt0om4CyVj8_NOMY4NH4SvnxmyynVHxLxVsVFWqglAXOV--xpFekooQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-B2j2Ey1AkR3vTMBXcjKi_B1wFGmvw6NI9hC5JemkZjN1iWPk5MKh9_B9NpIvRMdctLUImYGJAi4-ncQvceN9NZnA_iTnb-8ETJohqptkLjUg2HFA3f7jNdpX6feA6hMklUI3dk8WvQXaq4MDaVp0qw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ppiTj5GD-sYueZTWRNsZeRBn78TIhbImZFd9XsALjta_4sjNnEOA986Om_JlXmTMoUDFFwFkG4_j5hxAjhpnuMtjyko47Ho3e14kn688cinldmtBs99dr8K8wEB2PbWp4cYNzfX6iEJ2l9ItMCNH1w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-E1f-orz_vP8Rzu0xBpLCvirrxOQtt16yFiPmWJqVAXH0_RU1UC09J3W08qWDvY7K8j5zYRR9BUgYyiYf0nd6jdddCEwWc0bAZd9w3-o8h-2DggDf8iDCVo6fA-B71OA6yVKiSFoFHXvryUChZTIBbA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "10/23(金)の営業に関する案内ですが、通常営業時間内でのトッピングや食券利用に関する告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_asakuragaido_2113454800847405564",
+    "shopId": "asakuragaido",
+    "shopName": "朝倉街道駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/r26akgd/status/2113454800847405564",
+    "postedAt": "2026-10-23T02:17:45.000Z",
+    "postText": "本日通常営業！ ネギあります！ よろしくお願いいたします。 https://t.co/D5PMcfGlAb",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-UAV_EpIFctm_6ebssXr-HdoF2-3792g6LxgGnZ5ueKuckMvEP0h0wAl0ZqWsJrPfRttL_ogJbrFvt0GnRWAtZ1GQ49ctyY7BjYFE5LSaUdD-uRWawMdxTrNjsKWp2bpK2aw-Cl5rtKTSR3yMMalwjQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-G-lRY7ssRw8OoggdplAMzolcaV7xsyGYIWzc39lHQap7tJkVWpEIqM7j_gDDRbQ_qan5KeVmJ642T2gQZPKWZf-HWvD069VHHboKVgQbIVK7snjTOg21TtiVM5tMEX-CISQ9M2iAr0E1G2jYYEZu_A=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知であり、営業時間の変更はありません。"
   }
 ]
