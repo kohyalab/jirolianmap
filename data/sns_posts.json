@@ -22254,8 +22254,8 @@
     "postText": "本日はお足元の悪い中ご来店くださりありがとうございました。開店前に駐車場で財布を拾ったと届けていただき、保管しております。昨日ご来店の方だと思われます。お心当たりのある方ご連絡をお願い致します。",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-24T12:24:16.854Z",
     "aiStatus": "no_change",
     "aiReason": "営業情報の変更に関する言及はありません。"
   },
@@ -22269,8 +22269,8 @@
     "postText": "混雑無くなりました！ どうぞー！🈳🈳🈳  この後20:00まで営業🈺致します！",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-24T12:24:16.854Z",
     "aiStatus": "no_change",
     "aiReason": "混雑解消の案内および営業継続の告知であり、営業時間の変更はありません。"
   },
@@ -22288,8 +22288,8 @@
       "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-du5gNe_1u8tBSwqOLrpfRe2qHbHrfomTvAOcLHsYbb-_Jb-aqekFmwTXDqwVEApjdjH56TI7KQ8zCCMyqQDRY9Pe1hvQAu4Jh5UNyatFD2ZOBvn7EKLsY_ODGUbL6qbhgxFlZ7kV96JfbYAY67QQ9A=="
     ],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-24T12:24:16.854Z",
     "aiStatus": "no_change",
     "aiReason": "営業時間の変更に関する言及はなく、限定トッピングおよび持ち帰りチャーシューの販売告知のみです。"
   },
@@ -22303,8 +22303,8 @@
     "postText": "夜の部も本日も通常営業です！  「塩ラーメン」あります。ヤサイの代わりに白ネギがのります。コールは無しです。 ご希望の方は100円の限定1の食券をご購入ください！",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-24T12:24:16.854Z",
     "aiStatus": "no_change",
     "aiReason": "通常営業の告知であり、臨時休業や営業時間変更の記載はありません。"
   },
@@ -22318,8 +22318,8 @@
     "postText": "@WarehaCurryNari がんばれー",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-24T12:24:16.854Z",
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
   },
@@ -22349,8 +22349,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-24T12:24:16.854Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   },
@@ -22379,8 +22379,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-24T12:24:16.854Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   }
