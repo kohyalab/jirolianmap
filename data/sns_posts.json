@@ -22577,5 +22577,20 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_mejirodai_2114133196485058771",
+    "shopId": "mejirodai",
+    "shopName": "めじろ台店",
+    "postSource": "x",
+    "postUrl": "https://x.com/mejirodai_jiro/status/2114133196485058771",
+    "postedAt": "2026-10-24T23:13:27.000Z",
+    "postText": "毎度ありがとうございます 本日25日(日)の営業時間は11〜15時となります よろしくお願いします🙇",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "投稿された営業時間は通常営業時間と同一のため変更なし"
   }
 ]
