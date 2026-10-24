@@ -22307,5 +22307,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の告知であり、臨時休業や営業時間変更の記載はありません。"
+  },
+  {
+    "id": "sns_post_mention_yaen2_2113944692551291184",
+    "shopId": "yaen2",
+    "shopName": "八王子野猿街道店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/Jiro_Yaenkaido2/status/2113944692551291184",
+    "postedAt": "2026-10-24T10:44:24.000Z",
+    "postText": "@WarehaCurryNari がんばれー",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
   }
 ]
