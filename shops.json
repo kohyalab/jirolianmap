@@ -5303,6 +5303,19 @@
         "hours": [],
         "sourceUrl": "https://x.com/mejirodai_jiro/status/2105599872993042838",
         "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-24",
+        "endDate": "2026-10-24",
+        "hours": [
+          [
+            11,
+            14.5
+          ]
+        ],
+        "reason": "都合により",
+        "sourceUrl": "https://x.com/mejirodai_jiro/status/2113871628941787334",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -6718,6 +6731,19 @@
         "hours": [],
         "reason": "所用のため",
         "sourceUrl": "https://x.com/r26akgd/status/2105636449257480333",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-24",
+        "endDate": "2026-10-24",
+        "hours": [
+          [
+            12,
+            15
+          ]
+        ],
+        "reason": "",
+        "sourceUrl": "https://x.com/r26akgd/status/2113824337144975477",
         "_isAiImported": true
       }
     ],
