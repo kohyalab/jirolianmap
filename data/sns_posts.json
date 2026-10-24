@@ -21753,5 +21753,22 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_koiwa_2113782533695357191",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2113782533695357191",
+    "postedAt": "2026-10-24T00:00:02.000Z",
+    "postText": "おはようございます✨  本日のラーメンセット購入URLです⇩ https://t.co/YKk9jkamNr  フォロワーのみなさま、リポストにて拡散のご協力をお願いいたします😀 https://t.co/soTywyHR4C",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-JsTJ1ZLDQCR8I_aeyk12kuue_3GTgvLdf3Lhg_9YJInhnyhp91L0ns1rCcE0XMP2Ni92_rsoHviCv5MJFv1hapoEb1bt4FEuZ9xK9eY5WS9EfLKIpFa9rN1-X5_PNelE030J0XGolGnpelYsAcTDYw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報の変更に関する言及はありません。"
   }
 ]
