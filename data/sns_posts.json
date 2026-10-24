@@ -22243,5 +22243,54 @@
     "processedAt": "2026-10-24T08:30:29.714Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_tochigikaido_2113905740121596174",
+    "shopId": "tochigikaido",
+    "shopName": "栃木街道店",
+    "postSource": "x",
+    "postUrl": "https://x.com/Tochigikaidoten/status/2113905740121596174",
+    "postedAt": "2026-10-24T08:09:37.000Z",
+    "postText": "本日はお足元の悪い中ご来店くださりありがとうございました。開店前に駐車場で財布を拾ったと届けていただき、保管しております。昨日ご来店の方だと思われます。お心当たりのある方ご連絡をお願い致します。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2113904193480356255",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2113904193480356255",
+    "postedAt": "2026-10-24T08:03:28.000Z",
+    "postText": "混雑無くなりました！ どうぞー！🈳🈳🈳  この後20:00まで営業🈺致します！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "混雑解消の案内および営業継続の告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_ikuta_2113904402746536174",
+    "shopId": "ikuta",
+    "shopName": "生田駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ikuta_jiro/status/2113904402746536174",
+    "postedAt": "2026-10-24T08:04:18.000Z",
+    "postText": "まよにん🧄しばらくやります🧄 ニンニクジャンの別バージョンです。 ※玉ではありません。 詳しくは店内ホワイトボードをご確認ください。  お持ち帰りチャーシューも売り切れなしでご用意しています。  よろしくお願いします。 https://t.co/qAHFuMe6sV",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-4hKq2FA8RLO2mH-NVbR7VoXg4KMsW1mNkSLW4c92swphQKjsYOHADlSnGeATXnhfHluuch9fObngmkof4DkMe51SQePm6H9e-JI42V5ts0gNEfsd1kHru5V5xzW2XKF36y6L0R0XanJbG7JoVfMV0Q==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-_RykIkAN3Hn5OsH57c2CQ1Q2o60NZZFDD_tnUzQUWO4uG55c4msTvQQvz6JViXwFo-_ttVx1Rk3owddmDYu4Ksy54UHaTdYdVdl5nDMlqtoDY7dzFhGAmpoZRli7iZ999DoF0m_48JnDQ1gzp95Xgg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-du5gNe_1u8tBSwqOLrpfRe2qHbHrfomTvAOcLHsYbb-_Jb-aqekFmwTXDqwVEApjdjH56TI7KQ8zCCMyqQDRY9Pe1hvQAu4Jh5UNyatFD2ZOBvn7EKLsY_ODGUbL6qbhgxFlZ7kV96JfbYAY67QQ9A=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更に関する言及はなく、限定トッピングおよび持ち帰りチャーシューの販売告知のみです。"
   }
 ]
