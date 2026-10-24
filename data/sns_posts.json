@@ -21835,5 +21835,43 @@
     "processedAt": "2026-10-24T01:46:22.038Z",
     "aiStatus": "no_change",
     "aiReason": "本日10/24(土)は通常営業、明日10/25(日)は定休日です。"
+  },
+  {
+    "id": "sns_post_routine_tachikawa_2113809436091543977",
+    "shopId": "tachikawa",
+    "shopName": "立川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jirotachikawa/status/2113809436091543977",
+    "postedAt": "2026-10-24T01:46:56.000Z",
+    "postText": "10/24(土)、昼夜とも時間内売り切れなし営業です。 昼11:00-14:30 夜17:00-21:30  ①「赤」は辛いラーメン。 +汁なし変更券で、辛い汁なしも可！  ②持帰りラーメン販売します。 　標準:2人前のスープと生麺+ブタハーフ https://t.co/SrjeNszYPQ",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-SX0ibJMpH6F2uk4XwsiMEELop1fw_PlCXD53uoJjUJBwYjWerIlDp0o8m92_15WTYU6dZ-5_MrruDx3ssbszASL8ouE2db7XVOK6ZWnYbbgwvzL8J_CUnkMjvVcyC5g_k9N8csnAT_fzoPxUBijAGA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Z10lo-8t0vXzEWl7b1acNmSFqVBwi75C-jzJ3Bnpzkcv33RZDLlJTSe8C9vPGbJbUP-BpdXV2CW02ArY1FwpXNJ1YY9z4kpB8CNiE3xaH8ivXrKTlwHilw1YNYvY2i_THNI_PqvlkY6pn7dmXQ8OEw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知であり、臨時休業や時間変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2113812746143957114",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2113812746143957114",
+    "postedAt": "2026-10-24T02:00:06.000Z",
+    "postText": "おはようございます！連合三田会でいただいたTシャツを着て頑張ります！！ ありがとうございます！ 本日通常営業11〜21の通し営業です。 これから小雨降るみたいですが、御来店お待ちしております！！ テイクアウトも是非是非！ https://t.co/yGqqwOQEwR",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-UNHQc4IK-yZ9p8AEEZ7I1tz0FCIi4moZqD98fhwSfP05fABVFj9MtiGqUNCyZiVL8ji5PyeUR0sA76u4e_ZgOGwuBGPrepWTJgW3iVbeozVA7Q2F-edBtCs9aRQ3ilFnL60ycqZumqcEPsm8oBzGoA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Au2gXBXnu2hO7LtPU1wCAr_GypX7mP9VVWiwhNY2-DOJf5pczoTUIlEkyFsWBhZZO25K84SMORNo4g9zRCxOYY8SQ85tOjf-4FqFfpcxyKeTocnYycwxGm_w-aupo4lvIvGOcrnCyZkfuMvBGlpXqA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-FkXAcqwcQWrkiP9j_VokMKHJxu4QVaya3Z1H0K1ajui8Pou_bWdlFukuvPZDx2Tlg6A2gB0u74NTXo1rACghY7k2SvuvAGeqG1JlTZI-Vzaetm4y_QKTynviiWzeVh0wOrz7c2Wq0G2BoM4UNARx4w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-RxU4DqmRmIi1SFYwmIulpsrTYjtsUqinvFHTVPVnmk8HEJcK6NgeoxBD7ikjx_vNMMSBAXFtLImret76ObUvuWeDNdpiCZtGHPjPZSV_LkUEDGJ9W-aM-_hIfDykc_0pyyoyw0Fu08K9xTqlxmVGEw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内であり、営業時間変更や臨時休業はありません。"
   }
 ]
