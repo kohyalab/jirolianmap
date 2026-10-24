@@ -22383,5 +22383,44 @@
     "processedAt": "2026-10-24T12:24:16.854Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_kameido_2114006108591575205",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2114006108591575205",
+    "postedAt": "2026-10-24T14:48:27.000Z",
+    "postText": "今日はいつも仲良くさせていただいている押切蓮介さん＠rereibara の個展の方へ遊びに行ってきました✨明日まではキラキラ可愛いイラストがメインで10/31からはおどろおどろしいお化け屋敷仕様に変わるみたいです！来月のまた行かなくちゃ…！ https://t.co/1JY4TlrnMC",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-4Ya9NJwWofRaX_KcBZZqCfkt-hl6KrBfGyiU00f7vEKdF-4ZHYXjw2_iVxM-J94t2UDID5dyJgXh6Cu7ue9asiBHJtZZOSX9IF2PZ7RaUp0XfcApz7quOHYaS02y-Q0-G-LKYnXwu1UJEl6DipseDg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-46JS-zY8uomemS0DVfubuI4Oy-zhf8I-butQCsZq0vDn4fbmA5SVgQq2liXGXDoHYqaUT8clC08bcfuCSR9t2c1FXAzGJ4muAOrh2Uo358kwsOTtiO3_QSRDVUeuZZUGNZOLHeQFsvfl8_v_X4YqLA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-bvolSvPiqKn-V65CyUSjXG0hQGQ0YSw2_y9cU8apdXWHenMwD-IybiV8_zo5qMUoP0hx6iQP1mwpEGClQ7WTkR647IqF8Wia__K8Fd8G-E4iD6dCdmQl86yVl3jWYMgJAz0eCq5bxj4CGyBj7P1LNw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-QACngq3_EQ7TWbJaAW_b-1GbrhFH_JZe0s7O1ER2CKCcWURacMj-KbAmSCFpm6b2D_7A_q5qNyjjMLkcIohKsqJBBywZez4aWYgZ08sRoOocNGDojI1-15R8QSS69_fJklJpHcBeft0NRBATnTMjQQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "個展に関する日常的な投稿であり、ラーメン二郎亀戸店の営業に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_yaen2_2114007546667434424",
+    "shopId": "yaen2",
+    "shopName": "八王子野猿街道店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/Jiro_Yaenkaido2/status/2114007546667434424",
+    "postedAt": "2026-10-24T14:54:10.000Z",
+    "postText": "10月25日(日) 朝7:30～15:00  ⭐テイクアウト、鍋二郎あります 並ばず買えます エビドクロテイクアウト現金です  ⚠️駐車場待ち出来ません ⚠️駐車場満車時コインパーキングに ⚠️店舗近隣タバコ禁止です https://t.co/SjDnEbFbvV",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-j8sqmkZj4hnbybgCMZLIR5GbIZ90EOSZT00erZcxkD-vX24XGCpORVebsK4W-iMafHqyU8fQs3n60A1msly2M96M8iEtwimiRyGYdUl-pXek__axBU-qUH8bRHqtHPUep4Xw2sUYmaYz6azcLbtrzA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-FYGsYviF0pzmnKPQlkA4y1vGnt0jcg8yXX1X_d_QLZwDgXX8e_s9s3GvdlSFiJAMMCZUw_b4p4MOw-oVlFX1Ka4PMKyySKzkmcAjRrgNRtJ-SAzMhj35jLWxY4ywQjxL7WOI3uv1BrsLG3HHeHlwrg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-e0rhMuVZHntmJt9YpHoyWI_J71zrbumJ_pmlcwhXAQWpQ-DCdFKWWp55rFRfLuVz1Chq4j3EfOmyHDbuqvZ5AK5rQqeuzSNrkkyUTPnnAuqi8-tUJWk0L9ZpJ-oaf_mIo6A0dJ0JLZ5kEFhOCQsC3g=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "10/25(日)の営業案内および駐車場に関する注意喚起の投稿であり、通常営業時間（7:30〜15:00）に変更はありません。"
   }
 ]
