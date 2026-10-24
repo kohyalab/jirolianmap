@@ -2,6 +2,50 @@
   "generalRules": [],
   "learnedFeedback": [
     {
+      "id": "sns_post_asakuragaido_20261024_0_2113824337144975477",
+      "timestamp": "2026-10-24T08:29:44.209Z",
+      "shopId": "asakuragaido",
+      "shopName": "朝倉街道駅前店",
+      "postDate": "2026-10-24T02:46:09.000Z",
+      "postText": "本日12:00-15:00営業いたします。 西鉄ストア様、西日本シティ銀行様、他店舗病院等駐車禁止 空いていても一般的なコインパーキングをご利用下さい。 グループの方は歩道を塞がずお静かにお願いします。 代表待ち、割込み、飲酒喫煙禁止 朝倉街道駅徒歩1分、天拝山駅7分",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-10-24",
+        "endDate": "2026-10-24",
+        "hours": [
+          [
+            12,
+            15
+          ]
+        ],
+        "reason": ""
+      }
+    },
+    {
+      "id": "sns_post_mejirodai_20261024_0_2113871628941787334",
+      "timestamp": "2026-10-24T08:29:35.404Z",
+      "shopId": "mejirodai",
+      "shopName": "めじろ台店",
+      "postDate": "2026-10-24T05:54:04.000Z",
+      "postText": "本日24日(土)の夜の部は都合により臨時休業とさせていただきます 申し訳ありませんがよろしくお願いします🙇",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業変更検出: 都合により",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-10-24",
+        "endDate": "2026-10-24",
+        "hours": [
+          [
+            11,
+            14.5
+          ]
+        ],
+        "reason": "都合により"
+      }
+    },
+    {
       "id": "sns_post_shndaita_20261023_0_2113395547478598029",
       "timestamp": "2026-10-23T21:13:34.260Z",
       "shopId": "shndaita",
@@ -957,40 +1001,6 @@
       "finalDetails": {
         "startDate": "2026-10-10",
         "endDate": "2026-10-12",
-        "hours": [],
-        "reason": ""
-      }
-    },
-    {
-      "id": "sns_post_sapporo_20261014_1_2106999060540571709",
-      "timestamp": "2026-10-05T13:30:00.608Z",
-      "shopId": "sapporo",
-      "shopName": "札幌店",
-      "postDate": "2026-10-05T06:44:56.000Z",
-      "postText": "夜の部も、17:00〜18:30 「つけ麺」サブスープ対応します。  又、現金＋100円でサブ塩(醤油ベース) も対応します🧂  必ず、スタッフ確認時に申告して下さい。 「サブ」、「サブ塩」！  麺の旨みが感じやすいです、違いをお楽しみ下さい😄  10月7日(水)、14日(水)終日休業になります。",
-      "aiStatus": "schedule_change",
-      "aiReason": "営業時間の変更を検出",
-      "humanAction": "applied",
-      "finalDetails": {
-        "startDate": "2026-10-14",
-        "endDate": "2026-10-14",
-        "hours": [],
-        "reason": ""
-      }
-    },
-    {
-      "id": "sns_post_sapporo_20261007_0_2106999060540571709",
-      "timestamp": "2026-10-05T13:29:54.507Z",
-      "shopId": "sapporo",
-      "shopName": "札幌店",
-      "postDate": "2026-10-05T06:44:56.000Z",
-      "postText": "夜の部も、17:00〜18:30 「つけ麺」サブスープ対応します。  又、現金＋100円でサブ塩(醤油ベース) も対応します🧂  必ず、スタッフ確認時に申告して下さい。 「サブ」、「サブ塩」！  麺の旨みが感じやすいです、違いをお楽しみ下さい😄  10月7日(水)、14日(水)終日休業になります。",
-      "aiStatus": "schedule_change",
-      "aiReason": "営業時間の変更を検出",
-      "humanAction": "applied",
-      "finalDetails": {
-        "startDate": "2026-10-07",
-        "endDate": "2026-10-07",
         "hours": [],
         "reason": ""
       }
