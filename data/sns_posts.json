@@ -22154,5 +22154,35 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_koiwa_2113884002579046573",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2113884002579046573",
+    "postedAt": "2026-10-24T06:43:14.000Z",
+    "postText": "汁なしの素、魚介つけ麺の素は売り切れました😭",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更に関する言及がないため、変更なしと判定しました。"
+  },
+  {
+    "id": "sns_post_routine_senjuohashi_2113881960770920594",
+    "shopId": "senjuohashi",
+    "shopName": "千住大橋駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjujirou26/status/2113881960770920594",
+    "postedAt": "2026-10-24T06:35:08.000Z",
+    "postText": "大変申し訳御座いませんが本日残りは ラー油5セット🍥豚1本🐖（6本）🐖 のみとなります！🐖！ https://t.co/FD22EYDwfb",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常的な販売告知であり、営業時間の変更に関する言及はないため変更なし。"
   }
 ]
