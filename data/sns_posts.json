@@ -21873,5 +21873,35 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の案内であり、営業時間変更や臨時休業はありません。"
+  },
+  {
+    "id": "sns_post_routine_koiwa_2113813608882991161",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2113813608882991161",
+    "postedAt": "2026-10-24T02:03:31.000Z",
+    "postText": "今日みたいに肌寒い日は自宅で二郎が正解です。  ラーメンセット、残りは19セットです。  お早めにご購入ください⬇⬇⬇ https://t.co/RYSeuvshSi",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2113814616790950071",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2113814616790950071",
+    "postedAt": "2026-10-24T02:07:32.000Z",
+    "postText": "混雑無くなりました！ どうぞー！🈳🈳🈳  昼の部14:00まで営業🈺致します！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "混雑状況の案内であり、営業時間の変更ではないため変更なし"
   }
 ]
