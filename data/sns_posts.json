@@ -21803,5 +21803,37 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業時間の変更に関する言及がないため、変更なしと判定しました。"
+  },
+  {
+    "id": "sns_post_routine_kawagoe_2113792667654185181",
+    "shopId": "kawagoe",
+    "shopName": "川越店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kwge26/status/2113792667654185181",
+    "postedAt": "2026-10-24T00:40:18.000Z",
+    "postText": "おはようございます！ 本日通し営業です☔ ○11:00~20:00  🍜持ち帰りあります！  無料トッピング｢紅生姜｣あります☺️ トッピング時に「アレ」で！  よろしくお願いします🙇‍♂️",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知であり、臨時休業や時間変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_nagoyaosone_2113797698239484178",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2113797698239484178",
+    "postedAt": "2026-10-24T01:00:18.000Z",
+    "postText": "おはようございます。 ラーメン二郎名古屋大曽根店です。 本日の営業時間  10:00〜14:00(材料がなくなり次第終了) 明日はお休みとなります、よろしくお願いいたします。 https://t.co/y4g44xutg4",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2MPyruqhqcF94XqCRKq1hVbwW2xYX4rtmWPiTJKdKIf89Jg0X-Fz8lXVmu7Es63TL4M2RN2Nfy27IBJmbggjEhV1vQcRgOb1Uepr3o_zJAU00OKGlFexItXK5j53agQameQBvZTXJ3nqJwZM2jSDfg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "本日10/24(土)は通常営業、明日10/25(日)は定休日です。"
   }
 ]
