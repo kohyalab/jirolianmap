@@ -21849,8 +21849,8 @@
       "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Z10lo-8t0vXzEWl7b1acNmSFqVBwi75C-jzJ3Bnpzkcv33RZDLlJTSe8C9vPGbJbUP-BpdXV2CW02ArY1FwpXNJ1YY9z4kpB8CNiE3xaH8ivXrKTlwHilw1YNYvY2i_THNI_PqvlkY6pn7dmXQ8OEw=="
     ],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-24T08:30:29.714Z",
     "aiStatus": "no_change",
     "aiReason": "通常営業の告知であり、臨時休業や時間変更はありません。"
   },
@@ -21869,8 +21869,8 @@
       "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-RxU4DqmRmIi1SFYwmIulpsrTYjtsUqinvFHTVPVnmk8HEJcK6NgeoxBD7ikjx_vNMMSBAXFtLImret76ObUvuWeDNdpiCZtGHPjPZSV_LkUEDGJ9W-aM-_hIfDykc_0pyyoyw0Fu08K9xTqlxmVGEw=="
     ],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-24T08:30:29.714Z",
     "aiStatus": "no_change",
     "aiReason": "通常営業の案内であり、営業時間変更や臨時休業はありません。"
   },
@@ -21884,8 +21884,8 @@
     "postText": "今日みたいに肌寒い日は自宅で二郎が正解です。  ラーメンセット、残りは19セットです。  お早めにご購入ください⬇⬇⬇ https://t.co/RYSeuvshSi",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-24T08:30:29.714Z",
     "aiStatus": "no_change",
     "aiReason": "営業時間の変更に関する言及はありません。"
   },
@@ -21899,8 +21899,8 @@
     "postText": "混雑無くなりました！ どうぞー！🈳🈳🈳  昼の部14:00まで営業🈺致します！",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-24T08:30:29.714Z",
     "aiStatus": "no_change",
     "aiReason": "混雑状況の案内であり、営業時間の変更ではないため変更なし"
   },
@@ -21926,8 +21926,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-24T08:30:29.714Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   },
@@ -21941,8 +21941,8 @@
     "postText": "本日、24日の 肩ロース、切り落とし、崩れは 売り切れました。",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-24T08:30:29.714Z",
     "aiStatus": "no_change",
     "aiReason": "限定メニューの売り切れ告知であり、営業時間の変更に関する言及はないため変更なし。"
   },
@@ -21956,8 +21956,8 @@
     "postText": "苦情が来てるのでお喋りしないで待っててください  よろしくお願いします！",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-24T08:30:29.714Z",
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   },
@@ -21983,8 +21983,8 @@
       "reason": "材料切れのため",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-24T08:30:29.714Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 材料切れのため"
   },
@@ -22010,8 +22010,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-24T08:30:29.714Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   },
@@ -22025,8 +22025,8 @@
     "postText": "10/24の追加メニュー  🐷豚ハーフ 🐽くずれ豚 📍生麺 📍汁なしの素 📍魚介つけ麺の素 個数制限なし  📢新メニュー📢  「味付き脂300円」 おひとり様１個まで  15時から販売開始です⏰",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-24T08:30:29.714Z",
     "aiStatus": "no_change",
     "aiReason": "営業時間の変更に関する言及はなく、限定メニューおよび販売開始時刻の告知のみであるため変更なし。"
   },
@@ -22042,8 +22042,8 @@
       "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-kb43GZB2k8z_h2Pp4G18jtOPFIteFZK7ONX-AElAAPjoLY1xHLV2KYq58tje9nsMZNmrkrgM6RyZrQidk4TvGA4q-1sZEBI99X_4WAl4yLFDhYnorw9XHPUB9wafXWUkSTOvpuMTF_x13nZBdodCYA=="
     ],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-24T08:30:29.714Z",
     "aiStatus": "no_change",
     "aiReason": "持ち帰り商品の販売告知であり、営業時間の変更に関する言及はありません。"
   },
@@ -22069,8 +22069,8 @@
       "reason": "都合により",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-24T08:30:29.714Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 都合により"
   },
@@ -22084,8 +22084,8 @@
     "postText": "こんにちは。 夜の部も味噌の汁無し出来ちゃう事になりました。 途中で終わってしまうかもしれませんが宜しくお願いします。 煮干しの波動、納豆はまだまだあります。 カレーチンご希望の方は 「アレ」でお願いします。",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-24T08:30:29.714Z",
     "aiStatus": "no_change",
     "aiReason": "営業時間の変更に関する言及がないため、変更なしと判定しました。"
   },
@@ -22115,8 +22115,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-24T08:30:29.714Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   },
@@ -22135,8 +22135,8 @@
       "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-pGKl12F2a06vk6XT0pV08iKgGp_UCf02EyAr4ECVWrEc07rqEjQiGEi3RfvYL1iRPOlAAy4HiJJAiWWNdLhJr-2XqtLSskotnmH7MR1xDnMDR_pVlLj7X5yL-eldgxtBlcgdRfHe_CAWg0QLg9YWcQ=="
     ],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-24T08:30:29.714Z",
     "aiStatus": "no_change",
     "aiReason": "限定トッピングの告知であり、営業時間の変更に関する言及はないため変更なし。"
   },
@@ -22150,8 +22150,8 @@
     "postText": "いまいるひとでおわりです！ ごめんなさい！",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-24T08:30:29.714Z",
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   },
@@ -22165,8 +22165,8 @@
     "postText": "汁なしの素、魚介つけ麺の素は売り切れました😭",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-24T08:30:29.714Z",
     "aiStatus": "no_change",
     "aiReason": "営業時間の変更に関する言及がないため、変更なしと判定しました。"
   },
@@ -22180,8 +22180,8 @@
     "postText": "大変申し訳御座いませんが本日残りは ラー油5セット🍥豚1本🐖（6本）🐖 のみとなります！🐖！ https://t.co/FD22EYDwfb",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-24T08:30:29.714Z",
     "aiStatus": "no_change",
     "aiReason": "日常的な販売告知であり、営業時間の変更に関する言及はないため変更なし。"
   },
@@ -22195,8 +22195,8 @@
     "postText": "@anagono_oishii 美味しいし猫好きな方はすごい喜んでくれるので重宝してます✨",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-24T08:30:29.714Z",
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
   },
@@ -22210,8 +22210,8 @@
     "postText": "こちら店主もよくお土産に買って行きます✨ https://t.co/FaH50GJ0x6",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-24T08:30:29.714Z",
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   },
@@ -22239,8 +22239,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-24T08:30:29.714Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   }
