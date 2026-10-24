@@ -21770,5 +21770,38 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業情報の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_senjuohashi_2113790144805544269",
+    "shopId": "senjuohashi",
+    "shopName": "千住大橋駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjujirou26/status/2113790144805544269",
+    "postedAt": "2026-10-24T00:30:17.000Z",
+    "postText": "本日は15時30分前よりテイクアウト販売のみの営業となりますのでご注意をお願いいたします！  フォロワー限定🐖 味噌脂蕎麦🐖魚粉油そば🐖 生姜醤油脂🐖1010カレー脂🐖 ✨復刻✨BP塩油そば🐖豚１本🐖 https://t.co/0PKOYrYEVQ",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-tFVTWAf4f3GOWGUSPcQ_Mnb6uWXCKY2SqJ5kMTA3D_3-vHXl7_QVBTKWJwnPzSwODBZXdR2tLTeP48enF30q6H_qVabP2msn2DwnGs-OmcSobcsZnUtmtA1bJ4gD24e_Q8uk5DCxALPWEoxRzrgrXg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-8JFDkxJn0jBRMGHcyIVeZCSmKVbhoz5yvH_QImeHizLHSyrDWhV8fIoqAMZPH-j8pVxI3LCJZ70tJvS7YGvUHbhC8aoDYMp8KIF8yxpXNgMxixKgfvVQN5mCP4MoXl4wbpkZYBc5ges72BgIiakQig=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "テイクアウト販売のみの告知であり、営業時間の変更ではないため変更なしと判定。"
+  },
+  {
+    "id": "sns_post_routine_sapporo_2113790274199798197",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2113790274199798197",
+    "postedAt": "2026-10-24T00:30:48.000Z",
+    "postText": "24日(土) 「こくまろ辛味噌(醤油ベース)」やってます🔥  「ざく切り白髪ねぎ」でバッチリ👌",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更に関する言及がないため、変更なしと判定しました。"
   }
 ]
