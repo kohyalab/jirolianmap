@@ -21987,5 +21987,91 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 材料切れのため"
+  },
+  {
+    "id": "sns_post_jimbocho_20261024_0_2113868318499369356",
+    "shopId": "jimbocho",
+    "shopName": "神田神保町店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jbc_ramen_jiro/status/2113868318499369356",
+    "postedAt": "2026-10-24T05:40:55.000Z",
+    "postText": "ただ今お並びのお客様までで、本日の営業終了となります。よろしくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-24",
+      "endDate": "2026-10-24",
+      "hours": [
+        [
+          11,
+          14.666666666666666
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_koiwa_2113870912990929245",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2113870912990929245",
+    "postedAt": "2026-10-24T05:51:14.000Z",
+    "postText": "10/24の追加メニュー  🐷豚ハーフ 🐽くずれ豚 📍生麺 📍汁なしの素 📍魚介つけ麺の素 個数制限なし  📢新メニュー📢  「味付き脂300円」 おひとり様１個まで  15時から販売開始です⏰",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更に関する言及はなく、限定メニューおよび販売開始時刻の告知のみであるため変更なし。"
+  },
+  {
+    "id": "sns_post_routine_senjuohashi_2113873130922082679",
+    "shopId": "senjuohashi",
+    "shopName": "千住大橋駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjujirou26/status/2113873130922082679",
+    "postedAt": "2026-10-24T06:00:02.000Z",
+    "postText": "只今の時間より🍜  SH脂蕎麦セット 2人前1セット  1500円 （麺1玉2袋、豚入脂パック2つ）  ノーマル1つとPlus  ラー油🐖or魚粉油そば🐟 味噌脂🐖or1010カレー🐖 生姜醤油脂🫚復刻BP塩油そば🐖 よりお1つお選び下さい！  お1人様  2セットまで！  豚1本1500円🐷 https://t.co/WeafqDwDEX",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-kb43GZB2k8z_h2Pp4G18jtOPFIteFZK7ONX-AElAAPjoLY1xHLV2KYq58tje9nsMZNmrkrgM6RyZrQidk4TvGA4q-1sZEBI99X_4WAl4yLFDhYnorw9XHPUB9wafXWUkSTOvpuMTF_x13nZBdodCYA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "持ち帰り商品の販売告知であり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_mejirodai_20261024_0_2113871628941787334",
+    "shopId": "mejirodai",
+    "shopName": "めじろ台店",
+    "postSource": "x",
+    "postUrl": "https://x.com/mejirodai_jiro/status/2113871628941787334",
+    "postedAt": "2026-10-24T05:54:04.000Z",
+    "postText": "本日24日(土)の夜の部は都合により臨時休業とさせていただきます 申し訳ありませんがよろしくお願いします🙇",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-24",
+      "endDate": "2026-10-24",
+      "hours": [
+        [
+          11,
+          14.5
+        ]
+      ],
+      "reason": "都合により",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 都合により"
   }
 ]
