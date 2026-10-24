@@ -22353,5 +22353,35 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261025_0_2113960641002344692",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2113960641002344692",
+    "postedAt": "2026-10-24T11:47:46.000Z",
+    "postText": "明日 ◇10/25日 【日曜日営業🈺】 10:00から〜15:00 ご来店ご到着お並び方 お客様まで営業致します  →ブタの端っこをお椀でフライドオニオンチーズ🧀で！ ※限定30販売です。 ※食券にて200円販売  いかがでしょうか⁈ https://t.co/disAZhqB2h",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-1pksa3f66h1LMUqwefPPhYV8TrkRHJfv-_ZQNS3VJWHD5cVEQEeJ2YAY1azWmMwfmcKd3ongftq9G0k4J4aur-zyKL0E0I4j0XsQqY-nOi6ZHkHBEC6cr2R6LfwdbZ3vJZye2hohgORvR_-1wk0hpg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-QPLJf_Mjfl5VAX0giNJ1MPBoGitE9Kw7ld7W8iNcz_AfTUxDvCyZhwtII8E2vDObHrNbpEqwnFde1KkXsq3e8GIFv2fN7VPblA4a-0pGiQe9c938cw-YebemyfTMt30RPvVBbMOT9pQ_pa2eYdVqEw=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-10-25",
+      "endDate": "2026-10-25",
+      "hours": [
+        [
+          10,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
