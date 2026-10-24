@@ -22497,5 +22497,40 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: テイクアウト営業"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2114120213860086115",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2114120213860086115",
+    "postedAt": "2026-10-24T22:21:52.000Z",
+    "postText": "本日 ◇10/25日 【昼】 →こちらをご覧のお客様限定です！ ↓ ※お客様ご自身で→丸の🟥赤又は白🤍食券を１枚お取りになって席までお越しください。→食券は券売機の前の台の二段目に置いておきます。 ※必ず着席時にお出しください。 ※サービス中の目印は［黄色いハンカチ］ どうぞご利用下さい♪ https://t.co/gGI0QKUwF9 https://t.co/sDnwN2HCpK",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-lBO-ic7y8GLbei57s1mdVtz5PDKIfreqaZc2NGd_wZAMp8uudz75yXdhYB0nH9BeKoJiDcSztP2H0xbh8XchzKDSKCqSa_acOlJEMLwfAmQnqIHoa6jPFCVT4vamxzoQO0EMBKUVZMnAL5JpcQFCEw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ktCyN_WnRq8FSZIblIZlXWAdcjTjom7skFoptI165Q8icuoZ0GvrQDiObdOl4AH6HD5hzez-GZlJkVCZZ4DEdvF5RGRFMmpRLau6dB8H3wgpFG18aqNfocFrPgrQwZfvGRbHVecqSTnpZOVEg_-RNg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-fOx4wB-VdV-0gL6KMH6as4EyXiUr_Wb-ZgBb_9AnpJ8QLuNVfPuIcIh_jr8J6EzCr9d3u3jgVqfMKFHIUd9x0H0F37WjAY9N5Fq4R27FCST4Z2gtghKIzZ8l6gmEIzvm-SC8jfouNgHYv-SWpE4BMA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-YT1BQMxyqGbHHPa6ot_JXKZGUGEo-LRTrFoJlTDa1N-Iak7HgkFpBwaT1wwXlaWa_hYO0SpA2tr25UlNfzk-XwiVI71F6EedCpP5_dZdBA6xDkLvZvUBxvWJCslUOnBy25SESV6nkfuRupa4e5u3qg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_shndaita_2114122082271576384",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2114122082271576384",
+    "postedAt": "2026-10-24T22:29:17.000Z",
+    "postText": "2026年10月25日(日)  通常営業です！ 11:00～16:00くらいです！  よろしくお願いします！  ※住宅地なのでおしゃべりしないで待っててください",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知のため変更なし"
   }
 ]
