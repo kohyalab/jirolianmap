@@ -22073,5 +22073,86 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 都合により"
+  },
+  {
+    "id": "sns_post_routine_kannai_2113879401536622803",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2113879401536622803",
+    "postedAt": "2026-10-24T06:24:57.000Z",
+    "postText": "こんにちは。 夜の部も味噌の汁無し出来ちゃう事になりました。 途中で終わってしまうかもしれませんが宜しくお願いします。 煮干しの波動、納豆はまだまだあります。 カレーチンご希望の方は 「アレ」でお願いします。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更に関する言及がないため、変更なしと判定しました。"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261024_0_2113877417228222933",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2113877417228222933",
+    "postedAt": "2026-10-24T06:17:04.000Z",
+    "postText": "この後！ 本日は【夜の部】営業🈺 16:30から〜20:00 ご来店ご到着お並びの お客様まで営業致します。  →［フライドチリガーリック］ →［味ぽん生たまご］ 🉐得割🈹！50円引き！ ※券売機100円設定！ 🉐🈹  どうぞご利用ください！ https://t.co/jAqDJC3vom https://t.co/pAd33TVdNr",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-JNw_wVNUo-5uJtMM8o6IcNMTH0JPaadijEUhM-nVGZ8jGS5Qd7K_eOIovmP8I01MCIWWJ4i_JNlTG-bOG20per8GmavFhrLMtvDDyMW95aiZldqa8ccqV2DcxaJN7p1j7jg3DFDdo-oheVPEpfjpHA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-cTpKp3gPCnBza5LjhR1jg6FS8udBNCzXPKJxsUfXY9tjePn8X9y8px19ICpTdgQZfQYAtmwCdacbXRtgO_Jye7NM8ecWbeX52wVQ3EjyrDvVTY6TOs-hkM6zp73Z9YgFwLL0f2etF7PagIOkh9ph7A==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-FfVwZg533cMsxnxOKl-xkgr236dXgPwhrl0F8DkrpRn7w3_tlM-VBI45ULSGsEa90oBiAPZ1N_1ZM3nPVxISR_j9APuki11i6iJAoRt8eHVzlJkElUpYS92owDvnmXs5RfkLhsIInWkihLnNEcjCIg=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-24",
+      "endDate": "2026-10-24",
+      "hours": [
+        [
+          16.5,
+          20
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2113875435662778616",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2113875435662778616",
+    "postedAt": "2026-10-24T06:09:12.000Z",
+    "postText": "この後 ◇10/24土 【夜】 →こちらをご覧のお客様限定です！ ↓ ※お客様ご自身で→丸の🟥赤又は白🤍食券を１枚お取りになって席までお越しください。→食券は券売機の前の台の二段目に置いておきます。 ※必ず着席時にお出しください。 ※サービス中の目印は［黄色いハンカチ］ どうぞご利用下さい♪ https://t.co/GvnRHukhbN https://t.co/pAd33TVdNr",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-tRC1xKbH7179a2Qt2PR_1DmDmSRk8ZlLeeoMrwr_9ze2G0hmn_5-uG5I7DJO70XrMENsQXKKYFLQNFZUjkMOyPQ5DmnAt237bpn2Sj8kEh8kFAJ2bt88rW1cHS28cuEDlmlQrKw9cioMVLxY4XoAgg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-lXDYuHw2-7g-frzsnOGah2YenqcOowWm3AQ3OlZsAPFeJHeLvMlwHVWMw0jUmBXC_HEO9zAUJC4CC0Rfc8KQBDTyG8mRwMGWZED1hcRfY0tJdQCFPt0ZXIVUPMHeQdAS0z9DVb-1Ui-X-VRu3HpUQQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-rUGGNI9hlUz3vrjayxEovGc1ge4jsgz_ilf8N53YPHACX4Ir7Sl0ZtdrleSHjAPRxqNsSN6tOwBiW0m69y6v45OidGKxAAcaqP4gWYv3kNuov3ahXhoegXq-c_4-DMD3OCIKkH4ogKDkfR7SVGzzyg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-pGKl12F2a06vk6XT0pV08iKgGp_UCf02EyAr4ECVWrEc07rqEjQiGEi3RfvYL1iRPOlAAy4HiJJAiWWNdLhJr-2XqtLSskotnmH7MR1xDnMDR_pVlLj7X5yL-eldgxtBlcgdRfHe_CAWg0QLg9YWcQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの告知であり、営業時間の変更に関する言及はないため変更なし。"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2113880675543888326",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2113880675543888326",
+    "postedAt": "2026-10-24T06:30:01.000Z",
+    "postText": "いまいるひとでおわりです！ ごめんなさい！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
