@@ -22184,5 +22184,64 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "日常的な販売告知であり、営業時間の変更に関する言及はないため変更なし。"
+  },
+  {
+    "id": "sns_post_mention_kameido_2113890374641213752",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2113890374641213752",
+    "postedAt": "2026-10-24T07:08:34.000Z",
+    "postText": "@anagono_oishii 美味しいし猫好きな方はすごい喜んでくれるので重宝してます✨",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_daily_kameido_2113888884342075516",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2113888884342075516",
+    "postedAt": "2026-10-24T07:02:38.000Z",
+    "postText": "こちら店主もよくお土産に買って行きます✨ https://t.co/FaH50GJ0x6",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_senjuohashi_20261024_0_2113889848604114950",
+    "shopId": "senjuohashi",
+    "shopName": "千住大橋駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjujirou26/status/2113889848604114950",
+    "postedAt": "2026-10-24T07:06:28.000Z",
+    "postText": "大変申し訳御座いませんが本日の販売は終了いたしました！  お持ち帰りして頂いた方へ！  脂の袋は立てて湯煎をし♨︎ 麺を茹でよーく湯切りをした熱熱の麺によーく混ぜ混ぜしてお召し上がり下さい🍜 （麺の茹で加減はお好みで！） https://t.co/W3ngsuQHJs",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-G5ePLKaW5gGWpUOsA6R9fxZ1Z2WFczDwsdTNtSY__9zQaq-13ArGsjqP9h9su4JrYSl4UUV-uFmr50YtIfnMCTXJHbostLjcUuHNYzhZMOkgcHhWr4iA6mN1NrcElaoPN2AqYrv7KIXwVls9AddYpA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-24",
+      "endDate": "2026-10-24",
+      "hours": [
+        [
+          10.5,
+          16.1
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
