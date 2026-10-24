@@ -22422,5 +22422,22 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "10/25(日)の営業案内および駐車場に関する注意喚起の投稿であり、通常営業時間（7:30〜15:00）に変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_fujisawa_2114083086623535235",
+    "shopId": "fujisawa",
+    "shopName": "湘南藤沢店",
+    "postSource": "x",
+    "postUrl": "https://x.com/fujirow26/status/2114083086623535235",
+    "postedAt": "2026-10-24T19:54:20.000Z",
+    "postText": "おはようございます。  10月25日(日)  しょっぱ豚🐷 無料トッピング にんにく入れますか？の時お伝えください。  タマネギカレー🍛🧅  本日もよろしくお願いいたします。 https://t.co/QBveozN14Q",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-O8HraCTuR3zo3xbk5HXC0S_5iAn4HVMh8EugMwaYBVmCtsaUUaCRUdr3Ix6O-dUD9huhSuqdwAkXC3K2tKFdwx3fP7cv-63YkR0T6aJTVSFwr2qoR1RX3tNhHUNWDt4W2r8q8Buwv4KfNvMwaDt7kQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常の営業告知および限定トッピングの案内であり、営業時間の変更はありません。"
   }
 ]
