@@ -22439,5 +22439,63 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "日常の営業告知および限定トッピングの案内であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_koshigaya_20261025_0_2114100049890402311",
+    "shopId": "koshigaya",
+    "shopName": "越谷店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ksgy26/status/2114100049890402311",
+    "postedAt": "2026-10-24T21:01:44.000Z",
+    "postText": "おはようございます！ ラーメン二郎越谷店です！  10月25日(日)　臨時営業 10:00〜14:30LО ご来店お待ちしております🙇  11月1日(日)　テイクアウト 12:00〜14:30頃まで よろしくお願いします！ https://t.co/RBBN2uGr1Q",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-P4UYDZCuQugMZYKtjaHJZVZBx_6Z5YnOQtXnST7VqbpjP1lRMETr4Mo7ZXqt2kkookNi0z219r6bRQuVuvG-DhcW4YgULLTwjFAKxglMtgVmSep2hZ3FCcv3mx-Tybi4ipWBdzV5s4W4I4WW-ZjNLQ=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-10-25",
+      "endDate": "2026-10-25",
+      "hours": [
+        [
+          10,
+          14.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_koshigaya_20261101_1_2114100049890402311",
+    "shopId": "koshigaya",
+    "shopName": "越谷店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ksgy26/status/2114100049890402311",
+    "postedAt": "2026-10-24T21:01:44.000Z",
+    "postText": "おはようございます！ ラーメン二郎越谷店です！  10月25日(日)　臨時営業 10:00〜14:30LО ご来店お待ちしております🙇  11月1日(日)　テイクアウト 12:00〜14:30頃まで よろしくお願いします！ https://t.co/RBBN2uGr1Q",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-P4UYDZCuQugMZYKtjaHJZVZBx_6Z5YnOQtXnST7VqbpjP1lRMETr4Mo7ZXqt2kkookNi0z219r6bRQuVuvG-DhcW4YgULLTwjFAKxglMtgVmSep2hZ3FCcv3mx-Tybi4ipWBdzV5s4W4I4WW-ZjNLQ=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-11-01",
+      "endDate": "2026-11-01",
+      "hours": [
+        [
+          12,
+          14.5
+        ]
+      ],
+      "reason": "テイクアウト営業",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: テイクアウト営業"
   }
 ]
