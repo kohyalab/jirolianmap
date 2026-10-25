@@ -22756,5 +22756,36 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業時間の変更や臨時休業に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_kameido_20261025_0_2114219903289000328",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2114219903289000328",
+    "postedAt": "2026-10-25T04:57:59.000Z",
+    "postText": "只今並びの方まででお昼の部は終了です。夜の部もよろしくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-25",
+      "endDate": "2026-10-25",
+      "hours": [
+        [
+          11,
+          13.95
+        ],
+        [
+          17,
+          21
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
