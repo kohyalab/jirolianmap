@@ -22647,5 +22647,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "投稿テキストおよび添付画像（カレンダー）を確認しましたが、2026-10-25以降の営業時間の変更や臨時休業の告知は含まれていません。"
+  },
+  {
+    "id": "sns_post_routine_kannai_2114157035382243713",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2114157035382243713",
+    "postedAt": "2026-10-25T00:48:11.000Z",
+    "postText": "おはようございます。  本日、シビレ復活しましたのでシビレ汁なしご希望の方は黒の食券でお願いします！  カレーちんは「アレ」で、玉ねぎ納豆沢庵、煮干しの波動はそれぞれ食券でよろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更に関する言及なし"
   }
 ]
