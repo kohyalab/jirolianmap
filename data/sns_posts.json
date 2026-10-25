@@ -22963,8 +22963,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-25T15:18:57.335Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   },
@@ -22980,8 +22980,8 @@
       "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-O5fGkEHBCUpCBja0Ykngo79KjUxoUkiFVweEe1ABEVAEYMILItkpMqw4h1kZxkuwdLQB2E-8Hae9GvB0aLGNlcMF-ndZ-ISteaXnRiNlXOsMpRHXV47lkjObsgvOqIoamLr4hlkOVFh4PmVzkZ7RkQ=="
     ],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-10-25T15:18:57.335Z",
     "aiStatus": "no_change",
     "aiReason": "営業時間の変更や臨時休業に関する言及はないため、変更はありません。"
   }
