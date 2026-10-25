@@ -22592,5 +22592,40 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "投稿された営業時間は通常営業時間と同一のため変更なし"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2114144934068670815",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2114144934068670815",
+    "postedAt": "2026-10-25T00:00:05.000Z",
+    "postText": "［ブタの端っこをお椀でフライドオニオンチーズ🧀で！］ 限定30→200円  こちらの食券でお願い致します🤲 https://t.co/G25PqZyl7l https://t.co/2bqj86PtaA",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-dJKGoohv9YRk6VHulAMs4w6fw90WSWpKNPwYyUBg6m0E8eZyX8HTRni1ukxRTaOIOjtSxSb0hkkOmyRWQUgB1Qi8v49hY13cCl_ImmO82IU537cXe7IiGNMp7zZ15RWXLQ5eP6gcre4wc53-8h0o8Q==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-SEH-9b3hAIeBde_UUQe3tPpUGmS33dNw9z2IFjsqeY17TTELhes4sxWZfV4utN1Yko3AtmhlYUb0dgfVq7HxIePbNLLh6vlBcCJgq0_AXgQcLpAngWwa_Gx0Pt5JRXHDc3CoavR5lWCU0jkJYRI8iw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-aFhmng5ghSIgG_swlVd_51QHNe2R3B6u2xbJ56TxvZTkGLQ-6pGfuxm7_9eiHWf2KHQyBN9tRraqJzsoGV3s12bfYQ-NyWQqoonsYiHLfHQY9np3NNlVlWKfidKG72k8Cn_SD0VEPJdTBAVDPwstGA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-OEcagZk0oFsRkCKEj9HLXYFKaghPhgbQQgc_h31ZtCkagZi0eAvRRZ1M3MDyridDSXjaKv-MjooK8uyrCdCvXVJrLXIzXHCjujisGUMZfSHq97myUNNGuLWkkoidvN_3Adbvhe0DrV9GvC5mfJdfHA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの告知であり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2114137732654219571",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2114137732654219571",
+    "postedAt": "2026-10-24T23:31:28.000Z",
+    "postText": "準備が早めに整いそうです。 少し早めに開店致します。 https://t.co/sDnwN2HCpK",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "開店準備が早まった旨の投稿ですが、具体的な営業終了時刻の変更や臨時休業の告知ではないため、変更なしと判定します。"
   }
 ]
