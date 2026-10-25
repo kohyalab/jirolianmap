@@ -22627,5 +22627,25 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "開店準備が早まった旨の投稿ですが、具体的な営業終了時刻の変更や臨時休業の告知ではないため、変更なしと判定します。"
+  },
+  {
+    "id": "sns_post_routine_hitachinaka_2114152231163638243",
+    "shopId": "hitachinaka",
+    "shopName": "ひたちなか店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26_hitachinaka/status/2114152231163638243",
+    "postedAt": "2026-10-25T00:29:05.000Z",
+    "postText": "【25日〜31日 営業時間のご案内】  臨時休業失礼しました  麺打ちスタッフ募集中  基本ラストオーダー宣告ナシ 列が途切れたら閉店  テーブル席あり〼 利用者 限定 お子様連れ優先案内  複数名のお客様 ロットまたがない様にご案内し〼  ペットボトルキャップ集めて〼 https://t.co/4FfGt5QyMj",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-AIoPpU069-yK7j-98XKw-73hR62rFBaFN8VFPsIrjO2H2PiPrhe9YCZVA93-ESfQ6aquEuuLnRgfE1Gnwso_v0FU9G43FD4CAKIj0fD2cyxt5lxGsS6Qathk4fi642v132zLUt1FoOzRb_wyJZ6Dsw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-r5yDCT7WJQeLca9gHeuVo2SrWANAgaiNJC85jz4s02umNp5WXGLcpTCgSbUn8cx1gQqtxoxrsPm9FEPTxZaTjIGAUjQCVJUi_TPFYmXmVZuLc_0_4-hcE68JKXbBOEsAUnGOfTl4YqpJZYJm6x8Rbw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne--Lz8G8Y37mS8YAA-p5J5p8OHsmERuwWKEFntev6RhstILGoVyND1GAn_FGSwQiLPKIZRaFaXKQlyWm82ZyooeM8N1l8IOpQ6CtA0bDSJiTAW6WG2XDQircAji2_kuSlgXGwfYVP73DOlUj0wKfmrcA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-rwecVqX491yQSRNrnJM4fTrcUEjUKuVa0X1HJpiEqJY7XTOOOZCKaxDJmEQ2U2Y3pxFcfF0qHPq9p-ZeS2xI3g1mZvKMbb-5Toedmo8YrsLN8n0Aa0aR0whHLA3HHeujHwYRnru_Jk_Ci7uZw4T-rA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "投稿テキストおよび添付画像（カレンダー）を確認しましたが、2026-10-25以降の営業時間の変更や臨時休業の告知は含まれていません。"
   }
 ]
