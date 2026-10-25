@@ -22967,5 +22967,22 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_kameido_2114353784268968360",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2114353784268968360",
+    "postedAt": "2026-10-25T13:49:59.000Z",
+    "postText": "当店の1番入口側の席、こちらの席に座ったお客さんが少し目を離した間に食べかけの丼をそのままにして忽然と消えることが多いんです…きっと二郎食べてる間に異世界転生してるんだと僕達は思ってます… https://t.co/zzCI8rFrmw",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-O5fGkEHBCUpCBja0Ykngo79KjUxoUkiFVweEe1ABEVAEYMILItkpMqw4h1kZxkuwdLQB2E-8Hae9GvB0aLGNlcMF-ndZ-ISteaXnRiNlXOsMpRHXV47lkjObsgvOqIoamLr4hlkOVFh4PmVzkZ7RkQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更や臨時休業に関する言及はないため、変更はありません。"
   }
 ]
