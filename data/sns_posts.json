@@ -22817,5 +22817,23 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_kameido_2114245381240602671",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2114245381240602671",
+    "postedAt": "2026-10-25T06:39:14.000Z",
+    "postText": "菊花賞よろしくお願いします！ https://t.co/dzbW8O6L7q",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-cbBro1eJiNX_3IjQPpVuRDnGyQo-MERKp1JBJP2P9javVMr1sOb3P7W2L57UNQwEuwd7fUob7JNvkjEfiZbm5XFH7CHyH6B6vFLBwGEXGMCuFlE6mokSvuc9IrJ12J4M01PVhmRBdWYLEIR8PQIbOg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-g3gQCYyha3uLILCvLMbXMEywwZmNq7nhpeFrhtzEFBPLoshHOXKBWwyNAluAzHyFkfax0Sf_qcmTG9pgS2pzE390Q7VTJirbL9UCswZHD2w1sfLV1yg1CPhtl9cDzjv_4C_ZEI8VsdsKEbxAWeLqEw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報の変更に関する言及はありません。"
   }
 ]
