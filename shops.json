@@ -2137,6 +2137,14 @@
         "startDate": "2026-10-15",
         "endDate": "2026-10-15",
         "hours": []
+      },
+      {
+        "startDate": "2026-10-27",
+        "endDate": "2026-10-28",
+        "hours": [],
+        "reason": "",
+        "sourceUrl": "https://x.com/kannaijiro/status/2114346309654376913",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
