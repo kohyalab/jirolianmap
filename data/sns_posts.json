@@ -22862,5 +22862,88 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_shndaita_20261027_0_2114263296249663697",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2114263296249663697",
+    "postedAt": "2026-10-25T07:50:25.000Z",
+    "postText": "2026年10月25日(日) 解ってる範囲の営業予定です！  月 お休み 火 お休み 水 〇 木 〇 金 〇(15:00くらい) 土 〇 日 〇  11:00〜16:00くらい 煮切り鬼ごろ塩ラーメン(＋200円)もやります！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-27",
+      "endDate": "2026-10-27",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_shndaita_20261030_1_2114263296249663697",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2114263296249663697",
+    "postedAt": "2026-10-25T07:50:25.000Z",
+    "postText": "2026年10月25日(日) 解ってる範囲の営業予定です！  月 お休み 火 お休み 水 〇 木 〇 金 〇(15:00くらい) 土 〇 日 〇  11:00〜16:00くらい 煮切り鬼ごろ塩ラーメン(＋200円)もやります！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-30",
+      "endDate": "2026-10-30",
+      "hours": [
+        [
+          11,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2114263134248788426",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2114263134248788426",
+    "postedAt": "2026-10-25T07:49:46.000Z",
+    "postText": "この距離で見れること無いので感動！ https://t.co/bEQQQydQuA",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-WY_6pzc4181aJBTn2m1Ti69zihI09vnpOsXi__JgnVdQdGRQM-8PC_tkpYbjntwbwapg1-3aepZiFtfA7s9_yIE9yH4hzIeV7w7crF7juYuE1iQJhAJMCsQffUjkCWF55nsClnffY_9mf-Yr4zc4vQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2114261985294774406",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2114261985294774406",
+    "postedAt": "2026-10-25T07:45:13.000Z",
+    "postText": "すげー！！！ https://t.co/BBrwkK8MTA",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-n83oIOGUuifcPigHKENDi4FIdxtCXOB7UtwtJhXgjR9FpWUKD1cFoaH4Ieph2r8ob6VJxgT90PPRO8UDvKg9pbe_xK8d_Qw4_0tzM9E1l6P_6tXPqa5yc7GUrkdB-B8xiccNsfZmYTpm4XKs2zMy2A=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業変更なし（通常通り営業・雑談等）"
   }
 ]
