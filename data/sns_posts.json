@@ -22945,5 +22945,27 @@
     "processedAt": "2026-10-25T12:48:36.503Z",
     "aiStatus": "no_change",
     "aiReason": "営業変更なし（通常通り営業・雑談等）"
+  },
+  {
+    "id": "sns_post_kannai_20261027_0_2114346309654376913",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2114346309654376913",
+    "postedAt": "2026-10-25T13:20:17.000Z",
+    "postText": "こんばんは。 本日もありがとうございました。 お知らせなのですが 27(火)28(水)は連休となります。ご迷惑をおかけしますが 宜しくお願いします。  明日もシビレ、納豆、煮干しの波動あります。 カレーチンご希望の方は「アレ」でお願いします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-27",
+      "endDate": "2026-10-28",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
