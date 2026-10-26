@@ -23461,33 +23461,6 @@
     "aiReason": "通常営業の告知のため変更なし"
   },
   {
-    "id": "sns_post_sapporo_20261026_0_2114610993401848165",
-    "shopId": "sapporo",
-    "shopName": "札幌店",
-    "postSource": "x",
-    "postUrl": "https://x.com/jiro_sapporo_/status/2114610993401848165",
-    "postedAt": "2026-10-26T06:52:03.000Z",
-    "postText": "26日(夜)の部、17:00〜18:30 「つけ麺」サブスープ対応します。  又、現金＋100円でサブ塩(醤油ベース) も対応します🧂  必ず、スタッフ確認時に申告して下さい。 「サブ」、「サブ塩」！",
-    "mediaUrls": [],
-    "detectedChange": {
-      "type": "temporary_hours",
-      "startDate": "2026-10-26",
-      "endDate": "2026-10-26",
-      "hours": [
-        [
-          17,
-          18.5
-        ]
-      ],
-      "reason": "",
-      "confidence": 1
-    },
-    "processed": false,
-    "processedAt": null,
-    "aiStatus": "schedule_change",
-    "aiReason": "営業時間の変更を検出"
-  },
-  {
     "id": "sns_post_routine_kameido_2114620455349031412",
     "shopId": "kameido",
     "shopName": "亀戸店",
@@ -23559,5 +23532,36 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_sapporo_20261026_0_2114673775837110342",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2114673775837110342",
+    "postedAt": "2026-10-26T11:01:31.000Z",
+    "postText": "材料切れの為、只今お並びのお客様で営業終了致します。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-26",
+      "endDate": "2026-10-26",
+      "hours": [
+        [
+          11,
+          14
+        ],
+        [
+          17,
+          20.016666666666666
+        ]
+      ],
+      "reason": "材料切れのため",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 材料切れのため"
   }
 ]
