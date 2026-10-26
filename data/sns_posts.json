@@ -23661,5 +23661,42 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_yaen2_2114853251145400377",
+    "shopId": "yaen2",
+    "shopName": "八王子野猿街道店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/Jiro_Yaenkaido2/status/2114853251145400377",
+    "postedAt": "2026-10-26T22:54:41.000Z",
+    "postText": "10月27日(火) 11:00～15:00 17:30～21:00 ⭐テイクアウト、鍋二郎あります 並ばず買えます エビドクロテイクアウト現金です  ⚠️駐車場待ち出来ません ⚠️駐車場満車時コインパーキングに ⚠️店舗近隣タバコ禁止です https://t.co/6igAUY7cYs",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne--0OrxWh7U8dkFmxMsRqGFsrDNNYUItfmjEgC_Fcxf-56KNBkRv3KZxH1S4LKThw1jrzQorSq8FUpv7vHt1LuXg8vA8hc166wWMYmP-CMInLUZn2PhZErvQlr_rhIMK9LL-jsrsm5CRGd5utf7c9sIg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-vd3c81QWuUhfLwUKbKllLTlVpgeicEm6bkNl23KEPLUoSdj3nRnEvOoFEFB1NgdoPofjDIffwad7hR3UfRAZXqpgJvoUKRQQgvmJqmgzDpkH_ZREQwrFkkM_hEE_iRhn8VYp8cfKPQazKZ1SGeNHhg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-sJ4tNVbiCbQD_FWDz1Xm-T83L9pv-EBy7Ww9b5gFFt65wuz_lIicr0F7Ulx61YgJKqdsTDblAP10ssbIe4dDuNNRJKrHSGUqxUJhV0N3C73olN35NVcRLrA5Dnxlawb5leS0OhKAhVXMHwk89S_95Q==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-1RDCQGZhF1eG5URHBYOmBPPucg1ra7pEwpdB6a3Siq9_9RwMcsJeHkOlbpDg_btAXNgdhAWG-ONGU5Tx7ZK-VWR9O3OR6I3gwL65_zUrWbHf15FRuLAs3dpYTK2VJer5uLp0yeHBL6J3bEHxtWBWFA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知であり、臨時休業や営業時間変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_senjuohashi_2114848288369434809",
+    "shopId": "senjuohashi",
+    "shopName": "千住大橋駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjujirou26/status/2114848288369434809",
+    "postedAt": "2026-10-26T22:34:58.000Z",
+    "postText": "ラー油あります！  ※営業時間10時30分〜 15時30分ラストオーダー！ https://t.co/gTa3EIyqVr",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-j7PTYll1IYAy6Zw_YnbFzRpzxSlPzpFxDKAK0s3Hyu9Dg4b1WXESZAsuQPdMYah_oGa6febTIT5upZKJ5-K2sjXF3NNMtmslW76Fi8ImKlyXj91EaIAfzamHC6y9CPP4OG1Nedf5zAr_72j_H1a4ZA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業時間の再確認および日常的な告知のため、営業スケジュールの変更はありません。"
   }
 ]
