@@ -1292,18 +1292,27 @@
     "id": "keikyukawasaki",
     "name": "京急川崎店",
     "kana": "ケイキュウカワサキテン",
+    "shortName": "京急川崎",
+    "prefCode": "14",
+    "cityCode": "14131",
     "addressText": "本町2丁目10-1コ-ポ本町",
     "lat": 35.53495257322558,
     "lng": 139.70525707116533,
+    "openedAt": "2001-04-25",
+    "closedAt": null,
     "urls": {
       "pc": "https://ramen-jiro-pc3.com/keikyukawasaki/",
       "rdb": "https://ramendb.supleks.jp/s/3231.html",
       "tabelog": "https://tabelog.com/kanagawa/A1405/A140501/14000765/"
     },
     "x": "",
+    "instagram": "",
     "ticketTiming": "",
-    "openedAt": "2001-04-25",
-    "closedAt": null,
+    "soupType": "",
+    "renge": "",
+    "takeout": "",
+    "hoursNotes": "",
+    "remarks": "",
     "temporary": [
       {
         "startDate": "2026-08-08",
@@ -1323,6 +1332,11 @@
       {
         "startDate": "2026-09-10",
         "endDate": "2026-09-10",
+        "hours": []
+      },
+      {
+        "startDate": "2026-11-02",
+        "endDate": "2026-11-02",
         "hours": []
       }
     ],
@@ -1385,16 +1399,7 @@
       ],
       "6": []
     },
-    "holidayShifts": [],
-    "remarks": "",
-    "hoursNotes": "",
-    "instagram": "",
-    "shortName": "京急川崎",
-    "soupType": "",
-    "renge": "",
-    "takeout": "",
-    "cityCode": "14131",
-    "prefCode": "14"
+    "holidayShifts": []
   },
   {
     "id": "fuchu",
