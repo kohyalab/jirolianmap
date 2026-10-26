@@ -3250,6 +3250,31 @@
         ],
         "sourceUrl": "https://x.com/sumo_jiro/status/2111952861911466152",
         "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-31",
+        "endDate": "2026-10-31",
+        "hours": [
+          [
+            10,
+            14
+          ],
+          [
+            16.5,
+            20
+          ]
+        ],
+        "reason": "",
+        "sourceUrl": "https://x.com/sumo_jiro/status/2114584723712602486",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-01",
+        "endDate": "2026-11-01",
+        "hours": [],
+        "reason": "",
+        "sourceUrl": "https://x.com/sumo_jiro/status/2114584723712602486",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -5179,6 +5204,14 @@
         "reason": "従業員体調不良のため",
         "sourceUrl": "https://x.com/jiro_kyoto/status/2111266052298735871",
         "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-26",
+        "endDate": "2026-10-26",
+        "hours": [],
+        "reason": "従業員体調不良のため",
+        "sourceUrl": "https://x.com/jiro_kyoto/status/2114563239195685285",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -5623,6 +5656,14 @@
         ],
         "reason": "",
         "sourceUrl": "https://x.com/ksgy26/status/2111931360529285161",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-02",
+        "endDate": "2026-11-03",
+        "hours": [],
+        "reason": "",
+        "sourceUrl": "https://x.com/ksgy26/status/2114467460661604859",
         "_isAiImported": true
       }
     ],
