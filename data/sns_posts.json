@@ -23455,5 +23455,25 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "限定メニュー「グッチーズカレー」の提供告知であり、営業時間の変更に関する言及はないため変更なしと判定。"
+  },
+  {
+    "id": "sns_post_routine_nishidai_2114598576194310293",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2114598576194310293",
+    "postedAt": "2026-10-26T06:02:42.000Z",
+    "postText": "こんにちは。 本日、26日、夜の部  FZ味付き煮込み肩ロース ¥3500 FZ味付き煮込み切り落とし ¥600×1 FZ味付き崩れ ¥1000×2  あります。 https://t.co/0BxvqUs09a",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-n-z9FuZzFWYbG9rdhr78y04U3y8KCA76WYiCUewQjmnIrlOOrLJVTHamZ390XogiUZ11Wd5KzHihpzk3vpIL-FU68PHn-RgSkAclsrBuRt-tcd7cHiYdVRchW8zmFa2xWXvgQxOVA4rGOxDWDMPFOg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-1RsGO7znioO6LVpUCSSEqjMWaACEfXYeWh7B-45-FyVo4o6JwuznkfxwwTe4O00413hJQi-6WPG4iGLraUlVmXeu8jBTHqbs14gZm-xVOow5g1l6Ry6w6xPMCeUfML0R_auqCynM-I2iZ-asRqBrEg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-7W0Wgw0oAykBm5xSKkxrkk627zgOhCYxgpD9rQFejX-7gjQig2-xkkdp-tf0HrBqV-Wz0Ifxv8MAfF_8O46nhKuE81n74ZrN7uwPORP9OFqXFGQ_80Pr2nqpQDB6scbtTxy1k8tZwT1LOe3JrMiq4w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-7iHncwTrLg5I4kJtSbEhU4ihRmsqoNyYw4IBayvM_W3dmT_X0AfrVj7mo_ZuIse3N2tX73R5fefi87kTCtdKC-F5jFW8XznFjrAT6Z35pAQo7viqsQPSdKHxJUFfqBrmV-T8exDoz0tMhyAcpewhIw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更や臨時休業に関する告知はありません。"
   }
 ]
