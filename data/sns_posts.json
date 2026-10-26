@@ -23578,5 +23578,35 @@
     "processedAt": "2026-10-26T14:49:45.900Z",
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_ogikubo_2114823278829429054",
+    "shopId": "ogikubo",
+    "shopName": "荻窪店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ogkb_jiro/status/2114823278829429054",
+    "postedAt": "2026-10-26T20:55:35.000Z",
+    "postText": "10月27日（火） 昼11:30〜14:00頃 夜18:00〜21:00頃までです",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知"
+  },
+  {
+    "id": "sns_post_routine_ichinoe_2114819576597012684",
+    "shopId": "ichinoe",
+    "shopName": "環七一之江店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ichinoejiro/status/2114819576597012684",
+    "postedAt": "2026-10-26T20:40:53.000Z",
+    "postText": "2週間続けて火曜日、 臨休しましたが。 本日通常通り営業致します。 10:30〜14:00 17:30〜20:00 ご利用下さい♪ませ",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "本日通常通り営業する旨の告知であり、臨時休業や営業時間変更はありません。"
   }
 ]
