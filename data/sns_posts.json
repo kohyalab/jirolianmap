@@ -23223,5 +23223,27 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "本日通常営業の告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_kyoto_20261026_0_2114563239195685285",
+    "shopId": "kyoto",
+    "shopName": "京都店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kyoto/status/2114563239195685285",
+    "postedAt": "2026-10-26T03:42:17.000Z",
+    "postText": "こんにちは。本日従業員体調不良の為、休業いたします。 立て続けになってしまい申し訳ありません。風邪が流行っている様なので、皆様もお気をつけください🙇‍♂️",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-26",
+      "endDate": "2026-10-26",
+      "hours": [],
+      "reason": "従業員体調不良のため",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 従業員体調不良のため"
   }
 ]
