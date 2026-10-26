@@ -23435,5 +23435,25 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2114593674378256857",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2114593674378256857",
+    "postedAt": "2026-10-26T05:43:13.000Z",
+    "postText": "予定→10/27火〜10/31土まで！  ［グッチーズカレー］ やります！ ※食材がかなり値上がりしております。美味しさを下げたくないので少しだけ値上がりです。 →ヤケクソで材料はチーズ🧀②種類に増やしてやりました！ちょっとだけマイナーチェンジ。 やっぱりコイツはヤバいです笑　オススメしません！ https://t.co/xCvLrB976g",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-IseNpA0dSGZL8luOqvVuzQ5NJ3PMXmm6CWEVx-Csi2nlkZy3YNzZmN3LftKJBnQEUu0CQqaP8BUcGvVZNQEhOBq_BNBynFCfyF2TxDZwZ91zg3w8oRV-_SBXJMuX3y4Rq4hQneTZGzCaM7UB0V-b4A==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-y0Ge_Nok6KiJdkkg1Ogx_E5AejonTpGIFQSUji62zYV914sxuSvqk4bvBS7e0h7H0yb5RUiVFsJM1v-SEKUOHnEAtasmRc7tDVZySNzI8JCII3nE1fasw_Jqq0ffIHzebfOP51JvOPmWN5nHLQAR8A==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-XNQqkUJq2UCi0W-gQi3e59PnMF4Sv7usICWBOZCePTaBz1XdQOr7W1UWIEub5bBSCcsob2pP2gP5-ttLKBeHTC0SNnYH9KBUQaMEXJdF0KNExuYVhrBaFVO8jiWHzm8FCRn4HWk86NfQLSYAWRwgxg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-u-dKQ2bGbrtqxm_UQYGlRI2tBCKimcX7f10-Z_U_R39SY1FOWAazSkHlYF17FGkvquo8iSy8u-aC7LzHdsuaoG2KRGvJywcl9AkVRzbdADi4h19C95d7hN7Lt9kqp08KXel51SMYjlHd80aGVEnkyQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定メニュー「グッチーズカレー」の提供告知であり、営業時間の変更に関する言及はないため変更なしと判定。"
   }
 ]
