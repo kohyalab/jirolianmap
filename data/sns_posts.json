@@ -23517,5 +23517,20 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_kameido_2114620455349031412",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2114620455349031412",
+    "postedAt": "2026-10-26T07:29:38.000Z",
+    "postText": "お世話になってます。今日は雨が降ってだいぶ冷えますね…こういう日は亀戸店だいぶ暇なのでスムーズにご案内できると思います！あと冷えた体を温められるようにタレに生姜と青トウガラシ入れてます！ピリ辛好きな方よろしければどうぞ🌶️",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常投稿のため、営業時間の変更はありません。"
   }
 ]
