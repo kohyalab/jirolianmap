@@ -2,6 +2,83 @@
   "generalRules": [],
   "learnedFeedback": [
     {
+      "id": "sns_post_koshigaya_20261102_1_2114467460661604859",
+      "timestamp": "2026-10-26T14:48:25.371Z",
+      "shopId": "koshigaya",
+      "shopName": "越谷店",
+      "postDate": "2026-10-25T21:21:42.000Z",
+      "postText": "おはようございます！ ラーメン二郎越谷店です！  10月26日(月) 昼11:00〜14:30LО 夜17:00〜20:30LО ご来店お待ちしております🙇  11月1日(日)　テイクアウト 12:00〜14:30頃まで  11月2日(月)〜3日(火) おやすみします。 よろしくお願いします🙇 https://t.co/WsCvWf2ky4",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-11-02",
+        "endDate": "2026-11-03",
+        "hours": [],
+        "reason": ""
+      }
+    },
+    {
+      "id": "sns_post_kyoto_20261026_0_2114563239195685285",
+      "timestamp": "2026-10-26T14:48:03.472Z",
+      "shopId": "kyoto",
+      "shopName": "京都店",
+      "postDate": "2026-10-26T03:42:17.000Z",
+      "postText": "こんにちは。本日従業員体調不良の為、休業いたします。 立て続けになってしまい申し訳ありません。風邪が流行っている様なので、皆様もお気をつけください🙇‍♂️",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業変更検出: 従業員体調不良のため",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-10-26",
+        "endDate": "2026-10-26",
+        "hours": [],
+        "reason": "従業員体調不良のため"
+      }
+    },
+    {
+      "id": "sns_post_sagamiohno_20261101_4_2114584723712602486",
+      "timestamp": "2026-10-26T14:47:55.364Z",
+      "shopId": "sagamiohno",
+      "shopName": "相模大野店",
+      "postDate": "2026-10-26T05:07:39.000Z",
+      "postText": "◆10/26月【定休】 ◇10/27火［昼のみ］ ◇10/28水［昼&夜］ ◇10/29木［昼のみ］ ◇10/30金［夜のみ］  ◇10/31土 ※10〜14時 ※16:30〜20:00 ↑夜の部臨時営業🈺します。  ◆11/1日【休業】  →［お椀で和ッカレー］ →［相撲部屋のしょうがダレ］  よろしくお願い致します。 https://t.co/FhakBkK0f8",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-11-01",
+        "endDate": "2026-11-01",
+        "hours": [],
+        "reason": ""
+      }
+    },
+    {
+      "id": "sns_post_sagamiohno_20261031_3_2114584723712602486",
+      "timestamp": "2026-10-26T14:47:44.595Z",
+      "shopId": "sagamiohno",
+      "shopName": "相模大野店",
+      "postDate": "2026-10-26T05:07:39.000Z",
+      "postText": "◆10/26月【定休】 ◇10/27火［昼のみ］ ◇10/28水［昼&夜］ ◇10/29木［昼のみ］ ◇10/30金［夜のみ］  ◇10/31土 ※10〜14時 ※16:30〜20:00 ↑夜の部臨時営業🈺します。  ◆11/1日【休業】  →［お椀で和ッカレー］ →［相撲部屋のしょうがダレ］  よろしくお願い致します。 https://t.co/FhakBkK0f8",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-10-31",
+        "endDate": "2026-10-31",
+        "hours": [
+          [
+            10,
+            14
+          ],
+          [
+            16.5,
+            20
+          ]
+        ],
+        "reason": ""
+      }
+    },
+    {
       "id": "sns_post_kannai_20261027_0_2114346309654376913",
       "timestamp": "2026-10-25T15:18:36.657Z",
       "shopId": "kannai",
@@ -921,79 +998,6 @@
             21
           ]
         ],
-        "reason": ""
-      }
-    },
-    {
-      "id": "sns_post_sapporo_20261014_2_2107998200531677675",
-      "timestamp": "2026-10-08T21:42:08.643Z",
-      "shopId": "sapporo",
-      "shopName": "札幌店",
-      "postDate": "2026-10-08T00:55:10.000Z",
-      "postText": "8日(木)通常営業です🍜  12:30〜14:00     17:00〜18:30  「塩汁なし(醤油ベース)」(ブラックペッパーバージョン) 対応します。 ⚫︎🧂プラス現金１００円  12日(月)[スポーツの日] 10:30〜14:30 (昼営業のみ、材料切れ次第終了。)  14日(水)昼営業のみ、夜休業。  宜しくお願い致します🍜 https://t.co/3SP3uHj2mF",
-      "aiStatus": "schedule_change",
-      "aiReason": "営業時間の変更を検出",
-      "humanAction": "applied",
-      "finalDetails": {
-        "startDate": "2026-10-14",
-        "endDate": "2026-10-14",
-        "hours": [
-          [
-            11,
-            14
-          ]
-        ],
-        "reason": ""
-      }
-    },
-    {
-      "id": "sns_post_routine_yaen2_2107613134794219653",
-      "timestamp": "2026-10-07T12:38:45.870Z",
-      "shopId": "yaen2",
-      "shopName": "八王子野猿街道店2",
-      "postDate": "2026-10-06T23:25:03.000Z",
-      "postText": "10月7日(水) 11:00～15:00 17:30～21:00 ⭐テイクアウト、鍋二郎あります 並ばず買えます ⚠️駐車場待ち出来ません ⚠️駐車場満車時コインパーキングに ⚠️店舗近隣タバコ禁止です  🌟きまぐれたまご うめ https://t.co/0pnV4R99E6",
-      "aiStatus": "no_change",
-      "aiReason": "通常営業時間の案内であり、変更はありません。",
-      "humanAction": "applied",
-      "finalDetails": {
-        "startDate": "2026-10-06",
-        "endDate": "2026-10-06",
-        "hours": [],
-        "reason": "通常営業時間の案内であり、変更はありません。"
-      }
-    },
-    {
-      "id": "sns_post_ogikubo_20261012_0_2107389044669976904",
-      "timestamp": "2026-10-06T12:56:30.002Z",
-      "shopId": "ogikubo",
-      "shopName": "荻窪店",
-      "postDate": "2026-10-06T08:34:36.000Z",
-      "postText": "10月12日（月祝）は休業します",
-      "aiStatus": "schedule_change",
-      "aiReason": "営業時間の変更を検出",
-      "humanAction": "applied",
-      "finalDetails": {
-        "startDate": "2026-10-12",
-        "endDate": "2026-10-12",
-        "hours": [],
-        "reason": ""
-      }
-    },
-    {
-      "id": "sns_post_maebashichiyoda_20261006_0_2107244127163490395",
-      "timestamp": "2026-10-05T23:17:07.195Z",
-      "shopId": "maebashichiyoda",
-      "shopName": "前橋千代田町店",
-      "postDate": "2026-10-05T22:58:45.000Z",
-      "postText": "ラーメン二郎前橋千代田町店です。 10/6火曜日お休みします。 すみません。 宜しくお願い致します。 https://t.co/OwMHsLAD1p",
-      "aiStatus": "schedule_change",
-      "aiReason": "営業時間の変更を検出",
-      "humanAction": "applied",
-      "finalDetails": {
-        "startDate": "2026-10-06",
-        "endDate": "2026-10-06",
-        "hours": [],
         "reason": ""
       }
     }
