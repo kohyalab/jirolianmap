@@ -24344,5 +24344,37 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_senjuohashi_2115213450708410466",
+    "shopId": "senjuohashi",
+    "shopName": "千住大橋駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjujirou26/status/2115213450708410466",
+    "postedAt": "2026-10-27T22:46:00.000Z",
+    "postText": "ラー油あります！  ※営業時間10時30分〜 15時30分ラストオーダー！ https://t.co/X5q12Dmkuv",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-gVnnlV1eKXMO2YtU0tPL2I0UFQ0n9nHTCAs5NOLGZttwPa1AUV5fxEx9ddyDglWc2ZX9eNTttgoNojGCGZ-5bOeNbk_pk4CbfHtudshFKRpOaBQYdgJ1Jm-DAMcpokeP2bFMIMXocpL4AkZbhQBtCQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業時間の告知であり、臨時休業や時間変更はありません。"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2115215405681951185",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2115215405681951185",
+    "postedAt": "2026-10-27T22:53:46.000Z",
+    "postText": "激辛もやります！ 多分ちゃんと辛いです！  1倍  100円 2倍 200円 3倍 300円です！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
