@@ -24267,5 +24267,82 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2115204843866591403",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2115204843866591403",
+    "postedAt": "2026-10-27T22:11:48.000Z",
+    "postText": "本日 ◇10/28水 【昼】 →こちらをご覧のお客様限定です！ ↓ ※お客様ご自身で→丸の🟥赤又は白🤍食券を１枚お取りになって席までお越しください。→食券は券売機の前の台の二段目に置いておきます。 ※必ず着席時にお出しください。 ※サービス中の目印は［黄色いハンカチ］ どうぞご利用下さい♪ https://t.co/qOf4SH6MJC https://t.co/zcLaeZG4TM",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-nJzVBgMnx6Bp8wZ2GZb-l_4oRm6EaXEwsaG3lJrIAY7c3coAbupwBDGqXnOgE-cKyPkyn6zhveWjb6N2gLsebJ8hld2gP504sHjBmpvuDj5ncBWVPmLE83hUPq1gw9NTeE2ivaUAkszVAH3o3yk8SA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Kroc7Omu99Guk7RjveWhIFsrCKdeEcDMrJO-NiVpwsmM0pzfyxdu3EBNN4aiVSfQshzTk9ARz37lwiYKwBGz9pcRsx95PPcwySPEiE5j5h0TPE8VgqmnL26ve9H6H5r9oIRHd6aLbXE05uY669XY1g==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-3rmL545RG6AQiaC-BgkpIFAkL4uXnZka_n18PopwFoPEajXlZ-vC-OKPPGKAKTfBuA7rCW-qpZgY62xtAuviuVQE5mWFbLhAXrL2LgGa6-7PTi9WGTdKBcD0ZkGRYDAisLtN9wynKfiK75qUn1xmpg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-AUF4hnWCD7DEi9lFFFhugkcxG8XtLtzwQuSmzI0nZyVcRJmGgMWc4Vy2TK7BRUF6C99bKXpvur7r_1uRWc-7CDxWPx83jhCj7UU-hhd93cnB0ndoCdbLT0mPeBnAI-9RgeIOcN70pgLBP7MKu9waJg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更はなく、限定トッピングの案内のみ。"
+  },
+  {
+    "id": "sns_post_routine_shndaita_2115207003513733352",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2115207003513733352",
+    "postedAt": "2026-10-27T22:20:22.000Z",
+    "postText": "バイト募集します！  時給1300円 くらい(慣れたらすこし増えます) 7時〜17時くらい(応相談) 週2〜4回くらい（25〜45歳くらい） まかないあります 近所のひと希望 日払いです ※インスパの出店をしようとしているひとは不可です   希望の方は 年齢、最寄り駅、飲食業経験を書いてDMしてください！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "アルバイト募集の告知であり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2115206915760513410",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2115206915760513410",
+    "postedAt": "2026-10-27T22:20:02.000Z",
+    "postText": "煮切り鬼ごろ塩ラーメン(+200円)もやります！ アルコールを飛ばした日本酒の塩ダレです！  麺の量と一緒に おさけでって言ってください！ ラーメンのひとはしょうゆでって言ってくれるとわかりやすいです！  麺の量を聞かれた時に じぶんから言ってください！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_shndaita_20261028_0_2115206058549608548",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2115206058549608548",
+    "postedAt": "2026-10-27T22:16:37.000Z",
+    "postText": "2026年10月28日(水)  ⚠️短縮営業です！⚠️ 11:00～15:00くらいです！  よろしくお願いします！  ※住宅地なのでおしゃべりしないで待っててください",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-28",
+      "endDate": "2026-10-28",
+      "hours": [
+        [
+          11,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
