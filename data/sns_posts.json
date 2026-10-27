@@ -24114,5 +24114,23 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2115004118146412557",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2115004118146412557",
+    "postedAt": "2026-10-27T08:54:11.000Z",
+    "postText": "《変更》 【グッチーズカレー】 〜11/7土曜日までやります！ https://t.co/fY5d07ACRg https://t.co/Egt0THywRs",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne--q_-Zi9nKdELtsCA92N3sUYmJB-E1bDMDyMS2FYsM17k1zaXja5XxhAeKxh2bRWJL2Mbbe19Q4jOUE221O1b2rWznp7-vIUrXyL98GrqZV7hXsBTmkYlJreGgzRGyrexc7lDdH_dcI3rE1-TvLCXrA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Sc7zIQhdmaZ-FefXdO_SQx_Z07CkSEmoEAfP8lMZRv9Wl1Idbt1xWgQCdFGyuC2u2t8TDIpPb7IbHJjcD-IWZWJTMgf02radRLkzjpvPqvu26G9wraDnJkJABefC3coE_96amEapHHtjFs09IC4BVw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定メニュー「グッチーズカレー」の提供期間延長に関する告知であり、営業時間の変更や臨時休業の告知ではないため変更なし。"
   }
 ]
