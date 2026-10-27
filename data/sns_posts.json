@@ -24199,5 +24199,73 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業時間の変更に関する言及はなく、限定メニューの告知のみです。"
+  },
+  {
+    "id": "sns_post_routine_ogikubo_2115187746792997080",
+    "shopId": "ogikubo",
+    "shopName": "荻窪店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ogkb_jiro/status/2115187746792997080",
+    "postedAt": "2026-10-27T21:03:51.000Z",
+    "postText": "10月28日（水） 昼11:30〜14:00頃 夜18:00〜21:00頃までです",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内"
+  },
+  {
+    "id": "sns_post_koshigaya_20261101_0_2115194065935548515",
+    "shopId": "koshigaya",
+    "shopName": "越谷店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ksgy26/status/2115194065935548515",
+    "postedAt": "2026-10-27T21:28:58.000Z",
+    "postText": "おはようございます！ ラーメン二郎越谷店です！  10月28日(水) 昼11:00〜14:30LО 夜17:00〜20:30LО ご来店お待ちしております🙇  11月1日(日)　テイクアウト 12:00〜14:30頃まで  11月2日(月)〜3日(火祝) おやすみします。 よろしくお願いします🙇 https://t.co/WfKEbHyCwG",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-g4g3H6fauIdiuWbCnmO914cj2WKtNnS0VYxx0PE_L-AZV8QWzv3w1OuBDMLZCIw59tMWb4vJTSbkI8U45ptCPPcb_keRSKtPOnbWABFukA6e2vDPGFgSnUOgpcjY_t_58wGxl1dyg4zU5tLhenfvJg=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-11-01",
+      "endDate": "2026-11-01",
+      "hours": [
+        [
+          12,
+          14.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_koshigaya_20261102_1_2115194065935548515",
+    "shopId": "koshigaya",
+    "shopName": "越谷店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ksgy26/status/2115194065935548515",
+    "postedAt": "2026-10-27T21:28:58.000Z",
+    "postText": "おはようございます！ ラーメン二郎越谷店です！  10月28日(水) 昼11:00〜14:30LО 夜17:00〜20:30LО ご来店お待ちしております🙇  11月1日(日)　テイクアウト 12:00〜14:30頃まで  11月2日(月)〜3日(火祝) おやすみします。 よろしくお願いします🙇 https://t.co/WfKEbHyCwG",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-g4g3H6fauIdiuWbCnmO914cj2WKtNnS0VYxx0PE_L-AZV8QWzv3w1OuBDMLZCIw59tMWb4vJTSbkI8U45ptCPPcb_keRSKtPOnbWABFukA6e2vDPGFgSnUOgpcjY_t_58wGxl1dyg4zU5tLhenfvJg=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-02",
+      "endDate": "2026-11-03",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
