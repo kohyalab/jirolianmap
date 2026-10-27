@@ -23976,5 +23976,38 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_sengawa_2114953519484875092",
+    "shopId": "sengawa",
+    "shopName": "仙川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjiro26/status/2114953519484875092",
+    "postedAt": "2026-10-27T05:33:07.000Z",
+    "postText": "本日17時から店内営業とテイクアウト販売します。 https://t.co/gU2pEzT5yJ",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-AmOfRa4i46un9R_vGt-74RlM4CT8fu3Ul7xGkmIFlx-59bm85wkl1zS7GCJQkoxAJOP2HzPi-2IoraVpsO5hpUmGvSIjbhIDd1Wrpnuyy2WioxkjrgCRLHoxwv0Gsq9qT8oSYicIA_W71fCy6HaUDw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-4KkwBCYQiLXqkbajWld9LoBOfOEBEDQdHqeQ7WV4RAfCvM7sqtEaU1foLGniTtDoQDpm8YpNC8YW6vrPmN4QxAP-1dInMtj9uymeuHLPPOHnv2rRcsDkPTQwk3cpjsTkwrZGJ0JehuKIwOprI8ImVg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知および両替に関する案内であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_nishidai_2114959057274691835",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2114959057274691835",
+    "postedAt": "2026-10-27T05:55:07.000Z",
+    "postText": "こんにちは。 本日、27日、夜の部  FZ味付き煮込み切り落とし ¥800×1 FZ味付き煮込み崩れ ¥1000×1、¥800×1 FZ味付き豚トロ炙りの素 ¥600×1  あります。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常の販売告知であり、営業時間の変更に関する言及はないため変更なし。"
   }
 ]
