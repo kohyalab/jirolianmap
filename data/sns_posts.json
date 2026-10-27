@@ -24376,5 +24376,22 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2115224332507263156",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2115224332507263156",
+    "postedAt": "2026-10-27T23:29:14.000Z",
+    "postText": "【販売価格改定のお願い】  よろしくお願い致します。 https://t.co/aoeqqXJyC2",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-vOoRC3ZRdN2vhf14gSQXpSEAGcAh65OwBAovDYxNaY-kcLN7i8XE-uxg0cuTx0RF6plHrd9i-n1IhG8olRMrmVMEhtgM_ooDCJzp61kYLiTny-tYXI5z1bE-GQVIZTyofw58M-GOWbRw135ekIJPTg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "販売価格改定のお知らせであり、営業時間の変更ではないため変更なし。"
   }
 ]
