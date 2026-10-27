@@ -2,6 +2,84 @@
   "generalRules": [],
   "learnedFeedback": [
     {
+      "id": "sns_post_routine_sengawa_2114953519484875092",
+      "timestamp": "2026-10-27T13:48:23.457Z",
+      "shopId": "sengawa",
+      "shopName": "仙川店",
+      "postDate": "2026-10-27T05:33:07.000Z",
+      "postText": "本日17時から店内営業とテイクアウト販売します。 https://t.co/gU2pEzT5yJ",
+      "aiStatus": "no_change",
+      "aiReason": "通常営業の告知および両替に関する案内であり、営業時間の変更はありません。",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-11-03",
+        "endDate": "2026-11-03",
+        "hours": [
+          [
+            17,
+            21
+          ]
+        ],
+        "reason": ""
+      }
+    },
+    {
+      "id": "sns_post_ogikubo_20261102_0_2114873814572228920",
+      "timestamp": "2026-10-27T13:45:39.459Z",
+      "shopId": "ogikubo",
+      "shopName": "荻窪店",
+      "postDate": "2026-10-27T00:16:24.000Z",
+      "postText": "11月2日（月）は休業します",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-11-02",
+        "endDate": "2026-11-02",
+        "hours": [],
+        "reason": ""
+      }
+    },
+    {
+      "id": "sns_post_omiyakoenekimae_20261027_0_2114897637044580489",
+      "timestamp": "2026-10-27T13:45:23.693Z",
+      "shopId": "omiyakoenekimae",
+      "shopName": "大宮公園駅前店",
+      "postDate": "2026-10-27T01:51:04.000Z",
+      "postText": "おはようございます。  本日10/27火曜日  【臨時休業】  急で申し訳ないです。 宜しくお願い致します。",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-10-27",
+        "endDate": "2026-10-27",
+        "hours": [],
+        "reason": ""
+      }
+    },
+    {
+      "id": "sns_post_sapporo_20261028_0_2114969563247087926",
+      "timestamp": "2026-10-27T13:45:14.100Z",
+      "shopId": "sapporo",
+      "shopName": "札幌店",
+      "postDate": "2026-10-27T06:36:52.000Z",
+      "postText": "27日(火)夜の部、券売機 「ジロリアン陸」 ボタン¥150で「食べる辛カリカリほぐし豚ラー油」 あります。 「ざく切り白髪ねぎ」と相性バッチリ👌  又、明日28日(水)は終日休業予定でしたが、 明日28日(水)昼の部通常営業 夜お休みとします。  明日☃️予報ですが、季節外れの https://t.co/VXMwgk8QZZ",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-10-28",
+        "endDate": "2026-10-28",
+        "hours": [
+          [
+            11,
+            14
+          ]
+        ],
+        "reason": ""
+      }
+    },
+    {
       "id": "sns_post_koshigaya_20261102_1_2114467460661604859",
       "timestamp": "2026-10-26T14:48:25.371Z",
       "shopId": "koshigaya",
@@ -922,83 +1000,6 @@
         "endDate": "2026-10-17",
         "hours": [],
         "reason": "所用のため"
-      }
-    },
-    {
-      "id": "sns_post_nishidai_20261103_1_2108681769788801247",
-      "timestamp": "2026-10-09T23:58:39.612Z",
-      "shopId": "nishidai",
-      "shopName": "西台駅前店",
-      "postDate": "2026-10-09T22:11:25.000Z",
-      "postText": "おはようございます。 本日、10日(土)の営業は都合により 9:15〜12:30と短くなっております。 お気をつけ下さい。  また肩ロース・4本(ハーフ) 用意しています。 連休のお供にいかが？  ¥2200、¥2000、¥1700、¥1500  皆様のご来店をお待ちしております。 https://t.co/v6fpEG27my",
-      "aiStatus": "schedule_change",
-      "aiReason": "営業時間の変更を検出",
-      "humanAction": "applied",
-      "finalDetails": {
-        "startDate": "2026-11-03",
-        "endDate": "2026-11-03",
-        "hours": [],
-        "reason": ""
-      }
-    },
-    {
-      "id": "sns_post_ikebukuro_20261009_0_2108523276037407086",
-      "timestamp": "2026-10-09T12:38:05.995Z",
-      "shopId": "ikebukuro",
-      "shopName": "池袋東口店",
-      "postDate": "2026-10-09T11:41:38.000Z",
-      "postText": "池袋店です。  10月9日(金) 本日従業員体調不良の為お休みとさせて頂きます。  ご予定されてた方々ご迷惑お掛けしますが宜しくお願い致します。",
-      "aiStatus": "schedule_change",
-      "aiReason": "営業変更検出: 従業員体調不良のため",
-      "humanAction": "applied",
-      "finalDetails": {
-        "startDate": "2026-10-09",
-        "endDate": "2026-10-09",
-        "hours": [],
-        "reason": "従業員体調不良のため"
-      }
-    },
-    {
-      "id": "sns_post_senjuohashi_20261009_0_2108309632875991062",
-      "timestamp": "2026-10-08T22:50:40.367Z",
-      "shopId": "senjuohashi",
-      "shopName": "千住大橋駅前店",
-      "postDate": "2026-10-08T21:32:41.000Z",
-      "postText": "おはようございます。 本日体調不良の為休業いたします。 早朝から申し訳御座いませんがご注意をお願いいたします。",
-      "aiStatus": "schedule_change",
-      "aiReason": "営業変更検出: 体調不良のため",
-      "humanAction": "applied",
-      "finalDetails": {
-        "startDate": "2026-10-09",
-        "endDate": "2026-10-09",
-        "hours": [],
-        "reason": "体調不良のため"
-      }
-    },
-    {
-      "id": "sns_post_hibarigaoka_20261010_0_2108321271083917451",
-      "timestamp": "2026-10-08T22:50:32.945Z",
-      "shopId": "hibarigaoka",
-      "shopName": "ひばりヶ丘駅前店",
-      "postDate": "2026-10-08T22:18:56.000Z",
-      "postText": "三連休の営業案内  10月10日(土)　 11時〜17時　＆（非乳化特別営業：19時半〜21時）  10月11日(日) 定休日　  10月12日(月・祝) 通常営業（昼＆夜）  ラーメン二郎仙川店@senjiro26がデザインした、当店のTシャツ。ボツになりました‥ https://t.co/OPrGp2zEUL",
-      "aiStatus": "schedule_change",
-      "aiReason": "営業時間の変更を検出",
-      "humanAction": "applied",
-      "finalDetails": {
-        "startDate": "2026-10-10",
-        "endDate": "2026-10-10",
-        "hours": [
-          [
-            11,
-            17
-          ],
-          [
-            19.5,
-            21
-          ]
-        ],
-        "reason": ""
       }
     }
   ]
