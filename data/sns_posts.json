@@ -24087,5 +24087,32 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の告知および限定メニューの案内であり、営業時間の変更はない。"
+  },
+  {
+    "id": "sns_post_jimbocho_20261027_0_2114990563057631730",
+    "shopId": "jimbocho",
+    "shopName": "神田神保町店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jbc_ramen_jiro/status/2114990563057631730",
+    "postedAt": "2026-10-27T08:00:19.000Z",
+    "postText": "ただ今お並びのお客様までで、本日の営業終了となります。よろしくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-27",
+      "endDate": "2026-10-27",
+      "hours": [
+        [
+          11,
+          17
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
