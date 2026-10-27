@@ -24009,5 +24009,51 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "日常の販売告知であり、営業時間の変更に関する言及はないため変更なし。"
+  },
+  {
+    "id": "sns_post_routine_kameido_2114972578804879588",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2114972578804879588",
+    "postedAt": "2026-10-27T06:48:51.000Z",
+    "postText": "お世話になってます。今日は八百屋さんでニラが安かったので今日のタレはニラ入りです！肉カス、タマネギ、青トウガラシ、生姜も入ってます！希望の方は人気か入れますか？の時にタレとお伝えください。カラメとの併用はできません。よろしくお願いします🙇‍♂️ https://t.co/dwkSEQ7TS4",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-TRE80Qmz7BYXwIXSek66Z16cJl8sY6TrxV-uqcgP5IzEXQrHONQT-fZ7NHjvlRppB1d6z65NYsmofdC68GiBHNqebsc5XvRkoAEZ4WEsZlwXFvaJgsG8onj2hgfIyivwVpMSZkCMpb_FBIjjnKvlOA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピング（ニラ入りタレ）の告知であり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_sapporo_20261028_0_2114969563247087926",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2114969563247087926",
+    "postedAt": "2026-10-27T06:36:52.000Z",
+    "postText": "27日(火)夜の部、券売機 「ジロリアン陸」 ボタン¥150で「食べる辛カリカリほぐし豚ラー油」 あります。 「ざく切り白髪ねぎ」と相性バッチリ👌  又、明日28日(水)は終日休業予定でしたが、 明日28日(水)昼の部通常営業 夜お休みとします。  明日☃️予報ですが、季節外れの https://t.co/VXMwgk8QZZ",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-6Wo2n58mIeUkl4JRgyPtGojs-IGfE9MofsOVi5MuJySupKMh0DPt0R0xYHrOrqDkOcOqQ_WxX7iGyq_A7k6adHPFV3JR9hXIGjsNongQo40qzeMKPgFg4Dr-ekfvjOPBJYbeWIKZriCXc7qnUK4-fA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-28",
+      "endDate": "2026-10-28",
+      "hours": [
+        [
+          11,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
