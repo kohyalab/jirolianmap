@@ -24132,5 +24132,23 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "限定メニュー「グッチーズカレー」の提供期間延長に関する告知であり、営業時間の変更や臨時休業の告知ではないため変更なし。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2115006072058683445",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2115006072058683445",
+    "postedAt": "2026-10-27T09:01:57.000Z",
+    "postText": "明日 ◇10/28水 【昼の部】 10:20から〜14:00 【夜の部】 17:00から〜20:30  →［グッチーズカレー］ →［お椀で和ッカレー］ →［相撲部屋のしょうがダレ］  やっております！  どうぞー♪ https://t.co/NncUE7gduf",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-VVLHXWBdr0Et1MNNiG1mqUErmlgsqw6s9D1pzlrLtpP972CyaNSB3GHRwmjaRFV758K4TuLD40DD3W8_PbtKW6iuWr_EFkm0xh58yBoGxgDc4gEmXerUiaNhLPq-i7ZQOpxBvY81FlQ85KE1TrN26A==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-JrYoJocAmzgzvzaTs1FQuMFNiAwrk3KPbW5kGuh85deSD1l8kwDbUGCKNUCgDhCjc0ca0HXhQvjs0ETUzWJwz7Il0eW5ntllGz62Hsm05JZ3d5xkOuQX8kw6pumokTMJ7TKJUd6ajXvD58vpl7ljKw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "10/28(水)の営業案内ですが、通常営業時間と同一のため変更なしと判定します。"
   }
 ]
