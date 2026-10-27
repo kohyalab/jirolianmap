@@ -23873,5 +23873,27 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_omiyakoenekimae_20261027_0_2114897637044580489",
+    "shopId": "omiyakoenekimae",
+    "shopName": "大宮公園駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/omiyapark26/status/2114897637044580489",
+    "postedAt": "2026-10-27T01:51:04.000Z",
+    "postText": "おはようございます。  本日10/27火曜日  【臨時休業】  急で申し訳ないです。 宜しくお願い致します。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-27",
+      "endDate": "2026-10-27",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
