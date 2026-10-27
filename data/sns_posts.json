@@ -23698,5 +23698,54 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業時間の再確認および日常的な告知のため、営業スケジュールの変更はありません。"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261027_0_2114868667657891987",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2114868667657891987",
+    "postedAt": "2026-10-26T23:55:57.000Z",
+    "postText": "本日もやります！  ◇10/27木 【昼の部のみ営業】 【テイクアウト割り🈹】  →こちらをご覧のお客様限定→ご申告制🈸［テイクアウト割🈹］やっております！食券にて。  着席時に『テイクアウト割りお願いします。』と従業員にお申し付けください。各サービス🈂️致します！ ※店内お食事の方のみです。 https://t.co/BjrwlfuFbZ https://t.co/Egt0THywRs",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-MBWZ58_Uqv9uItYgXWGJ88Zl8SmKnK8Ok3ebJp1FRuA2HQIAxOLQsywu0JVxD5lzVOlAS2VyY8J_lXZqjdFECSGRfXqQRMoT6R8C6FU-2ZnmZEoAebxdRWYEUFJcnvdzobJxK6QdMLBb0bvopxFvHg=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-27",
+      "endDate": "2026-10-27",
+      "hours": [
+        [
+          10.333333333333334,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2114868204367724749",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2114868204367724749",
+    "postedAt": "2026-10-26T23:54:06.000Z",
+    "postText": "本日 ◇10/27火 【昼】 →こちらをご覧のお客様限定です！ ↓ ※お客様ご自身で→丸の🟥赤又は白🤍食券を１枚お取りになって席までお越しください。→食券は券売機の前の台の二段目に置いておきます。 ※必ず着席時にお出しください。 ※サービス中の目印は［黄色いハンカチ］ どうぞご利用下さい♪ https://t.co/maCsTUNwTO https://t.co/Egt0THywRs",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-OH4onxStyG0N8TCctzTTUETn1W0WFVkgP_gvgerd-baxFwK_HQrqoPTyv9NUwlY4lRwcANWQ_s6TV6ks7AaNgQA_baosbfNnUvYcy6sxAMyT8I8MObNeBVGhED0F6bVaXqc-YWUQ0d4Rx7IrO9Jffw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-_zvSY2wlPlG8Qftmw9BIYJqC85MugmVVg_aijRhY6z1WJTFKQcWskMMkdgdcu55djYC1UOzKFxMRxgrcpm7xYbDn5bgn2j_jQzmBtImWk86xf7kD4tyVSQjqlhjUBtoGiAPqVC1LrYxKbLM9oyvS2A==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-UPujnTu1lIwRtWbvMXZoiR7-vY6OODPDboSrqpeCpaKe05OTG_b4trlMto7wDQSCFIUAT85AX88y-cxwfE1MGtCxeq-MYymZhXrlgTjEYXtIFRD31Xp8wpL-XeRjx1EVdRmUChNV5_Pg19ibjrrtqQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-AABJVoNfsS2q8HRzyK7W5vEIM4FBLSanCypX2r-MILAcY_YP150JIz8eu7HF6V45VQrA3qoyK1htPHswBPpcqz3yPLrvS38qWrcwHbKht0aUWu2eelL5pPOhwPS3MMxpcExIbXxQ0PEBqotAzphYdA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更はなく、限定トッピングの告知のみです。"
   }
 ]
