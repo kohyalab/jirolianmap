@@ -289,6 +289,19 @@
         "startDate": "2026-08-10",
         "endDate": "2026-08-10",
         "hours": []
+      },
+      {
+        "startDate": "2026-11-03",
+        "endDate": "2026-11-03",
+        "hours": [
+          [
+            17,
+            21
+          ]
+        ],
+        "reason": "",
+        "sourceUrl": "https://x.com/senjiro26/status/2114953519484875092",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -1711,6 +1724,14 @@
         "hours": [],
         "reason": "",
         "sourceUrl": "https://x.com/ogkb_jiro/status/2107389044669976904",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-02",
+        "endDate": "2026-11-02",
+        "hours": [],
+        "reason": "",
+        "sourceUrl": "https://x.com/ogkb_jiro/status/2114873814572228920",
         "_isAiImported": true
       }
     ],
@@ -3985,7 +4006,6 @@
             14
           ]
         ],
-        "reason": "",
         "sourceUrl": "https://x.com/jiro_sapporo_/status/2111976919722070358",
         "_isAiImported": true
       },
@@ -4011,7 +4031,6 @@
             14
           ]
         ],
-        "reason": "",
         "sourceUrl": "https://x.com/jiro_sapporo_/status/2111976919722070358",
         "_isAiImported": true
       },
@@ -4024,16 +4043,19 @@
             20.5
           ]
         ],
-        "reason": "",
         "sourceUrl": "https://x.com/jiro_sapporo_/status/2114258100039606546",
         "_isAiImported": true
       },
       {
         "startDate": "2026-10-28",
         "endDate": "2026-10-28",
-        "hours": [],
-        "reason": "",
-        "sourceUrl": "https://x.com/jiro_sapporo_/status/2111976919722070358",
+        "hours": [
+          [
+            11,
+            14
+          ]
+        ],
+        "sourceUrl": "https://x.com/jiro_sapporo_/status/2114969563247087926",
         "_isAiImported": true
       }
     ],
@@ -6017,6 +6039,14 @@
         "startDate": "2026-08-31",
         "endDate": "2026-08-31",
         "hours": []
+      },
+      {
+        "startDate": "2026-10-27",
+        "endDate": "2026-10-27",
+        "hours": [],
+        "reason": "",
+        "sourceUrl": "https://x.com/omiyapark26/status/2114897637044580489",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
