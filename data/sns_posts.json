@@ -23915,5 +23915,35 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業時間の変更に関する言及がない日常投稿のため、変更なしと判定しました。"
+  },
+  {
+    "id": "sns_post_routine_koiwa_2114920465110343828",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2114920465110343828",
+    "postedAt": "2026-10-27T03:21:46.000Z",
+    "postText": "現在外並び3名",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "現在外並び3名という日常的な営業状況の報告であり、臨時休業や営業時間変更の告知ではないため変更なし。"
+  },
+  {
+    "id": "sns_post_daily_tachikawa_2114916376905416756",
+    "shopId": "tachikawa",
+    "shopName": "立川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jirotachikawa/status/2114916376905416756",
+    "postedAt": "2026-10-27T03:05:32.000Z",
+    "postText": "汁なしのフラオニと魚粉は、限定①・② どちらかが加わると入らなくなります。 https://t.co/EIyulVqEPy",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
