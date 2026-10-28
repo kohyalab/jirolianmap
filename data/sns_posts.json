@@ -24699,5 +24699,40 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業情報の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2115327013624201728",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2115327013624201728",
+    "postedAt": "2026-10-28T06:17:15.000Z",
+    "postText": "この後 ◇10/28水 【夜】 →こちらをご覧のお客様限定です！ ↓ ※お客様ご自身で→丸の🟥赤又は白🤍食券を１枚お取りになって席までお越しください。→食券は券売機の前の台の二段目に置いておきます。 ※必ず着席時にお出しください。 ※サービス中の目印は［黄色いハンカチ］ どうぞご利用下さい♪ https://t.co/Lq1UKlsbbl https://t.co/zcLaeZG4TM",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-OGoZqJybfZpfpgqXu7U69DzDMGFZ8odisA-ZWIkgJZS5T3M9_BGsaisoMa5O62uuz2sXiUI_aCqN_6eQmVCNth3l8xysaD4AeUOXGzanj625wkhiJXa65Ujp0XMfXHx4Mv7UvzGVBAxUBt8TSAY0Bg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-LQxLxcVF_nsAC7tpVVaP5fO5JCcqLvfA-o6hMA8lIX90LZVRnlQFKetXmybJzyc8PPT6DKRMszFv3lekLrvv0c5GFMk0ktUIxweKjIAFavswXK_kcPapDfewNctXqfScPmzoXGKbLZsDdH1Xic4pVw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-S6QIWxZ6vahHmB01mzY81JzTNJGpmopalfQ1y3XY1vNuby5pphkMDiBAtyM6Vt0gQ0SBXpNFodR7My1l30m_XwKYh-cpJ2K5qDuTud5ARGXO2yhb7VGlv9HfJ1h3YUyR9CYWBqCVoal0OnRPG955nQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-qJN8mpUc9xEzZXmhvA9chjJtLEbGXMjriM5JjeeGTX-NLN9U0ClM8QiDFw-qyv2DniLuDOd4xh4BoL7Pw0UexSqLIPQXOUd0cikKgEr9qedqB5Ph0agcV5dvmgDfEoc84cfMRkCKNCYRCOLs_IDZAg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報の変更はなく、限定トッピングの販売告知のみです。"
+  },
+  {
+    "id": "sns_post_routine_koshigaya_2115324314035826883",
+    "shopId": "koshigaya",
+    "shopName": "越谷店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ksgy26/status/2115324314035826883",
+    "postedAt": "2026-10-28T06:06:31.000Z",
+    "postText": "毎度ありがとうございます！ ラーメン二郎越谷店です！  本日夜の部限定「塩つけ麺」やります！ ご来店お待ちしております🙇 https://t.co/aA06GTonzC",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定メニューの告知のみであり、営業時間の変更はありません。"
   }
 ]
