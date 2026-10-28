@@ -24245,30 +24245,6 @@
     "aiReason": "営業時間の変更を検出"
   },
   {
-    "id": "sns_post_koshigaya_20261102_1_2115194065935548515",
-    "shopId": "koshigaya",
-    "shopName": "越谷店",
-    "postSource": "x",
-    "postUrl": "https://x.com/ksgy26/status/2115194065935548515",
-    "postedAt": "2026-10-27T21:28:58.000Z",
-    "postText": "おはようございます！ ラーメン二郎越谷店です！  10月28日(水) 昼11:00〜14:30LО 夜17:00〜20:30LО ご来店お待ちしております🙇  11月1日(日)　テイクアウト 12:00〜14:30頃まで  11月2日(月)〜3日(火祝) おやすみします。 よろしくお願いします🙇 https://t.co/WfKEbHyCwG",
-    "mediaUrls": [
-      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-g4g3H6fauIdiuWbCnmO914cj2WKtNnS0VYxx0PE_L-AZV8QWzv3w1OuBDMLZCIw59tMWb4vJTSbkI8U45ptCPPcb_keRSKtPOnbWABFukA6e2vDPGFgSnUOgpcjY_t_58wGxl1dyg4zU5tLhenfvJg=="
-    ],
-    "detectedChange": {
-      "type": "temporary_closure",
-      "startDate": "2026-11-02",
-      "endDate": "2026-11-03",
-      "hours": [],
-      "reason": "",
-      "confidence": 1
-    },
-    "processed": false,
-    "processedAt": null,
-    "aiStatus": "schedule_change",
-    "aiReason": "営業時間の変更を検出"
-  },
-  {
     "id": "sns_post_routine_sagamiohno_2115204843866591403",
     "shopId": "sagamiohno",
     "shopName": "相模大野店",
@@ -24980,5 +24956,58 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の告知"
+  },
+  {
+    "id": "sns_post_koshigaya_20261101_0_2115557773996106206",
+    "shopId": "koshigaya",
+    "shopName": "越谷店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ksgy26/status/2115557773996106206",
+    "postedAt": "2026-10-28T21:34:13.000Z",
+    "postText": "おはようございます！ ラーメン二郎越谷店です！  10月29日(木) 昼11:00〜14:30LО 夜17:00〜20:30LО ご来店お待ちしております🙇  11月1日(日)　テイクアウト 12:00〜14:30頃まで  11月2日(月)〜3日(火祝) おやすみします。 よろしくお願いします🙇 https://t.co/WfKEbHyCwG",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-g4g3H6fauIdiuWbCnmO914cj2WKtNnS0VYxx0PE_L-AZV8QWzv3w1OuBDMLZCIw59tMWb4vJTSbkI8U45ptCPPcb_keRSKtPOnbWABFukA6e2vDPGFgSnUOgpcjY_t_58wGxl1dyg4zU5tLhenfvJg=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-01",
+      "endDate": "2026-11-01",
+      "hours": [
+        [
+          12,
+          14.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_koshigaya_20261102_1_2115557773996106206",
+    "shopId": "koshigaya",
+    "shopName": "越谷店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ksgy26/status/2115557773996106206",
+    "postedAt": "2026-10-28T21:34:13.000Z",
+    "postText": "おはようございます！ ラーメン二郎越谷店です！  10月29日(木) 昼11:00〜14:30LО 夜17:00〜20:30LО ご来店お待ちしております🙇  11月1日(日)　テイクアウト 12:00〜14:30頃まで  11月2日(月)〜3日(火祝) おやすみします。 よろしくお願いします🙇 https://t.co/WfKEbHyCwG",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-g4g3H6fauIdiuWbCnmO914cj2WKtNnS0VYxx0PE_L-AZV8QWzv3w1OuBDMLZCIw59tMWb4vJTSbkI8U45ptCPPcb_keRSKtPOnbWABFukA6e2vDPGFgSnUOgpcjY_t_58wGxl1dyg4zU5tLhenfvJg=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-02",
+      "endDate": "2026-11-03",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
