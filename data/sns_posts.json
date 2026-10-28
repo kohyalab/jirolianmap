@@ -24538,5 +24538,25 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の告知であり、臨時休業や営業時間変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2115262939506897187",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2115262939506897187",
+    "postedAt": "2026-10-28T02:02:39.000Z",
+    "postText": "おはようございます！！風も強くて寒いので、暇してると思いますので、是非温かいラーメンどうぞ！！！ 先日の連合三田会の写真いただきました！！ おやっさんとおばちゃんがニコニコ元気そうでよかったです！！(たまに喧嘩してるみたいですが笑) 夫婦とはこうありたいものですね。 https://t.co/4pRW8SQnr1",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-1C2SmYXjjPLGerhdi8HfXgqzsmGRaxls072T5Ck93JTH-UWKvK6w1tfbeSgizM2KBUmSuHinEPZgs_BmR33GfXb6Hv4IjwnSpQrr_ImQqCGElUoiZgnIxc7aunkt2JJYR9Apusax2-eknmRL8143Kg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Dctpe_Tqgs0yHod9s55W8RX7587ojDtFKkNpXgKAnphgrwfdeHdxhglLCLljyDWZys9omG4f0EbnuiqBKa74PvSL3EhfMV0zQ3x6ngQ2D9KnyO0Yh4jINM3FSydZnh2GdYPabXZeUcw7KWMpWN2k2w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-XZlXjL74WS71dpVBN5eQT1yVFWPTJypRW8oi5Eq54rMSgFFzbIxUTVa0EUPU9auTsNHbJq5huSQxiTMOVhksLEe63lGw8XSJ75d--iDMgEkRXBhyHqBtM3qo_JUskMQyM-_Fa7ybxcLw4wSIeHoStA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-M4lRFpmKSM_7AXIiIyF0vJ9KiTP_3c3yMYE1Z_vh16GqbEqxlOYBBfUYO9wGmF5Z9_L7b5VQX00DcILQl4cQMocqY6awMOJYZwJ1IVU_0DvlY6-yNC8o5zIzLLYuni96ob4UkzRt-6aUrZroZczDuw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報の変更に関する言及はありません。"
   }
 ]
