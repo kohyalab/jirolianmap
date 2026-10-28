@@ -24646,5 +24646,40 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_sengawa_2115311642976362919",
+    "shopId": "sengawa",
+    "shopName": "仙川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjiro26/status/2115311642976362919",
+    "postedAt": "2026-10-28T05:16:10.000Z",
+    "postText": "本日17時から店内営業とテイクアウト販売します。テイクアウトはつけ麺に転用可能です。追加の生麺一玉１００円です。お薦めの調味料です。 https://t.co/PMWPFXcNBk",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-dz2QxvwPIBfptZykTuUWgitnw-d36NPiZtOAVtoxrYCagoUNcnl8RK5YeijOo3LnkwnoeOm5gGxTRIllhV8M06_TM_naLLgiqQL-5CCCZ9p9Nz0gVT_wVwwtZvBA32q-kSYYS5ocR2uZoyvKrUSdvg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-0Sr1fNVidPXeHThgS8Yv_3LUozVzVeo1z2OaXJE4jK_aK2ZPanNQHiYn3luRlx-jJ1hz6A-pbOSa_sdjwVuAVQEda-FBufVwK2dBgCoGtyTAW68vevqjFrUt-wPhZ2SzpfOLrdQFqUjs7s-5Zm_dLQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-LztwGjBQCcVNip8DinxO6zs0x2U9BELkVNPSiz94lWhht6PlBikkG7OFp7BSDRXpLBJtntgWy_YOC_6aPS2CiKmrThU-20_-1-hDErQtmGNJ4_HZR5JVP7R918tmoXVJegukxW44MHvvDt2HPnigPw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-nmHLAgGp8-H-kD98FaJacqi8Kd7r6L-gaNSVKZA-YlWYXsbWPYsr_jchbvA3h1Ku0XqdDh23wLFYCkJxwSiOPvWMfuvpPihn7WbhcyssoFjtNcXEsFyoHuJ5SwNfuRe40fzVjezMH59_h_Hdh0sNVA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2115313252574105683",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2115313252574105683",
+    "postedAt": "2026-10-28T05:22:34.000Z",
+    "postText": "いまいるひとでおわりです！ ごめんなさい！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
