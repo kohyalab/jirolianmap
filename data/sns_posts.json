@@ -24882,5 +24882,22 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_kameido_2115455016811319391",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2115455016811319391",
+    "postedAt": "2026-10-28T14:45:53.000Z",
+    "postText": "映画10選選手権、80.6点でした。 あなたは何点？10本選んでみて。🎬 #映画10選選手権 https://t.co/GaeMsStGLJ https://t.co/sM5SwtSAPJ",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-0J66icU79TgtH8epXHJVYjbj2zXMnrEALitZ-SrS5Sc4Vzk0u8j3MkvKUAHASQZwYq2KzxW_N24hafwwPtOUrtyc0xwj5YAk45G2KEl9ci6B_pYCfuzY0kWD8NPZNwCP4D79WvFhNWK35RJX-7HkzA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更や休業に関する言及はなく、映画に関する日常投稿であるため変更なし。"
   }
 ]
