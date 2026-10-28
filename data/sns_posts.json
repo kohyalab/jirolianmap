@@ -24947,5 +24947,23 @@
     "processedAt": null,
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_routine_kameido_2115486340309717396",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2115486340309717396",
+    "postedAt": "2026-10-28T16:50:22.000Z",
+    "postText": "←これ見た時 　　　　　これになりました😭→ https://t.co/t9idg2jidL",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-KUbLjqUQ7e-z2GFAHyVOmQbeWnEHMU06H4SqU7YhnD_rR2OlGTbywf06RdtAsPM-NI_S7faymp4CA2Wc2KtvaYANR3GVOa5cNgcuPSASaDxf41iIabMiV3kg5s1G4Vg0Cw4kus8jB9uLQu2ZyQkppw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-JUTrndmIZ44kqgl0qYgpspHRhGy-9PdLlB4246AOjEuzJvh184rXoU55e8KRYeRKJGxl9Lvylk8evDkvpS6k2eTBirIr2JG-VY59PEmxZvsWfwgu_sDPnkdtvMmke2XQPsQ9KRk7kWks_UopZdbtlw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業変更なし（通常通り営業・雑談等）"
   }
 ]
