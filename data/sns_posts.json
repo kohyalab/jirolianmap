@@ -24899,5 +24899,38 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業時間の変更や休業に関する言及はなく、映画に関する日常投稿であるため変更なし。"
+  },
+  {
+    "id": "sns_post_routine_kameido_2115459623394464195",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2115459623394464195",
+    "postedAt": "2026-10-28T15:04:12.000Z",
+    "postText": "なんか今購入履歴見直したら履歴残ってないんだが…？え？これって当たってないことになってるのか？😅不安になってもう10回引いたけどこれの履歴しか残ってない…まぁ2回目の10連も割と良かったからいいっちゃいいんですが… https://t.co/5eHb6QM1CI https://t.co/Mtg9U2ph7W",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-oXiFJVOCYrNzQqvzpjz6xZpLOrFsIowI9Ho4OFNzJh4izTrMV5QbTC-Mtbpc2o27BAIjk0jEl6VJ3Wu12LXDKwE8-HRr9b8FpowzYhCxQFJHfiROiiVJW8E33Emg495WVMlaW2N89MaBR4JVoSZL_w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-dd2hTDyOwP_euEQt4zucMxeZHjRBArmqOKkspX08F_N6W6BtU24lpxe1k3Gll84wQBXrx3SCjOn3iwBuAMTTDgsTbY9dilhIfDescXKPo_h03uPWmtOIsCw3t6-k-CC-MBV-zth1ne2Ukkk46KxXWQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更や臨時休業に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_daily_kameido_2115458881698861395",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2115458881698861395",
+    "postedAt": "2026-10-28T15:01:15.000Z",
+    "postText": "なんか今購入履歴見直したら履歴残ってないんだが…？え？これって当たってないことになってるのか？😅 https://t.co/Mtg9U2ph7W",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
