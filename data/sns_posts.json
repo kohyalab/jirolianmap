@@ -24393,5 +24393,44 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "販売価格改定のお知らせであり、営業時間の変更ではないため変更なし。"
+  },
+  {
+    "id": "sns_post_routine_yaen2_2115226947920011563",
+    "shopId": "yaen2",
+    "shopName": "八王子野猿街道店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/Jiro_Yaenkaido2/status/2115226947920011563",
+    "postedAt": "2026-10-27T23:39:38.000Z",
+    "postText": "10月28日(水) 11:00～15:00 17:30～21:00 ⭐テイクアウト、鍋二郎あります 並ばず買えます エビドクロテイクアウト現金です ⚠️駐車場待ち出来ません ⚠️駐車場満車時コインパーキングに ⚠️店舗近隣タバコ禁止です  🌟きまぐれたまご ソース https://t.co/sPSEh6JtOc",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-vi-9J30e8dnJ7v0NLkMZ6jrh7JjU22sUHQ1YszOL2gDMxnEUjDS6XT9-aNMAsGC-SR4qNiSt9DhFYvoJHxmvy9HD0qFW4jmgEaVSqfASTw5X98Hf94nlUARQ1UP-KMLY1MGd9zgGyTd-pmyQjlBcDw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-wpMOY_ZwaRFf6bialrMRhRtl6rfD3cJO6TibFm58PyVkRqqwMiH8MuFSnNVTbAFHnbxY3eFPuePtgdfzqDWGBMsYgcLSwCpMeqx-ZjuZj2xm1eukynEjCXbOZYU0KbyZKCeMAaxi6w-6NbDrNaQBiw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-qx0Kq706F9HqHcqfKlPDwlgkQCswGLvvE-0XIY3G0y9eAUfKJKNoc8BHr1eDJmxHAXy_bLC0MSEbsdrFxZC8cPlODKLPuzrVXWA9BIZ_S9RN7c8Z7Ofv03KXtBzLIwxMLBHgwGY7NLU1N44fBd19Tg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知であり、臨時休業や営業時間変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_nishidai_2115230601230033082",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2115230601230033082",
+    "postedAt": "2026-10-27T23:54:09.000Z",
+    "postText": "おはようございます。 本日、28日、  FZ味付き煮込み切り落とし ¥1000×2 FZ味付き煮込み崩れ ¥800×2  あります。 https://t.co/PhiPp3daOW",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-75OORriMGpdrI8fgk8sBmIJRkSab0MK9U2pTqJseNbCVwTi33Y9GFmuXHBhnmrHQWxbJX3itu_hBX2AzfibVdc1lr8BwsHWERxgcqVj5Qytaym1LVjDc1llQpl926gHM-Q84nBQ2uLxGDU7xgthxMg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-jJtu-5mY7JLTd3HWr7rMFT4SXsEDv9CiMkOzmZ6NtbWrl9rOu5Bo5vrqi9BOqxqPB8U3Sg3VQ_nhZehbME372IoiU9-iRn5IcWOeCjbfHsZl1P5vKaaIKMOln2b5Q3P-grUt2IdSTW_CebH1Sx1BzA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-pVuYD4CqM804GcrRf72xIEO5aFGuo7fPAcNv_LIcp067tGEy4t74JB0c6ENDlgvJCXbw-MT1yjmhHT5BaR8gv1e3ifElGKkwmCRT6s3Vhc2sIS_4fFDKPcNQpbPQffKKnmfLtORfYI0UbsX7gv0_8A==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-fbPm6iV9QOVrS7Kdv-p4UsZC_hobinh0cp5MDtzms5lyokN2J7aniJAYwqt_U9nscYj212JMVUZeZONK8G5JZz_DiYLSy5g-0YCbVES3xd3cVrkYSwKCAkhhwB1V0CwZe5X7ewesUMvZvKUw73m_Ew=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更や臨時休業に関する言及はありません。"
   }
 ]
