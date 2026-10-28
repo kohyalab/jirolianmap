@@ -25069,5 +25069,54 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の告知のため変更なし"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261029_0_2115579543880929422",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2115579543880929422",
+    "postedAt": "2026-10-28T23:00:43.000Z",
+    "postText": "おはようございます。  本日 ◇10/29木 【昼の部のみ営業🈺】 10:20から〜14:00 ご来店ご到着お並びの お客様まで営業致します。  →［グッチーズカレー］ →［相撲部屋のしょうがダレ］ →［お椀で和ッカレー］ やっております！  どうぞー♪ https://t.co/FJ8IX2FNzr",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2GGzwVzVvi38P6Jf8Lnam8Q8lt0-nlW6CPphD8vM9JPdmZ92wRHdqM2eIqLxSqVGUmFgaKpuvcHO9FqlEz2dnh7nB-nx9kYbTCuh9lI5w7TG0aEVw7Tz8uW8nTqK8ngr-TjL7hacQdBI204H889sdw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-k4-5gz-gJ6WHcsdK3Z8Oah8GELWlMNgOBXifz66BmIc0wcrzjfQxWiFGhVmhhhgp5VzIRkXi4G_v9VnCtByXCw-rszpga20svi3m5yOnklNVThj6m9bjiv5koDsJwFLZyJjADb6eJl7dftbd52_6eA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-kTYsAs4stMSey7Rc7mYlIQ7F_Cd4_BidsruR4vX3b0WeZ0jwywrz7QU4OgnG-dYwHP1ktepwO-v8_iNg3VVAZRpqBKeDB2dPzaPzB1Vjf3ED44xmlAKoLynL2AVywpd7KWZ-1W4MRIPh7FHOb5esDg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-fhTLepeboBUIsP91wD4KFWi4Z19373LsL37A2p_-IOfDRYDxEsAIHJ7uaCnla-qm1WA5lY3gCp0fFp9FFfQSVV_taXBxiExAIK5zxERuNjzn19itZdgSFuz6jOZmpOt1dOnoVETlIQhYyckETvEdiA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-29",
+      "endDate": "2026-10-29",
+      "hours": [
+        [
+          10.333333333333334,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_routine_fujisawa_2115574844272316730",
+    "shopId": "fujisawa",
+    "shopName": "湘南藤沢店",
+    "postSource": "x",
+    "postUrl": "https://x.com/fujirow26/status/2115574844272316730",
+    "postedAt": "2026-10-28T22:42:03.000Z",
+    "postText": "おはようございます。  10月29日(木)  豚チゲ🐷  無料トッピング 野山商店特製タレ、崩し豚、豚カス醤油、 1番スープ、沢山にんにく🧄その他色々  粉チーズよくあいます。  にんにく入れますか？の時 お伝えください。  青葱生姜🫚  ハロウィン🎃 スタッフ色々計画してくれてます🌈 https://t.co/KzDKnYaL1Q",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-nJABRNNg4rHa6prCvOvtzVKTwBWXBQHF1m338oOr4_t24tFDUR-9B6hHMwX3TFPUKE-CcRy6FT9WnxG17q1AP5J7DxoIPsBzlN4sBYyGSKxibLlsEnXjX0wlbIOWA8it56thdPPLZOTDiuYi8499LQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定メニューの告知のみであり、営業時間の変更に関する言及はありません。"
   }
 ]
