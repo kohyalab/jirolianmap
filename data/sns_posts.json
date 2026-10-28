@@ -24761,5 +24761,29 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_tochigikaido_20261029_0_2115358173884555709",
+    "shopId": "tochigikaido",
+    "shopName": "栃木街道店",
+    "postSource": "x",
+    "postUrl": "https://x.com/Tochigikaidoten/status/2115358173884555709",
+    "postedAt": "2026-10-28T08:21:04.000Z",
+    "postText": "毎度ありがと宇ございます。 明日29日(木)は店主通院のためお休みとなります。みんな大好き岩下の新生姜、金曜日に今季最終納品。週明け水曜日までもつかどうか、といった感じです。 どうぞ宜しくお願いします。 https://t.co/aj8IawFdPx",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-KRxFpq6Ld_h_9sA3Q8WenH9x_1qjv25AMG8Q07iT3Q2gi148qfSyaM1wHoVRI-DL6EFCKCICjxLaXWnmm7Z2MevHJcyTgj8XEOOQjauV2MwDgZHHH9PfVzC4roZEQqzlGDguYhvj_d6Y42uyrmOZ-A=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-29",
+      "endDate": "2026-10-29",
+      "hours": [],
+      "reason": "店主通院のため",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 店主通院のため"
   }
 ]
