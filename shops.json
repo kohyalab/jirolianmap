@@ -2496,6 +2496,22 @@
         "startDate": "2026-09-08",
         "endDate": "2026-09-09",
         "hours": []
+      },
+      {
+        "startDate": "2026-11-01",
+        "endDate": "2026-11-02",
+        "hours": [],
+        "reason": "",
+        "sourceUrl": "https://x.com/Jiro_Yaenkaido2/status/2115429561446101084",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-22",
+        "endDate": "2026-11-25",
+        "hours": [],
+        "reason": "",
+        "sourceUrl": "https://x.com/Jiro_Yaenkaido2/status/2115429561446101084",
+        "_isAiImported": true
       }
     ],
     "holidaySpecialShifts": [
@@ -2774,6 +2790,14 @@
         "hours": [],
         "reason": "",
         "sourceUrl": "https://x.com/Tochigikaidoten/status/2111182310154625109",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-29",
+        "endDate": "2026-10-29",
+        "hours": [],
+        "reason": "店主通院のため",
+        "sourceUrl": "https://x.com/Tochigikaidoten/status/2115358173884555709",
         "_isAiImported": true
       }
     ],
@@ -4420,7 +4444,6 @@
             15
           ]
         ],
-        "reason": "",
         "sourceUrl": "https://x.com/26shinshindaita/status/2112664124434104715",
         "_isAiImported": true
       },
@@ -4433,7 +4456,6 @@
             15
           ]
         ],
-        "reason": "",
         "sourceUrl": "https://x.com/26shinshindaita/status/2113034328292860256",
         "_isAiImported": true
       },
@@ -4446,7 +4468,6 @@
             15
           ]
         ],
-        "reason": "",
         "sourceUrl": "https://x.com/26shinshindaita/status/2113395547478598029",
         "_isAiImported": true
       },
@@ -4454,21 +4475,19 @@
         "startDate": "2026-10-27",
         "endDate": "2026-10-27",
         "hours": [],
-        "reason": "",
         "sourceUrl": "https://x.com/26shinshindaita/status/2114263296249663697",
         "_isAiImported": true
       },
       {
-        "startDate": "2026-10-30",
-        "endDate": "2026-10-30",
+        "startDate": "2026-10-28",
+        "endDate": "2026-10-28",
         "hours": [
           [
             11,
             15
           ]
         ],
-        "reason": "",
-        "sourceUrl": "https://x.com/26shinshindaita/status/2114263296249663697",
+        "sourceUrl": "https://x.com/26shinshindaita/status/2115206058549608548",
         "_isAiImported": true
       }
     ],
