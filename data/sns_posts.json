@@ -24805,5 +24805,82 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_yaen2_20261101_0_2115429561446101084",
+    "shopId": "yaen2",
+    "shopName": "八王子野猿街道店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/Jiro_Yaenkaido2/status/2115429561446101084",
+    "postedAt": "2026-10-28T13:04:44.000Z",
+    "postText": "11月の予定です https://t.co/YxrbvYdn7y",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-UqUR59BH0FXpgnefvpgM9-Prjx0K4frl_RhJrNFiz5EX8ChM3vD7crfMewhH18dDjxzeqrO42H2H6_J37gf_ifDX-l1iuTh7s8mHf6kfe12o6RfriAGuM2EWGXYy56M8_Qqwg2VDcDDpsx1bk41n0w=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-01",
+      "endDate": "2026-11-02",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_yaen2_20261103_1_2115429561446101084",
+    "shopId": "yaen2",
+    "shopName": "八王子野猿街道店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/Jiro_Yaenkaido2/status/2115429561446101084",
+    "postedAt": "2026-10-28T13:04:44.000Z",
+    "postText": "11月の予定です https://t.co/YxrbvYdn7y",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-UqUR59BH0FXpgnefvpgM9-Prjx0K4frl_RhJrNFiz5EX8ChM3vD7crfMewhH18dDjxzeqrO42H2H6_J37gf_ifDX-l1iuTh7s8mHf6kfe12o6RfriAGuM2EWGXYy56M8_Qqwg2VDcDDpsx1bk41n0w=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-11-03",
+      "endDate": "2026-11-03",
+      "hours": [
+        [
+          11,
+          20
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_yaen2_20261122_2_2115429561446101084",
+    "shopId": "yaen2",
+    "shopName": "八王子野猿街道店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/Jiro_Yaenkaido2/status/2115429561446101084",
+    "postedAt": "2026-10-28T13:04:44.000Z",
+    "postText": "11月の予定です https://t.co/YxrbvYdn7y",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-UqUR59BH0FXpgnefvpgM9-Prjx0K4frl_RhJrNFiz5EX8ChM3vD7crfMewhH18dDjxzeqrO42H2H6_J37gf_ifDX-l1iuTh7s8mHf6kfe12o6RfriAGuM2EWGXYy56M8_Qqwg2VDcDDpsx1bk41n0w=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-22",
+      "endDate": "2026-11-25",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
