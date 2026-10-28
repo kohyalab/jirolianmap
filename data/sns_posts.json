@@ -25071,18 +25071,90 @@
     "aiReason": "通常営業の告知のため変更なし"
   },
   {
-    "id": "sns_post_sagamiohno_20261029_0_2115579543880929422",
+    "id": "sns_post_routine_fujisawa_2115574844272316730",
+    "shopId": "fujisawa",
+    "shopName": "湘南藤沢店",
+    "postSource": "x",
+    "postUrl": "https://x.com/fujirow26/status/2115574844272316730",
+    "postedAt": "2026-10-28T22:42:03.000Z",
+    "postText": "おはようございます。  10月29日(木)  豚チゲ🐷  無料トッピング 野山商店特製タレ、崩し豚、豚カス醤油、 1番スープ、沢山にんにく🧄その他色々  粉チーズよくあいます。  にんにく入れますか？の時 お伝えください。  青葱生姜🫚  ハロウィン🎃 スタッフ色々計画してくれてます🌈 https://t.co/KzDKnYaL1Q",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-nJABRNNg4rHa6prCvOvtzVKTwBWXBQHF1m338oOr4_t24tFDUR-9B6hHMwX3TFPUKE-CcRy6FT9WnxG17q1AP5J7DxoIPsBzlN4sBYyGSKxibLlsEnXjX0wlbIOWA8it56thdPPLZOTDiuYi8499LQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定メニューの告知のみであり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_koiwa_20261029_0_2115581214451278056",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2115581214451278056",
+    "postedAt": "2026-10-28T23:07:21.000Z",
+    "postText": "【本日臨時休業】  おはようございます。  大変申し訳ございませんが、本日は臨時休業いたします。  よろしくお願いいたします。  小岩二郎",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-29",
+      "endDate": "2026-10-29",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_yaen2_2115584622637777175",
+    "shopId": "yaen2",
+    "shopName": "八王子野猿街道店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/Jiro_Yaenkaido2/status/2115584622637777175",
+    "postedAt": "2026-10-28T23:20:54.000Z",
+    "postText": "10月29日(木) 11:00～15:00 17:30～21:00 ⭐テイクアウト、鍋二郎あります 並ばず買えます エビドクロテイクアウト現金です ⚠️駐車場待ち出来ません ⚠️駐車場満車時コインパーキングに ⚠️店舗近隣タバコ禁止です 🌟きまぐれたまご ソース https://t.co/TQx5kWKOeT",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-MgnUAVWQMixkBnLoZyue58NQvVOKIozU8ZcbC65AZ4QGLZLCW_aKMruhqefWeYlMlsaKfC_fSWWP4Xr54yx6ktAZvV50p10jqk310LAMG82P5G4cXh4Nw9x86V1e1y34zZVALM9JXnNRUOqAdGw6aw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-N_HxJzvsCHBBO9uPVrHFGrTGXpf8HkDdoTS-dQxt0ijoH1v9uSVUpvQHEfaNEg6EET9kch_ChXV0GEKyrKp8q-c4nyqPXrVMi1HbgrV0DEBlieyw6WuUuoJPVO-ZvmUCKLalk6NJlxKHP4XmA0j0Fg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-u5e8O8UBs1OBzgZU5RfpoQ1xGkiW8ay9g67UxVCgU4NIawSauIU6L-8p4B4VziA4GKlB_Q3FB0WN64t-IlX8cw8w4mKsdek6sfv31t2UViEMM56K4HRmjPG0g5YblHQ6Txx-HQv-mmK9Y_2mMpxMbA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知であり、臨時休業や時間変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2115586120948015289",
     "shopId": "sagamiohno",
     "shopName": "相模大野店",
     "postSource": "x",
-    "postUrl": "https://x.com/sumo_jiro/status/2115579543880929422",
-    "postedAt": "2026-10-28T23:00:43.000Z",
-    "postText": "おはようございます。  本日 ◇10/29木 【昼の部のみ営業🈺】 10:20から〜14:00 ご来店ご到着お並びの お客様まで営業致します。  →［グッチーズカレー］ →［相撲部屋のしょうがダレ］ →［お椀で和ッカレー］ やっております！  どうぞー♪ https://t.co/FJ8IX2FNzr",
+    "postUrl": "https://x.com/sumo_jiro/status/2115586120948015289",
+    "postedAt": "2026-10-28T23:26:51.000Z",
+    "postText": "『テイクアウト割りお願いします。』で［乱切りチャーシュー］には生麺をお付け致しております。  茹でた麺をニンニク醤油で焼きそばにすると美味い😋です！  チャーシューはスライスしてトッピングでいかがでしょうか⁈  オススメです♪ https://t.co/bMQgSneQfF https://t.co/ZIlo9Zue6S",
     "mediaUrls": [
-      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2GGzwVzVvi38P6Jf8Lnam8Q8lt0-nlW6CPphD8vM9JPdmZ92wRHdqM2eIqLxSqVGUmFgaKpuvcHO9FqlEz2dnh7nB-nx9kYbTCuh9lI5w7TG0aEVw7Tz8uW8nTqK8ngr-TjL7hacQdBI204H889sdw==",
-      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-k4-5gz-gJ6WHcsdK3Z8Oah8GELWlMNgOBXifz66BmIc0wcrzjfQxWiFGhVmhhhgp5VzIRkXi4G_v9VnCtByXCw-rszpga20svi3m5yOnklNVThj6m9bjiv5koDsJwFLZyJjADb6eJl7dftbd52_6eA==",
-      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-kTYsAs4stMSey7Rc7mYlIQ7F_Cd4_BidsruR4vX3b0WeZ0jwywrz7QU4OgnG-dYwHP1ktepwO-v8_iNg3VVAZRpqBKeDB2dPzaPzB1Vjf3ED44xmlAKoLynL2AVywpd7KWZ-1W4MRIPh7FHOb5esDg==",
-      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-fhTLepeboBUIsP91wD4KFWi4Z19373LsL37A2p_-IOfDRYDxEsAIHJ7uaCnla-qm1WA5lY3gCp0fFp9FFfQSVV_taXBxiExAIK5zxERuNjzn19itZdgSFuz6jOZmpOt1dOnoVETlIQhYyckETvEdiA=="
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-bVNC3YZ3O3KWwEv7PLvLJzWJ-yoV5YIdyZH_hsA3hHxnX7sAmhBAuRvmGPwoNC9_w5cCaJDNbpiIj_0J2RHqKyAY4yRed4x0xCtXa1NAuLnrRkC4FKY2b9oOF5nOTaKZ8PLbaGbWYEjrU-4HBggI5A=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "テイクアウト販売およびメニュー告知であり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261029_0_2115583493296312392",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2115583493296312392",
+    "postedAt": "2026-10-28T23:16:25.000Z",
+    "postText": "本日もやります！  ◇10/29木 【昼の部のみ営業】 【テイクアウト割り🈹】  →こちらをご覧のお客様限定→ご申告制🈸［テイクアウト割🈹］やっております！食券にて。  着席時に『テイクアウト割りお願いします。』と従業員にお申し付けください。各サービス🈂️致します！ ※店内お食事の方のみです。 https://t.co/VtYI9pYT95 https://t.co/xXC2wiOHR8",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-8FEjgwj6Yk8WaJwIC7bDSfjEhxHH1h-6dEvZxuQ0HyGXvTiUnyEH-EDStpki-2W7Ifqo73iFfEcHYUeVoMroRFLPvXXGSHAaJA62QMzC9ZZeKQK5iovUdiwn6AO6QlF7-ktmEIYV92XwSZIClneSTg=="
     ],
     "detectedChange": {
       "type": "temporary_hours",
@@ -25103,20 +25175,42 @@
     "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   },
   {
-    "id": "sns_post_routine_fujisawa_2115574844272316730",
-    "shopId": "fujisawa",
-    "shopName": "湘南藤沢店",
+    "id": "sns_post_routine_sagamiohno_2115581970243887401",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
     "postSource": "x",
-    "postUrl": "https://x.com/fujirow26/status/2115574844272316730",
-    "postedAt": "2026-10-28T22:42:03.000Z",
-    "postText": "おはようございます。  10月29日(木)  豚チゲ🐷  無料トッピング 野山商店特製タレ、崩し豚、豚カス醤油、 1番スープ、沢山にんにく🧄その他色々  粉チーズよくあいます。  にんにく入れますか？の時 お伝えください。  青葱生姜🫚  ハロウィン🎃 スタッフ色々計画してくれてます🌈 https://t.co/KzDKnYaL1Q",
+    "postUrl": "https://x.com/sumo_jiro/status/2115581970243887401",
+    "postedAt": "2026-10-28T23:10:21.000Z",
+    "postText": "本日 ◇10/29木 【昼】 →こちらをご覧のお客様限定です！ ↓ ※お客様ご自身で→丸の🟥赤又は白🤍食券を１枚お取りになって席までお越しください。→食券は券売機の前の台の二段目に置いておきます。 ※必ず着席時にお出しください。 ※サービス中の目印は［黄色いハンカチ］ どうぞご利用下さい♪ https://t.co/vNdqW2rgUl https://t.co/xXC2wiOHR8",
     "mediaUrls": [
-      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-nJABRNNg4rHa6prCvOvtzVKTwBWXBQHF1m338oOr4_t24tFDUR-9B6hHMwX3TFPUKE-CcRy6FT9WnxG17q1AP5J7DxoIPsBzlN4sBYyGSKxibLlsEnXjX0wlbIOWA8it56thdPPLZOTDiuYi8499LQ=="
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-FsouAjpPiP3fUaCcwjvPJOUDSpKoJCfXJF_R6fm9DqCt_-uKcxDzfIFOc9s9iG-lTv_ZjRMJ2J5klfDbziS_kBF9zTgvn9kRR6YfudnMy7iTWMLeG2n5QCgSkoVn7hI1nsd-6t2qnXQHivyu1Z2WxQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-HCUIHO_GnSsay1InSetbaQdPF4iM_dDsXt2x8q87cNqXaAwSqiN27TRiPPccQylADqWr9BGEWasa_krw9SaxwCwghKJRCW4LDITvTbC7xCZmBX9K17AIXrBM5MQPKQzK4RVnN7uJIx4wPFSd_nOLfg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-U0cvAZbu3YnGFlz1thV5OSqVh96sWCD07r3gGV_O9IPq6zF3oyXwGHiQPNt3cNpHOOAY7swqUKSJqs8cMfJcZB811Jyaew3_NlL11Mjm2vf1fxq8IeNteCLpwPXGttV2qlfo5gzjtUbeqpytDcLscw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-fUAsyWiyihIoWU4lCoiMY1rKkmA3vE38EG6dx1R6JHztVdoezPFvLu85BESnLhq1-qnm7H39-D8-04NsXT81AQOI2CGib5vNs69auxycZ0raUZA6e_nnhXoO3Yq9CFXoL0LRbCW31ZXimz8GbXPYFA=="
     ],
     "detectedChange": null,
     "processed": false,
     "processedAt": null,
     "aiStatus": "no_change",
-    "aiReason": "限定メニューの告知のみであり、営業時間の変更に関する言及はありません。"
+    "aiReason": "本日の営業に関する案内ですが、通常営業時間内でのトッピング販売等の告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2115581599240819187",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2115581599240819187",
+    "postedAt": "2026-10-28T23:08:53.000Z",
+    "postText": "［味ぽん生たまご］ そろそろ終了☑️です！ 冬支度にはいります。🪾 https://t.co/BrS5jBm6cZ",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Q9W_GROlr-dpVIWQfMZKcG69K4_ylxqA9A6WijXPtGSc2Xvjy4ymrwbkUi33K5bClr7sbQM4eBIjsmO9Oi-o8RUjd0IIu6n-cr_PAWXWNakRw06ZpPLkWWZoOiNJefLMdoVBRZvCzIZ9ALs358Eeog==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-KobGwSerk4z_GTfdOwFMHuc5kvx5gTqwNgu-UIZc_UkUrFXbopKRe86Qhs9edd3Nt9f7gK8xa-_gBRRvvDKHInHC1OmBpmgCBSSNC-T2WHPGKUuqgKwS9g-dXxNxvPRknHDNUkpPdDMjnO_FpEEwug==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-FmZNgUTWQSqoDvvt6dAFb9rtpySqrAZFRq4k5xjftywLkaaFNHzCxrDZXtAN6693ENo2MDyjcGRRaA90NMtEMhEz17iqaHtoYc2lvGOxHAAYxICP-2jDh5t9s4IB43j5Lne6pcD8wOD1zDuGPnvvwA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの終了告知であり、営業時間の変更に関する言及はありません。"
   }
 ]
