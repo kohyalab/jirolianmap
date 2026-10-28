@@ -24785,5 +24785,25 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 店主通院のため"
+  },
+  {
+    "id": "sns_post_routine_maebashichiyoda_2115383488111321549",
+    "shopId": "maebashichiyoda",
+    "shopName": "前橋千代田町店",
+    "postSource": "x",
+    "postUrl": "https://x.com/SnBZt6eRCdz7lQw/status/2115383488111321549",
+    "postedAt": "2026-10-28T10:01:40.000Z",
+    "postText": "ラーメン二郎前橋千代田町店です。 おかげさまで7周年を迎えることができました。 祝のお言葉とお品ありがとうございます。八年目もがんばります🙇 https://t.co/KT2FaLdNR9",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-3x5O04ViF3ZDh19V4WOqvJZOJ8UyA8RtFcm9sdJRYmxZq5sFGe5UEEQAF20KpttPkrWJjtF8WEPK-8J4aOn2SzDZgHGCZWrZgk8igZCVKQgWaM6sYTjf4j0DVZKPI37ihD-ZA5TP-x7pRAsSuNBPxg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-y5jWtIZg3bzZ6kGcK0ZUYFgmWZZA0_PY8i0toCpEFajzRDmisjjmyM_um1PQm3GwTo8nUzjz2haGv2FEM-kOqUd6jbSQ9bWnI8pnEJLAc1YArhMEIb4eEyL3_QEgxQykhFAZqFxC_J8batr7Sax2nQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Muj9rabfMYz2SkwP7p0FW-eFlB4soMi-NGpTEID5lfcsJlTaByqLBcvRebAc5cbl5CWnPXU4B4Vy93aKhZhFBWNBqhelf-zxIXRgGEdw0HqU7lQPqGxdLaeqb1VtohXuB87B89hZEonncSUPQ1tsFA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-4ujU5muRULk8jpKdwo7QeDgHWztbWdS_XvNeNndVr_-EuQLoEEVSwCRebxT6I_E6himUohjbHV10wLFxTiY4AOINUGppJRKjnzI-fMD1A0LDkAK6OrxiWtk34YBBCDwNyDf12LwnGC38FoMZOtCOwg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "7周年記念の挨拶投稿であり、営業時間の変更に関する言及はありません。"
   }
 ]
