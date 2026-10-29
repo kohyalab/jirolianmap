@@ -25520,5 +25520,32 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_okinawa_20261030_0_2115690773807284486",
+    "shopId": "okinawa",
+    "shopName": "沖縄店",
+    "postSource": "x",
+    "postUrl": "https://x.com/okinawa_jiro/status/2115690773807284486",
+    "postedAt": "2026-10-29T06:22:42.000Z",
+    "postText": "明日10/30(金)夜の部は  都合により 臨休いたします",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-30",
+      "endDate": "2026-10-30",
+      "hours": [
+        [
+          11,
+          14
+        ]
+      ],
+      "reason": "都合により",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 都合により"
   }
 ]
