@@ -25422,5 +25422,24 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2115662779386675546",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2115662779386675546",
+    "postedAt": "2026-10-29T04:31:28.000Z",
+    "postText": "めちゃ暇なうですので、よろしかったらどうぞー！ https://t.co/0UIQaqgmvV",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ooOsIVRSco20quW9OCD0r9I306MQjLLCuA7SpxKJXaCfgH92ctxXVtk-y1ilGVZwwQoB3BfE3FUlUp3sLmJ_4Xpv7KOcH35PkXfyTQEqHSks_Jh99uExGetQFmtIEbGNWZWcu0azIIaVXVCgs84vuw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-5TMVWG0eUJNYQ59svtD86kHEGPT_tnQ_8f5sV6ChCDTW2Dg75TN9EJ4f7yi6IyPZZJHCXgusLTq2q5AD4-HtHz6nUgb-HlE7BS2oq6X5C4WuvBGpXN4R8dX6oLjKudyMwNA4RbIYDctpeqZkWaD6SQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-sSJoGly2laC_DooY7ymCP-n_j1xVOMCds91VnHVxsXgguUVoFnzXkzUP5pJsKgYfp_4CefjP7gQKtQ0V4hDCjB7DAAEBS-KhwaK7Ptkv98okOxOWX2i_2Cp-29t4M7HNUdvqRVFGfG_S9YKWUtuZlw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報の変更に関する言及はなく、日常的な投稿であるため変更なしと判定しました。"
   }
 ]
