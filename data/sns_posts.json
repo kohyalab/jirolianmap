@@ -25547,5 +25547,20 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 都合により"
+  },
+  {
+    "id": "sns_post_routine_kyoto_2115709134121418955",
+    "shopId": "kyoto",
+    "shopName": "京都店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kyoto/status/2115709134121418955",
+    "postedAt": "2026-10-29T07:35:40.000Z",
+    "postText": "こんにちは！本日通常営業です！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "本日通常営業の告知のため、スケジュールの変更はありません。"
   }
 ]
