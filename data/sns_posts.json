@@ -25232,5 +25232,36 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "限定トッピングの販売告知のみであり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_sapporo_20261029_0_2115608655601213781",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2115608655601213781",
+    "postedAt": "2026-10-29T00:56:24.000Z",
+    "postText": "29日(木)通常営業です。 「ジロリアン陸」 ボタン¥150で「食べる辛カリカリほぐし豚ラー油」追加20  12:30〜14:00     17:00〜18:30  「塩汁なし(醤油ベース)」 対応します。 ⚫︎🧂プラス現金１００円",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-29",
+      "endDate": "2026-10-29",
+      "hours": [
+        [
+          12.5,
+          14
+        ],
+        [
+          17,
+          18.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
