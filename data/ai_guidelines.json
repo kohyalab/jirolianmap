@@ -2,6 +2,45 @@
   "generalRules": [],
   "learnedFeedback": [
     {
+      "id": "sns_post_koiwa_20261029_0_2115581214451278056",
+      "timestamp": "2026-10-29T12:51:14.019Z",
+      "shopId": "koiwa",
+      "shopName": "小岩店",
+      "postDate": "2026-10-28T23:07:21.000Z",
+      "postText": "【本日臨時休業】  おはようございます。  大変申し訳ございませんが、本日は臨時休業いたします。  よろしくお願いいたします。  小岩二郎",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-10-29",
+        "endDate": "2026-10-29",
+        "hours": [],
+        "reason": ""
+      }
+    },
+    {
+      "id": "sns_post_okinawa_20261030_0_2115690773807284486",
+      "timestamp": "2026-10-29T12:51:06.446Z",
+      "shopId": "okinawa",
+      "shopName": "沖縄店",
+      "postDate": "2026-10-29T06:22:42.000Z",
+      "postText": "明日10/30(金)夜の部は  都合により 臨休いたします",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業変更検出: 都合により",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-10-30",
+        "endDate": "2026-10-30",
+        "hours": [
+          [
+            11,
+            14
+          ]
+        ],
+        "reason": "都合により"
+      }
+    },
+    {
       "id": "sns_post_routine_sengawa_2114953519484875092",
       "timestamp": "2026-10-27T13:48:23.457Z",
       "shopId": "sengawa",
@@ -961,45 +1000,6 @@
           ]
         ],
         "reason": "周年記念のため"
-      }
-    },
-    {
-      "id": "sns_post_shndaita_20261016_1_2109186510184751166",
-      "timestamp": "2026-10-11T13:22:25.813Z",
-      "shopId": "shndaita",
-      "shopName": "環七新新代田店",
-      "postDate": "2026-10-11T07:37:05.000Z",
-      "postText": "2026年10月11日（日） 解ってる範囲の営業予定です！  月 〇 火 お休み 水 〇 木 〇(15:00くらい) 金 〇(15:00くらい) 土 〇 日 お休み  11:00〜16:00くらい にんにく地獄(＋200円)もやります！  よろしくお願いします！",
-      "aiStatus": "schedule_change",
-      "aiReason": "営業時間の変更を検出",
-      "humanAction": "applied",
-      "finalDetails": {
-        "startDate": "2026-10-16",
-        "endDate": "2026-10-16",
-        "hours": [
-          [
-            11,
-            15
-          ]
-        ],
-        "reason": ""
-      }
-    },
-    {
-      "id": "sns_post_koiwa_20261017_0_2108709092923715701",
-      "timestamp": "2026-10-10T00:29:07.166Z",
-      "shopId": "koiwa",
-      "shopName": "小岩店",
-      "postDate": "2026-10-10T00:00:00.000Z",
-      "postText": "おはようございます✨  本日のテイクアウトラーメンセット購入URLです👇 https://t.co/ZyAF58qT2a  フォロワーのみなさま、リポストにて拡散のご協力をお願いいたします😄  📢来週の土曜日（10/17）は所用のため臨時休業となりますので、本日のご購入がおススメです！ https://t.co/DQrKvHdmJn",
-      "aiStatus": "schedule_change",
-      "aiReason": "営業変更検出: 所用のため",
-      "humanAction": "applied",
-      "finalDetails": {
-        "startDate": "2026-10-17",
-        "endDate": "2026-10-17",
-        "hours": [],
-        "reason": "所用のため"
       }
     }
   ]
