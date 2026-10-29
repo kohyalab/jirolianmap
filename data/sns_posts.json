@@ -25472,5 +25472,53 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_sengawa_2115680063677198723",
+    "shopId": "sengawa",
+    "shopName": "仙川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjiro26/status/2115680063677198723",
+    "postedAt": "2026-10-29T05:40:09.000Z",
+    "postText": "本日17時から店内営業とテイクアウト販売します。追加の生麺一玉１００円です。 https://t.co/JZxrPDfngT",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2YVU8ycgbT_cwzpLys--ikQpbAtE3IwQnTC0eguN0HSl9lTjOi56f4ScM0XeMiS4s8sKuJhj5QfyMj6dqXu9iapvRO_wK1ybX6dGLlaRwUWxcENoAedri4MHU9TY9O23a3auO18iHVMWb9f5qK6VfQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-eFmd1IlqCNPVUVLHm2nIZu7025fU6KFiP7BfBXJ0sOtlliZSUrnBcFr7AMyO2e5Rz-W3wv6ImsKLjWn8mwjXXdhTvuvkg5crApPT7T_H4wArGg0931arh-sGwIp1Wo1UUlvEjjJxeVJ0dlp73rJJCg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "本日10/29(木)の営業告知およびトッピング販売の案内であり、通常営業時間からの変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_nishidai_2115682043657085061",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2115682043657085061",
+    "postedAt": "2026-10-29T05:48:01.000Z",
+    "postText": "こんにちは。 本日、29日、夜の部  FZ味付き煮込み肩ロース ¥3400×1 FZ味付き煮込み崩れ ¥600×1  残ってます。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常的な限定メニュー販売の告知であり、営業時間の変更は含まれていません。"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2115678733445234766",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2115678733445234766",
+    "postedAt": "2026-10-29T05:34:52.000Z",
+    "postText": "とてつもなくひまです！ https://t.co/WICQtDUTmc",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
