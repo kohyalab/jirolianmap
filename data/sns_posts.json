@@ -25212,5 +25212,25 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "限定トッピングの終了告知であり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_nishidai_2115593626311147941",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2115593626311147941",
+    "postedAt": "2026-10-28T23:56:40.000Z",
+    "postText": "おはようございます。 本日、29日、昼の部  FZ味付き煮込み肩ロース ¥3400×1 FZ味付き煮込み切り落とし ¥800×1 FZ味付き煮込み崩れ ¥600×1  あります。 https://t.co/CdbVxvMidq",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-wuL3JqzDKaAj_6I9CHHh7zF33w2OR7wNLDBsyqk-kRWP7jbCQCsFlqHU8f5QtcvVTuAYVw5JdtMlwxAnqBXzp5st77Ip3l1e54q_2ZHoK4y9xcrd39qVyDQncLbKWgfalC1Y_4n0Wg0LonoaUtXPZA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ofaWwyJe_Yig3q29IHJ8tKQm0Myp0ndagCLofUg7wgxPstTycx6gpLzAlNf9Y_iXFkQwoBhTop5-rYJOsnW26-MyxBbqEHdaADUSjPe5AwLI7jKa8lTQritIOu0Q3Re9Np9MjezDJ-wf3RV69D-F1w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-X7yJAEkVBHHzw0geG8p42N8ulkPdOkAbM7tB8aHHfmn69G0MeNlOWWLrZ2IPvLQgdXEkUe1oP4aIqmnfvga6Nw9N1nzGkYHZE7Cs_PHLizKTuXgdqRDUm0moJEfI00dJktP90pBPJaHyhyZs1aO2Yw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ExRAaAKO6oPwYmwkxXZ0K6CQZhLgRj3gZ2EeG8VkHjpk5I3qTbdecJS52YBShLIHlPLdKwoO9i93flZ1F1eA5pcStMm-F4nBisgTzjoy-o64xEcltpPeVrDqzMl4CaX2I3DMA0MzGsyj5LCtk-X9Pw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの販売告知のみであり、営業時間の変更はありません。"
   }
 ]
