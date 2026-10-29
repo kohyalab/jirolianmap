@@ -25806,5 +25806,20 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_ogikubo_2115941742738649185",
+    "shopId": "ogikubo",
+    "shopName": "荻窪店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ogkb_jiro/status/2115941742738649185",
+    "postedAt": "2026-10-29T22:59:58.000Z",
+    "postText": "10月30日（金） 昼11:30〜14:00頃 夜18:00〜21:00頃までです",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内"
   }
 ]
