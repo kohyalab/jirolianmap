@@ -25922,5 +25922,73 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の告知であり、臨時休業や営業時間変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sapporo_2115969983910162513",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2115969983910162513",
+    "postedAt": "2026-10-30T00:52:11.000Z",
+    "postText": "30日(金)通常営業です🍜  12:30〜14:00「濃厚TARO2」対応します。 ラーメン➕辛味噌変更券➕現金100円  必ずスタッフ確認時に申告して下さい。 https://t.co/QG8TmXlKav",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-39Jnu-pZ76PnsJvt6ewkLFpUlJxUHbKjqGw1fYtNyYYjQ7aU0N1RetXIa2GWHHh-0iU9rJp_m6IFadkFDeNlXy0SvG9U5y1_LRhoNBuggp-V74P8tm5ed_EjeMVStPgfibMjvl-nA53UiF0J5riWKw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-WaUoBg5CuxQwvC1tYBX8U_WL-1p_RmR6NCX4MJCEjfNieJz0tzMkAcDi7XcYB-cWDKjOK0IITuIeLTxko99mQWpiqTEURHbE1VPW9fQwJc2uv53IHogbR0bmvVXAej-0HTckNa65-C4RNEQS5tN9PQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知および限定トッピングの案内であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2115971799267909871",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2115971799267909871",
+    "postedAt": "2026-10-30T00:59:24.000Z",
+    "postText": "おはようございます！ だんだん冬が近づいてきました！ 早く雪山にガツっと振ってもらいたいですね！ 何年か前の雪がガッツリ振った時の蔵王の樹氷です！スノーモンスターっていうだけあってデカい！ 天気が良いと最高ですので、ウィンタースポーツご無沙汰な方は是非是非！！(天気悪いと地獄です笑) https://t.co/s785OQOpec",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-3nezStEYUiU9mY5gGRnHJ46ui0QOvR786rTX5QF9Y9VrEwyBFdL32AFU2N3P-GhXuvXKsXiiw61XzgMRELREU3adXwp1F2MZOCWIhhqAOBH42Z3WDKpXRNfTDaPcowb6Bhmo1ZpdolkhAdqpHbfeaw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-qqCTO_yUcTR_Y1cLU13T8l0MS__f4LxmV7dIbqAYwwu5YOjn3zpJwhbAaufh5WwgXYtVLarSKfMk_l-Tg10NuHCRM9hSQj1ZeBuKzmrxPSqcer_wETzLBKW1ZwJwVucr2EWqqJCr-YSxvKblRCQcJg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-aZa_hwZldbMdOnCeFhWCr2bKV83TYf813oOKRx-aQVn5sucZuOJvTLCGMhWIuYbM5hv-2-CkvGyM230X2gCkiKOZATzwy0hX6zzHveSfeyDRw3CokYwEcYi5asP8BHxamV-JNvJX55GGAxL2erlzJw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Fow0htyRYClSlHM7JogClCSGugA2Y0pAmRT5aLjwv5kBVjSOIii-bnqlbPtpfF2549RIEeCX6d53hTRtc-EeF7UtraElu72J7OzzKEXPrekSnRod4G2iY0_a5L4SfXMVqUGPgfJWWhrdfljjBpMxJQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2115968925288771755",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2115968925288771755",
+    "postedAt": "2026-10-30T00:47:59.000Z",
+    "postText": "@takeout_26 是非是非！！御来店お待ちしております！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2115968822150885685",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2115968822150885685",
+    "postedAt": "2026-10-30T00:47:34.000Z",
+    "postText": "@youchinodanemon 海賊すぎるw",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
   }
 ]
