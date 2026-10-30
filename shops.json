@@ -2322,6 +2322,14 @@
         "reason": "都合により",
         "sourceUrl": "https://x.com/jbc_ramen_jiro/status/2110640017039372718",
         "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-31",
+        "endDate": "2026-10-31",
+        "hours": [],
+        "reason": "都合により",
+        "sourceUrl": "https://x.com/jbc_ramen_jiro/status/2116075493460230315",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -2657,6 +2665,19 @@
         ],
         "reason": "",
         "sourceUrl": "https://x.com/Aarf0xvdBXkWd7o/status/2108321271083917451",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-01",
+        "endDate": "2026-11-01",
+        "hours": [
+          [
+            11,
+            15
+          ]
+        ],
+        "reason": "非乳化特別営業",
+        "sourceUrl": "https://x.com/Aarf0xvdBXkWd7o/status/2115929895591375020",
         "_isAiImported": true
       }
     ],
@@ -4497,6 +4518,19 @@
         ],
         "sourceUrl": "https://x.com/26shinshindaita/status/2115206058549608548",
         "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-30",
+        "endDate": "2026-10-30",
+        "hours": [
+          [
+            11,
+            15
+          ]
+        ],
+        "reason": "",
+        "sourceUrl": "https://x.com/26shinshindaita/status/2115928071589286333",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -5275,6 +5309,19 @@
         "hours": [],
         "reason": "従業員体調不良のため",
         "sourceUrl": "https://x.com/jiro_kyoto/status/2114563239195685285",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-30",
+        "endDate": "2026-10-30",
+        "hours": [
+          [
+            17,
+            22
+          ]
+        ],
+        "reason": "都合により",
+        "sourceUrl": "https://x.com/jiro_kyoto/status/2116120284872966165",
         "_isAiImported": true
       }
     ],
