@@ -26308,5 +26308,40 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "「早めの開店」との記載がありますが、具体的な開店時刻の記載がないため変更提案なし。"
+  },
+  {
+    "id": "sns_post_routine_nishidai_2116065652901629955",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2116065652901629955",
+    "postedAt": "2026-10-30T07:12:20.000Z",
+    "postText": "こんにちは。 本日、30日、夜の部  FZ味付き煮込み切り落とし ¥1000×1、¥800×1  あります。 https://t.co/1kIKqrXt4k",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-isTSZ5FIZcghOS_-Puy9SQ4e0icJJIF9CpDiitYOQOa9_4UQH7zGdy_EEodYrNYIwXhK1YEHy3Ul8XgI_1Bo4mcbXmcamZFNVSnz0b3-1Uup4HK3iC_HB-tDO68V3_mOC41bGiA0ceiLQWXNkjNjzA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-OEN-YQq_2hGsO0UevDj1h20p4FoadK29xFd4cd7mMAW7auIUMml7sOJdfQZj0yQdOlZYfnFm4eVxPtcfpBxngcqsnp1SHADHJYw-CMUJnXKKdCX55VBu72spuTtegIPZAe2m9qBgLbH6J8LJgQkRZg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-cQjVeI40B08gQvMcTdYK6x0uDvf1SyBm0skQaw-1FTb3grM9HdC7s7zJwZgBechDPrZaZxZzmzQ9fm2mpjzOht-hrmfWEngshGI5216PGT5Ty50sNtjHdnukO8yxBiRwqGULhBLUgomlLoD5wHqHsg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-aDvqC0lOt4TYkeNYaqmGG-ABmaxDcTSJ_8NBMZiT_Ch3gFFpUNqRhXW4jfTYag0_y5QifjQ8fZkGWGpNBPdAuJgb6MkmrLSoKEfhCDN_SOYEErcmvvnLXnJD09HDRpt889-HwRFyGKNBjPhseYL7Tw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定メニューの告知のみであり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_kyoto_2116068952464089422",
+    "shopId": "kyoto",
+    "shopName": "京都店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kyoto/status/2116068952464089422",
+    "postedAt": "2026-10-30T07:25:27.000Z",
+    "postText": "こんにちは！本日通常営業です！ 本日「魚粉トッピング」あります！ ご希望の方は「ニンニク入れますか？」のときに「魚粉」とお伝えください。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知および限定トッピングの案内であり、営業時間の変更はありません。"
   }
 ]
