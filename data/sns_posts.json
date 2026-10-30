@@ -26278,5 +26278,35 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "限定メニューの販売終了告知であり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_sapporo_2116060668558504290",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2116060668558504290",
+    "postedAt": "2026-10-30T06:52:32.000Z",
+    "postText": "夜の部も17:00〜18:30 「濃厚TARO2」対応します。 ラーメン➕辛味噌変更券➕現金100円  必ずスタッフ確認時に申告して下さい。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定メニューの告知であり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_kashiwa_2116058964274429986",
+    "shopId": "kashiwa",
+    "shopName": "柏店",
+    "postSource": "x",
+    "postUrl": "https://x.com/genkimoriya/status/2116058964274429986",
+    "postedAt": "2026-10-30T06:45:46.000Z",
+    "postText": "お世話になっております。 ラーメン二郎柏店です。  明日10月31日（土）は早めの開店とさせていただきます。  どうぞ宜しくお願い致します。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "「早めの開店」との記載がありますが、具体的な開店時刻の記載がないため変更提案なし。"
   }
 ]
