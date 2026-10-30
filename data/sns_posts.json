@@ -26392,5 +26392,29 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 都合により"
+  },
+  {
+    "id": "sns_post_kaminoge_20261103_0_2116084238089089151",
+    "shopId": "kaminoge",
+    "shopName": "上野毛店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kaminogeJiro/status/2116084238089089151",
+    "postedAt": "2026-10-30T08:26:11.000Z",
+    "postText": "11月2日(月) 通常営業 3日(火) 祝日定休です  ※沖縄旅行中の当店別班員からの提供画像 https://t.co/3rwTQMEAZH",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-kM-HoIqLq4cfguWQYCT7sT7CGoMy_Klf4J_ZIfu651ecXyLje3s7XdQuRzad1XHZ47LAPrwyJukpbYF85mJGNxfik1bHvOAyXo7G1oU4_Q5zjo_6gW9A4gQVALvx2dVtz182N1kE15GE7J1ipUvWCA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-03",
+      "endDate": "2026-11-03",
+      "hours": [],
+      "reason": "祝日定休",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   }
 ]
