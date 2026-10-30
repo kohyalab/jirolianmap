@@ -26343,5 +26343,54 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の告知および限定トッピングの案内であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_jimbocho_20261030_0_2116075493460230315",
+    "shopId": "jimbocho",
+    "shopName": "神田神保町店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jbc_ramen_jiro/status/2116075493460230315",
+    "postedAt": "2026-10-30T07:51:27.000Z",
+    "postText": "ただ今お並びのお客様までで、本日の営業終了となります。  なお、明日10月31日(土)は都合によりお休みさせていただきます。  よろしくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-30",
+      "endDate": "2026-10-30",
+      "hours": [
+        [
+          11,
+          16.85
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_jimbocho_20261031_1_2116075493460230315",
+    "shopId": "jimbocho",
+    "shopName": "神田神保町店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jbc_ramen_jiro/status/2116075493460230315",
+    "postedAt": "2026-10-30T07:51:27.000Z",
+    "postText": "ただ今お並びのお客様までで、本日の営業終了となります。  なお、明日10月31日(土)は都合によりお休みさせていただきます。  よろしくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-10-31",
+      "endDate": "2026-10-31",
+      "hours": [],
+      "reason": "都合により",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 都合により"
   }
 ]
