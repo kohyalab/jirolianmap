@@ -25836,5 +25836,73 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の告知であり、臨時休業や時間変更はありません。"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261030_0_2115954103104991673",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2115954103104991673",
+    "postedAt": "2026-10-29T23:49:05.000Z",
+    "postText": "本日 ◇10/30金 【夜の部のみ営業🈺】 17:00から〜20:30 ご来店ご到着お並びの お客様まで営業致します。  →［グッチーズカレー］ やっております！  明日 ◇10/31土 【昼の部】10→14時 【夜の部】16:30→20時 ※夜の部やっております♪ https://t.co/htlDU0Owya",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-32X7XhPMJtCoSFuRKmXde_VhNcegLy8be1Qk0-aMgGIudThS_LYXuQrrP90hBCTY38BEvlDyl2yasfPXR-OSlw4fn5i9rhio0msKrz-1slxyXSVyjaemxKaMa-jLR96P4pdDZepIVP9SBvek61ZJ7A==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-alP8N4eYcgcO-L5g8K0d4SrGrFgDH9V55n8FuVKbSCiEX5nDjQPg6J3EI8Q7mpiWDYwsRB8v_v5DOY0llRAglubj9b5lmyYmSctwfFTxeU8_GkgRoYYZROJIGI3cpdUmSR7uhXAWULRcPXvJorBm1g==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-rtYMnmQRDyeTRlpo6zjajmDM1_ZGezvH1TxTF7pi6IX5koakh96spX_CWNOTB-j3ohHqV3cNVmp9NP6PNCOkQIzteOnVLk_9zNyq7GLIsqYf3SjRtjRwF4CSl_IPuInfJSl9Nftx25SOAZYjsDJdHw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-mNqyjEA1O96Q1-998RngmUEBG4SJasHvrM9br8XKW9fhJ9x1HR42af1sufKEcMAqIaBkthmpe2Va8HwCZIg-IZJ9LeT7Ka39nHoMMjVnvjL2kJXDBYyMz1_2qzWnWQq2qeuo25JVy-U0nD1xJ1tl3w=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-30",
+      "endDate": "2026-10-30",
+      "hours": [
+        [
+          17,
+          20.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261031_1_2115954103104991673",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2115954103104991673",
+    "postedAt": "2026-10-29T23:49:05.000Z",
+    "postText": "本日 ◇10/30金 【夜の部のみ営業🈺】 17:00から〜20:30 ご来店ご到着お並びの お客様まで営業致します。  →［グッチーズカレー］ やっております！  明日 ◇10/31土 【昼の部】10→14時 【夜の部】16:30→20時 ※夜の部やっております♪ https://t.co/htlDU0Owya",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-32X7XhPMJtCoSFuRKmXde_VhNcegLy8be1Qk0-aMgGIudThS_LYXuQrrP90hBCTY38BEvlDyl2yasfPXR-OSlw4fn5i9rhio0msKrz-1slxyXSVyjaemxKaMa-jLR96P4pdDZepIVP9SBvek61ZJ7A==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-alP8N4eYcgcO-L5g8K0d4SrGrFgDH9V55n8FuVKbSCiEX5nDjQPg6J3EI8Q7mpiWDYwsRB8v_v5DOY0llRAglubj9b5lmyYmSctwfFTxeU8_GkgRoYYZROJIGI3cpdUmSR7uhXAWULRcPXvJorBm1g==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-rtYMnmQRDyeTRlpo6zjajmDM1_ZGezvH1TxTF7pi6IX5koakh96spX_CWNOTB-j3ohHqV3cNVmp9NP6PNCOkQIzteOnVLk_9zNyq7GLIsqYf3SjRtjRwF4CSl_IPuInfJSl9Nftx25SOAZYjsDJdHw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-mNqyjEA1O96Q1-998RngmUEBG4SJasHvrM9br8XKW9fhJ9x1HR42af1sufKEcMAqIaBkthmpe2Va8HwCZIg-IZJ9LeT7Ka39nHoMMjVnvjL2kJXDBYyMz1_2qzWnWQq2qeuo25JVy-U0nD1xJ1tl3w=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-31",
+      "endDate": "2026-10-31",
+      "hours": [
+        [
+          10,
+          14
+        ],
+        [
+          16.5,
+          20
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
