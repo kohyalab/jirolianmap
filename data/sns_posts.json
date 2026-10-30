@@ -25904,5 +25904,23 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_tachikawa_2115963289633194039",
+    "shopId": "tachikawa",
+    "shopName": "立川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jirotachikawa/status/2115963289633194039",
+    "postedAt": "2026-10-30T00:25:35.000Z",
+    "postText": "10/30(金)、昼夜とも時間内売り切れなし営業です。 昼11:00-14:30 夜17:00-21:30  ①煮干し変更、今日もあります！  　+汁なし変更券で煮干し汁なしも可！ 　　フラオニ有りで、魚粉は省きます…  ②持帰りラーメン販売します。 　標準:2人前のスープと生麺+ブタハーフ  ※写真2枚目は他店様 https://t.co/qJoexKfWHT",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-XtS-sILLrT2DDgfIW-WljYUCrKMjRTwIbRBFmT1cXW3KbA_x2RIzjL7P4VAwLMv8427_BmvxKc23mnzY3BtQ88ElsHFFWvPhOhjkQugVhAs_B3F-qYR7yd-idckNOdVqN2t2526SZlqqWLd6r8ZSSw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-1fKdKwKcovVdz2yzMmbp2959qgu9v3GpWrY8He7udcQR_I7LuPiv5Y6aybBAiBCrQLSSQa44_BmiPRV_MLajOHDdCtWBc9V9D3ide70qUX6JmfN3Ba6TaY4eEVtDC63erLZuHUiTVVwoN_MTs8RQSA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知であり、臨時休業や営業時間変更はありません。"
   }
 ]
