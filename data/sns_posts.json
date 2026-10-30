@@ -26123,5 +26123,35 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "本日通常営業の告知のため、変更なし"
+  },
+  {
+    "id": "sns_post_routine_koiwa_2115996735067803702",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2115996735067803702",
+    "postedAt": "2026-10-30T02:38:29.000Z",
+    "postText": "現在外並び4名",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常的な営業状況の報告であり、臨時休業や営業時間変更の告知ではないため変更なし。"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2116001716164592091",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2116001716164592091",
+    "postedAt": "2026-10-30T02:58:17.000Z",
+    "postText": "お客さんいたらどうぞ！！！ https://t.co/G7ekUkhkxo",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
