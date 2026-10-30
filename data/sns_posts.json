@@ -26694,5 +26694,40 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "臨時休業や営業時間変更の告知はなく、限定トッピングの販売告知のみです。"
+  },
+  {
+    "id": "sns_post_routine_yaen2_2116309726686572903",
+    "shopId": "yaen2",
+    "shopName": "八王子野猿街道店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/Jiro_Yaenkaido2/status/2116309726686572903",
+    "postedAt": "2026-10-30T23:22:12.000Z",
+    "postText": "10月31日(土) 11:00～20:00 通し営業 ⭐テイクアウト、鍋二郎あります 並ばず買えます エビドクロテイクアウト現金です",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業およびテイクアウト販売の案内であり、営業時間の変更や臨時休業はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2116310244569841737",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2116310244569841737",
+    "postedAt": "2026-10-30T23:24:16.000Z",
+    "postText": "本日 ◇10/31土 【昼】 →こちらをご覧のお客様限定です！ ↓ ※お客様ご自身で→丸の🟥赤又は白🤍食券を１枚お取りになって席までお越しください。→食券は券売機の前の台の二段目に置いておきます。 ※必ず着席時にお出しください。 ※サービス中の目印は［黄色いハンカチ］ どうぞご利用下さい♪ https://t.co/ZvwTANGf9z https://t.co/ek46VtzYTN",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-thgkAOfpFlbvDhWqb4fQKAh-f2m1w9Y89BWG1XZZpHI3am8yCVfJN3jSjTQkkqnleMfofv7bIDT8XalNdh-TPuJYuXLbCZfPx2zPsbkCfKjdO79m2gwzyt90CK7ReFdXad6nTEBgSTboq3QAJc-B5w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-w5TQRo4Nv878SruWI04Irbn78AoLm7XrRabvdHnI8qeGL6RhvfOhgWw5F8IwQKyJGnXapxVGKPpYdW-a4jZosKHTv9uRjfyyTGFvB1Cd_payCuh1nTIYSbhsM194jUEqn_xYm4eZmVkGeyrklFXrdg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-i8aGd2AMP1rL-ipOzI2XTZ8NnykcwOOxHYcMrSAyPVLRUZc-tPr1cQl5On1ddqRrKr8N_zn4V0aN6JM9tZFCSnO-lj4EET6CxP8WoZSj-r8tgDOjIQlLJjbj_HDKxM8AMWlnty5dGwSqFHm_fSpESw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-700ElJM38dXVO6Va-CLvxHHQSrdQm-39xzx3dxEC902l3SEM2v4lUTAPdSYmsY-maE5DFPnz9hsozVY5MDHIQCxSttIfxOPcQWyptf6TCCjTY2L-B8LxVqgVWhUGbKHPvDilOAe9D5tsoBgo1RrxEg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更や臨時休業はありません。限定トッピング（大根っぽ漬・刻みしょうが）の案内および通常の営業情報です。"
   }
 ]
