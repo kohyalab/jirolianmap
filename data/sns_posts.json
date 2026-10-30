@@ -26207,5 +26207,24 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2116029723138785668",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2116029723138785668",
+    "postedAt": "2026-10-30T04:49:34.000Z",
+    "postText": "列切れたのでよろしかったらどうぞー！ https://t.co/3QmbS60YmN",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-JkK60NgsXeNEKglDfBVYuv3vr3TUNHfnfD6p_J26AM70L3g3OjDnCtME_ScspYMTTIXDnFGxuUbPXqLOfzJcks-lykVnakL0nlB9YbkPbd4HgjvzsXRCvsO8gzHN_humTbqgsjpCVLXbMMUUkClyrg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-H2vnOy-8FiBvL302PgeGJDyrwt5QnwDnE-9MyOczFHugCpMumnXeeVJK2eYKXdx5cRxX7ERu8YqTUipZ7yNcXJ0o6OyNsOp1pw00QgBrUNriRNkiYOwvoyOcBlMfb8xx5CaMji0yRqjQIm5d509KFw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-G8DFidkByB38OzOZsL7FsN5AmAr2P592xvToYhZr70DoRqfdLOHU3FL-lJgMXpcvHvIV6pPOOG3Gd1vYK-pG8CjJ3IavvS-xndVkeRucPnEt4igyaIbqGVZjcR7AwnaPx5y7wlGfZus4cnJq58ddeQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "テイクアウト販売の告知であり、営業時間の変更ではないため変更なし。"
   }
 ]
