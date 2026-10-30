@@ -26416,5 +26416,47 @@
     "processedAt": null,
     "aiStatus": "match",
     "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_routine_kannai_2116122355403723222",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2116122355403723222",
+    "postedAt": "2026-10-30T10:57:39.000Z",
+    "postText": "こんばんは。 カレーちん残りわずかとなりました。 無くなり次第終了となります。 引き続きよろしくお願いします!",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定メニューの告知のみであり、営業時間の変更に関する言及はないため変更なし。"
+  },
+  {
+    "id": "sns_post_kyoto_20261030_0_2116120284872966165",
+    "shopId": "kyoto",
+    "shopName": "京都店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kyoto/status/2116120284872966165",
+    "postedAt": "2026-10-30T10:49:26.000Z",
+    "postText": "都合により本日22時に閉店いたします🙇‍♂️",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-30",
+      "endDate": "2026-10-30",
+      "hours": [
+        [
+          17,
+          22
+        ]
+      ],
+      "reason": "都合により",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 都合により"
   }
 ]
