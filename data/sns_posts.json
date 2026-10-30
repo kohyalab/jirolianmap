@@ -26525,5 +26525,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "限定トッピングの告知のみであり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_hitachinaka_2116245700204023909",
+    "shopId": "hitachinaka",
+    "shopName": "ひたちなか店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26_hitachinaka/status/2116245700204023909",
+    "postedAt": "2026-10-30T19:07:47.000Z",
+    "postText": "【10月31日 土曜日 営業の件】  先週、先々週と2週続けて 土曜日の臨時休業 大変失礼しました  本日、通常通り10：00〜16：00 の営業になります  基本ラストオーダー宣告ナシ 列が途切れたら閉店",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "10月31日(土)は通常通りの営業となります。"
   }
 ]
