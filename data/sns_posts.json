@@ -26489,5 +26489,41 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 材料切れのため"
+  },
+  {
+    "id": "sns_post_routine_kameido_2116161479795954019",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2116161479795954019",
+    "postedAt": "2026-10-30T13:33:07.000Z",
+    "postText": "散財してしまった… https://t.co/J8JFM2Rnss",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-bJlp9PFQaVvA4FlDpZczL0pc2o_sXwDS7Cf8dHbOMUHd8QM3B8VYg8M35Jlz8_LsKKs7GF88HUSVBkNl6pu1h4vIgGg_k9-9eqeOG7JsqilIXIL50C6Qy1zyh_U2-YS1-CK-9GCodyx05Y-O-GQzyA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業変更なし（通常通り営業・雑談等）"
+  },
+  {
+    "id": "sns_post_routine_fujisawa_2116164198027903196",
+    "shopId": "fujisawa",
+    "shopName": "湘南藤沢店",
+    "postSource": "x",
+    "postUrl": "https://x.com/fujirow26/status/2116164198027903196",
+    "postedAt": "2026-10-30T13:43:55.000Z",
+    "postText": "本日もありがとうございました。  明日10月31日(土) ハロウィン🎃  ブラックオイル  無料トッピング にんにく入れますか？ の時お伝えください。  魔のうずら🥚  よろしくお願いいたします。 https://t.co/2LkpVcdkEx",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-gVaJzken4lpBOiJOScqFKhG6NAQrM8QIL6zaGvDSO5QiOZ0u6SWwAwdBraERPS76QB4Es-atVGTbdvHzjiM1bA2a0FNfyHyheXzwdvMvgQTKC6mu-JSXM7QuliCJKQ76CLTD3ozgX6uUEEv1QuCTZQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-xHqZk9N9J0ShrCKXuOv0I4GzZ8jHgXQOzXGcCWPqUBi74WaMRYN5bkb7tAtFjaAkMV0zP-QITD2atJTNP-aXq6PTBoho_LQCTAm7aQQ2T2-zvQaY8e7VUCXUd3DChX-eNz8BUyrQgtrh14sMvBWIWw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-fQwrQHxLpWPU0abOPnnBqdpXHoNEtEJdzgnfe9n0h-h3AI-Tj_VyE3w-nnACDNn8YLc5annBYZDmPGfSmMd7zLBooC1iQH5v9lzwjRq47QNIHDmNY9LltHqaz6vORlneuekhW7e7kAT7fWvasOOnwQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの告知のみであり、営業時間の変更はありません。"
   }
 ]
