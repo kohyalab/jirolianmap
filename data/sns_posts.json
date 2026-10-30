@@ -26241,5 +26241,42 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_sengawa_2116050837541953623",
+    "shopId": "sengawa",
+    "shopName": "仙川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjiro26/status/2116050837541953623",
+    "postedAt": "2026-10-30T06:13:28.000Z",
+    "postText": "本日17時から店内営業とテイクアウト販売します。 https://t.co/VkZV1rlCFv",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-uwjQl1fUtykkiRqiJ1I0xquRwHhT998b63s_mdnMJN48WhX0jdlL3ard76mV-YNbzOOj9e3VRi3sSANmO7t2TKybgUKv0IpAjMcTGNZ_zaoksQnWkzOHgDucbEpUQ4qzgJjopScK72d6kqUva5Wcqw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-MIE3ObPcdC_z3Uhf1u2JIELoQ5nr73U1iFt5TSNwN-4oIQCNTwPjc_vm9Oub7dHYtq6IPGW_4vb6sALeIRWlUWVp56beq30ulvUrswWxbZ40VVD_RhjSUrdsfDvLuOmGelxqj30aF57cvvZIZ1Fkbg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "本日および11月3日の営業に関する告知ですが、通常営業時間内での営業告知であるため変更なしと判定します。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2116053046174388234",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2116053046174388234",
+    "postedAt": "2026-10-30T06:22:15.000Z",
+    "postText": "［味ぽん生たまご］ そろそろ終了☑️です♪ 食べ納め！どうぞー♪ https://t.co/9QqPZp5eEQ https://t.co/P88Wbdmgwm",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-8PF49sscMbgY_Q7zxtChxQtHXari-r4_rhOea-e1Mp7prouGcKVG7gIR2sgaF-NUcDsTl98yJwq8tL1O8C1IITFhnjmTin74ZuZCrKZlt8QfIXW9HdO4M3WecZFOjseJQ3huI8XqnjtTNrvP67skWA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-kCybRcYdnrrGxRxaNMn0CWX3UtmjLD_d1YoOC-MgYy5pqOS8v3KPuSljXAzR3gNWJl4EOYsnRGpo57FiP5c2HkLKt0vrft0wWaY1LmYgAzrFOj4SyfXW9Q5_9dFVMHrOh1H70ya18lFBddi_Dh3qMw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-06lyRMjBDmwFj58UYzCLbOLbpQwNlgsdTLFareZ0e6UJtcDbbp_hi5CQ-hnHQBAb_D4rWErst3VyKl7QtLuSO_27kQ5I_aFKPw-k95BQ1RQ6YUIUiSh2jGNu5NadkeCFFNRyaIoOelE9NdLV2WvbHg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定メニューの販売終了告知であり、営業時間の変更に関する言及はありません。"
   }
 ]
