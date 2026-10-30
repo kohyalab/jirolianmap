@@ -26153,5 +26153,59 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_koiwa_2116014637485617351",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2116014637485617351",
+    "postedAt": "2026-10-30T03:49:37.000Z",
+    "postText": "現在外並び3名",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "現在外並び3名という日常的な営業状況の報告であり、営業時間の変更や臨時休業の告知ではないため変更なし。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2116017048111526229",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2116017048111526229",
+    "postedAt": "2026-10-30T03:59:12.000Z",
+    "postText": "本日 ◇10/30金 【夜】 →こちらをご覧のお客様限定です！ ↓ ※お客様ご自身で→丸の🟥赤又は白🤍食券を１枚お取りになって席までお越しください。→食券は券売機の前の台の二段目に置いておきます。 ※必ず着席時にお出しください。 ※サービス中の目印は［黄色いハンカチ］ どうぞご利用下さい♪ https://t.co/MUCrAkzHnu https://t.co/tAUjaeeng2",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-nbUtyHUbrRsEk_KSBcCR5Msom5XKZT2hIO-uraznFa7Z0yAfh1YDNsm6bXtC3WfF1zwN2ZlnTi9LffFBLtXvSvftCgJfJTyz4uOH2IFHWwfs-s1O0n2ln6NfoWBVKAhObEeO5auxHpeHlkWhn9e2rA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-e3PeUj1gpaKKx1xxHmR1pDFz02-ej9png9WUmKWuwpHHWXnmdFMDT1dgP3w5_uTc0FzeeiMdWMSoyR7ZPibKex6S7-SDkB9vQHkUMc5fMV3V6RoJW3PzVW67FiZxPClWA78Yn5vVWjh5M9jg-lMMsw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-WA1tfICQwmLMyPEdu-UjOoGkjj6jsnwOdieTNyr9TBHMq0mxKUdcUbu_VZdVtHXG2OauxjwusvE5NnVXx0DONCVKQUh2p8EMkaxcVhFV9zkSdOx7JTR0cOex9GM-vuQIukuP5ibiwovbAw5p2PiRRw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-YqttKmdrW081xWKEoSX2m6lIb_vrH1O37sClg3az0Gn0Y7sUFoYILY67_lLy_VanMJLFMYoKQcDp9Ua5TmhCGgu5TwfVhkchibuCOd6hdJxb3IdE_dAcLVU2HA3pgifz-7JEXJMhIJovQRVFKPn9JQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2116016672096284778",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2116016672096284778",
+    "postedAt": "2026-10-30T03:57:42.000Z",
+    "postText": "本日 ◇10/30金 【夜の部のみ】 17:00〜20:30 ［濃く脂※コクアブラ］ 〜シークァーサーversion〜 お椀で100円食券です♪ ※お肉屋さんで揚げ物用のラードを取った後の揚げ脂（脂カス）です。 カリ、ジュわな脂です♪  温かいシークァーサー濃く脂をどうぞー♪  健康第一です♪w https://t.co/2cayMxyBHJ https://t.co/tAUjaeeng2",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-X9GIvt1x0_w1JTqLOXVrVNSnAKgCLZ7bR8tp8LeUMzuNEcV3MH-t1VGUsqMWmHlsKhAIeUGNVSeNku6uBiE1xPNFDPPbS6Mw7tZBHlwU7DY9QKVGk3p4FO4RgKVK4Q4CCLobhx0gC3UQFc8ZsN6m6g==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-3lsDR-zKyUtd_I6e1uVAiIs3hqP3ZbNThKNRWz3P-4aK7b7ViQhr4LbHoqhTth5RJLZ2Ky1-BCIXFcyM63lzCERaM6NAeCQqfMI4FcMPFp6DwL4NgJsyz76fQ0FJvctuF82wR08Xmf2MFTB15TSogw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-WEBTsIlAjJeTnY4qAjLCmUzF5-jAb71MeW0muvNjUGZVsR0UtVsqJOgG19cAixQ5hOgFOqeyhxYm-CX-MuP1ZQxwgdmZugNcFo7yGKE3KNh3i5Gm46xAWE6SLL-ipbG4h0MvjYR2ipxOFIcqemYG8Q=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "10/30(金)の営業に関する投稿ですが、通常営業時間内での営業告知および限定トッピングの案内であり、営業時間の変更はありません。"
   }
 ]
