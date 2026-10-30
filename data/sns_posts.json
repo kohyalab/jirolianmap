@@ -25990,5 +25990,91 @@
     "processedAt": null,
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_routine_kannai_2115972788750307428",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2115972788750307428",
+    "postedAt": "2026-10-30T01:03:20.000Z",
+    "postText": "おはようございます！  本日もピラピラ麺での提供となります。 シビレ、納豆、煮干しの波動あります。 カレーちんご希望の方は「アレ」でお願いします。  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業変更なし（通常通り営業・雑談等）"
+  },
+  {
+    "id": "sns_post_routine_fujisawa_2115975153045926045",
+    "shopId": "fujisawa",
+    "shopName": "湘南藤沢店",
+    "postSource": "x",
+    "postUrl": "https://x.com/fujirow26/status/2115975153045926045",
+    "postedAt": "2026-10-30T01:12:44.000Z",
+    "postText": "おはようございます。  10月29日(木)  豚チゲ🐷  無料トッピング 野山商店特製タレ、崩し豚、豚カス醤油、 1番スープ、沢山にんにく🧄その他色々  粉チーズよくあいます。  にんにく入れますか？の時 お伝えください。  野山商店特製ピリ辛味噌あ青葱  ハロウィン🎃 スタッフ色々計画してくれてます🌈 https://t.co/jEZM3wNls6",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-yQhzWdXA--GVlBplUEz68eQtKcU1MO3XhXu-MoRoWHyjS3Ug0mwB9KnE8OTX9YFn_ZzwURLWLMoRqNPh28akF2EXle9X2OAy92ovj0HqnESmt180m3NKnaCdt7sOA94rkykk_qNMqPeYsaECkA8Vkg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定メニューの告知であり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_nagoyaosone_20261030_0_2115977621452570727",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2115977621452570727",
+    "postedAt": "2026-10-30T01:22:32.000Z",
+    "postText": "おはようございます。 ラーメン二郎名古屋大曽根店です。 本日昼の部の営業となります。  営業時間11:00〜14:00 ご来店される際は足もとお気をつけてお越しくださいませ。  明日３１日(土曜日)は10:00〜14:00予定 よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-30",
+      "endDate": "2026-10-30",
+      "hours": [
+        [
+          11,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_nagoyaosone_20261031_1_2115977621452570727",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2115977621452570727",
+    "postedAt": "2026-10-30T01:22:32.000Z",
+    "postText": "おはようございます。 ラーメン二郎名古屋大曽根店です。 本日昼の部の営業となります。  営業時間11:00〜14:00 ご来店される際は足もとお気をつけてお越しくださいませ。  明日３１日(土曜日)は10:00〜14:00予定 よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-31",
+      "endDate": "2026-10-31",
+      "hours": [
+        [
+          10,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   }
 ]
