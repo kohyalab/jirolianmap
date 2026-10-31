@@ -27734,5 +27734,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業変更なし（通常通り営業・雑談等）"
+  },
+  {
+    "id": "sns_post_routine_matsudo_2116552876374032538",
+    "shopId": "matsudo",
+    "shopName": "松戸駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/matsudojiro3/status/2116552876374032538",
+    "postedAt": "2026-10-31T15:28:24.000Z",
+    "postText": "毎度ありがとうございます。  11月3日(火) 通常営業です。  よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "11月3日(火)は通常営業である旨の告知であり、臨時休業や時間変更はありません。"
   }
 ]
