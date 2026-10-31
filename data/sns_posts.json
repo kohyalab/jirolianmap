@@ -26813,5 +26813,227 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業時間の変更に関する言及がないため、変更なしと判定しました。"
+  },
+  {
+    "id": "sns_post_routine_tachikawa_2116333958837465399",
+    "shopId": "tachikawa",
+    "shopName": "立川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jirotachikawa/status/2116333958837465399",
+    "postedAt": "2026-10-31T00:58:30.000Z",
+    "postText": "10/31(土)、昼夜とも時間内売り切れなし営業です。 昼11:00-14:30 夜17:00-21:30  ①煮干し変更、今日もあります！  　+汁なし変更券で煮干し汁なしも可！ 　　フラオニ有りで、魚粉は省きます…  ②持帰りラーメン販売します。 　標準:2人前のスープと生麺+ブタハーフ https://t.co/qet4UhbM2k",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-GrFa6x9_pj3bz0cKx_0YNxzH4oY5VwetJxu4TYWON6fja3R4DA1V9oYoxEJFntjQmh83wtyYtTe8Ol-_NP-NwwCZjkdFqRhhp4qr9YT8gAV3BPlB2PbJ3uQe4FlTlGe-z8dJYkheboqQhdrzo_Q3AA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "10/31(土)は通常通りの営業です。"
+  },
+  {
+    "id": "sns_post_routine_kawagoe_2116330427434852354",
+    "shopId": "kawagoe",
+    "shopName": "川越店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kwge26/status/2116330427434852354",
+    "postedAt": "2026-10-31T00:44:28.000Z",
+    "postText": "おはようございます！ 本日通し営業です☀️ ○11:00~20:00  🍜持ち帰りあります！  無料トッピング｢紅生姜｣あります☺️ トッピング時に「アレ」で！  よろしくお願いします🙇‍♂️",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知であり、臨時休業や営業時間変更はありません。"
+  },
+  {
+    "id": "sns_post_chiba_20261101_0_2116332159908880495",
+    "shopId": "chiba",
+    "shopName": "千葉店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_chiba/status/2116332159908880495",
+    "postedAt": "2026-10-31T00:51:21.000Z",
+    "postText": "11月の予定です。よろしくお願い致します https://t.co/64Gjl5DUKC",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Vjp5bgKtdHaFGwop6iFNcbf8POGF5VjC5uUPyv19wZ5dKJ_MIXclY9Xjbrwtij2gsPhWEPyd_xD_Y04Orx9t8vJ_I1hciT7-NKD4pn7ayeFbHYD90vu9NxdbKUyG3Y1pfaQML77pzp2uxqyU5E5j1Q=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-01",
+      "endDate": "2026-11-01",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_chiba_20261103_1_2116332159908880495",
+    "shopId": "chiba",
+    "shopName": "千葉店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_chiba/status/2116332159908880495",
+    "postedAt": "2026-10-31T00:51:21.000Z",
+    "postText": "11月の予定です。よろしくお願い致します https://t.co/64Gjl5DUKC",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Vjp5bgKtdHaFGwop6iFNcbf8POGF5VjC5uUPyv19wZ5dKJ_MIXclY9Xjbrwtij2gsPhWEPyd_xD_Y04Orx9t8vJ_I1hciT7-NKD4pn7ayeFbHYD90vu9NxdbKUyG3Y1pfaQML77pzp2uxqyU5E5j1Q=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-03",
+      "endDate": "2026-11-03",
+      "hours": [
+        [
+          11,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_chiba_20261108_2_2116332159908880495",
+    "shopId": "chiba",
+    "shopName": "千葉店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_chiba/status/2116332159908880495",
+    "postedAt": "2026-10-31T00:51:21.000Z",
+    "postText": "11月の予定です。よろしくお願い致します https://t.co/64Gjl5DUKC",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Vjp5bgKtdHaFGwop6iFNcbf8POGF5VjC5uUPyv19wZ5dKJ_MIXclY9Xjbrwtij2gsPhWEPyd_xD_Y04Orx9t8vJ_I1hciT7-NKD4pn7ayeFbHYD90vu9NxdbKUyG3Y1pfaQML77pzp2uxqyU5E5j1Q=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-08",
+      "endDate": "2026-11-08",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_chiba_20261115_3_2116332159908880495",
+    "shopId": "chiba",
+    "shopName": "千葉店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_chiba/status/2116332159908880495",
+    "postedAt": "2026-10-31T00:51:21.000Z",
+    "postText": "11月の予定です。よろしくお願い致します https://t.co/64Gjl5DUKC",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Vjp5bgKtdHaFGwop6iFNcbf8POGF5VjC5uUPyv19wZ5dKJ_MIXclY9Xjbrwtij2gsPhWEPyd_xD_Y04Orx9t8vJ_I1hciT7-NKD4pn7ayeFbHYD90vu9NxdbKUyG3Y1pfaQML77pzp2uxqyU5E5j1Q=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-15",
+      "endDate": "2026-11-15",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_chiba_20261122_4_2116332159908880495",
+    "shopId": "chiba",
+    "shopName": "千葉店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_chiba/status/2116332159908880495",
+    "postedAt": "2026-10-31T00:51:21.000Z",
+    "postText": "11月の予定です。よろしくお願い致します https://t.co/64Gjl5DUKC",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Vjp5bgKtdHaFGwop6iFNcbf8POGF5VjC5uUPyv19wZ5dKJ_MIXclY9Xjbrwtij2gsPhWEPyd_xD_Y04Orx9t8vJ_I1hciT7-NKD4pn7ayeFbHYD90vu9NxdbKUyG3Y1pfaQML77pzp2uxqyU5E5j1Q=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-22",
+      "endDate": "2026-11-22",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_chiba_20261123_5_2116332159908880495",
+    "shopId": "chiba",
+    "shopName": "千葉店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_chiba/status/2116332159908880495",
+    "postedAt": "2026-10-31T00:51:21.000Z",
+    "postText": "11月の予定です。よろしくお願い致します https://t.co/64Gjl5DUKC",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Vjp5bgKtdHaFGwop6iFNcbf8POGF5VjC5uUPyv19wZ5dKJ_MIXclY9Xjbrwtij2gsPhWEPyd_xD_Y04Orx9t8vJ_I1hciT7-NKD4pn7ayeFbHYD90vu9NxdbKUyG3Y1pfaQML77pzp2uxqyU5E5j1Q=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-23",
+      "endDate": "2026-11-23",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_chiba_20261129_6_2116332159908880495",
+    "shopId": "chiba",
+    "shopName": "千葉店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_chiba/status/2116332159908880495",
+    "postedAt": "2026-10-31T00:51:21.000Z",
+    "postText": "11月の予定です。よろしくお願い致します https://t.co/64Gjl5DUKC",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Vjp5bgKtdHaFGwop6iFNcbf8POGF5VjC5uUPyv19wZ5dKJ_MIXclY9Xjbrwtij2gsPhWEPyd_xD_Y04Orx9t8vJ_I1hciT7-NKD4pn7ayeFbHYD90vu9NxdbKUyG3Y1pfaQML77pzp2uxqyU5E5j1Q=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-29",
+      "endDate": "2026-11-29",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_routine_ikuta_2116329906305110080",
+    "shopId": "ikuta",
+    "shopName": "生田駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ikuta_jiro/status/2116329906305110080",
+    "postedAt": "2026-10-31T00:42:23.000Z",
+    "postText": "おはようございます🎃 本日、ごま玉 まっくろver.⚫️¥200 途中で混ぜるとスープが変わります！ 昼夜売り切れなし、宣告なし 100円玉多めにご用意ください。 よろしくお願いします。 https://t.co/Z0acsnEu1r",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-wNABgsQG1M5i85fLsWOlJ8LGUTOSCbxKRYbjj-4DVyGakI6q2ntTS0em2JS1qnh9zQ_v-JpXYstRK2CY_Oq-YzR3h53ToSeHnFbA5fbDdXQLUncA9YZ_rcuvSD6wtbrazI5DhS3ZOaZKPyzxSsOHwA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの告知であり、営業時間の変更はありません。"
   }
 ]
