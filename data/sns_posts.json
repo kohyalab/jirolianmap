@@ -27874,5 +27874,52 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "限定トッピングの告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_shndaita_2116656203912888464",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2116656203912888464",
+    "postedAt": "2026-10-31T22:18:59.000Z",
+    "postText": "2026年11月1日(日)  通常営業です！ 11:00～16:00くらいです！  よろしくお願いします！  ※住宅地なのでおしゃべりしないで待っててください",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知のため変更なし"
+  },
+  {
+    "id": "sns_post_hitachinaka_20261103_0_2116654630944018574",
+    "shopId": "hitachinaka",
+    "shopName": "ひたちなか店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26_hitachinaka/status/2116654630944018574",
+    "postedAt": "2026-10-31T22:12:44.000Z",
+    "postText": "【1日〜7日 営業時間のご案内】  3日 火曜日(祝日)10：00〜16：00  基本ラストオーダー宣告ナシ 列が途切れたら閉店  テーブル席あり〼 利用者 限定 お子様連れ優先案内  複数名のお客様 ロットまたがない様にご案内し〼  ペットボトルキャップ集めて〼  割り箸・玉子の殻は丼の中で大丈夫 https://t.co/PamSgTTPaR",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-KJb779o0j1l3K8PwpM5dE_FJkdpFayRBF3fLZ9PBdO1YLLBS5mS2FpvnV6saT-6L5Fs0D6uZwBF7tXm-37nPy6JOxw5dfzBnkMXfvJPHuXYmPIfvxy_nntCV6CjeiVCZoPHAeMFJK2zMgLnQfaG-sg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-kKQGIPHEZcO_QXpZAJUTQR2kwe30Kycm1XSEyDZtye3RJ-DN-ZJ6EnpMydwsTdtKym1sIVyAq4lFY91-3j0CsbWxsDM3kIm1B-mmlE8pipNcnKwxG-iLO5RkXq0YNYddI28O1Kz245PHU49YHKYygw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-02a7zWJDD_uEq8roRswkN-NsfT3j52hfWISD_vt3aIDOG2egG9TzpIzTXhlnmf0SitL_rOFq3KoxYfWH7_f7_DPPZZiUT9CXOwVIa8CEXaCeZb1iQOZlBi_P93GbURqUE8IPlmC6WfB6J_ddKE0dqg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-VKvFMD2GHeCoWR3-cwPKKiY-oEU262vFuom2CspCl_B-ePdKarbvV493qkHF1WB3Mr2v2ZUh9sIBuhfadTGDp712yYxlMYcxiXjoAsNHijEHODFAY1Hq5A3Yb_NOhJzLHeoEKcuJaxRNADvhMK9xNQ=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-11-03",
+      "endDate": "2026-11-03",
+      "hours": [
+        [
+          10,
+          16
+        ]
+      ],
+      "reason": "祝日特別営業",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   }
 ]
