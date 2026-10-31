@@ -5323,6 +5323,44 @@
         "reason": "都合により",
         "sourceUrl": "https://x.com/jiro_kyoto/status/2116120284872966165",
         "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-03",
+        "endDate": "2026-11-03",
+        "hours": [
+          [
+            11,
+            14.5
+          ],
+          [
+            17.5,
+            20.5
+          ]
+        ],
+        "reason": "祝日特別営業",
+        "sourceUrl": "https://x.com/jiro_kyoto/status/2116344319015788910",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-07",
+        "endDate": "2026-11-07",
+        "hours": [
+          [
+            11,
+            14.5
+          ]
+        ],
+        "reason": "",
+        "sourceUrl": "https://x.com/jiro_kyoto/status/2116344319015788910",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-10",
+        "endDate": "2026-11-10",
+        "hours": [],
+        "reason": "",
+        "sourceUrl": "https://x.com/jiro_kyoto/status/2116344319015788910",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -6021,6 +6059,27 @@
         "hours": [],
         "sourceUrl": "https://x.com/jiro_chiba/status/2105106592874312054",
         "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-03",
+        "endDate": "2026-11-03",
+        "hours": [
+          [
+            11,
+            15
+          ]
+        ],
+        "reason": "",
+        "sourceUrl": "https://x.com/jiro_chiba/status/2116332159908880495",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-23",
+        "endDate": "2026-11-23",
+        "hours": [],
+        "reason": "",
+        "sourceUrl": "https://x.com/jiro_chiba/status/2116332159908880495",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -6469,6 +6528,48 @@
         "endDate": "2026-10-21",
         "hours": [],
         "sourceUrl": "https://x.com/1284jiro/status/2105601517868949776",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-01",
+        "endDate": "2026-11-01",
+        "hours": [],
+        "reason": "",
+        "sourceUrl": "https://x.com/1284jiro/status/2116444048416293134",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-03",
+        "endDate": "2026-11-03",
+        "hours": [
+          [
+            11,
+            15
+          ],
+          [
+            17.5,
+            20.5
+          ]
+        ],
+        "reason": "",
+        "sourceUrl": "https://x.com/1284jiro/status/2116444048416293134",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-23",
+        "endDate": "2026-11-23",
+        "hours": [
+          [
+            11,
+            15
+          ],
+          [
+            17.5,
+            20.5
+          ]
+        ],
+        "reason": "",
+        "sourceUrl": "https://x.com/1284jiro/status/2116444048416293134",
         "_isAiImported": true
       }
     ],
@@ -6946,6 +7047,19 @@
         ],
         "reason": "",
         "sourceUrl": "https://x.com/r26akgd/status/2113824337144975477",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-10-31",
+        "endDate": "2026-10-31",
+        "hours": [
+          [
+            12,
+            15
+          ]
+        ],
+        "reason": "",
+        "sourceUrl": "https://x.com/r26akgd/status/2116362308465385703",
         "_isAiImported": true
       }
     ],
