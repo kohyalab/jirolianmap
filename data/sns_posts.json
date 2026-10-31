@@ -27749,5 +27749,27 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "11月3日(火)は通常営業である旨の告知であり、臨時休業や時間変更はありません。"
+  },
+  {
+    "id": "sns_post_yaen2_20261101_0_2116572705436954859",
+    "shopId": "yaen2",
+    "shopName": "八王子野猿街道店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/Jiro_Yaenkaido2/status/2116572705436954859",
+    "postedAt": "2026-10-31T16:47:11.000Z",
+    "postText": "11月1日(日) お休みになります",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-01",
+      "endDate": "2026-11-01",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
