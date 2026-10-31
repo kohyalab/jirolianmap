@@ -27050,5 +27050,132 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業変更なし（通常通り営業・雑談等）"
+  },
+  {
+    "id": "sns_post_kyoto_20261103_0_2116344319015788910",
+    "shopId": "kyoto",
+    "shopName": "京都店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kyoto/status/2116344319015788910",
+    "postedAt": "2026-10-31T01:39:40.000Z",
+    "postText": "11月の予定です！3日は日曜の営業時間で営業します https://t.co/YLj4Q6YvwP",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-BGla7knLWP51BkKl_AoJubIu0D0Wrr65TJ6JZQgyg-JSFSomiVm8VycPE_dsVaKGDDRr6djZjVkmiS50xrTOJ9iaPhYwimqP0FNJF_dI3gJ2LJvpuQSKvsdkDnZzk3eU-z0EgmFtwM8ytj2x1VYjqQ=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-11-03",
+      "endDate": "2026-11-03",
+      "hours": [
+        [
+          11,
+          14.5
+        ],
+        [
+          17.5,
+          20.5
+        ]
+      ],
+      "reason": "祝日特別営業",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 祝日特別営業"
+  },
+  {
+    "id": "sns_post_kyoto_20261107_1_2116344319015788910",
+    "shopId": "kyoto",
+    "shopName": "京都店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kyoto/status/2116344319015788910",
+    "postedAt": "2026-10-31T01:39:40.000Z",
+    "postText": "11月の予定です！3日は日曜の営業時間で営業します https://t.co/YLj4Q6YvwP",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-BGla7knLWP51BkKl_AoJubIu0D0Wrr65TJ6JZQgyg-JSFSomiVm8VycPE_dsVaKGDDRr6djZjVkmiS50xrTOJ9iaPhYwimqP0FNJF_dI3gJ2LJvpuQSKvsdkDnZzk3eU-z0EgmFtwM8ytj2x1VYjqQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-07",
+      "endDate": "2026-11-07",
+      "hours": [
+        [
+          11,
+          14.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_kyoto_20261114_2_2116344319015788910",
+    "shopId": "kyoto",
+    "shopName": "京都店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kyoto/status/2116344319015788910",
+    "postedAt": "2026-10-31T01:39:40.000Z",
+    "postText": "11月の予定です！3日は日曜の営業時間で営業します https://t.co/YLj4Q6YvwP",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-BGla7knLWP51BkKl_AoJubIu0D0Wrr65TJ6JZQgyg-JSFSomiVm8VycPE_dsVaKGDDRr6djZjVkmiS50xrTOJ9iaPhYwimqP0FNJF_dI3gJ2LJvpuQSKvsdkDnZzk3eU-z0EgmFtwM8ytj2x1VYjqQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-14",
+      "endDate": "2026-11-14",
+      "hours": [
+        [
+          11,
+          14.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_kyoto_2116343686326055407",
+    "shopId": "kyoto",
+    "shopName": "京都店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kyoto/status/2116343686326055407",
+    "postedAt": "2026-10-31T01:37:09.000Z",
+    "postText": "おはようございます！本日通常営業です！ 「裏豚マシ」あります！現金300円です！  本日は一乗寺で「秋まつり」やってます！ ご近所のぱんのちはれさんで当店のラーメンをイメージしたサンドウィッチも販売してます！他のお店さんも色々やってるみたいなので、是非一乗寺に遊びに来てください！ https://t.co/Uf49NY9rDZ",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-EeD_cblsNFhFh1seEgrzHUt8ue9TkQOTESls0pKA_YAk_KFQBNo6vNvV_wYZggY1prpAZ4yiGQjDW97Ar43d3d4IxTctq6lsPGNEDHo4EbTO3fpySQxb_k_S5icjWyahzYRbAtcl75l7__THlm-Gfg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2116349467674997097",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2116349467674997097",
+    "postedAt": "2026-10-31T02:00:07.000Z",
+    "postText": "おはようございます！本日11〜21の通し営業です！！女川でロックフェスあったり、西公園でも何かお祭りやってますね！ 秋の気持ちいい天気の中お散歩いかがでしょうか？ ついでにラーメン食べにお越しくださいませ！ テイクアウトも好評ですので是非是非！ https://t.co/0gnNIOLjBO",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-bxTPbmM-lR1_3dOyDzoIl9G_37dJDUJcTbQlNhzWuZBTBBmoNWqVuSsBCZai-aS1w7r8Rf-Bpbrr0GuOn2U-wej34Yod21syFqmRB0H3hD-n1JZrbLSj9yEw75sNkHnl7hGyIRCA_w5C_B1xQERbDQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-6Y7kO2rIkn6mQ46eQclbHbtx5_3KunLyGlrheWNrcPn987Y33t4LtQxDO7RKtBUHrB37WQPO-7kE9gG-tXJEeq_CYqxAwTksGuCOVvQP1y0mRAQnGd2QIT7rBSRlKbcyjRzHPqGMWdrIWjC64jUKRg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-584JVeyS0LOlE_HP5POYkIKfmOKxOmMIa0VJcjeKuOkucB225DB1UyW1ONMV0odaz55XGI1kCbLVNrGa37rs9wWCs7CmGofbstC6sraXKY8Q8aQLcZcca0Pc24fUdvL2ZUcGvih273mJUAH48Jn5cQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知であり、営業時間の変更はありません。"
   }
 ]
