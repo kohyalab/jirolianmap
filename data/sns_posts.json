@@ -27035,5 +27035,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "限定トッピングの告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_kannai_2116338630335832427",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2116338630335832427",
+    "postedAt": "2026-10-31T01:17:03.000Z",
+    "postText": "おはようございます。  本日もピラピラ麺での提供となります。 シビレ、納豆、煮干しの波動あります。  本日もよろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業変更なし（通常通り営業・雑談等）"
   }
 ]
