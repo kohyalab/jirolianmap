@@ -27222,5 +27222,22 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_tachikawa_2116368949202092248",
+    "shopId": "tachikawa",
+    "shopName": "立川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jirotachikawa/status/2116368949202092248",
+    "postedAt": "2026-10-31T03:17:32.000Z",
+    "postText": "ほぐしブタ欠品中は、しょうがのボタンになっています。  煮干し+しょうがも間違いなし♪ https://t.co/enRkDq66xB https://t.co/Ydsw97v0Ev",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-LiK63JoTQcYTYLBqmGmZZDOL7_I18Oz8x4-1N2nB4CX33LbO-3j_jIH-I-B_QSjknRXkV7khGXbfJlNvSrmlA579WxYROLiCovzrjs7u9BCL7_n3QHKXeWwcgQe8MLe_q8QF-gtdS7QzFsmUJblbvA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更に関する言及はなく、トッピングの販売状況に関する日常的な投稿です。"
   }
 ]
