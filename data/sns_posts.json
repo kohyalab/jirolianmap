@@ -27485,5 +27485,116 @@
     "processedAt": null,
     "aiStatus": "match",
     "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2116444409525076380",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2116444409525076380",
+    "postedAt": "2026-10-31T08:17:23.000Z",
+    "postText": "混雑無くなりました！ どうぞー♪🈳🈳🈳 https://t.co/RFkbQadFBj",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-t2R-Yq_3KjNHxpO-7HrPLhARy9O9wC9yGWnaHzjC7bwwAIcjGKUs6pZMXtONRtj9UC39ZhPT0a3C3tBkp4ko-GJAXICuCAAOR2XmIXLl-LqcQbjDdcWbk1J7NEZoaBwH1O-j7MwqGv7sro6XEjBKqQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-xaCs_KvCNL0kC58W8Y1I5xMWNTr73BJoggv5cDqhZlC8h1qjkNDcZofyR-9SXl640kmf5xG1H_D8Ojdc-JE0xPNIFx62w-rJVIWEiDwlNK3WZdeALtvzSJrE9OPP4LYxWWSobsLkzhMQ3Vc7Q9dIXw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定メニューの告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_hitotsubashi_20261101_0_2116444048416293134",
+    "shopId": "hitotsubashi",
+    "shopName": "一橋学園店",
+    "postSource": "x",
+    "postUrl": "https://x.com/1284jiro/status/2116444048416293134",
+    "postedAt": "2026-10-31T08:15:57.000Z",
+    "postText": "11月の予定です。急な告知で申し訳ありませんが、11/1(日)はお休みになります。よろしくお願いいたします。アルバイトもまだまだ募集中です。こちらもよろしくお願いいたします。 https://t.co/7tkBgGt3RD",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ciPM7ka-OWGLrtKvTVrCHKaPQYyw5RfU5mtrDb6xu92R3_ZIU08yB3ENvjPZasvUlLvOZwWoRRIJ7Y_QuzGdBlplovHgimGvXuccuNPuJRhHqldxnog0EKxLk_kkbBe_51odaR9zqFDq3Otma1Wmug==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-jiRSdN0O58cZ-dTiN69I3qPPU90pNxLxaujFbfPk7S_cjTIYLp-kNegkiyAZHADz0RemHCO6Cb-IfthyhPaDBMxkPPCCjJPMX-vRSbG9xVfXDDbrvyJOp0i0w6QdVpY6MeeG5x4qLxMmDF-VnHZkYQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-01",
+      "endDate": "2026-11-01",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_hitotsubashi_20261103_1_2116444048416293134",
+    "shopId": "hitotsubashi",
+    "shopName": "一橋学園店",
+    "postSource": "x",
+    "postUrl": "https://x.com/1284jiro/status/2116444048416293134",
+    "postedAt": "2026-10-31T08:15:57.000Z",
+    "postText": "11月の予定です。急な告知で申し訳ありませんが、11/1(日)はお休みになります。よろしくお願いいたします。アルバイトもまだまだ募集中です。こちらもよろしくお願いいたします。 https://t.co/7tkBgGt3RD",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ciPM7ka-OWGLrtKvTVrCHKaPQYyw5RfU5mtrDb6xu92R3_ZIU08yB3ENvjPZasvUlLvOZwWoRRIJ7Y_QuzGdBlplovHgimGvXuccuNPuJRhHqldxnog0EKxLk_kkbBe_51odaR9zqFDq3Otma1Wmug==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-jiRSdN0O58cZ-dTiN69I3qPPU90pNxLxaujFbfPk7S_cjTIYLp-kNegkiyAZHADz0RemHCO6Cb-IfthyhPaDBMxkPPCCjJPMX-vRSbG9xVfXDDbrvyJOp0i0w6QdVpY6MeeG5x4qLxMmDF-VnHZkYQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-03",
+      "endDate": "2026-11-03",
+      "hours": [
+        [
+          11,
+          15
+        ],
+        [
+          17.5,
+          20.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_hitotsubashi_20261123_2_2116444048416293134",
+    "shopId": "hitotsubashi",
+    "shopName": "一橋学園店",
+    "postSource": "x",
+    "postUrl": "https://x.com/1284jiro/status/2116444048416293134",
+    "postedAt": "2026-10-31T08:15:57.000Z",
+    "postText": "11月の予定です。急な告知で申し訳ありませんが、11/1(日)はお休みになります。よろしくお願いいたします。アルバイトもまだまだ募集中です。こちらもよろしくお願いいたします。 https://t.co/7tkBgGt3RD",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ciPM7ka-OWGLrtKvTVrCHKaPQYyw5RfU5mtrDb6xu92R3_ZIU08yB3ENvjPZasvUlLvOZwWoRRIJ7Y_QuzGdBlplovHgimGvXuccuNPuJRhHqldxnog0EKxLk_kkbBe_51odaR9zqFDq3Otma1Wmug==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-jiRSdN0O58cZ-dTiN69I3qPPU90pNxLxaujFbfPk7S_cjTIYLp-kNegkiyAZHADz0RemHCO6Cb-IfthyhPaDBMxkPPCCjJPMX-vRSbG9xVfXDDbrvyJOp0i0w6QdVpY6MeeG5x4qLxMmDF-VnHZkYQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-23",
+      "endDate": "2026-11-23",
+      "hours": [
+        [
+          11,
+          15
+        ],
+        [
+          17.5,
+          20.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
