@@ -27593,5 +27593,101 @@
     "processedAt": "2026-10-31T12:23:34.595Z",
     "aiStatus": "match",
     "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_mejirodai_20261105_0_2116509399284109555",
+    "shopId": "mejirodai",
+    "shopName": "めじろ台店",
+    "postSource": "x",
+    "postUrl": "https://x.com/mejirodai_jiro/status/2116509399284109555",
+    "postedAt": "2026-10-31T12:35:38.000Z",
+    "postText": "11月の予定です よろしくお願いします🙇 https://t.co/4Wgajf171Q",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-6NMi4y_iGR4dFJt0jazb6Oy4IwzcwG2czrSPsBYd9nVdrza1Lmtn0lB959IqvZo_azvUPy7AXV0Yc6EODSoBgGZ002zgHCOMkfFhwnXcropVFDms7wPN9D97cjzU3ib5j3zMlsWtly1HtWuqFkuhEA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-05",
+      "endDate": "2026-11-05",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_mejirodai_20261111_1_2116509399284109555",
+    "shopId": "mejirodai",
+    "shopName": "めじろ台店",
+    "postSource": "x",
+    "postUrl": "https://x.com/mejirodai_jiro/status/2116509399284109555",
+    "postedAt": "2026-10-31T12:35:38.000Z",
+    "postText": "11月の予定です よろしくお願いします🙇 https://t.co/4Wgajf171Q",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-6NMi4y_iGR4dFJt0jazb6Oy4IwzcwG2czrSPsBYd9nVdrza1Lmtn0lB959IqvZo_azvUPy7AXV0Yc6EODSoBgGZ002zgHCOMkfFhwnXcropVFDms7wPN9D97cjzU3ib5j3zMlsWtly1HtWuqFkuhEA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-11",
+      "endDate": "2026-11-12",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_mejirodai_20261119_2_2116509399284109555",
+    "shopId": "mejirodai",
+    "shopName": "めじろ台店",
+    "postSource": "x",
+    "postUrl": "https://x.com/mejirodai_jiro/status/2116509399284109555",
+    "postedAt": "2026-10-31T12:35:38.000Z",
+    "postText": "11月の予定です よろしくお願いします🙇 https://t.co/4Wgajf171Q",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-6NMi4y_iGR4dFJt0jazb6Oy4IwzcwG2czrSPsBYd9nVdrza1Lmtn0lB959IqvZo_azvUPy7AXV0Yc6EODSoBgGZ002zgHCOMkfFhwnXcropVFDms7wPN9D97cjzU3ib5j3zMlsWtly1HtWuqFkuhEA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-19",
+      "endDate": "2026-11-19",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_mejirodai_20261125_3_2116509399284109555",
+    "shopId": "mejirodai",
+    "shopName": "めじろ台店",
+    "postSource": "x",
+    "postUrl": "https://x.com/mejirodai_jiro/status/2116509399284109555",
+    "postedAt": "2026-10-31T12:35:38.000Z",
+    "postText": "11月の予定です よろしくお願いします🙇 https://t.co/4Wgajf171Q",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-6NMi4y_iGR4dFJt0jazb6Oy4IwzcwG2czrSPsBYd9nVdrza1Lmtn0lB959IqvZo_azvUPy7AXV0Yc6EODSoBgGZ002zgHCOMkfFhwnXcropVFDms7wPN9D97cjzU3ib5j3zMlsWtly1HtWuqFkuhEA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-25",
+      "endDate": "2026-11-26",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
