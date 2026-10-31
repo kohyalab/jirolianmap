@@ -27856,5 +27856,23 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "11月1日(日)はテイクアウト販売のみの告知であり、店舗の通常営業（店内飲食）の変更ではないため変更なしと判定します。"
+  },
+  {
+    "id": "sns_post_routine_fujisawa_2116630566393266419",
+    "shopId": "fujisawa",
+    "shopName": "湘南藤沢店",
+    "postSource": "x",
+    "postUrl": "https://x.com/fujirow26/status/2116630566393266419",
+    "postedAt": "2026-10-31T20:37:06.000Z",
+    "postText": "おはようございます。  11月1日(日) ハロウィン後夜祭🎃 もう少しあります。  ブラックオイル  無料トッピング にんにく入れますか？ の時お伝えください。  魔のうずら🥚ピリ辛  よろしくお願いいたします。 https://t.co/xff7uwNwbl",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ylmAz42jnbyxnjCqpkOo79x0zB2bGhYM5nseNstoonGDDwmHv13TRSVZWrcRkeMXT51uEEsAXsHGZq4KqSibIjo1nxAIuVhL8zJrSjcYHkJEb6zyaDbIdkxqSQvfUSPB6B6FuGNuhVMkavcKdQmcQA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-5vNWT68EEMcUvAE-AWupToKNCwL90L1XUAx3KR9rK525P1HLFDluU8rojhmQAbO9G8C3MUvl59booYSPfpcVrV6ODl3_bIAihmohBHu1ouTfaNWSaTIDZAXlMU0TOmQwulVj1w2Ri2dcJdEjeYf9bw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの告知であり、営業時間の変更はありません。"
   }
 ]
