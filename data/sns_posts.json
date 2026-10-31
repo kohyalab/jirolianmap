@@ -26557,65 +26557,6 @@
     "aiReason": "通常営業の範囲内であり、材料切れによる終了は推測に基づくため変更なし"
   },
   {
-    "id": "sns_post_sagamiohno_20261101_0_2116289556316336436",
-    "shopId": "sagamiohno",
-    "shopName": "相模大野店",
-    "postSource": "x",
-    "postUrl": "https://x.com/sumo_jiro/status/2116289556316336436",
-    "postedAt": "2026-10-30T22:02:03.000Z",
-    "postText": "おはようございます。 本日は昼＆夜🈺営業！  ◇10/31土 【昼の部】 10:00から〜14:00 ※【夜の部】 16:30から〜20:00  →［グッチーズカレー］ →［相撲部屋のしょうがダレ］ やっております♪  明日 ◆11/1日【休業】 ◆11/2月【定休日】  ◎11/3火［文化の日🈺］ 10:00から〜15:00 https://t.co/ywJ1hEULZb",
-    "mediaUrls": [
-      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-zfxFpM5ton5R13RVddPerxmb8kDxEzTWVEkGsK-2qy_jon2kzCcjPDVrGvPPj8iCrWjzHQQjDbtfyQhF94oCQiXBReIJ2xbW7vjJNNOeCQz0WqOhZUMeLEm2-Rr3tzs2pnHW5o4LZgQokUFdq6tavQ==",
-      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-to-QxkKKfeP-sfCKyjVo6H3pVrK__GOsZlE4AFndzjLt7To5B4LKNeAM5Xyys70ZsdQND2ukTFFrGX2byE5U89E-H6mExEmOUrXsuyKHaM7hBHC2VRHxpxc-MOXs18jBc4PRRG53WHU07N07QySqHg==",
-      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-LnHAcY-lva7wjEhOwBqlN5gAQzm5oFwvYPujJ9k6Tsa44DXvLYh2W5GS8YKsuorXImMinNyszNS9nqFicpyU_gVtyVuq-eCNDbUEiizB2jjZW65l5kUzNj0F43S5pTbP130CGefEVOtdTA7e3OotKA==",
-      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-A3Ay4p1YqOYY0X_qNQW0c_JxEDl2VrZjPPkwKrq20YnFPs0neDZwZjt13ydHQUXNgkOBkmUOJS6yb7Ry9k9kssFTKHijtD5CmtNfUAdvaytC62tm-4wCtWoAM3Cgtc7tKXRAoA2Gd27nJSsxpUw8vg=="
-    ],
-    "detectedChange": {
-      "type": "temporary_closure",
-      "startDate": "2026-11-01",
-      "endDate": "2026-11-01",
-      "hours": [],
-      "reason": "",
-      "confidence": 1
-    },
-    "processed": false,
-    "processedAt": null,
-    "aiStatus": "schedule_change",
-    "aiReason": "営業時間の変更を検出"
-  },
-  {
-    "id": "sns_post_sagamiohno_20261103_1_2116289556316336436",
-    "shopId": "sagamiohno",
-    "shopName": "相模大野店",
-    "postSource": "x",
-    "postUrl": "https://x.com/sumo_jiro/status/2116289556316336436",
-    "postedAt": "2026-10-30T22:02:03.000Z",
-    "postText": "おはようございます。 本日は昼＆夜🈺営業！  ◇10/31土 【昼の部】 10:00から〜14:00 ※【夜の部】 16:30から〜20:00  →［グッチーズカレー］ →［相撲部屋のしょうがダレ］ やっております♪  明日 ◆11/1日【休業】 ◆11/2月【定休日】  ◎11/3火［文化の日🈺］ 10:00から〜15:00 https://t.co/ywJ1hEULZb",
-    "mediaUrls": [
-      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-zfxFpM5ton5R13RVddPerxmb8kDxEzTWVEkGsK-2qy_jon2kzCcjPDVrGvPPj8iCrWjzHQQjDbtfyQhF94oCQiXBReIJ2xbW7vjJNNOeCQz0WqOhZUMeLEm2-Rr3tzs2pnHW5o4LZgQokUFdq6tavQ==",
-      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-to-QxkKKfeP-sfCKyjVo6H3pVrK__GOsZlE4AFndzjLt7To5B4LKNeAM5Xyys70ZsdQND2ukTFFrGX2byE5U89E-H6mExEmOUrXsuyKHaM7hBHC2VRHxpxc-MOXs18jBc4PRRG53WHU07N07QySqHg==",
-      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-LnHAcY-lva7wjEhOwBqlN5gAQzm5oFwvYPujJ9k6Tsa44DXvLYh2W5GS8YKsuorXImMinNyszNS9nqFicpyU_gVtyVuq-eCNDbUEiizB2jjZW65l5kUzNj0F43S5pTbP130CGefEVOtdTA7e3OotKA==",
-      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-A3Ay4p1YqOYY0X_qNQW0c_JxEDl2VrZjPPkwKrq20YnFPs0neDZwZjt13ydHQUXNgkOBkmUOJS6yb7Ry9k9kssFTKHijtD5CmtNfUAdvaytC62tm-4wCtWoAM3Cgtc7tKXRAoA2Gd27nJSsxpUw8vg=="
-    ],
-    "detectedChange": {
-      "type": "special_open",
-      "startDate": "2026-11-03",
-      "endDate": "2026-11-03",
-      "hours": [
-        [
-          10,
-          15
-        ]
-      ],
-      "reason": "文化の日特別営業",
-      "confidence": 1
-    },
-    "processed": false,
-    "processedAt": null,
-    "aiStatus": "match",
-    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
-  },
-  {
     "id": "sns_post_routine_shndaita_2116293504892899537",
     "shopId": "shndaita",
     "shopName": "環七新新代田店",
@@ -27254,5 +27195,146 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_koiwa_2116408386669679091",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2116408386669679091",
+    "postedAt": "2026-10-31T05:54:15.000Z",
+    "postText": "10/31の追加メニュー  🐷豚ハーフ 🐽くずれ豚 📍生麺 📍汁なしの素 📍味付き脂 個数制限なし  本日、つけ麺の素はありません😭  くずれ豚は2個以上ご購入で800→700円にお値下げ。  生麺は本日に限り300→200円‼️  15時から販売開始です⏰",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定メニューおよびテイクアウト販売の告知であり、営業時間の変更に関する言及はないため変更なし。"
+  },
+  {
+    "id": "sns_post_routine_senjuohashi_2116409845809320227",
+    "shopId": "senjuohashi",
+    "shopName": "千住大橋駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjujirou26/status/2116409845809320227",
+    "postedAt": "2026-10-31T06:00:02.000Z",
+    "postText": "只今の時間より🍜  SH脂蕎麦セット 2人前1セット  1500円 （麺1玉2袋、豚入脂パック2つ）  ノーマル1つとPlus  ラー油🐖or魚粉油そば🐟 味噌脂🐖or1010カレー🐖 生姜醤油脂🫚復刻BP塩油そば🐖 よりお1つお選び下さい！  お1人様  2セットまで！  豚1本1500円🐷 https://t.co/Ihulo17YGQ",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-7kK3JGUG5X0Tqj5MGZbu0CRTF2yigsF7DgpW93Opx_REgp_Q3DxgwacPrBTeV_Fg1f6hc-SAdnYdO2qApa0S1CP7Tv8h6W2KPmY2Rtwf88utq1iMRDDCSe6S_3CAiwPazx6jUKdJCxV70qu-NkMs7g=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "テイクアウト商品の販売告知であり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2116406360632172545",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2116406360632172545",
+    "postedAt": "2026-10-31T05:46:11.000Z",
+    "postText": "本日 ◇10/31土 【夜】 →こちらをご覧のお客様限定です！ ↓ ※お客様ご自身で→丸の🟥赤又は白🤍食券を１枚お取りになって席までお越しください。→食券は券売機の前の台の二段目に置いておきます。 ※必ず着席時にお出しください。 ※サービス中の目印は［黄色いハンカチ］ どうぞご利用下さい♪ https://t.co/9tvLjOZrPq https://t.co/9FsrORZfRD",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Pk8tO458tbxIzKBIdR39w7PBFbjwRlomzGIHgnlbPuFGbGwJGKMh-A1Cg-HGfxxo3DBmu_CWOwhhJne0VZdSYmiG8UiQ2jBA0yeGm3ahwycbhQSQc26w0hrgwSlKcVmQP-_FyUO8qJs-f3JzFeUcgA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-lEz1NhUg2X7EM-hU_rpZu0RDBhocnt1br3dbnP7P8SzcUgv6Ea6bzwWXql96kOFLvjcWKmE-nobpPMwxCljg_BVKcJ4siXvp1YtnnnpJP8qS3bC1_hRsIXz-AOAUjefmO-1x-DPMGxrcDVCqyKl3IQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-GozKaaH_Tbqg-zGYLwmRhH75C-YKq9_-UO6fvGVi9VFHpbF3u4dTo6uuSKEsW8ync3o3Uj0Cpg_V5yS2tOmyPoJIr2Eh8xAePAUc9sRvHHFEug58qRMywAoKtLhldWxN1S8ihgcmSTAdKG6EPYX4VA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-TwWqyCd3n1P6OGalYfZJWdK6FXBle8r26hAJhP7cLK0sp8MBwcDl-jXUe-zs0z0mjAvCJiPX5hudzYDRAHx8qhFtEjRSZiK6xBrl0BFdSZntuX_FommlgNkLWuMlCAaJ4QtUY405RhrtLJPzkRMfVg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "相模大野店の通常営業に関する案内であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261031_0_2116405779930742963",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2116405779930742963",
+    "postedAt": "2026-10-31T05:43:53.000Z",
+    "postText": "本日この後！ 夜の部🈺営業します！  ◇10/31土曜日 ※【夜の部】 16:30から〜20:00まで営業致します🈺  →［グッチーズカレー］ →［相撲部屋のしょうがダレ］ やっております♪  明日 ◆11/1日【休業】 ◆11/2月【定休日】  ◎11/3火［文化の日🈺］ 10:00から〜15:00 https://t.co/Jo568Uwl2k",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-EMeH0KzmHG5MR0MydAiO0MDl5g-VWG7ngxUekzw4BiGMgEOFG8rMtYX31AyjwEAh0C7ju_b0_m6yvun2_IZ9OcLgIGM9pZ2XAw3ycEklbAwoyb6sR9_raRsdyLIiAw-rS68-xQ2yfmtv6bwCgSLJAw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-c8b-IkOFt_oC7jXPfxkYoac6E_9Wi6oalf-m0bab-uqjQ_enHkMNHvx9jIEJ6djuMX_xlrWNZlAtt-wwlo5f01Ol42sNBq1nEH2OKI0P34wngP8Xw6HgGtTCVe79RwyZv5Arxxj6qPoER0WHpKOiYg=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-31",
+      "endDate": "2026-10-31",
+      "hours": [
+        [
+          10,
+          15
+        ],
+        [
+          16.5,
+          20
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261101_1_2116405779930742963",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2116405779930742963",
+    "postedAt": "2026-10-31T05:43:53.000Z",
+    "postText": "本日この後！ 夜の部🈺営業します！  ◇10/31土曜日 ※【夜の部】 16:30から〜20:00まで営業致します🈺  →［グッチーズカレー］ →［相撲部屋のしょうがダレ］ やっております♪  明日 ◆11/1日【休業】 ◆11/2月【定休日】  ◎11/3火［文化の日🈺］ 10:00から〜15:00 https://t.co/Jo568Uwl2k",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-EMeH0KzmHG5MR0MydAiO0MDl5g-VWG7ngxUekzw4BiGMgEOFG8rMtYX31AyjwEAh0C7ju_b0_m6yvun2_IZ9OcLgIGM9pZ2XAw3ycEklbAwoyb6sR9_raRsdyLIiAw-rS68-xQ2yfmtv6bwCgSLJAw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-c8b-IkOFt_oC7jXPfxkYoac6E_9Wi6oalf-m0bab-uqjQ_enHkMNHvx9jIEJ6djuMX_xlrWNZlAtt-wwlo5f01Ol42sNBq1nEH2OKI0P34wngP8Xw6HgGtTCVe79RwyZv5Arxxj6qPoER0WHpKOiYg=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-01",
+      "endDate": "2026-11-01",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261103_2_2116405779930742963",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2116405779930742963",
+    "postedAt": "2026-10-31T05:43:53.000Z",
+    "postText": "本日この後！ 夜の部🈺営業します！  ◇10/31土曜日 ※【夜の部】 16:30から〜20:00まで営業致します🈺  →［グッチーズカレー］ →［相撲部屋のしょうがダレ］ やっております♪  明日 ◆11/1日【休業】 ◆11/2月【定休日】  ◎11/3火［文化の日🈺］ 10:00から〜15:00 https://t.co/Jo568Uwl2k",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-EMeH0KzmHG5MR0MydAiO0MDl5g-VWG7ngxUekzw4BiGMgEOFG8rMtYX31AyjwEAh0C7ju_b0_m6yvun2_IZ9OcLgIGM9pZ2XAw3ycEklbAwoyb6sR9_raRsdyLIiAw-rS68-xQ2yfmtv6bwCgSLJAw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-c8b-IkOFt_oC7jXPfxkYoac6E_9Wi6oalf-m0bab-uqjQ_enHkMNHvx9jIEJ6djuMX_xlrWNZlAtt-wwlo5f01Ol42sNBq1nEH2OKI0P34wngP8Xw6HgGtTCVe79RwyZv5Arxxj6qPoER0WHpKOiYg=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-11-03",
+      "endDate": "2026-11-03",
+      "hours": [
+        [
+          10,
+          15
+        ]
+      ],
+      "reason": "文化の日",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   }
 ]
