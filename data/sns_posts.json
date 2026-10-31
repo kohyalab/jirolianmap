@@ -27719,5 +27719,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業時間の変更や臨時休業に関する言及はなく、日常的な限定・販売告知の投稿です。"
+  },
+  {
+    "id": "sns_post_routine_kannai_2116530629974397319",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2116530629974397319",
+    "postedAt": "2026-10-31T14:00:00.000Z",
+    "postText": "こんばんは。 本日もありがとう ございました。 あと2、3日はピラピラ麺となってしまいそうです。 ご迷惑をお掛けしますが 宜しくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業変更なし（通常通り営業・雑談等）"
   }
 ]
