@@ -27981,5 +27981,49 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_aizuwakamatsu_20261101_0_2116674342289605020",
+    "shopId": "aizuwakamatsu",
+    "shopName": "会津若松駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/aizu_jiro/status/2116674342289605020",
+    "postedAt": "2026-10-31T23:31:03.000Z",
+    "postText": "毎度ありがとうございます。 本日11/1(日)11:00〜15:00 臨時営業いたします。 よろしくお願いいたしますm(__)m",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-11-01",
+      "endDate": "2026-11-01",
+      "hours": [
+        [
+          11,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_mejirodai_2116668040733724983",
+    "shopId": "mejirodai",
+    "shopName": "めじろ台店",
+    "postSource": "x",
+    "postUrl": "https://x.com/mejirodai_jiro/status/2116668040733724983",
+    "postedAt": "2026-10-31T23:06:01.000Z",
+    "postText": "毎度ありがとうございます 本日1日(日)の営業時間は11〜15時となります なおアルバイト募集中ですのでXのDMの方までご連絡お待ちしてます よろしくお願いします🙇 https://t.co/FaHUCXdWkB",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-DcFCZXVex7GAVi83oc0cf4HV41fGEoY30JKwRra-S4nkVOLyyKPozLPPdzpvkw4jiJD5eF-gN3oAuq9EIcz06mrt3s_H2dH3I_viyj25ab0MaoKh1uc_iQQNLxZmrwN6Xx1TfYknkZaPUV_Ysp01Dw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "本日11/1(日)の営業時間は通常通り11:00〜15:00であり、投稿内容はアルバイト募集の告知であるため変更なし。"
   }
 ]
