@@ -27443,5 +27443,47 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "11月3日(火)の通常営業告知であり、臨時休業や時間変更ではないため変更なし。"
+  },
+  {
+    "id": "sns_post_routine_kyoto_2116439951999213638",
+    "shopId": "kyoto",
+    "shopName": "京都店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kyoto/status/2116439951999213638",
+    "postedAt": "2026-10-31T07:59:40.000Z",
+    "postText": "裏豚マシは売り切れました！ 夜の部は魚粉あります！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常投稿のため変更なし"
+  },
+  {
+    "id": "sns_post_kashiwa_20261103_0_2116433946280153311",
+    "shopId": "kashiwa",
+    "shopName": "柏店",
+    "postSource": "x",
+    "postUrl": "https://x.com/genkimoriya/status/2116433946280153311",
+    "postedAt": "2026-10-31T07:35:48.000Z",
+    "postText": "お世話になっております。 ラーメン二郎柏店です。  11月2日（月）、通常営業。 11月3日（火）、早めの開店とさせていただきます。  どうぞ宜しくお願い致します。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-03",
+      "endDate": "2026-11-03",
+      "hours": [
+        [
+          10.5,
+          16
+        ]
+      ],
+      "reason": "",
+      "confidence": 0.9
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   }
 ]
