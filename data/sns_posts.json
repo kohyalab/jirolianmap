@@ -27771,5 +27771,58 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_ichinoe_20261104_0_2116587223739150780",
+    "shopId": "ichinoe",
+    "shopName": "環七一之江店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ichinoejiro/status/2116587223739150780",
+    "postedAt": "2026-10-31T17:44:53.000Z",
+    "postText": "11月営業の案内です 宜しくお願い申し上げます🙇 https://t.co/Tmk52gov12",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-eInrgaRS5RVpseIKAnp3Ca2MFX2QaNf6iCgxSQZ2FVQdna_Jh34e5UVaM1eSND_GPU0QKZtEfSb_6kW_Mhc2F4lvB-HM8E5OxnwWE1lOx7Pi5aWdkj7OEQqoR0XoN4tdGwo8mayyhPnBa-Z3dHWZjw=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-11-04",
+      "endDate": "2026-11-04",
+      "hours": [
+        [
+          17.5,
+          20
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_ichinoe_20261122_1_2116587223739150780",
+    "shopId": "ichinoe",
+    "shopName": "環七一之江店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ichinoejiro/status/2116587223739150780",
+    "postedAt": "2026-10-31T17:44:53.000Z",
+    "postText": "11月営業の案内です 宜しくお願い申し上げます🙇 https://t.co/Tmk52gov12",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-eInrgaRS5RVpseIKAnp3Ca2MFX2QaNf6iCgxSQZ2FVQdna_Jh34e5UVaM1eSND_GPU0QKZtEfSb_6kW_Mhc2F4lvB-HM8E5OxnwWE1lOx7Pi5aWdkj7OEQqoR0XoN4tdGwo8mayyhPnBa-Z3dHWZjw=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-22",
+      "endDate": "2026-11-25",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
