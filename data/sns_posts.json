@@ -27839,5 +27839,22 @@
     "processedAt": null,
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_routine_koshigaya_2116625426336670176",
+    "shopId": "koshigaya",
+    "shopName": "越谷店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ksgy26/status/2116625426336670176",
+    "postedAt": "2026-10-31T20:16:41.000Z",
+    "postText": "おはようございます！ ラーメン二郎越谷店です！  11月1日(日) 12:00頃より鍋、豚、麺の販売(テイクアウト)をします。 下の注意事項をよく読みご来店ください。 現金にて商品購入の際はお釣りのないようにお願いします！ 大きいビニール袋のご用意もお願いします！ https://t.co/KjrirJl4UN",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-WDxagv-4N6CUp_fGrvmWgmCpSau8MwcvuJlCZKnlxvdd0htazJBxmA-y5e4_84EQLgUqDyx2brVu2F8HE1PDL_ay-emy_meRjziPiTDbt51fpusYt0tKGUE4vJL0HfAaFgKo-S8uI_Jgb4OMMOe-NQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "11月1日(日)はテイクアウト販売のみの告知であり、店舗の通常営業（店内飲食）の変更ではないため変更なしと判定します。"
   }
 ]
