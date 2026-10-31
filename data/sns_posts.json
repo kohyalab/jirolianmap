@@ -27177,5 +27177,23 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_koiwa_2116351356143583459",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2116351356143583459",
+    "postedAt": "2026-10-31T02:07:37.000Z",
+    "postText": "本日のテイクアウトラーメンセット、残りは18セットです🍜  二郎の味を自宅でそのまま再現できるのは【家二郎セット】だけ。  ご購入はお早めにお願いいたします🙇‍♀️  購入はこちらから⬇⬇⬇⬇⬇⬇ https://t.co/vnSWfxC85P https://t.co/qiT9ysIhlj",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Po5y9ObmK11WKguFrKDHgXV2GR-qG0hNH_kgruqrf_Otw8830iiBWejvjRqGyS_TdokxBAW_AfcNNiE785vE-LWewUdMMGfXDtP4xPpnZKs3UTpnWmG13jDMrWX4PNYdIl0f35UU66e7SoZfBBo6-g==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-n59xvS0Y-eLb55DjJ7WCVrWWubFrgI-PKzfmmNXQvKP15MWO3Flm5QycCYqBtq2C-o2orvz7MKliaJV7zS4t2pMTxzn-ih8Sy8EQvFqjwSfn9nGLpQYXHTjliFL0_fsbVloi-A-OyHSRxmho_0x5Wg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "テイクアウト販売の告知であり、店舗の営業スケジュールに変更はありません。"
   }
 ]
