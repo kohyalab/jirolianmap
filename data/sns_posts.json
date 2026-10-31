@@ -27239,5 +27239,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業時間の変更に関する言及はなく、トッピングの販売状況に関する日常的な投稿です。"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2116401271448211507",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2116401271448211507",
+    "postedAt": "2026-10-31T05:25:58.000Z",
+    "postText": "まだやってますよ？ https://t.co/077s2o1bnu",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
