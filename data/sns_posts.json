@@ -27689,5 +27689,35 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_kameido_2116518768289644863",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2116518768289644863",
+    "postedAt": "2026-10-31T13:12:52.000Z",
+    "postText": "お世話になってます。今日はハロウィンでしたね🎃ハロウィンの時期になると小学生の時、近所に外国人が住んでる家がたくさんあったのでみんなでお菓子をもらいに行き。帰り道仮装したままママチャリで帰っていたらお巡りさんに止められ、放火犯と間違われた思い出が蘇ります ( ◜◡◝ )",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更に関する記載はありません。"
+  },
+  {
+    "id": "sns_post_routine_ikuta_2116520849650139208",
+    "shopId": "ikuta",
+    "shopName": "生田駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ikuta_jiro/status/2116520849650139208",
+    "postedAt": "2026-10-31T13:21:08.000Z",
+    "postText": "気合い入れて作りすぎました⚫️ 明日もあります！ 最後まで提供できると思います！ よろしくお願いします！ https://t.co/RorTBLKjLj",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更や臨時休業に関する言及はなく、日常的な限定・販売告知の投稿です。"
   }
 ]
