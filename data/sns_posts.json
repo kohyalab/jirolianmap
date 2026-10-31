@@ -27323,40 +27323,6 @@
     "aiReason": "営業時間の変更を検出"
   },
   {
-    "id": "sns_post_sagamiohno_20261031_0_2116410782225416445",
-    "shopId": "sagamiohno",
-    "shopName": "相模大野店",
-    "postSource": "x",
-    "postUrl": "https://x.com/sumo_jiro/status/2116410782225416445",
-    "postedAt": "2026-10-31T06:03:46.000Z",
-    "postText": "本日この後！ 夜の部🈺営業します！  ◇10/31土曜日 ※【夜の部】 16:30から〜20:00まで営業致します🈺  →［相撲部屋のしょうがダレ］🉐得割🈹！ 今日は50円！ ※券売機50円設定済  明日 ◆11/1日【休業】 ◆11/2月【定休日】  ◎11/3火［文化の日🈺］ 10:00から〜15:00 https://t.co/D0dI6Zqhkv",
-    "mediaUrls": [
-      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-RNsJAmd7faxXaCxorkYwZPlrKWO_gOlV1Rdoww0ypeYlBkLEbWzlbnTnKzb63rsErp9FA-zFKuj5BMNVVlM23tUf2RMSl8shVl650oABVYXDQz--CmT_7pugUj8nzMEnqg2SCOvgjx3myTaDUrMq0Q==",
-      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-gSMWvjoBVbMHQYhB9q_q756Dwv8XYmAA9iYgjdCPhqFIPnHwrZHFw7edRKbwPLwEXOWt6GTa73xv0aVQykysTidld3hr6VhJ2SPAWvNmO8nFNNGzni5iARZRHA6vV05hsm0spj_STc3mPnCZ2ibO7g=="
-    ],
-    "detectedChange": {
-      "type": "temporary_hours",
-      "startDate": "2026-10-31",
-      "endDate": "2026-10-31",
-      "hours": [
-        [
-          10,
-          15
-        ],
-        [
-          16.5,
-          20
-        ]
-      ],
-      "reason": "",
-      "confidence": 1
-    },
-    "processed": false,
-    "processedAt": null,
-    "aiStatus": "schedule_change",
-    "aiReason": "営業時間の変更を検出"
-  },
-  {
     "id": "sns_post_sagamiohno_20261101_1_2116410782225416445",
     "shopId": "sagamiohno",
     "shopName": "相模大野店",
@@ -27587,6 +27553,37 @@
         [
           17.5,
           20.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261031_0_2116453354532724997",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2116453354532724997",
+    "postedAt": "2026-10-31T08:52:56.000Z",
+    "postText": "只今混雑無しです！ 20:00ご来店ご到着 お並びのお客様まで営業🈺致します！ どうぞー！ 20:00まで🈺",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-10-31",
+      "endDate": "2026-10-31",
+      "hours": [
+        [
+          10,
+          15
+        ],
+        [
+          16.5,
+          20
         ]
       ],
       "reason": "",
