@@ -28493,5 +28493,103 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業情報の変更に関する言及がない日常投稿のため、変更なしと判定します。"
+  },
+  {
+    "id": "sns_post_shndaita_20261104_0_2116799641073381851",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2116799641073381851",
+    "postedAt": "2026-11-01T07:48:57.000Z",
+    "postText": "2026年11月1日(日) 解ってる範囲の営業予定です！  月 〇 火 〇 水 〇(15:00くらい) 木 〇(15:00くらい) 金 お休み 土 お休み 日 〇  11:00〜16:00くらい 鬼ごろ塩(＋200円)もやります！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-04",
+      "endDate": "2026-11-04",
+      "hours": [
+        [
+          11,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_shndaita_20261105_1_2116799641073381851",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2116799641073381851",
+    "postedAt": "2026-11-01T07:48:57.000Z",
+    "postText": "2026年11月1日(日) 解ってる範囲の営業予定です！  月 〇 火 〇 水 〇(15:00くらい) 木 〇(15:00くらい) 金 お休み 土 お休み 日 〇  11:00〜16:00くらい 鬼ごろ塩(＋200円)もやります！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-05",
+      "endDate": "2026-11-05",
+      "hours": [
+        [
+          11,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_shndaita_20261106_2_2116799641073381851",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2116799641073381851",
+    "postedAt": "2026-11-01T07:48:57.000Z",
+    "postText": "2026年11月1日(日) 解ってる範囲の営業予定です！  月 〇 火 〇 水 〇(15:00くらい) 木 〇(15:00くらい) 金 お休み 土 お休み 日 〇  11:00〜16:00くらい 鬼ごろ塩(＋200円)もやります！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-06",
+      "endDate": "2026-11-06",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_shndaita_20261107_3_2116799641073381851",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2116799641073381851",
+    "postedAt": "2026-11-01T07:48:57.000Z",
+    "postText": "2026年11月1日(日) 解ってる範囲の営業予定です！  月 〇 火 〇 水 〇(15:00くらい) 木 〇(15:00くらい) 金 お休み 土 お休み 日 〇  11:00〜16:00くらい 鬼ごろ塩(＋200円)もやります！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-07",
+      "endDate": "2026-11-07",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
