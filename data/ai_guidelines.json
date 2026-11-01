@@ -2,6 +2,40 @@
   "generalRules": [],
   "learnedFeedback": [
     {
+      "id": "sns_post_mejirodai_20261125_3_2116509399284109555",
+      "timestamp": "2026-11-01T12:55:34.262Z",
+      "shopId": "mejirodai",
+      "shopName": "めじろ台店",
+      "postDate": "2026-10-31T12:35:38.000Z",
+      "postText": "11月の予定です よろしくお願いします🙇 https://t.co/4Wgajf171Q",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-11-25",
+        "endDate": "2026-11-26",
+        "hours": [],
+        "reason": ""
+      }
+    },
+    {
+      "id": "sns_post_mejirodai_20261111_1_2116509399284109555",
+      "timestamp": "2026-11-01T12:55:30.803Z",
+      "shopId": "mejirodai",
+      "shopName": "めじろ台店",
+      "postDate": "2026-10-31T12:35:38.000Z",
+      "postText": "11月の予定です よろしくお願いします🙇 https://t.co/4Wgajf171Q",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-11-11",
+        "endDate": "2026-11-12",
+        "hours": [],
+        "reason": ""
+      }
+    },
+    {
       "id": "sns_post_koiwa_20261029_0_2115581214451278056",
       "timestamp": "2026-10-29T12:51:14.019Z",
       "shopId": "koiwa",
@@ -956,50 +990,6 @@
         "endDate": "2026-10-11",
         "hours": [],
         "reason": ""
-      }
-    },
-    {
-      "id": "sns_post_koshigaya_20261017_1_2109419882194628769",
-      "timestamp": "2026-10-11T23:43:07.051Z",
-      "shopId": "koshigaya",
-      "shopName": "越谷店",
-      "postDate": "2026-10-11T23:04:25.000Z",
-      "postText": "おはようございます。 ラーメン二郎越谷店です。  先日よりお知らせしていましたが、本日10月12日(月祝)お休みします。 ご来店予定だったお客様大変申し訳ございません。  10月17日(土)　臨時営業 10:00〜14:30LО よろしくお願いします🙇",
-      "aiStatus": "schedule_change",
-      "aiReason": "営業時間の変更を検出",
-      "humanAction": "applied",
-      "finalDetails": {
-        "startDate": "2026-10-17",
-        "endDate": "2026-10-17",
-        "hours": [
-          [
-            10,
-            14.5
-          ]
-        ],
-        "reason": ""
-      }
-    },
-    {
-      "id": "sns_post_kameido_20261017_0_2109295053525192830",
-      "timestamp": "2026-10-11T15:19:44.055Z",
-      "shopId": "kameido",
-      "shopName": "亀戸店",
-      "postDate": "2026-10-11T14:48:24.000Z",
-      "postText": "お世話になってます。来週の17日(土)は当店スタッフY君の誕生日と当店の13.5周年ということで今年の周年限定で提供した「ゴマ味噌担々麺」をまたやります！前回は白と黒がありましたが今回は白のみです。そのかわり以前より濃厚になります✨営業時間も11時から20時まで休みなしの通し営業になります。 https://t.co/Xy5vEQ9dIl",
-      "aiStatus": "schedule_change",
-      "aiReason": "営業変更検出: 周年記念のため",
-      "humanAction": "applied",
-      "finalDetails": {
-        "startDate": "2026-10-17",
-        "endDate": "2026-10-17",
-        "hours": [
-          [
-            11,
-            20
-          ]
-        ],
-        "reason": "周年記念のため"
       }
     }
   ]
