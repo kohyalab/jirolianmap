@@ -28840,5 +28840,133 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の告知のため変更なし"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261103_0_2117025757944000646",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2117025757944000646",
+    "postedAt": "2026-11-01T22:47:27.000Z",
+    "postText": "◆11/2月【定休】 ◎11/3火10→15時 ◇11/4水［昼&夜］ ◇11/5木［昼のみ］ ◇11/6金［夜のみ］  ◇11/7土 ※10:00〜14:00 ※16:30〜20:00 ↑土曜日【夜の部新設】致しました。  ◇11/8日10→15時  →［グッチーズカレー］ →［相撲部屋のしょうがダレ］  よろしくお願い致します！ https://t.co/aiKkkF2cGb",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-bg9Uyh-8xdXODdw1nhC-Pn4IkHt-W4C2CnBPJHuvIxXqx7AEfCvwJGJVmm812Cb5EEvu7kf_OK08i_xXnYIDQEr8_UcwdIa0ET3_NtI9m_e0340HoVAGF5o1BaNXOcCrlcT1UHzAQhYxi2WQ-veJzQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-W2uVvzJB58avlQOsiwlB7l1W6QfBiXTc4CWD7QFTn1j3nzjN5c94QuC0TCPSgWhV-0-GrNXh9ciTDSXqPN2YjehREJhRvJnLlxZq4rsWcacEttTwLdzS2oZcwqWet71y4ykWiRqRDITPln0fmfGM3Q==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-pelHwyN2aKmHdK-VgEpdJQbVBqfuvGUHzQSYncyyEGbGoDh-m861G_xCoTqvmqVl2LumZq4fqkyBM5x84akl83qkOOaiCrHUnyjGlEhAqVAC70X7olvmYzf4ZQPmC4yWJLFIGSSpUFQ86Rjb8Lx9rQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-vnlcFq3PGbnS4z-gTRqFxvdM7EfMsQ73nWfrHUwN28V9T4zVELYogLOXdipsedkG89i905DpyeOdZuI5RrkUaplkxEWHGgfboWySE6u6LNgMdI6F2qJ8fsyOklyA21D0Emni5mR49dWtuHn2ka96vA=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-11-03",
+      "endDate": "2026-11-03",
+      "hours": [
+        [
+          10,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261105_1_2117025757944000646",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2117025757944000646",
+    "postedAt": "2026-11-01T22:47:27.000Z",
+    "postText": "◆11/2月【定休】 ◎11/3火10→15時 ◇11/4水［昼&夜］ ◇11/5木［昼のみ］ ◇11/6金［夜のみ］  ◇11/7土 ※10:00〜14:00 ※16:30〜20:00 ↑土曜日【夜の部新設】致しました。  ◇11/8日10→15時  →［グッチーズカレー］ →［相撲部屋のしょうがダレ］  よろしくお願い致します！ https://t.co/aiKkkF2cGb",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-bg9Uyh-8xdXODdw1nhC-Pn4IkHt-W4C2CnBPJHuvIxXqx7AEfCvwJGJVmm812Cb5EEvu7kf_OK08i_xXnYIDQEr8_UcwdIa0ET3_NtI9m_e0340HoVAGF5o1BaNXOcCrlcT1UHzAQhYxi2WQ-veJzQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-W2uVvzJB58avlQOsiwlB7l1W6QfBiXTc4CWD7QFTn1j3nzjN5c94QuC0TCPSgWhV-0-GrNXh9ciTDSXqPN2YjehREJhRvJnLlxZq4rsWcacEttTwLdzS2oZcwqWet71y4ykWiRqRDITPln0fmfGM3Q==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-pelHwyN2aKmHdK-VgEpdJQbVBqfuvGUHzQSYncyyEGbGoDh-m861G_xCoTqvmqVl2LumZq4fqkyBM5x84akl83qkOOaiCrHUnyjGlEhAqVAC70X7olvmYzf4ZQPmC4yWJLFIGSSpUFQ86Rjb8Lx9rQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-vnlcFq3PGbnS4z-gTRqFxvdM7EfMsQ73nWfrHUwN28V9T4zVELYogLOXdipsedkG89i905DpyeOdZuI5RrkUaplkxEWHGgfboWySE6u6LNgMdI6F2qJ8fsyOklyA21D0Emni5mR49dWtuHn2ka96vA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-05",
+      "endDate": "2026-11-05",
+      "hours": [
+        [
+          10.333333333333334,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261106_2_2117025757944000646",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2117025757944000646",
+    "postedAt": "2026-11-01T22:47:27.000Z",
+    "postText": "◆11/2月【定休】 ◎11/3火10→15時 ◇11/4水［昼&夜］ ◇11/5木［昼のみ］ ◇11/6金［夜のみ］  ◇11/7土 ※10:00〜14:00 ※16:30〜20:00 ↑土曜日【夜の部新設】致しました。  ◇11/8日10→15時  →［グッチーズカレー］ →［相撲部屋のしょうがダレ］  よろしくお願い致します！ https://t.co/aiKkkF2cGb",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-bg9Uyh-8xdXODdw1nhC-Pn4IkHt-W4C2CnBPJHuvIxXqx7AEfCvwJGJVmm812Cb5EEvu7kf_OK08i_xXnYIDQEr8_UcwdIa0ET3_NtI9m_e0340HoVAGF5o1BaNXOcCrlcT1UHzAQhYxi2WQ-veJzQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-W2uVvzJB58avlQOsiwlB7l1W6QfBiXTc4CWD7QFTn1j3nzjN5c94QuC0TCPSgWhV-0-GrNXh9ciTDSXqPN2YjehREJhRvJnLlxZq4rsWcacEttTwLdzS2oZcwqWet71y4ykWiRqRDITPln0fmfGM3Q==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-pelHwyN2aKmHdK-VgEpdJQbVBqfuvGUHzQSYncyyEGbGoDh-m861G_xCoTqvmqVl2LumZq4fqkyBM5x84akl83qkOOaiCrHUnyjGlEhAqVAC70X7olvmYzf4ZQPmC4yWJLFIGSSpUFQ86Rjb8Lx9rQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-vnlcFq3PGbnS4z-gTRqFxvdM7EfMsQ73nWfrHUwN28V9T4zVELYogLOXdipsedkG89i905DpyeOdZuI5RrkUaplkxEWHGgfboWySE6u6LNgMdI6F2qJ8fsyOklyA21D0Emni5mR49dWtuHn2ka96vA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-06",
+      "endDate": "2026-11-06",
+      "hours": [
+        [
+          17,
+          20.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261108_3_2117025757944000646",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2117025757944000646",
+    "postedAt": "2026-11-01T22:47:27.000Z",
+    "postText": "◆11/2月【定休】 ◎11/3火10→15時 ◇11/4水［昼&夜］ ◇11/5木［昼のみ］ ◇11/6金［夜のみ］  ◇11/7土 ※10:00〜14:00 ※16:30〜20:00 ↑土曜日【夜の部新設】致しました。  ◇11/8日10→15時  →［グッチーズカレー］ →［相撲部屋のしょうがダレ］  よろしくお願い致します！ https://t.co/aiKkkF2cGb",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-bg9Uyh-8xdXODdw1nhC-Pn4IkHt-W4C2CnBPJHuvIxXqx7AEfCvwJGJVmm812Cb5EEvu7kf_OK08i_xXnYIDQEr8_UcwdIa0ET3_NtI9m_e0340HoVAGF5o1BaNXOcCrlcT1UHzAQhYxi2WQ-veJzQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-W2uVvzJB58avlQOsiwlB7l1W6QfBiXTc4CWD7QFTn1j3nzjN5c94QuC0TCPSgWhV-0-GrNXh9ciTDSXqPN2YjehREJhRvJnLlxZq4rsWcacEttTwLdzS2oZcwqWet71y4ykWiRqRDITPln0fmfGM3Q==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-pelHwyN2aKmHdK-VgEpdJQbVBqfuvGUHzQSYncyyEGbGoDh-m861G_xCoTqvmqVl2LumZq4fqkyBM5x84akl83qkOOaiCrHUnyjGlEhAqVAC70X7olvmYzf4ZQPmC4yWJLFIGSSpUFQ86Rjb8Lx9rQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-vnlcFq3PGbnS4z-gTRqFxvdM7EfMsQ73nWfrHUwN28V9T4zVELYogLOXdipsedkG89i905DpyeOdZuI5RrkUaplkxEWHGgfboWySE6u6LNgMdI6F2qJ8fsyOklyA21D0Emni5mR49dWtuHn2ka96vA=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-11-08",
+      "endDate": "2026-11-08",
+      "hours": [
+        [
+          10,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   }
 ]
