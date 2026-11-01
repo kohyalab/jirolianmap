@@ -28766,5 +28766,79 @@
     "processedAt": null,
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_routine_ogikubo_2117017912968138910",
+    "shopId": "ogikubo",
+    "shopName": "荻窪店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ogkb_jiro/status/2117017912968138910",
+    "postedAt": "2026-11-01T22:16:17.000Z",
+    "postText": "本日です",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "投稿内容に具体的な営業時間の変更や休業の言及がないため、変更なしと判定します。"
+  },
+  {
+    "id": "sns_post_senjuohashi_20261102_0_2117021831416926275",
+    "shopId": "senjuohashi",
+    "shopName": "千住大橋駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjujirou26/status/2117021831416926275",
+    "postedAt": "2026-11-01T22:31:51.000Z",
+    "postText": "ラー油あります！  ※本日は材料の都合により13時30分頃の営業終了となりますのでご注意をお願いいたします！ https://t.co/zvqEGMwRT2",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Ynz6fhAP_R_ME8fDBCfS9hxdl0bR4txET3O3pbK2lMFq59vAd_2deGz9ox_kcE6VRW6512PpJUUvW0KPVxMQdxqnZXtEy2JgMemy6BfvOaV_pu7J7JRAzC-DtuIs-gJCTuD16E5gahlln8ZFS0-Fqw=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-02",
+      "endDate": "2026-11-02",
+      "hours": [
+        [
+          10.5,
+          13.5
+        ]
+      ],
+      "reason": "材料の都合",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 材料の都合"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2117021862333218979",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2117021862333218979",
+    "postedAt": "2026-11-01T22:31:59.000Z",
+    "postText": "鬼ごろ塩ラーメン(+200円)もやります！ 日本酒の塩ダレです！  ⚠️運転のひとと未成年はだめです⚠️  麺の量と一緒に おさけでって言ってください！ ラーメンのひとはしょうゆでって言ってくれるとわかりやすいです！  麺の量を聞かれた時に じぶんから言ってください！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_shndaita_2117021339978813601",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2117021339978813601",
+    "postedAt": "2026-11-01T22:29:54.000Z",
+    "postText": "2026年11月2日(月)  通常営業です！ 11:00～16:00くらいです！  よろしくお願いします！  ※住宅地なのでおしゃべりしないで待っててください",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知のため変更なし"
   }
 ]
