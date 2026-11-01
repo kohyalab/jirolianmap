@@ -28657,5 +28657,20 @@
     "processedAt": "2026-11-01T13:04:56.698Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 特別営業"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2116887616461455363",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2116887616461455363",
+    "postedAt": "2026-11-01T13:38:32.000Z",
+    "postText": "@jiro2666 え！！ウチあっさりですか！！ 割とこってりめだと思ってました！！！ こってり感出せるように頑張ります！！  店の雰囲気褒めてくださりありがとうございます！！ またお越しくださいませ！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
   }
 ]
