@@ -28591,5 +28591,71 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_tachikawa_20261117_0_2116826554550595797",
+    "shopId": "tachikawa",
+    "shopName": "立川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jirotachikawa/status/2116826554550595797",
+    "postedAt": "2026-11-01T09:35:53.000Z",
+    "postText": "今朝はお知らせを投稿してませんでしたが、通常通り21:30ラストオーダーで営業しています！  11/3(火・祝日)も昼・夜営業です。 ※若手従業員特別メニュー営業ではない。  特別営業は17(火)と24(火)の予定 https://t.co/QW4YVDKqiL",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-N7CXQKmb0am0vG7gdxvu36iEp5mX6xJngUuIuNBYZMe66yXyuXlNj7atCl6xIzYU0Z0xF7z8y6svFaCweoCQZ0Fm2meowtoeuYk3s81H5kjaadJarYprV10wVieDpRWW2QYvEv3-cYVXdQ2v0jgxDw=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-11-17",
+      "endDate": "2026-11-17",
+      "hours": [
+        [
+          11,
+          14.5
+        ],
+        [
+          17,
+          21.5
+        ]
+      ],
+      "reason": "特別営業",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 特別営業"
+  },
+  {
+    "id": "sns_post_tachikawa_20261124_1_2116826554550595797",
+    "shopId": "tachikawa",
+    "shopName": "立川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jirotachikawa/status/2116826554550595797",
+    "postedAt": "2026-11-01T09:35:53.000Z",
+    "postText": "今朝はお知らせを投稿してませんでしたが、通常通り21:30ラストオーダーで営業しています！  11/3(火・祝日)も昼・夜営業です。 ※若手従業員特別メニュー営業ではない。  特別営業は17(火)と24(火)の予定 https://t.co/QW4YVDKqiL",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-N7CXQKmb0am0vG7gdxvu36iEp5mX6xJngUuIuNBYZMe66yXyuXlNj7atCl6xIzYU0Z0xF7z8y6svFaCweoCQZ0Fm2meowtoeuYk3s81H5kjaadJarYprV10wVieDpRWW2QYvEv3-cYVXdQ2v0jgxDw=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-11-24",
+      "endDate": "2026-11-24",
+      "hours": [
+        [
+          11,
+          14.5
+        ],
+        [
+          17,
+          21.5
+        ]
+      ],
+      "reason": "特別営業",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 特別営業"
   }
 ]
