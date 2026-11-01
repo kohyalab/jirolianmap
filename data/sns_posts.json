@@ -28331,5 +28331,69 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2116761160410444061",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2116761160410444061",
+    "postedAt": "2026-11-01T05:16:02.000Z",
+    "postText": "※11月より正式に ［土曜日夜の部］新設致します。  土曜日 昼→10:00〜14:00 夜→16:30〜20:00  よろしくお願い致します。 ※拡散頂けますと幸いです♪ 　#スモジ土曜日夜やるよ 　#スモジ宣伝部 https://t.co/xhLeQcgWQP",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "相模大野店の土曜日夜の部新設（通常営業時間の変更）に関する案内であり、特定の臨時休業や時間変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2116760889789714522",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2116760889789714522",
+    "postedAt": "2026-11-01T05:14:58.000Z",
+    "postText": "土曜日→夜の部新設！ 《営業時間》 　　昼　　夜 月　定休日 火　○　　✖️ 水　○　　○17〜20:30 木　○　　✖️ 金　✖️        ○17〜20:30 土　○         ○ 日　○10:00〜15:00  ※平日昼10:20〜14:00 ※土曜 昼10〜14:00               夜16:30〜20時 ※[LOは閉店時間]までに並べば🆗 https://t.co/CBHDsL1bRy",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-dOiBGj5qEwJUkgHuFrfJ5Vbl6o9l3FG1SESAtHKLi4rqSU0Vs2rQbd7h5erwDj9rIW_aeSW76HsLv8ikn7a_7bMEYayNzRGBeSJXkQRBwDeOBsTXTbjXVNATeKn1T0asnbnrxkTsdnlfjRkPIIbMmw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-IsGpEx6l4N1nI2aff1sJVd84Ci-HirHWr_sxVRv9Isn-UiunrDLH5D5z6ZvlqEz4LqJwRgdcS8MORmg8yEcrgojGt2rOScuc1QwDfZjq4yy8zIf_rsKduW64JuSA8hDlkJpUavifnEgIDTFAyQWTBg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-OWNyP-MClpGx7QmXNGjIUGRnUQ0SZnxzBUZkSog0FFTBj-1BLKHRavJLJLgJupc6AxaSY82Z3A2V1ZjCCkqFNk4oCA3T6ZFW0ONWTvOHtIFqRDqAh3W79i3wgMAXFeja_eaJrLfddPZ4X-Ml59JiNg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の案内（変更なし）"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2116760370824237213",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2116760370824237213",
+    "postedAt": "2026-11-01T05:12:54.000Z",
+    "postText": "※11月より正式に ［土曜日夜の部］新設致します。  土曜日 昼→10:00〜14:00 夜→16:30〜20:00  よろしくお願い致します。 ※拡散頂けますと幸いです♪ 　#スモジ土曜日夜やるよ 　#スモジ宣伝部 https://t.co/Az32xPDmUw",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "11月より土曜日夜の部新設に伴う営業時間変更（土曜日夜：16:30〜20:00）"
+  },
+  {
+    "id": "sns_post_routine_koshigaya_2116765321227100259",
+    "shopId": "koshigaya",
+    "shopName": "越谷店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ksgy26/status/2116765321227100259",
+    "postedAt": "2026-11-01T05:32:34.000Z",
+    "postText": "テイクアウト終了します！ ありがとうございました🙇",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更や臨時休業に関する言及はありません。"
   }
 ]
