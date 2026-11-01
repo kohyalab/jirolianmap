@@ -28137,5 +28137,20 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 祝日特別営業"
+  },
+  {
+    "id": "sns_post_routine_kameido_2116692190181384253",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2116692190181384253",
+    "postedAt": "2026-11-01T00:41:59.000Z",
+    "postText": "お世話になってます。本日昼の部「辛味噌ラーメン」やります！希望の方はラーメン＋本日のトッピング¥100を購入してください。こちらはラーメンのみで固めなどできませんのでご了承ください。無くなり次第終了です。よろしくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定メニューの告知のみであり、営業時間の変更はない。"
   }
 ]
