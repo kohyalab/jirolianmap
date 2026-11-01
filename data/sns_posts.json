@@ -28474,5 +28474,24 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2116791932869660715",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2116791932869660715",
+    "postedAt": "2026-11-01T07:18:19.000Z",
+    "postText": "列切れたのでよろしかったらどうぞー！ 有給繋げて4連休の方もいるようで羨ましい限りでございます。_:(´ཀ`」 ∠): 是非是非どうぞ！！ https://t.co/PTs1J9n2ll",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ouqVAQ5A3f_ICVq9gPBRI6s1orK8ngF6VW7Ux47qS_3sIV1k09DT-yoW_2_MTsZPI0vrsfsJeTptbxEbCz5Dg_1Uid5wSSvkPSgxi3o4iwa9APWkgjnZA4Nk_PPK26qeDIckXY53lKRp3B-HU6Sg5g==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-stigbvU1bvIssHJPK0nFM2c8ZWvP611j238-Nv7s4qVA-506xofaVhA1O-Urc9R1BEXZ5xdEJ97ykNwLrQT0MNxh-ZWFKmisaDQTwFVsLQNDo-K6vgwlOMrvDRWQNXsaGaPYy8BfZr9QBuZsRSGfOQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-8byfRW1ydIiFYW2VYwGmM1xCw0LnVT-oR0ZVSmRAnj9vZrQFmP24ZbGicX4f4nD4sojYwTTklydbAJV767OhkE9XANApkSwUpEqChIFozpDzgSIUx8retY0pKVHuNN7q6FmVjks-j47XbG-KE8bOuQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報の変更に関する言及がない日常投稿のため、変更なしと判定します。"
   }
 ]
