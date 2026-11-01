@@ -27983,14 +27983,51 @@
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   },
   {
-    "id": "sns_post_aizuwakamatsu_20261101_0_2116674342289605020",
+    "id": "sns_post_routine_mejirodai_2116668040733724983",
+    "shopId": "mejirodai",
+    "shopName": "めじろ台店",
+    "postSource": "x",
+    "postUrl": "https://x.com/mejirodai_jiro/status/2116668040733724983",
+    "postedAt": "2026-10-31T23:06:01.000Z",
+    "postText": "毎度ありがとうございます 本日1日(日)の営業時間は11〜15時となります なおアルバイト募集中ですのでXのDMの方までご連絡お待ちしてます よろしくお願いします🙇 https://t.co/FaHUCXdWkB",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-DcFCZXVex7GAVi83oc0cf4HV41fGEoY30JKwRra-S4nkVOLyyKPozLPPdzpvkw4jiJD5eF-gN3oAuq9EIcz06mrt3s_H2dH3I_viyj25ab0MaoKh1uc_iQQNLxZmrwN6Xx1TfYknkZaPUV_Ysp01Dw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "本日11/1(日)の営業時間は通常通り11:00〜15:00であり、投稿内容はアルバイト募集の告知であるため変更なし。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2116682226587050397",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2116682226587050397",
+    "postedAt": "2026-11-01T00:02:23.000Z",
+    "postText": "【大相撲十一月場所】 ［九州場所］  来る11月8日に初日を迎えます。一年納めの九州場所！今場所はどんなドラマが待っているのか、楽しみです♪  当店でも大相撲企画が始まります！ 先ずは［相撲部屋の湯豆腐のタレ］初日から販売です♪ ちょっと中毒性あると思うんですけど、いかがでしょうか⁇笑 https://t.co/kBOGKxZE5E",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-uFvjvV0b3sb0DhoIfHqc_Xi52L2BPPLucS_m-YYEi1quc5rtYNJB4_gk7_rAmlPHwtkCFhU5GY1mZ8f8dMGFJj-Jc9S8lF0LQzS-J89EnXyylbzvMtmAv-iJg1uNo1o2469D4IUz2HOpXWTMOTazWw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-VgMHaKjYz0ei_Ono-e-I7VF08FyZl78w1QGBfvNcpznh6RQDlOiaiDZKCIt8bC3Iajt9GvuSMNWZTnTP7dryBzPUe4LO-I56U4zf5US9S6BGUdL4MVWhNC8hbBJOFPGFaukJbIl1afRSrwlP5jZooA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの告知であり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_aizuwakamatsu_20261101_0_2116687237853446541",
     "shopId": "aizuwakamatsu",
     "shopName": "会津若松駅前店",
     "postSource": "x",
-    "postUrl": "https://x.com/aizu_jiro/status/2116674342289605020",
-    "postedAt": "2026-10-31T23:31:03.000Z",
-    "postText": "毎度ありがとうございます。 本日11/1(日)11:00〜15:00 臨時営業いたします。 よろしくお願いいたしますm(__)m",
-    "mediaUrls": [],
+    "postUrl": "https://x.com/aizu_jiro/status/2116687237853446541",
+    "postedAt": "2026-11-01T00:22:18.000Z",
+    "postText": "毎度ありがとうございます。 11月の予定&臨時営業のお知らせです。 よろしくお願いいたしますm(__)m https://t.co/mP1PHpHdg4",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-fs667CZ4bAXLqJQADhUHXms4rCPU7lnK-xU9ScBjbx153iDky41I-3T8fM0aX2Upmy1pqdK3p9PKeUnAtfASUoPT_UPH7HSLTtuYde3DYgjtWryObDf5ulfrr3q7SQdykOjDlSG9R5QcwYSO_pXKOA=="
+    ],
     "detectedChange": {
       "type": "special_open",
       "startDate": "2026-11-01",
@@ -28010,20 +28047,95 @@
     "aiReason": "営業時間の変更を検出"
   },
   {
-    "id": "sns_post_routine_mejirodai_2116668040733724983",
-    "shopId": "mejirodai",
-    "shopName": "めじろ台店",
+    "id": "sns_post_aizuwakamatsu_20261115_1_2116687237853446541",
+    "shopId": "aizuwakamatsu",
+    "shopName": "会津若松駅前店",
     "postSource": "x",
-    "postUrl": "https://x.com/mejirodai_jiro/status/2116668040733724983",
-    "postedAt": "2026-10-31T23:06:01.000Z",
-    "postText": "毎度ありがとうございます 本日1日(日)の営業時間は11〜15時となります なおアルバイト募集中ですのでXのDMの方までご連絡お待ちしてます よろしくお願いします🙇 https://t.co/FaHUCXdWkB",
+    "postUrl": "https://x.com/aizu_jiro/status/2116687237853446541",
+    "postedAt": "2026-11-01T00:22:18.000Z",
+    "postText": "毎度ありがとうございます。 11月の予定&臨時営業のお知らせです。 よろしくお願いいたしますm(__)m https://t.co/mP1PHpHdg4",
     "mediaUrls": [
-      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-DcFCZXVex7GAVi83oc0cf4HV41fGEoY30JKwRra-S4nkVOLyyKPozLPPdzpvkw4jiJD5eF-gN3oAuq9EIcz06mrt3s_H2dH3I_viyj25ab0MaoKh1uc_iQQNLxZmrwN6Xx1TfYknkZaPUV_Ysp01Dw=="
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-fs667CZ4bAXLqJQADhUHXms4rCPU7lnK-xU9ScBjbx153iDky41I-3T8fM0aX2Upmy1pqdK3p9PKeUnAtfASUoPT_UPH7HSLTtuYde3DYgjtWryObDf5ulfrr3q7SQdykOjDlSG9R5QcwYSO_pXKOA=="
     ],
-    "detectedChange": null,
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-11-15",
+      "endDate": "2026-11-15",
+      "hours": [
+        [
+          11,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
     "processed": false,
     "processedAt": null,
-    "aiStatus": "no_change",
-    "aiReason": "本日11/1(日)の営業時間は通常通り11:00〜15:00であり、投稿内容はアルバイト募集の告知であるため変更なし。"
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_aizuwakamatsu_20261129_2_2116687237853446541",
+    "shopId": "aizuwakamatsu",
+    "shopName": "会津若松駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/aizu_jiro/status/2116687237853446541",
+    "postedAt": "2026-11-01T00:22:18.000Z",
+    "postText": "毎度ありがとうございます。 11月の予定&臨時営業のお知らせです。 よろしくお願いいたしますm(__)m https://t.co/mP1PHpHdg4",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-fs667CZ4bAXLqJQADhUHXms4rCPU7lnK-xU9ScBjbx153iDky41I-3T8fM0aX2Upmy1pqdK3p9PKeUnAtfASUoPT_UPH7HSLTtuYde3DYgjtWryObDf5ulfrr3q7SQdykOjDlSG9R5QcwYSO_pXKOA=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-11-29",
+      "endDate": "2026-11-29",
+      "hours": [
+        [
+          11,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_okinawa_20261103_0_2116688774084325479",
+    "shopId": "okinawa",
+    "shopName": "沖縄店",
+    "postSource": "x",
+    "postUrl": "https://x.com/okinawa_jiro/status/2116688774084325479",
+    "postedAt": "2026-11-01T00:28:24.000Z",
+    "postText": "【11月の営業予定】 ・３日（火）１１:００〜１４:００,１７:００〜２０:００  祝日ですが、特別営業として夜の部も営業いたします。それに伴い、昼の部も平日と同様の時刻よりの営業となっておりますのでご注意ください。 https://t.co/40XAiRe6JU",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-xB6CHhDI7XWnOc8L06PcdyXRTqtpdY3IbSNdN8JDcw1SxYo2IpZywoEZFOhr3L6_1ls23o4nm0XhtGBiHs2mpBWIPJuvjosHy9BzvGY-XdKgURYJlIqv57cF63gcMfTFpr5zamXkshmG4_mjKwFrxA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-9hpQBO4rheoC8Ax5q8u_pFyzhQSfUX_cXy9423uCbQu-k7jebh2rE7FgCn1juFi3BYXnDJC8Vc_1GpTRmp8SeFEbjOZcfhqZHX9Hbrkr764CAum25biMLe7Tp5iPbcIuGOGPCK_AhBEPb_aqhR4YeA=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-11-03",
+      "endDate": "2026-11-03",
+      "hours": [
+        [
+          11,
+          14
+        ],
+        [
+          17,
+          20
+        ]
+      ],
+      "reason": "祝日特別営業",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 祝日特別営業"
   }
 ]
