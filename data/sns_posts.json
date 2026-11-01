@@ -28672,5 +28672,35 @@
     "processedAt": null,
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2116950059149558205",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2116950059149558205",
+    "postedAt": "2026-11-01T17:46:39.000Z",
+    "postText": "@gekinatu @Iu6cNo え！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2116950021006598319",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2116950021006598319",
+    "postedAt": "2026-11-01T17:46:30.000Z",
+    "postText": "@fhGkDNSzNoGgb23 @Iu6cNo ウチは好き嫌い、合う合わないがありますので笑  私自身も初二郎の感想は \"うーん…\" でした笑 そんなやつが作ってるので人生何があるかわかりません笑",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
   }
 ]
