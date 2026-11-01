@@ -2017,6 +2017,16 @@
         "reason": "都合により",
         "sourceUrl": "https://x.com/ichinoejiro/status/2111937838279479465",
         "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-22",
+        "endDate": "2026-11-22",
+        "hours": []
+      },
+      {
+        "startDate": "2026-11-24",
+        "endDate": "2026-11-24",
+        "hours": []
       }
     ],
     "holidaySpecialShifts": [
@@ -3000,6 +3010,45 @@
             21.5
           ]
         ]
+      },
+      {
+        "startDate": "2026-11-09",
+        "endDate": "2026-11-09",
+        "hours": []
+      },
+      {
+        "startDate": "2026-11-17",
+        "endDate": "2026-11-17",
+        "hours": [
+          [
+            11,
+            14.5
+          ],
+          [
+            17,
+            21.5
+          ]
+        ],
+        "reason": "特別営業",
+        "sourceUrl": "https://x.com/jirotachikawa/status/2116826554550595797",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-24",
+        "endDate": "2026-11-24",
+        "hours": [
+          [
+            11,
+            14.5
+          ],
+          [
+            17,
+            21.5
+          ]
+        ],
+        "reason": "特別営業",
+        "sourceUrl": "https://x.com/jirotachikawa/status/2116826554550595797",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -3343,15 +3392,6 @@
             20
           ]
         ],
-        "reason": "",
-        "sourceUrl": "https://x.com/sumo_jiro/status/2114584723712602486",
-        "_isAiImported": true
-      },
-      {
-        "startDate": "2026-11-01",
-        "endDate": "2026-11-01",
-        "hours": [],
-        "reason": "",
         "sourceUrl": "https://x.com/sumo_jiro/status/2114584723712602486",
         "_isAiImported": true
       }
@@ -3389,7 +3429,11 @@
       "5": [
         [
           10,
-          15
+          14
+        ],
+        [
+          16.5,
+          20
         ]
       ],
       "6": [
@@ -4531,6 +4575,48 @@
         "reason": "",
         "sourceUrl": "https://x.com/26shinshindaita/status/2115928071589286333",
         "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-04",
+        "endDate": "2026-11-04",
+        "hours": [
+          [
+            11,
+            15
+          ]
+        ],
+        "reason": "",
+        "sourceUrl": "https://x.com/26shinshindaita/status/2116799641073381851",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-05",
+        "endDate": "2026-11-05",
+        "hours": [
+          [
+            11,
+            15
+          ]
+        ],
+        "reason": "",
+        "sourceUrl": "https://x.com/26shinshindaita/status/2116799641073381851",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-06",
+        "endDate": "2026-11-06",
+        "hours": [],
+        "reason": "",
+        "sourceUrl": "https://x.com/26shinshindaita/status/2116799641073381851",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-07",
+        "endDate": "2026-11-07",
+        "hours": [],
+        "reason": "",
+        "sourceUrl": "https://x.com/26shinshindaita/status/2116799641073381851",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -4669,6 +4755,45 @@
           ]
         ],
         "sourceUrl": "https://x.com/aizu_jiro/status/2105452519845670967",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-01",
+        "endDate": "2026-11-01",
+        "hours": [
+          [
+            11,
+            15
+          ]
+        ],
+        "reason": "",
+        "sourceUrl": "https://x.com/aizu_jiro/status/2116687237853446541",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-15",
+        "endDate": "2026-11-15",
+        "hours": [
+          [
+            11,
+            15
+          ]
+        ],
+        "reason": "",
+        "sourceUrl": "https://x.com/aizu_jiro/status/2116687237853446541",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-29",
+        "endDate": "2026-11-29",
+        "hours": [
+          [
+            11,
+            15
+          ]
+        ],
+        "reason": "",
+        "sourceUrl": "https://x.com/aizu_jiro/status/2116687237853446541",
         "_isAiImported": true
       }
     ],
@@ -5539,6 +5664,34 @@
         ],
         "reason": "都合により",
         "sourceUrl": "https://x.com/mejirodai_jiro/status/2113871628941787334",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-07",
+        "endDate": "2026-11-07",
+        "hours": [
+          [
+            11,
+            14
+          ],
+          [
+            17.5,
+            20.5
+          ]
+        ]
+      },
+      {
+        "startDate": "2026-11-11",
+        "endDate": "2026-11-12",
+        "hours": [],
+        "sourceUrl": "https://x.com/mejirodai_jiro/status/2116509399284109555",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-25",
+        "endDate": "2026-11-26",
+        "hours": [],
+        "sourceUrl": "https://x.com/mejirodai_jiro/status/2116509399284109555",
         "_isAiImported": true
       }
     ],
@@ -6824,6 +6977,22 @@
         "reason": "都合により",
         "sourceUrl": "https://x.com/ikuta_jiro/status/2105459164617343168",
         "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-17",
+        "endDate": "2026-11-17",
+        "hours": [],
+        "reason": "都合により",
+        "sourceUrl": "https://x.com/ikuta_jiro/status/2116697434315424142",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-24",
+        "endDate": "2026-11-24",
+        "hours": [],
+        "reason": "都合により",
+        "sourceUrl": "https://x.com/ikuta_jiro/status/2116697434315424142",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -7573,6 +7742,23 @@
         ],
         "reason": "都合により",
         "sourceUrl": "https://x.com/okinawa_jiro/status/2115690773807284486",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-03",
+        "endDate": "2026-11-03",
+        "hours": [
+          [
+            11,
+            14
+          ],
+          [
+            17,
+            20
+          ]
+        ],
+        "reason": "祝日特別営業",
+        "sourceUrl": "https://x.com/okinawa_jiro/status/2116688774084325479",
         "_isAiImported": true
       }
     ],
