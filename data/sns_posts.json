@@ -28657,5 +28657,23 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 特別営業"
+  },
+  {
+    "id": "sns_post_routine_fujisawa_2116874328826655163",
+    "shopId": "fujisawa",
+    "shopName": "湘南藤沢店",
+    "postSource": "x",
+    "postUrl": "https://x.com/fujirow26/status/2116874328826655163",
+    "postedAt": "2026-11-01T12:45:44.000Z",
+    "postText": "本日もありがとうございました。  明日11月2日(月)  魔のタレ 生卵、汁なし注文の方サービス なくなり次第終了。  しょっぱ豚🐷 無料トッピング 崩し豚、豚カス醤油、1番スープ、にんにく🧄生姜🫚とにかく色々  野山商店特製ピリ辛味噌タマネギ🧅  よろしくお願いいたします。 https://t.co/dkdssNBE3Y",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-_zh-wDa5au2gHjrWawOpADfS0fBs8OiINOQJwqCDiMtxMHbz5lMkicWz9rDL1B1HVnGctDzqXcky2b_gDUK8Y1Tiq3p6BmTaSworyxK2wZBRdpQw9DIp3ozwdnhwe9UHQTffuyBobht3rFZulJe2NA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-9ZNtDOVxQ1DAWK1hOYoaX5a1Z3EbZOMYn4BvFhiqdXiSwqaA58KKurIpYpUe7ujv3zQKFxTgpUmRq6QFWUYC54bCG116MklCYHZXx9NfYkbLuMh-q3QHA7-1IutwpPq9aeVzrKumMGKB4W_Uj6sKUw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの告知のみであり、営業時間の変更はありません。"
   }
 ]
