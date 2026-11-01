@@ -28267,5 +28267,24 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 都合により"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2116711810837684611",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2116711810837684611",
+    "postedAt": "2026-11-01T01:59:56.000Z",
+    "postText": "おはようございます！なんか黄砂まってます？天気はいいので、お散歩がてらラーメン二郎どうぞ！！ 何やら西公園でもイベントやってるみたいです！ 11〜21時の通し営業です！ https://t.co/jPpdtZh5UZ",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-CVXFW0hOXuH_Qec_PyGxcpxRA-fnoWC80Eo8qMS4pZzcx8T1_8PLIoRImqylbLsJEOAHvRFLzJzf7PSYiFDMv9up2FA8iPe2ZxGUPVdSuKmEjwAu9zjNAvBckSIH01j0NigeNLpotg-OuYNKxE5qTQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-tqPBNWaKPdCP3KtGFcZBw91HHsmZUnY38WgAjvIWoZu2KZ7c_R8L3KON0GAb7vt1AlelBmtRp7crM256Qmx35fRT8jv1jSNp3sSatQrjl9LOEuBePxmc4D8UdJi_JV6qxgEryR9Ie52H2x1IejORWA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-NS01rT8uhEGc0qgaryFZiJZg6sIRqu47_2HO1mngmzqTwro-oJlne51Rf_mu_rTmjrUZIwPm3eqpTggFUODOnUC8xe4Gmgin4h9FTtQ45YkgKGVysPUXMM-4y8o1cPiGFLYnjvb8ovvWYE0lkBYWrA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知であり、営業時間の変更はありません。"
   }
 ]
