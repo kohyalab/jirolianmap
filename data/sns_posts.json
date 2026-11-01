@@ -28395,5 +28395,69 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業時間の変更や臨時休業に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_kameido_2116773358629200362",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2116773358629200362",
+    "postedAt": "2026-11-01T06:04:31.000Z",
+    "postText": "天皇賞秋よろしくお願いします！ https://t.co/jFpDNvr05W",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-BscGqoBNvUnUOnIfp6J8feWRfB-VVtIEunQpSdUV-qCsaCXFNF_wx2vGiWCL1Ywyp3k0mYohH_hN6TWelwTKAumegdH9wXFGhbeyIClNCziBLOZGDDoW93U5UudMNRYNp78cdRTg9_q2RHMchgALZw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業変更なし（通常通り営業・雑談等）"
+  },
+  {
+    "id": "sns_post_daily_kannai_2116775466359271718",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2116775466359271718",
+    "postedAt": "2026-11-01T06:12:53.000Z",
+    "postText": "こんにちは。 目の前にたまたまマヨネーズがありました！ ほぐし豚と少しのニンニクで合わせてみました。 ご希望の方は「アレ」で お願いします。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2116779979761746309",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2116779979761746309",
+    "postedAt": "2026-11-01T06:30:49.000Z",
+    "postText": "【グッチーズカレー】 →11/7土曜日にて一旦終了☑️です！ https://t.co/bjnOLMnr64",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-l-tFN4OTV-cp5grsmmzzsVysdEB4VBVlPZv7_XbvHLnxCj9WICjNpOQd1dAArs9eTUgMhJVHgviEs40f6p9fm2FNibYBKYEteKh_sk9FUMzTpDM63uqMbSOtcuP92Ow4tNfE__-uQqCj5tiahHy4GA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定メニューの告知であり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2116777465712676936",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2116777465712676936",
+    "postedAt": "2026-11-01T06:20:50.000Z",
+    "postText": "いまいるひとでおわりです！ ごめんなさい！ あしたもやります！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
