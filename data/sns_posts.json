@@ -29013,5 +29013,25 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_nishidai_2117039591211561110",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2117039591211561110",
+    "postedAt": "2026-11-01T23:42:25.000Z",
+    "postText": "おはようございます。 本日、11/2、昼の部  FZ味付き煮込み肩ロース ¥3800 FZ味付き煮込み切り落とし ¥700×2  あります。 https://t.co/FZHIuC0M2Q",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-xDaENJyfRLrKMsIqvflVIc0sm8jh6MqwZVJJFQa4_KHV0pupHSZanHb6fKXG0PDBwRpB5wBCZAM8jSPiIzE7M7v4AVThzrvLk1cDAj-J7zLo-qR4lzys-6MN10SJfymsE_hxcXQxeS05B1qSbF_VqA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-kV0YqHKS80m1KC-g1X8BW8KuEpWmDWAWxsOAw0lZuaoh9K4Cj4gqvh3CDqjNTaNRtLf7BageNnAxiyZ7vosfAx8EB4AxeqNqbL2BykC8BVtpSfG4yk77_1UNWUmY_7YP8hPtHuyEkG5ZarM3jbBtAA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-IuSkGpxb_3hbiIpImvYmaPozgmfS-unrCDig1p2DuXiLpuesKMK5sUTos6H7kSmiVsmbrT5dQHjWUEQ1lR1lXuqTXZg2nbE5Y5f_BWP08PYV_z7e5cqV44z_jQOWrODLwVRmN-scJrjhAG9NDLeruw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-fRYsW79DHv1My-oMYZHAtod0RyAya_p7bNWeHqwT2obsODOx4KLU6Wudu7TgXdY8zzJs0ecIXyPt3icJIRVcBSGVxov6Ixe-AJLu30WraQNqCOjL1txquWTv0ESv0r3TJmZo5YrRUn-O70bJ3BWnXg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "11/2は通常営業、11/3は既に登録済みの臨時休業に関する告知のため変更なし"
   }
 ]
