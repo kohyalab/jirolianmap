@@ -28720,8 +28720,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T11:03:12.797Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   },
@@ -28747,8 +28747,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T11:03:12.797Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   },
@@ -28762,8 +28762,8 @@
     "postText": "@rockimpo380 泣…",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T11:03:12.797Z",
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
   },
@@ -28777,8 +28777,8 @@
     "postText": "本日です",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T11:03:12.797Z",
     "aiStatus": "no_change",
     "aiReason": "投稿内容に具体的な営業時間の変更や休業の言及がないため、変更なしと判定します。"
   },
@@ -28806,8 +28806,8 @@
       "reason": "材料の都合",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T11:03:12.797Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 材料の都合"
   },
@@ -28821,8 +28821,8 @@
     "postText": "鬼ごろ塩ラーメン(+200円)もやります！ 日本酒の塩ダレです！  ⚠️運転のひとと未成年はだめです⚠️  麺の量と一緒に おさけでって言ってください！ ラーメンのひとはしょうゆでって言ってくれるとわかりやすいです！  麺の量を聞かれた時に じぶんから言ってください！  よろしくお願いします！",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T11:03:12.797Z",
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   },
@@ -28836,8 +28836,8 @@
     "postText": "2026年11月2日(月)  通常営業です！ 11:00～16:00くらいです！  よろしくお願いします！  ※住宅地なのでおしゃべりしないで待っててください",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T11:03:12.797Z",
     "aiStatus": "no_change",
     "aiReason": "通常営業の告知のため変更なし"
   },
@@ -28868,8 +28868,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T11:03:12.797Z",
     "aiStatus": "match",
     "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   },
@@ -28900,8 +28900,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T11:03:12.797Z",
     "aiStatus": "match",
     "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   },
@@ -28932,8 +28932,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T11:03:12.797Z",
     "aiStatus": "match",
     "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   },
@@ -28947,8 +28947,8 @@
     "postText": "バイト募集します！  時給1300円 くらい(慣れたらすこし増えます) 7時〜17時くらい(応相談) 週2〜4回くらい（25〜45歳くらい） まかないあります 近所のひと希望 日払いです ※インスパの出店をしようとしているひとは不可です   希望の方は 年齢、最寄り駅、飲食業経験を書いてDMしてください！",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T11:03:12.797Z",
     "aiStatus": "no_change",
     "aiReason": "アルバイト募集の告知であり、営業時間の変更や臨時休業に関する言及はありません。"
   },
@@ -28962,8 +28962,8 @@
     "postText": "激辛もやります！ 多分ちゃんと辛いです！  1倍  100円 2倍 200円 3倍 300円です！  よろしくお願いします！",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T11:03:12.797Z",
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   },
@@ -28977,8 +28977,8 @@
     "postText": "鬼ごろ塩ラーメン(+200円)もやります！ 日本酒の塩ダレです！  ⚠️運転のひとと未成年はだめです⚠️  麺の量と一緒に おさけでって言ってください！ ラーメンのひとはしょうゆでって言ってくれるとわかりやすいです！  麺の量を聞かれた時に じぶんから言ってください！  よろしくお願いします！",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T11:03:12.797Z",
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   },
@@ -28997,8 +28997,8 @@
       "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-fRYsW79DHv1My-oMYZHAtod0RyAya_p7bNWeHqwT2obsODOx4KLU6Wudu7TgXdY8zzJs0ecIXyPt3icJIRVcBSGVxov6Ixe-AJLu30WraQNqCOjL1txquWTv0ESv0r3TJmZo5YrRUn-O70bJ3BWnXg=="
     ],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T11:03:12.797Z",
     "aiStatus": "no_change",
     "aiReason": "11/2は通常営業、11/3は既に登録済みの臨時休業に関する告知のため変更なし"
   },
@@ -29012,8 +29012,8 @@
     "postText": "お世話になってます。本日も昼の部「辛味噌ラーメン」やります！希望の方はラーメン＋本日のトッピング¥100を購入してください。こちらはラーメンのみで固めなどできませんのでご了承ください。無くなり次第終了です。よろしくお願いします。",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T11:03:12.797Z",
     "aiStatus": "no_change",
     "aiReason": "限定メニューの告知のみであり、営業時間の変更は含まれていないため変更なし。"
   },
@@ -29045,8 +29045,8 @@
       "reason": "祝日特別営業",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T11:03:12.797Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 祝日特別営業"
   },
@@ -29078,8 +29078,8 @@
       "reason": "火曜特別営業",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T11:03:12.797Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 火曜特別営業"
   },
@@ -29111,8 +29111,8 @@
       "reason": "火曜特別営業",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T11:03:12.797Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 火曜特別営業"
   },
@@ -29138,8 +29138,8 @@
       "reason": "祝日特別営業",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T11:03:12.797Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 祝日特別営業"
   },
@@ -29155,8 +29155,8 @@
       "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-EEWHaFjlF-qAa5_086d1v-99ici93YCMoG3pzibuB9Fc46zByTfmJSzUduTK_OtIfKlymxYFmf7TzeKjrng8LNTTs4EYB3MyWGqtXsfsOQA5sKEuWgy0DLiIo3lBGtVqnluFFVvXqkpUT5WKR2FL1Q=="
     ],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T11:03:12.797Z",
     "aiStatus": "no_change",
     "aiReason": "通常営業の告知であり、営業時間の変更はありません。"
   },
@@ -29172,8 +29172,8 @@
       "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-th8ixpgD10JGfo5xinWT65-VSczCSYHeJgYDPRGPT8l4dh6EyLC_utcexdO1CJEohWVZzaURckdvxQHTgdcqrNr41mX9d09t_FOW-pUQKUNBPZN_14TNGGPjaUTB8X-OWGsDNlVdixkMTXJ1qUBNwQ=="
     ],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T11:03:12.797Z",
     "aiStatus": "no_change",
     "aiReason": "限定トッピングの販売告知であり、営業時間の変更に関する言及はありません。"
   },
@@ -29204,8 +29204,8 @@
       "reason": "文化の日特別営業",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T11:03:12.797Z",
     "aiStatus": "match",
     "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   },
@@ -29219,8 +29219,8 @@
     "postText": "おはようございます。 ラーメン二郎名古屋大曽根店です。 本日昼夜営業です。 昼の部11:00〜14:00 夜の部17:00〜20:00  雨の中ご来店される際は足もとお気をつけてお越しくださいませ。 よろしくお願いいたします。  ※明日３日(火曜日)も昼夜営業となります。",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T11:03:12.797Z",
     "aiStatus": "no_change",
     "aiReason": "本日および明日の営業案内（通常営業）"
   },
@@ -29234,8 +29234,8 @@
     "postText": "おはようございます！　 水曜日には切り歯が届く事になりまして明日までピラピラ麺になりそうです。  本日途中で無くなりそうですが、ほぐし豚マヨありますのでご希望の方は「アレ」でお願いします。",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T11:03:12.797Z",
     "aiStatus": "no_change",
     "aiReason": "営業時間の変更に関する言及なし"
   },
@@ -29249,8 +29249,8 @@
     "postText": "おはようございます。ラーメン二郎横浜関内店です。  煮干しの波動、玉ねぎ納豆沢庵、シビレ汁なしは券売機にて食券をお買い求めください。 ほぐし豚マヨネーズを ご希望の方は「アレ」とコール時にお伝え下さい。  本日もよろしくお願いいたします。",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T11:03:12.797Z",
     "aiStatus": "no_change",
     "aiReason": "日常営業の告知であり、営業時間の変更はありません。"
   },
@@ -29271,8 +29271,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T11:03:12.797Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   },
@@ -29286,8 +29286,8 @@
     "postText": "お客さんひとりです！ https://t.co/vtWkw36TC3",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T11:03:12.797Z",
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   },
@@ -29301,8 +29301,8 @@
     "postText": "本日通常営業！ ネギあります！ よろしくお願いいたします。",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T11:03:12.797Z",
     "aiStatus": "no_change",
     "aiReason": "通常営業の告知のため変更なし"
   },
@@ -29316,8 +29316,8 @@
     "postText": "ずっと半分空席ですw https://t.co/vtWkw36TC3",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T11:03:12.797Z",
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   },
@@ -29331,8 +29331,8 @@
     "postText": "お持ち帰りの豚もあります！ 1本2000円です！  入れ物は無くて大丈夫です！  たべて買うひとは 最初に麺の量を聞かれた時に言ってください！  お持ち帰りだけのひとは ならばないで 入口から声をかけてください！  これが消えたら売り切れです！  よろしくお願いします！",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T11:03:12.797Z",
     "aiStatus": "no_change",
     "aiReason": "日常的なテイクアウト販売の告知であり、営業時間の変更に関する言及はないため変更なし。"
   },
@@ -29349,8 +29349,8 @@
       "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ceGTKRS85nDOI5PwTrX_1MqimtwHZ2JBXe2HbG7XPa_CLC00dnkSd_-6RPDHGa8udJlnZxoGuXlXgPdtSeTS-w7O7LiCmtXjGloQeo68I4cKmZcS5_9OLUsGMjhNO63R8ZbfRyGgHAB_oBnNyQKcOQ=="
     ],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T11:03:12.797Z",
     "aiStatus": "no_change",
     "aiReason": "本日11/2(月)は通常営業であり、投稿内容は営業時間の変更を伴うものではありません。"
   },
@@ -29364,8 +29364,8 @@
     "postText": "店主の知らないところでこんなマナーバトルが繰り広げられているのか笑 https://t.co/Opf7uQxFFP",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T11:03:12.797Z",
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   },
@@ -29379,8 +29379,8 @@
     "postText": "@fhGkDNSzNoGgb23 @Iu6cNo テイクアウトもありますので！",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T11:03:12.797Z",
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
   },
@@ -29394,8 +29394,8 @@
     "postText": "@fhGkDNSzNoGgb23 @Iu6cNo お子さん連れが増えて欲しくて移転の際にテーブル席おいたので、入りづらいと思いますが、御来店お待ちしております！ 弟さんにも宜しくお伝えください！",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T11:03:12.797Z",
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
   },
@@ -29425,8 +29425,8 @@
       "reason": "スープの調整・準備のため",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T11:03:12.797Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: スープの調整・準備のため"
   },
@@ -29440,8 +29440,8 @@
     "postText": "お世話になってます。本日夜の部は辛味噌に黒ゴマを追加して「黒ゴマ担々麺風」とさせていただきます。希望の方はミソと同じく本日のトッピング¥100を購入してください。こちらもラーメンのみで固めはできません。無くなり次第終了です！よろしくお願いします。 https://t.co/r30yfKGLFG",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T11:03:12.797Z",
     "aiStatus": "no_change",
     "aiReason": "限定メニューの告知であり、営業時間の変更はない。"
   },
@@ -29471,8 +29471,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T11:03:12.797Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   },
@@ -29486,8 +29486,8 @@
     "postText": "いまいるひとでおわりです！ ごめんなさい！",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T11:03:12.797Z",
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   },
@@ -29503,8 +29503,8 @@
       "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-gWOxZiR8ti_BH5ETiZT9ssCBDHIL6vJi4gyEZcQyBpOXY1-ACQOxW8Yex9EWNOm2aHsLk-6d6p6s9lapurQoHZdBKukFe8DXPCRMXsJ3dfFAdhqa8QRmK7e-93t007lHkXqGmlu6QMQgU1FKDznxZw=="
     ],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T11:03:12.797Z",
     "aiStatus": "no_change",
     "aiReason": "営業情報の変更に関する言及はなく、限定トッピングの告知のみです。"
   },
@@ -29530,8 +29530,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T11:03:12.797Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   },
@@ -29545,8 +29545,8 @@
     "postText": "こんにちは。 本日、2日、FZ味付き煮込み肩ロース ¥3800、残ってます。",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T11:03:12.797Z",
     "aiStatus": "no_change",
     "aiReason": "日常的な限定メニュー販売の告知であり、営業時間の変更や臨時休業に関する言及はありません。"
   },
@@ -29560,8 +29560,8 @@
     "postText": "こんにちは！本日通常営業です！ 明日は昼夜営業です！",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T11:03:12.797Z",
     "aiStatus": "no_change",
     "aiReason": "本日および明日の営業に関する通常通りの案内であり、臨時休業や営業時間変更の告知は含まれていません。"
   },
@@ -29575,8 +29575,8 @@
     "postText": "夜もごま玉 まっくろver.あります⚫️ 100円玉多めにご用意ください。 途中で売り切れてしまうかと思いますので、お早めにどうぞ！  ※麻辣ver.は終了してます https://t.co/hi1FrwdXxC",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T11:03:12.797Z",
     "aiStatus": "no_change",
     "aiReason": "日常的な限定メニューの告知であり、営業時間の変更に関する言及はないため変更なし。"
   },
@@ -29595,8 +29595,8 @@
       "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-VWSJPJU_DphB2DriNpHqMg0xRRCGgV0Vm5b1vSUhlc-8Vtqla3Mjt3oUk1E-v9K9ljpHKMe8-JoNjKYwiV2lCg_svwuQBdLwEhjLO953hpdVT1I_a0N9lyQPf3DFiW1Jbo6yikzZI9gWyticIKtvww=="
     ],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T11:03:12.797Z",
     "aiStatus": "no_change",
     "aiReason": "限定トッピングの販売告知であり、営業時間の変更ではないため変更なし"
   },
@@ -29626,24 +29626,9 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T11:03:12.797Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
-  },
-  {
-    "id": "sns_post_routine_kameido_2117206643079582028",
-    "shopId": "kameido",
-    "shopName": "亀戸店",
-    "postSource": "x",
-    "postUrl": "https://x.com/jiro_kame/status/2117206643079582028",
-    "postedAt": "2026-11-02T10:46:14.000Z",
-    "postText": "黒ゴマタンタン麺終了しました！申し訳ありません",
-    "mediaUrls": [],
-    "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
-    "aiStatus": "no_change",
-    "aiReason": "限定メニュー終了の告知であり、営業時間の変更に関する言及がないため変更なしと判定。"
   }
 ]
