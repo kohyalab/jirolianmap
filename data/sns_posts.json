@@ -28842,38 +28842,6 @@
     "aiReason": "通常営業の告知のため変更なし"
   },
   {
-    "id": "sns_post_sagamiohno_20261103_0_2117025757944000646",
-    "shopId": "sagamiohno",
-    "shopName": "相模大野店",
-    "postSource": "x",
-    "postUrl": "https://x.com/sumo_jiro/status/2117025757944000646",
-    "postedAt": "2026-11-01T22:47:27.000Z",
-    "postText": "◆11/2月【定休】 ◎11/3火10→15時 ◇11/4水［昼&夜］ ◇11/5木［昼のみ］ ◇11/6金［夜のみ］  ◇11/7土 ※10:00〜14:00 ※16:30〜20:00 ↑土曜日【夜の部新設】致しました。  ◇11/8日10→15時  →［グッチーズカレー］ →［相撲部屋のしょうがダレ］  よろしくお願い致します！ https://t.co/aiKkkF2cGb",
-    "mediaUrls": [
-      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-bg9Uyh-8xdXODdw1nhC-Pn4IkHt-W4C2CnBPJHuvIxXqx7AEfCvwJGJVmm812Cb5EEvu7kf_OK08i_xXnYIDQEr8_UcwdIa0ET3_NtI9m_e0340HoVAGF5o1BaNXOcCrlcT1UHzAQhYxi2WQ-veJzQ==",
-      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-W2uVvzJB58avlQOsiwlB7l1W6QfBiXTc4CWD7QFTn1j3nzjN5c94QuC0TCPSgWhV-0-GrNXh9ciTDSXqPN2YjehREJhRvJnLlxZq4rsWcacEttTwLdzS2oZcwqWet71y4ykWiRqRDITPln0fmfGM3Q==",
-      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-pelHwyN2aKmHdK-VgEpdJQbVBqfuvGUHzQSYncyyEGbGoDh-m861G_xCoTqvmqVl2LumZq4fqkyBM5x84akl83qkOOaiCrHUnyjGlEhAqVAC70X7olvmYzf4ZQPmC4yWJLFIGSSpUFQ86Rjb8Lx9rQ==",
-      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-vnlcFq3PGbnS4z-gTRqFxvdM7EfMsQ73nWfrHUwN28V9T4zVELYogLOXdipsedkG89i905DpyeOdZuI5RrkUaplkxEWHGgfboWySE6u6LNgMdI6F2qJ8fsyOklyA21D0Emni5mR49dWtuHn2ka96vA=="
-    ],
-    "detectedChange": {
-      "type": "special_open",
-      "startDate": "2026-11-03",
-      "endDate": "2026-11-03",
-      "hours": [
-        [
-          10,
-          15
-        ]
-      ],
-      "reason": "",
-      "confidence": 1
-    },
-    "processed": false,
-    "processedAt": null,
-    "aiStatus": "match",
-    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
-  },
-  {
     "id": "sns_post_sagamiohno_20261105_1_2117025757944000646",
     "shopId": "sagamiohno",
     "shopName": "相模大野店",
@@ -29208,5 +29176,52 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "限定トッピングの販売告知であり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261103_0_2117062579856244804",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2117062579856244804",
+    "postedAt": "2026-11-02T01:13:46.000Z",
+    "postText": "明日 ◇11/3文化の日 【文化の日営業🈺】 10:00から〜15:00 ご来店ご到着お並びのお客様まで営業致します🈺  →［グッチーズカレー］ →［相撲部屋のしょうがダレ］  →［テイクアウト割🈹］ やります！ ※明日は乱切りチャーシューのみ ※必ず着席時『テイクアウト割を』と ※店内ご飲食の方限定 https://t.co/F6be7LIWEE",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-taxSnsAe-9d47doBeX0Lbw-S9X-A4iYbXcW1A1Aw18yw8OKHVDKYuBmboId3e2ut0EufjCm54CE7862vHYG3y70Mu0nVH-g-DFhSCnDu55bw6vE1PDzfVD9FcNIAmgKO-NYDPskq_-yR9GzUytcjXA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-xIsfQXw1Rq_ehd2NYsTyDHBoXQUOj-fFpWCG18eri3FTW4xtn2QpXblaK4EAZy5RjP6wJmI2kVTt33TTeBpfEibo-qs3i6eX0wYJ35Wm__2fvz2PPGSsnFc3EGbLS3QDmyPPe_hAEc_DyM_IpfTyWw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne--Gl2vX1EItoEmX4K3a_js61pB3spiQS14n4umzYaDbWlNcpt1UE7Ly_FrstUZ14-RjeZirp4kIb_pfZ3TKvGmJXVCATZgRTbTIbVxOTdT4zVsKp4KAYMsUL8TH4jnL7NvBT4o__eBxIS-vijEJebPA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-FkLycR6a6bXyX0DJKo2q5Clp9wU79gh70izYNATQ3X03mH5dFn3uXlp776Ezw6xW0ETqoTc6Vkk_k2bGUoycnC_CyxWRu066pFz1nG3YUY5jVL5ORdi8vgCaXhOSnvebM-pl4lbkD9HbJh7vpEZRcA=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-11-03",
+      "endDate": "2026-11-03",
+      "hours": [
+        [
+          10,
+          15
+        ]
+      ],
+      "reason": "文化の日特別営業",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_routine_nagoyaosone_2117065907516436891",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2117065907516436891",
+    "postedAt": "2026-11-02T01:27:00.000Z",
+    "postText": "おはようございます。 ラーメン二郎名古屋大曽根店です。 本日昼夜営業です。 昼の部11:00〜14:00 夜の部17:00〜20:00  雨の中ご来店される際は足もとお気をつけてお越しくださいませ。 よろしくお願いいたします。  ※明日３日(火曜日)も昼夜営業となります。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "本日および明日の営業案内（通常営業）"
   }
 ]
