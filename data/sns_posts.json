@@ -29703,5 +29703,32 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業時間の変更や休業の告知はなく、通常営業の範囲内での混雑状況に関する投稿です。"
+  },
+  {
+    "id": "sns_post_kyoto_20261102_0_2117237498569220380",
+    "shopId": "kyoto",
+    "shopName": "京都店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kyoto/status/2117237498569220380",
+    "postedAt": "2026-11-02T12:48:50.000Z",
+    "postText": "何もかもなくなったので、本日は只今お待ちの方で終了です🙇‍♂️",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-02",
+      "endDate": "2026-11-02",
+      "hours": [
+        [
+          17,
+          21.8
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
