@@ -29630,5 +29630,20 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_kameido_2117206643079582028",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2117206643079582028",
+    "postedAt": "2026-11-02T10:46:14.000Z",
+    "postText": "黒ゴマタンタン麺終了しました！申し訳ありません",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定メニュー終了の告知であり、営業時間の変更に関する言及がないため変更なしと判定。"
   }
 ]
