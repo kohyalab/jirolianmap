@@ -29174,5 +29174,39 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 祝日特別営業"
+  },
+  {
+    "id": "sns_post_routine_tachikawa_2117054257744822497",
+    "shopId": "tachikawa",
+    "shopName": "立川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jirotachikawa/status/2117054257744822497",
+    "postedAt": "2026-11-02T00:40:42.000Z",
+    "postText": "11/2(月)、昼夜とも時間内売り切れなし営業です。 昼11:00-14:30 夜17:00-21:30  ①煮干し変更、今日もあります！  　+汁なし変更券で煮干し汁なしも可！ 　　フラオニ有りで、魚粉は省きます…  ②持帰りラーメン販売します。 　標準:2人前のスープと生麺+ブタハーフ https://t.co/iJBFpjl5k6",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-EEWHaFjlF-qAa5_086d1v-99ici93YCMoG3pzibuB9Fc46zByTfmJSzUduTK_OtIfKlymxYFmf7TzeKjrng8LNTTs4EYB3MyWGqtXsfsOQA5sKEuWgy0DLiIo3lBGtVqnluFFVvXqkpUT5WKR2FL1Q=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_ikuta_2117055007585599779",
+    "shopId": "ikuta",
+    "shopName": "生田駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ikuta_jiro/status/2117055007585599779",
+    "postedAt": "2026-11-02T00:43:41.000Z",
+    "postText": "おはようございます。 ごま玉 まっくろver.⚫️¥200 もう少しだけあります！お昼は売り切れずに提供できると思います。 麻辣ver.は売り切れ終了しました。  100円玉多めにご用意ください。 よろしくお願いします。 https://t.co/Ymqd3yGsXI",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-th8ixpgD10JGfo5xinWT65-VSczCSYHeJgYDPRGPT8l4dh6EyLC_utcexdO1CJEohWVZzaURckdvxQHTgdcqrNr41mX9d09t_FOW-pUQKUNBPZN_14TNGGPjaUTB8X-OWGsDNlVdixkMTXJ1qUBNwQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの販売告知であり、営業時間の変更に関する言及はありません。"
   }
 ]
