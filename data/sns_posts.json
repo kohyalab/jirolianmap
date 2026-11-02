@@ -29835,5 +29835,61 @@
     "processedAt": null,
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_ichinoe_20261103_0_2117316942608609333",
+    "shopId": "ichinoe",
+    "shopName": "環七一之江店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ichinoejiro/status/2117316942608609333",
+    "postedAt": "2026-11-02T18:04:31.000Z",
+    "postText": "本日は祝日㊗️なので 営業時間は 9:00〜14:00となります。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-03",
+      "endDate": "2026-11-03",
+      "hours": [
+        [
+          9,
+          14
+        ]
+      ],
+      "reason": "祝日特別営業",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_hitachinaka_20261103_0_2117319002561348026",
+    "shopId": "hitachinaka",
+    "shopName": "ひたちなか店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26_hitachinaka/status/2117319002561348026",
+    "postedAt": "2026-11-02T18:12:42.000Z",
+    "postText": "【3日 火曜日 営業の件】  本日 火曜日(祝日)は 10：00〜16：00 での営業となります。 https://t.co/zlBVj6SSyU",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-mLBxO1B7ylQ6bgh9kynCMz1SlfGt3CxajIsGpzPKAjJc_0VtPU-symekC0paddt6Bfq7V4VXoCo0W6o4LaFCUHQidyZ9xygd0cyGTzdXpqklrH7ZkqRNYVpluCcQ0Mg3mpxX8hNjhaafVohnrZQV_g=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-03",
+      "endDate": "2026-11-03",
+      "hours": [
+        [
+          10,
+          16
+        ]
+      ],
+      "reason": "祝日特別営業",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   }
 ]
