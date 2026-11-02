@@ -29366,5 +29366,38 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_sengawa_2117134115501977873",
+    "shopId": "sengawa",
+    "shopName": "仙川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjiro26/status/2117134115501977873",
+    "postedAt": "2026-11-02T05:58:02.000Z",
+    "postText": "本日17時から店内営業とテイクアウト販売します。 https://t.co/JFbgaQwVSB",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-cALuLAAJGeoQQkg2bd6F5E1hkAwHle_rbyZMb3_B5aOf8N55M_M3ajOh7gIxsg5z4KbgwG25f9T7FXcRR2aoyo5t0Kd8-LcgtV2a69JTJAt4JQoxc8GsYCxSGuOFmGCoQnsRRv7Y_a951fZe3TseBA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ceGTKRS85nDOI5PwTrX_1MqimtwHZ2JBXe2HbG7XPa_CLC00dnkSd_-6RPDHGa8udJlnZxoGuXlXgPdtSeTS-w7O7LiCmtXjGloQeo68I4cKmZcS5_9OLUsGMjhNO63R8ZbfRyGgHAB_oBnNyQKcOQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "本日11/2(月)は通常営業であり、投稿内容は営業時間の変更を伴うものではありません。"
+  },
+  {
+    "id": "sns_post_daily_kameido_2117131260263027130",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2117131260263027130",
+    "postedAt": "2026-11-02T05:46:41.000Z",
+    "postText": "店主の知らないところでこんなマナーバトルが繰り広げられているのか笑 https://t.co/Opf7uQxFFP",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
