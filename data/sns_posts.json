@@ -29223,5 +29223,72 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "本日および明日の営業案内（通常営業）"
+  },
+  {
+    "id": "sns_post_routine_kannai_2117071689871978668",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2117071689871978668",
+    "postedAt": "2026-11-02T01:49:58.000Z",
+    "postText": "おはようございます！　 水曜日には切り歯が届く事になりまして明日までピラピラ麺になりそうです。  本日途中で無くなりそうですが、ほぐし豚マヨありますのでご希望の方は「アレ」でお願いします。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更に関する言及なし"
+  },
+  {
+    "id": "sns_post_routine_kannai_2117071264431186357",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2117071264431186357",
+    "postedAt": "2026-11-02T01:48:17.000Z",
+    "postText": "おはようございます。ラーメン二郎横浜関内店です。  煮干しの波動、玉ねぎ納豆沢庵、シビレ汁なしは券売機にて食券をお買い求めください。 ほぐし豚マヨネーズを ご希望の方は「アレ」とコール時にお伝え下さい。  本日もよろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常営業の告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_hibarigaoka_20261104_0_2117072512135942296",
+    "shopId": "hibarigaoka",
+    "shopName": "ひばりヶ丘駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/Aarf0xvdBXkWd7o/status/2117072512135942296",
+    "postedAt": "2026-11-02T01:53:14.000Z",
+    "postText": "11月4日(水)は臨時休業です。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-04",
+      "endDate": "2026-11-04",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2117074735142240723",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2117074735142240723",
+    "postedAt": "2026-11-02T02:02:04.000Z",
+    "postText": "お客さんひとりです！ https://t.co/vtWkw36TC3",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
