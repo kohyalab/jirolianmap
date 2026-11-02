@@ -29399,5 +29399,66 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2117139708719587810",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2117139708719587810",
+    "postedAt": "2026-11-02T06:20:15.000Z",
+    "postText": "@fhGkDNSzNoGgb23 @Iu6cNo テイクアウトもありますので！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2117139612850336010",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2117139612850336010",
+    "postedAt": "2026-11-02T06:19:52.000Z",
+    "postText": "@fhGkDNSzNoGgb23 @Iu6cNo お子さん連れが増えて欲しくて移転の際にテーブル席おいたので、入りづらいと思いますが、御来店お待ちしております！ 弟さんにも宜しくお伝えください！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_okinawa_20261102_0_2117136288130412698",
+    "shopId": "okinawa",
+    "shopName": "沖縄店",
+    "postSource": "x",
+    "postUrl": "https://x.com/okinawa_jiro/status/2117136288130412698",
+    "postedAt": "2026-11-02T06:06:40.000Z",
+    "postText": "誠に申し訳ございません。  大変ありがたいことに、本日昼の部にて想定を上回る多くのお客様にご来店いただきました。  つきましては、スープの調整・準備のため、本日の夜の部は  17時30分オープン  とさせていただきます。 何卒ご理解のほどよろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-02",
+      "endDate": "2026-11-02",
+      "hours": [
+        [
+          11,
+          14
+        ],
+        [
+          17.5,
+          20
+        ]
+      ],
+      "reason": "スープの調整・準備のため",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: スープの調整・準備のため"
   }
 ]
