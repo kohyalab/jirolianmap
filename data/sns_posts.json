@@ -29805,5 +29805,35 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_mention_aizuwakamatsu_2117312663520964678",
+    "shopId": "aizuwakamatsu",
+    "shopName": "会津若松駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/aizu_jiro/status/2117312663520964678",
+    "postedAt": "2026-11-02T17:47:31.000Z",
+    "postText": "@hankana_TKK9015 ちなみに申し訳ないのですが、なにの食べものが、お好きなのですか？",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_mention_aizuwakamatsu_2117310964064469092",
+    "shopId": "aizuwakamatsu",
+    "shopName": "会津若松駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/aizu_jiro/status/2117310964064469092",
+    "postedAt": "2026-11-02T17:40:46.000Z",
+    "postText": "@harukasaionji ありがとうございます！今後とも末永くよろしくお願いいたします！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
   }
 ]
