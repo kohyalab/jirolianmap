@@ -4841,7 +4841,6 @@
             15
           ]
         ],
-        "reason": "",
         "sourceUrl": "https://x.com/aizu_jiro/status/2116687237853446541",
         "_isAiImported": true
       },
@@ -4854,7 +4853,6 @@
             15
           ]
         ],
-        "reason": "",
         "sourceUrl": "https://x.com/aizu_jiro/status/2116687237853446541",
         "_isAiImported": true
       },
@@ -4867,7 +4865,6 @@
             15
           ]
         ],
-        "reason": "",
         "sourceUrl": "https://x.com/aizu_jiro/status/2116687237853446541",
         "_isAiImported": true
       }
@@ -4886,6 +4883,13 @@
       {
         "week": 5,
         "day": 0,
+        "hours": []
+      }
+    ],
+    "holidaySpecialShifts": [
+      {
+        "triggerDay": 1,
+        "targetOffset": 0,
         "hours": []
       }
     ],
