@@ -29653,8 +29653,8 @@
       "reason": "材料切れのため",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T21:51:31.591Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 材料切れのため"
   },
@@ -29684,8 +29684,8 @@
       "reason": "材料切れのため",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T21:51:31.591Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 材料切れのため"
   },
@@ -29699,8 +29699,8 @@
     "postText": "本日沢山のお客様にご来店いただいているので、閉店時間前に売り切れになる可能性があります🙇‍♂️",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T21:51:31.591Z",
     "aiStatus": "no_change",
     "aiReason": "営業時間の変更や休業の告知はなく、通常営業の範囲内での混雑状況に関する投稿です。"
   },
@@ -29726,8 +29726,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T21:51:31.591Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   },
@@ -29741,8 +29741,8 @@
     "postText": "テツローズモルト&スピリッツ様 そしてジロリアンの皆さま、未来のジロリアン様 平素は格別の御愛顧贈り厚く御礼申し上げます。 この度、当店従業員の接客において大変不適切な対応があり、ご不快ご迷惑お掛けしましたこと、深くお詫び申し上げます。 https://t.co/MAT80gyNE4",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T21:51:31.591Z",
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   },
@@ -29756,8 +29756,8 @@
     "postText": "@jiro2666 あ、そういう事でしたか！！失礼いたしました！",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T21:51:31.591Z",
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
   },
@@ -29771,8 +29771,8 @@
     "postText": "亀戸で爆安立ち飲み屋さん、超人！亀戸で飲む時の1軒目はこちらで！ https://t.co/xVYAsA8so9",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T21:51:31.591Z",
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   },
@@ -29786,8 +29786,8 @@
     "postText": "@tycrazyskater 貴重なご意見、誠にありがとうございます。私が現場に立てなかったのが一番の原因だと思いますm(__)m誠に申し訳ございませんm(_ _)m",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T21:51:31.591Z",
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
   },
@@ -29801,8 +29801,8 @@
     "postText": "ああ、チケットとっておけばよかった… https://t.co/IZyk0t5kK6",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T21:51:31.591Z",
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   },
@@ -29816,8 +29816,8 @@
     "postText": "@hankana_TKK9015 ちなみに申し訳ないのですが、なにの食べものが、お好きなのですか？",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T21:51:31.591Z",
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
   },
@@ -29831,8 +29831,8 @@
     "postText": "@harukasaionji ありがとうございます！今後とも末永くよろしくお願いいたします！",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T21:51:31.591Z",
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
   },
@@ -29858,8 +29858,8 @@
       "reason": "祝日特別営業",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T21:51:31.591Z",
     "aiStatus": "match",
     "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   },
@@ -29887,8 +29887,8 @@
       "reason": "祝日特別営業",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T21:51:31.591Z",
     "aiStatus": "match",
     "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   },
@@ -29902,8 +29902,8 @@
     "postText": "11月3日（火祝） 昼11:30〜14:00頃 夜18:00〜21:00頃までです",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-02T21:51:31.591Z",
     "aiStatus": "no_change",
     "aiReason": "通常営業"
   }
