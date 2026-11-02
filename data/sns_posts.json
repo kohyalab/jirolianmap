@@ -29460,5 +29460,66 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: スープの調整・準備のため"
+  },
+  {
+    "id": "sns_post_routine_kameido_2117149653909328155",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2117149653909328155",
+    "postedAt": "2026-11-02T06:59:46.000Z",
+    "postText": "お世話になってます。本日夜の部は辛味噌に黒ゴマを追加して「黒ゴマ担々麺風」とさせていただきます。希望の方はミソと同じく本日のトッピング¥100を購入してください。こちらもラーメンのみで固めはできません。無くなり次第終了です！よろしくお願いします。 https://t.co/r30yfKGLFG",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定メニューの告知であり、営業時間の変更はない。"
+  },
+  {
+    "id": "sns_post_sapporo_20261102_0_2117144548963135709",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2117144548963135709",
+    "postedAt": "2026-11-02T06:39:29.000Z",
+    "postText": "夜の部17:00〜18:30  「塩汁なし(醤油ベース)」 対応します。 ⚫︎🧂プラス現金１００円",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-02",
+      "endDate": "2026-11-02",
+      "hours": [
+        [
+          11,
+          14
+        ],
+        [
+          17,
+          18.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2117145564878147724",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2117145564878147724",
+    "postedAt": "2026-11-02T06:43:31.000Z",
+    "postText": "いまいるひとでおわりです！ ごめんなさい！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
