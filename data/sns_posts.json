@@ -29730,5 +29730,20 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_daily_aizuwakamatsu_2117246119038292312",
+    "shopId": "aizuwakamatsu",
+    "shopName": "会津若松駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/aizu_jiro/status/2117246119038292312",
+    "postedAt": "2026-11-02T13:23:05.000Z",
+    "postText": "テツローズモルト&スピリッツ様 そしてジロリアンの皆さま、未来のジロリアン様 平素は格別の御愛顧贈り厚く御礼申し上げます。 この度、当店従業員の接客において大変不適切な対応があり、ご不快ご迷惑お掛けしましたこと、深くお詫び申し上げます。 https://t.co/MAT80gyNE4",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
