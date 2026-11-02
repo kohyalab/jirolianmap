@@ -29033,5 +29033,146 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "11/2は通常営業、11/3は既に登録済みの臨時休業に関する告知のため変更なし"
+  },
+  {
+    "id": "sns_post_routine_kameido_2117050777504207266",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2117050777504207266",
+    "postedAt": "2026-11-02T00:26:52.000Z",
+    "postText": "お世話になってます。本日も昼の部「辛味噌ラーメン」やります！希望の方はラーメン＋本日のトッピング¥100を購入してください。こちらはラーメンのみで固めなどできませんのでご了承ください。無くなり次第終了です。よろしくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定メニューの告知のみであり、営業時間の変更は含まれていないため変更なし。"
+  },
+  {
+    "id": "sns_post_tachikawa_20261103_0_2117051460462800950",
+    "shopId": "tachikawa",
+    "shopName": "立川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jirotachikawa/status/2117051460462800950",
+    "postedAt": "2026-11-02T00:29:35.000Z",
+    "postText": "11月は30日中28日店を開けます！  朝の製麺等の仕込みは、必ず自分が出ています。 営業にいないことはありますが、麺やスープからなんか感じ取って下さい♪  ①祝日 　3(火・祝日)も昼・夜営業です。 　　※若手従業員特別メニュー営業 　　　ではない。  ②火曜(定休)特別営業 　17(火)と24(火)の予定 https://t.co/GJuWy18s4L",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-IpiOxSE4TkHRGRn6a0-xf1VZ2enlMfcxKYISbwiuUXauN9Vfb1e1ruiFqtrLNpCb0znD4jdTDqOXEhW3sJjpcR8jx1Gflg6nFLdC5oz33yxvqFIEaxuB19pCqusFSnoSFeX036pqE2XDqPvtDCvm2g=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-11-03",
+      "endDate": "2026-11-03",
+      "hours": [
+        [
+          11,
+          14.5
+        ],
+        [
+          17,
+          21.5
+        ]
+      ],
+      "reason": "祝日特別営業",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 祝日特別営業"
+  },
+  {
+    "id": "sns_post_tachikawa_20261117_1_2117051460462800950",
+    "shopId": "tachikawa",
+    "shopName": "立川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jirotachikawa/status/2117051460462800950",
+    "postedAt": "2026-11-02T00:29:35.000Z",
+    "postText": "11月は30日中28日店を開けます！  朝の製麺等の仕込みは、必ず自分が出ています。 営業にいないことはありますが、麺やスープからなんか感じ取って下さい♪  ①祝日 　3(火・祝日)も昼・夜営業です。 　　※若手従業員特別メニュー営業 　　　ではない。  ②火曜(定休)特別営業 　17(火)と24(火)の予定 https://t.co/GJuWy18s4L",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-IpiOxSE4TkHRGRn6a0-xf1VZ2enlMfcxKYISbwiuUXauN9Vfb1e1ruiFqtrLNpCb0znD4jdTDqOXEhW3sJjpcR8jx1Gflg6nFLdC5oz33yxvqFIEaxuB19pCqusFSnoSFeX036pqE2XDqPvtDCvm2g=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-11-17",
+      "endDate": "2026-11-17",
+      "hours": [
+        [
+          11,
+          14.5
+        ],
+        [
+          17,
+          21.5
+        ]
+      ],
+      "reason": "火曜特別営業",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 火曜特別営業"
+  },
+  {
+    "id": "sns_post_tachikawa_20261124_2_2117051460462800950",
+    "shopId": "tachikawa",
+    "shopName": "立川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jirotachikawa/status/2117051460462800950",
+    "postedAt": "2026-11-02T00:29:35.000Z",
+    "postText": "11月は30日中28日店を開けます！  朝の製麺等の仕込みは、必ず自分が出ています。 営業にいないことはありますが、麺やスープからなんか感じ取って下さい♪  ①祝日 　3(火・祝日)も昼・夜営業です。 　　※若手従業員特別メニュー営業 　　　ではない。  ②火曜(定休)特別営業 　17(火)と24(火)の予定 https://t.co/GJuWy18s4L",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-IpiOxSE4TkHRGRn6a0-xf1VZ2enlMfcxKYISbwiuUXauN9Vfb1e1ruiFqtrLNpCb0znD4jdTDqOXEhW3sJjpcR8jx1Gflg6nFLdC5oz33yxvqFIEaxuB19pCqusFSnoSFeX036pqE2XDqPvtDCvm2g=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-11-24",
+      "endDate": "2026-11-24",
+      "hours": [
+        [
+          11,
+          14.5
+        ],
+        [
+          17,
+          21.5
+        ]
+      ],
+      "reason": "火曜特別営業",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 火曜特別営業"
+  },
+  {
+    "id": "sns_post_sapporo_20261103_0_2117048698169635244",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2117048698169635244",
+    "postedAt": "2026-11-02T00:18:37.000Z",
+    "postText": "もう11月🍂 2日(月)通常営業です🍜 昼の部、12:30〜14:00 「つけ麺」サブスープ対応します。  又、現金＋100円でサブ塩(醤油ベース) も対応します🧂  必ず、スタッフ確認時に申告して下さい。 「サブ」、「サブ塩」！  本日のサブスープもかなり濃厚です。  11月3日(火)文化の日 昼11:00〜14:00",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-03",
+      "endDate": "2026-11-03",
+      "hours": [
+        [
+          11,
+          14
+        ]
+      ],
+      "reason": "祝日特別営業",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 祝日特別営業"
   }
 ]
