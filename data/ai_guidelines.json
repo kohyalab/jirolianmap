@@ -2,6 +2,89 @@
   "generalRules": [],
   "learnedFeedback": [
     {
+      "id": "sns_post_routine_tachikawa_2117054257744822497",
+      "timestamp": "2026-11-02T11:00:34.791Z",
+      "shopId": "tachikawa",
+      "shopName": "立川店",
+      "postDate": "2026-11-02T00:40:42.000Z",
+      "postText": "11/2(月)、昼夜とも時間内売り切れなし営業です。 昼11:00-14:30 夜17:00-21:30  ①煮干し変更、今日もあります！  　+汁なし変更券で煮干し汁なしも可！ 　　フラオニ有りで、魚粉は省きます…  ②持帰りラーメン販売します。 　標準:2人前のスープと生麺+ブタハーフ https://t.co/iJBFpjl5k6",
+      "aiStatus": "no_change",
+      "aiReason": "通常営業の告知であり、営業時間の変更はありません。",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-11-02",
+        "endDate": "2026-11-02",
+        "hours": [],
+        "reason": ""
+      }
+    },
+    {
+      "id": "sns_post_koshigaya_20261107_1_2117008217125601640",
+      "timestamp": "2026-11-02T10:57:46.033Z",
+      "shopId": "koshigaya",
+      "shopName": "越谷店",
+      "postDate": "2026-11-01T21:37:45.000Z",
+      "postText": "おはようございます！ ラーメン二郎越谷店です！  先日よりお知らせしていましたが、本日11月2日(月)、明日11月3日(火祝)おやすみします。 ご来店予定だったお客様大変申し訳ございません。  11月7日(土)　臨時営業 10:00〜14:30 よろしくお願いします🙇",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-11-07",
+        "endDate": "2026-11-07",
+        "hours": [
+          [
+            10,
+            14.5
+          ]
+        ],
+        "reason": ""
+      }
+    },
+    {
+      "id": "sns_post_senjuohashi_20261102_0_2117021831416926275",
+      "timestamp": "2026-11-02T10:57:35.262Z",
+      "shopId": "senjuohashi",
+      "shopName": "千住大橋駅前店",
+      "postDate": "2026-11-01T22:31:51.000Z",
+      "postText": "ラー油あります！  ※本日は材料の都合により13時30分頃の営業終了となりますのでご注意をお願いいたします！ https://t.co/zvqEGMwRT2",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業変更検出: 材料の都合",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-11-02",
+        "endDate": "2026-11-02",
+        "hours": [
+          [
+            10.5,
+            13.5
+          ]
+        ],
+        "reason": "材料の都合"
+      }
+    },
+    {
+      "id": "sns_post_sapporo_20261103_0_2117048698169635244",
+      "timestamp": "2026-11-02T10:54:59.015Z",
+      "shopId": "sapporo",
+      "shopName": "札幌店",
+      "postDate": "2026-11-02T00:18:37.000Z",
+      "postText": "もう11月🍂 2日(月)通常営業です🍜 昼の部、12:30〜14:00 「つけ麺」サブスープ対応します。  又、現金＋100円でサブ塩(醤油ベース) も対応します🧂  必ず、スタッフ確認時に申告して下さい。 「サブ」、「サブ塩」！  本日のサブスープもかなり濃厚です。  11月3日(火)文化の日 昼11:00〜14:00",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業変更検出: 祝日特別営業",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-11-03",
+        "endDate": "2026-11-03",
+        "hours": [
+          [
+            11,
+            14
+          ]
+        ],
+        "reason": "祝日特別営業"
+      }
+    },
+    {
       "id": "sns_post_mejirodai_20261125_3_2116509399284109555",
       "timestamp": "2026-11-01T12:55:34.262Z",
       "shopId": "mejirodai",
@@ -917,79 +1000,6 @@
         "endDate": "2026-10-16",
         "hours": [],
         "reason": "都合により"
-      }
-    },
-    {
-      "id": "sns_post_kawagoe_20261014_1_2109796037225533469",
-      "timestamp": "2026-10-13T15:27:24.774Z",
-      "shopId": "kawagoe",
-      "shopName": "川越店",
-      "postDate": "2026-10-12T23:59:08.000Z",
-      "postText": "１０月１３日(火) １０月１４日(水)はおやすみします。",
-      "aiStatus": "schedule_change",
-      "aiReason": "営業時間の変更を検出",
-      "humanAction": "applied",
-      "finalDetails": {
-        "startDate": "2026-10-14",
-        "endDate": "2026-10-14",
-        "hours": [],
-        "reason": ""
-      }
-    },
-    {
-      "id": "sns_post_kawagoe_20261013_0_2109796037225533469",
-      "timestamp": "2026-10-13T15:27:19.697Z",
-      "shopId": "kawagoe",
-      "shopName": "川越店",
-      "postDate": "2026-10-12T23:59:08.000Z",
-      "postText": "１０月１３日(火) １０月１４日(水)はおやすみします。",
-      "aiStatus": "schedule_change",
-      "aiReason": "営業時間の変更を検出",
-      "humanAction": "applied",
-      "finalDetails": {
-        "startDate": "2026-10-13",
-        "endDate": "2026-10-13",
-        "hours": [],
-        "reason": ""
-      }
-    },
-    {
-      "id": "sns_post_asakuragaido_20261012_0_2109468940967846255",
-      "timestamp": "2026-10-12T11:11:25.417Z",
-      "shopId": "asakuragaido",
-      "shopName": "朝倉街道駅前店",
-      "postDate": "2026-10-12T02:19:22.000Z",
-      "postText": "本日12:00-15:00営業いたします。 西鉄ストア様、西日本シティ銀行様、他店舗病院等駐車禁止 空いていても一般的なコインパーキングをご利用下さい。 グループの方は歩道を塞がずお静かにお願いします。 代表待ち、割込み、飲酒喫煙禁止 朝倉街道駅徒歩1分、天拝山駅7分",
-      "aiStatus": "schedule_change",
-      "aiReason": "営業時間の変更を検出",
-      "humanAction": "applied",
-      "finalDetails": {
-        "startDate": "2026-10-12",
-        "endDate": "2026-10-12",
-        "hours": [
-          [
-            12,
-            15
-          ]
-        ],
-        "reason": ""
-      }
-    },
-    {
-      "id": "sns_post_routine_senjuohashi_2109417858505830611",
-      "timestamp": "2026-10-11T23:44:25.197Z",
-      "shopId": "senjuohashi",
-      "shopName": "千住大橋駅前店",
-      "postDate": "2026-10-11T22:56:23.000Z",
-      "postText": "ようやく熱も下がり今から仕込みに行けそうなので明日より通常通り営業いたします！皆様にご心配いただき大変申し訳御座いませんでした！",
-      "aiStatus": "no_change",
-      "aiReason": "体調不良からの復帰による通常営業再開の告知であり、臨時休業や時間変更の対象ではありません。",
-      "humanAction": "applied",
-      "finalDetails": {
-        "startDate": "2026-10-11",
-        "endDate": "2026-10-11",
-        "hours": [],
-        "reason": ""
       }
     }
   ]
