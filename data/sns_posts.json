@@ -29305,5 +29305,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の告知のため変更なし"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2117085161594794489",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2117085161594794489",
+    "postedAt": "2026-11-02T02:43:30.000Z",
+    "postText": "ずっと半分空席ですw https://t.co/vtWkw36TC3",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
