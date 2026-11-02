@@ -29760,5 +29760,35 @@
     "processedAt": null,
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_daily_kameido_2117284347627925519",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2117284347627925519",
+    "postedAt": "2026-11-02T15:55:00.000Z",
+    "postText": "亀戸で爆安立ち飲み屋さん、超人！亀戸で飲む時の1軒目はこちらで！ https://t.co/xVYAsA8so9",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_mention_aizuwakamatsu_2117286053119984076",
+    "shopId": "aizuwakamatsu",
+    "shopName": "会津若松駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/aizu_jiro/status/2117286053119984076",
+    "postedAt": "2026-11-02T16:01:46.000Z",
+    "postText": "@tycrazyskater 貴重なご意見、誠にありがとうございます。私が現場に立てなかったのが一番の原因だと思いますm(__)m誠に申し訳ございませんm(_ _)m",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
   }
 ]
