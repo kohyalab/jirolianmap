@@ -29966,5 +29966,53 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の告知"
+  },
+  {
+    "id": "sns_post_yaen2_20261103_0_2117392035498090587",
+    "shopId": "yaen2",
+    "shopName": "八王子野猿街道店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/Jiro_Yaenkaido2/status/2117392035498090587",
+    "postedAt": "2026-11-02T23:02:55.000Z",
+    "postText": "11月3日(火) 11:00～20:00 通し営業 ⭐テイクアウト、鍋二郎あります 並ばず買えます エビドクロテイクアウト現金です ⚠️駐車場待ち出来ません ⚠️駐車場満車時コインパーキングに ⚠️店舗近隣タバコ禁止です  🌟きまぐれたまご もみじおろし https://t.co/m30di5Ta2O",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-dX6RhgJQ1gkLI3gmW9GovFJFp3Ne6z-CSyAOSOZbSymUeBKQzHG70SJyrCf-3kIiuU6NNYsZZEKhmX9iesD8iqdbNEnMVXL6AvTmjI1umTPrTH1h-F6ephmWanZJ4-oRa_7ONKNEn3dqL_pFxoq2-g==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-qfKl1O2Lxgmz3PQj2KyJbLdYSWTRcruW1CXNZH0FmUIPrBGFfX6AcKfxudG_67M4beCnZTCiaLgE8zfpHxF_t17TYyzTDm4YbhabyCAI-OEt_9gYTinQ7NfIhC_tvA44vOfK8Q7-EQAEVYEKPOrKCw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-TJEvOMSYajsCXV0aaxG4UXK4NzN8xxTvXDzllFECzFo12oxkCOwHBx4dntogsR_umSb1SJ_mpu0Sni576IYnA118qh3UEn4j5w8rwgnySRGb1hPKZ2ZxAOln_Xp_QTT-DYHt-o05DyhDiIr-DsdBEQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-03",
+      "endDate": "2026-11-03",
+      "hours": [
+        [
+          11,
+          20
+        ]
+      ],
+      "reason": "祝日特別営業",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 祝日特別営業"
+  },
+  {
+    "id": "sns_post_routine_mejirodai_2117392350972674240",
+    "shopId": "mejirodai",
+    "shopName": "めじろ台店",
+    "postSource": "x",
+    "postUrl": "https://x.com/mejirodai_jiro/status/2117392350972674240",
+    "postedAt": "2026-11-02T23:04:10.000Z",
+    "postText": "毎度ありがとうございます 本日3日(火)は祝日ですが昼夜共に通常営業となります よろしくお願いします🙇 https://t.co/AP8RgXtQyv",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-4Zz9xh3x0lnCIOErxy7M9hEMQwewc5CSBxkZXTDKwLRFMaAwjTUWzS8E24_KJN01olvZQIFWwQ7bsTpvLsHii2Kqs648srVxxuBcuCvCQHUksjtuEO3n68Ly_heV2U0EX7LUE-PoEqGI0oOcH4VnOA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "本日11月3日(火)は通常通りの営業となります。"
   }
 ]
