@@ -2689,6 +2689,14 @@
         "reason": "非乳化特別営業",
         "sourceUrl": "https://x.com/Aarf0xvdBXkWd7o/status/2115929895591375020",
         "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-04",
+        "endDate": "2026-11-04",
+        "hours": [],
+        "reason": "",
+        "sourceUrl": "https://x.com/Aarf0xvdBXkWd7o/status/2117072512135942296",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -3012,6 +3020,23 @@
         ]
       },
       {
+        "startDate": "2026-11-03",
+        "endDate": "2026-11-03",
+        "hours": [
+          [
+            11,
+            14.5
+          ],
+          [
+            17,
+            21.5
+          ]
+        ],
+        "reason": "祝日特別営業",
+        "sourceUrl": "https://x.com/jirotachikawa/status/2117051460462800950",
+        "_isAiImported": true
+      },
+      {
         "startDate": "2026-11-09",
         "endDate": "2026-11-09",
         "hours": []
@@ -3195,6 +3220,19 @@
         "hours": [],
         "reason": "定期検診のため",
         "sourceUrl": "https://x.com/senjujirou26/status/2111949269184000440",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-02",
+        "endDate": "2026-11-02",
+        "hours": [
+          [
+            10.5,
+            13.5
+          ]
+        ],
+        "reason": "材料の都合",
+        "sourceUrl": "https://x.com/senjujirou26/status/2117021831416926275",
         "_isAiImported": true
       }
     ],
@@ -4154,6 +4192,43 @@
         ],
         "sourceUrl": "https://x.com/jiro_sapporo_/status/2114969563247087926",
         "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-03",
+        "endDate": "2026-11-03",
+        "hours": [
+          [
+            11,
+            14
+          ],
+          [
+            17,
+            19
+          ]
+        ],
+        "reason": "祝日特別営業",
+        "sourceUrl": "https://x.com/jiro_sapporo_/status/2117048698169635244",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-04",
+        "endDate": "2026-11-04",
+        "hours": []
+      },
+      {
+        "startDate": "2026-11-11",
+        "endDate": "2026-11-11",
+        "hours": []
+      },
+      {
+        "startDate": "2026-11-18",
+        "endDate": "2026-11-18",
+        "hours": []
+      },
+      {
+        "startDate": "2026-11-25",
+        "endDate": "2026-11-25",
+        "hours": []
       }
     ],
     "shiftsByDay": {
@@ -5967,6 +6042,19 @@
         "reason": "",
         "sourceUrl": "https://x.com/ksgy26/status/2114467460661604859",
         "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-07",
+        "endDate": "2026-11-07",
+        "hours": [
+          [
+            10,
+            14.5
+          ]
+        ],
+        "reason": "",
+        "sourceUrl": "https://x.com/ksgy26/status/2117008217125601640",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -7742,6 +7830,23 @@
         ],
         "reason": "都合により",
         "sourceUrl": "https://x.com/okinawa_jiro/status/2115690773807284486",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-02",
+        "endDate": "2026-11-02",
+        "hours": [
+          [
+            11,
+            14
+          ],
+          [
+            17.5,
+            20
+          ]
+        ],
+        "reason": "スープの調整・準備のため",
+        "sourceUrl": "https://x.com/okinawa_jiro/status/2117136288130412698",
         "_isAiImported": true
       },
       {
