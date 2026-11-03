@@ -30189,5 +30189,50 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_kannai_2117440415234490503",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2117440415234490503",
+    "postedAt": "2026-11-03T02:15:09.000Z",
+    "postText": "おはようございます！  本日残りわずかですが、ほぐし豚マヨ、納豆あります。 ほぐし豚マヨ希望の方は「アレ」でお願いします。  煮干しの波動はまだあります。  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常投稿のため変更なし"
+  },
+  {
+    "id": "sns_post_routine_tochigikaido_2117441871035388351",
+    "shopId": "tochigikaido",
+    "shopName": "栃木街道店",
+    "postSource": "x",
+    "postUrl": "https://x.com/Tochigikaidoten/status/2117441871035388351",
+    "postedAt": "2026-11-03T02:20:56.000Z",
+    "postText": "本日通常営業です🍜",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "本日通常営業の告知"
+  },
+  {
+    "id": "sns_post_routine_shndaita_2117443435389206573",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2117443435389206573",
+    "postedAt": "2026-11-03T02:27:09.000Z",
+    "postText": "お持ち帰りの豚もあります！ 1本2000円です！  入れ物は無くて大丈夫です！  たべて買うひとは 最初に麺の量を聞かれた時に言ってください！  お持ち帰りだけのひとは ならばないで 入口から声をかけてください！  これが消えたら売り切れです！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常的なテイクアウト販売の告知であり、営業時間の変更や臨時休業に関する言及はありません。"
   }
 ]
