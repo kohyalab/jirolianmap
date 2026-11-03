@@ -1,4 +1,4 @@
-class EditorApp {
+﻿class EditorApp {
     constructor() {
         this.shops = [];
         this.selectedId = null;
@@ -2198,10 +2198,46 @@ ${guidelinesText}
         return true;
     }
 
+    toJstDateString(dateInput) {
+        if (!dateInput) return '';
+        const d = new Date(dateInput);
+        if (isNaN(d.getTime())) return '';
+        const jstDate = new Date(d.getTime() + (9 * 60 * 60 * 1000));
+        const y = jstDate.getUTCFullYear();
+        const m = String(jstDate.getUTCMonth() + 1).padStart(2, '0');
+        const day = String(jstDate.getUTCDate()).padStart(2, '0');
+        return `${y}-${m}-${day}`;
+    }
+
+    extractDateFromText(text, baseDateInput) {
+        const baseJst = this.toJstDateString(baseDateInput) || new Date().toISOString().split('T')[0];
+        if (!text) return baseJst;
+        const baseYear = parseInt(baseJst.split('-')[0], 10);
+        const match = text.match(/(?:(\d{1,2})月(\d{1,2})日|(\d{1,2})\/(\d{1,2}))/);
+        if (match) {
+            const m = parseInt(match[1] || match[3], 10);
+            const d = parseInt(match[2] || match[4], 10);
+            if (m >= 1 && m <= 12 && d >= 1 && d <= 31) {
+                return `${baseYear}-${String(m).padStart(2, '0')}-${String(d).padStart(2, '0')}`;
+            }
+        }
+        return baseJst;
+    }
+
     evaluatePendingItem(item) {
         try {
             const shop = (this.shops || []).find(s => s.id === item.shopId);
             const change = item.detectedChange;
+
+            // 通常営業の変更（定休日変更、通常シフト改定等）を最優先で検出
+            if (change && change.type === 'regular_schedule_change') {
+                return {
+                    statusBadge: '要反映',
+                    badgeClass: 'badge-action',
+                    reasonText: '🚨 通常営業変更',
+                    isActionRequired: true
+                };
+            }
 
             // 無関係・変更なし判定（日常投稿、メンション、営業変更なし、または変更データなし）
             const isExplicitlyUnrelated = item.aiStatus === 'unrelated' ||
@@ -2232,8 +2268,11 @@ ${guidelinesText}
             const isClosure = change.type === 'temporary_closure';
 
             // ロジックによる営業時間突合（AIではなくプログラムで同一性を厳密比較）
-            const sDateStr = change.startDate || (item.postedAt ? item.postedAt.split('T')[0] : '');
-            const eDateStr = change.endDate || sDateStr;
+            let sDateStr = (change && change.startDate) ? change.startDate : '';
+            if (!sDateStr) {
+                sDateStr = this.extractDateFromText(item.postText, item.postedAt);
+            }
+            const eDateStr = (change && change.endDate) ? change.endDate : sDateStr;
             let allDaysMatch = true;
             let validDaysCount = 0;
 
@@ -2416,29 +2455,114 @@ ${guidelinesText}
                     console.error('Failed to create pending card:', item, e);
                 }
             });
-        }
 
-        // 処理済み履歴リストの描画
-        if (this.el.historyListContainer) {
-            if (sortedHistoryItems.length === 0) {
-                this.el.historyListContainer.innerHTML = `
-                    <div style="text-align: center; padding: 12px; color: #666; font-size: 0.78rem;">
-                        処理済みの履歴はありません。
+            // 最下部にも一括操作ツールバーを描画（未処理アイテムが2件以上ある場合）
+            if (sortedUnprocessedItems.length >= 2) {
+                const bottomToolbar = document.createElement('div');
+                bottomToolbar.style.cssText = 'display:flex; justify-content:space-between; align-items:center; gap:8px; margin-top:16px; margin-bottom:8px; padding:8px 12px; background:#1e1e1e; border:1px solid #333; border-radius:6px; flex-wrap:wrap;';
+                bottomToolbar.innerHTML = `
+                    <div style="font-size:0.85rem; font-weight:bold; color:var(--jiro-yellow); display:flex; align-items:center; gap:6px;">
+                        <span>📋 未処理の提案（最下部）: ${unprocessedItems.length}件</span>
+                    </div>
+                    <div style="display:flex; gap:6px; flex-wrap:wrap; align-items:center;">
+                        ${skippedItems.length > 0 ? `
+                            <button type="button" class="btn btn-sm" onclick="app.bulkSkipPending('skipped')" style="font-size:0.75rem; background:#37474f; border-color:#455a64; color:#eceff1;">
+                                ⏭️ 反映不要のみスキップ (${skippedItems.length}件)
+                            </button>
+                        ` : ''}
+                        <button type="button" class="btn btn-sm btn-danger" onclick="app.bulkSkipPending('all')" style="font-size:0.78rem; font-weight:bold; background:#c62828; border-color:#d32f2f; color:#fff; padding:4px 12px;">
+                            ⏭️ 一括スキップ (${unprocessedItems.length}件)
+                        </button>
                     </div>
                 `;
+                this.el.pendingListContainer.appendChild(bottomToolbar);
+            }
+        }
+
+        // 処理済み履歴リストの件数バッジ更新と遅延レンダリング（Lazy Loading）
+        const historyDetails = document.getElementById('history-list-details');
+        const historyCountTag = document.getElementById('history-count-tag');
+        if (historyCountTag) {
+            historyCountTag.textContent = `${sortedHistoryItems.length}件`;
+        }
+
+        // 履歴データキャッシュ
+        this._cachedSortedHistoryItems = sortedHistoryItems;
+        this._historyRenderLimit = 30;
+
+        if (this.el.historyListContainer) {
+            if (historyDetails && !historyDetails.open) {
+                this.el.historyListContainer.innerHTML = `
+                    <div style="text-align: center; padding: 12px; color: #777; font-size: 0.78rem;">
+                        アコーディオンを開くと直近の処理済み履歴が表示されます。
+                    </div>
+                `;
+                if (!historyDetails._hasLazyListener) {
+                    historyDetails._hasLazyListener = true;
+                    historyDetails.addEventListener('toggle', () => {
+                        if (historyDetails.open) {
+                            this.renderHistoryListLazy(false);
+                        }
+                    });
+                }
             } else {
-                sortedHistoryItems.forEach(item => {
-                    try {
-                        const card = this.createPendingCardElement(item, 'history');
-                        this.el.historyListContainer.appendChild(card);
-                    } catch (e) {
-                        console.error('Failed to create history card:', item, e);
-                    }
-                });
+                this.renderHistoryListLazy(false);
             }
         }
 
         this.updatePendingBadge();
+    }
+
+    renderHistoryListLazy(append = false) {
+        if (!this.el.historyListContainer) return;
+        const allItems = this._cachedSortedHistoryItems || [];
+        if (allItems.length === 0) {
+            this.el.historyListContainer.innerHTML = `
+                <div style="text-align: center; padding: 12px; color: #666; font-size: 0.78rem;">
+                    処理済みの履歴はありません。
+                </div>
+            `;
+            return;
+        }
+
+        if (!append) {
+            this.el.historyListContainer.innerHTML = '';
+            this._historyRenderLimit = 30;
+        }
+
+        const startIndex = append ? (this._historyRenderLimit - 30) : 0;
+        const itemsToRender = allItems.slice(startIndex, this._historyRenderLimit);
+        
+        const existingMoreBtn = document.getElementById('history-load-more-btn-wrap');
+        if (existingMoreBtn) existingMoreBtn.remove();
+
+        const fragment = document.createDocumentFragment();
+        itemsToRender.forEach(item => {
+            try {
+                const card = this.createPendingCardElement(item, 'history');
+                fragment.appendChild(card);
+            } catch (e) {
+                console.error('Failed to create history card:', item, e);
+            }
+        });
+        this.el.historyListContainer.appendChild(fragment);
+
+        if (allItems.length > this._historyRenderLimit) {
+            const remaining = allItems.length - this._historyRenderLimit;
+            const moreWrap = document.createElement('div');
+            moreWrap.id = 'history-load-more-btn-wrap';
+            moreWrap.style.cssText = 'text-align:center; padding:10px 0;';
+            moreWrap.innerHTML = `
+                <button type="button" class="btn btn-sm" style="background:#263238; border-color:#37474f; color:#80d8ff; font-size:0.8rem; padding:6px 20px;">
+                    📜 さらに30件の履歴を表示（残り ${remaining} 件）
+                </button>
+            `;
+            moreWrap.querySelector('button').onclick = () => {
+                this._historyRenderLimit += 30;
+                this.renderHistoryListLazy(true);
+            };
+            this.el.historyListContainer.appendChild(moreWrap);
+        }
     }
 
     createPendingCardElement(item, mode = 'pending') {
@@ -2470,14 +2594,18 @@ ${guidelinesText}
         }
 
         const change = item.detectedChange || null;
-        const hasChange = !!change && change.type !== 'routine' && (change.type === 'temporary_closure' || (Array.isArray(change.hours) && change.hours.length > 0));
+        const isRegularChange = change && change.type === 'regular_schedule_change';
+        const hasChange = isRegularChange || (!!change && change.type !== 'routine' && (change.type === 'temporary_closure' || (Array.isArray(change.hours) && change.hours.length > 0)));
         const isClosure = hasChange && change.type === 'temporary_closure';
 
         // ロジックによる判定（要反映 / 反映不要 + 理由テキスト）
         const evalResult = this.evaluatePendingItem(item);
         const badgeTag = `<span class="decision-badge ${evalResult.badgeClass}">${evalResult.statusBadge}</span> <span class="decision-reason">${evalResult.reasonText}</span>`;
 
-        const sDateStr = (change && change.startDate) ? change.startDate : (item.postedAt ? item.postedAt.split('T')[0] : '');
+        let sDateStr = (change && change.startDate) ? change.startDate : '';
+        if (!sDateStr) {
+            sDateStr = this.extractDateFromText(item.postText, item.postedAt);
+        }
         const eDateStr = (change && change.endDate) ? change.endDate : sDateStr;
         const hoursText = (hasChange && Array.isArray(change.hours) && change.hours.length > 0)
             ? change.hours.map(([s, e]) => `${this.floatToTime(s)}-${this.floatToTime(e)}`).join(', ')
@@ -2532,7 +2660,16 @@ ${guidelinesText}
         // 「登録営業時間」と「変更提案」を同一の形式で表示
         let currentScheduleHtml = '';
         let proposedScheduleHtml = '';
-        const proposedShiftText = hoursText ? hoursText : (isClosure ? '<span style="color:#ef5350; font-weight:bold;">休業</span>' : '<span style="color:#aaa;">営業変更なし（通常通り営業）</span>');
+        let proposedShiftText = '';
+        if (isRegularChange) {
+            const daysMap = ['月', '火', '水', '木', '金', '土', '日', '祝'];
+            const daysStr = (change.daysOfWeek && change.daysOfWeek.length > 0)
+                ? change.daysOfWeek.map(d => daysMap[d] || d).join('・') + '曜: '
+                : '';
+            proposedShiftText = `<span style="color:#ffb74d; font-weight:bold;">🚨 通常営業改定 [${daysStr}${hoursText ? hoursText : '定休日'}]</span>`;
+        } else {
+            proposedShiftText = hoursText ? hoursText : (isClosure ? '<span style="color:#ef5350; font-weight:bold;">休業</span>' : '<span style="color:#aaa;">営業変更なし（通常通り営業）</span>');
+        }
 
         if (dateRangeList.length > 0) {
             currentScheduleHtml = dateRangeList.map(dItem => `
@@ -2702,15 +2839,17 @@ ${guidelinesText}
             </div>
         `;
 
-        // 日付ピッカーの適用
-        setTimeout(() => {
-            const sInput = card.querySelector(`#p-sdate-${item.id}`);
-            const eInput = card.querySelector(`#p-edate-${item.id}`);
-            if (sInput && eInput && typeof flatpickr !== 'undefined') {
-                flatpickr(sInput, { locale: "ja", dateFormat: "Y-m-d", allowInput: true, disableMobile: true });
-                flatpickr(eInput, { locale: "ja", dateFormat: "Y-m-d", allowInput: true, disableMobile: true });
-            }
-        }, 10);
+        // 日付ピッカーの適用（未処理カードのみ適用し、履歴カードではスキップして劇的に軽量化）
+        if (!isHistory) {
+            setTimeout(() => {
+                const sInput = card.querySelector(`#p-sdate-${item.id}`);
+                const eInput = card.querySelector(`#p-edate-${item.id}`);
+                if (sInput && eInput && typeof flatpickr !== 'undefined') {
+                    flatpickr(sInput, { locale: "ja", dateFormat: "Y-m-d", allowInput: true, disableMobile: true });
+                    flatpickr(eInput, { locale: "ja", dateFormat: "Y-m-d", allowInput: true, disableMobile: true });
+                }
+            }, 10);
+        }
 
         return card;
     }
@@ -2722,6 +2861,15 @@ ${guidelinesText}
         const shop = this.shops.find(s => s.id === item.shopId);
         if (!shop) {
             alert(`店舗 "${item.shopId}" が見つかりませんでした。`);
+            return;
+        }
+
+        // 通常営業変更の場合は店舗編集画面を開いて通常営業時間タブに案内
+        const change = item.detectedChange;
+        if (change && change.type === 'regular_schedule_change') {
+            this.selectShop(shop.id);
+            this.switchMode('single');
+            this.showToast(`🚨【${shop.name}】の店舗編集画面を開きました。通常営業時間を編集してください。`);
             return;
         }
 
@@ -4487,6 +4635,33 @@ ${guidelinesText}
         const reason = reasonInput ? reasonInput.value.trim() : (item.detectedChange?.reason || '');
         const sourceUrl = urlInput ? urlInput.value.trim() : (item.postUrl || '');
 
+        // 通常営業変更の場合の処理
+        const change = item.detectedChange;
+        if (change && change.type === 'regular_schedule_change') {
+            const daysOfWeek = change.daysOfWeek || [];
+            const parsedHours = this.parseShiftString(hoursStr);
+            if (daysOfWeek.length > 0) {
+                shop.shiftsByDay = shop.shiftsByDay || {};
+                daysOfWeek.forEach(d => {
+                    if (d >= 0 && d <= 6) {
+                        shop.shiftsByDay[d] = parsedHours;
+                    } else if (d === 7) {
+                        shop.holidayShifts = parsedHours;
+                    }
+                });
+                this.draftAppliedItems.set(item.id, { shopId: shop.id, entry: { type: 'regular', daysOfWeek, hours: parsedHours } });
+                this.draftProcessedPostIds.add(item.id);
+                this.recordLearnedFeedback(item, 'applied', { regularChange: true, daysOfWeek, hours: parsedHours });
+                this.savePendingUpdatesLocally();
+                this.saveShopsDraftLocally();
+                this.updatePendingBadge();
+                this.renderPendingList();
+                this.renderList();
+                this.showToast(`🚨【${shop.name}】通常営業スケジュールを変更反映しました！`);
+                return;
+            }
+        }
+
         if (!startDate) {
             alert('開始日を入力してください。');
             return;
@@ -4578,4 +4753,10 @@ window.addEventListener('DOMContentLoaded', () => {
     app.renderList();
     app.switchMode('pending');
 });
+
+
+
+
+
+
 

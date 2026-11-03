@@ -1,4 +1,4 @@
-/**
+﻿/**
  * sns_crawler.js
  * 
  * ラーメン二郎 直系全店舗の公式X / Instagramを巡回し、
@@ -292,48 +292,22 @@ function isLikelySchedulePost(post, keywordConfig = null) {
 }
 
 /**
- * Xの直近投稿を取得（Yahoo!リアルタイム検索 と Syndication API のハイブリッド結合）
+ * Xの直近投稿を取得（Yahoo!リアルタイム検索を使用）
  * 2系統を同時に照会して結合することで、取りこぼしや取得漏れを完全に排除
  */
 async function fetchXRecentPosts(screenName) {
     if (!screenName) return [];
 
-    const [yahooPosts, syndicationPosts] = await Promise.all([
-        fetchXFromYahooRealtime(screenName).catch(() => null),
-        fetchXFromSyndication(screenName).catch(() => [])
-    ]);
-
-    const postMap = new Map();
-
-    // 1. Syndication API の投稿を追加
-    if (Array.isArray(syndicationPosts)) {
-        syndicationPosts.forEach(p => {
-            if (p && p.postId) postMap.set(p.postId, p);
-        });
+    // Yahoo! Realtime search only (avoid X 429 rate limit)
+    try {
+        const yahooPosts = await fetchXFromYahooRealtime(screenName);
+        if (Array.isArray(yahooPosts)) {
+            return yahooPosts.sort((a, b) => new Date(b.postedAt).getTime() - new Date(a.postedAt).getTime());
+        }
+    } catch (e) {
+        console.warn("[WARN] Yahoo Realtime search failed for @" + screenName + ":", e.message);
     }
-
-    // 2. Yahoo!リアルタイム検索 の投稿を追加・マージ（相互補完）
-    if (Array.isArray(yahooPosts)) {
-        yahooPosts.forEach(p => {
-            if (!p || !p.postId) return;
-            if (postMap.has(p.postId)) {
-                const existing = postMap.get(p.postId);
-                // 画像URLがSyndication側に無ければYahoo側から補完
-                if ((!existing.mediaUrls || existing.mediaUrls.length === 0) && (p.mediaUrls && p.mediaUrls.length > 0)) {
-                    existing.mediaUrls = p.mediaUrls;
-                }
-                // 本文がYahoo側の方が長い場合（省略解除等）は補完
-                if ((p.text || '').length > (existing.text || '').length) {
-                    existing.text = p.text;
-                }
-            } else {
-                postMap.set(p.postId, p);
-            }
-        });
-    }
-
-    // 投稿日時の新しい順にソートして返却
-    return Array.from(postMap.values()).sort((a, b) => new Date(b.postedAt).getTime() - new Date(a.postedAt).getTime());
+    return [];
 }
 
 /**

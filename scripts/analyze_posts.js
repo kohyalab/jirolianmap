@@ -1,4 +1,4 @@
-/**
+﻿/**
  * analyze_posts.js
  * 
  * Google Gemini 1.5 Flash (マルチモーダル) を使用して、
@@ -224,18 +224,23 @@ ${guidelinesText}
    - reason には営業時間が変更・休業となる【原因・理由（例: 台風接近のため、設備点検のため、店主急病のため、祝日特別営業のため など）】のみを記載してください。
    - 「昼のみ営業」「夜休業」「14時閉店」等の【変更内容】は reason に記載しないでください。
    - 投稿テキストや画像から原因・理由がわかる場合のみ記載し、不明・記載がない場合は必ず空文字 ""（空欄）としてください。
+11. 通常営業の変更（定休日の変更、通常営業時間の恒久的な変更、祝日営業設定）の抽出:
+   - 単発の臨時休業/臨時営業だけでなく、「○月より定休日を毎週○曜日に変更します」「平日の営業時間を変更します」「祝日は今後一律○時〜○時の営業となります」といった通常営業ルールの変更も検出してください。
+   - この場合、type は "regular_schedule_change" とし、hasScheduleChange: true としてください。
+   - 変更後の通常営業時間を hours に設定し、対象の曜日（0:月, 1:火, 2:水, 3:木, 4:金, 5:土, 6:日、祝日は 7）を daysOfWeek: number[] として含めてください。
 
 【出力フォーマット (JSON)】
 必ず以下のJSONスキーマに従って出力してください（Markdownのコードブロックではなく純粋なJSON文字列で返すこと）:
 {
-  "hasScheduleChange": boolean, // 臨時休業・時間変更・臨時営業がある場合 true
-  "summary": string, // 管理者向けの要約（例: "9/21(月) 昼のみ営業、9/22(火) 終日臨時休業"）
+  "hasScheduleChange": boolean, // 臨時休業・時間変更・臨時営業・通常営業変更がある場合 true
+  "summary": string, // 管理者向けの要約（例: "9/21(月) 昼のみ営業、9/22(火) 終日臨時休業"、または "11月より水曜定休に変更"）
   "changes": [
     {
-      "type": "temporary_closure" | "special_open" | "temporary_hours",
+      "type": "temporary_closure" | "special_open" | "temporary_hours" | "regular_schedule_change",
       "startDate": "YYYY-MM-DD",
       "endDate": "YYYY-MM-DD",
-      "hours": [[number, number]], // 例: [[11, 14.5]]。終日休業は []
+      "hours": [[number, number]], // 例: [[11, 14.5]]。定休日・終日休業は []
+      "daysOfWeek": [number], // regular_schedule_change の場合に対象曜日（0:月〜6:日, 7:祝日）。臨時営業変更時は省略可
       "reason": string, // 原因・理由（例: "台風接近のため", "設備工事のため", "祝日特別営業"）。変更内容（「昼のみ」等）は書かない。不明な場合は必ず ""（空文字）
       "confidence": number // 0.0〜1.0 の確信度
     }
@@ -338,4 +343,5 @@ ${guidelinesText}
 module.exports = {
     analyzePostWithGemini
 };
+
 
