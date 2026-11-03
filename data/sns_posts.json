@@ -30064,5 +30064,71 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_kawagoe_2117418890213159204",
+    "shopId": "kawagoe",
+    "shopName": "川越店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kwge26/status/2117418890213159204",
+    "postedAt": "2026-11-03T00:49:37.000Z",
+    "postText": "おはようございます！ 本日通し営業です☀️ ○11:00~20:00  🍜持ち帰りあります！  無料トッピング｢紅生姜｣あります☺️ トッピング時に「アレ」で！  よろしくお願いします🙇‍♂️",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の範囲内であるため変更なし"
+  },
+  {
+    "id": "sns_post_routine_ikuta_2117419897185771634",
+    "shopId": "ikuta",
+    "shopName": "生田駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ikuta_jiro/status/2117419897185771634",
+    "postedAt": "2026-11-03T00:53:37.000Z",
+    "postText": "おはようございます。  本日まよにん🧄あります！  まよにんもう少ししたら一旦終了になります。 まだの方お早めにどうぞ！ https://t.co/aJWMMP0u1C",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-z1bM-tnoKRpn6gG0davIPIaBMA1sNGKcOtiGR3XRT6gidqgoBy3TYeADlEb3-J0Phj5jYiWK2y_v43nd2s-FAHHsiYHQbkdN7PMdPjrYZ8vR6bgVGVX1LVYm_ITo2BF7D0e6BFyW6qyxQg3VdZT6pQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-gbQjFfOuLfg_fw0U2J1tMEwr8Bwo3-Ln5nqhtHCmKeu_q8xa_BCWwCFgktyNCPvwDj9RzrZFGB2vZoNnip_q7miT1F8jD43vZgN12bxpc9jT6DDLHkfb0VgiB7XDfPr2al4Ksr_bRq7ilvyTdBsH0g=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの告知であり、営業時間の変更に関する言及はないため変更なしと判定。"
+  },
+  {
+    "id": "sns_post_routine_okinawa_2117421319172329956",
+    "shopId": "okinawa",
+    "shopName": "沖縄店",
+    "postSource": "x",
+    "postUrl": "https://x.com/okinawa_jiro/status/2117421319172329956",
+    "postedAt": "2026-11-03T00:59:16.000Z",
+    "postText": "昼の部・夜の部それぞれご用意しておりますが、数量に限りがございます。  売り切れ次第終了となりますので、あらかじめご了承ください。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常的な営業告知であり、営業時間の変更は含まれていません。"
+  },
+  {
+    "id": "sns_post_routine_okinawa_2117421035188527153",
+    "shopId": "okinawa",
+    "shopName": "沖縄店",
+    "postSource": "x",
+    "postUrl": "https://x.com/okinawa_jiro/status/2117421035188527153",
+    "postedAt": "2026-11-03T00:58:09.000Z",
+    "postText": "お付き合いのある仕入れ先様が在庫を抱えてお困りだったため、本日限定で 沖縄県産青唐辛子（ハラペーニョ） を仕入れました。  ご希望の方は、現金100円を券の上に置いて「あおとーで」とお申し付けください。  爽やかな香りとキレのある辛みが、ラーメンによく合います。 ぜひお試しください！ https://t.co/RI6aO9akdh",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-FbX9VacVyuyDNN-4tzknEbHK0jXECXKzRxEUS_fTxW3dRRVVLIrL7xDB30h0PkLkgw1T_Xn3XnqVzGMMOES5Nufuf59FLOzYLkCT1O4cCSpd7Q17AAAd-uRlZn1lbjN6Cc9Wr54_8VBeJcTNRNea1A==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2hEd3RcKtA1m9VW-_oXkDyHqVY-q0vbh2L7QP6rgphl9I4r0h7LM4FeBQw6nO12Z0-xf8s9RYIfGa5Z942QGgOwpSFIwCXYRf8Ochlnjw7XaFPve8K2opfWmGmBrlFfqnz3S0u-KuyengcnlmHhaTg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの告知であり、営業時間の変更はありません。"
   }
 ]
