@@ -30429,5 +30429,20 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_ogikubo_2117510072477859846",
+    "shopId": "ogikubo",
+    "shopName": "荻窪店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ogkb_jiro/status/2117510072477859846",
+    "postedAt": "2026-11-03T06:51:57.000Z",
+    "postText": "夜営業は材料の関係で早めに 終了するかもしれません",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業終了時刻の推測に関する言及のみであり、具体的な確定時刻の記載がないため変更なし"
   }
 ]
