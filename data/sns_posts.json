@@ -30014,5 +30014,37 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "本日11月3日(火)は通常通りの営業となります。"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261103_0_2117401049644552446",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2117401049644552446",
+    "postedAt": "2026-11-02T23:38:44.000Z",
+    "postText": "おはようございます。  本日 ◇11/3文化の日 【文化の日営業🈺】 10:00から〜15:00 ご来店ご到着お並びのお客様まで営業致します🈺  →［グッチーズカレー］ →［相撲部屋のしょうがダレ］ https://t.co/Dq1hIXOJif",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-RsHVMqgbZD5NeG4eBGe8dwdTtHrzZ3b7l2XLdF2vqGkwuEWl5QpSiFipXK0xWnhBuucLanlNZQWZdoP1Aa7mcX2AGZ-v_rW_7wqmDqN3gQRh3mg9cEM7cNuR4yQ09GDs7ZpuaxgCfQBEyNX4Rw12Kg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Ud0lvArF1ZuBkV3pR-pZSsyTEgCqBlOi_eBR70pDWKqTHQwkKwv3uiaf4y-zHiX9VcQCjS_jAaNytlUgs0ymItuzBeAj0vq_xP_4y4S_dadxkXDdGqzr8432MJnuzoh7KeHBGH9FXcu78bADcUV0hQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2doVnvgdyobzf92uILT-q_6LCI3QV53QbqkfABtin799GVOCDPjs8fUvRURV3LK5eeKKUMezRZguE-7Ty9HGLBOVr8L9757VKPshjonse9LiyN9qosJ6JQFG38m-xjpj4sn60PbTn6GTpJfjuNK09w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-uxSVuKWUB180UJ0upJXhR0t9WhaEpOPUuSOoxtWBhHL4kGa-AzpAmjgmlAyf0r5g25L5n7KpYR5P83pdaRX5gGKZgDRRg-qv8nTe_6PXd1rfr1Xs_PtS1VszJuyrUnQmJ1kGzYm59pDLl89a4aau7g=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-03",
+      "endDate": "2026-11-03",
+      "hours": [
+        [
+          10,
+          15
+        ]
+      ],
+      "reason": "祝日特別営業",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   }
 ]
