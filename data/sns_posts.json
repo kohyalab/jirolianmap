@@ -30276,5 +30276,63 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_sendai2_20261103_0_2117468826262724858",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2117468826262724858",
+    "postedAt": "2026-11-03T04:08:03.000Z",
+    "postText": "だいぶ早めに列切れたのでよろしかったらどうぞー！！！  子供がチャリで怪我して、出かけられないから、何か買ってくる、何食べたい？って聞いたら、 「二郎」との事でテイクアウト買いに来てくれたお父さんがいました。 こういうの嬉しいですね！！^_^ https://t.co/8wA5GgKKgY",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-a7zQqWNdJe3YTjILZS__DjrtlY-ClPZZnp605bl1dM3uIJnWo4nZkrLOJ43h7gNTE6fyaIBZ68hjaY4B7D7r1GdYQybeDPOi3MPtoUqwSsox14QLe6G7bn65TvNINPDF7N9r0r8nLJvFKNQMCqk4ww==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Vp3YU4S5HEo7Guej05D01r8YIwdGRc3mWtQnrrmuxxStnd5Ufxo6Y8TDAng5gXwDM1dAwkj9CE8n9hbQo_MEoWlmZq8P8XCvyVpaxIFQW1v5oTj2crowe1I9_mbuIqCAk0lXX2ZKW25L-O6C-dkltg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-d8iUOQUqWFu5R29mOklUbcQaUQoVlpNDwcDcHsrQcaabMEJbjIHQr52xoyWP6cp8C5FUEK42oW0yyKCzNVNH4V3CeRWLT4GxVCBSB8BwOenP2r0on7tSC_kTUa5WlPSGwAPzsIk8GdrFXUT0KrxDFQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-03",
+      "endDate": "2026-11-03",
+      "hours": [
+        [
+          11,
+          13.133
+        ]
+      ],
+      "reason": "",
+      "confidence": 0.95
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_nagoyaosone_20261103_0_2117468517415202877",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2117468517415202877",
+    "postedAt": "2026-11-03T04:06:49.000Z",
+    "postText": "ラーメン二郎名古屋大曽根店です。 只今の時間、並びを持ちまして本日昼の部は終了とさせていただきます。 夜の部もよろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-03",
+      "endDate": "2026-11-03",
+      "hours": [
+        [
+          11,
+          13.1
+        ]
+      ],
+      "reason": "",
+      "confidence": 0.95
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
