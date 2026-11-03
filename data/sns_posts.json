@@ -30709,5 +30709,41 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_senjuohashi_2117747576997134730",
+    "shopId": "senjuohashi",
+    "shopName": "千住大橋駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjujirou26/status/2117747576997134730",
+    "postedAt": "2026-11-03T22:35:42.000Z",
+    "postText": "ラー油あります！  ※営業時間10時30分〜 15時30分ラストオーダー！ https://t.co/AMvSDLiZ4C",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-qKos-BLOrPJUnRHj6agyaZri_1Tp6d-eFTfymz_P_hXwYT9VO1bkJAo7xPQopteS-k2i7zxJjOansOgr-VOBUm5YHRBMi0MpBuqgSVjCYeaZr_0rIs8knshVGMI5Ubi82oh6QRQAKIYFD1ZjG7BRSA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業時間の告知であり、変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2117753380567392507",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2117753380567392507",
+    "postedAt": "2026-11-03T22:58:46.000Z",
+    "postText": "本日 ◇11/4水 【昼の部】＆【夜の部】 濃く脂シークァーサーversion🉐🈹得割！ 50円！ ※券売機50円設定！ どうぞご利用下さい♪ https://t.co/ncipPczODx https://t.co/QHMEAlKEnP",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-zmZMogSwW4y4PIwJLHJZCct-CNe1VWBaZa2Kinm8gIiiKnI95LM82n9JTbzYCfnciu-2bwuVaKKqgGrV1bhT_E5VtPXwOQOmbx_VjC2MJ3PvaKsV4LXuf5ZJUDpfEf_gwX7pu3P8KTzUoIwN9auGgw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-UnIuqWzUmL_jMf_zT5t_67DMqKhfwUaMcSQJcgP0Wy3lRekeAIIcz0oNlVD8Wd6ah5cGLhK1On3zSrdG3x87IWPB4SvjRyNFuU4q8nyHf8clpHIrN6wcUEciIoykt7CgcDt5ZfjKFOdKdxQb502rew==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-3IKCwGyRPROm4Zoa1Q0zCBuj4Ca5Rl3e0-FvZrk-aa3NPBrlxcCApzOfAS-o8gMNcmZQbqQs98nfZaRPTh6dw16K6P_h1vjQ0DRQFK8UEx7cVJVUCgg-Edo_eVOKL4YIuGI9EpQ6zk8QZTzgrJH9vg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの告知であり、営業時間の変更はありません。"
   }
 ]
