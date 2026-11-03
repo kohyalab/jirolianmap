@@ -30491,8 +30491,8 @@
       "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-saJ6eqTZvSOYE-ykVpAzmwzmu3XquhYi4PqhQnZykeASYaPhV7wCWqeo2CZlM0rMwko3MNz3VImUlCUHUj_5XodCMDHfG1RctjoNyYJ80Lh_1PC_LQ4nTBP-bawuPKOk7mwEXDn0dz3VXMbj_ZmhtA=="
     ],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-03T13:26:30.804Z",
     "aiStatus": "no_change",
     "aiReason": "限定メニューおよびトッピングの告知のみで、営業時間の変更はありません。"
   },
@@ -30510,8 +30510,8 @@
       "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-zyCX-IQ02BQUcn-vyat3WSOtutSkRG_wq6u02WAphQDMUe2W5WlVo73ss2Kvf9Hnh0P7iWP-R4ni28SJRQmgG9YkOKr-aaLZ6py734YuHfHvrLpGvkC9J07sf1yJGkwl5q5k5lmaeUfKgZWHDYHzjQ=="
     ],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-03T13:26:30.804Z",
     "aiStatus": "no_change",
     "aiReason": "営業時間の変更や臨時休業等に関する記載はなく、通常の営業案内および日常投稿のため変更なし"
   },
@@ -30541,8 +30541,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-03T13:26:30.804Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   },
@@ -30572,8 +30572,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-03T13:26:30.804Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   }
