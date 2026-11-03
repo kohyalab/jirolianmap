@@ -30147,5 +30147,47 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の告知であり、変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_kameido_2117432597097984291",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2117432597097984291",
+    "postedAt": "2026-11-03T01:44:05.000Z",
+    "postText": "お世話になってます。今日の昼の部も」辛味噌ラーメン」やります！量があまりないので無くなり次第終了です。希望の方は本日のトッピング¥100＋ラーメンの食券を購入してください。よろしくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定メニューの告知のみであり、営業時間の変更に関する言及はないため変更なし。"
+  },
+  {
+    "id": "sns_post_kyoto_20261103_0_2117430688685428753",
+    "shopId": "kyoto",
+    "shopName": "京都店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kyoto/status/2117430688685428753",
+    "postedAt": "2026-11-03T01:36:30.000Z",
+    "postText": "こんにちは！本日昼夜営業です！夜の部は20時半までです！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-03",
+      "endDate": "2026-11-03",
+      "hours": [
+        [
+          17,
+          20.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
