@@ -30234,5 +30234,47 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "日常的なテイクアウト販売の告知であり、営業時間の変更や臨時休業に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2117447221608337520",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2117447221608337520",
+    "postedAt": "2026-11-03T02:42:12.000Z",
+    "postText": "あしたこそは忙しいと信じていたきのうのじぶんが恥ずかしいです/// https://t.co/Wxqj8AdXrg",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_asakuragaido_20261103_0_2117448134188236856",
+    "shopId": "asakuragaido",
+    "shopName": "朝倉街道駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/r26akgd/status/2117448134188236856",
+    "postedAt": "2026-11-03T02:45:50.000Z",
+    "postText": "本日12:00-15:00営業いたします。 西鉄ストア様、西日本シティ銀行様、他店舗病院等駐車禁止 空いていても一般的なコインパーキングをご利用下さい。 グループの方は歩道を塞がずお静かにお願いします。 代表待ち、割込み、飲酒喫煙禁止 朝倉街道駅徒歩1分、天拝山駅7分",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-03",
+      "endDate": "2026-11-03",
+      "hours": [
+        [
+          12,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
