@@ -30046,5 +30046,23 @@
     "processedAt": null,
     "aiStatus": "match",
     "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_routine_tachikawa_2117413961708831180",
+    "shopId": "tachikawa",
+    "shopName": "立川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jirotachikawa/status/2117413961708831180",
+    "postedAt": "2026-11-03T00:30:02.000Z",
+    "postText": "11/3(火)、祝日も時間内売切れなしです。  昼11:00-14:30 夜17:00-21:30  ①ホリデーぱた郎　まぜぱた郎のみ販売！ 　バラのり+ほうれん草 　※やさい増量は無しでお願いします。  ②持ち帰り一本豚、仕入れの都合で休止します。 https://t.co/zWjasMjlF0",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-QmvPad36Qd-H5g2nggRmI0XM7w3nZzm6jDGR4ckpo8o5kHdkr3Ra4PzOjl8e1MweppKZg1WpZFsBINryVfGoAgSOVweU8Ve9Y8W69WUcGR_eofKjPUBfFkOoppuASXJ9TWVy_rgMA1QIQWo5V2UlsA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-kiHzynUd7_yHFZrvakqtwDEuaXqZVTX6jas-piWahRdSUk7EkBeo2SziX3mr285JOf1htXsPaOr1KpQul-ilymDQXZ6EuDdAtbJ8QxqoQw1XOmivsTfo0uHHYNdgywmpme1VraYVyr6AB6WtBvTEdQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知であり、営業時間の変更はありません。"
   }
 ]
