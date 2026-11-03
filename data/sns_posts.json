@@ -30745,5 +30745,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "限定トッピングの告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_yaen2_2117759632869572774",
+    "shopId": "yaen2",
+    "shopName": "八王子野猿街道店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/Jiro_Yaenkaido2/status/2117759632869572774",
+    "postedAt": "2026-11-03T23:23:37.000Z",
+    "postText": "11月4日(水) 11:00～15:00 17:30～21:00 🌟きまぐれたまご もみじおろし ⭐テイクアウト、鍋二郎あります 並ばず買えます エビドクロテイクアウト現金です",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内であり、変更はありません。"
   }
 ]
