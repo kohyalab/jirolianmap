@@ -30383,5 +30383,51 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業（11月3日火曜日は祝日だが通常営業）"
+  },
+  {
+    "id": "sns_post_sapporo_20261103_0_2117498185753235843",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2117498185753235843",
+    "postedAt": "2026-11-03T06:04:43.000Z",
+    "postText": "3日(火)夜の部17:00〜19:00 短縮営業です。 尚、「こくまろ辛味噌(醤油ベース)」 やってます🔥  「ざく切り白髪ねぎ」でバッチリ👌",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-03",
+      "endDate": "2026-11-03",
+      "hours": [
+        [
+          11,
+          14
+        ],
+        [
+          17,
+          19
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2117500981885952250",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2117500981885952250",
+    "postedAt": "2026-11-03T06:15:50.000Z",
+    "postText": "いまいるひとでおわりです！ ごめんなさい！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
