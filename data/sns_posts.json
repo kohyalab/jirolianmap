@@ -30365,5 +30365,23 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_sengawa_2117488494239166946",
+    "shopId": "sengawa",
+    "shopName": "仙川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjiro26/status/2117488494239166946",
+    "postedAt": "2026-11-03T05:26:12.000Z",
+    "postText": "本日17時から店内営業とテイクアウト販売します。 https://t.co/qvGTstYRHZ",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Xf3hJEXWtiG1zNHac7gocE2fRQW57TtQXNin2wW6_5fD7tbhoAwjY7XD3qr533g58MkO1BfTpdDYj6zJtZht0BrhlGnfDAjODzbBbWPlbDb9EgrIbM1uyQKG3PR3PuOH_eLSTgbVKsVUmV2b7sFh2w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-9WWytxtlZzep1cpnZwBu4yMOv23w4nIEr2iRd4PH4fp40pf6i9eHzdxM5totHr0Grvl2xC_ud_wXCFecqgABOqRmefk25qKKi9ZgmnSUlvVHEK1hPz5lgTrgH14RPDBvZkqpla345bm6VLqE3LBP0A=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業（11月3日火曜日は祝日だが通常営業）"
   }
 ]
