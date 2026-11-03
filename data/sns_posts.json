@@ -30476,5 +30476,43 @@
     "processedAt": "2026-11-03T08:47:33.589Z",
     "aiStatus": "no_change",
     "aiReason": "通常営業の範囲内（夜の部も引き続き営業）であり、営業時間の変更や臨時休業はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2117555805788803418",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2117555805788803418",
+    "postedAt": "2026-11-03T09:53:41.000Z",
+    "postText": "明日 ◇11/4水 【昼の部】 10:20〜14:00 【夜の部】 17:00〜20:30  →［濃く脂※コクアブラ］ 〜シークァーサーversion〜 お椀で100円食券です♪ ※お肉屋さんで揚げ物用のラードを取った後の揚げ脂（脂カス）です。 カリ、ジュわな脂です♪  ［グッチーズカレー］ あります！ https://t.co/Wac3HZ8miR",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-xrmuYY6C9zDWP6_w1s2Kzc0N_csZLuAcHnsHTFgFvOGFQy2uRJdfsGLXNtpdoDk0jp0pk3RQ7nA-489O64-jdLax3Otv1tJdwAGX8zCbEK_iN7J-wv3MlUGxYqER8yuOEefwrt8d-wV3x8cXSE3ejw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-_WPQ8H2PEjoFQj6kzKInlZp2A4uUSrqxu7hEs1RmG-U87h9vISktEOyPbq1mCfwYU7-z4tMD7d-DZIMVLdarQYmzZg6DP_OZ2BZBDGdQ-UmaXSw3OMaRHv-b-WP5VCzM8KcIONT1kpjD-MPGMVfX9Q==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-saJ6eqTZvSOYE-ykVpAzmwzmu3XquhYi4PqhQnZykeASYaPhV7wCWqeo2CZlM0rMwko3MNz3VImUlCUHUj_5XodCMDHfG1RctjoNyYJ80Lh_1PC_LQ4nTBP-bawuPKOk7mwEXDn0dz3VXMbj_ZmhtA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定メニューおよびトッピングの告知のみで、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2117551626252922951",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2117551626252922951",
+    "postedAt": "2026-11-03T09:37:04.000Z",
+    "postText": "やばい暇なうなので、明日働きなくないでござるの方、御来店お待ちしております！！  真ん中祝日は、波が激しい！！！ https://t.co/ppIYmOr3P2",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-dim4Q3Kg1NYENtspx4jFjb-1bBGf_OTCD7QdRLkkJjA8Lw92NdTvU-0v9yU5dqbu74SDJV3IxpOSwCOkp1ozMmyg8-Eo8UbiyTZqSRNKD5l5ziYTXTmPFhExxG7lWJbeXqA4ZXGLBA99KrOKl-apaA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-PW5rAjnBedKDEPqVqjAWg40_tb4m6yUbN8SJq5VrMtan8O0afkjtX_8ecNGVs0cE7wYPyafC9cPMKimYEccPYrLmQVi3N_4Y_VZ8nrOP-ctiyypy_M2AjouvUk5CvcP0H-HaFordSDw8g7pe_mcyag==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-zyCX-IQ02BQUcn-vyat3WSOtutSkRG_wq6u02WAphQDMUe2W5WlVo73ss2Kvf9Hnh0P7iWP-R4ni28SJRQmgG9YkOKr-aaLZ6py734YuHfHvrLpGvkC9J07sf1yJGkwl5q5k5lmaeUfKgZWHDYHzjQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更や臨時休業等に関する記載はなく、通常の営業案内および日常投稿のため変更なし"
   }
 ]
