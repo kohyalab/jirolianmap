@@ -30444,5 +30444,37 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業終了時刻の推測に関する言及のみであり、具体的な確定時刻の記載がないため変更なし"
+  },
+  {
+    "id": "sns_post_routine_kameido_2117525085112381495",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2117525085112381495",
+    "postedAt": "2026-11-03T07:51:36.000Z",
+    "postText": "お世話になってます。夜の部は辛味噌ラーメンやってませんのでご注意ください！タレは肉カス、生姜、長ネギ、シソです！亀戸はお神輿で賑わっています✨ https://t.co/WYbJDbgfcb",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-xoh7Hi71PhoHr6Opj41owhhXSPNyGLzJSpKUKzh03e7_CwaXlB4YjvMYiJdU9dY3QQEE9JGxMTx6mz-21EhqvgbBsingU7wlOD1Bu6QTFvwZxqbThIwrFK4PO1PJ0-HefDgnro44RpA1QdlWO-3IvA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_kannai_2117520353643618744",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2117520353643618744",
+    "postedAt": "2026-11-03T07:32:48.000Z",
+    "postText": "こんにちは。  昼の部ありがとうございました。 納豆、ほぐし豚マヨネーズ無くなりました。  エビッチョ辣油作りました! ご希望の方は赤の食券でおねがいします。 またマヨネーズも用意しました。 ご希望の方はアレでお願いします。  夜の部も引き続きよろしくお願いします!",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の範囲内（夜の部も引き続き営業）であり、営業時間の変更や臨時休業はありません。"
   }
 ]
