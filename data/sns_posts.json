@@ -30853,5 +30853,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "本日通常営業の告知であり、スケジュールの変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_shndaita_2117809686066118727",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2117809686066118727",
+    "postedAt": "2026-11-04T02:42:30.000Z",
+    "postText": "実は営業してます！ https://t.co/WQLC8nH1zb",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常投稿のため変更なし"
   }
 ]
