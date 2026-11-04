@@ -31147,5 +31147,22 @@
     "processedAt": "2026-11-04T21:57:54.361Z",
     "aiStatus": "no_change",
     "aiReason": "通常営業の告知および限定トッピングの案内であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_koshigaya_2118095499643486627",
+    "shopId": "koshigaya",
+    "shopName": "越谷店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ksgy26/status/2118095499643486627",
+    "postedAt": "2026-11-04T21:38:14.000Z",
+    "postText": "おはようございます！ ラーメン二郎越谷店です！  11月5日(木) 昼11:00〜14:30LО 夜17:00〜20:30LО ご来店お待ちしております🙇  11月7日(土)　臨時営業 10:00〜14:30LО よろしくお願いします🙇 https://t.co/WfKEbHyCwG",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-g4g3H6fauIdiuWbCnmO914cj2WKtNnS0VYxx0PE_L-AZV8QWzv3w1OuBDMLZCIw59tMWb4vJTSbkI8U45ptCPPcb_keRSKtPOnbWABFukA6e2vDPGFgSnUOgpcjY_t_58wGxl1dyg4zU5tLhenfvJg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "11月5日(木)は通常営業、11月7日(土)は既に登録済みの臨時営業の再告知です。"
   }
 ]
