@@ -31070,8 +31070,8 @@
       "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-RyZDds_f9H6TjVgLMt92JvTq-0hGLZucpQeoW1pQkPiizD61hJlmuVgnMgIQ_GlqxsB6JlEG_lJr8FoPf3_EvDCfO9Cx1tZIDGbuKv8YBs3r3CYZDufgphnnyiaw_A0lGCHMeNzyNPCSqGYXjuDw4Q=="
     ],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-04T21:57:54.361Z",
     "aiStatus": "no_change",
     "aiReason": "営業時間の変更や休業に関する言及はありません。"
   },
@@ -31087,8 +31087,8 @@
       "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-RyZDds_f9H6TjVgLMt92JvTq-0hGLZucpQeoW1pQkPiizD61hJlmuVgnMgIQ_GlqxsB6JlEG_lJr8FoPf3_EvDCfO9Cx1tZIDGbuKv8YBs3r3CYZDufgphnnyiaw_A0lGCHMeNzyNPCSqGYXjuDw4Q=="
     ],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-04T21:57:54.361Z",
     "aiStatus": "no_change",
     "aiReason": "営業時間の変更や休業に関する言及はありません。"
   },
@@ -31111,8 +31111,8 @@
       "reason": "諸事情のため",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-04T21:57:54.361Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 諸事情のため"
   },
@@ -31126,8 +31126,8 @@
     "postText": "11月5日（木） 昼11:30〜14:00頃 夜18:00〜21:00頃までです",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-04T21:57:54.361Z",
     "aiStatus": "no_change",
     "aiReason": "通常営業の案内"
   },
@@ -31143,8 +31143,8 @@
       "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-sXZSnfwJiN38NgnGk49paqwBykcg1YGCp-qL1Z0FfoJR8iIW469LLF72ett7hJ99cuE6Jsmwq00TnAtmJ1gNWcXUSotLG19E4DfnAN6XLIe-V4ZZqQYLCgjtL0nIaZDad1mYpUZqUxHKErl8I_lkJg=="
     ],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-04T21:57:54.361Z",
     "aiStatus": "no_change",
     "aiReason": "通常営業の告知および限定トッピングの案内であり、営業時間の変更はありません。"
   }
