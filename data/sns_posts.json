@@ -30956,5 +30956,42 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "夜の部の限定メニュー（つけ麺）の告知であり、営業時間や休業の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2117885026281156865",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2117885026281156865",
+    "postedAt": "2026-11-04T07:41:53.000Z",
+    "postText": "本日 ◇11/4水 【夜】 →こちらをご覧のお客様限定です！ ↓ ※お客様ご自身で→丸の🟥赤又は白🤍食券を１枚お取りになって席までお越しください。→食券は券売機の前の台の二段目に置いておきます。 ※必ず着席時にお出しください。 ※サービス中の目印は［黄色いハンカチ］ どうぞご利用下さい♪ https://t.co/klihA6mRuD https://t.co/QHMEAlKEnP",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ZVKnGyZ4Zln7XkLAIUpoE2fU8W4-EnEHxOwBTY95uV2EuhViOksFd20ld1f2CWO8t3PdDLCC_Hrvw1wcYS5WYgKdDUxAe3yJ4a6J8MdM3wZo5Wyjo4_jtwRc2I89qF6z4FIUQYpjqm7Jv1mMp0uEPw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-t_VHsHo8Vkyttq1Cyxjl2h_98_hjuSgtswsAB6l9QVHhm72CQSB6LxOxEQ01CfyBLQZhvl9g0nurQzyPtu2LCfoZdk0tn76HE238nZPA1t3TtGtjkvP0Zuw_fDKQDqXYdduZXbtbE_hO3uFGHJWTYA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-kOC_YgjApRlHhs4OQOHAkhL3Q4EmrWaCINnnlGt5yCjh9DY4t1ij1RBNTCPmuR0T5edHiDoRWXxuoziY2GI3KkYacfsstvZdAn2K69JLheh96wCVLPYgUPAdbkJGWyfhTrSr4Jc3uQHjHcqzBMIyjQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-SHVb3_vsTlbBOoKTXytdOG6D-qnX3uJ2Jwu3LU2tTJqkA8HChAx2nJbwECP5krvlFiVw8NKyo6q47VnKgIFTsJPwOS-Oy_sGR3GKwE7aaBdZCbfKZEfsBLuenAQqGhb9OSIm8nHNSM9hVtA471YHHQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2117887505429323983",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2117887505429323983",
+    "postedAt": "2026-11-04T07:51:44.000Z",
+    "postText": "黒烏龍茶が近々値上がりします！ すみませんが、宜しくお願いいたします！！ あと、生姜のラックが詰まりやすく、たまに詰まって売り切れになってる時ありますが、売り切れじゃないので、見つけたら店員に教えて下さいませ！！ https://t.co/rpjcEN5kNi",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-i8rhQa2ZxLwiMoXB1r1l-uIPmG5bEX4dXcYYgyO9fEX37ueKfHOHK9T2QuVaLtgR9d6h-unPcSDTXZI4BWUtU3pJ7YEMEBnjJPF1i9k7w3NgeCrtfQZNna3_zdj7Uq-Cqi1DrHJ5Vaz4vXIkXxX4xQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更や臨時休業はありません。"
   }
 ]
