@@ -31268,5 +31268,58 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_yaen2_2118121668640210978",
+    "shopId": "yaen2",
+    "shopName": "八王子野猿街道店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/Jiro_Yaenkaido2/status/2118121668640210978",
+    "postedAt": "2026-11-04T23:22:13.000Z",
+    "postText": "11月5日(木) 11:00～15:00 17:30～21:00 🌟きまぐれたまご もみじおろし ⭐テイクアウト、鍋二郎あります 並ばず買えます",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知であり、変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2118123829889519777",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2118123829889519777",
+    "postedAt": "2026-11-04T23:30:48.000Z",
+    "postText": "本日 ◇11/5木 【昼】 →こちらをご覧のお客様限定です！ ↓ ※お客様ご自身で→丸の🟥赤又は白🤍食券を１枚お取りになって席までお越しください。→食券は券売機の前の台の二段目に置いておきます。 ※必ず着席時にお出しください。 ※サービス中の目印は［黄色いハンカチ］ どうぞご利用下さい♪ https://t.co/nn71A9D6yO https://t.co/OdQhIDfk7a",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-SDdv0XDH1S0HrG_x9CqgFaw4Olo8qXpQFvqt6KwKTX4hfFvMRx8yYBynnNXoc-Iw0IOynqioWOyC3V6pddkzfDye6Hon6DoQcEoOvrf3eexVm8Owd6W6vukB1ZbAuYjG0JldmGI23d9Ddvw2exFRdg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-GrWPmj0EfYXvFxSsLHRCtnk28wh0DjxbpbPuXmjyBwQiIpwt8cEEyn-32MV_IwDDCgfK9_qC_25sAKFp3YIef1F4tzjwCpQ3spPBr39L6RiTfZovKS222_Fjx9yv8mHZd0RHdTPDa5Us_y5rY-JYZg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-AkIYQvzQpaqFUQmmIS1YV-p9977Tt-hLpKSwULSFbuoCeRp3DJZPF8AJOVB62Gp-ixMENmTshB58B05SwAgLnZGxzhJ1HzM-SEgehY9dOYjHKzL92p6qKXJ9t2FeenDRRK_SKvYBfA2EocYQ-0ym5g==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-79bIXxPZAU7DahjisXwgUlrz12GRLHRArNQtNvVmapvtuRjMHfCPPW-dpbYwk4FiLEIR0wjvrLiHUbE5vS9_plaFqKd37apg_oF3plU66kTjzCmnMz3Wf5DK0rX7R09TFMFjEZA8Hb_iQofiCH5hBA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2118121569969160605",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2118121569969160605",
+    "postedAt": "2026-11-04T23:21:49.000Z",
+    "postText": "久しぶり！ ［ニンニククタクタ煮🧄］販売です！  →ニンニクをラーメンスープでクタクタに煮込みました！味付けはラーメン正油♪ ※臭いはあまり気になりません。→こちらは個人的感想です♪  どうぞお試しください！ https://t.co/KwBSJNjlMR https://t.co/OdQhIDfk7a",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-nKIrM6V_wNc7wtXib6DLIaSmlLq15F9kk4JvTzjlUI4_GChUEvOCBVtTeDqpo6h6RxtUXyYhQy4BTK3bJfZm8Yx8QwM-dhWcJSTWLLAJ6NcxUzXUKTSnHasXDLp-YAVNce36mhA0OXatCziad2O7XA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-8G3mvVKgRgA7HyAMK_p3iKX9hXdLldeSdIQw1rDJt-F1wmi7xlooFTmKVgXyfzY-BGeOhviSgI2LjjJvA_e3uoy2UuQa0SxqIRb0QV8UOB-BZEH6OzvJMYaMWsSemM3KHNjHrF8HHxB8kCy2UNNl8A=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの販売告知であり、営業時間の変更はありません。"
   }
 ]
