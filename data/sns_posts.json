@@ -31115,5 +31115,37 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 諸事情のため"
+  },
+  {
+    "id": "sns_post_routine_ogikubo_2118083569440665955",
+    "shopId": "ogikubo",
+    "shopName": "荻窪店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ogkb_jiro/status/2118083569440665955",
+    "postedAt": "2026-11-04T20:50:49.000Z",
+    "postText": "11月5日（木） 昼11:30〜14:00頃 夜18:00〜21:00頃までです",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内"
+  },
+  {
+    "id": "sns_post_routine_fujisawa_2118079211760193827",
+    "shopId": "fujisawa",
+    "shopName": "湘南藤沢店",
+    "postSource": "x",
+    "postUrl": "https://x.com/fujirow26/status/2118079211760193827",
+    "postedAt": "2026-11-04T20:33:30.000Z",
+    "postText": "おはようございます。  11月5日(木)  豚チゲ🐷 無理トッピング 野山商店特製タレ、崩し豚、豚カス醤油、 1番スープ、沢山にんにく🧄その他色々  野山商店特製ピリ辛味噌青葱🧅  本日もよろしくお願いいたします。 https://t.co/UhHogkhnSB",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-sXZSnfwJiN38NgnGk49paqwBykcg1YGCp-qL1Z0FfoJR8iIW469LLF72ett7hJ99cuE6Jsmwq00TnAtmJ1gNWcXUSotLG19E4DfnAN6XLIe-V4ZZqQYLCgjtL0nIaZDad1mYpUZqUxHKErl8I_lkJg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知および限定トッピングの案内であり、営業時間の変更はありません。"
   }
 ]
