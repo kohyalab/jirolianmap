@@ -31164,5 +31164,79 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "11月5日(木)は通常営業、11月7日(土)は既に登録済みの臨時営業の再告知です。"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261105_0_2118103408263790957",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2118103408263790957",
+    "postedAt": "2026-11-04T22:09:39.000Z",
+    "postText": "おはようございます。  本日 ◇11/5木 【昼の部のみ営業🈺】 10:20から〜14:00 ご来店ご到着お並びの お客様まで営業致します。  →［グッチーズカレー］ →［相撲部屋のしょうがダレ］ →［お椀で和ッカレー］ やっております！  どうぞー♪ https://t.co/M7DDZo7iRi",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-1lfOGbRje3n_xIHolhU7qToxr5epAY21P0441LaUMPKoxHHbmFCp0GgoFbVnBHCBZ9_AkJVK4otc1Cs4rYyB1KaG96O8tKTqhBKXXL27TiEJ8iPtde6EyAtfHMj1CL-JzvjysX75C1AZqt7yBhB5tA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-L8T0Wkb2hcv1w9krntbO1--2E2gnBqar0OawDbvsd_CQzoTK75RirpAjOitoGDLi7vMaD-vUV-zb7-4whbG4bFg4KKpCSvC5OOCVFe7y_lTfeC8f-cREAeIOehwqgCyYERN9c5xf1dUzreCE73B1HQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-c2WzklmtS16GRdv2kDkcxsqFt9iU91zjJ982hw1dJxvhS8MS8pqif59lxGI_PbFOf4UkXmVyyDVKIoNSK3MTpVopIJulbl7j4m0wDcOlPdhUurPFgH0ciokXDpU7xjmH251qL48rQtyhvXtp6pgCNQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-8CEyN-6G9Bf30JVyRug_ucM_8NhNXcM2DI1VOZz-bW-EI2BuzL5kdMAUzyenWLdWiUfG0MkoQBS_7hrd1CgppWlrB8-UyB5xXqfdv1Bsv6-m7kDpwCXFJ__wkYA9XJkOQVU_Q67JrB_8gzhLelNJLw=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-05",
+      "endDate": "2026-11-05",
+      "hours": [
+        [
+          10.333333333333334,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2118106779959931146",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2118106779959931146",
+    "postedAt": "2026-11-04T22:23:03.000Z",
+    "postText": "鬼ごろ塩ラーメン(+200円)もやります！ 日本酒の塩ダレです！  ⚠️運転のひとと未成年はだめです⚠️  麺の量と一緒に おさけでって言ってください！ ラーメンのひとはしょうゆでって言ってくれるとわかりやすいです！  麺の量を聞かれた時に じぶんから言ってください！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_shndaita_20261105_0_2118106357249560830",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2118106357249560830",
+    "postedAt": "2026-11-04T22:21:22.000Z",
+    "postText": "2026年11月5日(木)  ⚠️短縮営業です！⚠️ 11:00～15:00くらいです！  よろしくお願いします！  ※住宅地なのでおしゃべりしないで待っててください",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-05",
+      "endDate": "2026-11-05",
+      "hours": [
+        [
+          11,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "既に登録済みの臨時スケジュールと一致"
   }
 ]
