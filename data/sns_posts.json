@@ -30775,5 +30775,22 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の範囲内であるため変更なし"
+  },
+  {
+    "id": "sns_post_routine_tachikawa_2117787198062055762",
+    "shopId": "tachikawa",
+    "shopName": "立川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jirotachikawa/status/2117787198062055762",
+    "postedAt": "2026-11-04T01:13:09.000Z",
+    "postText": "11/4(水)、時間内売り切れなし営業です。 昼11:00-14:30 夜17:00-21:30  ①ぱた郎やります！ 　のりとほうれん草が乗って、 　各ラーメン+200円です。  　+汁なし券で、まぜぱた郎も。 　　※遅い時間は売切れる可能性も…  ②持帰り販売 　標準:2人前のスープと生麺 　　　+ブタハーフ2,500円 https://t.co/EE5oGGQkDm",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-UddW_AszJZlnyG6BSFXlpzMuSdT5iJxoW1Cq1aU4pO_r36pyJWJ5OWHCp_OKtQ4QV8K1YDVZ8aioRWUC-Ah5x1qyhddkybrUdUF1GJGL4PzVwhZh-ATCYniWaQvvEeuFcfYTe8jC3UpqN154KcX3qg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "11/4(水)は通常営業です。"
   }
 ]
