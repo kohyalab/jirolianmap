@@ -30993,5 +30993,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業時間の変更や臨時休業はありません。"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2117890210738700330",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2117890210738700330",
+    "postedAt": "2026-11-04T08:02:29.000Z",
+    "postText": "すみません！冷水機修理で5〜10分ほど開店遅れます！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "冷水機修理による開店遅延の告知であり、営業時間の恒久的な変更や臨時休業ではないため変更なし"
   }
 ]
