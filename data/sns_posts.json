@@ -30879,5 +30879,35 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "現在外並びの状況報告および終了間近の告知のみであり、具体的な営業時間変更の確定や休業の告知はないため変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sengawa_2117852440448139666",
+    "shopId": "sengawa",
+    "shopName": "仙川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjiro26/status/2117852440448139666",
+    "postedAt": "2026-11-04T05:32:24.000Z",
+    "postText": "本日17時から店内営業とテイクアウト販売します。営業時間17:00〜21:00",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業時間の範囲内であるため変更なし"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2117856354501263388",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2117856354501263388",
+    "postedAt": "2026-11-04T05:47:57.000Z",
+    "postText": "いまいるひとでおわりです！ ごめんなさい！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
