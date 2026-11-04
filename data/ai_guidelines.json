@@ -2,6 +2,23 @@
   "generalRules": [],
   "learnedFeedback": [
     {
+      "id": "sns_post_hitachinaka_20261105_0_2118067545077080107",
+      "timestamp": "2026-11-04T21:57:36.051Z",
+      "shopId": "hitachinaka",
+      "shopName": "ひたちなか店",
+      "postDate": "2026-11-04T19:47:09.000Z",
+      "postText": "【11月5日 木曜日 営業の件】  表題の件ですが、諸事情により 本日 終日お休みいただきます。 申し訳ございません。 https://t.co/KZ01Ijjl2P",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業変更検出: 諸事情のため",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-11-05",
+        "endDate": "2026-11-05",
+        "hours": [],
+        "reason": "諸事情のため"
+      }
+    },
+    {
       "id": "sns_post_routine_tachikawa_2117054257744822497",
       "timestamp": "2026-11-02T11:00:34.791Z",
       "shopId": "tachikawa",
@@ -983,23 +1000,6 @@
         "endDate": "2026-10-18",
         "hours": [],
         "reason": ""
-      }
-    },
-    {
-      "id": "sns_post_jimbocho_20261016_1_2110640017039372718",
-      "timestamp": "2026-10-15T11:01:21.397Z",
-      "shopId": "jimbocho",
-      "shopName": "神田神保町店",
-      "postDate": "2026-10-15T07:52:48.000Z",
-      "postText": "ただ今お並びのお客様までで、本日の営業終了となります。  なお、明日10月16日(金)は都合によりお休みさせて頂きます。  よろしくお願いします。",
-      "aiStatus": "schedule_change",
-      "aiReason": "営業変更検出: 都合により",
-      "humanAction": "applied",
-      "finalDetails": {
-        "startDate": "2026-10-16",
-        "endDate": "2026-10-16",
-        "hours": [],
-        "reason": "都合により"
       }
     }
   ]
