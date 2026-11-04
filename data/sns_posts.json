@@ -31039,5 +31039,23 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_ikuta_2117957725900665241",
+    "shopId": "ikuta",
+    "shopName": "生田駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ikuta_jiro/status/2117957725900665241",
+    "postedAt": "2026-11-04T12:30:46.000Z",
+    "postText": "明日5日(木) 寒くなるみたいなので、発汗（ピリ辛ラーメン）やります🔥 昼夜売り切れなし  まよにんもあります🧄 まよにんはもうそろそろ終わりです。  よろしくお願いします！ https://t.co/XAIq2UMD4G",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-t8muptwrRrVvAsUornasZfdk8UFQCmaOk5AvWltbPfnu8VzRKH5RJcOp5khQqBWeJhh8hXv1jWU6ejy5gmp9Ju2YTnbSjf49Qu1-7s33pysWlCFtZry1Hd7CKKDH6hhRunjpX_9Dbqq0O4yXLWG8rw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-7IfML7CuPszKDkrhrIQQqAhp9LqestsRWl3-xUgcpGj3we9LmA1et9z7XqiwCqPA-Dfbtd1KyYDzJ2xIKvg3oeUBn0gyJAHodYQhtbmhk_qa59us0VctylxATl8u7VNrYA7SOmcz984OTmPsaG2zgQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更はありません。"
   }
 ]
