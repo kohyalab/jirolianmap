@@ -30909,5 +30909,52 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_kameido_2117871971128266798",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2117871971128266798",
+    "postedAt": "2026-11-04T06:50:00.000Z",
+    "postText": "先日、「腸よ鼻よ」や「腸はなくとも食欲はある！」の作者で漫画家の島袋全優先生@shimazenyu がご来店してくれました！二郎は刺激強すぎではないかとドキドキしましたが食後も体調に異常もないようでホッとしております笑 https://t.co/kZougZ05nU",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-DDH91DQ22wYqSuTiA-J7PGAVVE-Eql9xYQfpH8fXonFodSUPtqKGJCOLZ25AbP6vRhKhGZoK1K7gsfxR5MPY5Sp4Rsu_Q-TV47Of6zyAdYPdr9eCVemq_gpjhBsVvsDcj4-ZyfczVbPKHRtyHxfWWQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "漫画家の島袋全優先生が来店したという日常の報告であり、営業時間の変更や臨時休業等の記載はありません。"
+  },
+  {
+    "id": "sns_post_routine_matsudo_2117871870213292364",
+    "shopId": "matsudo",
+    "shopName": "松戸駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/matsudojiro3/status/2117871870213292364",
+    "postedAt": "2026-11-04T06:49:36.000Z",
+    "postText": "毎度ありがとうございます。  トイレドアノブ取れたのでトイレの使用できません。  修理終了までよろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "設備トラブルの告知のみで、営業時間の変更や臨時休業の言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_koshigaya_2117874268021408042",
+    "shopId": "koshigaya",
+    "shopName": "越谷店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ksgy26/status/2117874268021408042",
+    "postedAt": "2026-11-04T06:59:08.000Z",
+    "postText": "毎度ありがとうございます！ ラーメン二郎越谷店です！  夜の部「つけ麺」やります！ 塩ラーメンお休みです。 ご来店お待ちしております🙇 https://t.co/viHKELDLHD",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "夜の部の限定メニュー（つけ麺）の告知であり、営業時間や休業の変更はありません。"
   }
 ]
