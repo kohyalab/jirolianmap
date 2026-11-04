@@ -31057,5 +31057,39 @@
     "processedAt": "2026-11-04T14:56:35.549Z",
     "aiStatus": "no_change",
     "aiReason": "営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_kameido_2117996702741442721",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2117996702741442721",
+    "postedAt": "2026-11-04T15:05:39.000Z",
+    "postText": "時オカやるぞ！ タイトル画面も昔のままだ✨ https://t.co/2QXGoFqTXs",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-RyZDds_f9H6TjVgLMt92JvTq-0hGLZucpQeoW1pQkPiizD61hJlmuVgnMgIQ_GlqxsB6JlEG_lJr8FoPf3_EvDCfO9Cx1tZIDGbuKv8YBs3r3CYZDufgphnnyiaw_A0lGCHMeNzyNPCSqGYXjuDw4Q=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更や休業に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_kameido_2117996414638924085",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2117996414638924085",
+    "postedAt": "2026-11-04T15:04:30.000Z",
+    "postText": "時オカやるぞ！ タイトル画面と昔のままだ✨ https://t.co/0VG8sPiWzZ",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-RyZDds_f9H6TjVgLMt92JvTq-0hGLZucpQeoW1pQkPiizD61hJlmuVgnMgIQ_GlqxsB6JlEG_lJr8FoPf3_EvDCfO9Cx1tZIDGbuKv8YBs3r3CYZDufgphnnyiaw_A0lGCHMeNzyNPCSqGYXjuDw4Q=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更や休業に関する言及はありません。"
   }
 ]
