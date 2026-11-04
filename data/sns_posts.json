@@ -30792,5 +30792,51 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "11/4(水)は通常営業です。"
+  },
+  {
+    "id": "sns_post_kameido_20261104_0_2117797438669086721",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2117797438669086721",
+    "postedAt": "2026-11-04T01:53:50.000Z",
+    "postText": "お世話になってます。諸事情により本日お昼は少し早めの終了となります。13：30ごろまでの営業となります。申し訳ありませんがよろしくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-04",
+      "endDate": "2026-11-04",
+      "hours": [
+        [
+          11,
+          13.5
+        ],
+        [
+          17,
+          21
+        ]
+      ],
+      "reason": "諸事情のため",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 諸事情のため"
+  },
+  {
+    "id": "sns_post_routine_nagoyaosone_2117795689795363321",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2117795689795363321",
+    "postedAt": "2026-11-04T01:46:53.000Z",
+    "postText": "おはようございます。 ラーメン二郎名古屋大曽根店です。 本日昼夜営業です。  昼の部11:00〜14:00 夜の部17:00〜20:00 よろしくお願いいたします！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知のため変更なし"
   }
 ]
