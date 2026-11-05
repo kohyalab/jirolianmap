@@ -31430,5 +31430,62 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の範囲内であるため変更なし"
+  },
+  {
+    "id": "sns_post_daily_kameido_2118151754181456017",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2118151754181456017",
+    "postedAt": "2026-11-05T01:21:46.000Z",
+    "postText": "お世話になってます。八百屋さんで青トウガラシとニラがお安かったのでタレに追加します！トウガラシ辛いですが寒い日に体温まると思います✨ご希望の方はにんにく入れますか？の時にタレとお伝えください。よろしくお願いします",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_asakuragaido_2118149938463064149",
+    "shopId": "asakuragaido",
+    "shopName": "朝倉街道駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/r26akgd/status/2118149938463064149",
+    "postedAt": "2026-11-05T01:14:33.000Z",
+    "postText": "本日通常営業！ ネギあります！ よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "本日通常営業の告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_nagoyaosone_20261106_0_2118151160452501565",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2118151160452501565",
+    "postedAt": "2026-11-05T01:19:24.000Z",
+    "postText": "おはようございます。 ラーメン二郎名古屋大曽根店です。 本日昼夜営業です。  昼の部11:00〜14:00 夜の部17:00〜20:00  明日６日(金曜日)は昼の部のみ営業となります。 よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-06",
+      "endDate": "2026-11-06",
+      "hours": [
+        [
+          11,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   }
 ]
