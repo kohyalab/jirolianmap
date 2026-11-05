@@ -5546,6 +5546,19 @@
         "_isAiImported": true
       },
       {
+        "startDate": "2026-11-05",
+        "endDate": "2026-11-05",
+        "hours": [
+          [
+            17,
+            21
+          ]
+        ],
+        "reason": "都合により",
+        "sourceUrl": "https://x.com/jiro_kyoto/status/2118210626829025620",
+        "_isAiImported": true
+      },
+      {
         "startDate": "2026-11-07",
         "endDate": "2026-11-07",
         "hours": [
@@ -6435,6 +6448,19 @@
         "reason": "",
         "sourceUrl": "https://x.com/omiyapark26/status/2114897637044580489",
         "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-05",
+        "endDate": "2026-11-05",
+        "hours": [
+          [
+            11.5,
+            14.5
+          ]
+        ],
+        "reason": "",
+        "sourceUrl": "https://x.com/omiyapark26/status/2118217333554790559",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -6602,6 +6628,14 @@
         "hours": [],
         "reason": "諸事情のため",
         "sourceUrl": "https://x.com/26_hitachinaka/status/2118067545077080107",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-21",
+        "endDate": "2026-11-23",
+        "hours": [],
+        "reason": "",
+        "sourceUrl": "https://x.com/26_hitachinaka/status/2118412336348405901",
         "_isAiImported": true
       }
     ],
