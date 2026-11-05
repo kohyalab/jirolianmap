@@ -31756,5 +31756,20 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_hitotsubashi_2118301472006000968",
+    "shopId": "hitotsubashi",
+    "shopName": "一橋学園店",
+    "postSource": "x",
+    "postUrl": "https://x.com/1284jiro/status/2118301472006000968",
+    "postedAt": "2026-11-05T11:16:41.000Z",
+    "postText": "アルバイト急募です！  下記の時間帯に勤務可能な方を募集しています。  ① 平日昼（火曜以外） ② 土曜の昼 ③ 水曜の夜 週1回から勤務可能です！ ①〜③の複数勤務も大歓迎です。 ご興味のある方はぜひご応募ください。 よろしくお願いいたします！  ラーメン二郎 一橋学園店 https://t.co/D1pigeD8ON",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "アルバイト募集の告知であり、営業時間の変更に関する言及はありません。"
   }
 ]
