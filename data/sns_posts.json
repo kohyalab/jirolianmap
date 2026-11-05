@@ -31591,5 +31591,47 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 都合により"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2118218081399153050",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2118218081399153050",
+    "postedAt": "2026-11-05T05:45:19.000Z",
+    "postText": "いまいるひとでおわりです！ ごめんなさい！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_omiyakoenekimae_20261105_0_2118217333554790559",
+    "shopId": "omiyakoenekimae",
+    "shopName": "大宮公園駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/omiyapark26/status/2118217333554790559",
+    "postedAt": "2026-11-05T05:42:21.000Z",
+    "postText": "こんにちは。  本日11/5(木)夜営業  【臨時休業】  急で申し訳ないです。 宜しくお願い致します。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-05",
+      "endDate": "2026-11-05",
+      "hours": [
+        [
+          11.5,
+          14.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
