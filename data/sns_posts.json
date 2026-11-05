@@ -31771,5 +31771,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "アルバイト募集の告知であり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_daily_hibarigaoka_2118332353261264935",
+    "shopId": "hibarigaoka",
+    "shopName": "ひばりヶ丘駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/Aarf0xvdBXkWd7o/status/2118332353261264935",
+    "postedAt": "2026-11-05T13:19:24.000Z",
+    "postText": "忘れ物  ◯田大◯さん、お財布を預かっております",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
