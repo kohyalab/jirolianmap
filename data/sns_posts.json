@@ -31678,5 +31678,52 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261106_0_2118266090086359481",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2118266090086359481",
+    "postedAt": "2026-11-05T08:56:06.000Z",
+    "postText": "明日 ◇11/6金 【夜の部のみ営業🈺】 17:00から〜20:30 ご来店ご到着お並びの お客様まで営業致します。  →［グッチーズカレー］ →［ニンニククタクタ煮🧄］ やっております♪  ◇11/7土 【昼の部】10→14時 【夜の部】16:30→20時 ※夜の部やっております♪ ◇11/8日 10→15時  よろしくです！ https://t.co/lSmP1Ruuay",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-K6RSDCfStkp1RevbBT5Wse7OKwTwsCYJhVpurmo5uzYsoQ7LMhate9wq6wToc3Sckdo4s_3fhXAMWrfR1PGGEwYx3iy9LLUiPguyxZHUtn8cth4LHFtSMTi-dMke14f5GpUp91gzq3bSlLA6dcsgLw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-6gUTqQZ6lVr2SV1EcYQWVyvHomx6MRGQ_Ax8cliFGpYfTd3r3ROGYAy1ADXX0X8aglKLfA_GYPTP7b2KM5ZfW_NG7NHFS3ZiCsdJ5GIM50etiZ2MwxLZNQGUEID8W000QvZ7RcquoprcQ0AWhRCuvw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-zcxW-_S5Yr41Lhept1OrMA_bA2Fz6crpXkNmKk6t8aVEagbtWbl7b0MfORVie_EISdlXdBaS7ryvC-zbn-qDqXMDqno3Yv3-vjxVSkiy9CDTDVIJFhM6WUxjlSl7ginoEb7vUF3bDxzEc8Q9_I2lAQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-MSdlMlPc1ffCpQFhxb5Z73TxvLoQUvfl7zqaR7A4p9ElX2fHU3qp3eTEPc83Lvx7UKugy8lsLtTWP1ghbVfbpESrdG2nZ25BA52PdRLt7ywgF_AhLiZIgZm4TGbgOM8q4o9xUSseNKoZr_3l-i53lg=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-06",
+      "endDate": "2026-11-06",
+      "hours": [
+        [
+          17,
+          20.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_routine_nishidai_2118260167401939057",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2118260167401939057",
+    "postedAt": "2026-11-05T08:32:33.000Z",
+    "postText": "本日、5日の切り落としは 終わりました。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "切り落とし販売終了の告知であり、営業時間の変更に関する言及はないため変更なし。"
   }
 ]
