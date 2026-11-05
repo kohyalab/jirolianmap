@@ -31663,5 +31663,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "日常的な限定メニューの告知であり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_daily_kameido_2118235372358640036",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2118235372358640036",
+    "postedAt": "2026-11-05T06:54:02.000Z",
+    "postText": "じ、二郎神麺だって！？気になる！🍜 https://t.co/5eO7iqLXME",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
