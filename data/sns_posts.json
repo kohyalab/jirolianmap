@@ -31633,5 +31633,35 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_daily_matsudo_2118227954534928625",
+    "shopId": "matsudo",
+    "shopName": "松戸駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/matsudojiro3/status/2118227954534928625",
+    "postedAt": "2026-11-05T06:24:33.000Z",
+    "postText": "直しました。  よろしくお願いいたします。 https://t.co/1ASoeQpRMw",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_nishidai_2118223208575013113",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2118223208575013113",
+    "postedAt": "2026-11-05T06:05:42.000Z",
+    "postText": "こんにちは。  本日、5日、夜の部 FZ味付き煮込み切り落とし ¥1000×2  あります。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常的な限定メニューの告知であり、営業時間の変更に関する言及はありません。"
   }
 ]
