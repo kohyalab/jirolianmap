@@ -2,6 +2,23 @@
   "generalRules": [],
   "learnedFeedback": [
     {
+      "id": "sns_post_hitachinaka_20261121_0_2118412336348405901",
+      "timestamp": "2026-11-05T22:42:59.734Z",
+      "shopId": "hitachinaka",
+      "shopName": "ひたちなか店",
+      "postDate": "2026-11-05T18:37:13.000Z",
+      "postText": "【週末営業の件】  臨時休業 大変失礼しました。 週末は通常通り営業しますので、 よろしくお願いします。  6日 金曜日 11：00〜14：30 17：30〜21：00  7日 土曜日 10：00〜16：00  8日 日曜日 定休日  基本ラストオーダー宣告ナシ 列が途切れたら閉店 https://t.co/YtgT1LBbN4",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-11-21",
+        "endDate": "2026-11-23",
+        "hours": [],
+        "reason": ""
+      }
+    },
+    {
       "id": "sns_post_hitachinaka_20261105_0_2118067545077080107",
       "timestamp": "2026-11-04T21:57:36.051Z",
       "shopId": "hitachinaka",
@@ -983,23 +1000,6 @@
           ]
         ],
         "reason": "店主体調不良のため"
-      }
-    },
-    {
-      "id": "sns_post_maebashichiyoda_20261018_0_2110612984217448618",
-      "timestamp": "2026-10-15T11:01:58.107Z",
-      "shopId": "maebashichiyoda",
-      "shopName": "前橋千代田町店",
-      "postDate": "2026-10-15T06:05:23.000Z",
-      "postText": "ラーメン二郎前橋千代田町店です。 10/18日曜日ですがお休みします。 宜しくお願い致します🙇 https://t.co/2W6snCPELy",
-      "aiStatus": "schedule_change",
-      "aiReason": "営業時間の変更を検出",
-      "humanAction": "applied",
-      "finalDetails": {
-        "startDate": "2026-10-18",
-        "endDate": "2026-10-18",
-        "hours": [],
-        "reason": ""
       }
     }
   ]
