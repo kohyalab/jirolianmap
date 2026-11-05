@@ -31318,5 +31318,42 @@
     "processedAt": null,
     "aiStatus": "match",
     "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_routine_tachikawa_2118135642173603978",
+    "shopId": "tachikawa",
+    "shopName": "立川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jirotachikawa/status/2118135642173603978",
+    "postedAt": "2026-11-05T00:17:44.000Z",
+    "postText": "11/5(木)、昼夜とも時間内売り切れなし営業です。 昼11:00-14:30 夜17:00-21:30  ①煮干し変更、今日もあります！  　+汁なし変更券で煮干し汁なしも可！  ②持帰りラーメン販売します。 　標準:2人前のスープと生麺+ブタハーフ https://t.co/o6srxtGs4L",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-39xM32KBh3sByVu2SZ5VuL0YDMM6dSJyVHF5eKE7sn5rHiPi4MVfBPWoLDI8VZs72wOaMFJdduX8LujEF1nnKjwNt13Hpi84HR3B66uEiEGYiRQumcfpkLt1zMCIOpKGB18wrf6A6bKTL0Umk8379A=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "11/5(木)は通常営業です。"
+  },
+  {
+    "id": "sns_post_routine_nishidai_2118134538794869167",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2118134538794869167",
+    "postedAt": "2026-11-05T00:13:21.000Z",
+    "postText": "おはようございます。  本日、5日、昼の部 FZ味付き煮込み切り落とし ¥1000×2  あります。 https://t.co/GW7TO5zzGb",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne--4_nAVXBOnW2_BTZxbJss7HYyz_GAa6fbwO-jQb5Qj81UU6whRIIB6le31YI1CmS6dqqjYEEEAB7zBeZ4mGAqK0vtlHW2EbDaA7fKJ7juzmy2JrleujfaSxvhh73Uxg4c_jsnPG1NNnZUJIzPzkr9g==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-As9iMlqsPisEI8o1wuTbdIk5elIW1SnuiNOrGHwHFlYNbt0rDnCeR1oNICQ-8F1gdXB5CH6-r4hjXA0YgMAycYTMxAhVrpDqkJn_pyUUPVmHLxb7RN1-UCLb21sqw9ktqdYzDqYzXdNS-G1C98PazQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-SXMviyYB3Wng0au4f2BPgr_wSqrcA_U6VBKlg0tl3RT9nP4wyvpPxDrHko4EqXvXExb-Xze-SvWiBVeLWTo4HoYOWU6GkLK61BnAsfYNusgQ8WALEHTGDCjAdYUbf9nZjP9Axr3aX1Zefy76EBnvGw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-g8h3cDTi6LGAVvBwkjYcqGpatOP4ONZOq9Oys7qo2n9b-Wd7twDPqjAimCoodLknRpbKSfWFjXyKo_j7S8xbKUmLP_DJSriLq9Af80_tCDFps-t7uGBxBbzZOTvNlJ_A47t3LK83rz9IMTPafsRiOw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定メニューの告知のみであり、営業時間の変更はありません。"
   }
 ]
