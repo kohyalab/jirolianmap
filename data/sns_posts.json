@@ -32035,5 +32035,37 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "本日および明日の営業時間は通常通りであり、変更はありません。"
+  },
+  {
+    "id": "sns_post_daily_kameido_2118517993575723376",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2118517993575723376",
+    "postedAt": "2026-11-06T01:37:04.000Z",
+    "postText": "引用失礼します。 当店は耳が聞こえない方や声を発せない方もよくご来店されていますので完璧ではないですが対応しております！ニンニク入れますか？の時もスマホの画面や紙に書いて見せていただければ大丈夫ですので！至らないところもあるかと思いますがよろしければご来店お待ちしております🙇‍♂️ https://t.co/z17nQD79nz",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_nakayamaekimae_2118517778282147911",
+    "shopId": "nakayamaekimae",
+    "shopName": "中山駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/NKYMJIRO/status/2118517778282147911",
+    "postedAt": "2026-11-06T01:36:13.000Z",
+    "postText": "おはようございます。m(._.)m https://t.co/zFURhH6yEu",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Aio_uy83RXr3EeOQXoxiQrfzbjHrGFVbMdylHHJBfQf5bwaw2NtmgrouiHl3hMDfvuIekXKv_pcvQbI8e4IytglMuoRBaULUsqhvh7keGarEZtIr3gJbdnJ_6kAS5C5-FbVdESas-f4ln_EbUBB0eA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常投稿のため変更なし"
   }
 ]
