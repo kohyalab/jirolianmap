@@ -32140,5 +32140,35 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "限定トッピングの販売告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_koiwa_2118540864767279322",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2118540864767279322",
+    "postedAt": "2026-11-06T03:07:57.000Z",
+    "postText": "現在外並び3名",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常的な営業状況の報告であり、営業時間の変更や臨時休業の告知ではないため変更なし。"
+  },
+  {
+    "id": "sns_post_routine_nishidai_2118541889037312347",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2118541889037312347",
+    "postedAt": "2026-11-06T03:12:01.000Z",
+    "postText": "本日、6日、昼の 切り落としは売り切れました。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "切り落としの売り切れ告知のみであり、営業時間の変更に関する言及はないため変更なし。"
   }
 ]
