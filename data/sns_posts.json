@@ -32102,5 +32102,43 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "本日通常営業の告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_tachikawa_2118536475243581566",
+    "shopId": "tachikawa",
+    "shopName": "立川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jirotachikawa/status/2118536475243581566",
+    "postedAt": "2026-11-06T02:50:30.000Z",
+    "postText": "別皿用に、新潟が世界に誇るステンレス加工品のボールを導入しました！  まずは、ほぐしブタ入背脂(別皿)としてお出ししています。 ネーミングは練り練り中… https://t.co/yefSuup4So https://t.co/aRKw6UKSay",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-_mMeHbAJPNZ4NMnlDdouBmYAZPvyxLMFTLkDteXjcDM9lpWWDDChDidMxGf5HEjlqKZDX1mQ7XHyWNvdnkk17KLjr9bCz_KlyY7XD196PMDFeyQ2dATxMeHxATHs6ILmXsA-Qc8ySn9_yD9OZ3CtXw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-IO5wHXWfSbREYr3FXCXt7RBI7PoSe5p1Szl45jZQm-Cn1DggeMi7u_zlTbQUrSujRbOo2IVXS0qPUDYVix9DEDtDET8VFytMWN4TcgYcFioSWpKYxXuxArrQ88mB6wQzqP89-fO86piJz95sOLC7KA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-LAS7R3aq7lE2681BXh1fRiOPkiXLTvNqAG5aY2I_YtMXKb8I14xXEtXl9l2KO6ex0ceJzoiYsNDPP4SXOcGLAs2fdz_SD0ey6zEVZSHZzY4Zs7TfRTmqCQmnynw9AHCzDBIkswG6BuFHAUlYDx2ofw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-0LR0K69IGQSZ_O5cRUet-a6kMa6JElmpy9U7ROhKBe4L-4ILrY8-0GMmAbwSvfJL62DkZXnioiTc8jo0OYcLLnmg8SnkmBO2xw8FqxAsEM38Z1Pokv57hLUNI36Jhq0ooRxl6aI_LN0yxg9vkhW41Q=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更に関する言及はなく、限定トッピングの告知のみであるため変更なし。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2118532849825714474",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2118532849825714474",
+    "postedAt": "2026-11-06T02:36:06.000Z",
+    "postText": "本日も！  久しぶり！ ［ニンニククタクタ煮🧄］販売です！  →ニンニクをラーメンスープでクタクタに煮込みました！味付けはラーメン正油♪ ※臭いはあまり気になりません。→こちらは個人的感想です♪  どうぞお試しください！ https://t.co/vnn4JyQXgd https://t.co/ovzHEmmttI",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-8N1mibKo5EnB3I3_zgu_CtI9Uc9q1IpJ-IbwlZa6cyCzWma3m9g6wcDpjFbQ0gboaZwPTpxfkiNGGIV3b5l8n-bEmyFoKGJr2UyF55YKZ2A9bTPUbaEla0ta1kWODfMeu48dikPRcyUMdX2LPr0Neg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-imaTuz6SSsA80hPrWBWxDCUL6ofXvgdP_JxBt2qlFRumXH8LbfKj-a6z_7gibyc0GosA0Ryhwg66Jw980uf5IlpIIaJZgp7OvITEBl47b-X9z5_buqgAscj906nNzhh7rXSkZrbRLMhDrkBo5juEgQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの販売告知であり、営業時間の変更はありません。"
   }
 ]
