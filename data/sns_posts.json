@@ -32644,5 +32644,50 @@
     "processedAt": null,
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_mention_koiwa_2118649566233055641",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2118649566233055641",
+    "postedAt": "2026-11-06T10:19:53.000Z",
+    "postText": "@tottan_nerokiti 𝐓𝐡𝐞 𝐓𝐨𝐭𝐭𝐚𝐧さん  ありがとうございます！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_mention_koiwa_2118649443281215884",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2118649443281215884",
+    "postedAt": "2026-11-06T10:19:24.000Z",
+    "postText": "@w_ren0904 れんまるてゃ㌠さん  たくさん通っていただけるお店であり続けられるよう頑張ります✨",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_mention_koiwa_2118649168252260566",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2118649168252260566",
+    "postedAt": "2026-11-06T10:18:18.000Z",
+    "postText": "@kouki1208 ありがとう✨  3兄弟で合計1,000回くらい食べにきてくれてるんじゃない（笑）  これからもよろしくね！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
   }
 ]
