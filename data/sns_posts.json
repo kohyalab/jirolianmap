@@ -32878,5 +32878,62 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_nishidai_2118827286141325730",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2118827286141325730",
+    "postedAt": "2026-11-06T22:06:05.000Z",
+    "postText": "おはようございます。 本日、7日、  煮込みFZ味付き切り落とし ¥1000×1、¥800×1、¥700×1  あります。 https://t.co/BDI7vvEn2A",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-gXGRTQ60qBG6BPTpAjQxetceIpUV6FLsfAehu1tyGYVdaQy6rnFb3RkupGIvhFaj8g5yisjRRV7obJgjfob9-mAy5EyYZsTfmDj04H_IYAjx3p25sLHZf7jiwCvAbE2uJ9Bt8eMI7rDrLCRFstWzRw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-9uFdUQw0tPNJ3OvMvPMRJiI-tK8xmXMi3t9w6JvXSYC-LR0-8rZD62IaxnepmJUYyJZQEs0oiSbSKnzuIS_O-m7dQ75CmtgzZ1RfKlOoAJbiNPWKrQmuGn79-ggL-NLT2zqYljN1rtzdFrFYGfHm1A==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-LpL8PyrHn4XH1Kj87ooyHMuafKueGLvXKLnzVMPpPbHWtjFulbTKRp51nXR9wQ6J7qmAoNRPzAgWwyhIhT9V68zb3fyeRPuOfuarBAw7Mo2ff7lcrUQCCYH6PFZzoSTPr4paTgol8OgMIXN8gN_aRg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-dV2B3p5UWw9LMn04Npxqyhve414m6JWDDyrfRtrwiVBBKta3hMjrUJiS7--98cAb4Q5jtvSfh8W5VzFeqazzN8PvqfKR7qvgbopfIqfSMFPwyCN0rEkEvIQ7Dp7UDd2AracH4bUelUH5yNOepIGcMQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの販売告知のみであり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_shndaita_20261107_0_2118833734799724653",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2118833734799724653",
+    "postedAt": "2026-11-06T22:31:43.000Z",
+    "postText": "2026年11月7日(土) お休みです！ ごめんなさい！  さいきんお休みが多めなので 来る前にXで調べてください！  当日ツイート無かったらすこし遡って週間予定を見てください！  バイト募集中です！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-07",
+      "endDate": "2026-11-07",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "既に登録済みの臨時スケジュールと一致"
+  },
+  {
+    "id": "sns_post_routine_shndaita_2118832974087242235",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2118832974087242235",
+    "postedAt": "2026-11-06T22:28:41.000Z",
+    "postText": "バイト募集します！  時給1300円 くらい(慣れたらすこし増えます) 7時〜17時くらい(応相談) 週2〜4回くらい（25〜45歳くらい） まかないあります 近所のひと希望 日払いです ※インスパの出店をしようとしているひとは不可です   希望の方は 年齢、最寄り駅、飲食業経験を書いてDMしてください！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報の変更に関する言及はありません。"
   }
 ]
