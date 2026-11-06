@@ -2,6 +2,71 @@
   "generalRules": [],
   "learnedFeedback": [
     {
+      "id": "sns_post_sapporo_20261109_0_2118581201892200785",
+      "timestamp": "2026-11-06T18:30:59.240Z",
+      "shopId": "sapporo",
+      "shopName": "札幌店",
+      "postDate": "2026-11-06T05:48:14.000Z",
+      "postText": "11月9日(月)昼営業のみ、夜お休み。 宜しくお願い致します🍜",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-11-09",
+        "endDate": "2026-11-09",
+        "hours": [
+          [
+            11,
+            14
+          ]
+        ],
+        "reason": ""
+      }
+    },
+    {
+      "id": "sns_post_matsudo_20261109_0_2118594501761798310",
+      "timestamp": "2026-11-06T18:30:52.505Z",
+      "shopId": "matsudo",
+      "shopName": "松戸駅前店",
+      "postDate": "2026-11-06T06:41:05.000Z",
+      "postText": "毎度ありがとうございます。  9日(月) 代替休業します。  よろしくお願いいたします。",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-11-09",
+        "endDate": "2026-11-09",
+        "hours": [],
+        "reason": ""
+      }
+    },
+    {
+      "id": "sns_post_okinawa_20261106_0_2118605911518482449",
+      "timestamp": "2026-11-06T18:30:39.875Z",
+      "shopId": "okinawa",
+      "shopName": "沖縄店",
+      "postDate": "2026-11-06T07:26:25.000Z",
+      "postText": "誠に申し訳ございません。  大変ありがたいことに、本日昼の部にて想定を上回る多くのお客様にご来店いただきました。  つきましては、スープの調整・準備のため、本日の夜の部は  17時30分オープン  とさせていただきます。 何卒ご理解のほどよろしくお願いいたします。",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業変更検出: スープの調整・準備のため",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-11-06",
+        "endDate": "2026-11-06",
+        "hours": [
+          [
+            11,
+            14
+          ],
+          [
+            17.5,
+            20
+          ]
+        ],
+        "reason": "スープの調整・準備のため"
+      }
+    },
+    {
       "id": "sns_post_hitachinaka_20261121_0_2118412336348405901",
       "timestamp": "2026-11-05T22:42:59.734Z",
       "shopId": "hitachinaka",
@@ -939,67 +1004,6 @@
         "endDate": "2026-10-23",
         "hours": [],
         "reason": ""
-      }
-    },
-    {
-      "id": "sns_post_shndaita_20261021_2_2111342824860045531",
-      "timestamp": "2026-10-17T22:52:38.824Z",
-      "shopId": "shndaita",
-      "shopName": "環七新新代田店",
-      "postDate": "2026-10-17T06:25:30.000Z",
-      "postText": "2026年10月17日(土) 解ってる範囲の営業予定です！  日 お休み 月 お休み 火 〇 水 〇(15:00くらい) 木 〇 金 お休み 土 〇 日 〇  11:00〜16:00くらい にんにく地獄塩(＋200円)もやります！  よろしくお願いします！",
-      "aiStatus": "schedule_change",
-      "aiReason": "営業時間の変更を検出",
-      "humanAction": "applied",
-      "finalDetails": {
-        "startDate": "2026-10-21",
-        "endDate": "2026-10-21",
-        "hours": [
-          [
-            11,
-            15
-          ]
-        ],
-        "reason": ""
-      }
-    },
-    {
-      "id": "sns_post_kaminoge_20261021_0_2110407815496142876",
-      "timestamp": "2026-10-15T11:02:27.552Z",
-      "shopId": "kaminoge",
-      "shopName": "上野毛店",
-      "postDate": "2026-10-14T16:30:07.000Z",
-      "postText": "21日(水) 空調設備工事のため臨時休業です",
-      "aiStatus": "schedule_change",
-      "aiReason": "営業変更検出: 空調設備工事のため",
-      "humanAction": "applied",
-      "finalDetails": {
-        "startDate": "2026-10-21",
-        "endDate": "2026-10-21",
-        "hours": [],
-        "reason": "空調設備工事のため"
-      }
-    },
-    {
-      "id": "sns_post_kameido_20261015_0_2110525083290828805",
-      "timestamp": "2026-10-15T11:02:19.320Z",
-      "shopId": "kameido",
-      "shopName": "亀戸店",
-      "postDate": "2026-10-15T00:16:06.000Z",
-      "postText": "お世話になってます。大変申し訳ありません、店主体調不良のため本日昼の部はお休みさせていただきます。夜の部は通常通り営業予定です。よろしくお願いします。",
-      "aiStatus": "schedule_change",
-      "aiReason": "営業変更検出: 店主体調不良のため",
-      "humanAction": "applied",
-      "finalDetails": {
-        "startDate": "2026-10-15",
-        "endDate": "2026-10-15",
-        "hours": [
-          [
-            17,
-            21
-          ]
-        ],
-        "reason": "店主体調不良のため"
       }
     }
   ]
