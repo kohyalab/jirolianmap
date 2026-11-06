@@ -31999,5 +31999,41 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の範囲内であるため変更なし"
+  },
+  {
+    "id": "sns_post_routine_tachikawa_2118510400748806576",
+    "shopId": "tachikawa",
+    "shopName": "立川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jirotachikawa/status/2118510400748806576",
+    "postedAt": "2026-11-06T01:06:54.000Z",
+    "postText": "11/6(金)、昼夜とも時間内売り切れなし営業です。 昼11:00-14:30 夜17:00-21:30  ①煮干し変更、今日もあります！  　+汁なし変更券で煮干し汁なしも可！  ②持帰りラーメン販売します。 　標準:2人前のスープと生麺+ブタハーフ  ※画像は全て他店様です。 https://t.co/Sx5gaxcDhT",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-bTDzqpdhCG08l_Vdt_YIVTJijtmTYgvhY5nBgUm554kj3xdtCU6ZUkYYsdcM2lPQT9zilBGlb2dDEAW5MR0paWGA_NbY_R5Ju-paRlAVrR3ck9ggiSa5vh-spdifFMQWGgNcnA6A8ZY23tAQJDwWdw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Q_9JPuySrnqz7oGIux8kqwlnOO6nD_VNiRgp45nOeqycVY0L7cf5U4kpFg75H8-0b3sfUS9hUnKJQ2WZjK3B6O9F0aXjUPPcYf3LnI9L5WeGTTktqQGTUiyJp8a5xH9wED6dorwC_ZnJZD2m5ylbAA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-al975jjeaA3FQ93LWaYLE8GwXdBMg62zMXTjb8iXb8e4L1M3znbqL9qEgh4HplXxJU-bBmqUvVAL6rTbLw3qwrhMve1E9yik_ixupkGXcfxHGADyBmOtnKCfkzmGtYqeUS23PsoAOWuksdtHlt-1iA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_nagoyaosone_2118514154831257691",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2118514154831257691",
+    "postedAt": "2026-11-06T01:21:49.000Z",
+    "postText": "おはようございます。 ラーメン二郎名古屋大曽根店です。 本日昼の部営業です。 営業時間11:00〜14:00  明日７日(土曜日)は10:00〜14:00予定(材料がなくなり次第終了) よろしくお願いいたします。 https://t.co/eXtKzSOcbU",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-MkTodIl8Zqb8hqq4kou4010k7ePbZ1PyYWzPuqi4jiqhTfsafyDR8-tAmIKXHtDMWt8CXy3KSluLw1oUMld92IW3xGrkGC7jNHqs99P8hBNd8hPaNb-0O5y_7WW1Laoucv1ePZCkX_0IwzVExSK2HQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "本日および明日の営業時間は通常通りであり、変更はありません。"
   }
 ]
