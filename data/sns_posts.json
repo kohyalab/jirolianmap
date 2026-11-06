@@ -32258,5 +32258,48 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_matsudo_20261109_0_2118594501761798310",
+    "shopId": "matsudo",
+    "shopName": "松戸駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/matsudojiro3/status/2118594501761798310",
+    "postedAt": "2026-11-06T06:41:05.000Z",
+    "postText": "毎度ありがとうございます。  9日(月) 代替休業します。  よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-09",
+      "endDate": "2026-11-09",
+      "hours": [],
+      "daysOfWeek": [
+        0
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_koiwa_2118599510331191704",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2118599510331191704",
+    "postedAt": "2026-11-06T07:00:59.000Z",
+    "postText": "【おかげさまで21周年】  本日、小岩二郎は21周年を迎える事ができました。  これからも皆様に美味しいと思ってもらえるラーメンを作り続けていきます。  よろしくお願いいたします。 https://t.co/8eo48xJ5Le",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-cvgsXpv_0oOjHlAWo-HOpHmWrtlShfVPBl4LmCq46oJ1R5al8kunhcLXfi0QBWu5ghSr-4YkDOzWQKTIVn8k_HYFsot6cQdgqlYPXUKcwVV82QdDYvEEWLKKH9xP5Fa_534RQ4jDEqQfFAE2Btd9Ig==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-4AvHRZM43L6lQP0-_isyGk6Z3j1nbiI5rj7CI4r1_VMsglV24NmZ6b6oaJx9LBtoGY7jo_Lp6Nb1_6aXgPIj4WQdxjRwyLXBJ27jVEzBmJd50XKkbKDYcjMv0E61BGdy27hojoTndPGoQJfireRwyg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "21周年記念の日常投稿であり、営業時間の変更に関する言及はありません。"
   }
 ]
