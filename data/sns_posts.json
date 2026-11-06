@@ -32389,5 +32389,35 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_kannai_2118617912609231157",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2118617912609231157",
+    "postedAt": "2026-11-06T08:14:07.000Z",
+    "postText": "こんにちは。 おかげさまで電気も全て 直りました！ トイレも気兼ねなく使って下さい。 夜の部はシビレとなりますので宜しくお願いします。 マヨもまだありますので ご希望の方は「アレ」でお願いします。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更に関する言及はなく、設備復旧と限定メニューの告知のみであるため変更なし。"
+  },
+  {
+    "id": "sns_post_routine_kashiwa_2118617463474770346",
+    "shopId": "kashiwa",
+    "shopName": "柏店",
+    "postSource": "x",
+    "postUrl": "https://x.com/genkimoriya/status/2118617463474770346",
+    "postedAt": "2026-11-06T08:12:19.000Z",
+    "postText": "お世話になっております。 ラーメン二郎柏店です。  明日11月7日（土）は、都合により早めの開店とさせていただきます。  どうぞ宜しくお願い致します。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "早めの開店との記載がありますが、具体的な開店時刻の記載がないため変更なしと判定しました。"
   }
 ]
