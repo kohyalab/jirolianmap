@@ -32749,5 +32749,73 @@
     "processedAt": null,
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_mention_kameido_2118683318720033150",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2118683318720033150",
+    "postedAt": "2026-11-06T12:34:01.000Z",
+    "postText": "@shimazenyu お願いマッスルもいいですね！マッチョなモブの方々に圧をかけられて仕事早くなりますね笑",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_routine_koiwa_2118683298147061952",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2118683298147061952",
+    "postedAt": "2026-11-06T12:33:56.000Z",
+    "postText": "@shimokita9 makoさん。  温かいお言葉ありがとうございます✨  これからも省エネ営業になりますが、お待ちしております✨",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261107_0_2118683896657359243",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2118683896657359243",
+    "postedAt": "2026-11-06T12:36:18.000Z",
+    "postText": "※11月より正式に ［土曜日夜の部］新設致します。  明日 ◇11/7土曜日 昼→10:00〜14:00 夜→16:30〜20:00  よろしくお願い致します。 ※拡散頂けますと幸いです♪ 　#スモジ土曜日夜やるよ 　#スモジ宣伝部 https://t.co/hfZqq34C6i",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-wacaNjcjfLP9K2dNnOFXgq9hWL_2C77Lc1e1zv3eDpdSWiTPwi3YUwNGakpzo-pcKd1P_Bo9RYzPxj9RUkmzXY6GXq9CxOz9cbPXZ4xTD657bxmNP9iBmk7zux4_1L46wfTmcgx8qlxk106XDh5JOg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-msdJ-NmY16wJQn1h0sS1yxgC0HdcSlbl_cO3HrehbHn8r5YWK1ZJmz2K7Ai1EHpvuNUlAtf6fJxLkETgE4x5i_m7jejPW-p9SYULVzHGeAupw8gda0MJCJQxAluj3pwORJP3Z7049pFT1C6658TXWA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-lF2CCn6uh0tqamZtj8joOYGnuJXhavRtwBgWRnAydKFv9WqiXPE0gsRNsqXYMwgHfGroUlkF8Wh9lhHkDgjaKme0N56P8O7Far_8mDOMtOVLBz7eKoT9kpiD2hYriTLcKUE9BN3vGOjiOBJDB1LScQ=="
+    ],
+    "detectedChange": {
+      "type": "regular_schedule_change",
+      "startDate": "2026-11-07",
+      "endDate": "2026-11-07",
+      "hours": [
+        [
+          10,
+          14
+        ],
+        [
+          16.5,
+          20
+        ]
+      ],
+      "daysOfWeek": [
+        5
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   }
 ]
