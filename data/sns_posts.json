@@ -32817,5 +32817,22 @@
     "processedAt": null,
     "aiStatus": "match",
     "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_routine_fujisawa_2118692143539892654",
+    "shopId": "fujisawa",
+    "shopName": "湘南藤沢店",
+    "postSource": "x",
+    "postUrl": "https://x.com/fujirow26/status/2118692143539892654",
+    "postedAt": "2026-11-06T13:09:05.000Z",
+    "postText": "本日もありがとうございました。  明日11月7日(土)  豚チゲ🐷 無料トッピング 野山商店特製タレ、崩し豚、豚カス醤油、 1番スープ、沢山にんにく🧄その他色々 粉チーズよくあいます。  房総田舎味噌青葱生姜🫚  明日もよろしくお願いいたします。 https://t.co/lMUGPAW2fn",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-gFXf5D4GMbbXJPwVfWUMGETA_qdaLtzLRdFLtoLXYttWhs2ruos33puXipJh7ARow2Wv_qtEq_m-XL4r3bBwICV5meu4fpZb4RLjRyEEwUgVACIRRiYwIitI4J4ziay9moX683FUpQ2_HRdYWUmUJg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの告知のみであり、営業時間の変更に関する記載はありません。"
   }
 ]
