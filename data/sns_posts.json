@@ -32719,5 +32719,35 @@
     "processedAt": null,
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_mention_koiwa_2118682730238222775",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2118682730238222775",
+    "postedAt": "2026-11-06T12:31:40.000Z",
+    "postText": "@agoV08 @tamutamu624 町子さん  そう言っていただけると嬉しいです✨  またのご来店、お待ちしております！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_mention_koiwa_2118682462347993368",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2118682462347993368",
+    "postedAt": "2026-11-06T12:30:36.000Z",
+    "postText": "@NnVuXAzpZAByRMd ともじーさん  ありがとうございます✨",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
   }
 ]
