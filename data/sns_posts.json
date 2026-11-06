@@ -32935,5 +32935,63 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業情報の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2118840594407850032",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2118840594407850032",
+    "postedAt": "2026-11-06T22:58:58.000Z",
+    "postText": "本日 ◇11/7土 【昼】 →こちらをご覧のお客様限定です！ ↓ ※お客様ご自身で→丸の🟥赤又は白🤍食券を１枚お取りになって席までお越しください。→食券は券売機の前の台の二段目に置いておきます。 ※必ず着席時にお出しください。 ※サービス中の目印は［黄色いハンカチ］ どうぞご利用下さい♪ https://t.co/QwZfsvOkS5 https://t.co/odPhTFtCzZ",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-olVpMurm9bOz2ZAaqTFH7EJHlG5B45NexjWcpShEABzaRJC7VHsx-wEhXga6qvH8rYx6UlZdkoa5JrDSNEQ4M_KUzsw7aaSYJ58dNrLlTwJ-W5tr41ducAv4aIoJYDatiCpCdo950Rs_bacAFIjkRw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne--AafGTQQQ1TKCXZXnQIdbKgSTAJwg6qLaIorwXmXWDmtwq7Bi9hj7fzTcLCkIrDK8-gAXNw0YWyZCyMbtd6cuqVFupZ-mryBIIQchmuDb1bdpAVMFqMMjeGiIXGbxNT3E6tRszEl_0UZtr6Dmh8E7A==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ZvHJN1PNiUFMNAL0yFkOYvGW3DgX5Jok3x3O7n_MWZMRmf5VG5Hp-E5iCnJw3jqc5i_m79OW7m6yRwXETqf7RdH0LrwyX2S_mwbcJ5nmrNWv8YOJV_8x2HezhRA_o5LNg_VCA3c_3qsxzdKhI3pFew==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2uRfzwdsuqrUvelIszMFJ_KXjdqTL6OY53VQwPeMCVqVcifr0e6aC4LtbExGvAiqcekG-KmVcMMDFmlTXNy1OA3ZoJWZuMsn7eCBEYv5REdZA6IJifcf6wp648X6A6DUYgsxe79tWYQuVU5uvECqMw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "本日の営業に関する告知ですが、限定トッピング等の案内であり、営業時間の変更は含まれていません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2118837030293762298",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2118837030293762298",
+    "postedAt": "2026-11-06T22:44:48.000Z",
+    "postText": "こちらは無くなり次第 終了☑️となります。  →［味ぽん生たまご］ →［フライドチリガーリック］ →［相撲部屋のしょうがダレ］  よろしくお願い致します。 https://t.co/OJtpM8igBf",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-R0myMzB_dYFmR_lFhtz4I8nx1hBYlpy8DpyXDPUXoPsy0BhCJfKJJt2b-4E6PPaHn6hybQVNs45Ej17tD67vsUZjmZiXRnCXXWFU2A7tV-wxgouLojRoB2wJlIptDMETOkpnV_OHiFEOqwAE99AV6g==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-FfiYPar4OiXSCJPwwM18Kf4IuZhtW6dg1j5If7MOZIB2xZhsa598w7oLJOL4BSBSkwsxFzB129PBv0x-5AZ8QmkNX8vAfZ7YkO1Wul3PyYjsS911JP6lEkY5VG7UTgJ1GNRfh83faDio5o2ypHe4oA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-14JSa3twAmDpmqJbw-OG9DbKLvrLS-9RHct-165anO4bDyDMQ_AzEnZCK1F5lmkArqXq__8qvVO0sjZjvFpN8ReEqYn4GkfWd8ri8hy6FBUT-hPxl1MdfBgIPXdOH1scHpXdXax_WCASrqyJ711SCQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの販売告知であり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2118836145341747380",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2118836145341747380",
+    "postedAt": "2026-11-06T22:41:17.000Z",
+    "postText": "おはようございます。  ［グッチーズカレー］ 本日→11/7  昼＆夜 明日→11/8  昼にて 一旦終了☑️とさせて頂きます。  よろしくお願い致します。 https://t.co/gw5d6PqBu8",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-GzzC9YxTagWA2LiPwqKhLoAbyPI1G_mLfwGkow-2rtLhSZXOCjl0KegAhbmPWOW3GmYxvoBM4OMxg3m08BoIZbHdBA6kydcFgkdtrr-QdF4ZfdR4oWoYMF_dcQZHxpoNhJkufaygWw9QMJ2ymINGIg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-gXXwl0AzdTRryzfOK_8huiyCe5JvDfa4gcGYovaRQXJ4zWp6H7RFm4iRhIE0fEAMMZpA2VM2oJAFxs1hgTqA-EjvGRexIxD6PZ8cO43MXkhtI540HNZkIPcntoXZ3bDhKK87qCjEtIKgGhi78vb1gw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-tNEk6cihZFydxbZGtGlU-lMNIHYrcx22IzNYtD3rbEgmxMRKyBf7EXSmhDNlXaupO0c4AlO8_22CBQNBMjlmF4H7BtzQjsBoQIh0i4opG3unDc4GvxtfqTG1C-ej6N3tcoZi3KuDeCT_-Ly-sCcgrw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定メニュー「グッチーズカレー」の告知であり、営業時間の変更に関する言及はありません。"
   }
 ]
