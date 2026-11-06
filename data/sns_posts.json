@@ -32170,5 +32170,66 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "切り落としの売り切れ告知のみであり、営業時間の変更に関する言及はないため変更なし。"
+  },
+  {
+    "id": "sns_post_routine_sengawa_2118579758875504822",
+    "shopId": "sengawa",
+    "shopName": "仙川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjiro26/status/2118579758875504822",
+    "postedAt": "2026-11-06T05:42:30.000Z",
+    "postText": "本日１７時から店内営業とテイクアウト販売します。テイクアウトはつけ麺に転用可能です。お薦めの調味料です。 https://t.co/O9yZVZ2h3m",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-5DnMj12fSUDLYEgfg_8lP9WVEDTatQxQdUJl1jxnu8GZYlUu_wiP-td1pv4AoQ89zB1LDOJ3iiSLmht601AAqlmSitkOc0lfrAhWLxvM0EmGETRK9rXQNBpMAiV3Gz6bJDYcZ9Dzy4YM2G_kCKoYxg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-1ZOQ0yRbtcy4x5XrUpgEN97nTM45qUBz7hpeIVFjdxmBx-i7Yq5ezXUZdOmnbEv295uH0XsJVBaQeciNoD47y-mFXt78_9fOmLtYwMDcxaNwDT_BJ5_To7phBfkTI2kSu3x1gkWlQF7ecv7z6Eg53g==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-YavPl5vGsrQJv1GRhE45ZfGULsls1f2H0Q0QJeKByx3VWDad-2IGYjDioACGH84kGT6ewsx-TpGjGeV_El41o157jCWhWBzBQdWp9B2AoZMACoSLZ0hOsW_uoOZrrX0w29CAi759gfB5ylZcYBJEMA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常的な営業告知およびトッピング・調味料の案内であり、営業時間の変更は含まれていません。"
+  },
+  {
+    "id": "sns_post_mention_kameido_2118579866765500714",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2118579866765500714",
+    "postedAt": "2026-11-06T05:42:56.000Z",
+    "postText": "@ichigo_lucy そういうの本当に気にしなくて大丈夫ですので…ご年配の方もよくいらっしゃいますし万が一店内でそんなこと言う人がいたらこちらで対処しますので！ぜひご来店お待ちしてます🙇‍♂️",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_sapporo_20261109_0_2118581201892200785",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2118581201892200785",
+    "postedAt": "2026-11-06T05:48:14.000Z",
+    "postText": "11月9日(月)昼営業のみ、夜お休み。 宜しくお願い致します🍜",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-09",
+      "endDate": "2026-11-09",
+      "hours": [
+        [
+          11,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
