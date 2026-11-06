@@ -32689,5 +32689,35 @@
     "processedAt": null,
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_routine_koiwa_2118663321734013358",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2118663321734013358",
+    "postedAt": "2026-11-06T11:14:33.000Z",
+    "postText": "@1hixytBzVkOqNso はるちーさん  ありがとうございます✨  21年間、振り返るといろいろありました。  これからあとどれくらい続けられるかわかりませんが、できるだけ長く営業できるように頑張ります。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_mention_koiwa_2118662719440306591",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2118662719440306591",
+    "postedAt": "2026-11-06T11:12:09.000Z",
+    "postText": "@Junky_sa_59 ささん  いつもご来店ありがとうございます✨  大盛の画像満載で迫力ありますね！  私はもう「少なめ」でもキツイですｗ",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
   }
 ]
