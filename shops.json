@@ -1588,6 +1588,14 @@
         "hours": [],
         "sourceUrl": "https://x.com/matsudojiro3/status/2106403668404863285",
         "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-09",
+        "endDate": "2026-11-09",
+        "hours": [],
+        "reason": "",
+        "sourceUrl": "https://x.com/matsudojiro3/status/2118594501761798310",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -4214,6 +4222,19 @@
         "startDate": "2026-11-04",
         "endDate": "2026-11-04",
         "hours": []
+      },
+      {
+        "startDate": "2026-11-09",
+        "endDate": "2026-11-09",
+        "hours": [
+          [
+            11,
+            14
+          ]
+        ],
+        "reason": "",
+        "sourceUrl": "https://x.com/jiro_sapporo_/status/2118581201892200785",
+        "_isAiImported": true
       },
       {
         "startDate": "2026-11-11",
@@ -7910,6 +7931,23 @@
         ],
         "reason": "祝日特別営業",
         "sourceUrl": "https://x.com/okinawa_jiro/status/2116688774084325479",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-06",
+        "endDate": "2026-11-06",
+        "hours": [
+          [
+            11,
+            14
+          ],
+          [
+            17.5,
+            20
+          ]
+        ],
+        "reason": "スープの調整・準備のため",
+        "sourceUrl": "https://x.com/okinawa_jiro/status/2118605911518482449",
         "_isAiImported": true
       }
     ],
