@@ -32067,5 +32067,40 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "日常投稿のため変更なし"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2118526433903739192",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2118526433903739192",
+    "postedAt": "2026-11-06T02:10:36.000Z",
+    "postText": "本日 ◇11/6金 【夜】 →こちらをご覧のお客様限定です！ ↓ ※お客様ご自身で→丸の🟥赤又は白🤍食券を１枚お取りになって席までお越しください。→食券は券売機の前の台の二段目に置いておきます。 ※必ず着席時にお出しください。 ※サービス中の目印は［黄色いハンカチ］ どうぞご利用下さい♪ https://t.co/zYhBTLT5Z4 https://t.co/ovzHEmmttI",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-bWB6UCINmTZd2EeQcDPmxp405-UY1T-F0jwbYj_cBgQmxRSEQc-T1qbMBEqO7xyu1BR-2BCR5bB8ACN_YrcaAepQ2KoTS2K6aJ0OZZc-tztazaF_hkTKN1eo0FJf0mlpvUWVdpCCyGZM1EqNPU58Pg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-RJ4NdSx7PeVbOFdHUJ9WSkajRtOqUBc5WNa6jXtE9aecJTiqr9LZjwqlhx2TlpbNjSpmKdyIQmKlcKmN8qiInImqf_qNjgsCC1tu-2M30H4ao0wCmt5HpLiODdHU8HXkAkw6_bwaVgrnZnQ1LKqQaw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-lpMDOjTnwKUmVIn8lpjwiirXDy6neYpIEHbuZff58AuXCgmkxf5gSFKZvMx40cLEd2TgZ9zEEYgvm-xAYCrkxq7ZYV31kMTrRVDJ9oH_b0K0l6Suh3z38GiKo721fBeVbExBnXoMWIW887c4JKtpHg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-f7QZslrDwPjSYVqEO653ljz1YsdjiNv_tf8Y2sW1lgFHROKADAKvFTBkg2D9EUln4DC1HRjgXCEvyONSRMPP4ecxSnAhBi6sasWEZPgCVqy-tKwmY03WXem_JMbRnqXHIz5A9x8Pl-CnH-GlqrqSgw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_asakuragaido_2118529480449044907",
+    "shopId": "asakuragaido",
+    "shopName": "朝倉街道駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/r26akgd/status/2118529480449044907",
+    "postedAt": "2026-11-06T02:22:43.000Z",
+    "postText": "本日通常営業！ ネギあります！ よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "本日通常営業の告知であり、営業時間の変更はありません。"
   }
 ]
