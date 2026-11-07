@@ -33600,5 +33600,22 @@
     "processedAt": "2026-11-07T14:35:07.149Z",
     "aiStatus": "no_change",
     "aiReason": "通常営業の告知"
+  },
+  {
+    "id": "sns_post_routine_kameido_2119089020097675666",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2119089020097675666",
+    "postedAt": "2026-11-07T15:26:07.000Z",
+    "postText": "茶柱くんが我が家に来て1年経ちました。あっという間だなぁ https://t.co/RTtPmY2jac",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-w7Fa33wD1YvL_0JOVgrUZ0xY8FVRK-h1opNX2Xpe5Fxfmkn4H1w_zw9lV4FOVHQWl9-q4vztbQZUVxzHTnGinLOccizivEq_lPm1fkA8UphMEqeIQ793lKEuR9yKeGm3soF4hmYURkt_JIMclHefTA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常投稿のため、営業情報の変更はありません。"
   }
 ]
