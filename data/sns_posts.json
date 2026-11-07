@@ -32993,5 +32993,20 @@
     "processedAt": "2026-11-07T00:00:34.395Z",
     "aiStatus": "no_change",
     "aiReason": "限定メニュー「グッチーズカレー」の告知であり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_yaen2_2118849571090817350",
+    "shopId": "yaen2",
+    "shopName": "八王子野猿街道店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/Jiro_Yaenkaido2/status/2118849571090817350",
+    "postedAt": "2026-11-06T23:34:38.000Z",
+    "postText": "11月7日(土) 11:00～20:00 通し営業 ⭐テイクアウト、鍋二郎あります 並ばず買えます ⚠️駐車場待ち出来ません ⚠️駐車場満車時コインパーキングに⚠️店舗近隣タバコ禁止です 🌟きまぐれたまご もみじおろし",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常通りの営業です。"
   }
 ]
