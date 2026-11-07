@@ -33157,5 +33157,100 @@
     "processedAt": null,
     "aiStatus": "match",
     "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_routine_kannai_2118884224774398426",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2118884224774398426",
+    "postedAt": "2026-11-07T01:52:20.000Z",
+    "postText": "おはようございます！  本日もマヨありますのでご希望の方は「アレ」でお願いします。 えびっちょ辣油、煮干しの波動もあります。  よろしくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常投稿のため変更なし"
+  },
+  {
+    "id": "sns_post_routine_tachikawa_2118881606283006272",
+    "shopId": "tachikawa",
+    "shopName": "立川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jirotachikawa/status/2118881606283006272",
+    "postedAt": "2026-11-07T01:41:56.000Z",
+    "postText": "11/7(土)、昼夜とも時間内売り切れなし営業です。 昼11:00-14:30 夜17:00-21:30  ①「赤」は辛いラーメン。 +汁なし変更券で、辛い汁なしも可！  ②ほぐしブタ+背脂+煮干し 　別皿提供　100円(期間限定価格)！  ③持帰りラーメン販売します。 　標準:2人前のスープと生麺+ブタハーフ https://t.co/RWlhuYmz6D",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-OkNXfEae8hQ7iDPboF2UCDzk6ItTxqPLA7M92rk7O2CdokssaNYcdsfiuDPLZzgGB-QOMg2661fcfeRzQo7jYcXjztJNlFsJMYdD5mF9oIlwfqlbN5h1Mofzp1lMPtipjM6KyKuI5Tx99zKRXaeI_w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-oScINDCafHUj8RJ3MZk6Ev15l9wxWGZn7UckRgC3rl0q_q0KMStElQly3bHumDYL5UA9kXHJ1CYe-ScxJefACyXSKYXIKa9sShOv7XWbmn2jy7TyTvfasYjkf2HJHh7aHjSAjqMovTqFqiWqNYDDiQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-J6LQrw6dg6STXB25Qp0zVjzjbh_fAatTjyqjDoVXmQr--TJ2yzuSWi4iGZEyQzjUXliQhbnOcTqkBESbEyoPVxdxgKKvj6csdZIBijE0oT53oFq8--GcZqtZoVE2L-vZax7IKKPBfQJhu8n47OmSSA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_nishidai_2118879890766528795",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2118879890766528795",
+    "postedAt": "2026-11-07T01:35:07.000Z",
+    "postText": "本日、7日の切り落としは 売り切れました。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常的な限定メニュー（切り落とし）の売り切れ告知であり、営業時間の変更は含まれていません。"
+  },
+  {
+    "id": "sns_post_kyoto_20261107_0_2118885484978180178",
+    "shopId": "kyoto",
+    "shopName": "京都店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kyoto/status/2118885484978180178",
+    "postedAt": "2026-11-07T01:57:21.000Z",
+    "postText": "おはようございます！本日お昼の部のみの営業です！  明日は通常営業です！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-07",
+      "endDate": "2026-11-07",
+      "hours": [
+        [
+          11,
+          14.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2118886331703267828",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2118886331703267828",
+    "postedAt": "2026-11-07T02:00:43.000Z",
+    "postText": "おはようございます！ポケモンのイベントで仙台が賑わっております！！ お子さんシェアOKですので小さなポケモンマスターの御来店もお待ちしております！！ テーブル席あるよ！ https://t.co/GIivBLEgHy",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-t2GPC5TtpfWLa4segAsy35T2_-R7tde5Rd9IaaA9v_dmCsy_bUQ7Fj_j9U5eA6cXUjjtYLSsivA677xyPElo0WrioP38Wp5GPWABCNlgaRAN2tF-ko7RwMDDeZmDSxAzrgYrsRf8zvbhg--u16Gscw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-GVy8P_HCcYOQxJsTFe2wENMZZjcsYqqtOvr-N7u6wdbeGQUTlSriy2yUnPj62wbsoPh-8pJcMwLYSicyiykyVC46NfHnmJPk9QYzAml1y0u3xTcGGZkBnFIvmlpn4FVkWEJfPQdxqsv0HOGu7Fawfg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-NUl8NHTVoMC53jT35kgf0D5S1ZUlNDkDvzur9kz_noUQ2j66BAlsClcBQO1zy-lE64sdsr0i6zkkQ6Dhqhe0iAyt6x8gStxl5d597_BQZWw1-VFKYcupcWyC4HnXsMmc36IhQpfea6v6k-B1Bsh3yQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業"
   }
 ]
