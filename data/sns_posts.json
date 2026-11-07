@@ -33279,5 +33279,22 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_sengawa_2118930366526304615",
+    "shopId": "sengawa",
+    "shopName": "仙川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjiro26/status/2118930366526304615",
+    "postedAt": "2026-11-07T04:55:41.000Z",
+    "postText": "本日１７時から店内営業とテイクアウト販売します。追加の生麺一玉１００円(400g）です。 https://t.co/cBqJYX3vKb",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-mlBzfHP3kSh_9jisICuz7zGsCBBWVx3_x1Q9GgLT5x-67-5LvM_CwQIwhiafqIugohqkgMx3RELMb8gmdClTkZoEGp7rxMZr4F7yXNoStb94cHhsEUf9OtCpKYbJK-VRLCCHR658e3YathTBZ26Hbw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知およびテイクアウト販売の案内であり、営業時間の変更はありません。"
   }
 ]
