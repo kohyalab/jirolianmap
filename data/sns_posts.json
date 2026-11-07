@@ -33553,5 +33553,37 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 材料切れのため"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261108_0_2119029121141653919",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2119029121141653919",
+    "postedAt": "2026-11-07T11:28:06.000Z",
+    "postText": "明日 ◇11/8日《初日》 【日曜日営業🈺】 10:00から〜15:00 ご来店ご到着お並びの お客様まで営業致します。  大相撲場所中につき… →［相撲部屋の湯豆腐のタレ］販売致します！  →［グッチーズカレー］ →［濃く脂コクアブラ］ シークァーサーversion →［ニンニククタクタ煮🧄］ 販売致します！ https://t.co/8XB8Zn4Cci",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-jNUBODrxONPVSpc-fnu0HTDDp7Q8MGZhJdG8aL-v4ytXbAVj767hQo-3jsATItLBh8V9p9tz-lcjMlbZpHH8N2Jtyvb3sf4lDH1FpnmRHdT7plV5KR591uUZ_jiYXGIZySRJU_cnTUi8pRvUdXLdoA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-3oSuwcalPO2gcKAC5JImbvzEeAawR9_u0hA0ltXM7EjJDO2IFhAvDuXfXT9R_i8T9Sndk2rkWkI-4JOhDXDZA_g363k5ha9Hjcpz62yAFeJtcaU_5YYVECMOAOYC71I1iUeTsKLcftksT_6rkTa6Yw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-qkHv0uMLw-OKjbkd9SkFoyXcanrRjbKr3hrRp3j-y_F2Wku853DUmnH5LIHDj0C41VKhmgxgi1DRQtyHYXN2orBgI-LhCWVXY87TrQvpkCjgsG9usBiWajwe1K5nsbG7zF2NImjQsCawTXa3zZu7dw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Udf6FElarly1w99gJbEO9jGun2bqc7MuWu0wgrDLwXdPOrt0X4rRipdMLn6PQ7mPH60vW_EI28fDRanpMbcRosyrBkv9dN27dGvyNYyvOWwQd33Slha8__JM29M1GZGnpUxC2yy7igneq3tNfgG9XQ=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-11-08",
+      "endDate": "2026-11-08",
+      "hours": [
+        [
+          10,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   }
 ]
