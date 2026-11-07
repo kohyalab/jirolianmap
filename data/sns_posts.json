@@ -33491,5 +33491,40 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業時間の変更や臨時休業の告知はありません。"
+  },
+  {
+    "id": "sns_post_routine_senjuohashi_2118982551012593707",
+    "shopId": "senjuohashi",
+    "shopName": "千住大橋駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjujirou26/status/2118982551012593707",
+    "postedAt": "2026-11-07T08:23:03.000Z",
+    "postText": "大変申し訳御座いませんが本日の販売は終了いたしました！  お持ち帰りして頂いた方へ！  脂の袋は立てて湯煎をし♨︎ 麺を茹でよーく湯切りをした熱熱の麺によーく混ぜ混ぜしてお召し上がり下さい🍜 （麺の茹で加減はお好みで！） https://t.co/jWTqW1lwcR",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-_NCZhzAEFr_swk-uyrY5qwhXQQE8uXbNks9qY02Eh2ONlrShgVIQI_xJW3OmTCGZf3_TYOW2PrbmBJ2dDJSIUO_Y1H2lR-964imrWsjW2nFL4MqOiyzfeOpNwpIsx2VXfJ4PeRnHG-H23hJNFT8_bw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "本日の営業終了告知"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2118981277525418455",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2118981277525418455",
+    "postedAt": "2026-11-07T08:17:59.000Z",
+    "postText": "只今混雑無しです！ どうぞー！🈳🈳🈳 ※20:00ご来店ご到着お並びのお客様まで営業🈺致します！ https://t.co/dElNVrDWwk",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-fgJieP7BHVwqq5MMrNblDRsYlh7jCMOTcw30Ogk8LlL6_35Zr1nRlwGlfgsmesCDWFWk6CPGjqWZG9bTGMo0l4ZlJ6FBlGHI5aAKWvtS99tKD_iDcFxrYdx6jisLf4xfhMepNpftx0FnSKoa8zTrIw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-d7VwZqh0MESnpyV8Yf54P7N9W7Iv3Tc9vzmWBOFgYbwg65ASFTe9NUDAIPrffrpF_CGMU5_OWn0rfR2Sbh6TSZxON5CCG_zKfjj2mpMCBR8l97gwbmow_xXpl7jwrhCHe4ZCuGPP5Thi6lmsY8AGGg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更はなく、トッピング価格の変更に関する告知のみのため変更なしと判定。"
   }
 ]
