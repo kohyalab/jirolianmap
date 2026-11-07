@@ -33526,5 +33526,32 @@
     "processedAt": "2026-11-07T10:05:44.056Z",
     "aiStatus": "no_change",
     "aiReason": "営業時間の変更はなく、トッピング価格の変更に関する告知のみのため変更なしと判定。"
+  },
+  {
+    "id": "sns_post_sengawa_20261107_0_2119016578721431744",
+    "shopId": "sengawa",
+    "shopName": "仙川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjiro26/status/2119016578721431744",
+    "postedAt": "2026-11-07T10:38:16.000Z",
+    "postText": "大変申し訳ございませんが材料切れのため、只今お並びの方をもって本日の営業を終了とさせていただきます。 本日も大変ありがとうございました！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-07",
+      "endDate": "2026-11-07",
+      "hours": [
+        [
+          17,
+          19.63
+        ]
+      ],
+      "reason": "材料切れのため",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 材料切れのため"
   }
 ]
