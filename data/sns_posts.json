@@ -33617,5 +33617,103 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "日常投稿のため、営業情報の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_fujisawa_2119181889940705525",
+    "shopId": "fujisawa",
+    "shopName": "湘南藤沢店",
+    "postSource": "x",
+    "postUrl": "https://x.com/fujirow26/status/2119181889940705525",
+    "postedAt": "2026-11-07T21:35:09.000Z",
+    "postText": "🌈🌈🌈ラーメン二郎越谷実店🌈🌈🌈 豚4枚キムチ✖︎2マキシマム あぶら唐辛子 https://t.co/I59l16qhhK",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-n7LsTrzQTizOV1Zs6dg9CoeBHrEw417aSvj3OI5IyAKk_Tlz4rvyTHqaHabpktmRuAwIcziWrAGvckRK1kki2cngNLRlnukDxajuMbLoesg6Pubp_o0MJUYooGRIG2wUk35IQl8FgC0fbeOYorOa7g=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常的なメニュー告知であり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_fujisawa_2119181470757785871",
+    "shopId": "fujisawa",
+    "shopName": "湘南藤沢店",
+    "postSource": "x",
+    "postUrl": "https://x.com/fujirow26/status/2119181470757785871",
+    "postedAt": "2026-11-07T21:33:29.000Z",
+    "postText": "おはようございます。  11月8日(日)  豚チゲ🐷 無料トッピング！ 野山商店特製タレ、崩し豚、豚カス醤油、 1番スープ、沢山にんにく🧄その他色々 粉チーズよくあいます。  房総田舎味噌タマネギ生姜🧅🫚  本日もよろしくお願いいたします。 https://t.co/G1UFzpEXBx",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-YHqk1KidQb1JTT7jYjcj5uRffwHd4E1NdDyLo78aLeULecGYc5pI6EODzaID7nmkmCGTmwN5HmHviee9RJJQZmI_fnowmJKnQoHef6oVEExGlffAx4_Ka3rpYNDA0Q-5miGNBftQY0_Lw4WZaaIbbw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-mirEFLakCuS7SNFpU_I8sYzWiyG4zEw1bCwURyKAs4dQgrCrm0BfApvU5vVJ6NbNL_s0KgYuWooTm2jcZvWHOQ9fjDloFA1DiyfhwgEjD_CyItUdVJDMZcoNbUp3nq3EquWfrV8o830rSnhkHYu3rA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_hitachinaka_20261109_0_2119186878448697361",
+    "shopId": "hitachinaka",
+    "shopName": "ひたちなか店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26_hitachinaka/status/2119186878448697361",
+    "postedAt": "2026-11-07T21:54:59.000Z",
+    "postText": "【8日〜14日 営業時間のご案内】  9日 月曜日 昼の部 11：00〜13：30に変更  21.22.23日お休みいただき〼  基本ラストオーダー宣告ナシ 列が途切れたら閉店  テーブル席あり〼 利用者 限定 お子様連れ優先案内  複数名のお客様 ロットまたがない様にご案内し〼  割り箸・玉子の殻は丼の中で大丈夫 https://t.co/kZ5rW7OSZR",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-C8Gy5i-ElC7ohriAwZSpUbgU6gvXDrO2-NOoeRbrjWlPcm0ZCSerB5VYZ2Y012DBBVLABjtRUi9KjZK8vL8X7iLISj4nBKj6-Po8nxAYGiYPy_3F_0e_exgug_tjxJNUxUQoRZRw9oQzZ7bxi1lNCQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne--jpT7bIr_nJUqTtqYj4TVVsd9skCG8BZJd8TExCDEWv5U9lk67VbSVbtoj7wBlZLJzNDQJKxTgmQn8hkNg8A9LVzEpml75yNcMi8CGuAB8bbWDz6dPOruUv4BLuN5Sv-clk5XXEhnKtxK-YXSqMsJQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-WhKdSLrI_n1SK6HSvstSGIkS5z5FJC_ck0oSRGpTWTCfTLj5yEhANzk_v2LVOJXqLaS1c8C-IavEL67Z7iiaJDlpr8HESaPw72APamrK5gZ3QVigNvfW7_Ly5DEGS6Lfo416tjqXIBrA5-eag7-QMA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-h4n1qdEFl--Nhn3KRjGASETzkiKpKGVgTnGVFN9HK1nyJJtS0mFeUdec8xC1AzxW7YYouzZyS5S0tYGMIMEsyi11fZStGDcZd7EUB8HDbgaR3tMD3X_23GuZZpjh2-haSUD7ZQKS5j1T79N7yP2DLA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-09",
+      "endDate": "2026-11-09",
+      "hours": [
+        [
+          11,
+          13.5
+        ],
+        [
+          17.5,
+          21
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_hitachinaka_20261121_1_2119186878448697361",
+    "shopId": "hitachinaka",
+    "shopName": "ひたちなか店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26_hitachinaka/status/2119186878448697361",
+    "postedAt": "2026-11-07T21:54:59.000Z",
+    "postText": "【8日〜14日 営業時間のご案内】  9日 月曜日 昼の部 11：00〜13：30に変更  21.22.23日お休みいただき〼  基本ラストオーダー宣告ナシ 列が途切れたら閉店  テーブル席あり〼 利用者 限定 お子様連れ優先案内  複数名のお客様 ロットまたがない様にご案内し〼  割り箸・玉子の殻は丼の中で大丈夫 https://t.co/kZ5rW7OSZR",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-C8Gy5i-ElC7ohriAwZSpUbgU6gvXDrO2-NOoeRbrjWlPcm0ZCSerB5VYZ2Y012DBBVLABjtRUi9KjZK8vL8X7iLISj4nBKj6-Po8nxAYGiYPy_3F_0e_exgug_tjxJNUxUQoRZRw9oQzZ7bxi1lNCQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne--jpT7bIr_nJUqTtqYj4TVVsd9skCG8BZJd8TExCDEWv5U9lk67VbSVbtoj7wBlZLJzNDQJKxTgmQn8hkNg8A9LVzEpml75yNcMi8CGuAB8bbWDz6dPOruUv4BLuN5Sv-clk5XXEhnKtxK-YXSqMsJQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-WhKdSLrI_n1SK6HSvstSGIkS5z5FJC_ck0oSRGpTWTCfTLj5yEhANzk_v2LVOJXqLaS1c8C-IavEL67Z7iiaJDlpr8HESaPw72APamrK5gZ3QVigNvfW7_Ly5DEGS6Lfo416tjqXIBrA5-eag7-QMA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-h4n1qdEFl--Nhn3KRjGASETzkiKpKGVgTnGVFN9HK1nyJJtS0mFeUdec8xC1AzxW7YYouzZyS5S0tYGMIMEsyi11fZStGDcZd7EUB8HDbgaR3tMD3X_23GuZZpjh2-haSUD7ZQKS5j1T79N7yP2DLA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-21",
+      "endDate": "2026-11-23",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
