@@ -33427,5 +33427,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "忘れ物の告知であり、営業情報の変更は含まれていません。"
+  },
+  {
+    "id": "sns_post_routine_koiwa_2118949069112717716",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2118949069112717716",
+    "postedAt": "2026-11-07T06:10:00.000Z",
+    "postText": "豚ハーフは売り切れました🐷",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常的なメニュー売り切れ告知のため、営業時間の変更はありません。"
   }
 ]
