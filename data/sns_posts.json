@@ -33442,5 +33442,35 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "日常的なメニュー売り切れ告知のため、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_koiwa_2118955700634190331",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2118955700634190331",
+    "postedAt": "2026-11-07T06:36:21.000Z",
+    "postText": "@asshida assahidayoさん  ありがとうございます😊  こらからも細々と営業を続けていきます🫡",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_senjuohashi_2118955387206713747",
+    "shopId": "senjuohashi",
+    "shopName": "千住大橋駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjujirou26/status/2118955387206713747",
+    "postedAt": "2026-11-07T06:35:07.000Z",
+    "postText": "大変申し訳御座いませんが本日残りは ラー油4セット🍥豚1本🐖（7本）🐖 のみとなります！🐖！ https://t.co/gnZhaq00Lq",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業変更なし（通常通り営業・雑談等）"
   }
 ]
