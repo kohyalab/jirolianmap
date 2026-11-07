@@ -33008,5 +33008,90 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常通りの営業です。"
+  },
+  {
+    "id": "sns_post_routine_koiwa_2118857146096124161",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2118857146096124161",
+    "postedAt": "2026-11-07T00:04:44.000Z",
+    "postText": "おはようございます☀️  本日のテイクアウトラーメン購入URLです⬇⬇⬇  https://t.co/lKBGIFJkvf  フォロワーの皆様、リポストにて拡散のご協力をお願いいたします🙇‍♀️ https://t.co/dWACeAXBqU",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-kvoLEmCWahEHofchnhkxK5t6eEwgtnYDYphzPx-nKx2I56mFR8KBN5jQWEJwy-slBkBANbT_xqekWOT8XntotSzN4TK3VIlh_FlBx6ndJKYfwhJIiGOCrXtAldtm4tT_LA9pwu9EaCIsj3QfyGl_hA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "テイクアウト販売の告知であり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_senjuohashi_2118863525955449311",
+    "shopId": "senjuohashi",
+    "shopName": "千住大橋駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjujirou26/status/2118863525955449311",
+    "postedAt": "2026-11-07T00:30:05.000Z",
+    "postText": "本日は15時30分前よりテイクアウト販売のみの営業となりますのでご注意をお願いいたします！  フォロワー限定🐖 味噌脂蕎麦🐖魚粉油そば🐖 生姜醤油脂🐖1010カレー脂🐖 ✨復刻✨BP塩油そば🐖豚１本🐖 https://t.co/F9Vs0uAVgZ",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-P6Iqvcc4t6Qn7FsVyZh5xZCgA4oeQKH11d3iYjuNb6MhfNqBsJ99UoYXPSGq6CaIfn_K-Yv_ITG7Ie48hfvyX5kidHEKpaojMGD1amzc_1if5GFCMJpRfD4yCiSaAuYFsNWFJrh-50aBlE7xsX6lEA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-qAKGA9pdgHEsdNyXR2XKYtZeae8eKishqWDNPhOKloDXFWYKkM40x9ppwFOjJ3J4wnnLczr3zO1jSjSNElRWeAtAqkmos_Xv2TdP73HZ09e1fTxhwaNb78fkRPH8Sgpa2m3OiVjtvKZQ9eLi5dfLMw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "テイクアウト販売のみの告知であり、営業時間の変更ではないため変更なしと判定。"
+  },
+  {
+    "id": "sns_post_unresolved_sapporo_2118864145500258461",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2118864145500258461",
+    "postedAt": "2026-11-07T00:32:33.000Z",
+    "postText": "生憎の雪模様ですが☃️本日7日(土) 「汁なし」やってます🍜 [魚介風汁なし(醤油ベース)]変更可　現金＋100円 https://t.co/crDG59rDNo",
+    "mediaUrls": [
+      "https://video.twimg.com/amplify_video/2118864127741620224/pl/QrsyhW1ctGor8JKc.m3u8"
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "unresolved",
+    "aiReason": "解析時エラー: Gemini API Error: All model candidates failed. Last error: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.google.com/docs/get-started).\",\n    \"status\": \"NOT_FOUND\"\n  }\n}\n"
+  },
+  {
+    "id": "sns_post_mejirodai_20261107_0_2118861983328108785",
+    "shopId": "mejirodai",
+    "shopName": "めじろ台店",
+    "postSource": "x",
+    "postUrl": "https://x.com/mejirodai_jiro/status/2118861983328108785",
+    "postedAt": "2026-11-07T00:23:58.000Z",
+    "postText": "毎度ありがとうございます 本日7日(土)の昼営業は11〜14時までの予定です 夜は通常営業となりますのでよろしくお願いします https://t.co/gzIPUC8vfx",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-MyBrp2JI37rVM15JuhwJ9Z2qwmZN52zj308YiKV2LNb1dkumxhB0V7KFf5F6BnacYCqcTlSHNR8DwE_-qThg1LH2uKLKfD6xMMJY29EBfyHMCSdYCQom8y61sdmA-6FjZ0IIy1cfKZoCKejfwEC_2g=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-07",
+      "endDate": "2026-11-07",
+      "hours": [
+        [
+          11,
+          14
+        ],
+        [
+          17.5,
+          20.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
