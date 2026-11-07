@@ -32845,8 +32845,8 @@
     "postText": "11月7日（土） 昼11:30〜14:00頃 夜18:00〜21:00頃までです",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-07T00:00:34.395Z",
     "aiStatus": "no_change",
     "aiReason": "通常通りの営業案内"
   },
@@ -32874,8 +32874,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-07T00:00:34.395Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   },
@@ -32894,8 +32894,8 @@
       "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-dV2B3p5UWw9LMn04Npxqyhve414m6JWDDyrfRtrwiVBBKta3hMjrUJiS7--98cAb4Q5jtvSfh8W5VzFeqazzN8PvqfKR7qvgbopfIqfSMFPwyCN0rEkEvIQ7Dp7UDd2AracH4bUelUH5yNOepIGcMQ=="
     ],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-07T00:00:34.395Z",
     "aiStatus": "no_change",
     "aiReason": "限定トッピングの販売告知のみであり、営業時間の変更はありません。"
   },
@@ -32916,8 +32916,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-07T00:00:34.395Z",
     "aiStatus": "match",
     "aiReason": "既に登録済みの臨時スケジュールと一致"
   },
@@ -32931,8 +32931,8 @@
     "postText": "バイト募集します！  時給1300円 くらい(慣れたらすこし増えます) 7時〜17時くらい(応相談) 週2〜4回くらい（25〜45歳くらい） まかないあります 近所のひと希望 日払いです ※インスパの出店をしようとしているひとは不可です   希望の方は 年齢、最寄り駅、飲食業経験を書いてDMしてください！",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-07T00:00:34.395Z",
     "aiStatus": "no_change",
     "aiReason": "営業情報の変更に関する言及はありません。"
   },
@@ -32951,8 +32951,8 @@
       "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2uRfzwdsuqrUvelIszMFJ_KXjdqTL6OY53VQwPeMCVqVcifr0e6aC4LtbExGvAiqcekG-KmVcMMDFmlTXNy1OA3ZoJWZuMsn7eCBEYv5REdZA6IJifcf6wp648X6A6DUYgsxe79tWYQuVU5uvECqMw=="
     ],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-07T00:00:34.395Z",
     "aiStatus": "no_change",
     "aiReason": "本日の営業に関する告知ですが、限定トッピング等の案内であり、営業時間の変更は含まれていません。"
   },
@@ -32970,8 +32970,8 @@
       "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-14JSa3twAmDpmqJbw-OG9DbKLvrLS-9RHct-165anO4bDyDMQ_AzEnZCK1F5lmkArqXq__8qvVO0sjZjvFpN8ReEqYn4GkfWd8ri8hy6FBUT-hPxl1MdfBgIPXdOH1scHpXdXax_WCASrqyJ711SCQ=="
     ],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-07T00:00:34.395Z",
     "aiStatus": "no_change",
     "aiReason": "限定トッピングの販売告知であり、営業時間の変更に関する言及はありません。"
   },
@@ -32989,8 +32989,8 @@
       "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-tNEk6cihZFydxbZGtGlU-lMNIHYrcx22IzNYtD3rbEgmxMRKyBf7EXSmhDNlXaupO0c4AlO8_22CBQNBMjlmF4H7BtzQjsBoQIh0i4opG3unDc4GvxtfqTG1C-ej6N3tcoZi3KuDeCT_-Ly-sCcgrw=="
     ],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-07T00:00:34.395Z",
     "aiStatus": "no_change",
     "aiReason": "限定メニュー「グッチーズカレー」の告知であり、営業時間の変更に関する言及はありません。"
   }
