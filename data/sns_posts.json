@@ -33323,5 +33323,109 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_koiwa_2118944012434604082",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2118944012434604082",
+    "postedAt": "2026-11-07T05:49:55.000Z",
+    "postText": "11/7の追加メニュー  🐷豚ハーフ おひとり様１個まで  🐽くずれ豚 📍生麺 📍汁なしの素 📍味付き脂 📍魚介つけ麺の素 個数制限無し  追加メニューだけのご購入も大歓迎です。  15時から販売開始いたします⏰",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "追加メニューの販売告知であり、営業時間の変更は含まれていません。"
+  },
+  {
+    "id": "sns_post_routine_senjuohashi_2118946563041202182",
+    "shopId": "senjuohashi",
+    "shopName": "千住大橋駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjujirou26/status/2118946563041202182",
+    "postedAt": "2026-11-07T06:00:03.000Z",
+    "postText": "只今の時間より🍜  SH脂蕎麦セット 2人前1セット  1500円 （麺1玉2袋、豚入脂パック2つ）  ノーマル1つとPlus  ラー油🐖or魚粉油そば🐟 味噌脂🐖or1010カレー🐖 生姜醤油脂🫚復刻BP塩油そば🐖 よりお1つお選び下さい！  お1人様  2セットまで！  豚1本1500円🐷 https://t.co/ZMBg5Jevc6",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-OUFR_J8jAP4t-_SHIds2HJ3MAt6xgTPxeP7FazNrkfEf4tIVYefFV5F9sHFduLVh-NaobhKVJN7Msr20bCIA2JRMiAdhXJS4MyjfymDi_1Hj2m6_9vTjntEcfemfZcC29XKreEhSUcYdcHSJV9l4Tg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "テイクアウト販売の告知であり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2118944334787784903",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2118944334787784903",
+    "postedAt": "2026-11-07T05:51:12.000Z",
+    "postText": "本日 ◇11/7土 【夜】 →こちらをご覧のお客様限定です！ ↓ ※お客様ご自身で→丸の🟥赤又は白🤍食券を１枚お取りになって席までお越しください。→食券は券売機の前の台の二段目に置いておきます。 ※必ず着席時にお出しください。 ※サービス中の目印は［黄色いハンカチ］ どうぞご利用下さい♪ https://t.co/d2K18QGEIF https://t.co/aEJqXLcNdG",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-I3CWJDs70l8uws5-RjOnLC3TM-Fa3B4c6Dwv_wWBa-V-DtspDbijDp84OwVWaXQ1rVSwA2pOZMSmOZ8Ca8AOztskQyOpJChIN0roY_3_ODznUyWJF7lBKjjFXJMQj4r9to5JqWYls7C61gbe4YJzqA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-eStzpKzhocCBmVVkezztWEt1yNtILQ5MhTsZ_x8MA78mDMWjPl-RrXeJ6kFLAG2NEAOicK8QJniJNsSVUk7c-5LPQFQ1-E27FhDXOg1ggDYykhzuW0xrulp8n4r0g325OqubUoWiWJsHJdDaNp7IXQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-t1VHy55SaDMimP9ITZ6y_15Er3sWcZ8jpr4C39R5mwEyre_D6R5z6dc--bC4GdZhW63R4AkdDBhb7Ap0ZKqFqC24II58qx7ozlKpyK2n1ayJNSOZ3loogABrYKHyIelLGdcxtl_vABiij-Kz6508oQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-q4llDaPUUmSZaiBSyPHNEjl6pGu0yOOj-Y652OMLmotUxu4RVbE0aSy4vFDN6Q_o5iMTOan-nfNlEFhOi0ywF7RCQfBe31oaBUyBHsPAPOd7xsTBuR4dzIQLDPRszLQ1GGq0l1yhfjZ2HWZHisS26w=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングおよびサービス告知のみであり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261107_0_2118944010043814101",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2118944010043814101",
+    "postedAt": "2026-11-07T05:49:54.000Z",
+    "postText": "土曜日【夜の部】新設致しました！  ◇11/7土 【夜の部】 16:30から〜20:00  夜の部新設🉐得割🈹！ ［さがみっこ生たまご🥚］50円！ ※券売機50円設定！ どうぞご来店ください！  　#スモジ土曜日夜の部やってるよ 　#スモジ宣伝部 https://t.co/UH0Q4FAwiI https://t.co/odPhTFtCzZ",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-UKvu1LpoY-EkmoED9S__wb88bjIgUn44_ioCcf84SC-NJM3eSVnNJEXYlwC3yaZLLVGkQkT2EJ6-f9aEw6f1RRWNOnq5W_8AMgatHGqmxh2WpLdc9BWaY60DVvoRprZIUKT_tSIbJkyPxBC8fKKp8w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-jFbwqrrP3qi-qACv13DJI1KswLajeWFMnDUEvUwf4knXzqs750JVXU4iFJBnOrScqFrObexFtGl2U8UG1uMogtRkcakqFtyj-_-eov3RrPswlcMd-ld3Jv94MH003th7AJurE3UGZZrdjXy86aDYpA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-C8W-2fBY_Vsu9ntxx_9yZcx75WzUQtMF0Bff11UZDKOwmyqccnoTxycidsytMhMAfPr7jMSn4amobRdfB3TGOXZP5f80dv6RifyOR7SVqb0bbZIVm0TAUWQhdBMdTijr8x6nQuqXw-eJ-RD-8agezQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-07",
+      "endDate": "2026-11-07",
+      "hours": [
+        [
+          10,
+          14
+        ],
+        [
+          16.5,
+          20
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_routine_nishidai_2118940653438865523",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2118940653438865523",
+    "postedAt": "2026-11-07T05:36:34.000Z",
+    "postText": "本日の忘れ物です。 https://t.co/UMUa2MYlCq",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-HaOBsTfHXeRAlKqqiL4nKep7Wjhhc3YCBU_ezjhW6LNhzDEtlFzDKJhMBL9tatUMc1mhiNwCBLflgyipPEVxzmPhKwaedR8tec4fc-aI6JFf3-N6IOkq83HFzEodyK6ltwbBZEl2I4FNUoLPhnDjcg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "忘れ物の告知であり、営業情報の変更は含まれていません。"
   }
 ]
