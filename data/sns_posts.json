@@ -33959,5 +33959,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業情報の変更に関する言及はなく、日常的な投稿です。"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2119308993399226484",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2119308993399226484",
+    "postedAt": "2026-11-08T06:00:13.000Z",
+    "postText": "いまいるひとでおわりです！ ごめんなさい！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
