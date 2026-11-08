@@ -33810,5 +33810,42 @@
     "processedAt": "2026-11-08T00:02:50.114Z",
     "aiStatus": "no_change",
     "aiReason": "本日8日(日)の営業時間は通常通り11:00〜15:00です。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2119214273675354340",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2119214273675354340",
+    "postedAt": "2026-11-07T23:43:50.000Z",
+    "postText": "大相撲十一月場所（九州場所）が始まります！  本場所中はスモジを賑やかにしてまいります♪  本日は… →［顔出しパネル］設定中！外に出しときます！ →限定！ ［来店御礼］［大入り］［スモジ］［二郎丼ぶり］  どうぞご利用下さい♪ 　#本場所中はスモジは賑やか 　#いい意味でスモジ劇場　笑 https://t.co/lU4WWwnf1h",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-nV_Wv5WKyrbSVSsRMWgVzAIiuYFWnRMsKJKN5mBJyWud2dy-ZPs8hv37N1DC1V634RdnnvFsMjO0nMUmO9aWYyB3qxVObC7QT6oNbGjIukBPs9Q5nAYQhQNe79jxaIsPRQ_gK_uIUWWvtZOJhFjLeg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-xpBkeGH9jBlwfeFHv6i406ZQO6tGod22ky7HW1Jn4t895QoTy1vllnyT9tWx8Fng11Mu__5FvQbuwJZOu-FLsRC4XrV47DW5jlCzs7rJNq97LJ9c9ET08BPKGP7AuRiJLYyv90PjLWgYhwUOCMkY7w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-o3pkZmiKDCkACjMxK5dCibJdY396ZXfPZXZOZ4iBfoquCYnzApXv33SE6R3eZ53gm4mceq86TRV2fIuKNvHAdy4IZlMBQ47swNV6WllmyAwwvRihRdOQ0wpx3J0QujkmvL97clMH1QVBPX-lDW2XjQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更に関する言及はなく、イベント告知のみの投稿です。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2119211325448667545",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2119211325448667545",
+    "postedAt": "2026-11-07T23:32:07.000Z",
+    "postText": "本日にて ［グッチーズカレー］ 一旦終了致します☑️ どうぞー♪ https://t.co/yngdDaaJdk",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-VjpdtKR_v4Fj-IH3Zdt_FvQXfGPQU6eKuqnggdhJZBbNIfG1qg8FsBvduoC1h7llDQReK0GsIDmhljFL63QZHn0oYmBeHfHnTHZik4tBmtDacX5yFiYMRUOZa2URgexZ5velAPYF6LLKK3bIVXsOcA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-y16IkZRnSGv9qNj7y8KZkiMHct9n2L-6JDDNM-2mCDGEWc7U7DUyubo2gdYog6G3gZrEoK0uBIGIVhOzfqWL5e_GBxAXvW1ku_VwU3VOsidVzaDFu_yUr2cuv-kyW2h5DzhLv1Lfkf4rW0iljSRqGA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定メニュー「グッチーズカレー」の提供終了告知であり、営業時間の変更は含まれていません。"
   }
 ]
