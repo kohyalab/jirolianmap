@@ -33862,5 +33862,25 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業時間の変更に関する言及がない日常投稿のため、変更なしと判定しました。"
+  },
+  {
+    "id": "sns_post_routine_tachikawa_2119238194650820801",
+    "shopId": "tachikawa",
+    "shopName": "立川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jirotachikawa/status/2119238194650820801",
+    "postedAt": "2026-11-08T01:18:53.000Z",
+    "postText": "11/8(日)、昼夜とも時間内売り切れなし営業です。 昼11:00-14:30 夜17:00-21:30  ①「赤」は辛いラーメン。 +汁なし変更券で、辛い汁なしも可！  ②ほぐしブタ+背脂+煮干し 　別皿提供　100円(期間限定価格)！  ③持帰りラーメン販売します。 　標準:2人前のスープと生麺+ブタハーフ https://t.co/KionIkpHTS",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-y6RnKUe_DHqn_A0UQhcbbRQ6eqRSqyehOoiK94QKKdcAuYWInqomnuQ4wj7MeWYyVEPAEzwJT92UOVMbPyUJiwnIti7cH2gwkQjMlQRmeSV8KXlMppleV-562i79ykyGE-JwuckCQp3b9Lj0dMZvzw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-OY208CPiyeQQJ2Yyfe-GZBb5hRKL1Dn3bwG0pe9XlfKLMZReSxrn1o8CEm0xgM746wCe_BBoZGd-QKBRGEmxRAn5PjVwzQz2HWEYqsL4aexsZurst-COVRurQrDv_6dZlSdQvlqvDqs9AdXJN3t7Dw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-rGDcwRSe-5Z7ndMVRDVt4i6I2BvsBBBbfM4mNgupVYKSfmHbZiupZ8T5VS3h6ezDQDFtjGVY9NlZkMbrqzgK97hPeOLFPMZCLa4ff82lARrMx6BKZvhWyoDfTlnHxG9YFC1MXi3XeQvxxB2VUSuhrw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Yyvvp2nej6PavyVwA7UiDKbKipZW1hr0koVTyKreXMbDSdmbCIL8NCXyiiMp4vQKQIZ1I7Ga_T7svujRJ0k1NyI-lX_WgKTLHxMMscDg5upsp3KSLNdko8_ZcbASvKNxKpPsC0qWYa27PYJK7fe48Q=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "11/8(日)は通常通りの営業です。"
   }
 ]
