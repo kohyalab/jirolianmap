@@ -2,6 +2,25 @@
   "generalRules": [],
   "learnedFeedback": [
     {
+      "id": "sns_post_shndaita_20261109_0_2119334421795148084",
+      "timestamp": "2026-11-08T10:40:44.728Z",
+      "shopId": "shndaita",
+      "shopName": "環七新新代田店",
+      "postDate": "2026-11-08T07:41:16.000Z",
+      "postText": "2026年11月8日(日) 解ってる範囲の営業予定です！  月 〇(15:00くらい) 火 〇 水 お休み 木 お休み 金 〇(15:00くらい) 土 〇 日 お休み  11:00〜16:00くらい 味噌(＋200円)もやります！  よろしくお願いします！",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "humanAction": "applied",
+      "finalDetails": {
+        "hours": [
+          [
+            11,
+            15
+          ]
+        ]
+      }
+    },
+    {
       "id": "sns_post_hitachinaka_20261109_0_2119186878448697361",
       "timestamp": "2026-11-08T00:02:16.616Z",
       "shopId": "hitachinaka",
@@ -996,28 +1015,6 @@
           ]
         ],
         "reason": "従業員体調不良のため"
-      }
-    },
-    {
-      "id": "sns_post_asakuragaido_20261017_0_2111290833207267530",
-      "timestamp": "2026-10-17T22:54:21.348Z",
-      "shopId": "asakuragaido",
-      "shopName": "朝倉街道駅前店",
-      "postDate": "2026-10-17T02:58:55.000Z",
-      "postText": "本日12:00-15:00営業いたします。 西鉄ストア様、西日本シティ銀行様、他店舗病院等駐車禁止 空いていても一般的なコインパーキングをご利用下さい。 グループの方は歩道を塞がずお静かにお願いします。 代表待ち、割込み、飲酒喫煙禁止 朝倉街道駅徒歩1分、天拝山駅7分",
-      "aiStatus": "schedule_change",
-      "aiReason": "営業時間の変更を検出",
-      "humanAction": "applied",
-      "finalDetails": {
-        "startDate": "2026-10-17",
-        "endDate": "2026-10-17",
-        "hours": [
-          [
-            12,
-            15
-          ]
-        ],
-        "reason": ""
       }
     }
   ]
