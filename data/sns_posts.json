@@ -34004,5 +34004,200 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "テイクアウト販売の告知のみであり、営業時間の変更は含まれていません。"
+  },
+  {
+    "id": "sns_post_shndaita_20261109_0_2119334421795148084",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2119334421795148084",
+    "postedAt": "2026-11-08T07:41:16.000Z",
+    "postText": "2026年11月8日(日) 解ってる範囲の営業予定です！  月 〇(15:00くらい) 火 〇 水 お休み 木 お休み 金 〇(15:00くらい) 土 〇 日 お休み  11:00〜16:00くらい 味噌(＋200円)もやります！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "regular_schedule_change",
+      "startDate": "2026-11-09",
+      "endDate": "2026-11-09",
+      "hours": [
+        [
+          11,
+          15
+        ]
+      ],
+      "daysOfWeek": [
+        0
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_shndaita_20261110_1_2119334421795148084",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2119334421795148084",
+    "postedAt": "2026-11-08T07:41:16.000Z",
+    "postText": "2026年11月8日(日) 解ってる範囲の営業予定です！  月 〇(15:00くらい) 火 〇 水 お休み 木 お休み 金 〇(15:00くらい) 土 〇 日 お休み  11:00〜16:00くらい 味噌(＋200円)もやります！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "regular_schedule_change",
+      "startDate": "2026-11-10",
+      "endDate": "2026-11-10",
+      "hours": [
+        [
+          11,
+          16
+        ]
+      ],
+      "daysOfWeek": [
+        1
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_shndaita_20261111_2_2119334421795148084",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2119334421795148084",
+    "postedAt": "2026-11-08T07:41:16.000Z",
+    "postText": "2026年11月8日(日) 解ってる範囲の営業予定です！  月 〇(15:00くらい) 火 〇 水 お休み 木 お休み 金 〇(15:00くらい) 土 〇 日 お休み  11:00〜16:00くらい 味噌(＋200円)もやります！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "regular_schedule_change",
+      "startDate": "2026-11-11",
+      "endDate": "2026-11-11",
+      "hours": [],
+      "daysOfWeek": [
+        2
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_shndaita_20261112_3_2119334421795148084",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2119334421795148084",
+    "postedAt": "2026-11-08T07:41:16.000Z",
+    "postText": "2026年11月8日(日) 解ってる範囲の営業予定です！  月 〇(15:00くらい) 火 〇 水 お休み 木 お休み 金 〇(15:00くらい) 土 〇 日 お休み  11:00〜16:00くらい 味噌(＋200円)もやります！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "regular_schedule_change",
+      "startDate": "2026-11-12",
+      "endDate": "2026-11-12",
+      "hours": [],
+      "daysOfWeek": [
+        3
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_shndaita_20261113_4_2119334421795148084",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2119334421795148084",
+    "postedAt": "2026-11-08T07:41:16.000Z",
+    "postText": "2026年11月8日(日) 解ってる範囲の営業予定です！  月 〇(15:00くらい) 火 〇 水 お休み 木 お休み 金 〇(15:00くらい) 土 〇 日 お休み  11:00〜16:00くらい 味噌(＋200円)もやります！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "regular_schedule_change",
+      "startDate": "2026-11-13",
+      "endDate": "2026-11-13",
+      "hours": [
+        [
+          11,
+          15
+        ]
+      ],
+      "daysOfWeek": [
+        4
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_shndaita_20261114_5_2119334421795148084",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2119334421795148084",
+    "postedAt": "2026-11-08T07:41:16.000Z",
+    "postText": "2026年11月8日(日) 解ってる範囲の営業予定です！  月 〇(15:00くらい) 火 〇 水 お休み 木 お休み 金 〇(15:00くらい) 土 〇 日 お休み  11:00〜16:00くらい 味噌(＋200円)もやります！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "regular_schedule_change",
+      "startDate": "2026-11-14",
+      "endDate": "2026-11-14",
+      "hours": [
+        [
+          11,
+          16
+        ]
+      ],
+      "daysOfWeek": [
+        5
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_shndaita_20261115_6_2119334421795148084",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2119334421795148084",
+    "postedAt": "2026-11-08T07:41:16.000Z",
+    "postText": "2026年11月8日(日) 解ってる範囲の営業予定です！  月 〇(15:00くらい) 火 〇 水 お休み 木 お休み 金 〇(15:00くらい) 土 〇 日 お休み  11:00〜16:00くらい 味噌(＋200円)もやります！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "regular_schedule_change",
+      "startDate": "2026-11-15",
+      "endDate": "2026-11-15",
+      "hours": [],
+      "daysOfWeek": [
+        6
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
