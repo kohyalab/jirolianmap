@@ -4668,7 +4668,6 @@
             15
           ]
         ],
-        "reason": "",
         "sourceUrl": "https://x.com/26shinshindaita/status/2115928071589286333",
         "_isAiImported": true
       },
@@ -4681,7 +4680,6 @@
             15
           ]
         ],
-        "reason": "",
         "sourceUrl": "https://x.com/26shinshindaita/status/2116799641073381851",
         "_isAiImported": true
       },
@@ -4694,7 +4692,6 @@
             15
           ]
         ],
-        "reason": "",
         "sourceUrl": "https://x.com/26shinshindaita/status/2116799641073381851",
         "_isAiImported": true
       },
@@ -4702,7 +4699,6 @@
         "startDate": "2026-11-06",
         "endDate": "2026-11-06",
         "hours": [],
-        "reason": "",
         "sourceUrl": "https://x.com/26shinshindaita/status/2116799641073381851",
         "_isAiImported": true
       },
@@ -4710,9 +4706,42 @@
         "startDate": "2026-11-07",
         "endDate": "2026-11-07",
         "hours": [],
-        "reason": "",
         "sourceUrl": "https://x.com/26shinshindaita/status/2116799641073381851",
         "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-09",
+        "endDate": "2026-11-09",
+        "hours": [
+          [
+            11,
+            15
+          ]
+        ],
+        "sourceUrl": "https://x.com/26shinshindaita/status/2119334421795148084?a=oi5pDfrVTNK-7f4uIjU&s=19"
+      },
+      {
+        "startDate": "2026-11-10",
+        "endDate": "2026-11-11",
+        "hours": [],
+        "sourceUrl": "https://x.com/26shinshindaita/status/2119334421795148084?a=oi5pDfrVTNK-7f4uIjU&s=19"
+      },
+      {
+        "startDate": "2026-11-13",
+        "endDate": "2026-11-13",
+        "hours": [
+          [
+            11,
+            15
+          ]
+        ],
+        "sourceUrl": "https://x.com/26shinshindaita/status/2119334421795148084?a=oi5pDfrVTNK-7f4uIjU&s=19"
+      },
+      {
+        "startDate": "2026-11-15",
+        "endDate": "2026-11-15",
+        "hours": [],
+        "sourceUrl": "https://x.com/26shinshindaita/status/2119334421795148084?a=oi5pDfrVTNK-7f4uIjU&s=19"
       }
     ],
     "shiftsByDay": {
