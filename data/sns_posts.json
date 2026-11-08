@@ -33613,8 +33613,8 @@
       "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-w7Fa33wD1YvL_0JOVgrUZ0xY8FVRK-h1opNX2Xpe5Fxfmkn4H1w_zw9lV4FOVHQWl9-q4vztbQZUVxzHTnGinLOccizivEq_lPm1fkA8UphMEqeIQ793lKEuR9yKeGm3soF4hmYURkt_JIMclHefTA=="
     ],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-08T00:02:50.114Z",
     "aiStatus": "no_change",
     "aiReason": "日常投稿のため、営業情報の変更はありません。"
   },
@@ -33630,8 +33630,8 @@
       "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-n7LsTrzQTizOV1Zs6dg9CoeBHrEw417aSvj3OI5IyAKk_Tlz4rvyTHqaHabpktmRuAwIcziWrAGvckRK1kki2cngNLRlnukDxajuMbLoesg6Pubp_o0MJUYooGRIG2wUk35IQl8FgC0fbeOYorOa7g=="
     ],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-08T00:02:50.114Z",
     "aiStatus": "no_change",
     "aiReason": "日常的なメニュー告知であり、営業時間の変更に関する言及はありません。"
   },
@@ -33648,8 +33648,8 @@
       "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-mirEFLakCuS7SNFpU_I8sYzWiyG4zEw1bCwURyKAs4dQgrCrm0BfApvU5vVJ6NbNL_s0KgYuWooTm2jcZvWHOQ9fjDloFA1DiyfhwgEjD_CyItUdVJDMZcoNbUp3nq3EquWfrV8o830rSnhkHYu3rA=="
     ],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-08T00:02:50.114Z",
     "aiStatus": "no_change",
     "aiReason": "限定トッピングの告知であり、営業時間の変更はありません。"
   },
@@ -33684,8 +33684,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-08T00:02:50.114Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   },
@@ -33711,8 +33711,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-08T00:02:50.114Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   },
@@ -33731,8 +33731,8 @@
       "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-TYnWXc5YEaLgMhZ-MyoLeq8flFYfBfp2aWnRDqKbCcIGmQ71DOe7r8eGSO8MvrgftqZEGA4TKG4L44FS7oCyHaMQokYMokZZhJG1tUqJnDIyueygAVW1yaW57xGthsYhGawzfAKy7SYHONqEdLlmjA=="
     ],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-08T00:02:50.114Z",
     "aiStatus": "no_change",
     "aiReason": "限定トッピングの告知であり、営業時間の変更はありません。"
   },
@@ -33746,8 +33746,8 @@
     "postText": "バイト募集します！  時給1300円 くらい(慣れたらすこし増えます) 7時〜17時くらい(応相談) 週2〜4回くらい（25〜45歳くらい） まかないあります 近所のひと希望 日払いです ※インスパの出店をしようとしているひとは不可です   希望の方は 年齢、最寄り駅、飲食業経験を書いてDMしてください！",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-08T00:02:50.114Z",
     "aiStatus": "no_change",
     "aiReason": "営業情報の変更に関する記載はありません。"
   },
@@ -33761,8 +33761,8 @@
     "postText": "激辛もやります！ 多分ちゃんと辛いです！  1倍  100円 2倍 200円 3倍 300円です！  よろしくお願いします！",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-08T00:02:50.114Z",
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   },
@@ -33776,8 +33776,8 @@
     "postText": "味噌ラーメン(+200円)もやります！  麺の量と一緒に みそでって言ってください！ ラーメンのひとはしょうゆでって言ってくれるとわかりやすいです！  麺の量を聞かれた時に じぶんから言ってください！  よろしくお願いします！",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-08T00:02:50.114Z",
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   },
@@ -33791,8 +33791,8 @@
     "postText": "2026年11月8日(日)  通常営業です！ 11:00～16:00くらいです！  よろしくお願いします！  ※住宅地なのでおしゃべりしないで待っててください",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-08T00:02:50.114Z",
     "aiStatus": "no_change",
     "aiReason": "通常営業の告知"
   },
@@ -33806,8 +33806,8 @@
     "postText": "毎度ありがとうございます 本日8日(日)の営業時間は11〜15時となります よろしくお願いします",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-08T00:02:50.114Z",
     "aiStatus": "no_change",
     "aiReason": "本日8日(日)の営業時間は通常通り11:00〜15:00です。"
   }
