@@ -34214,5 +34214,20 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_kameido_2119433464428785882",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2119433464428785882",
+    "postedAt": "2026-11-08T14:14:49.000Z",
+    "postText": "@damedame_ol 今回の子供リンク挙動とかもしっかり子供っぽくてふとした時すげー可愛いんですよ✨デカい盾背負って走り回ってるのも健気で笑 割とサクッとできるゲームなのであきら先生ももしお時間あったらオススメです✨",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業変更なし（通常通り営業・雑談等）"
   }
 ]
