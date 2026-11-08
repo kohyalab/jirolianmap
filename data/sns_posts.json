@@ -34210,8 +34210,8 @@
     "postText": "めちゃ可愛い✨ https://t.co/oCOP6g9OvF",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-08T21:46:33.004Z",
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   },
@@ -34225,8 +34225,8 @@
     "postText": "@damedame_ol 今回の子供リンク挙動とかもしっかり子供っぽくてふとした時すげー可愛いんですよ✨デカい盾背負って走り回ってるのも健気で笑 割とサクッとできるゲームなのであきら先生ももしお時間あったらオススメです✨",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-08T21:46:33.004Z",
     "aiStatus": "no_change",
     "aiReason": "営業変更なし（通常通り営業・雑談等）"
   },
@@ -34240,8 +34240,8 @@
     "postText": "やったぜ！ https://t.co/rudX14G3Sg",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-08T21:46:33.004Z",
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   },
@@ -34264,8 +34264,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-08T21:46:33.004Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
   }
