@@ -33847,5 +33847,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "限定メニュー「グッチーズカレー」の提供終了告知であり、営業時間の変更は含まれていません。"
+  },
+  {
+    "id": "sns_post_routine_kannai_2119227764981305678",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2119227764981305678",
+    "postedAt": "2026-11-08T00:37:27.000Z",
+    "postText": "おはようございます！  本日もマヨありますのでご希望の方は「アレ」でお願いします。 えびっちょ辣油、煮干しの波動もあります。  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更に関する言及がない日常投稿のため、変更なしと判定しました。"
   }
 ]
