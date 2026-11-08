@@ -34357,5 +34357,155 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261110_0_2119565177934999780",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2119565177934999780",
+    "postedAt": "2026-11-08T22:58:12.000Z",
+    "postText": "◆11/9月【定休】 ◇11/10火［昼のみ］ ◇11/11水［昼&夜］ ◇11/12木［昼のみ］ ◇11/13金［夜のみ］  ◇11/14土 昼※10〜14時　 夜※16:30〜20:00 ↑夜の部新設🈺致しました。  ◇11/15日10〜15時  本場所中限定！ →［相撲部屋の湯豆腐のタレ］ やっております！ どうぞお試しください♪ https://t.co/aAVJLC7egR",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-BE58vN-1d32U8MTjHDfDz9S25Pwg5uX3lkkUZqSeWJPERhgkpvOOca96o7n6laqJCR_07fi-DL4ZvFaRKtsdf3wIt_OZkS-dgt5F6pysndjOhejOBbavOQP5Ea-iv1gs1qHuTuPu3Xu6OV_rJJYgUw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-AXrMAG7cO3zBmCjXUTquyzWXnCLTaHxJry_ros9IrkHEmoPI1YwfxS1RqfG75ZUjjZvNmq6-zihE9IVGjP6v-OGneOVg_SzlgQGOAX-os4ZujrLMWsaFGbIIre_3zqhiuonov1TZlHhgOMM2bsXN9w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-zehwK6I1kCapijepL2cVIGjNIeRTnRe-kQKz7klyQOtlubud7vTvzXFvzn5TdfX3EuzFE0L57VJkltwMiHcfA3_vXaCKw042BazA2ccuLqE0p1PiLQNgQqZ7hksA7VIdp6z3IFVaow1HmfqMkOYksA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-8c8_8TeIj6LOf-YK0x0yHhFU17WmgI_PcW039-fiqv7_qo-LcFq0aSh-KhZ48R3vA_J-60z_8eo4xbO6MechSqDYWtrNSH86eGho_odx3MyWhwurs0zKBZmMChsw54f_oXFXRlvmK8uX7pG_DyFx6w=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-10",
+      "endDate": "2026-11-10",
+      "hours": [
+        [
+          10.33,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261112_1_2119565177934999780",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2119565177934999780",
+    "postedAt": "2026-11-08T22:58:12.000Z",
+    "postText": "◆11/9月【定休】 ◇11/10火［昼のみ］ ◇11/11水［昼&夜］ ◇11/12木［昼のみ］ ◇11/13金［夜のみ］  ◇11/14土 昼※10〜14時　 夜※16:30〜20:00 ↑夜の部新設🈺致しました。  ◇11/15日10〜15時  本場所中限定！ →［相撲部屋の湯豆腐のタレ］ やっております！ どうぞお試しください♪ https://t.co/aAVJLC7egR",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-BE58vN-1d32U8MTjHDfDz9S25Pwg5uX3lkkUZqSeWJPERhgkpvOOca96o7n6laqJCR_07fi-DL4ZvFaRKtsdf3wIt_OZkS-dgt5F6pysndjOhejOBbavOQP5Ea-iv1gs1qHuTuPu3Xu6OV_rJJYgUw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-AXrMAG7cO3zBmCjXUTquyzWXnCLTaHxJry_ros9IrkHEmoPI1YwfxS1RqfG75ZUjjZvNmq6-zihE9IVGjP6v-OGneOVg_SzlgQGOAX-os4ZujrLMWsaFGbIIre_3zqhiuonov1TZlHhgOMM2bsXN9w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-zehwK6I1kCapijepL2cVIGjNIeRTnRe-kQKz7klyQOtlubud7vTvzXFvzn5TdfX3EuzFE0L57VJkltwMiHcfA3_vXaCKw042BazA2ccuLqE0p1PiLQNgQqZ7hksA7VIdp6z3IFVaow1HmfqMkOYksA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-8c8_8TeIj6LOf-YK0x0yHhFU17WmgI_PcW039-fiqv7_qo-LcFq0aSh-KhZ48R3vA_J-60z_8eo4xbO6MechSqDYWtrNSH86eGho_odx3MyWhwurs0zKBZmMChsw54f_oXFXRlvmK8uX7pG_DyFx6w=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-12",
+      "endDate": "2026-11-12",
+      "hours": [
+        [
+          10.33,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261113_2_2119565177934999780",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2119565177934999780",
+    "postedAt": "2026-11-08T22:58:12.000Z",
+    "postText": "◆11/9月【定休】 ◇11/10火［昼のみ］ ◇11/11水［昼&夜］ ◇11/12木［昼のみ］ ◇11/13金［夜のみ］  ◇11/14土 昼※10〜14時　 夜※16:30〜20:00 ↑夜の部新設🈺致しました。  ◇11/15日10〜15時  本場所中限定！ →［相撲部屋の湯豆腐のタレ］ やっております！ どうぞお試しください♪ https://t.co/aAVJLC7egR",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-BE58vN-1d32U8MTjHDfDz9S25Pwg5uX3lkkUZqSeWJPERhgkpvOOca96o7n6laqJCR_07fi-DL4ZvFaRKtsdf3wIt_OZkS-dgt5F6pysndjOhejOBbavOQP5Ea-iv1gs1qHuTuPu3Xu6OV_rJJYgUw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-AXrMAG7cO3zBmCjXUTquyzWXnCLTaHxJry_ros9IrkHEmoPI1YwfxS1RqfG75ZUjjZvNmq6-zihE9IVGjP6v-OGneOVg_SzlgQGOAX-os4ZujrLMWsaFGbIIre_3zqhiuonov1TZlHhgOMM2bsXN9w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-zehwK6I1kCapijepL2cVIGjNIeRTnRe-kQKz7klyQOtlubud7vTvzXFvzn5TdfX3EuzFE0L57VJkltwMiHcfA3_vXaCKw042BazA2ccuLqE0p1PiLQNgQqZ7hksA7VIdp6z3IFVaow1HmfqMkOYksA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-8c8_8TeIj6LOf-YK0x0yHhFU17WmgI_PcW039-fiqv7_qo-LcFq0aSh-KhZ48R3vA_J-60z_8eo4xbO6MechSqDYWtrNSH86eGho_odx3MyWhwurs0zKBZmMChsw54f_oXFXRlvmK8uX7pG_DyFx6w=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-13",
+      "endDate": "2026-11-13",
+      "hours": [
+        [
+          17,
+          20.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261114_3_2119565177934999780",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2119565177934999780",
+    "postedAt": "2026-11-08T22:58:12.000Z",
+    "postText": "◆11/9月【定休】 ◇11/10火［昼のみ］ ◇11/11水［昼&夜］ ◇11/12木［昼のみ］ ◇11/13金［夜のみ］  ◇11/14土 昼※10〜14時　 夜※16:30〜20:00 ↑夜の部新設🈺致しました。  ◇11/15日10〜15時  本場所中限定！ →［相撲部屋の湯豆腐のタレ］ やっております！ どうぞお試しください♪ https://t.co/aAVJLC7egR",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-BE58vN-1d32U8MTjHDfDz9S25Pwg5uX3lkkUZqSeWJPERhgkpvOOca96o7n6laqJCR_07fi-DL4ZvFaRKtsdf3wIt_OZkS-dgt5F6pysndjOhejOBbavOQP5Ea-iv1gs1qHuTuPu3Xu6OV_rJJYgUw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-AXrMAG7cO3zBmCjXUTquyzWXnCLTaHxJry_ros9IrkHEmoPI1YwfxS1RqfG75ZUjjZvNmq6-zihE9IVGjP6v-OGneOVg_SzlgQGOAX-os4ZujrLMWsaFGbIIre_3zqhiuonov1TZlHhgOMM2bsXN9w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-zehwK6I1kCapijepL2cVIGjNIeRTnRe-kQKz7klyQOtlubud7vTvzXFvzn5TdfX3EuzFE0L57VJkltwMiHcfA3_vXaCKw042BazA2ccuLqE0p1PiLQNgQqZ7hksA7VIdp6z3IFVaow1HmfqMkOYksA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-8c8_8TeIj6LOf-YK0x0yHhFU17WmgI_PcW039-fiqv7_qo-LcFq0aSh-KhZ48R3vA_J-60z_8eo4xbO6MechSqDYWtrNSH86eGho_odx3MyWhwurs0zKBZmMChsw54f_oXFXRlvmK8uX7pG_DyFx6w=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-14",
+      "endDate": "2026-11-14",
+      "hours": [
+        [
+          10,
+          14
+        ],
+        [
+          16.5,
+          20
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_routine_fujisawa_2119565432252445128",
+    "shopId": "fujisawa",
+    "shopName": "湘南藤沢店",
+    "postSource": "x",
+    "postUrl": "https://x.com/fujirow26/status/2119565432252445128",
+    "postedAt": "2026-11-08T22:59:13.000Z",
+    "postText": "おはようございます。  11月9日(月)  豚チゲ🐷 無料トッピング！ 野山商店特製タレ、崩し豚、豚カス醤油、 1番スープ、沢山にんにく🧄その他色々 粉チーズよくあいます。  房総田舎味噌青葱生姜🫚  本日もよろしくお願いいたします。 https://t.co/4tM1HE7B6z",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-byrAIcZ7cPtH5cFEw0SGieV180cZ_le57SqjbrmC7h3Ghul-3GNV-P9qckI8Tbl1wYalku501tuy-_o5AnIm_4FHFIoT2gDXmwadZjxaH4MoqlYuX8bTagB6NQuC8UJ8zioueA_OXd78m0Ra8qhIFg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-nUn747ws7c8V-e93RNq7AcRDBUUJrG4k-LS0-OdEaqCiWekO0D-NgWzt9-d7H9koS24gEQX8Ye_GrZQwnsPGXNflucvbHmHeY5HWFJBkh176lZO-kgKEqSRJNXiZmZXxmtGLHVrs2j-dw9gllL3gcA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常の営業告知および限定トッピングの案内であり、営業時間の変更はありません。"
   }
 ]
