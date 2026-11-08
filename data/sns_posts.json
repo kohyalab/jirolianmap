@@ -34507,5 +34507,25 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "日常の営業告知および限定トッピングの案内であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2119568993258488260",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2119568993258488260",
+    "postedAt": "2026-11-08T23:13:22.000Z",
+    "postText": "《ご案内》 ①［すき焼きタレ生たまご］冬の定番に変更！ ②［あったかい賄い汁あり！］こちらに変更！ ぐっちゃぐっちゃに混ぜて…混ぜなくても…。 ③新しいオプション笑 ［インタビューボード風］限定的に外で！店内でも他のお客様に迷惑にならない様にご利用いただけます。店員にご確認ください。 https://t.co/bqX7v17xep",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-0R2SMvDGWjtkXSkeo3mGPLSaj6J0y54klEzW-qtiOaui7Q7nPPGq3w7cH6QVEVyMdrSqvveUWO8RuyOX-vfLZw3vAJAjw8oO4PYf9IY9_0UoydhzI9am0RfIINvRPoVCwNtGHI5Kl7JwoYo9NwmP2A==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-NY9Y9FQJbie9PDhZizkw5hGnesiswXSCpdsxA34qsDFqS1zis-upAiZm2nK4raQkNGb0HQ4olwgCI8WDBbxs7FyuGVs4KMfZdpxXO_Hxfg8sh0Q48waMa2nUFtWSGeu0ELgbwmTdz-uS2EpR2kZ8lA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-FU8QqiLmR-oJWAcsdvifQNOaa6jRvaPKteX-_-zdE5qvveF0pqWcKdtEneU_2bZdo_Qfb1eLZykZoX6Pz6xW-Ul6vlTgT8rdwn1aKzAuEE-h0DBgJCBysUxF2_fxigiVNrYA4ElgAG1QXZGnI4-qHQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-lasVmM-PDvEcv4o0RGWx1ziX4Lzy9fnW4_TwvrpspK72Msz6rxJ2V2PyynHbWwQluEh2cOWfo4olMqIAUWQDnl-U_Ybx2c5Gww6M1Q4vP1WaC7iKD_B14BRUy0UgaFQdYHEqYH7d-IPr06XTpfFN1g=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更に関する言及はなく、限定メニューの告知のみです。"
   }
 ]
