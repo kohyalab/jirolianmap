@@ -33882,5 +33882,82 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "11/8(日)は通常通りの営業です。"
+  },
+  {
+    "id": "sns_post_daily_sagamiohno_2119246311832916450",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2119246311832916450",
+    "postedAt": "2026-11-08T01:51:09.000Z",
+    "postText": "混雑無くなりました！ どうぞー！🈳🈳",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_kawagoe_20261108_0_2119243836715381231",
+    "shopId": "kawagoe",
+    "shopName": "川越店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kwge26/status/2119243836715381231",
+    "postedAt": "2026-11-08T01:41:18.000Z",
+    "postText": "おはようございます！ 本日昼のみ営業です☀️ ○11:00~14:00  🍜持ち帰りあります！  ウーバーイーツ始めました🏍️  無料トッピング｢紅生姜｣あります☺️ トッピング時に「アレ」で！  よろしくお願いします🙇‍♂️",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-08",
+      "endDate": "2026-11-08",
+      "hours": [
+        [
+          11,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_routine_kyoto_2119248304680882658",
+    "shopId": "kyoto",
+    "shopName": "京都店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kyoto/status/2119248304680882658",
+    "postedAt": "2026-11-08T01:59:04.000Z",
+    "postText": "おはようございます！本日日曜通常営業です！ 夜の部で久しぶりにテイクアウト販売します！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知であり、変更なし"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2119247175624564801",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2119247175624564801",
+    "postedAt": "2026-11-08T01:54:35.000Z",
+    "postText": "おはようございます！！ 床に飲むブレスケアの粒がたまに落ちてることがあります笑 ニンニク入れたいですよね！！ 私も飲むブレスケア、噛むブレスケア、歯磨きでなんとか匂いは抑えれると信じてます！ リンゴジュースもいいらしいです！！ 寒いですが御来店お待ちしております！ https://t.co/khtAPQBLiL",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-zRpAF1bdO9Zv9AW1gDbbtWs7oQO8WGc0hIOl_T9SNxtjaXJJb7bsPnSEpEku45-gfZWcK2Uun37Dm6_4pkyVpCFNZ5MVvA2QekC6zrvPh1G7fc7M95tGUxFRCfM2NPc0xEjLcdbgwJPj_7Mu5Kxv2g==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-oWUYSYkzHtCPt841_r9HqYhydZ_LBUnzqwuTkFn0goWpZeTXGc-5he9BPZLKEbrMOgJnyy0s0kvFTWCXNbtPkaKf6O41HR6yPBaeCgvTc3oVeUnoYIVT1tayhLQACimT1PhmZMGhB8K4qEC-x-__qA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-PLFRPtlJGAo89f8A2mUgfRyJ0Wd1dFUKY5HDb-TBdAXipPcoDMLc_TtO7ubWQwX-JeNI-45q8bLqLuyKRFdDnT2ymC4w8ACfJsRuvzdeQDpheDFgOzhwkL7b66r4-RdgE_TWnrkgtUBhcsD7aS1Y-A==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-zGmgZUC7y5DNp8ijaC-WR9MgrTPA9zdND7ZyVl6EEvkqTESXiv17dTewMs3Zdk_Q-SJdOIJceVD4id66s2by14pxw7AEb2jOmpcEcfqzlA9hALOj4R4_rsGvnE6yT5xJtgBI8efR702_Zwg6tQowyQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報の変更に関する言及はなく、日常的な投稿です。"
   }
 ]
