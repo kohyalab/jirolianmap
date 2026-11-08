@@ -33989,5 +33989,20 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_kyoto_2119328893916401767",
+    "shopId": "kyoto",
+    "shopName": "京都店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kyoto/status/2119328893916401767",
+    "postedAt": "2026-11-08T07:19:18.000Z",
+    "postText": "夜の部でテイクアウト販売します！ 今回は麺量は並盛り相当です。 1150円です！ テイクアウトの方は出口からお声掛けください！ 小銭ちょうど持ってきてもらえると大変助かります！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "テイクアウト販売の告知のみであり、営業時間の変更は含まれていません。"
   }
 ]
