@@ -34772,5 +34772,53 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_sengawa_2119669663139504614",
+    "shopId": "sengawa",
+    "shopName": "仙川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjiro26/status/2119669663139504614",
+    "postedAt": "2026-11-09T05:53:23.000Z",
+    "postText": "本日17時から店内営業とテイクアウト販売します営業時間17:00〜21:00 https://t.co/PwPptfHzPK",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-0wXrU5dZv5OGV1vANdpp1c1SpNZJPwZOciwh8OJDHDgWAM9x6J7lah3GjIr96VaLJNDvjEajCjj6lqSXwUyG-Ha9CvEahcGAFWBaZEQVDSHdfFa0gYcolyChsM9gIKdbpHMg9E4wJi7hK7MjdBUuYw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-N50gvPVCaOwuMtWwx7viJM2_J3Rl6Wm_sKIYbhiUT88VJhbMOoXPjnJu7e71LQvxY36UlXaZBlIvxw_23dupoaXjlqFbGpT4Jil_s7hs4EtNTtq9Sg8k-wwFugjKcpcV191dMMYOAUHctyiWSiDuBA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知および両替に関する案内であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_nishidai_2119669534567415901",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2119669534567415901",
+    "postedAt": "2026-11-09T05:52:53.000Z",
+    "postText": "本日、9日、夜の部  煮込みFZ味付き肩ロース ¥2700×1、¥1800×1 煮込みFZ味付き切り落とし ¥600×2  あります。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更に関する言及はなく、限定メニューの販売告知のみであるため変更なし。"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2119668072407843134",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2119668072407843134",
+    "postedAt": "2026-11-09T05:47:04.000Z",
+    "postText": "いまいるひとでおわりです！ ごめんなさい！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
