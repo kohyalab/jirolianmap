@@ -34741,5 +34741,36 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "日常的な営業告知のため、スケジュールの変更はありません。"
+  },
+  {
+    "id": "sns_post_nagoyaosone_20261109_0_2119653180456022222",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2119653180456022222",
+    "postedAt": "2026-11-09T04:47:54.000Z",
+    "postText": "ラーメン二郎名古屋大曽根店です。 只今の時間、並びを持ちまして本日昼の部は終了とさせていただきます。 夜の部もよろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-09",
+      "endDate": "2026-11-09",
+      "hours": [
+        [
+          11,
+          13.78
+        ],
+        [
+          17,
+          20
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
