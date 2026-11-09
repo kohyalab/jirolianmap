@@ -34657,5 +34657,57 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "本日通常営業の告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_kameido_2119606103474618566",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2119606103474618566",
+    "postedAt": "2026-11-09T01:40:50.000Z",
+    "postText": "お世話になってます。ブタ入りの食券の数がだいぶ減ってしまったので大盛りの食感と交換しました！今までと食感の色が変わりましたのでご注意ください🙇‍♂️よろしくお願いします。 https://t.co/KXYSU0OoYB",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-hNQeCvwiKIOgs4opkdtehHIiJmYKMhx1Bz1qCHNPmJl_MBbr5WD13BC6rF1Ylg3ASij7SMcV_9xZuzNu5fAdSSXktYY9N36-SBtQ6AJChxhU20XlH8qLt_4EIojWRCidXyDg6scGn4t1hcoXwtX7ZQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "食券の変更に関する告知であり、営業時間の変更は含まれていません。"
+  },
+  {
+    "id": "sns_post_routine_kannai_2119609964079759385",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2119609964079759385",
+    "postedAt": "2026-11-09T01:56:10.000Z",
+    "postText": "おはようございます！  本日もマヨありますのでご希望の方は「アレ」でお願いします。 えびっちょ辣油、煮干しの波動もあります。  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更に関する言及がないため、変更なしと判定しました。"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2119611650257162313",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2119611650257162313",
+    "postedAt": "2026-11-09T02:02:52.000Z",
+    "postText": "おはようございます！ ２日連続飲むブレスケアが落ちてました笑 やはりニンニク入れたいですもんね笑  天気はイマイチですが、あたたかいラーメン食べにお越しくださいませ！！ ニンニク摂取で風邪予防！！！ 御来店お待ちしております！ https://t.co/NDc66DxkxS",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-TjLb37y8rOT-oAZBZXY9meuEBAXBLy53v63P0EZOhjvm6gsA7VN-s4vPwWjlkPEJmP6vR2SIS3x83ScEF9E4eq1CLUO4FcDTPnKzMRcWD9tzto8MoB5fqRA5SI00bFVFQZmp3Ynn-6_bI0efOxlXYw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-pdrsqPMl4--4PlOju8i1Cmqcs9fsVgJL3o3OMbzG8S9bFO7KcbaNlbqpoz0OeuFazGRllbZxHlHdRRNi4E6gi0UrA8HBXZrukgNqpfVojVTZh5h3o6ajMcLt-QbGJ3lz-SU7PqcpFFtBHwRtuPN-KQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-emiRZeatXH4FkVoJ9fak3Uuj0TCdyKehvvJv5p9iGkPvq2SI6i1vyx6Y3qJFTpmZYKgfj0O3ckb3bxprVn94wQW9L7nT72AaaqnnoczUhBXEoN2YSOpO-60CuPscZ9hCXk8oB5wWi_94KFEB62q7wA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-lYgLF8GxHUD5F9xZOCZFLmIOgSS-jICaI71_5A2On1Qd7CLKQmGKvojo_BaPLqvAeVh9KWRpGLh7f32P8D8KjHWJ_nJJ5leTqhGlCpkiGCEkhwJmlSB-GRyFaGmj-sNUGbGDHgmm0vvWPcaVAfT99Q=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更や臨時休業に関する言及はありません。"
   }
 ]
