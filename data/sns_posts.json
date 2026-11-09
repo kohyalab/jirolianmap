@@ -34709,5 +34709,22 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業時間の変更や臨時休業に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_shndaita_2119618409730396428",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2119618409730396428",
+    "postedAt": "2026-11-09T02:29:44.000Z",
+    "postText": "ガラガラです！ https://t.co/ouegu2Oyxy",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-xv2Jya6HVXCpNjb8GFtLZepD-m066RjyjQZWOHoTgMLgoih7RWZ6NrsqAq_gbnVeUc1XfpjqkBIPuhtjj4-kbVYyko6nGs_1o48OJky0GN6JAjkLGJV-mXgLmpoHDpTBGzPkfrB4O6-vSaPqqzbF9w=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報の変更に関する言及がない日常投稿のため、変更なしと判定しました。"
   }
 ]
