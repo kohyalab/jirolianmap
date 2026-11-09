@@ -35026,5 +35026,35 @@
     "processedAt": "2026-11-09T12:17:27.472Z",
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2119767119625883817",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2119767119625883817",
+    "postedAt": "2026-11-09T12:20:39.000Z",
+    "postText": "@konatu084 良くも悪くも注目していただいて有り難いです！！ あと15年で引退を目標に頑張ります！ 折り返し地点です！！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2119766792789008856",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2119766792789008856",
+    "postedAt": "2026-11-09T12:19:21.000Z",
+    "postText": "@planandpractice お褒めいただきありがとうございます！  でも実は、テンパってラーメン作ってるだけです。(半分冗談、半分本当です笑) 本当は三田本店みたいにお客さんと話しながら楽しく仕事したいです笑  またお越しくださいませ！！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
   }
 ]
