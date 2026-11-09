@@ -34726,5 +34726,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業情報の変更に関する言及がない日常投稿のため、変更なしと判定しました。"
+  },
+  {
+    "id": "sns_post_routine_shndaita_2119629578532704664",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2119629578532704664",
+    "postedAt": "2026-11-09T03:14:06.000Z",
+    "postText": "営業してます！ 歩いてこれるひとどうぞ！ https://t.co/F9nqbqGtKx",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常的な営業告知のため、スケジュールの変更はありません。"
   }
 ]
