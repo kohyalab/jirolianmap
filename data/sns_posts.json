@@ -34820,5 +34820,22 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_mejirodai_2119681075656139261",
+    "shopId": "mejirodai",
+    "shopName": "めじろ台店",
+    "postSource": "x",
+    "postUrl": "https://x.com/mejirodai_jiro/status/2119681075656139261",
+    "postedAt": "2026-11-09T06:38:44.000Z",
+    "postText": "毎度ありがとうございます 今週から急に寒くなったので辛いの、ブラック共にラーメンに変更します つけ麺は暫くお休みします よろしくお願いします🙇 https://t.co/xjcBLjaguq",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2intbB12Xb4mIVAs7k3OxbSpvfpadFAHow5BQ6Ay4RLh1nrrgmRSZfQB3AtLrmK07WUHTbKzlUIwj8ZiQit0KQSGQTFMqAk7ct0HtUFQbS5WrmC3oAnYxCi826z14nM495hqmYLZfjzBBwl_jmyDbA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "メニュー変更の告知であり、営業時間の変更はありません。"
   }
 ]
