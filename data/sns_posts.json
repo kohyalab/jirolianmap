@@ -34615,5 +34615,47 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の案内"
+  },
+  {
+    "id": "sns_post_hitachinaka_20261109_0_2119602336188539082",
+    "shopId": "hitachinaka",
+    "shopName": "ひたちなか店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26_hitachinaka/status/2119602336188539082",
+    "postedAt": "2026-11-09T01:25:51.000Z",
+    "postText": "【9日 営業の件】  本日、昼の部は告知通り 11：00〜13：30 の営業となります。  夜の部は大変申し訳ございませんが、 お休みさせていただきます。  申し訳ございません。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-09",
+      "endDate": "2026-11-09",
+      "hours": [
+        [
+          11,
+          13.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_asakuragaido_2119603076453818665",
+    "shopId": "asakuragaido",
+    "shopName": "朝倉街道駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/r26akgd/status/2119603076453818665",
+    "postedAt": "2026-11-09T01:28:48.000Z",
+    "postText": "本日通常営業！ ネギあります！ よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "本日通常営業の告知であり、営業時間の変更はありません。"
   }
 ]
