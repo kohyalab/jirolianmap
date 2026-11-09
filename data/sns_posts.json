@@ -35056,5 +35056,22 @@
     "processedAt": null,
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_routine_kameido_2119788653367132378",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2119788653367132378",
+    "postedAt": "2026-11-09T13:46:13.000Z",
+    "postText": "最近ついにアガベに手を出してしまった…この色味と形が可愛すぎて… https://t.co/H6mYAZTrhH",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-hucu9iRiNcroRaWyK3mLt2ysfn3DOcI8pUhKIPB6GAresm1fxFNL3-x6i_iDHA8pZfuN2gMaEO936Ya9sbpf83HRNCkflwVpOau7Nh6tYWlUVTW-K45X5ONul29qk9OmP7lQXbNbE16i7SEch4fS6w=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報に関する言及なし"
   }
 ]
