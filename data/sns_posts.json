@@ -35209,5 +35209,44 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の告知のため変更なし"
+  },
+  {
+    "id": "sns_post_koiwa_20261110_0_2119925050900135954",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2119925050900135954",
+    "postedAt": "2026-11-09T22:48:13.000Z",
+    "postText": "おはようございます。  本日は店主の体調不良のため、臨時休業致します。  今日は1日静養して、明日からは営業する予定です。  申し訳ございませんが、よろしくお願いいたします🙏",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-10",
+      "endDate": "2026-11-10",
+      "hours": [],
+      "reason": "店主の体調不良のため",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 店主の体調不良のため"
+  },
+  {
+    "id": "sns_post_routine_senjuohashi_2119922328725602545",
+    "shopId": "senjuohashi",
+    "shopName": "千住大橋駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjujirou26/status/2119922328725602545",
+    "postedAt": "2026-11-09T22:37:24.000Z",
+    "postText": "ラー油あります！  ※営業時間10時30分〜 15時30分ラストオーダー！ https://t.co/45wLfFnDUg",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-R5tNx60lBppgxfFneTcwrUT_E8tYc6WJ8Ki6SX7HevQKDl7KHmVPQK0Rf7GAPScB9VHc7IjZTwE5tkMlNxn2cmSOGAAoTY5d6YQTjsIF77hL7ZgGbn9rqSMUG5S68FPEtb0vzRQoyotx4k-C5C5ANw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "投稿内容は通常営業時間と同一であり、営業時間の変更はありません。"
   }
 ]
