@@ -35073,5 +35073,22 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業情報に関する言及なし"
+  },
+  {
+    "id": "sns_post_routine_aizuwakamatsu_2119794319188246729",
+    "shopId": "aizuwakamatsu",
+    "shopName": "会津若松駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/aizu_jiro/status/2119794319188246729",
+    "postedAt": "2026-11-09T14:08:44.000Z",
+    "postText": "毎度ありがとうございます。越谷店店主よりご教授頂き、11月15日(日)11:00〜15:00数量限定塩ラーメンやります！つけ麺もできます！どうぞよろしくお願いいたしますm(__)m https://t.co/oPlhZIc0As",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-iahi8hFbf-4d1Ke4_kxEwa85lkO48_InhXK2fxEXQTlYjAV1cWuqdy7x9OH8JkG5PPqO2kEREfApq7hAIO43XGp1clIObrvU5xuhJN3w7MkjM-8zQNjeKjSLuJA4lBVAXJ-s6LVJNoc371k2n7_QzA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "11月15日(日)の限定メニュー告知であり、営業時間の変更ではないため変更なし。"
   }
 ]
