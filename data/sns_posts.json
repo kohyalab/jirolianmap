@@ -35248,5 +35248,49 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "投稿内容は通常営業時間と同一であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_yaen2_2119935748535378310",
+    "shopId": "yaen2",
+    "shopName": "八王子野猿街道店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/Jiro_Yaenkaido2/status/2119935748535378310",
+    "postedAt": "2026-11-09T23:30:43.000Z",
+    "postText": "11月10日(火) 11:00～15:00 17:30～21:00 ⭐テイクアウト、鍋二郎あります 並ばず買えます ⚠️駐車場待ち出来ません ⚠️駐車場満車時コインパーキングに ⚠️店舗近隣タバコ禁止です  きまぐれたまご コチュジャン",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知であり、変更はありません。"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261110_0_2119931987863765162",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2119931987863765162",
+    "postedAt": "2026-11-09T23:15:46.000Z",
+    "postText": "本日もやります！  ◇11/10水 【昼の部のみ営業】 【テイクアウト割り🈹】  →こちらをご覧のお客様限定→ご申告制🈸［テイクアウト割🈹］やっております！食券にて。  着席時に『テイクアウト割りお願いします。』と従業員にお申し付けください。各サービス🈂️致します！ ※店内お食事の方のみです。 https://t.co/27JLSYqCnR https://t.co/mQQqzSjjeS",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-VUOeo00PJOiu6ecy33Lx1xplNngZX7w5S0ZPrtnI4BY2L-EuC-K5AATU8PP7mQEeYbUNaTgmZzxcIsx_3GTgmf22mI4x7o3khS93-OuvHCmS0eZkJyE_FPOlkJHdSPRl68eI6mm4LjOiu9rHtATHHw=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-10",
+      "endDate": "2026-11-10",
+      "hours": [
+        [
+          10.333333333333334,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   }
 ]
