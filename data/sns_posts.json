@@ -34996,5 +34996,35 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2119742229409624389",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2119742229409624389",
+    "postedAt": "2026-11-09T10:41:45.000Z",
+    "postText": "@nankoufuraku719 ありがとうございます笑",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2119741798348366156",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2119741798348366156",
+    "postedAt": "2026-11-09T10:40:02.000Z",
+    "postText": "@s4_subaru あ、いえこちらこそ、お子さんがたくさん来て嬉しいです！！ フォーク足らなかったのは、こちらの準備不足。 追加します！！ またお越しくださいませ！！ 入りづらいかもしれませんが、お子様ウェルカムですので！！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
   }
 ]
