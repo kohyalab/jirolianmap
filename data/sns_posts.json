@@ -35090,5 +35090,40 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "11月15日(日)の限定メニュー告知であり、営業時間の変更ではないため変更なし。"
+  },
+  {
+    "id": "sns_post_routine_hitachinaka_2119864879561703658",
+    "shopId": "hitachinaka",
+    "shopName": "ひたちなか店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26_hitachinaka/status/2119864879561703658",
+    "postedAt": "2026-11-09T18:49:07.000Z",
+    "postText": "昨日は大変 失礼いたしました。  本日より通常通り営業いたしましす。 https://t.co/fr6O5xG16P https://t.co/d5GeplBF1N",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne--3eS9NDCdkojoyXiopLBMP4PZvbRPF9mAnjuLpLspskkPBTp9zax9YuJofWBbqlEUYLV8jlNOe9ntxz1ACSaV-z2uaAmS_2ntLwnumrIvOn29pv5PVi5OFLjiIMuhv1wddyomDdJP3sAxHdp_fRdVA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "投稿内容は通常営業の再開告知であり、カレンダー画像も通常営業予定を示しているため、臨時スケジュール変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_hitachinaka_2119864258423095377",
+    "shopId": "hitachinaka",
+    "shopName": "ひたちなか店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26_hitachinaka/status/2119864258423095377",
+    "postedAt": "2026-11-09T18:46:39.000Z",
+    "postText": "【募金箱 集計の件】  表題の件ですが、 集計して振り込みさせていただきました。  引き続きご協力よろしくお願いします。 https://t.co/IianCRboqj",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-K4GgaF18wz3murc7Pd_U2gMp5PLVEglU6CghwUXmhXvcEHHXsB1U-rQtA5qcj17F2PNBh-JVpovbYvjRERtejR-e10smpeb5IAyRS1PeAkJw34igworz3o6EsmN563kDRX6iPHq4q6yNFrSp0QNbpA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-R2gBt89TjfPWaoiBvd15p-ulAHePXku9AK6FXXMlVuxSkwnJ0O_GIyfoDKoNAkWl0VovINrbAiFyOZiXs9Pp9obDO1AvpDB03plgz-bMUQ18adUb9iBM2PtHKJdIaFU3c5BBCPCysJoHrecSQXs_aA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "募金箱の集計報告に関する投稿であり、営業時間の変更に関する言及はありません。"
   }
 ]
