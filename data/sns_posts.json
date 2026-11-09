@@ -34547,5 +34547,73 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "限定メニューの告知のみであり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_tachikawa_20261109_0_2119583418640159106",
+    "shopId": "tachikawa",
+    "shopName": "立川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jirotachikawa/status/2119583418640159106",
+    "postedAt": "2026-11-09T00:10:41.000Z",
+    "postText": "本日はお休みを頂いております。 明日は定休、11/11(水)以降のご利用をお願い致します。 https://t.co/yfIkg4hmjc https://t.co/Cp8dj1r63J",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-yoXDdtC7CXGF9KWQPekCpW6Ugz7Q1MSQOHPSqoLpbzEQwBZo2ZqGAIy9tBHByJw8BHk7vRXRH3qs9OhKBdDIh6B7UkSvRYLZAv7XN0c4kdFHIfwOUpoGY4p5Cy-_HOFnA4MTTfEh8W31uKkrGAFxww==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Z7c1Q2p6rzsgjNzkbbWWAegv8iwz6jmU05qaU715uUMCms_K894gQzY34kBNAso7TeInpIjU0yeDWd_Qqw30XfdYP08FkUqjDYtwRJB3Xg4vV61HZpNSrIp0-UX-wQbcHVzO_3N8FjaSsxwFvo6IrQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-msT9mwol7P_aP42mEMY7lCT9XmAg9A5on990lX8xI22NAvyZS2Lpy9F46gtwxVJdRSXsiWoMU-HwpI583CsWJepvumBBH8qQuSTKeGajchb4mJHXtlIzXzPW7fwoKFzSjOyLEQacV4oKzJiCR01RYA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-09",
+      "endDate": "2026-11-09",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_sapporo_20261109_0_2119586963636584887",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2119586963636584887",
+    "postedAt": "2026-11-09T00:24:46.000Z",
+    "postText": "9日(月)昼営業のみ、夜お休みです🍜 「つけ麺」[釜揚げ風]対応します。  現金＋100円になります。  必ず、スタッフ確認時に申告して下さい。 「釜揚げ」  本日のサブスープもかなり濃厚です。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-09",
+      "endDate": "2026-11-09",
+      "hours": [
+        [
+          11,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_nagoyaosone_2119589043008868387",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2119589043008868387",
+    "postedAt": "2026-11-09T00:33:02.000Z",
+    "postText": "おはようございます。 ラーメン二郎名古屋大曽根店です。  本日昼夜営業です。 昼の部11:00〜14:00 夜の部17:00〜20:00 よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内"
   }
 ]
