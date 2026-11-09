@@ -34359,38 +34359,6 @@
     "aiReason": "営業時間の変更を検出"
   },
   {
-    "id": "sns_post_sagamiohno_20261110_0_2119565177934999780",
-    "shopId": "sagamiohno",
-    "shopName": "相模大野店",
-    "postSource": "x",
-    "postUrl": "https://x.com/sumo_jiro/status/2119565177934999780",
-    "postedAt": "2026-11-08T22:58:12.000Z",
-    "postText": "◆11/9月【定休】 ◇11/10火［昼のみ］ ◇11/11水［昼&夜］ ◇11/12木［昼のみ］ ◇11/13金［夜のみ］  ◇11/14土 昼※10〜14時　 夜※16:30〜20:00 ↑夜の部新設🈺致しました。  ◇11/15日10〜15時  本場所中限定！ →［相撲部屋の湯豆腐のタレ］ やっております！ どうぞお試しください♪ https://t.co/aAVJLC7egR",
-    "mediaUrls": [
-      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-BE58vN-1d32U8MTjHDfDz9S25Pwg5uX3lkkUZqSeWJPERhgkpvOOca96o7n6laqJCR_07fi-DL4ZvFaRKtsdf3wIt_OZkS-dgt5F6pysndjOhejOBbavOQP5Ea-iv1gs1qHuTuPu3Xu6OV_rJJYgUw==",
-      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-AXrMAG7cO3zBmCjXUTquyzWXnCLTaHxJry_ros9IrkHEmoPI1YwfxS1RqfG75ZUjjZvNmq6-zihE9IVGjP6v-OGneOVg_SzlgQGOAX-os4ZujrLMWsaFGbIIre_3zqhiuonov1TZlHhgOMM2bsXN9w==",
-      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-zehwK6I1kCapijepL2cVIGjNIeRTnRe-kQKz7klyQOtlubud7vTvzXFvzn5TdfX3EuzFE0L57VJkltwMiHcfA3_vXaCKw042BazA2ccuLqE0p1PiLQNgQqZ7hksA7VIdp6z3IFVaow1HmfqMkOYksA==",
-      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-8c8_8TeIj6LOf-YK0x0yHhFU17WmgI_PcW039-fiqv7_qo-LcFq0aSh-KhZ48R3vA_J-60z_8eo4xbO6MechSqDYWtrNSH86eGho_odx3MyWhwurs0zKBZmMChsw54f_oXFXRlvmK8uX7pG_DyFx6w=="
-    ],
-    "detectedChange": {
-      "type": "temporary_hours",
-      "startDate": "2026-11-10",
-      "endDate": "2026-11-10",
-      "hours": [
-        [
-          10.33,
-          14
-        ]
-      ],
-      "reason": "",
-      "confidence": 1
-    },
-    "processed": false,
-    "processedAt": null,
-    "aiStatus": "schedule_change",
-    "aiReason": "営業時間の変更を検出"
-  },
-  {
     "id": "sns_post_sagamiohno_20261112_1_2119565177934999780",
     "shopId": "sagamiohno",
     "shopName": "相模大野店",
@@ -34901,5 +34869,72 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "限定メニューの売り切れ告知であり、営業時間の変更は含まれていません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2119723288142524739",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2119723288142524739",
+    "postedAt": "2026-11-09T09:26:29.000Z",
+    "postText": "明日 ◇11/10火 【昼】 →こちらをご覧のお客様限定です！ ↓ ※お客様ご自身で→丸の🟥赤又は白🤍食券を１枚お取りになって席までお越しください。→食券は券売機の前の台の二段目に置いておきます。 ※必ず着席時にお出しください。 ※サービス中の目印は［黄色いハンカチ］ どうぞご利用下さい♪ https://t.co/zT42JA7LHt https://t.co/mQQqzSjjeS",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Mbn04wf7WA5GfZhTZOSq6RCsqjIMDnepRuG5Tc5fXQgGJAe3ENJJMV72N2RyU4GWcsLMAYy_blZ1CNYjKJ1uzn48XU0FL5nTgFzNdQ6ZKX0pNPh8vpHmAXHBV6xTYVrHTZjDLFHXvsvOGxWkEZI6xA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-hB2T-hNImBXCxtjrDvRsyDglMyV9Zgtfk69NPjq-olGgvRi5UD_OUW6-Ayah2qRIK9jtRAFPqsVcWduVrBvpQgMVRYSAo99YPr-sVELvIT059fUBgdhN76p0hXOHbOCIh-h3jx-R6wrndVRhySnCrQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-fiPvV3f9r9hSI1zZtyoJE-J-rVkZPrY8eyPZpQRp2UykpDfdilZBIeU6DaVFkl7viIUHqRSeHUpomCZlZysir0-YGe8GhJJwYba85YvR-jDzjnRY7wqc_mkznmw91Xe_XuJ-n67gqy06UXicYedUFg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-FTM79zwlPZh-x7QiopMXGvJTELrHPOsbWX4_pBLIfYqmqbDeMenYTEywfBcsSiLu6rO1P8l5zNYTd4cIsAia1wPTrcR4xaZApALwA5X46TD--5Dd3W_-4eGHaid2D3YVfJcUidEqaA6M6xpJbzamxg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261110_0_2119722885946528056",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2119722885946528056",
+    "postedAt": "2026-11-09T09:24:53.000Z",
+    "postText": "明日 ◇11/10火［三日目］ 【昼の部のみ営業🈺】 10:20から〜14:00 ご来店ご到着お並びの お客様まで営業致します。  →［相撲部屋の湯豆腐のタレ］ →［あったかい賄い汁あり！］ →［すき焼きタレ生たまご］ →［ニンニククタクタ煮🧄］  やっております♪ https://t.co/8FJlkAEd3K",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-AXF3Fs4ZjqFEqUOhgr0Ari4ncH6hEs-vSz99_QF6oCQGN03zEax5BSU2oUMjpNKAGllMqV4WQzGQWw4c-RaQZ-GYHmQ3TFnr2zH-aljB15Iel_2wnIZsN5eEDcJb_fXONWqGQIhM04v0W-l-fbelaA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-JkcD_pD-QCOpSGu41Dda7pn53fqvjSABJ9wWYRNJ3nzp-JqUZTMXTE7t3qT_wZjATNjXO9ZrNnQwHXI8gKMtJvih-mQ83Ule43iLOwkkpnFoS6ltApARp7ifTAkjVWba2kYS7PeIHKxLzZBm5B6n_Q==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-v10ArgX34RNR_VEDQQX_GnL3WijspL13M4gSfjnM99RiVN5mxLjFLA3EDmbNCATwfLJVdsaB6TjG7_3YIAKI-niAAe2ZWKPPwLfZyYKyBuhG0BxKNW5CC89ncFTBLEe4qJQd71ifc9_D5uLpQw41dA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-rMlcILlmfbbVCWXZAUjddMDEx_zcjfg3_iJBrToVlkarivUoMjdEWnEV1EkNzMGPi3FEIMiEKjeUNbgo9o3eM3WiaxEzBMXt0ITODfwvzWVeUup-3kGSajWrPmLJwP3Ds_5KlYjxjuWmj3DYDa8SpA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-10",
+      "endDate": "2026-11-10",
+      "hours": [
+        [
+          10.333333333333334,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_routine_nishidai_2119721578149851412",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2119721578149851412",
+    "postedAt": "2026-11-09T09:19:41.000Z",
+    "postText": "本日、9日、 切り落としも売り切れました。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常投稿のため変更なし"
   }
 ]
