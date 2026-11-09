@@ -34711,37 +34711,6 @@
     "aiReason": "日常的な営業告知のため、スケジュールの変更はありません。"
   },
   {
-    "id": "sns_post_nagoyaosone_20261109_0_2119653180456022222",
-    "shopId": "nagoyaosone",
-    "shopName": "名古屋大曽根店",
-    "postSource": "x",
-    "postUrl": "https://x.com/jiro_NGY/status/2119653180456022222",
-    "postedAt": "2026-11-09T04:47:54.000Z",
-    "postText": "ラーメン二郎名古屋大曽根店です。 只今の時間、並びを持ちまして本日昼の部は終了とさせていただきます。 夜の部もよろしくお願いいたします。",
-    "mediaUrls": [],
-    "detectedChange": {
-      "type": "temporary_hours",
-      "startDate": "2026-11-09",
-      "endDate": "2026-11-09",
-      "hours": [
-        [
-          11,
-          13.78
-        ],
-        [
-          17,
-          20
-        ]
-      ],
-      "reason": "",
-      "confidence": 1
-    },
-    "processed": false,
-    "processedAt": null,
-    "aiStatus": "schedule_change",
-    "aiReason": "営業時間の変更を検出"
-  },
-  {
     "id": "sns_post_routine_sengawa_2119669663139504614",
     "shopId": "sengawa",
     "shopName": "仙川店",
@@ -34936,5 +34905,96 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "日常投稿のため変更なし"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2119738221735412149",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2119738221735412149",
+    "postedAt": "2026-11-09T10:25:49.000Z",
+    "postText": "@rimop1515 そうなんですか？ご心配ありがとうございます！！  継ぎ足しスープなので、私の時も当たり外れブレがあります。 ブレ減らすように精進いたします。 是非今度食べ比べにお越しくださいませ！！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2119737291258450067",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2119737291258450067",
+    "postedAt": "2026-11-09T10:22:07.000Z",
+    "postText": "@fhGkDNSzNoGgb23 どうせなら繋げて欲しいですよね笑笑",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2119737210304090116",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2119737210304090116",
+    "postedAt": "2026-11-09T10:21:48.000Z",
+    "postText": "@jizou2 @me_ak177907 お口にあったようで嬉しいです！ またお越しください！！！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2119737085540372712",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2119737085540372712",
+    "postedAt": "2026-11-09T10:21:18.000Z",
+    "postText": "@hikonyan_nao 布団の中からも出たくないです笑",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_nagoyaosone_20261109_0_2119738664981086597",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2119738664981086597",
+    "postedAt": "2026-11-09T10:27:35.000Z",
+    "postText": "ラーメン二郎名古屋大曽根店です。 只今の時間、並びを持ちまして本日の営業は終了とさせていただきます。 よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-09",
+      "endDate": "2026-11-09",
+      "hours": [
+        [
+          11,
+          14
+        ],
+        [
+          17,
+          19.45
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
