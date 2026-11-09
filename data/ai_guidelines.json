@@ -2,6 +2,28 @@
   "generalRules": [],
   "learnedFeedback": [
     {
+      "id": "sns_post_hitachinaka_20261109_0_2119602336188539082",
+      "timestamp": "2026-11-09T12:15:53.573Z",
+      "shopId": "hitachinaka",
+      "shopName": "ひたちなか店",
+      "postDate": "2026-11-09T01:25:51.000Z",
+      "postText": "【9日 営業の件】  本日、昼の部は告知通り 11：00〜13：30 の営業となります。  夜の部は大変申し訳ございませんが、 お休みさせていただきます。  申し訳ございません。",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-11-09",
+        "endDate": "2026-11-09",
+        "hours": [
+          [
+            11,
+            13.5
+          ]
+        ],
+        "reason": ""
+      }
+    },
+    {
       "id": "sns_post_koshigaya_20261113_0_2119542261012947011",
       "timestamp": "2026-11-08T21:46:15.679Z",
       "shopId": "koshigaya",
@@ -984,32 +1006,6 @@
           ]
         ],
         "reason": ""
-      }
-    },
-    {
-      "id": "sns_post_sapporo_20261019_0_2112123281302311007",
-      "timestamp": "2026-10-19T15:04:17.005Z",
-      "shopId": "sapporo",
-      "shopName": "札幌店",
-      "postDate": "2026-10-19T10:06:46.000Z",
-      "postText": "都合により本日20時で営業終了致しますm(_ _)m",
-      "aiStatus": "schedule_change",
-      "aiReason": "営業変更検出: 都合により",
-      "humanAction": "applied",
-      "finalDetails": {
-        "startDate": "2026-10-19",
-        "endDate": "2026-10-19",
-        "hours": [
-          [
-            11,
-            14
-          ],
-          [
-            17,
-            20
-          ]
-        ],
-        "reason": "都合により"
       }
     }
   ]
