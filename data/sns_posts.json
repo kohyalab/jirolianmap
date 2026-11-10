@@ -35471,5 +35471,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の告知のため変更なし"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2120000119202513174",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2120000119202513174",
+    "postedAt": "2026-11-10T03:46:30.000Z",
+    "postText": "アルバイトもお客さんも募集中です☆ https://t.co/U0BAz4bZ2F",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
