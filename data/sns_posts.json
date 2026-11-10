@@ -35753,5 +35753,24 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "日常的な限定メニュー（切り落とし、肩ロース）の売り切れ告知であり、営業時間の変更に関する言及はないため変更なし。"
+  },
+  {
+    "id": "sns_post_routine_fujisawa_2120250609714770350",
+    "shopId": "fujisawa",
+    "shopName": "湘南藤沢店",
+    "postSource": "x",
+    "postUrl": "https://x.com/fujirow26/status/2120250609714770350",
+    "postedAt": "2026-11-10T20:21:52.000Z",
+    "postText": "おはようございます。  11月11日(水)  豚チゲ🐷 無料トッピング 野山商店特製タレ、崩し豚、豚カス醤油、 1番スープ、沢山にんにく🧄その他色々 粉チーズよくあいます  福井県ソウルフード とり野菜味噌青葱生姜🫚  本日もよろしくお願いします。 https://t.co/B942y7mwyA",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-up1Lw9-oACDrwG3848C4-CLH7M9QUJtx3RMDczaUS1CLf0naGcM0No7bTFkRgdtj-SiJqbAJEnsTJszLUgmGYGRduJdKUILnQdZG0sSw7KzGhL_VVNs9HxXbLU4Z2Cxaupp9SXH_IEB2x_tYGICQOw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-w085YW_sQvtnniIaftYlyVEFbnyrezIQjMAx83z8Z1qZ6KCJ2BtB3xxaTg0x_3fvXdVW9Rvq59JWBGNK37nZCKpgxOvkqmE1vPjgtt5au36uctTS5ssHfCNbE7ZnprZItYZCLYeihi3PnQo3PnnjRA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-neUb4zMyW5io43TNqbuounXjW_nuGBc6a9ZHlvWvzU0BGllOrqLT5Dsuy00HvtCyAsvL86Izg0r0QR_P8QgcjoLC2ITey4rBg-3LR4RRcmRr6kyAWSz_H2Q7JxlLuGo2f8E2vovo1I8OGHkM3WRB2g=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの告知であり、営業時間の変更はありません。"
   }
 ]
