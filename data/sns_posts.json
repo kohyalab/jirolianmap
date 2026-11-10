@@ -35594,5 +35594,44 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_jimbocho_20261111_0_2120049220724101293",
+    "shopId": "jimbocho",
+    "shopName": "神田神保町店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jbc_ramen_jiro/status/2120049220724101293",
+    "postedAt": "2026-11-10T07:01:37.000Z",
+    "postText": "明日11月11日(水)は都合によりお休みさせて頂きます。よろしくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-11",
+      "endDate": "2026-11-11",
+      "hours": [],
+      "reason": "都合のため",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 都合のため"
+  },
+  {
+    "id": "sns_post_routine_fujisawa_2120054992111632712",
+    "shopId": "fujisawa",
+    "shopName": "湘南藤沢店",
+    "postSource": "x",
+    "postUrl": "https://x.com/fujirow26/status/2120054992111632712",
+    "postedAt": "2026-11-10T07:24:33.000Z",
+    "postText": "🏆🏆🏆ラーメン二郎一橋学園店🏆🏆🏆 ぶた入りあぶら🔥🐷🔥🐷🔥 https://t.co/bwobgYOaVZ",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-HU8d6cpvgI6-h02yZ4s1xLc7oW8o677FIVn7zmpahFwJALOdAj9_Bv7nI6ecFa_3pSMMG0u51_4zWqAAsVphMt7ZDj44vNtbAs65xrl-jGiw-sZ4NND0RXpZXLLGlXVpznKiRoFPCF_jkC5NT_k2rg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常的なメニュー投稿であり、営業時間の変更に関する言及はありません。"
   }
 ]
