@@ -35292,5 +35292,25 @@
     "processedAt": null,
     "aiStatus": "match",
     "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2119939404110410086",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2119939404110410086",
+    "postedAt": "2026-11-09T23:45:15.000Z",
+    "postText": "大相撲十一月場所（九州場所）本日は三日目！  本場所中はスモジを賑やかにしてまいります♪  本日は… →［インタビューボード風］店内にて！ →限定！ ［来店御礼］［大入り］［スモジ］［二郎丼ぶり］【御朱印風】  どうぞー！  　#本場所中はスモジは賑やか 　#いい意味でスモジ劇場　笑 https://t.co/rQ5gBWync3",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-W_ygPcG6z7yHcvR53RuRUiNANjH4SLBNK1v84vW6P2tOCIDbVsG9sYKDchsxuqjDaPk42_94bRO6UdQAomxc40f4OT4RN2nJYznQfVEuPIOypWW7Zr4GScPHKyW4oYzntpOWG8p19_sVPephfAeLgQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Kczt4sAvw5enVQhIdt0NSBN59EuXuc5ukUkly1bCg-z1_51iAS9fz35wh-I6etH4AId7wQ-fSfew65JfCOtXTXPuMi0pmjZiYP5-1srANQKFax9QluScK6ThGJivaCywcoNzjMPkWsxH7jRSOTp78w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-YcG-Gqn_3H0HsGlD6nk4_bWoPpme70yOJ09bN7YlHHTTXNB_LMv44jWHo_gTRa5YYF1Jb40IDQNPUDRNX1ZJV8VcUn1X22T0KDnL1gStRwCjWvpgTpZ0l8JI73sqloMiLIu8Lc70AMquWSGo-0uaGQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ggF0Gx3MbhicAXDyCg0hZBmVGa26vEJG85W5mUym_EhlEDSFfu7yQPR_lKmFksF-Yc1nXLVn0KTLwMZN5b_BU3xOWbhWfHYZYtCJE9-sJmcx2d_xC6kOXyfo9gM6SH2C2eunVD-r8xUYYHIZUukwOQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報の変更に関する言及はありません。"
   }
 ]
