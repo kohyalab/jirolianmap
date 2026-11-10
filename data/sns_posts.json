@@ -35772,5 +35772,47 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_koiwa_20261111_0_2120282439117607266",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2120282439117607266",
+    "postedAt": "2026-11-10T22:28:21.000Z",
+    "postText": "【臨時休業】  本日も店主の体調不良につき臨時休業いたします。  大変申し訳ございませんが、よろしくお願いいたします😰",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-11",
+      "endDate": "2026-11-11",
+      "hours": [],
+      "reason": "店主の体調不良のため",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 店主の体調不良のため"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2120279703730987209",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2120279703730987209",
+    "postedAt": "2026-11-10T22:17:28.000Z",
+    "postText": "本日 ◇11/11水 【昼】 →こちらをご覧のお客様限定です！ ↓ ※お客様ご自身で→丸の🟥赤又は白🤍食券を１枚お取りになって席までお越しください。→食券は券売機の前の台の二段目に置いておきます。 ※必ず着席時にお出しください。 ※サービス中の目印は［黄色いハンカチ］ どうぞご利用下さい♪ https://t.co/k2H9Qk4rtr https://t.co/qGbMM6fdhp",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-BlFVnfu3U6efdi_KT3RWOkZmSUkAxsH_VuEMFQt5svJjH471v7OkVlq1m4hXwoZ2Bxtey64HIR6Gn9OcYDTqx7ARzIkPx8xHqtmSbViUP9NAHrkW5ubVLfHJ7RBX1Vu2iDxlwFqVBFGuVhjhxC7V9g==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-G1jSrwBKzFfl7CVoee8RyZtClIDoOxgUfd9vOGxEuUjDEt7jGTaJk9jpRut0uQvIdTepE3rxlPQKn-02kEierUAo__EuJDqwx6u0EMrby96jLrVsZzjsnjKCykiU7b9sUrajXpDDTUJN4tEr2xC2Qw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-d7KffSEFxBoqi4uSx_RvyKqijVs20N9WWk_58YmTixNYpyNBoKUHWcmCnjT6_rmFyI8x6NXdYZs7mkzckEy4kLlwXzd4FKUPNYID20CsARajQXYKwFx64fxc6pU2anZuKmmqcvTwbRf33pkgduDoQQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-M9N52-8OyPTPDp6mXTjJMYnXEZFBgnvvTQge25NV7o8EYxOWZsd-KibYgf9MtOl29Cef-9ENjrAMPMOy5ZEvZsy7v95648fJzkltEOiAX5gSkaGiOy83ANLE_Ko3giJ2eQK3lT8bABsnFlLx-RANsA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピング・サービスの案内であり、営業日時の変更はありません。"
   }
 ]
