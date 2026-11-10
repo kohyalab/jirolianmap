@@ -35426,5 +35426,50 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の案内"
+  },
+  {
+    "id": "sns_post_routine_kannai_2119974421482082693",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2119974421482082693",
+    "postedAt": "2026-11-10T02:04:23.000Z",
+    "postText": "おはようございます！  本日からしマヨあります。 ご希望の方は「アレ」でお願いします。 海老っちょ辣油、煮干しの波動もあります。  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_shndaita_2119977466710392943",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2119977466710392943",
+    "postedAt": "2026-11-10T02:16:29.000Z",
+    "postText": "めちゃくちゃひまです♪ あしたあさってお休みなのでよろしくお願いします！ https://t.co/OcCrWIwwSb",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常投稿のため変更なし"
+  },
+  {
+    "id": "sns_post_routine_asakuragaido_2119977626010055117",
+    "shopId": "asakuragaido",
+    "shopName": "朝倉街道駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/r26akgd/status/2119977626010055117",
+    "postedAt": "2026-11-10T02:17:07.000Z",
+    "postText": "本日通常営業！ ネギあります！ よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知のため変更なし"
   }
 ]
