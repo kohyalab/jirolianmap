@@ -35633,5 +35633,83 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "日常的なメニュー投稿であり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_kameido_2120063956907876857",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2120063956907876857",
+    "postedAt": "2026-11-10T08:00:10.000Z",
+    "postText": "今日のタレはニラたっぷりで実質餃子です🥟 https://t.co/3LMwzH2w7g",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-0toMRi7oXLJqYdib-YNDAXAvjvh324nFkqK0eGmFhV4huZY7ieNiyyDiAq_r4uu2CHCyUwAeCE74I9DWi3Sets5lY5cGw9rrzEAF8214P6Qm2ojgHTct0tgUSTwPoZGVXk3GULZqmKcnXjpwgTNQLw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常の限定トッピング告知であり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2120061718869258603",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2120061718869258603",
+    "postedAt": "2026-11-10T07:51:17.000Z",
+    "postText": "明日 ◇11/11水 【昼の部】 10:20〜14:00 【夜の部】 17:00〜20:30  →［あったかい賄い汁あり！］  →［相撲部屋の湯豆腐のタレ］昼＆夜🉐得割🈹！ ※お試しあれ！券売機50円設定！50円にて販売です♪  →［ニンニククタクタ煮🧄］  やっております♪ https://t.co/DEnbQD1Pg4",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-VnTuEBg6VKaW0pcMmolOrX6j5ru28UsvwKhWBMH_bhvwxEtdYbspWZzg7HaJ2tz-mCfxjzY05jCJ_onm5KzqQe2AvzTFw_U0c20fSJhSMUW94p2Yk8HB4CT_AVs5V1_kb6vauEOiTqMsDGnc10cAvw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-RTY6et3p-R1LHKpIsapTiTtyOvibf0XgbeE-nWH5fcWo0HeE-AdwVx9BCQHp39-XPHAA9RN-QDE-XKJCbElIldKhmHoTB9qmx13qW3TJwyG7JY7T6h-Ax5wqHpSCLna9ou-r9Q-iiiktHZUoS-5Zrg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-iG58fV57O9JH3TEybTdVVq7Er8wCeeNMV7ujkFE43v50mJ0zGRPCqcqdV0YsBp1SxomPmYSwYTC7frkAQaUof5eFYW_VO5rILX14qkS2jhuvqR1cyRPkgwgSTTBGqgg_9NpslZ8lnGLgOsbGG-Iddw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-gPVSUY8w8P1IxLxYvILT-3xLZlkmRwK-Saii_Zo_XnX14IoE07wWA-5mmA1P5HFcDWq2dWwDJKwS-PgbE1LnVfoka2fJBHoCQJknIbmk-PgtZtP40TToKTCv0_0t6fcjs1lQOm7BFJnr3iAwfD9HPQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定メニューの告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2120059756249514241",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2120059756249514241",
+    "postedAt": "2026-11-10T07:43:29.000Z",
+    "postText": "【十一場所】 11/8初日〜11/22千秋楽 ［相撲めし第２弾］ →『湯豆腐のタレ』を場所中販売！ ※相撲界では湯豆腐に使うタレ。青のり、鰹節、醤油。ちゃんこでは、お湯で割って豆腐、豚バラ、キャベツを食す。なので少ししょっぱめ。スモジではタレをちょびっとつけながらブタ、麺、野菜を！要初体験！ https://t.co/W6Z7CYTf22",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-fhNCB2t-1GXQ2I8CLKUKd9bOpMWjO5jEMk9oko1dv1ckz8ZnqK-lWSXkg0h73z22_By6ejDIa_Uk3F8sOJVag6-yClEOYcjFL_6mmdtbibQ9ITnZ0xVLCh0Sy3OE791n6-Hn-s2CbwDWdjGYuqnIqA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-KafhH2MKqRjPzIS_EZRdIksMJ_bQVY16sT2TRTlfV4WYSRBrp59yzD-FKHjvx8R6IpejZJnCSe2tTdPgOZi7thmXmW_hmet9f_37i0zkzRI8V2NM2Q-1w7s0n-Cd_fRPJvaniqcOpi0MgiYgGKQzWw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-5ICGo8jBLK05gsbrRciW-eckYStAx9DZYfJHnx0UPhXDCpikwW1ZzqdTW1WV7I7TePyiKo3oQgsnHSB8laTpTfNkgqI0-9LBkbOf59GRiUgTS62PL3p2S_-LGFu-nhSdwn8i2Gbd2zq7evFQMetv1A=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピング（相撲めし第2弾・湯豆腐のタレ）の販売告知であり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_kyoto_20261110_0_2120059587227500902",
+    "shopId": "kyoto",
+    "shopName": "京都店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kyoto/status/2120059587227500902",
+    "postedAt": "2026-11-10T07:42:49.000Z",
+    "postText": "本日はお休みです！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-10",
+      "endDate": "2026-11-10",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
