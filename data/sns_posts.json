@@ -35738,5 +35738,20 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_nishidai_2120105064962589084",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2120105064962589084",
+    "postedAt": "2026-11-10T10:43:31.000Z",
+    "postText": "本日、10日の切り落とし、 肩ロースは売り切れました。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常的な限定メニュー（切り落とし、肩ロース）の売り切れ告知であり、営業時間の変更に関する言及はないため変更なし。"
   }
 ]
