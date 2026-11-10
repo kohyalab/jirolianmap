@@ -35312,5 +35312,55 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業情報の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_nishidai_2119953655927648463",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2119953655927648463",
+    "postedAt": "2026-11-10T00:41:53.000Z",
+    "postText": "おはようございます。 本日、10日、昼の部  煮込みFZ味付き肩ロース ¥2000×1、¥1800×1 煮込みFZ味付き切り落とし ¥1000×1  あります。  ストーブを3台、出しました。 イスの位置は動かさずに皆さんで 暖かさをシェアして下さい！ https://t.co/lZihDpqc4B",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-A-11Xg6LOip5pDoshcZ-Vwkql-uKKV_5RgMkWCfy_MCJ5_hP-yxOjhG7Sk2Sj_bXqTHvaTAEsPoqdZmgKWhbkb8FPv10QzuTm5zUnhF9htzNTkxChBIV3971elneYtlBer7ZYteosaEYyjsAtcIEbQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-4c7_LnXu30mDwFXjO_jO-aRZ1nuF5iI0KEMvzgNmuve0S3ExtSO3Ta1OADvs8Y_6sLwgtpJbaaay6c-1tZDcq2VNOyzUuZdr5ngS40mfc3tIagAbPou4CCKeHzQgm9ZEHZDieovanL0sBJs8iCs-xw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-4QJAE-WU54yZeLmkYdDaSGaTHM15IEq6OhPLvT_qbXWaMmzvTAUjjZggDFHen4DyMU7Sl2ZIobs4yJHqaRNBSMkFn0hJylrphPM_fUjN3BDOMsZbiFggkGmThbZXjHx0779BDDtFiA7nsSkaV0uY_w=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更はなく、限定メニューとストーブ設置に関する日常的な告知です。"
+  },
+  {
+    "id": "sns_post_sapporo_20261110_0_2119955540063494176",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2119955540063494176",
+    "postedAt": "2026-11-10T00:49:22.000Z",
+    "postText": "10日(火)通常営業です🍜  12:30〜14:00     17:00〜18:30  「塩汁なし(醤油ベース)」対応します。 プラス現金１００円🧂",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-10",
+      "endDate": "2026-11-10",
+      "hours": [
+        [
+          12.5,
+          14
+        ],
+        [
+          17,
+          18.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
