@@ -35831,5 +35831,42 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常通りの営業案内およびお願い事項の投稿であり、営業時間変更や臨時休業はありません。"
+  },
+  {
+    "id": "sns_post_routine_yaen2_2120292956565643340",
+    "shopId": "yaen2",
+    "shopName": "八王子野猿街道店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/Jiro_Yaenkaido2/status/2120292956565643340",
+    "postedAt": "2026-11-10T23:10:08.000Z",
+    "postText": "11月11日(水) 11:00～15:00 17:30～21:00 ⭐テイクアウト、鍋二郎あります 並ばず買えます きまぐれたまご コチュジャン  🌟釜玉あります",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知であり、変更はありません。"
+  },
+  {
+    "id": "sns_post_shndaita_20261111_0_2120294499381563631",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2120294499381563631",
+    "postedAt": "2026-11-10T23:16:16.000Z",
+    "postText": "2026年11月11日(水) 2026年11月12日(木) お休みです！ ごめんなさい！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-11",
+      "endDate": "2026-11-12",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "既に登録済みの臨時スケジュールと一致"
   }
 ]
