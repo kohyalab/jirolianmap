@@ -35127,30 +35127,6 @@
     "aiReason": "募金箱の集計報告に関する投稿であり、営業時間の変更に関する言及はありません。"
   },
   {
-    "id": "sns_post_koshigaya_20261113_0_2119905807831879775",
-    "shopId": "koshigaya",
-    "shopName": "越谷店",
-    "postSource": "x",
-    "postUrl": "https://x.com/ksgy26/status/2119905807831879775",
-    "postedAt": "2026-11-09T21:31:45.000Z",
-    "postText": "おはようございます！ ラーメン二郎越谷店です！  11月10日(火) 昼11:00〜14:30LО 夜17:00〜20:30LО ご来店お待ちしております🙇  11月13日(金)お休みします。 よろしくお願いします🙇 https://t.co/WfKEbHyCwG",
-    "mediaUrls": [
-      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-g4g3H6fauIdiuWbCnmO914cj2WKtNnS0VYxx0PE_L-AZV8QWzv3w1OuBDMLZCIw59tMWb4vJTSbkI8U45ptCPPcb_keRSKtPOnbWABFukA6e2vDPGFgSnUOgpcjY_t_58wGxl1dyg4zU5tLhenfvJg=="
-    ],
-    "detectedChange": {
-      "type": "temporary_closure",
-      "startDate": "2026-11-13",
-      "endDate": "2026-11-13",
-      "hours": [],
-      "reason": "",
-      "confidence": 1
-    },
-    "processed": false,
-    "processedAt": null,
-    "aiStatus": "schedule_change",
-    "aiReason": "営業時間の変更を検出"
-  },
-  {
     "id": "sns_post_routine_shndaita_2119917154904719783",
     "shopId": "shndaita",
     "shopName": "環七新新代田店",
@@ -35772,5 +35748,29 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "限定トッピングの告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_koshigaya_20261113_0_2120272470838325405",
+    "shopId": "koshigaya",
+    "shopName": "越谷店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ksgy26/status/2120272470838325405",
+    "postedAt": "2026-11-10T21:48:44.000Z",
+    "postText": "おはようございます！ ラーメン二郎越谷店です！  11月11日(水) 昼11:00〜14:30LО 夜17:00〜20:30LО ご来店お待ちしております🙇  11月13日(金)お休みします。 よろしくお願いします🙇 https://t.co/WfKEbHyCwG",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-g4g3H6fauIdiuWbCnmO914cj2WKtNnS0VYxx0PE_L-AZV8QWzv3w1OuBDMLZCIw59tMWb4vJTSbkI8U45ptCPPcb_keRSKtPOnbWABFukA6e2vDPGFgSnUOgpcjY_t_58wGxl1dyg4zU5tLhenfvJg=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-13",
+      "endDate": "2026-11-13",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
