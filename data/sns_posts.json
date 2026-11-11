@@ -35868,5 +35868,48 @@
     "processedAt": null,
     "aiStatus": "match",
     "aiReason": "既に登録済みの臨時スケジュールと一致"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2120306001907941505",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2120306001907941505",
+    "postedAt": "2026-11-11T00:01:58.000Z",
+    "postText": "本場所中限定！ ［相撲部屋の湯豆腐のタレ］ どうぞお試しください♪  本日🉐🈹！ https://t.co/SlYXSwdwpd",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-dlOvoxYnnjMAymnkvr_F-DhiVBjbzgOrCILxexSzUV2auZ_pwRE5iXFkyUzo-zQvQAmaJ952yh_iMdPwz0QK6RvjBepLi0CcnIsRfut12niKM4FbSIIfzQ5JRHmkzw35vkSTzzWKt5ye1xoI0RYedw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-8El0L0LdVeOCYCVuN2g7rR13W7dpYB2llAGdqpNS-tlwufSe8s82c1mpGDId4G9_L4lx4SBixjy9egr1KnpJXLQ6f1ocrPyr0z4D03CPuxIgt7wLalk0aQpjlpdKIzsAkP-FYP6YnkylFI-YgyfbeA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-phUtIhRWFfGcXkHs6Y3GOrTRkI4LeQcolqjiwzOO-QUZd2nB_7FWvIc4K5IcSZk5o5dUPFtNbfxkRHd6xF8mRFwl0Jppeaa6zpXHFcAb9cG-5qzpD4gIYhoriXdpt3u1tZ-7xHndlbQp3veGaSh9hg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの販売告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_mejirodai_20261111_0_2120311515752571175",
+    "shopId": "mejirodai",
+    "shopName": "めじろ台店",
+    "postSource": "x",
+    "postUrl": "https://x.com/mejirodai_jiro/status/2120311515752571175",
+    "postedAt": "2026-11-11T00:23:53.000Z",
+    "postText": "毎度ありがとうございます 本日11日(水)は都合により臨時休業となります よろしくお願いします🙇 https://t.co/7PPND2nfRM",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-v6cWjq7wk3F2mwu0asmdHsIOGu8X4H-UKzVyu_R-0EoORMuxHsSRgQgK7ejFklDJhTDFYy6sBQl73-8WTMZRx7pevNgdQfIHrMExIMFloJETFhooCdl-VnAv1hIvrVc4IyzkeqIvEl91Lwp4p00wFA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-11",
+      "endDate": "2026-11-11",
+      "hours": [],
+      "reason": "都合のため",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 都合のため"
   }
 ]
