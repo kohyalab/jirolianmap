@@ -36015,5 +36015,25 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業時間の変更や臨時休業に関する言及はなく、日常的な営業告知であるため変更なしと判定しました。"
+  },
+  {
+    "id": "sns_post_routine_sengawa_2120381397798129740",
+    "shopId": "sengawa",
+    "shopName": "仙川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjiro26/status/2120381397798129740",
+    "postedAt": "2026-11-11T05:01:34.000Z",
+    "postText": "本日１７時から店内営業とアウトアウト販売します。テイクアウトはつけ麺に転用可能です。お薦めの調味料です。追加の生麺一玉１００円(400g)です。 https://t.co/Rh6qoK23MU",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-3h7Y-FtA_X9Yhbdo3vDAfH-W_GU69C57V0IG92xhbPo1_NiHdfzobeaxbSvSXg2HUYHgk3LSYeLr50Ncc_qUZjTBPpCoVF1yZ6EDuZVthF_Ul9fwvMHQDQX5IEA34GfoF7U9W5-Z3IQglnynnguk8w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-dhtnvWdKg_10uHzH9mV0ltuk8j8QJkZRZWPDP2_hfzSt88R1xNBDgVSAtYI5CMVo7d3WNgrLGBRr1lMN0uwLbWAhpRLzZPnhRCB2obz57DmIDkmjmbrTgAdZ0Mn0SXRgK2562M_LBmdjIiuJJ-r_tw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-U7K6LHS0qqvzlE4LGaSk2C1BNNV0YyIW3Aw-hcpZQIi606QiBT1AFrYKVoRqIS1t0zUuNar4NnMh2_h2YrfvwKdVAr3MgntfePKrBf2hPYypbSnbbHJc3U0d0J7LMTqkls-nCeo6pclAtfypQnvijA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-OoIrTXiTgoyUPHtiI4Q8tVPP8vF4jOrUWxw3Vyk09NtIuDZnZCHPzwOoBTa8Q0bNfy8FgZWiAOU_arE0GwspWXy87PDy_eM3UHUOONGx-6LNomhZEZP6aJa_JY4SYxsK35waYmtYcw6TJW1I16SoSQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知であり、営業時間の変更はありません。"
   }
 ]
