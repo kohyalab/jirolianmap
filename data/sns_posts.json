@@ -36261,5 +36261,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "11/12(木)は通常営業（昼のみ営業の店舗のため、変更なし）"
+  },
+  {
+    "id": "sns_post_routine_yaen2_2120658785828225438",
+    "shopId": "yaen2",
+    "shopName": "八王子野猿街道店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/Jiro_Yaenkaido2/status/2120658785828225438",
+    "postedAt": "2026-11-11T23:23:49.000Z",
+    "postText": "11月12日(木) 11:00～15:00 17:30～21:00 ⭐テイクアウト、鍋二郎あります 並ばず買えます 🌟きまぐれたまごコチュジャン ⭐釜玉麺あります",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の範囲内であり、変更はありません。"
   }
 ]
