@@ -2348,6 +2348,14 @@
         "reason": "都合により",
         "sourceUrl": "https://x.com/jbc_ramen_jiro/status/2116075493460230315",
         "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-11",
+        "endDate": "2026-11-11",
+        "hours": [],
+        "reason": "都合のため",
+        "sourceUrl": "https://x.com/jbc_ramen_jiro/status/2120049220724101293",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -2456,6 +2464,22 @@
         "hours": [],
         "reason": "",
         "sourceUrl": "https://x.com/koiwajiro/status/2115581214451278056",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-10",
+        "endDate": "2026-11-10",
+        "hours": [],
+        "reason": "店主の体調不良のため",
+        "sourceUrl": "https://x.com/koiwajiro/status/2119925050900135954",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-11",
+        "endDate": "2026-11-11",
+        "hours": [],
+        "reason": "店主の体調不良のため",
+        "sourceUrl": "https://x.com/koiwajiro/status/2120282439117607266",
         "_isAiImported": true
       }
     ],
@@ -4239,7 +4263,15 @@
       {
         "startDate": "2026-11-11",
         "endDate": "2026-11-11",
-        "hours": []
+        "hours": [
+          [
+            11,
+            14
+          ]
+        ],
+        "reason": "",
+        "sourceUrl": "https://x.com/jiro_sapporo_/status/2120318565564002785",
+        "_isAiImported": true
       },
       {
         "startDate": "2026-11-18",
@@ -4725,6 +4757,14 @@
         "endDate": "2026-11-11",
         "hours": [],
         "sourceUrl": "https://x.com/26shinshindaita/status/2119334421795148084?a=oi5pDfrVTNK-7f4uIjU&s=19"
+      },
+      {
+        "startDate": "2026-11-11",
+        "endDate": "2026-11-12",
+        "hours": [],
+        "reason": "",
+        "sourceUrl": "https://x.com/26shinshindaita/status/2120294499381563631",
+        "_isAiImported": true
       },
       {
         "startDate": "2026-11-13",
