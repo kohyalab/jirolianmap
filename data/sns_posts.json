@@ -35948,5 +35948,38 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の範囲内であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_kameido_2120328610653544457",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2120328610653544457",
+    "postedAt": "2026-11-11T01:31:49.000Z",
+    "postText": "お世話になってます。本日から昼の部「辛味噌ラーメン」やります！ご希望の方は本日のトッピング¥100+ラーメンの食券を購入してください。無くなり次第終了です。こちらはカタメはできませんので予めご了承ください。よろしくお願いします🙇‍♂️",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定メニューの告知のみであり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_tachikawa_2120333198270079351",
+    "shopId": "tachikawa",
+    "shopName": "立川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jirotachikawa/status/2120333198270079351",
+    "postedAt": "2026-11-11T01:50:03.000Z",
+    "postText": "11/11(水)、昼夜とも時間内売り切れなし営業です。 昼11:00-14:30 夜17:00-21:30  ①煮干し変更 +汁なし変更券で、にぼしるなしも  ②めじろ台がブラック、なら立川レッドを！ 　から味+ほぐし豚 　別皿提供=辛さ調整しながら♪  ③持帰りラーメン販売します。 　標準:2人前のスープと生麺+ブタハーフ https://t.co/RZk1qrnt7n https://t.co/9SAO5CCI1I",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-UyCnDIVmVm9pYxN9uuQj0-2SRf19C06F6z3bC0OeDfxEMStZ8JEww9eCWUneGAYJUd6Nv5jKJB28P8P3wDZ0IoDD1gOlLv3DBum2CF2DtRKklfulXjs5YCWw-4M1GoKSzW_C3Aem0Brs-LD240h92Q==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2z31PurBB3vj5tpsyjtYtLzLPOj7NCGI38eSTn_q6dKkuODlBrCznxAvJlgywCOSCg8dTpgdQb-EnfNr_LbsLOOepS1hQXOFPEpnIEW_276GDnN3kA5XeBu-9ZeIQmVlfVyoh5XH8oeBha7ZgpUEDw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知であり、営業時間の変更はありません。"
   }
 ]
