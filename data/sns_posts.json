@@ -36035,5 +36035,25 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2120393343813493120",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2120393343813493120",
+    "postedAt": "2026-11-11T05:49:02.000Z",
+    "postText": "本日 ◇11/11水 【夜】 →こちらをご覧のお客様限定です！ ↓ ※お客様ご自身で→丸の🟥赤又は白🤍食券を１枚お取りになって席までお越しください。→食券は券売機の前の台の二段目に置いておきます。 ※必ず着席時にお出しください。 ※サービス中の目印は［黄色いハンカチ］ どうぞご利用下さい♪ https://t.co/shWG64l4BG https://t.co/qGbMM6fdhp",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-9B1Yu0Rns2vKs_bf09CnjfjA5Y3k89a4f0Jc5QnTv_3DsKZL1abuPUWO_1dd58aewhR9nwzvFdYOvJeQ7MmhG0mIE4JgMTsNJSEGGC8joHkGew-DJgxO8Hi4_0qnXitiftUiSYoCG9dcOmJtVpc1sw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-xhYR8CAtYmW_UmkUSUjUo_2hSseuY712NSnoWmIEJjT4KIIJYV_t1LVlMPdi6FNslvu_h3nJOXJuXrN2QE7f0hlynznrOk338TJKTPCyI7OUf7qqp0QCPzgV1ZKcS2S928J64jqdtU7HsRMvSEpa_w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-HD0q1uhykWTT9wd2Ru6-9HroJJtfEKMcviunSSHhhLTzT4okEzsjjtWY6tCyiBSJKw_lWbgXtaIpSDH3KITiT6v52UWv6uyTMxRT5ckWFulW5Gtth5be6HqNzPFTsvShaojHJ_M3YVqXlEWXDg0Ekg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-tc9VheLE5IBUXqPRh77AJnZR8cTr7c4-FKslGVuVpCTQvKkY3EwE9Eg4a0i1CY4c_m15DA90O0wO6WEsS0ZRJKjCe74LDt9T6zilg2tAgXMev71l91zOBHi4VZcCJZnXgQAYK_WcfBD0xQENREMQWA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの告知であり、営業時間の変更はありません。"
   }
 ]
