@@ -36242,5 +36242,24 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の範囲内であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2120653055809241290",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2120653055809241290",
+    "postedAt": "2026-11-11T23:01:02.000Z",
+    "postText": "本日 ◇11/12木 【昼の部のみ営業🈺】  →［お椀で和ッカレー】 🉐得割🈹！50円引き！ ※券売機100円設定  どうぞー♪ https://t.co/KlJ13K7t1x https://t.co/nMOKzTA0qN",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ZPpw1pZlISSCyLpDmU_yeMwuYsOzNSILXWzzNcF4ezQLg5VfOu0QaFItwagZqgNlb43rxwZli0R2i0ZTgaYyyk3yfGhEythIioF1WN6Olr-2IBMvOxjGSYlI8255Ghlp90-A-LyUoSyBiLFQqUJ7Mg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-TKezTCdZRnuC-lOpYA25PLYqJr1vPzzYWciwjMpny1yLNxkz7MiqhJCjK6btfA33EaIr7qlAcDeOc4qH8Q9ZBtPRvoGu7s4eoX7OiwiKmK7uzTT5idYDzADcAJAKWPolXao2vnTZcmlyb4d-zC_4YA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-rGKwtAmzmfLfIbEnstaFt40B3ZBE4-pdLyBEZS3ojFKJf-x9uTYcQD6KBAyuL3ykYQsgnw-YUA33u10kVFaaP5HAhP8MPeZQgNHlLO6B1lltzK_Zlkbls56PpOOvxGElDq29svFhpOrzog_5xpi12Q=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "11/12(木)は通常営業（昼のみ営業の店舗のため、変更なし）"
   }
 ]
