@@ -36088,5 +36088,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "日常的な営業告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_koshigaya_2120413879901774223",
+    "shopId": "koshigaya",
+    "shopName": "越谷店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ksgy26/status/2120413879901774223",
+    "postedAt": "2026-11-11T07:10:39.000Z",
+    "postText": "毎度ありがとうございます。 ラーメン二郎越谷店です。  夜の部「つけ麺」やります！ 塩ラーメンお休みです。 ご来店お待ちしております🫡🫡🫡 https://t.co/gkPbrMKG1v",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更に関する言及がないため、変更なしと判定しました。"
   }
 ]
