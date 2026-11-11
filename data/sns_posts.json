@@ -36173,5 +36173,74 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261112_0_2120644073686200352",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2120644073686200352",
+    "postedAt": "2026-11-11T22:25:21.000Z",
+    "postText": "本日もやります！  ◇11/12木 【昼の部のみ営業】 【テイクアウト割り🈹】  →こちらをご覧のお客様限定→ご申告制🈸［テイクアウト割🈹］やっております！食券にて。  着席時に『テイクアウト割りお願いします。』と従業員にお申し付けください。各サービス🈂️致します！ ※店内お食事の方のみです。 https://t.co/M3OTezgdTr https://t.co/nMOKzTA0qN",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-JruwVsoxm2WY9Jw2euQorIbv2xf1h96S3gix1B6vg4uJfqRwfP7H7gZ9SPcxEEfvsVW3RGx5bL0vi7khyJ2-KbQ2XIvHMahsSHsHR0t-QWz04E1utOVz3mFV_UBsXxpC91Sq85CR6QQUy7BLOgfFdQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-12",
+      "endDate": "2026-11-12",
+      "hours": [
+        [
+          10.333333333333334,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2120643678192779770",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2120643678192779770",
+    "postedAt": "2026-11-11T22:23:47.000Z",
+    "postText": "本日 ◇11/12木 【昼】 →こちらをご覧のお客様限定です！ ↓ ※お客様ご自身で→丸の🟥赤又は白🤍食券を１枚お取りになって席までお越しください。→食券は券売機の前の台の二段目に置いておきます。 ※必ず着席時にお出しください。 ※サービス中の目印は［黄色いハンカチ］ どうぞご利用下さい♪ https://t.co/8BPuXjOlDC https://t.co/nMOKzTA0qN",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-AzzVT-9oHx6SLBMzcek_rJDBTSrmQdnXO-ZylR2MH5JoS2D49l4hK3_z66zJjDrZpHuGctjcSSq3ku95qvt2aki-l5TCcBb-G35nDkogOgEz7Wu6Elwy4u7zrgzAtt34EiUfEeRlUhJZAp58oyXpWw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-MKulXfeCedFrAPsWPIRgJEG_54qbxT9qzEN2U1SjYb61kLY70FRtV05NnJj6MQ7_QR-nAKspnPq5r3u8MNjcd7ue5NASp5PPXkpmoJ4-EPrWYmNhP1Q7wsQX0fOeARaGy404ad_eLWh6AWzpTanM2w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-53Ocscet_uBUW6E6uN5nWER-fWItXujOWpTkHlo6iFo29KbvxuShhd_QrfVSw7vfBBZrGdESYkqTePDXW7qgkoxa3cjYewJgLNvbFGixZrV_Shp3b5DpDYOP_KIkkjn3VDjxBYW5gW53WclTzcKOUg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-QEpx30vzkmJhSsa-7q9LYAky2eXHltcSPAsXHWPnQpeTLNOU5hy75sVHn9H6m_qpvAHSsOLfHBBIIvmCZGHijD4JiubC0ifGEkPm1VAfnV5Au3QpDPmxfIcMylvTbvDWb9DdA9Ggto-Lyqtbi9u2wg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2120642804691107960",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2120642804691107960",
+    "postedAt": "2026-11-11T22:20:18.000Z",
+    "postText": "おはようございます。  本日 ◇11/12木 【昼の部のみ営業🈺】 10:20から〜14:00 ご来店ご到着お並びの お客様まで営業致します。  →［あったかい賄い汁あり！］ →本場所中限定！ ［相撲部屋の湯豆腐のタレ］ →［ニンニククタクタ煮🧄］  やっております♪  ※本日もパネル外に出てます♪ https://t.co/5GlvStDa6n",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-gLaCt09HuzFzVfOqA3ppz20R2MAsb44L7mL8CkMkMIM9I2X3H-lR63N7IPOG_A0vjqzTPmrj-ql6cw8LWnO3R84ijTDhRaRXm64px9n9qe78us09Hf78tQhB-y-8Ho2oIc438Dcx3sa9sPyQd6BDmw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-xr0cbDHwUAr5tP3gpVUFUsA46-7y2lEN6mK2MH0IFIanNOjPZDpWr_CAL0rIEItA6aZnhmm1d68jluSdWV8GcsenZgV9OyqmEtN4SODfzELz7KHyOXp9lnWe5iH8-DQfA1-cvWLn4x_v70C6A7m_vA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-IoPuZ2ti53ymktrnF7uq2VgzELa6vbgjLPbCanUk2Z7YIKxY-0FRq7RDOilkx37r38lH_lwTXaGWwLCIJP_NTKGgwm38IpuAx16HXhXup1CCuX5Ps4DoxsBL0qN0n4wKco7J0LtiBm7sWL3ca88LiQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-nHdC6M3KIHLDN4S9sJjoGENIQjE8aftCxtutu-WmxYE5aMA5JFt4sSplnJyBwKm81LFEuCAgx5zmRyHxpDX0RbJelZ6N_cqZEELsJL_8PeYIFYtJkgft6QvshQcbnnyZam_l7Plu5I-W7QS3cLQJIQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の範囲内であり、営業時間の変更はありません。"
   }
 ]
