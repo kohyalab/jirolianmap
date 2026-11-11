@@ -36055,5 +36055,38 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "限定トッピングの告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_kameido_2120400606640894036",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2120400606640894036",
+    "postedAt": "2026-11-11T06:17:54.000Z",
+    "postText": "お世話になってます。ご好評により「辛味噌ラーメン」はお昼で終了しました！ありがとうございます🙇‍♂️",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定メニュー終了の告知のみであり、営業時間の変更は含まれていません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2120397844427477302",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2120397844427477302",
+    "postedAt": "2026-11-11T06:06:55.000Z",
+    "postText": "本日この後！ 【夜の部】 ［インタビューボード風］外に出しておきます♪ ご自由にご撮影ください！  自撮りでも📱 お仲間とでも📱  どうぞー♪  　#スモジ宣伝部 　#本場所中はスモジは賑やか 　#いい意味でスモジ劇場　笑 https://t.co/LsmYvpasRD",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-yDSeRE7Vu-42i2T4iCFTCv--5KIJ-FAqVSUYc_VdtuYpvOa3iP0TVNB6iXEK-8S3VN_acRdXbK2MLr8YgxRNvGaRh4GHvicxvYQ2F8j0YtRkgIVCBUeVooD8izLVK39JtGxKrH1H2BSTpNM3Rl5iRw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-RhVRZ9biCxAwCiQDENv3YNs0pOBT5THnbsHYLZysLd4NpnKB8sakximBJalMBC1UrdebyXcu1M2Zf_a3dlobgdaMIo_5VwcuyCMeP-Ja14x5CLKgaiXWyZpxlabfUdkjOEXiljTu6fN6zr_Q5UcISw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常的な営業告知であり、営業時間の変更はありません。"
   }
 ]
