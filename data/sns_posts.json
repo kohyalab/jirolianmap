@@ -36167,5 +36167,40 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "限定トッピングの告知であり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_kameido_2120506903084278005",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2120506903084278005",
+    "postedAt": "2026-11-11T13:20:17.000Z",
+    "postText": "アガベちゃんが1人だと寂しいかと思いお友達を迎えました ( ◜◡◝ ) https://t.co/ysjmrEZCGI https://t.co/oFuitdt8lp",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ggo-Ci_mv4awDirOqJlDAZrxNZAX6fbnZ6BG0mXxwNV5ty7Mn4TQgxzLyZlrLCMiI9SV5pXKE1lbwMmo-RceMM3VIygqw6lEByLp1-HzUs-1ZZLBdFKoxiltCovylmrLpG-OdNe91ZRFewqkkZf8Gw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ytY870gLWCizRf2rnadp4ndOB2A1pcrulXhgaK8HMfXZx-lfLgDfqkm7G4IAjwqqyyEg2Bg4okSPqsOOHAFuLsXIspPE6SMp4dWoKecHwaEmUQCr80ad7pAR2eD7736sFzlIjgVeTjskTRLs7OoXQQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-lrfCu6x3xphYItJt2U6O-f2qUCSbwcqgid8B2fXCIce7_lXyGPKoq6XivpWoQUve_g9y3WoWAJnmOSX7vIJXGyH_jSFpkdqv4kMdeW0fNI7qvQunf1ANU4YYe8Bnm63Y30eWIMLB4DRDjTz-fO5W9A==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-LMebGrELdW9yRoAmfJb97qr78V9bqvUC8Dg6cxo1r1YwsBvjtx9DOl3NIw6Nm0XuK7sw-cXctvhSNI1VxPt3JF4Ai-oFujurs6q2JAjl_gEX8d-6bOTPWG6zupeFu9ATKAIkm_VNq9kytd5j264t2Q=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_daily_kameido_2120506557880525251",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2120506557880525251",
+    "postedAt": "2026-11-11T13:18:55.000Z",
+    "postText": "僕は4回引いて4回モモンガが出て絶望しました ( ◜◡◝ )その後アサウラさんと他のお客さん達とでトレードしてなんとかコンプリートできました✨ https://t.co/vk4lk3mvDr",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
