@@ -36474,5 +36474,67 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "限定トッピングの告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_shndaita_2120695703693619646",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2120695703693619646",
+    "postedAt": "2026-11-12T01:50:31.000Z",
+    "postText": "お持ち帰りの豚もあります！ 1本2000円です！  入れ物は無くて大丈夫です！  たべて買うひとは 最初に麺の量を聞かれた時に言ってください！  お持ち帰りだけのひとは ならばないで 入口から声をかけてください！  これが消えたら売り切れです！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常的な販売告知であり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_shndaita_20261112_0_2120695489264038025",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2120695489264038025",
+    "postedAt": "2026-11-12T01:49:39.000Z",
+    "postText": "2026年11月12日(木) やっぱりやります！  11:00くらい～14:00くらいまで  いつものラーメンだけです(豚入りとダブルはあります) 券売機は使いません ※外道メニューと小銭のやつはありません  ひとりでやるのでゆっくりですが それでもいいひとはどうぞ  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-11-12",
+      "endDate": "2026-11-12",
+      "hours": [
+        [
+          11,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2120698078353342814",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2120698078353342814",
+    "postedAt": "2026-11-12T01:59:57.000Z",
+    "postText": "おはようございます！！ 皆様最近ハマってるものってありますか？ 私はこのゲームハマって3週間。 最初は簡単で軽い気持ちで始めたら、なんだかレベルも78。二、三手先まで考えなきゃいけなくなり、難しすぎてそろそろやめようかと思います笑 御来店お待ちしております！ https://t.co/eoc04vx16E",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-_2TdqCHljH1qgFz95Eklh8zg0L7Ih8ETT8_0_y4FiPhh6irSYUAD-fo9xl0NbHc6EjPSqt8E7hXyZo2eZIv6zWDDd7FiEtFZxzlj9BgJ9axo7G0yCmghFi5Sx2WrLTfAp9sdhy93mDlhGtUPeXlZCA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-wxJZYOzfUwxI61OULDaTTm5MwpZVp3X9fLNC0FqJyl6UogxDZIsT04obMBXeqE1FFe026QGqp7j4VAm9TyvR2r2bwPZPY6T6IkJ0MB0Pt_CbvhmXAr1eRMLJt4Wgvgymf2ahgRV3bbKliSGjjagWkA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-HcLutxHBsQB24zHV69vJBxEFYt7_CWuZQr45LuGwYCaRm-dWwZqEgdbmt2xtyaJvNh4wWQE4pZPfmuV1zR15ytAcYYuK0gePECKu3O6iuLaFlogtOrMezm9fTBVyqv0gIRW0guEqAA7HopgLaciM7w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-uQ1pb4ud1ykRyjc0dg7FaMGoe1EbwZ_xZZAYHp2pcjUovT8bq0l3jW7ZzSNw5NSjaN0Pe79zon8lhUnHFbt-ojiMOBFOrTvFZr5C7aQnIPAlz4NKchk267u-c68cQdy5kED-JdQDieFkxcq-KnxpMA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常投稿のため、営業時間の変更はありません。"
   }
 ]
