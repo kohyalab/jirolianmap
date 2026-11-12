@@ -36616,5 +36616,40 @@
     "processedAt": null,
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_routine_nishidai_2120760119944528073",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2120760119944528073",
+    "postedAt": "2026-11-12T06:06:29.000Z",
+    "postText": "こんにちは。 本日、12日、夜の部  煮込みFZ味付き肩ロース ¥3500×1、¥1700×1 煮込みFZ味付き切り落とし ¥1000×2  あります。 https://t.co/DlgvyZCsQ0",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-yvIACmsO3p5X0T6kIP7fPQYe4RndFMG33o0pEr8Tw62g_gYVvk8VlkfWOjeQZxwPAVVS6ycVfSL80KXJI6smC0RLAosd8yeqUVZOuH_5oCtCcvFDa4eqATPnKZuCrUgzsS1t_0ih6BuQpdr6nRXMNw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-zmeQITk82nk9ZIP_h6GA57kCq5AtpKC_BXolKIi3XogFdZHqQhJvVuS6cA15Z4tsjbWWGde1nFgQ7LP3VJjAgK0bgi031jFFsUXUN7tJupvzcGZYIgN_f2u8zdJjM6mLD6rNLJMEcNHw01NrF_PATg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Ma-IRxk_YAfILQ-Kmu8iL9y3Y8EH1lMvcYjk0Qd_BwLRm_S9krf4jUZYZhsYY9rjatiDyO9ujRnJ4XKYHzmFjsyB9FUaxvLmB01uQEWz8kiy9ss52QKwh_L6BvMPiZr4x3tLFBcMXAJpEsa_IBDADw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-46tn1rLpxZzqRHslJfixx6y2-NZcBN3WUNtnloxJcVW0IIl3aFEsqTLqWP2NGYhBKFbLW6aGwHOUrYUgmCFRJnbdqijl4uJniwo7crikP_HyhxpOfinat_sVUrCkkYTfBTSRX2M8TLWcJHZQQa7gWg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定メニューの販売告知であり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_kyoto_2120764800284393736",
+    "shopId": "kyoto",
+    "shopName": "京都店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kyoto/status/2120764800284393736",
+    "postedAt": "2026-11-12T06:25:04.000Z",
+    "postText": "こんにちは！本日通常営業です！ テイクアウトあります！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知"
   }
 ]
