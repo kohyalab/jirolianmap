@@ -36792,5 +36792,22 @@
     "processedAt": "2026-11-12T14:42:14.686Z",
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_kameido_2120890658068267405",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2120890658068267405",
+    "postedAt": "2026-11-12T14:45:11.000Z",
+    "postText": "お世話になってます。最近英語圏のお客さんが増えてきて英語が喋れない店主やスタッフ達は身振り手振りでなんとかコミュニケーションをとります。 それでもなかなか伝わらない時に英語を話せるお客さんが代わりに伝えてくれることがよくあります。 https://t.co/4St4xthRF8",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-l6I-fp4imjcQcS4WBUd89Q7Ne3qBPoGiqPhR_ToIN8PpgztwKQjaiVBKuTUwfgMwtQ5YFVjKoO_SsbLVcsLWUY304y3UVOFxvYK4fPy3VnfH7RSS6ayke0LN4yZhLxUFHCvAh_K3D3RVwmtJVY4Y5Q=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報の変更に関する言及はありません。"
   }
 ]
