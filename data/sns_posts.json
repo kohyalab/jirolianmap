@@ -36276,5 +36276,40 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の範囲内であり、変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2120662944296124694",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2120662944296124694",
+    "postedAt": "2026-11-11T23:40:20.000Z",
+    "postText": "【ニンニククタクタ煮🧄】 ニンニクをラーメンスープでクタクタになるまで煮込みました♪それをラーメン醤油で味付けです。  ラーメンに入れても、箸休めにもオススメです♪ 臭いもあまり気になりません。※こちらは個人的な感想です。  どうぞお試しあれ！！ https://t.co/ba83VSCIT5",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ajJBSObyrlVPxKtEaJ_Abp6y2J_hgvuss3mWp030DroVbsyi8SfH2ybJwLSjN-eIYzGmCgOsDaQWP4Fmzoj4UyYb3Vn8PbK5_5Nx3MkVMmczhot-2GImBHYOd_X5BWBakqKUcmzT9Svr9j9gHKLPSQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-CodvLCkv0-ZWKYFufRFkWKvEUDGXdHOcTzYFoVMksh5SfnglH2aENEaDZYJr2YT4kZd8Bb7x3HbDBJlx8ErBbrS0DPGS022WiwrALW7utwEJ56Z8Sz0ik9u3vK6UJsKEQ27kb2f8JOjgmYA_WfuSHw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-QOQkwYhS8PthJ6uwwUhrLoX3GTv8VAnxBtfsEf9hHQSW5RktyjFobkMdiTGxyh7fIL2qDo9eNNZzzn5o39Dqd39KifDdQIqLrwevHsI1CvtMjOIoIzAv_cCajw0CPYeL_gJEVLmekLgH7VBUH8gTwA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-8YLQuymvyBGSfD2HamTgxzbP_98P4zMNH_8MryEo1DUxPgcAeSnmb30PX0VS9n_og8difuoDF4oSvCZHK1XMQICJqjODHBk9r2NVqp-F1Q4wPAlP_5Lt3K_GLsz9LiZAyKrZipUl1ZBSnj0rz4xjFA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの販売告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_nishidai_2120665299238391860",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2120665299238391860",
+    "postedAt": "2026-11-11T23:49:42.000Z",
+    "postText": "おはようございます。 本日、12日昼の部  煮込みFZ味付き肩ロース ¥2700×1、¥1700×1 煮込みFZ味付き切り落とし ¥1000×1  あります。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常の限定メニュー販売告知であり、営業時間の変更はありません。"
   }
 ]
