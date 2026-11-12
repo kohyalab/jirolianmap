@@ -2,6 +2,28 @@
   "generalRules": [],
   "learnedFeedback": [
     {
+      "id": "sns_post_shndaita_20261112_0_2120695489264038025",
+      "timestamp": "2026-11-12T14:39:15.484Z",
+      "shopId": "shndaita",
+      "shopName": "環七新新代田店",
+      "postDate": "2026-11-12T01:49:39.000Z",
+      "postText": "2026年11月12日(木) やっぱりやります！  11:00くらい～14:00くらいまで  いつものラーメンだけです(豚入りとダブルはあります) 券売機は使いません ※外道メニューと小銭のやつはありません  ひとりでやるのでゆっくりですが それでもいいひとはどうぞ  よろしくお願いします！",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-11-12",
+        "endDate": "2026-11-12",
+        "hours": [
+          [
+            11,
+            14
+          ]
+        ],
+        "reason": ""
+      }
+    },
+    {
       "id": "sns_post_koiwa_20261110_0_2119925050900135954",
       "timestamp": "2026-11-11T13:01:27.360Z",
       "shopId": "koiwa",
@@ -975,23 +997,6 @@
           ]
         ],
         "reason": ""
-      }
-    },
-    {
-      "id": "sns_post_ichinoe_20261020_0_2111937838279479465",
-      "timestamp": "2026-10-19T15:06:34.865Z",
-      "shopId": "ichinoe",
-      "shopName": "環七一之江店",
-      "postDate": "2026-10-18T21:49:53.000Z",
-      "postText": "宜しくお願い申し上げます https://t.co/0abBpFNwS1",
-      "aiStatus": "schedule_change",
-      "aiReason": "営業変更検出: 都合により",
-      "humanAction": "applied",
-      "finalDetails": {
-        "startDate": "2026-10-20",
-        "endDate": "2026-10-20",
-        "hours": [],
-        "reason": "都合により"
       }
     }
   ]
