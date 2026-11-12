@@ -36396,5 +36396,35 @@
     "processedAt": null,
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_routine_sapporo_2120681355688415494",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2120681355688415494",
+    "postedAt": "2026-11-12T00:53:30.000Z",
+    "postText": "12日(木)通常営業です🍜 昼の部、12:30〜14:00 「つけ麺」サブスープ対応します。  又、現金＋100円でサブ塩(醤油ベース) も対応します🧂  必ず、スタッフ確認時に申告して下さい。 「サブ」、「サブ塩」！  本日のサブスープもかなり濃厚です。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "11月12日(木)は通常営業です。"
+  },
+  {
+    "id": "sns_post_routine_nagoyaosone_2120682551664902219",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2120682551664902219",
+    "postedAt": "2026-11-12T00:58:15.000Z",
+    "postText": "おはようございます。 ラーメン二郎名古屋大曽根店です。 本日昼夜営業です。 昼の部11:00〜14:00 夜の部17:00〜20:00 よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内"
   }
 ]
