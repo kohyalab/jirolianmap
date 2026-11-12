@@ -4762,8 +4762,19 @@
         "startDate": "2026-11-11",
         "endDate": "2026-11-12",
         "hours": [],
-        "reason": "",
         "sourceUrl": "https://x.com/26shinshindaita/status/2120294499381563631",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-12",
+        "endDate": "2026-11-12",
+        "hours": [
+          [
+            11,
+            14
+          ]
+        ],
+        "sourceUrl": "https://x.com/26shinshindaita/status/2120695489264038025",
         "_isAiImported": true
       },
       {
