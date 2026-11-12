@@ -36827,5 +36827,27 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "限定トッピングの告知のみであり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_koshigaya_20261113_0_2120998429086355772",
+    "shopId": "koshigaya",
+    "shopName": "越谷店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ksgy26/status/2120998429086355772",
+    "postedAt": "2026-11-12T21:53:26.000Z",
+    "postText": "おはようございます。 ラーメン二郎越谷店です。  先日よりお知らせしていましたが、本日11月13日(金)お休みします。 ご来店予定だったお客様大変申し訳ございません。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-13",
+      "endDate": "2026-11-13",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
