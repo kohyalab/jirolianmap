@@ -36651,5 +36651,22 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の告知"
+  },
+  {
+    "id": "sns_post_routine_sapporo_2120768232059793898",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2120768232059793898",
+    "postedAt": "2026-11-12T06:38:43.000Z",
+    "postText": "12日(木)夜の部、券売機 「ジロリアン陸」 ボタン¥200で「ミックス豚チーズ」 あります。 「汁なし」と相性バッチリ👌 https://t.co/HPaA2vUWMy",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-U0txgeBUzUrRZe5JOKavQYntJ9SE0My2pmg6pqOa9LTYR2ZE3mIPS4IQpN2hQUwAtHsmboX5WLQBntYXod-aFi74HldKijTT3FuSSSiMMYRMCV9-mpm3j4eD39bhltet7GhfCb0XmJT8PRh-O_HBWA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの告知であり、営業時間の変更はありません。"
   }
 ]
