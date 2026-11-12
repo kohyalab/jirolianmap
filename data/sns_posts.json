@@ -36581,5 +36581,25 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_sengawa_2120747595966648545",
+    "shopId": "sengawa",
+    "shopName": "仙川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjiro26/status/2120747595966648545",
+    "postedAt": "2026-11-12T05:16:43.000Z",
+    "postText": "本日17時から店内営業とテイクアウト販売します。テイクアウトはつけ麺に転用可能です。お薦めの調味料です。追加の生麺一玉１００円(400g）です。 https://t.co/vR1slLDhiK",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-VQ000ClhetjhhSQpt4INrzuXRIaD68ehRfeJdNvulz4dYGZPnTJcrRULVAGcSQEJFYcyOgGlc2JQnKHB2H4LnF2_X04nIE6kChtsnivKT0tj0tXJpmpULAHykUFXfT1fKR3ruFvQ23DsE02Ty1KvkQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-vq7zKhWB9-mKLGoePL1CoNzb55ZoNVSmi3xIvY5gsbi7sGWAsaDWW0yd0bkwr2-JV5f-YBl6VB9T2A42CgEjHgoUX7i-QLpx288yzgNQHZEIQwXvPVQHAfaukyUjROPl3sZ4sz9MRnpQI-tnG6RqsQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-faHi6zrqQqjbseIQHLApyyNVMWmxOB2CsTF6bBPtoGD7Jcx7Z6AWDu0ybFuPLYlG0SUbPixFYSPGBHyj3vRxVXxrIJmKn1uhF7G_Kvhw_eO_wd64tJn9cXwnMo4zWgupCZ-ooVF98D-R0nq_NrIf_A==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-tebGdFpvih0tE11nA_mQnzT2mG7sZkQuayxjGc6Mhi0t6w4s0AHhbZNJSVkjCIS2utdT_PZ2dl_AgtndMzkvaQZa-1B4w9PV8jRHSL6JouiORKUY9-BqTKlh8PS4nOy9mYH6hsSq5XGurGHgLa_SnQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常投稿のため変更なし"
   }
 ]
