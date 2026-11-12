@@ -36426,5 +36426,53 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の案内"
+  },
+  {
+    "id": "sns_post_routine_kannai_2120688357458247916",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2120688357458247916",
+    "postedAt": "2026-11-12T01:21:19.000Z",
+    "postText": "おはようございます！  本日からしマヨあります。 ご希望の方は「アレ」でお願いします。 海老っちょ辣油あります。 煮干しの波動は無くなり次第終わりとなります。 よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常投稿のため変更なし"
+  },
+  {
+    "id": "sns_post_routine_kawagoe_2120686962021732667",
+    "shopId": "kawagoe",
+    "shopName": "川越店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kwge26/status/2120686962021732667",
+    "postedAt": "2026-11-12T01:15:46.000Z",
+    "postText": "おはようございます！ 本日通し営業です☀️ ○11:00~20:00  🍜持ち帰りあります！  ウーバーイーツ始めました～🏍️  無料トッピング｢紅生姜｣あります☺️ トッピング時に「アレ」で！  よろしくお願いします🙇‍♂️",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の範囲内であるため変更なし"
+  },
+  {
+    "id": "sns_post_routine_ikuta_2120690285462351960",
+    "shopId": "ikuta",
+    "shopName": "生田駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ikuta_jiro/status/2120690285462351960",
+    "postedAt": "2026-11-12T01:28:59.000Z",
+    "postText": "おはようございます。  本日まよにん🧄あります！  まよにん今の材料がなくなり次第一旦終了になります。土曜日まではあると思います。日曜日は途中でなくなるかもしれません。 まだの方お早めにどうぞ！ https://t.co/DlnIVYrHTb",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Iuo8JRQBAAfOabQcguOdspfgL4cuJeC40jwy9C0w-Zg0T1Qcx6sztfAH-xOWsIz54NkilTq6N7etR-HrMwvdzfcxCW8KVoaoUGER74cLbfyTkbVeVeY87xz55Lu15EOaq1zwJm7HW6mPQfHN4eFiuw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-PH1-zuwsvFNYyXsp1Krmi7Tb4NTBRbjMI092I0JlnHZ4y3OHdBykoeaddNtEKyk8yu2YnybWaIPUHYZZaKgBoYvJNJrczDl_glSsQzXsnDDg-685dd2PuZX57W9j_hO1o9O12oDX5CeNYzXGGwgihw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの告知であり、営業時間の変更はありません。"
   }
 ]
