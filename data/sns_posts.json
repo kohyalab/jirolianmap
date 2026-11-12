@@ -36551,5 +36551,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "日常投稿のため変更なし"
+  },
+  {
+    "id": "sns_post_routine_koiwa_2120722130937786752",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2120722130937786752",
+    "postedAt": "2026-11-12T03:35:31.000Z",
+    "postText": "現在外並び2名",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常投稿のため変更なし"
   }
 ]
