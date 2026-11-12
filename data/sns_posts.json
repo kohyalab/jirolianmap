@@ -36698,5 +36698,35 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_daily_kannai_2120789292863942793",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2120789292863942793",
+    "postedAt": "2026-11-12T08:02:24.000Z",
+    "postText": "こんばんは。 煮干しの波動残りわずかとなりました。 無くなり次第揚げ玉カレーになります。 よろしくお願いします!",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_mention_koiwa_2120795713198235883",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2120795713198235883",
+    "postedAt": "2026-11-12T08:27:55.000Z",
+    "postText": "@aaamiku39 ご出産おめでとうございます！  お母様に似て美人な娘さんですね✨  子育ては大変ですが、過ぎてしまえばあっという間です。  無理せず楽しくやっていきましょう✨",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
   }
 ]
