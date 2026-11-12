@@ -36601,5 +36601,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "日常投稿のため変更なし"
+  },
+  {
+    "id": "sns_post_mention_kameido_2120751922328338452",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2120751922328338452",
+    "postedAt": "2026-11-12T05:33:54.000Z",
+    "postText": "@yusaburukokoro ついに多肉にも手を出してしまいました😅イカつくもめちゃ可愛いんですよ✨",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
   }
 ]
