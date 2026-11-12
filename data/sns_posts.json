@@ -36777,5 +36777,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業情報の変更なし"
+  },
+  {
+    "id": "sns_post_daily_sendai2_2120864640259522655",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2120864640259522655",
+    "postedAt": "2026-11-12T13:01:48.000Z",
+    "postText": "DMくれた先生！！ もう一回くださいー！！！ なぜか消えました！！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
