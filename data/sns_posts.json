@@ -37151,5 +37151,50 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_kannai_2121061371962065294",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2121061371962065294",
+    "postedAt": "2026-11-13T02:03:33.000Z",
+    "postText": "おはようございます！  本日の営業でなくなりそうでずが、カラマヨあります。 ご希望の方は「アレ」でお願いします。 海老っちょ辣油、揚玉カレーもあります。  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更に関する言及なし"
+  },
+  {
+    "id": "sns_post_routine_shndaita_2121067299990057363",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2121067299990057363",
+    "postedAt": "2026-11-13T02:27:06.000Z",
+    "postText": "お持ち帰りの豚もあります！ 1本2000円です！  入れ物は無くて大丈夫です！  たべて買うひとは 最初に麺の量を聞かれた時に言ってください！  お持ち帰りだけのひとは ならばないで 入口から声をかけてください！  これが消えたら売り切れです！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更に関する言及がないため、変更なしと判定しました。"
+  },
+  {
+    "id": "sns_post_routine_asakuragaido_2121066068403974559",
+    "shopId": "asakuragaido",
+    "shopName": "朝倉街道駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/r26akgd/status/2121066068403974559",
+    "postedAt": "2026-11-13T02:22:12.000Z",
+    "postText": "本日通常営業！ ネギあります！ よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知のため変更なし"
   }
 ]
