@@ -37575,5 +37575,43 @@
     "processedAt": "2026-11-13T14:44:02.970Z",
     "aiStatus": "no_change",
     "aiReason": "11月14日(土)の営業案内は通常営業時間と同一のため変更なし"
+  },
+  {
+    "id": "sns_post_routine_fujisawa_2121368255407525978",
+    "shopId": "fujisawa",
+    "shopName": "湘南藤沢店",
+    "postSource": "x",
+    "postUrl": "https://x.com/fujirow26/status/2121368255407525978",
+    "postedAt": "2026-11-13T22:22:59.000Z",
+    "postText": "おはようございます。  11月14日(土)  しょっぱ豚🐷  無料トッピング！ 崩し豚、豚カス醤油、1番スープ、にんにく🧄生姜🫚とにかく色々  タマネギカレー🍛🧅  本日もよろしくお願いいたします。 https://t.co/ZRWGtxcmIB",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-YGPymAnIPiueeeTiKSEvUixcBjS8LmSNExo5xUz59LwjUuhGKtNzM9hdcGsxIXdG6Xhijq7CWdvin7DlmgtHMzEHOn4T_2OSN1e0krHnReCtD_KmzzY7Bqnztw5vDjcZJAkVBqfZWK0nOP9hWARB4g==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-73zMU6aTE6I0TUFWZd3VkRdhzgC4ccEmhewZPOUFpgJQmwp5ca9Hjr5qUl33kvZ3odoD3Gg-axcuUQV_HYOld7DlI1P81GMdsiYAejvK0enVMJDaEehnbR97MpH9FXCq-ETyoH8toIdGxfVArvxtcQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更はなく、限定トッピングの告知のみです。"
+  },
+  {
+    "id": "sns_post_routine_nishidai_2121363452891644087",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2121363452891644087",
+    "postedAt": "2026-11-13T22:03:54.000Z",
+    "postText": "おはようございます。 本日、14日、  煮込みFZ味付き切り落とし ¥1000×3 煮込みFZ味付き崩れ ¥1000×3  あります。  テイクアウト販売 11/22(日)、再開します。 https://t.co/x86xPDjy4w",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ridO_VpYbcF6v1vpqXrB-THG3XCC6IUcOHd626KA0uaS413lykvhoJnXMhsDikmXErUigTlcsLAEXO2O3mTPhZXus2e3FWjatuzP-YAxVG6cNds7sTTJI9AU1pM2Bw7Oxpc1RN-v1WUBy0koqXbDJA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-agcXQMcfvVprkoNrrGYMzMEi9HTfArbqzXHGEzsBaZbSPIjYtxKEBErE4RaYToO8lW5_q6qpt_oJSn9hiM6tpWrdnmn8Af8bzB0jtPxyoYCZdwWR6apt_fnmHTalXT-4GO6rb6_5FBfl2t_FyqkWkQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-3pwiU8OpgBppyehTPdabmd4TjWjocx8AVEgUAUA45hacFEHIPOemxRao-42UU7IlIyLWScmfUjREqKyztrDDbm3tsn7SGDlvIKgfoKUKupTHmxf5GUdiw7tTIC0ZU55A-Ee4Iyunv9R37iXLKuXAcA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-0YW1zGCPrCFFHZOM_PNv5EHog18UDDEbp63EGxrTxKmOmFfRpKOW3q_Acu2PoWXfNlljxTmBy0YE_TVt3R5TtJ-sh7HG1dUynDNxDNjO7lqxUC57IK14j2faiRFh0mmFpf8JS2aHgPbE0k9dwplvAQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更や臨時休業に関する言及はなく、限定メニューやテイクアウト販売の告知のみです。"
   }
 ]
