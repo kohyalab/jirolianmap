@@ -36958,5 +36958,58 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の案内および駐車場に関する告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_tachikawa_2121037571602223262",
+    "shopId": "tachikawa",
+    "shopName": "立川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jirotachikawa/status/2121037571602223262",
+    "postedAt": "2026-11-13T00:28:58.000Z",
+    "postText": "11/13(金)、昼夜とも時間内売り切れなし営業です。 昼11:00-14:30 夜17:00-21:30  ①煮干し変更 +汁なし変更券で、にぼしるなしも  ②立川レッド(からいあぶら) 　脂+ほぐし豚 　別皿提供=辛さ調整しながら食べられます！  ③持帰りラーメン販売します。 　標準:2人前のスープと生麺+ブタハーフ https://t.co/G7O9RgFdaA",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-zmRm88F7slmX3fTLfm_3_uQVMsBrJt0Cmz2kpkjqoZy6sAry6PYIeQ_JW9SbOVQ7TFuQ99UlYv5CRgzaed7yCNpDuSgsk7qUKkBZr6idhnL6ikQdloba3aO_WGTM_zefTH-ZSjPcCj5URfJxP8SdOA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-BkCGK1sZXWhk8I0L7mw6fOT-N1r5WYiLvMKLVf8-RzbuFPbmL0kk7RRAiZ4XVG3vjxD89PJ7DPWI9qlibkPhCOzaSbTPgWyy2A3GmEccghS-KsEUbuIN-Tgd-uz8YmYpKvGqK2_Sse28kipsLKRVmA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_nishidai_20261113_3_2121035477012955456",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2121035477012955456",
+    "postedAt": "2026-11-13T00:20:39.000Z",
+    "postText": "おはようございます。 本日、13日、昼の部  煮込みFZ味付き肩ロース ¥3500×1、¥1700×1 煮込みFZ味付き切り落とし ¥1000×1  あります。  11/22(日曜日)から テイクアウト販売を再開します！ https://t.co/Rhpu0rPFqb",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Hu_6btU9junXFP_D_t1Xx6IqhHPVCuv0LMS0A9b9-wT6sy_dFxU9eMe9JC-IurpOlLlPjICzupBOkAcNOs8R6pTxJ91xFz6A9Ecu5BLvbOrLunwow0501af4xfZ2EfJcZP74C8unSJa8uj-v15dthQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Op8gmfFjc08osMUCAYfZFCcWepCWlPQqLq8GNMW4uyuimIFy57uolIyPCCkY_7Lz-LETmtDDdm7WLrsIgOm5NKEqGuNKt9n5h3PbXEZG8EOFnXqcpNUP0mv1fUElRULEFcxQr6pN5QlLt71Rw9l9Wg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-20JTSF8H_DR1cBB0mVYosyRRpmvDXRxoduygUuyNIdnwwTFiBkuKI71CIjYx2ZZfBsPL7FFqh_mU8bvsNJI0iTYy5ma__RgxXywmklBNMjgenjJ50aG5EXMa4eqDeDO5mI0PC2Qtg7jIWQjAkWzCWg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-DPknXxgadwUKn0aU5HmWZnUiNBlstEmrBibEjJHZeqs9VNnEQe7gkdkyjIVj7tKHmhiDamnTBPnsnGQFKsduD2_jw2-DWKvYGx_h1O1ut9EbIbP3gJ63szr3gHn8RiHgBZphVAft67c549qx4iRKIQ=="
+    ],
+    "detectedChange": {
+      "type": "regular_schedule_change",
+      "startDate": "2026-11-13",
+      "endDate": "2026-11-13",
+      "hours": [
+        [
+          10.25,
+          13.5
+        ]
+      ],
+      "daysOfWeek": [
+        7
+      ],
+      "reason": "祝日営業設定の追加",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 祝日営業設定の追加"
   }
 ]
