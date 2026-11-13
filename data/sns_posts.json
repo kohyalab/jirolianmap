@@ -37097,5 +37097,59 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_kameido_2121058592971444404",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2121058592971444404",
+    "postedAt": "2026-11-13T01:52:30.000Z",
+    "postText": "今日も1日頑張っていきましょう✨ https://t.co/WG3sj4deUy",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-MHVOxQCleyCBD_bY1eRPm5PEoYZqunBiMBjWuPNepoXPP7rbl56S_Pb2RkYHtNw5YE9nydB8QGTWuL0akEarHWAEKmuxTMqFq_JHd3Q8ZYET2puolzpEHFXi6av-X3LkC3SEzJX3DzDwLou6VdZnIQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常投稿のため、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_nakayamaekimae_2121059423657632186",
+    "shopId": "nakayamaekimae",
+    "shopName": "中山駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/NKYMJIRO/status/2121059423657632186",
+    "postedAt": "2026-11-13T01:55:48.000Z",
+    "postText": "おはようございます。m(._.)m https://t.co/vXf7M2Kmgt",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-zmHUTsQ6pmcNEXVLceKRfK3cmGmog4tmqfABs-1nnA1rGpZ-TYSxSkmj67Ts2w6cl8NUDAVdlJT9DsnbcOPlCjOEBB4tz1U0QZIHIz00QbeHfd3h4VQ2oyfMNjs20oD7SgYhsVmTKAdsiHrPPquMpQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常投稿のため、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2121055446668923233",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2121055446668923233",
+    "postedAt": "2026-11-13T01:40:00.000Z",
+    "postText": "秋が深まってお芋の季節ですね！！ 皆さん知ってました？お芋の加熱温度と甘さの関係。 長く加熱した方が甘いのはなんとなくわかってはいたのですが、65〜75℃が一番甘くするんですね。 今日お芋食べようと思います。 何の話をしてるかわからなくなりましたが、御来店お待ちしております！秋晴れ最高！ https://t.co/qZvt9vN0N6",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-tp1483-Es6VIoJ7rcDqWKQzNrbCR-PP9ERrBOZnmplMXaGbBjymrDwSzqDpglhVOINdp3l5Jzf7fSNRctl6OKenzCzxMl2Tg7QDQ6jkKFvFtNtz_qTDYrIX8sCEMENbEzq3F3SnBBZWEOaofTKn0cw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-uDEn2qbUSRlVf9Qwxw9zZuliEY9HBP1GxW5DY0YlGFUg0oDUKXNMU3hnRw6s1fWiYiYpAd5zMGYwZ5F8LTqa_1t7mmJn5-29PMQDdm_9PGtAaMahWTaaD6Q13SCRlzsruP8p0PZReP-2-TIr9NPSvw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-uMIUUds5Y8Wrx2UqiVMOiIj--0h05XCgWkF4qs5CZHlfVQpdzzcA5Yp--zS5YPiuK0Rok-X3uk0C2J_1GsVUx5BRnJ2De7mBn_Qw0fTJis5dVChjsnM70JVzQ5_d7aB80etoovmFamfzQtDjBO4JoQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-fSDT-CPKwJT1wOqbUdiCFEdH3To6tFi0yPkEZKCZyN_QvlimSIzdVxZLcOef6KZd2yk_BsEnoTxGMTCLHqCZqrNr-q6QLlRJiDmYkx10mNL9Hvmq0hlAEZ0hA9yaprFQbNof21HqxLFSp3jd6P4vkA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更に関する言及はありません。"
   }
 ]
