@@ -2,6 +2,28 @@
   "generalRules": [],
   "learnedFeedback": [
     {
+      "id": "sns_post_nagoyaosone_20261114_1_2121050930594636162",
+      "timestamp": "2026-11-13T14:42:47.329Z",
+      "shopId": "nagoyaosone",
+      "shopName": "名古屋大曽根店",
+      "postDate": "2026-11-13T01:22:03.000Z",
+      "postText": "おはようございます。 ラーメン二郎名古屋大曽根店です。 本日昼営業のみになります。  営業時間11:00〜14:00  明日１４日(土曜日)の営業時間 11:00〜14:00  ※11時からになりますので、ご迷惑おかけしますが、お間違えないようお気をつけくださいませ。 よろしくお願いいたします。",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-11-14",
+        "endDate": "2026-11-14",
+        "hours": [
+          [
+            11,
+            14
+          ]
+        ],
+        "reason": ""
+      }
+    },
+    {
       "id": "sns_post_shndaita_20261112_0_2120695489264038025",
       "timestamp": "2026-11-12T14:39:15.484Z",
       "shopId": "shndaita",
@@ -974,28 +996,6 @@
         "startDate": "2026-10-20",
         "endDate": "2026-10-20",
         "hours": [],
-        "reason": ""
-      }
-    },
-    {
-      "id": "sns_post_koshigaya_20261025_0_2111931360529285161",
-      "timestamp": "2026-10-19T15:06:48.036Z",
-      "shopId": "koshigaya",
-      "shopName": "越谷店",
-      "postDate": "2026-10-18T21:24:08.000Z",
-      "postText": "おはようございます！ ラーメン二郎越谷店です！  10月19日(月) 昼11:00〜14:30LО 夜17:00〜20:30LО ご来店お待ちしております🙇🙇  10月25日(日)　臨時営業 10:00〜14:30LО よろしくお願いします！ https://t.co/WlDTNgF0oW",
-      "aiStatus": "schedule_change",
-      "aiReason": "営業時間の変更を検出",
-      "humanAction": "applied",
-      "finalDetails": {
-        "startDate": "2026-10-25",
-        "endDate": "2026-10-25",
-        "hours": [
-          [
-            10,
-            14.5
-          ]
-        ],
         "reason": ""
       }
     }
