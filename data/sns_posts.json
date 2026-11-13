@@ -37231,5 +37231,114 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261113_0_2121103011045077231",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2121103011045077231",
+    "postedAt": "2026-11-13T04:49:00.000Z",
+    "postText": "本日 ◇11/13金［夜のみ］ 17:00から〜20:30 ご来店ご到着お並びの お客様まで営業致します。  明日 ◇11/14土 昼※10〜14時　 夜※16:30〜20:00 ↑夜の部新設🈺致しました。  あさって ◇11/15日10〜15時  本場所中限定！ →［相撲部屋の湯豆腐のタレ］ やっております！ どうぞお試しください♪ https://t.co/Bc9UCFW3tb",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Ql4mdannkodI2Kk5jO2Qin4i0R6mdx60FfxvtR3jXdLqjWkUR4ok4Bs0loTeNI1qWhMOg_MhQSL3HwxjUtfTDWzYXGN6uNq5gZzY6rlzSOxAR05rIdbIRenby02GDYU0O-S5txF9wK8XTyeyHJWvQg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-3unh_9HurMaOMC3ciBDucJS8TgGJ1OWylNccGjYd4WV6lgHFm2hDFJ9bnINwnFuRewCXIvHY1yZOCwpPdnzCJDR_idBqO6xd-CwIF8EviCF4dEfiC3NuZVFo0AYteZBeOG6IEP_mac_B6BwiaxQbYA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-13",
+      "endDate": "2026-11-13",
+      "hours": [
+        [
+          17,
+          20.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261114_1_2121103011045077231",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2121103011045077231",
+    "postedAt": "2026-11-13T04:49:00.000Z",
+    "postText": "本日 ◇11/13金［夜のみ］ 17:00から〜20:30 ご来店ご到着お並びの お客様まで営業致します。  明日 ◇11/14土 昼※10〜14時　 夜※16:30〜20:00 ↑夜の部新設🈺致しました。  あさって ◇11/15日10〜15時  本場所中限定！ →［相撲部屋の湯豆腐のタレ］ やっております！ どうぞお試しください♪ https://t.co/Bc9UCFW3tb",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Ql4mdannkodI2Kk5jO2Qin4i0R6mdx60FfxvtR3jXdLqjWkUR4ok4Bs0loTeNI1qWhMOg_MhQSL3HwxjUtfTDWzYXGN6uNq5gZzY6rlzSOxAR05rIdbIRenby02GDYU0O-S5txF9wK8XTyeyHJWvQg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-3unh_9HurMaOMC3ciBDucJS8TgGJ1OWylNccGjYd4WV6lgHFm2hDFJ9bnINwnFuRewCXIvHY1yZOCwpPdnzCJDR_idBqO6xd-CwIF8EviCF4dEfiC3NuZVFo0AYteZBeOG6IEP_mac_B6BwiaxQbYA=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-11-14",
+      "endDate": "2026-11-14",
+      "hours": [
+        [
+          10,
+          14
+        ],
+        [
+          16.5,
+          20
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261115_2_2121103011045077231",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2121103011045077231",
+    "postedAt": "2026-11-13T04:49:00.000Z",
+    "postText": "本日 ◇11/13金［夜のみ］ 17:00から〜20:30 ご来店ご到着お並びの お客様まで営業致します。  明日 ◇11/14土 昼※10〜14時　 夜※16:30〜20:00 ↑夜の部新設🈺致しました。  あさって ◇11/15日10〜15時  本場所中限定！ →［相撲部屋の湯豆腐のタレ］ やっております！ どうぞお試しください♪ https://t.co/Bc9UCFW3tb",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Ql4mdannkodI2Kk5jO2Qin4i0R6mdx60FfxvtR3jXdLqjWkUR4ok4Bs0loTeNI1qWhMOg_MhQSL3HwxjUtfTDWzYXGN6uNq5gZzY6rlzSOxAR05rIdbIRenby02GDYU0O-S5txF9wK8XTyeyHJWvQg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-3unh_9HurMaOMC3ciBDucJS8TgGJ1OWylNccGjYd4WV6lgHFm2hDFJ9bnINwnFuRewCXIvHY1yZOCwpPdnzCJDR_idBqO6xd-CwIF8EviCF4dEfiC3NuZVFo0AYteZBeOG6IEP_mac_B6BwiaxQbYA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-15",
+      "endDate": "2026-11-15",
+      "hours": [
+        [
+          10,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_daily_sendai2_2121100324350181772",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2121100324350181772",
+    "postedAt": "2026-11-13T04:38:20.000Z",
+    "postText": "列切れましたのでよろしかったらどうぞー！！！ 食欲の秋です！！ https://t.co/ZYvXNnvJaL",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
