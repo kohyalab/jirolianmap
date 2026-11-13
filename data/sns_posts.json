@@ -37340,5 +37340,80 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_koiwa_20261113_0_2121107269303587252",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2121107269303587252",
+    "postedAt": "2026-11-13T05:05:55.000Z",
+    "postText": "現在外並び25名。  まもなく終了宣告が出る見込みです。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-13",
+      "endDate": "2026-11-13",
+      "hours": [
+        [
+          10.5,
+          14.08
+        ]
+      ],
+      "reason": "",
+      "confidence": 0.95
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2121108151957410176",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2121108151957410176",
+    "postedAt": "2026-11-13T05:09:26.000Z",
+    "postText": "【よくあるご質問】  Ｑ.仮に20:30ご来店ご到着お並びのお客様まで…と言う時はその時間までにお店に行けば必ず食べられるますか⁈  Ａ.この場合、20:30までにお店にご到着頂き、並びのある場合は並んで頂ければ、並んでいる人の分までは売り切れ無しでラーメンをお作りしております🍜  どうぞー！ https://t.co/4qgd0GE9k2",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-9WkCyo50Cvaa8eEIi5hbqI89ErKZc10FcgFK8P3RMTPrZOGyq5qIbDdCOXuMal9QIe8VSxuTB-H5TiYxibmtJ5vdf7iguvU_YGu1Qo3gpkii0WOPsKBi48fYhjWrlBQfcL0tUbaqN8DymfxVbgjsTQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-V4nRlWtw5U-gE2lQyCct_3VR9uwqdt7DUHbbG4ktW8KMNX7lPykzF7U2hYNgMM2yK6e975P8EETSDoN2M6HIu5sQCt9NWE_dRns2t0aJWlM_jf1TSg4uz--aypoHv49b-pp0uBz21Ew0M2o98OHRiA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業に関するFAQの投稿であり、臨時休業や営業時間変更の告知は含まれていません。"
+  },
+  {
+    "id": "sns_post_routine_sapporo_2121112604940857788",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2121112604940857788",
+    "postedAt": "2026-11-13T05:27:08.000Z",
+    "postText": "13日(金)夜の部、券売機 「ジロリアン陸」 ボタン¥200で「ミックス豚チーズ」 追加20 「こくまろ辛味噌」と相性バッチリ👌",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更に関する言及なし"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2121112083710546231",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2121112083710546231",
+    "postedAt": "2026-11-13T05:25:03.000Z",
+    "postText": "いまいるひとでおわりです！ ごめんなさい！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
