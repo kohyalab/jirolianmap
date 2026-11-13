@@ -37542,5 +37542,23 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業変更なし（通常通り営業・雑談等）"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2121217430265753834",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2121217430265753834",
+    "postedAt": "2026-11-13T12:23:40.000Z",
+    "postText": "明日 ◇11/14土 昼※10〜14時　 夜※16:30〜20:00 ↑夜の部新設🈺致しました。  →［ニンニククタクタ煮🧄］ →［相撲部屋の湯豆腐のタレ］  土曜日＆日曜日 →［お椀でとろけるチーズ🧀］販売！ 100円を🉐🈹50円に！ ※あったかい賄い、ラーメンにオススメ！ ※つけ麺のスープには溶けないですね💦 https://t.co/cFZP6H6dIj",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-pOexUotFQQhUcWKMksIg6ooVmPhZ2j6BsBsqKVm-gGbAh9S2SZkCA3fbHIqVHm6J-8DnLM8gmx8gZrvee2IAytYzGCbS775c87rKOI4qiiCJOMzOO2olTXgpAALNz9TkVWQbjYycV9p0lJoVNUvqtA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-rPw-fKPgwDvC2bEhNyzC02HBoG6A1KNZSfSw_sd41hoVGPiQ6nR19od57kvgcIzux8DKP3nIjEMBkvFFFsc2X7N51cWVgRL8E3qQSrHkegdOXu5XtzLyGjXHNaN1AAX34o_TrLawGcfCqYmfR4DmZw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "11/14(土)の営業時間は通常通りであり、変更はありません。"
   }
 ]
