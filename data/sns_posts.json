@@ -37415,5 +37415,45 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_sengawa_2121120862573375941",
+    "shopId": "sengawa",
+    "shopName": "仙川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjiro26/status/2121120862573375941",
+    "postedAt": "2026-11-13T05:59:56.000Z",
+    "postText": "本日１７時から店内営業とテイクアウト販売します。テイクアウトはつけ麺に転用可能です。追加の生麺一玉１００円(400g）です。お薦めの調味料です。 https://t.co/ti3bI1b2Um",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Hi9fejOxFgr71W6E9qBF5vs6UTGDseOceRoA07H5AKB2L0qI7xYLqsAyHIWpp5feELA1Ijl0IuOUmjniaH7xtECRei6EbuxZT6EDXU1LhZzZtkbkKbxFPeXFH8RPT-Ps7K105s5QkfTsWH9qvGPuiA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-w-PDecMFVHyDntJSk2Wu1MsJTIlQp6BxgqoEx_ro9X4GAWtGNq-BPzSfNE1lnj3K_GMn5mrXaIgnGwWdTrf5AiV-uuj-JcVQ6DUhy6Y8-RmrfduPYn0avIvwb7nju97FACZJ_xEDygePOe28izsYMQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Z3LomVcTKdehfHtqbdrjRgF5Z4kVO68o7akN7SXpTO4JByPoHhf4gQgdn09-WPZ4skezUNjIS9o39grxkGPUrzjYNnPP3InZWgaGHd0WParFDIY83wq4Fd_RzOyBBRQd3xlr8oY0g8LYma7JCdQRKA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne--bv0ZojqqM5jkX7G5rD7KCu5vyylE4Sbn0IpjxIsKAfjMcnWHq65yr9NMNDLKm87MJrc4WWKnO_VqxNl14OMoxZ4H0x60aeY-cxE_Bf5axMHV-cLUL4jH9cgD8AYS8H2vS-laPOVteLajGyTmF8OTA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_nishidai_2121121106136543558",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2121121106136543558",
+    "postedAt": "2026-11-13T06:00:54.000Z",
+    "postText": "こんにちは。  本日、13日、夜の部  煮込みFZ味付き切り落とし ¥1000×3 あります。 https://t.co/gw8fEPaAxQ",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-DgmdRFWpR8tMy2YeWmD8glnl3Ku0lOhz_2CuNaUpEKK2h5XbeuIg96c3gHnLOM-ntZd5M91d5jY5o_x-RYpKsgcoJO6wtVY_7INz5CEQBKb7r-TqJ4h9qGN2clLI4QVARhHTZx5IliyqP6s94XrxPQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-WjeZWv7xBb8nzRZKt8ldoSVwsoTcrdmmX3VfXa7Vt9xlDIZbiuQ0wx9tGdLQU0tuhpJViyXVV4ufN1RTZwzGXHA2YrkDMFlAzmuFdjfKqANPEgzr54JZn9CKdokIwZPuykViWoVzafeLVyVzQGbOVw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-9GnDKbmQo4nn1cawJ-UnD-s2eqY24Qihyk8SGc2RXHHG0sBghSbPXLKBUQmesCBBtcitY0MOpdPuFbq0wghwVDbDizRR3G4m5bmWvddMcxv9OMTsSHVicKcaph5DTcbHLUaZLOrF3GGEBgaI3z39lA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-WNnfHb2sodengYW7PRB7BgvDI-R_JsUnqOEjYGbN9F3LEs9z2Y14YNJsjbkG98NR451Vs03JVNneMZlx_aq1OrWOC7CkEFThvjpsQPTqZnS1t889z2wA5bwccEAZML_eiH_vVQKmCW1_0H9NgWjjgQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定メニューの告知であり、営業時間の変更はありません。"
   }
 ]
