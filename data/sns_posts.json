@@ -37026,5 +37026,76 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sapporo_2121047327163207847",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2121047327163207847",
+    "postedAt": "2026-11-13T01:07:44.000Z",
+    "postText": "13日(木)夜の部、券売機 「ジロリアン陸」 ボタン¥200で「ミックス豚チーズ」 残20 「こくまろ辛味噌」と相性バッチリ👌 https://t.co/bup65MrBgM",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-0yYBbo9kK8LAuNoVW8XfmldWcTANXawQYkgTxkZU6TjpCDv-Dr1Agd9a1dDMNLOLL5owqPVnNMFrvHs6d6b4hZC9P0KHGBc3eZF6MLTkhhGElNTxwVeWf_ej5jlRBYS43OmovoVhq4O2osMPnvch7g=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_nagoyaosone_20261113_0_2121050930594636162",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2121050930594636162",
+    "postedAt": "2026-11-13T01:22:03.000Z",
+    "postText": "おはようございます。 ラーメン二郎名古屋大曽根店です。 本日昼営業のみになります。  営業時間11:00〜14:00  明日１４日(土曜日)の営業時間 11:00〜14:00  ※11時からになりますので、ご迷惑おかけしますが、お間違えないようお気をつけくださいませ。 よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-13",
+      "endDate": "2026-11-13",
+      "hours": [
+        [
+          11,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_nagoyaosone_20261114_1_2121050930594636162",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2121050930594636162",
+    "postedAt": "2026-11-13T01:22:03.000Z",
+    "postText": "おはようございます。 ラーメン二郎名古屋大曽根店です。 本日昼営業のみになります。  営業時間11:00〜14:00  明日１４日(土曜日)の営業時間 11:00〜14:00  ※11時からになりますので、ご迷惑おかけしますが、お間違えないようお気をつけくださいませ。 よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-14",
+      "endDate": "2026-11-14",
+      "hours": [
+        [
+          11,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
