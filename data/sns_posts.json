@@ -38220,5 +38220,27 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業情報の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_shndaita_20261115_0_2121544190710686043",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2121544190710686043",
+    "postedAt": "2026-11-14T10:02:06.000Z",
+    "postText": "2026年11月15日（日） お  休  み  で  す  ♪",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-15",
+      "endDate": "2026-11-15",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
