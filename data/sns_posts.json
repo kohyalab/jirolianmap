@@ -38447,5 +38447,59 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業情報の変更に関する記載はありません。"
+  },
+  {
+    "id": "sns_post_hitachinaka_20261121_0_2121735768964268078",
+    "shopId": "hitachinaka",
+    "shopName": "ひたちなか店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26_hitachinaka/status/2121735768964268078",
+    "postedAt": "2026-11-14T22:43:21.000Z",
+    "postText": "【15日〜21日 営業時間のご案内】  11月21.22.23日お休みいただき〼  12月27日(日)テイクアウト営業やり〼  基本ラストオーダー宣告ナシ 列が途切れたら閉店  テーブル席あり〼 利用者 限定 お子様連れ優先案内  複数名のお客様 ロットまたがない様にご案内し〼  割り箸・玉子の殻は丼の中で大丈夫 https://t.co/2eSzglUubm",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-aT7WY3HjXfjSwKFizjmILyxwO7_P58WjbIMKa56gwimncnzWNkc_RwoAPZz9USgnFPJOqaxc3dsv5ynsZVdqqUGe9PdhbJ_ABhcNyKJj4trxP1ljjBOAPF52LNI82iuOgpY9rvtzvFUFp3AXV7ixlg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-4fShKgt__NNDPyYsoKHobW9wAeWfeqj27cCNJ8W1UbuPamvyNKDkTnx8ZcAV8wR65iZ1XlBRQeHgwMBtXKyretZ8DBuuTB3ASf5IPVJmQVkuTYedNpgQqo0pWdWYx8zSkPaeePJjqNsBWPcTs3mbvA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-I4UdjNLKZKtMQZIRUV48lgXI-PMbEInCOBV_zyqgk1NF25Rf5zRM4K-x0VFzmS6_O43GPklIAQ6cmf6mjvyqwF1HE7yDYd7Hyx1Fswe46ohbKxnP9G8tCLCwHjMniCUZgYNu92iJTL6-g8sd3Pi2mw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-xnrEOXyIHo26hJTie8-7h3lyvm103sxQIrCgPVrtnVwBJOmRTQRtCCnKQpV9PeMiHMmynV_bdqb_-XPgzmRyfaAp-j8RsRUH-SzSuN0ed5y2Q0m9a0dC7E8FWCncAiAXCY6rg3w3-FDpdT8CXVkwcQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-21",
+      "endDate": "2026-11-23",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_hitachinaka_20261227_1_2121735768964268078",
+    "shopId": "hitachinaka",
+    "shopName": "ひたちなか店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26_hitachinaka/status/2121735768964268078",
+    "postedAt": "2026-11-14T22:43:21.000Z",
+    "postText": "【15日〜21日 営業時間のご案内】  11月21.22.23日お休みいただき〼  12月27日(日)テイクアウト営業やり〼  基本ラストオーダー宣告ナシ 列が途切れたら閉店  テーブル席あり〼 利用者 限定 お子様連れ優先案内  複数名のお客様 ロットまたがない様にご案内し〼  割り箸・玉子の殻は丼の中で大丈夫 https://t.co/2eSzglUubm",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-aT7WY3HjXfjSwKFizjmILyxwO7_P58WjbIMKa56gwimncnzWNkc_RwoAPZz9USgnFPJOqaxc3dsv5ynsZVdqqUGe9PdhbJ_ABhcNyKJj4trxP1ljjBOAPF52LNI82iuOgpY9rvtzvFUFp3AXV7ixlg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-4fShKgt__NNDPyYsoKHobW9wAeWfeqj27cCNJ8W1UbuPamvyNKDkTnx8ZcAV8wR65iZ1XlBRQeHgwMBtXKyretZ8DBuuTB3ASf5IPVJmQVkuTYedNpgQqo0pWdWYx8zSkPaeePJjqNsBWPcTs3mbvA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-I4UdjNLKZKtMQZIRUV48lgXI-PMbEInCOBV_zyqgk1NF25Rf5zRM4K-x0VFzmS6_O43GPklIAQ6cmf6mjvyqwF1HE7yDYd7Hyx1Fswe46ohbKxnP9G8tCLCwHjMniCUZgYNu92iJTL6-g8sd3Pi2mw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-xnrEOXyIHo26hJTie8-7h3lyvm103sxQIrCgPVrtnVwBJOmRTQRtCCnKQpV9PeMiHMmynV_bdqb_-XPgzmRyfaAp-j8RsRUH-SzSuN0ed5y2Q0m9a0dC7E8FWCncAiAXCY6rg3w3-FDpdT8CXVkwcQ=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-12-27",
+      "endDate": "2026-12-27",
+      "hours": [],
+      "reason": "テイクアウト営業",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   }
 ]
