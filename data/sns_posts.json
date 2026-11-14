@@ -38201,5 +38201,24 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "本日の営業終了告知（日常的な売り切れ終了）"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2121521213893955931",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2121521213893955931",
+    "postedAt": "2026-11-14T08:30:48.000Z",
+    "postText": "列切れましたので、よろしかったらどうぞー！！ 芋煮会で鍋二郎の注文たくさん出て助かります！！ 外で美味しく食べれてるのかしら？ 上手く茹でれてるか少し心配です！！ 美味く食べれてたら、教えてくれると嬉しいです！！ https://t.co/CqxjRqx5GD",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-jfJi74POAr73gcroYwZ2LKTJjkZFKIFjKY7Ki719Ki88enUqEpUieueWlq8U70t96CItquJSJuEJhmA92SXAEWiD4xO_VXWmfZ2u1Nisayj4BF7E5vx3snyxRkuQVFcdLYMxxI5pkE3pHwoFNGszSw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-i2WlbctJNVUh5aO3H4v9TCM1Xib1naIBarMzWbMyDQaH9m2evA1kWPpHfATSY2lqZjIzAJJfa0wBgLxXiMh_VRqWwVFRMaFgOe5AlW61BBz8or9U86vzqr5N-IaVSzBbUUAMdwCrcbZ5XK7NirKd6w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-QTktgvr1J5PG6WNvmS0JgZieKN_HFimZDlS-_8uprrMSBUuK6xSOXkLMZTWXDRU6sjPf_5oRwtxcueRCv_nIkTI5sXnAIfqXV7rVZas_Wt31UDZ7CS2NeV8Fy81y0D689bwbTnK2EOVftcUufqG9hA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報の変更に関する言及はありません。"
   }
 ]
