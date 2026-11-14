@@ -38344,5 +38344,22 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "ポスター掲示に関する日常投稿であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_kameido_2121618830061715711",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2121618830061715711",
+    "postedAt": "2026-11-14T14:58:41.000Z",
+    "postText": "でも1番高い買い物はアガベでした ( ◜◡◝ )デザフェスでアガベが買えるとは思わずつい… https://t.co/KrZOUM1MeY https://t.co/tHPLdRlw6G",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-aQdeFW-SaRCzH2svN5mjA6lg5lnXd7iAueRpMILvYIy-Dg_kK0mfGQtkLUZ2Bxvo-VEaHlA0IkapJdXIElgYHIStqy01nryVglUNll73-TPAkydjffdAOESWy6qOz-lYlx70ubumlhUYFVxCSmuLaQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報の変更に関する言及はありません。"
   }
 ]
