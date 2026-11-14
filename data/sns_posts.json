@@ -38361,5 +38361,52 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業情報の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_mention_kameido_2121626008868778283",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2121626008868778283",
+    "postedAt": "2026-11-14T15:27:13.000Z",
+    "postText": "@ksk_illust こちらこそお会いできて嬉しかったです！ ぜひお店でもお待ちしております✨",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_routine_kameido_2121625619566051651",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2121625619566051651",
+    "postedAt": "2026-11-14T15:25:40.000Z",
+    "postText": "性能抜きに好きなポケモンで固めました✨ もし私がポケモントレーナーなら… 【オールラウンドチーム】相性度91% ドダイトス / ボスゴドラ / ヌメルゴン / ブロスター / マルヤクデ / ペンドラー  #もし私がポケモントレーナーなら #ポケモン https://t.co/DOFbu3ZPyk https://t.co/XeD5XtUWEw",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-FmIe60XP8nwUsMnHW2cKImhR936u_4kSNHMkiOxo-p5boZQlFdfXvyOLdByH35vS5eB9TaOj4UNXggk0v5R_tz0zc7oYP1PzKdsihr1KWEqIOez8zcMN1u1jQhplYOvla-LgIUGvqY85dPsVsevU_g=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_yaen2_2121622526514065735",
+    "shopId": "yaen2",
+    "shopName": "八王子野猿街道店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/Jiro_Yaenkaido2/status/2121622526514065735",
+    "postedAt": "2026-11-14T15:13:22.000Z",
+    "postText": "11月15日(日) 朝7:30～15:00 ⭐テイクアウト、鍋二郎あります 並ばず買えます  あんちゃんあります！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内であり、変更はありません。"
   }
 ]
