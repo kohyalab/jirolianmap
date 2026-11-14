@@ -37993,5 +37993,112 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_sengawa_2121476602802688242",
+    "shopId": "sengawa",
+    "shopName": "仙川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjiro26/status/2121476602802688242",
+    "postedAt": "2026-11-14T05:33:31.000Z",
+    "postText": "本日17時から店内営業とテイクアウト販売します。テイクアウトはつけ麺に転用可能です。追加の生麺一玉１００円(400g）です。お薦めの調味料です。 https://t.co/mQfRtkFXC0",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-pfw8aUWmL71eAQHEDU7MQW8XsyxEmTRnDvJaNRY13vKgsqgBYQtywkmYlXCAlVjnefHNZYR3UDyJbqitCYwg3EfdDlUDjwEm4NsE05b3a0mlNG_dDD4xfiFXzaRq4dB30wo3dTHnayLTvmLSxbUyug==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-dZdRQ9d4xwU_F3PSEtxFB50b5cKMd5ypm4sxjZ-gIXsIB38afG0rbuQfXAcRQyzjHW1azc1ncOATY9MRtAQPAa2sRn-itvZlykY1biQLvE9LR-K1q8QwLoot4E_pxHE2evJV8e7AVoW3OgI_MUXC7g==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-QTccwgxt7-NvFgvt4zcr4E5qvr_m3tvFw6K3sxGTSbp-oeF98vcY0ClCtragZgm8x5o2DcIN9A7g_B3Nq1baiRQ9J-naezfpKze6dGaCHOAos5BMl7q_EboRYGPpimsQXk6QdVWPSd38ei66jWqPpg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-KmNa0YRmHZyHEt8jszcx35rMiH0BTk4tTazBsdPGCggS_89IBVtLb3TsxiFyXsGnU71DDsfT2r7DPADctmm4Vl_bZiFq7BpfNr6D7TTHWz9WcXK4qKaIImSAui8o3AzuG7HcKfzFXGkEgUVkXiSSXg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_koiwa_2121480363440820267",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2121480363440820267",
+    "postedAt": "2026-11-14T05:48:28.000Z",
+    "postText": "11/14の追加メニュー  🐷豚ハーフ 🐽くずれ豚 📍生麺 📍汁なしの素 📍味付き脂 📍魚介つけ麺の素 個数制限無し  追加メニューだけのご購入も大歓迎です。  15時から販売開始いたします⏰",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業変更なし（通常通り営業・雑談等）"
+  },
+  {
+    "id": "sns_post_routine_senjuohashi_2121483280453448137",
+    "shopId": "senjuohashi",
+    "shopName": "千住大橋駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjujirou26/status/2121483280453448137",
+    "postedAt": "2026-11-14T06:00:03.000Z",
+    "postText": "只今の時間より🍜  SH脂蕎麦セット 2人前1セット  1500円 （麺1玉2袋、豚入脂パック2つ）  ノーマル1つとPlus  ラー油🐖or魚粉油そば🐟 味噌脂🐖or1010カレー🐖 生姜醤油脂🫚復刻BP塩油そば🐖 よりお1つお選び下さい！  お1人様  2セットまで！  豚1本1500円🐷 https://t.co/dZ4hj4obTn",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-qGBnS8HrgyjJ5QOHGuguLqMWfrwMqIbu26VLlKHbGWbI7n8I1jRhO2Yposl_0iaTtruvuZtS6YSNhd4GL-frRLhdaiqXX43gMRbbN-6puZr2NRd-vLzYlb48WaifBVMZwxeO284TJJTT7vFbBewk-w=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "テイクアウト商品の販売告知であり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2121481639822049604",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2121481639822049604",
+    "postedAt": "2026-11-14T05:53:32.000Z",
+    "postText": "本日 ◇11/14土 【夜】 →こちらをご覧のお客様限定です！ ↓ ※お客様ご自身で→丸の🟥赤又は白🤍食券を１枚お取りになって席までお越しください。→食券は券売機の前の台の二段目に置いておきます。 ※必ず着席時にお出しください。 ※サービス中の目印は［黄色いハンカチ］ どうぞご利用下さい♪ https://t.co/jVn5uy5yVU https://t.co/fRevRkPI1i",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-NNuc9ABCyQQ1uQQ8PU_18GQp-yx1dnxYBS7EpgNHNojWkfN1XD28fkYPrj7inYi2PpMrXuTI3dI0mqnA4tYo9AhihDFnjZYkJizQeafhFI03xGOEZCs7NmfjgqYPtmbpLEnmz5E5b62NEiQgzTGDTA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-COM0_SmXQY4FvT6IEHcZrqjaj11_dtkRk0EdUHsEaUPY0kzUlFwS5YKa0ajPvJsyORHNgBr0g23ahwzdJLeIdb07S5bB6mPddRS9v4I2HD9KkW7zaaJ5insLorLRlSOwZMoQncvMPcUNodWASKGXCw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-soXiZ9mjMww56mBCWkIBqJyIatb0bOdxgxdoZjEpXQHEfgjzQ_uDcpeItldz-cj3KMLxLRyb_3oa17hkqxqn62aCCCx-SXBTxz5tr9-hcPFv6elpBV67K5xnF5utcVjnpyqVhK76l13OL9HRkpvy9A==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-DjI5_tXX5iqmJyzZWPhxELiwEljs5JSgWmsdQM2TAwKZKeVQpurVnbp5uo4i1gA4d-L3CFL3RU1S7BAaEbRXNq98aZLN5MLQ0LRXDcpcg0_wWkmblj2D0kMYKBfwy2agSXQ2JVEuRIENxgmNJWHchw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングおよびサービス告知のみであり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2121481333960745075",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2121481333960745075",
+    "postedAt": "2026-11-14T05:52:19.000Z",
+    "postText": "この後！ ◇11/14土 【夜の部】やってます！ 16:30から20:00ご来店ご到着お並びのお客様まで営業致します！  →［すき焼きタレたまご］🉐得割🈹！ 50円引き！ →［お椀でとろけるチーズ］🉐得割🈹！ 50円引き！  どうぞー♪ https://t.co/9PeWyCtBGM https://t.co/PTUKghgjuB",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-x13QjBkIxoVVa9DrzssArA_QbHVtmQo0wRHWafgviIbu3le1-z14Kh_VUfdrOjWwMiuxXxFYKHROqxl-MDZfs3SK4bGweJLznX_dSikI-L1H6OXcjpIpz1S-Wx3GS0osHFCTiwBpeyPq1wcM20onmQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2ZeTesyTdLRUs3LvhAqNvUxzOftcfu4MMISP8AHpxmrmyFaBVI-K14muPJitxyw3BqnlH38L9i8-BkJrZVbP65klJCJg3t1zKXENG5FzSGaKN_39WPEDIWMTuFaos7GO3P3fhjm2yiq7puxGMLYITw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-CBnwzF2f74xBcYyo4qBKnd7dH_mDhafuGVMUk_OozxjBQpXQo0x1y3XCeZYoi6dnbg0SU4axWbWXuqac4pi0p8KLervNU1M1eYKRIghe27O7KpLRErXfjdfQ5wqNR53y2oqu04bhj5KDZgFAILL6SQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-zjzVaQNfVUp0Vi9pLNBE1TMi1wn2JqaeudSBjVDm_tT22a3JxUVFtKqWUxK5DzUYXXAr_TQGwnwsSwQ2YQARqfpnmUHL2NzpCSzy32WKba6SB6AHgwhRQ05-4dmMHymKSCnsS26CRXBzPQMwfyBJpg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "11/14(土)の夜営業について告知されていますが、通常営業時間と同一のため変更なしと判定します。"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2121480420105834891",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2121480420105834891",
+    "postedAt": "2026-11-14T05:48:42.000Z",
+    "postText": "いまいるひとでおわりです！ ごめんなさい！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
