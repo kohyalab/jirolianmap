@@ -38306,5 +38306,43 @@
     "processedAt": null,
     "aiStatus": "match",
     "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_routine_kameido_2121607837994639687",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2121607837994639687",
+    "postedAt": "2026-11-14T14:15:00.000Z",
+    "postText": "今日初めてデザフェスに行ってきました。欲しいものたくさんで大変でした😅 全体的にシールがメインでお気に入りはこちらの粘土のタヌキと麺のピンバッジとマシマシのラーメン持った女の子の絵です✨ https://t.co/m79hBYAvD8",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-mG6GTbyuQa9gJwTKvZ-mxldfr71iDk0BwwgYvwkzvt-HVpIoXHOSoRqbBID_WSdulK4xqs8VZnBy9zAuzwinxCn8IUobLlWCOnFU5cO8O3l39R1aqhU6uHO9VUhejZ5fGetlAKoBh72NKf8pRyrRIA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-G5bGjUr_iM1lIc1kwwsum6fy1aGcWbH89jRxt9hgot_xWJ9Df2cR9-GRe0BFA-QHxz4j2V77QP5Ncx_ltl5PoHOSrg8Wa_15plW6xlOvpSm4HAhSNwq91wA-XRAYiYQfs9qqv2Lgrz5U20DMMO76vw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-q-dwojprW69Dspvf2OMkf3_vh1472Hh1WWY6-U2bhc9Fhc2Tzad4alruDae5VWsZcqLBpSl-FZ8ue7Rya5ngz3fEjJA4LbiCG_lGz59g6YpjMLk-XqSaHzBzcNVInERx2tr32oBxtNgZuxVSrtXjWQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-dsL-Xvh3h7zVGTgI4iXCpx982UEgJodYCA1Uugsz-A5eZW5goUnmG2DiX0QDAPy2DFoMja-SH_u8lJS521Xk6IuVX3di578R9tYX03qfT0AOaegf4xGIX7dlhSdu3xhiCL33gofVnQnz1tah2miShA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常的な投稿であり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2121608166299545700",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2121608166299545700",
+    "postedAt": "2026-11-14T14:16:19.000Z",
+    "postText": "今年の南陽市ラーメン課の小泉さんポスターいただきました！ 可愛らしいですね！  去年のやつ欲しい方いますか？ 欲しい方いらっしゃいましたらお声がけください！！ https://t.co/pLC6j4itj1",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-_S8bzPi4uSWsCSXt_RUlKDASAco25udUDvqdlMhvX2yguNsW5e922MsCRON0_tAWY1P6UEvJrK67V4Eb3-0hWZ5N4jetYhpEIrEQbSBGClsgHDLrAH_wrOzdlFZZ7sIzpSh5qWcZxExp268Ua7jpig==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-lHKcaRkhHeHqcRYKLH3vcmPggyohJg3qVDrsHSMb-0MB82iuj6WExnxZGruq4gwopiLQR9UQ1euOuv16FAppLamQLn4WkGzlS6O5YTwHBSQslJBVc4pB-Hn9SwpEzCFpmnUWZ5bbbuC8uxGna0wa0A=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "ポスター掲示に関する日常投稿であり、営業時間の変更はありません。"
   }
 ]
