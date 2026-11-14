@@ -37810,5 +37810,24 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "テイクアウト販売のみの告知であり、店舗営業時間の変更ではないため変更なしと判定。"
+  },
+  {
+    "id": "sns_post_routine_ikuta_2121407618929574036",
+    "shopId": "ikuta",
+    "shopName": "生田駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ikuta_jiro/status/2121407618929574036",
+    "postedAt": "2026-11-14T00:59:24.000Z",
+    "postText": "本日 発汗（ピリ辛ラーメン）やります🔥 昼夜売り切れなし ※よく聞かれるのですが、一般的なキムチ程度の辛さなのでキムチの辛さが大丈夫であれば食べれると思います。  まよにんもあります🧄 まよにんは明日あたりで一旦終わりになります。  よろしくお願いします！ https://t.co/rgfojqHl6H",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-KIAu0AmHjwOK4N5my_RT_70PCPDStTFrjlflJHwkqUlvCCVY0vsh2VSfrocPilr28OiYDqKC_MZvwZaEuiPHoO70Ws8iWW9zu5HvWoHUob3Dl4oK8_LoDTbIw2KOWB6QAfQEmo7mbMx17RNyo-yf8A==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-owLgW58MIoqcxBuP5upK3s3pFMPQ4But6p8ThyF8kzaVOSDnwcAPoO_jvqZh1etZdzIl974NSloqtYCQ7GSJkhX1A7SRhbt07kN5XAEU4iQGeAfFZx6hLID6RMn_vpGC0HkCMvKMZ5pzZXrtmxxSbw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-4bB5EAqLaVlt9383mzPb8KhpCuUH4N5XQbfWnNVFarGCJYfYl77k7V6NUbUokLdcY9gDdwPTaqlckscOlnpizMj6SAF-yJE5B9L5n0rmZsGz70FyhrYSi9j0eKVY3S5p3nH5TUlKE0tJk_MVLJC9Pg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定メニューの告知であり、営業時間の変更は含まれていません。"
   }
 ]
