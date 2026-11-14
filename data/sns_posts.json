@@ -37876,5 +37876,47 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の告知および限定メニューの案内のみであり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_nishidai_2121426109292253551",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2121426109292253551",
+    "postedAt": "2026-11-14T02:12:53.000Z",
+    "postText": "本日、14日の切り落とし、崩れは 売り切れました。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常投稿のため変更なし"
+  },
+  {
+    "id": "sns_post_nagoyaosone_20261114_0_2121425567811833871",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2121425567811833871",
+    "postedAt": "2026-11-14T02:10:44.000Z",
+    "postText": "ラーメン二郎名古屋大曽根店です。 本日お並びの方で終了とさせていただきます。 よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-14",
+      "endDate": "2026-11-14",
+      "hours": [
+        [
+          10,
+          11.17
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
