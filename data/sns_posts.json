@@ -37918,5 +37918,49 @@
     "processedAt": "2026-11-14T02:49:05.862Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_tochigikaido_2121435571444941108",
+    "shopId": "tochigikaido",
+    "shopName": "栃木街道店",
+    "postSource": "x",
+    "postUrl": "https://x.com/Tochigikaidoten/status/2121435571444941108",
+    "postedAt": "2026-11-14T02:50:29.000Z",
+    "postText": "お米が南魚沼産に切り替わりました。 南魚沼の中でも特に評価が高い旧塩沢産で流通量が少なく希少なお米です。まずは一口味わってみて下さい🍚 https://t.co/sg9g8S6KiC",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-gU8eQnwmpeqpp8RH-6VWT8je4NB6eX-qm4c_FZ7lS0qAHWfspuSx1yBVbBSyewI5Ua8S37QGn9sQg2qv2MCUNJwvtuX_9E7yqUcmqpnbBCzIxPuWCyq4e3RGe_MMH4P5GvFliaH9a3iRoJjhVaeq5Q=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報の変更はなく、メニュー（お米）の変更に関する告知です。"
+  },
+  {
+    "id": "sns_post_asakuragaido_20261114_0_2121435744782942388",
+    "shopId": "asakuragaido",
+    "shopName": "朝倉街道駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/r26akgd/status/2121435744782942388",
+    "postedAt": "2026-11-14T02:51:10.000Z",
+    "postText": "本日12:00-15:00営業いたします。 西鉄ストア様、西日本シティ銀行様、他店舗病院等駐車禁止 空いていても一般的なコインパーキングをご利用下さい。 グループの方は歩道を塞がずお静かにお願いします。 代表待ち、割込み、飲酒喫煙禁止 朝倉街道駅徒歩1分、天拝山駅7分",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-11-14",
+      "endDate": "2026-11-14",
+      "hours": [
+        [
+          12,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
