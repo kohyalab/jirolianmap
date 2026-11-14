@@ -38242,5 +38242,36 @@
     "processedAt": "2026-11-14T11:24:17.499Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_ogikubo_20261114_0_2121560529403871477",
+    "shopId": "ogikubo",
+    "shopName": "荻窪店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ogkb_jiro/status/2121560529403871477",
+    "postedAt": "2026-11-14T11:07:01.000Z",
+    "postText": "ただいまの時間で 本日の営業は終了しました",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-14",
+      "endDate": "2026-11-14",
+      "hours": [
+        [
+          11.5,
+          14
+        ],
+        [
+          18,
+          20.116666666666667
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
