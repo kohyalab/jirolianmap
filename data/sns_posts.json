@@ -37792,5 +37792,23 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "限定メニューの告知であり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_senjuohashi_2121400269472944379",
+    "shopId": "senjuohashi",
+    "shopName": "千住大橋駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjujirou26/status/2121400269472944379",
+    "postedAt": "2026-11-14T00:30:12.000Z",
+    "postText": "本日は15時30分前よりテイクアウト販売のみの営業となりますのでご注意をお願いいたします！  フォロワー限定🐖 味噌脂蕎麦🐖魚粉油そば🐖 生姜醤油脂🐖1010カレー脂🐖 ✨復刻✨BP塩油そば🐖豚１本🐖 https://t.co/eUuUnCkkJK",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ZjtaWeAdpjm7-ZOlvEc9eTXAJnpioTjM4bKBa25oiCiDsBiObT-R41TOfZJ2JLe6XvTW16JQXY72SdwAw_3Y_PMD82RStcNX34e5YMiUy26lIeuyxiQoOa24IJwkKOIZ-4L5uxOt6XdhBmXfEEq0fA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-0RRi9FRfoaRVn4tUDA008Xsj_y92UtyQgQh-sHAV2_BZ4WIUHYITBjwttb0r6PkTYCoRYB5k_FLDj9bJ0B0RMoEeJMuLM04-v979zfIAb2rYAXfvAJkgqqqpGomjGQq3_q8ZmALv8dnmhe2VyEUe5g=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "テイクアウト販売のみの告知であり、店舗営業時間の変更ではないため変更なしと判定。"
   }
 ]
