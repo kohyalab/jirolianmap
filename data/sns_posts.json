@@ -38157,5 +38157,49 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "日常的な限定トッピング・販売告知であり、営業時間の変更に関する言及はないため変更なし。"
+  },
+  {
+    "id": "sns_post_koiwa_20261114_0_2121506691808452959",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2121506691808452959",
+    "postedAt": "2026-11-14T07:33:05.000Z",
+    "postText": "本日のテイクアウトラーメンセットの受け渡しは完了しました。  追加メニューも完売のため、本日はこの時間で営業終了となります。  よろしくお願いいたします🙇‍♀️  小岩二郎",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-14",
+      "endDate": "2026-11-14",
+      "hours": [
+        [
+          16.55,
+          16.55
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_senjuohashi_2121509035690369367",
+    "shopId": "senjuohashi",
+    "shopName": "千住大橋駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjujirou26/status/2121509035690369367",
+    "postedAt": "2026-11-14T07:42:24.000Z",
+    "postText": "大変申し訳御座いませんが本日の販売は終了いたしました！  お持ち帰りして頂いた方へ！  脂の袋は立てて湯煎をし♨︎ 麺を茹でよーく湯切りをした熱熱の麺によーく混ぜ混ぜしてお召し上がり下さい🍜 （麺の茹で加減はお好みで！） https://t.co/EVx1dzxOHq",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-qjwt2eu0EXYpsX5Rtz0CQG-aL9ZT9jmqHHDTYKDDoyXmDCOXEDtl93dlgPeI2uwVQaNyNIvTswT6DKPOUVu9DxlfkKat-7_WidrkCtyqz9nk7r9QCGaNUrXkDZj_S1NKpwyLVtg6pnPX6l4E1on6Aw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "本日の営業終了告知（日常的な売り切れ終了）"
   }
 ]
