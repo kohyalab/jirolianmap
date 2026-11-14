@@ -38273,5 +38273,38 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261115_0_2121567930416799983",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2121567930416799983",
+    "postedAt": "2026-11-14T11:36:26.000Z",
+    "postText": "明日 ◇11/15日 【日曜日営業🈺】 10:00から〜15:00 ご来店ご到着お並びの お客様まで営業致します。  →［お椀でとろけるチーズ🧀］🉐🈹！ →［ニンニククタクタ煮🧄］🉐🈹！  やります！  どうぞー！ https://t.co/1kH7elE1s7",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-OAqJrE9Iru9XusDynhsmzvMktRQmQs5mPFSoEI29odwsuao5UzSU8ZYhevesRobyeoYW6Oo72uGTeMozQaIugKQoKv7FFcnfH4cdKC8I2uu5ooAf4GRWRI7qmhRSCyDFzMNFD-DnPnPFJJOTqx57WQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-9u4agI2F5lswfOCKANmhdcSpa3SzniokKFpl_5IYAb7noeod-45MB9aJgXM43Q8mfGrlsv17drzptiWetuLyYvxW3lC_ANmUa1VX8UVuZSvhU4IyCDfqZ8aBvXtZKaetHuCE9tmU1ME0xVaJjTfD3w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-RhSi7VwSGEvqHctjGGJDPPeafm_MTq6XRp2BrBqh70mODN80BiHxzNx17Ko8uuqBfQCCq-q19wxzeaGSYB1DJXumN6lftxCv5HbPUoWewbXfJNBciC8OTPzUDgxPAX57hOBqjxcgI90Lg0N-TMO3NA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-cnrVeDuiFynTRAbm4rBRkBLzGAtj9tUsB4kDbE9JoyzmALCVoAISiqX64BreRZcSRuCXJuhkWK77ofGnWjckSA70oWikPhauKvd3n9ikeMISD3JZzrpUyHRs-Qq7GWuP3dJgnTQo8DhQ4gH_KBFA7Q==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-CynvgIi9cMgbGfzBCrQsW-ZjPlKENuVW2YowhP51Ud0YS9R2KbO4XdB5SVkRiQqAWVkst8l-O1cOQgq_Cv6GvikzXwZY0VKpvAzz6Z27Sp1LPeWy8eGl5kxJP3tu8eC6Z9T-rlBP7lBR_F9MIDb_Lw=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-11-15",
+      "endDate": "2026-11-15",
+      "hours": [
+        [
+          10,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   }
 ]
