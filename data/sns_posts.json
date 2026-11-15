@@ -38849,5 +38849,20 @@
     "processedAt": null,
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_mention_kameido_2122011422154756228",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2122011422154756228",
+    "postedAt": "2026-11-15T16:58:42.000Z",
+    "postText": "@CiFoV8xuRd91735 極端な話「ニンニク入れますか？」の質問に「はい」か「いいえ」でお答えしてもらえれば大丈夫ですので！どちらも正解ですので！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
   }
 ]
