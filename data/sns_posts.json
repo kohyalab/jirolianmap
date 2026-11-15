@@ -38632,5 +38632,41 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の告知および限定トッピングの案内であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2121785245662105989",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2121785245662105989",
+    "postedAt": "2026-11-15T01:59:58.000Z",
+    "postText": "あいにくの雨ですが、テイクアウトもありますので、御来店お待ちしております！ 早く雪降れ！！ https://t.co/PTEqpjnYRa",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-nDo1IwglIlTtnRZ_T9-98z9bK0M6riyni99PWAvCMoMaCOzk7H-bc88Ba3StMP3RiRX68LvpHmArH6AmMGmYA_arhTbmBZfozsvdoG6XvTAydLbAWLt2m1zV-iDUIE-zrd32ymmORUcJo1xzs9SsDQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-_nONeO4zX1PWhdWGrQ2oWLBbnQ2GHwTH4pqd-h-Z5eax_B9nlTrsm-ZFUm0rHnhrpwOzq3r95DHgVAaOiMKZuRJ3eqgFN_U3oNVdX3k4gSfzRGCaVONheEF0m4q7GEEhnw4PDH9oWmnnHTfN5dnKIA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-wJSMfAJAduvAYh4yj8VFcq7lKFsSvHaSfqpsc5GA7dXP_ujfbMelm6vruEarXwQSAGsAMJhl_0wUQrd3pwQBL_2IJAVpiC8getaQ0mYAq6UBS6fvcXbpb2MfN8eKJPXoa7hGY27DaBYug82UblTEzw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常投稿のため変更なし"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2121784602343936376",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2121784602343936376",
+    "postedAt": "2026-11-15T01:57:24.000Z",
+    "postText": "南陽市のラーメンラリーチラシありますので、欲しい方どうぞ！！  二郎の薄い本は持ってってはダメですよ！ 既に一冊無くなってます！！ ウチのオタクの常連さんがコミケで買ってきてくださったものですので、みんなで読みましょう！！ https://t.co/JvuDXswJd2",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-zmPVCiHIH8BxSvClhADKLMMQ4rhxJnLkjxYMDlWaU3p3R3kASQvwef8VwEehFxWG-USzMgJ6hXBSPE_ogdKfHNZjTUBpDq5OhDCtVZ7DP1bJtoEi1Ex8S0JGD5zIIc4ULscEO8ejHIDxVtK05lhg0g=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報の変更に関する記載はなく、イベント告知のみの投稿です。"
   }
 ]
