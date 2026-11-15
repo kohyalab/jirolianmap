@@ -38686,5 +38686,47 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業時間の変更や臨時休業に関する言及はなく、限定トッピングの販売告知のみであるため変更なし。"
+  },
+  {
+    "id": "sns_post_routine_shndaita_2121804743043588161",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2121804743043588161",
+    "postedAt": "2026-11-15T03:17:26.000Z",
+    "postText": "(月)はSlamming仕様デス！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_shndaita_20261115_0_2121804482208264390",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2121804482208264390",
+    "postedAt": "2026-11-15T03:16:24.000Z",
+    "postText": "2026年11月15日(日) 解ってる範囲の営業予定です！  月 〇(15:00くらい) 火 〇 水 お休み 木 〇(15:00くらい) 金 〇(15:00くらい) 土 〇 日 〇  11:00〜16:00くらい 味噌(＋200円)もやります！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-15",
+      "endDate": "2026-11-15",
+      "hours": [
+        [
+          11,
+          16
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   }
 ]
