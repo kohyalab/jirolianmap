@@ -38728,5 +38728,25 @@
     "processedAt": null,
     "aiStatus": "match",
     "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2121810103544537573",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2121810103544537573",
+    "postedAt": "2026-11-15T03:38:44.000Z",
+    "postText": "雨でだいぶ早い段階で暇なうですので、よろしかったらどうぞー！！ 藤崎で佐よし君が催事で出てるので、佐よしからのハシゴでお待ちしております！！！ https://t.co/tQqoq8QrHh",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-5HSjpBekK7Y0nSaug2JsDRyUabfISN9TVsTdNoZI-fFr6XX312D4n3eXYMjdd3_KDahH5dHZ2eBQy_ZuTLrojDMAMcIXbyScr1n07UPcUTH3abPNVGXMjgE0fN2E7STwvM6G3lNrQbNV9SADkc9sSw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ua2wBHZSTGtO9_aPiMfx6imSNRooKNh4qc7-CeOKSxFNKD5-yHW81AMcXWIABhi-hJHPOCNiq9e_tduW4QMybJ17GoizjpH25nyKtBzk0jy8eqVZcR12gOHjOi7Dz2UHDN3GOTa56TVAvPGjZHKsBw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-W5O3PmMKkxQ6spC7uuRRbM-sn4egvrWN6HdFyiKTXbJLGFzt7x7V_FzysZ5CNXwzjxU5VUasVjqmn1RlNrJrafbDjphk6-bz3EiygWihO-heXJKDV4dBz1HZ9Urbwi77d1fGYzjQBDZNkBpoUdTDxw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-81uV6LWzCmGcngK_eV98cq8KdCMYivmiRswyGyvLSdb4MD-b2QxIjtbheHaAIYWTd11UndG4CAP-hctFGzvW0LXOJRTE50WLIdpSaRgY_IcEb9trjKF-tR2g40lG9w3XeV37c7MwHAEL2bMmvnKk5g=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業状況に関する変更の告知はなく、日常的な集客投稿であるため変更なし。"
   }
 ]
