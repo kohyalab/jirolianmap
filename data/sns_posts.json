@@ -39093,5 +39093,49 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の告知であり、変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_senjuohashi_2122094450008887598",
+    "shopId": "senjuohashi",
+    "shopName": "千住大橋駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjujirou26/status/2122094450008887598",
+    "postedAt": "2026-11-15T22:28:38.000Z",
+    "postText": "ラー油あります！  ※営業時間10時30分〜 15時30分ラストオーダー！ https://t.co/XuU7L34blt",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-9mQEcMXSqjRkVnBXXqrU7QIFViQ6ryCjirOV3lIjVcNELEt56yNGHdeGVg0bxn9_VNJ8PnAu5doFiZWJ3kWNqxUdpokuiQ-uRYq-jl15KJLjXdNq26u4S3TtIqBwLxA375IiUV4fx2pqeEh_5NthGw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業時間の案内であり、変更はありません。"
+  },
+  {
+    "id": "sns_post_shndaita_20261116_0_2122094317682786770",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2122094317682786770",
+    "postedAt": "2026-11-15T22:28:06.000Z",
+    "postText": "2026年11月16日(月)  ⚠️スラミング仕様 短縮営業です！⚠️ 11:00～15:00くらいです！  よろしくお願いします！  ※住宅地なのでおしゃべりしないで待っててください",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-11-16",
+      "endDate": "2026-11-16",
+      "hours": [
+        [
+          11,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
