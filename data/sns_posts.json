@@ -39197,5 +39197,214 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261117_0_2122106148707021096",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2122106148707021096",
+    "postedAt": "2026-11-15T23:15:07.000Z",
+    "postText": "［ニンニクとゴマ油のつけ麺-あつもり-］やります！  ◆11/16月【定休】 ◇11/17火［昼のみ］ ◇11/18水［昼&夜］ ◇11/19木［昼のみ］ ◇11/20金［夜のみ］  ◇11/21土 昼※10〜14時　 夜※16:30〜20:00 ↑夜の部新設🈺致しました。  ◇11/22日10〜15 ◇11/23月10〜15臨🈺 ◆11/24火【休業】 https://t.co/MlTs6n1K9E",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-SotRBxcbV5lyimyt1evTEtzChITx-3lJ_vFG4CdsGSVOcQaNGo4qbN_aFqtT7FM7h35LJddzQPyFsVPLZF5n6rrEaRnRlm-RnqcRFfXeLqcFhslKDFbXCo8dY5_rPIan9IYulK6xeS3O1uRyUlqcAw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-QFUv3TmnUGZ5IBEe6wnymCZGsiTSJcN18O7Un_K54LMfgY8FuRoDh4iWNTQyPo29hxqf9f6AcH7pROhUacNWC5HHwy9lHe67lqitSCf8xV_VBllJPWsqbfS_lqm7SKdM2Wu3rbROh9xTQfoNZ31MBA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-17",
+      "endDate": "2026-11-17",
+      "hours": [
+        [
+          10.33,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261119_1_2122106148707021096",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2122106148707021096",
+    "postedAt": "2026-11-15T23:15:07.000Z",
+    "postText": "［ニンニクとゴマ油のつけ麺-あつもり-］やります！  ◆11/16月【定休】 ◇11/17火［昼のみ］ ◇11/18水［昼&夜］ ◇11/19木［昼のみ］ ◇11/20金［夜のみ］  ◇11/21土 昼※10〜14時　 夜※16:30〜20:00 ↑夜の部新設🈺致しました。  ◇11/22日10〜15 ◇11/23月10〜15臨🈺 ◆11/24火【休業】 https://t.co/MlTs6n1K9E",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-SotRBxcbV5lyimyt1evTEtzChITx-3lJ_vFG4CdsGSVOcQaNGo4qbN_aFqtT7FM7h35LJddzQPyFsVPLZF5n6rrEaRnRlm-RnqcRFfXeLqcFhslKDFbXCo8dY5_rPIan9IYulK6xeS3O1uRyUlqcAw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-QFUv3TmnUGZ5IBEe6wnymCZGsiTSJcN18O7Un_K54LMfgY8FuRoDh4iWNTQyPo29hxqf9f6AcH7pROhUacNWC5HHwy9lHe67lqitSCf8xV_VBllJPWsqbfS_lqm7SKdM2Wu3rbROh9xTQfoNZ31MBA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-19",
+      "endDate": "2026-11-19",
+      "hours": [
+        [
+          10.33,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261120_2_2122106148707021096",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2122106148707021096",
+    "postedAt": "2026-11-15T23:15:07.000Z",
+    "postText": "［ニンニクとゴマ油のつけ麺-あつもり-］やります！  ◆11/16月【定休】 ◇11/17火［昼のみ］ ◇11/18水［昼&夜］ ◇11/19木［昼のみ］ ◇11/20金［夜のみ］  ◇11/21土 昼※10〜14時　 夜※16:30〜20:00 ↑夜の部新設🈺致しました。  ◇11/22日10〜15 ◇11/23月10〜15臨🈺 ◆11/24火【休業】 https://t.co/MlTs6n1K9E",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-SotRBxcbV5lyimyt1evTEtzChITx-3lJ_vFG4CdsGSVOcQaNGo4qbN_aFqtT7FM7h35LJddzQPyFsVPLZF5n6rrEaRnRlm-RnqcRFfXeLqcFhslKDFbXCo8dY5_rPIan9IYulK6xeS3O1uRyUlqcAw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-QFUv3TmnUGZ5IBEe6wnymCZGsiTSJcN18O7Un_K54LMfgY8FuRoDh4iWNTQyPo29hxqf9f6AcH7pROhUacNWC5HHwy9lHe67lqitSCf8xV_VBllJPWsqbfS_lqm7SKdM2Wu3rbROh9xTQfoNZ31MBA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-20",
+      "endDate": "2026-11-20",
+      "hours": [
+        [
+          17,
+          20.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261121_3_2122106148707021096",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2122106148707021096",
+    "postedAt": "2026-11-15T23:15:07.000Z",
+    "postText": "［ニンニクとゴマ油のつけ麺-あつもり-］やります！  ◆11/16月【定休】 ◇11/17火［昼のみ］ ◇11/18水［昼&夜］ ◇11/19木［昼のみ］ ◇11/20金［夜のみ］  ◇11/21土 昼※10〜14時　 夜※16:30〜20:00 ↑夜の部新設🈺致しました。  ◇11/22日10〜15 ◇11/23月10〜15臨🈺 ◆11/24火【休業】 https://t.co/MlTs6n1K9E",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-SotRBxcbV5lyimyt1evTEtzChITx-3lJ_vFG4CdsGSVOcQaNGo4qbN_aFqtT7FM7h35LJddzQPyFsVPLZF5n6rrEaRnRlm-RnqcRFfXeLqcFhslKDFbXCo8dY5_rPIan9IYulK6xeS3O1uRyUlqcAw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-QFUv3TmnUGZ5IBEe6wnymCZGsiTSJcN18O7Un_K54LMfgY8FuRoDh4iWNTQyPo29hxqf9f6AcH7pROhUacNWC5HHwy9lHe67lqitSCf8xV_VBllJPWsqbfS_lqm7SKdM2Wu3rbROh9xTQfoNZ31MBA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-21",
+      "endDate": "2026-11-21",
+      "hours": [
+        [
+          10,
+          14
+        ],
+        [
+          16.5,
+          20
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261122_4_2122106148707021096",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2122106148707021096",
+    "postedAt": "2026-11-15T23:15:07.000Z",
+    "postText": "［ニンニクとゴマ油のつけ麺-あつもり-］やります！  ◆11/16月【定休】 ◇11/17火［昼のみ］ ◇11/18水［昼&夜］ ◇11/19木［昼のみ］ ◇11/20金［夜のみ］  ◇11/21土 昼※10〜14時　 夜※16:30〜20:00 ↑夜の部新設🈺致しました。  ◇11/22日10〜15 ◇11/23月10〜15臨🈺 ◆11/24火【休業】 https://t.co/MlTs6n1K9E",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-SotRBxcbV5lyimyt1evTEtzChITx-3lJ_vFG4CdsGSVOcQaNGo4qbN_aFqtT7FM7h35LJddzQPyFsVPLZF5n6rrEaRnRlm-RnqcRFfXeLqcFhslKDFbXCo8dY5_rPIan9IYulK6xeS3O1uRyUlqcAw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-QFUv3TmnUGZ5IBEe6wnymCZGsiTSJcN18O7Un_K54LMfgY8FuRoDh4iWNTQyPo29hxqf9f6AcH7pROhUacNWC5HHwy9lHe67lqitSCf8xV_VBllJPWsqbfS_lqm7SKdM2Wu3rbROh9xTQfoNZ31MBA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-22",
+      "endDate": "2026-11-22",
+      "hours": [
+        [
+          10,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261123_5_2122106148707021096",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2122106148707021096",
+    "postedAt": "2026-11-15T23:15:07.000Z",
+    "postText": "［ニンニクとゴマ油のつけ麺-あつもり-］やります！  ◆11/16月【定休】 ◇11/17火［昼のみ］ ◇11/18水［昼&夜］ ◇11/19木［昼のみ］ ◇11/20金［夜のみ］  ◇11/21土 昼※10〜14時　 夜※16:30〜20:00 ↑夜の部新設🈺致しました。  ◇11/22日10〜15 ◇11/23月10〜15臨🈺 ◆11/24火【休業】 https://t.co/MlTs6n1K9E",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-SotRBxcbV5lyimyt1evTEtzChITx-3lJ_vFG4CdsGSVOcQaNGo4qbN_aFqtT7FM7h35LJddzQPyFsVPLZF5n6rrEaRnRlm-RnqcRFfXeLqcFhslKDFbXCo8dY5_rPIan9IYulK6xeS3O1uRyUlqcAw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-QFUv3TmnUGZ5IBEe6wnymCZGsiTSJcN18O7Un_K54LMfgY8FuRoDh4iWNTQyPo29hxqf9f6AcH7pROhUacNWC5HHwy9lHe67lqitSCf8xV_VBllJPWsqbfS_lqm7SKdM2Wu3rbROh9xTQfoNZ31MBA=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-11-23",
+      "endDate": "2026-11-23",
+      "hours": [
+        [
+          10,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261124_6_2122106148707021096",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2122106148707021096",
+    "postedAt": "2026-11-15T23:15:07.000Z",
+    "postText": "［ニンニクとゴマ油のつけ麺-あつもり-］やります！  ◆11/16月【定休】 ◇11/17火［昼のみ］ ◇11/18水［昼&夜］ ◇11/19木［昼のみ］ ◇11/20金［夜のみ］  ◇11/21土 昼※10〜14時　 夜※16:30〜20:00 ↑夜の部新設🈺致しました。  ◇11/22日10〜15 ◇11/23月10〜15臨🈺 ◆11/24火【休業】 https://t.co/MlTs6n1K9E",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-SotRBxcbV5lyimyt1evTEtzChITx-3lJ_vFG4CdsGSVOcQaNGo4qbN_aFqtT7FM7h35LJddzQPyFsVPLZF5n6rrEaRnRlm-RnqcRFfXeLqcFhslKDFbXCo8dY5_rPIan9IYulK6xeS3O1uRyUlqcAw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-QFUv3TmnUGZ5IBEe6wnymCZGsiTSJcN18O7Un_K54LMfgY8FuRoDh4iWNTQyPo29hxqf9f6AcH7pROhUacNWC5HHwy9lHe67lqitSCf8xV_VBllJPWsqbfS_lqm7SKdM2Wu3rbROh9xTQfoNZ31MBA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-24",
+      "endDate": "2026-11-24",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
