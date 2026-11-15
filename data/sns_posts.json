@@ -38804,5 +38804,35 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業情報の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_daily_kameido_2121983504045183051",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2121983504045183051",
+    "postedAt": "2026-11-15T15:07:46.000Z",
+    "postText": "ちなみに言われて1番衝撃的だったのが日本在住のイギリス人の方に言われた  「二郎知ってるよ！あのレイシストラーメン屋だろ？」でした😅  言われた時は笑ってしまいましたが、よくよく考えたら笑い事じゃないよな…ってなり色々変えていかなくてはと思ったきっかけにもなりました https://t.co/mjpcPXBUN5",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_daily_kameido_2121981951238103395",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2121981951238103395",
+    "postedAt": "2026-11-15T15:01:36.000Z",
+    "postText": "コロナが明けたころくらいから色々な人達と知り合うことが多くなり自己紹介すると多くの人に「二郎知ってる！」と言ってもらえるのですが、その後にほぼ必ず「怖い」「コールとかルールがややこしい」「コールミスると怒るんでしょう？」など言われることが多かったです。なのでそういったネガティブな https://t.co/9xZmxZ6rqR",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
