@@ -38518,5 +38518,26 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "本日11月15日(日)の営業時間は通常通り（11:00〜15:00）であり、変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2121749474662056267",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2121749474662056267",
+    "postedAt": "2026-11-14T23:37:49.000Z",
+    "postText": "本日 ◇11/15日 【昼】 →こちらをご覧のお客様限定です！ ↓ ※お客様ご自身で→丸の🟥赤又は白🤍食券を１枚お取りになって席までお越しください。→食券は券売機の前の台の二段目に置いておきます。 ※必ず着席時にお出しください。 ※サービス中の目印は［黄色いハンカチ］ どうぞご利用下さい♪ https://t.co/myFOxj922c https://t.co/61thG9IkJT",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-260j2HfnqO8JSyNQOeMfRcTt8uDjYwp8VyDn0VM2QFdyqihcrB3ZzyjOJOFwB1Hd3kHq-gaZx_QUEjq4qjcEyNFr6AxVEDtHe7Mc9qQ11UXORhkbHd5iE5mEf7m-e8tnY0kzncDRqlPYo9UXBWMURQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-LtARopZr7rcnvltNwkPhGRbnG0TaQe95AptF1rPGvMKDH-OfXYtR3F4sVN154ihA-izoict3kZXPcXLvS50q05daI9Ck1Nba4bBTgpZhyRaBxLolWjyV_9vW4i64js1l78SZigHkaDGlpNCCutN6hA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-xfmJXl6lKQEY9ebSdCFZ-oSfLMdsbcJgzgeWJkWicQgcUCovM9ahm6kfpr6aH0y6x-3GTDOIvT6MfxsUGbw1fSFNKE39m9CmwFr9pZnIk8hQN4iV1VI-5MDdTvkyBLSLD0EtDrpmxCfpgXJK5fJHqw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-P5CfFP4JcB55y1VtrD2HRJ-4LXw5-G0npr2-9-taxFU751o8tI006G3T4lpy5Y3cWTEP2jDxCOwLjVWlKsbqiIm3Hczk6PXUQMk2R2kNB47jtgpTMIRXkJQwh9PJ6Z2FYepRNqcAlCth4YmDxv9lPA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-STOUT85dhObKHZ6d_Kg_Q9BeVwnR52T8uXUunbldx5McHayKMxvSizxZ9TJnn-B8mtC-kJh-qh3ALI07fAbFRM1wOc88LV37JmUVZE5VuqKEtcKBNp-NYvG8RjCmstqPiR0QVo9ZXTfvRqCOSzv0dw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングおよびサービス告知のみであり、営業時間の変更はありません。"
   }
 ]
