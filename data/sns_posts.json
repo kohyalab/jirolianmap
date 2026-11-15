@@ -38763,5 +38763,29 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業時間の変更や臨時休業に関する言及がないため、変更なしと判定しました。"
+  },
+  {
+    "id": "sns_post_tochigikaido_20261116_0_2121929161342329250",
+    "shopId": "tochigikaido",
+    "shopName": "栃木街道店",
+    "postSource": "x",
+    "postUrl": "https://x.com/Tochigikaidoten/status/2121929161342329250",
+    "postedAt": "2026-11-15T11:31:50.000Z",
+    "postText": "いつもありがとうございます。 明日16日(月)は終日お休みをいただきます🙇 また火曜日から宜しくお願い致します。 https://t.co/OqPyVdIsxQ",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-pdHiZjdqtcIXJ1kNLdwT7ctGR8Wx5GwX0jAGc_mXoB8jeb3Ji08PUPBZuvL6sOF5-RRiXQFVKdUdAKk9zSvOjpAGkmlj_1J0rib2RLaTWdxsVwlOgJREOfzD0QYymGjDj8eg0V5ymHRUEj0Ddghmcg=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-16",
+      "endDate": "2026-11-16",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
