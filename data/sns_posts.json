@@ -38668,5 +38668,23 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業情報の変更に関する記載はなく、イベント告知のみの投稿です。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2121788216462524727",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2121788216462524727",
+    "postedAt": "2026-11-15T02:11:46.000Z",
+    "postText": "只今混雑無くなりました！ どうぞー！🈳🈳🈳 https://t.co/Tk5fEixVJL",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-1AUNAGBaM-VYQVFarWD42i8TSBzNV2QrJ_IRtQJZmoURfyt2LAbisgUC6aE0vN4HoGLVB2Sl_WLdKDmeSpyqBW-NNaZ7tqLeXusANnsn9vOsWwi9miDcCRIkxWrTPmFyFBsEjeyEdlG15jWFyskpaQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-gBXSjLS5tblrSETORbEuutIoNI4zIEOK0w0CSuvJ_y-GP6_x-tum69kYiOi7nrLbZ5COhfUDjxc-8iIMroWH3js_tcaJ_jgzk5wVmYa4WmC9qIhVsI2Kn4sYple-pc94Wn18DQ6cZAXVYMZcQYqNLg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更や臨時休業に関する言及はなく、限定トッピングの販売告知のみであるため変更なし。"
   }
 ]
