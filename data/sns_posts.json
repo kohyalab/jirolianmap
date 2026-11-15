@@ -38539,5 +38539,37 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "限定トッピングおよびサービス告知のみであり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_tachikawa_2121764221302288628",
+    "shopId": "tachikawa",
+    "shopName": "立川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jirotachikawa/status/2121764221302288628",
+    "postedAt": "2026-11-15T00:36:25.000Z",
+    "postText": "ラーメン二郎立川店 11/15(日)、昼夜とも時間内売り切れなし営業です。 昼11:00-14:30 夜17:00-21:30  ①煮干し変更 　+汁なし変更券で、にぼしるなしも  ②持帰りラーメン販売します。 　標準:2人前のスープと生麺+ブタハーフ https://t.co/a3rhS4CO7O https://t.co/p3wv8Z9iNM",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-XaZIlzuGf9a-P-TGwHI-UJoH6z7ZMo6YqChHDud6__ezZLdzkozj39i0YIDKmhcAgQ828T25MyM84Kz-v5fQy1GtBmXgfGHMVqUZ2s85U_oj7MULyq93hmyxTLke3dk4HvwqJ__wB8k4w_hNk5UbdQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常通りの営業告知であり、臨時休業や営業時間変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_ikuta_2121765978640167330",
+    "shopId": "ikuta",
+    "shopName": "生田駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ikuta_jiro/status/2121765978640167330",
+    "postedAt": "2026-11-15T00:43:24.000Z",
+    "postText": "まよにん本日までです🧄 お昼はおそらく売り切れないかと思います。夜は早めになくなると思います。 よろしくお願いします。 https://t.co/8EmNCQROqJ",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定メニューの告知であり、営業時間の変更に関する明示的な記載がないため変更なしと判定しました。"
   }
 ]
