@@ -39683,5 +39683,57 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業時間の変更や臨時休業に関する言及はなく、限定メニューの告知のみであるため変更なし。"
+  },
+  {
+    "id": "sns_post_routine_kameido_2122230763831939452",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2122230763831939452",
+    "postedAt": "2026-11-16T07:30:17.000Z",
+    "postText": "お世話になってます。本日夜の部「大蒜麻辣臭臭タレ」やります！ご希望の方は本日のトッピング¥100を購入してください。こちらは別皿提供です。それに伴い本日は無料タレの方はお休みです💦申し訳ありません。その代わり無料トッピングの「生姜」やりますのでこちら希望の方はニンニク入れますか？の時 https://t.co/015hZrCoxz",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-yjwrR9J_LeRoOycXfE9_3go9wSjE8NywXdaqC52UwK6QgGutMJTAJDF2UN1GeA8n9UGsgXUGPP5kYc1q90xkxjxcc7P_C76lUMeybhOaFSgOATdKCn5xc41TBG7bR3GSSVVcLAq48EGWXhZwY6zpzw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_nishidai_2122226508865642882",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2122226508865642882",
+    "postedAt": "2026-11-16T07:13:23.000Z",
+    "postText": "こんにちは。  本日、16日、夜の部 煮込みFZ味付き切り落とし ¥700×1、¥600×1  あります。  11/22(日)、テイクアウト販売 やります。 https://t.co/zfVMCGBXCH",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-sJ7FoNKKLomx55HDtMPuS8fjt9Bj-fzuk2fQKj8OAr-nLIE1lxulAXTBVishsqPdEstSIXkNyxv_Yf51wooEVvrvxNkmMDWia47TkKoOD73rNJx0mdET1FxQXjme-x4BxlRbeAa8yXN64O8TBw6mSg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-uDP1Br-q7JUQaAT3QkuyatlxDM3clO8N5bGwNAzHsi5CGyMrJ_gv1GpK_nnXKu0LklDxd7VhCTe5_mdlbDhF3Z_rgvclRqhoLNBEVR_Xo3E1eACTPwUi9kR42wEuFgQJ-k7GtjPX3vcrQFSjdmdcwg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-x1OQQo1itOxVMZ6siVrEjO26XAY-TBCw3g4qoLPgJfyOmI42hvUE_7DjadQDOw41yoygDGqgc4prhl1WAgWhyVsZ9jdCuiBGCXAYfaPpiwjAlUVxrH-KWSMuwPzs0Ufyqu8KIHATHzcjFEfwGYfAsQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-wDZydRbgA8EXFfkVYmyoiqjtV248c2F9qmheLUHbKt6ZYdROF2T3FHXZKp10Cnd683X3qssWHqAF7FRBh0kCqUBOnyKbxKrilsBAinGtDzrl7eJ29Fuo7DklPE0tHbJHRZshJgnBExhuy3fC5z4TIw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定メニューおよびテイクアウト販売の告知のみであり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_kyoto_2122226860662964657",
+    "shopId": "kyoto",
+    "shopName": "京都店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kyoto/status/2122226860662964657",
+    "postedAt": "2026-11-16T07:14:47.000Z",
+    "postText": "こんにちは！本日通常営業です！  テイクアウトあります！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知のため変更なし"
   }
 ]
