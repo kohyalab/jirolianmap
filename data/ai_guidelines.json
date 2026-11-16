@@ -2,6 +2,89 @@
   "generalRules": [],
   "learnedFeedback": [
     {
+      "id": "sns_post_shndaita_20261115_0_2121804482208264390",
+      "timestamp": "2026-11-16T21:21:18.488Z",
+      "shopId": "shndaita",
+      "shopName": "環七新新代田店",
+      "postDate": "2026-11-15T03:16:24.000Z",
+      "postText": "2026年11月15日(日) 解ってる範囲の営業予定です！  月 〇(15:00くらい) 火 〇 水 お休み 木 〇(15:00くらい) 金 〇(15:00くらい) 土 〇 日 〇  11:00〜16:00くらい 味噌(＋200円)もやります！  よろしくお願いします！",
+      "aiStatus": "match",
+      "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-11-16",
+        "endDate": "2026-11-16",
+        "hours": [
+          [
+            11,
+            15
+          ]
+        ],
+        "reason": ""
+      }
+    },
+    {
+      "id": "sns_post_shndaita_20261115_0_2121646504624709789",
+      "timestamp": "2026-11-16T21:19:42.920Z",
+      "shopId": "shndaita",
+      "shopName": "環七新新代田店",
+      "postDate": "2026-11-14T16:48:39.000Z",
+      "postText": "2026年11月15日（日） お休みです！",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-11-15",
+        "endDate": "2026-11-15",
+        "hours": [],
+        "reason": ""
+      }
+    },
+    {
+      "id": "sns_post_sagamiohno_20261119_1_2122106148707021096",
+      "timestamp": "2026-11-16T21:19:35.994Z",
+      "shopId": "sagamiohno",
+      "shopName": "相模大野店",
+      "postDate": "2026-11-15T23:15:07.000Z",
+      "postText": "［ニンニクとゴマ油のつけ麺-あつもり-］やります！  ◆11/16月【定休】 ◇11/17火［昼のみ］ ◇11/18水［昼&夜］ ◇11/19木［昼のみ］ ◇11/20金［夜のみ］  ◇11/21土 昼※10〜14時　 夜※16:30〜20:00 ↑夜の部新設🈺致しました。  ◇11/22日10〜15 ◇11/23月10〜15臨🈺 ◆11/24火【休業】 https://t.co/MlTs6n1K9E",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-11-23",
+        "endDate": "2026-11-23",
+        "hours": [
+          [
+            10,
+            15
+          ]
+        ],
+        "reason": ""
+      }
+    },
+    {
+      "id": "sns_post_kannai_20261122_0_2122343829856755850",
+      "timestamp": "2026-11-16T21:17:53.498Z",
+      "shopId": "kannai",
+      "shopName": "横浜関内店",
+      "postDate": "2026-11-16T14:59:34.000Z",
+      "postText": "こんばんは。 明日はカラマヨ入りましたのでご希望の方は「アレ」でお願いします。 それと少し早いのですが22(日)の営業は昼の部のみとなります。 重ねて宜しくお願いします。",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-11-22",
+        "endDate": "2026-11-22",
+        "hours": [
+          [
+            11,
+            14.5
+          ]
+        ],
+        "reason": ""
+      }
+    },
+    {
       "id": "sns_post_nagoyaosone_20261114_1_2121050930594636162",
       "timestamp": "2026-11-13T14:42:47.329Z",
       "shopId": "nagoyaosone",
@@ -923,79 +1006,6 @@
             15
           ]
         ],
-        "reason": ""
-      }
-    },
-    {
-      "id": "sns_post_routine_shndaita_2112860676863693014",
-      "timestamp": "2026-10-21T15:50:34.105Z",
-      "shopId": "shndaita",
-      "shopName": "環七新新代田店",
-      "postDate": "2026-10-21T10:56:55.000Z",
-      "postText": "(金)も営業できそうです！",
-      "aiStatus": "no_change",
-      "aiReason": "営業情報の変更に関する具体的な言及がないため、変更なしと判定しました。",
-      "humanAction": "applied",
-      "finalDetails": {
-        "startDate": "2026-10-21",
-        "endDate": "2026-10-21",
-        "hours": [],
-        "reason": ""
-      }
-    },
-    {
-      "id": "sns_post_sapporo_20261021_0_2112710126742487380",
-      "timestamp": "2026-10-21T15:48:58.289Z",
-      "shopId": "sapporo",
-      "shopName": "札幌店",
-      "postDate": "2026-10-21T00:58:41.000Z",
-      "postText": "都合により本日21日(水)昼営業のみ、夜営業お休みします、急ですいませんm(_ _)m  「濃厚TARO2」対応します。   新レギュラートッピング　 「ざく切り白髪ねぎ」 麺や、豚と絡めるとよりバッチリです👌",
-      "aiStatus": "match",
-      "aiReason": "既に登録済みの臨時スケジュールと一致",
-      "humanAction": "applied",
-      "finalDetails": {
-        "startDate": "2026-10-21",
-        "endDate": "2026-10-21",
-        "hours": [
-          [
-            11,
-            14
-          ]
-        ],
-        "reason": "都合により"
-      }
-    },
-    {
-      "id": "sns_post_nagoyaosone_20261022_0_2112714222249656697",
-      "timestamp": "2026-10-21T15:48:46.054Z",
-      "shopId": "nagoyaosone",
-      "shopName": "名古屋大曽根店",
-      "postDate": "2026-10-21T01:14:57.000Z",
-      "postText": "おはようございます。 ラーメン二郎名古屋大曽根店です。  本日昼夜営業です。 昼の部11:00〜14:00 夜の部17:00〜20:00  ※明日２２日(木曜日)お休みさせていただきます。ご迷惑おかけいたします。 ２３日(金曜日)は営業となります。  よろしくお願いいたします。 https://t.co/UquPJdTjF3",
-      "aiStatus": "schedule_change",
-      "aiReason": "営業時間の変更を検出",
-      "humanAction": "applied",
-      "finalDetails": {
-        "startDate": "2026-10-22",
-        "endDate": "2026-10-22",
-        "hours": [],
-        "reason": ""
-      }
-    },
-    {
-      "id": "sns_post_routine_ikebukuro_2112477952487374956",
-      "timestamp": "2026-10-20T21:51:15.783Z",
-      "shopId": "ikebukuro",
-      "shopName": "池袋東口店",
-      "postDate": "2026-10-20T09:36:06.000Z",
-      "postText": "池袋店です‼️ 10月20日の告知になります。  明日10月21日(水)より営業再開となり ⚠️17時00～21:30までの営業となります。  水漏れは止まりましたが、原因分からずのままの営業となります。 何かありましたらXの方で告知させて頂きます。 ご迷惑おかけしますが、よろしくお願い致します。",
-      "aiStatus": "no_change",
-      "aiReason": "10月21日(水)より通常営業再開の告知",
-      "humanAction": "applied",
-      "finalDetails": {
-        "startDate": "2026-10-20",
-        "endDate": "2026-10-20",
-        "hours": [],
         "reason": ""
       }
     }
