@@ -39875,5 +39875,59 @@
     "processedAt": "2026-11-16T21:24:43.512Z",
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_koshigaya_20261121_0_2122441058936320463",
+    "shopId": "koshigaya",
+    "shopName": "越谷店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ksgy26/status/2122441058936320463",
+    "postedAt": "2026-11-16T21:25:56.000Z",
+    "postText": "おはようございます！ ラーメン二郎越谷店です！  11月17日(火) 昼11:00〜14:30LО 夜17:00〜20:30LО ご来店お待ちしております🙇  11月21日(土)　臨時営業 10:00〜14:30LО よろしくお願いします🙇 https://t.co/WfKEbHyCwG",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-g4g3H6fauIdiuWbCnmO914cj2WKtNnS0VYxx0PE_L-AZV8QWzv3w1OuBDMLZCIw59tMWb4vJTSbkI8U45ptCPPcb_keRSKtPOnbWABFukA6e2vDPGFgSnUOgpcjY_t_58wGxl1dyg4zU5tLhenfvJg=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-11-21",
+      "endDate": "2026-11-21",
+      "hours": [
+        [
+          10,
+          14.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_hitachinaka_20261117_0_2122438777105006951",
+    "shopId": "hitachinaka",
+    "shopName": "ひたちなか店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26_hitachinaka/status/2122438777105006951",
+    "postedAt": "2026-11-16T21:16:52.000Z",
+    "postText": "【11月17日 火曜日 営業の件】  表題の件ですが、諸事情により 本日 終日お休みいただきます。 申し訳ございません。 https://t.co/MHpTcosYRV",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-pXgnplKTFDdIEtqX8KhsZYtf-NQRhgevSfZtsdiH5P0FF0LDhSMt_xZG5F9z6syjwzF9kf8hLYs8Q6-LzcDQJvcqOLIsfkilFs8tfPO57NuS-YyeemxkfSPQMdJlKJttKicciBPrgBowXS15OW576g==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-xEP4tn0uhJ2f3Twrw0dc-gRZtx2XS3NfL358mUYM8-AewP0-oS7v7YaN4bBnSU8Cbv5e_sFmE5kv5Bd_w5P2tgZ3_xox79CgrBaxUxmePT36tQ10kqkKzgbCahMqD-iwEURSVD78Ppp5nIWBclGRzg=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-17",
+      "endDate": "2026-11-17",
+      "hours": [],
+      "reason": "諸事情のため",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 諸事情のため"
   }
 ]
