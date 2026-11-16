@@ -39491,5 +39491,51 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の案内であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_asakuragaido_2122152702394393061",
+    "shopId": "asakuragaido",
+    "shopName": "朝倉街道駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/r26akgd/status/2122152702394393061",
+    "postedAt": "2026-11-16T02:20:06.000Z",
+    "postText": "本日通常営業！ ネギあります！ よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知のため変更なし"
+  },
+  {
+    "id": "sns_post_nagoyaosone_20261116_0_2122149534579192235",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2122149534579192235",
+    "postedAt": "2026-11-16T02:07:31.000Z",
+    "postText": "ラーメン二郎名古屋大曽根店です。 只今の時間、並びを持ちまして本日昼の部は終了とさせていただきます。 夜の部もよろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-16",
+      "endDate": "2026-11-16",
+      "hours": [
+        [
+          11.116666666666667,
+          14
+        ],
+        [
+          17,
+          20
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
