@@ -39199,36 +39199,6 @@
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   },
   {
-    "id": "sns_post_sagamiohno_20261117_0_2122106148707021096",
-    "shopId": "sagamiohno",
-    "shopName": "相模大野店",
-    "postSource": "x",
-    "postUrl": "https://x.com/sumo_jiro/status/2122106148707021096",
-    "postedAt": "2026-11-15T23:15:07.000Z",
-    "postText": "［ニンニクとゴマ油のつけ麺-あつもり-］やります！  ◆11/16月【定休】 ◇11/17火［昼のみ］ ◇11/18水［昼&夜］ ◇11/19木［昼のみ］ ◇11/20金［夜のみ］  ◇11/21土 昼※10〜14時　 夜※16:30〜20:00 ↑夜の部新設🈺致しました。  ◇11/22日10〜15 ◇11/23月10〜15臨🈺 ◆11/24火【休業】 https://t.co/MlTs6n1K9E",
-    "mediaUrls": [
-      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-SotRBxcbV5lyimyt1evTEtzChITx-3lJ_vFG4CdsGSVOcQaNGo4qbN_aFqtT7FM7h35LJddzQPyFsVPLZF5n6rrEaRnRlm-RnqcRFfXeLqcFhslKDFbXCo8dY5_rPIan9IYulK6xeS3O1uRyUlqcAw==",
-      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-QFUv3TmnUGZ5IBEe6wnymCZGsiTSJcN18O7Un_K54LMfgY8FuRoDh4iWNTQyPo29hxqf9f6AcH7pROhUacNWC5HHwy9lHe67lqitSCf8xV_VBllJPWsqbfS_lqm7SKdM2Wu3rbROh9xTQfoNZ31MBA=="
-    ],
-    "detectedChange": {
-      "type": "temporary_hours",
-      "startDate": "2026-11-17",
-      "endDate": "2026-11-17",
-      "hours": [
-        [
-          10.33,
-          14
-        ]
-      ],
-      "reason": "",
-      "confidence": 1
-    },
-    "processed": false,
-    "processedAt": null,
-    "aiStatus": "schedule_change",
-    "aiReason": "営業時間の変更を検出"
-  },
-  {
     "id": "sns_post_sagamiohno_20261119_1_2122106148707021096",
     "shopId": "sagamiohno",
     "shopName": "相模大野店",
@@ -39750,5 +39720,54 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261117_0_2122239283272855819",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2122239283272855819",
+    "postedAt": "2026-11-16T08:04:09.000Z",
+    "postText": "明日 ◇11/17火　十日目 【昼の部のみ🈺営業】 10:20から〜14:00 ご来店ご到着お並びの お客様まで営業致します。  →［ニンニクとゴマ油のつけ麺］やります！  →［相撲部屋の湯豆腐のタレ］ →［ニンニククタクタ煮🧄］  どうぞー♪ https://t.co/zb5qdeXzy3",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Uu9WfO4STjv9gtLrASxr9Jt7p67LowmOm14PB3HM7Dlh23l7SrYE-KHFxBERCOop-9u14fY5XT4EQ7t7V7KBIF8DnAjsGh9EqWxVE0FFlgdb9UNFbZdGvq4a0BHDGI9ggq5mhQ3QJmKlKFLpc5qvBA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-YOXXq5iwTkbx5j9mA1S5-IDPp237qRXaNlsPWrda-63aRKACGMFVECjoN1zqBRvuNLhit5VKPEqkOo0XQdSQW2tKArs9Qltv5hOUXdlRLBX0iSVCD7AsG0CCdpZosYkPYiH3cXmMwLGQXcJ7-BuNhw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-nJapxKRh6VcoptUp1x00uk2BNfOd2sDDTiDOWGVOmG-ZvQTbBx_Q6bhejdCi5At37hTplFoNzG6ADicChpUoeTMGrJRhub_2rcYIeji6RbA2vTURQPkJe6h8_XaKsLsHRuen-WmwoDjmCljxCIYFoA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-bSjYz8xQAKEUodM9pZALg7z47rJ0PKxS6VkyaF_yNLBjqk9gU2E7JyDu1EAO3xKqoVnOUPqXnyAoCRKT-52JpVVnwlhf4lXUS6Z0wYOrt7Ty_fF96IBdrrgqr8LMm-vNLamB_oTRcvPxe-7L_8UlHQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-sy8c9ixSlhpH3s7W7z5WSemIQycKLmTRcMg5LNiCf3C3uJM5qgAO5M8PHDSHjk4Fs4MpxX0H64Ko0PiPygw1tB1UxC-bePcq4XDsA_BBdAtXzi_VEFuFDm_vjY-9SsPyqHFV29EXBaoTRl4uUHZB2Q==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-zQd7eQ9Ou7xgM7dWSUTTlht7a4RRawnR3rNxO7FqRSfFrfUc_9HQO9AfZu6HU-5WNRrxY0hyVJxRop2AEEap6c9mnY73_II6Qzr0CNsN9EqmGl6CthqHt-2gC9bsKFLQItHGLfHfWW2fr0sXVPuHkA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-17",
+      "endDate": "2026-11-17",
+      "hours": [
+        [
+          10.333333333333334,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2122245016374669453",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2122245016374669453",
+    "postedAt": "2026-11-16T08:26:55.000Z",
+    "postText": "@A2rhw 是非是非！！ 宅飲みとかでみんなで酔っ払いながら作ると1.3倍美味しいです！！(個人の感想で効果を保証するものではありませんw)",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
   }
 ]
