@@ -39848,5 +39848,32 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "投稿内容は日常的なシールに関する言及であり、営業情報の変更は含まれていません。"
+  },
+  {
+    "id": "sns_post_kannai_20261122_0_2122343829856755850",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2122343829856755850",
+    "postedAt": "2026-11-16T14:59:34.000Z",
+    "postText": "こんばんは。 明日はカラマヨ入りましたのでご希望の方は「アレ」でお願いします。 それと少し早いのですが22(日)の営業は昼の部のみとなります。 重ねて宜しくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-22",
+      "endDate": "2026-11-22",
+      "hours": [
+        [
+          11,
+          14.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
