@@ -39929,5 +39929,115 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 諸事情のため"
+  },
+  {
+    "id": "sns_post_routine_senjuohashi_2122462033186816259",
+    "shopId": "senjuohashi",
+    "shopName": "千住大橋駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjujirou26/status/2122462033186816259",
+    "postedAt": "2026-11-16T22:49:16.000Z",
+    "postText": "ラー油あります！  ※営業時間10時30分〜 15時30分ラストオーダー！ https://t.co/WjViyQF0gl",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2OVhenr7KDDf62H28uOEm7Jm0AeljnivZIHuXf8UdffeWYVAA8Bi5J2CJ5WM6XUu8-raCqri84FqKJiKdrgzhgkiUjNWfTF2NdZyqbahqogHKIvqldN7kS2aQ5H4LZotICSaKi2grHPpEIJIJR3yqA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業時間の再確認投稿であり、変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2122464792518721692",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2122464792518721692",
+    "postedAt": "2026-11-16T23:00:14.000Z",
+    "postText": "本日 ◇11/17火 【昼】 →こちらをご覧のお客様限定です！ ↓ ※お客様ご自身で→丸の🟥赤又は白🤍食券を１枚お取りになって席までお越しください。→食券は券売機の前の台の二段目に置いておきます。 ※必ず着席時にお出しください。 ※サービス中の目印は［黄色いハンカチ］ どうぞご利用下さい♪ https://t.co/PDkkgke33y https://t.co/mfbRZyzZNx",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-JE8HN_clq9iBSp_I9cYj_wK42mpAhGrK11D81P14uywjCpKOb2oBK3jNRipwG7nvRTVJWJ7U_cb72I_e91ZAgVMIl00ovZPGFS1feNcyYiRqsZC5gD9IXTmPQjl3-XxiEq8Jjs0cq3LIrC5oeuQbjg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Yv1ylRYphTZAuNKdm6pSzteq_rymTMmNgsXujzrRjvvBqj7DmDyYoVMOT63mWDGhNnbN8X3unfys3FJnvNjSyA4F2OU-hmElWyPe1tQaNcneD6COzM1Fyj4TpaD9GHOevdX_pPFF8lm-F92RvKL-2Q==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-i45j-_oByfdU1tyXrIIpPcom_6Dy_e2uXrG2IN7LAgLasagSgBunz3zxUMDLa6fMLCdEGq8rPkqtGREhPII6Q8PRZcuTsCjy_WyIaDI9QEQCU2vLligLhSowqnxwOsgQ_8tFyadyK3MT-bOlTpXp2g==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-VipVfAp95M5dtN4Bw-v2kjf3fjHzy8-vztRf6SIF1yU_3mSERh-MAp2w6kFoEduOFlerz03Rx6Fthn46JMW5g_Y1z1HVEutjlXIn17tKn2afF-9iPPOp9VJq_m-sPXxMbM5nKw3zBOZ2d_c5Rkl2_A==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-9hJ4kGEkjiA6FlibEc9fzj-GVCrMGIL6ZWE22T0Oa_quRthhrbfT59Kao53-h3NyWCM_7j52m9Fv3dCkorUJvu_THIfC3p5tGu0q6l82pu6BFYShwcdjQCTx0hFGllmHQ7wCBRyIZz9Rrk5ls7KvPQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングおよびランチタイムサービスの告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_shndaita_2122463142605455832",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2122463142605455832",
+    "postedAt": "2026-11-16T22:53:41.000Z",
+    "postText": "バイト募集します！  時給1300円 くらい(慣れたらすこし増えます) 7時〜17時くらい(応相談) 週2〜4回くらい（25〜45歳くらい） まかないあります 近所のひと希望 日払いです ※インスパの出店をしようとしているひとは不可です   希望の方は 年齢、最寄り駅、飲食業経験を書いてDMしてください！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "アルバイト募集の告知であり、営業時間の変更や臨時休業に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2122462894134882528",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2122462894134882528",
+    "postedAt": "2026-11-16T22:52:42.000Z",
+    "postText": "激辛もやります！ 多分ちゃんと辛いです！  1倍  100円 2倍 200円 3倍 300円です！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2122462520422306214",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2122462520422306214",
+    "postedAt": "2026-11-16T22:51:12.000Z",
+    "postText": "味噌ラーメン(+200円)もやります！  麺の量と一緒に みそでって言ってください！ ラーメンのひとはしょうゆでって言ってくれるとわかりやすいです！  麺の量を聞かれた時に じぶんから言ってください！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_shndaita_20261117_0_2122462123666366699",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2122462123666366699",
+    "postedAt": "2026-11-16T22:49:38.000Z",
+    "postText": "2026年11月17日(火)  ⚠️短縮営業です！⚠️ 11:00～15:00くらいです！  よろしくお願いします！  ※住宅地なのでおしゃべりしないで待っててください",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-17",
+      "endDate": "2026-11-17",
+      "hours": [
+        [
+          11,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "既に登録済みの臨時スケジュールと一致"
   }
 ]
