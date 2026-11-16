@@ -39735,5 +39735,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の告知のため変更なし"
+  },
+  {
+    "id": "sns_post_daily_kameido_2122231617397854648",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2122231617397854648",
+    "postedAt": "2026-11-16T07:33:41.000Z",
+    "postText": "こちら肉カス、ニンニク、タマネギ、ニラ、辣油、山椒など入っており食べたら恐らく口が臭くなるのでこのネーミングです笑 辛いのでご注意ください！ https://t.co/RgKBeSBzKU",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
