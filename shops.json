@@ -2194,6 +2194,19 @@
         "reason": "",
         "sourceUrl": "https://x.com/kannaijiro/status/2114346309654376913",
         "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-22",
+        "endDate": "2026-11-22",
+        "hours": [
+          [
+            11,
+            14.5
+          ]
+        ],
+        "reason": "",
+        "sourceUrl": "https://x.com/kannaijiro/status/2122343829856755850",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -2883,6 +2896,14 @@
         "reason": "店主通院のため",
         "sourceUrl": "https://x.com/Tochigikaidoten/status/2115358173884555709",
         "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-16",
+        "endDate": "2026-11-16",
+        "hours": [],
+        "reason": "",
+        "sourceUrl": "https://x.com/Tochigikaidoten/status/2121929161342329250",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -3468,6 +3489,27 @@
           ]
         ],
         "sourceUrl": "https://x.com/sumo_jiro/status/2114584723712602486",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-23",
+        "endDate": "2026-11-23",
+        "hours": [
+          [
+            10,
+            15
+          ]
+        ],
+        "reason": "",
+        "sourceUrl": "https://x.com/sumo_jiro/status/2122106148707021096",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-24",
+        "endDate": "2026-11-24",
+        "hours": [],
+        "reason": "",
+        "sourceUrl": "https://x.com/sumo_jiro/status/2122106148707021096",
         "_isAiImported": true
       }
     ],
@@ -4279,6 +4321,23 @@
         "_isAiImported": true
       },
       {
+        "startDate": "2026-11-16",
+        "endDate": "2026-11-16",
+        "hours": [
+          [
+            11,
+            14
+          ],
+          [
+            17,
+            20
+          ]
+        ],
+        "reason": "所用のため",
+        "sourceUrl": "https://x.com/jiro_sapporo_/status/2122270408502370746",
+        "_isAiImported": true
+      },
+      {
         "startDate": "2026-11-18",
         "endDate": "2026-11-18",
         "hours": []
@@ -4797,7 +4856,37 @@
         "startDate": "2026-11-15",
         "endDate": "2026-11-15",
         "hours": [],
-        "sourceUrl": "https://x.com/26shinshindaita/status/2119334421795148084?a=oi5pDfrVTNK-7f4uIjU&s=19"
+        "reason": "",
+        "sourceUrl": "https://x.com/26shinshindaita/status/2121646504624709789",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-16",
+        "endDate": "2026-11-16",
+        "hours": [
+          [
+            11,
+            15
+          ]
+        ],
+        "reason": "",
+        "sourceUrl": "https://x.com/26shinshindaita/status/2121804482208264390",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-18",
+        "endDate": "2026-11-18",
+        "hours": []
+      },
+      {
+        "startDate": "2026-11-19",
+        "endDate": "2026-11-20",
+        "hours": [
+          [
+            11,
+            15
+          ]
+        ]
       }
     ],
     "shiftsByDay": {
