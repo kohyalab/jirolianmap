@@ -39831,5 +39831,22 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 材料切れのため"
+  },
+  {
+    "id": "sns_post_routine_kameido_2122334756893577392",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2122334756893577392",
+    "postedAt": "2026-11-16T14:23:31.000Z",
+    "postText": "デザフェス行ってから一気にシールが増えました笑 https://t.co/kQEUujAS0d",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-a06sZocAf969-bPgc32NKKEdkJ0UjPkm0GzbHvy8NljqtICzacO-qut9MhEbmDoIpugeEuSkZ7JUXuLdlpe2-fKp6aHY867N9kigAj0cC1US0seg2X3xo0ZfVXqQYcIENcaaYi0bSlUk8W7WvWUZQA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "投稿内容は日常的なシールに関する言及であり、営業情報の変更は含まれていません。"
   }
 ]
