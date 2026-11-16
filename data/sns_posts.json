@@ -40039,5 +40039,23 @@
     "processedAt": null,
     "aiStatus": "match",
     "aiReason": "既に登録済みの臨時スケジュールと一致"
+  },
+  {
+    "id": "sns_post_routine_tachikawa_2122467691361677370",
+    "shopId": "tachikawa",
+    "shopName": "立川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jirotachikawa/status/2122467691361677370",
+    "postedAt": "2026-11-16T23:11:45.000Z",
+    "postText": "11/17(火)、特別営業でも時間内売り切れ無し！ 昼11:00-14:30 夜17:00-21:30  ①NBC 　・煮干しカレーラーメン 　・#14 極太麺本日限定、麺が主役級！？  ②持帰りラーメン販売します。 　標準:2人前のスープと生麺 　　　+ブタハーフ2,500円 https://t.co/ZT6ewNNA0c https://t.co/Cp8dj1r63J",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-moslkRlLgMTLKBAab9Ynud_OemdZoMGQ5H2ON8-m48A4JdHctJdnPJi0PJEcGQoCVLKzcJMcUIuzAUa3fzXraAiRHhwwSYG2x2BptmO35eG8g0SyEsBKFYyQGIs4NISL2pAIQAOTaH7gGsT_ZotWEQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-CXHjlT3v8q-LSYk-yBdtjrnhRpGKIq-jDSDmQTOw5-ahcEFSDZ7vk2-bTlXnyuyj9WDktFUFhtQK35laFmnpUADvAK-9mTgyeh5XsdxdQ3zej5cVzpCvIbh5dxZzsVgx_E3NZjhB3CamRhsC8Qaw3Q=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "11/17(火)は通常通りの営業時間であり、変更はありません。"
   }
 ]
