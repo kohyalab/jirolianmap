@@ -39581,5 +39581,35 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "日常的な食事の感想投稿であり、営業情報の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_sengawa_2122195313905766617",
+    "shopId": "sengawa",
+    "shopName": "仙川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjiro26/status/2122195313905766617",
+    "postedAt": "2026-11-16T05:09:25.000Z",
+    "postText": "本日１７時から店内営業とテイクアウト販売します。営業時間17:00〜21:00",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業時間の範囲内であるため変更なし"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2122194892952948785",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2122194892952948785",
+    "postedAt": "2026-11-16T05:07:45.000Z",
+    "postText": "あるいてこれるひとどうぞー！ https://t.co/Yz5VFGvxpF",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
