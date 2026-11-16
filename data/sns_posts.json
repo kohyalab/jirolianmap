@@ -39564,5 +39564,22 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_shndaita_2122185100305822069",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2122185100305822069",
+    "postedAt": "2026-11-16T04:28:50.000Z",
+    "postText": "きのうたべた二郎です！ パンチしかないのにくどくなくて感動でした！ https://t.co/9Zpw15vdAV",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-nacsv5_QSRHQU4LJ_Q4b8iuvqxCoKqhHgcWs-6sn4RuhjsxM9sFH2Z69fTwYyS6rxwZtDxRxDQ8C1s682In34zuX78Y7Oo-XM_Kl_5hJjHeJ5qdLr0i1qCn2ONP_4oTDyHe-GLL8i19WuEJgIUM8og=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常的な食事の感想投稿であり、営業情報の変更に関する言及はありません。"
   }
 ]
