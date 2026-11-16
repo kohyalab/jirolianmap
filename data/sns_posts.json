@@ -39800,5 +39800,36 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_kameido_20261116_0_2122288972852543768",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2122288972852543768",
+    "postedAt": "2026-11-16T11:21:36.000Z",
+    "postText": "材料切れのため只今並びの方までで本日の営業は終了です。申し訳ありません",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-16",
+      "endDate": "2026-11-16",
+      "hours": [
+        [
+          11,
+          14.5
+        ],
+        [
+          17,
+          20.35
+        ]
+      ],
+      "reason": "材料切れのため",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 材料切れのため"
   }
 ]
