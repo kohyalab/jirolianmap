@@ -39438,5 +39438,41 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "11月16日(月)は通常営業の告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_tachikawa_2122129912383569967",
+    "shopId": "tachikawa",
+    "shopName": "立川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jirotachikawa/status/2122129912383569967",
+    "postedAt": "2026-11-16T00:49:33.000Z",
+    "postText": "11/16(月)、昼夜とも時間内売り切れなし営業です。 昼11:00-14:30 夜17:00-21:30  ①煮干し変更 +汁なし変更券で、にぼしるなしも  ②立川レッド(からいあぶら) 　脂+ほぐし豚 　別皿提供=辛さ調整しながら食べられます！  ③持帰りラーメン販売します。 　標準:2人前のスープと生麺+ブタハーフ https://t.co/bDu4RqBgKw",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-wW2n6f3bvwtAHeP6VIpVsaIMckSyvhLUzmqKJdK0sbIsCUqsHX3GZeUy9gngQHHMfcHBy6hZ2bqnEDJ678pAbKKNwIzxzWUt_wj4c-AzAEL_7oT8GeR833cw9HjRXcgMSB8vNK9FeEhSYDGItnJ7wQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ikbox-HegEKvLRy8QvddzV4apFX3T2IvP5XmgYLl0shtbrD9gor-P5xKTEJ2euSwx3nU81AqQhc6XpIg-0jEIY12m-eKv9agbilUp4cdBWURjaHiG2IhqvyYerpVEBPpniOJtLCY1G3qTf255l1T6g=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_ikuta_2122128744483803150",
+    "shopId": "ikuta",
+    "shopName": "生田駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ikuta_jiro/status/2122128744483803150",
+    "postedAt": "2026-11-16T00:44:54.000Z",
+    "postText": "本日 発汗（ピリ辛ラーメン）やります🔥 昼夜売り切れなし ※よく聞かれるのですが、一般的なキムチ程度の辛さなのでキムチの辛さが大丈夫であれば食べれると思います。  まよにんは昨日で一旦終了しました。 またそのうちやります。  よろしくお願いします。 https://t.co/p0wPHEE7uD",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Kghgszhr_8HOeQVseIeI1uiODRDrQnoikKyIUQVmQgrDRKS1P7EwU_VBom2F8ze_Pg5nRoZOqu_ol3u_CQi8MfqAqayn64ojbglcXTgCZQCSBWH4CciAs9BY87qG-JSF_TL07kahmjWmKNpHu3sa9w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-zkPq4Ap2Gs9ydgCUAwMVcDnFozhjHE6j5aRvlY_9aXsLxXFuIaWK2KQIXlmhTO8hwvdnXJGU4AbvpXeyZpErA3RutnKlNQrwcOKVZ5zU3Tr2CrxWx-uXRSlBLgnFUMIdCkkrhwBJv3PfMfGAAyH7Ew=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定メニューの告知であり、営業時間の変更はありません。"
   }
 ]
