@@ -40456,5 +40456,47 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_nishidai_2122599573680202095",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2122599573680202095",
+    "postedAt": "2026-11-17T07:55:49.000Z",
+    "postText": "本日、17時、夜の部  煮込みFZ味付き切り落とし ¥1000×2、¥800×1、¥600×1  あります。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常的な限定メニュー販売の告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_kyoto_20261117_0_2122593666808324503",
+    "shopId": "kyoto",
+    "shopName": "京都店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kyoto/status/2122593666808324503",
+    "postedAt": "2026-11-17T07:32:20.000Z",
+    "postText": "こんにちは！本日は22時まで営業にさせていただきます🙇‍♂️  テイクアウトあります！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-17",
+      "endDate": "2026-11-17",
+      "hours": [
+        [
+          17,
+          22
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
