@@ -40341,33 +40341,6 @@
     "aiReason": "他アカウントへのメンションのため除外"
   },
   {
-    "id": "sns_post_nagoyaosone_20261117_0_2122550895452033279",
-    "shopId": "nagoyaosone",
-    "shopName": "名古屋大曽根店",
-    "postSource": "x",
-    "postUrl": "https://x.com/jiro_NGY/status/2122550895452033279",
-    "postedAt": "2026-11-17T04:42:23.000Z",
-    "postText": "ラーメン二郎名古屋大曽根店です。 只今の時間、並びを持ちまして本日昼の部は終了とさせていただきます。 夜の部もよろしくお願いいたします。",
-    "mediaUrls": [],
-    "detectedChange": {
-      "type": "temporary_hours",
-      "startDate": "2026-11-17",
-      "endDate": "2026-11-17",
-      "hours": [
-        [
-          11,
-          13.7
-        ]
-      ],
-      "reason": "",
-      "confidence": 1
-    },
-    "processed": false,
-    "processedAt": null,
-    "aiStatus": "schedule_change",
-    "aiReason": "営業時間の変更を検出"
-  },
-  {
     "id": "sns_post_koiwa_20261117_0_2122563858116259914",
     "shopId": "koiwa",
     "shopName": "小岩店",
@@ -40489,6 +40462,91 @@
         [
           17,
           22
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2122637450325708903",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2122637450325708903",
+    "postedAt": "2026-11-17T10:26:19.000Z",
+    "postText": "来る ◇11/22日 大相撲九州場所千秋楽  限定ラーメン！ ［相撲部屋の湯豆腐ダレのラーメン］  やります！ https://t.co/Zzq8zqBEj0",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-cc0iEcabo6sLr0o8BmRkprHx1U3UHYtDhcOR0Hbpd1-WN7cbVpJsSlel-vWTfL5UlU6YrvsB8BDqNBri6zg1ZI5LgcFknOQxVvvdqHP0NKjejsIOiW2yY-kqbCKxERh7QnkhFziqUYgXQzNnSoS82w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-i6eGdq7zVYp6aTLQONg2npQyD1_PlvXA7wIRRtCm965lISZ6acGadCI03JbtRBkkilRz6jTU6VZu5bSI3HJou4B19i7wHEpfXJ05vnhn5ogSV8bsNSF8QIERNCizYNyjZJaWoadkZagCblLSeo1LCg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定メニューの告知のみであり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261118_0_2122634486336901440",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2122634486336901440",
+    "postedAt": "2026-11-17T10:14:32.000Z",
+    "postText": "明日 ◇11/18水 【昼の部】 10:20〜14:00 【夜の部】 17:00〜20:30  →［ニンニクとゴマ油のつけ麺］  本場所限定！もうすぐ終了！ →［相撲部屋の湯豆腐のタレ］昼＆夜🉐得割🈹！ ※券売機50円設定！50円にて販売です♪  →［ニンニククタクタ煮🧄］  やっております♪ https://t.co/dlQT14z48R",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-6WiKzhqyYFQK6M6131dXw3gpV1HSIy4vBCK5Um1tYaHDy7_f4TEzhRbX1CGROFNmPXcJ2oa0fRI2IyFwyFm6Zemc-nHOGezlgB9YRdM81nxL8fxxQgOkWhcenG5Wq9g30KtolPLYwdpIzyjLzGP7Mg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-CjtCDCB1k2xcIXrCysciYTbJtL2zSqvEzm3lpD6BtvFEjZWdHt9G3BIxPzVe5r1DYcM2LN_J8a_GWPv7Ekp-Ex5ptcm9nt86MBONsywdgF52mu3hXVR9H4aa9zeewbxAGaI-k7SKN_FZOg3sH1Qk1w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-KDADci6dBN824mJGRQJb28zNURWa-bCW2nPoIAYWNhMYPoYevuJrA3paCDt3XcrCjJzBt-94QvK1o2QtZ0S85TF_m-gmoy9Y2evxKEnZNuxQP6-4_RSYKa-Gc-3c0AvMm5pZYvAerJCiiPuPr1gmKA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-czJ0rgV0YbJBusQ6G7t_Iy_99vOOxFC984t4ysyZLUMjPsa4TPFFVMYaQm4osqndrjsY9rf2uNvJ3X23ZSST_qUNsrIxQaR8wHrxtax8MShsJvvriHJR_JVHmTHcemeiMN9_PA0ll98W2uHfIq7O6w=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-18",
+      "endDate": "2026-11-18",
+      "hours": [
+        [
+          10.333333333333334,
+          14
+        ],
+        [
+          17,
+          20.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_nagoyaosone_20261117_0_2122637303797653614",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2122637303797653614",
+    "postedAt": "2026-11-17T10:25:44.000Z",
+    "postText": "ラーメン二郎名古屋大曽根店です。 お足元悪い中お越しいただき誠に有難うございました。 只今の時間、並びをもちまして本日の営業は終了とさせていただきます。 よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-17",
+      "endDate": "2026-11-17",
+      "hours": [
+        [
+          11,
+          14
+        ],
+        [
+          17,
+          19.42
         ]
       ],
       "reason": "",
