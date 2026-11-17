@@ -4874,6 +4874,19 @@
         "_isAiImported": true
       },
       {
+        "startDate": "2026-11-17",
+        "endDate": "2026-11-17",
+        "hours": [
+          [
+            11,
+            15
+          ]
+        ],
+        "reason": "",
+        "sourceUrl": "https://x.com/26shinshindaita/status/2122462123666366699",
+        "_isAiImported": true
+      },
+      {
         "startDate": "2026-11-18",
         "endDate": "2026-11-18",
         "hours": []
@@ -5773,6 +5786,19 @@
         "reason": "",
         "sourceUrl": "https://x.com/jiro_kyoto/status/2116344319015788910",
         "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-17",
+        "endDate": "2026-11-17",
+        "hours": [
+          [
+            17,
+            22
+          ]
+        ],
+        "reason": "",
+        "sourceUrl": "https://x.com/jiro_kyoto/status/2122593666808324503",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -6274,6 +6300,19 @@
         "hours": [],
         "reason": "",
         "sourceUrl": "https://x.com/ksgy26/status/2119542261012947011",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-21",
+        "endDate": "2026-11-21",
+        "hours": [
+          [
+            10,
+            14.5
+          ]
+        ],
+        "reason": "",
+        "sourceUrl": "https://x.com/ksgy26/status/2122441058936320463",
         "_isAiImported": true
       }
     ],
@@ -6844,6 +6883,14 @@
         ],
         "reason": "",
         "sourceUrl": "https://x.com/26_hitachinaka/status/2119602336188539082",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-17",
+        "endDate": "2026-11-17",
+        "hours": [],
+        "reason": "諸事情のため",
+        "sourceUrl": "https://x.com/26_hitachinaka/status/2122438777105006951",
         "_isAiImported": true
       },
       {
