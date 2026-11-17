@@ -40608,5 +40608,51 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_fujisawa_2122799171405262884",
+    "shopId": "fujisawa",
+    "shopName": "湘南藤沢店",
+    "postSource": "x",
+    "postUrl": "https://x.com/fujirow26/status/2122799171405262884",
+    "postedAt": "2026-11-17T21:08:56.000Z",
+    "postText": "おはようございます。  11月18日(水)  しょっぱ豚🐷  無料トッピング！ 崩し豚、豚カス醤油、1番スープ、にんにく🧄生姜🫚とにかく色々  とり野菜みそネギ生姜  本日もよろしくお願いいたします。 道の駅とちお🔥🔥 https://t.co/5kFMQOOjKB",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-JQtfGLnoUHD6caaYJlf_c9KVXvGI_YAUJzEXKgLvlOf_h_xpRgjlLWswQnHER543rfCUHNjTEdSPUxr32MgFIeQAsrPEDH7pmOndm3Ks-bzwVshqYJcFwXUMlZA6p-m1iffVdWvC7nv5fHlqAG7-PA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常の営業告知および限定トッピングの案内であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_koshigaya_20261121_0_2122804151478546927",
+    "shopId": "koshigaya",
+    "shopName": "越谷店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ksgy26/status/2122804151478546927",
+    "postedAt": "2026-11-17T21:28:44.000Z",
+    "postText": "おはようございます！ ラーメン二郎越谷店です！  11月18日(水) 昼11:00〜14:30LО 夜17:00〜20:30LО ご来店お待ちしております🙇  11月21日(土)　臨時営業 10:00〜14:30LО よろしくお願いします🙇 https://t.co/WfKEbHyCwG",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-g4g3H6fauIdiuWbCnmO914cj2WKtNnS0VYxx0PE_L-AZV8QWzv3w1OuBDMLZCIw59tMWb4vJTSbkI8U45ptCPPcb_keRSKtPOnbWABFukA6e2vDPGFgSnUOgpcjY_t_58wGxl1dyg4zU5tLhenfvJg=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-11-21",
+      "endDate": "2026-11-21",
+      "hours": [
+        [
+          10,
+          14.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
