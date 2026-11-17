@@ -40556,5 +40556,20 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_tachikawa_2122642844951491023",
+    "shopId": "tachikawa",
+    "shopName": "立川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jirotachikawa/status/2122642844951491023",
+    "postedAt": "2026-11-17T10:47:45.000Z",
+    "postText": "限定、終了しました。  極太麺もなくなり次第、通常麺に切り替わります。 https://t.co/BS1C7cm5p7",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更に関する言及なし"
   }
 ]
