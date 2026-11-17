@@ -40586,5 +40586,27 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_hitachinaka_20261121_0_2122762805040611535",
+    "shopId": "hitachinaka",
+    "shopName": "ひたちなか店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26_hitachinaka/status/2122762805040611535",
+    "postedAt": "2026-11-17T18:44:26.000Z",
+    "postText": "昨日は大変 失礼いたしました。  本日より通常通り営業いたしましす。  21.22.23日はお休みいただきます。 18.19.20日、24日以降 ご利用いただけましたら幸いです。 https://t.co/zawn2lwBVa",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-21",
+      "endDate": "2026-11-23",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
