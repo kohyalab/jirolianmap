@@ -40671,5 +40671,45 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業時間の告知であり、変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_yaen2_2122832212102189526",
+    "shopId": "yaen2",
+    "shopName": "八王子野猿街道店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/Jiro_Yaenkaido2/status/2122832212102189526",
+    "postedAt": "2026-11-17T23:20:14.000Z",
+    "postText": "11月18日(水) 11:00～15:00 17:30～21:00 ⭐テイクアウト、鍋二郎あります https://t.co/pZ8QOMnvOl",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-M50dGRLl2WUfQucTrKHm6d60Rq4TKy0Nm7L-RZE_FsfuLSoMYI3rZ6LnKIKrcnOWEddMthzY4yW6WAJ8EcI0Y_J8c4US81rGnTnriY7En3InQYIu003Op9iL0-nz2K2TYmsozOkxxNPm4nhlQlMaNA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-tlaK_RTt61ZlBaDXD8kal-N87Jm1GNVhq3T-v2ygnabmmQVzlIY4vBy89TpX82LHcgfjdB_hp2SlM4s0v8QsHH4JMxxfip7zrikgVxraCYqCVnL4XzfCgB_knnAZvWYKKmg1nqM9DQyitJz4by64Jw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne--AlgPxyL-5lxhfCcH47ilAizmO5Yc05SzXu5RgPR1ADlk63C7buRz40O_SfyDbw6ZnUS6CsmXL5AKsHoe_3e9PKpP8rAPH5Nho5-A23U-MZXEoVSZffJeqZwT9CJJrChP2lHgztdbLq5_tE9wvwkkw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2122830382798414102",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2122830382798414102",
+    "postedAt": "2026-11-17T23:12:58.000Z",
+    "postText": "本日 ◇11/18水 【昼】 →こちらをご覧のお客様限定です！ ↓ ※お客様ご自身で→丸の🟥赤又は白🤍食券を１枚お取りになって席までお越しください。→食券は券売機の前の台の二段目に置いておきます。 ※必ず着席時にお出しください。 ※サービス中の目印は［黄色いハンカチ］ どうぞご利用下さい♪ https://t.co/TmVxtPynRf https://t.co/bo3Shk6JLL",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-fKceLjWE8TGZrSM7lwIR4KSnsHEvUbewYB-pDQMxU0jusGW9D1J2OKSY_IfYTnIJnACmf1OeCH6ZDDV8SSzf3PHJCA4HUiLJwph6LUjw5qWPonp0Va9pROi2Pfr1mASkVCJU3L42VGV9Wxs5Oa7rig==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-YEmiBo8MHetV3_ZmX36IFOB-MBjeRXG0ebdZHKUA645XRpkJUP6cAq_yv_iC9OgqNuWrOp2fHWEcbUdwA63TCotbAzu-wLiXbWsa8ZHsLn2iypmjGIeZLszwoKPWgsvF9jKHil6J0C4ttTrzMeKoTw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-4g4FD-g8h6S6HhmJ_W5y5-fJDBeU8899sdnujR5wsqSvNb6LEke9988FzABplc9hINlpjpcsHLGWiB1xm9BCSQiSth6htN8JIvzTaC8HfG01VQNnnkNDpmgUnvjLBWgr_L_ZFgrAhIHgUqNXxSICUQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-oBVj3_wMcl7Enq1t6mXDYCtIA17vv6Yr7yGoVrL5fy7yw6JuHRsOuW_v475b14sDz-EyFv0OS7XlL9-7Wu2hmCydNQaC-OO8CoKaQQw5uCiLT9U5KD93GVU2RMJ0f5-WEybXdS0u6hQKepN4MhrRxQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ZysVwC2iuH0ON1V-nH9InupsyUU3UleuIUZhlY23AJIYQ1dLHCBahFsqEP-H13EFkknvfYH3KBaaAmHetdmKEsR-lk-7KjL4BrV623bCtN3WHAl5T8e5Grpl_umftra8UvRaAjxteAnBUssfu-Gi6Q=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更はなく、限定トッピングの告知のみです。"
   }
 ]
