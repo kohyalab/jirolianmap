@@ -40092,5 +40092,34 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "限定メニューの告知のみであり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261117_0_2122487567912444273",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2122487567912444273",
+    "postedAt": "2026-11-17T00:30:44.000Z",
+    "postText": "本日もやります！  ◇11/17火 【昼の部のみ営業】 【テイクアウト割り🈹】  →こちらをご覧のお客様限定→ご申告制🈸［テイクアウト割🈹］やっております！食券にて。  着席時に『テイクアウト割りお願いします。』と従業員にお申し付けください。各サービス🈂️致します！ ※店内お食事の方のみです。 https://t.co/NabCT4mqAz https://t.co/mfbRZyzZNx",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-0eP8z0Cwh1o-vGZlp31PP7lVAa83aHuPInV5H56nhgMQ3z4F3LwX5osupuV6bpTiZJ27wCI3lvm0nmjfoIZWanErrn5IyGE0fawgZ2iRx0Nblf4bgxpYLiaSSde7M-tjEDnBphDmbeY6epf9PkZOGQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-17",
+      "endDate": "2026-11-17",
+      "hours": [
+        [
+          10.333333333333334,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   }
 ]
