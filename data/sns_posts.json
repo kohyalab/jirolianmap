@@ -40121,5 +40121,29 @@
     "processedAt": null,
     "aiStatus": "match",
     "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_ikuta_20261117_0_2122490895694238126",
+    "shopId": "ikuta",
+    "shopName": "生田駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ikuta_jiro/status/2122490895694238126",
+    "postedAt": "2026-11-17T00:43:58.000Z",
+    "postText": "おはようございます。告知済みになりますが、本日11月17日(火)はお休みになります。明日も定休日でお休みです。お気をつけください。  ※19日(木) ごま玉あります🟤 よろしくお願いします！ https://t.co/GArkKU9jeI",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-vTRkfeDsv8PlQXoiLxGNIcP6RjiaYe_1NXDHJGkl43I_MI_crw1QvwvC_b50JdKtryUTYZAGpPQBmIe0h4ymztxOg2Wmvzi1xgpAaHE7thRIsHQlQ5mVcwJ86CHYWeZ7WDyNY8zEVRTIav0W-XJH_g=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-17",
+      "endDate": "2026-11-17",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
