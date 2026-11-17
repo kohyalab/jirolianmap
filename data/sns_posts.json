@@ -40408,5 +40408,31 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_sengawa_20261122_0_2122579591030337736",
+    "shopId": "sengawa",
+    "shopName": "仙川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjiro26/status/2122579591030337736",
+    "postedAt": "2026-11-17T06:36:24.000Z",
+    "postText": "本日17時から店内営業とテイクアウト販売します。追加の生麺一玉１００円(400g）です。 https://t.co/50zIsj2cGZ",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-q9yU4E_hZtEgefQlGZXHGcqgmCmStfsR8mDungnlYyiQ1DirLV-5oggb9C8eNDCYm0bOs-bOuBjqIy1n53yRpfonVtgyI_PLi9u8fEISD50_wu4R0tIqcR_VO4GxAgL-LV_89WxI9Py-JyBkZzuiFg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2ZmTnUSZc072m_HVC9VpN3pXUFdJdMtB89FTj0pKxX5Gn9uRN5eL5sB8SqnKDuRus-1d5ZQ1Zd7CbIwFdUCA5joRv-w-xsYxHyBFNj--McCoj6z4gbL6Z_CNcusFsljZQZjUUQAmItXmfUvEwjMv6w=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-22",
+      "endDate": "2026-11-23",
+      "hours": [],
+      "daysOfWeek": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   }
 ]
