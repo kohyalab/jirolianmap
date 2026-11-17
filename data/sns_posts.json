@@ -40368,13 +40368,13 @@
     "aiReason": "営業時間の変更を検出"
   },
   {
-    "id": "sns_post_koiwa_20261117_0_2122561354716614799",
+    "id": "sns_post_koiwa_20261117_0_2122563858116259914",
     "shopId": "koiwa",
     "shopName": "小岩店",
     "postSource": "x",
-    "postUrl": "https://x.com/koiwajiro/status/2122561354716614799",
-    "postedAt": "2026-11-17T05:23:56.000Z",
-    "postText": "現在外並び15名。  まもなく終了宣告を出します。",
+    "postUrl": "https://x.com/koiwajiro/status/2122563858116259914",
+    "postedAt": "2026-11-17T05:33:53.000Z",
+    "postText": "ただいまお並びのお客様をもちまして本日の営業終は終了しました。",
     "mediaUrls": [],
     "detectedChange": {
       "type": "temporary_hours",
@@ -40383,7 +40383,7 @@
       "hours": [
         [
           10.5,
-          14.38
+          14.55
         ]
       ],
       "reason": "",
@@ -40393,5 +40393,20 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2122567446934802562",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2122567446934802562",
+    "postedAt": "2026-11-17T05:48:09.000Z",
+    "postText": "いまいるひとでおわりです！ ごめんなさい！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
