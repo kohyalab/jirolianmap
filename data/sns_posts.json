@@ -41136,5 +41136,109 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261119_0_2123179407800160596",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2123179407800160596",
+    "postedAt": "2026-11-18T22:19:52.000Z",
+    "postText": "おはようございます。  本日 ◇11/19木　十二日目 【昼の部のみ🈺営業】 10:20から〜 14:00迄にご来店ご到着お並びのお客様まで営業致します。  →［ニンニクとゴマ油のつけ麺］やっております  →［相撲部屋の湯豆腐のタレ］ →［ニンニククタクタ煮🧄］  どうぞー♪ https://t.co/FHNIP12bW9",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-fGk6at277hnfPLGmDBYcKXlzQJhJErq1eLlu6utidNO4Jwqj3x55JgazcaQ3Afn1TMFA-Mh_8jieU7wTABeioJiNy-0ch52sqZP-7F6VlO_IUtGJMz3pBSql8bUTEX153MOO_s7zfNMeNkzV89CMoQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2UBn3dGdeJpJKSLDCXFvsEeErYMQQ9IY0q_KBPcWA1_97eK0B_Abp9ZE_QfQI6aPCfN_RBok65qbaOLDrJqpa1CkN_FU0XlzwgMOZwKfnrXuHZ0uIHhS1_AoVFBd5WkMPbfI_t7K82HsBUGYESs2jg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-7lU1vztxPNpLqHeGcR7PflCl7CvcvWucbOJjyJkbF3M-OAV_I5g67kl0-eczr2j1RJchjJPv0yvqyPJX4Nq0MEn5lSoXa982qfM156Oq2lQzLQ9MJmQ1GMGy2aQDAZx7YVTogA39CHADMEt0RVL10Q==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-lfUDD-2UacSixyp9SOffIg3fLJqqQw18TSLSeHVb9pLYwSDJXyIUu678NCzUTiL9K0B6X_MlJlTiQ_uqrVHeootes1FLYT5OctOwrJHUU7yni_inydQ8z77U7-odulwKCBu5VZjK2icGw1MIIuCmtA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-19",
+      "endDate": "2026-11-19",
+      "hours": [
+        [
+          10.333333333333334,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_routine_shndaita_2123180756378038760",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2123180756378038760",
+    "postedAt": "2026-11-18T22:25:13.000Z",
+    "postText": "バイト募集します！  時給1300円 くらい(慣れたらすこし増えます) 7時〜17時くらい(応相談) 週2〜4回くらい（25〜45歳くらい） まかないあります 近所のひと希望 日払いです ※インスパの出店をしようとしているひとは不可です   希望の方は 年齢、最寄り駅、飲食業経験を書いてDMしてください！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2123180677042737645",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2123180677042737645",
+    "postedAt": "2026-11-18T22:24:54.000Z",
+    "postText": "激辛もやります！ 多分ちゃんと辛いです！  1倍  100円 2倍 200円 3倍 300円です！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2123180573380452574",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2123180573380452574",
+    "postedAt": "2026-11-18T22:24:30.000Z",
+    "postText": "味噌ラーメン(+200円)もやります！  麺の量と一緒に みそでって言ってください！ ラーメンのひとはしょうゆでって言ってくれるとわかりやすいです！  麺の量を聞かれた時に じぶんから言ってください！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_shndaita_20261119_0_2123180470695502010",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2123180470695502010",
+    "postedAt": "2026-11-18T22:24:05.000Z",
+    "postText": "2026年11月19日(木)  ⚠️短縮営業です！⚠️ 11:00～15:00くらいです！  よろしくお願いします！  ※住宅地なのでおしゃべりしないで待っててください",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-19",
+      "endDate": "2026-11-19",
+      "hours": [
+        [
+          11,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
