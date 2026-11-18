@@ -41071,5 +41071,22 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_kameido_2123059858459308155",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2123059858459308155",
+    "postedAt": "2026-11-18T14:24:49.000Z",
+    "postText": "GTA6ダウンロードするのすっかり忘れてた💦楽しみ！ https://t.co/JEaaTPFWnj",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-B1J3NUf0u3jTRhHJXcu8mjysgWMWTldusqfsO6EVyB-IXbM_sjYxjNlW413NmuqY3vzEl_17RgE_kE365kBZ99gKmnukUbMjpgDXp7XS77WPnq1niUQft_g-v709g0HkoKKGR2XRHtIXJ_S0wfJgZg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報に関する言及がない日常投稿のため、変更なしと判定しました。"
   }
 ]
