@@ -41138,38 +41138,6 @@
     "aiReason": "営業時間の変更を検出"
   },
   {
-    "id": "sns_post_sagamiohno_20261119_0_2123179407800160596",
-    "shopId": "sagamiohno",
-    "shopName": "相模大野店",
-    "postSource": "x",
-    "postUrl": "https://x.com/sumo_jiro/status/2123179407800160596",
-    "postedAt": "2026-11-18T22:19:52.000Z",
-    "postText": "おはようございます。  本日 ◇11/19木　十二日目 【昼の部のみ🈺営業】 10:20から〜 14:00迄にご来店ご到着お並びのお客様まで営業致します。  →［ニンニクとゴマ油のつけ麺］やっております  →［相撲部屋の湯豆腐のタレ］ →［ニンニククタクタ煮🧄］  どうぞー♪ https://t.co/FHNIP12bW9",
-    "mediaUrls": [
-      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-fGk6at277hnfPLGmDBYcKXlzQJhJErq1eLlu6utidNO4Jwqj3x55JgazcaQ3Afn1TMFA-Mh_8jieU7wTABeioJiNy-0ch52sqZP-7F6VlO_IUtGJMz3pBSql8bUTEX153MOO_s7zfNMeNkzV89CMoQ==",
-      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2UBn3dGdeJpJKSLDCXFvsEeErYMQQ9IY0q_KBPcWA1_97eK0B_Abp9ZE_QfQI6aPCfN_RBok65qbaOLDrJqpa1CkN_FU0XlzwgMOZwKfnrXuHZ0uIHhS1_AoVFBd5WkMPbfI_t7K82HsBUGYESs2jg==",
-      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-7lU1vztxPNpLqHeGcR7PflCl7CvcvWucbOJjyJkbF3M-OAV_I5g67kl0-eczr2j1RJchjJPv0yvqyPJX4Nq0MEn5lSoXa982qfM156Oq2lQzLQ9MJmQ1GMGy2aQDAZx7YVTogA39CHADMEt0RVL10Q==",
-      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-lfUDD-2UacSixyp9SOffIg3fLJqqQw18TSLSeHVb9pLYwSDJXyIUu678NCzUTiL9K0B6X_MlJlTiQ_uqrVHeootes1FLYT5OctOwrJHUU7yni_inydQ8z77U7-odulwKCBu5VZjK2icGw1MIIuCmtA=="
-    ],
-    "detectedChange": {
-      "type": "temporary_hours",
-      "startDate": "2026-11-19",
-      "endDate": "2026-11-19",
-      "hours": [
-        [
-          10.333333333333334,
-          14
-        ]
-      ],
-      "reason": "",
-      "confidence": 1
-    },
-    "processed": false,
-    "processedAt": null,
-    "aiStatus": "match",
-    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
-  },
-  {
     "id": "sns_post_routine_shndaita_2123180756378038760",
     "shopId": "shndaita",
     "shopName": "環七新新代田店",
@@ -41240,5 +41208,34 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261119_0_2123186487181410630",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2123186487181410630",
+    "postedAt": "2026-11-18T22:48:00.000Z",
+    "postText": "本日もやります！  ◇11/19木 【昼の部のみ営業】 ご申告制🈸 【テイクアウト割り🈹】  →こちらをご覧のお客様限定→［テイクアウト割🈹］やっております！食券にて。  着席時に『テイクアウト割りお願いします。』と従業員にお申し付けください。各サービス🈂️致します！ ※店内お食事の方のみです。 https://t.co/hoW03tiyua https://t.co/TQDhxmeYdR",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-B069OfKXIJACC9iYCFLC3fRfmlbCFLY6igkUZtzPcj-biK4mzKfVAONhoVvIX-aTJQ0GUVXROxvMs9UCFOUY1GFQB-suqhFw66-6aZJq5pCC1piJXC3xrlFnjXmAHx8o3O88OFCpQvPmFSYIhgMj5Q=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-19",
+      "endDate": "2026-11-19",
+      "hours": [
+        [
+          10.333333333333334,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   }
 ]
