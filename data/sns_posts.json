@@ -40711,5 +40711,38 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業時間の変更はなく、限定トッピングの告知のみです。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2122840914230218861",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2122840914230218861",
+    "postedAt": "2026-11-17T23:54:49.000Z",
+    "postText": "本日この後！ 【昼の部】 【夜の部】 ［インタビューボード風］外に出しておきます♪ ご自由にご撮影ください！  自撮りでも📱 お仲間とでも📱  どうぞー♪  　#スモジ宣伝部 　#本場所中はスモジは賑やか 　#いい意味でスモジ劇場　笑 https://t.co/Hb20gkRcmK",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-OyTH1DAyAZN0jVQQtaXGF2pXESbtz7WycCZ8X-A5nH_e-T_doJmxElWA84cBd0ksLnVdoi1WJf1LxnZWHjl2-jomS1aZkp2XSWF720QZhM01yibDCKKe050FhN3X2-1BMJg0L6CTMuHwv43aqdWKBQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-27l5JfFOxcrs9OzYBohxve1aES4wmxqhhDmCqR1vCZ_pt8KheFrjJ6sFtfbF_AFADGrtVrJ_aZSwaQZFWKVP8BGXMCokVlQBW9H_VE9XCkh6BMVYG-c8suuWy1Zc39V81nwJU2rf2dwwpMUz69w_mg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_nishidai_2122838516216553844",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2122838516216553844",
+    "postedAt": "2026-11-17T23:45:17.000Z",
+    "postText": "おはようございます。  本日、18日、 煮込みFZ味付き切り落とし  ¥800×1、¥600×1 あります。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常投稿のため変更なし"
   }
 ]
