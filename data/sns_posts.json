@@ -40980,5 +40980,45 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "限定トッピングの告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_kameido_2122955277167395259",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2122955277167395259",
+    "postedAt": "2026-11-18T07:29:15.000Z",
+    "postText": "ちいかわのキャラマグネット！当たりきたー✨ https://t.co/oic8TSXZFD",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-GCw_B-A58tHrgr6VBA6BnXR1TH3HjprF2i7dDibigpLvQaioFEfDOvrYZGTpmEY5u8zNkGfGM7LtBknG4o7CtcHriLc4mDvznWwT6ex1BfxJhGR6KS-alaJMlpgdeb_Nlpv6nlQFXoMMF3WeilHLPA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-TuFS74C6jrSqfKw-u7kGLEVxX9HXR9NLWyA0zhckgvN5fK8cgZjlRpam9S3JQlcq4GGg5HyX4IcmP-esCYHB4jyRJG7BlHwWCQ3t4vOREwMXudqdbw-QuMPiT5a2NErsKh0ll1_NjHJPrRBgTzcHpA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常投稿のため営業情報の変更なし"
+  },
+  {
+    "id": "sns_post_jimbocho_20261119_0_2122953506961416290",
+    "shopId": "jimbocho",
+    "shopName": "神田神保町店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jbc_ramen_jiro/status/2122953506961416290",
+    "postedAt": "2026-11-18T07:22:13.000Z",
+    "postText": "明日11月19日(木)は都合によりお休みさせて頂きます。よろしくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-19",
+      "endDate": "2026-11-19",
+      "hours": [],
+      "reason": "都合のため",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 都合のため"
   }
 ]
