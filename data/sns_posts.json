@@ -40852,5 +40852,51 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の告知のため変更なし"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2122911346622943411",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2122911346622943411",
+    "postedAt": "2026-11-18T04:34:41.000Z",
+    "postText": "めちゃ暇なうなので、よろしかったらどうぞー！！ https://t.co/shMprfCDlX",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Gmg_warJxYUc_NshpDBgxUBXJrvTgPFVczS94SxpUN9rMI0TW3OowBlZHW0_L19EpRyv7FZlBmk3X_c4_ePJncneheSalL0Popj2E7A8zjWfZTFSr5v7arviWiM1ajf3IUB9xquoTmz-PbSoFzeTqg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-a0zz2njR0GtN8nWKalLQO33qOpz_G9l9M1haDHKF_tbnqWJaey3uCopNSj9YsOTO4CYWLdY1z53Go1I4ZWhGjGqhGDxH5ivLw96a6b03AeHPHk2kYr-xLBsxdFIHMx9bY2ea0vjWtSuwzZxVh4G_Bw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-pq1r3iz3C_8unb7lm8NBr7t6E0kClvVvncD_N_z6CmLzqVVXGBfs18NoqklX5b5gejKaF0C3FGQsKzRsbFtZc73NKrh24Lw5LMRRCfTbh7bOueGpcai8pBQtoEhgyJnCMyIxEwdE_pVArb31y3YJZQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常的な営業告知のため、変更なし。"
+  },
+  {
+    "id": "sns_post_nagoyaosone_20261118_0_2122916341472776312",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2122916341472776312",
+    "postedAt": "2026-11-18T04:54:32.000Z",
+    "postText": "ラーメン二郎名古屋大曽根店です。 只今の時間、並びをもちまして本日昼の部の営業は終了とさせていただきます。 よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-18",
+      "endDate": "2026-11-18",
+      "hours": [
+        [
+          11,
+          13.9
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
