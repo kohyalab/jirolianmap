@@ -40898,5 +40898,47 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_koiwa_20261118_0_2122924763316441106",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2122924763316441106",
+    "postedAt": "2026-11-18T05:28:00.000Z",
+    "postText": "ただいまお並びのお客様をもちまして本日の営業は終了しました。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-18",
+      "endDate": "2026-11-18",
+      "hours": [
+        [
+          10.5,
+          14.47
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_koiwa_2122918487450685676",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2122918487450685676",
+    "postedAt": "2026-11-18T05:03:03.000Z",
+    "postText": "現在外並び20名",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常的な営業状況の報告であり、営業時間の変更や臨時休業の告知ではないため変更なし。"
   }
 ]
