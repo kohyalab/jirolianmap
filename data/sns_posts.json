@@ -40873,33 +40873,6 @@
     "aiReason": "日常的な営業告知のため、変更なし。"
   },
   {
-    "id": "sns_post_nagoyaosone_20261118_0_2122916341472776312",
-    "shopId": "nagoyaosone",
-    "shopName": "名古屋大曽根店",
-    "postSource": "x",
-    "postUrl": "https://x.com/jiro_NGY/status/2122916341472776312",
-    "postedAt": "2026-11-18T04:54:32.000Z",
-    "postText": "ラーメン二郎名古屋大曽根店です。 只今の時間、並びをもちまして本日昼の部の営業は終了とさせていただきます。 よろしくお願いいたします。",
-    "mediaUrls": [],
-    "detectedChange": {
-      "type": "temporary_hours",
-      "startDate": "2026-11-18",
-      "endDate": "2026-11-18",
-      "hours": [
-        [
-          11,
-          13.9
-        ]
-      ],
-      "reason": "",
-      "confidence": 1
-    },
-    "processed": false,
-    "processedAt": null,
-    "aiStatus": "schedule_change",
-    "aiReason": "営業時間の変更を検出"
-  },
-  {
     "id": "sns_post_koiwa_20261118_0_2122924763316441106",
     "shopId": "koiwa",
     "shopName": "小岩店",
@@ -41067,5 +41040,36 @@
     "processedAt": null,
     "aiStatus": "unresolved",
     "aiReason": "解析時エラー: Gemini API Error: All model candidates failed. Last error: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.google.com/docs/get-started).\",\n    \"status\": \"NOT_FOUND\"\n  }\n}\n"
+  },
+  {
+    "id": "sns_post_nagoyaosone_20261118_0_2122997212150181955",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2122997212150181955",
+    "postedAt": "2026-11-18T10:15:53.000Z",
+    "postText": "ラーメン二郎名古屋大曽根店です。 本日お並びの方で終了とさせていただきます。 よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-18",
+      "endDate": "2026-11-18",
+      "hours": [
+        [
+          11,
+          14
+        ],
+        [
+          17,
+          19.25
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
