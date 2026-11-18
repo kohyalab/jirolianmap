@@ -40778,5 +40778,49 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "日常投稿のため変更なし"
+  },
+  {
+    "id": "sns_post_routine_tachikawa_2122860362383204609",
+    "shopId": "tachikawa",
+    "shopName": "立川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jirotachikawa/status/2122860362383204609",
+    "postedAt": "2026-11-18T01:12:05.000Z",
+    "postText": "11/18(水)、昼夜とも時間内売り切れなし営業です。 昼11:00-14:30 夜17:00-21:30  ①煮干し変更 　+汁なし変更券で、にぼしるなしも  ②持帰りラーメン販売します。 　標準:2人前のスープと生麺+ブタハーフ https://t.co/yDPtTpVDVI",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne--ZwuT5NcX8quzRt8-wvYCHTT6BBe5hJHglpAbSh-wNTmiyn-ihoc1U519CJ2Jk1KoKbHo7oQWOp1iG3jchkyslk4KRj7EFzc7--GGdOaEqgmy13fyJqTdzZ532F39BonETMrsS0uaBJkIduNSK8ZhQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常通りの営業告知"
+  },
+  {
+    "id": "sns_post_nagoyaosone_20261119_0_2122864963492655339",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2122864963492655339",
+    "postedAt": "2026-11-18T01:30:22.000Z",
+    "postText": "おはようございます。 ラーメン二郎名古屋大曽根店です。 本日昼夜営業です。 昼の部11:00〜14:00 夜の部17:00〜20:00  ※明日１９日（木曜日）は昼の部のみの営業となります。 よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-19",
+      "endDate": "2026-11-19",
+      "hours": [
+        [
+          11,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
