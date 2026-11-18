@@ -40744,5 +40744,24 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "日常投稿のため変更なし"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2122843590330290673",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2122843590330290673",
+    "postedAt": "2026-11-18T00:05:27.000Z",
+    "postText": "来る ◇ 11/22日 大相撲九州場所千秋楽  限定20！ ロットNo.つき 十一月場所千秋楽限定！ ［来店御礼］［大入］ 【御朱印風】配布です♪ ※スモジスタンプ、ラーメン丼スタンプ押してお持ち帰りください。 ※お一人様一枚 　#スモジ宣伝部 　#本場所中はスモジは賑やか 　#いい意味でスモジ劇場　笑 https://t.co/P7p2iHmxmt https://t.co/SO6cZu0L8K",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-_ASggjyXGJaQTWZzcGnH7eog-xrZ7jYuO7u_1RK6bc8UJc3FvLF6DeGKDiJbX1nzd7Ub5m78Xsv1tM77kw2XlFr0DZBepAnDOU81g8-WbfZ9ChCUsmmz8_V7gB1_iy8k0gpmk3Hj_fpAO163e2NSCA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-LkB1YYrvDPoLlmrgAJrFC7LNiij6TgmAj6Kv5vdLxiMG0r8hH_rIh2zYmTMmKsspIBhWOd__ZigNxgazTFONiM1fAP73aK-wH2IyS3oPVspXFPj5J79-kCaPjuM6Thdp_rtqFemEnepQi6_l1wDf8g==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-1GxE7YxHxmdY5awT_bpXKdNfJd4TzkscsY45eblKtCDygd-3Ng97uI2W3yAUQ-YUF0vMNipSGTIcJEX99MfT-642zhS6e1aXIBZ5ydDju0rErQlGPhqBZN94Wk6GTPCpQaiUosSvhAwLA6ZGMPrWxA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定配布の告知であり、営業時間の変更に関する言及はありません。"
   }
 ]
