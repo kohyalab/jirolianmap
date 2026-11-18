@@ -41088,5 +41088,53 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業情報に関する言及がない日常投稿のため、変更なしと判定しました。"
+  },
+  {
+    "id": "sns_post_ichinoe_20261122_0_2123133799928361463",
+    "shopId": "ichinoe",
+    "shopName": "環七一之江店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ichinoejiro/status/2123133799928361463",
+    "postedAt": "2026-11-18T19:18:38.000Z",
+    "postText": "22（日） 24（火）〜25（定休） お休み頂きます。 宜しくお願い申し上げます https://t.co/ZYCczq6RuX",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-YRNHRnww8pOcNpj5ldatL18DzVlBcQm1nASQLSnwiSo8jRCGuteOMGCjUS6uHKDIjunoFoKJ1I0vE3dKFDNZxwoTWjs0ACwmjW59jBv_hhTcnUrCqUpwTE3qItiRUAPe_t34KYGVJGCLZBNgXs8iJg=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-22",
+      "endDate": "2026-11-22",
+      "hours": [],
+      "reason": "都合のため",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 都合のため"
+  },
+  {
+    "id": "sns_post_ichinoe_20261124_1_2123133799928361463",
+    "shopId": "ichinoe",
+    "shopName": "環七一之江店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ichinoejiro/status/2123133799928361463",
+    "postedAt": "2026-11-18T19:18:38.000Z",
+    "postText": "22（日） 24（火）〜25（定休） お休み頂きます。 宜しくお願い申し上げます https://t.co/ZYCczq6RuX",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-YRNHRnww8pOcNpj5ldatL18DzVlBcQm1nASQLSnwiSo8jRCGuteOMGCjUS6uHKDIjunoFoKJ1I0vE3dKFDNZxwoTWjs0ACwmjW59jBv_hhTcnUrCqUpwTE3qItiRUAPe_t34KYGVJGCLZBNgXs8iJg=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-24",
+      "endDate": "2026-11-25",
+      "hours": [],
+      "reason": "都合のため",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 都合のため"
   }
 ]
