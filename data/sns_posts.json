@@ -41383,5 +41383,111 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "限定トッピングおよびテイクアウト販売の告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_tachikawa_2123225324892893664",
+    "shopId": "tachikawa",
+    "shopName": "立川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jirotachikawa/status/2123225324892893664",
+    "postedAt": "2026-11-19T01:22:19.000Z",
+    "postText": "11/19(木)、昼夜とも時間内売り切れなし営業です。 昼11:00-14:30 夜17:00-21:30  ①煮干し変更 　+汁なし変更券で、にぼしるなしも  煮干し+玉ねぎオススメです！  ②持帰りラーメン販売します。 　標準:2人前のスープと生麺+ブタハーフ https://t.co/5uHy2T621y",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Tg0FkoMmuu73eVnVhDP2ssKQaYVgGNllifQovQj9v557JbirndrVs_rzrgTMqBGgoMdS9VEETTo89XFdZiphqMMrXCNCavegbURUBYjcKMmDq9mM3EZ_fCTQdtakShE_ahu_4Zw9c59V6c8lKHUVeQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業"
+  },
+  {
+    "id": "sns_post_sapporo_20261119_0_2123222823170867216",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2123222823170867216",
+    "postedAt": "2026-11-19T01:12:23.000Z",
+    "postText": "19日(木)通常営業です🍜  12:30〜14:00 、17:00〜18:30 「塩汁なし(醤油ベース)」対応します。 プラス現金１００円🧂  11月23日(月)[勤労感謝の日]🎌 10:30〜14:30(昼の部のみ、夜の部お休み)  初、「サブ塩ラーメン(ニンニク有無のみ)」 提供予定です。(40食くらい) https://t.co/M9f0mkie8x",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-H3EHh6d5cCMgNbZ2ZGeof-W2eNXv2zHnUiNc43rvzL5Gsia1gO6HsIvlI61DANJPqv3NPxwRSR4roTXVYM8jPndJwweWJyTsTLSKl5Os-28aCtMboWi_jPRSq5IEThSwD20_TbVUOKmeHEH7gl4rFw=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-19",
+      "endDate": "2026-11-19",
+      "hours": [
+        [
+          12.5,
+          14
+        ],
+        [
+          17,
+          18.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_sapporo_20261123_1_2123222823170867216",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2123222823170867216",
+    "postedAt": "2026-11-19T01:12:23.000Z",
+    "postText": "19日(木)通常営業です🍜  12:30〜14:00 、17:00〜18:30 「塩汁なし(醤油ベース)」対応します。 プラス現金１００円🧂  11月23日(月)[勤労感謝の日]🎌 10:30〜14:30(昼の部のみ、夜の部お休み)  初、「サブ塩ラーメン(ニンニク有無のみ)」 提供予定です。(40食くらい) https://t.co/M9f0mkie8x",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-H3EHh6d5cCMgNbZ2ZGeof-W2eNXv2zHnUiNc43rvzL5Gsia1gO6HsIvlI61DANJPqv3NPxwRSR4roTXVYM8jPndJwweWJyTsTLSKl5Os-28aCtMboWi_jPRSq5IEThSwD20_TbVUOKmeHEH7gl4rFw=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-23",
+      "endDate": "2026-11-23",
+      "hours": [
+        [
+          10.5,
+          14.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_okinawa_20261119_0_2123229766325297321",
+    "shopId": "okinawa",
+    "shopName": "沖縄店",
+    "postSource": "x",
+    "postUrl": "https://x.com/okinawa_jiro/status/2123229766325297321",
+    "postedAt": "2026-11-19T01:39:58.000Z",
+    "postText": "本日11/19(木)夜の部は  都合により 臨休いたします",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-19",
+      "endDate": "2026-11-19",
+      "hours": [
+        [
+          11,
+          14
+        ]
+      ],
+      "reason": "都合のため",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 都合のため"
   }
 ]
