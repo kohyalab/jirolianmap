@@ -41082,35 +41082,6 @@
     "aiReason": "営業変更検出: 都合のため"
   },
   {
-    "id": "sns_post_koshigaya_20261121_0_2123171111265579048",
-    "shopId": "koshigaya",
-    "shopName": "越谷店",
-    "postSource": "x",
-    "postUrl": "https://x.com/ksgy26/status/2123171111265579048",
-    "postedAt": "2026-11-18T21:46:54.000Z",
-    "postText": "おはようございます！ ラーメン二郎越谷店です！  11月19日(木) 昼11:00〜14:30LО 夜17:00〜20:30LО ご来店お待ちしております🙇  11月21日(土)　臨時営業 10:00〜14:30LО よろしくお願いします🙇 https://t.co/WfKEbHyCwG",
-    "mediaUrls": [
-      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-g4g3H6fauIdiuWbCnmO914cj2WKtNnS0VYxx0PE_L-AZV8QWzv3w1OuBDMLZCIw59tMWb4vJTSbkI8U45ptCPPcb_keRSKtPOnbWABFukA6e2vDPGFgSnUOgpcjY_t_58wGxl1dyg4zU5tLhenfvJg=="
-    ],
-    "detectedChange": {
-      "type": "special_open",
-      "startDate": "2026-11-21",
-      "endDate": "2026-11-21",
-      "hours": [
-        [
-          10,
-          14.5
-        ]
-      ],
-      "reason": "",
-      "confidence": 1
-    },
-    "processed": false,
-    "processedAt": null,
-    "aiStatus": "schedule_change",
-    "aiReason": "営業時間の変更を検出"
-  },
-  {
     "id": "sns_post_routine_shndaita_2123180756378038760",
     "shopId": "shndaita",
     "shopName": "環七新新代田店",
@@ -41865,5 +41836,34 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "日常投稿のため変更なし"
+  },
+  {
+    "id": "sns_post_koshigaya_20261121_0_2123527347999736055",
+    "shopId": "koshigaya",
+    "shopName": "越谷店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ksgy26/status/2123527347999736055",
+    "postedAt": "2026-11-19T21:22:27.000Z",
+    "postText": "おはようございます！ ラーメン二郎越谷店です！  11月20日(金) 昼11:00〜14:30LО 夜17:00〜20:30LО ご来店お待ちしております🙇  11月21日(土)　臨時営業 10:00〜14:30LО よろしくお願いします🙇 https://t.co/WfKEbHyCwG",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-g4g3H6fauIdiuWbCnmO914cj2WKtNnS0VYxx0PE_L-AZV8QWzv3w1OuBDMLZCIw59tMWb4vJTSbkI8U45ptCPPcb_keRSKtPOnbWABFukA6e2vDPGFgSnUOgpcjY_t_58wGxl1dyg4zU5tLhenfvJg=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-11-21",
+      "endDate": "2026-11-21",
+      "hours": [
+        [
+          10,
+          14.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
