@@ -40768,33 +40768,6 @@
     "aiReason": "通常通りの営業告知"
   },
   {
-    "id": "sns_post_nagoyaosone_20261119_0_2122864963492655339",
-    "shopId": "nagoyaosone",
-    "shopName": "名古屋大曽根店",
-    "postSource": "x",
-    "postUrl": "https://x.com/jiro_NGY/status/2122864963492655339",
-    "postedAt": "2026-11-18T01:30:22.000Z",
-    "postText": "おはようございます。 ラーメン二郎名古屋大曽根店です。 本日昼夜営業です。 昼の部11:00〜14:00 夜の部17:00〜20:00  ※明日１９日（木曜日）は昼の部のみの営業となります。 よろしくお願いいたします。",
-    "mediaUrls": [],
-    "detectedChange": {
-      "type": "temporary_hours",
-      "startDate": "2026-11-19",
-      "endDate": "2026-11-19",
-      "hours": [
-        [
-          11,
-          14
-        ]
-      ],
-      "reason": "",
-      "confidence": 1
-    },
-    "processed": false,
-    "processedAt": null,
-    "aiStatus": "schedule_change",
-    "aiReason": "営業時間の変更を検出"
-  },
-  {
     "id": "sns_post_routine_kawagoe_2122867441458205019",
     "shopId": "kawagoe",
     "shopName": "川越店",
@@ -41489,5 +41462,111 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 都合のため"
+  },
+  {
+    "id": "sns_post_ogikubo_20261123_0_2123235084535005524",
+    "shopId": "ogikubo",
+    "shopName": "荻窪店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ogkb_jiro/status/2123235084535005524",
+    "postedAt": "2026-11-19T02:01:06.000Z",
+    "postText": "23日（月祝）は休業します",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-23",
+      "endDate": "2026-11-23",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_kannai_2123229916309475734",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2123229916309475734",
+    "postedAt": "2026-11-19T01:40:34.000Z",
+    "postText": "おはようございます！  本日カラマヨあります。 ご希望の方は「アレ」でお願いします。 海老っちょ辣油、揚玉カレーもあります。  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常投稿のため変更なし"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2123233287007306032",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2123233287007306032",
+    "postedAt": "2026-11-19T01:53:58.000Z",
+    "postText": "おはようございます！ 昨日仕事帰りに、光のページェントの準備工事に遭遇。 遅くまでご苦労様です！今年も楽しみです！！ 気温も少しずつ冬になってきました。そろそろ雪山のシーズンです。皆さんも雪山に行きましょう！！！晴れてれば天国ですよ！！ https://t.co/Y4udcO4iZP",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-fcOZLicTy2nwGSY7j3EtmDa8BR2e7j6gJDTiuqKc6RGy2Kk7A7GkPe9sC4tcL_CuWolJanYraGiH7gGDEV08lbQqhvcUxSCplHL23bd0RyICxHYeGBi2kMLAGbgPI5VnY7LZs_zShLX8U14v2JMCEQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-4zdjs2ilmPir_JHp6vVpskU-ppszKGcaFsdxTJ722sW9Inle4tW0mgMHWdrTg67l4QSkOiZeBTgN5KewwjihC677k2qBtiwZasUlZyQXcp_39QJpoAmzXaQkTPfkFGpUM_7CH_zKX5_kbGYJ4LXSLg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-iQ769SVxTjv6KF_BCQ0ZIvQTcSkJOE8x-23KuTonduSjJimB8wRO7W0RYWpY0hC1UX4EX4KxNdRdfZFOtK0XVXch8rWp9qcOqafbxNVhsjQ2jVmKsF9Nu-uFh61c1MlieDK51UVWIdwOq4ImMuv9Vw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-vfeHwgWmdy4r1_kT11cbdkBG4FpJ31VOGUy5FS-kzaMqHlz0BkcwdA4ZUsRpnhfVNEyvChpc4Ixi47G72ekAgBSVmN1QWvPTPHt29i0_ZSh2K9ilix_y07NImZvma6iXXdcxZjeQWscTvywvICIO2Q=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業変更なし（通常通り営業・雑談等）"
+  },
+  {
+    "id": "sns_post_nagoyaosone_20261119_0_2123232017928364320",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2123232017928364320",
+    "postedAt": "2026-11-19T01:48:55.000Z",
+    "postText": "おはようございます。 ラーメン二郎名古屋大曽根店です。 本日昼の部営業となります。  昼の部11:00〜14:00 よろしくお願いいたします。  ※２１日〜２３日はお休みさせていただきます。ご迷惑をおかけいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-19",
+      "endDate": "2026-11-19",
+      "hours": [
+        [
+          11,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_nagoyaosone_20261121_1_2123232017928364320",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2123232017928364320",
+    "postedAt": "2026-11-19T01:48:55.000Z",
+    "postText": "おはようございます。 ラーメン二郎名古屋大曽根店です。 本日昼の部営業となります。  昼の部11:00〜14:00 よろしくお願いいたします。  ※２１日〜２３日はお休みさせていただきます。ご迷惑をおかけいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-21",
+      "endDate": "2026-11-23",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
