@@ -41767,5 +41767,40 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "日常投稿のため、営業情報の変更はありません。"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261120_0_2123342461758210421",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2123342461758210421",
+    "postedAt": "2026-11-19T09:07:47.000Z",
+    "postText": "明日 ◇11/20金　十三日目 【夜の部のみ🈺営業】 17:00から〜 20:30迄にご来店ご到着お並びのお客様まで営業致します。  →［ニンニクとゴマ油のつけ麺］やっております  →［相撲部屋の湯豆腐のタレ］ →［ニンニククタクタ煮🧄］  どうぞー♪ https://t.co/LtEDS9e2m1",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ZgF3CZqxGkq_D2pcC5HleCC_lSl8bxttPg00lmhh9yQMs-Iv5D1E15d6t-fJyanm--ctItCzaAtcfB5jt7-70JEw6Gy7JGHtV0pBoXMIHt5jm1b78jjYN_PQ6Y84Div2-kKYXKU6IcrIWQ3sPh60xA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-gfC4QMbw1DQW5VkiEbHN-Uk6R0Ym7t6gggB5nj5KTEh-675ntpbI8LT4r5lV03jhZqwksA95p7kE0nKoNQl8elpcI6vi3YUe6GU0y-F7jPM1l582ysmmn0Z3Azaw1BdhjKt2U5ux4fA4Qr1GYQz0Aw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-7TMVzdIIrTw7FBkvNNzXFzQHUgXtE1tro3KjtFOlFNcPGnj-leK-R9igBqDoKlpXTd1oXJiP_FOjIiWZiYREzMpqQhY1az7JmgIXYYOKs6SpjJwpBRBgqAeP1GYfn9hbsD7IIpmViftnRN2bOKYILA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-lBwlvKMA9K9gbhu1PhhrazJiAYDE6FZhWufEncRmv_Eqrlw3K4vmnSN4z_SZCj9WtDXSbZRCzzuhtMEX7m-SYrd-mZ4V4rpqpvCQleMvokqgoB0SUpJFiJ6BPrwn7NXt3WiagRY9a47cFAUk3e0eDg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-JWvBEAzv3hG1xsgczAqgrZuo1jtYLWSt1ncG4ATTFsIcFGHwiJSfBxnIeDXG8M_ZZ3cUyWtj12N-givjh_Y2BL2amkIZApAzDh2PULVdQQ1yqj-sd0MfyZ755av8s02IofMjBI7sqIBL-BRchb5hLA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-HqL05D4psNM_BHX2pgK6TjksqOZn3728hYu4Up7dls_5RE8jhTT0HubQCfwN4obqWWoyN_2cTx21kFQk0Sc1LHioPmxjvi7RVdEGuqjLhUUrYGvWP1Oeohugp5kk5n_iNZf9gzVyrgq-Lt56vjy7WA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-PDkwc4-mreq7OnwWAqzNhF9XgxjdvIK68ohgmW_-o1fCrAENsMw68nvIMFcFMvSiZlj7wfDJgG2Jhl5HG0GfOY_mkb9vIQieyoXOYB-2dyuWrlDrqn7pXl4WQQGCc4f9jXVllGUgyEv3ApA7GHuv2w=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-20",
+      "endDate": "2026-11-20",
+      "hours": [
+        [
+          17,
+          20.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   }
 ]
