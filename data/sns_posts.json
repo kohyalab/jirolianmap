@@ -41583,5 +41583,20 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_daily_sendai2_2123276402716004718",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2123276402716004718",
+    "postedAt": "2026-11-19T04:45:17.000Z",
+    "postText": "列切れたのでよろしかったらどうぞー！！！ https://t.co/StS1aNBDI4",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
