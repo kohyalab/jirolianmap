@@ -41690,5 +41690,35 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "本日通常営業の告知のため、変更なし。"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2123322949029781850",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2123322949029781850",
+    "postedAt": "2026-11-19T07:50:15.000Z",
+    "postText": "@tr4y8D5HS449890 是非是非！！うっとりしてるカップルの目を覚まさせてください笑",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2123322859665969384",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2123322859665969384",
+    "postedAt": "2026-11-19T07:49:53.000Z",
+    "postText": "@me_ak177907 スープは残してください笑 二郎でビール飲むとゲップが、ニンニク臭いですよねw",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
   }
 ]
