@@ -41720,5 +41720,35 @@
     "processedAt": null,
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_nishidai_20261119_0_2123329143739937048",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2123329143739937048",
+    "postedAt": "2026-11-19T08:14:52.000Z",
+    "postText": "本日、19日の崩れは 売り切れました。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-19",
+      "endDate": "2026-11-19",
+      "hours": [
+        [
+          10.416666666666666,
+          17.233333333333334
+        ]
+      ],
+      "daysOfWeek": [
+        3
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
