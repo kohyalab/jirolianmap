@@ -41850,5 +41850,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "日常投稿のため、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_kannai_2123450386313101570",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2123450386313101570",
+    "postedAt": "2026-11-19T16:16:38.000Z",
+    "postText": "こんばんは。 本日？もう昨日ですが ありがとうございました。 本日崩し豚とタルタルソース合わせたのを作りましたので ご希望の方は「アレ」でお願いします。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常投稿のため変更なし"
   }
 ]
