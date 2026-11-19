@@ -41334,5 +41334,54 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "限定トッピングの告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_kameido_20261119_0_2123218447161344082",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2123218447161344082",
+    "postedAt": "2026-11-19T00:54:59.000Z",
+    "postText": "お世話になってます。今日の早朝、店の前でお年寄りの転倒事故があったようで店の前でがちょっとギョッとするくらいの血痕がついているため警察の許可を得て掃除しています。なので申し訳ありませんが開店時間が30分ほど遅れそうです。ご迷惑をおかけして申し訳ありません、よろしくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-19",
+      "endDate": "2026-11-19",
+      "hours": [
+        [
+          11.5,
+          14.5
+        ],
+        [
+          17,
+          21
+        ]
+      ],
+      "reason": "店の前での転倒事故に伴う清掃のため",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 店の前での転倒事故に伴う清掃のため"
+  },
+  {
+    "id": "sns_post_routine_ikuta_2123216193960247534",
+    "shopId": "ikuta",
+    "shopName": "生田駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ikuta_jiro/status/2123216193960247534",
+    "postedAt": "2026-11-19T00:46:02.000Z",
+    "postText": "本日、ごま玉あります🟤 途中で混ぜるとスープが変わります！ 100円玉多めにご用意ください。 お持ち帰りチャーシューもあります。 よろしくお願いします。 https://t.co/5ZeshCCi9U",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-MNJIbvOB1mIoAEQSP3lrmo3d8FWXyxsKy3KZ0ULpFx5BEYHb5pxL4qBhhgTbUJ-IOEsjT8PNKaIkxDCylnq6P9QTwVh5Dg059FCWAdMMWubRVuKzLjYYEPaS0Er-GxZQeEM2vBViIwf6sY6v5_-Uuw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-02unuZtb0EFNOxib4nPwNDtj0Gx4hRM0_XrR63yk3FBsKBhFfxkHWQJz6cKxK7q9ST76O3C7syr3inkzVWPU6HC4iEoTvg1WUgCkcvwzVbJ-FwHb2h_HeR90siucoYmnzRJ0UemsyKtsMELW7m-xSA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングおよびテイクアウト販売の告知であり、営業時間の変更はありません。"
   }
 ]
