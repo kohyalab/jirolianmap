@@ -41750,5 +41750,22 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_shndaita_2123340051266584874",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2123340051266584874",
+    "postedAt": "2026-11-19T08:58:12.000Z",
+    "postText": "きのう食べた二郎です！ 個人的に王道の究極完全体だと思ってます！ https://t.co/Wy1HWJLPcp",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-9vxMgiM1UBVcv_gFlJ2_fPQDUUz_MECxKIfAbzxQKaqsVgiDP228sjgLqBPWGj_yyO_U-KjM3mvsfLBH94FZfCPQQ2TrojL17Avv2KGTKrzLnd70ftTuyq8j3k7er60YLEsw1qp3i4W8Z0-3FicLug=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常投稿のため、営業情報の変更はありません。"
   }
 ]
