@@ -41598,5 +41598,52 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_sengawa_2123282678435009021",
+    "shopId": "sengawa",
+    "shopName": "仙川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjiro26/status/2123282678435009021",
+    "postedAt": "2026-11-19T05:10:13.000Z",
+    "postText": "本日１７時から店内営業とテイクアウト販売します。テイクアウトはつけ麺に転用可能です。追加の生麺一玉１００円(400g）です。お薦めの調味料です。 https://t.co/bxTZkme9L3",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-SYYIwhjE_9EJf7zPkPr-80ahjt0dgfj3uTX9DUzoXIvaBNJyrX-_I48kaokGx9nEBVx1oGhfRq78UrQZmNMMlbm4OLUVCl01FfrCo6dS9sInnHHPLxjNYxT61bSfJMzZg26vSsoFW-H8nmo_Zr1SJA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Iy95zgKrIUPnpn_9Yh9drWkFqjuQXXCz4Qhl-CKc8iJQmb0vOlZYA6-Oh7qRksqEXcF4HbXrtkb-yQ1WRN8-3TA9eCSJEvfZMhyZbx9zIPEZmYXojVH0hu7Xg-eLEj3chq5wg-Ci2TDYw78-aFvDYg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Y0saY54QeevirrNROSNuy6wPCkHAt6UPWc3RK_sm_NJkl4RthMuaPrJrI7EScjJket9HM7c6hZwURfQj0SvRXWxO-VqXbdIaL1asoTNV3wDRvhXJQAUE5tPa7xkIehwUr-3BdW1X7gLlxktmdinLOA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-kmu4qsjTYz-Niz4INBnTQolM_Xpeq9rd_IK6RR80XdU-K8SYZaRVBWT85YLSe5vBBXfddrru_JPkgzbLg_f2bB2FAcdaHpZnRoAYunuhnddDeS_o1_RMVCGd-dwzJ-ZuIBcF_lwhp9AJChIdkQ1yKQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_koiwa_20261119_0_2123283474010563014",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2123283474010563014",
+    "postedAt": "2026-11-19T05:13:23.000Z",
+    "postText": "現在外並び22名。  まもなく終了宣告を出します。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-19",
+      "endDate": "2026-11-19",
+      "hours": [
+        [
+          10.5,
+          14.216666666666667
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
