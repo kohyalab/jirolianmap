@@ -41817,5 +41817,38 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_mention_kameido_2123442233592651848",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2123442233592651848",
+    "postedAt": "2026-11-19T15:44:14.000Z",
+    "postText": "@gero_ika_prpr そうなんですね！本当は一の酉の時に行きたかったんですがタイミング合わなくて😅なんかこういう縁起物いいですよね✨",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_routine_kameido_2123440448954044605",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2123440448954044605",
+    "postedAt": "2026-11-19T15:37:09.000Z",
+    "postText": "今年も酉の市行ってきました！二の酉に間に合って良かったです😅酉の市来ると年末が差し迫ってる感じがしますね…今年もあと1ヶ月ちょっと。がんばります！ https://t.co/SbBCiDJScc",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-JZVwPJMDjR8FkEmsxgiTcRW1z_f_RqPszF9F5WirmbClFHnkh2HYw6SG8Mug8uY9ADIsAPwecyEi6BzgYH5FZ0PYwEvIIYIMAhT_TAnj85Vor3u0uuG7hsR_9PbuTjgX5DT-tkNNG40abCiCN8r9yQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne--wQuDxpITc399aeFFm8aVponUV-jZiSlnbSaTvoT1uyYvjpGyQhFjsJP_-u2IhAt5KyAXcHVEGpLgMvkB-sDd0RTmScQpFYEFR-NDNZUCU13p0HMdqM7nttRna79ruOFqmrrqvc5QtNQNPxK4z7xDA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常投稿のため、営業時間の変更はありません。"
   }
 ]
