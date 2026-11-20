@@ -42468,5 +42468,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "「早めの開店」との記載がありますが、具体的な開店時刻の指定がないため変更提案なし。"
+  },
+  {
+    "id": "sns_post_routine_nishidai_2123709719353364595",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2123709719353364595",
+    "postedAt": "2026-11-20T09:27:08.000Z",
+    "postText": "本日、20日の 切り落としは売り切れました。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常投稿のため変更なし"
   }
 ]
