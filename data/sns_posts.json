@@ -42194,5 +42194,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業時間の変更に関する言及はなく、日常的な営業告知とテイクアウトの案内のみです。"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2123604059206848863",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2123604059206848863",
+    "postedAt": "2026-11-20T02:27:17.000Z",
+    "postText": "お客さん募集中です！ https://t.co/Eg5olbqora",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
