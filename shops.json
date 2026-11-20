@@ -1225,6 +1225,23 @@
         "reason": "スタッフの急な体調不良のため",
         "sourceUrl": "https://x.com/jiro_kame/status/2113167285905207449",
         "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-19",
+        "endDate": "2026-11-19",
+        "hours": [
+          [
+            11.5,
+            14.5
+          ],
+          [
+            17,
+            21
+          ]
+        ],
+        "reason": "店の前での転倒事故に伴う清掃のため",
+        "sourceUrl": "https://x.com/jiro_kame/status/2123218447161344082",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -1601,6 +1618,14 @@
         "reason": "",
         "sourceUrl": "https://x.com/matsudojiro3/status/2118594501761798310",
         "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-23",
+        "endDate": "2026-11-23",
+        "hours": [],
+        "reason": "祝日のため",
+        "sourceUrl": "https://x.com/matsudojiro3/status/2123799088957387240",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -1745,6 +1770,14 @@
         "hours": [],
         "reason": "",
         "sourceUrl": "https://x.com/ogkb_jiro/status/2114873814572228920",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-23",
+        "endDate": "2026-11-23",
+        "hours": [],
+        "reason": "",
+        "sourceUrl": "https://x.com/ogkb_jiro/status/2123235084535005524",
         "_isAiImported": true
       }
     ],
@@ -2373,6 +2406,14 @@
         "hours": [],
         "reason": "都合のため",
         "sourceUrl": "https://x.com/jbc_ramen_jiro/status/2120049220724101293",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-19",
+        "endDate": "2026-11-19",
+        "hours": [],
+        "reason": "都合のため",
+        "sourceUrl": "https://x.com/jbc_ramen_jiro/status/2122953506961416290",
         "_isAiImported": true
       }
     ],
@@ -4343,6 +4384,19 @@
         "hours": []
       },
       {
+        "startDate": "2026-11-23",
+        "endDate": "2026-11-23",
+        "hours": [
+          [
+            10.5,
+            14.5
+          ]
+        ],
+        "reason": "祝日特別営業",
+        "sourceUrl": "https://x.com/jiro_sapporo_/status/2123582854412247358",
+        "_isAiImported": true
+      },
+      {
         "startDate": "2026-11-25",
         "endDate": "2026-11-25",
         "hours": []
@@ -5519,6 +5573,14 @@
         ],
         "reason": "",
         "sourceUrl": "https://x.com/kwge26/status/2113066449048866968",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-19",
+        "endDate": "2026-11-19",
+        "hours": [],
+        "reason": "従業員の体調不良のため",
+        "sourceUrl": "https://x.com/kwge26/status/2123202435997168012",
         "_isAiImported": true
       }
     ],
@@ -7939,6 +8001,14 @@
         "reason": "",
         "sourceUrl": "https://x.com/jiro_NGY/status/2121050930594636162",
         "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-21",
+        "endDate": "2026-11-23",
+        "hours": [],
+        "reason": "",
+        "sourceUrl": "https://x.com/jiro_NGY/status/2123640140560257037",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
@@ -8216,6 +8286,36 @@
         ],
         "reason": "スープの調整・準備のため",
         "sourceUrl": "https://x.com/okinawa_jiro/status/2118605911518482449",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-19",
+        "endDate": "2026-11-19",
+        "hours": [
+          [
+            11,
+            14
+          ]
+        ],
+        "reason": "都合のため",
+        "sourceUrl": "https://x.com/okinawa_jiro/status/2123229766325297321",
+        "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-20",
+        "endDate": "2026-11-20",
+        "hours": [
+          [
+            11,
+            14
+          ],
+          [
+            17.5,
+            20
+          ]
+        ],
+        "reason": "仕入れ・仕込みのため",
+        "sourceUrl": "https://x.com/okinawa_jiro/status/2123675448488108154",
         "_isAiImported": true
       }
     ],
