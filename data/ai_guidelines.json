@@ -2,6 +2,187 @@
   "generalRules": [],
   "learnedFeedback": [
     {
+      "id": "sns_post_jimbocho_20261119_0_2122953506961416290",
+      "timestamp": "2026-11-20T16:19:32.246Z",
+      "shopId": "jimbocho",
+      "shopName": "神田神保町店",
+      "postDate": "2026-11-18T07:22:13.000Z",
+      "postText": "明日11月19日(木)は都合によりお休みさせて頂きます。よろしくお願いします。",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業変更検出: 都合のため",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-11-19",
+        "endDate": "2026-11-19",
+        "hours": [],
+        "reason": "都合のため"
+      }
+    },
+    {
+      "id": "sns_post_kawagoe_20261119_0_2123202435997168012",
+      "timestamp": "2026-11-20T16:19:26.622Z",
+      "shopId": "kawagoe",
+      "shopName": "川越店",
+      "postDate": "2026-11-18T23:51:22.000Z",
+      "postText": "本日、従業員の体調不良により  急ですが休業します",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業変更検出: 従業員の体調不良のため",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-11-19",
+        "endDate": "2026-11-19",
+        "hours": [],
+        "reason": "従業員の体調不良のため"
+      }
+    },
+    {
+      "id": "sns_post_kameido_20261119_0_2123218447161344082",
+      "timestamp": "2026-11-20T16:19:23.452Z",
+      "shopId": "kameido",
+      "shopName": "亀戸店",
+      "postDate": "2026-11-19T00:54:59.000Z",
+      "postText": "お世話になってます。今日の早朝、店の前でお年寄りの転倒事故があったようで店の前でがちょっとギョッとするくらいの血痕がついているため警察の許可を得て掃除しています。なので申し訳ありませんが開店時間が30分ほど遅れそうです。ご迷惑をおかけして申し訳ありません、よろしくお願いします。",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業変更検出: 店の前での転倒事故に伴う清掃のため",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-11-19",
+        "endDate": "2026-11-19",
+        "hours": [
+          [
+            11.5,
+            14.5
+          ],
+          [
+            17,
+            21
+          ]
+        ],
+        "reason": "店の前での転倒事故に伴う清掃のため"
+      }
+    },
+    {
+      "id": "sns_post_okinawa_20261119_0_2123229766325297321",
+      "timestamp": "2026-11-20T16:19:04.382Z",
+      "shopId": "okinawa",
+      "shopName": "沖縄店",
+      "postDate": "2026-11-19T01:39:58.000Z",
+      "postText": "本日11/19(木)夜の部は  都合により 臨休いたします",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業変更検出: 都合のため",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-11-19",
+        "endDate": "2026-11-19",
+        "hours": [
+          [
+            11,
+            14
+          ]
+        ],
+        "reason": "都合のため"
+      }
+    },
+    {
+      "id": "sns_post_ogikubo_20261123_0_2123235084535005524",
+      "timestamp": "2026-11-20T16:19:01.764Z",
+      "shopId": "ogikubo",
+      "shopName": "荻窪店",
+      "postDate": "2026-11-19T02:01:06.000Z",
+      "postText": "23日（月祝）は休業します",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-11-23",
+        "endDate": "2026-11-23",
+        "hours": [],
+        "reason": ""
+      }
+    },
+    {
+      "id": "sns_post_sapporo_20261123_0_2123582854412247358",
+      "timestamp": "2026-11-20T16:18:54.271Z",
+      "shopId": "sapporo",
+      "shopName": "札幌店",
+      "postDate": "2026-11-20T01:03:01.000Z",
+      "postText": "20日(金)通常営業です🍜  12:30〜14:00 、17:00〜18:30 「塩汁なし(醤油ベース)」対応します。 プラス現金１００円🧂  11月23日(月)[勤労感謝の日]🎌 10:30〜14:30(昼の部のみ、夜の部お休み)  23日は初、「サブ塩ラーメン(ニンニク有無のみ)」 提供予定です。(40食くらい)",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業変更検出: 祝日特別営業",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-11-23",
+        "endDate": "2026-11-23",
+        "hours": [
+          [
+            10.5,
+            14.5
+          ]
+        ],
+        "reason": "祝日特別営業"
+      }
+    },
+    {
+      "id": "sns_post_nagoyaosone_20261121_1_2123640140560257037",
+      "timestamp": "2026-11-20T16:18:46.507Z",
+      "shopId": "nagoyaosone",
+      "shopName": "名古屋大曽根店",
+      "postDate": "2026-11-20T04:50:39.000Z",
+      "postText": "ラーメン二郎名古屋大曽根店です。 本日お並びの方で終了とさせていただきます。 次の営業日は24日となります。よろしくお願いいたします。",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-11-21",
+        "endDate": "2026-11-23",
+        "hours": [],
+        "reason": ""
+      }
+    },
+    {
+      "id": "sns_post_okinawa_20261120_0_2123675448488108154",
+      "timestamp": "2026-11-20T16:18:25.036Z",
+      "shopId": "okinawa",
+      "shopName": "沖縄店",
+      "postDate": "2026-11-20T07:10:57.000Z",
+      "postText": "本日、昼の部にて夜の部の分の材料まで出てしまった為、仕入れ・仕込み等で夜の部オープンが17時30分過ぎになる見込みです。 ご来店を予定されている方はご注意ください。",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業変更検出: 仕入れ・仕込みのため",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-11-20",
+        "endDate": "2026-11-20",
+        "hours": [
+          [
+            11,
+            14
+          ],
+          [
+            17.5,
+            20
+          ]
+        ],
+        "reason": "仕入れ・仕込みのため"
+      }
+    },
+    {
+      "id": "sns_post_matsudo_20261123_0_2123799088957387240",
+      "timestamp": "2026-11-20T16:18:03.313Z",
+      "shopId": "matsudo",
+      "shopName": "松戸駅前店",
+      "postDate": "2026-11-20T15:22:15.000Z",
+      "postText": "毎度ありがとうございます。  23日(月)勤労感謝の日は今年2026年最後の祝日と言うとを噛み締めようと思いまして休業します。  よろしくお願いいたします。",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業変更検出: 祝日のため",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-11-23",
+        "endDate": "2026-11-23",
+        "hours": [],
+        "reason": "祝日のため"
+      }
+    },
+    {
       "id": "sns_post_hitachinaka_20261117_0_2122438777105006951",
       "timestamp": "2026-11-17T13:01:46.002Z",
       "shopId": "hitachinaka",
@@ -812,189 +993,6 @@
           [
             16.5,
             20
-          ]
-        ],
-        "reason": ""
-      }
-    },
-    {
-      "id": "sns_post_kannai_20261027_0_2114346309654376913",
-      "timestamp": "2026-10-25T15:18:36.657Z",
-      "shopId": "kannai",
-      "shopName": "横浜関内店",
-      "postDate": "2026-10-25T13:20:17.000Z",
-      "postText": "こんばんは。 本日もありがとうございました。 お知らせなのですが 27(火)28(水)は連休となります。ご迷惑をおかけしますが 宜しくお願いします。  明日もシビレ、納豆、煮干しの波動あります。 カレーチンご希望の方は「アレ」でお願いします。",
-      "aiStatus": "schedule_change",
-      "aiReason": "営業時間の変更を検出",
-      "humanAction": "applied",
-      "finalDetails": {
-        "startDate": "2026-10-27",
-        "endDate": "2026-10-28",
-        "hours": [],
-        "reason": ""
-      }
-    },
-    {
-      "id": "sns_post_sapporo_20261026_0_2114258100039606546",
-      "timestamp": "2026-10-25T12:46:48.722Z",
-      "shopId": "sapporo",
-      "shopName": "札幌店",
-      "postDate": "2026-10-25T07:29:46.000Z",
-      "postText": "明日２６日(月)昼の部お休み 夜の部通常営業になります。 宜しくお願い致します🍜",
-      "aiStatus": "schedule_change",
-      "aiReason": "営業時間の変更を検出",
-      "humanAction": "applied",
-      "finalDetails": {
-        "startDate": "2026-10-26",
-        "endDate": "2026-10-26",
-        "hours": [
-          [
-            17,
-            20.5
-          ]
-        ],
-        "reason": ""
-      }
-    },
-    {
-      "id": "sns_post_shndaita_20261030_1_2114263296249663697",
-      "timestamp": "2026-10-25T12:46:41.151Z",
-      "shopId": "shndaita",
-      "shopName": "環七新新代田店",
-      "postDate": "2026-10-25T07:50:25.000Z",
-      "postText": "2026年10月25日(日) 解ってる範囲の営業予定です！  月 お休み 火 お休み 水 〇 木 〇 金 〇(15:00くらい) 土 〇 日 〇  11:00〜16:00くらい 煮切り鬼ごろ塩ラーメン(＋200円)もやります！  よろしくお願いします！",
-      "aiStatus": "schedule_change",
-      "aiReason": "営業時間の変更を検出",
-      "humanAction": "applied",
-      "finalDetails": {
-        "startDate": "2026-10-30",
-        "endDate": "2026-10-30",
-        "hours": [
-          [
-            11,
-            15
-          ]
-        ],
-        "reason": ""
-      }
-    },
-    {
-      "id": "sns_post_shndaita_20261027_0_2114263296249663697",
-      "timestamp": "2026-10-25T12:46:39.084Z",
-      "shopId": "shndaita",
-      "shopName": "環七新新代田店",
-      "postDate": "2026-10-25T07:50:25.000Z",
-      "postText": "2026年10月25日(日) 解ってる範囲の営業予定です！  月 お休み 火 お休み 水 〇 木 〇 金 〇(15:00くらい) 土 〇 日 〇  11:00〜16:00くらい 煮切り鬼ごろ塩ラーメン(＋200円)もやります！  よろしくお願いします！",
-      "aiStatus": "schedule_change",
-      "aiReason": "営業時間の変更を検出",
-      "humanAction": "applied",
-      "finalDetails": {
-        "startDate": "2026-10-27",
-        "endDate": "2026-10-27",
-        "hours": [],
-        "reason": ""
-      }
-    },
-    {
-      "id": "sns_post_asakuragaido_20261024_0_2113824337144975477",
-      "timestamp": "2026-10-24T08:29:44.209Z",
-      "shopId": "asakuragaido",
-      "shopName": "朝倉街道駅前店",
-      "postDate": "2026-10-24T02:46:09.000Z",
-      "postText": "本日12:00-15:00営業いたします。 西鉄ストア様、西日本シティ銀行様、他店舗病院等駐車禁止 空いていても一般的なコインパーキングをご利用下さい。 グループの方は歩道を塞がずお静かにお願いします。 代表待ち、割込み、飲酒喫煙禁止 朝倉街道駅徒歩1分、天拝山駅7分",
-      "aiStatus": "schedule_change",
-      "aiReason": "営業時間の変更を検出",
-      "humanAction": "applied",
-      "finalDetails": {
-        "startDate": "2026-10-24",
-        "endDate": "2026-10-24",
-        "hours": [
-          [
-            12,
-            15
-          ]
-        ],
-        "reason": ""
-      }
-    },
-    {
-      "id": "sns_post_mejirodai_20261024_0_2113871628941787334",
-      "timestamp": "2026-10-24T08:29:35.404Z",
-      "shopId": "mejirodai",
-      "shopName": "めじろ台店",
-      "postDate": "2026-10-24T05:54:04.000Z",
-      "postText": "本日24日(土)の夜の部は都合により臨時休業とさせていただきます 申し訳ありませんがよろしくお願いします🙇",
-      "aiStatus": "schedule_change",
-      "aiReason": "営業変更検出: 都合により",
-      "humanAction": "applied",
-      "finalDetails": {
-        "startDate": "2026-10-24",
-        "endDate": "2026-10-24",
-        "hours": [
-          [
-            11,
-            14.5
-          ]
-        ],
-        "reason": "都合により"
-      }
-    },
-    {
-      "id": "sns_post_shndaita_20261023_0_2113395547478598029",
-      "timestamp": "2026-10-23T21:13:34.260Z",
-      "shopId": "shndaita",
-      "shopName": "環七新新代田店",
-      "postDate": "2026-10-22T22:22:18.000Z",
-      "postText": "2026年10月23日(金)  ⚠️短縮営業です！⚠️ 11:00～15:00くらいです！  よろしくお願いします！  ※住宅地なのでおしゃべりしないで待っててください",
-      "aiStatus": "match",
-      "aiReason": "既に登録済みの臨時スケジュールと一致",
-      "humanAction": "applied",
-      "finalDetails": {
-        "startDate": "2026-10-23",
-        "endDate": "2026-10-23",
-        "hours": [
-          [
-            11,
-            15
-          ]
-        ],
-        "reason": ""
-      }
-    },
-    {
-      "id": "sns_post_hitachinaka_20261024_0_2113695618472538310",
-      "timestamp": "2026-10-23T21:12:46.474Z",
-      "shopId": "hitachinaka",
-      "shopName": "ひたちなか店",
-      "postDate": "2026-10-23T18:14:40.000Z",
-      "postText": "【10月24日 土曜日 営業の件】  表題の件ですが、諸事情により 本日 終日お休みいただきます。 申し訳ございません。 https://t.co/TUZ1eC1f9t",
-      "aiStatus": "schedule_change",
-      "aiReason": "営業変更検出: 諸事情のため",
-      "humanAction": "applied",
-      "finalDetails": {
-        "startDate": "2026-10-24",
-        "endDate": "2026-10-24",
-        "hours": [],
-        "reason": "諸事情のため"
-      }
-    },
-    {
-      "id": "sns_post_sagamiohno_20261022_0_2113040995206238305",
-      "timestamp": "2026-10-22T15:10:04.333Z",
-      "shopId": "sagamiohno",
-      "shopName": "相模大野店",
-      "postDate": "2026-10-21T22:53:26.000Z",
-      "postText": "◇10/22木［昼のみ］ ◇10/23金［夜のみ］ ◎10/24土 →昼10〜14時 →夜16:30〜20時 ※夜の部臨時営業🈺 ※土曜日夜の部、新設に向けて臨時営業から始めます🈺 ◇10/25日10〜15時 ◆10/26月【定休日】  土曜日【夜の部】 新設に向けて臨時営業🈺から始めます。 よろしくお願い致します♪ https://t.co/AQycE0Qj11",
-      "aiStatus": "match",
-      "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致",
-      "humanAction": "applied",
-      "finalDetails": {
-        "startDate": "2026-10-22",
-        "endDate": "2026-10-22",
-        "hours": [
-          [
-            10.333333333333334,
-            14
           ]
         ],
         "reason": ""
