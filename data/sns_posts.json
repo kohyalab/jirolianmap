@@ -42380,5 +42380,51 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "日常的な限定メニューの告知であり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_kyoto_2123680610707480627",
+    "shopId": "kyoto",
+    "shopName": "京都店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kyoto/status/2123680610707480627",
+    "postedAt": "2026-11-20T07:31:28.000Z",
+    "postText": "こんにちは！本日通常営業です！  煮干しを使ったラーメン「煮ぼ式」あります！白ネギが入ります。おすすめコールはヤサイ抜きです。ニンニクも個人的にはいらないです。ご希望の方は100円の限定1の食券を追加でご購入ください！  テイクアウトあります！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知および限定メニューの案内であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_okinawa_20261120_0_2123675448488108154",
+    "shopId": "okinawa",
+    "shopName": "沖縄店",
+    "postSource": "x",
+    "postUrl": "https://x.com/okinawa_jiro/status/2123675448488108154",
+    "postedAt": "2026-11-20T07:10:57.000Z",
+    "postText": "本日、昼の部にて夜の部の分の材料まで出てしまった為、仕入れ・仕込み等で夜の部オープンが17時30分過ぎになる見込みです。 ご来店を予定されている方はご注意ください。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-20",
+      "endDate": "2026-11-20",
+      "hours": [
+        [
+          11,
+          14
+        ],
+        [
+          17.5,
+          20
+        ]
+      ],
+      "reason": "仕入れ・仕込みのため",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 仕入れ・仕込みのため"
   }
 ]
