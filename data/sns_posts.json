@@ -41379,35 +41379,6 @@
     "aiReason": "営業時間の変更を検出"
   },
   {
-    "id": "sns_post_sapporo_20261123_1_2123222823170867216",
-    "shopId": "sapporo",
-    "shopName": "札幌店",
-    "postSource": "x",
-    "postUrl": "https://x.com/jiro_sapporo_/status/2123222823170867216",
-    "postedAt": "2026-11-19T01:12:23.000Z",
-    "postText": "19日(木)通常営業です🍜  12:30〜14:00 、17:00〜18:30 「塩汁なし(醤油ベース)」対応します。 プラス現金１００円🧂  11月23日(月)[勤労感謝の日]🎌 10:30〜14:30(昼の部のみ、夜の部お休み)  初、「サブ塩ラーメン(ニンニク有無のみ)」 提供予定です。(40食くらい) https://t.co/M9f0mkie8x",
-    "mediaUrls": [
-      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-H3EHh6d5cCMgNbZ2ZGeof-W2eNXv2zHnUiNc43rvzL5Gsia1gO6HsIvlI61DANJPqv3NPxwRSR4roTXVYM8jPndJwweWJyTsTLSKl5Os-28aCtMboWi_jPRSq5IEThSwD20_TbVUOKmeHEH7gl4rFw=="
-    ],
-    "detectedChange": {
-      "type": "temporary_hours",
-      "startDate": "2026-11-23",
-      "endDate": "2026-11-23",
-      "hours": [
-        [
-          10.5,
-          14.5
-        ]
-      ],
-      "reason": "",
-      "confidence": 1
-    },
-    "processed": false,
-    "processedAt": null,
-    "aiStatus": "schedule_change",
-    "aiReason": "営業時間の変更を検出"
-  },
-  {
     "id": "sns_post_okinawa_20261119_0_2123229766325297321",
     "shopId": "okinawa",
     "shopName": "沖縄店",
@@ -42110,5 +42081,64 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261123_0_2123583370659860837",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2123583370659860837",
+    "postedAt": "2026-11-20T01:05:04.000Z",
+    "postText": "【今週の予定】 ◇11/20金 夜→◎ニンニクとゴマ油のつけ麺  ◇11/21土 昼→◎ニンニクとゴマ油のつけ麺  夜→◎前倒し 　◎限定20 相撲部屋の湯豆腐のタレのラーメン  ◇11/22日　千秋楽 昼→◎限定40 相撲部屋の湯豆腐のタレのラーメン  ◇11/23月　臨時🈺 昼→◎ニンニクとゴマ油のつけ麺 https://t.co/JhfOsaKj9d",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-rMmWePqwT88o6Z4jAihhxjjeuxJ6T3AndPSiPLO2S4OrVbH9tYqAyoKnfOxMVrZT_pxYped1h5y8vPbiIctVcBF49fhQ0kScfgzseAv3B2dC5vQ3lQzEmdCsEKMSHuffgeTh7Y8k7YnTFBMhUDywMw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2PjajbIKfwAGx7cAa9C5Brrr5aY5kIevIwovqEt5z5yLZ4ta36-EFYoYOpbKlKhXIVe0s15lXw8lBgU1KctycCizGnUf09pRP24SwPbyGInRdil2RddE68PfdOb1pMdk3W8eEjByG-JmheEughSNDQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-X-2jid4AhTUtWYNk-mg6O4__OPp-qJ5qzG98rE6vY0oUav2izWzKMoIVRajgGL_HM0Au9LYETiRskuQn83aWLV7QABKDrC1qjv4QA-5Jqm9g6z21tqTyhN6x81-ZNTEOwVEKv4FnLIK5FmQlBqOWPw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-XfmPkeV9KkzHcu4n_OIyl25XMZMDrrG1Eg0pivTUgkn-J-G_9npv_qXbY496KiTn16ckKXMmbtHxWUmuxP-kjHiFTNoBGV9S_rqoPBiCET9jQW36LMHhV7v4oxYF4NaYTmtSq78gYAlNGH1JgXRO9A=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-11-23",
+      "endDate": "2026-11-23",
+      "hours": [
+        [
+          10,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sapporo_20261123_0_2123582854412247358",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2123582854412247358",
+    "postedAt": "2026-11-20T01:03:01.000Z",
+    "postText": "20日(金)通常営業です🍜  12:30〜14:00 、17:00〜18:30 「塩汁なし(醤油ベース)」対応します。 プラス現金１００円🧂  11月23日(月)[勤労感謝の日]🎌 10:30〜14:30(昼の部のみ、夜の部お休み)  23日は初、「サブ塩ラーメン(ニンニク有無のみ)」 提供予定です。(40食くらい)",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-23",
+      "endDate": "2026-11-23",
+      "hours": [
+        [
+          10.5,
+          14.5
+        ]
+      ],
+      "reason": "祝日特別営業",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 祝日特別営業"
   }
 ]
