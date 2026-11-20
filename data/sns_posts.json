@@ -41997,28 +41997,6 @@
     "aiReason": "通常営業の告知であり、営業時間の変更はありません。"
   },
   {
-    "id": "sns_post_asakuragaido_20261121_0_2123572468090884476",
-    "shopId": "asakuragaido",
-    "shopName": "朝倉街道駅前店",
-    "postSource": "x",
-    "postUrl": "https://x.com/r26akgd/status/2123572468090884476",
-    "postedAt": "2026-11-20T00:21:45.000Z",
-    "postText": "毎度ありがとうございます。 明日11/21(土)急な事情のためお休みさせていただきます。 ご来店予定でしたお客様大変申し訳ございません。 11/23(月)につきましては改めてご案内させていただきます。 よろしくお願い申し上げます。",
-    "mediaUrls": [],
-    "detectedChange": {
-      "type": "temporary_closure",
-      "startDate": "2026-11-21",
-      "endDate": "2026-11-21",
-      "hours": [],
-      "reason": "急な事情のため",
-      "confidence": 1
-    },
-    "processed": false,
-    "processedAt": null,
-    "aiStatus": "match",
-    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
-  },
-  {
     "id": "sns_post_routine_kawagoe_2123575421296152624",
     "shopId": "kawagoe",
     "shopName": "川越店",
@@ -42140,5 +42118,81 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 祝日特別営業"
+  },
+  {
+    "id": "sns_post_routine_kameido_2123591001780756537",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2123591001780756537",
+    "postedAt": "2026-11-20T01:35:23.000Z",
+    "postText": "@oshitokosa ウチで共演してますよ✨ https://t.co/BW35GSHPZ5",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-dl6qIYBLoHZxhMBBlyMsSp1tpqdfJqn-kFZ7s5bpfVOmoM-V33hBsalKX40XrtQQ-zEn3LhCAH9MLWzVQz_KNwVZMbYEnt3rCq5H531IYulek9bCVYxlZE9HqZSkUhdzOqzkULFXdg-3yjUbIxyFHA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常的な投稿であり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_nakayamaekimae_2123596951161868535",
+    "shopId": "nakayamaekimae",
+    "shopName": "中山駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/NKYMJIRO/status/2123596951161868535",
+    "postedAt": "2026-11-20T01:59:02.000Z",
+    "postText": "おはようございます。m(._.)m https://t.co/6xqk7AfpJp",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Y18awLwO6s71wXlNgDqZp5w7qsOlHW1Mxa3hh5v2aUnp5uuv4TFucixXHrYV8nJysvW1Wf27LVLROIsbKqPrCv9YrZ0MqNnHuJOFRTMi0I6rioyD1GEOO3JnP0DwCN23Blf5O7vh-dx7HntPQJ_pTA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常投稿のため、営業スケジュールの変更はありません。"
+  },
+  {
+    "id": "sns_post_asakuragaido_20261121_0_2123593527917744439",
+    "shopId": "asakuragaido",
+    "shopName": "朝倉街道駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/r26akgd/status/2123593527917744439",
+    "postedAt": "2026-11-20T01:45:26.000Z",
+    "postText": "本日通常営業！ ネギあります！  明日11/21(土)はお休みいたします。 よろしくお願いいたします。 https://t.co/SYcPW91nUs",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-21",
+      "endDate": "2026-11-21",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2123593373261160532",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2123593373261160532",
+    "postedAt": "2026-11-20T01:44:49.000Z",
+    "postText": "おはようございます！！ ついに雪が本格的に降ってきましたね！！ タイヤ交換はお済みでしょうか？ 私もスキー道具取りに実家に帰らなくては！！！ ものすごく寒いですが、あたたかいラーメン作ってお待ちしております！！ 三連休のお供にテイクアウトも是非！！ https://t.co/wiCzs5aYPA",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne--CSSU7se976hFOkJTK7MgbYYurVA5WkcS2QM09QezrgXqTDe8CiPJCZ9iRYw6Z8Li5WFUwotQT1UkpTILm5DitBE83y09kvQlEX2ZHmaGGo1jJl4JA7VjPABqjREzLaY0wKF_AD1ikeam7rRjoYvKA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-zGkkoX052HVhQViXxqRmSVwaMPxsIO6sTEIUJxsNS57lOSAuKw71u70vnagmGHu59cS0jIqChIm3oKpZ8RzOEKNMOWVtu2k_B2RXKuPIXUZ1DcCu4Q0GKGmrOnNyabQIzKYpHG-JoR16krFtZi-xow==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-GCEdZUDmyGSem0fepJDkfu5nl0OuffsMXaoHUVrRlyUlrRo5_JPhz1OBmuVpytYcg5WhbJw1xCHmeHnrb8V6kHfXeb4v1Q2FtYORLl55QZzoZHkZF-yb5c2Ypk5dkcOmvFPeML5_hNp5vKpTsZikeg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-3n06FMaHxNB95kd2pKt4lgkeN_DDO4m5V6nyNqKTVRqAb1z35TUs-fmPK0CU-enOhc95uVbamG2CS3XbifeuRfwNzNZXwNMPW1NJYh8PEkyJ0VWFq1elT7_GDxhoZ67r82ecM082V4PHPHLipSxFzA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更に関する言及はなく、日常的な営業告知とテイクアウトの案内のみです。"
   }
 ]
