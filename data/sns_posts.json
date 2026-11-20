@@ -41970,5 +41970,62 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業時間の告知であり、変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_yaen2_2123561268678373614",
+    "shopId": "yaen2",
+    "shopName": "八王子野猿街道店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/Jiro_Yaenkaido2/status/2123561268678373614",
+    "postedAt": "2026-11-19T23:37:14.000Z",
+    "postText": "11月20日(金) 11:00～15:00 17:30～21:00 ⭐テイクアウト、鍋二郎あります 並ばず買えます きまぐれたまご スタミナ  NAあります",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内であり、変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2123560184601801097",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2123560184601801097",
+    "postedAt": "2026-11-19T23:32:56.000Z",
+    "postText": "本日 ◇11/20金 【夜】 →こちらをご覧のお客様限定です！ ↓ ※お客様ご自身で→丸の🟥赤又は白🤍食券を１枚お取りになって席までお越しください。→食券は券売機の前の台の二段目に置いておきます。 ※必ず着席時にお出しください。 ※サービス中の目印は［黄色いハンカチ］ どうぞご利用下さい♪ https://t.co/rcvEaQUUrP https://t.co/LuJmJYOR8e",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2bVShi66UaA5_cuLFQaLr8SEBr5MqXZoGQZDe807Ow4XL9ILR-F3ABNpQA84jBV4qUyiLt47zMLW9P3aPev6eMpionjltl2nEDpJhCKFWkPJB7pCHhyDY8n_Ry7PpktR47G8YLZR75l30livu-keoQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-eNtut34kV-VF9ODS0_BYqSeGGNHwVhTQOLSh6JwqABPA9FFW1Fty4nGivz63_Y7kIfgMe9Ga4nLqt6sYIngdNT56uxgXxoWGbH6LCIIK2mIhGGCbHYG-5GFqQBBy6tSN-1AsVoTm-GPIsYQySXJDgw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-zS9obeVNxs5XWWGeSuVuNWCMZP0xH2v_p0-Rn9iCdWoCcajQ1fAHn8YrSsvQNAp3vUypoYxX6u66JHMIP5Z9MAsnAYUdoKYyKZCdeFK_tGepR5ZUf7g65gd1nCXGbTfg_UO32iJ7YLv-5Lj62MOdaQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-NJmZYiLeBhMhl9wBjcq4EPsC8vjneggRYovtL2m40tOlZDx2bct83clSw7UFg28pRSnhyIEF3lZSYxHhKf7k66pN4wLeDsUni3HhF-65qrk4zyA_xgM8NepjQKiyN2tabWE3r7_0ppj9CpF6Y-5FaA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Yahv7TvU_4UlTfmwI2TV3zuVbNKrwBL-X_OdHpeNOHhC3cug3FP902pGEQUyS7zpEKj9GsFL4anlM6jj1nI3BvU_s5twuMmLSZDdTCfifbCPXc5cq-0_Pe2sw4SwHjZjJBBhvc-P5LW2Zx6G6D2EPg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-j8VSPjQyv-VNWFeiz20bqZIyrSxUVz6wHqVAsX7-3-U-QjrWQcQuIWSfRZPJfT5C49Az_b7TQ1um_Jw2kN-inNmcZq6qaHgCj3BM3BlKSgvavUrWC-ajJGTomD_BpqinWTH4H3M36foQtcjvdbsVXg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_nishidai_2123562621769240792",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2123562621769240792",
+    "postedAt": "2026-11-19T23:42:37.000Z",
+    "postText": "おはようございます。  20日、昼の部 煮込みFZ味付き切り落とし  ¥800×2  あります。 https://t.co/LluTJ5NtDd",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-IVLOPzupA-r7_1MoComYKd_3EL92IfTarmtDJgmPv2U7dwrYVOpRycZbQqtJZW6xvB0GvLPlTOoWacSd9IVeJCwyevTdQlFUMqew0TkBD4jk0XRIoUmkd-l86nAjJMnqcwWpM3CC4i8A0dxEvHJspg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-57rxvy7vPwIr6B1nJnblS16fltK7rkgTsUaU1JkrpjS6TTaVeFoa7PQPhhGH9XMMgB1mnp18CdbZCD1r0d6xSYWhRz8l0GqLvavAK0dx2wYJKO66ZjGI3FDh1t1dzjkHYruudEaQjoR6xhGGchJZaA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-tkVSE7DHyOb4k080wlcRRJ5WqdbUELxvJqQB0saFQ7EovrbWBscAmlbI5c5yxyDOkN8cAktsyrwxIEG3MSjU3SbmtLGFl-TPsu5CQt6t-VPLFtdwX5OlPCaWhCyhtj3uEjwXcWu46XGizvZkDtXgVQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-7GxFVXlKQ7XpZq9PDeaMluyu6MQD51P4L8gVpMFQWF3eHeu-Fr8nh1REISnKL0zIqs-hw1OryqJMYf-ox3rm58-HPbkAbgEU_Wyb-YepAbeg5rentzAjE4UKel0e3iQJY9J4EI60FbJn92YU0dd7EQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定メニューの告知のみであり、営業時間の変更はありません。"
   }
 ]
