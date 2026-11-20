@@ -42027,5 +42027,46 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "限定メニューの告知のみであり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_tachikawa_2123570482876420235",
+    "shopId": "tachikawa",
+    "shopName": "立川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jirotachikawa/status/2123570482876420235",
+    "postedAt": "2026-11-20T00:13:51.000Z",
+    "postText": "11/20(金)、昼夜とも時間内売り切れなし営業です。 昼11:00-14:30 夜17:00-21:30  ①煮干し変更 　+汁なし変更券で、にぼしるなしも  煮干し+玉ねぎオススメです！  ②持帰りラーメン販売します。 　標準:2人前のスープと生麺+ブタハーフ  写真2-3枚目は昭島市のおすすめのお店です！ https://t.co/hvSfr0jg4y",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-UoUIKEpo3izuCvJelDb7xICejiXytaKqBQ1-k7OdalxJT_SM86S5aEReL4WjnQX8Ap3RdsJUPwN5P-llDgoNy5TbWYAVMmYfWNP2WMEYn8L34ULhbsYgyePiUzjm-ywXkaTFEp5H_C_tVUNrWjfb0g==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-qVMLJqcEn5Oyl7pqGUD4iRHfTkXGHVmOaf9A4GuK6mIRM7WlL2Y60Tmj1iEEHXM5DA_WUTCKptjxcHX_pgTOSfQ8OYgGha0OncWszvgY3cXt7u1B59iXI_2pQtRVy_Aftvp8fsD-doZLZFVnvg_4rw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-NraSiCFHrJSmeteQD8xjNyxMX_uhm9x-qOZGJIDNu9p-HzEbiBzYZzbpCIJ3VyJzknZ5XpCAt6BOvxEYtMnWeD2GNUAZHyR3AL_wqTcE0Z-TZb7xnorpwcdsZU0OPujc6iDo2AdXBdSLitVyEPh4AQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_asakuragaido_20261121_0_2123572468090884476",
+    "shopId": "asakuragaido",
+    "shopName": "朝倉街道駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/r26akgd/status/2123572468090884476",
+    "postedAt": "2026-11-20T00:21:45.000Z",
+    "postText": "毎度ありがとうございます。 明日11/21(土)急な事情のためお休みさせていただきます。 ご来店予定でしたお客様大変申し訳ございません。 11/23(月)につきましては改めてご案内させていただきます。 よろしくお願い申し上げます。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-21",
+      "endDate": "2026-11-21",
+      "hours": [],
+      "reason": "急な事情のため",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   }
 ]
