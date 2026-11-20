@@ -42726,5 +42726,27 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の告知のため変更なし"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2123910525663039779",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2123910525663039779",
+    "postedAt": "2026-11-20T22:45:04.000Z",
+    "postText": "本日 ◇11/21土 【昼】 →こちらをご覧のお客様限定です！ ↓ ※お客様ご自身で→丸の🟥赤又は白🤍食券を１枚お取りになって席までお越しください。→食券は券売機の前の台の二段目に置いておきます。 ※必ず着席時にお出しください。 ※サービス中の目印は［黄色いハンカチ］ どうぞご利用下さい♪ https://t.co/N5A8hdy80j https://t.co/IKzvLbBuvq",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-GnPhJeb84iG1QMZSNLskPx87Bz2HSbEwp53N2dCLM2zbchdO1cYKNL2_TwEnxpxhxViv26kEIgmLegvoAfZTzXpux-iYGbYkBFEw-cFoMDAAAuzHem3qNz5M9LydUI8j_VCuUBFSueeUT-utvqKlpw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-8nTyb1y0De4eFf0ZhxShx4XpXFnST7tsPl9ZdnoTNFx9XOkPGQIJEKvERkW18jjQMlNzLxMRp9UEU19RGV0T_MLcYw4A5IzW6QlZSDel0v8uohE7IvJA-fp1eaqWk-um5ZGMQd98nwTgF2UtdyRLvg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Sw0L9_WmtLUx4PGzGIVViFA2SgyGe9KLGCFukB9wTYhGPbva9Q1MkHeEhB2JSY-p2lVDV-SqrDQs0Tq9PUiYUrTHoLhyfp4Lj90ZgvKb7_JFrLqHnmJFX89b4_TsT9k2_wBzIkctTzkRbrTuz_MOrA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-GkuoAw3KfBiU_pkewEc9nMb9RJgyjPSgESZK09dZxfaA2_PrsGFlalkDkX7oJkRwD7MCVAiInNn-e_F89m1CU6gretn_L5QLpGV18_0knoAkqLATkp9HqpFch5WKtsrFzeFcX7ZIz1R8Kc7-Tj6lTw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-cRmy05w0tMO2vCA0zKnWsQY6v6qreE3LIn5VgncfdINeHz7-Twi4iMqGecdlS94TM5KgtJDLdoeZPOYzNNBNmtb_3JJCXTjSnooPcb3Tuoo7pyJYztw3SFI1jUG_v-W_YCwYV5B4bCcFVJVlVKcVSA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-IADXGqJ69eQ3HXZi0eDQy14JhZHhzivcGyk3_EcZfA6fxThxu9WlDzTRrAR1VosGKzfXe_huW1sQYLjji6NQOZdjX_SmDyPPA437Yn3MvIl-_cN8SxUW3muR-2-hL674S1mdThPe3fUjLLTQRAj0mw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの告知であり、営業時間の変更はありません。"
   }
 ]
