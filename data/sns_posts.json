@@ -42541,5 +42541,23 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2123756301306171668",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2123756301306171668",
+    "postedAt": "2026-11-20T12:32:14.000Z",
+    "postText": "明日 ◇11/21土 【昼の部】 10:00から14:00迄に ご来店ご到着お並びのお客様まで営業🈺 ◎ニンニクとゴマ油のつけ麺  【夜の部】 16:30から20:00迄に ご来店ご到着お並びのお客様まで営業🈺 ◎前倒し 　◎限定20 相撲部屋の湯豆腐のタレのラーメン  よろしくお願い致します！ https://t.co/I7Mt5RlBLj",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-m7BuY8m14gvd07RV3eYR22JyBbxC1VVAoOsU5qR-EU75LOdK_rWhrW0sFT8IfOvZGKisQkyD_Qki1d5jdvOWwMWMJw--fUwx0in0y-NGIqGnOlAlrtYg-ApgUY0tBlxf_39zcCQ9u0M3_p8R-GbaPg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-p1gD5kBJlTHVIoh0C94fTGk3QF1c0vyD7IfggVFkYyFqJ5YCcB99MyEf59q2aKFrfDPoyZizMLoNEWV6W0lYyodCRq8VW1rren4efq4-367pgubpmaGyjXBjiXn6OOJ8n5AkCc6xBcCwYyKWh4idEQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "11/21(土)の営業案内ですが、通常営業時間と一致しているため変更なしと判定します。"
   }
 ]
