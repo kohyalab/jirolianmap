@@ -42338,5 +42338,47 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_sengawa_20261122_0_2123658277145743524",
+    "shopId": "sengawa",
+    "shopName": "仙川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjiro26/status/2123658277145743524",
+    "postedAt": "2026-11-20T06:02:43.000Z",
+    "postText": "本日17時から店内営業とテイクアウト販売します。テイクアウトはつけ麺に転用可能です。お薦めの調味料です。 https://t.co/HRRV5f2RV6",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Lvje2COP-te3AJs-YlvHQXKOvTSC4Kf6TZKG_f3MzqDmC-aJeuiM3HNkm08sf9I_ODCTIzjPyRMhf2V5pMTOoVCXjxQYUlAa081hqXO7wSHfzyr0w4hERL5tQfgU6WR_J6c0oq4cwHSaRDxiPPestQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-khBloXlO8QlXrRiSkwACB11_ItUm2wDYsKRuCZI6OqMEcvdTT5-sHHvZiVBoMPNokkdvr9GZg5AFMUPnB0sYNE29SPgCsZCsCIwtIpManD-A8H73r3SD3EBzd97QvD-XDQnfLsHi70OI-r8-CRisVQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-pLsmjL969FXOA0q59M5U2Nu6tSoGfEq50FsPUfMVjfNQQxMkMBflnaePHKtSt7G8d19xUqSV_b28a_OdhBC3Py7I5M7sPoP3gNxeM3_po7gOnoV2vO5ngIiTU0uBNtVNdySYN13jVk8YohNcBPoknA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-IZ1yGT_Ja4aCaHBX8wmHs1tVj4VhB9yKNI4PSe2gmblXps4GQggiB0M_UaRGRP5vpH2qY7kzLTvkfA50K3cL7cS_QMMU1iXbFMcb7Mca8dJbxsw4bKKx89GhFrmO8FwTONp0QQ8FvjA8fDyrE2cZ_w=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-22",
+      "endDate": "2026-11-23",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_routine_nishidai_2123660007074042306",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2123660007074042306",
+    "postedAt": "2026-11-20T06:09:36.000Z",
+    "postText": "本日、20日、夜の部  煮込みFZ味付き切り落とし ¥800×1  あります。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常的な限定メニューの告知であり、営業時間の変更に関する言及はありません。"
   }
 ]
