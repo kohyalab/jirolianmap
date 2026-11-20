@@ -42209,5 +42209,62 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2123631876900520324",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2123631876900520324",
+    "postedAt": "2026-11-20T04:17:49.000Z",
+    "postText": "本日この後！ 【夜の部】から〜 11/23月迄！ ※天候によります。  ［顔出しパネル］外に出しておきます♪ ご自由にご撮影ください！  お仲間とでも📱  どうぞー♪  　#スモジ宣伝部 　#本場所中はスモジは賑やか 　#いい意味でスモジ劇場　笑 https://t.co/2DWzCa1uFj",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-3szM-gzmfcs6gkNfKL-QdiZjeyAWjlD6dqJ1cFVI-gF8trhsOiuT0OFd375SKY5D00IVjeqO40yDJAErULDhpxXYswFDWsPvCJ_6KALahMDmj-s2PIpPEh4jJi6KWhdGg5L3HPjKlZrgAQ_1q_7o3g==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-x4YtGuLf7WHKdmaqUml-hNmT4MH9PeLwLi1xkV25oHNZDRZ6fZULh0vkHqveMKfxlVK-bSoyLggOCOlMRx0uGp0bYnXubo8EDq4uV7jqhvJ8wIwKzXzrAR1A7RzCcQZ5iWs5cYGLZmmrwVrv_aJsEg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "投稿内容は顔出しパネルの設置告知であり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2123630783483302269",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2123630783483302269",
+    "postedAt": "2026-11-20T04:13:28.000Z",
+    "postText": "【アップデート❤️】 ここ2ヶ月程度［なるべく連席を］を試して、案内を実施してみました。お一人のお客様に多少ご迷惑はおかけ致しておりますが、まずまず許容範囲内との実証結果です♪なるべく連席をご用意致します。お一人様の方、ご了承くださいませ。 必ず［絶対連席］は今まで通り❌です…💦。 https://t.co/Ck35bJ6BTq",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-o7_d13gGsBE_tyJYQ5AEfzvYilT1PcpLp4bratv9WNcgDQRmrowAgoKg8sfHzrsetbrnz2iiAnTiausVISK3nKxULaoAfuvCUc28IvVUvhLbai9WLGlDNH6y6smliK5mqqI_tITNtMZEjP4jvXT6gg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-HE18rbR-RMiUBxAbUAtsA5xFvLSw7rSsl2QGGBRodr8SCAog0jz-y0qqWoT-1zTTSGb4tlL7JMImdS0YICtnumvfa444xnbeU9cWVRb2kkMFxpxo8dX6o-VRskPoLFzezKQphRdyu0vXsEly8ey9Bg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-lae-G1jxl8og8iiMzKzVkCBBohRL8q5pVSPiHIWZRuyZhEiTfa7lZl3TS3LBa2uGHs9cnbaOWZVrf3-vPb8L1yE08R64i8MV96JE87Wo6WVY0XgNoFPHDxgS03sX1vsCn_qPY1iK4zepqnxsluF4pA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報の変更に関する言及はなく、座席案内に関する日常的な投稿です。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2123630334529122385",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2123630334529122385",
+    "postedAt": "2026-11-20T04:11:41.000Z",
+    "postText": "【アップデート❤️】 ラーメンのお写真をなるべく撮れるように致しました。ラーメンの写真のみ→５枚まで🆗に。人の写り込み写真は❌、動画も❌。 →カウンターに［スモジポスター］いろいろ貼りました♪是非、写し込んで撮影を♪  #スモジ宣伝部　をつけて引用リポスト、拡散お願いします♪いいね❤️ https://t.co/CheyfDVvTr",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-kxAevUkMPImm3LieRt9fFsh7exh9gzeu-jlRh27QLPdVObcDep3-O55i0IIRfqxU8f6cpCd2pIdjxsUDL2paoCkVZaRuq8R3rLWLQU55kr11tzC_TBgmJMD2p6nntutXn7gw4XyPxRR6zEqzwEvs8g==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-GyLvfOrw46NYyUbKLj8CCMMPmhFMuBr_QQ_bxi01zFXTGwZFNbm7Ugj1USP0jNRiBAqGGrTzWeyY4vERrCW_nk09b9cjZwm9mNj270b55rsWvNS219wp779GByI3TiYzEfwUSqqD5XfSa49hoT3JVA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-6snPthD6P6cdun4vA6cFrMSom0T-g1xuVjQVOEwowrJ6Pbkgj4AaknDn7PLGy2NV-jNPL0L-fGi3X1XhdloqZmzpPanGkHb4bZjG0rJjXCksOPulFcNcVwpYoEXCC4EOzjPX02kQek4m8WvuUfTGJA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-9tePRSSho-G8-eYYsqvskMwRoYJnf1iIMorMg8RXDIndPrvdfLK4Ef9OHr4DjxiwB-ZQ7jtKNOq4UGRuVCvJlElUXc3djP-86lxHGnPLLkJwugZisI4BJ616Ak4Gull271BqKcwEu-Od1lz-7HzpTg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報の変更に関する言及はなく、撮影ルールに関する告知のみです。"
   }
 ]
