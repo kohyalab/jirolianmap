@@ -42426,5 +42426,32 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 仕入れ・仕込みのため"
+  },
+  {
+    "id": "sns_post_jimbocho_20261120_0_2123685200815342067",
+    "shopId": "jimbocho",
+    "shopName": "神田神保町店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jbc_ramen_jiro/status/2123685200815342067",
+    "postedAt": "2026-11-20T07:49:42.000Z",
+    "postText": "ただ今お並びのお客様までで、本日の営業終了となります。よろしくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-20",
+      "endDate": "2026-11-20",
+      "hours": [
+        [
+          11,
+          16.82
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
