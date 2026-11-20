@@ -42586,5 +42586,27 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_matsudo_20261123_0_2123799088957387240",
+    "shopId": "matsudo",
+    "shopName": "松戸駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/matsudojiro3/status/2123799088957387240",
+    "postedAt": "2026-11-20T15:22:15.000Z",
+    "postText": "毎度ありがとうございます。  23日(月)勤労感謝の日は今年2026年最後の祝日と言うとを噛み締めようと思いまして休業します。  よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-23",
+      "endDate": "2026-11-23",
+      "hours": [],
+      "reason": "祝日のため",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 祝日のため"
   }
 ]
