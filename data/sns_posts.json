@@ -42281,5 +42281,62 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_koiwa_2123650080838447385",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2123650080838447385",
+    "postedAt": "2026-11-20T05:30:09.000Z",
+    "postText": "すみません。  生卵が売り切れました😭",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "生卵売り切れの告知のみであり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_koiwa_20261120_0_2123643729034809813",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2123643729034809813",
+    "postedAt": "2026-11-20T05:04:55.000Z",
+    "postText": "現在外並び18名。  まもなく終了宣告が出る見込みです。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-20",
+      "endDate": "2026-11-20",
+      "hours": [
+        [
+          10.5,
+          14.066666666666666
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2123649669280800875",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2123649669280800875",
+    "postedAt": "2026-11-20T05:28:31.000Z",
+    "postText": "いまいるひとでおわりです！ ごめんなさい！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
