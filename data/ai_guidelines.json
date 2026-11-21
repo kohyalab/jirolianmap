@@ -2,6 +2,28 @@
   "generalRules": [],
   "learnedFeedback": [
     {
+      "id": "sns_post_koshigaya_20261123_1_2123887168066314676",
+      "timestamp": "2026-11-21T21:51:32.993Z",
+      "shopId": "koshigaya",
+      "shopName": "越谷店",
+      "postDate": "2026-11-20T21:12:15.000Z",
+      "postText": "おはようございます！ ラーメン二郎越谷店です！  11月21日(土)　臨時営業 10:00〜14:30LО ご来店お待ちしております🙇  11月23日(月祝)　昼のみ 10:00〜14:30LО 夜の部お休みです🙇 よろしくお願いします！ https://t.co/WfKEbHyCwG",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業変更検出: 祝日特別営業",
+      "humanAction": "applied",
+      "finalDetails": {
+        "startDate": "2026-11-23",
+        "endDate": "2026-11-23",
+        "hours": [
+          [
+            10,
+            14.5
+          ]
+        ],
+        "reason": "祝日特別営業"
+      }
+    },
+    {
       "id": "sns_post_jimbocho_20261119_0_2122953506961416290",
       "timestamp": "2026-11-20T16:19:32.246Z",
       "shopId": "jimbocho",
@@ -969,32 +991,6 @@
         "startDate": "2026-11-01",
         "endDate": "2026-11-01",
         "hours": [],
-        "reason": ""
-      }
-    },
-    {
-      "id": "sns_post_sagamiohno_20261031_3_2114584723712602486",
-      "timestamp": "2026-10-26T14:47:44.595Z",
-      "shopId": "sagamiohno",
-      "shopName": "相模大野店",
-      "postDate": "2026-10-26T05:07:39.000Z",
-      "postText": "◆10/26月【定休】 ◇10/27火［昼のみ］ ◇10/28水［昼&夜］ ◇10/29木［昼のみ］ ◇10/30金［夜のみ］  ◇10/31土 ※10〜14時 ※16:30〜20:00 ↑夜の部臨時営業🈺します。  ◆11/1日【休業】  →［お椀で和ッカレー］ →［相撲部屋のしょうがダレ］  よろしくお願い致します。 https://t.co/FhakBkK0f8",
-      "aiStatus": "schedule_change",
-      "aiReason": "営業時間の変更を検出",
-      "humanAction": "applied",
-      "finalDetails": {
-        "startDate": "2026-10-31",
-        "endDate": "2026-10-31",
-        "hours": [
-          [
-            10,
-            14
-          ],
-          [
-            16.5,
-            20
-          ]
-        ],
         "reason": ""
       }
     }
