@@ -43181,5 +43181,37 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_kameido_2124042111783928232",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2124042111783928232",
+    "postedAt": "2026-11-21T07:27:56.000Z",
+    "postText": "これでもういつクリスマスが来ても怖くないぞ！ https://t.co/npproR9MD7",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-RmBJ-vriMHS41Nk1WeifaF2-2c-vVqdObv9atrxHbvUzw1A8nyHzGDIpucDOa8PtyOjjazIjeRB-hPo2ATK8r3rsQUUZhT1zeDMbteSXqcz9196eud5dFy5ZDLE7PYBOFA00lwFu_EwpF-cIAbTvlQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常投稿のため営業情報の変更なし"
+  },
+  {
+    "id": "sns_post_daily_kameido_2124041502095720472",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2124041502095720472",
+    "postedAt": "2026-11-21T07:25:31.000Z",
+    "postText": "カロリーオフ！ https://t.co/gDFikloYEv",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
