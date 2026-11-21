@@ -42963,5 +42963,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業終了に関する具体的な時刻の記載がないため、変更なしと判定しました。"
+  },
+  {
+    "id": "sns_post_routine_yaen2_2123995145540718945",
+    "shopId": "yaen2",
+    "shopName": "八王子野猿街道店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/Jiro_Yaenkaido2/status/2123995145540718945",
+    "postedAt": "2026-11-21T04:21:19.000Z",
+    "postText": "11月21日(土) 11:00～20:00 通し営業 ⭐テイクアウト、鍋二郎あります 並ばず買えます  22日～25日までお休みなので 本日お待ちしてます！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内であり、営業時間の変更はありません。"
   }
 ]
