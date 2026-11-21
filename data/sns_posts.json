@@ -42944,5 +42944,24 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2123985653939818851",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2123985653939818851",
+    "postedAt": "2026-11-21T03:43:36.000Z",
+    "postText": "なんだか早めに列切れたのでよろしかったらどうぞ！！ 何やら近くでコスプレイベントやってるみたいですね！ https://t.co/rKePSqbvC7",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2hawACOgIiPZT1Y_xi-4NgnEAa4NoPx4Qc5PTALSStPBxP0nQ_NExeCbaMRpNlG2new_sYIQXIqfQHOGY6ksUJWwJ-_8UMHfPVVQsoSn5V0AnmadOuXpnVgjpQq9ePHacdOP4zsRvdTlBWv2tQSxZQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-5WP-_1-XqeQNBUDjKr3IyH24KwSBzGmfQr5bRMK9QHmFN_JWwmAOJdGlbT7TAnQoInG-vzEQCkB8AZg0OelH68nt5LBELtY22I_G1c4OLmpcI3x0NYVkQGyiuy9ZacfkHNseUWu-JChEzu64VRd1Dg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-lNGTow8SR4ZDs3-Q44TOQcgquPmCMsdoXd1z2z-MA0jdoE6YnRdQHX38PaZTn_0JO3f0pGkRr0JGicA3WEG9L8_F1dkf4Wr1mAY6LRVbG4UjzvkGHDbkYH2H3JwEjQI4lIO8BJOCLhoWNnCRoYAH_g=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業終了に関する具体的な時刻の記載がないため、変更なしと判定しました。"
   }
 ]
