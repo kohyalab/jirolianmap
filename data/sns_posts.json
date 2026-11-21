@@ -43412,5 +43412,32 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_kannai_20261122_0_2124156901135139222",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2124156901135139222",
+    "postedAt": "2026-11-21T15:04:04.000Z",
+    "postText": "こんばんは。 先日お知らせ済みではありますが22(日)は昼の部のみの営業となります。  揚げ玉カレーは無くなってしまったのですが揚げ玉だけはまだありますのでご希望の方は「アレ」でお願いします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-22",
+      "endDate": "2026-11-22",
+      "hours": [
+        [
+          11,
+          14.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
