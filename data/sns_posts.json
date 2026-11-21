@@ -42882,5 +42882,22 @@
     "processedAt": null,
     "aiStatus": "match",
     "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_routine_tachikawa_2123949307187679264",
+    "shopId": "tachikawa",
+    "shopName": "立川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jirotachikawa/status/2123949307187679264",
+    "postedAt": "2026-11-21T01:19:10.000Z",
+    "postText": "11/21(土)、昼夜とも時間内売り切れなし営業です。 昼11:00-14:30 夜17:00-21:30  ①煮干し変更 　+汁なし変更券で、にぼしるなしも  ②持帰りラーメン販売します。 　標準:2人前のスープと生麺+ブタハーフ https://t.co/vvFn3hNKRl",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-8v5hkTD-2kTuqvlpxB82NrF6wg7OhHIjNkC_uuX7uIunhgAfb2a1q4MSpSt0T1v52ZImjIo2OJjpYs6-vRc8V59D768pRbtzvaMLaQCFOFZoT-XXcSguDToopq2C8et6xXKGnq5K6jQPnRHCao-UlA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "11/21(土)は通常通りの営業です。"
   }
 ]
