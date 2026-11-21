@@ -43036,5 +43036,59 @@
     "processedAt": null,
     "aiStatus": "match",
     "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_routine_koiwa_2124015469955084573",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2124015469955084573",
+    "postedAt": "2026-11-21T05:42:04.000Z",
+    "postText": "11/21の追加メニュー  🐷豚ハーフ 🐽くずれ豚 📍生麺 📍汁なしの素 📍味付き脂 📍魚介つけ麺の素 個数制限無し  追加メニューだけのご購入も大歓迎です。  15時から販売開始いたします⏰",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "追加メニュー販売の告知であり、営業時間の変更は含まれていません。"
+  },
+  {
+    "id": "sns_post_routine_senjuohashi_2124019992824091019",
+    "shopId": "senjuohashi",
+    "shopName": "千住大橋駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjujirou26/status/2124019992824091019",
+    "postedAt": "2026-11-21T06:00:03.000Z",
+    "postText": "只今の時間より🍜  SH脂蕎麦セット 2人前1セット  1500円 （麺1玉2袋、豚入脂パック2つ）  ノーマル1つとPlus  ラー油🐖or魚粉油そば🐟 味噌脂🐖or1010カレー🐖 生姜醤油脂🫚復刻BP塩油そば🐖 よりお1つお選び下さい！  お1人様  2セットまで！  豚1本1500円🐷 脂豚1本1000円🐽 https://t.co/BikrZp7S1W",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-CVttbPRpTqXPBP8uY4RFjqdSIwxoUfj-LLJiyntpxF2auLNXMvK52QczQNjabXK4KndMFJIS8UsKTzvXPdXf3T7jB518zAbdjF1tLNrwzTmngRiexLRwhIbIhqaDVjRvAZ-JUEae1LoI_DtKtCiFMA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "テイクアウト商品の販売告知であり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2124019003798737247",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2124019003798737247",
+    "postedAt": "2026-11-21T05:56:07.000Z",
+    "postText": "本日 ◇11/21土 【夜】 →こちらをご覧のお客様限定です！ ↓ ※お客様ご自身で→丸の🟥赤又は白🤍食券を１枚お取りになって席までお越しください。→食券は券売機の前の台の二段目に置いておきます。 ※必ず着席時にお出しください。 ※サービス中の目印は［黄色いハンカチ］ どうぞご利用下さい♪ https://t.co/da56r7qxYt https://t.co/IKzvLbBuvq",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-vOLUCNwuUN9fegvumIuo85_qbNPt6AaHf1vNO2yQ88Wdy3aK4sV7KGA5JjDu0TCKVNKiwGASm9B4bB7UswZOgCyoEMiN0W3QYnIRHdHyTxcjn4f7bkh0AZcI9JtjzfmPnxIenLr2_rHtue-Y7k_Q9g==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-0nLeumri0FjO4YTX_mVq0ib12CJeeEkLr-vGoWCY4VBLu16DXR7cwD_tBfgY7WyF2DfPdiLEMMFDjPif7SYlJgF6aph60_2s5ZW5dw1vyXiv4wwqAK9t6tqLT4KGnaZjFVtAqnwaJ8EZEWNO5Nyo3A==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-1MHG10nlYGTpP06lZ3Jk8c8mWuRdYtml3MdycNkLbOeh_Tlv8dpAzmopkDkSCAcEazbS6hJDoRiCpmQL-IiBeSD-3hEo77LbvJVP5pywveVAFSW3APQNSrVf-BZnAK21KHGI-RVHUEIsXd51k-SN-w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-sTqo2YYRBLBAjxntpAQeb_qpAPTXFoXKzm1glDvqtqKGW9ycgmVLUN4UDxW3vrJql7Jomp9jsnaj_0k1FFnydkLZD_trhGOzExYy-robDX9WQXhiU4SLAjffZqEjAl8dRQMY2CGVKYJW0Jy5ZWzhrg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-998fk_QmoEVs1eXDVSLwOddBXJwo-uT7WmItqRhM3o-3OeZAHmZ5-Agu_5eYPsy4gzacVs6EpPLdxavcAtW7GWaFPArf0mgp7Skl6qIjvVZuLlYS08XmWYdmc2LvruHhBnWwH7tv2Us8bnhhAjubKw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-kxBNHYP5L-wpCw4WUlmyoOn4ScZ7rytjYwWUt7UpxSeVKy82Nk6sGyUO5jQ45gWYfs51PjhvZsfTw4SQmWOtazI-LBFff9q622jx1CA0uEusEIoZwEc-bPS0m2i9HxU8Ie0l1XGv-ql_l0XDfXbDwQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピング（刻みしょうが）の販売告知であり、営業時間の変更に関する言及はありません。"
   }
 ]
