@@ -43297,5 +43297,98 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "投稿内容は日常的な営業告知であり、添付画像は翌日の交通規制に関する注意喚起であるため、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_sengawa_20261121_0_2124098454481957207",
+    "shopId": "sengawa",
+    "shopName": "仙川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjiro26/status/2124098454481957207",
+    "postedAt": "2026-11-21T11:11:50.000Z",
+    "postText": "大変申し訳ございませんが材料切れのため、只今お並びの方をもって本日の営業を終了とさせていただきます。 本日も大変ありがとうございました！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-21",
+      "endDate": "2026-11-21",
+      "hours": [
+        [
+          17,
+          20.18
+        ]
+      ],
+      "reason": "材料切れのため",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 材料切れのため"
+  },
+  {
+    "id": "sns_post_ogikubo_20261121_0_2124102394867077338",
+    "shopId": "ogikubo",
+    "shopName": "荻窪店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ogkb_jiro/status/2124102394867077338",
+    "postedAt": "2026-11-21T11:27:29.000Z",
+    "postText": "ただいまの時間で 21日の営業は終了しました",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-21",
+      "endDate": "2026-11-21",
+      "hours": [
+        [
+          11.5,
+          14
+        ],
+        [
+          18,
+          20.45
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261123_0_2124102735964541422",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2124102735964541422",
+    "postedAt": "2026-11-21T11:28:50.000Z",
+    "postText": "明日 ◇11/22日　千秋楽 昼→◎限定40 相撲部屋の湯豆腐のタレのラーメン  ◇11/23月　臨時🈺 昼→◎ニンニクとゴマ油のつけ麺 https://t.co/AxhXsM0LJa",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-pD25q0g9P49J99AfDvX5wvf00yXQxOAbeXpH6KEt4KeqRADCB58H_TyM6qS17S0fEXiU2x8JDf8G5UkbNfvtEj6lcA5gNZtbNPQgbsXcMSTNLE6WrMvJaPbiruPl-CVsOg7gq9WpH2xZY4H3bADO1Q==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-_agXivMyPDJh3EpBQTdbhZ7C4CS4Lh_19WSEuDBMoWrWA-8R-U3QnHr0VyEdNWyvqgtt6MgZDixNzTH1B7RuMJNdxNA9NTGH2RspqEH5Kjc7gotTXjE6onGBvq6SXtCPNud2OZGO1ufbXEfutIgVog==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-P0n3dutrQPB9NJVHzrEDb4Y_U6chnFeVjp1tQmgXNsZCnEU4dDe5eouBfHRqnofgOLrm7U9-Febn2iTbNFN3bWp-qBuObrhl7GWwlMJNrqVwtCEZkFTgAxh1zxAarltxkdpAR7AXAajPMNj7ethcNQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Fo8ZIZlJYwdOLy94JQ6xTY8BOjMCBm_eoAvqDFFcwqJHjFAJongWjWniN5MjqB9Nj595iyScUuSqgbq0k-m3q20pQioXfG9BaInniZb2tni_3tQKPc6OS-epBTA1Dxt4nw8vxtTJUqo6PXfUn5x1Ew==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-HNGaW0-SHXKZ8OSubUwZYKXGemo5TTl8DKEwjOMeG4G95wLvZVYMEcxVyAKNqWznPdtJJFd46hqaREhLpImkvMn6NKdkV2VNlSKzYDSHQIBfWSE9PwiZmV-cLbJl_4TctK4P3fjjVR7QlWK8fjf0yg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-14fBwHFJCjqS86wFx9cH_jD2q0aeZqKYSwz3RLOzRDSzrVq0OjyBudkIf1vOzn9zzH6e0ORDJyyRzFGJoIRZ0aNBLV9fL4x8ZrnK8llNe40b2Kh0vVpT_BAwGJtFreLM-n43KSxyoze7Uq3oB3sejg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-gm1dJgKYpqsZ-y7E5DkvOv1Hn87T7KR0w4w_X1EJfq3CIiLVaYm82nTHy2zqKKs0Se5MtaP231IhnaHad1hYYW42tSX2_naEq3i1QN-szqYxeoaUu-ndYnKobIGO63jlE915doThb8fO0-ue1bq9ng=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-11-23",
+      "endDate": "2026-11-23",
+      "hours": [
+        [
+          10,
+          15
+        ]
+      ],
+      "reason": "臨時営業",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   }
 ]
