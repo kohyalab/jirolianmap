@@ -43570,5 +43570,22 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の告知のため変更なし"
+  },
+  {
+    "id": "sns_post_routine_mejirodai_2124279564293886182",
+    "shopId": "mejirodai",
+    "shopName": "めじろ台店",
+    "postSource": "x",
+    "postUrl": "https://x.com/mejirodai_jiro/status/2124279564293886182",
+    "postedAt": "2026-11-21T23:11:29.000Z",
+    "postText": "毎度ありがとうございます 本日22日(日)の営業時間は11〜15時となります なおアルバイト募集中ですのでXのDMの方までご連絡お待ちしてます よろしくお願いします🙇 https://t.co/pzOK096OeL",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-JuhTNPO6hCj-Nhl3sR4AmnQ7l-tRzyoYP_ts4ffYhL4PwwQqIrreJmog_CY9jjTggutdL8xbmElujKg42RnWgZRWhNe9gL2FmK51y47M1njDLRh85EGskO1CzZgd723bMSS8SZC74M35z0ADUYULGg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "本日11/22(日)の営業時間は通常通り11:00〜15:00であり、投稿内容と一致するため変更なし。"
   }
 ]
