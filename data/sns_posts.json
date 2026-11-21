@@ -43090,5 +43090,96 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "限定トッピング（刻みしょうが）の販売告知であり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_daily_kameido_2124024996242809322",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2124024996242809322",
+    "postedAt": "2026-11-21T06:19:56.000Z",
+    "postText": "タメになるなぁ https://t.co/OKsAxywFRX",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_koiwa_2124026575352221956",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2124026575352221956",
+    "postedAt": "2026-11-21T06:26:12.000Z",
+    "postText": "魚介つけ麺の素は売り切れました😭",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業変更なし（通常通り営業・雑談等）"
+  },
+  {
+    "id": "sns_post_senjuohashi_20261121_0_2124024288600899801",
+    "shopId": "senjuohashi",
+    "shopName": "千住大橋駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjujirou26/status/2124024288600899801",
+    "postedAt": "2026-11-21T06:17:07.000Z",
+    "postText": "大変申し訳御座いませんが本日の販売は終了いたしました！  お持ち帰りして頂いた方へ！  脂の袋は立てて湯煎をし♨︎ 麺を茹でよーく湯切りをした熱熱の麺によーく混ぜ混ぜしてお召し上がり下さい🍜 （麺の茹で加減はお好みで！） https://t.co/hqRimwjKly",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-CHRh_SLrTbHPhXA2CUN3PEIC0UntxoV0WKmPhTQv5qfNbj5dvwIEBxo7Ga6g7Vo-hX2N4F3srqx3eJLsj4n9uwAD8-iWwSh7PNuDwzlmWfbYcTn6nGgZbER1hG_HCa7TbScCOXxjHhYnSNA9TRt3pg=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-21",
+      "endDate": "2026-11-21",
+      "hours": [
+        [
+          10.5,
+          15.28
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2124021204269068742",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2124021204269068742",
+    "postedAt": "2026-11-21T06:04:52.000Z",
+    "postText": "本日この後！  ◇11/21土 【夜の部】 16:30から20:00迄に ご来店ご到着お並びのお客様まで営業🈺 ◎前倒し 　◎限定20 相撲部屋の湯豆腐のタレのラーメン  よろしくお願い致します！ https://t.co/yIU814zVDS",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-t1EjS8vS4JWJp4oOmDXHr5iCfhFVMlnvSH0NrAJoH9YK9sWJx4EL7iO3eagGXDaCpEZEt9bh-p-3NACgdc8LLfXLD-m_ntaWyPLplj1WgAkDOSHCYzK1_0ubjZ1lfcd5Q21ScA_IWETk_Oh9qhGpjw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "11/21(土)夜の部は通常通りの営業時間であり、変更はありません。"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2124023456174129532",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2124023456174129532",
+    "postedAt": "2026-11-21T06:13:49.000Z",
+    "postText": "いまいるひとでおわりです！ ごめんなさい！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
