@@ -43525,5 +43525,50 @@
     "processedAt": null,
     "aiStatus": "match",
     "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2124271905725358242",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2124271905725358242",
+    "postedAt": "2026-11-21T22:41:04.000Z",
+    "postText": "激辛もやります！ 多分ちゃんと辛いです！  1倍  100円 2倍 200円 3倍 300円です！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2124271676708008029",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2124271676708008029",
+    "postedAt": "2026-11-21T22:40:09.000Z",
+    "postText": "味噌ラーメン(+200円)もやります！  麺の量と一緒に みそでって言ってください！ ラーメンのひとはしょうゆでって言ってくれるとわかりやすいです！  麺の量を聞かれた時に じぶんから言ってください！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_shndaita_2124271559238103392",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2124271559238103392",
+    "postedAt": "2026-11-21T22:39:41.000Z",
+    "postText": "2026年11月22日（日）  通常営業です！ 11:00～16:00くらいです！  よろしくお願いします！  ※住宅地なのでおしゃべりしないで待っててください",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知のため変更なし"
   }
 ]
