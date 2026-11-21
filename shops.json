@@ -6376,6 +6376,19 @@
         "reason": "",
         "sourceUrl": "https://x.com/ksgy26/status/2122441058936320463",
         "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-23",
+        "endDate": "2026-11-23",
+        "hours": [
+          [
+            10,
+            14.5
+          ]
+        ],
+        "reason": "祝日特別営業",
+        "sourceUrl": "https://x.com/ksgy26/status/2123887168066314676",
+        "_isAiImported": true
       }
     ],
     "shiftsByDay": {
