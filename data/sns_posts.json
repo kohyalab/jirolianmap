@@ -43277,5 +43277,25 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2124095002607595588",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2124095002607595588",
+    "postedAt": "2026-11-21T10:58:07.000Z",
+    "postText": "変な時間に列切れたので晩御飯まだの方、よろしかったらどうぞー！！ 明日は女子駅伝で交通規制がありますので、ご注意を！！！ https://t.co/BKD5UMBMQZ",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-aBhL5IHP1YsVZU342od7X58QMJ0PWtr0G7StfR2Uj63Hzv1X2aH5mSkPkACE_ZSaE0i_sokKWbdu-ZFiFOICA_CwgioZZlqXoGlTgMot8A4XWEYpOhmiperCrMo-XClTTite6dltqAdKm80aSKKwyQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-IV3IU1ZiSHO4XXIisdEnty7iV5M6mwLfBsWO76AkqOQizR0jgT_9k1fVRNCb6uKVKkSu36PGtoS_hz_R4Tt3YU6t3DVcWO57lco_78Uxv9OFDwr10ujnxZDOWAfK0evBbYj9K0Hb7gEKTMyAMt-K3Q==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-UjwTATL0X0wR6LRb4Ldk9qHHeD1yqeKq9Iy2ZP65HmYfz3BDvM51Z_0w_ZTThqg2oyly-u8aJFRB_0An6IvhvqBecGXV-Kwjje72EBF5wXHnsySBDekqSlKyspbMyXEsHoqncA5QupdPmdmIJQOadQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-fLfeFM-hinItskms-1KDh8GaUm9zp_0rYjnPwRjEkPtdou4oqa5ZxmH2p4QzMVEROSvqra05KpbM-R37D_bFLiemUjStLjtDXxG9RSx-GEbH-Elb14wogvb267aPrILQTmq56d40l62Iuxeq4qsQtw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "投稿内容は日常的な営業告知であり、添付画像は翌日の交通規制に関する注意喚起であるため、営業時間の変更はありません。"
   }
 ]
