@@ -4910,7 +4910,6 @@
         "startDate": "2026-11-15",
         "endDate": "2026-11-15",
         "hours": [],
-        "reason": "",
         "sourceUrl": "https://x.com/26shinshindaita/status/2121646504624709789",
         "_isAiImported": true
       },
@@ -4923,7 +4922,6 @@
             15
           ]
         ],
-        "reason": "",
         "sourceUrl": "https://x.com/26shinshindaita/status/2121804482208264390",
         "_isAiImported": true
       },
@@ -4936,7 +4934,6 @@
             15
           ]
         ],
-        "reason": "",
         "sourceUrl": "https://x.com/26shinshindaita/status/2122462123666366699",
         "_isAiImported": true
       },
@@ -4948,6 +4945,21 @@
       {
         "startDate": "2026-11-19",
         "endDate": "2026-11-20",
+        "hours": [
+          [
+            11,
+            15
+          ]
+        ]
+      },
+      {
+        "startDate": "2026-11-25",
+        "endDate": "2026-11-26",
+        "hours": []
+      },
+      {
+        "startDate": "2026-11-27",
+        "endDate": "2026-11-27",
         "hours": [
           [
             11,
