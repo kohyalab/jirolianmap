@@ -43850,5 +43850,20 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_tochigikaido_2124446515121033611",
+    "shopId": "tochigikaido",
+    "shopName": "栃木街道店",
+    "postSource": "x",
+    "postUrl": "https://x.com/Tochigikaidoten/status/2124446515121033611",
+    "postedAt": "2026-11-22T10:14:54.000Z",
+    "postText": "明日23日(月)は通常営業です よろしくお願いします🍜",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "明日23日(月)は通常営業である旨の告知であり、営業時間の変更はない。"
   }
 ]
