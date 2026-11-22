@@ -44087,5 +44087,69 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業変更なし（通常通り営業・雑談等）"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261123_0_2124642270754509023",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2124642270754509023",
+    "postedAt": "2026-11-22T23:12:45.000Z",
+    "postText": "本日 ◇11/23月 【臨時営業🈺】 10:00から15:00迄に ご来店ご到着お並びのお客様まで営業致します🈺  →［ニンニクとゴマ油のつけ麺］  →［お椀でとろけるチーズ🧀］🉐🈹50円！ ※券売機50円設定 →［ニンニククタクタ煮🧄］🉐🈹50円！ ※券売機50円設定  ニンニクとゴマ油のつけ麺にとろけるチーズ！ https://t.co/LRQySOyaWg",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-v0fzD09sgJlanuOyCHK8t5Q_MlNUJfosSbbtuyTpFJv8Oe--8pg3sELBVn7F-3_Q2yjOb7E1-Ow9Dyw6SR-oap7l4pbuO7J_shePP9ExquwV4g-Lnf6DL0bs4qzK60HW-EveG63xxVETD-GsnK_xGA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-4HCrWgljxzqrhv-ZHdX4zLMuTkEZ_x8-j1dzCgDIvbcjaumAvu7NbRWC6M2kowNYxbfnhgDdK7jcdUFFzdTev-OoX45G0Sk8-FJl-zf34GTX1khDjmQLKLT2hnpgOCyIUAMUCbfgDpPBUre3n_VG_A==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-3eUeFbdESm3pdGcFnF3toWy4aRxup_YkWzMqNMSl6-dX1He_blxhEBcRmJZ1wC7yrgMigjnXMAcHUNY7EaLdroCBivjwGBNfvhPYohHnhhc5n9qxzEZvGMwDEGrcSmThFJD721JPE8YqeKcnP_dPNg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-JQC53m-nHG6WI33onGezxQ8T3rmTy8pxCLE53JpiJIoiDyYxzKvojbOopXIWUhVJxwrNK2HTWNsSEeNwWdDRkHdSOQzrDn0NxpVHg4X5VQSNcLle2DVnfzCVphgV8RVEE6c6qVTyHwJpC0S72CAFGQ=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-11-23",
+      "endDate": "2026-11-23",
+      "hours": [
+        [
+          10,
+          15
+        ]
+      ],
+      "reason": "祝日特別営業",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_daily_sagamiohno_2124640865872490684",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2124640865872490684",
+    "postedAt": "2026-11-22T23:07:10.000Z",
+    "postText": "【東西両横綱】 一年納めの九州場所。 横綱大の里関が13勝２敗で7回目の優勝を飾りました🏆。 おめでとうございます🎊  今場所は両横綱が揃い、千秋楽には横綱同士の取組みが組まれました。 やっぱり千秋楽の横綱同士の取組みは嬉しいですね。 来場所の千秋楽には横綱同士の全勝対決に期待です！！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_mejirodai_2124641961282048335",
+    "shopId": "mejirodai",
+    "shopName": "めじろ台店",
+    "postSource": "x",
+    "postUrl": "https://x.com/mejirodai_jiro/status/2124641961282048335",
+    "postedAt": "2026-11-22T23:11:32.000Z",
+    "postText": "毎度ありがとうございます 本日23日は祝日ですが昼夜共に通常営業となります よろしくお願いします🙇 https://t.co/Aot31ee6ux",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-U-KDKMWqDVZtBfrQT3bpTuLRdvnmYqIn5V47uySxZGk18XV0iVbwduqHC03sK4x7yFuZpHpjyw3qAILRp9ljCyBiuAqd4qC4IlrAzjZfUPCXwGjcBxdNhhrdYE3mLLSXXC6N0WmTHdxnnMmveItI9w=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "11月23日(月)は祝日ですが通常営業となります。"
   }
 ]
