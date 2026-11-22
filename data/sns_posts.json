@@ -44072,5 +44072,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "11/23(月)は通常定休日ですが、臨時営業の告知はなく、トッピング（紅しょうが・刻みしょうが）の案内のみであるため変更なしと判定します。"
+  },
+  {
+    "id": "sns_post_routine_ogikubo_2124639120106614958",
+    "shopId": "ogikubo",
+    "shopName": "荻窪店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ogkb_jiro/status/2124639120106614958",
+    "postedAt": "2026-11-22T23:00:14.000Z",
+    "postText": "本日です",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業変更なし（通常通り営業・雑談等）"
   }
 ]
