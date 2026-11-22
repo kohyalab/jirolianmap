@@ -43865,5 +43865,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "明日23日(月)は通常営業である旨の告知であり、営業時間の変更はない。"
+  },
+  {
+    "id": "sns_post_daily_kameido_2124480167385194602",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2124480167385194602",
+    "postedAt": "2026-11-22T12:28:37.000Z",
+    "postText": "ケモ夫人最終回！お疲れ様でした！ https://t.co/P9ZFZNF9Mv",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
