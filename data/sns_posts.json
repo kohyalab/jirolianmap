@@ -44050,5 +44050,27 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2124628950991409419",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2124628950991409419",
+    "postedAt": "2026-11-22T22:19:50.000Z",
+    "postText": "本日 ◇11/23月 臨時🈺昼 →こちらをご覧のお客様限定です！ ↓ ※お客様ご自身で→丸の🟥赤又は白🤍食券を１枚お取りになって席までお越しください。→食券は券売機の前の台の二段目に置いておきます。 ※必ず着席時にお出しください。 ※サービス中の目印は［黄色いハンカチ］ どうぞご利用下さい♪ https://t.co/rtSoiSgP0u https://t.co/xAQ4Pi0JZZ",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-g4D8GHYh4EuavbBs_eF2GBN0xM1NfF7Qmnd1EpWlgK-rBiWIpheZCu2-0O2bSoH8v0N9Z2WcRCegJ3BYCpRK_6bJn0gE0Z6dmBYuR1X6ma4gSi2PJU5y8Cin6QXB_QeqITtbrzO27-P137nEsVLJYA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-DWovTzeVQrlV9vQn2YrpaqDH60euNkAeDehBg-FgPlrddYq15lVAkiTMDCiVWBy1wzL92C9UpkrR8aGC68v4IHerpG6-ZCdlBGy5KFCZw0iahMYQ_zbjBdOu93lkQDgyAnJCkzXGlpktrfmczgWQiQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-VrqaUgzJIP1UwznwroJJAdN3_FvWAkAts-YPFcFdRGUb7KfUkVvfyO2Z2179ZmKiXyy_lrt2K3klQ5XmJeA0h0FzSq8Ly6pritdxLHz7OZ2Pf97L0osKQXgVvKlchJyVM1Ztrn_4uT8N58ej8KXmwQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-3f2asc4nmONGfW4kAPFbLOBsQ2KSpIuBqVbjxKMJgq4Z_-t8Y4EOsmY7kjeLSdzfqSipvbM_VEAxIy4nV98qK2PvijJcgqM3AAi9LSbyIA6GMmiFxgO8Ywr3efrNcrQkpTF4Ybp-w3nGFkipqT7iMQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-eQwsN_dBlBeWRr60dMWQJ90UKiGfVln3IHMDcWvETNSmi86IuDcm1c2Mxdthh5g98s1oPl6XQlcPQa3Es5sGlE2_mlx2H8-OASaa8dwDuWEIFCWs6WNjIDpFST9f72nQ95KaI22ugFUyCuFKpjZuHQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-kdy89XGlZsjarpVsy-AfiW3L3P4FToGIeNzSwGi1EQZ4aWwQN8eOOmrG1GwMgyMAxDTzZaYpWOQXxyIbUMIfIAPALD397pzlkXGfwF6raZDBls4sN_nNDTlPKWTXDxs5jVytJWHGASzSq1JF229PZg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "11/23(月)は通常定休日ですが、臨時営業の告知はなく、トッピング（紅しょうが・刻みしょうが）の案内のみであるため変更なしと判定します。"
   }
 ]
