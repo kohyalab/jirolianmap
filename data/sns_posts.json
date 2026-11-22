@@ -43942,5 +43942,113 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 祝日特別営業"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2124622760865681522",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2124622760865681522",
+    "postedAt": "2026-11-22T21:55:14.000Z",
+    "postText": "激辛もやります！ 多分ちゃんと辛いです！  1倍  100円 2倍 200円 3倍 300円です！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2124622616124346648",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2124622616124346648",
+    "postedAt": "2026-11-22T21:54:39.000Z",
+    "postText": "味噌ラーメン(+200円)もやります！  麺の量と一緒に みそでって言ってください！ ラーメンのひとはしょうゆでって言ってくれるとわかりやすいです！  麺の量を聞かれた時に じぶんから言ってください！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_shndaita_2124622492786708911",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2124622492786708911",
+    "postedAt": "2026-11-22T21:54:10.000Z",
+    "postText": "2026年11月23日(月)  通常営業です！ 11:00～16:00くらいです！  よろしくお願いします！  ※住宅地なのでおしゃべりしないで待っててください",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知のため変更なし"
+  },
+  {
+    "id": "sns_post_hitachinaka_20261123_0_2124617561023422902",
+    "shopId": "hitachinaka",
+    "shopName": "ひたちなか店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26_hitachinaka/status/2124617561023422902",
+    "postedAt": "2026-11-22T21:34:34.000Z",
+    "postText": "【23日〜28日 営業時間のご案内】  本日23日(月)まで お休みいただいており〼  基本ラストオーダー宣告ナシ 列が途切れたら閉店  テーブル席あり〼 利用者 限定 お子様連れ優先案内  複数名のお客様 ロットまたがない様にご案内し〼  ペットボトルキャップ集めて〼  割り箸・玉子の殻は丼の中で大丈夫 https://t.co/XfBzuPaotI",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-F5JaorByWcbTZZ6-Zmz8Q0lpME9ABhOGDLcLLlCMdTlLMevrzPjpkgFoCVF7W8_vhgFdHTy6vp6Qde2LB-ifIBKlq5pg0WJMIqww0stk5tUiQkVRrzF2OAHoc07lyQO-rPBamK1Kd4T9fFXqjT2RIQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-HXDKPeEmXOQpazwRGYaxwE8yDmNl1jzg414DHMboiOfdfdbUM86cdXf_MMbG-s8G2B04ypE1AxFHejfKrpD5r-0L46bZ9jHyXIfzAOX2kjVz34BdI1Z0x0R6LGSn3KzGK8a4WTf1U7cveLxyTSzI3g==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-bESax-GW62qdu61m-9M7XPj9-XuruKSr4u7hxNzCq8GhcPEcbsMFvuzj_5NKDY6tKh9OccRd1zWxtWtWlsuypNIqbiZ0cIHl4ug9O63EIGgR8zM9ye8d3Xv3hlnd1D47wAiR2IQwRBD6fQwH7A3YlQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-IWd3ruqlrGWfkCoV9tGQH4zumFVRbD2jHan4KaJ5azwr1x6AIVuX7BndYX7c7PUSjJTIw3KDQQBOVDcOWDjc1hkMEyVXhTDQJ3_oNJsv0gg8Gio2KcxbvXa4AqAPw_syGeJxSSHXY2wl4yhvuFDLYg=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-23",
+      "endDate": "2026-11-23",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "既に登録済みの臨時スケジュールと一致"
+  },
+  {
+    "id": "sns_post_hitachinaka_20261227_1_2124617561023422902",
+    "shopId": "hitachinaka",
+    "shopName": "ひたちなか店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26_hitachinaka/status/2124617561023422902",
+    "postedAt": "2026-11-22T21:34:34.000Z",
+    "postText": "【23日〜28日 営業時間のご案内】  本日23日(月)まで お休みいただいており〼  基本ラストオーダー宣告ナシ 列が途切れたら閉店  テーブル席あり〼 利用者 限定 お子様連れ優先案内  複数名のお客様 ロットまたがない様にご案内し〼  ペットボトルキャップ集めて〼  割り箸・玉子の殻は丼の中で大丈夫 https://t.co/XfBzuPaotI",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-F5JaorByWcbTZZ6-Zmz8Q0lpME9ABhOGDLcLLlCMdTlLMevrzPjpkgFoCVF7W8_vhgFdHTy6vp6Qde2LB-ifIBKlq5pg0WJMIqww0stk5tUiQkVRrzF2OAHoc07lyQO-rPBamK1Kd4T9fFXqjT2RIQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-HXDKPeEmXOQpazwRGYaxwE8yDmNl1jzg414DHMboiOfdfdbUM86cdXf_MMbG-s8G2B04ypE1AxFHejfKrpD5r-0L46bZ9jHyXIfzAOX2kjVz34BdI1Z0x0R6LGSn3KzGK8a4WTf1U7cveLxyTSzI3g==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-bESax-GW62qdu61m-9M7XPj9-XuruKSr4u7hxNzCq8GhcPEcbsMFvuzj_5NKDY6tKh9OccRd1zWxtWtWlsuypNIqbiZ0cIHl4ug9O63EIGgR8zM9ye8d3Xv3hlnd1D47wAiR2IQwRBD6fQwH7A3YlQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-IWd3ruqlrGWfkCoV9tGQH4zumFVRbD2jHan4KaJ5azwr1x6AIVuX7BndYX7c7PUSjJTIw3KDQQBOVDcOWDjc1hkMEyVXhTDQJ3_oNJsv0gg8Gio2KcxbvXa4AqAPw_syGeJxSSHXY2wl4yhvuFDLYg=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-12-27",
+      "endDate": "2026-12-27",
+      "hours": [
+        [
+          11,
+          14.5
+        ],
+        [
+          17.5,
+          21
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
