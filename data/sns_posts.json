@@ -43587,5 +43587,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "本日11/22(日)の営業時間は通常通り11:00〜15:00であり、投稿内容と一致するため変更なし。"
+  },
+  {
+    "id": "sns_post_routine_hibarigaoka_2124292060761219342",
+    "shopId": "hibarigaoka",
+    "shopName": "ひばりヶ丘駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/Aarf0xvdBXkWd7o/status/2124292060761219342",
+    "postedAt": "2026-11-22T00:01:09.000Z",
+    "postText": "11月23日(月・祝)は、「昼＆夜」の通常営業です。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "11月23日(月・祝)は通常営業である旨の告知"
   }
 ]
