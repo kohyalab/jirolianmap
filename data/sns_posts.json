@@ -43824,5 +43824,31 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_shndaita_20261122_0_2124407955944796320",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2124407955944796320",
+    "postedAt": "2026-11-22T07:41:40.000Z",
+    "postText": "2026年11月22日(日) 解ってる範囲の営業予定です！  月 〇 火 〇 水 お休み 木 お休み 金 〇(15:00くらい) 土 〇 日 〇  11:00〜16:00くらい 味噌(＋200円)もやります！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "regular_schedule_change",
+      "startDate": "2026-11-22",
+      "endDate": "2026-11-22",
+      "hours": [],
+      "daysOfWeek": [
+        2,
+        3
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
