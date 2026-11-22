@@ -43602,5 +43602,37 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "11月23日(月・祝)は通常営業である旨の告知"
+  },
+  {
+    "id": "sns_post_routine_kameido_2124310934793674918",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2124310934793674918",
+    "postedAt": "2026-11-22T01:16:09.000Z",
+    "postText": "お世話になってます。世間では三連休のようですが当店は通常通り営業です！ちなみに本日のタレは肉カス、タマネギ、ニラ、青トウガラシ、タマネギです。皆さんのご来店、お待ちしております！ https://t.co/QAWQJzNGrw",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-nkdocBa9esjXf-DKvUvrZ3o3HRKOHsXMg07HpZrKXvZSiwDwb_0SXfkL2MB6RgrfJPdZ1aPiaLULqM0y_v1YGNN-3ht4kounMbFSEvv-ScSK9SDJG2XkFGcfaW36qcSJZIlwDaD8N4RtOmeaQsQ4QA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常通り営業"
+  },
+  {
+    "id": "sns_post_routine_kyoto_2124309963606798434",
+    "shopId": "kyoto",
+    "shopName": "京都店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kyoto/status/2124309963606798434",
+    "postedAt": "2026-11-22T01:12:17.000Z",
+    "postText": "おはようございます！本日日曜通常営業です！ 明日も日曜と同じ時間で昼夜営業です！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の告知であり、変更なし"
   }
 ]
