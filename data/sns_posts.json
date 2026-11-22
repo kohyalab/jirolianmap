@@ -43493,40 +43493,6 @@
     "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   },
   {
-    "id": "sns_post_sagamiohno_20261123_1_2124263238225527182",
-    "shopId": "sagamiohno",
-    "shopName": "相模大野店",
-    "postSource": "x",
-    "postUrl": "https://x.com/sumo_jiro/status/2124263238225527182",
-    "postedAt": "2026-11-21T22:06:37.000Z",
-    "postText": "おはようございます。  本日　大相撲千秋楽！ ◇11/22日 【千秋楽営業🈺】 10:00から15:00迄に ご来店ご到着お並びのお客様まで営業致します🈺  限定40 →［相撲部屋の湯豆腐のタレのラーメン🍜］  →［ニンニククタクタ煮🧄］  やっております♪  明日 ◇11/23月　臨営🈺 10:00→15:00 https://t.co/bJzEICbjzV",
-    "mediaUrls": [
-      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-hfr1-VZwR74UYITso0ZHIwBExxV4pfzMnMoLUP837ulPPUf2_LDyFtZSwnATQMTygTvHpiTavpQMpdyqv7xK0L6jrrfgsXnrVUGDJGpKZXTTKwZCTxecWPowK5AzmHFiEZ61Jf6WHbKwOy3S3dJsYg==",
-      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-aPqsNOACHJbMZM3I-4DdWhzvVr3ac2yC9A9cRnAkjmsTGc2DT1cxaVinkqVlJYlxaIjPjoN6zi4DSPPoPJ_JjenjDXPX66HqygMvLFcVSGy_1vf0SELj16GKrHjlb9f6ljd5GMW6BMdOQCgQYgdYUw==",
-      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-QEihAE-ZM-42_xQW2u_6ypJPekRwCORPeQ_ne6d9G3ATe4vpaxueiA8tKfMDWj3rrh3v0keNqgZpaGRkf5pGOlMn-jdvmiYTqzoLOLElb8kMfnf4ezRCOO8dLiZUARxg6T3nb-LYRTvJI95vsEwM1g==",
-      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-qBss-ZXu3qWk4iQbxSlKEPngK2bYWHRJm8mMt_zn4hfQYuDwMb-GkHNtSsrKu70o_W8lJcaZKAfSJDrdIaTuiMrq6dkVPQ0TN9WpHZ0165PH60yYBzo2kBX6DxOdMh9jR7qTxzYY3vsnNjhmjxpgmw==",
-      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-AXXhXQbzLtScXafTvz89-P0Cc7T7QC3bvAsP7kC1uAL9jtbVe0lS9E9U4NoAkwHUQgWHU7WO8gw6f5jB1SYWrErio_907VRRXJSVzFY5iFOQJG0FtVEO3yf4sBaopX53b_sY5hY6TT83lrDVplJ94A==",
-      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-NlhLBoAG4RPqjM_BGbnxz_Vfzvj31-B--xinvO-X3PLKDT5JEZJ0Zaioo25WV49ZwVuLi7VppBVcW445yfQM1jEddG1BW2d1IJEEjPnO5wGtVOGrdSx5csn3356qNX78th7fYATatTh7xh0F8fy0rw=="
-    ],
-    "detectedChange": {
-      "type": "special_open",
-      "startDate": "2026-11-23",
-      "endDate": "2026-11-23",
-      "hours": [
-        [
-          10,
-          15
-        ]
-      ],
-      "reason": "",
-      "confidence": 1
-    },
-    "processed": false,
-    "processedAt": null,
-    "aiStatus": "match",
-    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
-  },
-  {
     "id": "sns_post_daily_shndaita_2124271905725358242",
     "shopId": "shndaita",
     "shopName": "環七新新代田店",
@@ -43808,5 +43774,40 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261123_0_2124396529679290773",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2124396529679290773",
+    "postedAt": "2026-11-22T06:56:16.000Z",
+    "postText": "明日 ◇11/23月 【臨時営業🈺】 10:00から15:00迄に ご来店ご到着お並びのお客様まで営業致します🈺  →［ニンニクとゴマ油のつけ麺］  →［お椀でとろけるチーズ🧀］🉐🈹50円！ ※券売機50円設定 →［ニンニククタクタ煮🧄］🉐🈹50円！ ※券売機50円設定  ニンニクとゴマ油のつけ麺にとろけるチーズ！ https://t.co/B8xAMRVhuF",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-iS5l4PzAhw0Cou_aHhSjapaEzNcytqvWzk3aeYBHW_Q4xBOIT1OOtZsdhMVC_uBL16zqKiW0EG0qJbK_URgM062rXRrE9cmCzOiqwzKjtHFXdg7j0Ixwfg52C-0VHkEHpRafFTpZEVIPXSALu0JfHw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-W_LC4BVALTpnG3fZcRvLURb9gEG_1g5Bwx4Qi2_MpRtDbQT9kaM9GVWvuHb4iWORsI8SaNAsgFkcwgLuzbM4R1gO5o7SzHql6o31HoMvIICzR-nWWi-dHsX8QB7vfF9wIgGcpFV1e5dKf6QjeKsYFA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-WGZBWJUoj5y_rno1HuBjE0djvBnA-96tbNBO45oYeDSZLfTNhGYdJMzNbVlOPDp6_CH1lcjWaut1lXUdEc-fnqUAlNKlBE74xYSvWyPXYEAx5A2Z49WNE1D2GrzjwFItGHqi4rEhHeZ8XQ8ovly1vw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-KTGYLsh_G6sAY0N5cKG8E192KpwFd794iYbpQCO1oqrH092bGecx2I4Y-r7En-IDKlDB85vpcn3H29yuOYBeaYBlO2dirrPctESTsTIbbUzr7kd1Zp7FybhdIxVFftRc63kBK_MCYRrSX-7Urv_tQg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-mOLiL1ceRfkkCklygyjv1vNkSfcLVF4owl2uGAWpeas4qLZo0_CP6f8-SPBw1B3g8GgRiC-ojx--eM7HwGndGBPYHsyMehXqMqwPWGlNQXWKX7ARW9v8f-ienOBQz4X8F-GPkfPHpm2EdaSEei9m3A==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-aoEVZohYJ7wzlXsKB3RrM6rHKPXN9EGYlIh9OLxt7BtfhyVz8xbo9whuHjHFmZmDmYhykIVCWrv6SfbEDv308XRF1TeqlBABcsbEhzVzwL3_FPfXTujFaRzU1x6VH6HA4nEm8PHXI1yALqe6-V_htw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-f2A3i0iuqfsAKu6itibQhxuankfdE692nHEExU8oaCXs1jMNJKBZNAhhGCIa9gBK5GAKtxvryR0-YSlUrgC0olfWlgIYp088wCwJvmdWk_CMwECIQMK8HuKcftipaZ2ewX0r0LC4d3QCZMgIfENSzg=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-11-23",
+      "endDate": "2026-11-23",
+      "hours": [
+        [
+          10,
+          15
+        ]
+      ],
+      "reason": "祝日特別営業",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   }
 ]
