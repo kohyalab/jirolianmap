@@ -43731,5 +43731,82 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_kameido_2124378335488925767",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2124378335488925767",
+    "postedAt": "2026-11-22T05:43:58.000Z",
+    "postText": "マイルCS対戦よろしくお願いします！ https://t.co/JBOBBg4gGu",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-fdur6GOsJrOV3UiI_j24ECLgcKQytLLjWjHerUxxM2dreM_d5Qy7KatHcOfjm_m44ErWaq8WKP2lgDQMLXTlU2RoT1Ahv_-nf3oK-DNll-qk4sdWtTUDfree-q2QijwVBVuUK82C2H5seq78-E4PBw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報に関する言及がない日常投稿のため、変更なしと判定しました。"
+  },
+  {
+    "id": "sns_post_nishidai_20261122_0_2124382138753802297",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2124382138753802297",
+    "postedAt": "2026-11-22T05:59:05.000Z",
+    "postText": "23日は祝日営業日です。🎌 https://t.co/TSoPytMtbc https://t.co/wUxiywgvo8",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-w04h9Crq6zOJQpybvcwOm--jfd4N3z8le6zoMyYuFSX5-4v3DWr7IzSCv4akJJMAVASLB8jRik8BL0jY6YOsaNZcu3A-iWQ27Wxh37_hARLg_FqKJ69zbuwdOiPchE9ggXsta5FLqYmtuMNgwQ8v_g==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-FWKXIqh3bxpghtA24fS7ooWfEg03snlYruiF6TXfVW5GfB8AoPOGXvuYIF6OOob2eZinVnJi__4P5PNKG0mhhYBkvGrOTOq91s3vvG1qX5Z1YWmofDc1kYND7ZSu6WAnqUMdZoZNX3kX2sMsDzdmWA=="
+    ],
+    "detectedChange": {
+      "type": "regular_schedule_change",
+      "startDate": "2026-11-22",
+      "endDate": "9999-12-31",
+      "hours": [
+        [
+          10.25,
+          13.5
+        ]
+      ],
+      "daysOfWeek": [
+        7
+      ],
+      "reason": "祝日営業ルールの設定",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 祝日営業ルールの設定"
+  },
+  {
+    "id": "sns_post_mejirodai_20261122_0_2124379944944058495",
+    "shopId": "mejirodai",
+    "shopName": "めじろ台店",
+    "postSource": "x",
+    "postUrl": "https://x.com/mejirodai_jiro/status/2124379944944058495",
+    "postedAt": "2026-11-22T05:50:22.000Z",
+    "postText": "ただお並びの方で本日の営業は終了しました 申し訳ありませんがよろしくお願いします🙇",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-22",
+      "endDate": "2026-11-22",
+      "hours": [
+        [
+          11,
+          14.83
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
