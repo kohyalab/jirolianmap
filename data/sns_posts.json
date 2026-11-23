@@ -44481,5 +44481,52 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業時間の変更に関する言及はなく、限定トッピングの告知のみであるため変更なし。"
+  },
+  {
+    "id": "sns_post_routine_kameido_2124772591806357871",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2124772591806357871",
+    "postedAt": "2026-11-23T07:50:36.000Z",
+    "postText": "@niwano0501 イラスト最高です！ありがとうございました✨ お店の方でもお待ちしております🙇‍♂️",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_mention_kameido_2124768840018178257",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2124768840018178257",
+    "postedAt": "2026-11-23T07:35:42.000Z",
+    "postText": "@AB10os まぁちょっと仲良い人は知ってるので😅",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_routine_kameido_2124768748238508320",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2124768748238508320",
+    "postedAt": "2026-11-23T07:35:20.000Z",
+    "postText": "以前からにわのまこと先生@niwano0501 にご依頼していた色紙が届きました✨ https://t.co/JFLPjDBFR9",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-hshUqznHpZYETgvyfKXxEG9o_XkI9EktiPFG3jyPImgZLa0QVjsfJ7tjoibtgYquf1p8xGNjlW6IcOuR-13U98DtR3YBu8MUigGaTf5ptZ6CsDqGwqfkKfQQQT01RG20s-VkmMk8c5MTKaewIBUZCQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報の変更に関する言及はありません。"
   }
 ]
