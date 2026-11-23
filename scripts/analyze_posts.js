@@ -145,15 +145,43 @@ async function analyzePostWithGemini(postData, apiKey = process.env.GEMINI_API_K
             const rules = (guidelinesData.generalRules || []).map(r => `・【${r.title}】: ${r.rule}`).join('\n');
             const shopRules = (guidelinesData.shopSpecificRules && guidelinesData.shopSpecificRules[postData.shopId]) ? `・【店舗固有ルール】: ${guidelinesData.shopSpecificRules[postData.shopId]}` : '';
 
-            // 人間判定の学習履歴（直近15件）を教師データとして動的注入
+            // 人間判定の3パターン評価履歴（誤り・反映不要・正解）を優先順位付きで動的注入
             let feedbackText = '';
             if (Array.isArray(guidelinesData.learnedFeedback) && guidelinesData.learnedFeedback.length > 0) {
-                const sampleFeedbacks = guidelinesData.learnedFeedback.slice(0, 15).map(f => {
-                    const actionStr = f.humanAction === 'applied' ? '反映(要変更)' : 'スキップ(反映不要)';
-                    const detail = f.finalDetails ? ` (反映内容: ${f.finalDetails.startDate} ${f.finalDetails.hours ? JSON.stringify(f.finalDetails.hours) : '休業'} 理由:${f.finalDetails.reason || 'なし'})` : '';
-                    return `  - 投稿: "${f.postText}" => 人間判定: ${actionStr}${detail}`;
-                }).join('\n');
-                feedbackText = `\n【人間による過去の判定・反映学習事例（これらを基準として判定してください）】\n${sampleFeedbacks}\n`;
+                const allFb = guidelinesData.learnedFeedback;
+                const getEval = f => f.evaluation || (f.humanAction === 'applied' ? 'correct' : 'unnecessary');
+
+                // 1. 対象店舗の「誤り」を最優先（最大5件）
+                const shopIncorrect = allFb.filter(f => f.shopId === postData.shopId && getEval(f) === 'incorrect').slice(0, 5);
+                // 2. 全体の直近「誤り」（重複除く・最大5件）
+                const pickedIds = new Set(shopIncorrect.map(f => f.id));
+                const globalIncorrect = allFb.filter(f => !pickedIds.has(f.id) && getEval(f) === 'incorrect').slice(0, 5);
+                globalIncorrect.forEach(f => pickedIds.add(f.id));
+                // 3. 対象店舗優先で「反映不要」（最大4件）
+                const shopUnnecessary = allFb.filter(f => !pickedIds.has(f.id) && f.shopId === postData.shopId && getEval(f) === 'unnecessary').slice(0, 2);
+                shopUnnecessary.forEach(f => pickedIds.add(f.id));
+                const globalUnnecessary = allFb.filter(f => !pickedIds.has(f.id) && getEval(f) === 'unnecessary').slice(0, 4 - shopUnnecessary.length);
+                globalUnnecessary.forEach(f => pickedIds.add(f.id));
+                // 4. 対象店舗優先で「正解」（最大4件）
+                const shopCorrect = allFb.filter(f => !pickedIds.has(f.id) && f.shopId === postData.shopId && getEval(f) === 'correct').slice(0, 2);
+                shopCorrect.forEach(f => pickedIds.add(f.id));
+                const globalCorrect = allFb.filter(f => !pickedIds.has(f.id) && getEval(f) === 'correct').slice(0, 4 - shopCorrect.length);
+
+                const prioritized = [...shopIncorrect, ...globalIncorrect, ...shopUnnecessary, ...globalUnnecessary, ...shopCorrect, ...globalCorrect];
+
+                const formatFb = f => {
+                    const ev = getEval(f);
+                    const evLabel = ev === 'incorrect' ? '❌誤り(要注意・再発防止)' : (ev === 'unnecessary' ? '⏭️反映不要' : '✅正解');
+                    const aiProp = f.aiProposal ? ` [AI元提案: ${f.aiProposal.startDate} ${JSON.stringify(f.aiProposal.hours)}]` : '';
+                    const detail = f.finalDetails
+                        ? ` => 正解内容: ${f.finalDetails.startDate} ${f.finalDetails.hours ? JSON.stringify(f.finalDetails.hours) : '休業'}`
+                        : (ev === 'incorrect' ? ' => 正解: 変更なし(反映不要)' : '');
+                    return `  - [${evLabel}] (${f.shopName || f.shopId}) 投稿: "${(f.postText || '').replace(/\r?\n/g, ' ')}"${aiProp}${detail}`;
+                };
+
+                if (prioritized.length > 0) {
+                    feedbackText = `\n【人間による過去の3パターン評価・学習事例（❌誤り事例は同じミスを絶対に繰り返さないこと）】\n${prioritized.map(formatFb).join('\n')}\n`;
+                }
             }
 
             guidelinesText = `\n【管理者学習ルール・判定ガイドライン】\n${rules}\n${shopRules}\n${feedbackText}\n`;
