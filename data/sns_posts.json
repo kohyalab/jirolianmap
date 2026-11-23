@@ -44180,5 +44180,23 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 祝日特別営業"
+  },
+  {
+    "id": "sns_post_routine_ikuta_2124665315682578715",
+    "shopId": "ikuta",
+    "shopName": "生田駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ikuta_jiro/status/2124665315682578715",
+    "postedAt": "2026-11-23T00:44:20.000Z",
+    "postText": "本日、ごま玉あります🟤 途中で混ぜるとスープが変わります。 辛くない担々麺やごま味噌ラーメンみたいになります！ 100円玉多めにご用意ください。  明日明後日は連休になります。 お気をつけください。  よろしくお願いします。 https://t.co/jLx1OJbQTj",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-NdCc-yP3w0F_sDN4Om8Krwwrg4g5GcQ8oyBBZrI1qBCClYOS9396SbZtfxUbPhiQkbV2x1x34bmGOq2Pjj3YZxOGFTw-u1v_Ck2EiyLddrYnOmaPgRx5QQifpQGBKvRFHYdTQ277-lDsUoIM8pvPDA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-wYubPpmKJNaQPbVal-u6SjwUiJTk2WtVbVPRswcLK7mNEBltvQJJUnCUmT5WNZkrBi8YlpVwm-jU_qOyQLVUiJf60TqVLNvAvJBRW186BUF5qhmB2Hwb5VZQ9vTQX1eTrboTIUQfY2t0oCg40NIodw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの告知であり、営業時間の変更に関する言及はありません。"
   }
 ]
