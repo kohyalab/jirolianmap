@@ -44622,5 +44622,22 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "横浜関内店からの通常営業の維持およびスライスチーズ（チェダー）の販売、揚げ玉の提供（アレ対応）に関する日常の案内であり、営業時間変更や休業の予定はありません。"
+  },
+  {
+    "id": "sns_post_routine_kameido_2124889903565787249",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2124889903565787249",
+    "postedAt": "2026-11-23T15:36:46.000Z",
+    "postText": "人間のエゴに付き合わせて申し訳ないとは思っています… https://t.co/BLILOoyz1c",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-9DAL9iwTjxGSpSJEl09CQDDWr8zIBlWPJ7fBE5Drw5FWwMMbRmGpgL2Ut0xBmydFHncZ0fpK63V7AqSJj0FLPUw5Qmk3ffUT1Da1v22dUdecfQ_UCL4jwXqNws5gPVouR0OVitAglrFjqRk36txMvw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常的な投稿であり、営業時間の変更や臨時休業等の記載はありません。"
   }
 ]
