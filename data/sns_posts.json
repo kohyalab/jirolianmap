@@ -44684,5 +44684,39 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2124955259332341804",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2124955259332341804",
+    "postedAt": "2026-11-23T19:56:28.000Z",
+    "postText": "こんな事も出来るのか！！ https://t.co/YH2VlkglgJ",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-vStpx8JDg2UHdP7ioBrm9NQ75UcIeEE3NXWFbZsqFkn656r8b_iv0I70Nix-Nav5_nPXU_GmGM2DPOPVyPz0PNY475J4DJ78vRS7AIWdezOzUcyD67ArnflhTT2_GHdjGHppliy6TeHtZRSQw4_CEw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "スケジュール変更の言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2124955123021656351",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2124955123021656351",
+    "postedAt": "2026-11-23T19:55:55.000Z",
+    "postText": "有料Xを始めてみた。 これで文字数制限から解放される。 文字数制限が無くなることにより、言葉が足りなくて炎上する事を防げるに違いない。(希望) https://t.co/05gEB4hLWA",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Wpsd3i2POP3uvMTxzMUs0RDHO8R-qvo7njE1gjkucpX_canm_ywfdiXknIyW5iRMI8fzg8ECw75JVf8TuHZWlqpAuHUaMxoEDJvjlLrusKow2lomvUlKAztuKO9fNGwcb72hY-WmN4F76zS_dV-Qzw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間変更や臨時休業の予定はありません。"
   }
 ]
