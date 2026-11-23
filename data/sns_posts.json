@@ -44528,5 +44528,22 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業情報の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_sapporo_2124802937889374595",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2124802937889374595",
+    "postedAt": "2026-11-23T09:51:11.000Z",
+    "postText": "明日2026.11.24(火)より Rocket now (デリバリーサービス) 開始します。 やんわり始めて行きますので、営業時間短め、材料切れも早いかもしれません。  [全て生麺タイプになりますので、注文してからお客様のタイミングでお召し上がり下さい 中皿、黒丼は電子レンジ対応です] https://t.co/fk8dArTIqd",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-qAGxodKr5zgakBHplQ-5bG06O3DzEd6llDIiJgl8ehF_lEFRgMVL3pL6xHhExRpCcFH_a16FYdB89PhyVJGsG_BSgYkRG1-tReNXUqfeAeWyofX2BkrjSZFnKpJ-1UF6VMi4bMnPdzmRuNet8eP9bA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "デリバリーサービス開始の告知であり、店舗の営業時間の変更ではないため変更なしと判定します。"
   }
 ]
