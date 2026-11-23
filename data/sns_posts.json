@@ -44577,5 +44577,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "連休明けの通常営業再開の告知であり、営業時間の変更は含まれていません。添付画像は求人募集の案内です。"
+  },
+  {
+    "id": "sns_post_mention_kameido_2124838974292455756",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2124838974292455756",
+    "postedAt": "2026-11-23T12:14:23.000Z",
+    "postText": "@NO79369371 @niwano0501 モンゴリアンチョップを喰らってる僕かモンゴリアンミサイルパオパオキックを喰らってる僕かで迷ったのですがやはり白鳥くんはモンゴリアンチョップということでこちらでお願いしました✨",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
   }
 ]
