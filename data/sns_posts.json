@@ -44349,5 +44349,36 @@
     "processedAt": null,
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 材料切れのため"
+  },
+  {
+    "id": "sns_post_mejirodai_20261123_0_2124732860812894270",
+    "shopId": "mejirodai",
+    "shopName": "めじろ台店",
+    "postSource": "x",
+    "postUrl": "https://x.com/mejirodai_jiro/status/2124732860812894270",
+    "postedAt": "2026-11-23T05:12:44.000Z",
+    "postText": "ただ今お並びの方で本日の昼営業は終了しました 申し訳ありません 夜は17時半からとなりますのでよろしくお願いします",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-23",
+      "endDate": "2026-11-23",
+      "hours": [
+        [
+          11,
+          14.2
+        ],
+        [
+          17.5,
+          20.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
