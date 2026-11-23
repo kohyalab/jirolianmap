@@ -44592,5 +44592,35 @@
     "processedAt": "2026-11-23T13:45:24.528Z",
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_daily_kameido_2124881680829976659",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2124881680829976659",
+    "postedAt": "2026-11-23T15:04:05.000Z",
+    "postText": "次のMARVEL アベンジャーズにゴーストライダーが合流してそのゴーストライダー役に僕が抜擢される。夢を見ました この夢で1番不思議だったのがみんな僕の演技の心配だけしていて体型についての言及が全くなかったことです😅  正夢になったらいいなぁ笑",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_kannai_2124884297396163040",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2124884297396163040",
+    "postedAt": "2026-11-23T15:14:29.000Z",
+    "postText": "こんばんは。 昨日もありがとうございました。 約20年ぶりぐらいに なるかとは思うのですが 本日より数日間 スライスチーズ1枚¥50で 販売させて頂きます。 しばらくの間はチェダーとなります。 揚げ玉まだありますのでご希望の方は「アレ」でお願いします。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "横浜関内店からの通常営業の維持およびスライスチーズ（チェダー）の販売、揚げ玉の提供（アレ対応）に関する日常の案内であり、営業時間変更や休業の予定はありません。"
   }
 ]
