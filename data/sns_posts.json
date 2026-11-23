@@ -44735,5 +44735,86 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の案内であり、変更はありません。"
+  },
+  {
+    "id": "sns_post_koiwa_20261124_0_2124993163198926955",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2124993163198926955",
+    "postedAt": "2026-11-23T22:27:05.000Z",
+    "postText": "おはようございます。  誠に勝手ながら本日は都合により臨時休業いたします。  大変申し訳ございませんが、よろしくお願いいたします。  小岩二郎",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-24",
+      "endDate": "2026-11-24",
+      "hours": [],
+      "reason": "都合により",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-11-23T22:32:08.033Z",
+    "autoApplied": true,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 都合により"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2124989990262509913",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2124989990262509913",
+    "postedAt": "2026-11-23T22:14:28.000Z",
+    "postText": "激辛もやります！ 多分ちゃんと辛いです！  1倍  100円 2倍 200円 3倍 300円です！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2124989868275270076",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2124989868275270076",
+    "postedAt": "2026-11-23T22:13:59.000Z",
+    "postText": "味噌ラーメン(+200円)もやります！  麺の量と一緒に みそでって言ってください！ ラーメンのひとはしょうゆでって言ってくれるとわかりやすいです！  麺の量を聞かれた時に じぶんから言ってください！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_shndaita_20261124_0_2124989739153715276",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2124989739153715276",
+    "postedAt": "2026-11-23T22:13:28.000Z",
+    "postText": "2026年11月24日（火）  ⚠️短縮営業です！⚠️ 11:00～15:00くらいです！  よろしくお願いします！  ※住宅地なのでおしゃべりしないで待っててください",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-24",
+      "endDate": "2026-11-24",
+      "hours": [
+        [
+          11,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-11-23T22:32:42.853Z",
+    "autoApplied": true,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]

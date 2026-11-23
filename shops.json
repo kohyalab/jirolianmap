@@ -2540,6 +2540,15 @@
         "reason": "店主の体調不良のため",
         "sourceUrl": "https://x.com/koiwajiro/status/2120282439117607266",
         "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-24",
+        "endDate": "2026-11-24",
+        "hours": [],
+        "reason": "都合により",
+        "sourceUrl": "https://x.com/koiwajiro/status/2124993163198926955",
+        "autoApplied": true,
+        "autoAppliedAt": "2026-11-23T22:32:08.033Z"
       }
     ],
     "shiftsByDay": {
@@ -4951,6 +4960,20 @@
             15
           ]
         ]
+      },
+      {
+        "startDate": "2026-11-24",
+        "endDate": "2026-11-24",
+        "hours": [
+          [
+            11,
+            15
+          ]
+        ],
+        "reason": "",
+        "sourceUrl": "https://x.com/26shinshindaita/status/2124989739153715276",
+        "autoApplied": true,
+        "autoAppliedAt": "2026-11-23T22:32:42.853Z"
       },
       {
         "startDate": "2026-11-25",
