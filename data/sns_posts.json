@@ -44434,5 +44434,20 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2124758883394838778",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2124758883394838778",
+    "postedAt": "2026-11-23T06:56:08.000Z",
+    "postText": "列切れたので絶対並びたくないでござるな、明日からの仕事が憂鬱な方の御来店お待ちしております！！ https://t.co/L3LZJFCkx2",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常投稿のため変更なし"
   }
 ]
