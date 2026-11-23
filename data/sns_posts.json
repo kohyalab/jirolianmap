@@ -44244,5 +44244,82 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業時間の変更に関する言及はなく、日常的な営業告知のため変更なしと判定しました。"
+  },
+  {
+    "id": "sns_post_routine_tachikawa_2124679522130010193",
+    "shopId": "tachikawa",
+    "shopName": "立川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jirotachikawa/status/2124679522130010193",
+    "postedAt": "2026-11-23T01:40:47.000Z",
+    "postText": "11/23(月祝)、通常営業です。  昼11:00-14:30 夜17:00-21:30  当店は、材料切れで時間内に閉店したことはありません♫  ①煮干し変更 　+汁なし変更券で、にぼしるなしも  ②持帰りラーメン販売します。 　標準:2人前のスープと生麺+ブタハーフ  ③持ち帰り豚は休止中(祝日絡みで発注調整不可の為)。 https://t.co/loNsoRQcVm",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-1vTYc68J-UanOX1me6uGMXtzYwxjrcjTvUtfwxvt530yVi5V-snbwXJjBO8fo-sIxnl_B54kDApahRfvHUvJnZDQNdjHyHM6kBbjXR4gUa4-qkOpUfMgZ9XzIcZE15gJ-PuxwNNdn-tF_4AoL5gf-g=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "11/23(月祝)は通常営業です。"
+  },
+  {
+    "id": "sns_post_routine_kyoto_2124683882272547152",
+    "shopId": "kyoto",
+    "shopName": "京都店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kyoto/status/2124683882272547152",
+    "postedAt": "2026-11-23T01:58:06.000Z",
+    "postText": "おはようございます！本日昼夜営業です！ 夜の部は17時半から20時半までです！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の範囲内であるため変更なし"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2124683254246805640",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2124683254246805640",
+    "postedAt": "2026-11-23T01:55:37.000Z",
+    "postText": "出来た！！中休みの1430〜1700も空いてたりしますので是非是非！！ https://t.co/HyelZngUEI",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-jz3yHdJExCmmH3U-7Q46nlQ9t4Rd9NkZcZtjscFZB7ci-GCqvyUgG_Nc8zd6oC_2l0CiQ7EEr5_q6DxCM96rNtRva5XZWz824NOsXxqFzkz6FT4slYRM6WsS9-_jEJEhztR8bvt6ffdW6S99oxprtQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-GHw4VDJ9w3ttG03UuWdewII0C7pb4kZIClrXfTB1pkHhpSgNDETAn3xAnXtAuvFaSm11MiHEF7aDXybSXkgjRNy3b1SpNNYzBnf9As5sI3zK86A36aY8JPVDyXDH8LNL_2-b5uxuS6ZhMYJ_XM5M_w=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内であり、臨時休業や時間変更の告知ではないため変更なし。"
+  },
+  {
+    "id": "sns_post_sendai2_20261123_0_2124683031818674460",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2124683031818674460",
+    "postedAt": "2026-11-23T01:54:44.000Z",
+    "postText": "本日通し営業です！11〜21！ Googleに反映されたかしら？",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-23",
+      "endDate": "2026-11-23",
+      "hours": [
+        [
+          11,
+          21
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   }
 ]
