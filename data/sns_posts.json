@@ -44395,5 +44395,44 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_ichinoe_20261124_0_2124748455012941909",
+    "shopId": "ichinoe",
+    "shopName": "環七一之江店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ichinoejiro/status/2124748455012941909",
+    "postedAt": "2026-11-23T06:14:42.000Z",
+    "postText": "２日間 お休み頂きます https://t.co/c6rBRtSnrv",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-WmiNYZUeH7_JPQocliWYwe2F_lgvd8xtfyPn2QBOXel6V-_bTigbIO-ORDACgrtvgXTGWYuyOf90ohAMBRwhG2FiizvDReWTr_jn1pHyIgSMB_MJZfdfu7SLfR4NYDAvfWJv-AylCoRP7ZevYFzCcQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-24",
+      "endDate": "2026-11-25",
+      "hours": [],
+      "reason": "都合のため",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 都合のため"
+  },
+  {
+    "id": "sns_post_daily_ichinoe_2124748323143995701",
+    "shopId": "ichinoe",
+    "shopName": "環七一之江店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ichinoejiro/status/2124748323143995701",
+    "postedAt": "2026-11-23T06:14:10.000Z",
+    "postText": "カギ忘れた方‼️ DM下さい❗️",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
