@@ -994,5 +994,120 @@
         "reason": ""
       }
     }
-  ]
+  ],
+  "evaluationStats": {
+    "total": {
+      "correct": 50,
+      "unnecessary": 0,
+      "incorrect": 0
+    },
+    "byShop": {
+      "koshigaya": {
+        "correct": 5,
+        "unnecessary": 0,
+        "incorrect": 0
+      },
+      "jimbocho": {
+        "correct": 2,
+        "unnecessary": 0,
+        "incorrect": 0
+      },
+      "kawagoe": {
+        "correct": 1,
+        "unnecessary": 0,
+        "incorrect": 0
+      },
+      "kameido": {
+        "correct": 1,
+        "unnecessary": 0,
+        "incorrect": 0
+      },
+      "okinawa": {
+        "correct": 4,
+        "unnecessary": 0,
+        "incorrect": 0
+      },
+      "ogikubo": {
+        "correct": 2,
+        "unnecessary": 0,
+        "incorrect": 0
+      },
+      "sapporo": {
+        "correct": 5,
+        "unnecessary": 0,
+        "incorrect": 0
+      },
+      "nagoyaosone": {
+        "correct": 2,
+        "unnecessary": 0,
+        "incorrect": 0
+      },
+      "matsudo": {
+        "correct": 2,
+        "unnecessary": 0,
+        "incorrect": 0
+      },
+      "hitachinaka": {
+        "correct": 5,
+        "unnecessary": 0,
+        "incorrect": 0
+      },
+      "shndaita": {
+        "correct": 6,
+        "unnecessary": 0,
+        "incorrect": 0
+      },
+      "kyoto": {
+        "correct": 2,
+        "unnecessary": 0,
+        "incorrect": 0
+      },
+      "sagamiohno": {
+        "correct": 2,
+        "unnecessary": 0,
+        "incorrect": 0
+      },
+      "kannai": {
+        "correct": 1,
+        "unnecessary": 0,
+        "incorrect": 0
+      },
+      "koiwa": {
+        "correct": 3,
+        "unnecessary": 0,
+        "incorrect": 0
+      },
+      "asakuragaido": {
+        "correct": 1,
+        "unnecessary": 0,
+        "incorrect": 0
+      },
+      "tachikawa": {
+        "correct": 1,
+        "unnecessary": 0,
+        "incorrect": 0
+      },
+      "senjuohashi": {
+        "correct": 1,
+        "unnecessary": 0,
+        "incorrect": 0
+      },
+      "mejirodai": {
+        "correct": 2,
+        "unnecessary": 0,
+        "incorrect": 0
+      },
+      "sengawa": {
+        "correct": 1,
+        "unnecessary": 0,
+        "incorrect": 0
+      },
+      "omiyakoenekimae": {
+        "correct": 1,
+        "unnecessary": 0,
+        "incorrect": 0
+      }
+    },
+    "updatedAt": "2026-11-23T13:45:19.543Z"
+  }
 }
