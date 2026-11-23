@@ -44639,5 +44639,35 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "日常的な投稿であり、営業時間の変更や臨時休業等の記載はありません。"
+  },
+  {
+    "id": "sns_post_daily_kameido_2124905841350566026",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2124905841350566026",
+    "postedAt": "2026-11-23T16:40:06.000Z",
+    "postText": "これは僕もよく言います https://t.co/sGh3dLDkFh",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_mention_kameido_2124905754218074529",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2124905754218074529",
+    "postedAt": "2026-11-23T16:39:45.000Z",
+    "postText": "@yusaburukokoro ありがとうございます笑",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
   }
 ]
