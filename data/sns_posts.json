@@ -44151,5 +44151,34 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "11月23日(月)は祝日ですが通常営業となります。"
+  },
+  {
+    "id": "sns_post_sapporo_20261123_0_2124655531176698149",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2124655531176698149",
+    "postedAt": "2026-11-23T00:05:27.000Z",
+    "postText": "本日23日(月)[勤労感謝の日]🎌  [勤労をたつとび、生産を祝い、国民がたがいに感謝しあう]日  10:30〜14:30(昼の部のみ、夜の部お休み)  ラーメンの食券＋券売機「総帥と私」¥100 初、「サブ塩ラーメン(ニンニク有無のみ)」 提供します。(50食くらい)  デフォルトをお楽しみ下さい🍜 https://t.co/qfQR7xpBzf",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-QwgRoCJ43NK6qTK7daJmaHhFbRsUZPfM77wM0YjhXZRq_eSSxHyk-I3SSIQYjlSZV3zgvf06MymGdfT1we3hs8NGJ1dI8xeRKre8sDPg7Cu9kkvWR6IKjuLDqx79LrgOXFweAwyP_hAbcaQ86n_39g=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-23",
+      "endDate": "2026-11-23",
+      "hours": [
+        [
+          10.5,
+          14.5
+        ]
+      ],
+      "reason": "祝日特別営業",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 祝日特別営業"
   }
 ]
