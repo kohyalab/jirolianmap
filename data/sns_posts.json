@@ -44198,5 +44198,51 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "限定トッピングの告知であり、営業時間の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_asakuragaido_20261123_0_2124676816380334381",
+    "shopId": "asakuragaido",
+    "shopName": "朝倉街道駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/r26akgd/status/2124676816380334381",
+    "postedAt": "2026-11-23T01:30:02.000Z",
+    "postText": "本日12:00-15:00営業いたします。 西鉄ストア様、西日本シティ銀行様、他店舗病院等駐車禁止 空いていても一般的なコインパーキングをご利用下さい。 グループの方は歩道を塞がずお静かにお願いします。 代表待ち、割込み、飲酒喫煙禁止 朝倉街道駅徒歩1分、天拝山駅7分",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-11-23",
+      "endDate": "2026-11-23",
+      "hours": [
+        [
+          12,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2124672637263868372",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2124672637263868372",
+    "postedAt": "2026-11-23T01:13:25.000Z",
+    "postText": "おはようございます！3連休最終日天気がすごくいいです！ 3連休最終日は、夜が暇なことが多いのでお勧めです！テイクアウトもありますので、3連休最終日みんなでおうちでラーメン二郎いかがでしょうか？ご来店お待ちしております。 https://t.co/bN70f5vXZE",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Gn6Vk_A6VUuUA_vxqo07SsHL-t5L8Sc5amFvXjXcsrkkc2U2a9vel4AetYILm667Nzxn8U7zir00-o0OfVW9x9Y7H57p3Bweb79qd5zmcTrykcZg5XlECFb-p-HWY8BSQjbfjmDRmITTO-I9-DHtvw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-WifKM-nreF71S0GG8B3IbOmR6291r7dJ_FVIuLTaoPqpSkwudFH2gQscSszIfo2qofg6wsooyDfBhTXVAk5KLfzQgzzEt10gV0oTHUT0quVXpOo-S6l9qQ8KJ7erqjLtEjsly6b1VXurUAQQCm3YCQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-p_wVEcBFpRWQkdpUDQ0xgjBh6AyEBrCMZ2ljx7QJ5XRnj9ylJIfTC0V0KTV4INfJ4ClDVOoalAS6NYeHovB1t8zmZcFs6M0WUlj35nXDG8IZ7ex1i2s6O0BKMvJfcPrNVrlAxfkvt6gPcUmDE7iCNA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更に関する言及はなく、日常的な営業告知のため変更なしと判定しました。"
   }
 ]
