@@ -44816,5 +44816,52 @@
     "autoApplied": true,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_senjuohashi_2124995082348802404",
+    "shopId": "senjuohashi",
+    "shopName": "千住大橋駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjujirou26/status/2124995082348802404",
+    "postedAt": "2026-11-23T22:34:42.000Z",
+    "postText": "ラー油あります！  ※営業時間10時30分〜 15時30分ラストオーダー！ https://t.co/3rtz6WUtZC",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-HlXPrAxid_0uwVsunc9p7gWi37n4JRj6QvoBWyo2FT6P5sgO3z_EaVlHb3b_uvf9z77zAfj01a-SvNd-zJ7BNl5OxfbeEozTexkmIlzJ0-voKrD-YKunbIUITgbJUwh2z-xVqxrHFNL44WhzADw3nA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業時間の案内であり、変更はありません。"
+  },
+  {
+    "id": "sns_post_aizuwakamatsu_20261124_0_2124997385533485157",
+    "shopId": "aizuwakamatsu",
+    "shopName": "会津若松駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/aizu_jiro/status/2124997385533485157",
+    "postedAt": "2026-11-23T22:43:51.000Z",
+    "postText": "急なお知らせで誠に申し訳ございませんが、人員不足の為本日11/24(火)昼の部臨時休業とさせていただきます。夜の部より営業いたします。よろしくお願いいたしますm(__)m https://t.co/Am9mpf81Mh",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-NDaiZL9xN6HEsTnIBzkff_g_h5qM7E4ck6EB8vOJn_ewDNUHOk8m7K_sPVh0R8C8mf_9nhYRaiefluBKNAw-N0r4PskL1LvC-lCsjEsToRlh9A1ufXRRcrja4UE0hVIGndegwIW6bte1xOAoFvm5DQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-24",
+      "endDate": "2026-11-24",
+      "hours": [
+        [
+          17,
+          21
+        ]
+      ],
+      "reason": "人員不足のため",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-11-23T23:02:23.128Z",
+    "autoApplied": true,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 人員不足のため"
   }
 ]

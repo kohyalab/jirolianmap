@@ -5154,6 +5154,20 @@
         "_isAiImported": true
       },
       {
+        "startDate": "2026-11-24",
+        "endDate": "2026-11-24",
+        "hours": [
+          [
+            17,
+            21
+          ]
+        ],
+        "reason": "人員不足のため",
+        "sourceUrl": "https://x.com/aizu_jiro/status/2124997385533485157",
+        "autoApplied": true,
+        "autoAppliedAt": "2026-11-23T23:02:23.128Z"
+      },
+      {
         "startDate": "2026-11-29",
         "endDate": "2026-11-29",
         "hours": [
