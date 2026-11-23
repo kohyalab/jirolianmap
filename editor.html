@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
@@ -351,6 +351,28 @@
             <option value="shop">店舗名順 (五十音順)</option>
         </select>
     </div>
+
+    <!-- AI自動反映済み（確認待ち）専用コンテナ -->
+    <details id="auto-applied-details" open style="display: none; margin-bottom: 14px; background: #0c1f20; border: 1px solid #00897b; border-radius: 8px; padding: 10px 12px;">
+        <summary style="font-weight: bold; color: #80cbc4; cursor: pointer; display: flex; align-items: center; justify-content: space-between; user-select: none; font-size: 0.88rem; gap: 8px; flex-wrap: wrap;">
+            <span style="display: flex; align-items: center; gap: 8px;">
+                <span>🤖 AI自動反映済み（確認待ち）</span>
+                <span id="auto-applied-count-tag" style="background: #00897b; color: #fff; font-size: 0.72rem; padding: 1px 8px; border-radius: 10px; font-weight: bold;">0件</span>
+            </span>
+            <span style="display: flex; align-items: center; gap: 8px;">
+                <button type="button" class="btn btn-sm" onclick="event.stopPropagation(); app.bulkConfirmAutoApplied();" style="background: #00695c; border-color: #00897b; color: #fff; font-size: 0.74rem; padding: 3px 10px; font-weight: bold;">
+                    ✅ すべてOK（確認済みにする）
+                </button>
+                <span style="font-size: 0.75rem; color: #4db6ac;">開く / 閉じる ▼</span>
+            </span>
+        </summary>
+        <div style="font-size: 0.74rem; color: #80cbc4; margin-top: 6px; opacity: 0.9;">
+            高確度と判定され shops.json へ自動反映済みの項目です。問題なければ「✅ OK」、誤っていれば「↩️ 自動反映を取り消す」を押してください。
+        </div>
+        <div id="auto-applied-list-container" style="margin-top: 10px; display: flex; flex-direction: column; gap: 8px;">
+            <!-- JSで動的生成 -->
+        </div>
+    </details>
 
     <!-- SNS提案カード一覧コンテナ（未処理・反映不要を統合表示） -->
     <div id="pending-list-container" style="display: flex; flex-direction: column; gap: 10px;">

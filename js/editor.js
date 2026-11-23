@@ -2392,7 +2392,33 @@ ${guidelinesText}
 
         const allItems = this.pendingUpdates || [];
         const unprocessedItems = allItems.filter(p => !p.processed && !this.draftProcessedPostIds.has(p.id));
-        const historyItems = allItems.filter(p => p.processed || this.draftProcessedPostIds.has(p.id));
+        const autoAppliedUnconfirmedItems = allItems.filter(p => p.autoApplied && !p.autoApplyConfirmed && p.processed && !this.draftProcessedPostIds.has(p.id));
+        const historyItems = allItems.filter(p => (p.processed || this.draftProcessedPostIds.has(p.id)) && !(p.autoApplied && !p.autoApplyConfirmed && p.processed));
+
+        // AI自動反映済み（確認待ち）専用セクションの描画
+        const autoAppliedDetails = document.getElementById('auto-applied-details');
+        const autoAppliedCountTag = document.getElementById('auto-applied-count-tag');
+        const autoAppliedContainer = document.getElementById('auto-applied-list-container');
+        if (autoAppliedDetails && autoAppliedContainer) {
+            if (autoAppliedUnconfirmedItems.length > 0) {
+                autoAppliedDetails.style.display = 'block';
+                if (autoAppliedCountTag) autoAppliedCountTag.textContent = `${autoAppliedUnconfirmedItems.length}件`;
+                autoAppliedContainer.innerHTML = '';
+                const sortedAutoApplied = this.sortPendingItems(autoAppliedUnconfirmedItems);
+                sortedAutoApplied.forEach(item => {
+                    try {
+                        const card = this.createPendingCardElement(item, 'auto_applied');
+                        autoAppliedContainer.appendChild(card);
+                    } catch (e) {
+                        console.error('Failed to create auto_applied card:', item, e);
+                    }
+                });
+            } else {
+                autoAppliedDetails.style.display = 'none';
+                autoAppliedContainer.innerHTML = '';
+                if (autoAppliedCountTag) autoAppliedCountTag.textContent = '0件';
+            }
+        }
 
         // ロジック判定により、要反映アイテムと反映不要（既存一致・日常等）アイテムの件数を集計
         const pendingItems = [];
@@ -2578,17 +2604,21 @@ ${guidelinesText}
     createPendingCardElement(item, mode = 'pending') {
         const isSkipped = mode === 'skipped';
         const isHistory = mode === 'history';
+        const isAutoAppliedMode = mode === 'auto_applied';
         const isDraftDone = this.draftProcessedPostIds.has(item.id);
         const isDraftApplied = this.draftAppliedItems.has(item.id);
 
         const card = document.createElement('div');
-        card.className = 'pending-card' + (isSkipped ? ' skipped-card' : '') + (isHistory ? ' history-card' : '');
+        card.className = 'pending-card' + (isSkipped ? ' skipped-card' : '') + (isHistory ? ' history-card' : '') + (isAutoAppliedMode ? ' auto-applied-card' : '');
         card.id = `pending-card-${item.id}`;
         
         if (isSkipped) {
             card.style.opacity = '0.9';
             card.style.border = '1px dashed #444';
             card.style.background = '#161616';
+        } else if (isAutoAppliedMode) {
+            card.style.border = '1px solid #00897b';
+            card.style.background = '#102223';
         } else if (isHistory) {
             card.style.opacity = '0.85';
             card.style.border = '1px solid #333';
@@ -2731,12 +2761,21 @@ ${guidelinesText}
                     <span style="font-size: 0.7rem; color: #aaa;">「GitHub送信」で確定します</span>
                 </div>
             `;
+        } else if (isAutoAppliedMode) {
+            const timeStr = item.processedAt ? this.formatPostDateTime(item.processedAt) : '';
+            const confPct = (change && typeof change.confidence === 'number') ? `${Math.round(change.confidence * 100)}%` : '高';
+            bannerHtml = `
+                <div style="background: #0d3331; border: 1px solid #00bfa5; border-radius: 4px; padding: 4px 8px; margin-bottom: 6px; font-size: 0.76rem; color: #a7ffeb; display: flex; justify-content: space-between; align-items: center;">
+                    <span><strong>🤖 AI自動反映済み（確度 ${confPct}）— 内容をご確認ください</strong></span>
+                    <span style="font-size: 0.7rem; color: #80cbc4;">${timeStr}</span>
+                </div>
+            `;
         } else if (isHistory && item.autoApplied) {
             const timeStr = item.processedAt ? this.formatPostDateTime(item.processedAt) : '';
             const confPct = (change && typeof change.confidence === 'number') ? `${Math.round(change.confidence * 100)}%` : '高';
             bannerHtml = `
                 <div style="background: #0d2b2b; border: 1px solid #00897b; border-radius: 4px; padding: 3px 6px; margin-bottom: 6px; font-size: 0.75rem; color: #80cbc4; display: flex; justify-content: space-between; align-items: center;">
-                    <span><strong>🤖 AI自動反映済み（確度 ${confPct}）</strong></span>
+                    <span><strong>🤖 AI自動反映済み（確認済 / 確度 ${confPct}）</strong></span>
                     <span style="font-size: 0.7rem; color: #b2dfdb;">${timeStr}</span>
                 </div>
             `;
@@ -2752,7 +2791,13 @@ ${guidelinesText}
 
         // アクションボタン（要反映なら反映強調、反映不要ならスキップ強調）
         let actionsHtml = '';
-        if (isHistory) {
+        if (isAutoAppliedMode) {
+            actionsHtml = `
+                <button type="button" class="btn btn-sm btn-danger" onclick="app.undoAutoAppliedPending('${item.id}')" style="background:#b71c1c; border-color:#d32f2f; color:#fff;">↩️ 自動反映を取り消す</button>
+                <button type="button" class="btn btn-sm btn-primary" onclick="app.confirmAutoAppliedPending('${item.id}')" style="background:#00796b; border-color:#00897b; color:#fff; font-weight:bold;">✅ OK（確認済みにする）</button>
+                <button type="button" class="btn btn-sm" onclick="app.applyPendingToTemporary('${item.id}')" style="background:#222; border-color:#444; color:#aaa; font-size:0.7rem;">詳細編集 ▼</button>
+            `;
+        } else if (isHistory) {
             actionsHtml = `
                 <button class="btn btn-sm" onclick="app.deletePendingPermanently('${item.id}')" style="background:#222; border-color:#444; color:#888;">完全に消去</button>
                 ${item.autoApplied ? `<button class="btn btn-sm btn-danger" onclick="app.undoAutoAppliedPending('${item.id}')" style="background:#b71c1c; border-color:#d32f2f; color:#fff;">↩️ 自動反映を取り消す</button>` : ''}
@@ -2862,8 +2907,8 @@ ${guidelinesText}
             </div>
         `;
 
-        // 日付ピッカーの適用（未処理カードのみ適用し、履歴カードではスキップして劇的に軽量化）
-        if (!isHistory) {
+        // 日付ピッカーの適用（未処理カードのみ適用し、履歴・自動反映確認カードではスキップして劇的に軽量化）
+        if (!isHistory && !isAutoAppliedMode) {
             setTimeout(() => {
                 const sInput = card.querySelector(`#p-sdate-${item.id}`);
                 const eInput = card.querySelector(`#p-edate-${item.id}`);
@@ -3174,6 +3219,50 @@ ${guidelinesText}
         this.showToast(removed
             ? `↩️【${item.shopName || item.shopId}】${startDate} の自動反映を取り消し、「❌ 誤り」として記録しました（「GitHub送信」で確定します）`
             : `↩️ 未処理に戻し、「❌ 誤り」として記録しました`);
+    }
+
+    confirmAutoAppliedPending(itemId) {
+        const item = this.pendingUpdates.find(p => p.id === itemId);
+        if (!item) return;
+
+        item.autoApplyConfirmed = true;
+        item.autoApplyConfirmedAt = new Date().toISOString();
+
+        // 確認OKを3パターン評価「✅ 正解 (auto_apply_confirmed)」として学習・集計へ記録
+        const change = item.detectedChange || null;
+        this.recordLearnedFeedback(item, 'applied', change ? {
+            startDate: change.startDate,
+            endDate: change.endDate || change.startDate,
+            hours: change.type === 'temporary_closure' ? [] : (change.hours || []),
+            reason: change.reason || ''
+        } : null, 'correct', 'auto_apply_confirmed');
+
+        this.savePendingUpdatesLocally();
+        this.renderPendingList();
+        this.showToast(`✅【${item.shopName || item.shopId}】の自動反映を確認済みにし、「正解」として記録しました`);
+    }
+
+    bulkConfirmAutoApplied() {
+        const allItems = this.pendingUpdates || [];
+        const targets = allItems.filter(p => p.autoApplied && !p.autoApplyConfirmed && p.processed && !this.draftProcessedPostIds.has(p.id));
+        if (targets.length === 0) return;
+
+        const nowIso = new Date().toISOString();
+        targets.forEach(item => {
+            item.autoApplyConfirmed = true;
+            item.autoApplyConfirmedAt = nowIso;
+            const change = item.detectedChange || null;
+            this.recordLearnedFeedback(item, 'applied', change ? {
+                startDate: change.startDate,
+                endDate: change.endDate || change.startDate,
+                hours: change.type === 'temporary_closure' ? [] : (change.hours || []),
+                reason: change.reason || ''
+            } : null, 'correct', 'auto_apply_confirmed');
+        });
+
+        this.savePendingUpdatesLocally();
+        this.renderPendingList();
+        this.showToast(`✅ AI自動反映済み ${targets.length}件 をすべて確認済みにし、「正解」として記録しました`);
     }
 
     deletePendingPermanently(itemId) {
