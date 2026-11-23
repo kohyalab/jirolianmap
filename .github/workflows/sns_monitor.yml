@@ -1,4 +1,4 @@
-name: SNS Schedule Monitor (X & Instagram)
+﻿name: SNS Schedule Monitor (X & Instagram)
 
 on:
   repository_dispatch:
@@ -39,7 +39,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add data/sns_posts.json data/crawled_cache.json
+          git add data/sns_posts.json data/crawled_cache.json shops.json
           git diff --staged --quiet || (git commit -m "🤖 Auto-detect SNS schedule changes [skip ci]" && git pull --rebase origin ${{ github.event.client_payload.ref || 'main' }} && git push origin HEAD:${{ github.event.client_payload.ref || 'main' }})
 
 

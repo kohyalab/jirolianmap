@@ -2721,6 +2721,15 @@ ${guidelinesText}
                     <span style="font-size: 0.7rem; color: #aaa;">「GitHub送信」で確定します</span>
                 </div>
             `;
+        } else if (isHistory && item.autoApplied) {
+            const timeStr = item.processedAt ? this.formatPostDateTime(item.processedAt) : '';
+            const confPct = (change && typeof change.confidence === 'number') ? `${Math.round(change.confidence * 100)}%` : '高';
+            bannerHtml = `
+                <div style="background: #0d2b2b; border: 1px solid #00897b; border-radius: 4px; padding: 3px 6px; margin-bottom: 6px; font-size: 0.75rem; color: #80cbc4; display: flex; justify-content: space-between; align-items: center;">
+                    <span><strong>🤖 AI自動反映済み（確度 ${confPct}）</strong></span>
+                    <span style="font-size: 0.7rem; color: #b2dfdb;">${timeStr}</span>
+                </div>
+            `;
         } else if (isHistory) {
             const timeStr = item.processedAt ? this.formatPostDateTime(item.processedAt) : '';
             bannerHtml = `
@@ -2736,6 +2745,7 @@ ${guidelinesText}
         if (isHistory) {
             actionsHtml = `
                 <button class="btn btn-sm" onclick="app.deletePendingPermanently('${item.id}')" style="background:#222; border-color:#444; color:#888;">完全に消去</button>
+                ${item.autoApplied ? `<button class="btn btn-sm btn-danger" onclick="app.undoAutoAppliedPending('${item.id}')" style="background:#b71c1c; border-color:#d32f2f; color:#fff;">↩️ 自動反映を取り消す</button>` : ''}
                 <button class="btn btn-sm btn-primary" onclick="app.revertPending('${item.id}')" style="background:#1976d2; color:#fff;">未処理に戻す</button>
                 <button class="btn btn-sm" onclick="app.applyPendingToTemporary('${item.id}')" style="background:#263238; border-color:#37474f; color:#80d8ff;">再度フォームへ流し込み</button>
             `;
@@ -2999,6 +3009,44 @@ ${guidelinesText}
 
         this.updatePendingBadge();
         this.renderPendingList();
+    }
+
+    undoAutoAppliedPending(itemId) {
+        const item = this.pendingUpdates.find(p => p.id === itemId);
+        if (!item) return;
+
+        const shop = this.shops.find(s => s.id === item.shopId);
+        const startDate = item.detectedChange && item.detectedChange.startDate;
+        if (!confirm(`【${item.shopName || item.shopId}】${startDate || ''} のAI自動反映を取り消しますか？\n（shops.jsonから該当の臨時設定を削除し、この投稿を未処理に戻します）`)) {
+            return;
+        }
+
+        let removed = false;
+        if (shop && Array.isArray(shop.temporary) && startDate) {
+            const beforeLen = shop.temporary.length;
+            shop.temporary = shop.temporary.filter(t => !(t.startDate === startDate && (t.autoApplied || t.sourceUrl === item.postUrl)));
+            removed = shop.temporary.length < beforeLen;
+            if (this.selectedId === shop.id && this.currentMode === 'single') {
+                this.currentTemporary = JSON.parse(JSON.stringify(shop.temporary));
+                this.renderTemporaryList();
+            }
+        }
+
+        this.draftProcessedPostIds.delete(itemId);
+        this.draftAppliedItems.delete(itemId);
+        item.processed = false;
+        item.autoApplied = false;
+        delete item.processedAt;
+
+        this.savePendingUpdatesLocally();
+        this.saveShopsDraftLocally();
+        this.updatePendingBadge();
+        this.renderPendingList();
+        this.renderList();
+
+        this.showToast(removed
+            ? `↩️【${item.shopName || item.shopId}】${startDate} の自動反映を取り消しました（「GitHub送信」で確定します）`
+            : `↩️ 未処理に戻しました（該当の自動反映エントリは既に存在しませんでした）`);
     }
 
     deletePendingPermanently(itemId) {
