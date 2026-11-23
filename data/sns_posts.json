@@ -44863,5 +44863,39 @@
     "autoApplied": true,
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 人員不足のため"
+  },
+  {
+    "id": "sns_post_tachikawa_20261124_0_2125004319355539611",
+    "shopId": "tachikawa",
+    "shopName": "立川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jirotachikawa/status/2125004319355539611",
+    "postedAt": "2026-11-23T23:11:25.000Z",
+    "postText": "火曜定休、特別営業。  麺、すごい。 https://t.co/0yRwSJdmRs",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-p_Ma9sKUAoLpi20ZQjALq6Dyhx1hFn-e5qw1sfoZdYyD4dqmhRs8usu4-ZNNkJK9GreHMYtQ5jVagMGqNZJfeZBwpi8pbuPz2vMJrm_dsvpTzF7Erj3R4_e9Qftqof1OhalfKHtLalF0oHrNFeDnVg=="
+    ],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-11-24",
+      "endDate": "2026-11-24",
+      "hours": [
+        [
+          11,
+          14.5
+        ],
+        [
+          17,
+          21.5
+        ]
+      ],
+      "reason": "特別営業",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "autoApplied": false,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 特別営業"
   }
 ]
