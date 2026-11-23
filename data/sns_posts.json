@@ -44449,5 +44449,37 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "日常投稿のため変更なし"
+  },
+  {
+    "id": "sns_post_routine_kameido_2124767606527971385",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2124767606527971385",
+    "postedAt": "2026-11-23T07:30:48.000Z",
+    "postText": "以前からにわのまこと先生@niwano0501 依頼していた色紙が届きました✨ https://t.co/WskoqLsdv0",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-hshUqznHpZYETgvyfKXxEG9o_XkI9EktiPFG3jyPImgZLa0QVjsfJ7tjoibtgYquf1p8xGNjlW6IcOuR-13U98DtR3YBu8MUigGaTf5ptZ6CsDqGwqfkKfQQQT01RG20s-VkmMk8c5MTKaewIBUZCQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_kameido_2124766658883629127",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2124766658883629127",
+    "postedAt": "2026-11-23T07:27:02.000Z",
+    "postText": "お世話になってます。三連休最終日！昼にタレが大量に出たので夜の部は肉カスは無しでショウガとシソのタレです。無くなり次第終了です！よろしくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業時間の変更に関する言及はなく、限定トッピングの告知のみであるため変更なし。"
   }
 ]
