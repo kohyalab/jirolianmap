@@ -44545,5 +44545,37 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "デリバリーサービス開始の告知であり、店舗の営業時間の変更ではないため変更なしと判定します。"
+  },
+  {
+    "id": "sns_post_daily_sapporo_2124812575947038896",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2124812575947038896",
+    "postedAt": "2026-11-23T10:29:29.000Z",
+    "postText": "配達範囲は基本的には5キロ。 お客様の最低注文金額が1500円を上回る場合は8キロまで配達できるケースもあるそうです🚗",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_nagoyaosone_2124807560096280683",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2124807560096280683",
+    "postedAt": "2026-11-23T10:09:33.000Z",
+    "postText": "こんばんは。 ラーメン二郎名古屋大曽根店です。  連休ありがとうございました。 明日から昼夜営業となります。 よろしくお願いいたします。 https://t.co/XgEQzS27q8",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-JTArdeSfpw0N75F_qQtFnK7-bFp_H6f-lxWxa5z2GfHTMH91kLq3F7NEjh6cdWNTz7IkBhprs2kf3oYMH9HY8h2TYv4oM8fcmjrh8_QjYlPJcw8tNxzUAolhaxwk88hTBRSR4u0ew9-VubBnVN0x1Q=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "連休明けの通常営業再開の告知であり、営業時間の変更は含まれていません。添付画像は求人募集の案内です。"
   }
 ]
