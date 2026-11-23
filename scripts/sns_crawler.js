@@ -370,6 +370,8 @@ async function runCrawler() {
     }
 
     let newlyDetectedCount = 0;
+    let autoAppliedCount = 0;
+    let shopsModified = false;
 
     for (const shop of activeShops) {
         console.log(`\n🔍 チェック中: ${shop.name} (X: @${shop.x})`);
@@ -522,6 +524,7 @@ async function runCrawler() {
                             detectedChange: change,
                             processed: false,
                             processedAt: null,
+                            autoApplied: false,
                             aiStatus: aiStatus,
                             aiReason: aiReason
                         };
@@ -535,12 +538,45 @@ async function runCrawler() {
                             continue;
                         }
 
+                        // 確度の高い臨時休業・臨時営業・時間変更は自動で shops.json へ反映
+                        let isAutoApplied = false;
+                        if (!isExactMatch && aiStatus === 'schedule_change') {
+                            const autoEval = evaluateAutoApplyEligibility(shop, post, change);
+                            if (autoEval.eligible) {
+                                const nowIso = new Date().toISOString();
+                                const newTempEntry = {
+                                    startDate: change.startDate,
+                                    endDate: change.endDate || change.startDate,
+                                    hours: change.type === 'temporary_closure' ? [] : (change.hours || []),
+                                    reason: change.reason || '',
+                                    sourceUrl: post.postUrl || '',
+                                    autoApplied: true,
+                                    autoAppliedAt: nowIso
+                                };
+                                shop.temporary = shop.temporary || [];
+                                shop.temporary.push(newTempEntry);
+                                shop.temporary.sort((a, b) => (a.startDate || '').localeCompare(b.startDate || ''));
+                                shopsModified = true;
+
+                                postItem.processed = true;
+                                postItem.processedAt = nowIso;
+                                postItem.autoApplied = true;
+                                isAutoApplied = true;
+                                autoAppliedCount++;
+                            } else {
+                                console.log(`    ⏸️ 自動反映見送り（手動確認待ち）: ${change.startDate} (${autoEval.reason})`);
+                            }
+                        }
+
                         // 同一店舗・同一日・同一タイプの未処理アイテムがあれば更新、なければ追加
                         snsPosts = snsPosts.filter(p => !(p.shopId === shop.id && p.detectedChange?.startDate === change.startDate && p.detectedChange?.type === change.type && !p.processed));
                         snsPosts.push(postItem);
 
                         if (isExactMatch) {
                             console.log(`    ℹ️ 既存スケジュールと一致（変更なし）: ${change.startDate} (${matchReason})`);
+                        } else if (isAutoApplied) {
+                            newlyDetectedCount++;
+                            console.log(`    🤖 自動反映完了！ (${idx + 1}/${analysis.changes.length}) [${change.type}] ${change.startDate} (conf=${change.confidence}): ${change.reason || analysis.summary}`);
                         } else {
                             newlyDetectedCount++;
                             console.log(`    ✨ 営業変更を検出！ (${idx + 1}/${analysis.changes.length}) [${change.type}] ${change.startDate}: ${change.reason || analysis.summary}`);
@@ -612,10 +648,122 @@ async function runCrawler() {
     cache.processedPostIds = Array.from(processedSet).slice(-1000);
     fs.writeFileSync(CRAWLED_CACHE_PATH, JSON.stringify(cache, null, 2), 'utf8');
 
+    // 自動反映があった場合は shops.json を保存
+    if (shopsModified) {
+        fs.writeFileSync(SHOPS_JSON_PATH, JSON.stringify(shops, null, 2), 'utf8');
+        console.log(`🤖 shops.json へ ${autoAppliedCount} 件の臨時スケジュールを自動反映・保存しました`);
+    }
+
     // sns_posts.json 保存
     fs.writeFileSync(SNS_POSTS_PATH, JSON.stringify(snsPosts, null, 2), 'utf8');
 
-    console.log(`\n=== 巡回完了: 合計 ${snsPosts.length} 件 (新規検出: ${newlyDetectedCount}件) を sns_posts.json に保存しました ===`);
+    console.log(`\n=== 巡回完了: 合計 ${snsPosts.length} 件 (新規検出: ${newlyDetectedCount}件 / 自動反映: ${autoAppliedCount}件) を保存しました ===`);
+}
+
+/**
+ * 検出された営業変更が自動反映（shops.jsonへの直接書き込み）の安全条件を満たすか判定する
+ * @param {Object} shop - shops.json の店舗オブジェクト
+ * @param {Object} post - 投稿オブジェクト { text, postedAt, postUrl }
+ * @param {Object} change - Geminiが抽出した変更オブジェクト
+ * @returns {{ eligible: boolean, reason: string }}
+ */
+function evaluateAutoApplyEligibility(shop, post, change) {
+    if (!change || typeof change !== 'object') {
+        return { eligible: false, reason: '変更データなし' };
+    }
+
+    // 1. 対象種別チェック（臨時休業・臨時営業・時間変更のみ。通常営業変更は手動確認）
+    const allowedTypes = ['temporary_closure', 'special_open', 'temporary_hours'];
+    if (!allowedTypes.includes(change.type)) {
+        return { eligible: false, reason: `自動反映対象外の種別 (${change.type})` };
+    }
+
+    // 2. 確信度チェック（0.90以上）
+    const conf = typeof change.confidence === 'number' ? change.confidence : 0;
+    if (conf < 0.90) {
+        return { eligible: false, reason: `確信度が閾値未満 (${conf})` };
+    }
+
+    // 3. 日付の形式・妥当性チェック（本日〜60日以内、期間31日以内）
+    const dateRegex = /^\d{4}-\d{2}-\d{2}$/;
+    const startDate = change.startDate;
+    const endDate = change.endDate || startDate;
+    if (!startDate || !dateRegex.test(startDate) || !dateRegex.test(endDate)) {
+        return { eligible: false, reason: `日付形式が不正 (${startDate}〜${endDate})` };
+    }
+
+    const nowJst = new Date(Date.now() + 9 * 60 * 60 * 1000);
+    const todayJstStr = `${nowJst.getUTCFullYear()}-${String(nowJst.getUTCMonth() + 1).padStart(2, '0')}-${String(nowJst.getUTCDate()).padStart(2, '0')}`;
+    const todayMs = new Date(`${todayJstStr}T00:00:00+09:00`).getTime();
+    const startMs = new Date(`${startDate}T00:00:00+09:00`).getTime();
+    const endMs = new Date(`${endDate}T00:00:00+09:00`).getTime();
+
+    if (isNaN(startMs) || isNaN(endMs) || endMs < startMs) {
+        return { eligible: false, reason: '開始日・終了日の範囲が不正' };
+    }
+    const diffFromTodayDays = Math.round((startMs - todayMs) / (24 * 60 * 60 * 1000));
+    if (diffFromTodayDays < 0) {
+        return { eligible: false, reason: `過去日のため除外 (${startDate})` };
+    }
+    if (diffFromTodayDays > 60) {
+        return { eligible: false, reason: `60日以上先のため除外 (${startDate})` };
+    }
+    const spanDays = Math.round((endMs - startMs) / (24 * 60 * 60 * 1000)) + 1;
+    if (spanDays > 31) {
+        return { eligible: false, reason: `期間が31日を超えるため除外 (${spanDays}日間)` };
+    }
+
+    // 4. 投稿テキストに基づく安全ガード
+    const text = (post && post.text) ? String(post.text) : '';
+    const postedDateObj = (post && post.postedAt) ? new Date(post.postedAt) : new Date();
+    const postedJst = new Date((isNaN(postedDateObj.getTime()) ? Date.now() : postedDateObj.getTime()) + 9 * 60 * 60 * 1000);
+    const postedDateJstStr = `${postedJst.getUTCFullYear()}-${String(postedJst.getUTCMonth() + 1).padStart(2, '0')}-${String(postedJst.getUTCDate()).padStart(2, '0')}`;
+
+    // 4a. リアルタイム終了告知・売り切れ告知は、投稿当日かつ temporary_hours の場合に自動反映ブロック
+    const realtimeEndRegex = /並びの方|お並び|麺切れ|売り切れ|本日の営業は終了|本日の営業終了|昼の部は終了|昼営業は終了|夜の部は終了|夜営業は終了|宣告/;
+    if (change.type === 'temporary_hours' && startDate === postedDateJstStr && realtimeEndRegex.test(text)) {
+        return { eligible: false, reason: 'リアルタイム終了・売り切れ告知のため除外' };
+    }
+
+    // 4b. テイクアウト関連投稿は誤反映防止のため手動確認待ち
+    const takeoutRegex = /テイクアウト|持ち帰り|お持ち帰り/;
+    if (takeoutRegex.test(text)) {
+        return { eligible: false, reason: 'テイクアウト関連投稿のため手動確認待ち' };
+    }
+
+    // 5. 営業時間の妥当性チェック
+    if (change.type === 'temporary_closure') {
+        if (Array.isArray(change.hours) && change.hours.length > 0) {
+            return { eligible: false, reason: '休業種別だが営業時間配列が空でない' };
+        }
+    } else {
+        if (!Array.isArray(change.hours) || change.hours.length === 0) {
+            return { eligible: false, reason: '営業時間データが空' };
+        }
+        for (const slot of change.hours) {
+            if (!Array.isArray(slot) || slot.length !== 2) {
+                return { eligible: false, reason: '営業時間スロット形式が不正' };
+            }
+            const [s, e] = slot;
+            if (typeof s !== 'number' || typeof e !== 'number' || isNaN(s) || isNaN(e) || s < 0 || e > 28 || s >= e) {
+                return { eligible: false, reason: `時刻範囲が不正 (${s}-${e})` };
+            }
+            // 5分刻みの自然な時刻かチェック（投稿時刻由来の端数時刻をブロック）
+            const sMin = Math.round(s * 60);
+            const eMin = Math.round(e * 60);
+            if (sMin % 5 !== 0 || eMin % 5 !== 0) {
+                return { eligible: false, reason: `不自然な端数時刻 (${s}-${e})` };
+            }
+        }
+    }
+
+    // 6. 既存の臨時設定保護（同一店舗・同一startDateに既に登録がある場合は上書きせず手動確認待ち）
+    const existingTemp = (shop.temporary || []).find(t => t.startDate === startDate);
+    if (existingTemp) {
+        return { eligible: false, reason: `既に臨時設定が登録済みのため保護 (${startDate})` };
+    }
+
+    return { eligible: true, reason: '自動反映条件を満たす' };
 }
 
 if (require.main === module) {
@@ -628,6 +776,7 @@ if (require.main === module) {
 module.exports = {
     runCrawler,
     fetchXRecentPosts,
-    isMentionOrReply
+    isMentionOrReply,
+    evaluateAutoApplyEligibility
 };
 
