@@ -19,16 +19,21 @@ const AI_GUIDELINES_PATH = path.join(__dirname, '..', 'data', 'ai_guidelines.jso
 /**
  * ルール管理ファイル (data/ai_guidelines.json) からキーワード設定を読み込む
  */
-function loadScheduleKeywords() {
+function loadAiGuidelines() {
     if (fs.existsSync(AI_GUIDELINES_PATH)) {
         try {
-            const data = JSON.parse(fs.readFileSync(AI_GUIDELINES_PATH, 'utf8'));
-            if (data && data.scheduleKeywords) {
-                return data.scheduleKeywords;
-            }
+            return JSON.parse(fs.readFileSync(AI_GUIDELINES_PATH, 'utf8'));
         } catch (e) {
-            console.warn('[WARN] Failed to load scheduleKeywords from ai_guidelines.json:', e.message);
+            console.warn('[WARN] Failed to load ai_guidelines.json:', e.message);
         }
+    }
+    return null;
+}
+
+function loadScheduleKeywords() {
+    const data = loadAiGuidelines();
+    if (data && data.scheduleKeywords) {
+        return data.scheduleKeywords;
     }
     return null;
 }
@@ -356,8 +361,9 @@ async function runCrawler() {
     // 既存の sns_posts 読み込み
     let snsPosts = loadSnsPosts();
 
-    // ルール管理ファイルからキーワード設定を読み込み
-    const keywordConfig = loadScheduleKeywords();
+    // ルール管理ファイルから学習データ・キーワード設定を読み込み
+    const aiGuidelines = loadAiGuidelines();
+    const keywordConfig = (aiGuidelines && aiGuidelines.scheduleKeywords) ? aiGuidelines.scheduleKeywords : null;
     if (keywordConfig) {
         console.log(`ℹ️ AIルール管理ファイルからキーワード設定をロードしました (キーワード: ${keywordConfig.keywords.length}語)`);
     }
@@ -541,7 +547,7 @@ async function runCrawler() {
                         // 確度の高い臨時休業・臨時営業・時間変更は自動で shops.json へ反映
                         let isAutoApplied = false;
                         if (!isExactMatch && aiStatus === 'schedule_change') {
-                            const autoEval = evaluateAutoApplyEligibility(shop, post, change);
+                            const autoEval = evaluateAutoApplyEligibility(shop, post, change, aiGuidelines);
                             if (autoEval.eligible) {
                                 const nowIso = new Date().toISOString();
                                 const newTempEntry = {
@@ -667,7 +673,7 @@ async function runCrawler() {
  * @param {Object} change - Geminiが抽出した変更オブジェクト
  * @returns {{ eligible: boolean, reason: string }}
  */
-function evaluateAutoApplyEligibility(shop, post, change) {
+function evaluateAutoApplyEligibility(shop, post, change, aiGuidelines = null) {
     if (!change || typeof change !== 'object') {
         return { eligible: false, reason: '変更データなし' };
     }
@@ -678,10 +684,33 @@ function evaluateAutoApplyEligibility(shop, post, change) {
         return { eligible: false, reason: `自動反映対象外の種別 (${change.type})` };
     }
 
-    // 2. 確信度チェック（0.90以上）
+    // 1.5. 人間評価履歴（3パターン）に基づく動的ブレーキ＆確信度閾値の自動調整
+    let requiredConfidence = 0.90;
+    if (aiGuidelines && Array.isArray(aiGuidelines.learnedFeedback) && shop && shop.id) {
+        const shopHistory = aiGuidelines.learnedFeedback.filter(f => f.shopId === shop.id);
+        const recent5 = shopHistory.slice(0, 5);
+        const recent2 = shopHistory.slice(0, 2);
+        const getEval = f => f.evaluation || (f.humanAction === 'applied' ? 'correct' : 'unnecessary');
+
+        const recentIncorrectCount = recent5.filter(f => getEval(f) === 'incorrect').length;
+        const recentAutoUndone = recent2.some(f => f.subReason === 'auto_apply_undone');
+        const recentUnnecessaryCount = recent5.filter(f => getEval(f) === 'unnecessary').length;
+
+        if (recentAutoUndone) {
+            return { eligible: false, reason: '動的ブレーキ: 直近で自動反映取り消しがあるため手動確認待ち（2件連続正解で復帰）' };
+        }
+        if (recentIncorrectCount >= 2) {
+            return { eligible: false, reason: `動的ブレーキ: 対象店舗の直近5件中「誤り」が${recentIncorrectCount}件のため手動確認待ち` };
+        }
+        if (recentUnnecessaryCount >= 3) {
+            requiredConfidence = 0.95;
+        }
+    }
+
+    // 2. 確信度チェック（通常 0.90 以上、反映不要が多い店舗は 0.95 以上）
     const conf = typeof change.confidence === 'number' ? change.confidence : 0;
-    if (conf < 0.90) {
-        return { eligible: false, reason: `確信度が閾値未満 (${conf})` };
+    if (conf < requiredConfidence) {
+        return { eligible: false, reason: `確信度が閾値未満 (${conf} < ${requiredConfidence})` };
     }
 
     // 3. 日付の形式・妥当性チェック（本日〜60日以内、期間31日以内）

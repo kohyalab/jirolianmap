@@ -2416,6 +2416,16 @@ ${guidelinesText}
         const sortedUnprocessedItems = this.sortPendingItems(unprocessedItems);
         const sortedHistoryItems = this.sortPendingItems(historyItems);
 
+        // AI判定精度 3パターン集計サマリーバーの描画
+        const evalSummaryHtml = this.getEvaluationSummaryHtml();
+        if (evalSummaryHtml) {
+            const evalBar = document.createElement('div');
+            evalBar.innerHTML = evalSummaryHtml;
+            if (evalBar.firstElementChild) {
+                this.el.pendingListContainer.appendChild(evalBar.firstElementChild);
+            }
+        }
+
         // 一括操作ツールバーの描画
         if (unprocessedItems.length > 0) {
             const toolbar = document.createElement('div');
@@ -2440,7 +2450,7 @@ ${guidelinesText}
         }
 
         if (sortedUnprocessedItems.length === 0) {
-            this.el.pendingListContainer.innerHTML = `
+            this.el.pendingListContainer.innerHTML += `
                 <div style="text-align: center; padding: 28px 16px; color: #888; background: #1a1a1a; border-radius: 8px; border: 1px dashed #333;">
                     <div style="font-size: 1rem; font-weight: bold; color: #ccc;">未処理の自動検出提案はありません</div>
                     <div style="font-size: 0.78rem; margin-top: 4px; color: #777;">公式SNSから営業情報が検出されると、ここに自動表示されます。<br>過去に処理した内容は下の「処理済み履歴」より確認・復元できます。</div>
@@ -2755,6 +2765,9 @@ ${guidelinesText}
 
             actionsHtml = `
                 <button type="button" class="btn btn-sm ${skipBtnClass}" onclick="app.skipPending('${item.id}')">スキップ</button>
+                ${evalResult.isActionRequired ? `
+                    <button type="button" class="btn btn-sm" onclick="app.markPendingAsIncorrect('${item.id}')" style="background:#3e1c1c; border-color:#8e2424; color:#ff8a80; font-size:0.72rem;" title="AIの誤検出・誤判定として記録してスキップ">❌ 誤り</button>
+                ` : ''}
                 <button type="button" class="btn btn-sm btn-primary ${applyBtnClass}" onclick="app.applyPendingDirectly('${item.id}')" style="font-weight:bold; display:inline-flex; align-items:center; gap:4px;">
                     <span>⚡ ワンタッチ反映</span>
                 </button>
@@ -2951,19 +2964,69 @@ ${guidelinesText}
         const item = this.pendingUpdates.find(p => p.id === itemId);
         if (!item) return;
 
+        // 3パターン評価を記録（AIが反映不要と判定していたなら「正解」、要反映なら「反映不要」）
+        const evalRes = this.evaluatePendingItem(item);
+        const evaluation = evalRes.isActionRequired ? 'unnecessary' : 'correct';
+        const subReason = evalRes.isActionRequired ? 'skip_unnecessary' : 'skip_agreed';
+        this.recordLearnedFeedback(item, 'skipped', null, evaluation, subReason);
+
         this.draftProcessedPostIds.add(item.id);
+        this.savePendingUpdatesLocally();
         this.updatePendingBadge();
         this.renderPendingList();
-        // ※スキップ時は他の方法で既に反映済み等のケースがあるため、学習データへは蓄積しない（反映時のみ蓄積）
     }
 
-    recordLearnedFeedback(item, humanAction, finalChange = null) {
-        if (humanAction !== 'applied') return; // 反映時のみ学習データを蓄積
+    markPendingAsIncorrect(itemId) {
+        const item = this.pendingUpdates.find(p => p.id === itemId);
+        if (!item) return;
+
+        this.recordLearnedFeedback(item, 'skipped', null, 'incorrect', 'false_positive_marked');
+        this.draftProcessedPostIds.add(item.id);
+        this.savePendingUpdatesLocally();
+        this.updatePendingBadge();
+        this.renderPendingList();
+        this.showToast(`❌【${item.shopName || item.shopId}】AIの誤判定として記録し、スキップしました`);
+    }
+
+    recordLearnedFeedback(item, humanAction, finalChange = null, overrideEvaluation = null, subReason = '') {
         if (!this.aiGuidelines) {
-            this.aiGuidelines = { generalRules: [], learnedFeedback: [] };
+            this.aiGuidelines = { generalRules: [], learnedFeedback: [], evaluationStats: { total: { correct: 0, unnecessary: 0, incorrect: 0 }, byShop: {} } };
         }
         if (!Array.isArray(this.aiGuidelines.learnedFeedback)) {
             this.aiGuidelines.learnedFeedback = [];
+        }
+
+        // 3パターン評価（'correct' | 'unnecessary' | 'incorrect'）の自動判定
+        let evaluation = overrideEvaluation;
+        let resolvedSubReason = subReason;
+        const aiChange = item.detectedChange || null;
+
+        if (!evaluation) {
+            if (humanAction === 'applied') {
+                if (finalChange && finalChange.regularChange) {
+                    evaluation = 'correct';
+                    resolvedSubReason = 'regular_apply';
+                } else if (aiChange && finalChange) {
+                    const aiStart = aiChange.startDate || '';
+                    const aiEnd = aiChange.endDate || aiStart;
+                    const aiHours = aiChange.type === 'temporary_closure' ? [] : (aiChange.hours || []);
+                    const fStart = finalChange.startDate || '';
+                    const fEnd = finalChange.endDate || fStart;
+                    const fHours = finalChange.hours || [];
+                    const isExact = (aiStart === fStart) && (aiEnd === fEnd) && this.areShiftsEqual(aiHours, fHours);
+                    evaluation = isExact ? 'correct' : 'incorrect';
+                    resolvedSubReason = isExact ? 'exact_apply' : 'edited_apply';
+                } else {
+                    evaluation = 'incorrect';
+                    resolvedSubReason = 'manual_override_apply';
+                }
+            } else if (humanAction === 'auto_apply_undone') {
+                evaluation = 'incorrect';
+                resolvedSubReason = 'auto_apply_undone';
+            } else {
+                evaluation = 'unnecessary';
+                resolvedSubReason = 'skip_unnecessary';
+            }
         }
 
         const entry = {
@@ -2975,7 +3038,16 @@ ${guidelinesText}
             postText: (item.postText || '').substring(0, 300),
             aiStatus: item.aiStatus,
             aiReason: item.aiReason || '',
-            humanAction: humanAction, // 'applied' or 'skipped'
+            aiProposal: aiChange ? {
+                type: aiChange.type,
+                startDate: aiChange.startDate || '',
+                endDate: aiChange.endDate || aiChange.startDate || '',
+                hours: aiChange.type === 'temporary_closure' ? [] : (aiChange.hours || []),
+                confidence: aiChange.confidence
+            } : null,
+            humanAction: humanAction,
+            evaluation: evaluation, // 'correct' | 'unnecessary' | 'incorrect'
+            subReason: resolvedSubReason,
             finalDetails: finalChange ? {
                 startDate: finalChange.startDate,
                 endDate: finalChange.endDate,
@@ -2986,15 +3058,67 @@ ${guidelinesText}
 
         this.aiGuidelines.learnedFeedback = this.aiGuidelines.learnedFeedback.filter(f => f.id !== entry.id);
         this.aiGuidelines.learnedFeedback.unshift(entry);
-        if (this.aiGuidelines.learnedFeedback.length > 50) {
-            this.aiGuidelines.learnedFeedback = this.aiGuidelines.learnedFeedback.slice(0, 50);
+        if (this.aiGuidelines.learnedFeedback.length > 200) {
+            this.aiGuidelines.learnedFeedback = this.aiGuidelines.learnedFeedback.slice(0, 200);
         }
-        console.log(`🧠 人間判定フィードバックをナレッジに蓄積しました [${humanAction}]:`, entry);
+
+        // 全体および店舗別の3パターン集計を再計算
+        this.recalculateEvaluationStats();
+
+        console.log(`🧠 人間判定フィードバックを記録 [${evaluation} / ${resolvedSubReason}]:`, entry);
 
         // ローカルストレージにも退避
         try {
             localStorage.setItem('jirolian_ai_guidelines', JSON.stringify(this.aiGuidelines));
         } catch (e) {}
+    }
+
+    recalculateEvaluationStats() {
+        if (!this.aiGuidelines) return;
+        const list = Array.isArray(this.aiGuidelines.learnedFeedback) ? this.aiGuidelines.learnedFeedback : [];
+        const total = { correct: 0, unnecessary: 0, incorrect: 0 };
+        const byShop = {};
+
+        list.forEach(f => {
+            // 過去データ（evaluation未設定）の後方互換マッピング
+            const ev = f.evaluation || (f.humanAction === 'applied' ? 'correct' : 'unnecessary');
+            if (ev !== 'correct' && ev !== 'unnecessary' && ev !== 'incorrect') return;
+            total[ev]++;
+            if (f.shopId) {
+                if (!byShop[f.shopId]) {
+                    byShop[f.shopId] = { correct: 0, unnecessary: 0, incorrect: 0 };
+                }
+                byShop[f.shopId][ev]++;
+            }
+        });
+
+        this.aiGuidelines.evaluationStats = {
+            total: total,
+            byShop: byShop,
+            updatedAt: new Date().toISOString()
+        };
+    }
+
+    getEvaluationSummaryHtml() {
+        if (!this.aiGuidelines) return '';
+        if (!this.aiGuidelines.evaluationStats) {
+            this.recalculateEvaluationStats();
+        }
+        const t = (this.aiGuidelines.evaluationStats && this.aiGuidelines.evaluationStats.total) || { correct: 0, unnecessary: 0, incorrect: 0 };
+        const sum = t.correct + t.unnecessary + t.incorrect;
+        const accPct = sum > 0 ? Math.round((t.correct / sum) * 100) : 0;
+        return `
+            <div style="display:flex; justify-content:space-between; align-items:center; gap:8px; margin-bottom:8px; padding:6px 12px; background:#141a1f; border:1px solid #2a3a47; border-radius:6px; font-size:0.76rem; flex-wrap:wrap;">
+                <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
+                    <span style="color:#90caf9; font-weight:bold;">📊 AI判定評価集計</span>
+                    <span style="color:#81c784;">✅ 正解: <strong>${t.correct}</strong>件</span>
+                    <span style="color:#b0bec5;">⏭️ 反映不要: <strong>${t.unnecessary}</strong>件</span>
+                    <span style="color:#ef9a9a;">❌ 誤り: <strong>${t.incorrect}</strong>件</span>
+                    ${sum > 0 ? `<span style="color:#ffe082;">（正解率: <strong>${accPct}%</strong> / 計${sum}件）</span>` : '<span style="color:#777;">（まだ集計データはありません）</span>'}
+                </div>
+                <span style="color:#78909c; font-size:0.7rem;">※自動反映の動的ブレーキ・AI学習に随時反映されます</span>
+            </div>
+        `;
     }
 
     revertPending(itemId) {
@@ -3017,7 +3141,7 @@ ${guidelinesText}
 
         const shop = this.shops.find(s => s.id === item.shopId);
         const startDate = item.detectedChange && item.detectedChange.startDate;
-        if (!confirm(`【${item.shopName || item.shopId}】${startDate || ''} のAI自動反映を取り消しますか？\n（shops.jsonから該当の臨時設定を削除し、この投稿を未処理に戻します）`)) {
+        if (!confirm(`【${item.shopName || item.shopId}】${startDate || ''} のAI自動反映を取り消しますか？\n（shops.jsonから該当の臨時設定を削除し、「❌ 誤り」として学習データに記録して未処理に戻します）`)) {
             return;
         }
 
@@ -3032,6 +3156,9 @@ ${guidelinesText}
             }
         }
 
+        // 自動反映の取り消しを「❌ 誤り (auto_apply_undone)」として記録（動的ブレーキ発動用）
+        this.recordLearnedFeedback(item, 'auto_apply_undone', null, 'incorrect', 'auto_apply_undone');
+
         this.draftProcessedPostIds.delete(itemId);
         this.draftAppliedItems.delete(itemId);
         item.processed = false;
@@ -3045,8 +3172,8 @@ ${guidelinesText}
         this.renderList();
 
         this.showToast(removed
-            ? `↩️【${item.shopName || item.shopId}】${startDate} の自動反映を取り消しました（「GitHub送信」で確定します）`
-            : `↩️ 未処理に戻しました（該当の自動反映エントリは既に存在しませんでした）`);
+            ? `↩️【${item.shopName || item.shopId}】${startDate} の自動反映を取り消し、「❌ 誤り」として記録しました（「GitHub送信」で確定します）`
+            : `↩️ 未処理に戻し、「❌ 誤り」として記録しました`);
     }
 
     deletePendingPermanently(itemId) {
