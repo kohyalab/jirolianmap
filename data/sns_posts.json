@@ -44897,5 +44897,175 @@
     "autoApplied": false,
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 特別営業"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261124_0_2125013260378452088",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2125013260378452088",
+    "postedAt": "2026-11-23T23:46:56.000Z",
+    "postText": "今週も →［ニンニクとゴマ油のつけ麺-あつもり-］やります！ →［相撲部屋のしょうがダレ］  ◆11/24火【休業】 ◇11/25水［昼&夜］ ◇11/26木［昼のみ］ ◇11/27金［夜のみ］  ◇11/28土 昼※10〜14時　 夜※16:30〜20:00 ↑夜の部新設🈺致しました。  ◇11/29日10〜15 ◆11/30月【定休日】 https://t.co/tLeOZ8j89R",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-G-8Gsc7TKR5zrQ7K4_FkFToQ79YoCQL15n-jfUbEborxxeoH_7YBUW21iqgdHsOmYPKhfzp_oG1k4KC96MKef8SOyPqkBWly2SLHLX55XR_G9PrWTNQ_g88-xXFijGmFhJ6Sve5vd3GRwh589Buy4w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-RBvUS4u34kW6Nl1Pj2FHO_CKsgUDq8L4u38ISjZpPRDqYpWenRpyrZfT1CBagxnnKzONYLB8Y_yrDfBQmKfGbAoRVnqv0HllHIHkGX8PIrwN30LRQDWDarDtbBFc5wulSIyraTkN24aqOAHQyQwMKQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-NtLFOVggDAp4AdsfZsxrc0aYX2eNUTEQ2HVWzm4VJGVigcr8rkXgBnVADzT89df3WNi59vztJWwaarjoGDi_-aG6aa2laWm5iZwnlGNyGLEAHZ4kffcq2w_THHwXxhxXuQffZDFHAeW5Zq1vcN49Nw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-0avOEy-YqaRorZ4vyckcpouuE82hGLp1pd-ncyUd9TZQbcRU7qSk4nWtwnRsI4pAUQXdlNV-2mcWVUaIS_HYmV1Xt53zr6QxYPp_BaDOhhJpD2bST_TQ4W6j7wB79VSt1PD0NWbYQcHqcM058CsmvA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-24",
+      "endDate": "2026-11-24",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "autoApplied": false,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261126_1_2125013260378452088",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2125013260378452088",
+    "postedAt": "2026-11-23T23:46:56.000Z",
+    "postText": "今週も →［ニンニクとゴマ油のつけ麺-あつもり-］やります！ →［相撲部屋のしょうがダレ］  ◆11/24火【休業】 ◇11/25水［昼&夜］ ◇11/26木［昼のみ］ ◇11/27金［夜のみ］  ◇11/28土 昼※10〜14時　 夜※16:30〜20:00 ↑夜の部新設🈺致しました。  ◇11/29日10〜15 ◆11/30月【定休日】 https://t.co/tLeOZ8j89R",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-G-8Gsc7TKR5zrQ7K4_FkFToQ79YoCQL15n-jfUbEborxxeoH_7YBUW21iqgdHsOmYPKhfzp_oG1k4KC96MKef8SOyPqkBWly2SLHLX55XR_G9PrWTNQ_g88-xXFijGmFhJ6Sve5vd3GRwh589Buy4w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-RBvUS4u34kW6Nl1Pj2FHO_CKsgUDq8L4u38ISjZpPRDqYpWenRpyrZfT1CBagxnnKzONYLB8Y_yrDfBQmKfGbAoRVnqv0HllHIHkGX8PIrwN30LRQDWDarDtbBFc5wulSIyraTkN24aqOAHQyQwMKQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-NtLFOVggDAp4AdsfZsxrc0aYX2eNUTEQ2HVWzm4VJGVigcr8rkXgBnVADzT89df3WNi59vztJWwaarjoGDi_-aG6aa2laWm5iZwnlGNyGLEAHZ4kffcq2w_THHwXxhxXuQffZDFHAeW5Zq1vcN49Nw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-0avOEy-YqaRorZ4vyckcpouuE82hGLp1pd-ncyUd9TZQbcRU7qSk4nWtwnRsI4pAUQXdlNV-2mcWVUaIS_HYmV1Xt53zr6QxYPp_BaDOhhJpD2bST_TQ4W6j7wB79VSt1PD0NWbYQcHqcM058CsmvA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-26",
+      "endDate": "2026-11-26",
+      "hours": [
+        [
+          10.333333333333334,
+          14
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "autoApplied": false,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261127_2_2125013260378452088",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2125013260378452088",
+    "postedAt": "2026-11-23T23:46:56.000Z",
+    "postText": "今週も →［ニンニクとゴマ油のつけ麺-あつもり-］やります！ →［相撲部屋のしょうがダレ］  ◆11/24火【休業】 ◇11/25水［昼&夜］ ◇11/26木［昼のみ］ ◇11/27金［夜のみ］  ◇11/28土 昼※10〜14時　 夜※16:30〜20:00 ↑夜の部新設🈺致しました。  ◇11/29日10〜15 ◆11/30月【定休日】 https://t.co/tLeOZ8j89R",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-G-8Gsc7TKR5zrQ7K4_FkFToQ79YoCQL15n-jfUbEborxxeoH_7YBUW21iqgdHsOmYPKhfzp_oG1k4KC96MKef8SOyPqkBWly2SLHLX55XR_G9PrWTNQ_g88-xXFijGmFhJ6Sve5vd3GRwh589Buy4w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-RBvUS4u34kW6Nl1Pj2FHO_CKsgUDq8L4u38ISjZpPRDqYpWenRpyrZfT1CBagxnnKzONYLB8Y_yrDfBQmKfGbAoRVnqv0HllHIHkGX8PIrwN30LRQDWDarDtbBFc5wulSIyraTkN24aqOAHQyQwMKQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-NtLFOVggDAp4AdsfZsxrc0aYX2eNUTEQ2HVWzm4VJGVigcr8rkXgBnVADzT89df3WNi59vztJWwaarjoGDi_-aG6aa2laWm5iZwnlGNyGLEAHZ4kffcq2w_THHwXxhxXuQffZDFHAeW5Zq1vcN49Nw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-0avOEy-YqaRorZ4vyckcpouuE82hGLp1pd-ncyUd9TZQbcRU7qSk4nWtwnRsI4pAUQXdlNV-2mcWVUaIS_HYmV1Xt53zr6QxYPp_BaDOhhJpD2bST_TQ4W6j7wB79VSt1PD0NWbYQcHqcM058CsmvA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-27",
+      "endDate": "2026-11-27",
+      "hours": [
+        [
+          17,
+          20.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "autoApplied": false,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261129_3_2125013260378452088",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2125013260378452088",
+    "postedAt": "2026-11-23T23:46:56.000Z",
+    "postText": "今週も →［ニンニクとゴマ油のつけ麺-あつもり-］やります！ →［相撲部屋のしょうがダレ］  ◆11/24火【休業】 ◇11/25水［昼&夜］ ◇11/26木［昼のみ］ ◇11/27金［夜のみ］  ◇11/28土 昼※10〜14時　 夜※16:30〜20:00 ↑夜の部新設🈺致しました。  ◇11/29日10〜15 ◆11/30月【定休日】 https://t.co/tLeOZ8j89R",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-G-8Gsc7TKR5zrQ7K4_FkFToQ79YoCQL15n-jfUbEborxxeoH_7YBUW21iqgdHsOmYPKhfzp_oG1k4KC96MKef8SOyPqkBWly2SLHLX55XR_G9PrWTNQ_g88-xXFijGmFhJ6Sve5vd3GRwh589Buy4w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-RBvUS4u34kW6Nl1Pj2FHO_CKsgUDq8L4u38ISjZpPRDqYpWenRpyrZfT1CBagxnnKzONYLB8Y_yrDfBQmKfGbAoRVnqv0HllHIHkGX8PIrwN30LRQDWDarDtbBFc5wulSIyraTkN24aqOAHQyQwMKQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-NtLFOVggDAp4AdsfZsxrc0aYX2eNUTEQ2HVWzm4VJGVigcr8rkXgBnVADzT89df3WNi59vztJWwaarjoGDi_-aG6aa2laWm5iZwnlGNyGLEAHZ4kffcq2w_THHwXxhxXuQffZDFHAeW5Zq1vcN49Nw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-0avOEy-YqaRorZ4vyckcpouuE82hGLp1pd-ncyUd9TZQbcRU7qSk4nWtwnRsI4pAUQXdlNV-2mcWVUaIS_HYmV1Xt53zr6QxYPp_BaDOhhJpD2bST_TQ4W6j7wB79VSt1PD0NWbYQcHqcM058CsmvA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-29",
+      "endDate": "2026-11-29",
+      "hours": [
+        [
+          10,
+          15
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "autoApplied": false,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261130_4_2125013260378452088",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2125013260378452088",
+    "postedAt": "2026-11-23T23:46:56.000Z",
+    "postText": "今週も →［ニンニクとゴマ油のつけ麺-あつもり-］やります！ →［相撲部屋のしょうがダレ］  ◆11/24火【休業】 ◇11/25水［昼&夜］ ◇11/26木［昼のみ］ ◇11/27金［夜のみ］  ◇11/28土 昼※10〜14時　 夜※16:30〜20:00 ↑夜の部新設🈺致しました。  ◇11/29日10〜15 ◆11/30月【定休日】 https://t.co/tLeOZ8j89R",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-G-8Gsc7TKR5zrQ7K4_FkFToQ79YoCQL15n-jfUbEborxxeoH_7YBUW21iqgdHsOmYPKhfzp_oG1k4KC96MKef8SOyPqkBWly2SLHLX55XR_G9PrWTNQ_g88-xXFijGmFhJ6Sve5vd3GRwh589Buy4w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-RBvUS4u34kW6Nl1Pj2FHO_CKsgUDq8L4u38ISjZpPRDqYpWenRpyrZfT1CBagxnnKzONYLB8Y_yrDfBQmKfGbAoRVnqv0HllHIHkGX8PIrwN30LRQDWDarDtbBFc5wulSIyraTkN24aqOAHQyQwMKQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-NtLFOVggDAp4AdsfZsxrc0aYX2eNUTEQ2HVWzm4VJGVigcr8rkXgBnVADzT89df3WNi59vztJWwaarjoGDi_-aG6aa2laWm5iZwnlGNyGLEAHZ4kffcq2w_THHwXxhxXuQffZDFHAeW5Zq1vcN49Nw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-0avOEy-YqaRorZ4vyckcpouuE82hGLp1pd-ncyUd9TZQbcRU7qSk4nWtwnRsI4pAUQXdlNV-2mcWVUaIS_HYmV1Xt53zr6QxYPp_BaDOhhJpD2bST_TQ4W6j7wB79VSt1PD0NWbYQcHqcM058CsmvA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-30",
+      "endDate": "2026-11-30",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "autoApplied": false,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2125010909529870415",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2125010909529870415",
+    "postedAt": "2026-11-23T23:37:36.000Z",
+    "postText": "@wataya_s99 豊昇龍関はまだ怪我が完治していない印象でしたよね。休場をしないで千秋楽を迎えた事が今場所の収穫ですね。来場所に期待しましょう♪ 藤の川関、大相撲体重無差別の真骨頂！怖いのは怪我だけです💦 伸び盛りの若手の関取衆に頑張ってもらいましょう！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "投稿内容は相撲に関する話題であり、ラーメン二郎相模大野店の営業情報に関する言及はありません。"
   }
 ]
