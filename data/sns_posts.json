@@ -45645,5 +45645,20 @@
     "autoApplied": false,
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 材料の都合"
+  },
+  {
+    "id": "sns_post_routine_nishidai_2125141424652071179",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2125141424652071179",
+    "postedAt": "2026-11-24T08:16:13.000Z",
+    "postText": "本日、24日の切り落としは 売り切れました。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "本日分の切り落とし売り切れ報告のみであり、営業時間の変更はありません。"
   }
 ]
