@@ -45585,5 +45585,22 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の範囲内であるため変更なし"
+  },
+  {
+    "id": "sns_post_routine_kameido_2125128170282332653",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2125128170282332653",
+    "postedAt": "2026-11-24T07:23:33.000Z",
+    "postText": "お世話になってます。三連休の寄せ返しで今日は結構暇な予感です…スムーズに入店ご案内できると思うので気軽にご来店ください！そして今日でクリスマスイブ1ヶ月前なので季節感を出していきます🎄 https://t.co/X8l9j44NbS",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-m3SZnjKnRLzL9BnuajbxlUkIzTyL9ZZJJ4WxZOdZ78dSLdEi0y4msfTPDvpKN-zrWXcVKzcDD0EzAAN0ZlxjZOwvJJj_TFz4Rg0nlBP-XUblfocvwbWZJm0hxZPmmD-_eFqFsvV6aDLq2e1BiKrUCg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常投稿のため、営業情報の変更はありません。"
   }
 ]
