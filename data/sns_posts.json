@@ -45698,5 +45698,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "本日の営業終了告知のみであり、臨時休業や営業時間変更には該当しません。"
+  },
+  {
+    "id": "sns_post_daily_hitotsubashi_2125192037133865320",
+    "shopId": "hitotsubashi",
+    "shopName": "一橋学園店",
+    "postSource": "x",
+    "postUrl": "https://x.com/1284jiro/status/2125192037133865320",
+    "postedAt": "2026-11-24T11:37:20.000Z",
+    "postText": "上着の取り間違いが発生しました。心当たりのある方は至急連絡下さい。よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
