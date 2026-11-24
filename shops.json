@@ -3800,6 +3800,15 @@
         "reason": "",
         "sourceUrl": "https://x.com/jiro_nishidai/status/2108681769788801247",
         "_isAiImported": true
+      },
+      {
+        "startDate": "2026-12-12",
+        "endDate": "2026-12-12",
+        "hours": [],
+        "reason": "",
+        "sourceUrl": "https://x.com/jiro_nishidai/status/2125031958271152174",
+        "autoApplied": true,
+        "autoAppliedAt": "2026-11-24T01:01:45.270Z"
       }
     ],
     "shiftsByDay": {
@@ -4404,6 +4413,24 @@
         "reason": "祝日特別営業",
         "sourceUrl": "https://x.com/jiro_sapporo_/status/2123582854412247358",
         "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-24",
+        "endDate": "2026-11-24",
+        "hours": [
+          [
+            11,
+            14
+          ],
+          [
+            17,
+            20
+          ]
+        ],
+        "reason": "",
+        "sourceUrl": "https://x.com/jiro_sapporo_/status/2125027470223315145",
+        "autoApplied": true,
+        "autoAppliedAt": "2026-11-24T01:01:55.742Z"
       },
       {
         "startDate": "2026-11-25",
