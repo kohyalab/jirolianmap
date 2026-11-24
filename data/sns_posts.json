@@ -45774,5 +45774,23 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "チャリティーの義援金を八代市へお届けした旨の報告であり、営業時間の変更や臨時休業はありません。"
+  },
+  {
+    "id": "sns_post_routine_fujisawa_2125330776799797526",
+    "shopId": "fujisawa",
+    "shopName": "湘南藤沢店",
+    "postSource": "x",
+    "postUrl": "https://x.com/fujirow26/status/2125330776799797526",
+    "postedAt": "2026-11-24T20:48:38.000Z",
+    "postText": "おはようございます。  11月25日(水)  しょっぱ豚🐷 無料トッピング！ 崩し豚、豚カス醤油、1番スープ、にんにく🧄生姜🫚とにかく色々  魔タレタマネギ🧅 自家製タレやみつき🔥  本日もよろしくお願いいたします。 https://t.co/8sepN3qxla",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-7rqvye0rz81Kfs-ZvGDHGDfhr6_6McnExEs4wFrlJjmEiudkS4hdghk5zEFaH-Uo4FVYPJJ9ppkEVHt8io4mQ_VZD_Mjml3R361KJqgcRuRCp-gYsVi-GeHh0H3pXYeo-9AhPFVB5aVD1_II5tVo6w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-M11TYHNBp5Uvv_b3bLB5V3s1xYZYKo_auoOVQtO0c2DYCdgDZ6yP2eNokwiYHS2qNl_LMbCWZ4W7uN-rZDR7-6YgFz-Fqwh9RIU3lErx1A_grbkk1Ncg-wLPRo6fnCsScbTON3MtJnQLofA3_Mw9tw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの案内であり、営業時間の変更はありません。"
   }
 ]
