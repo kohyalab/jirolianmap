@@ -45755,5 +45755,24 @@
     "aiReason": "営業変更検出: 都合により",
     "autoApplyConfirmed": true,
     "autoApplyConfirmedAt": "2026-11-24T14:22:47.382Z"
+  },
+  {
+    "id": "sns_post_routine_yaen2_2125246306155413702",
+    "shopId": "yaen2",
+    "shopName": "八王子野猿街道店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/Jiro_Yaenkaido2/status/2125246306155413702",
+    "postedAt": "2026-11-24T15:12:59.000Z",
+    "postText": "9/21のチャリティーで皆様からお預かりした義援金565,043円を、八代市へお届けしました。ご協力ありがとうございました https://t.co/OHBMWB9DF7",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-NFGqBx3K4My0NjD650rNlKG6-BbPvrvAG5LtW9a83ksZkI-SKM_bMfe6_8_L9GdUFldxENRnxvx34fbIqIxAe17hh0R8baNXGJbwYva4k8jnNkbT-uel96vO3iioTjuHXElPXhVWS4PftMaTRd-_kw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Dri8BtHLEAoUmvcFUEE54_0Rpl-DrpF2uQfq5cSbE31vzkXG0uLKUxIa6N0XI-J9mKvo1zmyOaXK1MrIu3UnJxprW0-T_rXMJBPHebCdRHDCi7gt53HzTdopKuMdXCcYINjP7k8w4X1tFq8ekVF77Q==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-KVRmZuFt6Wk8CYdTJljCizJN1x3jiWpNLgsLqcGYl_NukfW-TbBYXnv_Z8jmo6J5xdrBAworXHmT2PwVDjAFuP32ao_vCCrZW_dvuiv1U6xf-J5Mx58fdh3sbr9wllmeZdXxt4AQGnqEiffeaVvsUA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "チャリティーの義援金を八代市へお届けした旨の報告であり、営業時間の変更や臨時休業はありません。"
   }
 ]
