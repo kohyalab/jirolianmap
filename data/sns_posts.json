@@ -45854,5 +45854,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "限定トッピング（刻みしょうが）の提供に関する案内であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_senjuohashi_2125357400391844238",
+    "shopId": "senjuohashi",
+    "shopName": "千住大橋駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjujirou26/status/2125357400391844238",
+    "postedAt": "2026-11-24T22:34:26.000Z",
+    "postText": "ラー油あります！  ※営業時間10時30分〜 15時30分ラストオーダー！ https://t.co/81YTuMvnmg",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内であり、営業時間の変更はありません。"
   }
 ]
