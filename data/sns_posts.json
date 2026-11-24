@@ -45515,5 +45515,60 @@
     "autoApplied": true,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2125113039393530258",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2125113039393530258",
+    "postedAt": "2026-11-24T06:23:25.000Z",
+    "postText": "明日 ◇11/25水 【昼の部】 10:20〜14:00 【夜の部】 17:00〜20:30  →［ニンニクとゴマ油のつけ麺］ →［相撲部屋のしょうがダレ］ やっております！  どうぞー！ https://t.co/eikieZbkd1",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-SEC_RkayS06OKhenbetRPYnj_bJ9vaO8W4LI5zDMPwdJo4zpj16lSAZFZ6w2c5A0ee8JCAHw_GmqUOmPL0An6I1CG33uAykdX1Bl2V5b_TTa8pGZFZcU6a3NcjOnA1qq5RhLE1ol0Cj6h0GPlVg7RQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-7bu-YNkdBARSTlZWM1fKa1KSDunRDVQKihhslbwU-LTJWKE9vZxIAEt1J9MHPxMWAfaHkw5TsZlcGMMwWHzZQn8j1MWqB_gd5JCNMXlQaUg_no3hBSiZRtZqEqA9-cwSrvBWdRSFgmg8tNAtdmpyLg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-pgldf1sOybhu08-Zp3bc3fFB7_A2unEdV-TC9KvVEYJYxcjuAJMYjyaFNCnear5SRTdiDUVjwcy48Zmwl7kYEU6nuF1GPDN6Kodhk4wUKFMlZx9mvAXDFj1v0nhSRLzEOmjH8UggokO62Rhef9Wjww==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-rcKrAti7gzDidnwwtfvZUs7XLux1XuYOOoV8e8JAc8nVXqgcDKKeW3CsLcKsq0I3-r9CQ8r5QaAZdQJGJXRqIAAOYqxDah6uo2zJTPrR5p_iwdI_zgswoKtejYMvFTBwYjxXFr0r28-HYNa9ENFoEA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-PQId1UW-RQuJihR3nDKLtOx480f_TYnJQwFu4K0L15LCP3o_iC3Ie1NNM4zVAZRUojEGYwZkR67Fjm2eWDoi8TtlDzthbuSDJRBBzEcm7rs4rcM3jXi5UqcR5svFT0CPZai4ZH4w7qXitlvZRfJrIw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-GgrQBS6MPUxeWAtz2lMcu0rFC0UfTHNYZ9jjOQ3MHiRsUr6FoBKVPKyRjqDJohj2OcS3c8YMMvtF5xftqZWa0QXcv1tMqDxjBS9h3Y8dTQrmK3RK8oqPFZxcTG81XZOH9l1hZchQZjNmoLJ_smFoUg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-8CfzJgQIbsyyK8lEgLGJUX3TYDm8ngtOpgTf0o-SkTy7w4hfX3vf2SfoMjO-lGE-CDNan1X1VRd-mxbniYmVMAIXxRCKTCY1kPp9hirN07mMSb5a38kAY-d3dWl_K1INPrhn5n1ScEJUSOuV4Ik2lA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内であり、営業時間変更なし"
+  },
+  {
+    "id": "sns_post_routine_nishidai_2125109437753122919",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2125109437753122919",
+    "postedAt": "2026-11-24T06:09:07.000Z",
+    "postText": "@pupone_acr7 こんにちは。 ご来店、ありがとうございます。  当店は閉店時刻に最後を作り終えるように待ち人数に応じて 所謂、宣告をしています。  13:30前でも終了する時が ありますので「早仕舞い」では ありません。  ご留意下さいませ。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "店舗からの営業形態に関する説明であり、臨時休業や営業時間変更の告知ではないため変更なし。"
+  },
+  {
+    "id": "sns_post_routine_nishidai_2125108576381493513",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2125108576381493513",
+    "postedAt": "2026-11-24T06:05:41.000Z",
+    "postText": "こんにちは。  本日、24日、夜の部 煮込みFZ味付き切り落とし  ¥1000×3  あります。 https://t.co/fi2SLAOQ0F",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-YcIEKVfglMD37pfGRLkVFKYz33H3_BtHpyyYQHN3uf8hYN4yAjbmu3fJs37RmqFcTiQ2TL6OnLxarNUpNdkjI0bT40Wlh8NlzK9J5g3cQuCj1es_yr0rqf_zDBZdd9fFRsSXRaht3ZTKNihxyylDQA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "本日の夜の部における限定商品の販売、および12/12のテイクアウト販売のみの実施に関する告知（店内営業の変更なし）"
   }
 ]
