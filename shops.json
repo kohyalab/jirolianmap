@@ -7425,6 +7425,20 @@
         "sourceUrl": "https://x.com/genkimoriya/status/2125105572651610513",
         "autoApplied": true,
         "autoAppliedAt": "2026-11-24T06:02:30.726Z"
+      },
+      {
+        "startDate": "2026-11-29",
+        "endDate": "2026-11-29",
+        "hours": [
+          [
+            10.5,
+            16
+          ]
+        ],
+        "reason": "都合により",
+        "sourceUrl": "https://x.com/genkimoriya/status/2125200950457688424",
+        "autoApplied": true,
+        "autoAppliedAt": "2026-11-24T12:33:00.416Z"
       }
     ],
     "shiftsByDay": {
