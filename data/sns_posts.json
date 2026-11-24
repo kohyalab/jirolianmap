@@ -45440,5 +45440,22 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "投稿内容は日常的な雑談であり、営業情報の変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_sapporo_2125061577053483488",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2125061577053483488",
+    "postedAt": "2026-11-24T02:58:56.000Z",
+    "postText": "システムエラーで、営業停止になっています。 ご迷惑お掛け致しますm(_ _)m https://t.co/sJqfLClxWj",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-0Cn1hfxo9ax4ut8NCYjRLQl4INIR1PYdbYQ3vfY77ezLXUc3Bpa9UZHWFq2I8FL3mp6nDJtuTeNyjDoa-YaAqo5Um84oFupRd_Ihu4hlz9A8_VJhx_E_SqgP4EnzJN2yUqJ-fuj2S2KiHvjmfUVzfQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "デリバリーシステムのシステムエラーによる一時的な受注停止であり、店舗の営業スケジュール変更ではないため反映対象外。"
   }
 ]
