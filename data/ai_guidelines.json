@@ -2,6 +2,282 @@
   "generalRules": [],
   "learnedFeedback": [
     {
+      "id": "sns_post_kyoto_20261124_0_2125131887601742082",
+      "timestamp": "2026-11-24T14:34:29.826Z",
+      "shopId": "kyoto",
+      "shopName": "京都店",
+      "postDate": "2026-11-24T07:38:19.000Z",
+      "postText": "こんにちは！本日は材料の都合でやや短縮での営業になります。22時閉店かなと思います。 テイクアウトあります",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業変更検出: 材料の都合",
+      "aiProposal": {
+        "type": "temporary_hours",
+        "startDate": "2026-11-24",
+        "endDate": "2026-11-24",
+        "hours": [
+          [
+            17,
+            22
+          ]
+        ],
+        "confidence": 0.95
+      },
+      "humanAction": "applied",
+      "evaluation": "correct",
+      "subReason": "exact_apply",
+      "finalDetails": {
+        "startDate": "2026-11-24",
+        "endDate": "2026-11-24",
+        "hours": [
+          [
+            17,
+            22
+          ]
+        ],
+        "reason": "材料の都合"
+      }
+    },
+    {
+      "id": "sns_post_shndaita_20261124_0_2124989739153715276",
+      "timestamp": "2026-11-24T14:34:20.337Z",
+      "shopId": "shndaita",
+      "shopName": "環七新新代田店",
+      "postDate": "2026-11-23T22:13:28.000Z",
+      "postText": "2026年11月24日（火）  ⚠️短縮営業です！⚠️ 11:00～15:00くらいです！  よろしくお願いします！  ※住宅地なのでおしゃべりしないで待っててください",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "aiProposal": {
+        "type": "temporary_hours",
+        "startDate": "2026-11-24",
+        "endDate": "2026-11-24",
+        "hours": [
+          [
+            11,
+            15
+          ]
+        ],
+        "confidence": 1
+      },
+      "humanAction": "applied",
+      "evaluation": "correct",
+      "subReason": "auto_apply_confirmed",
+      "finalDetails": {
+        "startDate": "2026-11-24",
+        "endDate": "2026-11-24",
+        "hours": [
+          [
+            11,
+            15
+          ]
+        ],
+        "reason": ""
+      }
+    },
+    {
+      "id": "sns_post_koiwa_20261124_0_2124993163198926955",
+      "timestamp": "2026-11-24T14:34:14.318Z",
+      "shopId": "koiwa",
+      "shopName": "小岩店",
+      "postDate": "2026-11-23T22:27:05.000Z",
+      "postText": "おはようございます。  誠に勝手ながら本日は都合により臨時休業いたします。  大変申し訳ございませんが、よろしくお願いいたします。  小岩二郎",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業変更検出: 都合により",
+      "aiProposal": {
+        "type": "temporary_closure",
+        "startDate": "2026-11-24",
+        "endDate": "2026-11-24",
+        "hours": [],
+        "confidence": 1
+      },
+      "humanAction": "applied",
+      "evaluation": "correct",
+      "subReason": "auto_apply_confirmed",
+      "finalDetails": {
+        "startDate": "2026-11-24",
+        "endDate": "2026-11-24",
+        "hours": [],
+        "reason": "都合により"
+      }
+    },
+    {
+      "id": "sns_post_aizuwakamatsu_20261124_0_2124997385533485157",
+      "timestamp": "2026-11-24T14:23:44.001Z",
+      "shopId": "aizuwakamatsu",
+      "shopName": "会津若松駅前店",
+      "postDate": "2026-11-23T22:43:51.000Z",
+      "postText": "急なお知らせで誠に申し訳ございませんが、人員不足の為本日11/24(火)昼の部臨時休業とさせていただきます。夜の部より営業いたします。よろしくお願いいたしますm(__)m https://t.co/Am9mpf81Mh",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業変更検出: 人員不足のため",
+      "aiProposal": {
+        "type": "temporary_hours",
+        "startDate": "2026-11-24",
+        "endDate": "2026-11-24",
+        "hours": [
+          [
+            17,
+            21
+          ]
+        ],
+        "confidence": 1
+      },
+      "humanAction": "applied",
+      "evaluation": "correct",
+      "subReason": "auto_apply_confirmed",
+      "finalDetails": {
+        "startDate": "2026-11-24",
+        "endDate": "2026-11-24",
+        "hours": [
+          [
+            17,
+            21
+          ]
+        ],
+        "reason": "人員不足のため"
+      }
+    },
+    {
+      "id": "sns_post_sapporo_20261124_0_2125027470223315145",
+      "timestamp": "2026-11-24T14:23:37.005Z",
+      "shopId": "sapporo",
+      "shopName": "札幌店",
+      "postDate": "2026-11-24T00:43:24.000Z",
+      "postText": "24日(火)通常営業です🍜 先日告知通り、明日25日(水)は終日休業になります。 又、本日夜の部20時頃までの営業とさせて頂きますm(_ _)m",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "aiProposal": {
+        "type": "temporary_hours",
+        "startDate": "2026-11-24",
+        "endDate": "2026-11-24",
+        "hours": [
+          [
+            11,
+            14
+          ],
+          [
+            17,
+            20
+          ]
+        ],
+        "confidence": 1
+      },
+      "humanAction": "applied",
+      "evaluation": "correct",
+      "subReason": "auto_apply_confirmed",
+      "finalDetails": {
+        "startDate": "2026-11-24",
+        "endDate": "2026-11-24",
+        "hours": [
+          [
+            11,
+            14
+          ],
+          [
+            17,
+            20
+          ]
+        ],
+        "reason": ""
+      }
+    },
+    {
+      "id": "sns_post_nishidai_20261212_0_2125031958271152174",
+      "timestamp": "2026-11-24T14:23:09.527Z",
+      "shopId": "nishidai",
+      "shopName": "西台駅前店",
+      "postDate": "2026-11-24T01:01:14.000Z",
+      "postText": "おはようございます。 霜月も残り1週間を切りましたね！ 今日も魔女がお待ちしてます。 https://t.co/4cDtPVrsMb https://t.co/SEVOZ4ruxz",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "aiProposal": {
+        "type": "temporary_closure",
+        "startDate": "2026-12-12",
+        "endDate": "2026-12-12",
+        "hours": [],
+        "confidence": 1
+      },
+      "humanAction": "applied",
+      "evaluation": "correct",
+      "subReason": "auto_apply_confirmed",
+      "finalDetails": {
+        "startDate": "2026-12-12",
+        "endDate": "2026-12-12",
+        "hours": [],
+        "reason": ""
+      }
+    },
+    {
+      "id": "sns_post_kashiwa_20261124_0_2125105572651610513",
+      "timestamp": "2026-11-24T14:22:56.810Z",
+      "shopId": "kashiwa",
+      "shopName": "柏店",
+      "postDate": "2026-11-24T05:53:45.000Z",
+      "postText": "お世話になっております。 ラーメン二郎柏店です。  本日11月24日18時〜20時までの夜営業もいたします。  どうぞよろしくお願いいたします。",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "aiProposal": {
+        "type": "special_open",
+        "startDate": "2026-11-24",
+        "endDate": "2026-11-24",
+        "hours": [
+          [
+            18,
+            20
+          ]
+        ],
+        "confidence": 1
+      },
+      "humanAction": "applied",
+      "evaluation": "correct",
+      "subReason": "auto_apply_confirmed",
+      "finalDetails": {
+        "startDate": "2026-11-24",
+        "endDate": "2026-11-24",
+        "hours": [
+          [
+            18,
+            20
+          ]
+        ],
+        "reason": ""
+      }
+    },
+    {
+      "id": "sns_post_kashiwa_20261129_0_2125200950457688424",
+      "timestamp": "2026-11-24T14:22:47.386Z",
+      "shopId": "kashiwa",
+      "shopName": "柏店",
+      "postDate": "2026-11-24T12:12:45.000Z",
+      "postText": "お世話になっております。 ラーメン二郎柏店です。  11月29日（日）は、都合により臨時営業致します。 10時30分から16時までの通常営業となります。  どうぞ宜しくお願い致します。",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業変更検出: 都合により",
+      "aiProposal": {
+        "type": "special_open",
+        "startDate": "2026-11-29",
+        "endDate": "2026-11-29",
+        "hours": [
+          [
+            10.5,
+            16
+          ]
+        ],
+        "confidence": 1
+      },
+      "humanAction": "applied",
+      "evaluation": "correct",
+      "subReason": "auto_apply_confirmed",
+      "finalDetails": {
+        "startDate": "2026-11-29",
+        "endDate": "2026-11-29",
+        "hours": [
+          [
+            10.5,
+            16
+          ]
+        ],
+        "reason": "都合により"
+      }
+    },
+    {
       "id": "sns_post_koshigaya_20261123_1_2123887168066314676",
       "timestamp": "2026-11-21T21:51:32.993Z",
       "shopId": "koshigaya",
@@ -997,11 +1273,46 @@
   ],
   "evaluationStats": {
     "total": {
-      "correct": 50,
+      "correct": 58,
       "unnecessary": 0,
       "incorrect": 0
     },
     "byShop": {
+      "kyoto": {
+        "correct": 3,
+        "unnecessary": 0,
+        "incorrect": 0
+      },
+      "shndaita": {
+        "correct": 7,
+        "unnecessary": 0,
+        "incorrect": 0
+      },
+      "koiwa": {
+        "correct": 4,
+        "unnecessary": 0,
+        "incorrect": 0
+      },
+      "aizuwakamatsu": {
+        "correct": 1,
+        "unnecessary": 0,
+        "incorrect": 0
+      },
+      "sapporo": {
+        "correct": 6,
+        "unnecessary": 0,
+        "incorrect": 0
+      },
+      "nishidai": {
+        "correct": 1,
+        "unnecessary": 0,
+        "incorrect": 0
+      },
+      "kashiwa": {
+        "correct": 2,
+        "unnecessary": 0,
+        "incorrect": 0
+      },
       "koshigaya": {
         "correct": 5,
         "unnecessary": 0,
@@ -1032,11 +1343,6 @@
         "unnecessary": 0,
         "incorrect": 0
       },
-      "sapporo": {
-        "correct": 5,
-        "unnecessary": 0,
-        "incorrect": 0
-      },
       "nagoyaosone": {
         "correct": 2,
         "unnecessary": 0,
@@ -1052,16 +1358,6 @@
         "unnecessary": 0,
         "incorrect": 0
       },
-      "shndaita": {
-        "correct": 6,
-        "unnecessary": 0,
-        "incorrect": 0
-      },
-      "kyoto": {
-        "correct": 2,
-        "unnecessary": 0,
-        "incorrect": 0
-      },
       "sagamiohno": {
         "correct": 2,
         "unnecessary": 0,
@@ -1069,11 +1365,6 @@
       },
       "kannai": {
         "correct": 1,
-        "unnecessary": 0,
-        "incorrect": 0
-      },
-      "koiwa": {
-        "correct": 3,
         "unnecessary": 0,
         "incorrect": 0
       },
@@ -1108,6 +1399,6 @@
         "incorrect": 0
       }
     },
-    "updatedAt": "2026-11-23T13:45:19.543Z"
+    "updatedAt": "2026-11-24T14:34:29.826Z"
   }
 }
