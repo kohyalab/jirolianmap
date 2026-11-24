@@ -45832,5 +45832,27 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の案内であり、変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2125355627161809080",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2125355627161809080",
+    "postedAt": "2026-11-24T22:27:23.000Z",
+    "postText": "本日 ◇11/25水 【昼】 →こちらをご覧のお客様限定です！ ↓ ※お客様ご自身で→丸の🟥赤又は白🤍食券を１枚お取りになって席までお越しください。→食券は券売機の前の台の二段目に置いておきます。 ※必ず着席時にお出しください。 ※サービス中の目印は［黄色いハンカチ］ どうぞご利用下さい♪ https://t.co/D13LStiGjc https://t.co/rah2pDp2Ca",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-wTZQZvTCVaFB38KHgiI26M7RBeRlywV5uUOWBCmCtaMc7xUnKGHx7TtfAEWVdJt_1AxC86niSoUT9ZSyMprM1byDsy8qwK_XHOw3GsI1U4z39Jk31t3gR1eGCMD3YRd_nriHmPB1ZWvFx5mm7zesuA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-0FX00vURnxPpvXC9LCvo0E9RbBF2e8YyrSJNmJX3peyE5WJE0W9QIvIq6LcFLmS221yIAIFaODV5PaudxYxOP_zATkfxlEqotXpN0TYWvj3HHxH5kuujLAwYRKiu9iSmuNwqAT3vkIvjIZiWzHiG5g==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne--WrUaPTDFaHOtnEfaNh-lKc17-mpQPX56pQuFR4sO3AHa02Mf5aQHK0ENp0Slu4k8j_YMMLJtiNHSMXKIByFMBjhXe7fEDUJ34Ub6pgSx4tG81M8bpQtycs1mOK8kyV4qcRZdeNZIMm5u9NJJbEOig==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-k5Gs61GwRNheiG1nxNpRHm3AJzly73TftUuy6H0rIM5ZAViiJ51EScHsKsfVcrEEqffbUxM2hzhUVJu4dEs20P7fos9mX44qSJPcj6FbGW8AiDhUdTxSxKFB_a2Ja8VG21whEEaMYL-j_yLCxw8MgA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-NeEdPw6o9CB7I2LxvmYU6_mmoI5pRIvMhL6LeC-rfvV_Ay-e3T7EiZ8eqYHSxJ9lDv_4XPl6lhw0ddWcb9zvv28cVRlqnh04huA3AdxZGz67-AwnfjclmC4NgkcqK3dpcKuRL7l8pHIVjkhtOuML7w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-MfKb0ePMXfutX4M8hPHfLjkuu1AUYah-MwpPpFWpah22fkwPuRQFiMF-H7fW2pw6j8JR8vK317lz2p-R3fOHI3AhFimAaHpSRYmAycnaYOTPKmOfNvURrphmQwUMhs7UUF2ktLLZcSE1wjKijRvfQQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピング（刻みしょうが）の提供に関する案内であり、営業時間の変更はありません。"
   }
 ]
