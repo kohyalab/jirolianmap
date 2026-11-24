@@ -44731,8 +44731,8 @@
       "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-g4g3H6fauIdiuWbCnmO914cj2WKtNnS0VYxx0PE_L-AZV8QWzv3w1OuBDMLZCIw59tMWb4vJTSbkI8U45ptCPPcb_keRSKtPOnbWABFukA6e2vDPGFgSnUOgpcjY_t_58wGxl1dyg4zU5tLhenfvJg=="
     ],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-24T14:47:56.454Z",
     "aiStatus": "no_change",
     "aiReason": "通常営業の案内であり、変更はありません。"
   },
@@ -44757,7 +44757,9 @@
     "processedAt": "2026-11-23T22:32:08.033Z",
     "autoApplied": true,
     "aiStatus": "schedule_change",
-    "aiReason": "営業変更検出: 都合により"
+    "aiReason": "営業変更検出: 都合により",
+    "autoApplyConfirmed": true,
+    "autoApplyConfirmedAt": "2026-11-24T14:34:14.317Z"
   },
   {
     "id": "sns_post_daily_shndaita_2124989990262509913",
@@ -44769,8 +44771,8 @@
     "postText": "激辛もやります！ 多分ちゃんと辛いです！  1倍  100円 2倍 200円 3倍 300円です！  よろしくお願いします！",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-24T14:47:56.454Z",
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   },
@@ -44784,8 +44786,8 @@
     "postText": "味噌ラーメン(+200円)もやります！  麺の量と一緒に みそでって言ってください！ ラーメンのひとはしょうゆでって言ってくれるとわかりやすいです！  麺の量を聞かれた時に じぶんから言ってください！  よろしくお願いします！",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-24T14:47:56.454Z",
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   },
@@ -44815,7 +44817,9 @@
     "processedAt": "2026-11-23T22:32:42.853Z",
     "autoApplied": true,
     "aiStatus": "schedule_change",
-    "aiReason": "営業時間の変更を検出"
+    "aiReason": "営業時間の変更を検出",
+    "autoApplyConfirmed": true,
+    "autoApplyConfirmedAt": "2026-11-24T14:34:20.337Z"
   },
   {
     "id": "sns_post_routine_senjuohashi_2124995082348802404",
@@ -44829,8 +44833,8 @@
       "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-HlXPrAxid_0uwVsunc9p7gWi37n4JRj6QvoBWyo2FT6P5sgO3z_EaVlHb3b_uvf9z77zAfj01a-SvNd-zJ7BNl5OxfbeEozTexkmIlzJ0-voKrD-YKunbIUITgbJUwh2z-xVqxrHFNL44WhzADw3nA=="
     ],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-24T14:47:56.454Z",
     "aiStatus": "no_change",
     "aiReason": "通常営業時間の案内であり、変更はありません。"
   },
@@ -44862,7 +44866,9 @@
     "processedAt": "2026-11-23T23:02:23.128Z",
     "autoApplied": true,
     "aiStatus": "schedule_change",
-    "aiReason": "営業変更検出: 人員不足のため"
+    "aiReason": "営業変更検出: 人員不足のため",
+    "autoApplyConfirmed": true,
+    "autoApplyConfirmedAt": "2026-11-24T14:23:44.001Z"
   },
   {
     "id": "sns_post_tachikawa_20261124_0_2125004319355539611",
@@ -44892,8 +44898,8 @@
       "reason": "特別営業",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-24T14:47:56.454Z",
     "autoApplied": false,
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 特別営業"
@@ -44920,8 +44926,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-24T14:47:56.454Z",
     "autoApplied": false,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
@@ -44953,8 +44959,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-24T14:47:56.454Z",
     "autoApplied": false,
     "aiStatus": "match",
     "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
@@ -44986,8 +44992,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-24T14:47:56.454Z",
     "autoApplied": false,
     "aiStatus": "match",
     "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
@@ -45019,8 +45025,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-24T14:47:56.454Z",
     "autoApplied": false,
     "aiStatus": "match",
     "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
@@ -45047,8 +45053,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-24T14:47:56.454Z",
     "autoApplied": false,
     "aiStatus": "match",
     "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
@@ -45063,8 +45069,8 @@
     "postText": "@wataya_s99 豊昇龍関はまだ怪我が完治していない印象でしたよね。休場をしないで千秋楽を迎えた事が今場所の収穫ですね。来場所に期待しましょう♪ 藤の川関、大相撲体重無差別の真骨頂！怖いのは怪我だけです💦 伸び盛りの若手の関取衆に頑張ってもらいましょう！",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-24T14:47:56.454Z",
     "aiStatus": "no_change",
     "aiReason": "投稿内容は相撲に関する話題であり、ラーメン二郎相模大野店の営業情報に関する言及はありません。"
   },
@@ -45081,8 +45087,8 @@
       "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-NUlI-MYhXGMNW0jKWGbGSSBTdkzZUmZTKbTC0RU0Lps3_YYwWWq0rP7PK_W2mQmXDNYAwAjYjDEMZM52P8iNcoXH4IGAcpfDrkmXHCIB9fxeXsamHXZO2po0NzSlUEcc5R8W_bdttrJsbIU3bzWGXg=="
     ],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-24T14:47:56.454Z",
     "aiStatus": "no_change",
     "aiReason": "11/24(火)は限定メニュー提供の通常営業です。"
   },
@@ -45110,7 +45116,9 @@
     "processedAt": "2026-11-24T01:01:45.270Z",
     "autoApplied": true,
     "aiStatus": "schedule_change",
-    "aiReason": "営業時間の変更を検出"
+    "aiReason": "営業時間の変更を検出",
+    "autoApplyConfirmed": true,
+    "autoApplyConfirmedAt": "2026-11-24T14:23:09.527Z"
   },
   {
     "id": "sns_post_sapporo_20261124_0_2125027470223315145",
@@ -45142,7 +45150,9 @@
     "processedAt": "2026-11-24T01:01:55.742Z",
     "autoApplied": true,
     "aiStatus": "schedule_change",
-    "aiReason": "営業時間の変更を検出"
+    "aiReason": "営業時間の変更を検出",
+    "autoApplyConfirmed": true,
+    "autoApplyConfirmedAt": "2026-11-24T14:23:37.005Z"
   },
   {
     "id": "sns_post_sapporo_20261125_1_2125027470223315145",
@@ -45161,8 +45171,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-24T14:47:56.454Z",
     "autoApplied": false,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
@@ -45186,8 +45196,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-24T14:47:56.454Z",
     "autoApplied": false,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
@@ -45202,8 +45212,8 @@
     "postText": "おはようございます！ 本日通し営業です☀️ ○11:00~20:00  🍜持ち帰りあります！  ウーバーイーツ始めました～🏍️  無料トッピング｢紅生姜｣あります☺️ トッピング時に「アレ」で！  よろしくお願いします🙇‍♂️",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-24T14:47:56.454Z",
     "aiStatus": "no_change",
     "aiReason": "通常営業の投稿であり、臨時休業や営業時間変更の記載はありません。"
   },
@@ -45217,8 +45227,8 @@
     "postText": "本日通常営業！ ネギあります！  申し訳ございませんが、つけ麺は材料都合により今日明日ありません。  よろしくお願いいたします。",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-24T14:47:56.454Z",
     "aiStatus": "no_change",
     "aiReason": "本日通常営業の報告および限定メニュー（つけ麺）の提供休止に関する投稿であり、営業時間の変更はありません。"
   },
@@ -45232,8 +45242,8 @@
     "postText": "おはようございます。 ラーメン二郎名古屋大曽根店です。 本日昼夜営業です。 昼の部11:00〜14:00 夜の部17:00〜20:00 よろしくお願いいたします。",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-24T14:47:56.454Z",
     "aiStatus": "no_change",
     "aiReason": "本日(2026-11-24)は通常営業です。"
   },
@@ -45247,8 +45257,8 @@
     "postText": "やってまーす https://t.co/qlFFNiMuM7",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-24T14:47:56.454Z",
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   },
@@ -45264,8 +45274,8 @@
       "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-g2gfHFoJnpQTvlZJ-Fu5FR8XWM8VjY55lUMhjGnMyjvju_1qpmCjRjFJjvYhmb7zAkqPf3444v-QZK23Zvk7KSrpHCVM-9VlFUHALYZ__h3n-XA_4ViOHfcy-AcsBTTtNn7tTl_dxAHEZunTErm-QQ=="
     ],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-24T14:47:56.454Z",
     "aiStatus": "no_change",
     "aiReason": "営業情報の変更に関する言及はありません。"
   },
@@ -45279,8 +45289,8 @@
     "postText": "@jinsei_rakuari_ おはようございます。 グウセイってやつですね。 頑張って気をつけます！",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-24T14:47:56.454Z",
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
   },
@@ -45294,8 +45304,8 @@
     "postText": "@rGS5etb2DP6BUSK ここから、これができたらいくら、これができたらいくらとすぐ時給上がります！",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-24T14:47:56.454Z",
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
   },
@@ -45311,8 +45321,8 @@
       "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-6IxDQMAs0DQ3QoRkt4ehUYf7Vr3ANCfgQjROZz5T7j7Vz1lxEVYCcpYLUe8ftkDvUO8awN2MmTQH1ztnTPaIsUjC8Px8pNkd2Yx1WJbzNnwc03NFRugLwzrtvNSSYkEhEoTesknbnWMkSSccGNfOdA=="
     ],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-24T14:47:56.454Z",
     "aiStatus": "no_change",
     "aiReason": "営業情報の変更に関する記載はありません。"
   },
@@ -45326,8 +45336,8 @@
     "postText": "@ZieTwGsgROJMxuP そんなに褒めてくださってありがとうございます！！ そんなこと言い続けていただけるように頑張ります！！",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-24T14:47:56.454Z",
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
   },
@@ -45341,8 +45351,8 @@
     "postText": "@JIRO_wa_gachi ありがとうございます笑  まず火を出さない事が大事って\"め組のだいご\"でやってました笑",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-24T14:47:56.454Z",
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
   },
@@ -45356,8 +45366,8 @@
     "postText": "@tr4y8D5HS449890 文字書き放題！！！！ なんだか表示も気持ち大きくなったような気がします！！",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-24T14:47:56.454Z",
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
   },
@@ -45371,8 +45381,8 @@
     "postText": "@jun1_1883 打首さん終わりの方何人かお越しくださいました！！ 2曲目で二郎に連れてってを歌ってくださったみたいですね！！！",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-24T14:47:56.454Z",
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
   },
@@ -45386,8 +45396,8 @@
     "postText": "@bob123652 返信遅くてすみません！！ あまりハードル上げずにお越しください！！ お口に合いましたでしょうか？ お口に合いましたら、是非またお越し下さい！！",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-24T14:47:56.454Z",
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
   },
@@ -45401,8 +45411,8 @@
     "postText": "@m5U6HWbmgz65221 なんだかいやな事があったら、とりあえず腹を満たすのは正解だと思います！！ やけ食いしたい時は是非またお越し下さい！！",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-24T14:47:56.454Z",
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
   },
@@ -45416,8 +45426,8 @@
     "postText": "@abacaxi8181 すみません！！ ですが、ボッコリ穴が空いたように急に暇になる時間があるんですよー。  またお越しくださいませ！！！ 御来店ありがとうございます！！",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-24T14:47:56.454Z",
     "aiStatus": "no_change",
     "aiReason": "日常的なやり取りであり、営業時間の変更に関する言及はありません。"
   },
@@ -45436,8 +45446,8 @@
       "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne--HThO7XU3_tEXgDRefUGRTVboW9K3ewWK077SmB2qS5HN2EOMArrDS6Em4riB6UKMRVkq3H4g_S40TyhPCXQ-MICL_YpvT1ogCWUE9-JDjlum3UuUXem_z2lUICbUicV6Ba46TrWB26hiSWrLwCMWw=="
     ],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-24T14:47:56.454Z",
     "aiStatus": "no_change",
     "aiReason": "投稿内容は日常的な雑談であり、営業情報の変更に関する言及はありません。"
   },
@@ -45453,8 +45463,8 @@
       "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-0Cn1hfxo9ax4ut8NCYjRLQl4INIR1PYdbYQ3vfY77ezLXUc3Bpa9UZHWFq2I8FL3mp6nDJtuTeNyjDoa-YaAqo5Um84oFupRd_Ihu4hlz9A8_VJhx_E_SqgP4EnzJN2yUqJ-fuj2S2KiHvjmfUVzfQ=="
     ],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-24T14:47:56.454Z",
     "aiStatus": "no_change",
     "aiReason": "デリバリーシステムのシステムエラーによる一時的な受注停止であり、店舗の営業スケジュール変更ではないため反映対象外。"
   },
@@ -45468,8 +45478,8 @@
     "postText": "お持ち帰りの豚もあります！ 1本2000円です！  入れ物は無くて大丈夫です！  たべて買うひとは 最初に麺の量を聞かれた時に言ってください！  お持ち帰りだけのひとは ならばないで 入口から声をかけてください！  これが消えたら売り切れです！  よろしくお願いします！",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-24T14:47:56.454Z",
     "aiStatus": "no_change",
     "aiReason": "テイクアウト販売に関する案内のみであり、営業時間の変更や臨時休業の告知は含まれていません。"
   },
@@ -45483,8 +45493,8 @@
     "postText": "いまいるひとでおわりです！ ごめんなさい！",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-24T14:47:56.454Z",
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   },
@@ -45514,7 +45524,9 @@
     "processedAt": "2026-11-24T06:02:30.726Z",
     "autoApplied": true,
     "aiStatus": "schedule_change",
-    "aiReason": "営業時間の変更を検出"
+    "aiReason": "営業時間の変更を検出",
+    "autoApplyConfirmed": true,
+    "autoApplyConfirmedAt": "2026-11-24T14:22:56.810Z"
   },
   {
     "id": "sns_post_routine_sagamiohno_2125113039393530258",
@@ -45534,8 +45546,8 @@
       "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-8CfzJgQIbsyyK8lEgLGJUX3TYDm8ngtOpgTf0o-SkTy7w4hfX3vf2SfoMjO-lGE-CDNan1X1VRd-mxbniYmVMAIXxRCKTCY1kPp9hirN07mMSb5a38kAY-d3dWl_K1INPrhn5n1ScEJUSOuV4Ik2lA=="
     ],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-24T14:47:56.454Z",
     "aiStatus": "no_change",
     "aiReason": "通常営業の案内であり、営業時間変更なし"
   },
@@ -45549,8 +45561,8 @@
     "postText": "@pupone_acr7 こんにちは。 ご来店、ありがとうございます。  当店は閉店時刻に最後を作り終えるように待ち人数に応じて 所謂、宣告をしています。  13:30前でも終了する時が ありますので「早仕舞い」では ありません。  ご留意下さいませ。",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-24T14:47:56.454Z",
     "aiStatus": "no_change",
     "aiReason": "店舗からの営業形態に関する説明であり、臨時休業や営業時間変更の告知ではないため変更なし。"
   },
@@ -45566,8 +45578,8 @@
       "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-YcIEKVfglMD37pfGRLkVFKYz33H3_BtHpyyYQHN3uf8hYN4yAjbmu3fJs37RmqFcTiQ2TL6OnLxarNUpNdkjI0bT40Wlh8NlzK9J5g3cQuCj1es_yr0rqf_zDBZdd9fFRsSXRaht3ZTKNihxyylDQA=="
     ],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-24T14:47:56.454Z",
     "aiStatus": "no_change",
     "aiReason": "本日の夜の部における限定商品の販売、および12/12のテイクアウト販売のみの実施に関する告知（店内営業の変更なし）"
   },
@@ -45581,8 +45593,8 @@
     "postText": "本日17時から店内営業とテイクアウト販売します。営業時間17:00〜21：00",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-24T14:47:56.454Z",
     "aiStatus": "no_change",
     "aiReason": "通常営業の範囲内であるため変更なし"
   },
@@ -45598,8 +45610,8 @@
       "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-m3SZnjKnRLzL9BnuajbxlUkIzTyL9ZZJJ4WxZOdZ78dSLdEi0y4msfTPDvpKN-zrWXcVKzcDD0EzAAN0ZlxjZOwvJJj_TFz4Rg0nlBP-XUblfocvwbWZJm0hxZPmmD-_eFqFsvV6aDLq2e1BiKrUCg=="
     ],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-24T14:47:56.454Z",
     "aiStatus": "no_change",
     "aiReason": "日常投稿のため、営業情報の変更はありません。"
   },
@@ -45613,8 +45625,8 @@
     "postText": "ただ今お並びのお客様までで、本日の営業終了となります。よろしくお願いします。",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-24T14:47:56.454Z",
     "aiStatus": "no_change",
     "aiReason": "本日の営業終了告知のため、変更なし"
   },
@@ -45640,8 +45652,8 @@
       "reason": "材料の都合",
       "confidence": 0.95
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-24T14:47:56.454Z",
     "autoApplied": false,
     "aiStatus": "schedule_change",
     "aiReason": "営業変更検出: 材料の都合"
@@ -45656,8 +45668,8 @@
     "postText": "本日、24日の切り落としは 売り切れました。",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-24T14:47:56.454Z",
     "aiStatus": "no_change",
     "aiReason": "本日分の切り落とし売り切れ報告のみであり、営業時間の変更はありません。"
   },
@@ -45678,8 +45690,8 @@
       "reason": "",
       "confidence": 1
     },
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-24T14:47:56.454Z",
     "autoApplied": false,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
@@ -45694,8 +45706,8 @@
     "postText": "ラーメン二郎名古屋大曽根店です。 只今の時間、並びをもちまして本日の営業は終了とさせていただきます。 よろしくお願いいたします。",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-24T14:47:56.454Z",
     "aiStatus": "no_change",
     "aiReason": "本日の営業終了告知のみであり、臨時休業や営業時間変更には該当しません。"
   },
@@ -45709,8 +45721,8 @@
     "postText": "上着の取り間違いが発生しました。心当たりのある方は至急連絡下さい。よろしくお願いいたします。",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-24T14:47:56.454Z",
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   },
@@ -45740,6 +45752,8 @@
     "processedAt": "2026-11-24T12:33:00.416Z",
     "autoApplied": true,
     "aiStatus": "schedule_change",
-    "aiReason": "営業変更検出: 都合により"
+    "aiReason": "営業変更検出: 都合により",
+    "autoApplyConfirmed": true,
+    "autoApplyConfirmedAt": "2026-11-24T14:22:47.382Z"
   }
 ]
