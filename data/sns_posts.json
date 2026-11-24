@@ -45472,5 +45472,48 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "テイクアウト販売に関する案内のみであり、営業時間の変更や臨時休業の告知は含まれていません。"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2125101028362334646",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2125101028362334646",
+    "postedAt": "2026-11-24T05:35:42.000Z",
+    "postText": "いまいるひとでおわりです！ ごめんなさい！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_kashiwa_20261124_0_2125105572651610513",
+    "shopId": "kashiwa",
+    "shopName": "柏店",
+    "postSource": "x",
+    "postUrl": "https://x.com/genkimoriya/status/2125105572651610513",
+    "postedAt": "2026-11-24T05:53:45.000Z",
+    "postText": "お世話になっております。 ラーメン二郎柏店です。  本日11月24日18時〜20時までの夜営業もいたします。  どうぞよろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "special_open",
+      "startDate": "2026-11-24",
+      "endDate": "2026-11-24",
+      "hours": [
+        [
+          18,
+          20
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-11-24T06:02:30.726Z",
+    "autoApplied": true,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]

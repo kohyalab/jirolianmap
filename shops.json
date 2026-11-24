@@ -7411,6 +7411,20 @@
         "reason": "都合により",
         "sourceUrl": "https://x.com/genkimoriya/status/2108470772897558568",
         "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-24",
+        "endDate": "2026-11-24",
+        "hours": [
+          [
+            18,
+            20
+          ]
+        ],
+        "reason": "",
+        "sourceUrl": "https://x.com/genkimoriya/status/2125105572651610513",
+        "autoApplied": true,
+        "autoAppliedAt": "2026-11-24T06:02:30.726Z"
       }
     ],
     "shiftsByDay": {
