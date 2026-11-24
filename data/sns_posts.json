@@ -45067,5 +45067,23 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "投稿内容は相撲に関する話題であり、ラーメン二郎相模大野店の営業情報に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_tachikawa_2125018396324749471",
+    "shopId": "tachikawa",
+    "shopName": "立川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jirotachikawa/status/2125018396324749471",
+    "postedAt": "2026-11-24T00:07:21.000Z",
+    "postText": "11/24(火)、特別営業でも時間内売り切れ無し！ 昼11:00-14:30 夜17:00-21:30  限定:NBC 　・煮干しカレー汁なし  　・#14 極太麺本日限定 　　→無くなり次第通常麺に切替り  　・粉チーズ、相性バッチリ♪ 　　玉ねぎもおすすめ  限定営業でも当店は、ラーメンもあります。 https://t.co/6BrCBLcNoe",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-cpUo2t7tXZcq80nZWXbC0OphHrwFt_IK6T9hR_lZopYHrJNnnz1jFQk6pM4zLTjlIIrQ334qhPUBqiLeOrulUy89TyY_p8n20tHRnQM_5uF8Eo4jCAvyxAhdcNfrLnm5cxlznbTiq5OLYAzarg9Bwg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-NUlI-MYhXGMNW0jKWGbGSSBTdkzZUmZTKbTC0RU0Lps3_YYwWWq0rP7PK_W2mQmXDNYAwAjYjDEMZM52P8iNcoXH4IGAcpfDrkmXHCIB9fxeXsamHXZO2po0NzSlUEcc5R8W_bdttrJsbIU3bzWGXg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "11/24(火)は限定メニュー提供の通常営業です。"
   }
 ]
