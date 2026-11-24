@@ -45457,5 +45457,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "デリバリーシステムのシステムエラーによる一時的な受注停止であり、店舗の営業スケジュール変更ではないため反映対象外。"
+  },
+  {
+    "id": "sns_post_routine_shndaita_2125071719857811709",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2125071719857811709",
+    "postedAt": "2026-11-24T03:39:14.000Z",
+    "postText": "お持ち帰りの豚もあります！ 1本2000円です！  入れ物は無くて大丈夫です！  たべて買うひとは 最初に麺の量を聞かれた時に言ってください！  お持ち帰りだけのひとは ならばないで 入口から声をかけてください！  これが消えたら売り切れです！  よろしくお願いします！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "テイクアウト販売に関する案内のみであり、営業時間の変更や臨時休業の告知は含まれていません。"
   }
 ]
