@@ -45570,5 +45570,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "本日の夜の部における限定商品の販売、および12/12のテイクアウト販売のみの実施に関する告知（店内営業の変更なし）"
+  },
+  {
+    "id": "sns_post_routine_sengawa_2125119676787400729",
+    "shopId": "sengawa",
+    "shopName": "仙川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjiro26/status/2125119676787400729",
+    "postedAt": "2026-11-24T06:49:48.000Z",
+    "postText": "本日17時から店内営業とテイクアウト販売します。営業時間17:00〜21：00",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の範囲内であるため変更なし"
   }
 ]
