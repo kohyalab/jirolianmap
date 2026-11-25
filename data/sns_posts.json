@@ -45966,5 +45966,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "11/25(水)は通常通りの営業です。"
+  },
+  {
+    "id": "sns_post_routine_kameido_2125451403191898409",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2125451403191898409",
+    "postedAt": "2026-11-25T04:47:58.000Z",
+    "postText": "只今並びの方まででお昼の部は終了です。夜の部もよろしくお願いします",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "リアルタイムの昼の部終了告知であり、営業時間の変更には該当しません。"
   }
 ]
