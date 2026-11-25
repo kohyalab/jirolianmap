@@ -45996,5 +45996,42 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "現在外並び9名というリアルタイムの混雑状況報告であり、営業時間の変更や臨時休業に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_sengawa_2125474705641771243",
+    "shopId": "sengawa",
+    "shopName": "仙川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjiro26/status/2125474705641771243",
+    "postedAt": "2026-11-25T06:20:33.000Z",
+    "postText": "本日17時から店内営業とテイクアウト販売します。営業時間17：00〜21：00",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2125476292569210983",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2125476292569210983",
+    "postedAt": "2026-11-25T06:26:52.000Z",
+    "postText": "本日 ◇11/25水 【夜】 →こちらをご覧のお客様限定です！ ↓ ※お客様ご自身で→丸の🟥赤又は白🤍食券を１枚お取りになって席までお越しください。→食券は券売機の前の台の二段目に置いておきます。 ※必ず着席時にお出しください。 ※サービス中の目印は［黄色いハンカチ］ どうぞご利用下さい♪ https://t.co/zCmnewHnXp https://t.co/rah2pDp2Ca",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-trr3LQtmHRhBwAWa3J2fdiHJorbl1vdvqoVOj24RtEYPbE-P8Lwsi7Kwe_fnWC9CbKFzcNdwjhZyxYJqi_vIeSFhzIdZdJAW4Sojp-BD8iJ9lAyAsyD2cR6X9GFWUl0eJsjXwK0E7sPf8Zm1eHGwVg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-KuPPX9fyoPJfCa7WGISoQhtFe4ezWTi-nXvkXV4a_QIDVolF0xWiW8ed44K5D4A__jz3Hb6wRAnxj5K6aqTRR14r1hmaizWYAvtUyaYYDac8YWAukWlYM-w_q7u6WO15Ky_65xjX1pf7Lt5hdpx2qw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-goasTFSdQo6LCIHUQDcg9yuP3qwlJTnztCHIPyMvtH-o4hkGtU0Pok296uB-sfRbC-CX9rCukpqsxc9kXnFd6uHhMs-HUokrgUOTryMFk7AZ3rIrqThV12vfAOy_3SVCQsd-PECkKtX2zOAEGmYlSw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-sRMtNBmzfKZYAziljg7lgAucS0VJ22wJQyUqamPyW2v2Ce6T0ysc7dMgzmfaLHnrnSZw-oBOorasdEWa1Yfv-FTRU_vVMYFuke1njRAsNW95wSYKCPcrsgLeOUJMrpIX0YuLyzv1i0IqsTXvjpPRmg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-8DiLa9jB8CWPmCUg49AK0326W15dGULOprd7QoPFo4x4RgDBvEVHTedxCRSIFrLt6gfrryqqulvl_FazRCVCvlA0Kicr3z_fNIFbZqFps1dKI4Eh9MFw_MFWHQCxLmfpuj3F9kt9HByZlXcWJfRo8A==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-nZ6t6F7PBLXepgaxEIN2guAxMT5UdYGE_Kl4KcbcQUZbsLDXUjvyj_GWJk_TFeuzzl36N64hNw0QkmV8xUGxYYJT0Kk6ALEcHDOZM_gmlcHWHk8YCXi8Tc8Vds9HWJzmHxpoYil9sNXQnnWfaeBPxA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピング（紅しょうが・刻みしょうが）の案内であり、営業時間の変更はありません。"
   }
 ]
