@@ -46113,5 +46113,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業情報に関する言及なし"
+  },
+  {
+    "id": "sns_post_routine_kannai_2125589838422528149",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2125589838422528149",
+    "postedAt": "2026-11-25T13:58:03.000Z",
+    "postText": "こんばんは。 またまたやってしまいました！定休日なのに仕事モードで出勤したら誰も居ませんでした。 そのまま帰るのもどうなのかと現在スライスチーズもある事ですし挽肉とトマトと玉ねぎでソース作りました。 明日ご希望の方は トマトの波動の食券でお願いします。 海老っちょ辣油は少しお休みです",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定メニュー（トマトの波動）の案内であり、営業時間の変更や臨時休業の告知は含まれていません。"
   }
 ]
