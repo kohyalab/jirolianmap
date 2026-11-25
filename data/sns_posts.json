@@ -46145,5 +46145,40 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業時間の変更や臨時休業はありません。"
+  },
+  {
+    "id": "sns_post_routine_fujisawa_2125702488720609378",
+    "shopId": "fujisawa",
+    "shopName": "湘南藤沢店",
+    "postSource": "x",
+    "postUrl": "https://x.com/fujirow26/status/2125702488720609378",
+    "postedAt": "2026-11-25T21:25:41.000Z",
+    "postText": "おはようございます。  11月26日(木)  しょっぱ豚🐷 無料トッピング！ 崩し豚、豚カス醤油、1番スープ、にんにく🧄生姜🫚とにかく色々  魔ダレ青葱 自家製タレやみつき🔥  本日もよろしくお願いいたします。 https://t.co/jBPD2N6PY2",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Rey5iSS1jOvEnj9_RmmNEoXY4hFOeEdcHry9u7iWplSdT5MYNIXArPrpyJs6jYPBjzprHUyWcQ0pfxDzw5hHICFj7tcdlmqaMyy71diT08ETuWGC1zberZ3IRVF0k56_fd9BnsF2DDP6myQAlAzKVw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-jE4rhyZI1AFxbt6QyYHuv-bLn37xCsCTQ2gr2YGs1xkWHh1inxWTWPYL7FwFaCzKMeu-WpBqUBer-c2eqMibIell8rO-QfD7Hr4MXf5RFQ6T67-lOx4uNP-uHoSW942Xk4GEOqN6U6bsBWMXBtIZnw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの案内であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_koshigaya_2125704186805600439",
+    "shopId": "koshigaya",
+    "shopName": "越谷店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ksgy26/status/2125704186805600439",
+    "postedAt": "2026-11-25T21:32:26.000Z",
+    "postText": "おはようございます！ ラーメン二郎越谷店です！  11月26日(木) 昼11:00〜14:30LО 夜17:00〜20:30LО ご来店お待ちしております🙇 https://t.co/WfKEbHyCwG",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-g4g3H6fauIdiuWbCnmO914cj2WKtNnS0VYxx0PE_L-AZV8QWzv3w1OuBDMLZCIw59tMWb4vJTSbkI8U45ptCPPcb_keRSKtPOnbWABFukA6e2vDPGFgSnUOgpcjY_t_58wGxl1dyg4zU5tLhenfvJg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内であり、変更はありません。"
   }
 ]
