@@ -7854,6 +7854,15 @@
         "reason": "",
         "sourceUrl": "https://x.com/r26akgd/status/2124676816380334381",
         "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-27",
+        "endDate": "2026-11-28",
+        "hours": [],
+        "reason": "都合により",
+        "sourceUrl": "https://x.com/r26akgd/status/2125381715506204869",
+        "autoApplied": true,
+        "autoAppliedAt": "2026-11-25T00:32:29.310Z"
       }
     ],
     "shiftsByDay": {
