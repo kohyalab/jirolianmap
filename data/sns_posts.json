@@ -45907,5 +45907,47 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "本日通常営業の報告のみであり、臨時休業や営業時間変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_kawagoe_2125396736743260394",
+    "shopId": "kawagoe",
+    "shopName": "川越店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kwge26/status/2125396736743260394",
+    "postedAt": "2026-11-25T01:10:44.000Z",
+    "postText": "おはようございます！ 本日通し営業です☀️ ○11:00~20:00  🍜持ち帰りあります！  ウーバーイーツ始めました～🏍️  無料トッピング｢紅生姜｣あります☺️ トッピング時に「アレ」で！  よろしくお願いします🙇‍♂️ https://t.co/j4G6LGmB5Y",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-JLGOomyH7ayC2y5SP8fpsr3QlJadv_C3bLSsk87N2JrwqwQZzWQOcMXDhaN3K6n1qO9bnJMGW9osr3K3la-HosPfRylX8doC47aceqg61yR1h-NGPNj-HpGgi4ihG-70WLGHWHQBa4t6HzptIZjucQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_mejirodai_20261125_0_2125398290011496549",
+    "shopId": "mejirodai",
+    "shopName": "めじろ台店",
+    "postSource": "x",
+    "postUrl": "https://x.com/mejirodai_jiro/status/2125398290011496549",
+    "postedAt": "2026-11-25T01:16:54.000Z",
+    "postText": "毎度ありがとうございます 本日25日水曜日は臨時休業となりますのでご注意下さい よろしくお願いします🙇 https://t.co/27LwsrdWLf",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-BU_0pQKhbKYp2R63PJXCs5k5CcOk27J-8kph3qasRBD5R8BYY2s---oDMQzzY3QA-mdIw13VMA3li_TPEOy85XHpTqxh68unFxJRvPLhE4qChdV3VWjIbU7qukInH8umcgCDPNgsGh0TeOXtP4cKAg=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-25",
+      "endDate": "2026-11-26",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "autoApplied": false,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
