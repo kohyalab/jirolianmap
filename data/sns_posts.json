@@ -46048,5 +46048,22 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "限定メニューおよびトッピングの案内のみであり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_hitotsubashi_2125501637095760201",
+    "shopId": "hitotsubashi",
+    "shopName": "一橋学園店",
+    "postSource": "x",
+    "postUrl": "https://x.com/1284jiro/status/2125501637095760201",
+    "postedAt": "2026-11-25T08:07:34.000Z",
+    "postText": "昨日上着取り違いがありました。心当たりのある方は至急連絡下さい。 誤って持ち帰られた上着はUNIQLOの黒のフリース、サイズはXLです。 よろしくお願いいたします。 https://t.co/ZYa9ZbZBJB",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-gknplRAjDO6O7mUaG1-yX0klnYjf5oRu8eOzaWlKUnhtNpRRQ8Ra31bBn37wlGma072ZwAUAGmSnhXEBtoiqM3i6sdIWBXpxcD2DN46Prf77sOKITx5DWoaIb-F-a5x6zNRiXAbuXCtGp0LnlIJFFw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "店舗からの落とし物に関する告知であり、営業時間の変更や臨時休業に関する情報はありません。"
   }
 ]
