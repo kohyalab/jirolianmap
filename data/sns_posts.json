@@ -46033,5 +46033,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "限定トッピング（紅しょうが・刻みしょうが）の案内であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_koshigaya_2125482930063749561",
+    "shopId": "koshigaya",
+    "shopName": "越谷店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ksgy26/status/2125482930063749561",
+    "postedAt": "2026-11-25T06:53:14.000Z",
+    "postText": "毎度ありがとうございます！ ラーメン二郎越谷店です！  夜の部「つけ麺」やります！ 塩ラーメン「現金100円」にて対応します。 ご来店お待ちしております🙇 https://t.co/8U4HBuxVrB",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定メニューおよびトッピングの案内のみであり、営業時間の変更はありません。"
   }
 ]
