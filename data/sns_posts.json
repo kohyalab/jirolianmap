@@ -46095,5 +46095,23 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "材料切れによるリアルタイムの営業終了告知のため、営業スケジュールの変更には該当しません。"
+  },
+  {
+    "id": "sns_post_routine_kameido_2125569658300641754",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2125569658300641754",
+    "postedAt": "2026-11-25T12:37:52.000Z",
+    "postText": "僕は小林まこと先生が描かれた「柔道部物語」の西野のこの大外刈りが世の中の大外刈りの中で1番好きです。結構無理な体制から技をかけてるのに技をかけられた三五がこんだけ吹っ飛ぶほどの速くと力強さが伝わってくる https://t.co/uvuzBK6V94 https://t.co/c1L5zgrNwI",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-D9CeD41J41i2VUuPxQVZPUsYLz4uGUqpdPDpoO2emlzb1Y5zm05dohlPL7miMY9xwbmj0Md0FZNgI6ZSI50gKnmbUoznscQApNCAEeAGgGsUEi-go_4T3s_jJqDBCzm2ti2Yr45iUE7DyYQ0Jwf4pQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-L_9WLd-ZWusC50iuhJ5aw3MoadkBkGVrkHBziDLmQ6llTsafMzMpyJfy-W8dVltV8Jye8UNTcAy2Vd5H668KMLHyQM02EvJfOOGtvMgVXRS2PkgpM-uBvFMiYjO1IpoeiVZ6-hMPfuwtQRINJIVQYw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報に関する言及なし"
   }
 ]
