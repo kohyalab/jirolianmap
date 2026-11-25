@@ -45949,5 +45949,22 @@
     "autoApplied": false,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_tachikawa_2125402438517805521",
+    "shopId": "tachikawa",
+    "shopName": "立川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jirotachikawa/status/2125402438517805521",
+    "postedAt": "2026-11-25T01:33:24.000Z",
+    "postText": "ラーメン二郎立川店 11/25(水)、昼夜とも時間内売り切れなし営業です。 昼11:00-14:30 夜17:00-21:30  ①カレー変更券 　昨日の特別営業の材料を使用。  　ただ、煮干し等をきかせた 　和出汁カレーではないのでご留意下さい。  ②持帰りラーメン販売します。 　標準:2人前のスープと生麺+ブタハーフ https://t.co/QWnMapUv1O https://t.co/3fXsqADuNM",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-1mobMKbKVepU0SDCJGiH5vG5ZHuUCshwKiSbCHfCkVwGY9WY5Qpz16_SfOKOW2vu2pITvKVPuuXIcdDmyJBq9851VKAZdmJR-CIZSq372qZfc5dVaOUBe8BcGo2nMBqWmdfNVOCVVixVSKNqaQrgVw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "11/25(水)は通常通りの営業です。"
   }
 ]
