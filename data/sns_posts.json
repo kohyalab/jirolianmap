@@ -46180,5 +46180,78 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の案内であり、変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_yaen2_2125727425992814698",
+    "shopId": "yaen2",
+    "shopName": "八王子野猿街道店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/Jiro_Yaenkaido2/status/2125727425992814698",
+    "postedAt": "2026-11-25T23:04:47.000Z",
+    "postText": "11月26日(木) 11:00～15:00 17:30～21:00 ⭐テイクアウト、鍋二郎あります 並ばず買えます NAあります！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内であり、変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2125730027077796342",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2125730027077796342",
+    "postedAt": "2026-11-25T23:15:07.000Z",
+    "postText": "本日もやります！  ◇11/26木 【昼の部のみ営業】 ご申告制🈸 【テイクアウト割り🈹】  →こちらをご覧のお客様限定→［テイクアウト割🈹］やっております！食券にて。  着席時に『テイクアウト割りお願いします。』と従業員にお申し付けください。各サービス🈂️致します！ ※店内お食事の方のみです。 https://t.co/I2fHclS8od",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-8GZMM1kpIVhuR8n3MKuuCghEQetlS9IxIkZRuquULtZTprOqipH-UYtuoLcXEdgXXlOEhz2iFIPDR-FlmYz2ULCQF2D21qzYRStxORecL_OhijY4YlqLB6YKB6JMWJEnTmuCm7s2zVPvlPSZM5ULtQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "11/26(木)は通常営業（昼のみ）であり、変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2125729184450547881",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2125729184450547881",
+    "postedAt": "2026-11-25T23:11:46.000Z",
+    "postText": "本日 ◇11/26木 【昼】 →こちらをご覧のお客様限定です！ ↓ ※お客様ご自身で→丸の🟥赤又は白🤍食券を１枚お取りになって席までお越しください。→食券は券売機の前の台の二段目に置いておきます。 ※必ず着席時にお出しください。 ※サービス中の目印は［黄色いハンカチ］ どうぞご利用下さい♪ https://t.co/aniOscf3SK https://t.co/x5owI0i9hP",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-2t3j7HUrJB_hMoGd0bOmauPBn0nkVLq6VHRWBjwNRnjH_NSkg5B_Z_l9YgQdl-ll4sFz0H9kNGNt6jhC_t0N-ad4jCF7Bp1sdIOV4ypGKFY_w5OwPt0xBJz1aMNKHrbefKPIxkigYdST9PRzu5Fwgw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-TL04gxa-b6MqnAm6QRabRVgnEJxuKpls665kqoRrNx9V7PWbBa8Ohp0ZId8pNZApnYIvT_5ao3KbtoAnWgvWSOAPfPQwGEMkMkJPf3uJUpiC7NhPbAURol67ARgPIRVJmhdz6KFxA5MCegUpOK-VkA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-GzgVFvwPewazvYlKg77kPzuGyLIgtraFS71Tee7N7VJn6ka9Hf84SKRWKJeZsDlkcLYaoCO37eD9OJWYW42k_OX7Lo8Un3shAA001OWlGEA9vx06EBeDNzC6GUrCZXq0T4--BC1gR4fFelzqkSOfaw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-1YOBzhOtFzPhnKoh4y5RKbKufzrp33P5XHHoxIVUX0-yhsKm2UaVLR_Oqmwb8f64V5NYiu2uOMgfkXnHO4K48TrkjyfO-iSlvrmBopwzY4NSw9KMME394C0pfAdw2YGDhaf9NkrdElIIJkmAFmaD6Q==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-l4Bh-Z5zIwBKKOSPVS-4mRv4TEyTG75R3AEcADPQmrUFLcP2PYsA8Cp6VirdgyDZrOQ4IO2w_o2qgU5jo00TTGN6JZmnSEs5LgtHmhk1KAtFsKeVhdZtBOfqDZAl1UILHbKSikUxiLPBzNDxoxLm1g==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-6Y0kQurLKyDhpTZZagAwR7XBAtLMFPlrrr5FOWzmzhEDhZ-ROFz6OEMjmHkwkicq1PNlJMM2od_rTbl1eo-RCVbEsPwhasK8zAaCBCIABJpJ5VIOJzGZ-DiCETBfFTOqFUIyb3B3LUahflQ2y8N1kA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの案内であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2125727467679953291",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2125727467679953291",
+    "postedAt": "2026-11-25T23:04:57.000Z",
+    "postText": "おはようございます。  本日 ◇11/26木 【昼の部のみ🈺営業】 10:20から〜 14:00迄にご来店ご到着お並びのお客様まで営業致します。  →［ニンニクとゴマ油のつけ麺］ →［相撲部屋のしょうがダレ］ →［ニンニククタクタ煮🧄］  どうぞー♪ https://t.co/R6NhAOSpb4",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-QxTQSmmt5JBbuZ-cnOaByLRZJ9gacad3Khsj5N1PmQ3kb1RR5VlyjnLBnVdvhui34r2jKnAUH6nNDwFkvhpEs6I_aKM94WTPexIo3PBqJr7T-ifFMPUEBqgefXODkQ7kDQDS7YrAoxe3RdKRXx7anQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-122DmgNuesorwH8PJvDxuRRy6rzZgPW8-_yd3UIi8j_5fQ-WBteHg4-BX3RhWI7av5kvsbovPZFk8GEL7CAS5KBFQx7sqNfCmygLyRhqglR4kpwUUvLTe6_ln-eB4zG-m81gqSoGSe0X3QVflnGCmQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-oL5tgJcdgEIfPG5xkeSt1xgJckrYuvKdVpxw3q-i7SNlH4zkewhgJlezVCAsLErLuE6rRQ-FKh19tlqOB5qKt268dXLmvy6IxRybqv2VK03SlC8t6yhxXnnSNx1dcxuCLPPIwEGwSX35Qgz4Z5jrSA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "11/26(木)は通常営業（昼の部のみ）です。"
   }
 ]
