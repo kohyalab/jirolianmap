@@ -46499,5 +46499,48 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業および限定メニューの案内であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sengawa_2125836910690173123",
+    "shopId": "sengawa",
+    "shopName": "仙川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjiro26/status/2125836910690173123",
+    "postedAt": "2026-11-26T06:19:50.000Z",
+    "postText": "本日17時から店内営業とテイクアウト販売します。営業時間17：00〜21：00",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内"
+  },
+  {
+    "id": "sns_post_nishidai_20261212_0_2125835617309458618",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2125835617309458618",
+    "postedAt": "2026-11-26T06:14:41.000Z",
+    "postText": "こんにちは。 本日、26日、夜の部  煮込みFZ味付き肩ロース・３本 ¥3500、¥1700、¥1600 煮込みFZ味付き切り落とし ¥800×1、¥600×1  あります。 https://t.co/C1uNbFDTnM",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-rhy1WWox6nZk8jaVYBzA80ZwrzJJc31QdTVZtUjFL3Kf7iuRd7MlzXXcIREs4OjqF8XEycEiTfV9_jEcPLMGPtCr3ju4dr0Yr1BimvWzrAzIj6iBUKdXq31FA8hOXbgv9BvLxORrjQzGGnCzwAZpzA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-zNKc2dfwmAg7XJF9I6Mh8t8GpZWrRuIio2_9ffdNWO_X6nFaIYIP2R3Alzz9lEsFCDkpuYI_PeDVEO6EH24j2CG04vEGhyCyg9bsh3z1jJI3yKUYZW6bbmAKSZUA4XvWuyoR-M3GrXn_yjuPwfPV4A==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-9u7yfFqZVoRzy9AM1EnpR1kXp15XDqIGHM7vjz8NzKlEZAnP6Yr8u8MUcBAYm5Oq2KCqlIjA9t39WaCGwgdC-GsAZrrrTF_m_LO5XWf1w-qSTqMFR6P9nI_QwsJLZ9_thWLHGDDjcFDIMiRwTUALpw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-H1kUX-G4e6pQTY1DQ-PXglf1TVfDZmWiTRVEmDcawPYKYnduOeIW2tmbX9YrD6w08QXnHYd0cjNqaC5hrhLMhM2JU02tErl-aNe56FK5JK_N4Eg2pk4R1bVoqp2hxCSaXLUpg9XwfR4pwAG34PWhCQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-12-12",
+      "endDate": "2026-12-12",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "autoApplied": false,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]
