@@ -2,6 +2,110 @@
   "generalRules": [],
   "learnedFeedback": [
     {
+      "id": "sns_post_omiyakoenekimae_20261127_0_2125773122515415471",
+      "timestamp": "2026-11-26T15:38:40.260Z",
+      "shopId": "omiyakoenekimae",
+      "shopName": "大宮公園駅前店",
+      "postDate": "2026-11-26T02:06:22.000Z",
+      "postText": "おはようございます。  11/26木　通常営業 11/27金　休み 11/28土　休み 11/29日　通常営業  宜しくお願いします🤲 https://t.co/DumhxRwTqy",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "aiProposal": {
+        "type": "temporary_closure",
+        "startDate": "2026-11-27",
+        "endDate": "2026-11-27",
+        "hours": [],
+        "confidence": 1
+      },
+      "humanAction": "applied",
+      "evaluation": "correct",
+      "subReason": "auto_apply_confirmed",
+      "finalDetails": {
+        "startDate": "2026-11-27",
+        "endDate": "2026-11-27",
+        "hours": [],
+        "reason": ""
+      }
+    },
+    {
+      "id": "sns_post_asakuragaido_20261127_0_2125381715506204869",
+      "timestamp": "2026-11-26T15:38:40.259Z",
+      "shopId": "asakuragaido",
+      "shopName": "朝倉街道駅前店",
+      "postDate": "2026-11-25T00:11:03.000Z",
+      "postText": "毎度ありがとうございます。 11/27(金)11/28(土)都合によりお休みさせていただきます。 ご来店予定でしたお客様大変申し訳ございません。 よろしくお願い申し上げます。",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業変更検出: 都合により",
+      "aiProposal": {
+        "type": "temporary_closure",
+        "startDate": "2026-11-27",
+        "endDate": "2026-11-28",
+        "hours": [],
+        "confidence": 1
+      },
+      "humanAction": "applied",
+      "evaluation": "correct",
+      "subReason": "auto_apply_confirmed",
+      "finalDetails": {
+        "startDate": "2026-11-27",
+        "endDate": "2026-11-28",
+        "hours": [],
+        "reason": "都合により"
+      }
+    },
+    {
+      "id": "sns_post_ogikubo_20261128_0_2125339142615920908",
+      "timestamp": "2026-11-26T15:38:40.259Z",
+      "shopId": "ogikubo",
+      "shopName": "荻窪店",
+      "postDate": "2026-11-24T21:21:53.000Z",
+      "postText": "28日（土）は休業します",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業時間の変更を検出",
+      "aiProposal": {
+        "type": "temporary_closure",
+        "startDate": "2026-11-28",
+        "endDate": "2026-11-28",
+        "hours": [],
+        "confidence": 1
+      },
+      "humanAction": "applied",
+      "evaluation": "correct",
+      "subReason": "auto_apply_confirmed",
+      "finalDetails": {
+        "startDate": "2026-11-28",
+        "endDate": "2026-11-28",
+        "hours": [],
+        "reason": ""
+      }
+    },
+    {
+      "id": "sns_post_omiyakoenekimae_20261128_1_2125773122515415471",
+      "timestamp": "2026-11-26T15:36:49.400Z",
+      "shopId": "omiyakoenekimae",
+      "shopName": "大宮公園駅前店",
+      "postDate": "2026-11-26T02:06:22.000Z",
+      "postText": "おはようございます。  11/26木　通常営業 11/27金　休み 11/28土　休み 11/29日　通常営業  宜しくお願いします🤲 https://t.co/DumhxRwTqy",
+      "aiStatus": "match",
+      "aiReason": "既に登録済みの臨時スケジュールと一致",
+      "aiProposal": {
+        "type": "temporary_closure",
+        "startDate": "2026-11-28",
+        "endDate": "2026-11-28",
+        "hours": [],
+        "confidence": 1
+      },
+      "humanAction": "applied",
+      "evaluation": "correct",
+      "subReason": "exact_apply",
+      "finalDetails": {
+        "startDate": "2026-11-28",
+        "endDate": "2026-11-28",
+        "hours": [],
+        "reason": ""
+      }
+    },
+    {
       "id": "sns_post_kyoto_20261124_0_2125131887601742082",
       "timestamp": "2026-11-24T14:34:29.826Z",
       "shopId": "kyoto",
@@ -1273,11 +1377,26 @@
   ],
   "evaluationStats": {
     "total": {
-      "correct": 58,
+      "correct": 62,
       "unnecessary": 0,
       "incorrect": 0
     },
     "byShop": {
+      "omiyakoenekimae": {
+        "correct": 3,
+        "unnecessary": 0,
+        "incorrect": 0
+      },
+      "asakuragaido": {
+        "correct": 2,
+        "unnecessary": 0,
+        "incorrect": 0
+      },
+      "ogikubo": {
+        "correct": 3,
+        "unnecessary": 0,
+        "incorrect": 0
+      },
       "kyoto": {
         "correct": 3,
         "unnecessary": 0,
@@ -1338,11 +1457,6 @@
         "unnecessary": 0,
         "incorrect": 0
       },
-      "ogikubo": {
-        "correct": 2,
-        "unnecessary": 0,
-        "incorrect": 0
-      },
       "nagoyaosone": {
         "correct": 2,
         "unnecessary": 0,
@@ -1368,11 +1482,6 @@
         "unnecessary": 0,
         "incorrect": 0
       },
-      "asakuragaido": {
-        "correct": 1,
-        "unnecessary": 0,
-        "incorrect": 0
-      },
       "tachikawa": {
         "correct": 1,
         "unnecessary": 0,
@@ -1392,13 +1501,8 @@
         "correct": 1,
         "unnecessary": 0,
         "incorrect": 0
-      },
-      "omiyakoenekimae": {
-        "correct": 1,
-        "unnecessary": 0,
-        "incorrect": 0
       }
     },
-    "updatedAt": "2026-11-24T14:34:29.826Z"
+    "updatedAt": "2026-11-26T15:38:40.260Z"
   }
 }
