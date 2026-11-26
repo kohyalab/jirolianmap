@@ -46352,5 +46352,70 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "限定トッピング（ごま玉）の案内であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_omiyakoenekimae_20261127_0_2125773122515415471",
+    "shopId": "omiyakoenekimae",
+    "shopName": "大宮公園駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/omiyapark26/status/2125773122515415471",
+    "postedAt": "2026-11-26T02:06:22.000Z",
+    "postText": "おはようございます。  11/26木　通常営業 11/27金　休み 11/28土　休み 11/29日　通常営業  宜しくお願いします🤲 https://t.co/DumhxRwTqy",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-DKS9dNU6beU7-5Fl3cyg8FDOp9-rW22BxFEUk9kibn1YdYa-82ki5mzMKncNXjKwa_49JQE400b28JOJm7FMf2nXpmQWYWdCt97bz-vrbuymthn6M8YL5XD3yyYP79Vceo145ThQKQzNLoKLaMdhHQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-27",
+      "endDate": "2026-11-27",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-11-26T02:32:36.343Z",
+    "autoApplied": true,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_omiyakoenekimae_20261128_1_2125773122515415471",
+    "shopId": "omiyakoenekimae",
+    "shopName": "大宮公園駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/omiyapark26/status/2125773122515415471",
+    "postedAt": "2026-11-26T02:06:22.000Z",
+    "postText": "おはようございます。  11/26木　通常営業 11/27金　休み 11/28土　休み 11/29日　通常営業  宜しくお願いします🤲 https://t.co/DumhxRwTqy",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-DKS9dNU6beU7-5Fl3cyg8FDOp9-rW22BxFEUk9kibn1YdYa-82ki5mzMKncNXjKwa_49JQE400b28JOJm7FMf2nXpmQWYWdCt97bz-vrbuymthn6M8YL5XD3yyYP79Vceo145ThQKQzNLoKLaMdhHQ=="
+    ],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-28",
+      "endDate": "2026-11-28",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "autoApplied": false,
+    "aiStatus": "match",
+    "aiReason": "既に登録済みの臨時スケジュールと一致"
+  },
+  {
+    "id": "sns_post_routine_asakuragaido_2125776297834188810",
+    "shopId": "asakuragaido",
+    "shopName": "朝倉街道駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/r26akgd/status/2125776297834188810",
+    "postedAt": "2026-11-26T02:18:59.000Z",
+    "postText": "本日通常営業！ ネギあります！ よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "本日通常営業の報告のみであり、臨時休業や営業時間変更はありません。"
   }
 ]
