@@ -46270,5 +46270,55 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "11/28(土)は店主が一時不在にする旨の告知ですが、営業は通常通りとの記載があるため変更なしと判定します。"
+  },
+  {
+    "id": "sns_post_routine_kannai_2125760489368220011",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2125760489368220011",
+    "postedAt": "2026-11-26T01:16:10.000Z",
+    "postText": "おはようございます。ラーメン二郎横浜関内店です。  トマトの波動用意しています。赤の食券をお買い求めください。 引き続きスライスチーズも用意しました。紫の食券でお願いします。 揚玉もありますので、ご希望の方はコール時に「アレ」とお伝え下さい。  本日もよろしくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内および限定トッピングの告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_tachikawa_2125757983053562058",
+    "shopId": "tachikawa",
+    "shopName": "立川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jirotachikawa/status/2125757983053562058",
+    "postedAt": "2026-11-26T01:06:12.000Z",
+    "postText": "いいじろうの日、11/26(木) 昼夜とも時間内売切れなしです。  昼11:00-14:30 夜17:00-21:30  ①カレー変更券 　特別営業の材料を使用。 　　※煮干し等をきかせた 　　　和出汁カレーではない  ②持帰りラーメン販売します。 　標準:2人前のスープと生麺+ブタハーフ  2枚目の写真は渋谷で見かけました https://t.co/s1xqSQMyJe",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-RsvhKGFm3FZLmQ4sW5DCETk1aHnABp5--yaiNe-xcsLhpjRen9tGLCm38wQ1tm18zptyy7HXPMYXfRaxyZkqwmnsEZIL4O2o_W6gWP9pNorbuBAvLitSOWfidGtiusAbVscztv4bYVuHEzvsFJagvA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-iJv4yWWZ7tb6UZK58_oUm8a-eulAEM0oy-Za8q-iWH-SYqUIjTH539e_Oa5sloQnkhpnT7UZbNpnDXN_W-M-LPcYTDBAzuy4-MUXSNMby3Kb3iZJXn8oMbu5Ev7LwJ2r2bVkM90ccYdcbUMD-CkkiA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内であり、臨時休業や時間変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_nagoyaosone_2125764147342422227",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2125764147342422227",
+    "postedAt": "2026-11-26T01:30:42.000Z",
+    "postText": "おはようございます。 ラーメン二郎名古屋大曽根店です。 本日昼夜営業です。  昼の部11:00〜14:00 夜の部17:00〜20:00 よろしくお願いいたします！ https://t.co/1FkJGEdyVT",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-g0S6UMumDj8154a-r5A3Bu5PXzc54UD7JmING9tBha2W_zZkBpGiwTdcfUwfwxoytIefpB2gK7uVRACZNvAGsmhDvSwRUMWzWNJqtnRAXtYnphvpTptOG8acz36DUeXG9rd4yOLBqrY1DtE4ys-gqQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内であり、変更はありません。"
   }
 ]
