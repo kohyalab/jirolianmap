@@ -46559,5 +46559,54 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "営業情報の変更はなく、初心者向けの案内投稿です。"
+  },
+  {
+    "id": "sns_post_routine_kameido_2125856576808587322",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2125856576808587322",
+    "postedAt": "2026-11-26T07:37:59.000Z",
+    "postText": "お世話になってます。今日は11月26日（いい二郎の日）ということでタレをちょびっと豪華にしております✨本日は肉カス、ニラ、一味唐辛子、青トウガラシ、ラー油です！結構辛いのでご注文の際はお気をつけください。無くなり次第終了です。よろしくお願いします。 https://t.co/QY3V5WtXkn",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-e1Co3iQYW0tC16kx5yFJ0R82wY-hSoHWo0tEWku7njSCfBcymfPKacC5tlnK89GxoMW1u5I_ZwATcJageoujDBSOa8Vx6AGDce7E7ZaJHmZhMfFVMb-qsuCHeZiWAbmAWZqc8sKSftFqJI9aebwYDg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの案内であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_sagamiohno_20261127_0_2125857300460327116",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2125857300460327116",
+    "postedAt": "2026-11-26T07:40:51.000Z",
+    "postText": "明日 ◇11/27金 【夜の部のみ🈺営業】 17:00から〜 20:30迄にご来店ご到着お並びのお客様まで営業致します。  →［ニンニクとゴマ油のつけ麺］やっております  →［相撲部屋のしょうがダレ］ →［ニンニククタクタ煮🧄］  どうぞー♪ https://t.co/7Q5539YY2r",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-BSrw5zsQgjFmPgh6aCsttLidoZYYPplq8loFtD2ZhTpPF6tIEljurB1HP0i1MYDWEgHso81FGvJh1cqwM3eyDrxjk3iSzvALslL40yHqU1X6thJ6qYlCCE6eF980oCKk6WwdLy7aMb6gsgvWjtSjMA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-PUn1hmZq0S-Krf4iyGNgPM8wQaBTzQZdoXgU0Unm38DP3mlu4s9BWIfk2tqsAP9f2xgilL3EtRJZEIPVtTKkrltOf1fwibVfyTDyh9XgOfjHltWjr3v8vE9dmwRtqcPamjmW71JYa1TJcz7bROQseQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-goo7XLXBSLr3eH3SmMBOjzDTtuy9hT4ZXSqWbDTJvJfsUFIi2oI5tM7q0o5SgKqEu7M8fvot7nhKcZPEh0gkEsa6LLMKrnAVyI_lDDJ3dOLl8LZXrQKMeessWTg1m9CBMxdivtPI9Lc-sTXvDB14FA=="
+    ],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-27",
+      "endDate": "2026-11-27",
+      "hours": [
+        [
+          17,
+          20.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "autoApplied": false,
+    "aiStatus": "match",
+    "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
   }
 ]
