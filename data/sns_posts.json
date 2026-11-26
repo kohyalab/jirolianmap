@@ -46719,5 +46719,20 @@
     "processedAt": null,
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_daily_kameido_2125954024763703648",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2125954024763703648",
+    "postedAt": "2026-11-26T14:05:12.000Z",
+    "postText": "たまにこういうことするくらいなら「ニンニク入れますか？」って聞くシステムを廃止した方がいいんじゃないか（紙に書くとか）という意見も頂くのですが、店主個人的にはこのトッピングを聞くことによってお客さんとちょっとしたコミュニケーションを取れるのが二郎の発明の一つだと思っています。この https://t.co/d3gCGMaxJ5",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
