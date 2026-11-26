@@ -46863,5 +46863,71 @@
     "autoApplied": false,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_kameido_20261127_0_2126085333481926916",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2126085333481926916",
+    "postedAt": "2026-11-26T22:46:58.000Z",
+    "postText": "お世話になってます。今朝になって昼の部出勤のスタッフが体調不良になってしまったので本日27日の昼の部はお休みさせていただきます。夜の部は通常通り営業予定です！申し訳ありませんがよろしくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-27",
+      "endDate": "2026-11-27",
+      "hours": [
+        [
+          17,
+          21
+        ]
+      ],
+      "reason": "スタッフ体調不良のため",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-11-26T23:00:52.429Z",
+    "autoApplied": true,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: スタッフ体調不良のため"
+  },
+  {
+    "id": "sns_post_routine_senjuohashi_2126081431437021485",
+    "shopId": "senjuohashi",
+    "shopName": "千住大橋駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjujirou26/status/2126081431437021485",
+    "postedAt": "2026-11-26T22:31:28.000Z",
+    "postText": "ラー油あります！  ※営業時間10時30分〜 15時30分ラストオーダー！  （※所用により明日のテイクアウト販売は休業となりますのでご注意をお願いいたします！） https://t.co/Fy5OT3mvqX",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内およびテイクアウト休業の告知であり、店内営業の変更はない。"
+  },
+  {
+    "id": "sns_post_asakuragaido_20261127_0_2126087778110947463",
+    "shopId": "asakuragaido",
+    "shopName": "朝倉街道駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/r26akgd/status/2126087778110947463",
+    "postedAt": "2026-11-26T22:56:41.000Z",
+    "postText": "毎度ありがとうございます。 本日明日お休みいたします。 ご来店予定でしたお客様大変申し訳ございません。 よろしくお願いいたします。 https://t.co/eiSuQbqCg3",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-27",
+      "endDate": "2026-11-28",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "autoApplied": false,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
   }
 ]

@@ -1247,6 +1247,20 @@
         "reason": "店の前での転倒事故に伴う清掃のため",
         "sourceUrl": "https://x.com/jiro_kame/status/2123218447161344082",
         "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-27",
+        "endDate": "2026-11-27",
+        "hours": [
+          [
+            17,
+            21
+          ]
+        ],
+        "reason": "スタッフ体調不良のため",
+        "sourceUrl": "https://x.com/jiro_kame/status/2126085333481926916",
+        "autoApplied": true,
+        "autoAppliedAt": "2026-11-26T23:00:52.429Z"
       }
     ],
     "shiftsByDay": {
