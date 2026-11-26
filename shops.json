@@ -8576,12 +8576,12 @@
     "addressText": "中央1丁目27-15",
     "lat": 36.23408227021703,
     "lng": 137.96441006360328,
-    "openedAt": null,
+    "openedAt": "2026-11-26",
     "closedAt": null,
     "urls": {
       "pc": "",
       "rdb": "https://ramendb.supleks.jp/s/175529.html",
-      "tabelog": ""
+      "tabelog": "https://tabelog.com/nagano/A2002/A200201/20030065/"
     },
     "x": "ramen_jiro_mtmt",
     "instagram": "",
