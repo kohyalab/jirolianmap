@@ -46436,5 +46436,23 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の案内およびテイクアウト販売の告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_shndaita_2125807228712341639",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2125807228712341639",
+    "postedAt": "2026-11-26T04:21:53.000Z",
+    "postText": "きょう食べた二郎です！ がんばれ！！！ https://t.co/ZdwehNXzbv",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-wGqqqz7kWwdNrBw632m0Mtsey2ZZXpauHDD0lH7yTikSg17l5OvErPb9oMeklKEuJPu7r8xKB7iAp8sL8MiNolOxVQlRuwNb7igGIudkPTsDB58_cVuk8x1Q0a8aC2U9Edopx4ac92GLsL8BSxJ2Fg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-qITaXXAyF2iaJkAQGz-qjMVARqdMzrT6cYYHG9Tcu7UBg1zrh7hbK2ALbbtNkniKiHTck-k89rk6Kw2gRm5jberyqHnXERyfYrQhVHLWpOPrVOWMPHw9xiGU1s7CYjYEQeYvtjO8tUoTv4MGv1Q-Eg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常の食事投稿であり、営業情報の変更に関する記載はありません。"
   }
 ]
