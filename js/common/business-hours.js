@@ -1,4 +1,4 @@
-/**
+﻿/**
  * JiroBusinessHours - ラーメン二郎 営業日時・祝日・シフト計算共通モジュール
  * 依存: js/common/utils.js (JiroUtils)
  */
@@ -534,7 +534,7 @@
             } else {
                 const todayShifts = this.getTodayShifts(shop, now);
                 const currentHour = now.getHours() + (now.getMinutes() / 60);
-                if (todayShifts?.some(([start]) => currentHour < start)) {
+                if (Array.isArray(todayShifts) && todayShifts.some(([start]) => currentHour < start)) {
                     const nextStart = todayShifts.find(([start]) => currentHour < start)[0];
                     text = `${fmt(nextStart)}-`;
                 } else {
@@ -544,7 +544,7 @@
                         const checkDate = new Date(now);
                         checkDate.setDate(now.getDate() + offset);
                         const checkShifts = this.getTodayShifts(shop, checkDate);
-                        if (checkShifts?.length) {
+                        if (Array.isArray(checkShifts) && checkShifts.length > 0) {
                             let dayPrefix = '';
                             if (offset === 1) {
                                 dayPrefix = "明日";

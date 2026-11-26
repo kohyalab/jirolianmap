@@ -3329,7 +3329,7 @@ ${guidelinesText}
         yesterday.setDate(now.getDate() - 1);
         const yesterdayShifts = (typeof JiroBusinessHours !== 'undefined') ? JiroBusinessHours.getTodayShifts(shop, yesterday) : [];
 
-        if (yesterdayShifts?.length) {
+        if (Array.isArray(yesterdayShifts) && yesterdayShifts.length > 0) {
             const adjustedHour = currentHour + 24.0;
             for (const [start, end] of yesterdayShifts) {
                 if (end > 24.0 && adjustedHour >= start && adjustedHour <= end) {

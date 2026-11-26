@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ja">
 
 <head>
@@ -2556,7 +2556,7 @@
             } else {
                 const todayShifts = getTodayShifts(shop, now);
                 const currentHour = now.getHours() + (now.getMinutes() / 60);
-                if (todayShifts?.some(([start]) => currentHour < start)) {
+                if (Array.isArray(todayShifts) && todayShifts.some(([start]) => currentHour < start)) {
                     const nextStart = todayShifts.find(([start]) => currentHour < start)[0];
                     text = `${formatTime(nextStart)}-`;
                 } else {
@@ -2566,7 +2566,7 @@
                         const checkDate = new Date(now);
                         checkDate.setDate(now.getDate() + offset);
                         const checkShifts = getTodayShifts(shop, checkDate);
-                        if (checkShifts?.length) {
+                        if (Array.isArray(checkShifts) && checkShifts.length > 0) {
                             let dayPrefix = '';
                             if (offset === 1) {
                                 dayPrefix = "明日";
@@ -2723,7 +2723,7 @@
             const yesterdayShifts = getTodayShifts(shop, yesterday);
             let isLateNightOvernight = false;
 
-            if (yesterdayShifts?.length) {
+            if (Array.isArray(yesterdayShifts) && yesterdayShifts.length > 0) {
                 const adjustedHour = currentHour + 24.0;
                 for (const [start, end] of yesterdayShifts) {
                     if (end > 24.0 && adjustedHour >= start && adjustedHour <= end) {
@@ -2971,10 +2971,11 @@
                     const tempStatus = getTemporaryStatus(shop, d);
                     const shifts = getTodayShifts(shop, d);
                     const isPreOpening = isPreOpen(shop, d) || (!shop.openedAt || !shop.openedAt.trim());
-                    const isTodayOpen = !!(shifts && shifts.length > 0 && !isPreOpening);
+                    const isUndecided = shifts === '未定';
+                    const isTodayOpen = !!(Array.isArray(shifts) && shifts.length > 0 && !isPreOpening);
                     let hoursHtml = '';
-                    let plainText = isPreOpening ? 'オープン前' : '休業';
-                    if (!shifts || shifts.length === 0) {
+                    let plainText = isPreOpening ? 'オープン前' : (isUndecided ? '未定' : '休業');
+                    if (!Array.isArray(shifts) || shifts.length === 0) {
                         hoursHtml = `<div style="white-space: nowrap; line-height: 1.1;">${formatShiftTimeText(plainText, 'calendar')}</div>`;
                     } else {
                         plainText = shifts.map(([s, e]) => `${formatTime(s)}-${formatTime(e)}`).join(' / ');
@@ -4545,10 +4546,12 @@
                     const tempStatus = getTemporaryStatus(shop, activeDate);
                     const shifts = getTodayShifts(shop, activeDate);
                     const isPreOpening = isPreOpen(shop, activeDate) || (!shop.openedAt || !shop.openedAt.trim());
-                    const isDayOpen = !!(shifts && shifts.length > 0 && !isPreOpening);
+                    const isUndecided = shifts === '未定';
+                    const isDayOpen = !!(Array.isArray(shifts) && shifts.length > 0 && !isPreOpening);
                     const todayHoursData = (() => {
                         if (isPreOpening) return { html: `<div style="white-space:nowrap; line-height:1.1;">${formatShiftTimeText('オープン前', 'today')}</div>`, text: 'オープン前' };
-                        if (!shifts || shifts.length === 0) return { html: `<div style="white-space:nowrap; line-height:1.1;">${formatShiftTimeText('休業', 'today')}</div>`, text: '休業' };
+                        if (isUndecided) return { html: `<div style="white-space:nowrap; line-height:1.1;">${formatShiftTimeText('未定', 'today')}</div>`, text: '未定' };
+                        if (!Array.isArray(shifts) || shifts.length === 0) return { html: `<div style="white-space:nowrap; line-height:1.1;">${formatShiftTimeText('休業', 'today')}</div>`, text: '休業' };
                         const plainText = shifts.map(([start, end]) => `${formatTime(start)}-${formatTime(end)}`).join(' / ');
                         const htmlContent = shifts.map(([start, end]) => {
                             return `<div style="white-space:nowrap; line-height:1.1;">${formatShiftTimeText(`${formatTime(start)}-${formatTime(end)}`, 'today')}</div>`;
@@ -4933,6 +4936,7 @@
                 return;
             }
 
+            try {
             let mitaShopId = null;
 
             for (const key in markers) {
@@ -4990,6 +4994,10 @@
                 map.invalidateSize();
                 hideLoadingOverlay();
             }, 100);
+            } catch (renderError) {
+                console.error('initApp render error:', renderError);
+                showLoadingError('画面の描画中にエラーが発生しました。\n再読み込みをお試しください。');
+            }
         }
 
         window.addEventListener('resize', () => {
