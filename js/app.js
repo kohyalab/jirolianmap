@@ -1,4 +1,4 @@
-        function getOrCreateUserId() {
+﻿        function getOrCreateUserId() {
             try {
                 let userId = localStorage.getItem('jiro_user_id');
                 if (!userId) {
@@ -208,7 +208,7 @@
             const yesterdayShifts = getTodayShifts(shop, yesterday);
             let isLateNightOvernight = false;
 
-            if (yesterdayShifts?.length) {
+            if (Array.isArray(yesterdayShifts) && yesterdayShifts.length > 0) {
                 const adjustedHour = currentHour + 24.0;
                 for (const [start, end] of yesterdayShifts) {
                     if (end > 24.0 && adjustedHour >= start && adjustedHour <= end) {
@@ -448,7 +448,7 @@
                     const d = new Date(startDate);
                     d.setDate(startDate.getDate() + offset);
                     const shifts = getTodayShifts(shop, d);
-                    if (shifts && shifts.length > maxShiftsInRow) {
+                    if (Array.isArray(shifts) && shifts.length > maxShiftsInRow) {
                         maxShiftsInRow = shifts.length;
                     }
                 }
@@ -468,10 +468,11 @@
                     const tempStatus = getTemporaryStatus(shop, d);
                     const shifts = getTodayShifts(shop, d);
                     const isPreOpening = isPreOpen(shop, d) || (!shop.openedAt || !shop.openedAt.trim());
-                    const isTodayOpen = !!(shifts && shifts.length > 0 && !isPreOpening);
+                    const isUndecided = shifts === '未定';
+                    const isTodayOpen = !!(Array.isArray(shifts) && shifts.length > 0 && !isPreOpening);
                     let hoursHtml = '';
-                    let plainText = isPreOpening ? 'オープン前' : '休業';
-                    if (!shifts || shifts.length === 0) {
+                    let plainText = isPreOpening ? 'オープン前' : (isUndecided ? '未定' : '休業');
+                    if (!Array.isArray(shifts) || shifts.length === 0) {
                         hoursHtml = `<span style="white-space: nowrap; line-height: 1.1; display: inline-block;">${formatShiftTimeText(plainText, 'calendar')}</span>`;
                     } else {
                         plainText = shifts.map(([s, e]) => `${formatTime(s)}-${formatTime(e)}`).join(' / ');
@@ -1473,7 +1474,7 @@
                 if (listSubMode === 'today' || currentMainViewMode === 'today') {
                     const selectedTodayOpen = Array.from(document.querySelectorAll('input[name="today-open-filter"]:checked')).map(cb => cb.value);
                     const shifts = getTodayShifts(shop, activeDate);
-                    const isShopOpenOnDay = shifts && shifts.length > 0;
+                    const isShopOpenOnDay = Array.isArray(shifts) && shifts.length > 0;
                     const shopTodayStatus = isShopOpenOnDay ? 'open' : 'closed';
                     if (!selectedTodayOpen.includes(shopTodayStatus)) {
                         updateMarkerVisibility(shop.id, false);
@@ -2056,6 +2057,7 @@
                 return;
             }
 
+            try {
             let mitaShopId = null;
 
             const currentShopIds = new Set(shops.map(s => s.id));
@@ -2139,6 +2141,10 @@
                 map.invalidateSize();
                 hideLoadingOverlay();
             }, 100);
+            } catch (renderError) {
+                console.error('initApp render error:', renderError);
+                showLoadingError('画面の描画中にエラーが発生しました。\n再読み込みをお試しください。');
+            }
         }
 
         window.addEventListener('resize', () => {
