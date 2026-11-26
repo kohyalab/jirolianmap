@@ -46755,5 +46755,40 @@
     "processedAt": "2026-11-26T15:38:47.005Z",
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_routine_fujisawa_2126063948491592079",
+    "shopId": "fujisawa",
+    "shopName": "湘南藤沢店",
+    "postSource": "x",
+    "postUrl": "https://x.com/fujirow26/status/2126063948491592079",
+    "postedAt": "2026-11-26T21:22:00.000Z",
+    "postText": "おはようございます。  11月27日(金)  しょっぱ豚🐷 無料トッピング！ 崩し豚、豚カス醤油、1番スープ、にんにく🧄生姜🫚とにかく色々  魔ダレ青葱 自家製タレやみつき🔥終了間近！ なくなり次第 野山商店特製味噌青葱🌈  本日もよろしくお願いいたします。 https://t.co/bQsSwoT2Wm",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-WxjfRkNwNGVSDnGKYYCDnYCE0TgnsWs79QifF9jAXMSNK52KFy4fY0BZPiMq0xn8MQAq4Y80-8HeYk0MoQW3GKNVPI0a9LRV788743Dpnes6omPD36eC3p6ayYIEEmBEyUwNrzCYnDgxZNHIilnSxw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-wfxzG3870sJt0zJSY5zaY1pp_1EMQiHrift5i2Np6q2sDR36r24hF-s70p7ImdMTEqbwkHWIBAqH_0wxt-Lu4unlkv0mDMiWSJpfzRvRlqFFGDX_clPuGxuHYAEUzz2tmAPqsC9YFCvX3IotPXoxBQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの案内であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_koshigaya_2126063899816714501",
+    "shopId": "koshigaya",
+    "shopName": "越谷店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ksgy26/status/2126063899816714501",
+    "postedAt": "2026-11-26T21:21:48.000Z",
+    "postText": "おはようございます！ ラーメン二郎越谷店です！  11月27日(金) 昼11:00〜14:30LО 夜17:00〜20:30LО ご来店お待ちしております🙇 https://t.co/WfKEbHyCwG",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-g4g3H6fauIdiuWbCnmO914cj2WKtNnS0VYxx0PE_L-AZV8QWzv3w1OuBDMLZCIw59tMWb4vJTSbkI8U45ptCPPcb_keRSKtPOnbWABFukA6e2vDPGFgSnUOgpcjY_t_58wGxl1dyg4zU5tLhenfvJg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内であり、変更はありません。"
   }
 ]
