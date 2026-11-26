@@ -46484,5 +46484,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "現在外並び10名というリアルタイムの混雑状況報告であり、営業時間の変更や臨時休業に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_routine_kyoto_2125831793102487710",
+    "shopId": "kyoto",
+    "shopName": "京都店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kyoto/status/2125831793102487710",
+    "postedAt": "2026-11-26T05:59:30.000Z",
+    "postText": "こんにちは！本日通常営業です！ 本日「煮ぼ式」あります！  テイクアウトあります！ https://t.co/JHyqAqU2gN",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業および限定メニューの案内であり、営業時間の変更はありません。"
   }
 ]
