@@ -46253,5 +46253,22 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "11/26(木)は通常営業（昼の部のみ）です。"
+  },
+  {
+    "id": "sns_post_routine_nishidai_2125745336736239983",
+    "shopId": "nishidai",
+    "shopName": "西台駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_nishidai/status/2125745336736239983",
+    "postedAt": "2026-11-26T00:15:57.000Z",
+    "postText": "おはようございます。  11/28(土)は葬儀参列のため 11:00頃まで外します。  営業は通常通りですので よろしくお願いします。 https://t.co/exGC63tIRa",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-qj17-WwmlrZNebIp2WHsLks4R8DZhbgxenr4rBGzJ1BR35HewlXJz56WiU3V2Ii1wFgoSeu39C6-doimg_CbDOTSZ1GAudt7_6st_3XqSpYfidaB9wGtiWn2v2eHyTdlY_0gu5Lk0G00dbJognO8qg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "11/28(土)は店主が一時不在にする旨の告知ですが、営業は通常通りとの記載があるため変更なしと判定します。"
   }
 ]
