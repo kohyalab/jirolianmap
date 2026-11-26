@@ -46641,5 +46641,23 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "テイクアウト販売に関する案内であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_mejirodai_2125876949885304983",
+    "shopId": "mejirodai",
+    "shopName": "めじろ台店",
+    "postSource": "x",
+    "postUrl": "https://x.com/mejirodai_jiro/status/2125876949885304983",
+    "postedAt": "2026-11-26T08:58:56.000Z",
+    "postText": "おめでとうございます🎉 https://t.co/YdzrwKeROo",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne--DksGds_idAvfPHPAgXD8fJMtHfNr3B5Y4vZ3KOFOUwR-vgIUSIxNh3hfVHfz0cgESvv5XDg7KDSEz3OZdxyHQkag2Xr9GybmcP-996SEIz1VtrqhvKDFhjTbQLwuJrKkT0GaxG-bEu2RN4rPFXbZA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-TgzzMSXO3KGAj5Y_QJAxHx9Z_V6VgHyMdwSRZBwU0vbqyGescYNkS8id7673blrqoqA9LmuQLdy_zuzLkIKNZBW1rgiXHohzjYBFwCN3dKJiZD6QnsfqYfzz_dFIcdK1ZSoaZ2hGqKUDnrlZD5tgkg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "投稿内容は店舗の開店祝いに関する日常的な報告であり、営業時間の変更や臨時休業に関する情報はありません。"
   }
 ]
