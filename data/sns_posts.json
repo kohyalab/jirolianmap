@@ -46469,5 +46469,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "本日の営業終了告知のみであり、臨時休業や営業時間変更には該当しません。"
+  },
+  {
+    "id": "sns_post_routine_koiwa_2125819042430935521",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2125819042430935521",
+    "postedAt": "2026-11-26T05:08:50.000Z",
+    "postText": "現在外並び10名",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "現在外並び10名というリアルタイムの混雑状況報告であり、営業時間の変更や臨時休業に関する言及はありません。"
   }
 ]
