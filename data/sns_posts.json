@@ -46608,5 +46608,38 @@
     "autoApplied": false,
     "aiStatus": "match",
     "aiReason": "通常営業スケジュール（祝日・特定シフト等含む）と一致"
+  },
+  {
+    "id": "sns_post_routine_jimbocho_2125864649107394834",
+    "shopId": "jimbocho",
+    "shopName": "神田神保町店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jbc_ramen_jiro/status/2125864649107394834",
+    "postedAt": "2026-11-26T08:10:03.000Z",
+    "postText": "ただ今お並びのお客様までで、本日の営業終了となります。よろしくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "本日の営業終了告知のため、スケジュール変更なし。"
+  },
+  {
+    "id": "sns_post_routine_ikuta_2125868316929765709",
+    "shopId": "ikuta",
+    "shopName": "生田駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ikuta_jiro/status/2125868316929765709",
+    "postedAt": "2026-11-26T08:24:38.000Z",
+    "postText": "お持ち帰りチャーシューあります！ ニンニクジャンもつけれます！チャーシューにつけて食べるとおいしいです。 ご希望の方はニンニクジャンの食券をご購入いただくか、現金100円で対応します。1本につき2つまで。チャーシューお持ち帰りの方のみです。 よろしくお願いします。 https://t.co/ESJCcM8r2b",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-h4K-2_Yrd6uuzeGgHMRAFDSDr32_VdL1vWt5ccKiuxBY9f2l3UHhtoMn0EcwVCCq_EUmPTCJRE5gDjZ8XSGfUcOxK44wobnHbhw3-cbu7_E9uVSqZPDAHUqVBr3IWrLw7yCdxphHZDXnn96brth8PA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-jO4tQD0XCqhhr9WvKaDPPWYHAdpBk1jG5U60y2HsFpl0vTRAo95VN1X5ow3stY5VjamRAkNBJvFGwGDljyVVohqwh08dVsyYAxqnyVaorgT3OYTjO2TYr4edXV-BeUnVsiVn0tQj7DXztRp-CFiqYQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "テイクアウト販売に関する案内であり、営業時間の変更はありません。"
   }
 ]
