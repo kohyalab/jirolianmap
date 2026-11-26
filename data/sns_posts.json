@@ -46542,5 +46542,22 @@
     "autoApplied": false,
     "aiStatus": "schedule_change",
     "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_kameido_2125847773715337671",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2125847773715337671",
+    "postedAt": "2026-11-26T07:03:00.000Z",
+    "postText": "お世話になってます。初めてご来店する方へ、麺少なめや麺固めを伝えるタイミングやトッピングのタイミングが分からず不安な方はこちらのクリップを食券に挟んでお持ちください。食券を確認するタイミングでこちらから麺少なめなどお伺いします！ ベテランの方々は従来通りそのままで大丈夫です笑 https://t.co/ZgAIobqnY3",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-SrRXZjBg2OmULPRFp5eCwmKXyYs8oLFEHZ5q3AbJ8l1qokpdl-hV1jJ1g_FGznqzH79FQS2hO_TwzP7IZb3u4rFD6wDBV36QTgwltE1pf4znAWCsqYfun4OmDHp6iq3m1Ie92b5pSa0WzDKRVqowlg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "営業情報の変更はなく、初心者向けの案内投稿です。"
   }
 ]
