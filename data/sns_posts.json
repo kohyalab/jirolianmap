@@ -46674,5 +46674,35 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "本日の営業終了告知のみであり、臨時休業や営業時間変更には該当しません。"
+  },
+  {
+    "id": "sns_post_mention_kameido_2125936741446267247",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2125936741446267247",
+    "postedAt": "2026-11-26T12:56:31.000Z",
+    "postText": "@Ogawa_Etsushi ありがとうございます！でもこのポストは2024年の時のやつです😅笑",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_mention_kameido_2125936621187162435",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2125936621187162435",
+    "postedAt": "2026-11-26T12:56:03.000Z",
+    "postText": "@yamadayoshinob ありがとうございます！でもこのポストは2024年の時のやつです😅笑",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
   }
 ]
