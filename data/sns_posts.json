@@ -47528,5 +47528,35 @@
     "processedAt": "2026-11-27T15:39:36.246Z",
     "aiStatus": "mention",
     "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_routine_ogikubo_2126414338252796415",
+    "shopId": "ogikubo",
+    "shopName": "荻窪店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ogkb_jiro/status/2126414338252796415",
+    "postedAt": "2026-11-27T20:34:19.000Z",
+    "postText": "本日です",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "投稿内容に具体的な営業情報の変更に関する記載がないため、変更なしと判定します。"
+  },
+  {
+    "id": "sns_post_daily_hitachinaka_2126417912403825093",
+    "shopId": "hitachinaka",
+    "shopName": "ひたちなか店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26_hitachinaka/status/2126417912403825093",
+    "postedAt": "2026-11-27T20:48:31.000Z",
+    "postText": "【店内 空調の件】  寒い時期になってまいりました  が、出入り口が開きっぱなしで 店内 扇風機が稼働しており〼  厨房内の空気の二酸化炭素 濃度が 高くなってしまい不完全燃焼による 体調不良に陥るからです  イメージは松戸店に近いと思い〼 ご迷惑おかけいたし〼が ご理解の程よろしくお願いし〼 https://t.co/3prOu8QaPl",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
