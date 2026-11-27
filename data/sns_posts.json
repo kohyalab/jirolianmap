@@ -47211,5 +47211,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "日常投稿のため、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_kannai_2126154461794169196",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2126154461794169196",
+    "postedAt": "2026-11-27T03:21:40.000Z",
+    "postText": "トマトの波動終了しました。 ありがとうございます！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定メニュー終了の報告のみであり、営業時間の変更はありません。"
   }
 ]
