@@ -47479,5 +47479,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "限定メニュー「グッチーズカレー」の提供開始に関する案内であり、営業時間の変更は含まれていません。"
+  },
+  {
+    "id": "sns_post_daily_kameido_2126304862988353817",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2126304862988353817",
+    "postedAt": "2026-11-27T13:19:18.000Z",
+    "postText": "これは店主はケモ化＋女体化ということで良いのか！？笑 https://t.co/pg3AZgAVP2",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
