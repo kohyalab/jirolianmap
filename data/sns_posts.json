@@ -47303,5 +47303,20 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_koiwa_2126181786967523784",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2126181786967523784",
+    "postedAt": "2026-11-27T05:10:15.000Z",
+    "postText": "現在外並び18名。  まもなく終了宣告が出る見込みです。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "リアルタイムの並び状況および終了宣告の示唆に関する投稿であり、営業スケジュールの変更には該当しません。"
   }
 ]
