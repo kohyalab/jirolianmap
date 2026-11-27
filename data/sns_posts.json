@@ -47458,5 +47458,26 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "本日の営業終了告知のみであり、臨時休業や営業時間変更には該当しません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2126295380979769765",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2126295380979769765",
+    "postedAt": "2026-11-27T12:41:38.000Z",
+    "postText": "【ご案内】 明日11/28土曜日より ［グッチーズカレー］ 2回目やります！ ※2週間程度の予定です。  よろしくお願い致します！ https://t.co/8NlK0G9Mei",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-aTEtDw8XmewqoHTRjv0NJcF-KfwEdMie4HuseElkvcODMD6Wl4FTjpz1xwcP1NaNSxQT65cb3q4jDnE7gqBoMxaBBhZG0Hu0fGOenUkhcQ8F4ALv9fHy7I7WimbLJwZqSYWVHTzWYm2gg3CCLlBXMA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-IYFkcgdgFe9r_aTQQfvrGjCs3FN_KxZC0Fj1KDiiskyqGANkFif6y_ImD7CVyK2erV1i737rg9Md50g5KSYxHN2f_KcP3HiZCGUJGicoxHC0kji4E8db_3TvYvK6gqduVJ4BNIyOxeh5v8UZcHpeTw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-S9s9LiYKd7T_7McCe5P_m_dn-1vy2Y3J0J7PZnEs-KX_3q5tM_qSH2xOVpib0PxE9VovTbkCQAB3ULK5wpj6vbdiqLTDP-XhWFEJfIcboKjJ6R2so25lx5PNWev603KpW6slwQNtLdTo6XX0CJacIQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-zKVbDprfweyTcNeTEK4zdyumTVFXS27xKsuXjMLFZ8TP99OClIJs1dQZb8dAltdrhCfhNHVEZplBRcuzbvLwa7Rl-hlb-AAYqetm1zxNIbVSByj5_F6ADApKxgu_b71WYjX0f-Fe4TCOcHSOcoCmSg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne--qbeXoj0RW1bWaaIn0nf-M8aMGGIjYVMIOATjtrPoMsJyVt1PDaAP2VVo6OH-axlMg320Uo2omHnmJneHoog_ej8U-nTGMeyQAul5Vqlw1U3WtgZpTjFQwBV6EF4vmVof9L6U2bAK6rYkpk1jXsRuw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定メニュー「グッチーズカレー」の提供開始に関する案内であり、営業時間の変更は含まれていません。"
   }
 ]
