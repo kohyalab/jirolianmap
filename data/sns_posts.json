@@ -47603,5 +47603,66 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の告知のため、変更なし。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2126449289719316707",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2126449289719316707",
+    "postedAt": "2026-11-27T22:53:12.000Z",
+    "postText": "[相撲部屋のしょうがダレ］ 私が育った《大相撲　放駒部屋》のちゃんこで食べた[鉄板焼きのタレ]をアレンジしたものです。 今はテレビなどでも相撲部屋の[ちゃんこの風景]が放送される時代ですもんね… 昔は陽が当たらない日陰の部分です笑 お椀のタレに麺、野菜、ブタをつけて食べてみてください！！ https://t.co/KXDro1vLjx",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-g90Bdep2wqVQnPsyOW8cBxrZHIQmplJFJCvtya634aePGCPJvqhczfIkM_Zf79x5fS_0EiF9dwkpxFfxyKb2eh1SQpD86ULYNpPMTm-U2hZFxEEy7FZvs31L9VaOusHbR4kM1Ta7ZYv0yyyQzFhuwQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne--bSlnjetIrAoq9PvTG1Crt-U8AKeis_WH46HiEOn9beiDoULGy-l761mAtZ2_TVo8tv5Js6JfYX05kc05UyZpYzdB8zj0EBRbs19AFnkcZASXe3-yg8KVOJAtgOYn3IypuO7e7puivUTlRiuDYXTkw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの案内であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2126446550947876978",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2126446550947876978",
+    "postedAt": "2026-11-27T22:42:19.000Z",
+    "postText": "本日 ◇11/28土 【昼】 →こちらをご覧のお客様限定です！ ↓ ※お客様ご自身で→丸の🟥赤又は白🤍食券を１枚お取りになって席までお越しください。→食券は券売機の前の台の二段目に置いておきます。 ※必ず着席時にお出しください。 ※サービス中の目印は［黄色いハンカチ］ どうぞご利用下さい♪ https://t.co/ycaUY9QnGa https://t.co/Fr0c066qm1",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ETb90d6cWM8ygd7294RLd5kJUUTxEHc6I8cf_GNq8zl3oqXioozTOmiEsOovjv3OAoNFkQiyIkFislkV2uuM_rF5W48hIKgO9WjUzh756zSdR7OVO9iT3miPgkXon02eLUyuh4CeokOgNhp2pTn_mA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-LX9veTeMy9I6ACJUMti4twB4H3EIWyJMZpRL04pgTbt8uyX-e7wwmYz9grEDniOoFOgivJMzVg3qV71VF4K7rwCBwXlJ6FscSE6DChcvEfLnuBThf5FPKPR-OXno3yf-_nSf7oDlAjokLSbcanPHwg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-s9e6NSAPLMN_wbboLE-lsxuo1ADAhG11BLrLKL0ji06Yc6OcpSH9k07vvSuobvKE5PKXTtav75JABO34hYlLR6ZFZ6IZXyotsJH6Ovtt8qMwQkG4frg6Xr8jX21Y21pTi9RQRH8_BD0c6pIT3ZPECw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-CMVOC60KgG2o4W9syfEVrTM4rnz_bbOko0yjv2h1SH1cVFjy_3IjRsirTCM7onIe0wQrr3f9UJuM0jxA5bMUjve4i_6OtHhJdRrRsqFbZ-JxTZC-nsuber_d3YkyYjvVO2dxdgnfX-yLh2Bn7yKVlA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-9NvMZFnoc2l2YwH6PP8ny3O3A54RKfnnh_P-uElRXSNNR_FlcsVEx_A268AADgeC3mmydyqW0E1CH2zaL00FU0b3VUC_8P-H2sMnEEdYBv42a1z5BOmBOtx2mIS1pUI1TmhaFBTg0n9ki9kJrFVdpw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-mNxrI3R5TjgN0y09IbnwkO-tKz7O_faU-vJ5kVH6UQDCKpreb3H3gANZrO1YRJvcuS5zh_dUle2PS82Qv9P4RrS77XUdx3SUipWfhdgiJiSeEsnBfsmJdiK9GjASCeumjazQ1w-W23oH1hFanXK-5g=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピング（紅しょうがの刻みしょうが）の提供に関する案内であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2126444187528908816",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2126444187528908816",
+    "postedAt": "2026-11-27T22:32:56.000Z",
+    "postText": "本日 ◇11/28土 【昼の部】 10:00から14:00迄に ご来店ご到着お並びの お客様まで営業🈺 ◎グッチーズカレー  【夜の部】 16:30から20:00迄に ご来店ご到着お並びの お客様まで営業🈺 ◎グッチーズカレー  やっております！ https://t.co/pIgWe6ED8a",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-hIBY-YvpPpvoaA5YhvevmWwB7hxwOc692RkafDYTGtlvZhrByTncFaQH8V8wmJRDtAfCFmm7KLMy4e6suIof_GJs8lRo3TwhDbNJZGp3Mu28KiLsNngZO_pA-cqW93y0DOzrZDuBoIPsZBIVO-JX6A==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-kXVVbEhvzMI6IsDxnYZje6erjspxLAFs9tKcPl4Fug7b0XzORhwrICcZCBKJR1UsCDwHh7heRkU-aT2r_kITEUNZi_E7wZ13LKGnGaZLFsS4BhUzqkpJdBFWnJ999nlF_37h78-8Hu4p2aAKfJ-3wQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-az8LgwkGz0p-dtER4vtHlsNy1PxdeKIrGxv5yv4lDFaR9KO2gEn7DeFjtUf0NVSMe3O8Zm_aEo5THSab442CUtaqHpFHaycJ61_hlG_6L-I77jybxNY_no0YPCXdCVU1HFczI-MPAvlXEZQRB2IA-g==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-NdPhojCUDkgaXd98BnUb9naai8sBnURYkw-oDAfMqFLq4lPO6wlA1Cx_Li2xq4m7M2ulbBqy9EYLvxRZairbNn2Gutw4KxdILsYs9CGXkH5R9uZpmC5V_mKmD48YOmtl4M17-ulX8vdOYuLaYHOgqw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-R5g_Lzj5AOS8ss_kiwRn8PFDjyDZHFOxPhpFrR-pGTXbhLpI5P7nMP3If1af4b9yKE0HP4aXMeyaKh_Wa22qfXmYiEg8Pjfy23dLwswqb006U7rMAaGE7GoW3c6XQhcUr-w2ss7I3JNbTsUu0J6X2g=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内および限定メニューの告知であり、営業時間の変更はありません。"
   }
 ]
