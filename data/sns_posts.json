@@ -47365,5 +47365,35 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_kameido_2126210185463304642",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2126210185463304642",
+    "postedAt": "2026-11-27T07:03:05.000Z",
+    "postText": "お世話になってます。お昼の部は失礼しました。夜の部は久しぶりに「揚げ脂」やります！ご希望の方は本日のトッピング¥100を購入してください。無くなり次第終了です！よろしくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常的な限定トッピングの告知であり、営業時間の変更は含まれていません。"
+  },
+  {
+    "id": "sns_post_routine_kannai_2126211921410183584",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2126211921410183584",
+    "postedAt": "2026-11-27T07:09:59.000Z",
+    "postText": "こんにちは。 トマトの波動追加で今から作れそうです！明日の夜まで持つかどうかってところですが ご希望の方は トマトの波動の食券で 宜しくお願いします。 揚げ玉は「アレ」でお願いします。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの案内であり、営業時間の変更はありません。"
   }
 ]
