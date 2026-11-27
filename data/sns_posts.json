@@ -47194,5 +47194,22 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の案内であり、臨時休業や営業時間変更の記載はありません。"
+  },
+  {
+    "id": "sns_post_routine_nakayamaekimae_2126138785213943831",
+    "shopId": "nakayamaekimae",
+    "shopName": "中山駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/NKYMJIRO/status/2126138785213943831",
+    "postedAt": "2026-11-27T02:19:22.000Z",
+    "postText": "おはようございます。m(._.)m https://t.co/EuBODOULWV",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-jbsCTb28app-sp3Xbt05tnXwjZVsEq7qbSv0TeXaGzHsoAkoYYMMdi-M0uBpu8EnLPwI_sS4_aV9E8ZE9nQ69N26bj3JH3P8zPfJ_PbD9biYWzx_jariXGBeI_JjS-JuV1ERuoFztfqI-f7ygfELKw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常投稿のため、営業時間の変更はありません。"
   }
 ]
