@@ -2,6 +2,68 @@
   "generalRules": [],
   "learnedFeedback": [
     {
+      "id": "sns_post_matsudo_20261128_0_2126110652662165881",
+      "timestamp": "2026-11-27T15:39:28.959Z",
+      "shopId": "matsudo",
+      "shopName": "松戸駅前店",
+      "postDate": "2026-11-27T00:27:35.000Z",
+      "postText": "毎度ありがとうございます。  大変急で申し訳ございませんが  11月28日(土)   都合により休業いたします。  よろしくお願いいたします。  ラーメン二郎 『松戸』駅前店  ╭━━━━━━━━╮    え  えらいことや....     せ  戦争じゃ……… ╰━ｖ━━━━━━╯ 🕶  ※再掲",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業変更検出: 都合により",
+      "aiProposal": {
+        "type": "temporary_closure",
+        "startDate": "2026-11-28",
+        "endDate": "2026-11-28",
+        "hours": [],
+        "confidence": 1
+      },
+      "humanAction": "applied",
+      "evaluation": "correct",
+      "subReason": "auto_apply_confirmed",
+      "finalDetails": {
+        "startDate": "2026-11-28",
+        "endDate": "2026-11-28",
+        "hours": [],
+        "reason": "都合により"
+      }
+    },
+    {
+      "id": "sns_post_kameido_20261127_0_2126085333481926916",
+      "timestamp": "2026-11-27T15:39:28.956Z",
+      "shopId": "kameido",
+      "shopName": "亀戸店",
+      "postDate": "2026-11-26T22:46:58.000Z",
+      "postText": "お世話になってます。今朝になって昼の部出勤のスタッフが体調不良になってしまったので本日27日の昼の部はお休みさせていただきます。夜の部は通常通り営業予定です！申し訳ありませんがよろしくお願いします。",
+      "aiStatus": "schedule_change",
+      "aiReason": "営業変更検出: スタッフ体調不良のため",
+      "aiProposal": {
+        "type": "temporary_hours",
+        "startDate": "2026-11-27",
+        "endDate": "2026-11-27",
+        "hours": [
+          [
+            17,
+            21
+          ]
+        ],
+        "confidence": 1
+      },
+      "humanAction": "applied",
+      "evaluation": "correct",
+      "subReason": "auto_apply_confirmed",
+      "finalDetails": {
+        "startDate": "2026-11-27",
+        "endDate": "2026-11-27",
+        "hours": [
+          [
+            17,
+            21
+          ]
+        ],
+        "reason": "スタッフ体調不良のため"
+      }
+    },
+    {
       "id": "sns_post_omiyakoenekimae_20261127_0_2125773122515415471",
       "timestamp": "2026-11-26T15:38:40.260Z",
       "shopId": "omiyakoenekimae",
@@ -1377,11 +1439,21 @@
   ],
   "evaluationStats": {
     "total": {
-      "correct": 62,
+      "correct": 64,
       "unnecessary": 0,
       "incorrect": 0
     },
     "byShop": {
+      "matsudo": {
+        "correct": 3,
+        "unnecessary": 0,
+        "incorrect": 0
+      },
+      "kameido": {
+        "correct": 2,
+        "unnecessary": 0,
+        "incorrect": 0
+      },
       "omiyakoenekimae": {
         "correct": 3,
         "unnecessary": 0,
@@ -1447,22 +1519,12 @@
         "unnecessary": 0,
         "incorrect": 0
       },
-      "kameido": {
-        "correct": 1,
-        "unnecessary": 0,
-        "incorrect": 0
-      },
       "okinawa": {
         "correct": 4,
         "unnecessary": 0,
         "incorrect": 0
       },
       "nagoyaosone": {
-        "correct": 2,
-        "unnecessary": 0,
-        "incorrect": 0
-      },
-      "matsudo": {
         "correct": 2,
         "unnecessary": 0,
         "incorrect": 0
@@ -1503,6 +1565,6 @@
         "incorrect": 0
       }
     },
-    "updatedAt": "2026-11-26T15:38:40.260Z"
+    "updatedAt": "2026-11-27T15:39:28.959Z"
   }
 }
