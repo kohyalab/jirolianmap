@@ -46998,5 +46998,74 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_matsudo_20261128_0_2126110652662165881",
+    "shopId": "matsudo",
+    "shopName": "松戸駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/matsudojiro3/status/2126110652662165881",
+    "postedAt": "2026-11-27T00:27:35.000Z",
+    "postText": "毎度ありがとうございます。  大変急で申し訳ございませんが  11月28日(土)   都合により休業いたします。  よろしくお願いいたします。  ラーメン二郎 『松戸』駅前店  ╭━━━━━━━━╮    え  えらいことや....     せ  戦争じゃ……… ╰━ｖ━━━━━━╯ 🕶  ※再掲",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-28",
+      "endDate": "2026-11-28",
+      "hours": [],
+      "reason": "都合により",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-11-27T00:30:51.928Z",
+    "autoApplied": true,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業変更検出: 都合により"
+  },
+  {
+    "id": "sns_post_omiyakoenekimae_20261127_0_2126111534598533377",
+    "shopId": "omiyakoenekimae",
+    "shopName": "大宮公園駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/omiyapark26/status/2126111534598533377",
+    "postedAt": "2026-11-27T00:31:05.000Z",
+    "postText": "おはようございます。 　本日と明日休みです。 🍜宜しくお願いします🍜 https://t.co/heqCTiFX9t",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-27",
+      "endDate": "2026-11-27",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "autoApplied": false,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_omiyakoenekimae_20261128_1_2126111534598533377",
+    "shopId": "omiyakoenekimae",
+    "shopName": "大宮公園駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/omiyapark26/status/2126111534598533377",
+    "postedAt": "2026-11-27T00:31:05.000Z",
+    "postText": "おはようございます。 　本日と明日休みです。 🍜宜しくお願いします🍜 https://t.co/heqCTiFX9t",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-28",
+      "endDate": "2026-11-28",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "autoApplied": false,
+    "aiStatus": "match",
+    "aiReason": "既に登録済みの臨時スケジュールと一致"
   }
 ]

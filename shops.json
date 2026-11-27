@@ -1645,6 +1645,15 @@
         "reason": "祝日のため",
         "sourceUrl": "https://x.com/matsudojiro3/status/2123799088957387240",
         "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-28",
+        "endDate": "2026-11-28",
+        "hours": [],
+        "reason": "都合により",
+        "sourceUrl": "https://x.com/matsudojiro3/status/2126110652662165881",
+        "autoApplied": true,
+        "autoAppliedAt": "2026-11-27T00:30:51.928Z"
       }
     ],
     "shiftsByDay": {
