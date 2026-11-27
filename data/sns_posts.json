@@ -47425,5 +47425,23 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "本日通常営業の報告であり、臨時休業や営業時間変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_koiwa_2126261871267520526",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2126261871267520526",
+    "postedAt": "2026-11-27T10:28:28.000Z",
+    "postText": "【価格改定のお知らせ】  いつもご来店ありがとうございます。  📌ラーメンセットを100円値上げ  📌豚増し券を100円値上げ  改定の時期については画像をご参照ください。  よろしくお願い申し上げます。  小岩二郎 https://t.co/jHauaYhsHL",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-wLCXHtAv2bpeJNmIqn_QIc_8m17pbViF2nucLSv3kwgOAJDpw9lSR6Chp157Fsng4Vn5NpoENAT-rdh6NG2UyiGsqIXdwVaM4wHDjHhqeWIVWxyLdjUzX5ohcmoD2f7OTNdB4JZY2te5s-8482SPaw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-yuhFAS5UozJkoyzJSBA-M6bAf3JuGRmGMHO4HqJLUNJoz2EN51ereI16cRfObfe8MRCzdXH_irZhmZhJTwHJYZPpTn5jqSy7bQsTso2QWPeKa7IujD9Lfi31l6lpVE_G3TUcYSf8n0SM-EYzjQiOVg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "テイクアウト商品およびトッピングの価格改定に関する告知であり、営業時間の変更や臨時休業の告知ではないため対象外です。"
   }
 ]
