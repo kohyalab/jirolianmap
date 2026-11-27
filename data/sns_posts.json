@@ -47318,5 +47318,52 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "リアルタイムの並び状況および終了宣告の示唆に関する投稿であり、営業スケジュールの変更には該当しません。"
+  },
+  {
+    "id": "sns_post_routine_sengawa_2126188782634594526",
+    "shopId": "sengawa",
+    "shopName": "仙川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjiro26/status/2126188782634594526",
+    "postedAt": "2026-11-27T05:38:03.000Z",
+    "postText": "本日17時から店内営業とテイクアウト販売します。追加の生麺一玉１００円(400g）です。 https://t.co/MPK98OBUMw",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-b-_cuB9OcpTpY2V-aYzTR_Qp4bpulDgsdBm77EcagJzUzf_vTbkLH0SfH7ANIXFr-htO6_637flZ3IirYDpWsp9umbOYqhFTS4Ur1CzImR1DtbDg-G0Jv4GyJh41hKU1T07cpE6gDGAynRT2nOLZKw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "本日通常営業の案内およびテイクアウト販売の告知であり、営業時間変更には該当しません。"
+  },
+  {
+    "id": "sns_post_routine_koiwa_2126187109098872978",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2126187109098872978",
+    "postedAt": "2026-11-27T05:31:24.000Z",
+    "postText": "ただいまお並びのお客様をもちまして本日の営業は終了しました。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "本日の営業終了告知のため、スケジュール変更なし"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2126190076065677580",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2126190076065677580",
+    "postedAt": "2026-11-27T05:43:11.000Z",
+    "postText": "いまいるひとでおわりです！ ごめんなさい！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
