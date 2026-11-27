@@ -46944,5 +46944,59 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の案内およびテイクアウト販売の告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2126100793602490710",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2126100793602490710",
+    "postedAt": "2026-11-26T23:48:24.000Z",
+    "postText": "【ご案内】 ［ニンニクとゴマ油のつけ麺-あつもり-］ 本日11/27金にて 一旦終了となります。  よろしくお願い致します。 https://t.co/xQaal2Cx8C",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-OT7Ouuux7eSQ1FZgbeJtYjDP34WC9LEg_nxjAFAWPsrgeI-MFce3EIquYvdkqYsO0_H1jAZ72B4yjHmvUOs89FPVov64v8JWsEtxngp0DZYVh4oWMRwVmf18lVB0yLlvmPCwrWikojwXODxO0PofcA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定メニューの提供終了に関する告知であり、営業時間の変更は含まれていません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2126099881760809418",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2126099881760809418",
+    "postedAt": "2026-11-26T23:44:47.000Z",
+    "postText": "本日 ◇11/27金 【夜】 →こちらをご覧のお客様限定です！ ↓ ※お客様ご自身で→丸の🟥赤又は白🤍食券を１枚お取りになって席までお越しください。→食券は券売機の前の台の二段目に置いておきます。 ※必ず着席時にお出しください。 ※サービス中の目印は［黄色いハンカチ］ どうぞご利用下さい♪ https://t.co/Un5WlZ9htl https://t.co/WRwomsPixa",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-zt7VOq1qk_22s3H6XDIK11EunGYQsq9U42ZqUK4BnPEWajQhJm8c_ur6CmSb2Jh3mry1OsCr77gRfii3vJbZRGl_39L0x2D6YaPFycjEpdRI6EekCVl-zjjaHge6NAvmkNnO5FRM-IOZz-A1Pdsusg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-YZtYiRewVdOB5QOVyMnas6z--32V0Pri1yDbwEV8EY6CI_1-0gcLPc1q5BT9j7EL4o2I_bRLH1C_z5ekeXR2Ey4Iy2elQsUGCHqJE0QngoTaavRo9F2qy7msKn5i2J40bK7RWwJVKTFjne3fXo0dow==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-KWesFDgqlvaD34Vis30L-UXBReLJypH7QV24wRGhMd6XwoKwCTVcVrVGSirnBXuEJGFWG0cViKhn0xWPHUiqcIM65CgqPlcnDNhMiPP-qW-o3hJYAYtqSeM5oPJtfGpdGF6etoEEcaxf_gQnMkbFTw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-3Aevwil4_OFnSWMa99HLClSQvsaqxgzuONS4Ec4cMYfCFBCj-V7whpfzpMvFoYK-ZliBaeZVNlPkKykh_uCTCbOXFAqUupfnOvrOGVStFtU7uE_VftG_EzWKhI5Vjyd8lKZb-XIPK6l0sHQ-r77gbQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Bakjt4VWK7qwsrNB-DGP8VJWc0hN9RWJaZuUWqb8gKtcgPDJt0yO5omsPf2B9RZ532g6umIe5OLD2vvub6YwfgycA0Wu_UxYl2KtWu5fRFlUlu2elQKw4PWXTrSOacP7CbN5WLcwMe1wH69HWBq7nQ==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-4qZev23L_FJEvz5XFM3Sbtzo2xiUznx3DJuD2q4p02m5pvd120O7HIEDIMmXk6lH_aELWNXx8PdLh5P2mNcHMO_m_DoiPNao-W7cVgqNJ7ZULGqF5X9ATrUdfCnm4_MjXe9yezBlFYec9crreRSvIA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピング（刻みしょうが）の案内であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_daily_koshigaya_2126099999943807276",
+    "shopId": "koshigaya",
+    "shopName": "越谷店",
+    "postSource": "x",
+    "postUrl": "https://x.com/ksgy26/status/2126099999943807276",
+    "postedAt": "2026-11-26T23:45:15.000Z",
+    "postText": "千円札がだいぶ少ないのでご来店前に千円札、小銭のご用意をお願いします🙇 常連さんの両替もかなり多いので、せめて常連さんだけでも千円札、小銭使ってください。 よろしくお願いします🙇 https://t.co/rO90zge2z4",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
