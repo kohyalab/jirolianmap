@@ -47067,5 +47067,23 @@
     "autoApplied": false,
     "aiStatus": "match",
     "aiReason": "既に登録済みの臨時スケジュールと一致"
+  },
+  {
+    "id": "sns_post_routine_tachikawa_2126112711264370921",
+    "shopId": "tachikawa",
+    "shopName": "立川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jirotachikawa/status/2126112711264370921",
+    "postedAt": "2026-11-27T00:35:46.000Z",
+    "postText": "11/27(金)、昼夜とも時間内売り切れなし営業です。 昼11:00-14:30 夜17:00-21:30  ①カレー変更券 　特別営業の材料を使用。 　　※限定の和出汁カレーではない  ②持帰りラーメン販売します。 　標準:2人前のスープと生麺+ブタハーフ  松本店のイスは当店と同じ、荷物を置けるものでした♪ https://t.co/uBGZSXAKeA",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-FMSzkG9VJw3EmH6g3OvTryzUZ2hPtl4hwUz7fKFh4NIEX6D0tqndqWAcDZ5V332D40-ZVK1WitOS3lQ2LWRBC9PU_YDPH0ByRNzqD8IMH2b397bdI17D5uULaNeH0N_ySblpSpXk4pADhwCB9TBBfw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-6YCmmxejUbQlVnV0N9Aioy_RaG1htuVuVnu-INjv2EaOMdC8rd6KS463Y2TopxI0rIqksFXAfHK2rS9T4hQ9t4LQ-kaPl-nQQONRTHubEO-h7qzTqnQcorNLzlBc2AKZ5COaOmu-_s-Sl48aQrNdiA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内であり、臨時休業や時間変更はありません。"
   }
 ]
