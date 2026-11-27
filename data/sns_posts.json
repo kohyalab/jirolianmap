@@ -47226,5 +47226,22 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "限定メニュー終了の報告のみであり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_yaen2_2126162739274080485",
+    "shopId": "yaen2",
+    "shopName": "八王子野猿街道店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/Jiro_Yaenkaido2/status/2126162739274080485",
+    "postedAt": "2026-11-27T03:54:33.000Z",
+    "postText": "ブッラクフライデーみたいなので 黒いの作りました！😃 無料でやります トッピングの時ブラックと言って下さい！😃 https://t.co/MjmzLnbQUy",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-lTuGIgq50BkXAXqiBn6-5TT1SbOCRSFU3wXW6wmwxzLneGlbDO05cc-EPCA3EZu2HHDSIayj-4G_GpRSWpTpx4zVaStC8k6c95UjiTXZT5btca0FubAQdRXVZOjNOmrzxcaF-575Td15AUMbpEWZwA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピングの案内であり、営業時間の変更はありません。"
   }
 ]
