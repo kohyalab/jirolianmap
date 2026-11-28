@@ -47893,5 +47893,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "店舗の空調・換気状況に関する日常的な報告であり、営業時間の変更や臨時休業の告知は含まれていません。"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2126512333023482105",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2126512333023482105",
+    "postedAt": "2026-11-28T03:03:43.000Z",
+    "postText": "松本店に行けないひとは新代田で我慢するのもひとつの手かもですね！ https://t.co/t5IiE0xhQa",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
