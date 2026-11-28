@@ -48186,5 +48186,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "11月29日(日)は通常営業の範囲内であるため変更なし"
+  },
+  {
+    "id": "sns_post_routine_hitachinaka_2126616569845633138",
+    "shopId": "hitachinaka",
+    "shopName": "ひたちなか店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26_hitachinaka/status/2126616569845633138",
+    "postedAt": "2026-11-28T09:57:55.000Z",
+    "postText": "【祝 ラーメン二郎 松本店 開店】 https://t.co/6od01M7BUf",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "他店舗の開店告知であり、ひたちなか店の営業情報に変更はありません。"
   }
 ]
