@@ -47696,5 +47696,38 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "テイクアウト販売に関する投稿であり、店舗の営業スケジュールに変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_fujisawa_2126470212845543538",
+    "shopId": "fujisawa",
+    "shopName": "湘南藤沢店",
+    "postSource": "x",
+    "postUrl": "https://x.com/fujirow26/status/2126470212845543538",
+    "postedAt": "2026-11-28T00:16:21.000Z",
+    "postText": "おはようございます。  11月28日(土)  しょっぱ豚🐷 無料トッピング！ 崩し豚、豚カス醤油、1番スープ、にんにく🧄生姜🫚とにかく色々  タマネギカレー🧅🍛  本日もよろしくお願いいたします。 https://t.co/jidmvNSd3t",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ovl9BnGJssCyBNdAD43HX3L0XHMrVueweAMKLSMte-zj_O31qoTfSIK5kNZf9-ohAotV5tS4zE8K81urqO2JpsC6acN6JfmeHKTo3ERYsfSAT2nbSymTRsq4yLUTENd9nwltf2YoLzOr7_-u3tTmKA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-uAsoSzAKbeMPPQ0f_GnT3m5X_H5qHwM41-ZCyYm92k0u7gu9pZ8tZdYxmIyq03tU4ug6dnixDoIj-yga_iLAh7f09rl4633DDt2QlkYsZzCfa4h_7SlXyg8Sj3m1viQVWZzzfxKEfyaV7pCmHvjt_Q=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピング（しょっぱ豚等）の案内であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sapporo_2126470536847073540",
+    "shopId": "sapporo",
+    "shopName": "札幌店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sapporo_/status/2126470536847073540",
+    "postedAt": "2026-11-28T00:17:38.000Z",
+    "postText": "本日28日(土) 「汁なし」やってます🍜 [塩汁なし(醤油ベース)]変更可　現金＋100円 必ずスタッフ確認時に申告して下さい。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "本日28日(土)は通常営業であり、限定メニューの案内のみであるため変更なし。"
   }
 ]
