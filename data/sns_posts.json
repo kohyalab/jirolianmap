@@ -48218,5 +48218,39 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "他店舗の開店祝いに関する投稿であり、ひたちなか店の営業スケジュール変更に関する言及はありません。"
+  },
+  {
+    "id": "sns_post_mention_kameido_2126660745471701138",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2126660745471701138",
+    "postedAt": "2026-11-28T12:53:27.000Z",
+    "postText": "@ksk_illust ありがとうございます✨",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2126656498596270170",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2126656498596270170",
+    "postedAt": "2026-11-28T12:36:35.000Z",
+    "postText": "明日 ◇11/29日 【日曜日営業🈺】 10:00から15:00迄に ご来店ご到着お並びの お客様まで営業🈺 ◎グッチーズカレーやっております！  どうぞー♪ https://t.co/EX7DZqTLja",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Q2Z-jL0JvG-USTKqL34x56zlcpPGNGCvb4nVtQ8_Cd-ic50AVDWloLZ0zhlQEK2tRningbCV4D7kGZ4z-VqREuBe_eqN-ReDyZf0JqTCHvZGxOTjmarV_8fzo6mEpHNpgKZbV309kzBFEQyJmT1Suw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-THDU4_h2KFE_eMugn4789nH0KhhTfVOR6DqxY_ww9gpLSMCtQ_ReULPwt8sBvdT_nWKH_XLBhOAF8vtflDodTbkPOyHpe-KNKK5OeGmkGWX_NvPIo8iSCa0aafnqT2GMlv7M7o6_dM8rIuBXuMqb8w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-eJEBxM1Rv8sDbpyZOeZd4T83WaC7zMWbCJBk2aLEcwDS3DsuoofxO6kyK3O-vA5wpEtXKyUoGaruJn-2JjuBHCZrcr7LzU46BzvFjhBNwoN8wakxW_TCqDIMNDGP4en1AFH7dsw4dlKUSox4f_Qjsg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "11/29(日)は通常通りの営業時間（10:00〜15:00）での営業となります。"
   }
 ]
