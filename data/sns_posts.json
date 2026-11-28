@@ -47761,5 +47761,38 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の案内および限定トッピングの告知であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_kannai_2126486930758193453",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2126486930758193453",
+    "postedAt": "2026-11-28T01:22:47.000Z",
+    "postText": "おはようございます。ラーメン二郎横浜関内店です。  トマトの波動、スライスチーズは用意しています。券売機でお買い求めください。  揚玉もあるのでコール時に「アレ」とお伝え下さい。  あいにくの天気ではありますが本日もよろしくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内であり、臨時休業や時間変更の記載はありません。"
+  },
+  {
+    "id": "sns_post_routine_tachikawa_2126485430124363886",
+    "shopId": "tachikawa",
+    "shopName": "立川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jirotachikawa/status/2126485430124363886",
+    "postedAt": "2026-11-28T01:16:49.000Z",
+    "postText": "11/28(土)、昼夜とも時間内売切れなし営業です。 昼11:00-14:30 夜17:00-21:30  ①カレー変更券 　途中で無くなる可能性有(限定の残の為)  ②玉ねぎとネギ両方あり 　別皿にするかは、他に乗るもの等でこちらで考えます！  ③持帰りラーメン販売します。 　標準:2人前のスープと生麺+ブタハーフ https://t.co/J3pDiOH9bV",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-ZpTUAf9c8vRuGrwDQgLpVQsBtCbXajmfaXIOQnmv4RGCXKvSQfGxMF0Md8wJ5EuUcWQKUz0vdFBdGCC5J2i0rOLKk6ZvVJJq69v32zt-OPswhJCBIGJ7Aaf_8kBVIF4RlIYZnEEU25B9VTCfACQX9w==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-MbzHy3DZPEwzCr6MZpSPi7kQj6nimTlw7ZsjYgRU8TlGN26gPl0e_YHm20hI9nb62eHJKxJ3VXxVrnxa_HMZmIn3zKaIsj9fFGW4YBkNyHlJyCYWfLllDzUuqT9o_gTv_jPURsXd9-qiea_T-U0EOw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "11/28(土)は通常営業です。"
   }
 ]
