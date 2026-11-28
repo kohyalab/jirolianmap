@@ -48201,5 +48201,22 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "他店舗の開店告知であり、ひたちなか店の営業情報に変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_hitachinaka_2126622116611293453",
+    "shopId": "hitachinaka",
+    "shopName": "ひたちなか店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26_hitachinaka/status/2126622116611293453",
+    "postedAt": "2026-11-28T10:19:57.000Z",
+    "postText": "【祝 ラーメン二郎 松本店 開店(画像)】  画像が添付されていなかったとの事で 申し訳御座いません。 https://t.co/lknKBXpHNN",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-FXcWhM9HA5u7cj8itnd7pcGSQxm50GAVUk3zYNyzGDeaEGuF9lUc2leOKRZtS-xDmZNqKdz0rfYM3m73URpiOGzNf7vARVkeBa1TV56th9sp4czJjDxlKRdZmYFl2QpYGO9Xos6G8wZDYTNOEM0PXg=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "他店舗の開店祝いに関する投稿であり、ひたちなか店の営業スケジュール変更に関する言及はありません。"
   }
 ]
