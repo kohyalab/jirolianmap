@@ -2277,6 +2277,20 @@
         "reason": "",
         "sourceUrl": "https://x.com/kannaijiro/status/2122343829856755850",
         "_isAiImported": true
+      },
+      {
+        "startDate": "2026-11-28",
+        "endDate": "2026-11-28",
+        "hours": [
+          [
+            11,
+            14.5
+          ]
+        ],
+        "reason": "",
+        "sourceUrl": "https://x.com/kannaijiro/status/2126563091102195887",
+        "autoApplied": true,
+        "autoAppliedAt": "2026-11-28T06:31:18.537Z"
       }
     ],
     "shiftsByDay": {

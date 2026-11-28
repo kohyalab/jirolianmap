@@ -47983,5 +47983,75 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "追加メニューの販売告知であり、店舗の営業時間の変更ではないため対象外。"
+  },
+  {
+    "id": "sns_post_routine_sengawa_2126560179068314086",
+    "shopId": "sengawa",
+    "shopName": "仙川店",
+    "postSource": "x",
+    "postUrl": "https://x.com/senjiro26/status/2126560179068314086",
+    "postedAt": "2026-11-28T06:13:50.000Z",
+    "postText": "本日17時から店内営業とテイクアウト販売します。テイクアウトはつけ麺に転用可能です。お薦めの調味料です。 https://t.co/687VeUJL4Y",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-VW2E4FNa7gPs84OwtzTd66h-yAb1MEoQogo2dwKmg9NVVKvkKDUff1nkiHvIRQeRjB6x86-IWrBMfq4_1Qem_97YnSBEf28ZM0im2pBV4alf-Ok3SkEV2p69bLMHEX5M3FaF22-rWLHOGSEUFoveIg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-F47hlPVBwuU8DRmPNhcsfF-UGwONMdtFxbfpnrN2nSqMdc4o8gjk1Xsx1ejNNZytVUC1-R3qN3xRl0iOL00vjleSBTM2rrfCCrhfSlIu2gVNBmg14HtqDz7KaYyxF5ePwdPtufwtW0fhi1vWIP1pOg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-REM606jbpA7iYfO6n-SgzIwapduuilQx3ZPH3KMhJ2ilQJNYCmcgJq33zPrNQnB1WClzevQSKrA9UOMTIk4rEn6d_VdvYOOztl0CwJuAMIbSfygi9jfWPUxqBIzbHRkjUxQY7grNur9NjsQPL7lcpg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-9lCUMckE1h5EwIeuewV4vEcwl8JNc05az75TF1qeWa2TM03sIvKkMYiLPpERlhHb2mX4GqBa0ajjphZEZPfN01hZdHx0ySo9PpKnqdL4a_Xq9H5mF9bNX0cXgsiTtpYpL3yxtQFJN8fZ-V_vRKii9w=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_kannai_20261128_0_2126563091102195887",
+    "shopId": "kannai",
+    "shopName": "横浜関内店",
+    "postSource": "x",
+    "postUrl": "https://x.com/kannaijiro/status/2126563091102195887",
+    "postedAt": "2026-11-28T06:25:25.000Z",
+    "postText": "こんにちは。 大変申し訳無いのですが 本日28(土)夜の部は 事情により休業とさせて頂きます。 ご迷惑をおかけしますが 宜しくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_hours",
+      "startDate": "2026-11-28",
+      "endDate": "2026-11-28",
+      "hours": [
+        [
+          11,
+          14.5
+        ]
+      ],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": true,
+    "processedAt": "2026-11-28T06:31:18.537Z",
+    "autoApplied": true,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2126557435926302726",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2126557435926302726",
+    "postedAt": "2026-11-28T06:02:56.000Z",
+    "postText": "本日 ◇11/28土 【夜】 →こちらをご覧のお客様限定です！ ↓ ※お客様ご自身で→丸の🟥赤又は白🤍食券を１枚お取りになって席までお越しください。→食券は券売機の前の台の二段目に置いておきます。 ※必ず着席時にお出しください。 ※サービス中の目印は［黄色いハンカチ］ どうぞご利用下さい♪ https://t.co/ExFRXQtiJt https://t.co/Fr0c066qm1",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-pujw6F5vkeK2mj1C69uF9-lVTSrJN2mTTsfjZTfmfQxDxIcRYHygG1EPLSSR2a8s16PtJUFEN8KCPzguhcbnyMadoMU0E1rPBZ8iyVtlua_g2FNkjgDSSSEJ_N1iIXHKhF9C-aHvp6I7LV_SAXHXfw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-nHQ5784Duc5fIusiP0IMkgQEHPk-bqBXdfnqf0DxAES-yJc41XGcsbBM0RIdKnw-UKgnEFc9cl-8cGSlECE7LFsoA5cvJddkJJsoGbJr5SdsmZS7nAeJrpoZrmt6zbAtOCK7OwcP1B4LTWduuP83tg==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-Crr8TKusljJyv6lCDa6thHXkAIcGFLbFQGiSqXPyWq01l7SDPRtQESkiM1ZPHrAtd_OHopNdvNIiT-o9IEOagHoTPymZxI55s9hJhIxVprmVFlRdJXxUVznKF4w3P4BLbKZL2eMZNpSqpqRXRhmUaA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-baymXLlhRCNUws92uyCKI_BeOq9fOgHuJmd_Mw6iiwnSG_hYtwPvUrAsogToIIFxTxPOM3W0NQvzU0g5TX77pEP4vZvZsA8JO_JHSYtRQF993Fk-PxoRACXyTFPyuYPzIxQNB4QqykO_haiOr3uNMA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-e2vvzLJ0bYzrymSfLWO_6rSSWcegIbg19Q1ifNg234kbUr0GxKydp6--B0qh5NFTAZ3i9lXGhqe2umfhpIwJvOokYOe7EQsqv7gF1rdzWyuqfGogJlUora2nl7c1nIWFPd13psF-vtq0QlAGuwxKkA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-4VZS-vKKNLwyd9fp4w--5wgmEIk9r3Ov-wxz8DkZtNCx32ByIJ5zxdgyQCOXvNx66zAl3FhJAgSoE_pDa-uUa3pCi_6JCXcy_jvPQ8cgLlQhPe633tMcs1nU6Oke37j-0jUmSyhwlNbMPTu3HOv3fw=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "限定トッピング（刻みしょうが）の案内であり、営業時間の変更はありません。"
   }
 ]
