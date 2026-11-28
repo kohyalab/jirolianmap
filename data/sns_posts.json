@@ -47829,5 +47829,35 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の案内であり、臨時休業や営業時間変更の記載はありません。"
+  },
+  {
+    "id": "sns_post_routine_koiwa_2126500612074577969",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2126500612074577969",
+    "postedAt": "2026-11-28T02:17:09.000Z",
+    "postText": "本日のラーメンセット、残りは16セットです🍜  お早めにご購入ください😊  購入はこちらから👇 https://t.co/HxUJ8Rt1Aj",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "テイクアウト販売の在庫状況に関する投稿であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2126500604575158350",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2126500604575158350",
+    "postedAt": "2026-11-28T02:17:07.000Z",
+    "postText": "あるいてこれるひとどうぞ！ https://t.co/t5IiE0xhQa",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
