@@ -47953,5 +47953,20 @@
     "processedAt": "2026-11-28T05:22:35.062Z",
     "aiStatus": "no_change",
     "aiReason": "日常的な営業終了告知のため、変更なし。"
+  },
+  {
+    "id": "sns_post_routine_koiwa_2126545642562674749",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2126545642562674749",
+    "postedAt": "2026-11-28T05:16:05.000Z",
+    "postText": "リポストにご協力頂いた皆様のおかげで、本日のテイクアウトラーメンセットは完売しました。  ありがとうございます🤗✨  ご購入されたお客様は本日の15時～17時の間にご来店の上、お受け取りください。  よろしくお願いいたします( .ˬ.)\" https://t.co/HxUJ8Rt1Aj",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "テイクアウト販売の完売報告および受け取り時間の案内であり、店舗の営業スケジュール変更には該当しません。"
   }
 ]
