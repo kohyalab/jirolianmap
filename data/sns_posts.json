@@ -48171,5 +48171,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "日常の営業状況報告であり、臨時休業や営業時間変更の告知は含まれていません。"
+  },
+  {
+    "id": "sns_post_routine_kashiwa_2126597393101820233",
+    "shopId": "kashiwa",
+    "shopName": "柏店",
+    "postSource": "x",
+    "postUrl": "https://x.com/genkimoriya/status/2126597393101820233",
+    "postedAt": "2026-11-28T08:41:43.000Z",
+    "postText": "お世話になっております。 ラーメン二郎柏店です。  11月29日（日）は通常通り、 10時30分〜16時まで営業します。  どうぞ宜しくお願い致します。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "11月29日(日)は通常営業の範囲内であるため変更なし"
   }
 ]
