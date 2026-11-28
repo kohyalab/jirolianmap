@@ -47794,5 +47794,40 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "11/28(土)は通常営業です。"
+  },
+  {
+    "id": "sns_post_mention_sendai2_2126489824387555399",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2126489824387555399",
+    "postedAt": "2026-11-28T01:34:17.000Z",
+    "postText": "@tomates_l そうです！御自宅で茹でていただくタイプです！！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "mention",
+    "aiReason": "他アカウントへのメンションのため除外"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2126489700949213414",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2126489700949213414",
+    "postedAt": "2026-11-28T01:33:47.000Z",
+    "postText": "おはようございます！！ 昨日お昼休みに買い出しに出たのですが、近所にバーガーキングの看板が！！ お昼ご飯のバリエーションが増えて嬉しいです！ あいにくの雨で割と暇してると思いますので、御来店お待ちしております！ ナベ、テイクアウトも承りますので、こちらも是非！！ https://t.co/GkLVgIV0ul",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-lF_zCxLI4dTXZ6tkg25VVTJ3a1tYz_h88wm4FfVCXy4hwFYW5mtNqVzzsklaykUgmBhwcCXWXbgkuiD0asy0fxIQGd_z-P2JgfXb85hwh9XOa5AjMLQaXZSXpn8l4cTeWzpOHLUlU9xKP6OpfNyCJA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-9KvArIfUYn_zT-1_vUjWYoYeA629muf-v42nVIzv9rIdwRTLu5ycOEXxk3Jx_JQ72JTTCPSr2ccREqdDoO5DMN83SesM5JDj4WWL5uR8wn1OeOBVJO8kY9BHVCBDJvLRnWDdO5PzzuokaGhAwD78OA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-O3wENaN37gD-xiewV5yQ33RRSpQoXj9TozfuQip8MGloDdKqqAqjxkjA5HpujMj7WtyZ06VU_sRN77CLS69uEgWXCdYCCGyoUPFmunizQooMHWh8AVXJ_2I6B0zNXONsa6iNUYMDQUSxNtxgx-eENw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-tM547q7i3lg4CudE3UeOXSRPVgf-ccNpHoC3rFs6PZtw-rqDrz_trhH1yyNcZmes0Ws5yviU_q84ailvtg3rllzXH5r4onVl3FP8hib4yIOOr7AxT9eZ5nD1_XyJgD25vFCF2iYVYdL3qwDxs6okTA=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "通常営業の案内であり、臨時休業や営業時間変更の記載はありません。"
   }
 ]
