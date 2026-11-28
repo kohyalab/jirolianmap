@@ -47968,5 +47968,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "テイクアウト販売の完売報告および受け取り時間の案内であり、店舗の営業スケジュール変更には該当しません。"
+  },
+  {
+    "id": "sns_post_routine_koiwa_2126551677285310629",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2126551677285310629",
+    "postedAt": "2026-11-28T05:40:03.000Z",
+    "postText": "11/28の追加メニュー  🐷豚ハーフ 🐽くずれ豚 📍生麺 📍汁なしの素 📍味付き脂  個数制限無し  ※くずれ豚は2個以上ご購入で１個あたり800円→700円にお値下げします。  追加メニューだけのご購入も大歓迎です。  15時から販売開始いたします⏰",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "追加メニューの販売告知であり、店舗の営業時間の変更ではないため対象外。"
   }
 ]
