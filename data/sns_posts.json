@@ -47938,5 +47938,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "リアルタイムの営業終了告知のため、スケジュール変更なし"
+  },
+  {
+    "id": "sns_post_routine_sendai2_2126537417054433728",
+    "shopId": "sendai2",
+    "shopName": "仙台店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_sendai1023/status/2126537417054433728",
+    "postedAt": "2026-11-28T04:43:24.000Z",
+    "postText": "だいぶ早めに列切れたのでお昼まだの方どうぞー！！ https://t.co/o2eAWtaxRD",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常的な営業終了告知のため、変更なし。"
   }
 ]
