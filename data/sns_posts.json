@@ -47919,8 +47919,8 @@
     "postText": "営業してますよー！ https://t.co/t5IiE0xhQa",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-28T05:22:35.062Z",
     "aiStatus": "no_change",
     "aiReason": "日常的な営業報告であり、臨時休業や営業時間変更の記載はありません。"
   },
@@ -47934,8 +47934,8 @@
     "postText": "ラーメン二郎名古屋大曽根店です。 寒い中ありがとうございます。 現在お並びいただいている方で終了となりますので、よろしくお願いいたします。",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-28T05:22:35.062Z",
     "aiStatus": "no_change",
     "aiReason": "リアルタイムの営業終了告知のため、スケジュール変更なし"
   },
@@ -47949,8 +47949,8 @@
     "postText": "だいぶ早めに列切れたのでお昼まだの方どうぞー！！ https://t.co/o2eAWtaxRD",
     "mediaUrls": [],
     "detectedChange": null,
-    "processed": false,
-    "processedAt": null,
+    "processed": true,
+    "processedAt": "2026-11-28T05:22:35.062Z",
     "aiStatus": "no_change",
     "aiReason": "日常的な営業終了告知のため、変更なし。"
   }
