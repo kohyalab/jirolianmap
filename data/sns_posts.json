@@ -48053,5 +48053,37 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "限定トッピング（刻みしょうが）の案内であり、営業時間の変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_sagamiohno_2126566743556706467",
+    "shopId": "sagamiohno",
+    "shopName": "相模大野店",
+    "postSource": "x",
+    "postUrl": "https://x.com/sumo_jiro/status/2126566743556706467",
+    "postedAt": "2026-11-28T06:39:56.000Z",
+    "postText": "【お願い】 両替に行けずに、10円硬貨が不足しております。  券売機ご利用の際に10円硬貨を使って頂けますと、大変助かります！  ご協力お願い致します🙇 https://t.co/Z1nQhNQHV6",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-x4I9UszvWOgnGmlIQC8QNOP1htE0NIOSxf9Kt_KmJ5JPqTbljayUHx_alZd_c0pJW7asY7iAR-uHYdKEGSYb4N5huLKdOj2sO29l_oUL1shW_6sWyWpZyaE-IxZmVUjtSSs0c0gdz4IBNEIsehAkXQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "両替に関する協力依頼であり、営業時間の変更や臨時休業の告知ではない。"
+  },
+  {
+    "id": "sns_post_daily_shndaita_2126566654863872142",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2126566654863872142",
+    "postedAt": "2026-11-28T06:39:34.000Z",
+    "postText": "いまいるひとでおわりです！ ごめんなさい！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "daily",
+    "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
   }
 ]
