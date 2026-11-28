@@ -48252,5 +48252,20 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "11/29(日)は通常通りの営業時間（10:00〜15:00）での営業となります。"
+  },
+  {
+    "id": "sns_post_routine_yaen2_2126711292786544698",
+    "shopId": "yaen2",
+    "shopName": "八王子野猿街道店2",
+    "postSource": "x",
+    "postUrl": "https://x.com/Jiro_Yaenkaido2/status/2126711292786544698",
+    "postedAt": "2026-11-28T16:14:19.000Z",
+    "postText": "11月29日(日) 朝7:30～15:00 ⭐テイクアウト、鍋二郎あります 並ばず買えます NAあります！",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "11月29日(日)は通常営業です。"
   }
 ]
