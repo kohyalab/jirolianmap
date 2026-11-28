@@ -47908,5 +47908,35 @@
     "processedAt": "2026-11-28T04:01:48.082Z",
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_routine_shndaita_2126521324181012829",
+    "shopId": "shndaita",
+    "shopName": "環七新新代田店",
+    "postSource": "x",
+    "postUrl": "https://x.com/26shinshindaita/status/2126521324181012829",
+    "postedAt": "2026-11-28T03:39:27.000Z",
+    "postText": "営業してますよー！ https://t.co/t5IiE0xhQa",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "日常的な営業報告であり、臨時休業や営業時間変更の記載はありません。"
+  },
+  {
+    "id": "sns_post_routine_nagoyaosone_2126521590104142243",
+    "shopId": "nagoyaosone",
+    "shopName": "名古屋大曽根店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_NGY/status/2126521590104142243",
+    "postedAt": "2026-11-28T03:40:30.000Z",
+    "postText": "ラーメン二郎名古屋大曽根店です。 寒い中ありがとうございます。 現在お並びいただいている方で終了となりますので、よろしくお願いいたします。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "リアルタイムの営業終了告知のため、スケジュール変更なし"
   }
 ]
