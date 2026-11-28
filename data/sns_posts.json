@@ -47679,5 +47679,22 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "通常営業の案内であり、変更はありません。"
+  },
+  {
+    "id": "sns_post_routine_koiwa_2126466102771282020",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2126466102771282020",
+    "postedAt": "2026-11-28T00:00:01.000Z",
+    "postText": "おはようございます✨  本日のテイクアウトラーメンセット購入URLです⇩  フォロワーのみなさま、リポストにて拡散のご協力をお願いいたします。  https://t.co/dWcEJSpRdm https://t.co/aLI2z1QwiC",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-lY3cZLDXVT0M08FVyHv3-izydnWnKiALiQYdnq_uDd3hTC0A8mdgkV-Pm7bpPNiKdDw9nafMbVXB97RlpVA3WFZC0XjrD9IvajwkPJ20R2vptJ12599GOupxIlvXAcysf5tNbpifl87iFO1vnx8Pug=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "テイクアウト販売に関する投稿であり、店舗の営業スケジュールに変更はありません。"
   }
 ]
