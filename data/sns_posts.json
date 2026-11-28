@@ -48267,5 +48267,24 @@
     "processedAt": null,
     "aiStatus": "no_change",
     "aiReason": "11月29日(日)は通常営業です。"
+  },
+  {
+    "id": "sns_post_routine_kameido_2126719063288332425",
+    "shopId": "kameido",
+    "shopName": "亀戸店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jiro_kame/status/2126719063288332425",
+    "postedAt": "2026-11-28T16:45:11.000Z",
+    "postText": "譲ってもらったアガベに子株たくさん付いてて気がついたらいっぱいになっちゃった… https://t.co/pgqTJNXQvs",
+    "mediaUrls": [
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-G5cItcAtRC0lBIzaySFkZXjWl_I1NjnZ2gS35AqyhKXYU5YlsBPL9E_YYg0NS-YVnGmjBhBtUwXxkEZcwRgQ3IHRam7fyC70-7Kxlsq7zaJ49PviELcrA9fab5pwDHnlyX0hHwpURAyent5rqaKPRw==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-1VNQPKheHUcKRovNLVCxjOc93CFl2SOa27s6ykki9B__ikk-nhfFgbAgk_mLVxKNRWAADzNNR-0mubhX_F8R6xBNZX_JFrN5qokMGWH26tsZXDSkWxRAZPL5BQXWGBW3KbJA1FlqCC_CuapUfKaKzA==",
+      "https://rts-pctr.c.yimg.jp/BgIFgYJGVIVv8u0nVJvw8B2FauAYMF4jOP5zFJAV4i6hjVpND1OjWZ7RVcmujne-UP_3mwwLKyKonAO_ub9WNpi2GbQyYNz8MXzJ_f_QkV1iH3wtkxNKK39adnsWaWA1v2vAe-aJLws-wyHN7AKoo1RlR6EI6P5hl0eUehDtLG6BevrPoA5g9lJy2MvbJDSPki4L8R3cmWJpb9ObCPB_nQ=="
+    ],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "店舗の営業情報に関する言及はなく、植物に関する日常投稿です。"
   }
 ]
