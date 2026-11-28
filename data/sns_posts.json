@@ -48085,5 +48085,58 @@
     "processedAt": null,
     "aiStatus": "daily",
     "aiReason": "営業・日程関連のキーワードが含まれないため除外（日常・雑談）"
+  },
+  {
+    "id": "sns_post_matsudo_20261128_0_2126572174916059413",
+    "shopId": "matsudo",
+    "shopName": "松戸駅前店",
+    "postSource": "x",
+    "postUrl": "https://x.com/matsudojiro3/status/2126572174916059413",
+    "postedAt": "2026-11-28T07:01:30.000Z",
+    "postText": "都合により30日(月)まで休業します。  よろしくお願いいたします。 https://t.co/JCSPGv2EGA",
+    "mediaUrls": [],
+    "detectedChange": {
+      "type": "temporary_closure",
+      "startDate": "2026-11-28",
+      "endDate": "2026-11-30",
+      "hours": [],
+      "reason": "",
+      "confidence": 1
+    },
+    "processed": false,
+    "processedAt": null,
+    "autoApplied": false,
+    "aiStatus": "schedule_change",
+    "aiReason": "営業時間の変更を検出"
+  },
+  {
+    "id": "sns_post_routine_jimbocho_2126572530689286391",
+    "shopId": "jimbocho",
+    "shopName": "神田神保町店",
+    "postSource": "x",
+    "postUrl": "https://x.com/jbc_ramen_jiro/status/2126572530689286391",
+    "postedAt": "2026-11-28T07:02:55.000Z",
+    "postText": "ただ今お並びのお客様までで、本日の営業終了となります。よろしくお願いします。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "本日の営業終了告知のため、スケジュール変更なし"
+  },
+  {
+    "id": "sns_post_routine_koiwa_2126576955550249040",
+    "shopId": "koiwa",
+    "shopName": "小岩店",
+    "postSource": "x",
+    "postUrl": "https://x.com/koiwajiro/status/2126576955550249040",
+    "postedAt": "2026-11-28T07:20:30.000Z",
+    "postText": "本日のラーメンセット、受け渡しがすべて完了しました。  追加メニューも完売しましたので、本日の営業は終了します。",
+    "mediaUrls": [],
+    "detectedChange": null,
+    "processed": false,
+    "processedAt": null,
+    "aiStatus": "no_change",
+    "aiReason": "本日の営業終了報告であり、臨時休業や営業時間変更には該当しません。"
   }
 ]
